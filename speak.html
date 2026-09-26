@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="der die das">
+<title>說說看 · Der Die Das 小卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#EEF1F4; --paper:#FFFFFF; --ink:#1C2430; --muted:#5B6675; --line:#D5DBE2;
+  --der:#2A66B0; --der-soft:#E3EDF9;
+  --die:#C9403A; --die-soft:#FBE7E5;
+  --das:#2F8A4C; --das-soft:#E2F3E7;
+  --good:#2F8A4C; --good-soft:#E2F3E7; --warn:#A8660B; --warn-soft:#FBF0DC; --bad:#C9403A; --bad-soft:#FBE7E5;
+  --shadow:0 1px 2px rgba(28,36,48,.08),0 4px 14px rgba(28,36,48,.06);
+  --display:"Baloo 2","Nunito",ui-rounded,"PingFang TC","Noto Sans TC",system-ui,sans-serif;
+  --body:"Nunito","PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+    --der:#6FA6EC; --der-soft:#1C2C44; --die:#F07D75; --die-soft:#3A2023; --das:#6CC58A; --das-soft:#1B3325;
+    --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+  --der:#6FA6EC; --der-soft:#1C2C44; --die:#F07D75; --die-soft:#3A2023; --das:#6CC58A; --das-soft:#1B3325;
+  --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;-webkit-text-size-adjust:100%;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding-inline:20px;padding-block:28px 64px;display:flex;flex-direction:column;gap:22px}
+
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--line)}
+.tabs a{font:700 16px/1 var(--body);color:var(--muted);text-decoration:none;padding:12px 18px;border-radius:10px 10px 0 0;margin-bottom:-2px;border:2px solid transparent}
+.tabs a[aria-current="page"]{color:var(--ink);background:var(--paper);border-color:var(--line);border-bottom-color:var(--paper)}
+.tabs a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+header{display:flex;flex-direction:column;gap:6px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);line-height:1;margin:0}
+.lede{margin:0;color:var(--muted);max-width:60ch}
+
+.bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:700 15px/1 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:9px 14px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.chip:focus-visible,.btn:focus-visible,.mic:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.score{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.score b{color:var(--ink)}
+
+.stage{background:var(--paper);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.pic{aspect-ratio:4/3;background:#fff;display:flex;align-items:center;justify-content:center;border-bottom:5px solid var(--line);transition:border-color .2s}
+.pic img{width:100%;height:100%;object-fit:contain;display:block}
+.stage.der .pic{border-bottom-color:var(--der)} .stage.die .pic{border-bottom-color:var(--die)} .stage.das .pic{border-bottom-color:var(--das)}
+.info{padding:14px 18px 18px;display:flex;flex-direction:column;gap:4px;align-items:center;text-align:center}
+.zh{color:var(--muted);font-size:1.05rem}
+.answer{font-family:var(--display);font-weight:800;font-size:2rem;line-height:1.1;min-height:1.1em}
+.answer .art{margin-right:.25em}
+.answer.der .art{color:var(--der)} .answer.die .art{color:var(--die)} .answer.das .art{color:var(--das)}
+.answer.pending{color:var(--line)}
+
+.speak{display:flex;flex-direction:column;align-items:center;gap:10px}
+.mic{appearance:none;border:0;cursor:pointer;width:96px;height:96px;border-radius:50%;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);transition:transform .12s}
+.mic svg{width:40px;height:40px}
+.mic:active{transform:scale(.96)}
+.mic.listening{background:var(--bad);color:#fff;animation:pulse 1.2s ease-in-out infinite}
+.mic:disabled{opacity:.35;cursor:default;animation:none}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,64,58,.45)}50%{box-shadow:0 0 0 16px rgba(201,64,58,0)}}
+.status{color:var(--muted);font-weight:700;min-height:1.5em;text-align:center}
+
+.result{border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.result.good{background:var(--good-soft);color:var(--good)}
+.result.warn{background:var(--warn-soft);color:var(--warn)}
+.result.bad{background:var(--bad-soft);color:var(--bad)}
+.result .big{font-family:var(--display);font-weight:800;font-size:1.4rem;line-height:1.2}
+.result .heard{color:var(--ink);opacity:.8}
+
+.actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.btn{font:700 16px/1.2 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:14px 12px;border-radius:12px;cursor:pointer}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn.rec{border-color:var(--bad);color:var(--bad)}
+.btn:disabled{opacity:.4;cursor:default}
+
+.note{color:var(--muted);font-size:.9rem;display:flex;flex-direction:column;gap:6px}
+.note p{margin:0}
+.unsupported{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:12px 14px;font-weight:700}
+
+@media (prefers-reduced-motion: reduce){.mic,.pic{transition:none}.mic.listening{animation:none}}
+</style>
+
+<div class="wrap">
+  <nav class="tabs" aria-label="頁籤">
+    <a href="./">卡片</a>
+    <a href="speak.html" aria-current="page">說說看</a>
+  </nav>
+
+  <header>
+    <h1>說說看</h1>
+    <p class="lede">看圖片，按麥克風，大聲說出冠詞和單字，例如「die Eule」。說完會告訴你冠詞和單字對不對。</p>
+  </header>
+
+  <div class="bar">
+    <div class="chips" role="group" aria-label="篩選類別">
+      <button class="chip" id="c-all" data-c="all" aria-pressed="true">全部</button>
+      <button class="chip" id="c-school" data-c="school" aria-pressed="false">文具</button>
+      <button class="chip" id="c-wear" data-c="wear" aria-pressed="false">衣物用品</button>
+      <button class="chip" id="c-animal" data-c="animal" aria-pressed="false">動物</button>
+    </div>
+    <div class="score" aria-live="polite">答對 <b id="right">0</b> / <b id="total">0</b></div>
+  </div>
+
+  <p class="unsupported" id="unsupported" hidden>這個瀏覽器沒有語音辨識功能，所以沒辦法自動判斷對錯。請用 iPad、iPhone 的 Safari，或電腦上的 Chrome。錄音比較的功能還是可以用。</p>
+
+  <section class="stage" id="stage" aria-label="目前的卡片">
+    <div class="pic"><img id="img" alt=""></div>
+    <div class="info">
+      <div class="answer pending" id="answer">? ? ?</div>
+      <div class="zh" id="zh"></div>
+    </div>
+  </section>
+
+  <div class="speak">
+    <button class="mic" id="mic" aria-label="按一下開始說">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg>
+    </button>
+    <div class="status" id="status" aria-live="polite">按一下麥克風，然後說出答案</div>
+  </div>
+
+  <div class="result" id="result" hidden aria-live="polite">
+    <div class="big" id="resultBig"></div>
+    <div id="resultDetail"></div>
+    <div class="heard" id="heard"></div>
+  </div>
+
+  <div class="actions">
+    <button class="btn" id="listen">聽示範發音</button>
+    <button class="btn rec" id="rec">錄下我的聲音</button>
+    <button class="btn" id="playMine" disabled>播放我的聲音</button>
+    <button class="btn primary" id="next">下一張</button>
+  </div>
+
+  <div class="note">
+    <p>語音辨識用的是 iPad／瀏覽器內建的功能，會判斷「聽起來是不是這個字」，沒辦法細到每個音標不標準。小朋友的聲音有時候會被聽錯，不用太在意，多說幾次就好。</p>
+    <p>「錄下我的聲音」可以錄 5 秒，然後跟示範發音輪流聽，比比看哪裡不一樣。錄音只留在這台裝置上，不會上傳。</p>
+  </div>
+</div>
+
+<script src="cards.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const ARTICLES = ['der', 'die', 'das'];
+// words the recognizer often returns instead of the article
+const ARTICLE_ALIASES = {der: 'der', die: 'die', das: 'das', dass: 'das', di: 'die', dir: 'der'};
+
+let cat = 'all', deck = [], card = null, tried = false;
+let right = 0, total = 0;
+
+// ---------- deck ----------
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function refill() { deck = shuffle(CARDS.filter(c => cat === 'all' || c.cat === cat)); }
+function next() {
+  if (!deck.length) refill();
+  let n = deck.pop();
+  if (card && n.id === card.id && deck.length) { deck.unshift(n); n = deck.pop(); }
+  card = n; tried = false;
+  $('img').src = `img/${card.id}.jpg`;
+  $('zh').textContent = card.zh;
+  $('answer').className = 'answer pending';
+  $('answer').textContent = '? ? ?';
+  $('stage').className = 'stage';
+  $('result').hidden = true;
+  $('status').textContent = '按一下麥克風，然後說出答案';
+  clearMine();
+}
+function reveal() {
+  $('answer').className = 'answer ' + card.art;
+  $('answer').innerHTML = `<span class="art">${card.art}</span>${card.noun}`;
+  $('stage').className = 'stage ' + card.art;
+}
+
+// ---------- audio ----------
+let player = null;
+function playModel() {
+  if (player) player.pause();
+  player = new Audio(`audio/${card.id}.mp3`);
+  return player.play().catch(() => {
+    if ('speechSynthesis' in window) {
+      const u = new SpeechSynthesisUtterance(`${card.art} ${card.noun}`); u.lang = 'de-DE'; u.rate = .85;
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    }
+  });
+}
+
+// ---------- matching ----------
+function norm(s) {
+  return s.toLowerCase().normalize('NFC').replace(/ß/g, 'ss').replace(/[^a-zäöü\s]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+const fold = s => s.replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u');
+function similarity(a, b) {
+  a = fold(a); b = fold(b);
+  if (!a || !b) return 0;
+  if (a === b) return 1;
+  const d = Array.from({length: a.length + 1}, (_, i) => [i, ...Array(b.length).fill(0)]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
+    d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return 1 - d[a.length][b.length] / Math.max(a.length, b.length);
+}
+function judge(transcript) {
+  const tokens = norm(transcript).split(' ').filter(Boolean);
+  const idx = tokens.findIndex(t => ARTICLE_ALIASES[t]);
+  const said = idx >= 0 ? ARTICLE_ALIASES[tokens[idx]] : null;
+  const rest = (idx >= 0 ? tokens.slice(idx + 1) : tokens).join('');
+  const target = norm(card.noun).replace(/\s/g, '');
+  let score = similarity(rest, target);
+  if (rest.includes(fold(target)) || fold(rest).includes(fold(target))) score = Math.max(score, .95);
+  return {said, articleOk: said === card.art, nounOk: score >= .72, score, transcript};
+}
+function best(alternatives) {
+  return alternatives.map(judge).sort((a, b) =>
+    (b.articleOk + b.nounOk * 1.5 + b.score) - (a.articleOk + a.nounOk * 1.5 + a.score))[0];
+}
+
+function showResult(r) {
+  const box = $('result');
+  box.hidden = false;
+  const answer = `${card.art} ${card.noun}`;
+  let cls, big, detail;
+  if (r.articleOk && r.nounOk) {
+    cls = 'good'; big = '答對了！'; detail = `就是「${answer}」。`;
+  } else if (r.nounOk) {
+    cls = 'warn'; big = '單字對了，冠詞再想想';
+    detail = r.said ? `你說的是 ${r.said}，正確是 ${card.art}。` : `沒有聽到冠詞，要說 ${card.art}。`;
+  } else if (r.articleOk) {
+    cls = 'warn'; big = `冠詞 ${card.art} 對了！`; detail = `單字是「${card.noun}」，再說一次看看。`;
+  } else {
+    cls = 'bad'; big = '再試一次'; detail = `正確答案是「${answer}」。`;
+  }
+  box.className = 'result ' + cls;
+  $('resultBig').textContent = big;
+  $('resultDetail').textContent = detail;
+  $('heard').textContent = `我聽到：「${r.transcript}」`;
+  if (!tried) { total++; if (r.articleOk && r.nounOk) right++; tried = true; }
+  $('right').textContent = right; $('total').textContent = total;
+  reveal();
+  if (!(r.articleOk && r.nounOk)) setTimeout(playModel, 700);
+}
+
+// ---------- speech recognition ----------
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null, listening = false;
+if (!SR) {
+  $('unsupported').hidden = false;
+  $('mic').disabled = true;
+  $('status').textContent = '這個瀏覽器不能用語音辨識';
+}
+function startListening() {
+  if (!SR || listening) return;
+  if (player) player.pause();
+  rec = new SR();
+  rec.lang = 'de-DE'; rec.interimResults = false; rec.maxAlternatives = 5; rec.continuous = false;
+  let got = false;
+  rec.onresult = e => {
+    got = true;
+    const alts = [...e.results[0]].map(a => a.transcript).filter(Boolean);
+    if (alts.length) showResult(best(alts));
+  };
+  rec.onerror = e => {
+    got = true;
+    const msg = {
+      'not-allowed': '沒有麥克風權限。請到設定允許 Safari 使用麥克風，再重新整理頁面。',
+      'service-not-allowed': '沒有語音辨識權限。請到「設定 → Safari」允許語音辨識。',
+      'no-speech': '沒有聽到聲音，靠近一點再說一次。',
+      'network': '語音辨識需要網路，請檢查連線。',
+      'audio-capture': '找不到麥克風。',
+    }[e.error] || `語音辨識出了問題（${e.error}），再試一次。`;
+    $('status').textContent = msg;
+  };
+  rec.onend = () => {
+    listening = false;
+    $('mic').classList.remove('listening');
+    $('mic').setAttribute('aria-label', '按一下開始說');
+    if (!got) $('status').textContent = '沒有聽清楚，再按一次麥克風試試。';
+    else if ($('status').textContent === '在聽…說完會自動停止') $('status').textContent = '按麥克風可以再說一次';
+  };
+  try {
+    rec.start();
+    listening = true;
+    $('mic').classList.add('listening');
+    $('mic').setAttribute('aria-label', '在聽，按一下停止');
+    $('status').textContent = '在聽…說完會自動停止';
+  } catch (err) {
+    $('status').textContent = '麥克風啟動失敗，再按一次試試。';
+  }
+}
+$('mic').addEventListener('click', () => listening ? rec.stop() : startListening());
+
+// ---------- record my own voice ----------
+let recorder = null, mineUrl = null, recTimer = null;
+function clearMine() {
+  if (mineUrl) URL.revokeObjectURL(mineUrl);
+  mineUrl = null; $('playMine').disabled = true;
+}
+async function toggleRecord() {
+  if (recorder && recorder.state === 'recording') { recorder.stop(); return; }
+  if (listening) rec.stop();
+  if (!navigator.mediaDevices || !window.MediaRecorder) { $('status').textContent = '這個瀏覽器不能錄音。'; return; }
+  let stream;
+  try { stream = await navigator.mediaDevices.getUserMedia({audio: true}); }
+  catch { $('status').textContent = '沒有麥克風權限，請到設定允許後重新整理頁面。'; return; }
+  const type = ['audio/mp4', 'audio/webm', 'audio/ogg'].find(t => MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(t));
+  recorder = new MediaRecorder(stream, type ? {mimeType: type} : undefined);
+  const chunks = [];
+  recorder.ondataavailable = e => e.data.size && chunks.push(e.data);
+  recorder.onstop = () => {
+    clearTimeout(recTimer);
+    stream.getTracks().forEach(t => t.stop());
+    clearMine();
+    mineUrl = URL.createObjectURL(new Blob(chunks, {type: recorder.mimeType || type || 'audio/mp4'}));
+    $('playMine').disabled = false;
+    $('rec').textContent = '重新錄一次';
+    $('status').textContent = '錄好了！先聽示範，再聽自己的，比比看。';
+  };
+  recorder.start();
+  $('rec').textContent = '停止錄音';
+  $('status').textContent = '錄音中…（最多 5 秒）';
+  recTimer = setTimeout(() => recorder.state === 'recording' && recorder.stop(), 5000);
+}
+$('rec').addEventListener('click', toggleRecord);
+$('playMine').addEventListener('click', () => {
+  if (!mineUrl) return;
+  if (player) player.pause();
+  player = new Audio(mineUrl); player.play();
+});
+
+// ---------- other controls ----------
+$('listen').addEventListener('click', () => { playModel(); });
+$('next').addEventListener('click', () => { $('rec').textContent = '錄下我的聲音'; next(); });
+document.querySelectorAll('.chip').forEach(ch => ch.addEventListener('click', () => {
+  cat = ch.dataset.c;
+  document.querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', String(x === ch)));
+  refill(); next();
+}));
+
+refill(); next();
+</script>
