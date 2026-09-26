@@ -90,6 +90,10 @@ section.der h2{color:var(--der)} section.die h2{color:var(--die)} section.das h2
 footer{color:var(--muted);font-size:.9rem;max-width:70ch;display:flex;flex-direction:column;gap:6px}
 footer p{margin:0}
 footer a{color:inherit}
+footer summary{cursor:pointer;font-weight:700}
+footer ul{margin:8px 0 0;padding-left:1.2em;columns:2 16em;column-gap:24px}
+[hidden]{display:none!important}
+.chip.cat[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 
 @media (prefers-reduced-motion: reduce){.card{transition:none}.card:hover{transform:none}}
 @media (max-width:440px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}.word{font-size:1.05rem}}
@@ -108,6 +112,12 @@ footer a{color:inherit}
       <button class="chip die" id="f-die" data-f="die" aria-pressed="false">die<span class="n"></span></button>
       <button class="chip das" id="f-das" data-f="das" aria-pressed="false">das<span class="n"></span></button>
     </div>
+    <div class="chips" role="group" aria-label="篩選類別">
+      <button class="chip cat" id="c-all" data-c="all" aria-pressed="true">所有類別</button>
+      <button class="chip cat" id="c-school" data-c="school" aria-pressed="false">文具<span class="n"></span></button>
+      <button class="chip cat" id="c-wear" data-c="wear" aria-pressed="false">衣物用品<span class="n"></span></button>
+      <button class="chip cat" id="c-animal" data-c="animal" aria-pressed="false">動物<span class="n"></span></button>
+    </div>
     <label class="toggle"><input type="checkbox" id="quiz"> 練習模式（隱藏冠詞）</label>
   </div>
 
@@ -117,12 +127,12 @@ footer a{color:inherit}
     <p>顏色照德國小學的習慣：der 藍、die 紅、das 綠。</p>
     <p>「原本在 das 堆」或「原本在 die 堆」表示這張卡原本放錯堆，這裡已經放到正確的冠詞下。「名稱待確認」表示單字是依圖片判斷的，教材可能用別的字。</p>
     <p>發音是 Microsoft 神經網路德語語音 Katja 錄製的。</p>
-    <p>照片來自 Pexels：das Reh 由 <a href="https://www.pexels.com/photo/12377320/">Filip Nasaly</a> 拍攝，die Henne 由 <a href="https://www.pexels.com/photo/36660076/">Rahime Gül</a> 拍攝。</p>
+    <details id="credits"><summary>照片出處（Pexels）</summary><ul></ul></details>
   </footer>
 </div>
 
 <script>
-const CARDS = [{"id":"federmaeppchen","art":"das","noun":"Federmäppchen","zh":"鉛筆盒","note":""},{"id":"buch","art":"das","noun":"Buch","zh":"書","note":""},{"id":"pferd","art":"das","noun":"Pferd","zh":"馬","note":""},{"id":"eichhoernchen","art":"das","noun":"Eichhörnchen","zh":"松鼠","note":""},{"id":"lineal","art":"das","noun":"Lineal","zh":"直尺","note":""},{"id":"wildschwein","art":"das","noun":"Wildschwein","zh":"野豬","note":""},{"id":"rechenheft","art":"das","noun":"Rechenheft","zh":"數學方格本","note":""},{"id":"huhn","art":"das","noun":"Huhn","zh":"雞","note":""},{"id":"kueken","art":"das","noun":"Küken","zh":"小雞","note":""},{"id":"schaf","art":"das","noun":"Schaf","zh":"綿羊","note":""},{"id":"schwein","art":"das","noun":"Schwein","zh":"豬","note":""},{"id":"heft","art":"das","noun":"Heft","zh":"作業本","note":""},{"id":"geodreieck","art":"das","noun":"Geodreieck","zh":"三角尺","note":""},{"id":"reh-bild","art":"das","noun":"Reh","zh":"鹿","note":""},{"id":"reh","art":"das","noun":"Reh","zh":"鹿（真實照片）","note":"photo"},{"id":"winkelmesser","art":"der","noun":"Winkelmesser","zh":"量角器","note":"moved"},{"id":"fuchs","art":"der","noun":"Fuchs","zh":"狐狸","note":""},{"id":"taschenrechner","art":"der","noun":"Taschenrechner","zh":"計算機","note":""},{"id":"radiergummi","art":"der","noun":"Radiergummi","zh":"橡皮擦","note":""},{"id":"fueller","art":"der","noun":"Füller","zh":"鋼筆","note":""},{"id":"spitzer","art":"der","noun":"Spitzer","zh":"削鉛筆器","note":""},{"id":"bleistift","art":"der","noun":"Bleistift","zh":"鉛筆","note":""},{"id":"ordner","art":"der","noun":"Ordner","zh":"檔案夾","note":""},{"id":"esel","art":"der","noun":"Esel","zh":"驢子","note":""},{"id":"truthahn","art":"der","noun":"Truthahn","zh":"火雞","note":""},{"id":"schulranzen","art":"der","noun":"Schulranzen","zh":"書包","note":""},{"id":"buntstift","art":"der","noun":"Buntstift","zh":"彩色鉛筆","note":""},{"id":"zirkel","art":"der","noun":"Zirkel","zh":"圓規","note":""},{"id":"kugelschreiber","art":"der","noun":"Kugelschreiber","zh":"原子筆","note":""},{"id":"bueffel","art":"der","noun":"Büffel","zh":"野牛","note":"guess"},{"id":"tesafilm","art":"der","noun":"Tesafilm","zh":"膠帶","note":""},{"id":"klebestift","art":"der","noun":"Klebestift","zh":"口紅膠","note":""},{"id":"kalender","art":"der","noun":"Kalender","zh":"行事曆","note":"guess"},{"id":"hahn","art":"der","noun":"Hahn","zh":"公雞","note":""},{"id":"baer","art":"der","noun":"Bär","zh":"熊","note":""},{"id":"schmetterling","art":"der","noun":"Schmetterling","zh":"蝴蝶","note":""},{"id":"wolf","art":"der","noun":"Wolf","zh":"狼","note":"guess"},{"id":"igel","art":"der","noun":"Igel","zh":"刺蝟","note":""},{"id":"hase","art":"der","noun":"Hase","zh":"野兔","note":""},{"id":"eule","art":"die","noun":"Eule","zh":"貓頭鷹","note":""},{"id":"kuh","art":"die","noun":"Kuh","zh":"乳牛","note":""},{"id":"biene","art":"die","noun":"Biene","zh":"蜜蜂","note":""},{"id":"filzstift","art":"der","noun":"Filzstift","zh":"彩色筆","note":"moved","from":"die"},{"id":"henne","art":"die","noun":"Henne","zh":"母雞（真實照片）","note":"photo"},{"id":"gans","art":"die","noun":"Gans","zh":"鵝","note":""},{"id":"schere","art":"die","noun":"Schere","zh":"剪刀","note":""},{"id":"ziege","art":"die","noun":"Ziege","zh":"山羊","note":""}];
+const CARDS = [{"id":"maeppchen","art":"das","noun":"Mäppchen","zh":"鉛筆盒","note":"","cat":"school"},{"id":"buch","art":"das","noun":"Buch","zh":"書","note":"","cat":"school"},{"id":"pferd","art":"das","noun":"Pferd","zh":"馬","note":"","cat":"animal"},{"id":"eichhoernchen","art":"das","noun":"Eichhörnchen","zh":"松鼠","note":"","cat":"animal"},{"id":"lineal","art":"das","noun":"Lineal","zh":"直尺","note":"","cat":"school"},{"id":"wildschwein","art":"das","noun":"Wildschwein","zh":"野豬","note":"","cat":"animal"},{"id":"rechenheft","art":"das","noun":"Rechenheft","zh":"數學方格本","note":"","cat":"school"},{"id":"huhn","art":"das","noun":"Huhn","zh":"雞","note":"","cat":"animal"},{"id":"kueken","art":"das","noun":"Küken","zh":"小雞","note":"","cat":"animal"},{"id":"schaf","art":"das","noun":"Schaf","zh":"綿羊","note":"","cat":"animal"},{"id":"schwein","art":"das","noun":"Schwein","zh":"豬","note":"","cat":"animal"},{"id":"heft","art":"das","noun":"Heft","zh":"作業本","note":"","cat":"school"},{"id":"geodreieck","art":"das","noun":"Geodreieck","zh":"三角尺","note":"","cat":"school"},{"id":"reh-bild","art":"das","noun":"Reh","zh":"鹿","note":"","cat":"animal"},{"id":"reh","art":"das","noun":"Reh","zh":"鹿（照片）","note":"photo","cat":"animal","by":"Filip Nasaly","px":12377320},{"id":"winkelmesser","art":"der","noun":"Winkelmesser","zh":"量角器","note":"moved","cat":"school"},{"id":"fuchs","art":"der","noun":"Fuchs","zh":"狐狸","note":"","cat":"animal"},{"id":"taschenrechner","art":"der","noun":"Taschenrechner","zh":"計算機","note":"","cat":"school"},{"id":"radierer","art":"der","noun":"Radierer","zh":"橡皮擦","note":"","cat":"school"},{"id":"fueller","art":"der","noun":"Füller","zh":"鋼筆","note":"","cat":"school"},{"id":"spitzer","art":"der","noun":"Spitzer","zh":"削鉛筆器","note":"","cat":"school"},{"id":"bleistift","art":"der","noun":"Bleistift","zh":"鉛筆","note":"","cat":"school"},{"id":"ordner","art":"der","noun":"Ordner","zh":"檔案夾","note":"","cat":"school"},{"id":"esel","art":"der","noun":"Esel","zh":"驢子","note":"","cat":"animal"},{"id":"truthahn","art":"der","noun":"Truthahn","zh":"火雞","note":"","cat":"animal"},{"id":"schulranzen","art":"der","noun":"Schulranzen","zh":"書包","note":"","cat":"school"},{"id":"farbstift","art":"der","noun":"Farbstift","zh":"彩色鉛筆","note":"","cat":"school"},{"id":"zirkel","art":"der","noun":"Zirkel","zh":"圓規","note":"","cat":"school"},{"id":"kugelschreiber","art":"der","noun":"Kugelschreiber","zh":"原子筆","note":"","cat":"school"},{"id":"bueffel","art":"der","noun":"Büffel","zh":"野牛","note":"guess","cat":"animal"},{"id":"tesafilm","art":"der","noun":"Tesafilm","zh":"膠帶","note":"","cat":"school"},{"id":"klebestift","art":"der","noun":"Klebestift","zh":"口紅膠","note":"","cat":"school"},{"id":"kalender","art":"der","noun":"Kalender","zh":"行事曆","note":"guess","cat":"school"},{"id":"hahn","art":"der","noun":"Hahn","zh":"公雞","note":"","cat":"animal"},{"id":"baer","art":"der","noun":"Bär","zh":"熊","note":"","cat":"animal"},{"id":"schmetterling","art":"der","noun":"Schmetterling","zh":"蝴蝶","note":"","cat":"animal"},{"id":"wolf","art":"der","noun":"Wolf","zh":"狼","note":"guess","cat":"animal"},{"id":"igel","art":"der","noun":"Igel","zh":"刺蝟","note":"","cat":"animal"},{"id":"hase","art":"der","noun":"Hase","zh":"野兔","note":"","cat":"animal"},{"id":"eule","art":"die","noun":"Eule","zh":"貓頭鷹","note":"","cat":"animal"},{"id":"kuh","art":"die","noun":"Kuh","zh":"乳牛","note":"","cat":"animal"},{"id":"biene","art":"die","noun":"Biene","zh":"蜜蜂","note":"","cat":"animal"},{"id":"filzstift","art":"der","noun":"Filzstift","zh":"彩色筆","note":"moved","from":"die","cat":"school"},{"id":"henne","art":"die","noun":"Henne","zh":"母雞","note":"photo","cat":"animal","by":"Rahime Gül","px":36660076},{"id":"gans","art":"die","noun":"Gans","zh":"鵝","note":"","cat":"animal"},{"id":"schere","art":"die","noun":"Schere","zh":"剪刀","note":"","cat":"school"},{"id":"ziege","art":"die","noun":"Ziege","zh":"山羊","note":"","cat":"animal"},{"id":"block","art":"der","noun":"Block","zh":"便條本","note":"photo","cat":"school","by":"Eva Bronzini","px":7967490},{"id":"zeichenblock","art":"der","noun":"Zeichenblock","zh":"圖畫紙本","note":"photo","cat":"school","by":"Narayan Chaturvedi","px":31358138},{"id":"schnellhefter","art":"der","noun":"Schnellhefter","zh":"快速資料夾","note":"photo","cat":"school","by":"RDNE Stock project","px":7580767},{"id":"postmappe","art":"die","noun":"Postmappe","zh":"聯絡夾","note":"photo","cat":"school","by":"RDNE Stock project","px":7414018},{"id":"zeichenmappe","art":"die","noun":"Zeichenmappe","zh":"大畫夾","note":"photo","cat":"school","by":"Felicity Tai","px":7951222},{"id":"fluessigkleber","art":"der","noun":"Flüssigkleber","zh":"液體膠水","note":"photo","cat":"school","by":"DRT.fm .","px":3787100},{"id":"knete","art":"die","noun":"Knete","zh":"黏土","note":"photo","cat":"school","by":"Pavel Danilyuk","px":8422174},{"id":"wachsmalstift","art":"der","noun":"Wachsmalstift","zh":"蠟筆","note":"photo","cat":"school","by":"Miesha Renae Maiden","px":284082},{"id":"wasserfarbe","art":"die","noun":"Wasserfarbe","zh":"水彩","note":"photo","cat":"school","by":"Tatiana","px":11013402},{"id":"wasserbehaelter","art":"der","noun":"Wasserbehälter","zh":"洗筆筒","note":"photo","cat":"school","by":"Jadson Thomas","px":542556},{"id":"pinsel","art":"der","noun":"Pinsel","zh":"畫筆","note":"photo","cat":"school","by":"Nataliya Vaitkevich","px":5642112},{"id":"turnbeutel","art":"der","noun":"Turnbeutel","zh":"運動袋","note":"photo","cat":"wear","by":"ready made","px":3850539},{"id":"turnhose","art":"die","noun":"Turnhose","zh":"運動褲","note":"photo","cat":"wear","by":"Wesley Davi","px":33417688},{"id":"tshirt","art":"das","noun":"T-Shirt","zh":"T 恤","note":"photo","cat":"wear","by":"Omar Ramadan","px":4646580},{"id":"turnschuh","art":"der","noun":"Turnschuh","zh":"運動鞋","note":"photo","cat":"wear","by":"Erik Mclean","px":4987534},{"id":"trinkflasche","art":"die","noun":"Trinkflasche","zh":"水壺","note":"photo","cat":"wear","by":"ABHIJEET DEV","px":17891046},{"id":"brotdose","art":"die","noun":"Brotdose","zh":"便當盒","note":"photo","cat":"wear","by":"Antoni Shkraba","px":5852326},{"id":"rucksack","art":"der","noun":"Rucksack","zh":"背包","note":"photo","cat":"wear","by":"Luis Quintero","px":14017533},{"id":"jacke","art":"die","noun":"Jacke","zh":"外套","note":"photo","cat":"wear","by":"Вячеслав Ткачёв","px":12310075},{"id":"muetze","art":"die","noun":"Mütze","zh":"毛帽","note":"photo","cat":"wear","by":"Lee Hanson","px":37484033},{"id":"schal","art":"der","noun":"Schal","zh":"圍巾","note":"photo","cat":"wear","by":"https://kaboompics.com/","px":6633540},{"id":"handschuh","art":"der","noun":"Handschuh","zh":"手套","note":"photo","cat":"wear","by":"SERHAT  TUĞ","px":11584891},{"id":"hausschuh","art":"der","noun":"Hausschuh","zh":"室內拖鞋","note":"photo","cat":"wear","by":"Atlantic Ambience","px":12969102},{"id":"regenschirm","art":"der","noun":"Regenschirm","zh":"雨傘","note":"photo","cat":"wear","by":"Fatih Güney","px":18409119}];
 
 const HINT = {der:'陽性', die:'陰性', das:'中性'};
 const main = document.getElementById('main');
@@ -131,15 +141,14 @@ for (const art of ['der','die','das']) {
   const list = CARDS.filter(c => c.art === art);
   const sec = document.createElement('section');
   sec.className = art; sec.dataset.art = art;
-  sec.innerHTML = `<div class="sec-head"><h2>${art}</h2><span class="hint">${HINT[art]} · ${list.length} 張</span></div><div class="grid"></div>`;
+  sec.innerHTML = `<div class="sec-head"><h2>${art}</h2><span class="hint">${HINT[art]} · <span class="cnt">${list.length}</span> 張</span></div><div class="grid"></div>`;
   const grid = sec.querySelector('.grid');
   for (const c of list) {
     const b = document.createElement('button');
-    b.className = 'card ' + art; b.id = 'card-' + c.id; b.dataset.id = c.id;
+    b.className = 'card ' + art; b.id = 'card-' + c.id; b.dataset.id = c.id; b.dataset.cat = c.cat;
     b.setAttribute('aria-label', `${c.art} ${c.noun}，${c.zh}，點一下聽發音`);
     const tag = c.note === 'moved' ? `<span class="tag">原本在 ${c.from || 'das'} 堆</span>`
-              : c.note === 'guess' ? '<span class="tag guess">名稱待確認</span>'
-              : c.note === 'photo' ? '<span class="tag guess">網路照片</span>' : '';
+              : c.note === 'guess' ? '<span class="tag guess">名稱待確認</span>' : '';
     b.innerHTML = `<div class="pic"><img src="img/${c.id}.jpg" alt="" loading="lazy"></div>
       <div class="label"><span class="word"><span class="art">${c.art}</span>${c.noun}</span><span class="zh">${c.zh}</span>${tag}</div>`;
     b.addEventListener('click', () => play(b, c));
@@ -151,6 +160,17 @@ for (const art of ['der','die','das']) {
 // counts on filter chips
 document.querySelector('#f-all .n').textContent = CARDS.length;
 for (const a of ['der','die','das']) document.querySelector(`#f-${a} .n`).textContent = CARDS.filter(c => c.art === a).length;
+for (const k of ['school','wear','animal']) document.querySelector(`#c-${k} .n`).textContent = CARDS.filter(c => c.cat === k).length;
+
+// photo credits
+const credits = document.querySelector('#credits ul');
+for (const c of CARDS.filter(c => c.px)) {
+  const li = document.createElement('li');
+  const a = document.createElement('a');
+  a.href = `https://www.pexels.com/photo/${c.px}/`; a.textContent = c.by; a.target = '_blank'; a.rel = 'noopener';
+  li.append(`${c.art} ${c.noun}：`, a);
+  credits.appendChild(li);
+}
 
 let current = null;
 function speakFallback(text) {
@@ -167,36 +187,38 @@ function play(btn, c) {
   audio.play().catch(() => { speakFallback(`${c.art} ${c.noun}`); setTimeout(() => btn.classList.remove('playing'), 1200); });
 }
 
-// filters
-const chips = [...document.querySelectorAll('.chip')];
-chips.forEach(ch => ch.addEventListener('click', () => {
-  chips.forEach(x => x.setAttribute('aria-pressed', String(x === ch)));
-  const f = ch.dataset.f;
-  document.querySelectorAll('section[data-art]').forEach(s => s.hidden = f !== 'all' && s.dataset.art !== f);
-}));
-
-// practice mode
-// practice mode: all cards shuffled into one mixed grid so the section heading can't give the answer away
+// filters and practice mode share one state; render() applies it
+const state = {art: 'all', cat: 'all'};
+const artChips = [...document.querySelectorAll('.chip[data-f]')];
+const catChips = [...document.querySelectorAll('.chip[data-c]')];
 const quiz = document.getElementById('quiz');
+// practice mode: cards shuffled into one mixed grid so the section heading can't give the answer away
 const mix = document.createElement('section');
 mix.hidden = true;
 mix.innerHTML = '<div class="sec-head"><h2>猜猜看</h2><span class="hint">是 der、die 還是 das？點卡片聽答案</span></div><div class="grid"></div>';
 main.appendChild(mix);
 const allCards = [...document.querySelectorAll('.card')];
 const home = new Map(allCards.map(b => [b, b.parentElement]));
-quiz.addEventListener('change', () => {
+
+function render(reshuffle) {
   const on = quiz.checked;
   document.body.classList.toggle('quiz', on);
-  allCards.forEach(b => b.classList.remove('revealed'));
-  chips.forEach(ch => ch.disabled = on);
-  document.querySelectorAll('section[data-art]').forEach(s => s.hidden = on || (active() !== 'all' && s.dataset.art !== active()));
-  mix.hidden = !on;
-  if (on) {
-    const shuffled = allCards.slice().sort(() => Math.random() - .5);
-    shuffled.forEach(b => mix.querySelector('.grid').appendChild(b));
-  } else {
-    allCards.forEach(b => home.get(b).appendChild(b));
+  artChips.forEach(ch => { ch.disabled = on; ch.setAttribute('aria-pressed', String(ch.dataset.f === state.art)); });
+  catChips.forEach(ch => ch.setAttribute('aria-pressed', String(ch.dataset.c === state.cat)));
+  allCards.forEach(b => b.hidden = state.cat !== 'all' && b.dataset.cat !== state.cat);
+  if (on && reshuffle) {
+    allCards.forEach(b => b.classList.remove('revealed'));
+    allCards.slice().sort(() => Math.random() - .5).forEach(b => mix.querySelector('.grid').appendChild(b));
   }
-});
-function active() { return chips.find(c => c.getAttribute('aria-pressed') === 'true').dataset.f; }
+  if (!on) allCards.forEach(b => home.get(b).appendChild(b));
+  mix.hidden = !on;
+  document.querySelectorAll('section[data-art]').forEach(s => {
+    const shown = s.querySelectorAll('.card:not([hidden])').length;
+    s.querySelector('.cnt').textContent = shown;
+    s.hidden = on || shown === 0 || (state.art !== 'all' && s.dataset.art !== state.art);
+  });
+}
+artChips.forEach(ch => ch.addEventListener('click', () => { state.art = ch.dataset.f; render(false); }));
+catChips.forEach(ch => ch.addEventListener('click', () => { state.cat = ch.dataset.c; render(true); }));
+quiz.addEventListener('change', () => { allCards.forEach(b => b.classList.remove('revealed')); render(true); });
 </script>
