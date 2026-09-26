@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="der die das">
+<title>Der Die Das 小卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#EEF1F4; --paper:#FFFFFF; --ink:#1C2430; --muted:#5B6675; --line:#D5DBE2;
+  --der:#2A66B0; --der-soft:#E3EDF9;
+  --die:#C9403A; --die-soft:#FBE7E5;
+  --das:#2F8A4C; --das-soft:#E2F3E7;
+  --shadow:0 1px 2px rgba(28,36,48,.08),0 4px 14px rgba(28,36,48,.06);
+  --display:"Baloo 2","Nunito",ui-rounded,"PingFang TC","Noto Sans TC",system-ui,sans-serif;
+  --body:"Nunito","PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+    --der:#6FA6EC; --der-soft:#1C2C44;
+    --die:#F07D75; --die-soft:#3A2023;
+    --das:#6CC58A; --das-soft:#1B3325;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+  --der:#6FA6EC; --der-soft:#1C2C44;
+  --die:#F07D75; --die-soft:#3A2023;
+  --das:#6CC58A; --das-soft:#1B3325;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+body{margin:0;-webkit-text-size-adjust:100%;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:28px 64px;display:flex;flex-direction:column;gap:28px}
+
+header{display:flex;flex-direction:column;gap:10px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,7vw,3.6rem);line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1 .der{color:var(--der)} h1 .die{color:var(--die)} h1 .das{color:var(--das)}
+.lede{margin:0;color:var(--muted);max-width:60ch}
+
+.controls{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:700 15px/1 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:9px 14px;border-radius:999px;cursor:pointer}
+.chip:disabled{opacity:.4;cursor:default}
+.chip:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.chip[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.chip.der[aria-pressed="true"]{background:var(--der);border-color:var(--der);color:#fff}
+.chip.die[aria-pressed="true"]{background:var(--die);border-color:var(--die);color:#fff}
+.chip.das[aria-pressed="true"]{background:var(--das);border-color:var(--das);color:#fff}
+.chip .n{font-weight:600;opacity:.7;margin-left:4px;font-variant-numeric:tabular-nums}
+.toggle{display:flex;align-items:center;gap:8px;font-weight:700;cursor:pointer;user-select:none}
+.toggle input{width:20px;height:20px;accent-color:var(--ink)}
+
+section{display:flex;flex-direction:column;gap:14px}
+section[hidden]{display:none}
+.sec-head{display:flex;align-items:baseline;gap:12px}
+.sec-head h2{font-family:var(--display);font-weight:800;font-size:2rem;line-height:1;margin:0}
+.sec-head .hint{color:var(--muted);font-size:.95rem}
+section.der h2{color:var(--der)} section.die h2{color:var(--die)} section.das h2{color:var(--das)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.card{--c:var(--der);--soft:var(--der-soft);appearance:none;border:0;padding:0;text-align:left;font:inherit;color:inherit;
+  background:var(--paper);border-radius:14px;box-shadow:var(--shadow);cursor:pointer;display:flex;flex-direction:column;overflow:hidden;
+  outline:3px solid transparent;outline-offset:2px;transition:transform .12s ease,outline-color .12s ease}
+.card.die{--c:var(--die);--soft:var(--die-soft)} .card.das{--c:var(--das);--soft:var(--das-soft)}
+.card:hover{transform:translateY(-2px)}
+.card:focus-visible{outline-color:var(--ink)}
+.card.playing{outline-color:var(--c)}
+.pic{aspect-ratio:4/3;background:#fff;display:flex;align-items:center;justify-content:center;border-bottom:4px solid var(--c)}
+.pic img{width:100%;height:100%;object-fit:contain;display:block}
+.label{padding:10px 12px 12px;display:flex;flex-direction:column;gap:2px;min-height:78px}
+.word{font-family:var(--display);font-weight:700;font-size:1.2rem;line-height:1.15;overflow-wrap:anywhere}
+.word .art{color:var(--c);margin-right:.25em}
+.zh{color:var(--muted);font-size:.9rem}
+.tag{align-self:flex-start;margin-top:4px;font-size:.75rem;font-weight:700;letter-spacing:.02em;padding:2px 8px;border-radius:6px;background:var(--soft);color:var(--c)}
+.tag.guess{background:transparent;color:var(--muted);border:1px dashed var(--line)}
+
+/* practice mode: hide article until the card is played */
+.quiz .card:not(.revealed) .art{color:transparent;background:var(--line);border-radius:6px;padding-inline:.15em}
+.quiz .card:not(.revealed) .pic{border-bottom-color:var(--line)}
+.quiz .card:not(.revealed) .tag{visibility:hidden}
+
+footer{color:var(--muted);font-size:.9rem;max-width:70ch;display:flex;flex-direction:column;gap:6px}
+footer p{margin:0}
+
+@media (prefers-reduced-motion: reduce){.card{transition:none}.card:hover{transform:none}}
+@media (max-width:440px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}.word{font-size:1.05rem}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1><span class="der">der</span> <span class="die">die</span> <span class="das">das</span></h1>
+    <p class="lede">點一下卡片，就會唸出冠詞和單字。打開「練習模式」會先把冠詞藏起來，猜猜看再點開聽答案。</p>
+  </header>
+
+  <div class="controls">
+    <div class="chips" role="group" aria-label="篩選冠詞">
+      <button class="chip" id="f-all" data-f="all" aria-pressed="true">全部<span class="n"></span></button>
+      <button class="chip der" id="f-der" data-f="der" aria-pressed="false">der<span class="n"></span></button>
+      <button class="chip die" id="f-die" data-f="die" aria-pressed="false">die<span class="n"></span></button>
+      <button class="chip das" id="f-das" data-f="das" aria-pressed="false">das<span class="n"></span></button>
+    </div>
+    <label class="toggle"><input type="checkbox" id="quiz"> 練習模式（隱藏冠詞）</label>
+  </div>
+
+  <main id="main"></main>
+
+  <footer>
+    <p>顏色照德國小學的習慣：der 藍、die 紅、das 綠。</p>
+    <p>「原本在 das 堆」表示這張卡原本放錯堆，這裡已經放到正確的冠詞下。「名稱待確認」表示單字是依圖片判斷的，教材可能用別的字。</p>
+    <p>發音是 macOS 的德語語音 Anna 錄製的。</p>
+  </footer>
+</div>
+
+<script>
+const CARDS = [{"id":"federmaeppchen","art":"das","noun":"Federmäppchen","zh":"鉛筆盒","note":""},{"id":"buch","art":"das","noun":"Buch","zh":"書","note":""},{"id":"pferd","art":"das","noun":"Pferd","zh":"馬","note":""},{"id":"eichhoernchen","art":"das","noun":"Eichhörnchen","zh":"松鼠","note":""},{"id":"lineal","art":"das","noun":"Lineal","zh":"直尺","note":""},{"id":"wildschwein","art":"das","noun":"Wildschwein","zh":"野豬","note":""},{"id":"notizbuch","art":"das","noun":"Notizbuch","zh":"線圈筆記本","note":"guess"},{"id":"huhn","art":"das","noun":"Huhn","zh":"母雞","note":""},{"id":"kueken","art":"das","noun":"Küken","zh":"小雞","note":""},{"id":"schaf","art":"das","noun":"Schaf","zh":"綿羊","note":""},{"id":"schwein","art":"das","noun":"Schwein","zh":"豬","note":""},{"id":"heft","art":"das","noun":"Heft","zh":"作業本","note":""},{"id":"geodreieck","art":"das","noun":"Geodreieck","zh":"三角尺","note":""},{"id":"winkelmesser","art":"der","noun":"Winkelmesser","zh":"量角器","note":"moved"},{"id":"hirsch","art":"der","noun":"Hirsch","zh":"公鹿","note":"moved"},{"id":"fuchs","art":"der","noun":"Fuchs","zh":"狐狸","note":""},{"id":"taschenrechner","art":"der","noun":"Taschenrechner","zh":"計算機","note":""},{"id":"radiergummi","art":"der","noun":"Radiergummi","zh":"橡皮擦","note":""},{"id":"fueller","art":"der","noun":"Füller","zh":"鋼筆","note":""},{"id":"spitzer","art":"der","noun":"Spitzer","zh":"削鉛筆器","note":""},{"id":"bleistift","art":"der","noun":"Bleistift","zh":"鉛筆","note":""},{"id":"ordner","art":"der","noun":"Ordner","zh":"檔案夾","note":""},{"id":"esel","art":"der","noun":"Esel","zh":"驢子","note":""},{"id":"truthahn","art":"der","noun":"Truthahn","zh":"火雞","note":""},{"id":"schulranzen","art":"der","noun":"Schulranzen","zh":"書包","note":""},{"id":"buntstift","art":"der","noun":"Buntstift","zh":"彩色鉛筆","note":""},{"id":"zirkel","art":"der","noun":"Zirkel","zh":"圓規","note":""},{"id":"kugelschreiber","art":"der","noun":"Kugelschreiber","zh":"原子筆","note":""},{"id":"bueffel","art":"der","noun":"Büffel","zh":"野牛","note":"guess"},{"id":"klebefilm","art":"der","noun":"Klebefilm","zh":"膠帶","note":""},{"id":"klebestift","art":"der","noun":"Klebestift","zh":"口紅膠","note":""},{"id":"kalender","art":"der","noun":"Kalender","zh":"行事曆","note":"guess"},{"id":"hahn","art":"der","noun":"Hahn","zh":"公雞","note":""},{"id":"baer","art":"der","noun":"Bär","zh":"熊","note":""},{"id":"schmetterling","art":"der","noun":"Schmetterling","zh":"蝴蝶","note":""},{"id":"wolf","art":"der","noun":"Wolf","zh":"狼","note":"guess"},{"id":"igel","art":"der","noun":"Igel","zh":"刺蝟","note":""},{"id":"hase","art":"der","noun":"Hase","zh":"野兔","note":""},{"id":"eule","art":"die","noun":"Eule","zh":"貓頭鷹","note":""},{"id":"kuh","art":"die","noun":"Kuh","zh":"乳牛","note":""},{"id":"biene","art":"die","noun":"Biene","zh":"蜜蜂","note":""},{"id":"filzstifte","art":"die","noun":"Filzstifte","zh":"彩色筆（複數）","note":"guess"},{"id":"gans","art":"die","noun":"Gans","zh":"鵝","note":""},{"id":"schere","art":"die","noun":"Schere","zh":"剪刀","note":""},{"id":"ziege","art":"die","noun":"Ziege","zh":"山羊","note":""}];
+
+const HINT = {der:'陽性', die:'陰性', das:'中性'};
+const main = document.getElementById('main');
+
+for (const art of ['der','die','das']) {
+  const list = CARDS.filter(c => c.art === art);
+  const sec = document.createElement('section');
+  sec.className = art; sec.dataset.art = art;
+  sec.innerHTML = `<div class="sec-head"><h2>${art}</h2><span class="hint">${HINT[art]} · ${list.length} 張</span></div><div class="grid"></div>`;
+  const grid = sec.querySelector('.grid');
+  for (const c of list) {
+    const b = document.createElement('button');
+    b.className = 'card ' + art; b.id = 'card-' + c.id; b.dataset.id = c.id;
+    b.setAttribute('aria-label', `${c.art} ${c.noun}，${c.zh}，點一下聽發音`);
+    const tag = c.note === 'moved' ? '<span class="tag">原本在 das 堆</span>'
+              : c.note === 'guess' ? '<span class="tag guess">名稱待確認</span>' : '';
+    b.innerHTML = `<div class="pic"><img src="img/${c.id}.jpg" alt="" loading="lazy"></div>
+      <div class="label"><span class="word"><span class="art">${c.art}</span>${c.noun}</span><span class="zh">${c.zh}</span>${tag}</div>`;
+    b.addEventListener('click', () => play(b, c));
+    grid.appendChild(b);
+  }
+  main.appendChild(sec);
+}
+
+// counts on filter chips
+document.querySelector('#f-all .n').textContent = CARDS.length;
+for (const a of ['der','die','das']) document.querySelector(`#f-${a} .n`).textContent = CARDS.filter(c => c.art === a).length;
+
+let current = null;
+function speakFallback(text) {
+  if (!('speechSynthesis' in window)) return;
+  const u = new SpeechSynthesisUtterance(text); u.lang = 'de-DE'; u.rate = .85;
+  speechSynthesis.cancel(); speechSynthesis.speak(u);
+}
+function play(btn, c) {
+  if (current) { current.audio.pause(); current.btn.classList.remove('playing'); }
+  const audio = new Audio(`audio/${c.id}.mp3`);
+  current = {audio, btn};
+  btn.classList.add('playing', 'revealed');
+  audio.addEventListener('ended', () => btn.classList.remove('playing'));
+  audio.play().catch(() => { speakFallback(`${c.art} ${c.noun}`); setTimeout(() => btn.classList.remove('playing'), 1200); });
+}
+
+// filters
+const chips = [...document.querySelectorAll('.chip')];
+chips.forEach(ch => ch.addEventListener('click', () => {
+  chips.forEach(x => x.setAttribute('aria-pressed', String(x === ch)));
+  const f = ch.dataset.f;
+  document.querySelectorAll('section[data-art]').forEach(s => s.hidden = f !== 'all' && s.dataset.art !== f);
+}));
+
+// practice mode
+// practice mode: all cards shuffled into one mixed grid so the section heading can't give the answer away
+const quiz = document.getElementById('quiz');
+const mix = document.createElement('section');
+mix.hidden = true;
+mix.innerHTML = '<div class="sec-head"><h2>猜猜看</h2><span class="hint">是 der、die 還是 das？點卡片聽答案</span></div><div class="grid"></div>';
+main.appendChild(mix);
+const allCards = [...document.querySelectorAll('.card')];
+const home = new Map(allCards.map(b => [b, b.parentElement]));
+quiz.addEventListener('change', () => {
+  const on = quiz.checked;
+  document.body.classList.toggle('quiz', on);
+  allCards.forEach(b => b.classList.remove('revealed'));
+  chips.forEach(ch => ch.disabled = on);
+  document.querySelectorAll('section[data-art]').forEach(s => s.hidden = on || (active() !== 'all' && s.dataset.art !== active()));
+  mix.hidden = !on;
+  if (on) {
+    const shuffled = allCards.slice().sort(() => Math.random() - .5);
+    shuffled.forEach(b => mix.querySelector('.grid').appendChild(b));
+  } else {
+    allCards.forEach(b => home.get(b).appendChild(b));
+  }
+});
+function active() { return chips.find(c => c.getAttribute('aria-pressed') === 'true').dataset.f; }
+</script>
