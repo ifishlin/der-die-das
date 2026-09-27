@@ -46,4 +46,17 @@ export function needsRegrouping(q: Pick<Question, 'operator' | 'left' | 'right'>
   return false;
 }
 
+/**
+ * Grade 1 pictures use dots in two ten-frames, which only hold 20. Bigger grade-1 questions
+ * (allowed up to 100) switch to base-ten blocks, like grade 2.
+ */
+export function usesTenFrames(q: Pick<Question, 'grade' | 'operator' | 'left' | 'right'>): boolean {
+  return q.grade === 1 && q.operator !== 'multiply' && Math.max(q.left, q.right, answerOf(q)) <= 20;
+}
+
+/** "Hard" question for the difficulty filter: crossing ten on ten-frames, carry/borrow on blocks. */
+export function isRegrouping(q: Pick<Question, 'grade' | 'operator' | 'left' | 'right'>): boolean {
+  return usesTenFrames(q) ? crossesTen(q) : needsRegrouping(q);
+}
+
 export const GRADE_LABEL: Record<Grade, string> = { 1: '小一', 2: '小二' };

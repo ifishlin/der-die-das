@@ -1,4 +1,4 @@
-import { crossesTen, needsRegrouping, type Question } from './types';
+import { crossesTen, needsRegrouping, usesTenFrames, type Question } from './types';
 import type { Block, BlocksScene, Dot, DotsScene, Explanation, ExplanationStep, SceneState } from './scene';
 
 let stepCounter = 0;
@@ -12,7 +12,7 @@ const clone = <T>(x: T): T => JSON.parse(JSON.stringify(x));
 /** Builds the step-by-step explanation for any valid question, preset or custom. */
 export function generateExplanation(q: Question): Explanation {
   if (q.operator === 'multiply') return multiply(q.left, q.right);
-  if (q.grade === 1) return q.operator === 'add' ? g1Add(q.left, q.right) : g1Subtract(q.left, q.right);
+  if (usesTenFrames(q)) return q.operator === 'add' ? g1Add(q.left, q.right) : g1Subtract(q.left, q.right);
   return q.operator === 'add' ? g2Add(q.left, q.right) : g2Subtract(q.left, q.right);
 }
 
@@ -190,7 +190,7 @@ function multiply(a: number, b: number): Explanation {
 export function getHints(q: Question): [string, string] {
   const { left: a, right: b } = q;
   if (q.operator === 'multiply') return [`${a} × ${b} 就是 ${a} 組，每組 ${b} 個。可以一組一組加起來。`, `${Array(a).fill(b).join(' + ')} = ?`];
-  if (q.grade === 1) {
+  if (usesTenFrames(q)) {
     if (q.operator === 'add') {
       if (a < 10 && crossesTen(q)) return [`先湊成 10：${a} 再加幾個會變成 10？`, `${a} + ${10 - a} = 10，${b} 還剩下 ${b - (10 - a)}。10 + ${b - (10 - a)} = ?`];
       return [`從 ${a} 開始，往後數 ${b} 個。`, `${a} 後面接著數：${Array.from({ length: Math.min(b, 3) }, (_, i) => a + i + 1).join('、')}${b > 3 ? '……' : ''}，數到第 ${b} 個是多少？`];

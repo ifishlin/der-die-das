@@ -61,6 +61,14 @@ describe('explanation animations end in the right picture', () => {
     expect(summarize(ex.steps[ex.steps.length - 1].scene).value).toBe(42);
   });
 
+  it('grade 1 uses ten-frames up to 20 and base-ten blocks above 20', () => {
+    expect(finalScene(q(1, 'add', 9, 7)).kind).toBe('dots');
+    expect(finalScene(q(1, 'add', 20, 0)).kind).toBe('dots');
+    expect(finalScene(q(1, 'add', 19, 8)).kind).toBe('blocks');
+    expect(summarize(finalScene(q(1, 'add', 37, 16)))).toMatchObject({ tens: 5, ones: 3 });
+    expect(summarize(finalScene(q(1, 'subtract', 100, 58))).value).toBe(42);
+  });
+
   it('3 × 4 ends with 3 lit groups of 4', () => {
     const ex = generateExplanation(q(2, 'multiply', 3, 4));
     const fin = ex.steps[ex.steps.length - 1];
@@ -71,10 +79,10 @@ describe('explanation animations end in the right picture', () => {
 
   it('every valid question of both grades ends at the correct answer, never negative', () => {
     const all: Question[] = [];
-    for (let a = 0; a <= 20; a++) for (let b = 0; b <= 20; b++) for (const op of ['add', 'subtract'] as Operator[]) if (validateQuestion(1, op, a, b).ok) all.push(q(1, op, a, b));
+    for (let a = 0; a <= 100; a++) for (let b = 0; b <= 100; b++) for (const op of ['add', 'subtract'] as Operator[]) if (validateQuestion(1, op, a, b).ok) all.push(q(1, op, a, b));
     for (let a = 0; a <= 100; a++) for (let b = 0; b <= 100; b++) for (const op of ['add', 'subtract'] as Operator[]) if (validateQuestion(2, op, a, b).ok) all.push(q(2, op, a, b));
     for (let a = 1; a <= 10; a++) for (let b = 1; b <= 10; b++) all.push(q(2, 'multiply', a, b));
-    expect(all.length).toBeGreaterThan(10000);
+    expect(all.length).toBeGreaterThan(20000);
     for (const question of all) {
       const ex = generateExplanation(question);
       const fin = ex.steps[ex.steps.length - 1].scene;
@@ -95,7 +103,7 @@ describe('explanation animations end in the right picture', () => {
         }
       }
     }
-  });
+  }, 60_000);
 
   it('only the last step shows the answer', () => {
     for (const question of [...GRADE1_PRESET, ...GRADE2_PRESET, ...GRADE2_MULTIPLY]) {

@@ -31,7 +31,7 @@ export function GradeHome(p: Props) {
   const preset = p.sessions.preset;
   const mul = p.sessions.multiply;
   const gen = p.sessions.generated;
-  const title = p.grade === 1 ? '20 以內加減法' : '100 以內加減法、基礎乘法';
+  const title = p.grade === 1 ? '100 以內加減法' : '100 以內加減法、基礎乘法';
 
   return (
     <section className="grade-home" aria-labelledby="gh-title">

@@ -1,7 +1,7 @@
 import { answerOf, type Grade, type Operator } from './types';
 
 export const LIMITS = {
-  1: { maxNumber: 20 },
+  1: { maxNumber: 100 },
   2: { maxNumber: 100, maxFactor: 10 },
 } as const;
 

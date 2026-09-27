@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { candidates, generateQuestions, pairKey, type GeneratorOptions } from '../math/generator';
-import { answerOf, crossesTen, needsRegrouping } from '../math/types';
+import { answerOf, isRegrouping } from '../math/types';
 import { validateQuestion } from '../math/validation';
 
 /** Deterministic random so failures are reproducible. */
@@ -20,6 +20,7 @@ describe('question generator', () => {
       base,
       { ...base, operation: 'add', difficulty: 'only' },
       { ...base, operation: 'subtract', difficulty: 'none', maxNumber: 10, count: 10 },
+      { ...base, operation: 'addsub', maxNumber: 100, difficulty: 'only' },
       { grade: 2, operation: 'addsub', maxNumber: 100, count: 20, difficulty: 'only' },
       { grade: 2, operation: 'add', maxNumber: 100, count: 20, difficulty: 'none' },
       { grade: 2, operation: 'multiply', maxNumber: 100, maxFactor: 10, count: 20, difficulty: 'any' },
@@ -38,7 +39,7 @@ describe('question generator', () => {
           expect(answerOf(q)).toBeGreaterThanOrEqual(0);
           if (q.operator !== 'multiply') {
             expect(Math.max(q.left, q.right, answerOf(q))).toBeLessThanOrEqual(opts.maxNumber);
-            const hard = opts.grade === 1 ? crossesTen(q) : needsRegrouping(q);
+            const hard = isRegrouping(q);
             if (opts.difficulty === 'only') expect(hard).toBe(true);
             if (opts.difficulty === 'none') expect(hard).toBe(false);
           } else {
@@ -80,9 +81,9 @@ describe('question generator', () => {
     expect(g1mul.ok).toBe(false);
     if (!g1mul.ok) expect(g1mul.error).toContain('小一暫不提供乘法');
 
-    const tooBig = generateQuestions({ ...base, maxNumber: 50 });
+    const tooBig = generateQuestions({ ...base, maxNumber: 150 });
     expect(tooBig.ok).toBe(false);
-    if (!tooBig.ok) expect(tooBig.error).toContain('最大是 20');
+    if (!tooBig.ok) expect(tooBig.error).toContain('最大是 100');
   });
 
   it('only builds candidates inside the limits', () => {

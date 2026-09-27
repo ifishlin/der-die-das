@@ -161,8 +161,8 @@ function Home({ onGo, onStart }: { onGo: (v: View) => void; onStart: (g: Grade, 
       <div className="grade-cards">
         <article className="grade-card g1">
           <span className="grade-big">小一</span>
-          <h2>小一數學：20 以內加減法</h2>
-          <p>用小圓點和十格框，學會湊十、跨十。</p>
+          <h2>小一數學：100 以內加減法</h2>
+          <p>20 以內用小圓點和十格框學湊十、跨十；更大的數用十位積木。</p>
           <div className="card-actions">
             <button type="button" className="btn primary big" onClick={() => resumeOr(1, 'preset')}>開始 20 題</button>
             <button type="button" className="btn" onClick={() => onGo({ name: 'generate', grade: 1 })}>產生新題</button>

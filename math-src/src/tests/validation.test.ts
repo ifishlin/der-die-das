@@ -10,9 +10,9 @@ describe('custom question validation', () => {
   });
 
   it('rejects them with a clear reason', () => {
-    const r1 = validateQuestion(1, 'add', 19, 8);
+    const r1 = validateQuestion(1, 'add', 60, 50);
     expect(r1.ok).toBe(false);
-    if (!r1.ok) expect(r1.reason).toContain('小一的答案不能超過 20');
+    if (!r1.ok) expect(r1.reason).toContain('小一的答案不能超過 100');
 
     const r2 = validateQuestion(1, 'multiply', 3, 4);
     expect(r2.ok).toBe(false);
@@ -24,7 +24,9 @@ describe('custom question validation', () => {
   });
 
   it('checks ranges and whole numbers', () => {
-    expect(validateQuestion(1, 'add', 21, 0).ok).toBe(false);
+    expect(validateQuestion(1, 'add', 19, 8).ok).toBe(true);
+    expect(validateQuestion(1, 'add', 37, 16).ok).toBe(true);
+    expect(validateQuestion(1, 'add', 101, 0).ok).toBe(false);
     expect(validateQuestion(2, 'add', 60, 50).ok).toBe(false);
     expect(validateQuestion(2, 'multiply', 11, 2).ok).toBe(false);
     expect(validateQuestion(2, 'multiply', 0, 5).ok).toBe(false);

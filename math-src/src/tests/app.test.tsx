@@ -17,7 +17,7 @@ describe('app flow', () => {
 
   it('home → grade 1 → answer → progress kept → grade 2 custom multiplication', () => {
     render(<App />);
-    const g1 = screen.getByText('小一數學：20 以內加減法').closest('article')!;
+    const g1 = screen.getByText('小一數學：100 以內加減法').closest('article')!;
     fireEvent.click(within(g1).getByRole('button', { name: '開始 20 題' }));
     expect(screen.getByText('小一・第 1 / 20 題')).toBeTruthy();
 
@@ -48,15 +48,15 @@ describe('app flow', () => {
     expect(loadSession(2, 'preset')).toBeNull();
   });
 
-  it('grade 1 custom question rejects multiplication-sized answers with a reason', () => {
+  it('grade 1 custom question rejects answers over 100 with a reason', () => {
     render(<App />);
-    const g1 = screen.getByText('小一數學：20 以內加減法').closest('article')!;
+    const g1 = screen.getByText('小一數學：100 以內加減法').closest('article')!;
     fireEvent.click(within(g1).getByRole('button', { name: '自訂一道題' }));
     expect(screen.queryByRole('radio', { name: '乘' })).toBeNull();
-    fireEvent.change(screen.getByLabelText('第一個數字'), { target: { value: '19' } });
-    fireEvent.change(screen.getByLabelText('第二個數字'), { target: { value: '8' } });
+    fireEvent.change(screen.getByLabelText('第一個數字'), { target: { value: '60' } });
+    fireEvent.change(screen.getByLabelText('第二個數字'), { target: { value: '50' } });
     fireEvent.click(screen.getByRole('button', { name: '產生圖解' }));
-    expect(screen.getByRole('alert').textContent).toContain('小一的答案不能超過 20');
+    expect(screen.getByRole('alert').textContent).toContain('小一的答案不能超過 100');
   });
 
   it('generates a new grade 2 set from the form', () => {

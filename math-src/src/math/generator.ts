@@ -1,4 +1,4 @@
-import { crossesTen, needsRegrouping, type Grade, type Operator, type Question } from './types';
+import { isRegrouping, type Grade, type Operator, type Question } from './types';
 import { LIMITS, validateQuestion } from './validation';
 
 export type OperationChoice = 'add' | 'subtract' | 'addsub' | 'multiply' | 'all';
@@ -51,7 +51,7 @@ export function pairKey(p: Pair): string {
 }
 
 function regroups(grade: Grade, p: Pair): boolean {
-  return grade === 1 ? crossesTen(p) : needsRegrouping(p);
+  return isRegrouping({ grade, ...p });
 }
 
 /** Every allowed question for one operator, as one representative per pairKey. */
