@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="der die das">
+<title>過關遊戲 · Der Die Das 小卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#EEF1F4; --paper:#FFFFFF; --ink:#1C2430; --muted:#5B6675; --line:#D5DBE2;
+  --der:#2A66B0; --die:#C9403A; --das:#2F8A4C;
+  --star:#F2B01E; --star-off:#D5DBE2;
+  --good:#2F8A4C; --good-soft:#E2F3E7; --warn:#A8660B; --warn-soft:#FBF0DC; --bad:#C9403A; --bad-soft:#FBE7E5;
+  --shadow:0 1px 2px rgba(28,36,48,.08),0 4px 14px rgba(28,36,48,.06);
+  --display:"Baloo 2","Nunito",ui-rounded,"PingFang TC","Noto Sans TC",system-ui,sans-serif;
+  --body:"Nunito","PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+    --der:#6FA6EC; --die:#F07D75; --das:#6CC58A; --star-off:#2E3847;
+    --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+  --der:#6FA6EC; --die:#F07D75; --das:#6CC58A; --star-off:#2E3847;
+  --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;-webkit-text-size-adjust:100%;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:680px;margin:0 auto;padding-inline:20px;padding-block:28px 64px;display:flex;flex-direction:column;gap:20px}
+
+.tabs{display:flex;flex-wrap:wrap;gap:4px;border-bottom:2px solid var(--line)}
+.tabs a{font:700 16px/1 var(--body);color:var(--muted);text-decoration:none;padding:12px 16px;border-radius:10px 10px 0 0;margin-bottom:-2px;border:2px solid transparent}
+.tabs a[aria-current="page"]{color:var(--ink);background:var(--paper);border-color:var(--line);border-bottom-color:var(--paper)}
+.tabs a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+header{display:flex;flex-direction:column;gap:6px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);line-height:1;margin:0}
+.lede{margin:0;color:var(--muted);max-width:60ch}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:700 15px/1 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:9px 14px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn{font:700 17px/1.2 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:14px 18px;border-radius:14px;cursor:pointer}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn.big{font-size:1.25rem;padding:18px 26px}
+.btn.soft{font-size:15px;padding:10px 14px;color:var(--muted)}
+.chip:focus-visible,.btn:focus-visible,.mic:focus-visible{outline:3px solid var(--star);outline-offset:2px}
+
+.panel{background:var(--paper);border-radius:20px;box-shadow:var(--shadow);padding:22px;display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center}
+.panel h2{margin:0;font-family:var(--display);font-size:1.8rem;line-height:1.1}
+.panel p{margin:0;color:var(--muted)}
+
+.stars{display:flex;gap:8px;justify-content:center}
+.star{width:48px;height:48px}
+.star path{fill:var(--star-off);transition:fill .3s}
+.star.on path{fill:var(--star)}
+.star.pop{animation:pop .6s ease}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.45) rotate(-12deg)}100%{transform:scale(1)}}
+.tally{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+
+.pic{width:100%;aspect-ratio:4/3;background:#fff;border-radius:16px;overflow:hidden;display:flex;align-items:center;justify-content:center;border:4px solid var(--line);transition:border-color .2s}
+.pic img{width:100%;height:100%;object-fit:contain;display:block}
+.pic.der{border-color:var(--der)} .pic.die{border-color:var(--die)} .pic.das{border-color:var(--das)}
+.answer{font-family:var(--display);font-weight:800;font-size:2.2rem;line-height:1.1}
+.answer .art{margin-right:.25em}
+.answer.der .art{color:var(--der)} .answer.die .art{color:var(--die)} .answer.das .art{color:var(--das)}
+
+.mic{appearance:none;border:0;cursor:pointer;width:104px;height:104px;border-radius:50%;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+.mic svg{width:44px;height:44px}
+.mic.listening{background:var(--bad);color:#fff;animation:pulse 1.2s ease-in-out infinite}
+.mic:disabled{opacity:.35;cursor:default;animation:none}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,64,58,.45)}50%{box-shadow:0 0 0 18px rgba(201,64,58,0)}}
+.status{color:var(--muted);font-weight:700;min-height:1.5em}
+
+.result{width:100%;border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.result.good{background:var(--good-soft);color:var(--good)}
+.result.warn{background:var(--warn-soft);color:var(--warn)}
+.result.bad{background:var(--bad-soft);color:var(--bad)}
+.result .big{font-family:var(--display);font-weight:800;font-size:1.5rem;line-height:1.2}
+.result .heard{color:var(--ink);opacity:.75}
+.row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.fallback{display:flex;gap:10px;justify-content:center}
+.fallback .btn{min-width:84px;font-family:var(--display);font-size:1.5rem}
+.fallback .der{color:var(--der)} .fallback .die{color:var(--die)} .fallback .das{color:var(--das)}
+
+.win-stars{display:flex;gap:6px;justify-content:center}
+.win-stars .star{width:56px;height:56px;animation:bounce 1s ease-in-out infinite}
+.win-stars .star:nth-child(2){animation-delay:.1s} .win-stars .star:nth-child(3){animation-delay:.2s}
+.win-stars .star:nth-child(4){animation-delay:.3s} .win-stars .star:nth-child(5){animation-delay:.4s}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.note{color:var(--muted);font-size:.9rem;margin:0}
+@media (prefers-reduced-motion: reduce){.star.pop,.win-stars .star,.mic.listening{animation:none}}
+</style>
+
+<div class="wrap">
+  <nav class="tabs" aria-label="頁籤">
+    <a href="./">卡片</a>
+    <a href="speak.html">說說看</a>
+    <a href="game.html" aria-current="page">遊戲</a>
+    <a href="math/">數學練習</a>
+  </nav>
+
+  <header>
+    <h1>過關遊戲</h1>
+    <p class="lede">看圖，說出冠詞和單字，例如「die Lupe」。答對 5 題就過關；答錯的圖等一下會再出現。</p>
+  </header>
+
+  <!-- start -->
+  <section class="panel" id="start" aria-labelledby="start-title">
+    <h2 id="start-title">準備好了嗎？</h2>
+    <p>要答對 5 題才會結束喔！</p>
+    <div class="chips" role="group" aria-label="選擇類別">
+      <button class="chip" data-c="all" aria-pressed="true">全部</button>
+      <button class="chip" data-c="school" aria-pressed="false">文具</button>
+      <button class="chip" data-c="wear" aria-pressed="false">衣物用品</button>
+      <button class="chip" data-c="animal" aria-pressed="false">動物</button>
+      <button class="chip" data-c="other" aria-pressed="false">其他</button>
+    </div>
+    <button class="btn primary big" id="go">開始遊戲</button>
+  </section>
+
+  <!-- play -->
+  <section class="panel" id="play" hidden aria-label="遊戲中">
+    <div class="stars" id="stars" aria-hidden="true"></div>
+    <div class="tally" aria-live="polite">答對 <b id="got">0</b> / 5　·　已經玩了 <b id="tries">0</b> 張</div>
+    <div class="pic" id="pic"><img id="img" alt="要說出名字的圖片"></div>
+    <div class="answer" id="answer" hidden></div>
+
+    <button class="mic" id="mic" aria-label="按一下開始說">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg>
+    </button>
+    <div class="status" id="status" aria-live="polite">按麥克風，說出這是什麼</div>
+    <div class="fallback" id="fallback" hidden role="group" aria-label="選冠詞">
+      <button class="btn der" data-a="der">der</button>
+      <button class="btn die" data-a="die">die</button>
+      <button class="btn das" data-a="das">das</button>
+    </div>
+
+    <div class="result" id="result" hidden aria-live="polite">
+      <div class="big" id="resultBig"></div>
+      <div id="resultDetail"></div>
+      <div class="heard" id="heard"></div>
+    </div>
+    <div class="row" id="missActions" hidden>
+      <button class="btn primary" id="again">再說一次</button>
+      <button class="btn" id="show">看答案</button>
+      <button class="btn soft" id="override">他說對了（辨識錯誤）</button>
+    </div>
+    <div class="row" id="nextActions" hidden>
+      <button class="btn primary" id="next">下一張</button>
+    </div>
+    <button class="btn soft" id="skip">跳過這張</button>
+  </section>
+
+  <!-- win -->
+  <section class="panel" id="win" hidden aria-labelledby="win-title">
+    <div class="win-stars" id="winStars" aria-hidden="true"></div>
+    <h2 id="win-title">過關了！好厲害！</h2>
+    <p id="winText"></p>
+    <button class="btn primary big" id="again2">再玩一次</button>
+  </section>
+
+  <p class="note">語音辨識用的是 iPad／瀏覽器內建的功能，小朋友的聲音有時候會被聽錯。明明說對卻被判錯時，家長可以按「他說對了」。</p>
+</div>
+
+<script src="cards.js"></script>
+<script src="speech.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const GOAL = 5;
+const STAR = '<svg class="star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg>';
+const PRAISE = ['答對了！', '太棒了！', '好厲害！', '完全正確！', 'Super!', 'Toll!'];
+
+let cat = 'all', deck = [], card = null, got = 0, tries = 0, counted = false;
+
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function pool() { return CARDS.filter(c => cat === 'all' || c.cat === cat); }
+/** A missed card comes back after 2–3 other pictures. */
+function requeue(c) { deck.splice(Math.max(0, deck.length - 3), 0, c); }
+
+function renderStars(pop) {
+  $('stars').innerHTML = Array.from({length: GOAL}, (_, i) => STAR.replace('class="star"', `class="star${i < got ? ' on' : ''}${pop && i === got - 1 ? ' pop' : ''}"`)).join('');
+  $('got').textContent = got; $('tries').textContent = tries;
+}
+
+function show(id) { ['start', 'play', 'win'].forEach(s => $(s).hidden = s !== id); }
+
+function start() {
+  got = 0; tries = 0; card = null; deck = shuffle(pool());
+  renderStars(false); show('play'); nextCard();
+}
+
+function nextCard() {
+  if (got >= GOAL) return win();
+  if (!deck.length) deck = shuffle(pool());
+  let n = deck.pop();
+  if (card && n.id === card.id && deck.length) { deck.unshift(n); n = deck.pop(); }
+  card = n; counted = false; tries++;
+  $('img').src = `img/${card.id}.jpg`;
+  $('pic').className = 'pic';
+  $('answer').hidden = true;
+  $('result').hidden = true; $('missActions').hidden = true; $('nextActions').hidden = true;
+  $('skip').hidden = false;
+  $('status').textContent = SR ? '按麥克風，說出這是什麼' : '選一個冠詞：der、die 還是 das？';
+  renderStars(false);
+}
+
+function reveal() {
+  $('answer').hidden = false;
+  $('answer').className = 'answer ' + card.art;
+  $('answer').innerHTML = `<span class="art">${card.art}</span>${card.noun}`;
+  $('pic').className = 'pic ' + card.art;
+}
+
+let player = null;
+function playModel(onEnd) {
+  if (player) player.pause();
+  player = new Audio(`audio/${card.id}.mp3`);
+  if (onEnd) player.addEventListener('ended', onEnd, {once: true});
+  player.play().catch(() => {
+    if ('speechSynthesis' in window) {
+      const u = new SpeechSynthesisUtterance(`${card.art} ${card.noun}`); u.lang = 'de-DE'; u.rate = .85;
+      if (onEnd) u.onend = onEnd;
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    } else if (onEnd) setTimeout(onEnd, 800);
+  });
+}
+
+function success(text) {
+  if (!counted) { got++; counted = true; }
+  $('result').hidden = false; $('result').className = 'result good';
+  $('resultBig').textContent = PRAISE[Math.floor(Math.random() * PRAISE.length)];
+  $('resultDetail').textContent = text || `就是「${card.art} ${card.noun}」。`;
+  $('missActions').hidden = true; $('skip').hidden = true;
+  reveal(); renderStars(true);
+  const done = got >= GOAL;
+  $('nextActions').hidden = done;
+  playModel(() => { if (done) setTimeout(win, 500); });
+  // Backup in case the audio never reports "ended" (blocked or failed playback).
+  if (done) setTimeout(() => { if ($('win').hidden) win(); }, 4000);
+}
+
+function miss(r) {
+  $('result').hidden = false;
+  let cls, big, detail;
+  if (r.nounOk) { cls = 'warn'; big = '單字對了，冠詞再想想！'; detail = r.said ? `你說的是 ${r.said}。` : '沒有聽到冠詞，要說 der、die 或 das 喔。'; }
+  else if (r.articleOk) { cls = 'warn'; big = '冠詞對了！'; detail = '單字再說一次看看。'; }
+  else { cls = 'bad'; big = '再試一次！'; detail = ''; }
+  $('result').className = 'result ' + cls;
+  $('resultBig').textContent = big; $('resultDetail').textContent = detail;
+  $('heard').textContent = r.transcript ? `我聽到：「${r.transcript}」` : '';
+  $('missActions').hidden = false; $('nextActions').hidden = true;
+  $('status').textContent = '可以再說一次，或看答案';
+}
+
+function giveAnswer() {
+  requeue(card);
+  $('result').hidden = false; $('result').className = 'result bad';
+  $('resultBig').textContent = '答案是：'; $('resultDetail').textContent = `${card.art} ${card.noun}，這張等一下會再出現。`; $('heard').textContent = '';
+  $('missActions').hidden = true; $('nextActions').hidden = false; $('skip').hidden = true;
+  reveal(); playModel();
+}
+
+function win() {
+  if (player) player.pause();
+  $('winStars').innerHTML = STAR.replace('class="star"', 'class="star on"').repeat(GOAL);
+  $('winText').textContent = `答對 ${GOAL} 題，一共玩了 ${tries} 張圖。`;
+  show('win');
+}
+
+// ---------- speech recognition ----------
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null, listening = false;
+if (!SR) {
+  // No speech recognition in this browser: let the child pick the article instead.
+  $('mic').hidden = true; $('fallback').hidden = false;
+}
+function listen() {
+  if (!SR || listening) return;
+  if (player) player.pause();
+  rec = new SR();
+  rec.lang = 'de-DE'; rec.interimResults = false; rec.maxAlternatives = 5; rec.continuous = false;
+  let heard = false;
+  rec.onresult = e => {
+    heard = true;
+    const alts = [...e.results[0]].map(a => a.transcript).filter(Boolean);
+    if (!alts.length) return;
+    const r = SpeechMatch.best(alts, card);
+    if (r.articleOk && r.nounOk) success(`我聽到「${r.transcript}」，就是「${card.art} ${card.noun}」。`);
+    else miss(r);
+  };
+  rec.onerror = e => {
+    heard = true;
+    $('status').textContent = {
+      'not-allowed': '沒有麥克風權限。請到設定允許 Safari 使用麥克風，再重新整理頁面。',
+      'service-not-allowed': '沒有語音辨識權限。請到「設定 → Safari」允許語音辨識。',
+      'no-speech': '沒有聽到聲音，靠近一點再說一次。',
+      'network': '語音辨識需要網路，請檢查連線。',
+      'audio-capture': '找不到麥克風。',
+    }[e.error] || `語音辨識出了問題（${e.error}），再試一次。`;
+  };
+  rec.onend = () => {
+    listening = false;
+    $('mic').classList.remove('listening'); $('mic').setAttribute('aria-label', '按一下開始說');
+    if (!heard) $('status').textContent = '沒有聽清楚，再按一次麥克風試試。';
+    else if ($('status').textContent === '在聽…說完會自動停止') $('status').textContent = '';
+  };
+  try {
+    rec.start(); listening = true;
+    $('mic').classList.add('listening'); $('mic').setAttribute('aria-label', '在聽，按一下停止');
+    $('status').textContent = '在聽…說完會自動停止';
+    $('result').hidden = true; $('missActions').hidden = true;
+  } catch { $('status').textContent = '麥克風啟動失敗，再按一次試試。'; }
+}
+
+// ---------- controls ----------
+$('mic').addEventListener('click', () => listening ? rec.stop() : listen());
+$('again').addEventListener('click', listen);
+$('show').addEventListener('click', giveAnswer);
+$('override').addEventListener('click', () => success('家長確認說對了！'));
+$('next').addEventListener('click', nextCard);
+$('skip').addEventListener('click', () => { if (listening) rec.stop(); requeue(card); nextCard(); });
+$('go').addEventListener('click', start);
+$('again2').addEventListener('click', () => show('start'));
+document.querySelectorAll('.fallback .btn').forEach(b => b.addEventListener('click', () => {
+  if (b.dataset.a === card.art) success();
+  else { miss({said: b.dataset.a, articleOk: false, nounOk: true, transcript: ''}); $('again').hidden = true; $('override').hidden = true; }
+}));
+document.querySelectorAll('.chip').forEach(ch => ch.addEventListener('click', () => {
+  cat = ch.dataset.c;
+  document.querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', String(x === ch)));
+}));
+renderStars(false);
+</script>

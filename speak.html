@@ -101,6 +101,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   <nav class="tabs" aria-label="頁籤">
     <a href="./">卡片</a>
     <a href="speak.html" aria-current="page">說說看</a>
+    <a href="game.html">遊戲</a>
     <a href="math/">數學練習</a>
   </nav>
 
@@ -115,6 +116,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
       <button class="chip" id="c-school" data-c="school" aria-pressed="false">文具</button>
       <button class="chip" id="c-wear" data-c="wear" aria-pressed="false">衣物用品</button>
       <button class="chip" id="c-animal" data-c="animal" aria-pressed="false">動物</button>
+      <button class="chip" id="c-other" data-c="other" aria-pressed="false">其他</button>
     </div>
     <div class="score" aria-live="polite">答對 <b id="right">0</b> / <b id="total">0</b></div>
   </div>
@@ -156,11 +158,9 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 </div>
 
 <script src="cards.js"></script>
+<script src="speech.js"></script>
 <script>
 const $ = id => document.getElementById(id);
-const ARTICLES = ['der', 'die', 'das'];
-// words the recognizer often returns instead of the article
-const ARTICLE_ALIASES = {der: 'der', die: 'die', das: 'das', dass: 'das', di: 'die', dir: 'der'};
 
 let cat = 'all', deck = [], card = null, tried = false;
 let right = 0, total = 0;
@@ -201,35 +201,8 @@ function playModel() {
   });
 }
 
-// ---------- matching ----------
-function norm(s) {
-  return s.toLowerCase().normalize('NFC').replace(/ß/g, 'ss').replace(/[^a-zäöü\s]/g, ' ').replace(/\s+/g, ' ').trim();
-}
-const fold = s => s.replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u');
-function similarity(a, b) {
-  a = fold(a); b = fold(b);
-  if (!a || !b) return 0;
-  if (a === b) return 1;
-  const d = Array.from({length: a.length + 1}, (_, i) => [i, ...Array(b.length).fill(0)]);
-  for (let j = 1; j <= b.length; j++) d[0][j] = j;
-  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
-    d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
-  return 1 - d[a.length][b.length] / Math.max(a.length, b.length);
-}
-function judge(transcript) {
-  const tokens = norm(transcript).split(' ').filter(Boolean);
-  const idx = tokens.findIndex(t => ARTICLE_ALIASES[t]);
-  const said = idx >= 0 ? ARTICLE_ALIASES[tokens[idx]] : null;
-  const rest = (idx >= 0 ? tokens.slice(idx + 1) : tokens).join('');
-  const target = norm(card.noun).replace(/\s/g, '');
-  let score = similarity(rest, target);
-  if (rest.includes(fold(target)) || fold(rest).includes(fold(target))) score = Math.max(score, .95);
-  return {said, articleOk: said === card.art, nounOk: score >= .72, score, transcript};
-}
-function best(alternatives) {
-  return alternatives.map(judge).sort((a, b) =>
-    (b.articleOk + b.nounOk * 1.5 + b.score) - (a.articleOk + a.nounOk * 1.5 + a.score))[0];
-}
+// ---------- matching (speech.js) ----------
+const best = alternatives => SpeechMatch.best(alternatives, card);
 
 function showResult(r) {
   const box = $('result');

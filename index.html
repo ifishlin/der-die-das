@@ -107,6 +107,7 @@ footer ul{margin:8px 0 0;padding-left:1.2em;columns:2 16em;column-gap:24px}
   <nav class="tabs" aria-label="頁籤">
     <a href="./" aria-current="page">卡片</a>
     <a href="speak.html">說說看</a>
+    <a href="game.html">遊戲</a>
     <a href="math/">數學練習</a>
   </nav>
   <header>
@@ -126,6 +127,7 @@ footer ul{margin:8px 0 0;padding-left:1.2em;columns:2 16em;column-gap:24px}
       <button class="chip cat" id="c-school" data-c="school" aria-pressed="false">文具<span class="n"></span></button>
       <button class="chip cat" id="c-wear" data-c="wear" aria-pressed="false">衣物用品<span class="n"></span></button>
       <button class="chip cat" id="c-animal" data-c="animal" aria-pressed="false">動物<span class="n"></span></button>
+      <button class="chip cat" id="c-other" data-c="other" aria-pressed="false">其他<span class="n"></span></button>
     </div>
     <label class="toggle"><input type="checkbox" id="quiz"> 練習模式（隱藏冠詞）</label>
   </div>
@@ -168,7 +170,7 @@ for (const art of ['der','die','das']) {
 // counts on filter chips
 document.querySelector('#f-all .n').textContent = CARDS.length;
 for (const a of ['der','die','das']) document.querySelector(`#f-${a} .n`).textContent = CARDS.filter(c => c.art === a).length;
-for (const k of ['school','wear','animal']) document.querySelector(`#c-${k} .n`).textContent = CARDS.filter(c => c.cat === k).length;
+for (const k of ['school','wear','animal','other']) document.querySelector(`#c-${k} .n`).textContent = CARDS.filter(c => c.cat === k).length;
 
 // photo credits
 const credits = document.querySelector('#credits ul');
