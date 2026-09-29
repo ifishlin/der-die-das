@@ -330,7 +330,8 @@ $('again').addEventListener('click', listen);
 $('show').addEventListener('click', giveAnswer);
 $('override').addEventListener('click', () => success('家長確認說對了！'));
 $('next').addEventListener('click', nextCard);
-$('skip').addEventListener('click', () => { if (listening) rec.stop(); requeue(card); nextCard(); });
+// Skipping means the child doesn't know it: show and say the answer first, then let them move on.
+$('skip').addEventListener('click', () => { if (listening) rec.stop(); giveAnswer(); });
 $('go').addEventListener('click', start);
 $('again2').addEventListener('click', () => show('start'));
 document.querySelectorAll('.fallback .btn').forEach(b => b.addEventListener('click', () => {
