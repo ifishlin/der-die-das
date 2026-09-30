@@ -121,6 +121,8 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
     <div class="score" aria-live="polite">答對 <b id="right">0</b> / <b id="total">0</b></div>
   </div>
 
+  <div class="chips" id="dates" role="group" aria-label="篩選日期"></div>
+
   <p class="unsupported" id="unsupported" hidden>這個瀏覽器沒有語音辨識功能，所以沒辦法自動判斷對錯。請用 iPad、iPhone 的 Safari，或電腦上的 Chrome。錄音比較的功能還是可以用。</p>
 
   <section class="stage" id="stage" aria-label="目前的卡片">
@@ -158,18 +160,21 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 </div>
 
 <script src="cards.js"></script>
+<script src="datefilter.js"></script>
 <script src="speech.js"></script>
 <script>
 const $ = id => document.getElementById(id);
 
-let cat = 'all', deck = [], card = null, tried = false;
+let cat = 'all', day = 'all', deck = [], card = null, tried = false;
 let right = 0, total = 0;
 
 // ---------- deck ----------
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
-function refill() { deck = shuffle(CARDS.filter(c => cat === 'all' || c.cat === cat)); }
+function refill() { deck = shuffle(CARDS.filter(c => (cat === 'all' || c.cat === cat) && (day === 'all' || c.date === day))); }
 function next() {
   if (!deck.length) refill();
+  $('mic').disabled = !deck.length || !SR;
+  if (!deck.length) { $('status').textContent = '這個日期沒有這個類別的卡片，換一個篩選看看。'; return; }
   let n = deck.pop();
   if (card && n.id === card.id && deck.length) { deck.unshift(n); n = deck.pop(); }
   card = n; tried = false;
@@ -319,11 +324,12 @@ $('playMine').addEventListener('click', () => {
 // ---------- other controls ----------
 $('listen').addEventListener('click', () => { playModel(); });
 $('next').addEventListener('click', () => { $('rec').textContent = '錄下我的聲音'; next(); });
-document.querySelectorAll('.chip').forEach(ch => ch.addEventListener('click', () => {
+document.querySelectorAll('.chip[data-c]').forEach(ch => ch.addEventListener('click', () => {
   cat = ch.dataset.c;
-  document.querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', String(x === ch)));
+  document.querySelectorAll('.chip[data-c]').forEach(x => x.setAttribute('aria-pressed', String(x === ch)));
   refill(); next();
 }));
+DateFilter.mount($('dates'), d => { day = d; refill(); next(); });
 
 refill(); next();
 </script>

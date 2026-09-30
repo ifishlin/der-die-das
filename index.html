@@ -45,7 +45,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2.4rem,7vw,3.6rem)
 h1 .der{color:var(--der)} h1 .die{color:var(--die)} h1 .das{color:var(--das)}
 .lede{margin:0;color:var(--muted);max-width:60ch}
 
-.controls{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line)}
+.controls{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font:700 15px/1 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:9px 14px;border-radius:999px;cursor:pointer}
 .chip:disabled{opacity:.4;cursor:default}
@@ -93,11 +93,13 @@ footer a{color:inherit}
 footer summary{cursor:pointer;font-weight:700}
 footer ul{margin:8px 0 0;padding-left:1.2em;columns:2 16em;column-gap:24px}
 [hidden]{display:none!important}
+@media (min-width:700px){.controls{position:sticky;top:env(safe-area-inset-top,0px)}}
+.empty{color:var(--muted);font-weight:700;margin:0}
 .tabs{display:flex;gap:4px;border-bottom:2px solid var(--line)}
 .tabs a{font:700 16px/1 var(--body);color:var(--muted);text-decoration:none;padding:12px 18px;border-radius:10px 10px 0 0;margin-bottom:-2px;border:2px solid transparent}
 .tabs a[aria-current="page"]{color:var(--ink);background:var(--paper);border-color:var(--line);border-bottom-color:var(--paper)}
 .tabs a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
-.chip.cat[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.chip.cat[aria-pressed="true"],.chip.date[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
 
 @media (prefers-reduced-motion: reduce){.card{transition:none}.card:hover{transform:none}}
 @media (max-width:440px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}.word{font-size:1.05rem}}
@@ -129,9 +131,11 @@ footer ul{margin:8px 0 0;padding-left:1.2em;columns:2 16em;column-gap:24px}
       <button class="chip cat" id="c-animal" data-c="animal" aria-pressed="false">動物<span class="n"></span></button>
       <button class="chip cat" id="c-other" data-c="other" aria-pressed="false">其他<span class="n"></span></button>
     </div>
+    <div class="chips" id="dates" role="group" aria-label="篩選日期"></div>
     <label class="toggle"><input type="checkbox" id="quiz"> 練習模式（隱藏冠詞）</label>
   </div>
 
+  <p class="empty" id="empty" hidden>這個日期沒有這個類別的卡片，換一個篩選看看。</p>
   <main id="main"></main>
 
   <footer>
@@ -143,6 +147,7 @@ footer ul{margin:8px 0 0;padding-left:1.2em;columns:2 16em;column-gap:24px}
 </div>
 
 <script src="cards.js"></script>
+<script src="datefilter.js"></script>
 <script>
 const HINT = {der:'陽性', die:'陰性', das:'中性'};
 const main = document.getElementById('main');
@@ -155,7 +160,7 @@ for (const art of ['der','die','das']) {
   const grid = sec.querySelector('.grid');
   for (const c of list) {
     const b = document.createElement('button');
-    b.className = 'card ' + art; b.id = 'card-' + c.id; b.dataset.id = c.id; b.dataset.cat = c.cat;
+    b.className = 'card ' + art; b.id = 'card-' + c.id; b.dataset.id = c.id; b.dataset.cat = c.cat; b.dataset.date = c.date;
     b.setAttribute('aria-label', `${c.art} ${c.noun}，${c.zh}，點一下聽發音`);
     const tag = c.note === 'moved' ? `<span class="tag">原本在 ${c.from || 'das'} 堆</span>`
               : c.note === 'guess' ? '<span class="tag guess">名稱待確認</span>' : '';
@@ -198,7 +203,7 @@ function play(btn, c) {
 }
 
 // filters and practice mode share one state; render() applies it
-const state = {art: 'all', cat: 'all'};
+const state = {art: 'all', cat: 'all', date: 'all'};
 const artChips = [...document.querySelectorAll('.chip[data-f]')];
 const catChips = [...document.querySelectorAll('.chip[data-c]')];
 const quiz = document.getElementById('quiz');
@@ -215,7 +220,7 @@ function render(reshuffle) {
   document.body.classList.toggle('quiz', on);
   artChips.forEach(ch => { ch.disabled = on; ch.setAttribute('aria-pressed', String(ch.dataset.f === state.art)); });
   catChips.forEach(ch => ch.setAttribute('aria-pressed', String(ch.dataset.c === state.cat)));
-  allCards.forEach(b => b.hidden = state.cat !== 'all' && b.dataset.cat !== state.cat);
+  allCards.forEach(b => b.hidden = (state.cat !== 'all' && b.dataset.cat !== state.cat) || (state.date !== 'all' && b.dataset.date !== state.date));
   if (on && reshuffle) {
     allCards.forEach(b => b.classList.remove('revealed'));
     allCards.slice().sort(() => Math.random() - .5).forEach(b => mix.querySelector('.grid').appendChild(b));
@@ -227,8 +232,10 @@ function render(reshuffle) {
     s.querySelector('.cnt').textContent = shown;
     s.hidden = on || shown === 0 || (state.art !== 'all' && s.dataset.art !== state.art);
   });
+  document.getElementById('empty').hidden = allCards.some(b => !b.hidden);
 }
 artChips.forEach(ch => ch.addEventListener('click', () => { state.art = ch.dataset.f; render(false); }));
 catChips.forEach(ch => ch.addEventListener('click', () => { state.cat = ch.dataset.c; render(true); }));
+DateFilter.mount(document.getElementById('dates'), d => { state.date = d; render(true); }, {counts: true});
 quiz.addEventListener('change', () => { allCards.forEach(b => b.classList.remove('revealed')); render(true); });
 </script>
