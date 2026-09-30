@@ -4,7 +4,8 @@ const DateFilter = (() => {
   const WEEKDAY = '日一二三四五六';
 
   function dates() {
-    return [...new Set(CARDS.map(c => c.date))].sort();
+    // Skip cards without a date (e.g. an old cached cards.js) instead of failing.
+    return [...new Set(CARDS.map(c => c.date).filter(Boolean))].sort();
   }
 
   /** "2026-09-30" → "9/30（三）" */
@@ -16,6 +17,7 @@ const DateFilter = (() => {
   /** Adds 所有日期 + one chip per date to `el`; calls onChange('all' | 'YYYY-MM-DD'). */
   function mount(el, onChange, {counts = false} = {}) {
     const all = dates();
+    if (!all.length) { el.hidden = true; return; }
     const newest = all[all.length - 1];
     const chip = (d, html) => {
       const b = document.createElement('button');
