@@ -8,6 +8,11 @@ const DateFilter = (() => {
     return [...new Set(CARDS.map(c => c.date).filter(Boolean))].sort();
   }
 
+  /** Local date as YYYY-MM-DD (the device's day, not UTC). */
+  function iso(t) {
+    return `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, '0')}-${String(t.getDate()).padStart(2, '0')}`;
+  }
+
   /** "2026-09-30" → "9/30（三）" */
   function label(d) {
     const [y, m, day] = d.split('-').map(Number);
@@ -29,9 +34,12 @@ const DateFilter = (() => {
       return b;
     };
     el.append(chip('all', '所有日期'));
+    const today = iso(new Date());
+    const tomorrow = iso(new Date(Date.now() + 864e5));
     for (const d of all) {
       const n = counts ? `<span class="n">${CARDS.filter(c => c.date === d).length}</span>` : '';
-      el.append(chip(d, `${label(d)}${d === newest ? ' 新' : ''}${n}`));
+      const tag = d === today ? ' 今天' : d === tomorrow ? ' 明天' : d === newest && newest < today ? ' 新' : '';
+      el.append(chip(d, `${label(d)}${tag}${n}`));
     }
     el.addEventListener('click', e => {
       const b = e.target.closest('.chip.date');
