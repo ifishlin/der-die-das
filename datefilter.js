@@ -1,11 +1,21 @@
 // Date filter chips shared by the card, speaking and game pages.
-// Each card's `date` is the day its source photo came in (see cards.js).
+// Each card's `dates` lists the days its picture appeared in the material (see cards.js);
+// a word that came up on several days is one card with several dates.
 const DateFilter = (() => {
   const WEEKDAY = '日一二三四五六';
 
+  /** Dates of one card; also accepts the older single `date` field (e.g. an old cached cards.js). */
+  function of(card) {
+    return card.dates || (card.date ? [card.date] : []);
+  }
+
+  /** Whether a card belongs to a filter value ('all' or 'YYYY-MM-DD'). */
+  function has(card, d) {
+    return d === 'all' || of(card).includes(d);
+  }
+
   function dates() {
-    // Skip cards without a date (e.g. an old cached cards.js) instead of failing.
-    return [...new Set(CARDS.map(c => c.date).filter(Boolean))].sort();
+    return [...new Set(CARDS.flatMap(of))].sort();
   }
 
   /** Local date as YYYY-MM-DD (the device's day, not UTC). */
@@ -37,7 +47,7 @@ const DateFilter = (() => {
     const today = iso(new Date());
     const tomorrow = iso(new Date(Date.now() + 864e5));
     for (const d of all) {
-      const n = counts ? `<span class="n">${CARDS.filter(c => c.date === d).length}</span>` : '';
+      const n = counts ? `<span class="n">${CARDS.filter(c => has(c, d)).length}</span>` : '';
       const tag = d === today ? ' 今天' : d === tomorrow ? ' 明天' : d === newest && newest < today ? ' 新' : '';
       el.append(chip(d, `${label(d)}${tag}${n}`));
     }
@@ -49,5 +59,5 @@ const DateFilter = (() => {
     });
   }
 
-  return {dates, label, mount};
+  return {dates, label, mount, has, of};
 })();

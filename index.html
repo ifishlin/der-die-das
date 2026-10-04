@@ -146,8 +146,8 @@ footer ul{margin:8px 0 0;padding-left:1.2em;columns:2 16em;column-gap:24px}
   </footer>
 </div>
 
-<script src="cards.js?v=20261001"></script>
-<script src="datefilter.js?v=20261001"></script>
+<script src="cards.js?v=20261004"></script>
+<script src="datefilter.js?v=20261004"></script>
 <script>
 const HINT = {der:'陽性', die:'陰性', das:'中性'};
 const main = document.getElementById('main');
@@ -160,7 +160,7 @@ for (const art of ['der','die','das']) {
   const grid = sec.querySelector('.grid');
   for (const c of list) {
     const b = document.createElement('button');
-    b.className = 'card ' + art; b.id = 'card-' + c.id; b.dataset.id = c.id; b.dataset.cat = c.cat; b.dataset.date = c.date;
+    b.className = 'card ' + art; b.id = 'card-' + c.id; b.dataset.id = c.id; b.dataset.cat = c.cat; b.dataset.dates = DateFilter.of(c).join(' ');
     b.setAttribute('aria-label', `${c.art} ${c.noun}，${c.zh}，點一下聽發音`);
     const tag = c.note === 'moved' ? `<span class="tag">原本在 ${c.from || 'das'} 堆</span>`
               : c.note === 'guess' ? '<span class="tag guess">名稱待確認</span>' : '';
@@ -220,7 +220,7 @@ function render(reshuffle) {
   document.body.classList.toggle('quiz', on);
   artChips.forEach(ch => { ch.disabled = on; ch.setAttribute('aria-pressed', String(ch.dataset.f === state.art)); });
   catChips.forEach(ch => ch.setAttribute('aria-pressed', String(ch.dataset.c === state.cat)));
-  allCards.forEach(b => b.hidden = (state.cat !== 'all' && b.dataset.cat !== state.cat) || (state.date !== 'all' && b.dataset.date !== state.date));
+  allCards.forEach(b => b.hidden = (state.cat !== 'all' && b.dataset.cat !== state.cat) || (state.date !== 'all' && !b.dataset.dates.split(' ').includes(state.date)));
   if (on && reshuffle) {
     allCards.forEach(b => b.classList.remove('revealed'));
     allCards.slice().sort(() => Math.random() - .5).forEach(b => mix.querySelector('.grid').appendChild(b));

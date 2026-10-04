@@ -177,9 +177,9 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   <p class="note">語音辨識用的是 iPad／瀏覽器內建的功能，小朋友的聲音有時候會被聽錯。明明說對卻被判錯時，家長可以按「他說對了」。</p>
 </div>
 
-<script src="cards.js?v=20261001"></script>
-<script src="datefilter.js?v=20261001"></script>
-<script src="speech.js?v=20261001"></script>
+<script src="cards.js?v=20261004"></script>
+<script src="datefilter.js?v=20261004"></script>
+<script src="speech.js?v=20261004"></script>
 <script>
 const $ = id => document.getElementById(id);
 const GOAL = 6;
@@ -189,7 +189,7 @@ const PRAISE = ['答對了！', '太棒了！', '好厲害！', '完全正確！
 let cat = 'all', day = 'all', deck = [], card = null, got = 0, tries = 0, counted = false;
 
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
-function pool() { return CARDS.filter(c => (cat === 'all' || c.cat === cat) && (day === 'all' || c.date === day)); }
+function pool() { return CARDS.filter(c => (cat === 'all' || c.cat === cat) && DateFilter.has(c, day)); }
 /** A missed card comes back after 2–3 other pictures. */
 function requeue(c) { deck.splice(Math.max(0, deck.length - 3), 0, c); }
 

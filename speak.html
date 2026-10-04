@@ -159,9 +159,9 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   </div>
 </div>
 
-<script src="cards.js?v=20261001"></script>
-<script src="datefilter.js?v=20261001"></script>
-<script src="speech.js?v=20261001"></script>
+<script src="cards.js?v=20261004"></script>
+<script src="datefilter.js?v=20261004"></script>
+<script src="speech.js?v=20261004"></script>
 <script>
 const $ = id => document.getElementById(id);
 
@@ -170,7 +170,7 @@ let right = 0, total = 0;
 
 // ---------- deck ----------
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
-function refill() { deck = shuffle(CARDS.filter(c => (cat === 'all' || c.cat === cat) && (day === 'all' || c.date === day))); }
+function refill() { deck = shuffle(CARDS.filter(c => (cat === 'all' || c.cat === cat) && DateFilter.has(c, day))); }
 function next() {
   if (!deck.length) refill();
   $('mic').disabled = !deck.length || !SR;
