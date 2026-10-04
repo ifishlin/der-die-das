@@ -35,7 +35,7 @@ describe('app flow', () => {
 
     // back home, then grade 2 custom question 3 × 4
     fireEvent.click(screen.getByRole('button', { name: '← 首頁' }));
-    const g2 = screen.getByText('小二數學：100 以內加減法、基礎乘法').closest('article')!;
+    const g2 = screen.getByText('小二數學：1000 以內加減法、基礎乘法').closest('article')!;
     fireEvent.click(within(g2).getByRole('button', { name: '自訂一道題' }));
     fireEvent.change(screen.getByLabelText('第一個數字'), { target: { value: '3' } });
     fireEvent.click(screen.getByRole('radio', { name: '乘' }));
@@ -61,7 +61,7 @@ describe('app flow', () => {
 
   it('generates a new grade 2 set from the form', () => {
     render(<App />);
-    const g2 = screen.getByText('小二數學：100 以內加減法、基礎乘法').closest('article')!;
+    const g2 = screen.getByText('小二數學：1000 以內加減法、基礎乘法').closest('article')!;
     fireEvent.click(within(g2).getByRole('button', { name: '產生新題' }));
     fireEvent.click(screen.getByLabelText('5 題'));
     fireEvent.click(screen.getByRole('button', { name: '產生新練習' }));

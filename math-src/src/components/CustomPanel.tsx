@@ -44,7 +44,7 @@ export function CustomPanel({ grade }: { grade: Grade }) {
       >
         <label>
           <span className="visually-hidden">第一個數字</span>
-          <input id="custom-left" className="num" type="text" inputMode="numeric" value={left} onChange={e => setLeft(e.target.value.replace(/\D/g, '').slice(0, 3))} aria-label="第一個數字" />
+          <input id="custom-left" className="num" type="text" inputMode="numeric" value={left} onChange={e => setLeft(e.target.value.replace(/\D/g, '').slice(0, 4))} aria-label="第一個數字" />
         </label>
         <div className="op-pick" role="radiogroup" aria-label="運算符號">
           {ops.map(o => (
@@ -55,7 +55,7 @@ export function CustomPanel({ grade }: { grade: Grade }) {
         </div>
         <label>
           <span className="visually-hidden">第二個數字</span>
-          <input id="custom-right" className="num" type="text" inputMode="numeric" value={right} onChange={e => setRight(e.target.value.replace(/\D/g, '').slice(0, 3))} aria-label="第二個數字" />
+          <input id="custom-right" className="num" type="text" inputMode="numeric" value={right} onChange={e => setRight(e.target.value.replace(/\D/g, '').slice(0, 4))} aria-label="第二個數字" />
         </label>
         <button type="submit" className="btn primary big">產生圖解</button>
       </form>

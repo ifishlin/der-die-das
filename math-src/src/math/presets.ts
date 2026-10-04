@@ -1,4 +1,4 @@
-import type { Grade, Operator, Question } from './types';
+import type { Grade, Operator, PresetKind, Question } from './types';
 
 type Row = [left: number, op: '+' | '−' | '×', right: number, tag: string];
 
@@ -77,7 +77,32 @@ export const GRADE2_MULTIPLY: Question[] = build(2, 'g2x', [
   [10, '×', 8, '乘法'],
 ]);
 
-export function presetFor(grade: Grade, kind: 'preset' | 'multiply'): Question[] {
+/** 小二 1000 以內挑戰：20 題，三位數的進位、連續進位、退位、0 的退位 */
+export const GRADE2_THOUSAND: Question[] = build(2, 'g2k', [
+  [234, '+', 152, '不進位'],
+  [405, '+', 321, '不進位'],
+  [347, '+', 128, '個位進位'],
+  [263, '+', 184, '十位進位'],
+  [458, '+', 276, '連續進位'],
+  [389, '+', 247, '連續進位'],
+  [476, '+', 58, '三位加兩位'],
+  [650, '+', 350, '湊成 1000'],
+  [306, '+', 497, '連續進位'],
+  [999, '+', 1, '進位到 1000'],
+  [768, '−', 325, '不退位'],
+  [543, '−', 128, '個位退位'],
+  [625, '−', 184, '十位退位'],
+  [532, '−', 267, '連續退位'],
+  [412, '−', 37, '三位減兩位'],
+  [503, '−', 278, '0 的退位'],
+  [700, '−', 356, '0 的退位'],
+  [815, '−', 429, '連續退位'],
+  [1000, '−', 358, '從 1000 退位'],
+  [1000, '−', 1, '從 1000 退位'],
+]);
+
+export function presetFor(grade: Grade, kind: PresetKind): Question[] {
+  if (kind === 'thousand') return grade === 2 ? GRADE2_THOUSAND : [];
   if (kind === 'multiply') return grade === 2 ? GRADE2_MULTIPLY : [];
   return grade === 1 ? GRADE1_PRESET : GRADE2_PRESET;
 }

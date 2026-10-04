@@ -25,6 +25,9 @@ describe('question generator', () => {
       { grade: 2, operation: 'add', maxNumber: 100, count: 20, difficulty: 'none' },
       { grade: 2, operation: 'multiply', maxNumber: 100, maxFactor: 10, count: 20, difficulty: 'any' },
       { grade: 2, operation: 'all', maxNumber: 100, maxFactor: 5, count: 20, difficulty: 'any' },
+      { grade: 2, operation: 'addsub', maxNumber: 1000, count: 20, difficulty: 'only' },
+      { grade: 2, operation: 'addsub', maxNumber: 1000, count: 20, difficulty: 'none' },
+      { grade: 2, operation: 'all', maxNumber: 1000, count: 20, difficulty: 'any' },
     ];
     for (const [i, opts] of settings.entries()) {
       for (let run = 0; run < 20; run++) {

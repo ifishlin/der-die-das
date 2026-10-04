@@ -2,7 +2,7 @@ import { answerOf, type Grade, type Operator } from './types';
 
 export const LIMITS = {
   1: { maxNumber: 100 },
-  2: { maxNumber: 100, maxFactor: 10 },
+  2: { maxNumber: 1000, maxFactor: 10, maxProduct: 100 },
 } as const;
 
 export type ValidationResult = { ok: true } | { ok: false; reason: string };
@@ -26,7 +26,7 @@ export function validateQuestion(grade: Grade, operator: Operator, left: number,
   if (operator === 'multiply') {
     const f = LIMITS[2].maxFactor;
     if (left < 1 || right < 1 || left > f || right > f) return { ok: false, reason: `乘法的兩個數字都要在 1 到 ${f} 之間。` };
-    if (left * right > LIMITS[2].maxNumber) return { ok: false, reason: '乘法的答案不能超過 100。' };
+    if (left * right > LIMITS[2].maxProduct) return { ok: false, reason: `乘法的答案不能超過 ${LIMITS[2].maxProduct}。` };
     return { ok: true };
   }
   const max = LIMITS[2].maxNumber;
@@ -39,6 +39,6 @@ export function validateQuestion(grade: Grade, operator: Operator, left: number,
 /** Parses a child's typed answer. Only whole non-negative numbers count as an answer. */
 export function parseAnswer(text: string): number | null {
   const t = text.trim();
-  if (!/^\d{1,4}$/.test(t)) return null;
+  if (!/^\d{1,4}$/.test(t)) return null; // up to 1000
   return Number(t);
 }

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { GRADE_LABEL, type Grade, type Question, type SessionKind } from '../math/types';
+import { GRADE_LABEL, type Grade, type PresetKind, type Question, type SessionKind } from '../math/types';
 import { presetFor } from '../math/presets';
 import { GradeHome } from '../components/GradeHome';
 import { PracticeSession } from '../components/PracticeSession';
@@ -24,7 +24,7 @@ type View =
   | { name: 'generate'; grade: Grade }
   | { name: 'custom'; grade: Grade };
 
-const TITLES: Record<'preset' | 'multiply', string> = { preset: '內建 20 題', multiply: '乘法挑戰' };
+const TITLES: Record<PresetKind, string> = { preset: '內建 20 題', multiply: '乘法挑戰', thousand: '1000 以內挑戰' };
 
 function shuffled<T>(a: T[]): T[] {
   const b = a.slice();
@@ -55,7 +55,7 @@ export function App() {
     saveSession(s);
   }, []);
 
-  const start = (g: Grade, kind: 'preset' | 'multiply', fresh: boolean) => {
+  const start = (g: Grade, kind: PresetKind, fresh: boolean) => {
     const saved = fresh ? null : loadSession(g, kind);
     const s = saved ?? newSession(g, kind, TITLES[kind], loadSettings(g).randomOrder ? shuffled(presetFor(g, kind)) : presetFor(g, kind));
     update(s);
@@ -103,6 +103,7 @@ export function App() {
             sessions={{
               preset: loadSession(view.grade, 'preset'),
               multiply: view.grade === 2 ? loadSession(2, 'multiply') : null,
+              thousand: view.grade === 2 ? loadSession(2, 'thousand') : null,
               generated: loadSession(view.grade, 'generated'),
             }}
             settings={settings}
@@ -150,8 +151,8 @@ export function App() {
   );
 }
 
-function Home({ onGo, onStart }: { onGo: (v: View) => void; onStart: (g: Grade, kind: 'preset' | 'multiply', fresh: boolean) => void }) {
-  const resumeOr = (g: Grade, kind: 'preset' | 'multiply') => {
+function Home({ onGo, onStart }: { onGo: (v: View) => void; onStart: (g: Grade, kind: PresetKind, fresh: boolean) => void }) {
+  const resumeOr = (g: Grade, kind: PresetKind) => {
     const s = loadSession(g, kind);
     onStart(g, kind, !(s && !s.finished));
   };
@@ -172,10 +173,11 @@ function Home({ onGo, onStart }: { onGo: (v: View) => void; onStart: (g: Grade, 
         </article>
         <article className="grade-card g2">
           <span className="grade-big">小二</span>
-          <h2>小二數學：100 以內加減法、基礎乘法</h2>
-          <p>用十位積木看進位、退位，用點陣學乘法。</p>
+          <h2>小二數學：1000 以內加減法、基礎乘法</h2>
+          <p>100 以內用十位積木，更大的數用位值表看進位、退位；用點陣學乘法。</p>
           <div className="card-actions">
             <button type="button" className="btn primary big" onClick={() => resumeOr(2, 'preset')}>開始 20 題</button>
+            <button type="button" className="btn" onClick={() => resumeOr(2, 'thousand')}>1000 以內挑戰</button>
             <button type="button" className="btn" onClick={() => resumeOr(2, 'multiply')}>乘法挑戰</button>
             <button type="button" className="btn" onClick={() => onGo({ name: 'generate', grade: 2 })}>產生新題</button>
             <button type="button" className="btn" onClick={() => onGo({ name: 'custom', grade: 2 })}>自訂一道題</button>

@@ -69,6 +69,26 @@ describe('explanation animations end in the right picture', () => {
     expect(summarize(finalScene(q(1, 'subtract', 100, 58))).value).toBe(42);
   });
 
+  it('grade 2 above 100 uses the place-value chart with carries and borrows', () => {
+    const add = generateExplanation(q(2, 'add', 458, 276));
+    expect(add.steps[0].scene.kind).toBe('placevalue');
+    expect(summarize(add.steps[add.steps.length - 1].scene)).toMatchObject({ hundreds: 7, tens: 3, ones: 4, value: 734 });
+    expect(add.steps.filter(s => s.caption.includes('進位')).length).toBe(2); // ones → tens, tens → hundreds
+
+    const to1000 = generateExplanation(q(2, 'add', 999, 1));
+    expect(summarize(to1000.steps[to1000.steps.length - 1].scene)).toMatchObject({ hundreds: 10, tens: 0, ones: 0, value: 1000 });
+
+    const zero = generateExplanation(q(2, 'subtract', 503, 278));
+    expect(zero.steps.filter(s => s.caption.includes('退位')).length).toBe(2); // borrow a hundred, then a ten
+    expect(summarize(zero.steps[zero.steps.length - 1].scene).value).toBe(225);
+
+    const k = generateExplanation(q(2, 'subtract', 1000, 1));
+    expect(summarize(k.steps[k.steps.length - 1].scene)).toMatchObject({ hundreds: 9, tens: 9, ones: 9 });
+
+    // up to 100 keeps the base-ten blocks
+    expect(generateExplanation(q(2, 'subtract', 100, 58)).steps[0].scene.kind).toBe('blocks');
+  });
+
   it('3 × 4 ends with 3 lit groups of 4', () => {
     const ex = generateExplanation(q(2, 'multiply', 3, 4));
     const fin = ex.steps[ex.steps.length - 1];
@@ -101,6 +121,26 @@ describe('explanation animations end in the right picture', () => {
         if (s.scene.kind === 'dots') {
           expect(Math.max(-1, ...s.scene.dots.map(d => d.place.slot))).toBeLessThan(20);
         }
+      }
+    }
+  }, 60_000);
+
+  it('random 3-digit questions end at the right answer, with every column fitting its 5 × 4 grid', () => {
+    let seed = 12345;
+    const rnd = (n: number) => { seed = (seed * 1103515245 + 12345) % 2147483648; return seed % n; };
+    for (let i = 0; i < 4000; i++) {
+      const a = 1 + rnd(1000);
+      const op: Operator = rnd(2) ? 'add' : 'subtract';
+      const b = op === 'add' ? rnd(1001 - a) : rnd(a + 1);
+      const question = q(2, op, a, b);
+      if (!validateQuestion(2, op, a, b).ok) continue;
+      const ex = generateExplanation(question);
+      expect(summarize(ex.steps[ex.steps.length - 1].scene).value, `${a} ${op} ${b}`).toBe(answerOf(question));
+      for (const st of ex.steps) {
+        if (st.scene.kind !== 'placevalue') continue;
+        const placed = st.scene.chips.filter(c => !c.hidden && !c.place.stack);
+        expect(Math.max(-1, ...placed.map(c => c.place.slot)), `${a} ${op} ${b}: ${st.caption}`).toBeLessThan(20);
+        expect(summarize(st.scene).value).toBeGreaterThanOrEqual(0);
       }
     }
   }, 60_000);

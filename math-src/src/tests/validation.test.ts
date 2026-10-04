@@ -27,7 +27,10 @@ describe('custom question validation', () => {
     expect(validateQuestion(1, 'add', 19, 8).ok).toBe(true);
     expect(validateQuestion(1, 'add', 37, 16).ok).toBe(true);
     expect(validateQuestion(1, 'add', 101, 0).ok).toBe(false);
-    expect(validateQuestion(2, 'add', 60, 50).ok).toBe(false);
+    expect(validateQuestion(2, 'add', 600, 500).ok).toBe(false);
+    expect(validateQuestion(2, 'add', 456, 378).ok).toBe(true);
+    expect(validateQuestion(2, 'subtract', 1000, 358).ok).toBe(true);
+    expect(validateQuestion(2, 'multiply', 10, 10).ok).toBe(true);
     expect(validateQuestion(2, 'multiply', 11, 2).ok).toBe(false);
     expect(validateQuestion(2, 'multiply', 0, 5).ok).toBe(false);
     expect(validateQuestion(1, 'add', 2.5, 1).ok).toBe(false);

@@ -68,7 +68,7 @@ export function candidates(opts: GeneratorOptions, operator: Operator): Pair[] {
   };
   if (operator === 'multiply') {
     const f = opts.maxFactor ?? LIMITS[2].maxFactor;
-    for (let a = 1; a <= f; a++) for (let b = 1; b <= f; b++) if (a * b <= LIMITS[2].maxNumber) add({ operator, left: a, right: b });
+    for (let a = 1; a <= f; a++) for (let b = 1; b <= f; b++) if (a * b <= LIMITS[2].maxProduct) add({ operator, left: a, right: b });
     return [...out.values()];
   }
   const max = opts.maxNumber;
@@ -83,6 +83,27 @@ export function candidates(opts: GeneratorOptions, operator: Operator): Pair[] {
 }
 
 export type Random = () => number;
+
+/** Above this limit the candidate list would be too large to build, so pairs are sampled instead. */
+const ENUMERATE_UP_TO = 150;
+
+/** Random valid pairs for large ranges (e.g. up to 1000), unique by pairKey and matching the difficulty. */
+function sample(opts: GeneratorOptions, operator: Operator, want: number, random: Random): Pair[] {
+  const max = opts.maxNumber;
+  const out = new Map<string, Pair>();
+  const pick = (lo: number, hi: number) => lo + Math.floor(random() * (hi - lo + 1));
+  for (let tries = 0; tries < want * 4000 && out.size < want; tries++) {
+    const a = pick(1, max - (operator === 'add' ? 1 : 0));
+    const b = operator === 'add' ? pick(1, max - a) : pick(1, a);
+    const p: Pair = { operator, left: a, right: b };
+    if (!validateQuestion(opts.grade, operator, a, b).ok) continue;
+    if (opts.difficulty === 'none' && regroups(opts.grade, p)) continue;
+    if (opts.difficulty === 'only' && !regroups(opts.grade, p)) continue;
+    const k = pairKey(p);
+    if (!out.has(k)) out.set(k, p);
+  }
+  return [...out.values()];
+}
 
 function shuffle<T>(items: T[], random: Random): T[] {
   const a = items.slice();
@@ -122,7 +143,8 @@ export function generateQuestions(opts: GeneratorOptions, random: Random = Math.
   const shares = ops.map((_, i) => Math.floor(opts.count / ops.length) + (i < opts.count % ops.length ? 1 : 0));
   const picked: Pair[] = [];
   for (let i = 0; i < ops.length; i++) {
-    const pool = candidates(opts, ops[i]);
+    const big = ops[i] !== 'multiply' && opts.maxNumber > ENUMERATE_UP_TO;
+    const pool = big ? sample(opts, ops[i], shares[i], random) : candidates(opts, ops[i]);
     if (pool.length < shares[i]) {
       const cond = ops[i] === 'multiply' ? '' : opts.difficulty === 'none' ? (opts.grade === 1 ? '、不跨十' : '、不進退位') : opts.difficulty === 'only' ? (opts.grade === 1 ? '、要跨十' : '、要進退位') : '';
       return {

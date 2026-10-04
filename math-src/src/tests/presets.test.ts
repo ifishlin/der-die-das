@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { GRADE1_PRESET, GRADE2_MULTIPLY, GRADE2_PRESET } from '../math/presets';
+import { GRADE1_PRESET, GRADE2_MULTIPLY, GRADE2_PRESET, GRADE2_THOUSAND } from '../math/presets';
 import { answerOf } from '../math/types';
 import { validateQuestion } from '../math/validation';
 
@@ -17,12 +17,15 @@ describe('built-in question sets', () => {
   });
 
   it('only contains valid questions for its grade, with no negative answers', () => {
-    for (const q of [...GRADE1_PRESET, ...GRADE2_PRESET, ...GRADE2_MULTIPLY]) {
+    for (const q of [...GRADE1_PRESET, ...GRADE2_PRESET, ...GRADE2_MULTIPLY, ...GRADE2_THOUSAND]) {
       expect(validateQuestion(q.grade, q.operator, q.left, q.right)).toEqual({ ok: true });
       expect(answerOf(q)).toBeGreaterThanOrEqual(0);
     }
     for (const q of GRADE1_PRESET) expect(answerOf(q)).toBeLessThanOrEqual(20);
     for (const q of GRADE2_PRESET) expect(answerOf(q)).toBeLessThanOrEqual(100);
+    for (const q of GRADE2_THOUSAND) expect(answerOf(q)).toBeLessThanOrEqual(1000);
+    expect(GRADE2_THOUSAND).toHaveLength(20);
+    expect(GRADE2_THOUSAND.every(q => Math.max(q.left, q.right, answerOf(q)) > 100)).toBe(true);
   });
 
   it('grade 1 has no multiplication; the multiplication set is grade 2 only', () => {
@@ -32,7 +35,7 @@ describe('built-in question sets', () => {
   });
 
   it('uses stable, unique ids', () => {
-    const ids = [...GRADE1_PRESET, ...GRADE2_PRESET, ...GRADE2_MULTIPLY].map(q => q.id);
+    const ids = [...GRADE1_PRESET, ...GRADE2_PRESET, ...GRADE2_MULTIPLY, ...GRADE2_THOUSAND].map(q => q.id);
     expect(new Set(ids).size).toBe(ids.length);
     expect(GRADE1_PRESET[0].id).toBe('g1-01');
   });

@@ -4,6 +4,7 @@ import { prefersReducedMotion, useAnimationSteps } from '../hooks/useAnimationSt
 import { DotsScene } from '../visuals/DotsScene';
 import { BaseTenScene } from '../visuals/BaseTenScene';
 import { MultiplicationScene } from '../visuals/MultiplicationScene';
+import { PlaceValueScene } from '../visuals/PlaceValueScene';
 
 function SceneView({ scene, first }: { scene: SceneState; first: SceneState }) {
   switch (scene.kind) {
@@ -13,6 +14,8 @@ function SceneView({ scene, first }: { scene: SceneState; first: SceneState }) {
       return <BaseTenScene scene={scene} hasSecond={first.kind === 'blocks' && first.blocks.some(b => b.place.zone === 'second')} />;
     case 'array':
       return <MultiplicationScene scene={scene} />;
+    case 'placevalue':
+      return <PlaceValueScene scene={scene} hasSecond={first.kind === 'placevalue' && first.chips.some(c => c.place.zone === 'second')} />;
   }
 }
 
@@ -20,6 +23,7 @@ const LEGEND: Record<SceneState['kind'], string> = {
   dots: '1 個圓點 = 1，一個十格框裝滿是 10',
   blocks: '1 條 = 10（十位），1 個小方塊 = 1（個位）',
   array: '每一列是一組，數一數每組有幾個',
+  placevalue: '位值表：圓片上寫著它代表多少，100 是一個百、10 是一個十、1 是一個一',
 };
 
 type Props = {

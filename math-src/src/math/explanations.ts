@@ -1,4 +1,5 @@
-import { crossesTen, needsRegrouping, usesTenFrames, type Question } from './types';
+import { crossesTen, needsRegrouping, usesPlaceValue, usesTenFrames, type Question } from './types';
+import { placeValueAdd, placeValueHints, placeValueSubtract } from './placevalue';
 import type { Block, BlocksScene, Dot, DotsScene, Explanation, ExplanationStep, SceneState } from './scene';
 
 let stepCounter = 0;
@@ -13,6 +14,7 @@ const clone = <T>(x: T): T => JSON.parse(JSON.stringify(x));
 export function generateExplanation(q: Question): Explanation {
   if (q.operator === 'multiply') return multiply(q.left, q.right);
   if (usesTenFrames(q)) return q.operator === 'add' ? g1Add(q.left, q.right) : g1Subtract(q.left, q.right);
+  if (usesPlaceValue(q)) return q.operator === 'add' ? placeValueAdd(q.left, q.right) : placeValueSubtract(q.left, q.right);
   return q.operator === 'add' ? g2Add(q.left, q.right) : g2Subtract(q.left, q.right);
 }
 
@@ -189,6 +191,7 @@ function multiply(a: number, b: number): Explanation {
 /** Two levels: the strategy first, then a partial step. Neither states the final answer. */
 export function getHints(q: Question): [string, string] {
   const { left: a, right: b } = q;
+  if (q.operator !== 'multiply' && usesPlaceValue(q)) return placeValueHints(q.operator, a, b);
   if (q.operator === 'multiply') return [`${a} × ${b} 就是 ${a} 組，每組 ${b} 個。可以一組一組加起來。`, `${Array(a).fill(b).join(' + ')} = ?`];
   if (usesTenFrames(q)) {
     if (q.operator === 'add') {

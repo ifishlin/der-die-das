@@ -22,7 +22,7 @@ export function AnswerInput({ value, onChange, onSubmit, disabled, resetKey }: P
 
   const push = (d: string) => {
     if (disabled) return;
-    onChange((value + d).replace(/^0+(?=\d)/, '').slice(0, 3));
+    onChange((value + d).replace(/^0+(?=\d)/, '').slice(0, 4));
   };
 
   return (
@@ -47,7 +47,7 @@ export function AnswerInput({ value, onChange, onSubmit, disabled, resetKey }: P
           value={value}
           disabled={disabled}
           placeholder="?"
-          onChange={e => onChange(e.target.value.replace(/\D/g, '').slice(0, 3))}
+          onChange={e => onChange(e.target.value.replace(/\D/g, '').slice(0, 4))}
         />
         <button type="submit" className="btn primary big" disabled={disabled || value === ''}>
           確認答案

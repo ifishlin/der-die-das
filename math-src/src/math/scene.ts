@@ -57,7 +57,32 @@ export type ArrayScene = {
   total?: number;
 };
 
-export type SceneState = DotsScene | BlocksScene | ArrayScene;
+/** Place-value chart (百／十／個) used for numbers above 100. */
+export type PlaceCol = 'h' | 't' | 'o';
+
+/**
+ * A counter worth 100, 10 or 1. `col` is the column it currently sits in; while ten counters are
+ * being bundled (or a borrowed counter is being broken up) they sit `stack`ed on one spot of the
+ * neighbouring column, so value and column can differ for one step.
+ */
+export type Chip = {
+  id: string;
+  value: 1 | 10 | 100;
+  color: 'a' | 'b' | 'c';
+  place: { zone: BlockZone; col: PlaceCol; slot: number; stack?: boolean };
+  removed?: boolean;
+  hidden?: boolean;
+};
+
+export type PlaceValueScene = {
+  kind: 'placevalue';
+  chips: Chip[];
+  mainLabel: string;
+  secondLabel?: string;
+  total?: number;
+};
+
+export type SceneState = DotsScene | BlocksScene | ArrayScene | PlaceValueScene;
 
 export type ExplanationStep = {
   id: string;
@@ -87,5 +112,11 @@ export function summarize(scene: SceneState) {
     }
     case 'array':
       return { kind: 'array' as const, groups: scene.groups, perGroup: scene.perGroup, lit: scene.lit, value: scene.groups * scene.perGroup };
+    case 'placevalue': {
+      const live = scene.chips.filter(c => !c.removed && !c.hidden);
+      const n = (v: number) => live.filter(c => c.value === v).length;
+      const [hundreds, tens, ones] = [n(100), n(10), n(1)];
+      return { kind: 'placevalue' as const, hundreds, tens, ones, value: hundreds * 100 + tens * 10 + ones };
+    }
   }
 }

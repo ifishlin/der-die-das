@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Grade, SessionKind } from '../math/types';
+import type { Grade, PresetKind, SessionKind } from '../math/types';
 import type { GradeSettings, Session } from '../app/storage';
 import { sessionStats } from './ProgressPanel';
 
@@ -8,7 +8,7 @@ type Props = {
   sessions: Partial<Record<SessionKind, Session | null>>;
   settings: GradeSettings;
   onSettings: (s: GradeSettings) => void;
-  onStart: (kind: 'preset' | 'multiply', fresh: boolean) => void;
+  onStart: (kind: PresetKind, fresh: boolean) => void;
   onResumeGenerated: () => void;
   onGenerate: () => void;
   onCustom: () => void;
@@ -30,8 +30,9 @@ export function GradeHome(p: Props) {
   const [confirm, setConfirm] = useState(false);
   const preset = p.sessions.preset;
   const mul = p.sessions.multiply;
+  const k = p.sessions.thousand;
   const gen = p.sessions.generated;
-  const title = p.grade === 1 ? '100 以內加減法' : '100 以內加減法、基礎乘法';
+  const title = p.grade === 1 ? '100 以內加減法' : '1000 以內加減法、基礎乘法';
 
   return (
     <section className="grade-home" aria-labelledby="gh-title">
@@ -60,6 +61,26 @@ export function GradeHome(p: Props) {
             </label>
           </div>
         </div>
+
+        {p.grade === 2 && (
+          <div className="menu-item">
+            <div>
+              <h3>1000 以內挑戰</h3>
+              <p>20 題三位數加減法：連續進位、連續退位、0 的退位，用位值表（百／十／個）來看。</p>
+              <Resume s={k} />
+            </div>
+            <div className="menu-actions">
+              {k && !k.finished ? (
+                <>
+                  <button type="button" className="btn primary" onClick={() => p.onStart('thousand', false)}>繼續 1000 以內挑戰</button>
+                  <button type="button" className="btn" onClick={() => p.onStart('thousand', true)}>重新開始</button>
+                </>
+              ) : (
+                <button type="button" className="btn primary" onClick={() => p.onStart('thousand', true)}>開始 1000 以內挑戰</button>
+              )}
+            </div>
+          </div>
+        )}
 
         {p.grade === 2 && (
           <div className="menu-item">
