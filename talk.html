@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="der die das">
+<title>對話練習 · Der Die Das 小卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#EEF1F4; --paper:#FFFFFF; --ink:#1C2430; --muted:#5B6675; --line:#D5DBE2;
+  --me:#2A66B0; --me-soft:#E3EDF9; --teacher:#8A4FB0; --teacher-soft:#F1E7F8; --parent:#2F8A4C; --parent-soft:#E2F3E7; --kid:#C26A12; --kid-soft:#FBEEDC;
+  --good:#2F8A4C; --good-soft:#E2F3E7; --warn:#A8660B; --warn-soft:#FBF0DC; --bad:#C9403A; --bad-soft:#FBE7E5;
+  --shadow:0 1px 2px rgba(28,36,48,.08),0 4px 14px rgba(28,36,48,.06);
+  --display:"Baloo 2","Nunito",ui-rounded,"PingFang TC","Noto Sans TC",system-ui,sans-serif;
+  --body:"Nunito","PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+    --me:#6FA6EC; --me-soft:#1C2C44; --teacher:#C79BE6; --teacher-soft:#2E2238; --parent:#6CC58A; --parent-soft:#1B3325; --kid:#EBA45C; --kid-soft:#3A2B17;
+    --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+  --me:#6FA6EC; --me-soft:#1C2C44; --teacher:#C79BE6; --teacher-soft:#2E2238; --parent:#6CC58A; --parent-soft:#1B3325; --kid:#EBA45C; --kid-soft:#3A2B17;
+  --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;-webkit-text-size-adjust:100%;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding-inline:20px;padding-block:28px 64px;display:flex;flex-direction:column;gap:18px}
+
+.tabs{display:flex;flex-wrap:wrap;gap:4px;border-bottom:2px solid var(--line)}
+.tabs a{font:700 16px/1 var(--body);color:var(--muted);text-decoration:none;padding:12px 16px;border-radius:10px 10px 0 0;margin-bottom:-2px;border:2px solid transparent}
+.tabs a[aria-current="page"]{color:var(--ink);background:var(--paper);border-color:var(--line);border-bottom-color:var(--paper)}
+.tabs a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+header{display:flex;flex-direction:column;gap:6px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);line-height:1;margin:0}
+.lede{margin:0;color:var(--muted);max-width:62ch}
+
+.modes{display:inline-flex;background:var(--paper);border:2px solid var(--line);border-radius:14px;padding:4px;gap:4px;align-self:flex-start}
+.modes button{font:800 16px/1 var(--body);border:0;background:transparent;color:var(--muted);padding:10px 18px;border-radius:10px;cursor:pointer}
+.modes button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:700 15px/1 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:9px 14px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.chip .n{font-weight:600;opacity:.7;margin-left:4px}
+.check{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--muted);cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--ink)}
+button:focus-visible,.chip:focus-visible{outline:3px solid var(--me);outline-offset:2px}
+
+/* practice list */
+.list{display:flex;flex-direction:column;gap:12px}
+.dlg{background:var(--paper);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.dlg-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.dlg-no{font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums}
+.line{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;align-items:start}
+.who{font:800 13px/1 var(--body);padding:6px 9px;border-radius:999px;white-space:nowrap;margin-top:3px}
+.who.me{background:var(--me-soft);color:var(--me)} .who.teacher{background:var(--teacher-soft);color:var(--teacher)}
+.who.parent{background:var(--parent-soft);color:var(--parent)} .who.kid{background:var(--kid-soft);color:var(--kid)}
+.de{font-size:1.15rem;font-weight:700;line-height:1.35}
+.zh{grid-column:2;color:var(--muted);font-size:.95rem}
+.play{appearance:none;border:2px solid var(--line);background:var(--paper);color:var(--ink);border-radius:50%;width:42px;height:42px;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center}
+.play.on{border-color:var(--me);color:var(--me)}
+.btn{font:700 15px/1.2 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:10px 14px;border-radius:12px;cursor:pointer}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn.big{font-size:1.1rem;padding:14px 20px}
+.line.playing .de{color:var(--me)}
+
+/* quiz */
+.quiz{background:var(--paper);border-radius:18px;box-shadow:var(--shadow);padding:20px;display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
+.q-meta{display:flex;gap:8px;align-items:center;justify-content:center;color:var(--muted);font-weight:700;flex-wrap:wrap}
+.context{color:var(--muted);font-size:.95rem;max-width:52ch}
+.context b{color:var(--ink)}
+.target{font-size:1.5rem;font-weight:800;line-height:1.35;max-width:30ch}
+.target .w{padding:0 2px;border-radius:5px}
+.target .w.ok{background:var(--good-soft);color:var(--good)}
+.target .w.miss{background:var(--bad-soft);color:var(--bad);text-decoration:underline wavy}
+.q-zh{font-size:1.15rem;color:var(--muted)}
+.mic{appearance:none;border:0;cursor:pointer;width:96px;height:96px;border-radius:50%;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+.mic svg{width:42px;height:42px}
+.mic.listening{background:var(--bad);color:#fff;animation:pulse 1.2s ease-in-out infinite}
+.mic:disabled{opacity:.35;cursor:default;animation:none}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,64,58,.45)}50%{box-shadow:0 0 0 16px rgba(201,64,58,0)}}
+.status{color:var(--muted);font-weight:700;min-height:1.5em}
+.result{width:100%;border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}
+.result.good{background:var(--good-soft);color:var(--good)} .result.warn{background:var(--warn-soft);color:var(--warn)} .result.bad{background:var(--bad-soft);color:var(--bad)}
+.result .big{font-family:var(--display);font-weight:800;font-size:1.5rem;line-height:1.2}
+.result .heard{color:var(--ink);opacity:.75}
+.row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.tally{font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.unsupported{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:12px 14px;font-weight:700;margin:0}
+.note{color:var(--muted);font-size:.9rem;margin:0}
+@media (prefers-reduced-motion: reduce){.mic.listening{animation:none}}
+@media (max-width:480px){.line{grid-template-columns:auto 1fr auto}.de{font-size:1.05rem}.target{font-size:1.3rem}}
+</style>
+
+<div class="wrap">
+  <nav class="tabs" aria-label="頁籤">
+    <a href="./">卡片</a>
+    <a href="speak.html">說說看</a>
+    <a href="game.html">遊戲</a>
+    <a href="talk.html" aria-current="page">對話練習</a>
+    <a href="math/">數學練習</a>
+  </nav>
+
+  <header>
+    <h1>對話練習</h1>
+    <p class="lede">在德國學校常用的簡單對話（A1–A2），跟老師、其他家長、其他小朋友各 30 段，每段一問一答。跟老師和家長用敬稱 Sie，跟小朋友用 du。</p>
+  </header>
+
+  <div class="modes" role="group" aria-label="模式">
+    <button id="m-practice" aria-pressed="true">練習</button>
+    <button id="m-quiz" aria-pressed="false">測驗：念念看</button>
+  </div>
+
+  <div class="bar">
+    <div class="chips" id="scenes" role="group" aria-label="選擇場合"></div>
+    <label class="check"><input type="checkbox" id="slow"> 慢速播放</label>
+  </div>
+
+  <!-- practice -->
+  <section id="practice" aria-label="對話列表">
+    <div class="list" id="list"></div>
+  </section>
+
+  <!-- quiz -->
+  <section id="quizSec" hidden aria-label="測驗">
+    <div class="bar" style="margin-bottom:12px">
+      <label class="check"><input type="checkbox" id="onlyMe" checked> 只考「你」要說的句子</label>
+      <label class="check"><input type="checkbox" id="hideDe"> 隱藏德文（只看中文自己說）</label>
+    </div>
+    <p class="unsupported" id="unsupported" hidden>這個瀏覽器沒有語音辨識功能，沒辦法判斷念得對不對。請用 iPad、iPhone 的 Safari，或電腦上的 Chrome。</p>
+    <div class="quiz">
+      <div class="q-meta"><span class="who" id="qWho"></span><span id="qScene"></span></div>
+      <p class="context" id="qContext"></p>
+      <div class="target" id="qTarget" lang="de"></div>
+      <div class="q-zh" id="qZh"></div>
+      <div class="row">
+        <button class="btn" id="qListen">🔊 聽示範</button>
+      </div>
+      <button class="mic" id="mic" aria-label="按一下開始念">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg>
+      </button>
+      <div class="status" id="status" aria-live="polite">按麥克風，把這句念出來</div>
+      <div class="result" id="result" hidden aria-live="polite">
+        <div class="big" id="resultBig"></div>
+        <div id="resultDetail"></div>
+        <div class="heard" id="heard"></div>
+      </div>
+      <div class="row">
+        <button class="btn" id="qAgain" hidden>再念一次</button>
+        <button class="btn primary" id="qNext">下一句</button>
+      </div>
+      <div class="tally" aria-live="polite">這一輪：念了 <b id="tTried">0</b> 句，念得好 <b id="tGood">0</b> 句</div>
+    </div>
+    <p class="note" style="margin-top:12px">語音辨識用的是 iPad／瀏覽器內建的功能，判斷的是「聽起來是不是這些字」，不是專業的發音評分。綠色的字是辨識到的，紅色的字是沒聽到或聽成別的字。</p>
+  </section>
+</div>
+
+<script src="dialogs.js?v=20261004"></script>
+<script>
+const $ = id => document.getElementById(id);
+let scene = 'all', mode = 'practice';
+
+// ---------- audio ----------
+let player = null, playingBtn = null, playingLine = null;
+function stopAudio() {
+  if (player) { player.onended = null; player.pause(); }
+  playingBtn?.classList.remove('on'); playingLine?.classList.remove('playing');
+  playingBtn = playingLine = null;
+}
+function playFile(file, btn, lineEl, onEnd) {
+  stopAudio();
+  player = new Audio(`audio/talk/${file}.mp3`);
+  player.playbackRate = $('slow').checked ? 0.75 : 1;
+  playingBtn = btn; playingLine = lineEl;
+  btn?.classList.add('on'); lineEl?.classList.add('playing');
+  player.onended = () => { btn?.classList.remove('on'); lineEl?.classList.remove('playing'); playingBtn = playingLine = null; onEnd?.(); };
+  player.play().catch(() => { btn?.classList.remove('on'); lineEl?.classList.remove('playing'); });
+}
+
+// ---------- scene chips ----------
+function mountScenes() {
+  const el = $('scenes');
+  const opts = [['all', '全部', DIALOGS.length], ...Object.entries(SCENES).map(([k, v]) => [k, v, DIALOGS.filter(d => d.scene === k).length])];
+  for (const [k, label, n] of opts) {
+    const b = document.createElement('button');
+    b.className = 'chip'; b.dataset.s = k; b.setAttribute('aria-pressed', String(k === 'all'));
+    b.innerHTML = `${label}<span class="n">${n}</span>`;
+    b.addEventListener('click', () => {
+      scene = k; el.querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      renderList(); if (mode === 'quiz') newRound();
+    });
+    el.append(b);
+  }
+}
+
+// ---------- practice ----------
+const esc = s => s.replace(/[&<>]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'}[c]));
+function renderList() {
+  const list = $('list'); list.innerHTML = '';
+  const shown = DIALOGS.filter(d => scene === 'all' || d.scene === scene);
+  for (const d of shown) {
+    const card = document.createElement('article');
+    card.className = 'dlg';
+    const no = DIALOGS.filter(x => x.scene === d.scene).indexOf(d) + 1;
+    card.innerHTML = `<div class="dlg-head"><span class="dlg-no">${SCENES[d.scene]} · ${no}</span><button class="btn pair">▶ 播放這段</button></div>` +
+      d.lines.map((l, i) => `<div class="line" data-i="${i}"><span class="who ${l.who}">${SPEAKERS[l.who]}</span><span class="de" lang="de">${esc(l.de)}</span>` +
+        `<button class="play" aria-label="播放：${esc(l.de)}">▶</button><span class="zh">${esc(l.zh)}</span></div>`).join('');
+    const lines = card.querySelectorAll('.line');
+    lines.forEach((ln, i) => ln.querySelector('.play').addEventListener('click', e => playFile(`${d.id}-${i + 1}`, e.currentTarget, ln)));
+    card.querySelector('.pair').addEventListener('click', () => {
+      playFile(`${d.id}-1`, lines[0].querySelector('.play'), lines[0], () => setTimeout(() => playFile(`${d.id}-2`, lines[1].querySelector('.play'), lines[1]), 350));
+    });
+    list.append(card);
+  }
+}
+
+// ---------- matching ----------
+const NUM = {null: '0', eins: '1', zwei: '2', drei: '3', vier: '4', funf: '5', sechs: '6', sieben: '7', acht: '8', neun: '9', zehn: '10', elf: '11', zwolf: '12',
+  dreizehn: '13', vierzehn: '14', funfzehn: '15', sechzehn: '16', siebzehn: '17', achtzehn: '18', neunzehn: '19', zwanzig: '20', dreissig: '30', vierzig: '40',
+  funfzig: '50', sechzig: '60', hundert: '100'};
+function words(s) {
+  return s.toLowerCase().normalize('NFC').replace(/ß/g, 'ss').replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u')
+    .replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean).map(w => NUM[w] || w);
+}
+function sim(a, b) {
+  if (a === b) return 1;
+  const d = Array.from({length: a.length + 1}, (_, i) => [i, ...Array(b.length).fill(0)]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
+    d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return 1 - d[a.length][b.length] / Math.max(a.length, b.length);
+}
+const NAMES = new Set(['chris', 'lena', 'max', 'ali']);
+const same = (a, b) => a === b || (Math.min(a.length, b.length) >= 4 && sim(a, b) >= 0.75);
+/** Which target words the speaker said, in order (longest common subsequence with fuzzy word matching). */
+function align(target, heard) {
+  const n = target.length, m = heard.length;
+  const L = Array.from({length: n + 1}, () => Array(m + 1).fill(0));
+  for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--)
+    L[i][j] = same(target[i], heard[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const ok = Array(n).fill(false);
+  for (let i = 0, j = 0; i < n && j < m;) {
+    if (same(target[i], heard[j]) && L[i][j] === L[i + 1][j + 1] + 1) { ok[i] = true; i++; j++; }
+    else if (L[i + 1][j] >= L[i][j + 1]) i++; else j++;
+  }
+  return ok;
+}
+/** Display tokens of a sentence, each linked to its normalized words. */
+function tokens(sentence) {
+  let k = 0;
+  return sentence.split(/\s+/).map(t => { const ws = words(t); const r = {text: t, idx: ws.map(() => k++)}; return r; });
+}
+function score(sentence, transcript) {
+  const toks = tokens(sentence);
+  const target = toks.flatMap(t => words(t.text));
+  const ok = align(target, words(transcript));
+  // Names are spelled many ways by the recognizer (Chris → Kris); they never count against you.
+  target.forEach((w, i) => { if (NAMES.has(w)) ok[i] = true; });
+  const matched = ok.filter(Boolean).length;
+  return {toks, ok, pct: target.length ? matched / target.length : 0, transcript};
+}
+
+// ---------- quiz ----------
+let deck = [], item = null, tried = 0, good = 0, attempted = false;
+function pool() {
+  const ds = DIALOGS.filter(d => scene === 'all' || d.scene === scene);
+  const out = [];
+  for (const d of ds) d.lines.forEach((l, i) => { if (!$('onlyMe').checked || l.who === 'me') out.push({d, i, l}); });
+  return out;
+}
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function newRound() { deck = shuffle(pool()); tried = 0; good = 0; $('tTried').textContent = 0; $('tGood').textContent = 0; nextItem(); }
+function nextItem() {
+  stopAudio();
+  if (!deck.length) deck = shuffle(pool());
+  item = deck.pop(); attempted = false;
+  const {d, i, l} = item;
+  $('qWho').className = 'who ' + l.who; $('qWho').textContent = SPEAKERS[l.who];
+  $('qScene').textContent = SCENES[d.scene];
+  const other = d.lines[1 - i];
+  $('qContext').innerHTML = i === 1 ? `對方先說：<b lang="de">${esc(other.de)}</b>（${esc(other.zh)}）` : `你先開口，對方會回答：<span lang="de">${esc(other.de)}</span>`;
+  $('qZh').textContent = l.zh;
+  renderTarget(null);
+  $('result').hidden = true; $('qAgain').hidden = true;
+  $('status').textContent = SR ? '按麥克風，把這句念出來' : '';
+}
+function renderTarget(res) {
+  const {l} = item;
+  if ($('hideDe').checked && !res) { $('qTarget').textContent = '（看中文，用德文說說看）'; return; }
+  const toks = res ? res.toks : tokens(l.de);
+  $('qTarget').innerHTML = toks.map(t => {
+    if (!res || !t.idx.length) return `<span class="w">${esc(t.text)}</span>`;
+    const ok = t.idx.every(k => res.ok[k]);
+    return `<span class="w ${ok ? 'ok' : 'miss'}">${esc(t.text)}</span>`;
+  }).join(' ');
+}
+function showResult(res) {
+  renderTarget(res);
+  if (!attempted) { tried++; attempted = true; if (res.pct >= 0.9) good++; }
+  else if (res.pct >= 0.9 && !item.counted) good++;
+  item.counted = item.counted || res.pct >= 0.9;
+  $('tTried').textContent = tried; $('tGood').textContent = good;
+  const pct = Math.round(res.pct * 100);
+  const [cls, big, detail] = res.pct >= 0.9 ? ['good', `念得很好！${pct} 分`, '每個字都聽得到。']
+    : res.pct >= 0.7 ? ['warn', `不錯！${pct} 分`, '紅色的字再多念幾次，可以先按「聽示範」。']
+    : ['bad', `再試一次：${pct} 分`, '先聽示範，再慢慢念一次。'];
+  $('result').hidden = false; $('result').className = 'result ' + cls;
+  $('resultBig').textContent = big; $('resultDetail').textContent = detail;
+  $('heard').textContent = `我聽到：「${res.transcript}」`;
+  $('qAgain').hidden = false;
+}
+
+// ---------- speech recognition ----------
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null, listening = false;
+if (!SR) { $('unsupported').hidden = false; $('mic').disabled = true; }
+function listen() {
+  if (!SR || listening) return;
+  stopAudio();
+  rec = new SR();
+  rec.lang = 'de-DE'; rec.interimResults = false; rec.maxAlternatives = 5; rec.continuous = false;
+  let heard = false;
+  rec.onresult = e => {
+    heard = true;
+    const alts = [...e.results[0]].map(a => a.transcript).filter(Boolean);
+    if (!alts.length) return;
+    const best = alts.map(t => score(item.l.de, t)).sort((a, b) => b.pct - a.pct)[0];
+    showResult(best);
+  };
+  rec.onerror = e => {
+    heard = true;
+    $('status').textContent = {
+      'not-allowed': '沒有麥克風權限。請到設定允許 Safari 使用麥克風，再重新整理頁面。',
+      'service-not-allowed': '沒有語音辨識權限。請到「設定 → Safari」允許語音辨識。',
+      'no-speech': '沒有聽到聲音，靠近一點再念一次。',
+      'network': '語音辨識需要網路，請檢查連線。',
+      'audio-capture': '找不到麥克風。',
+    }[e.error] || `語音辨識出了問題（${e.error}），再試一次。`;
+  };
+  rec.onend = () => {
+    listening = false; $('mic').classList.remove('listening'); $('mic').setAttribute('aria-label', '按一下開始念');
+    if (!heard) $('status').textContent = '沒有聽清楚，再按一次麥克風試試。';
+    else if ($('status').textContent === '在聽…念完會自動停止') $('status').textContent = '';
+  };
+  try {
+    rec.start(); listening = true;
+    $('mic').classList.add('listening'); $('mic').setAttribute('aria-label', '在聽，按一下停止');
+    $('status').textContent = '在聽…念完會自動停止';
+  } catch { $('status').textContent = '麥克風啟動失敗，再按一次試試。'; }
+}
+
+// ---------- controls ----------
+function setMode(m) {
+  mode = m; stopAudio();
+  $('m-practice').setAttribute('aria-pressed', String(m === 'practice'));
+  $('m-quiz').setAttribute('aria-pressed', String(m === 'quiz'));
+  $('practice').hidden = m !== 'practice'; $('quizSec').hidden = m !== 'quiz';
+  if (m === 'quiz' && !item) newRound();
+}
+$('m-practice').addEventListener('click', () => setMode('practice'));
+$('m-quiz').addEventListener('click', () => setMode('quiz'));
+$('mic').addEventListener('click', () => listening ? rec.stop() : listen());
+$('qAgain').addEventListener('click', listen);
+$('qNext').addEventListener('click', nextItem);
+$('qListen').addEventListener('click', e => playFile(`${item.d.id}-${item.i + 1}`, null, null));
+$('onlyMe').addEventListener('change', newRound);
+$('hideDe').addEventListener('change', () => renderTarget(null));
+
+mountScenes();
+renderList();
+</script>
