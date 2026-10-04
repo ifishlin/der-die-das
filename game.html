@@ -62,7 +62,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 .panel p{margin:0;color:var(--muted)}
 
 .stars{display:flex;gap:8px;justify-content:center}
-.star{width:48px;height:48px}
+.star{width:min(48px,12vw);height:min(48px,12vw)}
 .star path{fill:var(--star-off);transition:fill .3s}
 .star.on path{fill:var(--star)}
 .star.pop{animation:pop .6s ease}
@@ -95,9 +95,9 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 .fallback .der{color:var(--der)} .fallback .die{color:var(--die)} .fallback .das{color:var(--das)}
 
 .win-stars{display:flex;gap:6px;justify-content:center}
-.win-stars .star{width:56px;height:56px;animation:bounce 1s ease-in-out infinite}
+.win-stars .star{width:min(56px,13vw);height:min(56px,13vw);animation:bounce 1s ease-in-out infinite}
 .win-stars .star:nth-child(2){animation-delay:.1s} .win-stars .star:nth-child(3){animation-delay:.2s}
-.win-stars .star:nth-child(4){animation-delay:.3s} .win-stars .star:nth-child(5){animation-delay:.4s}
+.win-stars .star:nth-child(4){animation-delay:.3s} .win-stars .star:nth-child(5){animation-delay:.4s} .win-stars .star:nth-child(6){animation-delay:.5s}
 @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 .note{color:var(--muted);font-size:.9rem;margin:0}
 .panel .empty{color:var(--bad);font-weight:700}
@@ -114,13 +114,13 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 
   <header>
     <h1>過關遊戲</h1>
-    <p class="lede">看圖，說出冠詞和單字，例如「die Lupe」。答對 5 題就過關；答錯的圖等一下會再出現。</p>
+    <p class="lede">看圖，說出冠詞和單字，例如「die Lupe」。答對 6 題就過關；答錯的圖等一下會再出現。</p>
   </header>
 
   <!-- start -->
   <section class="panel" id="start" aria-labelledby="start-title">
     <h2 id="start-title">準備好了嗎？</h2>
-    <p>要答對 5 題才會結束喔！</p>
+    <p>要答對 6 題才會結束喔！</p>
     <div class="chips" role="group" aria-label="選擇類別">
       <button class="chip" data-c="all" aria-pressed="true">全部</button>
       <button class="chip" data-c="school" aria-pressed="false">文具</button>
@@ -136,7 +136,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   <!-- play -->
   <section class="panel" id="play" hidden aria-label="遊戲中">
     <div class="stars" id="stars" aria-hidden="true"></div>
-    <div class="tally" aria-live="polite">答對 <b id="got">0</b> / 5　·　已經玩了 <b id="tries">0</b> 張</div>
+    <div class="tally" aria-live="polite">答對 <b id="got">0</b> / <span id="goal">6</span>　·　已經玩了 <b id="tries">0</b> 張</div>
     <div class="pic" id="pic"><img id="img" alt="要說出名字的圖片"></div>
     <div class="answer" id="answer" hidden></div>
 
@@ -182,7 +182,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 <script src="speech.js?v=20261001"></script>
 <script>
 const $ = id => document.getElementById(id);
-const GOAL = 5;
+const GOAL = 6;
 const STAR = '<svg class="star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg>';
 const PRAISE = ['答對了！', '太棒了！', '好厲害！', '完全正確！', 'Super!', 'Toll!'];
 
