@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>成年暴龍｜動作總覽</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#24313a;background:#e9edf0}
+    *{box-sizing:border-box}body{margin:0}[hidden]{display:none!important}button,select,input{font:inherit}
+    .wrap{max-width:1360px;margin:auto;padding:30px 24px 44px}
+    header{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}
+    h1{font-size:clamp(28px,3vw,42px);line-height:1.12;margin:0 0 8px;letter-spacing:-.03em}
+    .sub{margin:0;color:#53636d;max-width:760px;line-height:1.55}
+    .tag{white-space:nowrap;background:#d7e4df;color:#315e4d;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:650}
+    .action-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px;margin-bottom:18px}
+    .action{min-height:90px;text-align:left;padding:13px 12px;border:1px solid #c5d0d5;border-radius:14px;background:#f9faf9;cursor:pointer;color:inherit;transition:background .15s,border-color .15s}
+    .action:hover{border-color:#869fa5}.action.active{background:#315e55;border-color:#315e55;color:#fff}
+    .action strong{display:block;font-size:18px;margin-bottom:4px}.action span{font-size:12px;opacity:.78;line-height:1.35}
+    .body{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:18px}
+    .viewer,.details{background:#fff;border:1px solid #ccd5d9;border-radius:18px;overflow:hidden;box-shadow:0 7px 25px #24413b0b}
+    .stage{position:relative;background:repeating-conic-gradient(#f4f6f7 0 25%,#dfe6e8 0 50%) 0 0/28px 28px}
+    canvas{display:block;width:100%;aspect-ratio:3/2;height:auto}
+    .frame-chip{position:absolute;top:13px;left:13px;background:#fffffff0;border:1px solid #d0d8da;border-radius:999px;padding:5px 10px;font-size:13px;font-variant-numeric:tabular-nums}
+    .controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center;padding:14px 16px;border-top:1px solid #e3e8ea}
+    button.control{border:1px solid #aab9bd;background:#fff;color:#24313a;border-radius:9px;padding:8px 12px;cursor:pointer;min-width:45px}
+    button.control:hover{background:#edf3f1}button.primary{background:#315e55;color:#fff;border-color:#315e55;min-width:74px}button.primary:hover{background:#274c45}
+    .spacer{flex:1}.speed{display:flex;align-items:center;gap:6px;font-size:13px;color:#53636d}.speed select{background:#fff;border:1px solid #aab9bd;border-radius:8px;padding:7px}
+    .thumbs{display:flex;gap:7px;overflow-x:auto;padding:0 16px 16px;scrollbar-color:#aebec1 transparent}
+    .thumb{flex:0 0 112px;border:2px solid transparent;border-radius:10px;background:#eef2f3;padding:4px;cursor:pointer;color:#4e5e67;font-size:12px}
+    .thumb.active{border-color:#315e55;background:#e3efea}.thumb img{display:block;width:100%;aspect-ratio:3/2;object-fit:contain}.thumb span{display:block;padding:2px 0}
+    .details{padding:22px}.details h2{font-size:22px;margin:0 0 9px}.details p{color:#52616b;line-height:1.55;margin:0 0 16px;font-size:14px}
+    .source{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#46685d;margin-bottom:12px}
+    dl{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;font-size:14px;margin:0 0 20px}dt{color:#65757d}dd{margin:0;font-weight:600;text-align:right}
+    .option{display:block;border-top:1px solid #e5eaeb;padding:15px 0;font-size:14px}.option select{width:100%;margin-top:7px;border:1px solid #aab9bd;border-radius:8px;padding:8px;background:#fff}.option input{margin-right:8px}
+    .links{display:grid;gap:9px;margin-top:18px}.links a{color:#315e55;text-decoration:none;font-weight:650;font-size:14px}.links a:hover{text-decoration:underline}
+    .notice{margin-top:18px;background:#fff8e9;border:1px solid #edd8a4;border-radius:14px;padding:14px 16px;color:#685327;font-size:14px;line-height:1.5}
+    @media(max-width:1100px){.action-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.body{grid-template-columns:1fr}.details{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}.details h2,.details .source,.details p,.details .links{grid-column:1/-1}}
+    @media(max-width:650px){.wrap{padding:20px 12px 28px}header{display:block}.tag{display:inline-block;margin-top:12px}.action-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.details{display:block}.thumb{flex-basis:88px}.controls{gap:6px}.speed{width:100%;justify-content:flex-end}}
+  </style>
+</head>
+<body><div class="wrap">
+  <header><div><h1>成年暴龍｜動作總覽</h1><p class="sub">在同一頁檢查跑步、轉身、擺尾、表情、嘴型與眨眼。可播放、逐格查看、調整速度及水平翻轉。</p></div><span class="tag">768 × 512 透明畫格</span></header>
+  <nav class="action-grid" id="actions" aria-label="選擇動作"></nav>
+  <div class="body">
+    <section class="viewer" aria-label="動畫預覽">
+      <div class="stage"><canvas id="canvas" width="768" height="512" aria-label="暴龍動作畫格"></canvas><span class="frame-chip" id="frame-chip">01 / 16</span></div>
+      <div class="controls"><button class="control" id="previous" title="上一格">◀</button><button class="control primary" id="play">暫停</button><button class="control" id="next" title="下一格">▶</button><span class="spacer"></span><label class="speed">速度 <select id="speed"><option value="0.25">¼ 倍</option><option value="0.5">½ 倍</option><option value="1" selected>正常</option><option value="2">2 倍</option></select></label></div>
+      <div class="thumbs" id="thumbs" aria-label="畫格縮圖"></div>
+    </section>
+    <aside class="details"><div class="source" id="source"></div><h2 id="title"></h2><p id="description"></p><dl><dt>畫格</dt><dd id="count"></dd><dt>播放速率</dt><dd id="fps"></dd><dt>播放方式</dt><dd id="loop"></dd></dl><label class="option" id="direction-wrap">轉身方向<select id="direction"><option value="forward">右 → 左</option><option value="reverse">左 → 右</option></select></label><label class="option"><input id="flip" type="checkbox">水平翻轉畫面</label><div class="links"><a id="sheet" href="#">查看 sprite sheet ↗</a><a id="folder" href="#">查看此動作畫格 ↗</a></div></aside>
+  </div>
+  <div class="notice">六種動作現已使用新版暴龍。擺尾已改用逐格高清原稿，縮小輸出以保留清楚線條；表情、嘴型與眨眼仍是草圖。請逐格檢查動作銜接與角色一致性。<a href="CHARACTER_AUDIT.md">查看逐項檢查紀錄</a></div>
+</div>
+<script>
+const range=n=>Array.from({length:n},(_,i)=>i), framePath=(folder,n)=>`frames/${folder}/${String(n).padStart(2,'0')}.png`;
+const data=[
+  {id:'run',name:'跑步',badge:'新版 · 16 張',source:'新版跑步 · 配色修正版',frames:16,folder:'run',sequence:range(16),fps:24,loop:true,description:'完整的 16 張跑步循環，身體、腹部及遠側左腳已完成配色統一。',sheet:'sheets/run.png'},
+  {id:'turn',name:'轉身',badge:'修正版 · 5 張',source:'新版轉身 · 正面比例修正',frames:5,folder:'turn',sequence:range(5),fps:5,loop:false,description:'右側面經正面轉到左側面。播放一次後停在最後一格；也可反向播放。',sheet:'sheets/turn.png'},
+  {id:'tail',name:'擺尾',badge:'高清重畫 · 6 張',source:'新版角色 · 高清擺尾',frames:6,folder:'tail',sequence:range(6),fps:7,loop:true,description:'逐格高清原稿縮小成六格往返循環，頭部及腳掌位置保持穩定。',sheet:'sheets/tail.png'},
+  {id:'expression',name:'表情',badge:'重畫 · 9 張',source:'新版角色 · 頭部表情',frames:9,folder:'expression',sequence:range(9),fps:2,loop:false,description:'九種頭部表情與眼睛狀態。點下方縮圖可停在指定表情。',sheet:'sheets/expression.png',labels:['中性','開心','好奇','驚訝','擔心','堅定','睜眼','半閉','閉眼']},
+  {id:'mouth',name:'嘴型',badge:'重畫 · 6 張',source:'新版角色 · 頭部嘴型',frames:6,folder:'mouth',sequence:[0,1,2,3,4,5,0],fps:8,loop:true,description:'六格嘴巴開合循環，並非語音同步對嘴。',sheet:'sheets/mouth.png',labels:['閉嘴','微開','中開','大開','中開','微開']},
+  {id:'blink',name:'眨眼',badge:'重畫 · 3 張',source:'新版角色 · 頭部眨眼',frames:9,folder:'expression',sequence:[6,6,6,6,6,6,6,6,7,8,7,6],fps:8,loop:true,description:'使用新版表情素材的睜眼、半閉和閉眼三張畫格。',sheet:'sheets/expression.png',thumbs:[6,7,8],labels:['','','','','','','睜眼','半閉','閉眼']}
+];
+const byId=Object.fromEntries(data.map(x=>[x.id,x]));const cache=new Map();
+function image(path){if(!cache.has(path)){const img=new Image();img.src=path;img.onload=draw;cache.set(path,img)}return cache.get(path)}
+for(const action of data)for(let i=0;i<action.frames;i++)image(framePath(action.folder,i));
+const canvas=document.querySelector('#canvas'),ctx=canvas.getContext('2d'),els={actions:document.querySelector('#actions'),thumbs:document.querySelector('#thumbs'),title:document.querySelector('#title'),source:document.querySelector('#source'),description:document.querySelector('#description'),count:document.querySelector('#count'),fps:document.querySelector('#fps'),loop:document.querySelector('#loop'),chip:document.querySelector('#frame-chip'),sheet:document.querySelector('#sheet'),folder:document.querySelector('#folder'),play:document.querySelector('#play'),speed:document.querySelector('#speed'),direction:document.querySelector('#direction'),directionWrap:document.querySelector('#direction-wrap'),flip:document.querySelector('#flip')};
+let action=byId.run,step=0,playing=true,lastTime=0,accumulator=0,request=null;
+function sequence(){return action.id==='turn'&&els.direction.value==='reverse'?[...action.sequence].reverse():action.sequence}
+function frameNumber(){return sequence()[step]}
+function draw(){const n=frameNumber(),img=image(framePath(action.folder,n));ctx.clearRect(0,0,768,512);if(img.complete&&img.naturalWidth){ctx.save();if(els.flip.checked){ctx.translate(768,0);ctx.scale(-1,1)}ctx.drawImage(img,0,0,768,512);ctx.restore()}els.chip.textContent=`${String(n+1).padStart(2,'0')} / ${String(action.frames).padStart(2,'0')}`;for(const b of els.thumbs.children)b.classList.toggle('active',Number(b.dataset.frame)===n)}
+function pause(){playing=false;els.play.textContent='播放'}
+function tick(time){if(playing){if(lastTime){accumulator+=Math.min(150,time-lastTime);const interval=1000/(action.fps*Number(els.speed.value));while(accumulator>=interval){accumulator-=interval;if(step>=sequence().length-1){if(action.loop)step=0;else{pause();break}}else step++;draw()}}lastTime=time}else lastTime=0;request=requestAnimationFrame(tick)}
+function choose(id){action=byId[id];step=0;accumulator=0;lastTime=0;playing=true;els.play.textContent='暫停';els.title.textContent=action.name;els.source.textContent=action.source;els.description.textContent=action.description;els.count.textContent=`${action.id==='blink'?3:action.frames} 張`;els.fps.textContent=`${action.fps} FPS`;els.loop.textContent=action.loop?'循環':'單次';els.sheet.href=action.sheet;els.folder.href=`frames/${action.folder}/`;els.directionWrap.hidden=action.id!=='turn';for(const b of els.actions.children)b.classList.toggle('active',b.dataset.action===id);renderThumbs();draw()}
+function renderThumbs(){els.thumbs.replaceChildren();for(const n of action.thumbs||range(action.frames)){const b=document.createElement('button');b.className='thumb';b.dataset.frame=n;const img=document.createElement('img');img.src=framePath(action.folder,n);img.alt=`第 ${n+1} 張`;const label=document.createElement('span');label.textContent=action.labels?.[n]||`第 ${String(n+1).padStart(2,'0')} 張`;b.append(img,label);b.onclick=()=>{pause();const found=sequence().indexOf(n);step=Math.max(0,found);draw()};els.thumbs.append(b)}}
+for(const a of data){const b=document.createElement('button');b.className='action';b.dataset.action=a.id;b.innerHTML=`<strong>${a.name}</strong><span>${a.badge}</span>`;b.onclick=()=>choose(a.id);els.actions.append(b)}
+els.play.onclick=()=>{if(playing)pause();else{if(!action.loop&&step===sequence().length-1)step=0;playing=true;lastTime=0;els.play.textContent='暫停';draw()}};
+document.querySelector('#previous').onclick=()=>{pause();step=Math.max(0,step-1);draw()};document.querySelector('#next').onclick=()=>{pause();step=Math.min(sequence().length-1,step+1);draw()};
+els.direction.onchange=()=>{step=0;lastTime=0;draw()};els.flip.onchange=draw;els.speed.onchange=()=>{accumulator=0;lastTime=0};
+addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){pause();step=Math.max(0,step-1);draw()}if(e.key==='ArrowRight'){pause();step=Math.min(sequence().length-1,step+1);draw()}if(e.key===' '&&e.target===document.body){e.preventDefault();els.play.click()}});
+choose('run');request=requestAnimationFrame(tick);
+</script>
+</body></html>
