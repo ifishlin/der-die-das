@@ -143,12 +143,14 @@ footer ul{margin:8px 0 0;padding-left:1.2em;columns:2 16em;column-gap:24px}
     <p>顏色照德國小學的習慣：der 藍、die 紅、das 綠。</p>
     <p>「原本在 das 堆」或「原本在 die 堆」表示這張卡原本放錯堆，這裡已經放到正確的冠詞下。「名稱待確認」表示單字是依圖片判斷的，教材可能用別的字。</p>
     <p>發音是 Microsoft 神經網路德語語音 Katja 錄製的。</p>
+    <details id="ipaLegend"></details>
     <details id="credits"><summary>照片出處（Pexels、Wikimedia Commons）</summary><ul></ul></details>
   </footer>
 </div>
 
-<script src="cards.js?v=20261010"></script>
-<script src="datefilter.js?v=20261010"></script>
+<script src="cards.js?v=20261010b"></script>
+<script src="ipa.js?v=20261010b"></script>
+<script src="datefilter.js?v=20261010b"></script>
 <script>
 const HINT = {der:'陽性', die:'陰性', das:'中性'};
 const main = document.getElementById('main');
@@ -166,7 +168,7 @@ for (const art of ['der','die','das']) {
     const tag = c.note === 'moved' ? `<span class="tag">原本在 ${c.from || 'das'} 堆</span>`
               : c.note === 'guess' ? '<span class="tag guess">名稱待確認</span>' : '';
     b.innerHTML = `<div class="pic"><img src="img/${c.id}.jpg" alt="" loading="lazy"></div>
-      <div class="label"><span class="word"><span class="art">${c.art}</span>${c.noun}</span><span class="zh">${c.zh}</span>${tag}</div>`;
+      <div class="label"><span class="word"><span class="art">${c.art}</span>${c.noun}</span>${IPA.html(c)}<span class="zh">${c.zh}</span>${tag}</div>`;
     b.addEventListener('click', () => play(b, c));
     grid.appendChild(b);
   }

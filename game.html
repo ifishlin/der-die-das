@@ -175,12 +175,15 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
     <button class="btn primary big" id="again2">再玩一次</button>
   </section>
 
+  <details id="ipaLegend"></details>
+
   <p class="note">語音辨識用的是 iPad／瀏覽器內建的功能，小朋友的聲音有時候會被聽錯。明明說對卻被判錯時，家長可以按「他說對了」。</p>
 </div>
 
-<script src="cards.js?v=20261010"></script>
-<script src="datefilter.js?v=20261010"></script>
-<script src="speech.js?v=20261010"></script>
+<script src="cards.js?v=20261010b"></script>
+<script src="ipa.js?v=20261010b"></script>
+<script src="datefilter.js?v=20261010b"></script>
+<script src="speech.js?v=20261010b"></script>
 <script>
 const $ = id => document.getElementById(id);
 const GOAL = 6;
@@ -226,7 +229,7 @@ function nextCard() {
 function reveal() {
   $('answer').hidden = false;
   $('answer').className = 'answer ' + card.art;
-  $('answer').innerHTML = `<span class="art">${card.art}</span>${card.noun}`;
+  $('answer').innerHTML = `<span class="art">${card.art}</span>${card.noun}${IPA.html(card)}`;
   $('pic').className = 'pic ' + card.art;
 }
 

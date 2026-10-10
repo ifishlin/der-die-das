@@ -154,15 +154,18 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
     <button class="btn primary" id="next">下一張</button>
   </div>
 
+  <details id="ipaLegend"></details>
+
   <div class="note">
     <p>語音辨識用的是 iPad／瀏覽器內建的功能，會判斷「聽起來是不是這個字」，沒辦法細到每個音標不標準。小朋友的聲音有時候會被聽錯，不用太在意，多說幾次就好。</p>
     <p>「錄下我的聲音」可以錄 5 秒，然後跟示範發音輪流聽，比比看哪裡不一樣。錄音只留在這台裝置上，不會上傳。</p>
   </div>
 </div>
 
-<script src="cards.js?v=20261010"></script>
-<script src="datefilter.js?v=20261010"></script>
-<script src="speech.js?v=20261010"></script>
+<script src="cards.js?v=20261010b"></script>
+<script src="ipa.js?v=20261010b"></script>
+<script src="datefilter.js?v=20261010b"></script>
+<script src="speech.js?v=20261010b"></script>
 <script>
 const $ = id => document.getElementById(id);
 
@@ -190,7 +193,7 @@ function next() {
 }
 function reveal() {
   $('answer').className = 'answer ' + card.art;
-  $('answer').innerHTML = `<span class="art">${card.art}</span>${card.noun}`;
+  $('answer').innerHTML = `<span class="art">${card.art}</span>${card.noun}${IPA.html(card)}`;
   $('stage').className = 'stage ' + card.art;
 }
 
