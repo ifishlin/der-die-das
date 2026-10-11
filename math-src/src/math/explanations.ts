@@ -71,14 +71,14 @@ function g1Subtract(a: number, b: number): Explanation {
     const x = a - 10;
     const y = b - x;
     remove(x);
-    steps.push(step(`先拿走第二個十格框的 ${x} 個，剩下 10 個。`, scene('剩 10 個')));
+    steps.push(step(`先把第二個十格框的 ${x} 個移到右邊，剩下 10 個。`, scene('剩 10 個')));
     remove(y);
-    steps.push(step(`還要再拿走 ${y} 個：從 10 個裡拿走 ${y} 個。`, scene(`剩 ${10 - y} 個`)));
+    steps.push(step(`還要再拿走 ${y} 個：從 10 個裡再移 ${y} 個到右邊。`, scene(`剩 ${10 - y} 個`)));
     steps.push(step(`${a} − ${b} = 10 − ${y} = ${diff}`, scene(`剩下 ${diff} 個`, diff), 3000));
     return { steps, hintStep: 1 };
   }
   remove(b);
-  steps.push(step(`拿走 ${b} 個（打叉的是拿走的）。`, scene(diff === 0 ? '全部拿走了' : '數一數剩幾個')));
+  steps.push(step(`把 ${b} 個移到右邊拿走。`, scene(diff === 0 ? '全部拿走了' : '數一數剩幾個')));
   steps.push(step(diff === 0 ? `全部拿走了，剩下 0 個：${a} − ${b} = 0` : `${a} − ${b} = ${diff}`, scene(`剩下 ${diff} 個`, diff), 3000));
   return { steps, hintStep: 1 };
 }
@@ -166,7 +166,7 @@ function g2Subtract(a: number, b: number): Explanation {
   const liveOnes = blocks.filter(bl => bl.kind === 'one' && !bl.hidden).sort((x, y) => y.place.slot - x.place.slot);
   liveTens.slice(0, tb).forEach(bl => (bl.removed = true));
   liveOnes.slice(0, ob).forEach(bl => (bl.removed = true));
-  steps.push(step(`拿走 ${takeText}（打叉的是拿走的）。`, scene(`剩 ${tensLeft - tb} 條十位、${onesNow - ob} 個個位`)));
+  steps.push(step(`把 ${takeText} 移到下面的「拿走的」。`, scene(`剩 ${tensLeft - tb} 條十位、${onesNow - ob} 個個位`)));
   const detail = oa < ob ? `${tensLeft * 10} + ${onesNow} − ${b} = ${(tensLeft - tb) * 10} + ${onesNow - ob} = ${diff}` : `${a} − ${b} = ${diff}`;
   steps.push(step(`剩下 ${describe(diff)}：${detail}`, scene(`剩下 ${diff}`, diff), 3200));
   return { steps, hintStep: 1 };

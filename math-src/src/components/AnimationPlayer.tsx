@@ -1,21 +1,21 @@
 import { useEffect, useMemo, useRef } from 'react';
-import type { Explanation, SceneState } from '../math/scene';
+import { hasRemoved, type Explanation, type SceneState } from '../math/scene';
 import { prefersReducedMotion, useAnimationSteps } from '../hooks/useAnimationSteps';
 import { DotsScene } from '../visuals/DotsScene';
 import { BaseTenScene } from '../visuals/BaseTenScene';
 import { MultiplicationScene } from '../visuals/MultiplicationScene';
 import { PlaceValueScene } from '../visuals/PlaceValueScene';
 
-function SceneView({ scene, first }: { scene: SceneState; first: SceneState }) {
+function SceneView({ scene, first, hasAway }: { scene: SceneState; first: SceneState; hasAway: boolean }) {
   switch (scene.kind) {
     case 'dots':
-      return <DotsScene scene={scene} />;
+      return <DotsScene scene={scene} hasAway={hasAway} />;
     case 'blocks':
-      return <BaseTenScene scene={scene} hasSecond={first.kind === 'blocks' && first.blocks.some(b => b.place.zone === 'second')} />;
+      return <BaseTenScene scene={scene} hasSecond={first.kind === 'blocks' && first.blocks.some(b => b.place.zone === 'second')} hasAway={hasAway} />;
     case 'array':
       return <MultiplicationScene scene={scene} />;
     case 'placevalue':
-      return <PlaceValueScene scene={scene} hasSecond={first.kind === 'placevalue' && first.chips.some(c => c.place.zone === 'second')} />;
+      return <PlaceValueScene scene={scene} hasSecond={first.kind === 'placevalue' && first.chips.some(c => c.place.zone === 'second')} hasAway={hasAway} />;
   }
 }
 
@@ -44,6 +44,8 @@ export function AnimationPlayer({ explanation, resetKey, maxStep, playToken = 0,
   const last = Math.min(maxStep, steps.length - 1);
   const locked = last < steps.length - 1;
   const current = steps[Math.min(c.index, steps.length - 1)];
+  // A subtraction keeps an empty "拿走的" area from the first step on, so the picture doesn't jump when things move into it.
+  const hasAway = useMemo(() => steps.some(s => hasRemoved(s.scene)), [steps]);
 
   const lastToken = useRef(playToken);
   useEffect(() => {
@@ -65,7 +67,7 @@ export function AnimationPlayer({ explanation, resetKey, maxStep, playToken = 0,
     <div className="player">
       <p className="legend">{LEGEND[current.scene.kind]}</p>
       <div className="scene-wrap">
-        <SceneView scene={current.scene} first={steps[0].scene} />
+        <SceneView scene={current.scene} first={steps[0].scene} hasAway={hasAway} />
       </div>
       <p className="caption" aria-live="polite">
         {current.caption}

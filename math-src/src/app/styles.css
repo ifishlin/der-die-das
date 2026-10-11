@@ -112,9 +112,11 @@ button, input { font: inherit; }
 .dot circle { stroke: rgba(0, 0, 0, 0.15); stroke-width: 1.5; }
 .dot-a circle { fill: var(--dot-a); }
 .dot-b circle { fill: var(--dot-b); }
-/* taken away: the item fades, its red cross stays fully visible */
-.removed circle, .removed rect, .removed .seg { opacity: 0.25; }
-.cross { stroke: var(--warn); stroke-width: 3.5; stroke-linecap: round; fill: none; }
+/* taken away: the item slides into the "拿走的" area and turns orange (the colour of the part being subtracted) */
+.dot.removed circle, .pchip.removed circle { fill: var(--dot-b); }
+.block.removed rect { fill: var(--dot-b); }
+.away-box { fill: none; stroke: var(--dot-b); stroke-width: 2; stroke-dasharray: 7 6; opacity: 0.7; }
+.pv-col.away { stroke: var(--dot-b); stroke-dasharray: 7 6; }
 .block rect { stroke: rgba(0, 0, 0, 0.25); stroke-width: 1; }
 .block-a rect { fill: var(--dot-a); }
 .block-b rect { fill: var(--dot-b); }

@@ -33,7 +33,7 @@ export type Block = {
   kind: 'ten' | 'one';
   color: 'a' | 'b' | 'c';
   place: BlockPlace;
-  /** Taken away in a subtraction: still drawn, crossed out. */
+  /** Taken away in a subtraction: slides over to the "拿走的" area. */
   removed?: boolean;
   /** Merged into something else: no longer drawn. */
   hidden?: boolean;
@@ -96,6 +96,20 @@ export type Explanation = {
   /** Step shown by the second hint: part of the way, without the final answer. */
   hintStep: number;
 };
+
+/** Whether this scene has items that were taken away (a subtraction). */
+export function hasRemoved(scene: SceneState): boolean {
+  switch (scene.kind) {
+    case 'dots':
+      return scene.dots.some(d => d.removed);
+    case 'blocks':
+      return scene.blocks.some(b => b.removed);
+    case 'placevalue':
+      return scene.chips.some(c => c.removed);
+    default:
+      return false;
+  }
+}
 
 /** Counts what the scene currently shows. Used by tests and by the on-screen number labels. */
 export function summarize(scene: SceneState) {

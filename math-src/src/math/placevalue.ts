@@ -41,7 +41,7 @@ function live(chips: Chip[], col: PlaceCol) {
     .sort((x, y) => x.place.slot - y.place.slot);
 }
 
-/** Next free slot in a column, after everything still drawn there (crossed-out counters included). */
+/** Next free slot in a column, after everything still drawn there (taken-away counters keep their spot). */
 function nextSlot(chips: Chip[], col: PlaceCol) {
   const used = chips.filter(c => c.place.zone === 'main' && c.place.col === col && !c.place.stack && !c.hidden);
   return used.length ? Math.max(...used.map(c => c.place.slot)) + 1 : 0;
@@ -122,7 +122,7 @@ export function placeValueSubtract(a: number, b: number): Explanation {
     if (need === 0) continue;
     if (live(chips, col).length < need) borrow(col as 'o' | 't');
     live(chips, col).slice(-need).forEach(c => (c.removed = true));
-    steps.push(step(`拿走 ${need} 個${UNIT[col]}（打叉的是拿走的）。`, scene(status())));
+    steps.push(step(`把 ${need} 個${UNIT[col]}移到下面的「拿走的」。`, scene(status())));
   }
 
   steps.push(step(`剩下 ${describeHTO(diff)}：${a} − ${b} = ${diff}`, scene(`剩下 ${diff}`, diff), 3400));
