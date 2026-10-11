@@ -117,16 +117,19 @@ export function placeValueSubtract(a: number, b: number): Explanation {
     steps.push(step(`現在${COL_NAME[col]}有 ${live(chips, col).length} 個${UNIT[col]}。`, scene(status())));
   };
 
-  for (const col of ['o', 't', 'h'] as PlaceCol[]) {
+  // Like subtracting on paper: ones first, then tens, then hundreds (borrowing first whenever a column is short).
+  const cols = (['o', 't', 'h'] as PlaceCol[]).filter(c => db[c] > 0);
+  cols.forEach((col, i) => {
     const need = db[col];
-    if (need === 0) continue;
     if (live(chips, col).length < need) borrow(col as 'o' | 't');
     live(chips, col).slice(-need).forEach(c => (c.removed = true));
-    steps.push(step(`把 ${need} 個${UNIT[col]}移到下面的「拿走的」。`, scene(status())));
-  }
+    const lead = cols.length === 1 ? '拿' : i === 0 ? '先拿' : i === cols.length - 1 ? '最後拿' : '再拿';
+    steps.push(step(`${lead}${COL_NAME[col]}：把 ${need} 個${UNIT[col]}移到下面的「拿走的」。`, scene(status())));
+  });
 
   steps.push(step(`剩下 ${describeHTO(diff)}：${a} − ${b} = ${diff}`, scene(`剩下 ${diff}`, diff), 3400));
-  return { steps, hintStep: 1 };
+  // The hint may show the animation up to the step before the last take-away, never the finished subtraction.
+  return { steps, hintStep: Math.max(0, steps.length - 3) };
 }
 
 /** Two hints for questions above 100, neither stating the final answer. */

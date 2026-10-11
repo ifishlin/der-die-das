@@ -142,8 +142,9 @@ function g2Subtract(a: number, b: number): Explanation {
   const scene = (mainLabel: string, total?: number): BlocksScene => ({ kind: 'blocks', blocks: clone(blocks), mainLabel, total });
   const takeText = tb > 0 && ob > 0 ? `${tb} 條十位和 ${ob} 個個位` : tb > 0 ? `${tb} 條十位` : `${ob} 個個位`;
 
+  const order = tb > 0 && ob > 0 ? '先拿個位，再拿十位。' : '';
   const steps: ExplanationStep[] = [
-    step(`${a} 是 ${describe(a)}。要拿走 ${b}，也就是 ${takeText}。${a} − ${b} = ?`, scene(`${a}`), 3000),
+    step(b === 0 ? `${a} 是 ${describe(a)}。${a} − 0 = ?` : `${a} 是 ${describe(a)}。要拿走 ${b}，也就是 ${takeText}。${order}${a} − ${b} = ?`, scene(`${a}`), 3000),
   ];
 
   let tensLeft = ta;
@@ -162,14 +163,24 @@ function g2Subtract(a: number, b: number): Explanation {
     steps.push(step(`現在是 ${tensLeft} 條十位和 ${onesNow} 個個位。`, scene(`${tensLeft} 條十位、${onesNow} 個個位`)));
   }
 
-  const liveTens = blocks.filter(bl => bl.kind === 'ten' && !bl.hidden).sort((x, y) => y.place.slot - x.place.slot);
-  const liveOnes = blocks.filter(bl => bl.kind === 'one' && !bl.hidden).sort((x, y) => y.place.slot - x.place.slot);
-  liveTens.slice(0, tb).forEach(bl => (bl.removed = true));
-  liveOnes.slice(0, ob).forEach(bl => (bl.removed = true));
-  steps.push(step(`把 ${takeText} 移到下面的「拿走的」。`, scene(`剩 ${tensLeft - tb} 條十位、${onesNow - ob} 個個位`)));
+  const live = (kind: Block['kind']) => blocks.filter(bl => bl.kind === kind && !bl.hidden && !bl.removed).sort((x, y) => y.place.slot - x.place.slot);
+  if (b === 0) {
+    steps.push(step(`一個都不拿，還是 ${describe(a)}。`, scene(`${a}`)));
+  } else {
+    // Like subtracting on paper: ones first (after borrowing, if there were too few), then the tens.
+    if (ob > 0) {
+      live('one').slice(0, ob).forEach(bl => (bl.removed = true));
+      steps.push(step(`${tb > 0 ? '先拿' : '拿'}個位：把 ${ob} 個個位移到下面的「拿走的」。`, scene(`剩 ${tensLeft} 條十位、${onesNow - ob} 個個位`)));
+    }
+    if (tb > 0) {
+      live('ten').slice(0, tb).forEach(bl => (bl.removed = true));
+      steps.push(step(`${ob > 0 ? '再拿' : '拿'}十位：把 ${tb} 條十位移到下面的「拿走的」。`, scene(`剩 ${tensLeft - tb} 條十位、${onesNow - ob} 個個位`)));
+    }
+  }
   const detail = oa < ob ? `${tensLeft * 10} + ${onesNow} − ${b} = ${(tensLeft - tb) * 10} + ${onesNow - ob} = ${diff}` : `${a} − ${b} = ${diff}`;
   steps.push(step(`剩下 ${describe(diff)}：${detail}`, scene(`剩下 ${diff}`, diff), 3200));
-  return { steps, hintStep: 1 };
+  // The hint may show the animation up to the step before the last take-away, never the finished subtraction.
+  return { steps, hintStep: Math.max(0, steps.length - 3) };
 }
 
 // ---------------------------------------------------------------- 小二：乘法點陣

@@ -44,11 +44,14 @@ function takenAway(blocks: Block[]): Away {
   return { tens: gone.filter(b => b.kind === 'ten'), ones: gone.filter(b => b.kind === 'one') };
 }
 
-function awayPosition(b: Block, away: Away) {
+/**
+ * Where a taken-away block lands. The ones grid uses the same left edge as the ones in the main area, so
+ * ones that already moved never get pushed aside when the tens arrive later; the tens stack up from the left.
+ */
+function awayPosition(b: Block, away: Away, onesX: number) {
   if (b.kind === 'ten') return { x: LEFT + away.tens.indexOf(b) * TEN_STEP, y: AWAY_Y };
   const k = away.ones.indexOf(b);
-  const ox = LEFT + away.tens.length * TEN_STEP + 16;
-  return { x: ox + (k % 5) * ONE_STEP, y: AWAY_Y + Math.floor(k / 5) * ONE_STEP };
+  return { x: onesX + (k % 5) * ONE_STEP, y: AWAY_Y + Math.floor(k / 5) * ONE_STEP };
 }
 
 function count(blocks: Block[], zone: BlockZone) {
@@ -65,6 +68,7 @@ export function BaseTenScene({ scene, hasSecond, hasAway = false }: { scene: Blo
   const second = count(scene.blocks, 'second');
   const away = takenAway(scene.blocks);
   const order = [...away.tens, ...away.ones];
+  const awayOnesX = onesOrigin(scene.blocks, 'main');
   const showSecond = hasSecond && scene.blocks.some(b => b.place.zone === 'second');
   const h = blocksHeight(hasSecond || hasAway);
   return (
@@ -92,7 +96,7 @@ export function BaseTenScene({ scene, hasSecond, hasAway = false }: { scene: Blo
       )}
       {scene.blocks.map(b => {
         const k = b.removed ? order.indexOf(b) : -1;
-        const { x, y } = k >= 0 ? awayPosition(b, away) : position(b, scene.blocks);
+        const { x, y } = k >= 0 ? awayPosition(b, away, awayOnesX) : position(b, scene.blocks);
         const cls = `mv block block-${b.color}${b.removed ? ' removed' : ''}${b.hidden ? ' gone' : ''}`;
         return (
           <g

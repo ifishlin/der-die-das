@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { generateExplanation, getHints } from '../math/explanations';
-import { summarize, type SceneState } from '../math/scene';
+import { summarize, type BlocksScene, type SceneState } from '../math/scene';
 import { answerOf, type Grade, type Operator, type Question } from '../math/types';
 import { validateQuestion } from '../math/validation';
 import { GRADE1_PRESET, GRADE2_MULTIPLY, GRADE2_PRESET } from '../math/presets';
@@ -143,6 +143,66 @@ describe('explanation animations end in the right picture', () => {
         expect(summarize(st.scene).value).toBeGreaterThanOrEqual(0);
       }
     }
+  }, 60_000);
+
+  it('subtraction takes the ones first, then the tens (26 − 12)', () => {
+    const ex = generateExplanation(q(2, 'subtract', 26, 12));
+    const taken = ex.steps.map(st => {
+      const blocks = (st.scene as BlocksScene).blocks;
+      return { ones: blocks.filter(b => b.removed && b.kind === 'one').length, tens: blocks.filter(b => b.removed && b.kind === 'ten').length };
+    });
+    expect(taken).toEqual([{ ones: 0, tens: 0 }, { ones: 2, tens: 0 }, { ones: 2, tens: 1 }, { ones: 2, tens: 1 }]);
+    expect(ex.steps[0].caption).toContain('先拿個位，再拿十位');
+    expect(ex.steps[1].caption).toContain('先拿個位：把 2 個個位');
+    expect(ex.steps[2].caption).toContain('再拿十位：把 1 條十位');
+    expect(summarize(ex.steps[1].scene)).toMatchObject({ tens: 2, ones: 4 }); // only the ones have left so far
+    expect(summarize(ex.steps[2].scene)).toMatchObject({ tens: 1, ones: 4 });
+  });
+
+  it('when the ones are too few, borrow from the tens first, then take the ones, then the tens (52 − 27)', () => {
+    const caps = generateExplanation(q(2, 'subtract', 52, 27)).steps.map(st => st.caption);
+    const at = (needle: string) => caps.findIndex(c => c.includes(needle));
+    expect(at('退位')).toBeGreaterThan(0);
+    expect(at('先拿個位：把 7 個個位')).toBeGreaterThan(at('退位'));
+    expect(at('再拿十位：把 2 條十位')).toBeGreaterThan(at('先拿個位'));
+    expect(at('剩下')).toBe(caps.length - 1);
+  });
+
+  it('takes only the digit that exists, and nothing at all for − 0', () => {
+    const only = (a: number, b: number) => generateExplanation(q(2, 'subtract', a, b)).steps.map(st => st.caption);
+    const tensOnly = only(50, 20);
+    expect(tensOnly).toHaveLength(3);
+    expect(tensOnly[1]).toMatch(/^拿十位：把 2 條十位/);
+    const onesOnly = only(27, 5);
+    expect(onesOnly).toHaveLength(3);
+    expect(onesOnly[1]).toMatch(/^拿個位：把 5 個個位/);
+    const none = generateExplanation(q(2, 'subtract', 52, 0));
+    expect(none.steps).toHaveLength(3);
+    expect(none.steps.every(st => !(st.scene as BlocksScene).blocks.some(b => b.removed))).toBe(true);
+    expect(summarize(none.steps[none.steps.length - 1].scene).value).toBe(52);
+  });
+
+  it('place value goes ones → tens → hundreds, and a lone column is just "拿"', () => {
+    const caps = generateExplanation(q(2, 'subtract', 658, 324)).steps.map(st => st.caption);
+    const at = (needle: string) => caps.findIndex(c => c.includes(needle));
+    expect(at('先拿個位：把 4 個一')).toBeGreaterThan(0);
+    expect(at('再拿十位：把 2 個十')).toBeGreaterThan(at('先拿個位'));
+    expect(at('最後拿百位：把 3 個百')).toBeGreaterThan(at('再拿十位'));
+    const lone = generateExplanation(q(2, 'subtract', 700, 300)).steps.map(st => st.caption);
+    expect(lone.some(c => c.startsWith('拿百位：把 3 個百'))).toBe(true);
+  });
+
+  it('the second hint never shows the finished subtraction', () => {
+    const check = (question: Question) => {
+      const ex = generateExplanation(question);
+      const v = summarize(ex.steps[ex.hintStep].scene).value;
+      expect(v, `${question.left} − ${question.right}`).not.toBe(answerOf(question));
+      expect(ex.hintStep).toBeLessThan(ex.steps.length - 1);
+    };
+    for (let a = 1; a <= 100; a++) for (let b = 1; b <= a; b++) check(q(2, 'subtract', a, b));
+    let seed = 99;
+    const rnd = (n: number) => { seed = (seed * 1103515245 + 12345) % 2147483648; return seed % n; };
+    for (let i = 0; i < 1500; i++) { const a = 101 + rnd(900); check(q(2, 'subtract', a, 1 + rnd(a))); }
   }, 60_000);
 
   it('only the last step shows the answer', () => {
