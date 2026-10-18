@@ -73,6 +73,9 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 .w.on{border-color:var(--ink)}
 .few{color:var(--muted);font-size:.85rem}
 .cell.sel{outline:3px solid var(--ink)}
+.big.letter{background:none}
+.letter.on,.big.letter.on{background:var(--ink);color:var(--bg)}
+.w.on{border-color:var(--ink);box-shadow:0 0 0 3px var(--ink)}
 
 /* practice */
 .stage{background:var(--paper);border-radius:18px;box-shadow:var(--shadow);padding:22px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;max-width:560px;margin:0 auto;width:100%}
@@ -109,7 +112,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 
   <header>
     <h1>字母表</h1>
-    <p class="lede">點大字母聽它的名字，點圖片聽單字。每個字母有三個字，可以按「換一組」換新的字，每次打開也會是不一樣的字母表。</p>
+    <p class="lede">點大字母，會先念字母，再依序念下面三個單字（念到的會亮起來）；也可以只點某一張圖聽那個單字。每個字母有三個字，可以按「換一組」換新的字，每次打開也會是不一樣的字母表。</p>
   </header>
 
   <div class="bar">
@@ -128,28 +131,29 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
     <div class="stage">
       <div class="score" aria-live="polite">念對 <b id="right">0</b> / <b id="total">0</b></div>
       <div class="ask" id="ask">請念出這個字母</div>
-      <button class="big letter" id="bigLetter" aria-label="聽這個字母" style="background:none">?</button>
-      <div class="hint" id="hint" hidden><div class="words" id="hintWords"></div></div>
+      <button class="big letter" id="bigLetter" aria-label="聽這個字母">?</button>
+      <div class="hint"><div class="words" id="hintWords"></div></div>
       <p class="unsupported" id="unsupported" hidden>這個瀏覽器沒有語音辨識，所以不能自動判斷。請用 iPad、iPhone 的 Safari 或電腦上的 Chrome，或請大人幫忙聽。</p>
       <button class="mic" id="mic" aria-label="按一下開始說">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg>
       </button>
-      <div class="status" id="status" aria-live="polite">按麥克風，念出字母的名字</div>
+      <div class="status" id="status" aria-live="polite">按麥克風開始念</div>
       <div class="result" id="result" hidden aria-live="polite"></div>
       <div class="row">
-        <button class="btn" id="listen">聽示範</button>
-        <button class="btn" id="showHint">給我提示</button>
+        <button class="btn" id="listen">聽整組示範</button>
+        <button class="btn" id="skip">這個我不會，聽一次</button>
         <button class="btn primary" id="next">下一個字母</button>
       </div>
     </div>
   </section>
 
   <div class="note">
-    <p>字母的唸法是字母的「名字」，例如 B 念「Be」、W 念「We」、J 念「Jott」。每個字母下面是以它開頭的單字，聽單字更容易記住開頭的聲音。</p>
+    <p>念的順序：先字母，再三個單字，跟著唸。字母的唸法是字母的「名字」，例如 B 念「Be」、W 念「We」、J 念「Jott」。每個字母下面是以它開頭的單字，聽單字更容易記住開頭的聲音。</p>
     <p id="fewNote"></p>
-    <p>練習模式的語音辨識只是輔助：單一個字母很短，容易被聽錯。念不出來就按「聽示範」，或念一個以這個字母開頭的字也算對。</p>
+    <p>練習模式的語音辨識只是輔助：單一個字母很短，容易被聽錯。每次先念字母，念對才換下一個字；念不出來就按「這個我不會，聽一次」。</p>
   </div>
 </div>
 
 <script src="cards.js?v=20261018"></script>
-<script src="abc.js?v=20261018"></script>
+<script src="speech.js?v=20261018"></script>
+<script src="abc.js?v=20261018b"></script>

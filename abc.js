@@ -35,19 +35,34 @@ const shown = {};
 LETTERS.forEach(L => shown[L.up] = pick(L));
 
 // ---------- audio ----------
-let player = null;
+let player = null, seqId = 0;
 function say(url, fallbackText) {
   if (player) player.pause();
-  player = new Audio(url);
-  return player.play().catch(() => {
-    if ('speechSynthesis' in window) {
-      const u = new SpeechSynthesisUtterance(fallbackText); u.lang = 'de-DE'; u.rate = .8;
-      speechSynthesis.cancel(); speechSynthesis.speak(u);
-    }
+  return new Promise(res => {
+    const a = player = new Audio(url);
+    a.onended = () => res();
+    a.play().catch(() => {
+      if ('speechSynthesis' in window) {
+        const u = new SpeechSynthesisUtterance(fallbackText); u.lang = 'de-DE'; u.rate = .8; u.onend = () => res();
+        speechSynthesis.cancel(); speechSynthesis.speak(u);
+      } else res();
+    });
   });
 }
 const sayLetter = L => say(`audio/abc/${L.key}.mp3`, L.up);
 const sayWord = c => say(`audio/${c.id}.mp3`, `${c.art} ${c.noun}`);
+const wait = ms => new Promise(r => setTimeout(r, ms));
+// letter first, then its words one by one; mark(i) highlights item i (0 = letter, 1..n = words)
+async function sayAll(L, mark) {
+  const id = ++seqId, words = shown[L.up];
+  for (let i = 0; i <= words.length; i++) {
+    if (id !== seqId) return;
+    mark(i);
+    await (i === 0 ? sayLetter(L) : sayWord(words[i - 1]));
+    await wait(450);
+  }
+  if (id === seqId) mark(-1);
+}
 
 // ---------- table ----------
 function wordBtn(c) {
@@ -55,7 +70,7 @@ function wordBtn(c) {
   b.className = 'w ' + c.art;
   b.setAttribute('aria-label', `${c.art} ${c.noun}，${c.zh}`);
   b.innerHTML = `<img src="img/${c.id}.jpg" alt="" loading="lazy"><span class="t"><i>${c.art}</i>${c.noun}</span>`;
-  b.addEventListener('click', () => { sayWord(c); });
+  b.addEventListener('click', () => { seqId++; sayWord(c); });
   return b;
 }
 function renderCell(L) {
@@ -71,8 +86,12 @@ function buildGrid() {
   LETTERS.forEach(L => {
     const cell = document.createElement('div');
     cell.className = 'cell'; cell.id = 'cell-' + L.key;
-    cell.innerHTML = `<div class="cellhead"><button class="letter" aria-label="聽字母 ${L.up}">${L.up}${L.low}</button><button class="swap">換一組</button></div><div class="words"></div><div class="few"></div>`;
-    cell.querySelector('.letter').addEventListener('click', () => sayLetter(L));
+    cell.innerHTML = `<div class="cellhead"><button class="letter" aria-label="聽字母 ${L.up} 和單字">${L.up}${L.low}</button><button class="swap">換一組</button></div><div class="words"></div><div class="few"></div>`;
+    cell.querySelector('.letter').addEventListener('click', () => sayAll(L, i => {
+      cell.classList.toggle('sel', i >= 0);
+      cell.querySelector('.letter').classList.toggle('on', i === 0);
+      cell.querySelectorAll('.w').forEach((w, k) => w.classList.toggle('on', k === i - 1));
+    }));
     cell.querySelector('.swap').addEventListener('click', () => { shown[L.up] = pick(L, shown[L.up].map(c => c.id)); renderCell(L); });
     g.appendChild(cell);
     renderCell(L);
@@ -98,47 +117,56 @@ function setMode(prac) {
 $('m-table').addEventListener('click', () => setMode(false));
 $('m-prac').addEventListener('click', () => setMode(true));
 
-// ---------- practice ----------
-let cur = null, bag = [], tried = false, right = 0, total = 0;
+// ---------- practice: say the letter first, then each of its three words ----------
+let cur = null, bag = [], step = 0, right = 0, total = 0, tries = 0;
+const target = () => step === 0 ? null : shown[cur.up][step - 1];
+function markStep() {
+  $('bigLetter').classList.toggle('on', step === 0);
+  [...$('hintWords').children].forEach((w, k) => w.classList.toggle('on', k === step - 1));
+  const t = target();
+  if (step > shown[cur.up].length) return;
+  $('ask').textContent = step === 0 ? '先念這個字母' : `再念這個字：${t.art} ${t.noun}`;
+  $('status').textContent = '按麥克風開始念';
+}
 function nextLetter() {
+  seqId++;
   if (!bag.length) bag = shuffle(LETTERS.slice());
   let n = bag.pop();
   if (cur && n === cur && bag.length) { bag.unshift(n); n = bag.pop(); }
-  cur = n; tried = false;
+  cur = n; step = 0; tries = 0;
   $('bigLetter').textContent = n.up + n.low;
-  $('hint').hidden = true;
+  $('hintWords').replaceChildren(...shown[n.up].map(wordBtn));
   $('result').hidden = true;
-  $('status').textContent = '按麥克風，念出字母的名字';
-  $('ask').textContent = '請念出這個字母';
-}
-function showHint() {
-  $('hintWords').replaceChildren(...shown[cur.up].map(wordBtn));
-  $('hint').hidden = false;
+  markStep();
 }
 const norm = s => s.toLowerCase().normalize('NFC').replace(/[^a-zäöüß ]/g, '').trim();
-// accept the letter's name, or a word that begins with this letter (children often say "Ball" for B)
-function judge(alts) {
+function judgeLetter(alts) {
   for (const raw of alts) {
     const t = norm(raw); if (!t) continue;
-    const parts = t.split(/\s+/);
-    if (parts.some(p => cur.aliases.includes(p)) || cur.aliases.includes(t.replace(/ /g, ''))) return {ok: true, via: 'name', heard: raw};
-  }
-  for (const raw of alts) {
-    const t = norm(raw); if (!t) continue;
-    const w = t.split(/\s+/).find(p => p.length > 1 && p[0] === cur.low);
-    if (w && !/^(der|die|das)$/.test(w) && !special(w)) return {ok: true, via: 'word', heard: raw, word: w};
+    if (t.split(/\s+/).some(p => cur.aliases.includes(p)) || cur.aliases.includes(t.replace(/ /g, ''))) return {ok: true, heard: raw};
   }
   return {ok: false, heard: alts[0]};
 }
-function showResult(r) {
+function judgeWord(alts) {
+  const r = SpeechMatch.best(alts, target());
+  return {ok: r.nounOk, heard: r.transcript || alts[0], articleOk: r.articleOk};
+}
+async function showResult(r) {
   const box = $('result'); box.hidden = false;
   box.className = 'result ' + (r.ok ? 'good' : 'bad');
-  box.innerHTML = r.ok
-    ? `<b>對了！</b><span>${r.via === 'word' ? `你說的「${r.word}」是 ${cur.up} 開頭的字。` : `這個字母念「${cur.up}」。`}</span>`
-    : `<b>再試一次</b><span>我聽到：「${r.heard}」。這個字母要念 ${cur.up}，按「聽示範」聽聽看。</span>`;
-  if (!tried) { total++; if (r.ok) right++; tried = true; }
-  $('right').textContent = right; $('total').textContent = total;
-  if (!r.ok) { setTimeout(() => sayLetter(cur), 700); showHint(); }
+  const t = target(), name = step === 0 ? cur.up : `${t.art} ${t.noun}`;
+  if (r.ok) {
+    const last = step === shown[cur.up].length;
+    box.innerHTML = `<b>對了！</b><span>${name}</span>`;
+    if (tries === 0) right++; total++; tries = 0;
+    $('right').textContent = right; $('total').textContent = total;
+    if (last) { box.innerHTML = `<b>這個字母完成了！</b><span>${cur.up} 的字母和三個字都念完了。按「下一個字母」。</span>`; step = 4; markStep(); $('ask').textContent = '完成！'; $('status').textContent = ''; return; }
+    step++; await wait(900); markStep(); box.hidden = true;
+  } else {
+    tries++;
+    box.innerHTML = `<b>再試一次</b><span>我聽到：「${r.heard}」。正確是 ${name}，先聽示範再念。</span>`;
+    await wait(500); (step === 0 ? sayLetter(cur) : sayWord(t));
+  }
 }
 
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -153,7 +181,7 @@ function startListening() {
   rec.onresult = e => {
     got = true;
     const alts = [...e.results[0]].map(a => a.transcript).filter(Boolean);
-    if (alts.length) showResult(judge(alts));
+    if (alts.length && step <= shown[cur.up].length) showResult(step === 0 ? judgeLetter(alts) : judgeWord(alts));
   };
   rec.onerror = e => {
     got = true;
@@ -174,9 +202,9 @@ function startListening() {
   catch (err) { $('status').textContent = '麥克風啟動失敗，再按一次試試。'; }
 }
 $('mic').addEventListener('click', () => listening ? rec.stop() : startListening());
-$('listen').addEventListener('click', () => cur && sayLetter(cur));
-$('bigLetter').addEventListener('click', () => cur && sayLetter(cur));
-$('showHint').addEventListener('click', showHint);
+$('listen').addEventListener('click', () => cur && sayAll(cur, i => { $('bigLetter').classList.toggle('on', i === 0); [...$('hintWords').children].forEach((w, k) => w.classList.toggle('on', k === i - 1)); if (i < 0) markStep(); }));
+$('bigLetter').addEventListener('click', () => cur && (seqId++, sayLetter(cur)));
+$('skip').addEventListener('click', () => { if (step <= shown[cur.up].length) { if (step === 0) sayLetter(cur); else sayWord(target()); } });
 $('next').addEventListener('click', nextLetter);
 
 buildGrid();
