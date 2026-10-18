@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="der die das">
+<title>字母表 · Der Die Das 小卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#EEF1F4; --paper:#FFFFFF; --ink:#1C2430; --muted:#5B6675; --line:#D5DBE2;
+  --der:#2A66B0; --die:#C9403A; --das:#2F8A4C;
+  --good:#2F8A4C; --good-soft:#E2F3E7; --warn:#A8660B; --warn-soft:#FBF0DC; --bad:#C9403A; --bad-soft:#FBE7E5;
+  --shadow:0 1px 2px rgba(28,36,48,.08),0 4px 14px rgba(28,36,48,.06);
+  --display:"Baloo 2","Nunito",ui-rounded,"PingFang TC","Noto Sans TC",system-ui,sans-serif;
+  --body:"Nunito","PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+    --der:#6FA6EC; --die:#F07D75; --das:#6CC58A;
+    --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+  --der:#6FA6EC; --die:#F07D75; --das:#6CC58A;
+  --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;-webkit-text-size-adjust:100%;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding-inline:20px;padding-block:28px 64px;display:flex;flex-direction:column;gap:22px}
+
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--line);overflow-x:auto}
+.tabs a{font:700 16px/1 var(--body);color:var(--muted);text-decoration:none;padding:12px 18px;border-radius:10px 10px 0 0;margin-bottom:-2px;border:2px solid transparent;white-space:nowrap}
+.tabs a[aria-current="page"]{color:var(--ink);background:var(--paper);border-color:var(--line);border-bottom-color:var(--paper)}
+.tabs a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+header{display:flex;flex-direction:column;gap:6px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);line-height:1;margin:0}
+.lede{margin:0;color:var(--muted);max-width:62ch}
+
+.bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:700 15px/1 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:9px 14px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn{font:700 16px/1.2 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:12px 16px;border-radius:12px;cursor:pointer}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn:disabled{opacity:.4;cursor:default}
+.chip:focus-visible,.btn:focus-visible,.mic:focus-visible,.letter:focus-visible,.swap:focus-visible,.w:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+/* table */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.cell{background:var(--paper);border-radius:16px;box-shadow:var(--shadow);padding:12px;display:flex;flex-direction:column;gap:10px}
+.cellhead{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.letter{appearance:none;border:0;background:var(--bg);color:var(--ink);font-family:var(--display);font-weight:800;font-size:2.4rem;line-height:1;padding:8px 18px;border-radius:12px;cursor:pointer}
+.letter:active{transform:scale(.97)}
+.swap{appearance:none;border:2px solid var(--line);background:var(--paper);color:var(--muted);font:700 14px/1 var(--body);padding:8px 12px;border-radius:999px;cursor:pointer}
+.swap:disabled{opacity:.35;cursor:default}
+.words{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.w{appearance:none;border:2px solid var(--line);background:var(--paper);border-radius:12px;padding:4px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;font-family:var(--body);color:var(--ink);min-width:0}
+.w img{width:100%;aspect-ratio:4/3;object-fit:contain;background:#fff;border-radius:8px;display:block}
+.w .t{font-weight:800;font-size:.82rem;line-height:1.15;text-align:center;overflow-wrap:break-word;hyphens:auto;min-width:0;max-width:100%}
+.w .t i{font-style:normal;margin-right:.2em}
+.w.der .t i{color:var(--der)} .w.die .t i{color:var(--die)} .w.das .t i{color:var(--das)}
+.w.on{border-color:var(--ink)}
+.few{color:var(--muted);font-size:.85rem}
+.cell.sel{outline:3px solid var(--ink)}
+
+/* practice */
+.stage{background:var(--paper);border-radius:18px;box-shadow:var(--shadow);padding:22px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;max-width:560px;margin:0 auto;width:100%}
+.big{font-family:var(--display);font-weight:800;font-size:clamp(6rem,30vw,10rem);line-height:1}
+.ask{color:var(--muted);font-weight:700}
+.hint{width:100%}
+.mic{appearance:none;border:0;cursor:pointer;width:96px;height:96px;border-radius:50%;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+.mic svg{width:40px;height:40px}
+.mic.listening{background:var(--bad);color:#fff;animation:pulse 1.2s ease-in-out infinite}
+.mic:disabled{opacity:.35;cursor:default;animation:none}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,64,58,.45)}50%{box-shadow:0 0 0 16px rgba(201,64,58,0)}}
+.status{color:var(--muted);font-weight:700;min-height:1.5em}
+.result{border-radius:14px;padding:12px 16px;width:100%}
+.result.good{background:var(--good-soft);color:var(--good)}
+.result.bad{background:var(--bad-soft);color:var(--bad)}
+.result b{font-family:var(--display);font-size:1.3rem;display:block}
+.result span{color:var(--ink);opacity:.8}
+.row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.score{font-weight:700;color:var(--muted)} .score b{color:var(--ink)}
+.unsupported{background:var(--warn-soft);color:var(--warn);border-radius:12px;padding:12px 14px;font-weight:700}
+.note{color:var(--muted);font-size:.9rem;display:flex;flex-direction:column;gap:6px}.note p{margin:0}
+@media (prefers-reduced-motion: reduce){.mic.listening{animation:none}}
+</style>
+
+<div class="wrap">
+  <nav class="tabs" aria-label="頁籤">
+    <a href="./">卡片</a>
+    <a href="speak.html">說說看</a>
+    <a href="game.html">遊戲</a>
+    <a href="abc.html" aria-current="page">字母表</a>
+    <a href="talk.html">對話練習</a>
+    <a href="math/">數學練習</a>
+  </nav>
+
+  <header>
+    <h1>字母表</h1>
+    <p class="lede">點大字母聽它的名字，點圖片聽單字。每個字母有三個字，可以按「換一組」換新的字，每次打開也會是不一樣的字母表。</p>
+  </header>
+
+  <div class="bar">
+    <div class="chips" role="group" aria-label="模式">
+      <button class="chip" id="m-table" aria-pressed="true">字母表</button>
+      <button class="chip" id="m-prac" aria-pressed="false">練習模式</button>
+    </div>
+    <button class="btn primary" id="regen">全部重新產生</button>
+  </div>
+
+  <section id="table">
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="prac" hidden>
+    <div class="stage">
+      <div class="score" aria-live="polite">念對 <b id="right">0</b> / <b id="total">0</b></div>
+      <div class="ask" id="ask">請念出這個字母</div>
+      <button class="big letter" id="bigLetter" aria-label="聽這個字母" style="background:none">?</button>
+      <div class="hint" id="hint" hidden><div class="words" id="hintWords"></div></div>
+      <p class="unsupported" id="unsupported" hidden>這個瀏覽器沒有語音辨識，所以不能自動判斷。請用 iPad、iPhone 的 Safari 或電腦上的 Chrome，或請大人幫忙聽。</p>
+      <button class="mic" id="mic" aria-label="按一下開始說">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg>
+      </button>
+      <div class="status" id="status" aria-live="polite">按麥克風，念出字母的名字</div>
+      <div class="result" id="result" hidden aria-live="polite"></div>
+      <div class="row">
+        <button class="btn" id="listen">聽示範</button>
+        <button class="btn" id="showHint">給我提示</button>
+        <button class="btn primary" id="next">下一個字母</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="note">
+    <p>字母的唸法是字母的「名字」，例如 B 念「Be」、W 念「We」、J 念「Jott」。每個字母下面是以它開頭的單字，聽單字更容易記住開頭的聲音。</p>
+    <p id="fewNote"></p>
+    <p>練習模式的語音辨識只是輔助：單一個字母很短，容易被聽錯。念不出來就按「聽示範」，或念一個以這個字母開頭的字也算對。</p>
+  </div>
+</div>
+
+<script src="cards.js?v=20261018"></script>
+<script src="abc.js?v=20261018"></script>
