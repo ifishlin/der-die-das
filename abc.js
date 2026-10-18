@@ -50,7 +50,7 @@ function say(url, fallbackText) {
   });
 }
 const sayLetter = L => say(`audio/abc/${L.key}.mp3`, L.up);
-const sayWord = c => say(`audio/${c.id}.mp3`, `${c.art} ${c.noun}`);
+const sayWord = c => say(`audio/n/${c.id}.mp3`, c.noun); // noun only, no article
 const wait = ms => new Promise(r => setTimeout(r, ms));
 // letter first, then its words one by one; mark(i) highlights item i (0 = letter, 1..n = words)
 async function sayAll(L, mark) {
@@ -67,9 +67,9 @@ async function sayAll(L, mark) {
 // ---------- table ----------
 function wordBtn(c) {
   const b = document.createElement('button');
-  b.className = 'w ' + c.art;
-  b.setAttribute('aria-label', `${c.art} ${c.noun}，${c.zh}`);
-  b.innerHTML = `<img src="img/${c.id}.jpg" alt="" loading="lazy"><span class="t"><i>${c.art}</i>${c.noun}</span>`;
+  b.className = 'w';
+  b.setAttribute('aria-label', `${c.noun}，${c.zh}`);
+  b.innerHTML = `<img src="img/${c.id}.jpg" alt="" loading="lazy"><span class="t">${c.noun}</span>`;
   b.addEventListener('click', () => { seqId++; sayWord(c); });
   return b;
 }
@@ -125,7 +125,7 @@ function markStep() {
   [...$('hintWords').children].forEach((w, k) => w.classList.toggle('on', k === step - 1));
   const t = target();
   if (step > shown[cur.up].length) return;
-  $('ask').textContent = step === 0 ? '先念這個字母' : `再念這個字：${t.art} ${t.noun}`;
+  $('ask').textContent = step === 0 ? '先念這個字母' : `再念這個字：${t.noun}`;
   $('status').textContent = '按麥克風開始念';
 }
 function nextLetter() {
@@ -154,7 +154,7 @@ function judgeWord(alts) {
 async function showResult(r) {
   const box = $('result'); box.hidden = false;
   box.className = 'result ' + (r.ok ? 'good' : 'bad');
-  const t = target(), name = step === 0 ? cur.up : `${t.art} ${t.noun}`;
+  const t = target(), name = step === 0 ? cur.up : t.noun;
   if (r.ok) {
     const last = step === shown[cur.up].length;
     box.innerHTML = `<b>對了！</b><span>${name}</span>`;
