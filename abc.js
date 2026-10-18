@@ -11,13 +11,14 @@ const LETTERS = [
   ['S', 's', ['ess', 'es', 's', 'äs']], ['T', 't', ['te', 'teh', 'tee', 't', 'té']], ['U', 'u', ['u', 'uh', 'oo']],
   ['V', 'v', ['fau', 'vau', 'fao', 'v', 'fow', 'faou']], ['W', 'w', ['we', 'weh', 'vee', 'w', 'wé', 've']], ['X', 'x', ['iks', 'ix', 'x', 'ics', 'icks']],
   ['Y', 'y', ['üpsilon', 'ypsilon', 'ypsilone', 'y', 'üpsilone', 'upsilon']], ['Z', 'z', ['zett', 'zet', 'z', 'tsett', 'set']],
-  ['Ä', 'ae', ['ä', 'ae', 'äh', 'e', 'eh']], ['Ö', 'oe', ['ö', 'oe', 'öh', 'ø']], ['Ü', 'ue', ['ü', 'ue', 'üh', 'y']],
-].map(([up, key, aliases]) => ({up, low: up.toLowerCase(), key, aliases}));
+  ['Ä', 'ae', ['ä', 'ae', 'äh', 'e', 'eh']], ['Ö', 'oe', ['ö', 'oe', 'öh', 'ø']], ['Ü', 'ue', ['ü', 'ue', 'üh', 'y']], ['ß', 'ss', ['eszett', 'es zett', 'esszett', 'estsett', 'scharfes s', 'ess zett']],
+].map(([up, key, aliases]) => ({up, low: up.toLowerCase(), key, aliases, show: up === 'ß' ? 'ß' : up + up.toLowerCase()}));
 
 // ---------- pool ----------
 const startsWith = (c, up) => c.noun[0].toUpperCase() === up;
 const special = n => /^(Sch|St|Sp|Ch)/i.test(n);
 function pool(L) {
+  if (L.up === 'ß') return CARDS.filter(c => c.noun.includes('ß')); // ß never starts a word: show words that contain it
   return CARDS.filter(c => startsWith(c, L.up) && !(L.up === 'S' || L.up === 'C' ? special(c.noun) : false));
 }
 const POOLS = Object.fromEntries(LETTERS.map(L => [L.up, pool(L)]));
@@ -86,7 +87,7 @@ function buildGrid() {
   LETTERS.forEach(L => {
     const cell = document.createElement('div');
     cell.className = 'cell'; cell.id = 'cell-' + L.key;
-    cell.innerHTML = `<div class="cellhead"><button class="letter" aria-label="聽字母 ${L.up} 和單字">${L.up}${L.low}</button><button class="swap">換一組</button></div><div class="words"></div><div class="few"></div>`;
+    cell.innerHTML = `<div class="cellhead"><button class="letter" aria-label="聽字母 ${L.up} 和單字">${L.show}</button><button class="swap">換一組</button></div><div class="words"></div><div class="few"></div>`;
     cell.querySelector('.letter').addEventListener('click', () => sayAll(L, i => {
       cell.classList.toggle('sel', i >= 0);
       cell.querySelector('.letter').classList.toggle('on', i === 0);
@@ -134,7 +135,7 @@ function nextLetter() {
   let n = bag.pop();
   if (cur && n === cur && bag.length) { bag.unshift(n); n = bag.pop(); }
   cur = n; step = 0; tries = 0;
-  $('bigLetter').textContent = n.up + n.low;
+  $('bigLetter').textContent = n.show;
   $('hintWords').replaceChildren(...shown[n.up].map(wordBtn));
   $('result').hidden = true;
   markStep();
