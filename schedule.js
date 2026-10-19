@@ -1,6 +1,5 @@
 // Renders the lesson plan from schedule-data.js: lessons in order, each with a simple-German explanation, audio, and key words.
 const $ = id => document.getElementById(id);
-const day = SCHEDULE[0];
 const PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 10v4h4l5 4V6L7 10H3z"/><path d="M15.5 8.5a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 const gramHtml = g => g && g.length ? `<ul class="gram">${g.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
 const esc = s => s.replace(/[&<>]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'}[c]));
@@ -23,9 +22,13 @@ const wait = ms => new Promise(r => setTimeout(r, ms));
 const btn = label => { const b = document.createElement('button'); b.className = 'play'; b.setAttribute('aria-label', label); b.innerHTML = PLAY; return b; };
 const artHtml = de => de.replace(/^(der|die|das) /, (m, a) => `<span class="art-${a}">${a}</span> `);
 
-const rows = []; // [{el, audio, de, lesson}] in reading order, for "play all"
-$('day').textContent = `${day.label} · ${day.zh}`;
-day.items.forEach((it, i) => {
+let rows = []; // [{el, audio, de}] in reading order, for "play all"
+function renderDay(day) {
+  runId++; if (player) player.pause();
+  rows = []; $('lessons').replaceChildren();
+  $('playAll').hidden = false; $('stop').hidden = true;
+  $('day').textContent = `${day.label} · ${day.zh}`;
+  day.items.forEach((it, i) => {
   const sec = document.createElement('section');
   sec.className = 'lesson ' + it.color;
   sec.innerHTML = `<div class="lh"><div class="num">${i + 1}</div><div><h2>${esc(it.title)}</h2><div class="zh">${esc(it.zh)}</div></div></div>`;
@@ -61,7 +64,7 @@ day.items.forEach((it, i) => {
   sec.append(v);
   $('lessons').append(sec);
 });
-
+}
 async function playAll() {
   const id = ++runId;
   $('playAll').hidden = true; $('stop').hidden = false;
@@ -87,3 +90,24 @@ $('gramToggle').addEventListener('click', () => {
   $('gramToggle').setAttribute('aria-pressed', String(on));
   document.body.classList.toggle('nogram', !on);
 });
+
+// day chips: pick the day; default = today if it is on the plan, otherwise the next day on the plan, otherwise the first
+const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+function pickDay() {
+  const h = location.hash.slice(1);
+  if (SCHEDULE.some(d => d.date === h)) return h;
+  const today = iso(new Date());
+  return (SCHEDULE.find(d => d.date >= today) || SCHEDULE[0]).date;
+}
+function selectDay(date) {
+  document.querySelectorAll('#days .chip').forEach(c => c.setAttribute('aria-pressed', String(c.dataset.d === date)));
+  renderDay(SCHEDULE.find(d => d.date === date));
+  try { history.replaceState(null, '', '#' + date); } catch (e) {}
+}
+SCHEDULE.forEach(d => {
+  const c = document.createElement('button'); c.className = 'chip'; c.dataset.d = d.date; c.setAttribute('aria-pressed', 'false');
+  c.textContent = d.zh.replace(/（.*）/, '');
+  c.addEventListener('click', () => selectDay(d.date));
+  $('days').append(c);
+});
+selectDay(pickDay());
