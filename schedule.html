@@ -122,6 +122,9 @@ body.nozh .zhline,body.nozh .wzh,body.nozh .zh,body.nozh .lab.zh2{display:none}
 .word .wde{font-family:var(--display);font-weight:800;font-size:1.15rem;line-height:1.2}
 .word .ipa{font-family:"Noto Sans","Segoe UI","Lucida Sans Unicode",system-ui,sans-serif;color:var(--muted)}
 .word .wzh{font-size:.95rem}.word .nt{font-size:.8rem;color:var(--muted)}
+.gram{margin:6px 0 0;padding:8px 12px 8px 26px;background:var(--bg);border-radius:10px;font-size:.9rem;color:var(--ink)}
+.gram li{margin:2px 0}
+body.nogram .gram{display:none}
 .word.on{border-color:var(--ink)}
 .art-der{color:var(--der)}.art-die{color:var(--die)}.art-das{color:var(--das)}
 </style>
@@ -145,6 +148,7 @@ body.nozh .zhline,body.nozh .wzh,body.nozh .zh,body.nozh .lab.zh2{display:none}
     <div class="day" id="day"></div>
     <div class="chips">
       <button class="chip" id="zhToggle" aria-pressed="true">顯示中文</button>
+      <button class="chip" id="gramToggle" aria-pressed="true">顯示文法</button>
       <button class="btn primary" id="playAll">從頭念到尾</button>
       <button class="btn" id="stop" hidden>停止</button>
     </div>
@@ -158,5 +162,5 @@ body.nozh .zhline,body.nozh .wzh,body.nozh .zh,body.nozh .lab.zh2{display:none}
   </div>
 </div>
 
-<script src="schedule-data.js?v=20261018"></script>
-<script src="schedule.js?v=20261018"></script>
+<script src="schedule-data.js?v=20261019"></script>
+<script src="schedule.js?v=20261019"></script>

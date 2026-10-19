@@ -2,6 +2,7 @@
 const $ = id => document.getElementById(id);
 const day = SCHEDULE[0];
 const PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 10v4h4l5 4V6L7 10H3z"/><path d="M15.5 8.5a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+const gramHtml = g => g && g.length ? `<ul class="gram">${g.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
 const esc = s => s.replace(/[&<>]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'}[c]));
 
 let player = null, runId = 0;
@@ -31,7 +32,7 @@ day.items.forEach((it, i) => {
   const orig = document.createElement('div'); orig.className = 'orig';
   const ob = btn('聽老師寫的德文');
   orig.append(ob);
-  orig.insertAdjacentHTML('beforeend', `<div class="tx"><div class="lab">老師寫的</div><div class="de">${esc(it.original)}</div><div class="zhline">${esc(it.originalZh)}</div></div>`);
+  orig.insertAdjacentHTML('beforeend', `<div class="tx"><div class="lab">老師寫的</div><div class="de">${esc(it.original)}</div><div class="zhline">${esc(it.originalZh)}</div>${gramHtml(it.originalGram)}</div>`);
   ob.addEventListener('click', () => { runId++; play(it.originalAudio, it.original); });
   sec.append(orig);
   rows.push({el: orig, audio: it.originalAudio, de: it.original});
@@ -42,7 +43,7 @@ day.items.forEach((it, i) => {
     const b = btn('聽這句');
     b.addEventListener('click', () => { runId++; play(l.audio, l.de); });
     row.append(b);
-    row.insertAdjacentHTML('beforeend', `<div><div class="de">${esc(l.de)}</div><div class="zhline">${esc(l.zh)}</div></div>`);
+    row.insertAdjacentHTML('beforeend', `<div><div class="de">${esc(l.de)}</div><div class="zhline">${esc(l.zh)}</div>${gramHtml(l.gram)}</div>`);
     sec.append(row);
     rows.push({el: row, audio: l.audio, de: l.de});
   });
@@ -80,4 +81,9 @@ $('zhToggle').addEventListener('click', () => {
   const on = $('zhToggle').getAttribute('aria-pressed') !== 'true';
   $('zhToggle').setAttribute('aria-pressed', String(on));
   document.body.classList.toggle('nozh', !on);
+});
+$('gramToggle').addEventListener('click', () => {
+  const on = $('gramToggle').getAttribute('aria-pressed') !== 'true';
+  $('gramToggle').setAttribute('aria-pressed', String(on));
+  document.body.classList.toggle('nogram', !on);
 });
