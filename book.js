@@ -28,7 +28,7 @@ function render() {
   $('sub').textContent = `${BOOK.author} · ${BOOK.zh}。${BOOK.blurb}`;
   BOOK.spreads.forEach(s => {
     const a = document.createElement('a'); a.href = '#sp' + s.n; a.setAttribute('aria-label', `第 ${s.n} 頁：${s.zh}`);
-    a.innerHTML = `<img src="${base + s.icon}" alt="" width="64" height="40"><span>${s.n}</span>`;
+    a.innerHTML = `<img src="${base + s.icon}" alt="" width="72" height="54"><span>${s.n}</span>`;
     $('strip').append(a);
     const sec = document.createElement('section'); sec.className = 'sp'; sec.id = 'sp' + s.n;
     sec.innerHTML = `<div class="sh"><img class="ic" src="${base + s.icon}" alt=""><div><div class="no">第 ${s.n} 頁（跨頁）</div><h2>${esc(s.zh)}</h2></div></div>`;
@@ -77,6 +77,6 @@ $('playAll').addEventListener('click', playAll);
 $('stop').addEventListener('click', () => { runId++; if (player) player.pause(); rows.forEach(r => r.el.classList.remove('on')); $('playAll').hidden = false; $('stop').hidden = true; });
 toggle('zhToggle', 'nozh'); toggle('gramToggle', 'nogram'); toggle('sideToggle', 'noside');
 
-const s = document.createElement('script'); s.src = base + 'data.js?v=20261021';
+const s = document.createElement('script'); s.src = base + 'data.js?v=20261021b';
 s.onload = render; s.onerror = () => { $('title').textContent = '找不到這本書'; };
 document.head.append(s);
