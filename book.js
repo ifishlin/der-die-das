@@ -77,6 +77,6 @@ $('playAll').addEventListener('click', playAll);
 $('stop').addEventListener('click', () => { runId++; if (player) player.pause(); rows.forEach(r => r.el.classList.remove('on')); $('playAll').hidden = false; $('stop').hidden = true; });
 toggle('zhToggle', 'nozh'); toggle('gramToggle', 'nogram'); toggle('sideToggle', 'noside');
 
-const s = document.createElement('script'); s.src = base + 'data.js?v=20261021c';
+const s = document.createElement('script'); s.src = base + 'data.js?v=20261021e';
 s.onload = render; s.onerror = () => { $('title').textContent = '找不到這本書'; };
 document.head.append(s);

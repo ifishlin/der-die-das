@@ -8,5 +8,5 @@ META = dict(
     # Local-only: the photographed pages. Never committed; only tiny blurred icons are made from them.
     photos_dir='/Volumes/Fish/personal/Chris_learning/Wir',
     # photo index (files sorted by mtime) for each spread, in reading order
-    photo_order=[15, 8, 14, 9, 10, 13, 11, 12, 4, 5, 6, 7, 3, 2, 1],
+    photo_order=[8, 15, 14, 13, 9, 10, 11, 12, 4, 5, 6, 7, 3, 2, 1],
 )

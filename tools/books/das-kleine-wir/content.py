@@ -2,6 +2,18 @@
 #   main = story line, side = small details in the pictures, words = (de, zh, ipa-key or literal, note)
 # Names Ben (boy) / Emma (girl) are inferred from the pictures.
 SPREADS = [
+ dict(zh='小 WIR 登場', icon=8,
+  main=[
+   ('Hallo! Das ist ein kleines grünes Monster. Es heißt WIR.', '哈囉！這是一隻綠色的小怪物，它叫 WIR。', ['Das ist … = 這是…。ein kleines grünes Monster：中性第1格，形容詞加 -es。', 'heißen = 叫做：es heißt。']),
+   ('Es ist klein, aber stark. Es ist etwas ganz Besonderes.', '它很小，但很強。它是很特別的存在。',
+    ['aber = 但是。etwas Besonderes：「etwas + 形容詞」，形容詞要大寫，字尾 -es。', 'ganz = 非常、完全。'])],
+  side=[
+   ('Das WIR ist grün und hat viel Fell.', 'WIR 是綠色的，毛茸茸的。', ['hat = haben 的 er/es 形態。', 'viel Fell：不可數名詞，前面不加冠詞。']),
+   ('Es winkt und sagt Hallo.', '它揮揮手，說哈囉。', ['winken → es winkt（動詞字尾 -t）。']),
+   ('Neben dem WIR steht ein kleines Haus. Das Haus sieht aus wie ein Herz.', '旁邊有一間小房子，看起來像一顆心。',
+    ['neben + 第3格（das WIR → dem WIR）表示「在旁邊」。', 'aussehen wie + 名詞 = 看起來像…。ein kleines Haus：中性第1格。'])],
+  words=[('das Herz', '心', 'Herz', 'dem Herzen（第3格有特別字尾）'), ('stark', '強壯的', 'stark', ''), ('besonders', '特別的', 'besonders', ''), ('winken', '揮手', 'winken', '')]),
+
  dict(zh='什麼是 WIR？', icon=15,
   main=[
    ('Wo Menschen sich gern haben, entsteht ein WIR.', '有人互相喜歡的地方，就會出現一個「WIR」。',
@@ -17,18 +29,6 @@ SPREADS = [
   words=[('das WIR', '「我們」（書裡把它當成一個小生物的名字）', 'viːɐ̯', ''), ('entstehen', '出現、形成', 'entstehen', ''), ('mögen', '喜歡', 'mögen', 'ich mag, er mag'),
          ('anders', '不一樣的', 'anders', ''), ('die Geschichte', '故事', 'Geschichte', ''), ('der Schatten', '影子', 'Schatten', ''), ('die Wiese', '草地', 'Wiese', '')]),
 
- dict(zh='小 WIR 登場', icon=8,
-  main=[
-   ('Hallo! Das ist ein kleines grünes Monster. Es heißt WIR.', '哈囉！這是一隻綠色的小怪物，它叫 WIR。', ['Das ist … = 這是…。ein kleines grünes Monster：中性第1格，形容詞加 -es。', 'heißen = 叫做：es heißt。']),
-   ('Es ist klein, aber stark. Es ist etwas ganz Besonderes.', '它很小，但很強。它是很特別的存在。',
-    ['aber = 但是。etwas Besonderes：「etwas + 形容詞」，形容詞要大寫，字尾 -es。', 'ganz = 非常、完全。'])],
-  side=[
-   ('Das WIR ist grün und hat viel Fell.', 'WIR 是綠色的，毛茸茸的。', ['hat = haben 的 er/es 形態。', 'viel Fell：不可數名詞，前面不加冠詞。']),
-   ('Es winkt und sagt Hallo.', '它揮揮手，說哈囉。', ['winken → es winkt（動詞字尾 -t）。']),
-   ('Neben dem WIR steht ein kleines Haus. Das Haus sieht aus wie ein Herz.', '旁邊有一間小房子，看起來像一顆心。',
-    ['neben + 第3格（das WIR → dem WIR）表示「在旁邊」。', 'aussehen wie + 名詞 = 看起來像…。ein kleines Haus：中性第1格。'])],
-  words=[('das Herz', '心', 'Herz', 'dem Herzen（第3格有特別字尾）'), ('stark', '強壯的', 'stark', ''), ('besonders', '特別的', 'besonders', ''), ('winken', '揮手', 'winken', '')]),
-
  dict(zh='WIR 把兩個人連在一起', icon=3,
   main=[
    ('Das WIR verbindet Ben und Emma.', 'WIR 把 Ben 和 Emma 連在一起。', ['verbinden → es verbindet（詞幹以 d 結尾，加 -et）。', 'Ben und Emma 是受詞（第4格）。']),
@@ -43,6 +43,16 @@ SPREADS = [
    ('Mit dem WIR ist alles nur halb so schlimm.', '有 WIR，什麼事都只有一半那麼糟。', ['mit + 第3格（dem WIR）。', 'halb so schlimm = 只有一半那麼糟。nur = 只有。'])],
   words=[('verbinden', '連接、結合', 'verbinden', ''), ('verstehen', '了解', 'verstehen', ''), ('das Wort', '詞、話', 'Wort', '複數 die Wörter＝單字；die Worte＝話語'),
          ('der Tee', '茶', 'Tee', ''), ('der Kuchen', '蛋糕', 'Kuchen', ''), ('die Zauberkraft', '魔法的力量', 'Zauberkraft', ''), ('schlimm', '糟糕的', 'schlimm', ''), ('halb', '一半的', 'halb', '')]),
+
+ dict(zh='有 WIR 更勇敢', icon=13,
+  main=[
+   ('Mit dem WIR haben Ben und Emma keine Angst.', '有 WIR 在，Ben 和 Emma 就不害怕。', ['Angst haben = 害怕；否定用 keine（Angst 是陰性名詞，沒有冠詞時否定用 keine）。', 'mit + 第3格（dem WIR）。']),
+   ('Zusammen können sie sogar ein Ungeheuer besiegen.', '一起，他們甚至能打敗一隻大怪獸。', ['können + 原形動詞：原形 besiegen 放句尾。', 'sogar = 甚至。Zusammen 在句首，所以 können sie。'])],
+  side=[
+   ('Das Ungeheuer ist groß und rot und hat spitze Zähne.', '怪獸又大又紅，有尖尖的牙齒。', ['der Zahn → die Zähne（複數：a 變 ä）。', 'spitze Zähne：複數，形容詞加 -e。']),
+   ('Es schläft, und die beiden stehen vor ihm.', '它在睡覺，兩人站在它前面。', ['schlafen 是不規則：es schläft。', 'vor + 第3格；es 的第3格是 ihm。'])],
+  words=[('die Angst', '害怕、恐懼', 'aŋst', ''), ('das Ungeheuer', '怪獸', 'Ungeheuer', ''), ('besiegen', '打敗', 'besiegen', ''), ('der Zahn', '牙齒', 'ˈtsaːn', '複數 die Zähne'),
+         ('spitz', '尖的', 'ʃpɪts', ''), ('schlafen', '睡覺', 'ˈʃlaːfn̩', '')]),
 
  dict(zh='一起冒險', icon=9,
   main=[('Zusammen mit dem WIR erleben Ben und Emma tolle Abenteuer.', '和 WIR 在一起，Ben 和 Emma 經歷了很棒的冒險。',
@@ -63,16 +73,6 @@ SPREADS = [
    ('Die anderen Menschen sehen traurig und nass aus.', '其他人看起來又難過又濕。', ['die anderen Menschen：複數，定冠詞後形容詞加 -en。', 'aussehen：sehen … aus。']),
    ('Auf der Straße sind große Pfützen.', '街上有很大的水坑。', ['auf der Straße：地點，第3格。', 'große Pfützen 是複數主詞，所以用 sind。'])],
   words=[('der Regen', '雨', 'Regen', ''), ('lachen', '笑', 'lachen', ''), ('tanzen', '跳舞', 'tanzen', ''), ('der Regenschirm', '雨傘', 'Regenschirm', ''), ('die Pfütze', '水坑', 'Pfütze', ''), ('nass', '濕的', 'nass', ''), ('traurig', '難過的', 'traurig', '')]),
-
- dict(zh='有 WIR 更勇敢', icon=13,
-  main=[
-   ('Mit dem WIR haben Ben und Emma keine Angst.', '有 WIR 在，Ben 和 Emma 就不害怕。', ['Angst haben = 害怕；否定用 keine（Angst 是陰性名詞，沒有冠詞時否定用 keine）。', 'mit + 第3格（dem WIR）。']),
-   ('Zusammen können sie sogar ein Ungeheuer besiegen.', '一起，他們甚至能打敗一隻大怪獸。', ['können + 原形動詞：原形 besiegen 放句尾。', 'sogar = 甚至。Zusammen 在句首，所以 können sie。'])],
-  side=[
-   ('Das Ungeheuer ist groß und rot und hat spitze Zähne.', '怪獸又大又紅，有尖尖的牙齒。', ['der Zahn → die Zähne（複數：a 變 ä）。', 'spitze Zähne：複數，形容詞加 -e。']),
-   ('Es schläft, und die beiden stehen vor ihm.', '它在睡覺，兩人站在它前面。', ['schlafen 是不規則：es schläft。', 'vor + 第3格；es 的第3格是 ihm。'])],
-  words=[('die Angst', '害怕、恐懼', 'aŋst', ''), ('das Ungeheuer', '怪獸', 'Ungeheuer', ''), ('besiegen', '打敗', 'besiegen', ''), ('der Zahn', '牙齒', 'ˈtsaːn', '複數 die Zähne'),
-         ('spitz', '尖的', 'ʃpɪts', ''), ('schlafen', '睡覺', 'ˈʃlaːfn̩', '')]),
 
  dict(zh='困難變容易', icon=11,
   main=[

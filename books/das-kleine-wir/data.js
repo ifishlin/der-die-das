@@ -8,8 +8,91 @@ const BOOK = {
  "spreads": [
   {
    "n": 1,
-   "zh": "什麼是 WIR？",
+   "zh": "小 WIR 登場",
    "icon": "icons/p01.jpg",
+   "main": [
+    {
+     "de": "Hallo! Das ist ein kleines grünes Monster. Es heißt WIR.",
+     "zh": "哈囉！這是一隻綠色的小怪物，它叫 WIR。",
+     "gram": [
+      "Das ist … = 這是…。ein kleines grünes Monster：中性第1格，形容詞加 -es。",
+      "heißen = 叫做：es heißt。"
+     ],
+     "audio": "audio/s01_m0.mp3"
+    },
+    {
+     "de": "Es ist klein, aber stark. Es ist etwas ganz Besonderes.",
+     "zh": "它很小，但很強。它是很特別的存在。",
+     "gram": [
+      "aber = 但是。etwas Besonderes：「etwas + 形容詞」，形容詞要大寫，字尾 -es。",
+      "ganz = 非常、完全。"
+     ],
+     "audio": "audio/s01_m1.mp3"
+    }
+   ],
+   "side": [
+    {
+     "de": "Das WIR ist grün und hat viel Fell.",
+     "zh": "WIR 是綠色的，毛茸茸的。",
+     "gram": [
+      "hat = haben 的 er/es 形態。",
+      "viel Fell：不可數名詞，前面不加冠詞。"
+     ],
+     "audio": "audio/s01_s0.mp3"
+    },
+    {
+     "de": "Es winkt und sagt Hallo.",
+     "zh": "它揮揮手，說哈囉。",
+     "gram": [
+      "winken → es winkt（動詞字尾 -t）。"
+     ],
+     "audio": "audio/s01_s1.mp3"
+    },
+    {
+     "de": "Neben dem WIR steht ein kleines Haus. Das Haus sieht aus wie ein Herz.",
+     "zh": "旁邊有一間小房子，看起來像一顆心。",
+     "gram": [
+      "neben + 第3格（das WIR → dem WIR）表示「在旁邊」。",
+      "aussehen wie + 名詞 = 看起來像…。ein kleines Haus：中性第1格。"
+     ],
+     "audio": "audio/s01_s2.mp3"
+    }
+   ],
+   "words": [
+    {
+     "de": "das Herz",
+     "zh": "心",
+     "ipa": "hɛʁts",
+     "note": "dem Herzen（第3格有特別字尾）",
+     "audio": "audio/w_das_herz.mp3"
+    },
+    {
+     "de": "stark",
+     "zh": "強壯的",
+     "ipa": "ʃtaʁk",
+     "note": "",
+     "audio": "audio/w_stark.mp3"
+    },
+    {
+     "de": "besonders",
+     "zh": "特別的",
+     "ipa": "bəˈzɔndɐs",
+     "note": "",
+     "audio": "audio/w_besonders.mp3"
+    },
+    {
+     "de": "winken",
+     "zh": "揮手",
+     "ipa": "ˈvɪŋkn̩",
+     "note": "",
+     "audio": "audio/w_winken.mp3"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "zh": "什麼是 WIR？",
+   "icon": "icons/p02.jpg",
    "main": [
     {
      "de": "Wo Menschen sich gern haben, entsteht ein WIR.",
@@ -19,7 +102,7 @@ const BOOK = {
       "從句放在前面時，後面主句的動詞要排第一：entsteht ein WIR。",
       "entstehen（出現）的 er/es 形態是 entsteht。"
      ],
-     "audio": "audio/s01_m0.mp3"
+     "audio": "audio/s02_m0.mp3"
     },
     {
      "de": "Auf der Welt gibt es sehr viele WIR. Alle sehen anders aus.",
@@ -29,7 +112,7 @@ const BOOK = {
       "alle = 全部（複數）。",
       "aussehen 是可分動詞：sehen … aus。anders = 不一樣。"
      ],
-     "audio": "audio/s01_m1.mp3"
+     "audio": "audio/s02_m1.mp3"
     },
     {
      "de": "Diese Geschichte erzählt vom WIR von Ben und Emma.",
@@ -38,7 +121,7 @@ const BOOK = {
       "erzählen von + 第3格 = 講關於…。vom = von dem。",
       "das WIR von Ben und Emma：「von + 人名」表示「某某的」。"
      ],
-     "audio": "audio/s01_m2.mp3"
+     "audio": "audio/s02_m2.mp3"
     }
    ],
    "side": [
@@ -49,7 +132,7 @@ const BOOK = {
       "abklatschen 是可分動詞：klatschen … ab。",
       "sich = 彼此（互相）。"
      ],
-     "audio": "audio/s01_s0.mp3"
+     "audio": "audio/s02_s0.mp3"
     },
     {
      "de": "Auf der Wiese spielen viele Kinder, Hunde und Katzen.",
@@ -58,7 +141,7 @@ const BOOK = {
       "auf + 第3格表示地點（die Wiese → der Wiese）。",
       "地點放在句首，動詞排第二：spielen。"
      ],
-     "audio": "audio/s01_s1.mp3"
+     "audio": "audio/s02_s1.mp3"
     },
     {
      "de": "Jedes WIR wirft einen großen Schatten.",
@@ -67,7 +150,7 @@ const BOOK = {
       "werfen 是不規則動詞：es wirft（e 變 i）。",
       "einen Schatten：陽性第4格，ein 變 einen。"
      ],
-     "audio": "audio/s01_s2.mp3"
+     "audio": "audio/s02_s2.mp3"
     }
    ],
    "words": [
@@ -119,89 +202,6 @@ const BOOK = {
      "ipa": "ˈviːzə",
      "note": "",
      "audio": "audio/w_die_wiese.mp3"
-    }
-   ]
-  },
-  {
-   "n": 2,
-   "zh": "小 WIR 登場",
-   "icon": "icons/p02.jpg",
-   "main": [
-    {
-     "de": "Hallo! Das ist ein kleines grünes Monster. Es heißt WIR.",
-     "zh": "哈囉！這是一隻綠色的小怪物，它叫 WIR。",
-     "gram": [
-      "Das ist … = 這是…。ein kleines grünes Monster：中性第1格，形容詞加 -es。",
-      "heißen = 叫做：es heißt。"
-     ],
-     "audio": "audio/s02_m0.mp3"
-    },
-    {
-     "de": "Es ist klein, aber stark. Es ist etwas ganz Besonderes.",
-     "zh": "它很小，但很強。它是很特別的存在。",
-     "gram": [
-      "aber = 但是。etwas Besonderes：「etwas + 形容詞」，形容詞要大寫，字尾 -es。",
-      "ganz = 非常、完全。"
-     ],
-     "audio": "audio/s02_m1.mp3"
-    }
-   ],
-   "side": [
-    {
-     "de": "Das WIR ist grün und hat viel Fell.",
-     "zh": "WIR 是綠色的，毛茸茸的。",
-     "gram": [
-      "hat = haben 的 er/es 形態。",
-      "viel Fell：不可數名詞，前面不加冠詞。"
-     ],
-     "audio": "audio/s02_s0.mp3"
-    },
-    {
-     "de": "Es winkt und sagt Hallo.",
-     "zh": "它揮揮手，說哈囉。",
-     "gram": [
-      "winken → es winkt（動詞字尾 -t）。"
-     ],
-     "audio": "audio/s02_s1.mp3"
-    },
-    {
-     "de": "Neben dem WIR steht ein kleines Haus. Das Haus sieht aus wie ein Herz.",
-     "zh": "旁邊有一間小房子，看起來像一顆心。",
-     "gram": [
-      "neben + 第3格（das WIR → dem WIR）表示「在旁邊」。",
-      "aussehen wie + 名詞 = 看起來像…。ein kleines Haus：中性第1格。"
-     ],
-     "audio": "audio/s02_s2.mp3"
-    }
-   ],
-   "words": [
-    {
-     "de": "das Herz",
-     "zh": "心",
-     "ipa": "hɛʁts",
-     "note": "dem Herzen（第3格有特別字尾）",
-     "audio": "audio/w_das_herz.mp3"
-    },
-    {
-     "de": "stark",
-     "zh": "強壯的",
-     "ipa": "ʃtaʁk",
-     "note": "",
-     "audio": "audio/w_stark.mp3"
-    },
-    {
-     "de": "besonders",
-     "zh": "特別的",
-     "ipa": "bəˈzɔndɐs",
-     "note": "",
-     "audio": "audio/w_besonders.mp3"
-    },
-    {
-     "de": "winken",
-     "zh": "揮手",
-     "ipa": "ˈvɪŋkn̩",
-     "note": "",
-     "audio": "audio/w_winken.mp3"
     }
    ]
   },
@@ -347,8 +347,97 @@ const BOOK = {
   },
   {
    "n": 4,
-   "zh": "一起冒險",
+   "zh": "有 WIR 更勇敢",
    "icon": "icons/p04.jpg",
+   "main": [
+    {
+     "de": "Mit dem WIR haben Ben und Emma keine Angst.",
+     "zh": "有 WIR 在，Ben 和 Emma 就不害怕。",
+     "gram": [
+      "Angst haben = 害怕；否定用 keine（Angst 是陰性名詞，沒有冠詞時否定用 keine）。",
+      "mit + 第3格（dem WIR）。"
+     ],
+     "audio": "audio/s04_m0.mp3"
+    },
+    {
+     "de": "Zusammen können sie sogar ein Ungeheuer besiegen.",
+     "zh": "一起，他們甚至能打敗一隻大怪獸。",
+     "gram": [
+      "können + 原形動詞：原形 besiegen 放句尾。",
+      "sogar = 甚至。Zusammen 在句首，所以 können sie。"
+     ],
+     "audio": "audio/s04_m1.mp3"
+    }
+   ],
+   "side": [
+    {
+     "de": "Das Ungeheuer ist groß und rot und hat spitze Zähne.",
+     "zh": "怪獸又大又紅，有尖尖的牙齒。",
+     "gram": [
+      "der Zahn → die Zähne（複數：a 變 ä）。",
+      "spitze Zähne：複數，形容詞加 -e。"
+     ],
+     "audio": "audio/s04_s0.mp3"
+    },
+    {
+     "de": "Es schläft, und die beiden stehen vor ihm.",
+     "zh": "它在睡覺，兩人站在它前面。",
+     "gram": [
+      "schlafen 是不規則：es schläft。",
+      "vor + 第3格；es 的第3格是 ihm。"
+     ],
+     "audio": "audio/s04_s1.mp3"
+    }
+   ],
+   "words": [
+    {
+     "de": "die Angst",
+     "zh": "害怕、恐懼",
+     "ipa": "aŋst",
+     "note": "",
+     "audio": "audio/w_die_angst.mp3"
+    },
+    {
+     "de": "das Ungeheuer",
+     "zh": "怪獸",
+     "ipa": "ˈʊnɡəˌhɔɪ̯ɐ",
+     "note": "",
+     "audio": "audio/w_das_ungeheuer.mp3"
+    },
+    {
+     "de": "besiegen",
+     "zh": "打敗",
+     "ipa": "bəˈziːɡn̩",
+     "note": "",
+     "audio": "audio/w_besiegen.mp3"
+    },
+    {
+     "de": "der Zahn",
+     "zh": "牙齒",
+     "ipa": "ˈtsaːn",
+     "note": "複數 die Zähne",
+     "audio": "audio/w_der_zahn.mp3"
+    },
+    {
+     "de": "spitz",
+     "zh": "尖的",
+     "ipa": "ʃpɪts",
+     "note": "",
+     "audio": "audio/w_spitz.mp3"
+    },
+    {
+     "de": "schlafen",
+     "zh": "睡覺",
+     "ipa": "ˈʃlaːfn̩",
+     "note": "",
+     "audio": "audio/w_schlafen.mp3"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "zh": "一起冒險",
+   "icon": "icons/p05.jpg",
    "main": [
     {
      "de": "Zusammen mit dem WIR erleben Ben und Emma tolle Abenteuer.",
@@ -358,7 +447,7 @@ const BOOK = {
       "erleben 是不可分動詞（經歷）。",
       "tolle Abenteuer：複數，沒有冠詞，形容詞加 -e。"
      ],
-     "audio": "audio/s04_m0.mp3"
+     "audio": "audio/s05_m0.mp3"
     }
    ],
    "side": [
@@ -369,7 +458,7 @@ const BOOK = {
       "mit + 第3格：ein U-Boot → einem U-Boot。",
       "unter Wasser = 在水底下。"
      ],
-     "audio": "audio/s04_s0.mp3"
+     "audio": "audio/s05_s0.mp3"
     },
     {
      "de": "Ein großer Wal schwimmt neben ihnen.",
@@ -378,7 +467,7 @@ const BOOK = {
       "neben + 第3格；sie（他們）的第3格是 ihnen。",
       "ein großer Wal：陽性第1格，形容詞加 -er。"
      ],
-     "audio": "audio/s04_s1.mp3"
+     "audio": "audio/s05_s1.mp3"
     },
     {
      "de": "Ein großer Fisch jagt viele kleine Fische.",
@@ -387,7 +476,7 @@ const BOOK = {
       "jagen → er jagt。",
       "der Fisch → die Fische（複數加 -e）。"
      ],
-     "audio": "audio/s04_s2.mp3"
+     "audio": "audio/s05_s2.mp3"
     }
    ],
    "words": [
@@ -443,9 +532,9 @@ const BOOK = {
    ]
   },
   {
-   "n": 5,
+   "n": 6,
    "zh": "下雨天也開心",
-   "icon": "icons/p05.jpg",
+   "icon": "icons/p06.jpg",
    "main": [
     {
      "de": "Es regnet, aber Ben und Emma lachen.",
@@ -454,7 +543,7 @@ const BOOK = {
       "es regnet：講天氣的 es，沒有真正的主詞。",
       "aber 連接兩個句子，後面語序不變。"
      ],
-     "audio": "audio/s05_m0.mp3"
+     "audio": "audio/s06_m0.mp3"
     },
     {
      "de": "Zusammen tanzen sie im Regen.",
@@ -463,7 +552,7 @@ const BOOK = {
       "Zusammen 放句首，動詞排第二：tanzen sie。",
       "im = in dem。der Regen → dem Regen。"
      ],
-     "audio": "audio/s05_m1.mp3"
+     "audio": "audio/s06_m1.mp3"
     }
    ],
    "side": [
@@ -474,7 +563,7 @@ const BOOK = {
       "schützen → es schützt。",
       "wie = 像。ein Regenschirm 是陽性第1格。"
      ],
-     "audio": "audio/s05_s0.mp3"
+     "audio": "audio/s06_s0.mp3"
     },
     {
      "de": "Die anderen Menschen sehen traurig und nass aus.",
@@ -483,7 +572,7 @@ const BOOK = {
       "die anderen Menschen：複數，定冠詞後形容詞加 -en。",
       "aussehen：sehen … aus。"
      ],
-     "audio": "audio/s05_s1.mp3"
+     "audio": "audio/s06_s1.mp3"
     },
     {
      "de": "Auf der Straße sind große Pfützen.",
@@ -492,7 +581,7 @@ const BOOK = {
       "auf der Straße：地點，第3格。",
       "große Pfützen 是複數主詞，所以用 sind。"
      ],
-     "audio": "audio/s05_s2.mp3"
+     "audio": "audio/s06_s2.mp3"
     }
    ],
    "words": [
@@ -544,95 +633,6 @@ const BOOK = {
      "ipa": "ˈtʁaʊ̯ʁɪç",
      "note": "",
      "audio": "audio/w_traurig.mp3"
-    }
-   ]
-  },
-  {
-   "n": 6,
-   "zh": "有 WIR 更勇敢",
-   "icon": "icons/p06.jpg",
-   "main": [
-    {
-     "de": "Mit dem WIR haben Ben und Emma keine Angst.",
-     "zh": "有 WIR 在，Ben 和 Emma 就不害怕。",
-     "gram": [
-      "Angst haben = 害怕；否定用 keine（Angst 是陰性名詞，沒有冠詞時否定用 keine）。",
-      "mit + 第3格（dem WIR）。"
-     ],
-     "audio": "audio/s06_m0.mp3"
-    },
-    {
-     "de": "Zusammen können sie sogar ein Ungeheuer besiegen.",
-     "zh": "一起，他們甚至能打敗一隻大怪獸。",
-     "gram": [
-      "können + 原形動詞：原形 besiegen 放句尾。",
-      "sogar = 甚至。Zusammen 在句首，所以 können sie。"
-     ],
-     "audio": "audio/s06_m1.mp3"
-    }
-   ],
-   "side": [
-    {
-     "de": "Das Ungeheuer ist groß und rot und hat spitze Zähne.",
-     "zh": "怪獸又大又紅，有尖尖的牙齒。",
-     "gram": [
-      "der Zahn → die Zähne（複數：a 變 ä）。",
-      "spitze Zähne：複數，形容詞加 -e。"
-     ],
-     "audio": "audio/s06_s0.mp3"
-    },
-    {
-     "de": "Es schläft, und die beiden stehen vor ihm.",
-     "zh": "它在睡覺，兩人站在它前面。",
-     "gram": [
-      "schlafen 是不規則：es schläft。",
-      "vor + 第3格；es 的第3格是 ihm。"
-     ],
-     "audio": "audio/s06_s1.mp3"
-    }
-   ],
-   "words": [
-    {
-     "de": "die Angst",
-     "zh": "害怕、恐懼",
-     "ipa": "aŋst",
-     "note": "",
-     "audio": "audio/w_die_angst.mp3"
-    },
-    {
-     "de": "das Ungeheuer",
-     "zh": "怪獸",
-     "ipa": "ˈʊnɡəˌhɔɪ̯ɐ",
-     "note": "",
-     "audio": "audio/w_das_ungeheuer.mp3"
-    },
-    {
-     "de": "besiegen",
-     "zh": "打敗",
-     "ipa": "bəˈziːɡn̩",
-     "note": "",
-     "audio": "audio/w_besiegen.mp3"
-    },
-    {
-     "de": "der Zahn",
-     "zh": "牙齒",
-     "ipa": "ˈtsaːn",
-     "note": "複數 die Zähne",
-     "audio": "audio/w_der_zahn.mp3"
-    },
-    {
-     "de": "spitz",
-     "zh": "尖的",
-     "ipa": "ʃpɪts",
-     "note": "",
-     "audio": "audio/w_spitz.mp3"
-    },
-    {
-     "de": "schlafen",
-     "zh": "睡覺",
-     "ipa": "ˈʃlaːfn̩",
-     "note": "",
-     "audio": "audio/w_schlafen.mp3"
     }
    ]
   },
