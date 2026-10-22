@@ -31,7 +31,7 @@ function render() {
     a.innerHTML = `<img src="${base + s.icon}" alt="" width="72" height="54"><span>${s.n}</span>`;
     $('strip').append(a);
     const sec = document.createElement('section'); sec.className = 'sp'; sec.id = 'sp' + s.n;
-    sec.innerHTML = `<a class="shot" href="${base + s.icon}" target="_blank" rel="noopener" aria-label="第 ${s.n} 頁的模糊照片，點一下看原尺寸"><img src="${base + s.icon}" alt="第 ${s.n} 頁（模糊照片）" width="2048" height="1536"></a><div class="sh"><div><div class="no">第 ${s.n} 頁（跨頁）</div><h2>${esc(s.zh)}</h2></div></div>`;
+    sec.innerHTML = `<a class="shot" href="${base + s.icon}" target="_blank" rel="noopener" aria-label="第 ${s.n} 頁的照片，點一下看原尺寸"><img src="${base + s.icon}" alt="第 ${s.n} 頁的照片" width="2048" height="1536"></a><div class="sh"><div><div class="no">第 ${s.n} 頁（跨頁）</div><h2>${esc(s.zh)}</h2></div></div>`;
     const line = (l, cls) => {
       const row = document.createElement('div'); row.className = 'line ' + cls;
       const b = btn('聽這句'); b.addEventListener('click', () => { runId++; play(l.audio, l.de); });
