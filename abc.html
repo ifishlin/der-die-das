@@ -57,11 +57,6 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 .chip:focus-visible,.btn:focus-visible,.mic:focus-visible,.letter:focus-visible,.swap:focus-visible,.w:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
 
 /* table */
-.poster{margin:0 auto 18px;max-width:480px;background:var(--paper);border-radius:16px;box-shadow:var(--shadow);padding:12px;display:flex;flex-direction:column;gap:8px}
-.poster a{display:block;border-radius:10px;overflow:hidden}
-.poster a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
-.poster img{display:block;width:100%;height:auto}
-.poster figcaption{color:var(--muted);font-weight:700;font-size:.9rem;text-align:center}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
 .cell{background:var(--paper);border-radius:16px;box-shadow:var(--shadow);padding:12px;display:flex;flex-direction:column;gap:10px}
 .cellhead{display:flex;align-items:center;justify-content:space-between;gap:8px}
@@ -131,10 +126,6 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   </div>
 
   <section id="table">
-    <figure class="poster">
-      <a href="img/abc-poster.jpg" target="_blank" rel="noopener" aria-label="Das Alphabet 海報照片，點一下看原尺寸"><img src="img/abc-poster.jpg" alt="Das Alphabet 海報：每個字母配一隻動物，從 Alpaka 到 Zebra，還有 Ä、Ö、Ü、ß" width="1536" height="2048"></a>
-      <figcaption>Das Alphabet 海報（點一下看原尺寸）</figcaption>
-    </figure>
     <div class="grid" id="grid"></div>
   </section>
 
@@ -162,10 +153,11 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
     <p>念的順序：先字母，再三個單字，跟著唸。字母的唸法是字母的「名字」，例如 B 念「Be」、W 念「We」、J 念「Jott」。每個字母下面是以它開頭的單字，聽單字更容易記住開頭的聲音。</p>
     <p id="fewNote"></p>
     <p>ß（Eszett）不會放在字的開頭，所以 ß 這一格放的是「字裡面有 ß」的字，念的時候 ß 唸成清清的 s。</p>
+    <p>Ä、Ö、Ü 開頭的字很少，所以跟 Das Alphabet 海報一樣，這三格各多放一隻「字裡面有這個音」的動物：der Ameisenbär、die Schildkröte、das Küken。</p>
     <p>練習模式的語音辨識只是輔助：單一個字母很短，容易被聽錯。每次先念字母，念對才換下一個字；念不出來就按「這個我不會，聽一次」。</p>
   </div>
 </div>
 
-<script src="cards.js?v=20261029"></script>
+<script src="cards.js?v=20261029b"></script>
 <script src="speech.js?v=20261018"></script>
-<script src="abc.js?v=20261018d"></script>
+<script src="abc.js?v=20261029"></script>

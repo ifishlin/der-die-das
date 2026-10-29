@@ -17,9 +17,12 @@ const LETTERS = [
 // ---------- pool ----------
 const startsWith = (c, up) => c.noun[0].toUpperCase() === up;
 const special = n => /^(Sch|St|Sp|Ch)/i.test(n);
+// few words start with an umlaut: like the Das Alphabet poster, add an animal with the umlaut inside
+const UMLAUT_EXTRA = {'Ä': 'd1029-ameisenbaer', 'Ö': 'd1001-schildkroete', 'Ü': 'kueken'};
 function pool(L) {
   if (L.up === 'ß') return CARDS.filter(c => c.noun.includes('ß')); // ß never starts a word: show words that contain it
-  return CARDS.filter(c => startsWith(c, L.up) && !(L.up === 'S' || L.up === 'C' ? special(c.noun) : false));
+  const p = CARDS.filter(c => startsWith(c, L.up) && !(L.up === 'S' || L.up === 'C' ? special(c.noun) : false));
+  return p.concat(CARDS.filter(c => c.id === UMLAUT_EXTRA[L.up]));
 }
 const POOLS = Object.fromEntries(LETTERS.map(L => [L.up, pool(L)]));
 const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
