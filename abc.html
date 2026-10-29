@@ -57,6 +57,11 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 .chip:focus-visible,.btn:focus-visible,.mic:focus-visible,.letter:focus-visible,.swap:focus-visible,.w:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
 
 /* table */
+.poster{margin:0 auto 18px;max-width:480px;background:var(--paper);border-radius:16px;box-shadow:var(--shadow);padding:12px;display:flex;flex-direction:column;gap:8px}
+.poster a{display:block;border-radius:10px;overflow:hidden}
+.poster a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.poster img{display:block;width:100%;height:auto}
+.poster figcaption{color:var(--muted);font-weight:700;font-size:.9rem;text-align:center}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
 .cell{background:var(--paper);border-radius:16px;box-shadow:var(--shadow);padding:12px;display:flex;flex-direction:column;gap:10px}
 .cellhead{display:flex;align-items:center;justify-content:space-between;gap:8px}
@@ -126,6 +131,10 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   </div>
 
   <section id="table">
+    <figure class="poster">
+      <a href="img/abc-poster.jpg" target="_blank" rel="noopener" aria-label="Das Alphabet 海報照片，點一下看原尺寸"><img src="img/abc-poster.jpg" alt="Das Alphabet 海報：每個字母配一隻動物，從 Alpaka 到 Zebra，還有 Ä、Ö、Ü、ß" width="1536" height="2048"></a>
+      <figcaption>Das Alphabet 海報（點一下看原尺寸）</figcaption>
+    </figure>
     <div class="grid" id="grid"></div>
   </section>
 
