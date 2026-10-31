@@ -21,7 +21,7 @@ const btn = label => { const b = document.createElement('button'); b.className =
 const gramHtml = g => g && g.length ? `<ul class="gram">${g.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
 const artHtml = de => de.replace(/^(der|die|das) /, (m, a) => `<span class="art-${a}">${a}</span> `);
 
-let rows = [];
+let rows = [], origRows = [];
 function render() {
   document.title = `${BOOK.title} · 繪本 · Der Die Das 小卡`;
   $('title').textContent = BOOK.title;
@@ -39,6 +39,16 @@ function render() {
       row.insertAdjacentHTML('beforeend', `<div><div class="de">${esc(l.de)}</div><div class="zhline">${esc(l.zh)}</div>${gramHtml(l.gram)}</div>`);
       return row;
     };
+    if (s.orig) {
+      sec.insertAdjacentHTML('beforeend', '<div class="sec main">書上原文</div>');
+      s.orig.forEach(l => {
+        const row = document.createElement('div'); row.className = 'line orig';
+        const b = btn('聽這句'); b.addEventListener('click', () => { runId++; play(l.audio, l.de); });
+        row.append(b);
+        row.insertAdjacentHTML('beforeend', `<div><div class="de">${esc(l.de)}</div></div>`);
+        sec.append(row); origRows.push({el: row, sec, audio: l.audio, de: l.de});
+      });
+    }
     sec.insertAdjacentHTML('beforeend', '<div class="sec main">故事主線</div>');
     s.main.forEach(l => { const r = line(l, 'main'); sec.append(r); rows.push({el: r, sec, audio: l.audio, de: l.de}); });
     const side = document.createElement('div'); side.className = 'sidebox';
@@ -58,17 +68,19 @@ function render() {
     $('spreads').append(sec);
   });
 }
-async function playAll() {
-  const me = ++runId; $('playAll').hidden = true; $('stop').hidden = false;
+const playBtns = () => ['playAll', 'playOrig'].map($).filter(b => b && !(b.id === 'playOrig' && !origRows.length));
+function showPlay(on) { playBtns().forEach(b => b.hidden = !on); $('stop').hidden = on; }
+async function playAll(list) {
+  const me = ++runId; showPlay(false);
   let page = null;
-  for (const r of rows) {
+  for (const r of list) {
     if (me !== runId) break;
     // scroll once per spread, to its photo, and stay there while its lines are read
     if (r.sec !== page) { page = r.sec; page.scrollIntoView({block: 'start', behavior: 'smooth'}); }
     r.el.classList.add('on');
     await play(r.audio, r.de); r.el.classList.remove('on'); await wait(700);
   }
-  rows.forEach(r => r.el.classList.remove('on')); $('playAll').hidden = false; $('stop').hidden = true;
+  list.forEach(r => r.el.classList.remove('on')); showPlay(true);
 }
 function toggle(btnId, cls, invert) {
   $(btnId).addEventListener('click', () => {
@@ -76,10 +88,11 @@ function toggle(btnId, cls, invert) {
     $(btnId).setAttribute('aria-pressed', String(on)); document.body.classList.toggle(cls, !on);
   });
 }
-$('playAll').addEventListener('click', playAll);
-$('stop').addEventListener('click', () => { runId++; if (player) player.pause(); rows.forEach(r => r.el.classList.remove('on')); $('playAll').hidden = false; $('stop').hidden = true; });
+$('playAll').addEventListener('click', () => playAll(rows));
+$('playOrig').addEventListener('click', () => playAll(origRows));
+$('stop').addEventListener('click', () => { runId++; if (player) player.pause(); rows.concat(origRows).forEach(r => r.el.classList.remove('on')); showPlay(true); });
 toggle('zhToggle', 'nozh'); toggle('gramToggle', 'nogram'); toggle('sideToggle', 'noside');
 
-const s = document.createElement('script'); s.src = base + 'data.js?v=20261021e';
-s.onload = render; s.onerror = () => { $('title').textContent = '找不到這本書'; };
+const s = document.createElement('script'); s.src = base + 'data.js?v=20261031';
+s.onload = () => { render(); showPlay(true); }; s.onerror = () => { $('title').textContent = '找不到這本書'; };
 document.head.append(s);

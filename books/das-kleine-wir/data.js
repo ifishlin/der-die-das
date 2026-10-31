@@ -10,6 +10,16 @@ const BOOK = {
    "n": 1,
    "zh": "小 WIR 登場",
    "icon": "icons/p01.jpg",
+   "orig": [
+    {
+     "de": "Das ist das kleine WIR.",
+     "audio": "audio/s01_o0.mp3"
+    },
+    {
+     "de": "Es ist ziemlich stark und etwas ganz Besonderes.",
+     "audio": "audio/s01_o1.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Hallo! Das ist ein kleines grünes Monster. Es heißt WIR.",
@@ -93,6 +103,24 @@ const BOOK = {
    "n": 2,
    "zh": "什麼是 WIR？",
    "icon": "icons/p02.jpg",
+   "orig": [
+    {
+     "de": "Ein WIR entsteht überall dort, wo sich Menschen mögen.",
+     "audio": "audio/s02_o0.mp3"
+    },
+    {
+     "de": "Es gibt also ziemlich viele WIR und jedes sieht ein bisschen anders aus.",
+     "audio": "audio/s02_o1.mp3"
+    },
+    {
+     "de": "Eines haben sie aber alle gemeinsam: Sie sind sehr wertvoll.",
+     "audio": "audio/s02_o2.mp3"
+    },
+    {
+     "de": "Diese Geschichte handelt von dem WIR von Ben und Emma.",
+     "audio": "audio/s02_o3.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Wo Menschen sich gern haben, entsteht ein WIR.",
@@ -209,6 +237,20 @@ const BOOK = {
    "n": 3,
    "zh": "WIR 把兩個人連在一起",
    "icon": "icons/p03.jpg",
+   "orig": [
+    {
+     "de": "Das WIR verbindet Ben und Emma auf wundervolle Weise.",
+     "audio": "audio/s03_o0.mp3"
+    },
+    {
+     "de": "Es lässt sie aneinander denken, auch wenn sie sich gerade nicht sehen.",
+     "audio": "audio/s03_o1.mp3"
+    },
+    {
+     "de": "Mit dem WIR verstehen sich die beiden auch ohne Worte.",
+     "audio": "audio/s03_o2.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Das WIR verbindet Ben und Emma.",
@@ -349,6 +391,16 @@ const BOOK = {
    "n": 4,
    "zh": "有 WIR 更勇敢",
    "icon": "icons/p04.jpg",
+   "orig": [
+    {
+     "de": "Das WIR macht Ben und Emma MUTIGER.",
+     "audio": "audio/s04_o0.mp3"
+    },
+    {
+     "de": "Mit ihm können sie die gruseligsten Ungeheuer bezwingen.",
+     "audio": "audio/s04_o1.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Mit dem WIR haben Ben und Emma keine Angst.",
@@ -438,6 +490,12 @@ const BOOK = {
    "n": 5,
    "zh": "一起冒險",
    "icon": "icons/p05.jpg",
+   "orig": [
+    {
+     "de": "Mit dem WIR erleben sie die spannendsten Abenteuer.",
+     "audio": "audio/s05_o0.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Zusammen mit dem WIR erleben Ben und Emma tolle Abenteuer.",
@@ -535,6 +593,12 @@ const BOOK = {
    "n": 6,
    "zh": "下雨天也開心",
    "icon": "icons/p06.jpg",
+   "orig": [
+    {
+     "de": "Gemeinsam lachen sie über die trübsten Regentage und TANZEN zum Rhythmus der Regentropfen.",
+     "audio": "audio/s06_o0.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Es regnet, aber Ben und Emma lachen.",
@@ -640,6 +704,16 @@ const BOOK = {
    "n": 7,
    "zh": "困難變容易",
    "icon": "icons/p07.jpg",
+   "orig": [
+    {
+     "de": "Große Hindernisse lassen sich mit dem WIR viel leichter überwinden",
+     "audio": "audio/s07_o0.mp3"
+    },
+    {
+     "de": "(… und die Kekse schmecken zusammen doppelt und dreifach so gut).",
+     "audio": "audio/s07_o1.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Mit dem WIR sind schwere Aufgaben viel leichter.",
@@ -735,6 +809,24 @@ const BOOK = {
    "n": 8,
    "zh": "吵架了",
    "icon": "icons/p08.jpg",
+   "orig": [
+    {
+     "de": "Manchmal hat es das WIR nicht einfach mit Ben und Emma.",
+     "audio": "audio/s08_o0.mp3"
+    },
+    {
+     "de": "Wenn sich die beiden streiten, fliegen ihm viele Schimpfworte um den Kopf.",
+     "audio": "audio/s08_o1.mp3"
+    },
+    {
+     "de": "Davon wird ihm schwindelig und es bekommt Bauchschmerzen.",
+     "audio": "audio/s08_o2.mp3"
+    },
+    {
+     "de": "Das WIR fühlt sich dann ganz schwach und wird immer kleiner und kleiner, bis es ganz verschwunden ist.",
+     "audio": "audio/s08_o3.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Manchmal ist es nicht leicht für das WIR.",
@@ -847,6 +939,20 @@ const BOOK = {
    "n": 9,
    "zh": "沒有 WIR 的世界",
    "icon": "icons/p09.jpg",
+   "orig": [
+    {
+     "de": "Ohne das WIR ist der Himmel für Ben und Emma grau.",
+     "audio": "audio/s09_o0.mp3"
+    },
+    {
+     "de": "Der Wind ist kalt und der Regen besonders nass.",
+     "audio": "audio/s09_o1.mp3"
+    },
+    {
+     "de": "Das WIR fehlt den beiden sehr.",
+     "audio": "audio/s09_o2.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Ohne das WIR sieht die Welt grau aus.",
@@ -960,6 +1066,16 @@ const BOOK = {
    "n": 10,
    "zh": "各找各的",
    "icon": "icons/p10.jpg",
+   "orig": [
+    {
+     "de": "Jeder für sich suchen sie nach dem WIR.",
+     "audio": "audio/s10_o0.mp3"
+    },
+    {
+     "de": "Aber egal wie sehr sich Ben und Emma anstrengen, alleine können sie das WIR nicht finden.",
+     "audio": "audio/s10_o1.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Ben und Emma suchen das WIR, aber jeder sucht allein.",
@@ -1065,6 +1181,12 @@ const BOOK = {
    "n": 11,
    "zh": "一起努力",
    "icon": "icons/p11.jpg",
+   "orig": [
+    {
+     "de": "Nur, wenn sie sich ZUSAMMEN um das WIR bemühen …",
+     "audio": "audio/s11_o0.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Nur zusammen können sie das WIR wiederfinden.",
@@ -1169,6 +1291,20 @@ const BOOK = {
    "n": 12,
    "zh": "WIR 回來了",
    "icon": "icons/p12.jpg",
+   "orig": [
+    {
+     "de": "… finden sie es wieder.",
+     "audio": "audio/s12_o0.mp3"
+    },
+    {
+     "de": "Winzig klein hat es sich in die hinterste Ecke ihres Herzens verkrümelt und schmollt vor sich hin.",
+     "audio": "audio/s12_o1.mp3"
+    },
+    {
+     "de": "Aber zum Glück können Ben und Emma das WIR überreden, wieder hervorzukommen.",
+     "audio": "audio/s12_o2.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Zusammen finden sie das WIR wieder.",
@@ -1298,6 +1434,24 @@ const BOOK = {
    "n": 13,
    "zh": "照顧虛弱的 WIR",
    "icon": "icons/p13.jpg",
+   "orig": [
+    {
+     "de": "Das WIR ist noch ganz schwach und klein.",
+     "audio": "audio/s13_o0.mp3"
+    },
+    {
+     "de": "Seine Beine sind zittrig, sein Bauch grummelt.",
+     "audio": "audio/s13_o1.mp3"
+    },
+    {
+     "de": "Ihm ist noch ganz schlecht von der fiesen Streiterei.",
+     "audio": "audio/s13_o2.mp3"
+    },
+    {
+     "de": "Ben und Emma wissen, was in so einem Fall zu tun ist: Sie pflegen das WIR mit Tee und spannenden Geschichten wieder gesund.",
+     "audio": "audio/s13_o3.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Das WIR ist noch schwach und zittert.",
@@ -1424,6 +1578,16 @@ const BOOK = {
    "n": 14,
    "zh": "慢慢長大",
    "icon": "icons/p14.jpg",
+   "orig": [
+    {
+     "de": "Und mit viel Zeit, lieben Worten, einem offenen Ohr, einer Portion „Es tut mir leid“, einer Prise „Ich verzeihe dir“, garniert mit einem Häubchen „Ich mag dich“, sammelt das WIR wieder Kraft.",
+     "audio": "audio/s14_o0.mp3"
+    },
+    {
+     "de": "Es wächst und wächst und wird immer stärker.",
+     "audio": "audio/s14_o1.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Ben und Emma geben dem WIR Zeit und sagen nette Sachen.",
@@ -1528,6 +1692,12 @@ const BOOK = {
    "n": 15,
    "zh": "比以前更強",
    "icon": "icons/p15.jpg",
+   "orig": [
+    {
+     "de": "Bis es stärker ist als je zuvor!",
+     "audio": "audio/s15_o0.mp3"
+    }
+   ],
    "main": [
     {
      "de": "Jetzt ist das WIR stärker als je zuvor.",
