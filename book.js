@@ -79,6 +79,7 @@ const saved = {
 const lists = () => ({orig: origRows, main: rows});
 let paused = false, live = false;
 function setUI(state) { // 'idle' | 'playing' | 'paused'
+  document.body.classList.toggle('reading', state !== 'idle');
   $('playOrig').hidden = state !== 'idle' || !origRows.length;
   $('playAll').hidden = state !== 'idle';
   $('pause').hidden = state !== 'playing';
