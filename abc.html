@@ -73,6 +73,10 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 .w.on{border-color:var(--ink)}
 .few{color:var(--muted);font-size:.85rem}
 .cell.sel{outline:3px solid var(--ink)}
+.cell.turn{outline:3px solid var(--good)}
+.cell.turn .w{border-color:var(--good)}
+.turnmsg{flex:1;text-align:center;font-family:var(--display);font-weight:800;font-size:1.2rem;color:var(--good)}
+.w .ipa{display:block;font-size:.72rem;line-height:1.15;text-align:center;overflow-wrap:anywhere;max-width:100%}
 .big.letter{background:none}
 .letter.on,.big.letter.on{background:var(--ink);color:var(--bg)}
 .w.on{border-color:var(--ink);box-shadow:0 0 0 3px var(--ink)}
@@ -114,7 +118,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 
   <header>
     <h1>字母表</h1>
-    <p class="lede">點大字母，會先念字母，再依序念下面三個單字（念到的會亮起來）；也可以只點某一張圖聽那個單字。每個字母有三個字，可以按「換一組」換新的字，每次打開也會是不一樣的字母表。</p>
+    <p class="lede">點大字母，會念這個字母；念完會出現「換你念！」，請孩子自己念下面三個單字。不會念的字，點那張圖就會念給你聽。每個字母有三個字，可以按「換一組」換新的字，每次打開也會是不一樣的字母表。</p>
   </header>
 
   <div class="bar">
@@ -150,7 +154,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   </section>
 
   <div class="note">
-    <p>念的順序：先字母，再三個單字，跟著唸。字母的唸法是字母的「名字」，例如 B 念「Be」、W 念「We」、J 念「Jott」。每個字母下面是以它開頭的單字，聽單字更容易記住開頭的聲音。</p>
+    <p>念的順序：先聽字母，再換孩子自己念三個單字。單字下面的音標是德文維基詞典的念法，標 * 的是拆開組合字查的。字母的唸法是字母的「名字」，例如 B 念「Be」、W 念「We」、J 念「Jott」。每個字母下面是以它開頭的單字，聽單字更容易記住開頭的聲音。</p>
     <p id="fewNote"></p>
     <p>ß（Eszett）不會放在字的開頭，所以 ß 這一格放的是「字裡面有 ß」的字，念的時候 ß 唸成清清的 s。</p>
     <p>Ä、Ö、Ü 開頭的字很少，所以跟 Das Alphabet 海報一樣，這三格各多放一隻「字裡面有這個音」的動物：der Ameisenbär、die Schildkröte、das Küken。</p>
@@ -160,4 +164,5 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 
 <script src="cards.js?v=20261029b"></script>
 <script src="speech.js?v=20261018"></script>
-<script src="abc.js?v=20261029"></script>
+<script src="ipa.js?v=20261018"></script>
+<script src="abc.js?v=20261031"></script>

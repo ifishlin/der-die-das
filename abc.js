@@ -73,7 +73,7 @@ function wordBtn(c) {
   const b = document.createElement('button');
   b.className = 'w';
   b.setAttribute('aria-label', `${c.noun}，${c.zh}`);
-  b.innerHTML = `<img src="img/${c.id}.jpg" alt="" loading="lazy"><span class="t">${c.noun}</span>`;
+  b.innerHTML = `<img src="img/${c.id}.jpg" alt="" loading="lazy"><span class="t">${c.noun}</span>${IPA.html(c)}`;
   b.addEventListener('click', () => { seqId++; sayWord(c); });
   return b;
 }
@@ -85,17 +85,25 @@ function renderCell(L) {
   const f = cell.querySelector('.few');
   f.textContent = POOLS[L.up].length < 3 ? `目前只有 ${POOLS[L.up].length} 個字` : '';
 }
+function clearTurns() {
+  document.querySelectorAll('.cell').forEach(c => { c.classList.remove('sel', 'turn'); c.querySelector('.turnmsg').textContent = ''; });
+}
 function buildGrid() {
   const g = $('grid');
   LETTERS.forEach(L => {
     const cell = document.createElement('div');
     cell.className = 'cell'; cell.id = 'cell-' + L.key;
-    cell.innerHTML = `<div class="cellhead"><button class="letter" aria-label="聽字母 ${L.up} 和單字">${L.show}</button><button class="swap">換一組</button></div><div class="words"></div><div class="few"></div>`;
-    cell.querySelector('.letter').addEventListener('click', () => sayAll(L, i => {
-      cell.classList.toggle('sel', i >= 0);
-      cell.querySelector('.letter').classList.toggle('on', i === 0);
-      cell.querySelectorAll('.w').forEach((w, k) => w.classList.toggle('on', k === i - 1));
-    }));
+    cell.innerHTML = `<div class="cellhead"><button class="letter" aria-label="聽字母 ${L.up}">${L.show}</button><span class="turnmsg" aria-live="polite"></span><button class="swap">換一組</button></div><div class="words"></div><div class="few"></div>`;
+    // the letter only; then it is the child's turn to read the words (tap a picture to hear one)
+    cell.querySelector('.letter').addEventListener('click', async () => {
+      const id = ++seqId, letter = cell.querySelector('.letter');
+      clearTurns();
+      cell.classList.add('sel'); letter.classList.add('on');
+      await sayLetter(L);
+      letter.classList.remove('on');
+      if (id !== seqId) { cell.classList.remove('sel'); return; }
+      cell.classList.add('turn'); cell.querySelector('.turnmsg').textContent = '換你念！';
+    });
     cell.querySelector('.swap').addEventListener('click', () => { shown[L.up] = pick(L, shown[L.up].map(c => c.id)); renderCell(L); });
     g.appendChild(cell);
     renderCell(L);
@@ -105,6 +113,7 @@ function buildGrid() {
     ? `${few.map(L => L.up).join('、')} 開頭的常見德文字本來就比較少，所以這幾個字母不到三個字。` : '';
 }
 $('regen').addEventListener('click', () => {
+  clearTurns();
   LETTERS.forEach(L => { shown[L.up] = pick(L, shown[L.up].map(c => c.id)); renderCell(L); });
   if (!$('prac').hidden) nextLetter();
 });
