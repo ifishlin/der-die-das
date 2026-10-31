@@ -40,7 +40,7 @@ function render() {
       return row;
     };
     sec.insertAdjacentHTML('beforeend', '<div class="sec main">故事主線</div>');
-    s.main.forEach(l => { const r = line(l, 'main'); sec.append(r); rows.push({el: r, audio: l.audio, de: l.de}); });
+    s.main.forEach(l => { const r = line(l, 'main'); sec.append(r); rows.push({el: r, sec, audio: l.audio, de: l.de}); });
     const side = document.createElement('div'); side.className = 'sidebox';
     side.insertAdjacentHTML('beforeend', '<div class="sec">旁枝（畫面上的小細節）</div>');
     s.side.forEach(l => side.append(line(l, 'side')));
@@ -60,9 +60,12 @@ function render() {
 }
 async function playAll() {
   const me = ++runId; $('playAll').hidden = true; $('stop').hidden = false;
+  let page = null;
   for (const r of rows) {
     if (me !== runId) break;
-    r.el.classList.add('on'); r.el.scrollIntoView({block: 'center', behavior: 'smooth'});
+    // scroll once per spread, to its photo, and stay there while its lines are read
+    if (r.sec !== page) { page = r.sec; page.scrollIntoView({block: 'start', behavior: 'smooth'}); }
+    r.el.classList.add('on');
     await play(r.audio, r.de); r.el.classList.remove('on'); await wait(700);
   }
   rows.forEach(r => r.el.classList.remove('on')); $('playAll').hidden = false; $('stop').hidden = true;
