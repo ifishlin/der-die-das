@@ -24,6 +24,9 @@ const gramHtml = g => g && g.length ? `<ul class="gram">${g.map(x => `<li>${esc(
 const artHtml = de => de.replace(/^(der|die|das) /, (m, a) => `<span class="art-${a}">${a}</span> `);
 
 let rows = [], origRows = [];
+// each spread has its own controls under its photo, so they are always within reach while reading
+const pageCtrl = '<button class="btn primary p-orig" hidden>從這頁念原文</button><button class="btn primary p-main">從這頁念主線</button>'
+  + '<button class="btn primary p-resume" hidden>繼續念</button><button class="btn p-pause" hidden>暫停</button><button class="btn p-stop" hidden>停止</button>';
 function render() {
   document.title = `${BOOK.title} · 繪本 · Der Die Das 小卡`;
   $('title').textContent = BOOK.title;
@@ -33,7 +36,10 @@ function render() {
     a.innerHTML = `<img src="${base + s.icon}" alt="" width="72" height="54"><span>${s.n}</span>`;
     $('strip').append(a);
     const sec = document.createElement('section'); sec.className = 'sp'; sec.id = 'sp' + s.n;
-    sec.innerHTML = `<a class="shot" href="${base + s.icon}" target="_blank" rel="noopener" aria-label="第 ${s.n} 頁的照片，點一下看原尺寸"><img src="${base + s.icon}" alt="第 ${s.n} 頁的照片" width="2048" height="1536"></a><div class="sh"><div><div class="no">第 ${s.n} 頁（跨頁）</div><h2>${esc(s.zh)}</h2></div></div>`;
+    sec.innerHTML = `<a class="shot" href="${base + s.icon}" target="_blank" rel="noopener" aria-label="第 ${s.n} 頁的照片，點一下看原尺寸"><img src="${base + s.icon}" alt="第 ${s.n} 頁的照片" width="2048" height="1536"></a><div class="sh"><div><div class="no">第 ${s.n} 頁（跨頁）</div><h2>${esc(s.zh)}</h2></div><div class="chips pc">${pageCtrl}</div></div>`;
+    const pc = sec.querySelector('.pc'), o0 = origRows.length, m0 = rows.length; // this spread's first line in each list
+    pc.querySelector('.p-orig').addEventListener('click', () => playAll('orig', o0));
+    pc.querySelector('.p-main').addEventListener('click', () => playAll('main', m0));
     const line = (l, cls) => {
       const row = document.createElement('div'); row.className = 'line ' + cls;
       const b = btn('聽這句'); b.addEventListener('click', () => { halt(true); play(l.audio, l.de); });
@@ -79,7 +85,9 @@ const saved = {
 const lists = () => ({orig: origRows, main: rows});
 let paused = false, live = false;
 function setUI(state) { // 'idle' | 'playing' | 'paused'
-  document.body.classList.toggle('reading', state !== 'idle');
+  const each = (cls, hide) => document.querySelectorAll('.pc .' + cls).forEach(b => b.hidden = hide);
+  each('p-orig', state !== 'idle' || !origRows.length); each('p-main', state !== 'idle');
+  each('p-pause', state !== 'playing'); each('p-resume', state !== 'paused'); each('p-stop', state === 'idle');
   $('playOrig').hidden = state !== 'idle' || !origRows.length;
   $('playAll').hidden = state !== 'idle';
   $('pause').hidden = state !== 'playing';
@@ -145,6 +153,10 @@ $('playOrig').addEventListener('click', () => playAll('orig'));
 $('pause').addEventListener('click', pauseAll);
 $('resume').addEventListener('click', resumeAll);
 $('stop').addEventListener('click', () => halt(false));
+$('spreads').addEventListener('click', e => {
+  const b = e.target.closest('.p-pause, .p-resume, .p-stop'); if (!b) return;
+  if (b.classList.contains('p-pause')) pauseAll(); else if (b.classList.contains('p-resume')) resumeAll(); else halt(false);
+});
 toggle('zhToggle', 'nozh'); toggle('gramToggle', 'nogram'); toggle('sideToggle', 'noside');
 
 const s = document.createElement('script'); s.src = base + 'data.js?v=20261031';

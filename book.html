@@ -144,10 +144,9 @@ body.noside .sidebox{display:none}
 .card{background:var(--paper);border-radius:16px;box-shadow:var(--shadow);padding:14px 18px;display:flex;gap:14px;align-items:flex-start}
 .card h3{margin:0 0 4px;font-family:var(--display)}
 .arc{display:flex;flex-wrap:wrap;gap:8px}
-/* while reading through, pause/resume/stop float at the bottom so they stay reachable on any page */
-body.reading #ctrl{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:20;flex-wrap:nowrap;background:var(--paper);padding:8px;border-radius:999px;box-shadow:0 4px 18px rgba(0,0,0,.25)}
-body.reading #ctrl .btn{padding:14px 24px;font-size:18px;border-radius:999px;white-space:nowrap}
-body.reading .wrap{padding-bottom:120px}
+/* per-spread read-through controls, right under each photo */
+.sh{flex-wrap:wrap;justify-content:space-between}
+.pc .btn{padding:12px 20px;font-size:17px}
 </style>
 <div class="wrap">
   <nav class="tabs" aria-label="頁籤">
@@ -171,7 +170,7 @@ body.reading .wrap{padding-bottom:120px}
       <button class="chip" id="gramToggle" aria-pressed="true">顯示文法</button>
       <button class="chip" id="sideToggle" aria-pressed="true">顯示旁枝</button>
     </div>
-    <div class="chips" id="ctrl">
+    <div class="chips">
       <button class="btn primary" id="resume" hidden>繼續念</button>
       <button class="btn primary" id="playOrig" hidden>從頭念原文</button>
       <button class="btn primary" id="playAll">從頭念主線</button>
@@ -188,4 +187,4 @@ body.reading .wrap{padding-bottom:120px}
   </div>
 </div>
 <script src="books/books.js?v=20261021"></script>
-<script src="book.js?v=20261031d"></script>
+<script src="book.js?v=20261031e"></script>
