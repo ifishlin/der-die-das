@@ -1,6 +1,6 @@
 """Download MOE (教育部國語辭典簡編本) recordings via moedict CDN -> audio/zy/<n>_<k>.mp3,
 find the first spoken segment (the headword) of each and write the ZY array into zhuyin.html.
-An entry whose id is a list is played part by part (one recording per character).
+Each entry plays the symbol sound, then the example word; a word id that is a list is played part by part (one recording per character).
 Run: python3 tools/zhuyin/build.py   (needs curl + ffmpeg)"""
 import glob, json, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -27,9 +27,10 @@ def fetch(rid, name, single):
 
 rows = []
 for i, z in enumerate(ZY):
-    ids = z[4] if isinstance(z[4], list) else [z[4]]
-    single = len(z[1]) == 1 or isinstance(z[4], list)
-    parts = [fetch(r, f'{i}_{k}', single) for k, r in enumerate(ids)]
+    ids = z[5] if isinstance(z[5], list) else [z[5]]
+    parts = [fetch(z[4], f'{i}_s', True)]  # 先念符號本身的音
+    single = len(z[1]) == 1 or isinstance(z[5], list)
+    parts += [fetch(r, f'{i}_{k}', single) for k, r in enumerate(ids)]
     rows.append(list(z[:4]) + [parts])
     print(i, z[0], z[1], parts)
 p = os.path.join(ROOT, 'zhuyin.html')
