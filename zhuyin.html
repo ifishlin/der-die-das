@@ -68,7 +68,26 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 .z .c{font-size:1.6rem;font-weight:800;line-height:1;color:var(--das)}
 .z .p{font-size:.85rem;color:var(--muted);font-weight:700}
 .nopy .z .p{display:none}
+.wrap>*{min-width:0}
+.chart{background:var(--paper);border-radius:20px;box-shadow:var(--shadow);padding:14px;display:flex;flex-direction:column;gap:16px}
+.blk h2{font-family:var(--display);font-weight:800;font-size:1.2rem;margin:0 0 8px;text-align:center}
+.blk.sheng h2{color:#2A66B0}.blk.yun h2{color:#C9403A}.blk.jie h2{color:#2F8A4C}
+.g{display:grid;gap:6px}
+.g.c6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.g.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.g.c1{grid-template-columns:minmax(0,1fr)}
+.sheng .z{background:#D9E8F7}.yun .z{background:#F8DDE6}.jie .z{background:#DDEFD8}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sheng .z{background:#25384E}:root:not([data-theme="light"]) .yun .z{background:#4A2A36}:root:not([data-theme="light"]) .jie .z{background:#274030}}
+:root[data-theme="dark"] .sheng .z{background:#25384E}:root[data-theme="dark"] .yun .z{background:#4A2A36}:root[data-theme="dark"] .jie .z{background:#274030}
+.gap{min-height:1px}
+.low{display:flex;gap:10px;align-items:flex-start;min-width:0}
+.low .yun{flex:4;min-width:0}.low .jie{flex:1;min-width:0}
+.z{padding:8px 2px;border-radius:12px;gap:2px;min-width:0;box-shadow:none}
+.z .s{font-size:clamp(1.8rem,8vw,2.8rem)}
+.z .c{font-size:clamp(.7rem,2.8vw,1rem);color:var(--ink);font-weight:700;line-height:1.1}
+.z .p{font-size:clamp(.6rem,2.4vw,.8rem)}
 </style>
+
 
 <div class="wrap">
   <nav class="tabs" aria-label="頁籤">
@@ -84,7 +103,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   </nav>
   <header>
     <h1>注音符號表</h1>
-    <p class="lede">點一個注音符號，會念這個注音符號本身的音（真人錄音）。符號下面是例字或例詞和拼音，只是顯示，不會念。</p>
+    <p class="lede">排法和學校的「注音符號總表」一樣：聲符、韻符、介符。點一個注音符號，會念這個符號本身的音（真人錄音）。符號下面是例字和拼音，只是顯示，不會念。</p>
   </header>
   <div class="bar">
     <div class="chips" role="group" aria-label="選項">
@@ -92,12 +111,12 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
     </div>
     <button class="btn primary" id="all">從頭念到尾</button>
   </div>
-  <div id="secs"></div>
+  <div class="chart" id="chart"></div>
   <p class="note">符號的讀音：2017 © 教育部，國語注音符號手冊－開放部件（創用 CC 姓名標示 4.0 國際版）。</p>
 </div>
 <script>
 const ZY=[["ㄅ", "爸爸", "bàba", "聲母", [["0_s", 0, 1.0]]], ["ㄆ", "皮球", "píqiú", "聲母", [["1_s", 0, 1.0]]], ["ㄇ", "媽媽", "māma", "聲母", [["2_s", 0, 1.0]]], ["ㄈ", "飛機", "fēijī", "聲母", [["3_s", 0, 1.0]]], ["ㄉ", "大象", "dàxiàng", "聲母", [["4_s", 0, 1.0]]], ["ㄊ", "兔子", "tùzi", "聲母", [["5_s", 0, 1.0]]], ["ㄋ", "牛奶", "niúnǎi", "聲母", [["6_s", 0, 1.0]]], ["ㄌ", "老虎", "lǎohǔ", "聲母", [["7_s", 0, 1.0]]], ["ㄍ", "哥哥", "gēge", "聲母", [["8_s", 0, 1.0]]], ["ㄎ", "開心", "kāixīn", "聲母", [["9_s", 0, 1.0]]], ["ㄏ", "花", "huā", "聲母", [["10_s", 0, 1.0]]], ["ㄐ", "雞", "jī", "聲母", [["11_s", 0, 1.0]]], ["ㄑ", "汽車", "qìchē", "聲母", [["12_s", 0, 1.0]]], ["ㄒ", "西瓜", "xīguā", "聲母", [["13_s", 0, 1.0]]], ["ㄓ", "豬", "zhū", "聲母", [["14_s", 0, 1.0]]], ["ㄔ", "吃飯", "chīfàn", "聲母", [["15_s", 0, 1.0]]], ["ㄕ", "獅子", "shīzi", "聲母", [["16_s", 0, 1.0]]], ["ㄖ", "日記", "rìjì", "聲母", [["17_s", 0, 1.0]]], ["ㄗ", "紫色", "zǐsè", "聲母", [["18_s", 0, 1.0]]], ["ㄘ", "草", "cǎo", "聲母", [["19_s", 0, 1.0]]], ["ㄙ", "四", "sì", "聲母", [["20_s", 0, 1.0]]], ["ㄧ", "一", "yī", "韻母", [["21_s", 0, 1.0]]], ["ㄨ", "烏龜", "wūguī", "韻母", [["22_s", 0, 1.0]]], ["ㄩ", "魚", "yú", "韻母", [["23_s", 0, 1.0]]], ["ㄚ", "阿姨", "āyí", "韻母", [["24_s", 0, 1.0]]], ["ㄛ", "婆婆", "pópo", "韻母", [["25_s", 0, 1.0]]], ["ㄜ", "鵝", "é", "韻母", [["26_s", 0, 1.0]]], ["ㄝ", "爺爺", "yéye", "韻母", [["27_s", 0, 1.0]]], ["ㄞ", "愛", "ài", "韻母", [["28_s", 0, 1.0]]], ["ㄟ", "黑", "hēi", "韻母", [["29_s", 0, 1.0]]], ["ㄠ", "包", "bāo", "韻母", [["30_s", 0, 1.0]]], ["ㄡ", "偶", "ǒu", "韻母", [["31_s", 0, 1.0]]], ["ㄢ", "蛋", "dàn", "韻母", [["32_s", 0, 1.0]]], ["ㄣ", "人", "rén", "韻母", [["33_s", 0, 1.0]]], ["ㄤ", "羊", "yáng", "韻母", [["34_s", 0, 1.0]]], ["ㄥ", "燈", "dēng", "韻母", [["35_s", 0, 1.0]]], ["ㄦ", "耳朵", "ěrduo", "韻母", [["36_s", 0, 1.0]]]];
-const secs=document.getElementById('secs'),wrap=document.querySelector('.wrap');
+const wrap=document.querySelector('.wrap');
 let audio=null,stop=false,token=0;
 function play(i){return new Promise(res=>{if(audio){audio.pause()}
   document.querySelectorAll('.z.on').forEach(e=>e.classList.remove('on'));
@@ -112,16 +131,27 @@ function play(i){return new Promise(res=>{if(audio){audio.pause()}
     a.addEventListener('playing',()=>{if(!timer)timer=setTimeout(fin,(e-s)*1000)});
     a.play().catch(fin)};
   next()})}
-['聲母','韻母'].forEach(g=>{
-  const s=document.createElement('section');s.className='sec';
-  s.innerHTML='<h2>'+g+'</h2><div class="zgrid"></div>';
-  const grid=s.lastChild;
-  ZY.forEach((z,i)=>{if(z[3]!==g)return;
+const SHENG=[['ㄗ','ㄓ','ㄐ','ㄍ','ㄉ','ㄅ'],['ㄘ','ㄔ','ㄑ','ㄎ','ㄊ','ㄆ'],['ㄙ','ㄕ','ㄒ','ㄏ','ㄋ','ㄇ'],[null,'ㄖ',null,null,'ㄌ','ㄈ']];
+const YUN=[[ 'ㄦ','ㄢ','ㄞ','ㄚ'],[null,'ㄣ','ㄟ','ㄛ'],[null,'ㄤ','ㄠ','ㄜ'],[null,'ㄥ','ㄡ','ㄝ']];
+const JIE=[['ㄧ'],['ㄨ'],['ㄩ']];
+const chart=document.getElementById('chart');
+function block(cls,title,rows,cols){
+  const d=document.createElement('div');d.className='blk '+cls;
+  d.innerHTML='<h2>'+title+'</h2><div class="g c'+cols+'"></div>';
+  const g=d.lastChild;
+  rows.flat().forEach(sym=>{
+    if(!sym){const x=document.createElement('div');x.className='gap';g.appendChild(x);return}
+    const i=ZY.findIndex(z=>z[0]===sym),z=ZY[i];
     const b=document.createElement('button');b.className='z';b.dataset.i=i;
-    b.setAttribute('aria-label',z[0]+' '+z[1]);
+    b.setAttribute('aria-label',z[0]);
     b.innerHTML='<span class="s">'+z[0]+'</span><span class="c">'+z[1]+'</span><span class="p">'+z[2]+'</span>';
-    b.onclick=()=>{stop=true;play(i)};grid.appendChild(b)});
-  secs.appendChild(s)});
+    b.onclick=()=>{stop=true;play(i)};g.appendChild(b)});
+  return d}
+chart.appendChild(block('sheng','聲符',SHENG,6));
+const low=document.createElement('div');low.className='low';
+low.appendChild(block('yun','韻符',YUN,4));
+low.appendChild(block('jie','介符',JIE,1));
+chart.appendChild(low);
 const tp=document.getElementById('t-py');
 tp.onclick=()=>{const on=tp.getAttribute('aria-pressed')!=='true';tp.setAttribute('aria-pressed',on);wrap.classList.toggle('nopy',!on)};
 const all=document.getElementById('all');
