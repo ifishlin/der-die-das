@@ -84,7 +84,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   </nav>
   <header>
     <h1>注音符號表</h1>
-    <p class="lede">點一個注音符號，會念出它的發音。符號下面是「發音的字」（例如 ㄅ 念「玻」），再下面是拼音。</p>
+    <p class="lede">點一個注音符號，會念出它的發音（真人錄音）。符號下面是「發音的字」（例如 ㄅ 念「玻」），再下面是拼音。</p>
   </header>
   <div class="bar">
     <div class="chips" role="group" aria-label="選項">
@@ -93,16 +93,22 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
     <button class="btn primary" id="all">從頭念到尾</button>
   </div>
   <div id="secs"></div>
+  <p class="note">錄音來源：教育部《國語辭典簡編本》（經萌典 moedict.tw 提供），著作權屬教育部，採創用 CC 姓名標示－禁止改作授權（僅轉成 mp3 格式）。ㄝ、ㄥ 沒有單獨的錄音，ㄝ 用「噎」（ㄧㄝ）、ㄥ 用「哼」（ㄏㄥ）代替，念的時候請只聽後面那個音。</p>
 </div>
 <script>
-const ZY=[["ㄅ", "玻", "b(o)", "聲母"], ["ㄆ", "坡", "p(o)", "聲母"], ["ㄇ", "摸", "m(o)", "聲母"], ["ㄈ", "佛", "f(o)", "聲母"], ["ㄉ", "得", "d(e)", "聲母"], ["ㄊ", "特", "t(e)", "聲母"], ["ㄋ", "訥", "n(e)", "聲母"], ["ㄌ", "勒", "l(e)", "聲母"], ["ㄍ", "哥", "g(e)", "聲母"], ["ㄎ", "科", "k(e)", "聲母"], ["ㄏ", "喝", "h(e)", "聲母"], ["ㄐ", "基", "j(i)", "聲母"], ["ㄑ", "欺", "q(i)", "聲母"], ["ㄒ", "希", "x(i)", "聲母"], ["ㄓ", "知", "zh(i)", "聲母"], ["ㄔ", "吃", "ch(i)", "聲母"], ["ㄕ", "詩", "sh(i)", "聲母"], ["ㄖ", "日", "r(i)", "聲母"], ["ㄗ", "資", "z(i)", "聲母"], ["ㄘ", "雌", "c(i)", "聲母"], ["ㄙ", "思", "s(i)", "聲母"], ["ㄧ", "衣", "yi", "韻母"], ["ㄨ", "烏", "wu", "韻母"], ["ㄩ", "迂", "yu", "韻母"], ["ㄚ", "啊", "a", "韻母"], ["ㄛ", "喔", "o", "韻母"], ["ㄜ", "鵝", "e", "韻母"], ["ㄝ", "耶", "ê", "韻母"], ["ㄞ", "哀", "ai", "韻母"], ["ㄟ", "誒", "ei", "韻母"], ["ㄠ", "熬", "ao", "韻母"], ["ㄡ", "歐", "ou", "韻母"], ["ㄢ", "安", "an", "韻母"], ["ㄣ", "恩", "en", "韻母"], ["ㄤ", "昂", "ang", "韻母"], ["ㄥ", "鞥", "eng", "韻母"], ["ㄦ", "兒", "er", "韻母"]];
+const ZY=[["ㄅ", "玻", "bō", "聲母", [0, 0.64]], ["ㄆ", "坡", "pō", "聲母", [0.95, 1.6]], ["ㄇ", "摸", "mō", "聲母", [0, 0.57]], ["ㄈ", "佛", "fó", "聲母", [0, 0.46]], ["ㄉ", "得", "dé", "聲母", [0, 0.5]], ["ㄊ", "特", "tè", "聲母", [0, 0.46]], ["ㄋ", "訥", "nè", "聲母", [0, 0.31]], ["ㄌ", "勒", "lè", "聲母", [0, 0.34]], ["ㄍ", "哥", "gē", "聲母", [0, 0.49]], ["ㄎ", "科", "kē", "聲母", [0, 0.51]], ["ㄏ", "喝", "hē", "聲母", [0, 0.49]], ["ㄐ", "基", "jī", "聲母", [0, 0.52]], ["ㄑ", "欺", "qī", "聲母", [0, 0.58]], ["ㄒ", "希", "xī", "聲母", [0, 0.72]], ["ㄓ", "知", "zhī", "聲母", [0, 0.57]], ["ㄔ", "吃", "chī", "聲母", [0, 0.55]], ["ㄕ", "詩", "shī", "聲母", [0, 0.62]], ["ㄖ", "日", "rì", "聲母", [0, 0.48]], ["ㄗ", "資", "zī", "聲母", [0, 0.52]], ["ㄘ", "雌", "cī", "聲母", [0, 0.65]], ["ㄙ", "思", "sī", "聲母", [0, 0.7]], ["ㄧ", "衣", "yī", "韻母", [0, 0.39]], ["ㄨ", "烏", "wū", "韻母", [0, 0.43]], ["ㄩ", "迂", "yū", "韻母", [0, 0.54]], ["ㄚ", "啊", "ā", "韻母", [0, 0.4]], ["ㄛ", "喔", "ō", "韻母", [0, 0.37]], ["ㄜ", "鵝", "é", "韻母", [0, 0.45]], ["ㄝ", "噎", "yē", "韻母", [0, 0.54]], ["ㄞ", "哀", "āi", "韻母", [0, 0.47]], ["ㄟ", "欸", "èi", "韻母", [0, 0.54]], ["ㄠ", "熬", "áo", "韻母", [0, 0.44]], ["ㄡ", "歐", "ōu", "韻母", [0, 0.43]], ["ㄢ", "安", "ān", "韻母", [0, 0.47]], ["ㄣ", "恩", "ēn", "韻母", [0, 0.44]], ["ㄤ", "昂", "áng", "韻母", [0, 0.48]], ["ㄥ", "哼", "hēng", "韻母", [0, 0.41]], ["ㄦ", "兒", "ér", "韻母", [0, 0.45]]];
 const secs=document.getElementById('secs'),wrap=document.querySelector('.wrap');
 let audio=null,stop=false;
 function play(i){return new Promise(res=>{if(audio){audio.pause()}
   document.querySelectorAll('.z.on').forEach(e=>e.classList.remove('on'));
   const b=document.querySelector('[data-i="'+i+'"]');b&&b.classList.add('on');
-  audio=new Audio('audio/zy/'+i+'.mp3');audio.onended=audio.onerror=()=>{b&&b.classList.remove('on');res()};
-  audio.play().catch(()=>res())})}
+  const [s,e]=ZY[i][4];let done=false,timer;
+  const a=audio=new Audio('audio/zy/'+i+'.mp3');
+  const fin=()=>{if(done)return;done=true;clearTimeout(timer);a.pause();b&&b.classList.remove('on');res()};
+  a.onerror=fin;a.onended=fin;
+  a.addEventListener('loadedmetadata',()=>{a.currentTime=s});
+  a.addEventListener('playing',()=>{if(!timer)timer=setTimeout(fin,(e-s)*1000)});
+  a.play().catch(fin)})}
 ['聲母','韻母'].forEach(g=>{
   const s=document.createElement('section');s.className='sec';
   s.innerHTML='<h2>'+g+'</h2><div class="zgrid"></div>';
