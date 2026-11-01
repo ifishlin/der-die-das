@@ -86,6 +86,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
 .z .s{font-size:clamp(1.8rem,8vw,2.8rem)}
 .z .c{font-size:clamp(.7rem,2.8vw,1rem);color:var(--ink);font-weight:700;line-height:1.1}
 .z .p{font-size:clamp(.6rem,2.4vw,.8rem)}
+.z .i{width:min(100%,84px);aspect-ratio:1;border-radius:10px;background:#fff;display:block;margin:2px 0 4px}
 </style>
 
 
@@ -103,7 +104,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
   </nav>
   <header>
     <h1>注音符號表</h1>
-    <p class="lede">排法和學校的「注音符號總表」一樣：聲符、韻符、介符。點一個注音符號，會念這個符號本身的音（真人錄音）。符號下面是例字和拼音，只是顯示，不會念。</p>
+    <p class="lede">排法和學校的「注音符號總表」一樣：聲符、韻符、介符。點一個注音符號，會念這個符號本身的音（真人錄音）。符號下面是小圖、例字和拼音，只是顯示，不會念。</p>
   </header>
   <div class="bar">
     <div class="chips" role="group" aria-label="選項">
@@ -112,7 +113,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);l
     <button class="btn primary" id="all">從頭念到尾</button>
   </div>
   <div class="chart" id="chart"></div>
-  <p class="note">符號的讀音：2017 © 教育部，國語注音符號手冊－開放部件（創用 CC 姓名標示 4.0 國際版）。</p>
+  <p class="note">符號的讀音：2017 © 教育部，國語注音符號手冊－開放部件（創用 CC 姓名標示 4.0 國際版）。插圖：Yong Chu「ㄅㄆㄇ 注音符號表」。</p>
 </div>
 <script>
 const ZY=[["ㄅ", "爸爸", "bàba", "聲母", [["0_s", 0, 1.0]]], ["ㄆ", "皮球", "píqiú", "聲母", [["1_s", 0, 1.0]]], ["ㄇ", "媽媽", "māma", "聲母", [["2_s", 0, 1.0]]], ["ㄈ", "飛機", "fēijī", "聲母", [["3_s", 0, 1.0]]], ["ㄉ", "大象", "dàxiàng", "聲母", [["4_s", 0, 1.0]]], ["ㄊ", "兔子", "tùzi", "聲母", [["5_s", 0, 1.0]]], ["ㄋ", "牛奶", "niúnǎi", "聲母", [["6_s", 0, 1.0]]], ["ㄌ", "老虎", "lǎohǔ", "聲母", [["7_s", 0, 1.0]]], ["ㄍ", "哥哥", "gēge", "聲母", [["8_s", 0, 1.0]]], ["ㄎ", "開心", "kāixīn", "聲母", [["9_s", 0, 1.0]]], ["ㄏ", "花", "huā", "聲母", [["10_s", 0, 1.0]]], ["ㄐ", "雞", "jī", "聲母", [["11_s", 0, 1.0]]], ["ㄑ", "汽車", "qìchē", "聲母", [["12_s", 0, 1.0]]], ["ㄒ", "西瓜", "xīguā", "聲母", [["13_s", 0, 1.0]]], ["ㄓ", "豬", "zhū", "聲母", [["14_s", 0, 1.0]]], ["ㄔ", "吃飯", "chīfàn", "聲母", [["15_s", 0, 1.0]]], ["ㄕ", "獅子", "shīzi", "聲母", [["16_s", 0, 1.0]]], ["ㄖ", "日記", "rìjì", "聲母", [["17_s", 0, 1.0]]], ["ㄗ", "紫色", "zǐsè", "聲母", [["18_s", 0, 1.0]]], ["ㄘ", "草", "cǎo", "聲母", [["19_s", 0, 1.0]]], ["ㄙ", "四", "sì", "聲母", [["20_s", 0, 1.0]]], ["ㄧ", "一", "yī", "韻母", [["21_s", 0, 1.0]]], ["ㄨ", "烏龜", "wūguī", "韻母", [["22_s", 0, 1.0]]], ["ㄩ", "魚", "yú", "韻母", [["23_s", 0, 1.0]]], ["ㄚ", "阿姨", "āyí", "韻母", [["24_s", 0, 1.0]]], ["ㄛ", "婆婆", "pópo", "韻母", [["25_s", 0, 1.0]]], ["ㄜ", "鵝", "é", "韻母", [["26_s", 0, 1.0]]], ["ㄝ", "爺爺", "yéye", "韻母", [["27_s", 0, 1.0]]], ["ㄞ", "愛", "ài", "韻母", [["28_s", 0, 1.0]]], ["ㄟ", "黑", "hēi", "韻母", [["29_s", 0, 1.0]]], ["ㄠ", "包", "bāo", "韻母", [["30_s", 0, 1.0]]], ["ㄡ", "偶", "ǒu", "韻母", [["31_s", 0, 1.0]]], ["ㄢ", "蛋", "dàn", "韻母", [["32_s", 0, 1.0]]], ["ㄣ", "人", "rén", "韻母", [["33_s", 0, 1.0]]], ["ㄤ", "羊", "yáng", "韻母", [["34_s", 0, 1.0]]], ["ㄥ", "燈", "dēng", "韻母", [["35_s", 0, 1.0]]], ["ㄦ", "耳朵", "ěrduo", "韻母", [["36_s", 0, 1.0]]]];
@@ -144,7 +145,7 @@ function block(cls,title,rows,cols){
     const i=ZY.findIndex(z=>z[0]===sym),z=ZY[i];
     const b=document.createElement('button');b.className='z';b.dataset.i=i;
     b.setAttribute('aria-label',z[0]);
-    b.innerHTML='<span class="s">'+z[0]+'</span><span class="c">'+z[1]+'</span><span class="p">'+z[2]+'</span>';
+    b.innerHTML='<span class="s">'+z[0]+'</span><img class="i" src="img/zy/'+i+'.jpg" alt=""><span class="c">'+z[1]+'</span><span class="p">'+z[2]+'</span>';
     b.onclick=()=>{stop=true;play(i)};g.appendChild(b)});
   return d}
 chart.appendChild(block('sheng','聲符',SHENG,6));
