@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="der die das">
+<title>注音符號 · Der Die Das 小卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+:root{
+  --bg:#EEF1F4; --paper:#FFFFFF; --ink:#1C2430; --muted:#5B6675; --line:#D5DBE2;
+  --der:#2A66B0; --die:#C9403A; --das:#2F8A4C;
+  --good:#2F8A4C; --good-soft:#E2F3E7; --warn:#A8660B; --warn-soft:#FBF0DC; --bad:#C9403A; --bad-soft:#FBE7E5;
+  --shadow:0 1px 2px rgba(28,36,48,.08),0 4px 14px rgba(28,36,48,.06);
+  --display:"Baloo 2","Nunito",ui-rounded,"PingFang TC","Noto Sans TC",system-ui,sans-serif;
+  --body:"Nunito","PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+    --der:#6FA6EC; --die:#F07D75; --das:#6CC58A;
+    --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#141922; --paper:#1D2430; --ink:#E9EDF2; --muted:#9AA5B4; --line:#2E3847;
+  --der:#6FA6EC; --die:#F07D75; --das:#6CC58A;
+  --good:#6CC58A; --good-soft:#1B3325; --warn:#E6B45A; --warn-soft:#3A2E17; --bad:#F07D75; --bad-soft:#3A2023;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;-webkit-text-size-adjust:100%;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding-inline:20px;padding-block:28px 64px;display:flex;flex-direction:column;gap:22px}
+
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--line);overflow-x:auto}
+.tabs a{font:700 16px/1 var(--body);color:var(--muted);text-decoration:none;padding:12px 18px;border-radius:10px 10px 0 0;margin-bottom:-2px;border:2px solid transparent;white-space:nowrap}
+.tabs a[aria-current="page"]{color:var(--ink);background:var(--paper);border-color:var(--line);border-bottom-color:var(--paper)}
+.tabs a:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+header{display:flex;flex-direction:column;gap:6px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,6vw,2.8rem);line-height:1;margin:0}
+.lede{margin:0;color:var(--muted);max-width:62ch}
+
+.bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:700 15px/1 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:9px 14px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn{font:700 16px/1.2 var(--body);border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:12px 16px;border-radius:12px;cursor:pointer}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn:disabled{opacity:.4;cursor:default}
+.chip:focus-visible,.btn:focus-visible,.mic:focus-visible,.letter:focus-visible,.swap:focus-visible,.w:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+/* zhuyin */
+.sec+.sec{margin-top:26px}
+.sec h2{font-family:var(--display);font-weight:800;font-size:1.4rem;margin:0 0 10px}
+.zgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px}
+.z{appearance:none;border:2px solid var(--line);background:var(--paper);color:var(--ink);border-radius:16px;box-shadow:var(--shadow);padding:12px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:6px;font-family:var(--body)}
+.z:active{transform:scale(.97)}
+.z:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.z.on{border-color:var(--ink);box-shadow:0 0 0 3px var(--ink)}
+.z .s{font-size:3rem;line-height:1.1;font-weight:700}
+.z .c{font-size:1.6rem;font-weight:800;line-height:1;color:var(--das)}
+.z .p{font-size:.85rem;color:var(--muted);font-weight:700}
+.nopy .z .p{display:none}
+</style>
+
+<div class="wrap">
+  <nav class="tabs" aria-label="頁籤">
+    <a href="./">卡片</a>
+    <a href="speak.html">說說看</a>
+    <a href="game.html">遊戲</a>
+    <a href="abc.html">字母表</a>
+    <a href="zhuyin.html" aria-current="page">注音</a>
+    <a href="schedule.html">課程表</a>
+    <a href="books.html">繪本</a>
+    <a href="talk.html">對話練習</a>
+    <a href="math/">數學練習</a>
+  </nav>
+  <header>
+    <h1>注音符號表</h1>
+    <p class="lede">點一個注音符號，會念出它的發音。符號下面是「發音的字」（例如 ㄅ 念「玻」），再下面是拼音。</p>
+  </header>
+  <div class="bar">
+    <div class="chips" role="group" aria-label="選項">
+      <button class="chip" id="t-py" aria-pressed="true">顯示拼音</button>
+    </div>
+    <button class="btn primary" id="all">從頭念到尾</button>
+  </div>
+  <div id="secs"></div>
+</div>
+<script>
+const ZY=[["ㄅ", "玻", "b(o)", "聲母"], ["ㄆ", "坡", "p(o)", "聲母"], ["ㄇ", "摸", "m(o)", "聲母"], ["ㄈ", "佛", "f(o)", "聲母"], ["ㄉ", "得", "d(e)", "聲母"], ["ㄊ", "特", "t(e)", "聲母"], ["ㄋ", "訥", "n(e)", "聲母"], ["ㄌ", "勒", "l(e)", "聲母"], ["ㄍ", "哥", "g(e)", "聲母"], ["ㄎ", "科", "k(e)", "聲母"], ["ㄏ", "喝", "h(e)", "聲母"], ["ㄐ", "基", "j(i)", "聲母"], ["ㄑ", "欺", "q(i)", "聲母"], ["ㄒ", "希", "x(i)", "聲母"], ["ㄓ", "知", "zh(i)", "聲母"], ["ㄔ", "吃", "ch(i)", "聲母"], ["ㄕ", "詩", "sh(i)", "聲母"], ["ㄖ", "日", "r(i)", "聲母"], ["ㄗ", "資", "z(i)", "聲母"], ["ㄘ", "雌", "c(i)", "聲母"], ["ㄙ", "思", "s(i)", "聲母"], ["ㄧ", "衣", "yi", "韻母"], ["ㄨ", "烏", "wu", "韻母"], ["ㄩ", "迂", "yu", "韻母"], ["ㄚ", "啊", "a", "韻母"], ["ㄛ", "喔", "o", "韻母"], ["ㄜ", "鵝", "e", "韻母"], ["ㄝ", "耶", "ê", "韻母"], ["ㄞ", "哀", "ai", "韻母"], ["ㄟ", "誒", "ei", "韻母"], ["ㄠ", "熬", "ao", "韻母"], ["ㄡ", "歐", "ou", "韻母"], ["ㄢ", "安", "an", "韻母"], ["ㄣ", "恩", "en", "韻母"], ["ㄤ", "昂", "ang", "韻母"], ["ㄥ", "鞥", "eng", "韻母"], ["ㄦ", "兒", "er", "韻母"]];
+const secs=document.getElementById('secs'),wrap=document.querySelector('.wrap');
+let audio=null,stop=false;
+function play(i){return new Promise(res=>{if(audio){audio.pause()}
+  document.querySelectorAll('.z.on').forEach(e=>e.classList.remove('on'));
+  const b=document.querySelector('[data-i="'+i+'"]');b&&b.classList.add('on');
+  audio=new Audio('audio/zy/'+i+'.mp3');audio.onended=audio.onerror=()=>{b&&b.classList.remove('on');res()};
+  audio.play().catch(()=>res())})}
+['聲母','韻母'].forEach(g=>{
+  const s=document.createElement('section');s.className='sec';
+  s.innerHTML='<h2>'+g+'</h2><div class="zgrid"></div>';
+  const grid=s.lastChild;
+  ZY.forEach((z,i)=>{if(z[3]!==g)return;
+    const b=document.createElement('button');b.className='z';b.dataset.i=i;
+    b.setAttribute('aria-label',z[0]+' '+z[1]);
+    b.innerHTML='<span class="s">'+z[0]+'</span><span class="c">'+z[1]+'</span><span class="p">'+z[2]+'</span>';
+    b.onclick=()=>{stop=true;play(i)};grid.appendChild(b)});
+  secs.appendChild(s)});
+const tp=document.getElementById('t-py');
+tp.onclick=()=>{const on=tp.getAttribute('aria-pressed')!=='true';tp.setAttribute('aria-pressed',on);wrap.classList.toggle('nopy',!on)};
+const all=document.getElementById('all');
+all.onclick=async()=>{if(all.dataset.run){stop=true;if(audio)audio.pause();return}
+  all.dataset.run=1;all.textContent='停止';stop=false;
+  for(let i=0;i<ZY.length&&!stop;i++){await play(i);await new Promise(r=>setTimeout(r,500))}
+  delete all.dataset.run;all.textContent='從頭念到尾'};
+</script>
