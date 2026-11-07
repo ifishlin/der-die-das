@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>背景實驗紀錄 2026-11-06</title>
+<style>
+:root{--bg:#f4f1ea;--card:#fffdf8;--fg:#2a2620;--mute:#6f675b;--line:#ddd5c6;--ok:#2f7d4a;--okbg:#e3f1e7;--bad:#b23b2e;--badbg:#f7e1de;--mid:#a26a12;--midbg:#f6ead2;--acc:#c05a1e;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1916;--card:#25221e;--fg:#ece6da;--mute:#a59c8d;--line:#3a352e;--ok:#7ccb94;--okbg:#1f3427;--bad:#ee8b7e;--badbg:#3c2421;--mid:#e3b25c;--midbg:#3a2f1c;--acc:#f0935a;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.65 "PingFang TC","Noto Sans TC",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-left)) 80px}
+h1{font-size:28px;margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--mute);margin:0 0 20px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 0;display:flex;flex-wrap:wrap;gap:6px}
+nav a{color:var(--fg);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:13px;background:var(--card)}
+nav a:hover{border-color:var(--acc)}
+table{border-collapse:collapse;width:100%;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:color-mix(in srgb,var(--line) 45%,var(--card));font-weight:600;font-size:14px}
+.tbl{overflow-x:auto;margin:12px 0 28px}
+section.effect{margin:40px 0 0}
+section.effect>h2{font-size:22px;margin:0 0 4px;padding-top:8px;border-top:3px solid var(--acc)}
+.goal{color:var(--mute);margin:0 0 14px}
+.exp{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0}
+.exp h3{margin:0 0 6px;font-size:17px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tag{font-size:12px;font-weight:600;border-radius:999px;padding:1px 10px;white-space:nowrap}
+.ok{color:var(--ok);background:var(--okbg)}.bad{color:var(--bad);background:var(--badbg)}.mid{color:var(--mid);background:var(--midbg)}
+.exp p{margin:6px 0}
+.exp .how{color:var(--mute);font-size:14px}
+.exp img{display:block;max-width:100%;border-radius:6px;border:1px solid var(--line);margin:10px 0 4px;cursor:zoom-in}
+.cap{font-size:13px;color:var(--mute)}
+code{font-size:13px;background:color-mix(in srgb,var(--line) 50%,transparent);padding:0 4px;border-radius:4px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;margin-top:8px}
+.grid4 figure{margin:0}.grid4 figcaption{font-size:12px;color:var(--mute)}
+.grid4 img{margin:0}
+ol,ul{margin:6px 0;padding-left:22px}
+#zoom{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
+#zoom img{max-width:96vw;max-height:94vh}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>背景實驗紀錄</h1>
+<p class="sub">2026-11-06 下午，EP1 黃昏森林（S00 開場追逐）為主。五種效果，每個試過的做法都列出來，包括失敗的。點圖可以放大。</p>
+
+<nav>
+<a href="#sum">總表</a><a href="#e1">一 背景連戲</a><a href="#e2">二 做空景</a><a href="#e3">三 不同景別</a><a href="#e4">四 換方向</a><a href="#e5">五 往後退</a><a href="#rules">共通規則</a>
+</nav>
+
+<h2 id="sum" style="margin-top:24px">總表</h2>
+<div class="tbl"><table>
+<tr><th>效果</th><th>結果</th><th>以後怎麼做</th></tr>
+<tr><td>一、前後格背景接得起來</td><td><span class="tag ok">成功</span></td><td>每格多附同一個地點的空景</td></tr>
+<tr><td>二、做空景</td><td><span class="tag ok">成功</span></td><td>先畫量尺版（角色站直入鏡）量好比例，再用編輯畫面拿掉角色</td></tr>
+<tr><td>三、同一張空景做出不同景別</td><td><span class="tag bad">還沒成功</span></td><td>下一步：照量尺版的角色大小算出要裁多少</td></tr>
+<tr><td>四、換方向看同一個地點</td><td><span class="tag ok">成功</span></td><td>附空景＋連戲清單（哪個地標在畫面哪裡）</td></tr>
+<tr><td>五、鏡頭往後退</td><td><span class="tag ok">成功</span></td><td>深度圖逐點縮放＋編輯畫面只補灰色，點名補上新東西</td></tr>
+</table></div>
+
+<!-- 一 -->
+<section class="effect" id="e1">
+<h2>一、前後格背景接得起來</h2>
+<p class="goal">原本每格各畫各的，同一個地點每格的森林都長得不一樣。</p>
+
+<div class="exp">
+<h3>做法 1：編輯畫面打開這一格，附上一格當參考，只換背景 <span class="tag mid">有條件成功</span></h3>
+<p class="how">在 Flow 打開這格的圖（編輯畫面），＋ 附上一格（先改名成 <code>EXP Sxx</code> 才搜得到），寫「人物、構圖、大小都不變，只把背景換成附圖的地點」。程式 <code>exp_bg.py</code>。</p>
+<p>S03-3 成功：人物沒動，背景換成 S03-2 的空地。S00-2 失敗：上一格 S00-1 也是 HERO 被暴龍追，Flow 搞混，把整張畫成 S00-1 的構圖。<b>上下兩格角色相同、動作相近就會失敗。</b>另外編輯會變成原圖的新版本，只能編輯已經定案的圖。</p>
+<img src="exp_compare.jpg" alt="換背景成功與失敗">
+<p class="cap">每列：參考的上一格 → 原圖 → 換完背景。第一列 S00-2 失敗、第二列 S03-3 成功。</p>
+</div>
+
+<div class="exp">
+<h3>做法 2：每格多附同一張空景 <span class="tag ok">成功</span></h3>
+<p class="how">原 prompt 不動，多附這個地點的空景（<code>BGDUSK</code>），在 Setting 前加一句「背景是空景裡的同一個地方，照這格自己的鏡頭畫」。程式 <code>plate_shots.py</code>。</p>
+<p>黃昏森林 7 格背景明顯一致：同一片森林、同一條路、夕陽在同一個位置。構圖沒有被空景帶走。顏色會跟著空景變暗。<b>但它把整張空景原樣搬進每一格</b>，這是效果三的問題。</p>
+<img src="report_img/plate_vs_s00.jpg" alt="空景與 S00-1 S00-2 S00-3">
+<p class="cap">最上：空景 BGDUSK。下面三列：S00-1、S00-2、S00-3 附空景後各兩張，背景幾乎一模一樣。</p>
+</div>
+</section>
+
+<!-- 二 -->
+<section class="effect" id="e2">
+<h2>二、做空景（沒有角色的背景）</h2>
+<p class="goal">每個地點一張，之後每一格都拿它當背景參考。正式流程裡空景是第一步，那時還沒有任何分鏡圖。</p>
+
+<div class="exp">
+<h3>做法 1：地形照地圖檔寫，附道具設定圖對畫風 <span class="tag ok">成功</span></h3>
+<p class="how">地形、物件只照 <code>maps/*.json</code> 的描述寫，附 REF_PROPS（只對畫風、不畫裡面的東西），實驗室附 REF_LAB；寫明沒有任何人和恐龍。每個地點 4 張。程式 <code>plates.py</code>。</p>
+<p>9 個地點都畫出來，都沒有角色。問題：<b>空景裡沒有人，看不出角色該多大。</b></p>
+<div class="grid4">
+<figure><img src="plates/dusk/1.png"><figcaption>黃昏森林</figcaption></figure>
+<figure><img src="plates/home/1.png"><figcaption>HERO 的房間</figcaption></figure>
+<figure><img src="plates/lab/1.png"><figcaption>實驗室</figcaption></figure>
+<figure><img src="plates/arrive/1.png"><figcaption>剛到的空地</figcaption></figure>
+<figure><img src="plates/river/1.png"><figcaption>河岸</figcaption></figure>
+<figure><img src="plates/path/1.png"><figcaption>森林小路</figcaption></figure>
+<figure><img src="plates/riverbed/1.png"><figcaption>乾河床</figcaption></figure>
+<figure><img src="plates/clearing/1.png"><figcaption>林間空地</figcaption></figure>
+<figure><img src="plates/arrive_dusk/1.png"><figcaption>空地・黃昏</figcaption></figure>
+</div>
+</div>
+
+<div class="exp">
+<h3>做法 2：量尺版——先畫角色站直入鏡，量好比例再拿掉 <span class="tag ok">成功</span></h3>
+<p class="how">同樣的地形 prompt，加上 HERO（10 m）和 TEEN（18 m）站直、全身入鏡、不互相遮。量兩者的高度，跟「比例圖 ÷ 遠近比」對照，挑最準的一張；再在編輯畫面「只拿掉角色和影子」。程式 <code>scale_plate.py</code>、<code>remove_chars.py</code>，數字存 <code>plates/dusk_scale.json</code>。</p>
+<table>
+<tr><th>組</th><th>鏡頭</th><th>HERO 占畫面高</th><th>TEEN÷HERO 量到／應該</th><th>結果</th></tr>
+<tr><td>A</td><td>廣角＋遠景，架高 3 m</td><td>48%</td><td>0.99／0.93（差 6%）</td><td><span class="tag ok">選用</span></td></tr>
+<tr><td>B</td><td>寫「15 m 高」想做大遠景</td><td>17%</td><td>1.10／1.22</td><td><span class="tag bad">沒變成大遠景，還是平視</span></td></tr>
+<tr><td>C</td><td>寫「高空俯視、樹冠在鏡頭下方」</td><td>11%</td><td>1.31／1.44（差 9%）</td><td><span class="tag ok">真的大遠景</span></td></tr>
+</table>
+<img src="plates/scale_sheet.jpg" alt="量尺版 A B">
+<p class="cap">量尺版 A（上）、B（下）各 4 張。A3 的 TEEN 小了 29%、B3/B4 也不準，沒選。</p>
+<img src="plates/three_plates.jpg" alt="三種空景">
+<p class="cap">左：量尺版；右：拿掉角色的空景。拿掉後，原本被角色擋住的那段小路被重畫成別的形狀（A 從彎路變直路）。</p>
+</div>
+</section>
+
+<!-- 三 -->
+<section class="effect" id="e3">
+<h2>三、同一張空景做出不同景別</h2>
+<p class="goal">空景是遠景，比較近的格子（全景、中景）應該只看到空景的一部分。</p>
+
+<div class="exp">
+<h3>做法 1：直接附整張空景 <span class="tag bad">失敗</span></h3>
+<p>Flow 把整張空景原樣搬進每一格，S00-1（遠景）、S00-2（全景・恐龍出框）、S00-3（全景）的背景範圍一模一樣。S00-1 也沒辦法比空景更遠。（圖見效果一做法 2）</p>
+</div>
+
+<div class="exp">
+<h3>做法 2：從空景裁 60% 上傳，附給那一格 <span class="tag bad">失敗</span></h3>
+<p class="how">1K 空景，貼底邊裁 60%（保留腳下的小路），放大回原尺寸，上傳成 <code>BG_S00-2.jpg</code>，附給 S00-2、S00-3。程式 <code>crop_shots.py</code>。</p>
+<p>背景真的變近了（樹根變大、夕陽在上方），但<b>裁太多</b>：背景被放大 1.67 倍，角色還是照原本的大小畫，跟背景一比，恐龍和 HERO 都顯得變小。</p>
+<img src="crops/crop_box.jpg" alt="裁切範圍">
+<p class="cap">紅框＝裁的範圍（寬高各 60%）。</p>
+<img src="crop_compare.jpg" alt="附整張 vs 附裁過">
+<p class="cap">每格兩排：上＝附整張空景，下＝附裁過的背景。</p>
+</div>
+
+<div class="exp">
+<h3>下一步（還沒試）：照量尺版算要裁多少</h3>
+<p>例：量尺版裡 HERO 站在那個位置高約畫面 48%，全景要他占約 75%，就從他站的位置裁 0.48 ÷ 0.75 ≈ 64%。恐龍照比例圖跟著算。</p>
+</div>
+</section>
+
+<!-- 四 -->
+<section class="effect" id="e4">
+<h2>四、換方向看同一個地點（轉 90° 看恐龍側面）</h2>
+<p class="goal">站在 TEEN 左邊看牠的側面，背景是牠右手邊（空景左側）那片森林，看樹的位置能不能對得上。</p>
+<div class="exp">
+<h3>五種 prompt 寫法</h3>
+<div class="tbl"><table>
+<tr><th>寫法</th><th>結果</th><th>說明</th></tr>
+<tr><td>1 地標清單：空景左側從近到遠，換成新畫面從左到右</td><td><span class="tag ok">成功</span></td><td>大樹在恐龍背後、夕陽在右</td></tr>
+<tr><td>2 極簡：只說「轉 90°」</td><td><span class="tag bad">失敗</span></td><td>沒轉，照抄原本視角，夕陽在正中間</td></tr>
+<tr><td>3 地圖座標：用公尺寫每棵樹、鏡頭位置和方向</td><td><span class="tag ok">成功</span></td><td>3～4 張對</td></tr>
+<tr><td>4 只用參考圖左半邊</td><td><span class="tag mid">一半</span></td><td>4 張裡一半沒轉過去</td></tr>
+<tr><td>5 電影換機位＋連戲清單</td><td><span class="tag ok">最穩</span></td><td>4 張全對</td></tr>
+</table></div>
+<p class="how">程式 <code>side_view.py</code>，prompt 存在 <code>plates/side_v1～5_prompt.txt</code>。</p>
+<p><b>只有點名的地標對得上</b>（根部攤開的大樹、蘇鐵、夕陽方向），其他樹是模型自己編的。</p>
+<img src="plates/side_compare.jpg" alt="五種寫法">
+<p class="cap">最上：空景 A 和量尺版。下面每列一種寫法，各 4 張。</p>
+</div>
+</section>
+
+<!-- 五 -->
+<section class="effect" id="e5">
+<h2>五、鏡頭往後退 10 公尺</h2>
+<p class="goal">原本的景變遠、留在中間，近處出現新的景色。</p>
+
+<div class="exp">
+<h3>只用文字說「往後退 10 公尺」 <span class="tag bad">失敗</span></h3>
+<p>附空景、寫往後退。4 張幾乎就是原圖，樹和夕陽一樣大。</p>
+<h3 style="margin-top:12px">縮小放中間、四周塗灰，用圖庫生成補 <span class="tag bad">失敗</span></h3>
+<p>有變遠的感覺，但中間的原圖被整張重畫。</p>
+<img src="plates/back10_compare.jpg" alt="第一批">
+<p class="cap">第二列：只用文字；第三列：圖庫生成補四周。</p>
+</div>
+
+<div class="exp">
+<h3>第二批四個點子</h3>
+<ul>
+<li><span class="tag bad">失敗</span> 模型補好後把原圖貼回中間：四周跟貼回的原圖接不起來。</li>
+<li><span class="tag mid">近景重複</span> <b>編輯畫面</b>只補灰邊：中間保住了，但新補的近景是原本的近景再畫一圈（鏡中鏡）；第 1 次還有接縫。</li>
+<li><span class="tag bad">失敗</span> 畫布＋原空景兩張一起給：還是整張重畫。</li>
+<li><span class="tag bad">失敗</span> 直接編輯空景叫它往後退：幾乎沒變。</li>
+</ul>
+<img src="plates/back10_compare2.jpg" alt="第二批">
+</div>
+
+<div class="exp">
+<h3>編輯畫面補灰邊，指定補上新東西 <span class="tag ok">成功（但等於原地換廣角）</span></h3>
+<p class="how">整張縮成 60%（以消失點為中心）、四周塗灰、上傳，在編輯畫面請它只補灰色；prompt 點名外圍放倒木、大石頭、銀杏、水窪、被畫框切掉的細樹幹，寫「不要重複中間的排列」。程式 <code>back10c.py</code>。</p>
+<p>3 次都成功、沒接縫，新近景跟原圖不一樣。問題：整張等比例縮，<b>夕陽也變小</b>——真的往後退，夕陽大小不會變。這其實是「鏡頭不動、換廣角」的效果。</p>
+<img src="plates/back10_new_compare.jpg" alt="指定新東西">
+<p class="cap">紅框＝原本的畫面。</p>
+</div>
+
+<div class="exp">
+<h3>照距離縮放：A 分兩層、B 照深度逐點縮 <span class="tag ok">B 最好</span></h3>
+<p class="how">Studio 用 Depth Anything 算深度圖（<code>studio_depth.py</code>），用量尺版的 HERO 腳底 10 m、TEEN 腳底 18 m、天空無限遠校正成公尺。A：60 m 外不縮、以內縮 60%。B：每一點縮成 z ÷ (z＋10)，近的蓋遠的，露出來的細紋清成灰色（<code>dolly.py</code>）。再用編輯畫面補（<code>back10d.py</code>）。</p>
+<p>A、B 的夕陽都跟原圖一樣大。B 最像真的往後退：最近的那棵大樹縮得最多，遠方幾乎不動。B 的畫布 71% 是灰色，新補的範圍很大。4 次都成功。</p>
+<div class="grid4">
+<figure><img src="plates/depth_vis.png"><figcaption>深度圖（越亮越近）</figcaption></figure>
+<figure><img src="plates/BG_BACK10_B.png"><figcaption>B 送去的畫布</figcaption></figure>
+</div>
+<img src="plates/dolly_compare.jpg" alt="照距離縮放">
+<p class="cap">由上到下：原空景、整張縮 60%、A 分兩層、B 逐點縮（左＝畫布，右兩張＝補好的結果）。</p>
+</div>
+</section>
+
+<section class="effect" id="rules">
+<h2>共通規則</h2>
+<ol>
+<li><b>轉方向、往後退、裁近，不能只靠文字講。</b>要先在電腦上把畫面擺好（縮小、裁切），或用很具體的位置描述（連戲清單）。</li>
+<li><b>編輯畫面很會保留原圖。</b>拿掉角色、補灰邊都靠它。但一次只出 1 張、可能要試 2～3 次；編輯會變成原圖的新版本，只能編輯定案的圖或專門上傳的複本。</li>
+<li><b>要知道角色該多大，畫面裡就要有尺</b>——量尺版。</li>
+<li><b>模型愛照抄。</b>參考圖有什麼就畫什麼；要它畫新東西，就點名新東西是什麼。</li>
+<li><b>從別處搬來的 prompt 句子要逐句對新鏡頭檢查</b>（小路方向、影子方向都抓到過矛盾）。</li>
+<li>參考圖先改成唯一的名字再搜尋（<code>EXP Sxx</code>、<code>BGxxx</code>）。</li>
+</ol>
+<p class="cap">程式都在 <code>scripts/flowbot/</code>；細節也記在 <code>WORKFLOW.md</code> 和 skill <code>dino-flow-prompt</code> 第八節。</p>
+</section>
+</div>
+<div id="zoom"><img alt=""></div>
+<script>
+const z=document.getElementById('zoom'),zi=z.querySelector('img');
+document.querySelectorAll('.exp img').forEach(i=>i.addEventListener('click',()=>{zi.src=i.src;z.style.display='flex'}));
+z.addEventListener('click',()=>{z.style.display='none'});
+</script>
+</body>
+</html>
