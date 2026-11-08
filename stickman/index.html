@@ -12,14 +12,17 @@ h1{font-size:24px;margin:0 0 4px}
 a.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;color:inherit;text-decoration:none}
 a.card:hover,a.card:focus-visible{border-color:var(--acc);outline:none}
 a.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--line)}
+.cover{aspect-ratio:16/9;max-width:100%;display:grid;place-items:center;background:var(--acc);color:var(--panel);font-size:40px;font-weight:700;letter-spacing:.05em}
 .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px}
 .body b{font-size:16px}
 .body span{color:var(--mut);font-size:14px}
 .body time{color:var(--acc);font-size:12px;font-variant-numeric:tabular-nums}
 </style></head><body>
 <h1>Stickman 實驗頁</h1>
-<p class="sub">EP1 第一幕（S00 黃昏森林追逐）在 Google Flow 上的畫面實驗紀錄。</p>
+<p class="sub">EP1 第一幕（S00 黃昏森林追逐）在 Google Flow 上的畫面實驗紀錄，以及製作流程。</p>
 <div class="list">
+  <a class="card" href="pipeline-steps/"><div class="cover">26 步</div>
+    <div class="body"><time>2026-11-07</time><b>製作步驟總表</b><span>從書的一章到上架：每步有沒有討論過、誰決定、用什麼工具、怎麼做。</span></div></a>
   <a class="card" href="bg-experiments/"><img loading="lazy" src="bg-experiments/crop_compare.jpg" alt="">
     <div class="body"><time>2026-11-06</time><b>背景實驗紀錄</b><span>黃昏森林背景的五種效果，每個試過的做法和結果。</span></div></a>
   <a class="card" href="chase-11-styles/"><img loading="lazy" src="chase-11-styles/ext/episodes/001_trex_run/scenes_v6/final/S00-3.jpg" alt="">

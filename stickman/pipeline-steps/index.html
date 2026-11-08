@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>製作步驟總表</title>
+<style>
+:root{--bg:#eef0ee;--panel:#fff;--fg:#1d2420;--mut:#66706a;--line:#d5dad6;--acc:#1f6b52;--code:#e4e8e5}
+@media (prefers-color-scheme:dark){:root{--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;--code:#262e2a;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif;padding:28px max(16px,4vw) 64px}
+main{max-width:860px;margin:0 auto}
+.back{font-size:14px}
+a{color:var(--acc)}
+h1{font-size:26px;margin:8px 0 6px;text-wrap:balance}
+h2{font-size:19px;margin:36px 0 8px;padding-top:12px;border-top:1px solid var(--line);scroll-margin-top:12px}
+hr{display:none}
+code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:.88em;word-break:break-all}
+.tw{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--mut);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td:first-child{font-variant-numeric:tabular-nums;color:var(--mut)}
+ul,ol{padding-left:1.3em}
+li{margin:2px 0}
+</style></head><body><main>
+<a class="back" href="../">← Stickman 實驗頁</a>
+<h1>從書的一章到成片：全部步驟</h1>
+<p>2026-11-07 整理。依據 <code>production_process.md</code>（2026-11-04 逐步討論稿）、<code>production_sop.md</code>、<code>../WORKFLOW.md</code>、EP1 實作紀錄，以及 2026-11-06～07 的背景、追逐、景別實驗。</p>
+<p><strong>狀態圖例</strong></p>
+<ul>
+<li>✅ <strong>討論定案</strong>：跟使用者逐步討論過，做法定了。</li>
+<li>🧪 <strong>做過、沒定案</strong>：EP1 實際做過，或做過實驗，但做法還沒跟使用者定案。</li>
+<li>⬜ <strong>沒討論</strong>：從來沒討論過，下面寫的是我的建議。</li>
+</ul>
+<p><strong>工具欄怎麼看</strong></p>
+<ul>
+<li>「給你用」是我做給使用者操作的介面，例如網頁、編輯器。</li>
+<li>「我用」是我自己跑的程式，使用者不用碰。</li>
+</ul>
+<hr />
+<h2>總表</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>步驟</th>
+<th>狀態</th>
+<th>誰決定</th>
+<th>工具（給你用）</th>
+<th>工具（我用）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="#s1">選章</a></td>
+<td>✅</td>
+<td>你</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="#s2">讀章、列重點</a></td>
+<td>🧪</td>
+<td>我整理，你看</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="#s3">套系列設定</a></td>
+<td>✅</td>
+<td>已定</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="#s4">大綱</a></td>
+<td>✅</td>
+<td>我提案，你確認</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="#s5">寫故事</a></td>
+<td>✅</td>
+<td>我寫</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="#s6">審故事</a></td>
+<td>✅</td>
+<td>你</td>
+<td>新舊對照頁</td>
+<td><code>make_script_v6.py</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="#s7">分鏡清單＋旁白（定稿點）</a></td>
+<td>✅</td>
+<td>你確認定稿</td>
+<td>分鏡表網頁</td>
+<td><code>build_board_vN.py</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="#s8">每格分析</a></td>
+<td>✅</td>
+<td>我寫，你確認</td>
+<td>分鏡表網頁</td>
+<td>—</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="#s9">場景地圖</a></td>
+<td>✅</td>
+<td>我畫初稿，你改</td>
+<td><strong>地圖編輯器</strong></td>
+<td><code>map_editor.py</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="#s10">角色位置（走位）</a></td>
+<td>🧪</td>
+<td>我排初稿，你改</td>
+<td><strong>地圖編輯器</strong></td>
+<td><code>fix_blocking.py</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="#s11">鏡頭</a></td>
+<td>🧪</td>
+<td>我排初稿，你看位置和景別</td>
+<td><strong>地圖編輯器</strong>、景別測試頁</td>
+<td>—</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="#s12">設定圖</a></td>
+<td>✅</td>
+<td>你挑圖</td>
+<td>—</td>
+<td><code>build_scale_pairs.py</code></td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="#s13">空景</a></td>
+<td>🧪</td>
+<td>你挑</td>
+<td>實驗紀錄頁</td>
+<td><code>plates.py</code> 等</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="#s14">寫 prompt</a></td>
+<td>✅</td>
+<td>我</td>
+<td>分鏡表上的中文 prompt</td>
+<td><code>map_prompt.py</code></td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="#s15">Flow 畫圖</a></td>
+<td>🧪</td>
+<td>我操作</td>
+<td>—</td>
+<td><code>flowbot/agent.py</code></td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="#s16">挑圖、驗收、補救</a></td>
+<td>✅</td>
+<td>我挑，你抽查</td>
+<td>挑圖頁</td>
+<td>Codex 單格驗收</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="#s17">下載</a></td>
+<td>🧪</td>
+<td>你定解析度</td>
+<td>—</td>
+<td><code>download_all.py</code></td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="#s18">分鏡表＋審查</a></td>
+<td>🧪</td>
+<td>你決定改哪些</td>
+<td>分鏡表網頁、審查表</td>
+<td>另一個 Claude＋Codex</td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="#s19">動畫（扣點）</a></td>
+<td>⬜</td>
+<td>你（花點數）</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="#s20">旁白配音</a></td>
+<td>🧪</td>
+<td>你聽</td>
+<td>—</td>
+<td><code>studio_sichu_narr.sh</code></td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="#s21">音效</a></td>
+<td>🧪</td>
+<td>你聽</td>
+<td>音效對照影片</td>
+<td>MMAudio、TangoFlux</td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="#s22">配樂</a></td>
+<td>⬜</td>
+<td>你</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="#s23">運鏡＋組片＋字幕</a></td>
+<td>🧪</td>
+<td>我做</td>
+<td>—</td>
+<td><code>assemble.py</code></td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="#s24">看成片</a></td>
+<td>✅</td>
+<td>你</td>
+<td>成片放桌面</td>
+<td>—</td>
+</tr>
+<tr>
+<td>25</td>
+<td><a href="#s25">上架（標題、縮圖、說明欄）</a></td>
+<td>⬜</td>
+<td>你</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>26</td>
+<td><a href="#s26">歐美版</a></td>
+<td>⬜</td>
+<td>你</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>不做的步驟。</strong> 恐龍穿越系列的流程有「收集論文資料、做命題卡、排季集數」三步，本專案不做：書的內容直接改寫成旁白，不考證（<code>CLAUDE.md</code>）。</p>
+<p><strong>順序不能倒。</strong> 劇本 → 分析 → 地圖 → 走位 → 鏡頭 → prompt → 畫圖。前面一改，後面就要重做。EP1 v5 邊畫邊改劇本，結果全部重畫。</p>
+<hr />
+<h2 id="s1">1. 選章 ✅</h2>
+<ul>
+<li><strong>誰：</strong> 你。</li>
+<li><strong>怎麼做：</strong> 從《How to Survive History》挑一章，原文放在 <code>source/how_to_survive_history/chNN_*</code>。前三章對應 EP1～EP3。</li>
+</ul>
+<h2 id="s2">2. 讀章、列重點 🧪</h2>
+<ul>
+<li><strong>誰：</strong> 我整理，你看。</li>
+<li><strong>怎麼做：</strong> 我讀完整章，列出可以講的內容：事件順序、數字、危險點、好笑的地方。只照書上的講，不另外查資料。</li>
+<li><strong>沒定的：</strong> 要列到多細、要不要做成固定格式的清單，都沒討論過。EP1 是直接從書跳到大綱。</li>
+</ul>
+<h2 id="s3">3. 套系列設定 ✅</h2>
+<ul>
+<li><strong>已經定好的設定：</strong></li>
+<li>布朗博士，加上不想畢業又沒錢的資工延畢生來打工。</li>
+<li>每集博士都賴帳。</li>
+<li>主角老是忘了帶生存指南。</li>
+<li><strong>角色發聲：</strong> HERO、PROF 用林克式發聲，有聲音、沒台詞，故事全靠旁白和反應音。</li>
+<li><strong>畫風：</strong> v2 粗手腳火柴人，皮膚純白，不設定種族。</li>
+</ul>
+<h2 id="s4">4. 大綱 ✅</h2>
+<ul>
+<li><strong>誰：</strong> 我提案，你確認。</li>
+<li><strong>故事架構，每集固定：</strong> 冷開場 → 博士有工作 → 穿越 → 故事 → 回家 → 賴帳 → 預告。</li>
+<li><strong>每段要寫：</strong> 發生什麼、這段的目的、用到書上哪個重點。</li>
+<li><strong>科普比例：</strong> 定為 30%，用秒數算。量法還沒定。</li>
+<li><strong>對照：</strong> 寫完逐段對 <code>craft.html</code> 的「故事結構」「張力與情緒」兩類。</li>
+<li><strong>產出：</strong> <code>storyboard/outline_vN.json</code>。</li>
+</ul>
+<h2 id="s5">5. 寫故事 ✅</h2>
+<ul>
+<li><strong>誰：</strong> 我寫。</li>
+<li><strong>怎麼做：</strong></li>
+<li>照大綱寫成完整故事。</li>
+<li>旁白用自己的話改寫，不照念原文。</li>
+<li>角色只有反應音。</li>
+</ul>
+<h2 id="s6">6. 審故事 ✅</h2>
+<ul>
+<li><strong>誰：</strong> 你審。來回好幾次，直到定案。</li>
+<li><strong>怎麼做：</strong> 你修邏輯、場景、道具、旁白。每改一版，我做一頁新舊左右對照給你看（<code>make_script_v6.py</code> 產生 <code>compare_v5_v6.html</code>）。</li>
+</ul>
+<h2 id="s7">7. 分鏡清單＋旁白（定稿點）✅</h2>
+<ul>
+<li><strong>誰：</strong> 我切格，你確認定稿。</li>
+<li><strong>切格規則（照畫面切，旁白配畫面）：</strong></li>
+<li>發生新的動作或事件。</li>
+<li>主角換人，包括反應鏡頭。</li>
+<li>地點或時間變了。</li>
+<li>要看清楚的東西需要換景別（眼神、道具）。</li>
+<li>講一個新的知識點。</li>
+<li>一格旁白超過約 10 秒，就拆開。</li>
+<li><strong>每格欄位：</strong> 畫面發生什麼、旁白逐字、聲音、長度、主題、主角／配角、景別初定、分類（科普／劇情／搞笑）。</li>
+<li><strong>道具時間線：</strong> 整集另外列一張，寫每個道具在哪一格出現、哪一格不見。</li>
+<li><strong>聲音：</strong> 分旁白、反應音、音效、環境音四種。跟畫面有關的聲音這一步就定。</li>
+<li><strong>旁白定稿後能怎麼改：</strong></li>
+<li>可以直接改的：換說法但意思不變；每格長度增減 2 秒以內。</li>
+<li>要退回這一步的：改到畫面上的人、物、動作、位置。</li>
+<li><strong>產出：</strong> <code>script_vN.md</code>。</li>
+<li><strong>給你用：</strong> 分鏡表網頁。</li>
+</ul>
+<h2 id="s8">8. 每格分析 ✅</h2>
+<ul>
+<li><strong>誰：</strong> 我寫，你確認。</li>
+<li><strong>每一格回答三題：</strong></li>
+<li>主題：這一格要讓觀眾知道什麼。</li>
+<li>主角：可以是人、恐龍，也可以是一個東西。</li>
+<li>配角：畫面裡還有誰、還有什麼。</li>
+<li>由這三題推出入鏡範圍：全身、半身、局部或特寫。</li>
+<li><strong>產出：</strong> <code>shot_analysis_vN.md</code>，分鏡表上每一格都會顯示。</li>
+</ul>
+<h2 id="s9">9. 場景地圖 ✅</h2>
+<ul>
+<li><strong>誰：</strong> 我畫初稿，你在編輯器裡改。</li>
+<li><strong>給你用：</strong> 地圖編輯器。執行 <code>cd episodes/&lt;集&gt; &amp;&amp; python3 storyboard/map_editor.py</code>，然後開 http://127.0.0.1:8766/。</li>
+<li><strong>怎麼做：</strong></li>
+<li>故事有幾個地點，就畫幾張地圖。地圖跟著地點走，不跟著段落走。</li>
+<li>地圖是網格，一格 2 公尺。</li>
+<li>「區域」用塗色畫，「物件」要編號。</li>
+<li>每個區域、物件都標高度。</li>
+<li>每張地圖都寫 <code>outside</code>，交代東南西北四個方向的遠景。</li>
+<li>地圖上沒有的東西，畫面裡就不能出現。</li>
+<li><strong>產出：</strong> <code>maps/&lt;id&gt;.json</code>。存檔前，舊版會自動備份到 <code>maps/history/</code>。</li>
+</ul>
+<h2 id="s10">10. 角色位置（走位）🧪</h2>
+<ul>
+<li><strong>誰：</strong> 我排初稿，你改。</li>
+<li><strong>給你用：</strong> 同一個地圖編輯器。</li>
+<li><strong>每個角色要記：</strong></li>
+<li>所在格子。</li>
+<li>身體朝向，只用 8 個方向。</li>
+<li>視線。</li>
+<li>移動路線。</li>
+<li>這一格畫的是起點、中間還是終點那一瞬間。</li>
+<li>動作，中英文各一份。</li>
+<li><strong>自動調整：</strong> 有警告的格子，用 <code>fix_blocking.py</code> 在附近重新找鏡頭位置。</li>
+<li><strong>沒定案的地方：</strong> 2026-11-05 你說過「張力要看圖才判斷得出來」。所以目前的做法是：先把警告修到沒有，畫出來看了，再回頭改。這個來回的流程還沒定。</li>
+</ul>
+<h2 id="s11">11. 鏡頭 🧪</h2>
+<ul>
+<li><strong>誰：</strong> 我排初稿。你通常只看鏡頭的位置、朝向和景別。</li>
+<li><strong>給你用：</strong></li>
+<li>地圖編輯器：灰色扇形是拍得到的範圍，右上角是這一格的檢查結果。</li>
+<li>景別測試頁：<a href="../s003-shot-tests/">s003-shot-tests</a></li>
+<li><strong>要定的項目：</strong> 位置、朝向、高低、景別、焦段。</li>
+<li><strong>景別：</strong> 名稱以 <code>banana_nano_shot_types_and_camera_angles_guide.md</code> 為準，prompt 只寫英文名。</li>
+<li><strong>2026-11-07 測試的結論（只代表 S00-3 這一幕）：</strong></li>
+<li>景別百分比模型不照做。十級實際只分得出約六級：01–03、04、05、06–07、08、09。第 10 級失敗。</li>
+<li>相機角度只有 High angle 有效。Slight low、Low 寫了等於沒寫。</li>
+<li>遠景要配 High angle，人才會縮得夠小。</li>
+<li><strong>大恐龍和人同框：</strong> 鏡頭以主角為準，大恐龍只露半身，絕不縮小。</li>
+<li><strong>沒定案的地方：</strong> 編輯器裡景別、角度的選項，還沒依這次測試改成只留有效的幾個。</li>
+</ul>
+<h2 id="s12">12. 設定圖 ✅</h2>
+<ul>
+<li><strong>誰：</strong> 我寫 prompt，你挑圖。</li>
+<li><strong>時機：</strong> 放在鏡頭之後。先知道每一格怎麼拍，才知道要哪些角度、表情、道具。</li>
+<li><strong>要做的設定圖：</strong></li>
+<li>角色：HERO、PROF、恐龍。</li>
+<li>PROPS：重複出現的道具。</li>
+<li>固定地點：例如 LAB。</li>
+<li>1 對 1 比例圖 PAIR：只有 HERO 和那一隻恐龍。</li>
+<li><strong>比例數字只有一份：</strong> <code>build_scale_pairs.py</code> 產生比例圖時，同時寫出 <code>heights.json</code>，prompt 只讀這一份。</li>
+<li><strong>比例圖不叫 Flow 畫</strong>，由程式從設定圖裁切拼成。</li>
+<li><strong>設定圖上不要畫會變的道具。</strong> 例如畫了手環，Flow 每一格都會照抄。</li>
+</ul>
+<h2 id="s13">13. 空景 🧪</h2>
+<ul>
+<li><strong>誰：</strong> 我畫，你挑。</li>
+<li><strong>目的：</strong> 每個地點先畫一張沒有角色的遠景，之後每一格都附這張，背景才接得起來。</li>
+<li><strong>怎麼做：</strong>
+  1. <code>plates.py</code>：畫空景。
+  2. <code>scale_plate.py</code>：畫量尺版，讓角色站在空景裡，用來量角色該畫多大。
+  3. <code>remove_chars.py</code>：把量尺版的角色拿掉，變回空景。</li>
+<li><strong>已知問題：</strong> Flow 會把整張空景原樣搬進每一格，所以景別出不來。</li>
+<li><strong>補救實驗：</strong> 換方向用「連戲檢查清單」；往後退用深度圖縮放再補畫（<code>dolly.py</code>）；指定站位用貼圖法。</li>
+<li><strong>實驗紀錄：</strong> <a href="../bg-experiments/">bg-experiments</a></li>
+<li><strong>沒定案：</strong> 要不要正式放進流程、放在哪一步。</li>
+</ul>
+<h2 id="s14">14. 寫 prompt ✅</h2>
+<ul>
+<li><strong>誰：</strong> 我。由程式從地圖產生，不手寫個別格。指令是 <code>map_prompt.py &lt;地點&gt;</code>。</li>
+<li><strong>每一格輸出三樣：</strong></li>
+<li>參考圖清單。</li>
+<li>中文 prompt 給你看，英文 prompt 貼進 Flow。</li>
+<li>自動檢查結果。</li>
+<li><strong>規則：</strong></li>
+<li>每個角色都要寫畫面占比。</li>
+<li>大小只講一次，照附上的比例圖。</li>
+<li>不准加你沒要的字。</li>
+<li>失敗就整段重寫，不准疊補丁句。</li>
+<li>參考文件的範例句不准抄。</li>
+<li>每次產生後，掃一次有沒有混進中文。</li>
+</ul>
+<h2 id="s15">15. Flow 畫圖 🧪</h2>
+<ul>
+<li><strong>誰：</strong> 我操作。你同意過可以自動操作，條件是滑鼠動作要像人手，被擋就停。</li>
+<li><strong>怎麼做：</strong> <code>agent.py draw &lt;格&gt;</code> 會依序附圖、貼 prompt、送出、等圖出來，一次出 4 張。</li>
+<li><strong>安全規則：</strong></li>
+<li>不照固定座標點下載鍵或垃圾桶鍵。</li>
+<li>圖庫頁不按 ⌘A＋刪除。</li>
+<li>不永久刪除。</li>
+<li>你喊停就停。</li>
+<li><strong>沒定案：</strong> 一次送多少格、每格重畫幾次才放棄。</li>
+</ul>
+<h2 id="s16">16. 挑圖、驗收、補救 ✅</h2>
+<ul>
+<li><strong>誰：</strong> 我挑，你抽查。</li>
+<li><strong>給你用：</strong> 挑圖頁（EP1 用的是 <code>shots/variants/pick.html</code>）、十一種表現法頁。</li>
+<li><strong>挑圖：</strong> 先逐項寫出檢查結果，再決定。檢查項目：動作、位置、長相、穿戴、比例、膚色、字。都合格時，選戲劇張力強的那張。</li>
+<li><strong>驗收：</strong></li>
+<li>尺寸不憑感覺估，交給 Codex 對照比例圖。</li>
+<li>Codex 只問單格，不拿整份去問。</li>
+<li><strong>補救只用兩種：</strong> 恐龍只露出一部分，或鏡頭拉遠。不用 Flow 的修改功能。</li>
+<li><strong>候選圖：</strong> 不丟垃圾桶、不改名，等你挑定。</li>
+</ul>
+<h2 id="s17">17. 下載 🧪</h2>
+<ul>
+<li><strong>誰：</strong> 你決定解析度。說用哪個，就只用那個。</li>
+<li><strong>怎麼做：</strong> 執行 <code>download_all.py vN [1K]</code>。下載前，舊版移到 <code>old_roundN/</code>，不刪。</li>
+<li><strong>下載後檢查：</strong></li>
+<li>張數。</li>
+<li>哪幾張是 1K。</li>
+<li>Flow 裡有沒有圖被丟進垃圾桶。</li>
+</ul>
+<h2 id="s18">18. 分鏡表＋審查 🧪</h2>
+<ul>
+<li><strong>誰：</strong> 你看完再決定改哪些。</li>
+<li><strong>給你用：</strong> 分鏡表網頁（<code>build_board_vN.py</code> 產生 <code>index_vN.html</code>），每一格有圖、分析、走位圖、旁白、prompt。</li>
+<li><strong>審查：</strong> 把同一份資料交給另一個 Claude 和 Codex，兩份意見合併成一張表，依嚴重度排序。</li>
+<li><strong>畫壞了退回哪一步：</strong> 下表是建議，還沒討論過。</li>
+</ul>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>問題</th>
+<th>退回</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>劇情接不上</td>
+<td>6、7</td>
+</tr>
+<tr>
+<td>長相、道具、大小不對</td>
+<td>12</td>
+</tr>
+<tr>
+<td>背景不像同一個地方</td>
+<td>9、13</td>
+</tr>
+<tr>
+<td>角色站錯位置</td>
+<td>10</td>
+</tr>
+<tr>
+<td>角度、構圖不對</td>
+<td>11</td>
+</tr>
+<tr>
+<td>只是字句問題</td>
+<td>14</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="s19">19. 動畫（扣點）⬜</h2>
+<ul>
+<li><strong>現況：</strong></li>
+<li>舊流程（WORKFLOW 步驟 6）有這一步：用場景圖當第一格，Omni Flash 生 10 秒，先 360p 試、再 720p 正式。</li>
+<li>2026-11-04 的新流程沒有這一步，EP1 v5 之後的成片全部是靜止圖加運鏡。</li>
+<li><strong>要討論：</strong></li>
+<li>要不要做動畫。</li>
+<li>哪幾格做。</li>
+<li>點數預算。</li>
+<li>放在配音之前還是之後。</li>
+<li><strong>誰決定：</strong> 你，因為要花點數。</li>
+</ul>
+<h2 id="s20">20. 旁白配音 🧪</h2>
+<ul>
+<li><strong>誰：</strong> 我做，你聽。</li>
+<li><strong>怎麼做：</strong> 在 Studio 上用 GPT-SoVITS sichu2 念。每句念 3 遍，用 Whisper 挑最好的一遍，再轉成 RVC 女聲。指令是 <code>scripts/studio_sichu_narr.sh</code>。</li>
+<li><strong>備案：</strong> cuba001 上的 <code>lin</code> 聲音，或 Azure 念完再轉 RVC。</li>
+<li><strong>要人耳聽：</strong> Whisper 會把國字和阿拉伯數字的差別也算成錯字，分數不能全信。</li>
+<li><strong>沒定案：</strong> 用哪個聲音當正式版。</li>
+</ul>
+<h2 id="s21">21. 音效 🧪</h2>
+<ul>
+<li><strong>誰：</strong> 我做，你聽。</li>
+<li><strong>環境音：</strong> 每個地點做一段，用 MMAudio 看畫面生成。</li>
+<li><strong>事件音效：</strong> 要對準時間點。真實的聲音用免費音效庫，恐龍這類用 TangoFlux 生成。</li>
+<li><strong>已測：</strong> 2026-11-06 用 MMAudio 和 TangoFlux 各做了全片一版。Stable Audio Open 效果太差，不用。</li>
+<li><strong>待試：</strong> HunyuanVideo-Foley、ThinkSound。</li>
+<li><strong>沒定案：</strong> 用哪個模型、事件音效怎麼對時間。</li>
+</ul>
+<h2 id="s22">22. 配樂 ⬜</h2>
+<p>從來沒討論過。要決定的事：</p>
+<ul>
+<li>要不要配樂。</li>
+<li>音樂從哪裡來。</li>
+<li>音量怎麼跟旁白搭配。</li>
+</ul>
+<h2 id="s23">23. 運鏡＋組片＋字幕 🧪</h2>
+<ul>
+<li><strong>誰：</strong> 我做。</li>
+<li><strong>運鏡：</strong> 只有跟劇情有關的格子才加。你說過每格都動太離譜。</li>
+<li>推近：營造緊張。</li>
+<li>拉遠：揭露大小。</li>
+<li>短震動：被打中時。</li>
+<li><strong>組片：</strong> 每集一個時間軸檔，執行 <code>assemble.py timeline_vN.json</code>。</li>
+<li><strong>字幕：</strong> 程式依標點自動切短句，時間依字數分配。</li>
+<li><strong>沒定案：</strong> 字幕樣式、片頭片尾。</li>
+</ul>
+<h2 id="s24">24. 看成片 ✅</h2>
+<ul>
+<li><strong>誰：</strong> 你。</li>
+<li><strong>怎麼做：</strong> 成片放桌面。你整集看一遍，記下問題，再依第 18 步的表退回對應的步驟。</li>
+</ul>
+<h2 id="s25">25. 上架 ⬜</h2>
+<p>沒討論過。要決定的事：</p>
+<ul>
+<li>標題。</li>
+<li>縮圖。</li>
+<li>說明欄要寫什麼。WORKFLOW 已經有一條：說明欄要註明參考書目。</li>
+<li>章節時間點。</li>
+<li>上架節奏。</li>
+</ul>
+<h2 id="s26">26. 歐美版 ⬜</h2>
+<ul>
+<li><strong>已定：</strong> 先做台灣版，歐美版只換旁白和在地化的細節。</li>
+<li><strong>沒討論：</strong></li>
+<li>英文旁白用誰的聲音。</li>
+<li>畫面裡的在地化要改哪些。</li>
+<li>要不要重新組片。</li>
+</ul>
+</main></body></html>
