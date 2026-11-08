@@ -3004,5 +3004,1606 @@ const SCHEDULE = [
     ]
    }
   ]
+ },
+ {
+  "date": "2026-11-09",
+  "label": "Montag, 9. November",
+  "zh": "週一 11/09",
+  "items": [
+   {
+    "color": "green",
+    "title": "Infokiste: Martinsumzug",
+    "zh": "資訊箱：聖馬丁節遊行（給家長的通知）",
+    "original": "Am Samstag, 14.11. ist der Martinsumzug. Wir treffen uns an der Schule und laufen gemeinsam zum Wolfsbrunnen.",
+    "originalZh": "11 月 14 日星期六是聖馬丁節遊行。我們在學校集合，一起走到 Wolfsbrunnen。",
+    "originalGram": [
+     "Am Samstag, 14.11.：日期用 am；14.11. 念 vierzehnten elften（11 月 14 日）。時間放句首，動詞排第二：ist der Martinsumzug。",
+     "wir treffen uns：sich treffen = 碰面（反身動詞）。an der Schule：an + 第3格（die → der）。",
+     "laufen gemeinsam zum Wolfsbrunnen：zum = zu dem。Wolfsbrunnen 是地名。"
+    ],
+    "originalAudio": "audio/sched/d1109_0_orig.mp3",
+    "titleAudio": "audio/sched/d1109_0_title.mp3",
+    "lines": [
+     {
+      "de": "Am Samstag ist der Martinsumzug.",
+      "zh": "星期六有聖馬丁節遊行。",
+      "gram": [
+       "Am Samstag 放句首，動詞排第二：ist。",
+       "der Martinsumzug = Martin（聖馬丁）+ Umzug（遊行）。"
+      ],
+      "audio": "audio/sched/d1109_0_0.mp3"
+     },
+     {
+      "de": "Wir treffen uns an der Schule.",
+      "zh": "我們在學校集合。",
+      "gram": [
+       "sich treffen：wir treffen uns（uns = 我們自己）。",
+       "an der Schule：an + 第3格表示地點。"
+      ],
+      "audio": "audio/sched/d1109_0_1.mp3"
+     },
+     {
+      "de": "Dann laufen alle zusammen zum Wolfsbrunnen.",
+      "zh": "然後大家一起走到 Wolfsbrunnen。",
+      "gram": [
+       "Dann 放句首，動詞排第二：laufen alle。",
+       "zum = zu dem：往某個地方去。"
+      ],
+      "audio": "audio/sched/d1109_0_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "der Samstag",
+      "zh": "星期六",
+      "ipa": "ˈzamstaːk",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_samstag.mp3"
+     },
+     {
+      "de": "der Martinsumzug",
+      "zh": "聖馬丁節遊行",
+      "ipa": "ˈmaʁtiːnsˌʔʊmtsuːk",
+      "composed": true,
+      "note": "Martin = 聖馬丁，Umzug = 遊行",
+      "audio": "audio/sched/w_der_martinsumzug.mp3"
+     },
+     {
+      "de": "sich treffen",
+      "zh": "碰面、集合",
+      "ipa": "ˈtʁɛfn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_sich_treffen.mp3"
+     },
+     {
+      "de": "gemeinsam",
+      "zh": "一起",
+      "ipa": "ɡəˈmaɪ̯nzaːm",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_gemeinsam.mp3"
+     },
+     {
+      "de": "laufen",
+      "zh": "走、跑",
+      "ipa": "ˈlaʊ̯fn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_laufen.mp3"
+     },
+     {
+      "de": "der Wolfsbrunnen",
+      "zh": "Wolfsbrunnen（地名）",
+      "ipa": "ˈvɔlfsˌbʁʊnən",
+      "composed": true,
+      "note": "Wolf = 狼，Brunnen = 泉、井",
+      "audio": "audio/sched/w_der_wolfsbrunnen.mp3"
+     }
+    ]
+   },
+   {
+    "color": "red",
+    "title": "Lernwerkstatt",
+    "zh": "學習工坊（自己選作業的學習時間）",
+    "original": "Lernwerkstatt",
+    "originalZh": "學習工坊。",
+    "originalGram": [
+     "只有一個名詞，是課表上的時段名稱，沒有動詞。",
+     "Lernwerkstatt = Lern（學習）+ Werkstatt（工坊）。這個時段的做法請以老師說明為準，我猜是在不同的作業站自己選作業做。"
+    ],
+    "originalAudio": "audio/sched/d1109_1_orig.mp3",
+    "titleAudio": "audio/sched/d1109_1_title.mp3",
+    "lines": [
+     {
+      "de": "In der Lernwerkstatt arbeitest du an verschiedenen Aufgaben.",
+      "zh": "在學習工坊，你做各種不同的作業。",
+      "gram": [
+       "in der Lernwerkstatt：in + 第3格表示地點（die → der）。",
+       "arbeiten an + 第3格 = 做、處理（某項工作）。arbeitest：du 的形態，字尾 -est。",
+       "verschiedenen Aufgaben：複數第3格，形容詞加 -en。"
+      ],
+      "audio": "audio/sched/d1109_1_0.mp3"
+     },
+     {
+      "de": "Du suchst dir selbst aus, womit du anfängst.",
+      "zh": "你自己挑要從哪一個開始。",
+      "gram": [
+       "aussuchen 是可分動詞：suchst … aus。dir = 給你自己（第3格），表示「自己選給自己」。",
+       "womit du anfängst：從句，動詞放最後（anfangen 在從句裡不分開）。womit = 用什麼、從什麼。",
+       "anfangen → du fängst an（a 變 ä）。"
+      ],
+      "audio": "audio/sched/d1109_1_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Lernwerkstatt",
+      "zh": "學習工坊",
+      "ipa": "ˈlɛʁnˌvɛʁkʃtat",
+      "composed": true,
+      "note": "Lern = 學習，Werkstatt = 工坊",
+      "audio": "audio/sched/w_die_lernwerkstatt.mp3"
+     },
+     {
+      "de": "die Aufgabe",
+      "zh": "任務、作業",
+      "ipa": "ˈaʊ̯fˌɡaːbə",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_aufgabe.mp3"
+     },
+     {
+      "de": "aussuchen",
+      "zh": "挑選",
+      "ipa": "ˈaʊ̯sˌzuːxn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_aussuchen.mp3"
+     },
+     {
+      "de": "selbst",
+      "zh": "自己",
+      "ipa": "zɛlpst",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_selbst.mp3"
+     }
+    ]
+   },
+   {
+    "color": "blue",
+    "title": "Wochenende · Ziffer 6 · Lerntheke",
+    "zh": "聊週末 · 認識數字 6 · 數字學習檯",
+    "original": "Wir erzählen uns vom Wochenende und führen die Ziffer 6 ein. Lerntheke zu den verschiedenen Ziffern.",
+    "originalZh": "我們互相講週末的事，並且介紹數字 6。學習檯：練習各種不同的數字。",
+    "originalGram": [
+     "wir erzählen uns vom Wochenende：uns = 彼此；vom = von dem（von + 第3格）。",
+     "führen … ein：einführen（介紹、引入）是可分動詞，ein 移到句尾。die Ziffer 6 是第4格。",
+     "Lerntheke zu den verschiedenen Ziffern：zu + 第3格複數，形容詞加 -en。這半句是標題式寫法，沒有動詞。"
+    ],
+    "originalAudio": "audio/sched/d1109_2_orig.mp3",
+    "titleAudio": "audio/sched/d1109_2_title.mp3",
+    "lines": [
+     {
+      "de": "Zuerst erzählst du vom Wochenende.",
+      "zh": "先說說你週末做了什麼。",
+      "gram": [
+       "Zuerst 放句首，動詞排第二：erzählst du。",
+       "vom = von dem：vom Wochenende = 關於週末。"
+      ],
+      "audio": "audio/sched/d1109_2_0.mp3"
+     },
+     {
+      "de": "Heute lernen wir die Ziffer Sechs kennen.",
+      "zh": "今天認識數字 6。",
+      "gram": [
+       "kennenlernen 是可分動詞：lernen … kennen。"
+      ],
+      "audio": "audio/sched/d1109_2_1.mp3"
+     },
+     {
+      "de": "An der Lerntheke übst du alle Ziffern, die du schon kennst.",
+      "zh": "在學習檯練習你已經認識的所有數字。",
+      "gram": [
+       "an der Lerntheke：地點，第3格。",
+       "die du schon kennst：關係子句，動詞 kennst 放最後。"
+      ],
+      "audio": "audio/sched/d1109_2_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "das Wochenende",
+      "zh": "週末",
+      "ipa": "ˈvɔxn̩ˌʔɛndə",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_das_wochenende.mp3"
+     },
+     {
+      "de": "einführen",
+      "zh": "介紹、引入",
+      "ipa": "ˈaɪ̯nˌfyːʁən",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_einfuehren.mp3"
+     },
+     {
+      "de": "die Ziffer",
+      "zh": "數字（0 到 9 的符號）",
+      "ipa": "ˈtsɪfɐ",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_ziffer.mp3"
+     },
+     {
+      "de": "verschieden",
+      "zh": "不同的",
+      "ipa": "fɛɐ̯ˈʃiːdn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_verschieden.mp3"
+     },
+     {
+      "de": "die Lerntheke",
+      "zh": "學習檯（桌上擺著作業，自己選著做）",
+      "ipa": "ˈlɛʁnˌteːkə",
+      "composed": true,
+      "note": "Lern = 學習，Theke = 檯子",
+      "audio": "audio/sched/w_die_lerntheke.mp3"
+     }
+    ]
+   },
+   {
+    "color": "green",
+    "title": "Lerntheke zum Igel",
+    "zh": "刺蝟學習檯",
+    "original": "Weiterarbeit an der Lerntheke zum Igel.",
+    "originalZh": "繼續做刺蝟主題的學習檯。",
+    "originalGram": [
+     "Weiterarbeit = 繼續做（名詞）。an der Lerntheke：an + 第3格。",
+     "zum Igel = zu dem Igel：關於刺蝟的。der Igel 是陽性。標題式寫法，沒有動詞。"
+    ],
+    "originalAudio": "audio/sched/d1109_3_orig.mp3",
+    "titleAudio": "audio/sched/d1109_3_title.mp3",
+    "lines": [
+     {
+      "de": "Wir lernen mehr über den Igel.",
+      "zh": "我們多認識刺蝟一點。",
+      "gram": [
+       "lernen über + 第4格 = 學關於…；der Igel → den Igel（第4格）。"
+      ],
+      "audio": "audio/sched/d1109_3_0.mp3"
+     },
+     {
+      "de": "Der Igel hat viele Stacheln.",
+      "zh": "刺蝟有很多刺。",
+      "gram": [
+       "hat = haben 的 er 形態。",
+       "der Stachel → die Stacheln（複數加 -n）。"
+      ],
+      "audio": "audio/sched/d1109_3_1.mp3"
+     },
+     {
+      "de": "Im Winter hält der Igel Winterschlaf.",
+      "zh": "冬天刺蝟會冬眠。",
+      "gram": [
+       "Im Winter 放句首，動詞排第二：hält der Igel。",
+       "halten → er hält（a 變 ä）。Winterschlaf halten = 冬眠。"
+      ],
+      "audio": "audio/sched/d1109_3_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "der Igel",
+      "zh": "刺蝟",
+      "ipa": "ˈiːɡl̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_igel.mp3"
+     },
+     {
+      "de": "der Stachel",
+      "zh": "刺",
+      "ipa": "ˈʃtaxl̩",
+      "composed": false,
+      "note": "複數 die Stacheln",
+      "audio": "audio/sched/w_der_stachel.mp3"
+     },
+     {
+      "de": "der Winterschlaf",
+      "zh": "冬眠",
+      "ipa": "ˈvɪntɐˌʃlaːf",
+      "composed": true,
+      "note": "",
+      "audio": "audio/sched/w_der_winterschlaf.mp3"
+     },
+     {
+      "de": "weiterarbeiten",
+      "zh": "繼續做",
+      "ipa": "ˈvaɪ̯tɐˌʔaʁbaɪ̯tn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_weiterarbeiten.mp3"
+     }
+    ]
+   },
+   {
+    "color": "white",
+    "title": "Hausaufgaben",
+    "zh": "回家作業",
+    "original": "Hausaufgaben:",
+    "originalZh": "回家作業：（欄位目前是空的）",
+    "originalGram": [
+     "只有「Hausaufgaben」，是欄位標題：後面本來要填內容。",
+     "Hausaufgabe（單數）→ Hausaufgaben（複數，字尾加 -n）。"
+    ],
+    "originalAudio": "audio/sched/d1109_4_orig.mp3",
+    "titleAudio": "audio/sched/d1109_4_title.mp3",
+    "lines": [
+     {
+      "de": "Bei den Hausaufgaben steht noch nichts im Plan.",
+      "zh": "行程表上回家作業那一欄還沒有寫。",
+      "gram": [
+       "Bei den Hausaufgaben：bei + 第3格；複數的冠詞 die 變成 den。意思是「關於回家作業」。",
+       "Bei … 放在句首，動詞排第二：steht。stehen 在這裡是「寫著」。",
+       "noch nichts = 還沒有任何東西。im = in dem（在…裡面）：im Plan = 在行程表上。"
+      ],
+      "audio": "audio/sched/d1109_4_0.mp3"
+     },
+     {
+      "de": "Schau am Abend noch einmal nach.",
+      "zh": "晚上再看一次。",
+      "gram": [
+       "命令句（對 du）：schauen → schau。nachschauen 是可分動詞：nach 移到句尾。",
+       "am Abend = an dem Abend（在晚上，說時間用 am）。",
+       "noch einmal = 再一次。"
+      ],
+      "audio": "audio/sched/d1109_4_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Hausaufgaben",
+      "zh": "回家作業（複數）",
+      "ipa": "ˈhaʊ̯sʔaʊ̯fˌɡaːbn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_hausaufgaben.mp3"
+     },
+     {
+      "de": "der Plan",
+      "zh": "計畫、行程表",
+      "ipa": "plaːn",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_plan.mp3"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-10",
+  "label": "Dienstag, 10. November",
+  "zh": "週二 11/10",
+  "items": [
+   {
+    "color": "red",
+    "title": "Lernwerkstatt",
+    "zh": "學習工坊（自己選作業的學習時間）",
+    "original": "Lernwerkstatt",
+    "originalZh": "學習工坊。",
+    "originalGram": [
+     "只有一個名詞，是課表上的時段名稱，沒有動詞。",
+     "Lernwerkstatt = Lern（學習）+ Werkstatt（工坊）。這個時段的做法請以老師說明為準，我猜是在不同的作業站自己選作業做。"
+    ],
+    "originalAudio": "audio/sched/d1110_0_orig.mp3",
+    "titleAudio": "audio/sched/d1110_0_title.mp3",
+    "lines": [
+     {
+      "de": "In der Lernwerkstatt arbeitest du an verschiedenen Aufgaben.",
+      "zh": "在學習工坊，你做各種不同的作業。",
+      "gram": [
+       "in der Lernwerkstatt：in + 第3格表示地點（die → der）。",
+       "arbeiten an + 第3格 = 做、處理（某項工作）。arbeitest：du 的形態，字尾 -est。",
+       "verschiedenen Aufgaben：複數第3格，形容詞加 -en。"
+      ],
+      "audio": "audio/sched/d1110_0_0.mp3"
+     },
+     {
+      "de": "Du suchst dir selbst aus, womit du anfängst.",
+      "zh": "你自己挑要從哪一個開始。",
+      "gram": [
+       "aussuchen 是可分動詞：suchst … aus。dir = 給你自己（第3格），表示「自己選給自己」。",
+       "womit du anfängst：從句，動詞放最後（anfangen 在從句裡不分開）。womit = 用什麼、從什麼。",
+       "anfangen → du fängst an（a 變 ä）。"
+      ],
+      "audio": "audio/sched/d1110_0_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Lernwerkstatt",
+      "zh": "學習工坊",
+      "ipa": "ˈlɛʁnˌvɛʁkʃtat",
+      "composed": true,
+      "note": "Lern = 學習，Werkstatt = 工坊",
+      "audio": "audio/sched/w_die_lernwerkstatt.mp3"
+     },
+     {
+      "de": "die Aufgabe",
+      "zh": "任務、作業",
+      "ipa": "ˈaʊ̯fˌɡaːbə",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_aufgabe.mp3"
+     },
+     {
+      "de": "aussuchen",
+      "zh": "挑選",
+      "ipa": "ˈaʊ̯sˌzuːxn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_aussuchen.mp3"
+     },
+     {
+      "de": "selbst",
+      "zh": "自己",
+      "ipa": "zɛlpst",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_selbst.mp3"
+     }
+    ]
+   },
+   {
+    "color": "yellow",
+    "title": "Fitness und Koordination",
+    "zh": "體能和協調",
+    "original": "Fitness und Koordination",
+    "originalZh": "體能和協調。",
+    "originalGram": [
+     "兩個名詞用 und 連起來，是體育課的主題，沒有動詞。",
+     "die Fitness = 體能；die Koordination = 協調（身體各部分一起配合）。"
+    ],
+    "originalAudio": "audio/sched/d1110_1_orig.mp3",
+    "titleAudio": "audio/sched/d1110_1_title.mp3",
+    "lines": [
+     {
+      "de": "Im Sport machen wir Übungen für Kraft und Ausdauer.",
+      "zh": "體育課做練習力氣和耐力的動作。",
+      "gram": [
+       "Im Sport 放句首，動詞排第二：machen wir。",
+       "für + 第4格。die Kraft = 力氣，die Ausdauer = 耐力。"
+      ],
+      "audio": "audio/sched/d1110_1_0.mp3"
+     },
+     {
+      "de": "Bei der Koordination arbeiten Arme und Beine zusammen.",
+      "zh": "協調就是手和腳一起配合。",
+      "gram": [
+       "bei der Koordination：bei + 第3格。",
+       "zusammenarbeiten 是可分動詞：arbeiten … zusammen。"
+      ],
+      "audio": "audio/sched/d1110_1_1.mp3"
+     },
+     {
+      "de": "Du balancierst auf einem Bein.",
+      "zh": "你用一隻腳站穩。",
+      "gram": [
+       "balancieren = 保持平衡；du balancierst。",
+       "auf einem Bein：auf + 第3格（das Bein → einem Bein）。"
+      ],
+      "audio": "audio/sched/d1110_1_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Fitness",
+      "zh": "體能",
+      "ipa": "ˈfɪtnɛs",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_fitness.mp3"
+     },
+     {
+      "de": "die Koordination",
+      "zh": "協調",
+      "ipa": "koʔɔʁdinaˈtsi̯oːn",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_koordination.mp3"
+     },
+     {
+      "de": "die Übung",
+      "zh": "練習",
+      "ipa": "ˈyːbʊŋ",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_uebung.mp3"
+     },
+     {
+      "de": "das Bein",
+      "zh": "腿、腳",
+      "ipa": "baɪ̯n",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_das_bein.mp3"
+     },
+     {
+      "de": "balancieren",
+      "zh": "保持平衡",
+      "ipa": "balaŋˈsiːʁən",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_balancieren.mp3"
+     }
+    ]
+   },
+   {
+    "color": "red",
+    "title": "Anlaute · Schreibtabelle",
+    "zh": "字首音 · 寫字表",
+    "original": "Wir arbeiten an mit den Anlauten und der Schreibtabelle.",
+    "originalZh": "我們用字首音和寫字表做練習。",
+    "originalGram": [
+     "原文的「arbeiten an mit」應該是多打了 an，意思是 Wir arbeiten mit den Anlauten …（用字首音和寫字表做練習）。",
+     "mit + 第3格：den Anlauten（複數第3格加 -n）、der Schreibtabelle（die → der）。",
+     "Anlaut = 字首音（一個字最前面的音）。Schreibtabelle 我推測是圖片配字母、讓孩子自己拼字用的表，請以老師說明為準。"
+    ],
+    "originalAudio": "audio/sched/d1110_2_orig.mp3",
+    "titleAudio": "audio/sched/d1110_2_title.mp3",
+    "lines": [
+     {
+      "de": "Du hörst ein Wort und suchst den Anlaut.",
+      "zh": "你聽一個字，找出它的第一個音。",
+      "gram": [
+       "hörst、suchst：du 的形態，字尾 -st。",
+       "den Anlaut：陽性第4格。"
+      ],
+      "audio": "audio/sched/d1110_2_0.mp3"
+     },
+     {
+      "de": "Auf der Schreibtabelle findest du das Bild und den Buchstaben.",
+      "zh": "在寫字表上找到圖和對應的字母。",
+      "gram": [
+       "auf der Schreibtabelle：auf + 第3格（地點）。放句首，動詞排第二：findest du。",
+       "den Buchstaben：陽性第4格，字尾加 -n。"
+      ],
+      "audio": "audio/sched/d1110_2_1.mp3"
+     },
+     {
+      "de": "So kannst du Wörter selbst schreiben.",
+      "zh": "這樣你就能自己寫字。",
+      "gram": [
+       "kannst = können 的 du 形態，後面的 schreiben 用原形放句尾。",
+       "das Wort → die Wörter（o 變 ö，加 -er）。"
+      ],
+      "audio": "audio/sched/d1110_2_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "der Anlaut",
+      "zh": "字首音",
+      "ipa": "ˈanˌlaʊ̯t",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_anlaut.mp3"
+     },
+     {
+      "de": "die Schreibtabelle",
+      "zh": "寫字表",
+      "ipa": "ˈʃʁaɪ̯ptaˌbɛlə",
+      "composed": true,
+      "note": "schreiben = 寫，Tabelle = 表",
+      "audio": "audio/sched/w_die_schreibtabelle.mp3"
+     },
+     {
+      "de": "das Bild",
+      "zh": "圖",
+      "ipa": "bɪlt",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_das_bild.mp3"
+     },
+     {
+      "de": "das Wort",
+      "zh": "字、單字",
+      "ipa": "vɔʁt",
+      "composed": false,
+      "note": "複數 die Wörter",
+      "audio": "audio/sched/w_das_wort.mp3"
+     }
+    ]
+   },
+   {
+    "color": "white",
+    "title": "Hausaufgaben",
+    "zh": "回家作業",
+    "original": "Hausaufgaben:",
+    "originalZh": "回家作業：（欄位目前是空的）",
+    "originalGram": [
+     "只有「Hausaufgaben」，是欄位標題：後面本來要填內容。",
+     "Hausaufgabe（單數）→ Hausaufgaben（複數，字尾加 -n）。"
+    ],
+    "originalAudio": "audio/sched/d1110_3_orig.mp3",
+    "titleAudio": "audio/sched/d1110_3_title.mp3",
+    "lines": [
+     {
+      "de": "Bei den Hausaufgaben steht noch nichts im Plan.",
+      "zh": "行程表上回家作業那一欄還沒有寫。",
+      "gram": [
+       "Bei den Hausaufgaben：bei + 第3格；複數的冠詞 die 變成 den。意思是「關於回家作業」。",
+       "Bei … 放在句首，動詞排第二：steht。stehen 在這裡是「寫著」。",
+       "noch nichts = 還沒有任何東西。im = in dem（在…裡面）：im Plan = 在行程表上。"
+      ],
+      "audio": "audio/sched/d1110_3_0.mp3"
+     },
+     {
+      "de": "Schau am Abend noch einmal nach.",
+      "zh": "晚上再看一次。",
+      "gram": [
+       "命令句（對 du）：schauen → schau。nachschauen 是可分動詞：nach 移到句尾。",
+       "am Abend = an dem Abend（在晚上，說時間用 am）。",
+       "noch einmal = 再一次。"
+      ],
+      "audio": "audio/sched/d1110_3_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Hausaufgaben",
+      "zh": "回家作業（複數）",
+      "ipa": "ˈhaʊ̯sʔaʊ̯fˌɡaːbn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_hausaufgaben.mp3"
+     },
+     {
+      "de": "der Plan",
+      "zh": "計畫、行程表",
+      "ipa": "plaːn",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_plan.mp3"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-11",
+  "label": "Mittwoch, 11. November",
+  "zh": "週三 11/11",
+  "items": [
+   {
+    "color": "red",
+    "title": "Lernwerkstatt",
+    "zh": "學習工坊（自己選作業的學習時間）",
+    "original": "Lernwerkstatt",
+    "originalZh": "學習工坊。",
+    "originalGram": [
+     "只有一個名詞，是課表上的時段名稱，沒有動詞。",
+     "Lernwerkstatt = Lern（學習）+ Werkstatt（工坊）。這個時段的做法請以老師說明為準，我猜是在不同的作業站自己選作業做。"
+    ],
+    "originalAudio": "audio/sched/d1111_0_orig.mp3",
+    "titleAudio": "audio/sched/d1111_0_title.mp3",
+    "lines": [
+     {
+      "de": "In der Lernwerkstatt arbeitest du an verschiedenen Aufgaben.",
+      "zh": "在學習工坊，你做各種不同的作業。",
+      "gram": [
+       "in der Lernwerkstatt：in + 第3格表示地點（die → der）。",
+       "arbeiten an + 第3格 = 做、處理（某項工作）。arbeitest：du 的形態，字尾 -est。",
+       "verschiedenen Aufgaben：複數第3格，形容詞加 -en。"
+      ],
+      "audio": "audio/sched/d1111_0_0.mp3"
+     },
+     {
+      "de": "Du suchst dir selbst aus, womit du anfängst.",
+      "zh": "你自己挑要從哪一個開始。",
+      "gram": [
+       "aussuchen 是可分動詞：suchst … aus。dir = 給你自己（第3格），表示「自己選給自己」。",
+       "womit du anfängst：從句，動詞放最後（anfangen 在從句裡不分開）。womit = 用什麼、從什麼。",
+       "anfangen → du fängst an（a 變 ä）。"
+      ],
+      "audio": "audio/sched/d1111_0_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Lernwerkstatt",
+      "zh": "學習工坊",
+      "ipa": "ˈlɛʁnˌvɛʁkʃtat",
+      "composed": true,
+      "note": "Lern = 學習，Werkstatt = 工坊",
+      "audio": "audio/sched/w_die_lernwerkstatt.mp3"
+     },
+     {
+      "de": "die Aufgabe",
+      "zh": "任務、作業",
+      "ipa": "ˈaʊ̯fˌɡaːbə",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_aufgabe.mp3"
+     },
+     {
+      "de": "aussuchen",
+      "zh": "挑選",
+      "ipa": "ˈaʊ̯sˌzuːxn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_aussuchen.mp3"
+     },
+     {
+      "de": "selbst",
+      "zh": "自己",
+      "ipa": "zɛlpst",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_selbst.mp3"
+     }
+    ]
+   },
+   {
+    "color": "blue",
+    "title": "Ziffern-Lerntheke · Trainingsheft",
+    "zh": "數字學習檯 · 認識練習本",
+    "original": "Weiterarbeit an der Lerntheke zu den Ziffern und einführung des Trainingsheftes.",
+    "originalZh": "繼續做數字學習檯，並且介紹練習本。",
+    "originalGram": [
+     "Weiterarbeit = 繼續做（名詞）。zu den Ziffern：zu + 第3格複數。",
+     "原文的 einführung 是小寫，名詞應該大寫：Einführung（介紹）。",
+     "des Trainingsheftes：第2格（das Trainingsheft → des Trainingsheftes，加 -es）：「練習本的」。"
+    ],
+    "originalAudio": "audio/sched/d1111_1_orig.mp3",
+    "titleAudio": "audio/sched/d1111_1_title.mp3",
+    "lines": [
+     {
+      "de": "Heute bekommst du ein neues Heft: das Trainingsheft.",
+      "zh": "今天你會拿到一本新本子：練習本。",
+      "gram": [
+       "bekommen = 拿到（不是英文的 become）。du bekommst。",
+       "ein neues Heft：中性第4格，形容詞加 -es。"
+      ],
+      "audio": "audio/sched/d1111_1_0.mp3"
+     },
+     {
+      "de": "Die Lehrerin zeigt euch, wie man damit arbeitet.",
+      "zh": "老師會教你們怎麼用它。",
+      "gram": [
+       "euch = 你們（第3格）。",
+       "wie man damit arbeitet：從句，動詞放最後。man = 一般人；damit = 用它。"
+      ],
+      "audio": "audio/sched/d1111_1_1.mp3"
+     },
+     {
+      "de": "Danach übst du weiter an der Lerntheke.",
+      "zh": "之後繼續在學習檯練習。",
+      "gram": [
+       "weiterüben 是可分動詞：übst … weiter。",
+       "Danach 放句首，動詞排第二：übst du。"
+      ],
+      "audio": "audio/sched/d1111_1_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "das Trainingsheft",
+      "zh": "練習本",
+      "ipa": "ˈtʁɛːnɪŋsˌhɛft",
+      "composed": true,
+      "note": "Training = 練習，Heft = 本子",
+      "audio": "audio/sched/w_das_trainingsheft.mp3"
+     },
+     {
+      "de": "das Heft",
+      "zh": "本子",
+      "ipa": "hɛft",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_das_heft.mp3"
+     },
+     {
+      "de": "die Einführung",
+      "zh": "介紹、引入",
+      "ipa": "ˈaɪ̯nˌfyːʁʊŋ",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_einfuehrung.mp3"
+     },
+     {
+      "de": "bekommen",
+      "zh": "拿到、得到",
+      "ipa": "bəˈkɔmən",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_bekommen.mp3"
+     }
+    ]
+   },
+   {
+    "color": "pink",
+    "title": "Kunst",
+    "zh": "美術課（Scheldt 老師）",
+    "original": "Kunst mit Frau Scheldt.",
+    "originalZh": "美術課，老師是 Scheldt 女士。",
+    "originalGram": [
+     "Kunst = 美術（科目名稱，不加冠詞）。",
+     "mit Frau Scheldt：mit + 第3格；名字前面的 Frau 不變。",
+     "整句沒有動詞，是課表的簡短寫法。"
+    ],
+    "originalAudio": "audio/sched/d1111_2_orig.mp3",
+    "titleAudio": "audio/sched/d1111_2_title.mp3",
+    "lines": [
+     {
+      "de": "Wir haben Kunst.",
+      "zh": "我們有美術課。",
+      "gram": [
+       "haben = wir 的現在式。科目名稱（Kunst）前面不加冠詞。"
+      ],
+      "audio": "audio/sched/d1111_2_0.mp3"
+     },
+     {
+      "de": "Die Lehrerin heißt Frau Scheldt.",
+      "zh": "老師叫做 Scheldt 女士。",
+      "gram": [
+       "die Lehrerin = 女老師（陰性）。",
+       "heißen = 叫做。Frau + 姓 = 某某女士。"
+      ],
+      "audio": "audio/sched/d1111_2_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Kunst",
+      "zh": "美術、藝術",
+      "ipa": "kʊnst",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_kunst.mp3"
+     },
+     {
+      "de": "die Lehrerin",
+      "zh": "女老師",
+      "ipa": "ˈleːʁəʁɪn",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_lehrerin.mp3"
+     }
+    ]
+   },
+   {
+    "color": "gray",
+    "title": "AG Soziale Spiele",
+    "zh": "社團：社交遊戲（Vesper 老師）",
+    "original": "AG Soziale Spiele mit Herrn Vesper.",
+    "originalZh": "社團「社交遊戲」，老師是 Vesper 先生。",
+    "originalGram": [
+     "AG = Arbeitsgemeinschaft（社團、小組活動）。",
+     "Soziale Spiele：複數，形容詞 sozial 加 -e。我猜是練習合作、輪流、遵守規則的遊戲。",
+     "mit Herrn Vesper：mit + 第3格；Herr 在第3格要變成 Herrn。"
+    ],
+    "originalAudio": "audio/sched/d1111_3_orig.mp3",
+    "titleAudio": "audio/sched/d1111_3_title.mp3",
+    "lines": [
+     {
+      "de": "In der AG spielen wir zusammen.",
+      "zh": "在社團裡我們一起玩。",
+      "gram": [
+       "die AG（陰性）→ in der AG（第3格）。"
+      ],
+      "audio": "audio/sched/d1111_3_0.mp3"
+     },
+     {
+      "de": "Wir warten, bis wir dran sind.",
+      "zh": "我們等到輪到自己。",
+      "gram": [
+       "warten = 等。bis = 直到，從句的動詞放最後：sind。",
+       "dran sein = 輪到（口語）。"
+      ],
+      "audio": "audio/sched/d1111_3_1.mp3"
+     },
+     {
+      "de": "Der Lehrer heißt Herr Vesper.",
+      "zh": "老師叫 Vesper 先生。",
+      "gram": [
+       "der Lehrer = 男老師。",
+       "主格用 Herr，第3、4格用 Herrn。"
+      ],
+      "audio": "audio/sched/d1111_3_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die AG",
+      "zh": "社團（Arbeitsgemeinschaft）",
+      "ipa": "aːˈɡeː",
+      "composed": true,
+      "note": "Arbeitsgemeinschaft 的縮寫",
+      "audio": "audio/sched/w_die_ag.mp3"
+     },
+     {
+      "de": "sozial",
+      "zh": "社交的、跟別人相處的",
+      "ipa": "zoˈtsi̯aːl",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_sozial.mp3"
+     },
+     {
+      "de": "das Spiel",
+      "zh": "遊戲",
+      "ipa": "ʃpiːl",
+      "composed": false,
+      "note": "複數 die Spiele",
+      "audio": "audio/sched/w_das_spiel.mp3"
+     },
+     {
+      "de": "warten",
+      "zh": "等",
+      "ipa": "ˈvaʁtn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_warten.mp3"
+     },
+     {
+      "de": "der Lehrer",
+      "zh": "男老師",
+      "ipa": "ˈleːʁɐ",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_lehrer.mp3"
+     }
+    ]
+   },
+   {
+    "color": "white",
+    "title": "Hausaufgaben",
+    "zh": "回家作業",
+    "original": "Hausaufgaben:",
+    "originalZh": "回家作業：（欄位目前是空的）",
+    "originalGram": [
+     "只有「Hausaufgaben」，是欄位標題：後面本來要填內容。",
+     "Hausaufgabe（單數）→ Hausaufgaben（複數，字尾加 -n）。"
+    ],
+    "originalAudio": "audio/sched/d1111_4_orig.mp3",
+    "titleAudio": "audio/sched/d1111_4_title.mp3",
+    "lines": [
+     {
+      "de": "Bei den Hausaufgaben steht noch nichts im Plan.",
+      "zh": "行程表上回家作業那一欄還沒有寫。",
+      "gram": [
+       "Bei den Hausaufgaben：bei + 第3格；複數的冠詞 die 變成 den。意思是「關於回家作業」。",
+       "Bei … 放在句首，動詞排第二：steht。stehen 在這裡是「寫著」。",
+       "noch nichts = 還沒有任何東西。im = in dem（在…裡面）：im Plan = 在行程表上。"
+      ],
+      "audio": "audio/sched/d1111_4_0.mp3"
+     },
+     {
+      "de": "Schau am Abend noch einmal nach.",
+      "zh": "晚上再看一次。",
+      "gram": [
+       "命令句（對 du）：schauen → schau。nachschauen 是可分動詞：nach 移到句尾。",
+       "am Abend = an dem Abend（在晚上，說時間用 am）。",
+       "noch einmal = 再一次。"
+      ],
+      "audio": "audio/sched/d1111_4_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Hausaufgaben",
+      "zh": "回家作業（複數）",
+      "ipa": "ˈhaʊ̯sʔaʊ̯fˌɡaːbn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_hausaufgaben.mp3"
+     },
+     {
+      "de": "der Plan",
+      "zh": "計畫、行程表",
+      "ipa": "plaːn",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_plan.mp3"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-12",
+  "label": "Donnerstag, 12. November",
+  "zh": "週四 11/12",
+  "items": [
+   {
+    "color": "red",
+    "title": "Lernwerkstatt",
+    "zh": "學習工坊（自己選作業的學習時間）",
+    "original": "Lernwerkstatt",
+    "originalZh": "學習工坊。",
+    "originalGram": [
+     "只有一個名詞，是課表上的時段名稱，沒有動詞。",
+     "Lernwerkstatt = Lern（學習）+ Werkstatt（工坊）。這個時段的做法請以老師說明為準，我猜是在不同的作業站自己選作業做。"
+    ],
+    "originalAudio": "audio/sched/d1112_0_orig.mp3",
+    "titleAudio": "audio/sched/d1112_0_title.mp3",
+    "lines": [
+     {
+      "de": "In der Lernwerkstatt arbeitest du an verschiedenen Aufgaben.",
+      "zh": "在學習工坊，你做各種不同的作業。",
+      "gram": [
+       "in der Lernwerkstatt：in + 第3格表示地點（die → der）。",
+       "arbeiten an + 第3格 = 做、處理（某項工作）。arbeitest：du 的形態，字尾 -est。",
+       "verschiedenen Aufgaben：複數第3格，形容詞加 -en。"
+      ],
+      "audio": "audio/sched/d1112_0_0.mp3"
+     },
+     {
+      "de": "Du suchst dir selbst aus, womit du anfängst.",
+      "zh": "你自己挑要從哪一個開始。",
+      "gram": [
+       "aussuchen 是可分動詞：suchst … aus。dir = 給你自己（第3格），表示「自己選給自己」。",
+       "womit du anfängst：從句，動詞放最後（anfangen 在從句裡不分開）。womit = 用什麼、從什麼。",
+       "anfangen → du fängst an（a 變 ä）。"
+      ],
+      "audio": "audio/sched/d1112_0_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Lernwerkstatt",
+      "zh": "學習工坊",
+      "ipa": "ˈlɛʁnˌvɛʁkʃtat",
+      "composed": true,
+      "note": "Lern = 學習，Werkstatt = 工坊",
+      "audio": "audio/sched/w_die_lernwerkstatt.mp3"
+     },
+     {
+      "de": "die Aufgabe",
+      "zh": "任務、作業",
+      "ipa": "ˈaʊ̯fˌɡaːbə",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_aufgabe.mp3"
+     },
+     {
+      "de": "aussuchen",
+      "zh": "挑選",
+      "ipa": "ˈaʊ̯sˌzuːxn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_aussuchen.mp3"
+     },
+     {
+      "de": "selbst",
+      "zh": "自己",
+      "ipa": "zɛlpst",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_selbst.mp3"
+     }
+    ]
+   },
+   {
+    "color": "red",
+    "title": "Der nächste Buchstabe · ISP-Studenten",
+    "zh": "認識下一個字母（實習學生上課）",
+    "original": "Einführung des nächsten Buchstaben durch die ISP Studenten.",
+    "originalZh": "由 ISP 的學生介紹下一個字母。",
+    "originalGram": [
+     "des nächsten Buchstaben：第2格（陽性）：「下一個字母的」。",
+     "durch die ISP Studenten：durch + 第4格 = 由…（來做）。die Studenten 是複數。",
+     "ISP 我推測是師範學生的實習課程，所以這堂課由實習的大學生來上。"
+    ],
+    "originalAudio": "audio/sched/d1112_1_orig.mp3",
+    "titleAudio": "audio/sched/d1112_1_title.mp3",
+    "lines": [
+     {
+      "de": "Heute lernen wir einen neuen Buchstaben kennen.",
+      "zh": "今天認識一個新字母。",
+      "gram": [
+       "kennenlernen 是可分動詞：lernen … kennen。",
+       "einen neuen Buchstaben：陽性第4格，ein → einen。"
+      ],
+      "audio": "audio/sched/d1112_1_0.mp3"
+     },
+     {
+      "de": "Studenten von der Uni machen den Unterricht.",
+      "zh": "大學來的學生來上課。",
+      "gram": [
+       "von der Uni：von + 第3格；die Uni = Universität（大學）。",
+       "den Unterricht：陽性第4格。"
+      ],
+      "audio": "audio/sched/d1112_1_1.mp3"
+     },
+     {
+      "de": "Du hörst gut zu und machst mit.",
+      "zh": "你要專心聽，一起參與。",
+      "gram": [
+       "zuhören、mitmachen 都是可分動詞：hörst … zu、machst … mit。"
+      ],
+      "audio": "audio/sched/d1112_1_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "der Buchstabe",
+      "zh": "字母",
+      "ipa": "ˈbuːxˌʃtaːbə",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_buchstabe.mp3"
+     },
+     {
+      "de": "nächste",
+      "zh": "下一個的",
+      "ipa": "ˈnɛːçstə",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_naechste.mp3"
+     },
+     {
+      "de": "der Student",
+      "zh": "大學生",
+      "ipa": "ʃtuˈdɛnt",
+      "composed": false,
+      "note": "複數 die Studenten",
+      "audio": "audio/sched/w_der_student.mp3"
+     },
+     {
+      "de": "der Unterricht",
+      "zh": "上課",
+      "ipa": "ˈʊntɐʁɪçt",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_unterricht.mp3"
+     },
+     {
+      "de": "zuhören",
+      "zh": "專心聽",
+      "ipa": "ˈtsuːˌhøːʁən",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_zuhoeren.mp3"
+     }
+    ]
+   },
+   {
+    "color": "green",
+    "title": "Abschluss: Igel",
+    "zh": "刺蝟主題結束",
+    "original": "Abschluss zum Thema Igel.",
+    "originalZh": "刺蝟這個主題的收尾。",
+    "originalGram": [
+     "der Abschluss = 結束、收尾。zum Thema Igel：zum = zu dem；das Thema 是中性。",
+     "標題式寫法，沒有動詞。"
+    ],
+    "originalAudio": "audio/sched/d1112_2_orig.mp3",
+    "titleAudio": "audio/sched/d1112_2_title.mp3",
+    "lines": [
+     {
+      "de": "Heute endet das Thema Igel.",
+      "zh": "今天刺蝟主題結束。",
+      "gram": [
+       "enden = 結束；es endet（詞幹 d 結尾加 -et）。"
+      ],
+      "audio": "audio/sched/d1112_2_0.mp3"
+     },
+     {
+      "de": "Wir zeigen, was wir über den Igel gelernt haben.",
+      "zh": "我們展示學到的刺蝟知識。",
+      "gram": [
+       "was wir … gelernt haben：從句，助動詞 haben 放最後。",
+       "über den Igel：über + 第4格。"
+      ],
+      "audio": "audio/sched/d1112_2_1.mp3"
+     },
+     {
+      "de": "Was frisst ein Igel? Käfer und Würmer.",
+      "zh": "刺蝟吃什麼？甲蟲和蟲子。",
+      "gram": [
+       "fressen = 動物吃（人吃用 essen）；er frisst（e 變 i）。",
+       "der Käfer → die Käfer；der Wurm → die Würmer。"
+      ],
+      "audio": "audio/sched/d1112_2_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "der Abschluss",
+      "zh": "結束、收尾",
+      "ipa": "ˈapˌʃlʊs",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_abschluss.mp3"
+     },
+     {
+      "de": "das Thema",
+      "zh": "主題",
+      "ipa": "ˈteːma",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_das_thema.mp3"
+     },
+     {
+      "de": "der Igel",
+      "zh": "刺蝟",
+      "ipa": "ˈiːɡl̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_igel.mp3"
+     },
+     {
+      "de": "fressen",
+      "zh": "（動物）吃",
+      "ipa": "ˈfʁɛsn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_fressen.mp3"
+     },
+     {
+      "de": "der Käfer",
+      "zh": "甲蟲",
+      "ipa": "ˈkɛːfɐ",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_kaefer.mp3"
+     },
+     {
+      "de": "der Wurm",
+      "zh": "蟲子",
+      "ipa": "vʊʁm",
+      "composed": false,
+      "note": "複數 die Würmer",
+      "audio": "audio/sched/w_der_wurm.mp3"
+     }
+    ]
+   },
+   {
+    "color": "white",
+    "title": "Hausaufgaben",
+    "zh": "回家作業",
+    "original": "Hausaufgaben:",
+    "originalZh": "回家作業：（欄位目前是空的）",
+    "originalGram": [
+     "只有「Hausaufgaben」，是欄位標題：後面本來要填內容。",
+     "Hausaufgabe（單數）→ Hausaufgaben（複數，字尾加 -n）。"
+    ],
+    "originalAudio": "audio/sched/d1112_3_orig.mp3",
+    "titleAudio": "audio/sched/d1112_3_title.mp3",
+    "lines": [
+     {
+      "de": "Bei den Hausaufgaben steht noch nichts im Plan.",
+      "zh": "行程表上回家作業那一欄還沒有寫。",
+      "gram": [
+       "Bei den Hausaufgaben：bei + 第3格；複數的冠詞 die 變成 den。意思是「關於回家作業」。",
+       "Bei … 放在句首，動詞排第二：steht。stehen 在這裡是「寫著」。",
+       "noch nichts = 還沒有任何東西。im = in dem（在…裡面）：im Plan = 在行程表上。"
+      ],
+      "audio": "audio/sched/d1112_3_0.mp3"
+     },
+     {
+      "de": "Schau am Abend noch einmal nach.",
+      "zh": "晚上再看一次。",
+      "gram": [
+       "命令句（對 du）：schauen → schau。nachschauen 是可分動詞：nach 移到句尾。",
+       "am Abend = an dem Abend（在晚上，說時間用 am）。",
+       "noch einmal = 再一次。"
+      ],
+      "audio": "audio/sched/d1112_3_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Hausaufgaben",
+      "zh": "回家作業（複數）",
+      "ipa": "ˈhaʊ̯sʔaʊ̯fˌɡaːbn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_hausaufgaben.mp3"
+     },
+     {
+      "de": "der Plan",
+      "zh": "計畫、行程表",
+      "ipa": "plaːn",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_plan.mp3"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "date": "2026-11-13",
+  "label": "Freitag, 13. November",
+  "zh": "週五 11/13",
+  "items": [
+   {
+    "color": "red",
+    "title": "Buchstabenlerntheke",
+    "zh": "字母學習檯（字首音、寫字表、音節船）",
+    "original": "Weiterarbeit an der Buchstabenlerntheke. (Anlaute, Schreibtabelle und Silbenboote)",
+    "originalZh": "繼續做字母學習檯（字首音、寫字表和音節船）。",
+    "originalGram": [
+     "Weiterarbeit an der Buchstabenlerntheke：an + 第3格。",
+     "括號裡列出三種作業，都是名詞：die Anlaute（複數）、die Schreibtabelle、die Silbenboote（複數）。",
+     "Silbenboot = Silbe（音節）+ Boot（船）。我推測是把字依音節分開的練習，請以老師說明為準。"
+    ],
+    "originalAudio": "audio/sched/d1113_0_orig.mp3",
+    "titleAudio": "audio/sched/d1113_0_title.mp3",
+    "lines": [
+     {
+      "de": "Wir arbeiten an der Buchstabenlerntheke weiter.",
+      "zh": "我們繼續在字母學習檯做。",
+      "gram": [
+       "weiterarbeiten 是可分動詞：arbeiten … weiter。"
+      ],
+      "audio": "audio/sched/d1113_0_0.mp3"
+     },
+     {
+      "de": "Ein Wort hat eine, zwei oder drei Silben.",
+      "zh": "一個字有一個、兩個或三個音節。",
+      "gram": [
+       "eine Silbe（陰性第4格）；zwei、drei Silben 是複數。"
+      ],
+      "audio": "audio/sched/d1113_0_1.mp3"
+     },
+     {
+      "de": "Du klatschst die Silben: Ka-ter.",
+      "zh": "你拍手念出音節：Ka-ter（公貓）。",
+      "gram": [
+       "klatschen = 拍手；du klatschst。",
+       "die Silben：複數第4格。"
+      ],
+      "audio": "audio/sched/d1113_0_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Buchstabenlerntheke",
+      "zh": "字母學習檯",
+      "ipa": "ˈbuːxˌʃtaːbn̩ˈlɛʁnˌteːkə",
+      "composed": true,
+      "note": "",
+      "audio": "audio/sched/w_die_buchstabenlerntheke.mp3"
+     },
+     {
+      "de": "das Silbenboot",
+      "zh": "音節船",
+      "ipa": "ˈzɪlbn̩ˌboːt",
+      "composed": true,
+      "note": "Silbe = 音節，Boot = 船",
+      "audio": "audio/sched/w_das_silbenboot.mp3"
+     },
+     {
+      "de": "die Silbe",
+      "zh": "音節",
+      "ipa": "ˈzɪlbə",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_silbe.mp3"
+     },
+     {
+      "de": "das Boot",
+      "zh": "船",
+      "ipa": "boːt",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_das_boot.mp3"
+     },
+     {
+      "de": "klatschen",
+      "zh": "拍手",
+      "ipa": "ˈklatʃn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_klatschen.mp3"
+     }
+    ]
+   },
+   {
+    "color": "lightblue",
+    "title": "Martinslieder · Umzug",
+    "zh": "練習聖馬丁節的歌 · 11/14 遊行",
+    "original": "Wir üben die Martinslieder für den Umzug am 14.11.",
+    "originalZh": "我們練習聖馬丁節的歌，為了 11 月 14 日的遊行。",
+    "originalGram": [
+     "die Martinslieder 是第4格複數（das Lied → die Lieder）。Martin 指聖馬丁節（St. Martin），德國孩子會提燈籠遊行唱歌。",
+     "für den Umzug：für + 第4格，der Umzug（陽性）→ den Umzug。",
+     "am 14.11. = am vierzehnten November（日期用 am + 序數）。"
+    ],
+    "originalAudio": "audio/sched/d1113_1_orig.mp3",
+    "titleAudio": "audio/sched/d1113_1_title.mp3",
+    "lines": [
+     {
+      "de": "Wir singen Martinslieder.",
+      "zh": "我們唱聖馬丁節的歌。",
+      "gram": [
+       "singen = wir 的現在式。Martinslieder = Martin + Lieder，是複數。"
+      ],
+      "audio": "audio/sched/d1113_1_0.mp3"
+     },
+     {
+      "de": "Am vierzehnten November gibt es den Umzug.",
+      "zh": "11 月 14 日有遊行。",
+      "gram": [
+       "am vierzehnten November：日期用 am，序數字尾 -ten（14. = vierzehnten）。",
+       "Am … 放在句首，動詞排第二：gibt es。es gibt + 第4格（den Umzug）。"
+      ],
+      "audio": "audio/sched/d1113_1_1.mp3"
+     },
+     {
+      "de": "Dafür üben wir die Lieder jetzt schon.",
+      "zh": "所以我們現在就先練習這些歌。",
+      "gram": [
+       "Dafür 放在句首，動詞排第二：üben wir。dafür = 為了這個。",
+       "jetzt schon = 現在就。"
+      ],
+      "audio": "audio/sched/d1113_1_2.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "das Lied",
+      "zh": "歌",
+      "ipa": "liːt",
+      "composed": false,
+      "note": "複數 die Lieder",
+      "audio": "audio/sched/w_das_lied.mp3"
+     },
+     {
+      "de": "das Martinslied",
+      "zh": "聖馬丁節的歌",
+      "ipa": "ˈmaʁtiːnsˌliːt",
+      "composed": true,
+      "note": "",
+      "audio": "audio/sched/w_das_martinslied.mp3"
+     },
+     {
+      "de": "der Umzug",
+      "zh": "遊行",
+      "ipa": "ˈʊmˌtsuːk",
+      "composed": false,
+      "note": "也有「搬家」的意思",
+      "audio": "audio/sched/w_der_umzug.mp3"
+     },
+     {
+      "de": "singen",
+      "zh": "唱歌",
+      "ipa": "ˈzɪŋən",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_singen.mp3"
+     },
+     {
+      "de": "der November",
+      "zh": "十一月",
+      "ipa": "noˈvɛmbɐ",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_november.mp3"
+     },
+     {
+      "de": "üben",
+      "zh": "練習",
+      "ipa": "ˈyːbn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_ueben.mp3"
+     }
+    ]
+   },
+   {
+    "color": "orange",
+    "title": "Religion",
+    "zh": "宗教課（Schneider 老師）",
+    "original": "Religion mit Frau Schneider",
+    "originalZh": "宗教課，老師是 Schneider 女士。",
+    "originalGram": [
+     "Religion = 宗教課（科目名稱，不加冠詞）。",
+     "mit Frau Schneider：mit + 第3格；名字前面的 Frau 不變。",
+     "沒有動詞，是課表的簡短寫法。"
+    ],
+    "originalAudio": "audio/sched/d1113_2_orig.mp3",
+    "titleAudio": "audio/sched/d1113_2_title.mp3",
+    "lines": [
+     {
+      "de": "Wir haben Religion.",
+      "zh": "我們有宗教課。",
+      "gram": [
+       "haben = wir 的現在式。科目名稱前面不加冠詞。"
+      ],
+      "audio": "audio/sched/d1113_2_0.mp3"
+     },
+     {
+      "de": "Die Lehrerin heißt Frau Schneider.",
+      "zh": "老師叫做 Schneider 女士。",
+      "gram": [
+       "die Lehrerin = 女老師。heißen = 叫做。"
+      ],
+      "audio": "audio/sched/d1113_2_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Religion",
+      "zh": "宗教課",
+      "ipa": "ʁeliˈɡi̯oːn",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_religion.mp3"
+     },
+     {
+      "de": "die Lehrerin",
+      "zh": "女老師",
+      "ipa": "ˈleːʁəʁɪn",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_lehrerin.mp3"
+     }
+    ]
+   },
+   {
+    "color": "white",
+    "title": "Hausaufgaben",
+    "zh": "回家作業",
+    "original": "Hausaufgaben:",
+    "originalZh": "回家作業：（欄位目前是空的）",
+    "originalGram": [
+     "只有「Hausaufgaben」，是欄位標題：後面本來要填內容。",
+     "Hausaufgabe（單數）→ Hausaufgaben（複數，字尾加 -n）。"
+    ],
+    "originalAudio": "audio/sched/d1113_3_orig.mp3",
+    "titleAudio": "audio/sched/d1113_3_title.mp3",
+    "lines": [
+     {
+      "de": "Bei den Hausaufgaben steht noch nichts im Plan.",
+      "zh": "行程表上回家作業那一欄還沒有寫。",
+      "gram": [
+       "Bei den Hausaufgaben：bei + 第3格；複數的冠詞 die 變成 den。意思是「關於回家作業」。",
+       "Bei … 放在句首，動詞排第二：steht。stehen 在這裡是「寫著」。",
+       "noch nichts = 還沒有任何東西。im = in dem（在…裡面）：im Plan = 在行程表上。"
+      ],
+      "audio": "audio/sched/d1113_3_0.mp3"
+     },
+     {
+      "de": "Schau am Abend noch einmal nach.",
+      "zh": "晚上再看一次。",
+      "gram": [
+       "命令句（對 du）：schauen → schau。nachschauen 是可分動詞：nach 移到句尾。",
+       "am Abend = an dem Abend（在晚上，說時間用 am）。",
+       "noch einmal = 再一次。"
+      ],
+      "audio": "audio/sched/d1113_3_1.mp3"
+     }
+    ],
+    "words": [
+     {
+      "de": "die Hausaufgaben",
+      "zh": "回家作業（複數）",
+      "ipa": "ˈhaʊ̯sʔaʊ̯fˌɡaːbn̩",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_die_hausaufgaben.mp3"
+     },
+     {
+      "de": "der Plan",
+      "zh": "計畫、行程表",
+      "ipa": "plaːn",
+      "composed": false,
+      "note": "",
+      "audio": "audio/sched/w_der_plan.mp3"
+     }
+    ]
+   }
+  ]
  }
 ];

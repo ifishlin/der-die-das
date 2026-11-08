@@ -13,7 +13,7 @@ def lookup(page):
     for t in range(3):
         time.sleep(1.2)
         try:
-            w = json.loads(subprocess.run(['curl', '-s', '-A', 'der-die-das/1.0 (ifishlin324@gmail.com)', u], capture_output=True).stdout)['parse']['wikitext']['*']
+            w = json.loads(subprocess.run(['curl', '-s', '-A', 'der-die-das/1.0', u], capture_output=True).stdout)['parse']['wikitext']['*']
             m = re.search(r'\{\{Lautschrift\|([^}|]+)', w[w.index('{{Aussprache}}'):])
             if m: r = m.group(1).replace('͡', ''); break
         except Exception: pass
