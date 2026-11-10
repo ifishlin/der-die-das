@@ -138,6 +138,7 @@ details.pr[open] summary{border-bottom:1px solid var(--line)}
   </table></div>
 
   <h2>視點（2026-11-10 加，還沒測）</h2>
+  <p class="sub">已併入下面的「統一用語」：客觀、主觀歸「視點」；過肩歸「取景關係」；插入歸「鏡頭功能」。</p>
   <p>觀眾是用誰的眼睛在看這個畫面。跟景別（拍多大）、角度（相機高低）分開記。官方景別指南沒有這一項，是問 Codex 分鏡時為了用詞一致加的（<code>docs/codex_shot_plan_prompt.md</code>）。</p>
   <div class="tbl"><table>
     <tr><th>視點</th><th>定義</th><th>例子（EP1 段落 0）</th><th>判定</th></tr>
@@ -160,6 +161,62 @@ details.pr[open] summary{border-bottom:1px solid var(--line)}
     <tr><td>不要用</td><td>03（等於 01、02）、08（等於 07）、10、Slight low、Low</td><td>寫了等於沒寫</td></tr>
   </table></div>
   <p class="sub">只代表 S00-3 這一幕（TEEN 在後面追、森林小路背景）；換一幕不一定一樣。</p>
+
+  <h2 id="terms">統一用語（2026-11-10）</h2>
+  <p>目的：我們和合作的人（包括 AI）講到一個鏡頭時，用詞和意思完全一樣。用業界通用名稱，不針對任何畫風。整理自 Codex 兩次檢查；原始檔 <code>docs/shot_terms.md</code>。上面的測試用的是舊的十級景別，對照表在最後。</p>
+  <h3>共同規則</h3>
+  <ul>
+    <li><b>左右</b>一律指觀眾看到的畫面左右；角色自己的左右寫「角色的左手」。</li>
+    <li><b>以誰為準</b>：景別、方位、高度都要先講是對哪個主體；兩個主體可以各寫一個（例：人 FS／恐龍 只有腳）。</li>
+    <li><b>會變的欄位</b>寫「起始 → 結束」；<b>不適用</b>填 N/A，不留空。</li>
+  </ul>
+  <h3>每格必填（8 欄）</h3>
+  <div class="tbl"><table>
+    <tr><th>欄位</th><th>英文</th><th>可選的值</th></tr>
+    <tr><td>主體</td><td>Subject / Framing Reference</td><td>以誰判定景別和構圖；主要一個，次要可列</td></tr>
+    <tr><td>景別</td><td>Shot Size</td><td>EWS 極遠景（主體很小，環境是重點）／WS 遠景（全身清楚＋大量環境）／FS 全景（頭到腳剛好完整）／MLS 膝上景／MS 中景（腰）／MCU 中近景（胸）／CU 特寫（臉或物件重點）／ECU 極特寫（更小的局部）。<b>看裁到哪裡，不看百分比</b>；主體不是人時寫可見範圍（全身、頭頸、軀幹、腿腳、尾巴、局部）</td></tr>
+    <tr><td>水平方位</td><td>Camera Azimuth</td><td>正面／前側 3/4／側面（左或右）／後側 3/4／背面</td></tr>
+    <tr><td>相機高度</td><td>Camera Height</td><td>地面／膝／腰／胸／眼／高於頭頂／高空</td></tr>
+    <tr><td>垂直角度</td><td>Vertical Angle</td><td>水平／微仰／仰視／微俯／俯視／垂直俯拍。高度和角度分開寫，「眼高＋水平」才簡稱平視</td></tr>
+    <tr><td>構圖位置</td><td>Composition</td><td>主體在左中右、上下；前中後景各有什麼；誰擋住誰；視線方向留白</td></tr>
+    <tr><td>畫面方向</td><td>Screen Direction</td><td>往左／往右／朝鏡頭／遠離鏡頭／看畫外；前後格要一致</td></tr>
+    <tr><td>動作與關鍵瞬間</td><td>Action / Key Pose</td><td>哪一刻、什麼姿勢、看哪裡</td></tr>
+  </table></div>
+  <h3>有需要才寫</h3>
+  <div class="tbl"><table>
+    <tr><th>欄位</th><th>英文</th><th>可選的值</th></tr>
+    <tr><td>視點</td><td>Point of View</td><td>客觀／某角色的主觀 POV（可以看到自己的手腳）</td></tr>
+    <tr><td>取景關係</td><td>Shot Framing</td><td>單人／雙人／群像；乾淨 Clean／帶前景 Dirty／過肩 OTS（寫從誰的哪邊肩膀看向誰）</td></tr>
+    <tr><td>鏡頭功能</td><td>Shot Function</td><td>建立／插入（場景裡的相關細節）／切出／反應，可複選</td></tr>
+    <tr><td>畫面傾斜</td><td>Dutch Angle</td><td>水平／順時針／逆時針</td></tr>
+    <tr><td>視角與透視</td><td>Angle of View</td><td>廣角／標準／長焦＋相機到主體距離</td></tr>
+    <tr><td>焦點與景深</td><td>Focus / DOF</td><td>清楚的是誰；淺／深景深</td></tr>
+    <tr><td>主體佔畫面</td><td>Frame Occupancy</td><td>約佔畫高幾成（參考值）</td></tr>
+    <tr><td>相機運動</td><td>Camera Movement</td><td>固定／搖攝 Pan、Tilt（原地轉）／移動 Dolly、Truck（整台移）／升降／環繞／跟拍；變焦另寫</td></tr>
+    <tr><td>剪輯取景</td><td>Edit Reframing</td><td>數位推近、拉遠、移框；起點、終點、秒數</td></tr>
+    <tr><td>時長、時間效果</td><td>Duration / Temporal</td><td>秒數；停留 Hold／慢動作／快動作／倒放</td></tr>
+    <tr><td>光線</td><td>Lighting</td><td>順光／側光／逆光／頂光；柔／硬；色調</td></tr>
+    <tr><td>轉場</td><td>Transition</td><td>硬切／疊化／淡入淡出／動作接剪／正反打</td></tr>
+    <tr><td>聲音</td><td>Sound</td><td>畫內／畫外；對白／環境／音效／配樂／無聲</td></tr>
+    <tr><td>畫幅</td><td>Aspect Ratio</td><td>預設 16:9，不同時才寫</td></tr>
+  </table></div>
+  <h3>跟舊用語（上面測試用的）對照</h3>
+  <div class="tbl"><table>
+    <tr><th>舊</th><th>新</th></tr>
+    <tr><td>01 Extreme Wide</td><td>EWS 極遠景</td></tr>
+    <tr><td>02 Very Wide</td><td>EWS 或 WS（看主體多小）</td></tr>
+    <tr><td>03 Open Wide</td><td>拿掉（不是業界通用級別）；寫 WS＋構圖描述</td></tr>
+    <tr><td>04 Wide</td><td>WS 遠景</td></tr>
+    <tr><td>05 Medium Wide</td><td>FS 全景</td></tr>
+    <tr><td>06 Medium Full</td><td>MLS 膝上景</td></tr>
+    <tr><td>07 Medium</td><td>MS 中景</td></tr>
+    <tr><td>08 Medium Close-up</td><td>MCU 中近景</td></tr>
+    <tr><td>09 Close-up</td><td>CU 特寫</td></tr>
+    <tr><td>10 Extreme Close-up</td><td>ECU 極特寫</td></tr>
+    <tr><td>Eye-level</td><td>高度「眼」＋角度「水平」</td></tr>
+    <tr><td>Slight Low／Low</td><td>角度「微仰」／「仰視」（高度另寫）</td></tr>
+    <tr><td>High</td><td>角度「俯視」或「垂直俯拍」</td></tr>
+  </table></div>
 </section>
 
 <div id="lb" hidden><img alt=""><div class="cap"></div><div class="bt"><button id="bp">顯示 prompt</button><button id="bx">關閉</button></div><div class="pp" hidden></div></div>
