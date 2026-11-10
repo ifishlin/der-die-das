@@ -16,8 +16,8 @@ code{background:var(--sec);padding:0 4px;border-radius:3px;font-size:.9em}
 <p>來源：Codex 兩次檢查（<code>codex_terms_review.md</code>、<code>codex_terms_review_v2.md</code>）＋原本的景別指南（<code>banana_nano_shot_types_and_camera_angles_guide.md</code>）。</p>
 <p>原則：用業界通用的名稱；通用，不針對任何畫風；生圖工具畫不畫得出來是另一回事，另外記在測試頁。</p>
 <h2>共同規則</h2>
-<ul><li><b>左右</b>：一律指<b>觀眾看到的畫面</b>左右。要講角色自己的左右，寫「角色的左手」。</li><li><b>以誰為準</b>：景別、方位、高度都要先講是對哪個主體。畫面裡有兩個主體時，可以各寫一個（例：「人：全景；恐龍：只有腳」）。</li><li><b>會變的欄位</b>：鏡頭裡有變化時寫「起始 → 結束」。</li><li><b>不適用</b>：填 N/A，不要留空（留空會被當成雙方已經有共識）。</li></ul>
-<h2>每格必填（8 欄）</h2>
+<ul><li><b>左右</b>：一律指<b>觀眾看到的畫面</b>左右。要講角色自己的左右，寫「角色的左手」。</li><li><b>以誰為準</b>：景別、方位、角度都要先講是對哪個主體。畫面裡有兩個主體時，可以各寫一個（例：「人：全景；恐龍：只有腳」）。</li><li><b>會變的欄位</b>：鏡頭裡有變化時寫「起始 → 結束」。</li><li><b>不適用</b>：填 N/A，不要留空（留空會被當成雙方已經有共識）。</li></ul>
+<h2>每格必填（7 欄）</h2>
 <h3>1. 主體（Subject / Framing Reference）</h3>
 <p>這一格以誰判定景別和構圖。主要主體一個，次要主體可以列。</p>
 <h3>2. 景別（Shot Size）——看「裁到哪裡」，不看百分比</h3>
@@ -25,20 +25,19 @@ code{background:var(--sec);padding:0 4px;border-radius:3px;font-size:.9em}
 <ul><li>主體佔畫面多少（百分比）<b>另外寫</b>，只當參考，不拿來定景別。</li><li>主體不是人時（恐龍、物件），直接寫可見範圍：全身、頭頸、軀幹、腿腳、尾巴、局部。</li></ul>
 <h3>3. 水平方位（Camera Azimuth）</h3>
 <p>相機從主體的哪一邊拍：<b>正面／前側 3/4／側面（左側或右側）／後側 3/4／背面</b>。</p>
-<h3>4. 相機高度（Camera Height）</h3>
-<p><b>地面／膝／腰／胸／眼／高於頭頂／高空</b>。需要時寫公尺。</p>
-<h3>5. 垂直角度（Vertical Angle）</h3>
-<p>相機往上還是往下看：<b>水平／微仰／仰視／微俯／俯視／垂直俯拍（Top-down）</b>。</p>
-<p>高度和角度分開寫：腰的高度也可以水平拍；只有「眼高＋水平」才簡稱平視（Eye-level）。</p>
-<h3>6. 構圖位置（Composition）</h3>
+<h3>4. 角度（Camera Angle）</h3>
+<p>相機往上看、平著看、往下看，一欄寫完，不另外寫相機放多高。</p>
+<div class="wrap"><table><thead><tr><th>角度</th><th>英文</th><th>定義</th></tr></thead><tbody><tr><td>平視</td><td>Eye-level</td><td>相機跟主體眼睛差不多高，平著看。預設值</td></tr><tr><td>仰視</td><td>Low Angle</td><td>相機在低處往上看，主體顯得高大</td></tr><tr><td>俯視</td><td>High Angle</td><td>相機在高處往下看，看得到較多地面，主體顯得渺小</td></tr><tr><td>正上方俯拍</td><td>Top-down / Overhead</td><td>相機在主體正上方，垂直往下看</td></tr><tr><td>空拍</td><td>Aerial Shot</td><td>相機在高空（像無人機、直升機），往下斜看一大片地形，主體很小</td></tr></tbody></table></div>
+<ul><li>2026-11-10 改：原本拆成「相機高度」和「垂直角度」兩欄（Codex 建議），實測拆開後俯視反而變弱、高度那行沒作用，改回一欄。</li><li>微仰、微俯不另外列；需要時寫「微微」。</li><li>俯視和空拍的差別：俯視是從附近的高處（樹上、坡上）看；空拍是從天上看整片地形，通常搭配極遠景。</li></ul>
+<h3>5. 構圖位置（Composition）</h3>
 <p>主體在畫面的左／中／右、上／下；前景、中景、背景各有什麼；誰擋住誰；視線方向有沒有留空間。</p>
-<h3>7. 畫面方向（Screen Direction）</h3>
+<h3>6. 畫面方向（Screen Direction）</h3>
 <p>主體移動或看的方向（觀眾的左右）：<b>往左／往右／朝鏡頭／遠離鏡頭／看畫外（左、右、上、下）</b>。前後格要一致，除非故意換邊。</p>
-<h3>8. 動作與關鍵瞬間（Action / Key Pose）</h3>
+<h3>7. 動作與關鍵瞬間（Action / Key Pose）</h3>
 <p>這一格是哪一刻、什麼姿勢、看哪裡。靜態畫面只能選一個瞬間。</p>
 <h2>有需要才寫</h2>
 <div class="wrap"><table><thead><tr><th>欄位</th><th>英文</th><th>可選的值</th></tr></thead><tbody><tr><td>視點</td><td>Point of View</td><td>客觀（Objective）／某角色的主觀（POV，可以看到自己的手腳）</td></tr><tr><td>取景關係</td><td>Shot Framing</td><td>單人／雙人／群像；乾淨（Clean）／帶前景（Dirty）／過肩（OTS，要寫從誰的哪一邊肩膀看向誰）</td></tr><tr><td>鏡頭功能</td><td>Shot Function</td><td>建立（Establishing）／插入（Insert，場景裡的相關細節）／切出（Cutaway）／反應（Reaction），可複選</td></tr><tr><td>畫面傾斜</td><td>Camera Roll / Dutch Angle</td><td>水平／順時針傾斜／逆時針傾斜</td></tr><tr><td>視角與透視</td><td>Angle of View / Perspective</td><td>廣角／標準／長焦，加上相機到主體的距離</td></tr><tr><td>焦點與景深</td><td>Focus / Depth of Field</td><td>清楚的是誰；淺景深／深景深</td></tr><tr><td>主體佔畫面</td><td>Subject Frame Occupancy</td><td>主體高度約佔畫高幾成（參考值）</td></tr><tr><td>相機運動</td><td>Camera Movement</td><td>固定／搖攝（Pan、Tilt：相機原地轉）／移動（Dolly、Truck：相機整台移）／升降／環繞／跟拍；變焦（Zoom）另寫</td></tr><tr><td>剪輯取景</td><td>Edit Reframing</td><td>對成品畫面做的數位推近、拉遠、移框；寫起點、終點、秒數</td></tr><tr><td>時長</td><td>Duration</td><td>秒數</td></tr><tr><td>時間效果</td><td>Temporal Effects</td><td>停留（Hold，寫秒數）／慢動作／快動作／倒放</td></tr><tr><td>光線</td><td>Lighting</td><td>順光／側光／逆光／頂光；柔／硬；色調</td></tr><tr><td>轉場</td><td>Transition</td><td>硬切／疊化／淡入淡出／動作接剪／正反打</td></tr><tr><td>聲音</td><td>Sound</td><td>畫內／畫外；對白／環境／音效／配樂／無聲</td></tr><tr><td>畫幅</td><td>Aspect Ratio</td><td>本專案預設 16:9，不同時才寫</td></tr></tbody></table></div>
 <h2>跟舊用語的對照</h2>
 <p>舊的景別是十級、用百分比定義（<code>banana_nano_shot_types_and_camera_angles_guide.md</code>，S00-3 測試就是用這套）。</p>
-<div class="wrap"><table><thead><tr><th>舊</th><th>新</th></tr></thead><tbody><tr><td>01 Extreme Wide Shot</td><td>EWS 極遠景</td></tr><tr><td>02 Very Wide Shot</td><td>EWS 或 WS（看主體多小）</td></tr><tr><td>03 Open Wide Shot</td><td>拿掉，不是業界通用的級別；寫 WS ＋構圖描述（天空多、環境層次多）</td></tr><tr><td>04 Wide Shot</td><td>WS 遠景</td></tr><tr><td>05 Medium Wide Shot</td><td>FS 全景</td></tr><tr><td>06 Medium Full Shot</td><td>MLS 膝上景</td></tr><tr><td>07 Medium Shot</td><td>MS 中景</td></tr><tr><td>08 Medium Close-up</td><td>MCU 中近景</td></tr><tr><td>09 Close-up</td><td>CU 特寫</td></tr><tr><td>10 Extreme Close-up</td><td>ECU 極特寫</td></tr><tr><td>Eye-level</td><td>相機高度「眼」＋垂直角度「水平」</td></tr><tr><td>Slight Low Angle</td><td>垂直角度「微仰」（高度另寫）</td></tr><tr><td>Low Angle</td><td>垂直角度「仰視」（貼地另寫高度「地面」）</td></tr><tr><td>High Angle</td><td>垂直角度「俯視」或「垂直俯拍」</td></tr><tr><td>視點：客觀／主觀</td><td>視點</td></tr><tr><td>視點：過肩</td><td>取景關係</td></tr><tr><td>視點：插入</td><td>鏡頭功能</td></tr></tbody></table></div>
+<div class="wrap"><table><thead><tr><th>舊</th><th>新</th></tr></thead><tbody><tr><td>01 Extreme Wide Shot</td><td>EWS 極遠景</td></tr><tr><td>02 Very Wide Shot</td><td>EWS 或 WS（看主體多小）</td></tr><tr><td>03 Open Wide Shot</td><td>拿掉，不是業界通用的級別；寫 WS ＋構圖描述（天空多、環境層次多）</td></tr><tr><td>04 Wide Shot</td><td>WS 遠景</td></tr><tr><td>05 Medium Wide Shot</td><td>FS 全景</td></tr><tr><td>06 Medium Full Shot</td><td>MLS 膝上景</td></tr><tr><td>07 Medium Shot</td><td>MS 中景</td></tr><tr><td>08 Medium Close-up</td><td>MCU 中近景</td></tr><tr><td>09 Close-up</td><td>CU 特寫</td></tr><tr><td>10 Extreme Close-up</td><td>ECU 極特寫</td></tr><tr><td>Eye-level</td><td>平視</td></tr><tr><td>Slight Low Angle</td><td>拿掉；需要時寫「微微仰視」</td></tr><tr><td>Low Angle</td><td>仰視</td></tr><tr><td>High Angle</td><td>俯視（正上方往下看另寫「正上方俯拍」）</td></tr><tr><td>視點：客觀／主觀</td><td>視點</td></tr><tr><td>視點：過肩</td><td>取景關係</td></tr><tr><td>視點：插入</td><td>鏡頭功能</td></tr></tbody></table></div>
 </main></body></html>
