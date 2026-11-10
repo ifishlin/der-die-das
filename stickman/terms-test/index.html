@@ -1,0 +1,185 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>新鏡頭用語測試</title>
+<style>
+:root{--bg:#f6f3ec;--card:#fff;--ink:#2b2620;--mute:#7a7064;--line:#e2dccf;--acc:#1f6b52;--sec:#efe9dc}
+@media (prefers-color-scheme:dark){:root{--bg:#171512;--card:#211e1a;--ink:#ece6dc;--mute:#a59a8c;--line:#3a352e;--acc:#6cc7a3;--sec:#2b2722;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 -apple-system,"PingFang TC",sans-serif}
+main{max-width:1100px;margin:auto;padding:20px max(16px,3vw) 80px}
+a{color:var(--acc)}h1{font-size:25px}h2{font-size:20px;margin-top:34px;padding-top:10px;border-top:2px solid var(--line)}h3{font-size:17px;margin:26px 0 6px;color:var(--acc)}
+.wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;background:var(--card);font-size:14px;margin:8px 0}
+th,td{border:1px solid var(--line);padding:6px 9px;vertical-align:top;text-align:left}th{background:var(--sec)}
+code{background:var(--sec);padding:0 4px;border-radius:3px;font-size:.9em}
+details.pz{margin:2px 0 14px}details.pz summary{cursor:pointer;color:var(--acc);font-size:13px}
+pre{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 12px;white-space:pre-wrap;font-size:13px;line-height:1.6}
+</style></head><body><main>
+<a href="../" style="font-size:14px">← Stickman 實驗頁</a>
+<h1>新鏡頭用語測試規劃</h1><p>2026-11-10。測 <code>docs/shot_terms.md</code> 的新用語，Nano Banana（Google Flow）認不認得。</p><ul><li><b>測試的鏡頭</b>：EP1 S00-3（黃昏森林小路，青少年暴龍追主角），跟 2026-11-07 的舊景別測試同一幕，新舊才能比。</li><li><b>原則</b>：一次只改一個條件；其他句子盡量跟舊測試一字不差。只有方向會打架的組（側面、背面、主觀、過肩）才換掉動作句，原因寫在該組。</li><li><b>每個 prompt 出 4 張</b>（跟舊測試一樣）。</li><li><b>順序</b>照攝影原理的重要性：拍多大 → 相機高低與方向 → 左右與方向 → 從哪一邊拍 → 用誰的眼睛看。</li><li><b>第一階段</b>：五組都單獨測（不組合），共 21 個 prompt、84 張。<b>第二階段</b>：看完結果再做組合，先列 3 個。</li></ul><h2>參考圖</h2><div class="wrap"><table><thead><tr><th>Flow 上的名稱</th><th>是什麼</th></tr></thead><tbody><tr><td>REF_HERO</td><td>HERO 角色設定圖（episodes/001_trex_run/refs_v7/REF_HERO.jpg）</td></tr><tr><td>REF_TEEN</td><td>青少年暴龍設定圖（refs_v7/REF_TEEN.jpg）</td></tr><tr><td>PAIR2_TEEN</td><td>HERO 和 TEEN 的身高比例圖（refs_v7/PAIR2_TEEN.jpg）</td></tr><tr><td>REF_PROPS</td><td>道具設定圖，用胸前相機（refs_v7/REF_PROPS.jpg）</td></tr></tbody></table></div><p>跟舊 S00-3 測試用的是同一批。每個 prompt 要附哪幾張，寫在各自的表格裡。</p><h2>總表</h2><div class="wrap"><table><thead><tr><th>順序</th><th>組</th><th>細項數</th><th>問的問題</th><th>固定條件</th></tr></thead><tbody><tr><td>1</td><td>A 拍多大（景別）</td><td>8</td><td>新的 8 級、用「裁到哪裡」描述，模型認不認得？跟舊十級（寫百分比）比，哪一種比較準？</td><td>方位正面、相機在眼睛高度水平拍；場景、動作、比例、結尾句跟舊測試一字不差</td></tr><tr><td>2</td><td>C 相機多高、往上還往下（高度＋垂直角度）</td><td>4</td><td>高度和角度分開寫，舊測試失敗的仰視會不會有效？</td><td>景別 FS、方位正面；基準組「眼高＋水平」就是 A-FS，不重複畫</td></tr><tr><td>3</td><td>D 誰在左右、往哪跑（畫面位置與方向）</td><td>2</td><td>「觀眾看到的左右」模型認不認得？左右對調後是不是真的會鏡像？</td><td>景別 FS、方位側面、眼高水平；場景和動作用不指定方向的句子</td></tr><tr><td>4</td><td>B 從哪一邊拍（水平方位）</td><td>5</td><td>五個方位畫不畫得出來？特別是 3/4 和背面。</td><td>景別 FS、眼高水平；場景和動作用不指定方向、不寫表情的句子（背面看不到臉）</td></tr><tr><td>5</td><td>E 用誰的眼睛看（視點、取景關係）</td><td>2</td><td>主觀、過肩畫不畫得出來？</td><td>各自寫完整，見每個 prompt</td></tr></tbody></table></div><h2>第一階段：單獨測</h2><h3>1. A 拍多大（景別）</h3><p><b>問題</b>：新的 8 級、用「裁到哪裡」描述，模型認不認得？跟舊十級（寫百分比）比，哪一種比較準？</p><p><b>固定條件</b>：方位正面、相機在眼睛高度水平拍；場景、動作、比例、結尾句跟舊測試一字不差</p><div class="wrap"><table><thead><tr><th>編號</th><th>細項</th><th>定義</th><th>附圖</th><th>備註</th></tr></thead><tbody><tr><td>A-EWS</td><td>EWS 極遠景</td><td>主體很小，環境是重點</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>A-WS</td><td>WS 遠景</td><td>全身清楚＋大量環境</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>A-FS</td><td>FS 全景</td><td>頭到腳剛好完整入鏡</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>A-MLS</td><td>MLS 膝上景</td><td>下緣在膝蓋</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>A-MS</td><td>MS 中景</td><td>下緣在腰</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>A-MCU</td><td>MCU 中近景</td><td>下緣在胸</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>A-CU</td><td>CU 特寫</td><td>臉佔大部分</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>A-ECU</td><td>ECU 極特寫</td><td>只有眼睛</td><td>REF_HERO</td><td>只拍眼睛時 TEEN、胸前相機、身高比例都不會入鏡，相關句子拿掉；只附 REF_HERO</td></tr></tbody></table></div><p><b>A-EWS　EWS 極遠景</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>A-WS　WS 遠景</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Wide Shot (WS). HERO&#x27;s whole body is clearly visible, with a lot of the surroundings around him.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>A-FS　FS 全景</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>A-MLS　MLS 膝上景</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>A-MS　MS 中景</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>A-MCU　MCU 中近景</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>A-CU　CU 特寫</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Close-up (CU). HERO&#x27;s face fills most of the picture.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>A-ECU　ECU 極特寫</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Extreme Close-up (ECU). Only HERO&#x27;s eyes and the glasses around them fill the picture.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet, eyes wide open in terror.
+HERO&#x27;s face is pure paper white. Only HERO is in the picture.</pre></details><h3>2. C 相機多高、往上還往下（高度＋垂直角度）</h3><p><b>問題</b>：高度和角度分開寫，舊測試失敗的仰視會不會有效？</p><p><b>固定條件</b>：景別 FS、方位正面；基準組「眼高＋水平」就是 A-FS，不重複畫</p><div class="wrap"><table><thead><tr><th>編號</th><th>細項</th><th>定義</th><th>附圖</th><th>備註</th></tr></thead><tbody><tr><td>C-ground_level</td><td>地面＋水平</td><td>相機貼地，但不往上拍</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>C-ground_up</td><td>地面＋仰視</td><td>相機貼地往上拍</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>C-waist_up</td><td>腰＋微仰</td><td>相機在腰的高度，微微往上</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>C-above_down</td><td>頭頂上＋俯視</td><td>相機在頭頂上往下拍</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr></tbody></table></div><p><b>C-ground_level　地面＋水平</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: on the ground. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>C-ground_up　地面＋仰視</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: on the ground. Vertical angle: looking up (low angle).
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>C-waist_up　腰＋微仰</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s waist height. Vertical angle: looking slightly up.
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>C-above_down　頭頂上＋俯視</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: above HERO&#x27;s head. Vertical angle: looking down (high angle).
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><h3>3. D 誰在左右、往哪跑（畫面位置與方向）</h3><p><b>問題</b>：「觀眾看到的左右」模型認不認得？左右對調後是不是真的會鏡像？</p><p><b>固定條件</b>：景別 FS、方位側面、眼高水平；場景和動作用不指定方向的句子</p><div class="wrap"><table><thead><tr><th>編號</th><th>細項</th><th>定義</th><th>附圖</th><th>備註</th></tr></thead><tbody><tr><td>D-L_to_L</td><td>主角在左、往左跑</td><td>暴龍在他右邊</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>側面才看得出左右；動作句改成不指定朝鏡頭的版本</td></tr><tr><td>D-R_to_R</td><td>主角在右、往右跑</td><td>暴龍在他左邊</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>側面才看得出左右；動作句改成不指定朝鏡頭的版本</td></tr></tbody></table></div><p><b>D-L_to_L　主角在左、往左跑</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, runs along the trail. TEEN, exactly like the attached TEEN sheet, chases right behind him.
+Screen position and direction (left and right as the viewer sees the picture): HERO is in the left third of the picture and runs toward the left edge; TEEN is behind him, to his right.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s skin is pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>D-R_to_R　主角在右、往右跑</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, runs along the trail. TEEN, exactly like the attached TEEN sheet, chases right behind him.
+Screen position and direction (left and right as the viewer sees the picture): HERO is in the right third of the picture and runs toward the right edge; TEEN is behind him, to his left.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s skin is pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><h3>4. B 從哪一邊拍（水平方位）</h3><p><b>問題</b>：五個方位畫不畫得出來？特別是 3/4 和背面。</p><p><b>固定條件</b>：景別 FS、眼高水平；場景和動作用不指定方向、不寫表情的句子（背面看不到臉）</p><div class="wrap"><table><thead><tr><th>編號</th><th>細項</th><th>定義</th><th>附圖</th><th>備註</th></tr></thead><tbody><tr><td>B-front</td><td>正面</td><td>相機在主角前方，面對他</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>B-front34</td><td>前側 3/4</td><td>前方偏一側，看得到臉和一側身體</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>B-side</td><td>側面</td><td>相機在小路旁，正側面</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>B-back34</td><td>後側 3/4</td><td>在暴龍後方偏一側</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr><tr><td>B-back</td><td>背面</td><td>在暴龍正後方，順著跑的方向看</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>—</td></tr></tbody></table></div><p><b>B-front　正面</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, runs along the trail. TEEN, exactly like the attached TEEN sheet, chases right behind him.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s skin is pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>B-front34　前側 3/4</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the trail, so we see his face and one side of his body.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, runs along the trail. TEEN, exactly like the attached TEEN sheet, chases right behind him.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s skin is pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>B-side　側面</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, runs along the trail. TEEN, exactly like the attached TEEN sheet, chases right behind him.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s skin is pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>B-back34　後側 3/4</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: rear three-quarter view. The camera is behind TEEN and off to one side of the trail; TEEN is nearer the camera and HERO runs ahead of him, both seen from behind and one side.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, runs along the trail. TEEN, exactly like the attached TEEN sheet, chases right behind him.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s skin is pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>B-back　背面</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: back view. The camera is on the trail behind TEEN, looking the way they run; TEEN&#x27;s back is nearer the camera and HERO&#x27;s back is farther ahead. TEEN runs on one side of the trail, so he does not hide HERO.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level, the camera looks straight ahead.
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, runs along the trail. TEEN, exactly like the attached TEEN sheet, chases right behind him.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s skin is pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><h3>5. E 用誰的眼睛看（視點、取景關係）</h3><p><b>問題</b>：主觀、過肩畫不畫得出來？</p><p><b>固定條件</b>：各自寫完整，見每個 prompt</p><div class="wrap"><table><thead><tr><th>編號</th><th>細項</th><th>定義</th><th>附圖</th><th>備註</th></tr></thead><tbody><tr><td>E-pov</td><td>主觀（主角回頭看）</td><td>畫面就是主角回頭看到的東西，主角本人不在畫面裡</td><td>REF_TEEN</td><td>主角不入鏡：拿掉主角外型、相機、比例的句子；只附 REF_TEEN</td></tr><tr><td>E-ots</td><td>過肩（從暴龍肩後看主角）</td><td>相機在暴龍頭後面，前景是暴龍的後腦，看出去是逃跑的主角</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td><td>從暴龍的肩後拍，才跟「暴龍在後面追」一致；從主角肩後拍暴龍需要主角轉身，跟這一幕的動作衝突</td></tr></tbody></table></div><p><b>E-pov　主觀（主角回頭看）</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Point of view: the picture is exactly what HERO sees as he looks back over his shoulder while running. HERO himself is not in the picture.
+Shot size: TEEN&#x27;s head and upper body fill most of the picture.
+Camera height: at HERO&#x27;s eye height. Vertical angle: level.
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: TEEN, exactly like the attached TEEN sheet, charges straight at the camera, jaws wide open.
+Only TEEN is in the picture.</pre></details><p><b>E-ots　過肩（從暴龍肩後看主角）</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Framing: over-the-shoulder shot from behind TEEN. The camera is just behind TEEN&#x27;s head; the back of TEEN&#x27;s head and neck fill the left foreground, and HERO runs away ahead of him in the middle of the picture.
+Shot size: HERO&#x27;s whole body, from head to feet, is visible.
+Camera height: at TEEN&#x27;s eye height. Vertical angle: level.
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, runs away along the trail. TEEN, exactly like the attached TEEN sheet, chases right behind him.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s skin is pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><h2>第二階段：組合（單獨測完再決定）</h2><div class="wrap"><table><thead><tr><th>編號</th><th>組合</th><th>為什麼</th><th>附圖</th></tr></thead><tbody><tr><td>X-CU-ground_up</td><td>特寫＋地面仰視</td><td>暴龍壓迫感的典型鏡頭</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td></tr><tr><td>X-EWS-above_down</td><td>極遠景＋頭頂上俯視</td><td>舊測試發現俯視會把人縮小，用新寫法確認</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td></tr><tr><td>X-side-ground_up</td><td>側面＋地面仰視</td><td>側面拍時仰視能不能讓暴龍顯得更大</td><td>REF_HERO, REF_TEEN, PAIR2_TEEN, REF_PROPS</td></tr></tbody></table></div><p><b>X-CU-ground_up　特寫＋地面仰視</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Close-up (CU). HERO&#x27;s face fills most of the picture.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: on the ground. Vertical angle: looking up (low angle).
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>X-EWS-above_down　極遠景＋頭頂上俯視</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject.
+Camera direction: front view. The camera is on the trail ahead of HERO, facing him.
+Camera height: above HERO&#x27;s head. Vertical angle: looking down (high angle).
+Scene: a dirt trail in a Late Cretaceous forest, the sunset at the far end of the trail.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, leaps and runs toward the camera, mouth open in a scream. TEEN, exactly like the attached TEEN sheet, lunges right behind him, jaws wide open.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><p><b>X-side-ground_up　側面＋地面仰視</b></p><details class="pz"><summary>Prompt（點開）</summary><pre>16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side.
+Camera height: on the ground. Vertical angle: looking up (low angle).
+Scene: a dirt trail in a Late Cretaceous forest at sunset.
+Action: HERO, exactly like the attached HERO sheet but without his helmet, runs along the trail. TEEN, exactly like the attached TEEN sheet, chases right behind him.
+Size: their body proportions match the attached PAIR2_TEEN scale chart.
+HERO&#x27;s skin is pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO&#x27;s chest. Only HERO and TEEN are in the picture, each appears once.</pre></details><h2>邏輯檢查</h2><p>產生器（<code>scripts/make_terms_test.py</code>）對每個 prompt 自動檢查：朝鏡頭跑不能配側面／背面、只有 TEEN 時不能寫 HERO 外型、只能有一個景別、不能寫百分比。全部通過才會輸出。</p><p>另外人工確認過的：</p><ul><li>背面、後側 3/4 看不到臉，所以 B 組動作句不寫尖叫、張嘴；結尾句把「臉和手是純白」改成「皮膚是純白」（B、D、過肩都用這一句，同一組內一致）。</li><li>背面時暴龍比主角高、又在相機和主角之間，會把主角整個擋住；所以背面加一句「暴龍跑在小路一側，不擋住主角」。</li><li>A 組跟舊測試比，除了景別那一行，舊的「Camera angle」一行也拆成方位、高度＋角度兩行（新用語本來就是這樣寫）。</li><li>只拍眼睛（A-ECU）時 TEEN、胸前相機、比例圖都不會入鏡，所以拿掉那幾句，只附 REF_HERO。</li><li>主觀（E-pov）主角不入鏡，所以不寫主角外型、相機、比例。</li><li>過肩選「從暴龍肩後看主角」，因為從主角肩後看暴龍需要主角轉身，跟這一幕主角在逃跑衝突。</li><li>C 組的基準「眼高＋水平」跟 A-FS 是同一個 prompt，不重複畫。</li></ul>
+</main></body></html>
