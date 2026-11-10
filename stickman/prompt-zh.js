@@ -17,7 +17,7 @@
   function render(d) {
     var pre = d.querySelector('pre.pen'); if (!pre || d.dataset.done) return;
     var t = pre.textContent.replace(/\s+/g, ' ').trim();
-    var h = '<div class="pzb"><p class="note">每句英文下面的中文是事後翻譯的（Claude 翻的，沒有逐句校對，可能有用詞不準）；送進 Flow 的只有英文，英文是原文。</p>';
+    var h = '<div class="pzb"><p class="note">每句英文下面的中文是事後翻譯的（AI 翻的，沒有逐句校對，可能有用詞不準）；送進 Flow 的只有英文，英文是原文。</p>';
     t.split(SPLIT).forEach(function (s) {
       if (!s) return;
       h += '<p><span class="en">' + esc(s) + '</span><span class="zh">' + esc(ZH[s] || '') + '</span></p>';

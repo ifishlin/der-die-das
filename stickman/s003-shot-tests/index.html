@@ -165,12 +165,12 @@ function bil(p){return p?p.split('\n').map(l=>pair(l)).join(''):''}
 function tmpl(key,slots){return '<div class="bil">'+P[key].split('\n').map((l,i)=>slots[i]?`<p class="var"><span class="slot">${slots[i]}</span></p>`:pair(l)).join('')+'</div>'}
 const shotLines=pre=>SHOT.map(s=>pair(P[pre+s[0]].split('\n')[1],'var')).join('');
 document.querySelector('#pr-grid .prb').innerHTML=
-  '<p class="sub">每個組合只換第 2、3 行，其他句子 40 組都一樣。中文是事後翻譯的（Claude 翻的，沒有逐句校對，可能有用詞不準）；送進 Flow 的只有英文，英文是原文。</p>'+
+  '<p class="sub">每個組合只換第 2、3 行，其他句子 40 組都一樣。中文是事後翻譯的（AI 翻的，沒有逐句校對，可能有用詞不準）；送進 Flow 的只有英文，英文是原文。</p>'+
   tmpl('A1_Eye-level__01_Extreme_Wide_Shot',{1:'〔景別那一行，見下面 10 種〕',2:'〔角度那一行，見下面 4 種〕'})+
   '<h3>景別那一行（10 種）</h3><div class="bil">'+shotLines('A1_Eye-level__')+'</div>'+
   '<h3>角度那一行（4 種）</h3><div class="bil">'+ANG.map(a=>pair(P[a[0]+'__01_Extreme_Wide_Shot'].split('\n')[2],'var')).join('')+'</div>';
 document.querySelector('#pr-lvl .prb').innerHTML=
-  '<p class="sub">第一輪只換第 2 行；沒有角度那一行，動作句多了「arms and legs flung out」。中文是事後翻譯的（Claude 翻的，沒有逐句校對，可能有用詞不準）；送進 Flow 的只有英文，英文是原文。</p>'+
+  '<p class="sub">第一輪只換第 2 行；沒有角度那一行，動作句多了「arms and legs flung out」。中文是事後翻譯的（AI 翻的，沒有逐句校對，可能有用詞不準）；送進 Flow 的只有英文，英文是原文。</p>'+
   tmpl('L_01_Extreme_Wide_Shot',{1:'〔景別那一行，見下面 10 種〕'})+
   '<h3>景別那一行（10 種）</h3><div class="bil">'+shotLines('L_')+'</div>';
 const lb=document.getElementById('lb'),big=lb.querySelector('img'),cap=lb.querySelector('.cap'),pre=lb.querySelector('.pp'),bp=document.getElementById('bp');
