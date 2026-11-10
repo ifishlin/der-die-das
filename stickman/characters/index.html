@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>人物與場景設定</title>
+<style>
+:root{--bg:#eef0ee;--panel:#fff;--fg:#1d2420;--mut:#66706a;--line:#d5dad6;--acc:#1f6b52;--warn:#a0442c;--note:#fff4d2}
+@media (prefers-color-scheme:dark){:root{--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;--warn:#e08a70;--note:#3a3320;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif;padding:24px max(16px,4vw) 64px}
+main{max-width:1080px;margin:0 auto}
+a{color:var(--acc)}
+h1{font-size:26px;margin:4px 0}
+h2{font-size:20px;margin:40px 0 12px;padding-top:12px;border-top:2px solid var(--line);text-wrap:balance}
+h3{font-size:16px;margin:18px 0 6px}
+.sub{color:var(--mut);margin:0 0 8px;max-width:75ch}
+nav{position:sticky;top:0;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line);z-index:5;display:flex;flex-wrap:wrap;gap:6px 16px}
+nav a{font-weight:600;text-decoration:none}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:start}
+.grid>*{min-width:0}
+figure{margin:0}
+figure img{width:100%;border-radius:8px;border:1px solid var(--line);display:block;background:var(--line)}
+figcaption{font-size:13px;color:var(--mut);margin-top:6px}
+dl{display:grid;grid-template-columns:7.5em 1fr;gap:6px 12px;margin:0}
+dt{font-weight:700;color:var(--acc)}
+dd{margin:0}
+ul{margin:4px 0;padding-left:1.3em}
+.tag{display:inline-block;font-size:12px;padding:0 6px;border-radius:4px;background:var(--line);color:var(--mut);margin-left:6px;vertical-align:middle}
+.new{background:var(--acc);color:var(--panel)}
+.note{background:var(--note);border-left:4px solid var(--warn);padding:8px 12px;border-radius:4px;font-size:14px;margin:10px 0}
+.no{color:var(--mut);text-decoration:line-through}
+details{margin:12px 0}
+summary{cursor:pointer;font-weight:600;color:var(--acc)}
+.src{font-size:12.5px;color:var(--mut);word-break:break-all}
+</style></head><body><main>
+<a href="../" style="font-size:14px">← Stickman 實驗頁</a>
+<h1>人物與場景設定</h1>
+<p class="sub">《How to Survive History》改編三集共用的基本設定，2026-11-10 整理。<span class="tag new">11-10 改</span>是今天改過的設定。這些都是<b>幕後設定</b>：旁白不直接交代，靠畫面暗示。</p>
+<nav><a href="#hero">HERO</a><a href="#prof">博士</a><a href="#anky">石頭</a><a href="#lab">博士的小屋</a><a href="#admin">校務大樓</a><a href="#rules">共用規則</a><a href="#other">沒選用的</a></nav>
+
+<h2 id="hero">HERO：還沒畢業的大學生</h2>
+<div class="grid">
+<figure><img loading="lazy" src="img/REF_HERO.jpg" alt="HERO 角色設定圖"><figcaption>目前的角色設定圖（EP1 用的 REF_HERO）。</figcaption></figure>
+<div class="card"><dl>
+<dt>身分</dt><dd>大學生，已經延畢兩年。<span class="tag new">11-10 改</span>不是碩士生或博士生，所以沒有論文的梗。</dd>
+<dt>科系</dt><dd>幕後設定是資工系，但<b>故事裡不講</b>，只說他還沒畢業。<span class="tag new">11-10 改</span></dd>
+<dt>為什麼打工</dt><dd>畢業也找不到工作，所以不想畢業。可是很窮，看到「輕鬆打工、時薪優、免經驗、主要工作：拍照」的徵人啟事就來了，以為很輕鬆。</dd>
+<dt>動機</dt><dd>錢，不是畢業。</dd>
+<dt>書桌</dt><dd>蓋滿逾期章的帳單、<b>畢業學分不足通知</b><span class="tag new">11-10 改</span>（原本是論文逾期通知）、手機、電擊槍。</dd>
+<dt>外型</dt><dd>粗手腳火柴人，白圓頭、黑點眼睛、皮膚純白（不設定種族）。圓框眼鏡、灰帽T，外面套博士給的過大探險背心和遮陽帽，背咖啡色背包。</dd>
+<dt>聲音</dt><dd>林克式：會喘、會驚叫，但沒有台詞，故事靠旁白。</dd>
+</dl></div>
+</div>
+<details><summary>為什麼選資工系（幕後理由）</summary>
+<div class="card">
+<ul>
+<li>美國 2022 年 ZipRecruiter 調查（1,500 多位找工作的大學畢業生）中，資工是<b>最不後悔</b>的科系。</li>
+<li>紐約聯準會的資料：資工的失業率 2022 年是 4.3%，2024 年是 7.0%，排進前幾名。電腦工程 7.8%，第二高。</li>
+<li>期待最高、落差最大，所以適合「畢業也找不到工作」的設定。資料來源是二手報導，沒有核對原表。</li>
+<li>美國人口普查 2024：25 歲以上有學士以上學歷的約 38.6%，碩士以上約 14.9%。大學生最有共鳴。</li>
+</ul></div></details>
+
+<h2 id="prof">博士</h2>
+<div class="grid">
+<figure><img loading="lazy" src="img/REF_PROF.jpg" alt="博士角色設定圖"><figcaption>目前的角色設定圖（REF_PROF），右下是用膠帶纏起來、有紅色按鈕的遙控器。</figcaption></figure>
+<div class="card"><dl>
+<dt>名字</dt><dd>幕後叫布朗，<b>故事裡不說出名字</b>，只叫「博士」。<span class="tag new">11-10</span></dd>
+<dt>身分</dt><dd>HERO 學校的教授。<b>哪個系不知道</b>，故事不交代，也不替他編一個系。<span class="tag new">11-10</span></dd>
+<dt>原型</dt><dd>《回到未來》的布朗博士，只取原型：爆炸白髮、額頭戴護目鏡、亢奮。不照抄臉和招牌細節。</dd>
+<dt>外型</dt><dd>燒焦的實驗袍、紅領結、膠帶纏的紅鈕遙控器。</dd>
+<dt>發明</dt><dd>時光機，是不穩定的原型機，他自己不敢去。機器不動就拍一下。</dd>
+<dt>實驗室</dt><dd>校園裡，<b>校務大樓附近</b>一間老舊的兩層木造小屋。<span class="tag new">11-10 改</span><span class="no">自助洗衣店地下室</span>、<span class="no">學生餐廳附近</span>都已經不用。</dd>
+<dt>聲音</dt><dd>林克式：有聲音，沒有台詞。</dd>
+<dt>重複笑點</dt><dd>每集都說「拍到就付錢」，每集都賴帳（例如扣相機維修費），所以才有下一集。</dd>
+</dl></div>
+</div>
+
+<h2 id="anky">石頭（甲龍）</h2>
+<div class="grid">
+<figure><img loading="lazy" src="img/REF_ANKY.jpg" alt="石頭（甲龍）角色設定圖"><figcaption>角色設定圖（REF_ANKY）：背上長青苔，常常在睡覺。</figcaption></figure>
+<div class="card"><dl>
+<dt>EP1</dt><dd>HERO 以為是一顆長滿青苔的大石頭，坐了上去。最後一尾錘把青少年暴龍打飛，HERO 請牠吃洋芋片。HERO 回家時把背包留在牠旁邊。</dd>
+<dt>EP2</dt><dd>小行星撞擊時嚇到逃命，身上還帶著 HERO 的背包。HERO 為了背包追牠，最後把牠拉進山洞。</dd>
+</dl></div>
+</div>
+
+<h2 id="lab">博士的小屋：原型是柏克萊「舊放射實驗室」</h2>
+<p class="sub">位置在 HERO 的大學校園裡、校務大樓附近。外型照柏克萊大學的舊放射實驗室：兩層木造小樓、木板外牆、斜鐵皮屋頂。</p>
+<div class="grid">
+<figure><img loading="lazy" src="https://history.lbl.gov/wp-content/uploads/sites/11/2014/10/thm_XBD9606-02512.jpg" alt="柏克萊舊放射實驗室外觀">
+<figcaption>原網站說明：「The old radiation Laboratory on the UC Campus」。只有 400px 小圖。<br><span class="src">圖片直接連到 Berkeley Lab 網站（不是我們存的），版權屬原單位，只當參考，不放進影片。<a href="https://history.lbl.gov/1930s/" target="_blank" rel="noopener">history.lbl.gov/1930s</a></span></figcaption></figure>
+<div class="card">
+<h3>這棟建築的故事</h3>
+<ul>
+<li>1885 年蓋的土木系材料測試室，在物理系館 LeConte Hall 旁邊。</li>
+<li>1931 年學校把這間空屋給 Ernest Lawrence 教授，因為它的水泥地撐得住 80 噸重的磁鐵。</li>
+<li>他在這裡做出好幾代粒子加速器，改名「放射實驗室（Rad Lab）」。</li>
+<li>1959 年拆掉，原地蓋了 Latimer Hall。傳說有位教授把門留了下來。</li>
+</ul>
+<p>對應故事：學校把沒人要的舊空屋給一個教授，他在裡面做出改變世界的機器。博士在破小屋裡做出時光機。</p>
+</div>
+</div>
+<div class="grid" style="margin-top:16px">
+<figure><img loading="lazy" src="https://history.lbl.gov/wp-content/uploads/sites/11/2014/10/XBD9703-01129-large.jpg" alt="寫滿字的舊黑板">
+<figcaption>Berkeley Lab 歷史網站上的黑板照片：「E.O.L. has NOBEL Prize」「CHAMPAGNE PARTY NOV. 17」，後面是直條木板牆。原網頁沒有說明，<b>「是在這間小屋裡拍的」是推斷，沒有證實</b>。可以當博士室內黑板的參考。<br><span class="src">圖片直接連到 Berkeley Lab 網站，只當參考。</span></figcaption></figure>
+<figure><img loading="lazy" src="img/REF_LAB.jpg" alt="舊版實驗室設定圖">
+<figcaption><b>舊版</b>實驗室設定圖（REF_LAB），畫的是洗衣店地下室：小窗外是洗衣機、鐵門上掛鐵鍊。室內的時光機、黑板、工作台可以留著參考，<b>外觀和地下室的部分要照新設定重畫</b>。</figcaption></figure>
+</div>
+
+<h2 id="admin">校務大樓：原型是柏克萊 Sproul Hall</h2>
+<div class="grid">
+<figure><img loading="lazy" src="img/berkeley_sproul_hall_1962.jpg" alt="柏克萊 Sproul Hall，1962 年">
+<figcaption>Sproul Hall，1962 年。<br><span class="src">攝影：Roger Wollstadt，CC BY-SA 2.0，<a href="https://commons.wikimedia.org/wiki/File:Berkeley_-_Sproul_Hall_1962.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+<div class="card">
+<ul>
+<li>1941 年蓋的，原本是學校的行政中心。維基百科說現在是學生服務和招生的辦公室；註冊組在不在裡面沒查到。</li>
+<li>白色石材古典大樓，一排柱子、紅瓦屋頂。</li>
+<li>畫面上的用法：氣派的白色石材大樓旁邊，一間破舊的木造小屋。兩棟都是柏克萊的，風格一致。</li>
+</ul>
+<h3>兩人第一次見面 <span class="tag">將來安排</span></h3>
+<p>HERO 要去校務大樓辦事，走錯間，走進博士的小屋。還沒寫進任何一集；EP1 開場時兩人已經認識。</p>
+</div>
+</div>
+
+<h2 id="rules">共用規則</h2>
+<div class="card"><ul>
+<li><b>任務</b>：每集一個任務，拍照或帶樣本回來。EP1 是拍暴龍、帶回一顆牙齒；EP2 是拍那顆「流星」，順便拿回背包。</li>
+<li><b>生存指南</b>：博士給的。EP1 HERO 忘了帶，EP2 這次帶了。旁白就是指南的聲音：觀眾聽得到正確答案，HERO 聽不到。</li>
+<li><b>高潮</b>要靠 HERO 自己解決，不能讓博士天降神兵。</li>
+<li><b>手環</b>：只有一顆按鈕，按了就回家；博士做的東西都要拍一下才會動。</li>
+<li><b>畫風</b>：粗手腳火柴人；HERO、博士的皮膚一律純白，台灣版和歐美版共用同一批畫面。</li>
+<li><b>11-02 的設定，目前兩集故事沒用到</b>：回程隧道要 10 分鐘才能重開（倒數計時）；博士在現場舉牌給的建議全錯、按暫停解說的科學原理是對的。</li>
+</ul>
+<p class="sub">被否決的設定：時空旅行社、物理系／古生物系／歷史系、為了畢業才去打工、實驗室在洗衣店地下室、實驗室在學生餐廳附近。</p>
+</div>
+
+<h2 id="other">沒選用的候選</h2>
+<details><summary>MIT 20 號館、台大行政大樓</summary>
+<div class="grid" style="margin-top:12px">
+<figure><img loading="lazy" src="img/mit_b20_exterior.jpg" alt="MIT 20 號館外觀，1997 年">
+<figcaption>MIT 20 號館，1997 年。二戰時臨時搭的三層木造建築，用了 50 幾年，1998 年拆掉。比「小屋」大太多，沒選。<br><span class="src">攝影：DJungarrayi，CC BY-SA 4.0，<a href="https://commons.wikimedia.org/wiki/File:Exterior_of_MIT_Building_20,_wing_A,_April_1997.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+<figure><img loading="lazy" src="img/ntu_admin_building.jpg" alt="台大行政大樓">
+<figcaption>台大行政大樓（原臺北高等農林學校校舍），兩層紅磚樓。跟木造小屋放在一起對比較弱，改用柏克萊的 Sproul Hall。<br><span class="src">攝影：Yu tptw，CC BY-SA 4.0，<a href="https://commons.wikimedia.org/wiki/File:NTU_Administration_Building2022.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+</div></details>
+
+</main></body></html>
