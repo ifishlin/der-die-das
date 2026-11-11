@@ -7,65 +7,50 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
 <style>
 :root{--bg:#f2f0eb;--panel:#fffdf9;--fg:#1f1d1a;--mut:#6d685f;--line:#dcd6ca;--acc:#8a4a20;--cx:#1f6b52;--cl:#a0522d;
-  --ok:#1f7a45;--ok-soft:#dcefe3;--warn:#9a6a00;--warn-soft:#f6ecd2;--bad:#b0362c;--bad-soft:#f6dcd8;--na:#6d685f;--na-soft:#ebe8e2;--hero:#2878e0;--teen:#e06a10;
+  --ok:#1f7a45;--ok-soft:#dcefe3;--warn:#9a6a00;--warn-soft:#f6ecd2;--bad:#b0362c;--bad-soft:#f6dcd8;--na:#6d685f;--na-soft:#ebe8e2;
   --sans:"Noto Sans TC",-apple-system,"PingFang TC",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151412;--panel:#1e1c19;--fg:#ebe6dd;--mut:#a29b8f;--line:#35312a;--acc:#e3a072;--cx:#6cc7a3;--cl:#e3a07a;
-  --ok:#6cc792;--ok-soft:#1b2c22;--warn:#e0b25a;--warn-soft:#332a14;--bad:#ef7d72;--bad-soft:#3a1f1c;--na:#a29b8f;--na-soft:#26231f;--hero:#6aa8ff;--teen:#ff9a4a;color-scheme:dark}}
+  --ok:#6cc792;--ok-soft:#1b2c22;--warn:#e0b25a;--warn-soft:#332a14;--bad:#ef7d72;--bad-soft:#3a1f1c;--na:#a29b8f;--na-soft:#26231f;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#151412;--panel:#1e1c19;--fg:#ebe6dd;--mut:#a29b8f;--line:#35312a;--acc:#e3a072;--cx:#6cc7a3;--cl:#e3a07a;
-  --ok:#6cc792;--ok-soft:#1b2c22;--warn:#e0b25a;--warn-soft:#332a14;--bad:#ef7d72;--bad-soft:#3a1f1c;--na:#a29b8f;--na-soft:#26231f;--hero:#6aa8ff;--teen:#ff9a4a;color-scheme:dark}
+  --ok:#6cc792;--ok-soft:#1b2c22;--warn:#e0b25a;--warn-soft:#332a14;--bad:#ef7d72;--bad-soft:#3a1f1c;--na:#a29b8f;--na-soft:#26231f;color-scheme:dark}
 body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 var(--sans);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 56px}
 main{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
 h1{font-size:24px;margin:0;text-wrap:balance}h2{font-size:18px;margin:0}
 a{color:var(--acc)}.sub{color:var(--mut);margin:4px 0 0;max-width:84ch}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+.pair{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.pair img{width:min(100%,420px);border-radius:6px;cursor:zoom-in}
 .tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}
 th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:500;font-size:12.5px}
 .k{font:12.5px var(--mono)}
 .v{display:inline-block;font:500 12.5px var(--sans);border-radius:5px;padding:1px 8px;white-space:nowrap}
 .v.ok{background:var(--ok-soft);color:var(--ok)}.v.warn{background:var(--warn-soft);color:var(--warn)}.v.bad{background:var(--bad-soft);color:var(--bad)}.v.na{background:var(--na-soft);color:var(--na)}
 .who{font-weight:700}.who.codex{color:var(--cx)}.who.claude{color:var(--cl)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:14px}
-.shot img{width:100%;border-radius:6px;display:block;cursor:zoom-in}
-.shot .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0 4px}
-.meter{position:relative;height:10px;background:var(--na-soft);border-radius:5px;margin:6px 0}
-.meter i{position:absolute;top:0;bottom:0;left:0;border-radius:5px}.meter b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--fg);left:50%}
-.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--mut)}.legend span::before{content:"";display:inline-block;width:14px;height:4px;margin-right:6px;vertical-align:middle;background:var(--c)}
-ul{margin:4px 0 0;padding-left:20px}li{margin:2px 0}
+.shot .imgs{display:grid;grid-template-columns:1fr 1fr;gap:8px}.shot img{width:100%;border-radius:6px;display:block;cursor:zoom-in}
+.shot .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 8px}
+.list{display:flex;flex-direction:column;gap:14px}
+ul{margin:4px 0 0;padding-left:20px}
 .zoom{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;padding:16px;z-index:20;cursor:zoom-out}.zoom img{max-width:100%;max-height:100%}
 </style></head><body>
 <main>
 <div style="font-size:14px"><a href="../">← stickman</a>　<a href="../draw-compare/">分鏡出圖比較</a></div>
 <header><h1>暴龍比例檢查</h1>
-<p class="sub">EP1 幕 1 第 2 版，Codex 和 Claude 各自分鏡後 Flow 畫出來、有 HERO 和 TEEN 同框的圖。對照 heights.json（HERO 1.72 m、TEEN 2.89 m，同一距離時 TEEN 是 HERO 的 1.68 倍，跟 PAIR_TEEN 比例圖量到的 1.69 倍一致），算出圖裡的 TEEN 等於幾公尺。</p></header>
-<div class="card"><h2>結論</h2><ul id="sum"></ul></div>
-<div class="card"><h2>怎麼量</h2>
-<ul><li><b>視線法</b>（兩個角色都站在地上的平視圖）：prompt 寫「相機在 HERO（或 TEEN）的眼睛高度、平視」，所以那個角色的眼睛就在地平線上（白色虛線）。比相機高的東西不管多遠都會在線的上方，比相機低的都在下方。另一個角色的眼睛離地高度 ＝ 相機高 ×（腳底 − 眼睛）÷（腳底 − 地平線），<b>已經把兩人前後位置和鏡頭算進去</b>，不需要知道距離。眼睛高度用比例圖量：HERO 1.42 m、TEEN 2.66 m。藍、橘線是從眼睛量到腳底。</li>
-<li><b>髖部法</b>：HERO 跳在空中時，用頭頂到髖部（比例圖上約佔站高 0.57）推回站高，假設 TEEN 跟 HERO 差不多遠。</li>
-<li><b>正面法</b>：TEEN 在 HERO 正後方，腳被擋住。TEEN 比 HERO 遠，畫面上最多只能是 HERO 的 1.68 倍，超過就是太大（只算得出下限）。</li>
-<li>圖是 Flow 圖庫縮圖（532×298），像素是放大加刻度線讀的，誤差約 ±10%。判定：85–115% 正確、70–85% 略小、70% 以下太小、115–130% 略大、130% 以上太大。</li></ul>
-<div class="legend" style="margin-top:8px"><span style="--c:var(--hero)">HERO 量的範圍</span><span style="--c:var(--teen)">TEEN 量的範圍</span><span style="--c:#999">白色虛線＝地平線（相機高度）</span></div>
-<p class="sub" style="font-size:13px">2026-11-11 重算：站著的 8 張原本用頭頂和模型填的相機高度（地面法），改成用眼睛和 prompt 指定的相機位置（視線法），結果跟原本差不到 5%。</p></div>
-<div class="card"><h2>總表</h2><div class="tbl"><table id="tb"><tr><th>來源</th><th>圖</th><th>量法</th><th>圖裡的 TEEN</th><th>應有大小的</th><th>判定</th><th>該怎麼改</th></tr></table></div></div>
-<div class="grid" id="grid"></div>
+<p class="sub">EP1 幕 1 第 2 版，Codex 和 Claude 各自分鏡後 Flow 畫出來的圖。每張跟比例圖並排，<b>眼睛看了覺得 TEEN 和 HERO 的大小關係跟比例圖一致，就算一致</b>（考慮誰離鏡頭近、誰遠）。不用公式、不用地圖距離。判斷是 Claude 看圖做的。</p></header>
+<div class="card pair"><img src="img/pair_teen.jpg" alt="PAIR_TEEN 比例圖"><div><h2>比例圖 PAIR_TEEN</h2><p class="sub">站在同一個距離時：TEEN 頭頂 2.89 m，HERO 1.72 m，TEEN 是 HERO 的 1.68 倍高；TEEN 的頭大約有 HERO 身高的三分之二長。</p></div></div>
+<div class="card"><h2>總表</h2><div class="tbl"><table id="tb"><tr><th>來源</th><th>圖</th><th>判定</th><th>該怎麼改</th></tr></table></div><ul id="sum" style="margin-top:10px"></ul></div>
+<div class="list" id="list"></div>
 </main>
 <script>
-const R=[{"who": "codex", "shot": "02", "img": 1, "method": "視線法", "note": "", "cam": "HERO", "eye_m": 1.39, "horizon": 213, "cam_eye": "HERO", "teen_m": 1.51, "pct": 52, "verdict": "太小", "fix": "TEEN 要放大約 1.9 倍（現在只有應有大小的 52%）", "src": "img/codex_02_1.jpg"}, {"who": "codex", "shot": "02", "img": 2, "method": "視線法", "note": "TEEN 在左邊陰影裡，眼睛位置較不確定", "cam": "HERO", "eye_m": 2.23, "horizon": 234, "cam_eye": "HERO", "teen_m": 2.42, "pct": 84, "verdict": "略小", "fix": "TEEN 要放大約 1.2 倍（現在只有應有大小的 84%）", "src": "img/codex_02_2.jpg"}, {"who": "codex", "shot": "03", "img": 1, "method": "視線法", "note": "", "cam": "HERO", "eye_m": 1.32, "horizon": 75, "cam_eye": "HERO", "teen_m": 1.44, "pct": 50, "verdict": "太小", "fix": "TEEN 要放大約 2.0 倍（現在只有應有大小的 50%）", "src": "img/codex_03_1.jpg"}, {"who": "codex", "shot": "03", "img": 2, "method": "視線法", "note": "", "cam": "HERO", "eye_m": 1.37, "horizon": 79, "cam_eye": "HERO", "teen_m": 1.49, "pct": 52, "verdict": "太小", "fix": "TEEN 要放大約 1.9 倍（現在只有應有大小的 52%）", "src": "img/codex_03_2.jpg"}, {"who": "codex", "shot": "04", "img": 1, "method": "視線法", "note": "TEEN 一隻腳出框，腳底用另一腳推估", "cam": "TEEN", "eye_m": 1.57, "horizon": 65, "cam_eye": "TEEN", "teen_m": 2.61, "pct": 90, "verdict": "正確", "fix": "不用改", "src": "img/codex_04_1.jpg"}, {"who": "codex", "shot": "04", "img": 2, "method": "視線法", "note": "HERO 的腳出框，腳底再低的話 TEEN 會更小，是上限估計", "cam": "TEEN", "eye_m": 1.75, "horizon": 64, "cam_eye": "TEEN", "teen_m": 2.34, "pct": 81, "verdict": "略小", "fix": "TEEN 要放大約 1.2 倍（現在只有應有大小的 81%）", "src": "img/codex_04_2.jpg"}, {"who": "codex", "shot": "05", "img": 1, "method": "髖部法", "note": "HERO 跳在空中，量不出他站在哪：側拍、兩個都在小路上，假設一樣遠。TEEN 頭頂出框，是下限", "cam": null, "teen_m": 2.19, "pct": 76, "verdict": "略小", "fix": "TEEN 要放大約 1.3 倍（現在只有應有大小的 76%）", "src": "img/codex_05_1.jpg"}, {"who": "codex", "shot": "05", "img": 2, "method": "髖部法", "note": "HERO 跳在空中，量不出他站在哪：側拍、兩個都在小路上，假設一樣遠", "cam": null, "teen_m": 1.36, "pct": 47, "verdict": "太小", "fix": "TEEN 要放大約 2.1 倍（現在只有應有大小的 47%）", "src": "img/codex_05_2.jpg"}, {"who": "claude", "shot": "04", "img": 1, "method": "視線法", "note": "", "cam": "HERO", "eye_m": 1.9, "horizon": 131, "cam_eye": "HERO", "teen_m": 2.06, "pct": 71, "verdict": "略小", "fix": "TEEN 要放大約 1.4 倍（現在只有應有大小的 71%）", "src": "img/claude_04_1.jpg"}, {"who": "claude", "shot": "04", "img": 2, "method": "視線法", "note": "", "cam": "HERO", "eye_m": 1.73, "horizon": 131, "cam_eye": "HERO", "teen_m": 1.88, "pct": 65, "verdict": "太小", "fix": "TEEN 要放大約 1.5 倍（現在只有應有大小的 65%）", "src": "img/claude_04_2.jpg"}, {"who": "claude", "shot": "05", "img": 1, "method": "正面法", "note": "TEEN 在 HERO 正後方，腳被 HERO 擋住，腳底是推估", "cam": null, "teen_m": 3.61, "pct": 125, "verdict": "略大（至少）", "fix": "TEEN 至少要縮到現在的 80% 以下，等於讓 TEEN 退到 HERO 後面應有的距離；或改成局部鏡頭只露頭和嘴", "src": "img/claude_05_1.jpg"}, {"who": "claude", "shot": "05", "img": 2, "method": "正面法", "note": "TEEN 在 HERO 正後方，腳被 HERO 擋住，腳底是推估", "cam": null, "teen_m": 3.78, "pct": 131, "verdict": "太大（至少）", "fix": "TEEN 至少要縮到現在的 76% 以下，等於讓 TEEN 退到 HERO 後面應有的距離；或改成局部鏡頭只露頭和嘴", "src": "img/claude_05_2.jpg"}, {"who": "claude", "shot": "06", "img": 1, "method": "局部鏡頭", "note": "從 TEEN 背後拍，TEEN 只露頭和上半身（局部鏡頭），量不出全身", "cam": null, "pct": null, "verdict": "不量", "fix": "局部鏡頭本來就只露一部分，符合「尺寸差太多就用局部鏡頭」", "src": "img/claude_06_1.jpg"}, {"who": "claude", "shot": "06", "img": 2, "method": "局部鏡頭", "note": "從 TEEN 背後拍，TEEN 只露頭和上半身（局部鏡頭），量不出全身", "cam": null, "pct": null, "verdict": "不量", "fix": "局部鏡頭本來就只露一部分，符合「尺寸差太多就用局部鏡頭」", "src": "img/claude_06_2.jpg"}, {"who": "claude", "shot": "07", "img": 1, "method": "髖部法", "note": "HERO 跳在空中，量不出他站在哪：側拍、兩個都在小路上，假設一樣遠", "cam": null, "teen_m": 1.85, "pct": 64, "verdict": "太小", "fix": "TEEN 要放大約 1.6 倍（現在只有應有大小的 64%）", "src": "img/claude_07_1.jpg"}, {"who": "claude", "shot": "07", "img": 2, "method": "髖部法", "note": "HERO 跳在空中，量不出他站在哪：側拍、兩個都在小路上，假設一樣遠", "cam": null, "teen_m": 1.52, "pct": 53, "verdict": "太小", "fix": "TEEN 要放大約 1.9 倍（現在只有應有大小的 53%）", "src": "img/claude_07_2.jpg"}];
+const R=[{"who": "codex", "shot": "01", "verdict": "只有 HERO", "fix": "—", "seen": "畫面裡沒有 TEEN。", "imgs": ["img/codex_01_1.jpg", "img/codex_01_2.jpg"]}, {"who": "codex", "shot": "02", "verdict": "太小", "fix": "TEEN 放大約 2 倍", "seen": "兩個並排在同一條小路上，TEEN 的頭跟 HERO 的頭差不多高、身體跟 HERO 差不多大，像一隻小型獸腳類。比例圖上 TEEN 頭頂要高出 HERO 很多。", "imgs": ["img/codex_02_1.jpg", "img/codex_02_2.jpg"]}, {"who": "codex", "shot": "03", "verdict": "太小", "fix": "TEEN 放大約 2 倍", "seen": "TEEN 只在 HERO 身後不遠，卻比 HERO 還矮，眼睛在 HERO 眼睛下方。照比例圖，站這麼近的 TEEN 應該明顯比 HERO 高。", "imgs": ["img/codex_03_1.jpg", "img/codex_03_2.jpg"]}, {"who": "codex", "shot": "04", "verdict": "一致", "fix": "不用改", "seen": "TEEN 頭頂高出 HERO 很多，身體比 HERO 大好幾倍，兩個差不多遠，跟比例圖一致。", "imgs": ["img/codex_04_1.jpg", "img/codex_04_2.jpg"]}, {"who": "codex", "shot": "05", "verdict": "一致", "fix": "不用改", "seen": "TEEN 前傾撲過來、頭壓低，所以頭頂不比 HERO 高；但光是頭就跟 HERO 的上半身一樣大，身體大部分在畫面外，跟比例圖一致。", "imgs": ["img/codex_05_1.jpg", "img/codex_05_2.jpg"]}, {"who": "claude", "shot": "01", "verdict": "只有 HERO", "fix": "—", "seen": "畫面裡沒有 TEEN。", "imgs": ["img/claude_01_1.jpg", "img/claude_01_2.jpg"]}, {"who": "claude", "shot": "02", "verdict": "只有 HERO", "fix": "—", "seen": "畫面裡沒有 TEEN。", "imgs": ["img/claude_02_1.jpg", "img/claude_02_2.jpg"]}, {"who": "claude", "shot": "03", "verdict": "只有 HERO", "fix": "—", "seen": "畫面裡沒有 TEEN。", "imgs": ["img/claude_03_1.jpg", "img/claude_03_2.jpg"]}, {"who": "claude", "shot": "04", "verdict": "略小", "fix": "TEEN 放大約 1.3–1.5 倍", "seen": "TEEN 在 HERO 斜後方、差不多遠，頭只比 HERO 的頭高一點點。比例圖上 TEEN 頭頂應該高出 HERO 大約 HERO 身高的七成。", "imgs": ["img/claude_04_1.jpg", "img/claude_04_2.jpg"]}, {"who": "claude", "shot": "05", "verdict": "略大", "fix": "可以接受（刻意誇張）；要照比例的話 TEEN 縮小約 2 成", "seen": "TEEN 在 HERO 正後方、比 HERO 遠，卻有 HERO 的兩倍多高，比比例圖還大。正面衝鏡的戲劇效果，嘴巴夠誇張。", "imgs": ["img/claude_05_1.jpg", "img/claude_05_2.jpg"]}, {"who": "claude", "shot": "06", "verdict": "一致", "fix": "不用改", "seen": "TEEN 在前景離鏡頭很近，HERO 在遠處小路上，近大遠小合理；TEEN 只露上半身。", "imgs": ["img/claude_06_1.jpg", "img/claude_06_2.jpg"]}, {"who": "claude", "shot": "07", "verdict": "太小", "fix": "TEEN 放大約 1.5–1.8 倍", "seen": "側拍、兩個差不多遠，TEEN 整隻只比 HERO 大一點，頭只到 HERO 腰部（HERO 跳在空中也一樣偏小）。比例圖上 TEEN 的身體比 HERO 大很多。", "imgs": ["img/claude_07_1.jpg", "img/claude_07_2.jpg"]}];
 const esc=t=>String(t??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
-const cls=v=>v.startsWith('正確')?'ok':v.startsWith('略')?'warn':v.startsWith('太')?'bad':'na';
+const cls=v=>v==='一致'?'ok':v.startsWith('略')?'warn':v.startsWith('太')?'bad':'na';
 const name=w=>w==='codex'?'Codex':'Claude';
-document.getElementById('tb').insertAdjacentHTML('beforeend',R.map(r=>`<tr><td class="who ${r.who}">${name(r.who)}</td><td class=k>${r.shot}-${r.img}</td><td>${esc(r.method)}</td><td class=k>${r.teen_m!=null?r.teen_m+' m':'—'}</td><td class=k>${r.pct!=null?r.pct+'%':'—'}</td><td><span class="v ${cls(r.verdict)}">${esc(r.verdict)}</span></td><td>${esc(r.fix)}</td></tr>`).join(''));
-document.getElementById('grid').innerHTML=R.map(r=>{const p=r.pct==null?0:Math.min(r.pct,200);
-  return `<div class="card shot"><img src="${esc(r.src)}" alt="${r.who} ${r.shot}-${r.img}">
-  <div class="bar"><span class="who ${r.who}">${name(r.who)}</span><span class=k>EP1-01-${r.shot}・第 ${r.img} 張</span><span class="v ${cls(r.verdict)}">${esc(r.verdict)}</span></div>
-  ${r.pct!=null?`<div class="meter" title="100% = 正確"><i style="width:${p/2}%;background:var(--${cls(r.verdict)==='ok'?'ok':cls(r.verdict)==='warn'?'warn':'bad'})"></i><b></b></div>
-  <div class=k>TEEN 相當於 ${r.teen_m} m／應為 2.89 m（${r.pct}%）・${esc(r.method)}${r.cam_eye?'・相機在 '+r.cam_eye+' 眼睛高度，量到 '+(r.cam_eye==='HERO'?'TEEN':'HERO')+' 眼睛離地 '+r.eye_m+' m（應為 '+(r.cam_eye==='HERO'?'2.66':'1.42')+' m）':''}</div>`:`<div class=k>${esc(r.method)}</div>`}
-  <div style="margin-top:4px">${esc(r.fix)}</div>${r.note?`<div class="sub" style="font-size:13px">${esc(r.note)}</div>`:''}</div>`}).join('');
-const by=w=>R.filter(r=>r.who===w&&r.pct!=null);
-const fmt=w=>{const a=by(w);return `${name(w)}：量了 ${a.length} 張，正確 ${a.filter(r=>r.verdict==='正確').length} 張；TEEN 是應有大小的 ${Math.min(...a.map(r=>r.pct))}–${Math.max(...a.map(r=>r.pct))}%`};
-document.getElementById('sum').innerHTML=[fmt('codex'),fmt('claude'),
- '側面、並排跑的圖，Flow 幾乎都把 TEEN 畫得太小（約應有的 50–75%），雖然有附 PAIR2_TEEN 比例圖。只有 Codex 04（TEEN 主體、膝上景）大致正確。',
- '正面衝鏡（Claude 05）反過來：TEEN 在 HERO 後面卻畫得比應有的大，為了戲劇效果被放大。',
- '只有 HERO 一個人的圖（Codex 01，Claude 01–03）沒有比例問題，沒列入。'].map(x=>`<li>${esc(x)}</li>`).join('');
-document.querySelectorAll('.shot img').forEach(im=>im.onclick=()=>{const z=document.createElement('div');z.className='zoom';z.innerHTML=`<img src="${im.src}" alt="">`;z.onclick=()=>z.remove();document.body.appendChild(z)});
+document.getElementById('tb').insertAdjacentHTML('beforeend',R.map(r=>`<tr><td class="who ${r.who}">${name(r.who)}</td><td class=k>EP1-01-${r.shot}</td><td><span class="v ${cls(r.verdict)}">${esc(r.verdict)}</span></td><td>${esc(r.fix)}</td></tr>`).join(''));
+const both=R.filter(r=>r.verdict!=='只有 HERO');
+document.getElementById('sum').innerHTML=['codex','claude'].map(w=>{const a=both.filter(r=>r.who===w);return `<li>${name(w)}：有 TEEN 的 ${a.length} 張，一致 ${a.filter(r=>r.verdict==='一致').length} 張（${a.filter(r=>r.verdict==='一致').map(r=>r.shot).join('、')||'無'}）</li>`}).join('')
+ +'<li>並排同一距離的側拍最容易把 TEEN 畫小（Codex 02、03，Claude 04、07）；TEEN 在前景或當主體時大小都對。</li>';
+document.getElementById('list').innerHTML=both.map(r=>`<div class="card shot"><div class="bar"><span class="who ${r.who}">${name(r.who)}</span><span class=k>EP1-01-${r.shot}</span><span class="v ${cls(r.verdict)}">${esc(r.verdict)}</span><span>${esc(r.fix)}</span></div>
+  <div class="imgs">${r.imgs.map(s=>`<img src="${esc(s)}" alt="${r.who} ${r.shot}" loading="lazy">`).join('')}</div><p style="margin:8px 0 0">${esc(r.seen)}</p></div>`).join('');
+document.querySelectorAll('img').forEach(im=>im.onclick=()=>{const z=document.createElement('div');z.className='zoom';z.innerHTML=`<img src="${im.src}" alt="">`;z.onclick=()=>z.remove();document.body.appendChild(z)});
 </script>
 </body></html>
