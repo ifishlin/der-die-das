@@ -24,12 +24,17 @@ tr.add td:nth-child(2){background:#e5f5e2}tr.del td:nth-child(1){background:#f3e
 td.why{white-space:pre-line;font-size:13px;color:#6b4a10}.none{color:var(--mute)}
 mark.mine{background:#ffd9a8;padding:0 2px}mark.tbd{background:#d9e8ff;padding:0 2px}
 code{background:#efe9dc;padding:0 4px;border-radius:3px;font-size:.9em}
+.scn{margin:14px 0 8px;padding:8px 12px;border-left:4px solid #3b6fb0;background:#eaf1fa;border-radius:4px}
+.scn b{color:#244d80}.scn div{font-size:14px;margin-top:2px}.scn small{display:block;color:var(--mute);margin-top:2px}
 </style></head><body><main>
 <a href="../" style="color:#1f6b52;font-size:14px">← Stickman 實驗頁</a>
 <h1>恐龍年代兩集：審故事（第 6 步）</h1>
 <p class="sub">EP1 撞擊前三天、EP2 撞擊前約 3 小時，兩集都在 Hell Creek。這一步只看故事，不談分鏡。
 EP1 是完整故事，<span class="chg">黃底</span>是這次改的，<span class="old">刪除線</span>是原本的寫法。EP2 是 v1 ↔ v2 逐段對照。</p>
-<nav><a href="#ep1">EP1 故事</a><a href="#ep2">EP2 故事對照</a></nav>
+<nav><a href="#scenes">EP1 分幕</a><a href="#ep1">EP1 故事</a><a href="#ep2">EP2 故事對照</a></nav>
+<section id="scenes"><h2>EP1 分幕（15 幕）</h2>
+<p class="sub">幕＝同一個地點、同一個時間、景色和地上的東西不變，在裡面連續發生的事。每幕的說明只寫要演什麼；怎麼拍、走位由 Claude／Codex 決定。藍色框是每幕在故事裡開始的地方。來源：<code>001_trex_run/scenes_v1.json</code>。</p>
+<table><tr><th style="width:70px">幕</th><th style="width:70px">段落</th><th>地點・時間</th><th>地圖</th></tr><tr><td><a href="#scene1">幕 1</a></td><td>0</td><td>森林泥巴小路・黃昏</td><td>跟幕 11 同一張地圖、同一刻</td></tr><tr><td><a href="#scene2">幕 2</a></td><td>1</td><td>主角房間・早上</td><td>—</td></tr><tr><td><a href="#scene3">幕 3</a></td><td>1</td><td>校園・校務大樓旁的老舊研究小屋（外面）</td><td>—</td></tr><tr><td><a href="#scene4">幕 4</a></td><td>2</td><td>博士實驗室・出發前</td><td>有黑板、時光機和拉桿、放生存指南和水壺的桌子</td></tr><tr><td><a href="#scene5">幕 5</a></td><td>3</td><td>北美洲地圖（不是實景）</td><td>不需要走位地圖</td></tr><tr><td><a href="#scene6">幕 6</a></td><td>3</td><td>降落點空地・白天（甲龍「石頭」在睡覺）</td><td>跟幕 12 同一個地點，但時間和地上的東西不同，要分開畫</td></tr><tr><td><a href="#scene7">幕 7</a></td><td>3–4</td><td>河邊・白天（河對岸有一群鴨嘴龍）</td><td>要有河、對岸、蕨類叢、一棵會被壓彎的樹</td></tr><tr><td><a href="#scene8">幕 8</a></td><td>5</td><td>森林逃跑路線・白天（有一根倒木）</td><td>—</td></tr><tr><td><a href="#scene9">幕 9</a></td><td>6</td><td>河的下游・白天</td><td>跟幕 7 是同一條河的不同段</td></tr><tr><td><a href="#scene10">幕 10</a></td><td>7</td><td>森林・傍晚（有倒木、大樹幹）</td><td>故事沒寫在哪；需要一根倒木、一根大樹幹，和一塊能被三隻恐龍圍住的空地</td></tr><tr><td><a href="#scene11">幕 11</a></td><td>8</td><td>森林泥巴小路・黃昏</td><td>跟幕 1 同一張地圖</td></tr><tr><td><a href="#scene12">幕 12</a></td><td>8–9</td><td>降落點空地・黃昏（甲龍「石頭」在原地）</td><td>跟幕 6 同一個地點，時間和地上的東西不同</td></tr><tr><td><a href="#scene13">幕 13</a></td><td>10</td><td>博士實驗室・回來後</td><td>擺設跟幕 4 相同的話可以共用地圖；地上多了滿身泥巴的 HERO</td></tr><tr><td><a href="#scene14">幕 14</a></td><td>10</td><td>主角房間・書桌</td><td>跟幕 2 同一個房間；書桌上多了一張帳單</td></tr><tr><td><a href="#scene15">幕 15</a></td><td>10</td><td>太空（不是實景）</td><td>不需要走位地圖</td></tr></table></section>
 <section id="ep1"><div class="story"><h2>EP1〈你跑得贏暴龍嗎？〉故事 v3</h2>
 <p>2026-11-10。第 6 步「審故事」用的故事版。</p>
 <div class="li" style="margin-left:0px">• <b>來源</b>：從分鏡清單 v6（<code>script_v6.md</code>，已定稿）整理回故事層面，逐段落寫發生什麼和旁白重點，不分格、不寫鏡頭。</div>
@@ -43,17 +48,21 @@ EP1 是完整故事，<span class="chg">黃底</span>是這次改的，<span cla
 <div class="li" style="margin-left:0px">• <b>地點</b>：Hell Creek（北美洲）。</div>
 <hr>
 <h3>段落 0　冷開場 🔥</h3>
+<div class="scn" id="scene1"><b>幕 1</b>　森林泥巴小路・黃昏<div>冷開場。HERO 滿身泥巴在森林小路上狂奔，青少年暴龍在後面越追越近，嘴巴比他整個人還大。HERO 跳起來的那一瞬間畫面定格，旁白問「我到底是怎麼跑到這裡來的」，倒回今天早上。這一刻在幕 11 會再出現一次。</div><small>地圖：跟幕 11 同一張地圖、同一刻</small></div>
 <p>HERO 在一片爛泥巴的森林裡狂奔。後面一隻暴龍越追越近，嘴巴比他整個人還大。他跳起來的那一刻，時間停住。</p>
 <div class="q">你一定很想問：我到底是怎麼跑到這裡來的？</div>
 <div class="q">這件事呢，要從今天早上開始說起。</div>
 <h3>段落 1　走投無路 😄</h3>
+<div class="scn" id="scene2"><b>幕 2</b>　主角房間・早上<div>交代主角有多慘。書桌上：蓋滿逾期章的帳單、畢業學分不足通知（延畢兩年）、手機和電擊槍；房間只有一個插座，插著手機在充電。博士傳訊息：又有工作、時薪不錯、記得帶電擊槍。HERO 看看那疊帳單，決定去。</div></div>
 <div class="li" style="margin-left:0px">• <b>書桌上的三樣東西</b>：</div>
 <div class="li" style="margin-left:18px">• 蓋滿逾期章的帳單。</div>
 <div class="li" style="margin-left:18px">• <span class="chg">畢業學分不足通知：你已經延畢兩年，現在最關心你的人，是系辦助理。</span><span class="old">原：論文逾期通知</span></div>
 <div class="li" style="margin-left:18px">• 一支手機和一把電擊槍，但房間只有一個插座，你當然拿來充手機。</div>
 <div class="li" style="margin-left:0px">• <b>博士的訊息</b>：又有工作，時薪很不錯，記得帶電擊槍。上次他也說會付錢。看看那疊帳單，還是去吧。</div>
+<div class="scn" id="scene3"><b>幕 3</b>　校園・校務大樓旁的老舊研究小屋（外面）<div>交代博士的實驗室在哪：校園裡、校務大樓附近一間老舊的研究小屋。HERO 來到小屋門口。</div></div>
 <div class="li" style="margin-left:0px">• <b>實驗室</b>：<span class="chg">在校園裡，校務大樓附近一間老舊的研究小屋。</span><span class="old">原：藏在自助洗衣店的地下室，門上的鎖比樓上的洗衣機還多。</span></div>
 <h3>段落 2　行前教育 😄</h3>
+<div class="scn" id="scene4"><b>幕 4</b>　博士實驗室・出發前<div>行前教育。博士興奮地上課，HERO 全程低頭滑手機。內容依序：要去 6,650 萬年前的北美洲；HERO 問為什麼不去侏羅紀，博士在黑板畫時間線糾正他；第一課越大隻跑越慢（HERO 滑手機）；第二課最快的是不大不小的（HERO 打哈欠）；博士拿碼表叫 HERO 跑一趟，HERO 邊滑手機邊慢慢走完；第三課跑越快越難轉彎，博士示範急轉彎差點閃到腰。發裝備：相機、樣本袋、膠帶纏的回家手環；沒拍到暴龍、沒帶回牙齒就不付錢。博士給生存指南，HERO 選洋芋片，指南和水壺留在桌上。博士說準備好再拉拉桿，結果直接拉了；機器沒反應，他用力拍一下。</div><small>地圖：有黑板、時光機和拉桿、放生存指南和水壺的桌子</small></div>
 <div class="li" style="margin-left:0px">• <b>這次要去哪</b>：博士說要去白堊紀，<span class="chg">六千六百五十萬年前的北美洲</span><span class="old">原：七千萬年前</span>。你一直低頭滑手機。</div>
 <div class="li" style="margin-left:0px">• <b>侏羅紀</b>：你只問了一句「為什麼不去侏羅紀」，因為那部電影你看了五遍。博士很不高興：侏羅紀根本沒有暴龍，電影光片名就在騙你。他在黑板畫時間線，劍龍在侏羅紀，暴龍排在白堊紀最後面。</div>
 <div class="li" style="margin-left:0px">• <b>第一課：越大隻，跑越慢</b>：身高變兩倍，腿的力氣只多四倍，體重卻重了八倍，腿撐不住。你在滑手機。</div>
@@ -64,11 +73,14 @@ EP1 是完整故事，<span class="chg">黃底</span>是這次改的，<span cla
 <div class="li" style="margin-left:0px">• <b>生存指南 vs 洋芋片</b>：博士給了一本又厚又重的生存指南，你選了洋芋片。指南和水壺都留在桌上。</div>
 <div class="li" style="margin-left:0px">• <b>出發</b>：博士說等你準備好再拉拉桿，結果直接拉了。機器沒反應，他用力拍了一下。</div>
 <h3>段落 3　抵達白堊紀 😄</h3>
+<div class="scn" id="scene6"><b>幕 6</b>　降落點空地・白天（甲龍「石頭」在睡覺）<div>HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿手機搜尋「白堊紀要怎麼活下去」，沒有訊號。到處是蕨類。他坐上一顆長滿青苔的大石頭休息，覺得這份工作還不錯；然後石頭眨了一下眼睛，原來是一隻尾巴有骨錘的甲龍，牠只想繼續睡，HERO 踮著腳溜走。他口渴，發現水壺跟指南都留在實驗室，聽到水聲。</div><small>地圖：跟幕 12 同一個地點，但時間和地上的東西不同，要分開畫</small></div>
+<div class="scn" id="scene5"><b>幕 5</b>　北美洲地圖（不是實景）<div>旁白交代地理：6,650 萬年前北美洲中間隔著一大片海，HERO 掉在西邊這一半。</div><small>地圖：不需要走位地圖</small></div>
 <div class="li" style="margin-left:0px">• <b>落地</b>：時間回到<span class="chg">六千六百五十萬年前的北美洲</span><span class="old">原：七千萬年前</span>。北美洲中間隔著一大片海，你掉在西邊這一半，臉先著地。</div>
 <div class="li" style="margin-left:0px">• <b>蚊子</b>：這裡又熱又濕，連南北極都沒有冰。第一個來歡迎你的是蚊子。都過了<span class="chg">六千六百五十萬年</span><span class="old">原：七千萬年</span>，蚊子還是一模一樣。</div>
 <div class="li" style="margin-left:0px">• <b>沒訊號</b>：你上網搜尋「白堊紀要怎麼活下去」，沒有訊號。對啊，<span class="chg">六千六百五十萬年前</span><span class="old">原：七千萬年前</span>，哪來的基地台。</div>
 <div class="li" style="margin-left:0px">• <b>石頭</b>：這時代還沒有草原，到處是蕨類。你坐上一顆長滿青苔的大石頭，覺得這份工作還不錯。然後石頭眨了一下眼睛：那是一隻甲龍，尾巴上有骨錘。還好牠只想繼續睡，你踮著腳溜走。</div>
 <div class="li" style="margin-left:0px">• <b>口渴</b>：水壺跟生存指南一起留在實驗室。你聽到水聲，決定先不要太相信它。</div>
+<div class="scn" id="scene7"><b>幕 7</b>　河邊・白天（河對岸有一群鴨嘴龍）<div>HERO 走到河邊，對岸一群跟大象差不多大的鴨嘴龍在喝水，他拍了一張（不是暴龍，不算數）。他發現鞋子旁有一個跟他腿一樣長、邊緣還在滲水的三趾腳印，找不到下一個。對岸的鴨嘴龍全部抬頭看他身後；他回頭，樹後面探出一顆暴龍的頭，牠沒吼，在聞。旁白講暴龍多大，HERO 只到牠的膝蓋。HERO 照手機裡的三個求生秘訣一一失敗：躲進蕨類但屁股露在外面；站著不動；爬上樹，樹被壓彎把他送到暴龍嘴前。暴龍張大嘴，HERO 想起博士第一課，暴龍咬空，他掉下來拔腿就跑。</div><small>地圖：要有河、對岸、蕨類叢、一棵會被壓彎的樹</small></div>
 <div class="li" style="margin-left:0px">• <b>鴨嘴龍</b>：河對岸一群鴨嘴龍在喝水，每隻都跟大象差不多大。你拍了一張，可惜不是暴龍，不算數。</div>
 <h3>段落 4　遇見暴龍 😬→🔥</h3>
 <div class="li" style="margin-left:0px">• <b>腳印</b>：鞋子旁邊有一個三趾腳印，跟你的腿差不多長，邊緣還在滲水。找不到下一個腳印，表示牠就停在這裡。</div>
@@ -81,14 +93,17 @@ EP1 是完整故事，<span class="chg">黃底</span>是這次改的，<span cla
 <div class="li" style="margin-left:0px">• <b>指南</b>：那本生存指南的第一頁只寫了兩個字「快跑」，可惜它在實驗室。</div>
 <div class="li" style="margin-left:0px">• <b>想起第一課</b>：牠張大嘴。博士講過，越大隻的跑越慢，那時候你在滑手機。牠咬空，你掉下來，拔腿就跑。</div>
 <h3>段落 5　第一次逃跑 😬→😄</h3>
+<div class="scn" id="scene8"><b>幕 8</b>　森林逃跑路線・白天（有一根倒木）<div>成年暴龍追上來，但越追越慢，最快只算快走。HERO 邊跑邊回頭拍了一張有點糊、但看得出是暴龍的照片，任務完成一半。他站上倒木跟暴龍揮手說再見，暴龍喘著氣看他，眼神有點受傷。</div></div>
 <div class="li" style="margin-left:0px">• <b>快走的暴龍</b>：牠追上來，但越追越慢。七公噸的身體根本跑不起來，最快大約時速十九公里，這叫快走。</div>
 <div class="li" style="margin-left:0px">• <b>任務完成一半</b>：你邊跑邊回頭拍了一張，有點糊，但看得出是暴龍。</div>
 <div class="li" style="margin-left:0px">• <b>說再見</b>：你站上倒木跟牠揮手說再見，牠喘著氣看你，眼神好像有點受傷。</div>
 <h3>段落 6　假勝利 😄→😬</h3>
+<div class="scn" id="scene9"><b>幕 9</b>　河的下游・白天<div>假勝利。HERO 沿著河往下游走，吹著口哨，開心地自拍（史上第一個跑贏暴龍的大學生）。笑容突然僵住：他想起第二課，跑最快的是不大不小的。背後的蕨類動了一下，可是今天根本沒有風。</div><small>地圖：跟幕 7 是同一條河的不同段</small></div>
 <div class="li" style="margin-left:0px">• <b>得意</b>：你沿著河往下游走，吹著口哨，只差一顆牙齒。<span class="chg">你是史上第一個跑贏暴龍的大學生，也是第一個延畢兩年的。</span><span class="old">原：資工系學生</span>你開心地自拍。</div>
 <div class="li" style="margin-left:0px">• <b>想起第二課</b>：笑容突然僵住。跑最快的，不是最大隻的，是剛剛好的。</div>
 <div class="li" style="margin-left:0px">• <b>蕨類在動</b>：背後的蕨類動了一下，可是今天根本沒有風。</div>
 <h3>段落 7　威脅排行榜 😬 遞增</h3>
+<div class="scn" id="scene10"><b>幕 10</b>　森林・傍晚（有倒木、大樹幹）<div>威脅一隻比一隻大。第一隻盜龍（比 HERO 高、全身羽毛、腳上彎刀爪）：HERO 掏出電擊槍，電量是零，把它丟過去打中盜龍的頭，盜龍歪頭看他；HERO 跳過一根倒木，盜龍沒跳過去。第二隻腫頭龍（頭頂厚骨頭像安全帽）：低頭直直衝過來，HERO 一閃，牠撞上後面的大樹幹。第三隻似鴕龍（像沒翅膀的大鴕鳥、腿細長）：衝到身邊一口叼走 HERO 的帽子。三隻又追上來把 HERO 圍在中間，然後突然往三個方向逃走；蟲不叫、鳥不叫，黑影裡有一雙黃眼睛。青少年暴龍出現，跟 HERO 對上眼，HERO 拔腿就跑。</div><small>地圖：故事沒寫在哪；需要一根倒木、一根大樹幹，和一塊能被三隻恐龍圍住的空地</small></div>
 <div class="li" style="margin-left:0px">• <b>第一隻：盜龍</b>：比你還高，全身羽毛，腳上有彎刀般的爪子，時速大約二十四到三十二公里，跟你差不多快。</div>
 <div class="li" style="margin-left:18px">• 你掏出電擊槍，電量是零，因為昨晚插座拿去充手機了。手機電量百分之百，可惜沒訊號。</div>
 <div class="li" style="margin-left:18px">• 你把電擊槍丟過去，剛好打中牠的頭，牠歪頭看你：就這樣喔？</div>
@@ -102,9 +117,11 @@ EP1 是完整故事，<span class="chg">黃底</span>是這次改的，<span cla
 <div class="li" style="margin-left:0px">• <b>牠們在逃命</b>：三隻又追上來，把你圍在中間，然後突然往三個方向跑掉，不是因為你。蟲不叫、鳥不叫，你懂了：牠們是在逃命。黑影裡有一雙黃眼睛。</div>
 <div class="li" style="margin-left:0px">• <b>青少年暴龍</b>：十四歲，還沒長胖，大約九百公斤，時速可以到五十三公里。成年暴龍吃三角龍，青少年暴龍最愛吃跟你差不多大的東西。你們對上眼，這次不用博士教，你拔腿就跑。</div>
 <h3>段落 8　決戰 🔥</h3>
+<div class="scn" id="scene11"><b>幕 11</b>　森林泥巴小路・黃昏<div>決戰。回到開場那一刻，青少年暴龍在後面喘氣。HERO 想起第三課，急轉彎，暴龍衝過頭；再轉一次，又衝過頭；暴龍摔了一大跤又爬起來。HERO 快撐不住了（連體育學分都還沒修完）。</div><small>地圖：跟幕 1 同一張地圖</small></div>
 <div class="li" style="margin-left:0px">• <b>回到開場那一刻</b>：牠在後面喘氣，聞起來像很久沒刷牙。</div>
 <div class="li" style="margin-left:0px">• <b>想起第三課</b>：跑越快越難轉彎。你急轉彎，牠衝過頭；再轉一次，又衝過頭。牠摔了一大跤，又爬起來。</div>
 <div class="li" style="margin-left:0px">• <b>撐不住了</b>：人類本來很會跑長跑，只要撐久一點就好。<span class="chg">問題是，你連體育學分都還沒修完。<mark class="mine">※</mark></span><span class="old">原：問題是，你是資工系的。</span></div>
+<div class="scn" id="scene12"><b>幕 12</b>　降落點空地・黃昏（甲龍「石頭」在原地）<div>HERO 繞回一開始掉下來的空地，絆倒，滾到那顆大石頭後面縮成一團。暴龍來不及轉彎一頭撞上石頭；石頭眨了一下眼，一尾錘把青少年暴龍打飛。一顆比香蕉還大的暴龍牙彈到 HERO 腳邊；他一開心，相機掉進泥巴裡。他把背包裡捨不得吃的洋芋片整包遞給甲龍，甲龍吃了一口。回家的手環按兩次沒反應，HERO 學博士用力一拍，手環亮了。他抱著牙齒和相機跳進時光隧道；隧道關上後，背包留在地上，旁邊是睡著的石頭和空的洋芋片袋。</div><small>地圖：跟幕 6 同一個地點，時間和地上的東西不同</small></div>
 <div class="li" style="margin-left:0px">• <b>石頭</b>：你繞回一開始掉下來的那片空地，天已經黃昏。你絆倒，滾到那顆大石頭後面縮成一團。暴龍來不及轉彎，一頭撞上石頭。石頭眨了一下眼，一尾錘把青少年暴龍打飛。你早就忘了那顆石頭，但石頭還記得你。</div>
 <div class="li" style="margin-left:0px">• <b>任務完成</b>：一顆比香蕉還大的暴龍牙彈到你腳邊，放心，不是你的。牙齒有了，照片也有了。你一開心，相機就掉進泥巴裡。</div>
 <div class="li" style="margin-left:0px">• <b>洋芋片</b>：你想起背包裡還有一包一路捨不得吃的洋芋片，整包遞給甲龍：謝謝你啊，石頭。牠吃了一口。這可是<span class="chg">六千六百五十萬年來</span><span class="old">原：七千萬年來</span>，地球上的第一包洋芋片。</div>
@@ -112,12 +129,15 @@ EP1 是完整故事，<span class="chg">黃底</span>是這次改的，<span cla
 <div class="li" style="margin-left:0px">• <b>手環沒反應</b>：按了兩次都沒反應。你想起博士修東西的那一招，往膠帶上用力一拍，手環亮了。果然，博士做的東西都要拍一下才會動。</div>
 <div class="li" style="margin-left:0px">• <b>背包</b>：你抱著牙齒和相機跳進隧道。隧道關上後，背包留在地上，旁邊是睡著的石頭和空的洋芋片袋。裡面有你的錢包，還有學生證。</div>
 <h3>段落 10　尾聲＋預告 😄</h3>
+<div class="scn" id="scene13"><b>幕 13</b>　博士實驗室・回來後<div>HERO 滿身泥巴躺在實驗室地上，交出牙齒和照片，博士開心得不得了；相機已經不太算是相機了。博士把信封裡的鈔票抽走，換成一張收據（壞掉的相機、電擊槍），HERO 反而倒欠博士錢。博士拿出下一張任務單，上面畫著一顆拖著長尾巴的亮星，說下次一定付錢。</div><small>地圖：擺設跟幕 4 相同的話可以共用地圖；地上多了滿身泥巴的 HERO</small></div>
 <div class="li" style="margin-left:0px">• <b>賴帳</b>：</div>
 <div class="li" style="margin-left:18px">• 你滿身泥巴躺在實驗室地上，交出牙齒和照片，博士開心得不得了。</div>
 <div class="li" style="margin-left:18px">• 照片還在，但相機已經不太算是相機了。</div>
 <div class="li" style="margin-left:18px">• 博士把信封裡的鈔票抽走，換成一張收據：壞掉的相機、電擊槍。算下來，你反而倒欠博士錢。</div>
 <div class="li" style="margin-left:0px">• <b>下一張任務單</b>：畫著一顆拖著長尾巴的亮星星。博士說下次一定付錢，他上次也這麼說。</div>
+<div class="scn" id="scene14"><b>幕 14</b>　主角房間・書桌<div>回到書桌，又多了一張帳單；還好手機是充飽的。</div><small>地圖：跟幕 2 同一個房間；書桌上多了一張帳單</small></div>
 <div class="li" style="margin-left:0px">• <b>書桌</b>：又多了一張帳單，還好手機是充飽的。</div>
+<div class="scn" id="scene15"><b>幕 15</b>　太空（不是實景）<div>預告。六千六百萬年前，一顆小行星正朝著地球飛過來；如果 HERO 這次遇到的就是讓恐龍滅絕的那一顆呢？</div><small>地圖：不需要走位地圖</small></div>
 <div class="li" style="margin-left:0px">• <b>預告</b>：六千六百萬年前，有一顆小行星正朝著地球飛過來。如果你這次遇到的，就是讓恐龍滅絕的那一顆，會怎麼樣呢？</div>
 <hr>
 <h3>改動的根據</h3>
