@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>EP1 幕 6 拍攝 request</title>
+<meta name="robots" content="noindex">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f3f1ec;--panel:#fffdf8;--fg:#22201b;--mut:#6f6a60;--line:#ddd7cb;--acc:#9a4a1c;--acc-soft:#f3e3d6;--blue:#2c5d8f;--blue-soft:#e3edf7;
+  --sans:"Noto Sans TC",-apple-system,"PingFang TC",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171512;--panel:#201d19;--fg:#ece7de;--mut:#a39c90;--line:#36322b;--acc:#e59a6a;--acc-soft:#3a2a1f;--blue:#8db8e6;--blue-soft:#1f2c3a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171512;--panel:#201d19;--fg:#ece7de;--mut:#a39c90;--line:#36322b;--acc:#e59a6a;--acc-soft:#3a2a1f;--blue:#8db8e6;--blue-soft:#1f2c3a;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.65 var(--sans);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px}
+main{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:26px}
+h1{font-size:26px;margin:0;text-wrap:balance}h2{font-size:20px;margin:0 0 8px}
+a{color:var(--acc)}.sub{color:var(--mut);margin:6px 0 0;max-width:78ch}
+.part{border-top:5px solid var(--acc);padding-top:12px}.part.b{border-color:var(--blue)}
+.tag{display:inline-block;font:500 12px var(--sans);letter-spacing:.06em;color:var(--panel);background:var(--acc);border-radius:4px;padding:1px 8px;margin-right:8px;vertical-align:2px}.b .tag{background:var(--blue)}
+.note{background:var(--acc-soft);border-radius:8px;padding:8px 12px;margin:0 0 10px;max-width:85ch}.b .note{background:var(--blue-soft)}
+pre{white-space:pre-wrap;font:12.5px/1.6 var(--mono);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:0;overflow-x:auto}
+pre.map{white-space:pre}
+.bar{display:flex;gap:10px;align-items:center;margin:0 0 8px;flex-wrap:wrap}
+button{font:500 13px var(--sans);background:var(--acc);color:var(--panel);border:0;border-radius:999px;padding:6px 16px;cursor:pointer}.b button{background:var(--blue)}
+ul{margin:4px 0 0;padding-left:20px}
+</style></head><body>
+<main>
+<div style="font-size:14px"><a href="../">← stickman</a>　<a href="../shot-spec/">分鏡標準格式</a>　<a href="../story-review/#scene6">審故事：幕 6</a></div>
+<header><h1>EP1 幕 6 拍攝 request</h1>
+<p class="sub">2026-11-11。把「降落點空地・白天」這一幕交給 Codex 拍：上半部是真正要送出去的 request 全文，下半部是預期收到的 JSON 回覆。還沒送出。</p></header>
+<div class="note">送出前請確認：
+<ul><li>旁白用 <code>script_v8.md</code> 段落 3 的 S03-2～S03-10（S03-1 屬於幕 5）。</li>
+<li>地圖用 <code>maps/arrive.json</code>。原檔只標了泥地，<b>甲龍位置（D16–F17）和時光隧道出口（G29 上方）是我照地圖說明補的</b>，幕 12 會用同一個位置。</li>
+<li>甲龍參考圖用 REF_ANKY、PAIR2_ANKY；身高 2.23 m 來自 heights.json，身長約 6 m 是我寫的。</li></ul></div>
+
+<section class="part a"><h2><span class="tag">上</span>送出去的 request</h2>
+<div class="bar"><button data-t="rq">複製全文</button><span class="m" style="color:var(--mut);font-size:13px">直接貼給 Codex。</span></div>
+<pre id="rq">你是一位動畫分鏡導演。下面給你一幕戲和這個場景的地圖，請你決定：
+- 這一幕要拍幾張圖；
+- 角色在地圖上站在哪裡、怎麼移動（走位）；
+- 每張圖的相機放在地圖哪裡；
+- 每張圖的 7 項拍攝資訊（一定要填）；
+- 每張圖送進 Google Flow（Nano Banana 2.1 生圖模型）的英文 prompt。
+
+━━━━━━━━━━━━━━━━━━━━
+【一、作品】
+科普短片系列，改編 Cody Cassidy《How to Survive History》。主角 HERO 是一個很窮、延畢兩年的大學生，幫博士打工，坐時光機回到過去出任務。HERO 沒有台詞，只有喘氣、驚叫這類聲音；故事全靠第二人稱旁白（「你」）。畫風：手腳粗粗的火柴人，白色圓頭；恐龍是卡通風，但大小照真實比例。
+每張圖是一張 16:9 靜態圖；剪輯時可以對它推近、拉遠、移框、停留，所以一張圖可以配好幾句旁白。
+可以用插入鏡頭（只拍東西或手，例如手機螢幕），插入鏡頭也要填 7 項資訊。
+
+━━━━━━━━━━━━━━━━━━━━
+【二、這一幕】EP1 幕 6　降落點空地・白天（甲龍「石頭」在睡覺）
+在演什麼：
+HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿手機搜尋「白堊紀要怎麼活下去」，沒有訊號。到處是蕨類。他坐上一顆長滿青苔的大石頭休息，覺得這份工作還不錯；然後石頭眨了一下眼睛，原來是一隻尾巴有骨錘的甲龍，牠只想繼續睡，HERO 踮著腳溜走。他口渴，發現水壺跟指南都留在實驗室，聽到水聲。
+
+旁白逐字（照順序；全部要分配到圖上，一句都不能漏、不能改字；「（停）」是笑點前約 0.8 秒的停頓）：
+  1. 你是臉先著地的。
+  2. 身後的隧道，也跟著關起來了。
+  3. 這裡又熱又濕。那時候的地球比現在熱得多，連南北極都沒有冰呢。
+  4. 第一個跑來歡迎你的，是蚊子。
+  5. （停）
+  6. 都過了六千六百五十萬年，蚊子還是一模一樣。
+  7. 你打開 Google，搜尋：白堊紀要怎麼活下去？
+  8. 畫面一直轉圈、轉圈。
+  9. 沒有訊號。
+  10. （停）
+  11. 對啊，六千六百五十萬年前，哪來的基地台。
+  12. 你想找一片草地坐下來休息。
+  13. 可是這個時代，草還沒有長成草原喔。
+  14. 到處都是蕨類，高到你的腰。
+  15. 還好，旁邊剛好有一顆長滿青苔的大石頭。
+  16. 又平又涼，大小剛剛好。
+  17. 今天第一次，你覺得這份工作還不錯嘛。
+  18. 然後，那顆石頭，眨了一下眼睛。
+  19. 原來，那是一隻甲龍。全身都是盔甲，尾巴上還有一顆骨錘。
+  20. 那顆骨錘一揮，可以把你打到下個月去。
+  21. 還好，牠只想繼續睡覺。
+  22. 你踮著腳尖，偷偷溜走。
+  23. 走著走著，你口渴了。
+  24. 打開背包一看，放水壺的地方，空空的。
+  25. （停）
+  26. 水壺啊，跟生存指南一起留在實驗室了。
+  27. 這時候，你聽到了水聲。
+  28. 這是今天的第一個好消息。
+  29. （停）
+  30. 不過你決定，先不要太相信它。
+
+前一幕（幕 5）：旁白交代 6,650 萬年前北美洲中間隔著一大片海，HERO 掉在西邊；森林裡閃了一下藍光。
+後一幕（幕 7）：HERO 循著水聲走到北邊的河邊，對岸一群鴨嘴龍在喝水。
+
+━━━━━━━━━━━━━━━━━━━━
+【三、角色】（身高是站立時頭頂的高度）
+- HERO：火柴人，身高 1.72 m。戴帽子（照設定圖）、胸前斜背一台小相機、背著背包（放水壺的袋子是空的）。剛摔進泥地，滿身泥巴、滿頭汗。參考圖：REF_HERO（角色設定圖）、REF_PROPS（道具圖，有相機）。
+- ANKY（甲龍，旁白叫牠「石頭」）：全身盔甲，尾巴有骨錘；身高 2.23 m，身長約 6 m。這一幕一直趴著睡覺，背上長滿青苔，看起來像一顆大石頭；只有眨眼和慢慢舉起尾錘。參考圖：REF_ANKY（設定圖）、PAIR2_ANKY（HERO 和甲龍的身高比例圖）。
+- 蚊子：沒有參考圖。
+
+━━━━━━━━━━━━━━━━━━━━
+【四、地圖】降落點空地・白天
+大小 14 欄（A–N）× 32 列（1–32），一格 2 公尺。北在上。時間：上午，太陽在東南方。
+格子用「欄字母＋列數字」表示，例如 G29。
+     A B C D E F G H I J K L M N
+  1  D D D D D D D D D D D D D D
+  2  D D D D D D D D D D D D D D
+  3  s s s s s s s s s s s s s s
+  4  s s s s s s s s s s s s s s
+  5  R R R R R R R R R R R R R R
+  6  R R R R R R R R R R R R R R
+  7  R R R R R R R R R R R R R R
+  8  R R R R R R R R R R R R R R
+  9  R R R R R R R R R R R R R R
+ 10  R R R R R R R R R R R R R R
+ 11  R R R R R R R R R R R R R R
+ 12  R R R R R R R R R R R R R R
+ 13  R R R R R R R R R R R R R R
+ 14  R R R R R R R R R R R R R R
+ 15  F F F g g g g g g g g F F F
+ 16  F F F A A A g g g g g F F F
+ 17  F F F A A A g g g g g F F F
+ 18  F F F g g g g g g g g F F F
+ 19  F F F g g g g g g g g F F F
+ 20  F F F g g g g g g g g F F F
+ 21  F F F g g g g g g g g F F F
+ 22  F F F g g g g g g g g F F F
+ 23  F F F g g g g g g g g F F F
+ 24  F F F g g g g f f f f F F F
+ 25  F F F g g g g f f f f F F F
+ 26  F F F g g g g f f f f F F F
+ 27  F F F g g g g f f f f F F F
+ 28  F F F g g g g g g g g F F F
+ 29  F F F g g g m m g g g F F F
+ 30  F F F g g g m m g g g F F F
+ 31  F F F g g g g g g g g F F F
+ 32  F F F g g g g g g g g F F F
+
+字母：
+  A = 甲龍「石頭」（ANKY）睡著，像一顆長滿青苔的大石頭
+  D = 對岸的森林（開闊、朦朧）
+  F = 森林（蘇鐵、銀杏、針葉樹）
+  R = 河
+  f = 蕨類叢
+  g = 森林裡的空地
+  m = 泥地（a patch of shallow mud on the forest floor (only a thin layer of mud, not a pit)）
+  s = 對岸河邊地
+  T = 時光隧道出口（HERO 掉下來的地方，掉下來後關閉），位置：G29 那塊泥地的正上方
+甲龍位置：D16–F17（3×2 格，約 6 m 長），頭朝東。甲龍和時光隧道出口的位置是固定的（之後另一幕會回到同一個地方），不能移動。
+地圖外面：北邊 對岸開闊、朦朧的森林往遠方延伸；東邊、西邊 寬闊的河和兩岸的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
+蕨類高到 HERO 的腰。
+
+━━━━━━━━━━━━━━━━━━━━
+【五、每張圖必填的 7 項拍攝資訊】一定要填，不能空；不適用填 N/A。左右一律是觀眾看到的畫面左右。
+  1. 主體（subject）：景別和構圖以誰為準；次要主體可列。 自由寫。
+  2. 景別（shot_size）：8 級擇一，以主體為準。 只能填下面其中一個：
+     - EWS：極遠景。主體很小，環境是重點
+     - WS：遠景。主體全身清楚，周圍環境也大量入鏡
+     - FS：全景。主體頭到腳剛好完整入鏡
+     - MLS：膝上景。畫面下緣在膝蓋附近
+     - MS：中景。畫面下緣在腰附近
+     - MCU：中近景。畫面下緣在胸附近
+     - CU：特寫。臉（或物件的重點部分）
+     - ECU：極特寫。比特寫更小的局部：眼睛、嘴、手指
+  3. 水平方位（azimuth）：相機在主體哪一邊。 只能填下面其中一個：
+     - front：正面。相機在主體正前方
+     - front34：前側 3/4。相機在主體前方偏一側，看得到臉和一側身體
+     - side：側面。相機在主體正側面
+     - back34：後側 3/4。相機在主體後方偏一側
+     - back：背面。相機在主體正後方
+  4. 角度（angle）：5 種擇一。 只能填下面其中一個：
+     - eye：平視。相機跟主體眼睛差不多高，平著看
+     - low：仰視。相機貼地往上看，主體顯得高大
+     - high：俯視。相機在附近高處往下看
+     - top：正上方俯拍。相機在主體正上方，垂直往下看
+     - aerial：空拍。相機在高空，往下看一大片地形，主體很小
+  5. 構圖位置（composition）：誰在畫面左／中／右；前景、背景有什麼。 自由寫。
+  6. 畫面方向（screen_direction）：主體往哪邊跑或看（觀眾的左右）。 只能填下面其中一個：
+     - left：往左。主體往畫面左邊移動
+     - right：往右。主體往畫面右邊移動
+     - toward：朝鏡頭。主體朝鏡頭來
+     - away：遠離鏡頭。主體離開鏡頭
+     - off_left：看畫外左。主體看向畫面外左邊
+     - off_right：看畫外右。看向畫面外右邊
+     - off_up：看畫外上。看向畫面外上方
+     - off_down：看畫外下。看向畫面外下方
+  7. 動作與關鍵瞬間（action）：哪一刻、什麼姿勢、表情。 自由寫。
+  景別填 ECU 時，另外在 ecu_part 寫是哪個局部（眼睛、嘴、手指…）；不是 ECU 填 N/A。
+
+每張圖另外要給：
+  - 配哪幾句旁白（照抄上面的句子）；
+  - 每個入鏡角色：哪些部位入鏡、約佔畫高幾成（每個角色都要寫，只寫倍數的話模型會把每個角色畫成一樣大）；
+  - 要附哪幾張參考圖。
+
+━━━━━━━━━━━━━━━━━━━━
+【六、地圖和 7 項資訊要對得上】回傳前請自己檢查：
+  - 水平方位：由相機的格子相對於主體的格子、和主體面朝的方向算出來。例：主體在 G20 面朝南，相機在 G24 → 正面（front）。
+  - 景別：要跟相機到主體的距離合理，距離寫在 camera.distance_m。
+  - 畫面方向：主體面朝或移動的方向，換算成從相機看過去的左右。
+  - 構圖位置：誰在畫面左、誰在畫面右，要跟從相機看過去的地圖左右一致。
+  - 前後圖的角色位置要連得起來；角色不能穿過甲龍或森林。
+
+━━━━━━━━━━━━━━━━━━━━
+【七、寫 prompt 的規則】
+- 景別、水平方位、角度三項，直接用下面實測過的英文句子（HERO 換成這張的主體；水平方位句子裡的 trail、TEEN 換成這一幕的東西），不要自己改寫。✓ 有效、△ 部分有效、✗ 無效。
+- 用了表上沒有的寫法，列在 untested；用到 △ 或 ✗，在 remedy 寫補救方式（例：CU 畫不出來，改 MCU，剪輯時再推近）。
+- 畫風那句固定寫：16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+- 每個入鏡角色只能出現一次；寫明畫面裡只有哪些角色。
+  [景別]
+   EWS ✓：Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject.
+   WS △：Shot size: Wide Shot (WS). HERO&#x27;s whole body is clearly visible, with a lot of the surroundings around him.　（常畫成跟 FS 一樣大）
+   FS ✓：Shot size: Full Shot (FS). HERO&#x27;s whole body, from head to feet, just fits in the picture.
+   MLS ✓：Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees.
+   MS △：Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist.　（常畫成膝上）
+   MCU △：Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest.　（常畫成到腰）
+   CU ✗：Shot size: Close-up (CU). HERO&#x27;s face fills most of the picture.　（只到胸口）
+   ECU ✓：Shot size: Extreme Close-up (ECU). Only HERO&#x27;s eyes and the glasses around them fill the picture.　（眼睛 ✓；寫「嘴」只有 1/4 成功）
+  [水平方位]
+   front ✓：Camera direction: front view. The camera is on the trail ahead of HERO, facing him.　（原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+   front34 △：Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the trail, so we see his face and one side of his body.　（大致做到；原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+   side ✓：Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side.　（原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+   back34 △：Camera direction: rear three-quarter view. The camera is behind TEEN and off to one side of the trail; TEEN is nearer the camera and HERO runs ahead of him, both seen from behind and one side.　（大致做到；偶爾多畫一個 HERO 當前景；原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+   back ✓：Camera direction: back view. The camera is on the trail behind TEEN, looking the way they run; TEEN&#x27;s back is nearer the camera and HERO&#x27;s back is farther ahead. TEEN runs on one side of the trail, so he does not hide HERO.　（偶爾多畫一個 HERO 當前景；原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+  [角度]
+   eye ✓：Camera angle: Eye-level: the camera is at HERO&#x27;s eye height, looking straight ahead.
+   low ✓：Extreme low-angle shot, ground-level camera perspective, looking up at HERO&#x27;s full body.　（一定要有 Extreme low-angle shot；只寫 Low Angle 40 格全失敗。目前只在單人站立畫面驗證）
+   high △：Camera angle: High angle: the camera is high above HERO, looking down at him.　（只有輕微往下看）
+   top ✗：Camera angle: Top-down shot (also called overhead shot): the camera is directly above HERO, looking straight down.　（最多高處斜看）
+   aerial △：Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.　（只有配 EWS 成功）
+  注意：寫了俯視、正上方、空拍，人物常會變小，景別被往遠拉一級。
+
+━━━━━━━━━━━━━━━━━━━━
+【八、回傳格式】
+只回一個 JSON 物件，不要其他文字，不要 markdown 程式碼框。欄位名稱和可選值照下面，一字不改：
+{
+ &quot;scene_id&quot;: &quot;EP1-06&quot;,
+ &quot;shot_count&quot;: &quot;&lt;整數&gt;&quot;,
+ &quot;notes&quot;: &quot;&lt;整體拍法說明，繁體中文&gt;&quot;,
+ &quot;blocking&quot;: [
+  {
+   &quot;who&quot;: &quot;&lt;HERO／ANKY&gt;&quot;,
+   &quot;path&quot;: [
+    {
+     &quot;t&quot;: &quot;&lt;整數&gt;&quot;,
+     &quot;cell&quot;: &quot;&lt;例 G29&gt;&quot;,
+     &quot;facing&quot;: &quot;&lt;N／NE／E／SE／S／SW／W／NW&gt;&quot;,
+     &quot;doing&quot;: &quot;&lt;在做什麼&gt;&quot;
+    }
+   ]
+  }
+ ],
+ &quot;shots&quot;: [
+  {
+   &quot;id&quot;: &quot;EP1-06-&lt;兩位數&gt;&quot;,
+   &quot;t&quot;: &quot;&lt;對應 blocking 的 t&gt;&quot;,
+   &quot;narration&quot;: [
+    &quot;&lt;旁白原句&gt;&quot;
+   ],
+   &quot;subject&quot;: &quot;&lt;主體&gt;&quot;,
+   &quot;shot_size&quot;: &quot;&lt;EWS…ECU&gt;&quot;,
+   &quot;ecu_part&quot;: &quot;&lt;局部或 N/A&gt;&quot;,
+   &quot;azimuth&quot;: &quot;&lt;front…back&gt;&quot;,
+   &quot;angle&quot;: &quot;&lt;eye／low／high／top／aerial&gt;&quot;,
+   &quot;composition&quot;: &quot;&lt;構圖位置&gt;&quot;,
+   &quot;screen_direction&quot;: &quot;&lt;left…off_down&gt;&quot;,
+   &quot;action&quot;: &quot;&lt;動作與關鍵瞬間&gt;&quot;,
+   &quot;camera&quot;: {
+    &quot;cell&quot;: &quot;&lt;格子&gt;&quot;,
+    &quot;height_m&quot;: &quot;&lt;數字&gt;&quot;,
+    &quot;look_at&quot;: &quot;&lt;對準誰&gt;&quot;,
+    &quot;distance_m&quot;: &quot;&lt;數字&gt;&quot;
+   },
+   &quot;cast&quot;: [
+    {
+     &quot;who&quot;: &quot;&lt;角色&gt;&quot;,
+     &quot;visible&quot;: &quot;&lt;哪些部位入鏡&gt;&quot;,
+     &quot;frame_height&quot;: &quot;&lt;約佔畫高幾成&gt;&quot;
+    }
+   ],
+   &quot;refs&quot;: [
+    &quot;&lt;參考圖名稱&gt;&quot;
+   ],
+   &quot;prompt&quot;: &quot;&lt;英文 prompt 全文&gt;&quot;,
+   &quot;untested&quot;: [
+    &quot;&lt;表上沒有的寫法&gt;&quot;
+   ],
+   &quot;remedy&quot;: &quot;&lt;補救方式或 N/A&gt;&quot;
+  }
+ ]
+}
+說明：
+- blocking：這一幕的走位。每個角色一串位置；t 是時間順序（1、2、3…），facing 用 8 方位 N／NE／E／SE／S／SW／W／NW。
+- shots[].t：這張圖取走位裡的哪一個時間點；那個時間點每個角色的位置就是這張圖的站位。
+- shots[].camera：相機所在的格子、離地高度（公尺）、對準誰、到主體的距離（公尺）。插入鏡頭也要填。
+- shot_count 要等於 shots 的張數。
+</pre></section>
+
+<section class="part b"><h2><span class="tag">下</span>預期收到的 JSON 回覆</h2>
+<p class="note">格式照 request 第八段。下面的內容是<b>示意</b>（只列前兩張），讓你看回來會長什麼樣；實際要拍幾張、站在哪、怎麼拍，由 Codex 決定。</p>
+<div class="bar"><button data-t="ex">複製 JSON</button><span class="m" style="color:var(--mut);font-size:13px"></span></div>
+<pre id="ex">{
+ &quot;scene_id&quot;: &quot;EP1-06&quot;,
+ &quot;shot_count&quot;: 2,
+ &quot;notes&quot;: &quot;（示意，只列前兩張）先用遠景交代 HERO 摔在泥地、隧道關閉，再用中景拍他站起來被蚊子叮……&quot;,
+ &quot;blocking&quot;: [
+  {
+   &quot;who&quot;: &quot;HERO&quot;,
+   &quot;path&quot;: [
+    {
+     &quot;t&quot;: 1,
+     &quot;cell&quot;: &quot;G29&quot;,
+     &quot;facing&quot;: &quot;S&quot;,
+     &quot;doing&quot;: &quot;臉朝下趴在泥地上，背後的隧道正在關閉&quot;
+    },
+    {
+     &quot;t&quot;: 2,
+     &quot;cell&quot;: &quot;G29&quot;,
+     &quot;facing&quot;: &quot;S&quot;,
+     &quot;doing&quot;: &quot;站起來，滿身泥，一隻蚊子停在手臂上&quot;
+    },
+    {
+     &quot;t&quot;: 3,
+     &quot;cell&quot;: &quot;H22&quot;,
+     &quot;facing&quot;: &quot;N&quot;,
+     &quot;doing&quot;: &quot;站在蕨類中間找地方坐&quot;
+    },
+    {
+     &quot;t&quot;: 4,
+     &quot;cell&quot;: &quot;E18&quot;,
+     &quot;facing&quot;: &quot;S&quot;,
+     &quot;doing&quot;: &quot;坐在甲龍背上伸懶腰&quot;
+    }
+   ]
+  },
+  {
+   &quot;who&quot;: &quot;ANKY&quot;,
+   &quot;path&quot;: [
+    {
+     &quot;t&quot;: 1,
+     &quot;cell&quot;: &quot;D16–F17&quot;,
+     &quot;facing&quot;: &quot;E&quot;,
+     &quot;doing&quot;: &quot;趴著睡覺，像一顆長青苔的大石頭&quot;
+    }
+   ]
+  }
+ ],
+ &quot;shots&quot;: [
+  {
+   &quot;id&quot;: &quot;EP1-06-01&quot;,
+   &quot;t&quot;: 1,
+   &quot;narration&quot;: [
+    &quot;你是臉先著地的。&quot;,
+    &quot;身後的隧道，也跟著關起來了。&quot;
+   ],
+   &quot;subject&quot;: &quot;HERO&quot;,
+   &quot;shot_size&quot;: &quot;WS&quot;,
+   &quot;ecu_part&quot;: &quot;N/A&quot;,
+   &quot;azimuth&quot;: &quot;side&quot;,
+   &quot;angle&quot;: &quot;high&quot;,
+   &quot;composition&quot;: &quot;HERO 趴在畫面中間偏下的泥地上，隧道的光圈在畫面右邊正在縮小，背景是空地和森林&quot;,
+   &quot;screen_direction&quot;: &quot;N/A&quot;,
+   &quot;action&quot;: &quot;HERO 臉朝下趴著，泥巴濺起來，隧道正在關閉&quot;,
+   &quot;camera&quot;: {
+    &quot;cell&quot;: &quot;J28&quot;,
+    &quot;height_m&quot;: 3,
+    &quot;look_at&quot;: &quot;HERO&quot;,
+    &quot;distance_m&quot;: 7
+   },
+   &quot;cast&quot;: [
+    {
+     &quot;who&quot;: &quot;HERO&quot;,
+     &quot;visible&quot;: &quot;全身&quot;,
+     &quot;frame_height&quot;: &quot;約 2 成（趴著）&quot;
+    }
+   ],
+   &quot;refs&quot;: [
+    &quot;REF_HERO&quot;,
+    &quot;REF_PROPS&quot;
+   ],
+   &quot;prompt&quot;: &quot;16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: …&quot;,
+   &quot;untested&quot;: [],
+   &quot;remedy&quot;: &quot;WS 常畫成 FS 一樣大：在 prompt 加大量環境描述&quot;
+  },
+  {
+   &quot;id&quot;: &quot;EP1-06-02&quot;,
+   &quot;t&quot;: 2,
+   &quot;narration&quot;: [
+    &quot;這裡又熱又濕。那時候的地球比現在熱得多，連南北極都沒有冰呢。&quot;,
+    &quot;第一個跑來歡迎你的，是蚊子。&quot;,
+    &quot;（停）&quot;,
+    &quot;都過了六千六百五十萬年，蚊子還是一模一樣。&quot;
+   ],
+   &quot;subject&quot;: &quot;HERO&quot;,
+   &quot;shot_size&quot;: &quot;MLS&quot;,
+   &quot;ecu_part&quot;: &quot;N/A&quot;,
+   &quot;azimuth&quot;: &quot;front&quot;,
+   &quot;angle&quot;: &quot;eye&quot;,
+   &quot;composition&quot;: &quot;HERO 在畫面中間，一隻蚊子停在他右手臂（畫面左邊），背景是森林&quot;,
+   &quot;screen_direction&quot;: &quot;toward&quot;,
+   &quot;action&quot;: &quot;HERO 滿身泥、滿頭汗，瞪著手臂上的蚊子&quot;,
+   &quot;camera&quot;: {
+    &quot;cell&quot;: &quot;G31&quot;,
+    &quot;height_m&quot;: 1.5,
+    &quot;look_at&quot;: &quot;HERO&quot;,
+    &quot;distance_m&quot;: 4
+   },
+   &quot;cast&quot;: [
+    {
+     &quot;who&quot;: &quot;HERO&quot;,
+     &quot;visible&quot;: &quot;頭到膝蓋&quot;,
+     &quot;frame_height&quot;: &quot;約 9 成&quot;
+    }
+   ],
+   &quot;refs&quot;: [
+    &quot;REF_HERO&quot;,
+    &quot;REF_PROPS&quot;
+   ],
+   &quot;prompt&quot;: &quot;16:9, generate 1 image. …&quot;,
+   &quot;untested&quot;: [],
+   &quot;remedy&quot;: &quot;N/A&quot;
+  }
+ ]
+}</pre></section>
+</main>
+<script>
+document.querySelectorAll('button[data-t]').forEach(b=>b.onclick=async()=>{const el=document.getElementById(b.dataset.t),m=b.nextElementSibling;
+  try{await navigator.clipboard.writeText(el.textContent);m.textContent='已複製';}
+  catch(e){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);m.textContent='已選取，請按 ⌘C';}});
+</script>
+</body></html>
