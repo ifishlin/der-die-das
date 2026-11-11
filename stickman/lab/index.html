@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Stickman 實驗結果</title>
+<style>
+:root{--bg:#eef0ee;--panel:#fff;--fg:#1d2420;--mut:#66706a;--line:#d5dad6;--acc:#1f6b52}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"PingFang TC","Noto Sans TC",sans-serif;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:1100px;margin:0 auto}
+h1{font-size:24px;margin:0 0 4px}a{color:var(--acc)}
+.sub{color:var(--mut);margin:0 0 22px;max-width:70ch}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:16px}
+a.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;color:inherit;text-decoration:none}
+a.card:hover,a.card:focus-visible{border-color:var(--acc);outline:none}
+a.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--line)}
+.cover{aspect-ratio:16/9;max-width:100%;display:grid;place-items:center;background:var(--acc);color:var(--panel);font-size:40px;font-weight:700;letter-spacing:.05em}
+.body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px}
+.body b{font-size:16px}.body span{color:var(--mut);font-size:14px}
+.body time{color:var(--acc);font-size:12px;font-variant-numeric:tabular-nums}
+</style></head><body><main>
+<div style="font-size:14px;margin-bottom:12px"><a href="../">← Stickman</a></div>
+<h1>實驗結果</h1>
+<p class="sub">在 Google Flow 上的畫面實驗、測試結果、模型回覆和出圖比較。</p>
+<div class="list">
+  <a class="card" href="../scale-check/"><div class="cover">比例</div>
+    <div class="body"><time>2026-11-11</time><b>暴龍比例檢查</b><span>幕 1 第 2 版兩邊畫出來的圖，每張跟 HERO／TEEN 比例圖並排目視：一致、略大略小、TEEN 該放大或縮小多少。</span></div></a>
+  <a class="card" href="../draw-compare/"><div class="cover">出圖</div>
+    <div class="body"><time>2026-11-11</time><b>分鏡出圖比較</b><span>同一份 request，Codex 和 Claude 各自分鏡後在 Flow 畫出來的圖並排比較，含旁白分配。</span></div></a>
+  <a class="card" href="../replies/"><div class="cover">查詢</div>
+    <div class="body"><time>2026-11-11</time><b>分鏡回覆查詢</b><span>每一幕送出的 request、Codex 和 Claude 回來的原始檔、整理版和兩邊比較。</span></div></a>
+  <a class="card" href="../lowangle-test/"><div class="cover">仰視</div>
+    <div class="body"><time>2026-11-11</time><b>貼地仰視拆解測試</b><span>HERO 單人站在森林，每組只改角度那一句：Gemini 寫法、拿掉三種元素、換回舊寫法，各 4 張。</span></div></a>
+  <a class="card" href="../grid-results/"><div class="cover">格子</div>
+    <div class="body"><time>2026-11-11</time><b>景別 × 角度格子測試</b><span>景別 8 級 × 角度 5 種 ＝ 40 組，我的 v1 和 Codex 自己寫的版本各 4 張，對照參考表目測。</span></div></a>
+  <a class="card" href="../terms-results/"><div class="cover">結果</div>
+    <div class="body"><time>2026-11-10</time><b>新鏡頭用語測試結果</b><span>五組單獨測、我的 v1 和 Codex 改寫版各 4 張的圖、目測判定，和還沒測的清單。</span></div></a>
+  <a class="card" href="../terms-test/"><div class="cover">測試</div>
+    <div class="body"><time>2026-11-10</time><b>新鏡頭用語測試規劃</b><span>五組（拍多大、相機高低、左右方向、從哪一邊拍、用誰的眼睛看）的細項、定義、prompt 和參考圖。</span></div></a>
+  <a class="card" href="../codex-shots/ep1-seg00.html"><div class="cover">Codex</div>
+    <div class="body"><time>2026-11-10</time><b>EP1 冷開場：Codex 怎麼拍 vs 我們</b><span>用標準 prompt 問 Codex 段落 0 要分幾個鏡頭、怎麼拍，跟我們的 4 格對照。</span></div></a>
+  <a class="card" href="../s003-shot-tests/"><img loading="lazy" src="../s003-shot-tests/th/A4_High__01_Extreme_Wide_Shot_1.jpg" alt="">
+    <div class="body"><time>2026-11-07</time><b>S00-3 景別 × 相機角度</b><span>10 級景別 × 4 種角度共 160 張，加上對照官方定義的評估。</span></div></a>
+  <a class="card" href="../hero-placement/"><img loading="lazy" src="../hero-placement/img/fp_summary.jpg" alt="">
+    <div class="body"><time>2026-11-07</time><b>HERO 放進畫面的實驗</b><span>白地、小樹、紅柱、加 TEEN、森林貼圖法、十字路口橫移，每次的圖和 prompt。</span></div></a>
+  <a class="card" href="../bg-experiments/"><img loading="lazy" src="../bg-experiments/crop_compare.jpg" alt="">
+    <div class="body"><time>2026-11-06</time><b>背景實驗紀錄</b><span>黃昏森林背景的五種效果，每個試過的做法和結果。</span></div></a>
+  <a class="card" href="../chase-11-styles/"><img loading="lazy" src="../chase-11-styles/ext/episodes/001_trex_run/scenes_v6/final/S00-3.jpg" alt="">
+    <div class="body"><time>2026-11-06</time><b>第一幕追逐：十一種表現法</b><span>S00-1 → S00-3 暴龍從遠處追到鏡頭前，十一種畫法對照。</span></div></a>
+</div>
+</main></body></html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Stickman 規定與格式</title>
+<style>
+:root{--bg:#eef0ee;--panel:#fff;--fg:#1d2420;--mut:#66706a;--line:#d5dad6;--acc:#1f6b52}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"PingFang TC","Noto Sans TC",sans-serif;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:1100px;margin:0 auto}
+h1{font-size:24px;margin:0 0 4px}a{color:var(--acc)}
+.sub{color:var(--mut);margin:0 0 22px;max-width:70ch}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:16px}
+a.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;color:inherit;text-decoration:none}
+a.card:hover,a.card:focus-visible{border-color:var(--acc);outline:none}
+a.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--line)}
+.cover{aspect-ratio:16/9;max-width:100%;display:grid;place-items:center;background:var(--acc);color:var(--panel);font-size:40px;font-weight:700;letter-spacing:.05em}
+.body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px}
+.body b{font-size:16px}.body span{color:var(--mut);font-size:14px}
+.body time{color:var(--acc);font-size:12px;font-variant-numeric:tabular-nums}
+</style></head><body><main>
+<div style="font-size:14px;margin-bottom:12px"><a href="../">← Stickman</a></div>
+<h1>規定與格式</h1>
+<p class="sub">送給 Codex／Claude 的 request、回傳 JSON 格式、鏡頭用語和製作流程。</p>
+<div class="list">
+  <a class="card" href="../scale-request/"><div class="cover">審查</div>
+    <div class="body"><time>2026-11-11</time><b>比例審查 request</b><span>給模型比例圖和一幕所有出圖，請它目視判斷每張角色大小對不對、要放大縮小幾倍：送出的 request 和回傳 JSON 格式。</span></div></a>
+  <a class="card" href="../scene-request/"><div class="cover">幕</div>
+    <div class="body"><time>2026-11-11</time><b>EP1 幕 6 拍攝 request</b><span>把一幕交給 Codex／Claude 拍：分鏡原則、這幕要演什麼、地圖（角色可站／相機可放）、7 項資訊，和預期收到的 JSON 回覆。</span></div></a>
+  <a class="card" href="../shot-spec/"><div class="cover">格式</div>
+    <div class="body"><time>2026-11-11</time><b>分鏡標準格式</b><span>分鏡原則、每張圖都填的 7 欄＋畫圖資訊、實測過的 prompt 寫法、JSON 範例和通用 request。</span></div></a>
+  <a class="card" href="../shot-terms/"><div class="cover">用語</div>
+    <div class="body"><time>2026-11-10</time><b>鏡頭用語統一版</b><span>景別 8 級、方位、高度、角度、構圖等必填欄和選填欄位，跟舊十級景別的對照。</span></div></a>
+  <a class="card" href="../pipeline-steps/"><div class="cover">26 步</div>
+    <div class="body"><time>2026-11-07</time><b>製作步驟總表</b><span>從書的一章到上架：每步有沒有討論過、誰決定、用什麼工具、怎麼做。</span></div></a>
+</div>
+</main></body></html>
