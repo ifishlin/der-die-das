@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>貼地仰視拆解測試</title>
+<meta name="robots" content="noindex">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#eef0ee; --panel:#ffffff; --fg:#1d2420; --mut:#66706a; --line:#d5dad6;
+  --acc:#1f6b52; --acc-soft:#dcebe4; --ok:#1f7a45; --mid:#a06a10; --bad:#b0362c; --hl:#fff1c2;
+  --sans:"Noto Sans TC",-apple-system,"PingFang TC",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141816; --panel:#1d2320; --fg:#e6ebe8; --mut:#93a09a; --line:#2f3833;
+  --acc:#6cc7a3; --acc-soft:#22382f; --ok:#6cc792; --mid:#e0b25a; --bad:#ef7d72; --hl:#3a3420; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141816; --panel:#1d2320; --fg:#e6ebe8; --mut:#93a09a; --line:#2f3833;
+  --acc:#6cc7a3; --acc-soft:#22382f; --ok:#6cc792; --mid:#e0b25a; --bad:#ef7d72; --hl:#3a3420; color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 var(--sans);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+main{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1{font-size:24px;margin:0;text-wrap:balance}
+h2{font-size:17px;margin:0}
+.sub{color:var(--mut);margin:0;max-width:75ch}
+.note{background:var(--acc-soft);border-radius:8px;padding:10px 14px;max-width:80ch}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.hd{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.hd small{font:12px var(--mono);color:var(--mut)}
+.line{font:12.5px/1.5 var(--mono);background:var(--hl);border-radius:6px;padding:6px 10px;overflow-wrap:anywhere}
+.row4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.row4 img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-radius:4px;cursor:zoom-in}
+@media (max-width:700px){.row4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ok{color:var(--ok)}.mid{color:var(--mid)}.bad{color:var(--bad)}
+.judge{font-weight:500}
+details summary{cursor:pointer;color:var(--acc);font-size:13px}
+details pre{white-space:pre-wrap;font:12px/1.5 var(--mono);background:var(--bg);border-radius:6px;padding:8px 10px;margin:4px 0 0}
+#lb{position:fixed;inset:0;background:rgba(8,10,9,.94);z-index:20;padding:12px;align-items:center;justify-content:center}
+#lb:not([hidden]){display:flex}
+#lb img{max-width:100%;max-height:92vh;cursor:zoom-out}
+[hidden]{display:none!important}img{max-width:100%}
+a{color:var(--acc)}
+</style></head><body>
+<main>
+  <div style="font-size:14px"><a href="../">← stickman</a>　<a href="../grid-results/">景別 × 角度格子測試</a></div>
+  <h1>貼地仰視拆解測試</h1>
+  <p class="sub">2026-11-11 在 Flow（Nano Banana 2.1）跑。格子測試裡「仰視」40 格都沒效果，Gemini 給了一段寫法。這頁用同一個畫面（HERO 一個人站在白堊紀森林、全身），每組只改角度那一句，各畫 4 張，看是哪幾個詞讓它變成貼地仰視。其他字完全一樣，附圖 REF_HERO、REF_PROPS。</p>
+  <div class="note" id="sum"></div>
+  <div id="list" style="display:flex;flex-direction:column;gap:14px"></div>
+</main>
+<div id="lb" hidden><img alt=""></div>
+<script>
+const D=[{"g": "gemini_FS", "title": "基準：Gemini 寫法", "diff": "Gemini 給的整句，套到我們的畫面（高樓換成樹幹、拿掉寫實攝影的詞）", "judge": "成功 4/4：貼地往上拍，腳在下緣、樹往上收、看得到天空", "tone": "ok", "line": "Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body, his feet close to the foreground, towering tree trunks in the background, blue sky with passing clouds above the treetops, 35mm lens effect.", "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheet: thick black outlines, flat colors. No text anywhere in the picture.\nExtreme low-angle shot, ground-level camera perspective, looking up at HERO's full body, his feet close to the foreground, towering tree trunks in the background, blue sky with passing clouds above the treetops, 35mm lens effect.\nScene: a Late Cretaceous forest.\nAction: HERO, exactly like the attached HERO sheet but without his helmet, stands in the forest.\nHERO's face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO's chest. Only HERO is in the picture.", "n": [1, 2, 3, 4]}, {"g": "no_scene", "title": "拿掉 ② 腳、高聳、天空", "diff": "只留角度用詞和 35mm", "judge": "成功 4/4：還是貼地仰視，天空少一點", "tone": "ok", "line": "Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body, 35mm lens effect.", "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheet: thick black outlines, flat colors. No text anywhere in the picture.\nExtreme low-angle shot, ground-level camera perspective, looking up at HERO's full body, 35mm lens effect.\nScene: a Late Cretaceous forest.\nAction: HERO, exactly like the attached HERO sheet but without his helmet, stands in the forest.\nHERO's face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO's chest. Only HERO is in the picture.", "n": [1, 2, 3, 4]}, {"g": "no_35mm", "title": "拿掉 ③ 35mm", "diff": "其他照基準", "judge": "成功 4/4：仰視最明顯，腳很大", "tone": "ok", "line": "Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body, his feet close to the foreground, towering tree trunks in the background, blue sky with passing clouds above the treetops.", "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheet: thick black outlines, flat colors. No text anywhere in the picture.\nExtreme low-angle shot, ground-level camera perspective, looking up at HERO's full body, his feet close to the foreground, towering tree trunks in the background, blue sky with passing clouds above the treetops.\nScene: a Late Cretaceous forest.\nAction: HERO, exactly like the attached HERO sheet but without his helmet, stands in the forest.\nHERO's face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO's chest. Only HERO is in the picture.", "n": [1, 2, 3, 4]}, {"g": "no_extreme", "title": "拿掉 ① 的 extreme", "diff": "開頭改成 Low-angle shot", "judge": "成功 4/4：跟基準差不多", "tone": "ok", "line": "Low-angle shot, ground-level camera perspective, looking up at HERO's full body, his feet close to the foreground, towering tree trunks in the background, blue sky with passing clouds above the treetops, 35mm lens effect.", "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheet: thick black outlines, flat colors. No text anywhere in the picture.\nLow-angle shot, ground-level camera perspective, looking up at HERO's full body, his feet close to the foreground, towering tree trunks in the background, blue sky with passing clouds above the treetops, 35mm lens effect.\nScene: a Late Cretaceous forest.\nAction: HERO, exactly like the attached HERO sheet but without his helmet, stands in the forest.\nHERO's face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO's chest. Only HERO is in the picture.", "n": [1, 2, 3, 4]}, {"g": "old_wording", "title": "換回格子測試的舊寫法", "diff": "整句換成格子測試用的 Camera angle: Low angle 那句", "judge": "失敗：1/4 有一點微微仰視，其他 3 張接近平視，沒有一張貼地；第 3 張還變成半身（這句沒寫全身）", "tone": "bad", "line": "Camera angle: Low angle: the camera is low, below HERO, looking up at him.", "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheet: thick black outlines, flat colors. No text anywhere in the picture.\nCamera angle: Low angle: the camera is low, below HERO, looking up at him.\nScene: a Late Cretaceous forest.\nAction: HERO, exactly like the attached HERO sheet but without his helmet, stands in the forest.\nHERO's face and hands are pure paper white. The small photo camera from the attached PROPS sheet hangs on a strap across HERO's chest. Only HERO is in the picture.", "n": [1, 2, 3, 4]}];
+const esc=t=>String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+document.getElementById('sum').innerHTML=`<b>結論</b>　同一個單人畫面，只有角度那句不同。Gemini 寫法和三種拆掉一件的版本全部 4/4 成功；換回格子測試的舊寫法（Camera angle: Low angle: the camera is low, below HERO, looking up at him.）就失敗。所以問題出在用詞，不是追逐畫面。腳、高聳、天空、35mm、extreme 都不是必要的；必要的應該在三組都有的那段：low-angle shot, ground-level camera perspective, looking up at HERO's full body。這段裡還沒拆是哪個詞（例如 ground-level）。`;
+document.getElementById('list').innerHTML=D.map(r=>`<section class="card">
+  <div class="hd"><h2>${esc(r.title)}</h2><small>${r.g}</small></div>
+  <p class="sub">${esc(r.diff)}</p>
+  <div class="line">${esc(r.line)}</div>
+  <p class="judge ${r.tone}">${esc(r.judge)}</p>
+  <div class="row4">${r.n.map(n=>`<img loading="lazy" src="th/${r.g}_${n}.jpg" alt="${esc(r.title)} 第 ${n} 張">`).join('')}</div>
+  <details><summary>完整 prompt（原文）</summary><pre>${esc(r.prompt)}</pre></details></section>`).join('');
+const lb=document.getElementById('lb'),big=lb.querySelector('img');
+document.querySelectorAll('.row4 img').forEach(im=>im.onclick=()=>{big.src=im.src;lb.hidden=false});
+lb.onclick=()=>lb.hidden=true;
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.hidden=true});
+</script>
+</body></html>
