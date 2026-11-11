@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>比例審查 request</title>
+<meta name="robots" content="noindex">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f3f1ec;--panel:#fffdf8;--fg:#22201b;--mut:#6f6a60;--line:#ddd7cb;--acc:#9a4a1c;--acc-soft:#f3e3d6;--blue:#2c5d8f;--blue-soft:#e3edf7;
+  --sans:"Noto Sans TC",-apple-system,"PingFang TC",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171512;--panel:#201d19;--fg:#ece7de;--mut:#a39c90;--line:#36322b;--acc:#e59a6a;--acc-soft:#3a2a1f;--blue:#8db8e6;--blue-soft:#1f2c3a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171512;--panel:#201d19;--fg:#ece7de;--mut:#a39c90;--line:#36322b;--acc:#e59a6a;--acc-soft:#3a2a1f;--blue:#8db8e6;--blue-soft:#1f2c3a;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.65 var(--sans);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 56px}
+main{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:26px}
+h1{font-size:26px;margin:0;text-wrap:balance}h2{font-size:20px;margin:0 0 8px}
+a{color:var(--acc)}.sub{color:var(--mut);margin:6px 0 0;max-width:80ch}
+.part{border-top:5px solid var(--acc);padding-top:12px}.part.b{border-color:var(--blue)}
+.tag{display:inline-block;font:500 12px var(--sans);letter-spacing:.06em;color:var(--panel);background:var(--acc);border-radius:4px;padding:1px 8px;margin-right:8px;vertical-align:2px}.b .tag{background:var(--blue)}
+.note{background:var(--acc-soft);border-radius:8px;padding:8px 12px;margin:0 0 10px;max-width:85ch}.b .note{background:var(--blue-soft)}
+pre{white-space:pre-wrap;font:12.5px/1.6 var(--mono);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:0;overflow-x:auto;max-height:70vh;overflow-y:auto}
+.bar{display:flex;gap:10px;align-items:center;margin:0 0 8px;flex-wrap:wrap}
+button{font:500 13px var(--sans);background:var(--acc);color:var(--panel);border:0;border-radius:999px;padding:6px 16px;cursor:pointer}.b button{background:var(--blue)}
+.tbl{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border-bottom:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}th{color:var(--mut);font-size:12.5px;font-weight:500}tr:last-child td{border-bottom:0}
+.k{font:12.5px var(--mono)}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr));gap:10px}
+figure{margin:0}figure img{width:100%;border-radius:6px;display:block;border:1px solid var(--line)}figcaption{font:12px var(--mono);color:var(--mut);margin-top:3px}
+figure.ref{grid-column:1/-1;max-width:420px}
+ol,ul{margin:4px 0 0;padding-left:20px;max-width:85ch}
+</style></head><body>
+<main>
+<div style="font-size:14px"><a href="../">← stickman</a>　<a href="../scale-check/">暴龍比例檢查（Claude 目視）</a>　<a href="../draw-compare/">分鏡出圖比較</a></div>
+<header><h1>比例審查 request</h1>
+<p class="sub">2026-11-11。把比例圖和一幕的所有出圖交給模型，請它用眼睛判斷每張圖角色大小對不對、不對的要放大縮小多少。這頁是 EP1-01_v2（EP1 幕 1 第 2 版）真正要送出的內容。還沒送出。</p></header>
+
+<section><h2>規劃</h2>
+<ol><li><b>給什麼</b>：比例圖 1 張（這一幕有哪隻恐龍就給哪張 PAIR 圖）＋這一幕兩邊分鏡的每一張出圖（Flow 一次 2 張，分開判斷），共 25 張。</li>
+<li><b>盲評</b>：圖 ID 用 A（Codex 分鏡）／B（Claude 分鏡），request 裡不寫是誰的，避免模型偏袒自己那組。</li>
+<li><b>判斷規則</b>：跟比例圖目視，看了覺得一致就算一致；要考慮遠近、姿勢、局部鏡頭。不量像素、不算公式、不用地圖距離。</li>
+<li><b>怎麼表示要改多少</b>：以 HERO 為基準不動，另一個角色乘幾倍（scale）。0.85–1.15 算一致。</li>
+<li><b>怎麼送</b>：Codex 用 <code>-i</code> 依序附圖；Claude CLI 給檔案路徑、開 <code>--add-dir</code> 和 <code>--allowedTools Read</code> 讓它讀圖。兩邊回來的 JSON 可以跟 <a href="../scale-check/">Claude 這次的目視結果</a> 對照。</li>
+<li><b>回來之後</b>：程式檢查每張圖都有回、verdict 和 scale 合法；放上查詢頁並排比較。</li></ol></section>
+
+<section><h2>附件（照順序）</h2><div class="thumbs"><figure class="ref"><img src="img/blind/PAIR_TEEN.jpg" alt="比例圖"><figcaption>1. PAIR_TEEN（比例圖）</figcaption></figure><figure><img src="img/blind/A01_1.jpg" alt="A01_1" loading="lazy"><figcaption>2. A01_1（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/A01_2.jpg" alt="A01_2" loading="lazy"><figcaption>3. A01_2（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/A02_1.jpg" alt="A02_1" loading="lazy"><figcaption>4. A02_1（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/A02_2.jpg" alt="A02_2" loading="lazy"><figcaption>5. A02_2（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/A03_1.jpg" alt="A03_1" loading="lazy"><figcaption>6. A03_1（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/A03_2.jpg" alt="A03_2" loading="lazy"><figcaption>7. A03_2（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/A04_1.jpg" alt="A04_1" loading="lazy"><figcaption>8. A04_1（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/A04_2.jpg" alt="A04_2" loading="lazy"><figcaption>9. A04_2（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/A05_1.jpg" alt="A05_1" loading="lazy"><figcaption>10. A05_1（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/A05_2.jpg" alt="A05_2" loading="lazy"><figcaption>11. A05_2（Codex 分鏡）</figcaption></figure><figure><img src="img/blind/B01_1.jpg" alt="B01_1" loading="lazy"><figcaption>12. B01_1（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B01_2.jpg" alt="B01_2" loading="lazy"><figcaption>13. B01_2（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B02_1.jpg" alt="B02_1" loading="lazy"><figcaption>14. B02_1（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B02_2.jpg" alt="B02_2" loading="lazy"><figcaption>15. B02_2（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B03_1.jpg" alt="B03_1" loading="lazy"><figcaption>16. B03_1（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B03_2.jpg" alt="B03_2" loading="lazy"><figcaption>17. B03_2（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B04_1.jpg" alt="B04_1" loading="lazy"><figcaption>18. B04_1（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B04_2.jpg" alt="B04_2" loading="lazy"><figcaption>19. B04_2（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B05_1.jpg" alt="B05_1" loading="lazy"><figcaption>20. B05_1（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B05_2.jpg" alt="B05_2" loading="lazy"><figcaption>21. B05_2（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B06_1.jpg" alt="B06_1" loading="lazy"><figcaption>22. B06_1（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B06_2.jpg" alt="B06_2" loading="lazy"><figcaption>23. B06_2（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B07_1.jpg" alt="B07_1" loading="lazy"><figcaption>24. B07_1（Claude 分鏡）</figcaption></figure><figure><img src="img/blind/B07_2.jpg" alt="B07_2" loading="lazy"><figcaption>25. B07_2（Claude 分鏡）</figcaption></figure></div></section>
+
+<section class="part a"><h2><span class="tag">上</span>送出去的 request</h2>
+<div class="bar"><button data-t="rq">複製全文</button><span style="color:var(--mut);font-size:13px"></span></div>
+<pre id="rq">你是動畫分鏡的「角色比例」審查員。這次只看一件事：每張圖裡角色之間的大小，跟比例圖比起來，眼睛看起來一不一致。
+
+━━━━━━━━━━━━━━━━━━━━
+【一、附件】（25 張圖，照下面的順序附上；看不到附件的話用下面的路徑讀檔）
+  1. 比例圖 PAIR_TEEN：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/PAIR_TEEN.jpg
+  2. A01_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A01_1.jpg
+  3. A01_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A01_2.jpg
+  4. A02_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A02_1.jpg
+  5. A02_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A02_2.jpg
+  6. A03_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A03_1.jpg
+  7. A03_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A03_2.jpg
+  8. A04_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A04_1.jpg
+  9. A04_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A04_2.jpg
+  10. A05_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A05_1.jpg
+  11. A05_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/A05_2.jpg
+  12. B01_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B01_1.jpg
+  13. B01_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B01_2.jpg
+  14. B02_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B02_1.jpg
+  15. B02_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B02_2.jpg
+  16. B03_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B03_1.jpg
+  17. B03_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B03_2.jpg
+  18. B04_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B04_1.jpg
+  19. B04_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B04_2.jpg
+  20. B05_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B05_1.jpg
+  21. B05_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B05_2.jpg
+  22. B06_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B06_1.jpg
+  23. B06_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B06_2.jpg
+  24. B07_1：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B07_1.jpg
+  25. B07_2：/Volumes/Fish/personal/stickman_pipeline/docs/requests/scale/EP1-01_v2/blind/B07_2.jpg
+圖 ID 的寫法：&lt;分鏡組&gt;&lt;分鏡編號&gt;_&lt;第幾張&gt;，例如 A02_1 是 A 組分鏡第 02 張的第 1 張出圖。同一張分鏡一次出 2 張，兩張要分開判斷。
+
+━━━━━━━━━━━━━━━━━━━━
+【二、比例圖怎麼看】
+比例圖是 HERO 和 TEEN（青少年暴龍）站在同一個距離時的大小：
+  - HERO：頭頂 1.72 m（火柴人，白色圓頭）。
+  - TEEN：頭頂 2.89 m，是 HERO 的 1.68 倍高。
+請先看比例圖，記住這個大小關係，再看每張圖。
+
+━━━━━━━━━━━━━━━━━━━━
+【三、怎麼判斷】
+1. 用眼睛看，不要量像素、不要算公式，也不要猜地圖上的距離。看了覺得一致，就算一致（ok）。
+2. 要考慮遠近：離鏡頭近的會比較大、遠的比較小。先看清楚誰在前、誰在後，再判斷大小合不合理。
+3. 要考慮姿勢：前傾撲咬、跳起來、蹲低時，頭頂高度會變，不能只比頭頂。改看身體部位的大小，例如頭的長度、腿的長度、身體的厚度。
+4. 只露一部分的角色（局部鏡頭）也要判斷：看得到的部位大小合不合理。完全看不出來才填 cannot_judge，並寫原因。
+5. 以 HERO 為基準，HERO 不動。判斷另一個角色要放大或縮小多少，填在 adjust.scale：
+   - 1.0 ＝ 不用改；2.0 ＝ 放大成 2 倍；0.8 ＝ 縮小兩成。
+   - 差不到一成五（0.85–1.15）就算一致，verdict 填 ok，scale 填 1.0。
+6. 畫面裡只有一個角色：verdict 填 single，adjust 留空陣列。
+7. 刻意誇張（例如為了戲劇效果把嘴巴畫很大）：verdict 仍然照比例圖填，在 note 說明你覺得這個誇張能不能接受。
+8. confidence：遠近或姿勢看不太清楚時填 medium 或 low。
+
+verdict 只能填下面其中一個：
+  - ok：看起來跟比例圖一致（考慮遠近之後）
+  - too_small：非 HERO 的角色畫得比比例圖小
+  - too_large：非 HERO 的角色畫得比比例圖大
+  - single：畫面裡只有一個角色，不用判斷
+  - cannot_judge：完全看不出來（例如幾乎被擋住），要寫原因
+
+━━━━━━━━━━━━━━━━━━━━
+【四、回傳格式】
+只回一個 JSON 物件，不要其他文字，不要 markdown 程式碼框。欄位名稱和可選值照下面，一字不改；images 要包含附件裡每一張出圖（比例圖不用），順序照附件：
+{
+ &quot;scene_id&quot;: &quot;EP1-01_v2&quot;,
+ &quot;reference&quot;: &quot;PAIR_TEEN&quot;,
+ &quot;images&quot;: [
+  {
+   &quot;image_id&quot;: &quot;&lt;圖 ID&gt;&quot;,
+   &quot;characters&quot;: [
+    &quot;&lt;HERO&gt;&quot;,
+    &quot;&lt;TEEN&gt;&quot;
+   ],
+   &quot;verdict&quot;: &quot;&lt;ok／too_small／too_large／single／cannot_judge&gt;&quot;,
+   &quot;depth&quot;: &quot;&lt;誰在前誰在後&gt;&quot;,
+   &quot;adjust&quot;: [
+    {
+     &quot;who&quot;: &quot;&lt;TEEN&gt;&quot;,
+     &quot;scale&quot;: &quot;&lt;倍數，1.0＝不用改&gt;&quot;
+    }
+   ],
+   &quot;evidence&quot;: &quot;&lt;看到什麼&gt;&quot;,
+   &quot;confidence&quot;: &quot;&lt;high／medium／low&gt;&quot;,
+   &quot;note&quot;: &quot;&lt;刻意誇張等補充，沒有填 N/A&gt;&quot;
+  }
+ ],
+ &quot;summary&quot;: &quot;&lt;整幕結論&gt;&quot;
+}
+說明：
+- characters：畫面裡看得到的角色代號（HERO、TEEN）。
+- depth：從鏡頭看，誰在前、誰在後、差多少（自由寫，例如「TEEN 在 HERO 身後不遠」「差不多遠」「TEEN 在前景很近」）。
+- adjust：要改的角色和倍數；ok 時也寫一筆 scale 1.0；single 和 cannot_judge 留空陣列。
+- evidence：看到什麼讓你這樣判斷，繁體中文一兩句。
+- summary：整幕的結論，繁體中文。
+</pre></section>
+
+<section class="part b"><h2><span class="tag">下</span>回傳的 JSON</h2>
+<p class="note">欄位定義和 verdict 可選值如下；最下面是<b>示意</b>（只列 4 張，內容取自 Claude 這次的目視結果，request 裡不附），實際由模型判斷。</p>
+<div class="tbl"><table><tr><th>欄位</th><th>意思</th><th>例子</th></tr><tr><td class=k>scene_id</td><td>這一幕的 ID</td><td class=k>EP1-01_v2</td></tr><tr><td class=k>reference</td><td>用哪張比例圖</td><td class=k>PAIR_TEEN</td></tr><tr><td class=k>images[].image_id</td><td>圖 ID：&lt;分鏡組&gt;&lt;分鏡編號&gt;_&lt;第幾張&gt;（A＝Codex 分鏡、B＝Claude 分鏡，request 裡不說明）</td><td class=k>A02_1</td></tr><tr><td class=k>images[].characters</td><td>畫面裡看得到的角色</td><td class=k>[&quot;HERO&quot;,&quot;TEEN&quot;]</td></tr><tr><td class=k>images[].verdict</td><td>判定（下表 5 種）</td><td class=k>too_small</td></tr><tr><td class=k>images[].depth</td><td>誰在前誰在後</td><td class=k>TEEN 在 HERO 身後不遠</td></tr><tr><td class=k>images[].adjust[]</td><td>以 HERO 為準，另一個角色放大縮小幾倍；1.0＝不用改</td><td class=k>[{&quot;who&quot;:&quot;TEEN&quot;,&quot;scale&quot;:2.0}]</td></tr><tr><td class=k>images[].evidence</td><td>看到什麼讓它這樣判斷</td><td class=k>並排差不多遠，頭一樣高</td></tr><tr><td class=k>images[].confidence</td><td>high／medium／low</td><td class=k>high</td></tr><tr><td class=k>images[].note</td><td>刻意誇張等補充</td><td class=k>N/A</td></tr><tr><td class=k>summary</td><td>整幕結論</td><td class=k>…</td></tr></table></div>
+<h3 style="font-size:15px;margin:14px 0 6px">verdict 可選值</h3>
+<div class="tbl"><table><tr><th>值</th><th>意思</th></tr><tr><td class=k>ok</td><td>看起來跟比例圖一致（考慮遠近之後）</td></tr><tr><td class=k>too_small</td><td>非 HERO 的角色畫得比比例圖小</td></tr><tr><td class=k>too_large</td><td>非 HERO 的角色畫得比比例圖大</td></tr><tr><td class=k>single</td><td>畫面裡只有一個角色，不用判斷</td></tr><tr><td class=k>cannot_judge</td><td>完全看不出來（例如幾乎被擋住），要寫原因</td></tr></table></div>
+<div class="bar" style="margin-top:14px"><button data-t="ex">複製 JSON</button><span style="color:var(--mut);font-size:13px"></span></div>
+<pre id="ex">{
+ &quot;scene_id&quot;: &quot;EP1-01_v2&quot;,
+ &quot;reference&quot;: &quot;PAIR_TEEN&quot;,
+ &quot;images&quot;: [
+  {
+   &quot;image_id&quot;: &quot;A01_1&quot;,
+   &quot;characters&quot;: [
+    &quot;HERO&quot;
+   ],
+   &quot;verdict&quot;: &quot;single&quot;,
+   &quot;depth&quot;: &quot;N/A&quot;,
+   &quot;adjust&quot;: [],
+   &quot;evidence&quot;: &quot;畫面裡只有 HERO。&quot;,
+   &quot;confidence&quot;: &quot;high&quot;,
+   &quot;note&quot;: &quot;N/A&quot;
+  },
+  {
+   &quot;image_id&quot;: &quot;A02_1&quot;,
+   &quot;characters&quot;: [
+    &quot;HERO&quot;,
+    &quot;TEEN&quot;
+   ],
+   &quot;verdict&quot;: &quot;too_small&quot;,
+   &quot;depth&quot;: &quot;TEEN 跟 HERO 差不多遠，並排在小路上&quot;,
+   &quot;adjust&quot;: [
+    {
+     &quot;who&quot;: &quot;TEEN&quot;,
+     &quot;scale&quot;: 2.0
+    }
+   ],
+   &quot;evidence&quot;: &quot;並排差不多遠，TEEN 的頭只跟 HERO 的頭一樣高，身體跟 HERO 差不多大。&quot;,
+   &quot;confidence&quot;: &quot;high&quot;,
+   &quot;note&quot;: &quot;N/A&quot;
+  },
+  {
+   &quot;image_id&quot;: &quot;A04_1&quot;,
+   &quot;characters&quot;: [
+    &quot;HERO&quot;,
+    &quot;TEEN&quot;
+   ],
+   &quot;verdict&quot;: &quot;ok&quot;,
+   &quot;depth&quot;: &quot;差不多遠&quot;,
+   &quot;adjust&quot;: [
+    {
+     &quot;who&quot;: &quot;TEEN&quot;,
+     &quot;scale&quot;: 1.0
+    }
+   ],
+   &quot;evidence&quot;: &quot;TEEN 頭頂高出 HERO 很多，身體大好幾倍，跟比例圖一致。&quot;,
+   &quot;confidence&quot;: &quot;high&quot;,
+   &quot;note&quot;: &quot;N/A&quot;
+  },
+  {
+   &quot;image_id&quot;: &quot;B05_1&quot;,
+   &quot;characters&quot;: [
+    &quot;HERO&quot;,
+    &quot;TEEN&quot;
+   ],
+   &quot;verdict&quot;: &quot;too_large&quot;,
+   &quot;depth&quot;: &quot;TEEN 在 HERO 正後方&quot;,
+   &quot;adjust&quot;: [
+    {
+     &quot;who&quot;: &quot;TEEN&quot;,
+     &quot;scale&quot;: 0.8
+    }
+   ],
+   &quot;evidence&quot;: &quot;TEEN 在 HERO 後面、比較遠，卻有 HERO 的兩倍多高。&quot;,
+   &quot;confidence&quot;: &quot;medium&quot;,
+   &quot;note&quot;: &quot;正面衝鏡刻意誇張，戲劇上可以接受&quot;
+  }
+ ],
+ &quot;summary&quot;: &quot;（示意）並排同一距離的側拍容易把 TEEN 畫小；TEEN 在前景或當主體時大小正確。&quot;
+}</pre></section>
+</main>
+<script>
+document.querySelectorAll('button[data-t]').forEach(b=>b.onclick=async()=>{const el=document.getElementById(b.dataset.t),m=b.nextElementSibling;
+  try{await navigator.clipboard.writeText(el.textContent);m.textContent='已複製';}
+  catch(e){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);m.textContent='已選取，請按 ⌘C';}});
+</script>
+</body></html>
