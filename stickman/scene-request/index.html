@@ -26,10 +26,15 @@ ul{margin:4px 0 0;padding-left:20px}
 <main>
 <div style="font-size:14px"><a href="../">← stickman</a>　<a href="../shot-spec/">分鏡標準格式</a>　<a href="../story-review/#scene6">審故事：幕 6</a></div>
 <header><h1>EP1 幕 6 拍攝 request</h1>
-<p class="sub">2026-11-11。把「降落點空地・白天」這一幕交給 Codex 拍：上半部是真正要送出去的 request 全文，下半部是預期收到的 JSON 回覆。還沒送出。</p></header>
-<div class="note">送出前請確認：
+<p class="sub">2026-11-11，第 2 版。把「降落點空地・白天」這一幕交給 Codex、Claude 拍：上半部是送出去的 request 全文，下半部是預期收到的 JSON 回覆。兩邊回來的結果在<a href="../replies/">分鏡回覆查詢</a>（EP1-06_v2）。</p></header>
+<div class="note">第 2 版改了什麼（第 1 版原文保留在 <code>docs/requests/EP1-06_request.txt</code>）：
+<ul><li>新增【零、分鏡原則】：先當分鏡導演，每張圖要有敘事功能、切鏡要有目的、錨點鏡頭要穩定、實際身高和畫面佔比分開。</li>
+<li>△ ✗ 的新規則：7 項資訊照想要的效果填，prompt 寫成畫得出來的補救版本，remedy 寫怎麼補；prompt 不可以直接用 ✗ 的寫法。</li>
+<li>地圖每種地形、地上物標「角色可站／相機可放」（Claude 暫定，使用者可改），取代寫死的「角色不能穿過甲龍或森林」。</li>
+<li>刪掉三處範例格子（不在某些地圖上）；新增【八、工作順序】和回傳前檢查（每個不是平視的鏡頭都要說得出理由）。</li></ul></div>
+<div class="note">資料來源：
 <ul><li>旁白用 <code>script_v8.md</code> 段落 3 的 S03-2～S03-10（S03-1 屬於幕 5）。</li>
-<li>地圖用 <code>maps/arrive.json</code>。原檔只標了泥地，<b>甲龍位置（D16–F17）和時光隧道出口（G29 上方）是我照地圖說明補的</b>，幕 12 會用同一個位置。</li>
+<li>地圖用 <code>maps/arrive.json</code>。甲龍（D27–F28）和時光隧道出口（G29 上方）已畫進地圖檔，<b>位置是 Claude 暫定、使用者可改</b>；幕 6 和幕 12（arrive_dusk）讀同一個位置。舊版 request 送出時用的是 D16–F17。</li>
 <li>甲龍參考圖用 REF_ANKY、PAIR2_ANKY；身高 2.23 m 來自 heights.json，身長約 6 m 是我寫的。</li></ul></div>
 
 <section class="part a"><h2><span class="tag">上</span>送出去的 request</h2>
@@ -40,6 +45,17 @@ ul{margin:4px 0 0;padding-left:20px}
 - 每張圖的相機放在地圖哪裡；
 - 每張圖的 7 項拍攝資訊（一定要填）；
 - 每張圖送進 Google Flow（Nano Banana 2.1 生圖模型）的英文 prompt。
+
+━━━━━━━━━━━━━━━━━━━━
+【零、分鏡原則】（優先遵守）
+1. 你首先是動畫分鏡導演，其次才是生圖 prompt 工程師。目標是有電影感、敘事清楚、節奏有效的鏡頭，不只是把每張圖畫對。
+2. 優先順序：（1）電影效果與敘事功能（2）角色與空間連戲（3）Google Flow 的可生成性。
+3. 每張圖都要有明確的敘事功能，例如建立環境、呈現速度、強調危險、揭露資訊、製造笑點、形成懸念、定格或轉場錨點。不必另外輸出成欄位，但要反映在 notes、composition、action、旁白分配和鏡頭安排裡。
+4. 依戲劇需要選景別和角度：仰視（壓迫感、巨大感）、俯視（脆弱感、空間關係）、遠景（建立環境）、特寫／近景（情緒、細節、威脅）、插入鏡頭（資訊、物件、局部）。鏡頭變化一定要有理由，不是為了變化而變化。
+5. 先設計最佳分鏡，再處理模型限制。戲劇上值得用的景別或角度，就算實測是 △ 或 ✗ 也可以選：這時 7 項資訊照你想要的填，但 prompt 要寫成畫得出來的補救版本，remedy 寫怎麼補（例：想要 CU → shot_size 填 CU，prompt 用 MCU 的句子，remedy 寫「prompt 用 MCU，剪輯時推近到 CU」）。prompt 不可以直接用 ✗ 的寫法。
+6. 剪接：每次切鏡都要有目的，例如從環境切到角色、從 HERO 切到威脅、從動態切到定格、切插入鏡頭強調資訊。避免連續兩張功能重複、構圖相近、景別和視角沒有意義的變化；功能重複的就合併成一張。
+7. 會在別幕重現的瞬間是「關鍵錨點鏡頭」：角色位置和姿勢、相機位置、物件位置、背景構圖、光線方向、角色之間的遮擋關係都要特別清楚、穩定，方便之後重現。
+8. 角色的實際身高和畫面裡看起來多大是兩件事：身高固定不變，畫面裡佔幾成由距離、透視、景別和角度決定。
 
 ━━━━━━━━━━━━━━━━━━━━
 【一、作品】
@@ -96,7 +112,7 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
 ━━━━━━━━━━━━━━━━━━━━
 【四、地圖】降落點空地・白天
 大小 14 欄（A–N）× 32 列（1–32），一格 2 公尺。北在上。時間：上午，太陽在東南方。
-格子用「欄字母＋列數字」表示，例如 G29。
+格子用「欄字母＋列數字」表示。
      A B C D E F G H I J K L M N
   1  D D D D D D D D D D D D D D
   2  D D D D D D D D D D D D D D
@@ -113,8 +129,8 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
  13  R R R R R R R R R R R R R R
  14  R R R R R R R R R R R R R R
  15  F F F g g g g g g g g F F F
- 16  F F F A A A g g g g g F F F
- 17  F F F A A A g g g g g F F F
+ 16  F F F g g g g g g g g F F F
+ 17  F F F g g g g g g g g F F F
  18  F F F g g g g g g g g F F F
  19  F F F g g g g g g g g F F F
  20  F F F g g g g g g g g F F F
@@ -124,26 +140,25 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
  24  F F F g g g g f f f f F F F
  25  F F F g g g g f f f f F F F
  26  F F F g g g g f f f f F F F
- 27  F F F g g g g f f f f F F F
- 28  F F F g g g g g g g g F F F
+ 27  F F F A A A g f f f f F F F
+ 28  F F F A A A g g g g g F F F
  29  F F F g g g m m g g g F F F
  30  F F F g g g m m g g g F F F
  31  F F F g g g g g g g g F F F
  32  F F F g g g g g g g g F F F
 
-字母：
-  A = 甲龍「石頭」（ANKY）睡著，像一顆長滿青苔的大石頭
-  D = 對岸的森林（開闊、朦朧）
-  F = 森林（蘇鐵、銀杏、針葉樹）
-  R = 河
-  f = 蕨類叢
-  g = 森林裡的空地
-  m = 泥地（a patch of shallow mud on the forest floor (only a thin layer of mud, not a pit)）
-  s = 對岸河邊地
-  T = 時光隧道出口（HERO 掉下來的地方，掉下來後關閉），位置：G29 那塊泥地的正上方
-甲龍位置：D16–F17（3×2 格，約 6 m 長），頭朝東。甲龍和時光隧道出口的位置是固定的（之後另一幕會回到同一個地方），不能移動。
-地圖外面：北邊 對岸開闊、朦朧的森林往遠方延伸；東邊、西邊 寬闊的河和兩岸的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
-蕨類高到 HERO 的腰。
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  A = 甲龍「石頭」（ANKY）睡著，像一顆長滿青苔的大石頭（ANKY the ankylosaur asleep, looking like a big moss-covered boulder）｜角色：不可站｜相機：不可放（不能穿過；劇情需要時 HERO 可以坐在牠背上）
+  D = 對岸的森林（開闊、朦朧）（a distant, open, hazy forest on the far bank, soft and pale, with gaps between the trees）｜角色：不可站｜相機：不可放（對岸，太遠）
+  F = 森林（蘇鐵、銀杏、針葉樹）（a dense Cretaceous forest of cycads, ginkgos and conifers）｜角色：不可站｜相機：可放（相機可以放在森林邊緣往外拍，前景會有枝葉）
+  R = 河（a wide slow river）｜角色：不可站｜相機：可放（相機可以在水面上方往岸上拍）
+  f = 蕨類叢（a thick patch of tall ferns）｜角色：可站｜相機：可放（蕨類高到 HERO 的腰）
+  g = 森林裡的空地（an open patch of forest floor with leaf litter and low plants）｜角色：可站｜相機：可放
+  m = 泥地（a patch of shallow mud on the forest floor (only a thin layer of mud, not a pit)）｜角色：可站｜相機：可放
+  s = 對岸河邊地（a strip of flat muddy riverside ground on the far bank）｜角色：不可站｜相機：不可放（對岸，太遠）
+  T = 時光隧道出口（HERO 掉下來的地方，掉下來後關閉）（the spot in the air where the blue time tunnel opens），位置：G29 正上方的空中
+甲龍頭朝東、尾錘朝西。甲龍和時光隧道出口的位置是固定的（之後另一幕會回到同一個地方），不能移動。
+地圖外面：北邊 對岸開闊、朦朧的森林往遠方延伸；東邊 寬闊的河和兩岸的森林往遠方延伸；西邊 寬闊的河和兩岸的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
 
 ━━━━━━━━━━━━━━━━━━━━
 【五、每張圖必填的 7 項拍攝資訊】一定要填，不能空；不適用填 N/A。左右一律是觀眾看到的畫面左右。
@@ -189,16 +204,17 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
 
 ━━━━━━━━━━━━━━━━━━━━
 【六、地圖和 7 項資訊要對得上】回傳前請自己檢查：
-  - 水平方位：由相機的格子相對於主體的格子、和主體面朝的方向算出來。例：主體在 G20 面朝南，相機在 G24 → 正面（front）。
+  - 水平方位：由相機的格子相對於主體的格子、和主體面朝的方向算出來。
   - 景別：要跟相機到主體的距離合理，距離寫在 camera.distance_m。
   - 畫面方向：主體面朝或移動的方向，換算成從相機看過去的左右。
   - 構圖位置：誰在畫面左、誰在畫面右，要跟從相機看過去的地圖左右一致。
-  - 前後圖的角色位置要連得起來；角色不能穿過甲龍或森林。
+  - 走位：前後圖的角色位置要連得起來。角色只能站在、走過字母說明標「角色：可站」的格子；相機只能放在標「相機：可放」的格子，不能放在地圖外（高度不限）。
 
 ━━━━━━━━━━━━━━━━━━━━
 【七、寫 prompt 的規則】
 - 景別、水平方位、角度三項，直接用下面實測過的英文句子（HERO 換成這張的主體；水平方位句子裡的 trail、TEEN 換成這一幕的東西），不要自己改寫。✓ 有效、△ 部分有效、✗ 無效。
-- 用了表上沒有的寫法，列在 untested；用到 △ 或 ✗，在 remedy 寫補救方式（例：CU 畫不出來，改 MCU，剪輯時再推近）。
+- 用了表上沒有的寫法，列在 untested。
+- 7 項資訊填你想要的效果。想要的效果是 △ 或 ✗ 時，prompt 寫成畫得出來的補救版本，remedy 寫怎麼補（例：想要 CU → shot_size 填 CU，prompt 用 MCU 的句子，remedy 寫「prompt 用 MCU，剪輯時推近到 CU」）。prompt 不可以直接用 ✗ 的寫法。
 - 畫風那句固定寫：16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
 - 每個入鏡角色只能出現一次；寫明畫面裡只有哪些角色。
   [景別]
@@ -225,7 +241,15 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
   注意：寫了俯視、正上方、空拍，人物常會變小，景別被往遠拉一級。
 
 ━━━━━━━━━━━━━━━━━━━━
-【八、回傳格式】
+【八、工作順序】（照做，但不要輸出這段）
+1. 先讀完整段旁白，想清楚這一幕要完成的戲劇任務。
+2. 決定要幾張圖：夠用且有節奏，不是越多越好。
+3. 先想每張圖的敘事功能和剪接順序，再決定走位和相機位置。
+4. 分鏡想完，才把每張圖翻成送進 Google Flow 的英文 prompt。
+5. 回傳前檢查：旁白一句不漏、不改字；張數合理；走位連得起來；相機和 7 項資訊對得上地圖；每個不是平視的鏡頭都說得出理由。
+
+━━━━━━━━━━━━━━━━━━━━
+【九、回傳格式】
 只回一個 JSON 物件，不要其他文字，不要 markdown 程式碼框。欄位名稱和可選值照下面，一字不改：
 {
  &quot;scene_id&quot;: &quot;EP1-06&quot;,
@@ -237,7 +261,7 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
    &quot;path&quot;: [
     {
      &quot;t&quot;: &quot;&lt;整數&gt;&quot;,
-     &quot;cell&quot;: &quot;&lt;例 G29&gt;&quot;,
+     &quot;cell&quot;: &quot;&lt;格子&gt;&quot;,
      &quot;facing&quot;: &quot;&lt;N／NE／E／SE／S／SW／W／NW&gt;&quot;,
      &quot;doing&quot;: &quot;&lt;在做什麼&gt;&quot;
     }
@@ -321,7 +345,7 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
     },
     {
      &quot;t&quot;: 4,
-     &quot;cell&quot;: &quot;E18&quot;,
+     &quot;cell&quot;: &quot;E27&quot;,
      &quot;facing&quot;: &quot;S&quot;,
      &quot;doing&quot;: &quot;坐在甲龍背上伸懶腰&quot;
     }
@@ -332,7 +356,7 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
    &quot;path&quot;: [
     {
      &quot;t&quot;: 1,
-     &quot;cell&quot;: &quot;D16–F17&quot;,
+     &quot;cell&quot;: &quot;D27–F28&quot;,
      &quot;facing&quot;: &quot;E&quot;,
      &quot;doing&quot;: &quot;趴著睡覺，像一顆長青苔的大石頭&quot;
     }
