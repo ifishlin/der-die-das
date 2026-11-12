@@ -19,7 +19,9 @@ h1{font-size:24px;margin:0;text-wrap:balance}h2{font-size:18px;margin:0}
 a{color:var(--acc)}.sub{color:var(--mut);margin:4px 0 0;max-width:84ch}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
 .charts{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:12px;margin-top:8px}.charts img{width:100%;border-radius:6px;cursor:zoom-in}.charts p{margin:4px 0 0;font-size:13px;color:var(--mut)}
-.sc{display:flex;flex-direction:column;gap:12px}.sc>h2{margin-top:10px}
+.sc{margin-top:0;border-top:1px solid var(--line)}.sc>summary{list-style-position:inside;padding:4px 0}.sc>summary h2{display:inline;color:var(--fg)}.sc[open]>summary{margin-bottom:12px}
+.scd{margin-top:6px}.scd>summary{font-size:15px;color:var(--fg);font-weight:600}.scm{font:400 13px var(--sans);color:var(--mut)}
+#list{display:flex;flex-direction:column;gap:10px}
 .narr{margin:0 0 8px;padding:6px 10px;border-left:3px solid var(--acc);background:var(--bg);font-size:14px;color:var(--fg)}
 details{margin-top:8px;border-top:1px solid var(--line);padding-top:6px}summary{cursor:pointer;color:var(--acc);font-size:13.5px}
 .inf{margin-top:6px;font-size:13.5px}.inf th{width:7.5em;white-space:nowrap}.pr{margin-top:8px;font:12.5px/1.55 var(--mono);white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px}
@@ -50,10 +52,10 @@ ul{margin:4px 0 0;padding-left:20px}
 </style></head><body>
 <main>
 <div style="font-size:14px"><a href="../">← stickman</a>　<a href="../scale-check/">第 2 版的比例檢查</a></div>
-<header><h1>EP1 分鏡表（第 6 版，還沒畫）</h1>
-<p class="sub">第 6 版（2026-11-12）：第 1～15 幕重新交給 Claude 分鏡；prompt 只寫角色和動作，<b>背景和參考圖由程式從地圖決定</b>。還沒畫圖：每格先看地圖（相機看到的範圍）、背景描述、參考圖、prompt，確定沒問題再畫。圖畫好後會出現在每格的兩個空位。</p></header>
+<header><h1>EP1 分鏡表（第 6 版）</h1>
+<p class="sub">第 6 版（2026-11-12）：第 1～15 幕重新交給 Claude 分鏡；prompt 只寫角色和動作，<b>背景和參考圖由程式從地圖決定</b>。每格一次畫 4 張，放在每格的 4 個空位，還沒畫的留空。每一幕預設收起來，點幕名打開；幕名旁邊寫著已經畫了幾張。</p></header>
 <div class="card"><h2>比例圖</h2><div class="charts" id="charts"></div></div>
-<div class="card"><h2>總表</h2><div class="tbl"><table id="tb"><tr><th>圖</th><th>景別</th><th>張</th><th>恐龍</th><th>判定</th><th>該怎麼改</th></tr></table></div><ul id="sum" style="margin-top:10px"></ul></div>
+<div class="card"><h2>總表</h2><p class="sub">依幕分開，點幕名打開。</p><div id="tbs"></div><ul id="sum" style="margin-top:10px"></ul></div>
 <div id="list"></div>
 <div class="fbbar"><span id="fbn">還沒有意見</span><input id="fbg" placeholder="整體意見（可空白）"><button id="fbc">複製全部意見</button><span id="fbm"></span></div>
 <textarea id="fbout" readonly hidden></textarea>
@@ -64,7 +66,10 @@ const esc=t=>String(t??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"
 document.getElementById('charts').innerHTML=P.map(p=>`<div><img src="${p.img}" alt="${p.who}"><p><b>${p.who}</b>　${esc(p.note)}</p></div>`).join('');
 const cls=v=>v==='一致'?'ok':v.startsWith('略')?'warn':v.startsWith('太')?'bad':'na';
 const name=w=>w==='codex'?'Codex':'Claude';
-document.getElementById('tb').insertAdjacentHTML('beforeend',R.map(r=>`<tr><td class=k>${r.id}</td><td class=k>${esc(r.size)}</td><td class=k>${r.img?'第 '+r.img+' 張':'兩張'}</td><td class=k>${esc(r.dino)}</td><td><span class="v ${cls(r.verdict)}">${esc(r.verdict)}</span></td><td>${esc(r.fix)}</td></tr>`).join(''));
+const SCN=[...new Set(R.map(r=>r.scene))];
+const scInfo=s=>{const a=R.filter(r=>r.scene===s);const n=new Set(a.map(r=>r.id)).size;const d=a.filter(r=>r.imgs.length).length;return `幕 ${+s.slice(4)}　<span class=scm>${n} 格・已畫 ${d}／${a.length} 張</span>`};
+const trow=r=>`<tr><td class=k>${r.id}</td><td class=k>${esc(r.size)}</td><td class=k>${r.img?'第 '+r.img+' 張':'兩張'}</td><td class=k>${esc(r.dino)}</td><td><span class="v ${cls(r.verdict)}">${esc(r.verdict)}</span></td><td>${esc(r.fix)}</td></tr>`;
+document.getElementById('tbs').innerHTML=SCN.map(s=>`<details class=scd><summary>${scInfo(s)}</summary><div class="tbl"><table><tr><th>圖</th><th>景別</th><th>張</th><th>恐龍</th><th>判定</th><th>該怎麼改</th></tr>${R.filter(r=>r.scene===s).map(trow).join('')}</table></div></details>`).join('');
 const both=R.filter(r=>r.dino&&V0.includes(r.verdict));
 const grp=(f,t)=>{const a=both.filter(f);return a.length?`<li>${t}：${a.length} 張，`+V0.map(v=>`${v} ${a.filter(r=>r.verdict===v).length}`).join('、')+'</li>':''};
 document.getElementById('sum').innerHTML=grp(r=>1,'全部可比的圖')+grp(r=>!r.w,'原本景別')+grp(r=>r.w,'遠一級（W）')
@@ -79,7 +84,7 @@ const mapc=r=>`<div class="card mapc">${r.map?`<img src="${r.map}" alt="${r.id} 
 const shotRows=rs=>[...new Set(rs.map(r=>r.id))].map(id=>{const g=rs.filter(r=>r.id===id);
   return NOUT===4 ? g.slice(0,2).map(card).join('')+mapc(g[0])+g.slice(2).map(card).join('')   // 2×2 圖，地圖在右邊跨兩列
                   : g.map(card).join('')+mapc(g[0])}).join('');
-document.getElementById('list').innerHTML=[...new Set(R.map(r=>r.scene))].map(s=>`<section class=sc><h2>幕 ${(+s.slice(4))}</h2><div class="list${NOUT===4?' four':''}">${shotRows(R.filter(r=>r.scene===s))}</div></section>`).join('');
+document.getElementById('list').innerHTML=SCN.map(s=>`<details class="sc card"><summary><h2>${scInfo(s)}</h2></summary><div class="list${NOUT===4?' four':''}">${shotRows(R.filter(r=>r.scene===s))}</div></details>`).join('');   // 每幕預設收起來（2026-11-12 使用者要求）
 const KEY="storyboard-v6-fb";let FB={};try{FB=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(FB))}catch(e){};const n=Object.values(FB).filter(v=>v&&v.trim()).length;document.getElementById('fbn').textContent=n?`已寫 ${n} 則意見`:'還沒有意見'};
 document.querySelectorAll('textarea.fb').forEach(t=>{t.value=FB[t.dataset.k]||'';t.oninput=()=>{FB[t.dataset.k]=t.value;save()}});
