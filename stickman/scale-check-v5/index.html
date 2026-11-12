@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>恐龍比例檢查 v5</title>
+<meta name="robots" content="noindex">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f2f0eb;--panel:#fffdf9;--fg:#1f1d1a;--mut:#6d685f;--line:#dcd6ca;--acc:#8a4a20;--cx:#1f6b52;--cl:#a0522d;
+  --ok:#1f7a45;--ok-soft:#dcefe3;--warn:#9a6a00;--warn-soft:#f6ecd2;--bad:#b0362c;--bad-soft:#f6dcd8;--na:#6d685f;--na-soft:#ebe8e2;
+  --sans:"Noto Sans TC",-apple-system,"PingFang TC",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151412;--panel:#1e1c19;--fg:#ebe6dd;--mut:#a29b8f;--line:#35312a;--acc:#e3a072;--cx:#6cc7a3;--cl:#e3a07a;
+  --ok:#6cc792;--ok-soft:#1b2c22;--warn:#e0b25a;--warn-soft:#332a14;--bad:#ef7d72;--bad-soft:#3a1f1c;--na:#a29b8f;--na-soft:#26231f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#151412;--panel:#1e1c19;--fg:#ebe6dd;--mut:#a29b8f;--line:#35312a;--acc:#e3a072;--cx:#6cc7a3;--cl:#e3a07a;
+  --ok:#6cc792;--ok-soft:#1b2c22;--warn:#e0b25a;--warn-soft:#332a14;--bad:#ef7d72;--bad-soft:#3a1f1c;--na:#a29b8f;--na-soft:#26231f;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 var(--sans);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 56px}
+main{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+h1{font-size:24px;margin:0;text-wrap:balance}h2{font-size:18px;margin:0}
+a{color:var(--acc)}.sub{color:var(--mut);margin:4px 0 0;max-width:84ch}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+.pair{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.pair img{width:min(100%,420px);border-radius:6px;cursor:zoom-in}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:500;font-size:12.5px}
+.k{font:12.5px var(--mono)}
+.v{display:inline-block;font:500 12.5px var(--sans);border-radius:5px;padding:1px 8px;white-space:nowrap}
+.v.ok{background:var(--ok-soft);color:var(--ok)}.v.warn{background:var(--warn-soft);color:var(--warn)}.v.bad{background:var(--bad-soft);color:var(--bad)}.v.na{background:var(--na-soft);color:var(--na)}
+.who{font-weight:700}.who.codex{color:var(--cx)}.who.claude{color:var(--cl)}
+.list{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr))}.shot .imgs{display:block}.shot img{width:100%;border-radius:6px;display:block;cursor:zoom-in}
+.shot .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 8px}
+.list{display:flex;flex-direction:column;gap:14px}
+ul{margin:4px 0 0;padding-left:20px}
+.zoom{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;padding:16px;z-index:20;cursor:zoom-out}.zoom img{max-width:100%;max-height:100%}
+</style></head><body>
+<main>
+<div style="font-size:14px"><a href="../">← stickman</a>　<a href="../scale-check/">第 2 版的比例檢查</a></div>
+<header><h1>恐龍比例檢查（第 5 版）</h1>
+<p class="sub">EP1 第 5 版 request，Claude 分鏡、Flow 畫的圖。2026-11-12 夜間跑到第 6 幕第 4 格就停了（Flow 連續失敗），所以目前只有<b>第 1 幕</b>有恐龍（TEEN）。標 W 的是「HERO＋大恐龍多畫遠一級」那張。每張跟比例圖並排，<b>眼睛看了覺得大小關係跟比例圖一致就算一致</b>（考慮誰離鏡頭近、誰遠）。不用公式、不用地圖距離。判斷是 Claude 看圖做的。</p></header>
+<div class="card pair"><img src="img/pair_teen.jpg" alt="PAIR_TEEN 比例圖"><div><h2>比例圖 PAIR_TEEN</h2><p class="sub">站在同一個距離時：TEEN 頭頂 2.89 m，HERO 1.72 m，TEEN 是 HERO 的 1.68 倍高；TEEN 的頭大約有 HERO 身高的三分之二長。</p></div></div>
+<div class="card"><h2>總表</h2><div class="tbl"><table id="tb"><tr><th>圖</th><th>景別</th><th>張</th><th>判定</th><th>該怎麼改</th></tr></table></div><ul id="sum" style="margin-top:10px"></ul></div>
+<div class="list" id="list"></div>
+</main>
+<script>
+const R=[{"id": "EP1-01-01", "w": false, "size": "WS", "img": 1, "verdict": "只有 HERO", "fix": "—", "seen": "畫面裡沒有恐龍。", "imgs": ["img/EP1-01-01_1.jpg"]}, {"id": "EP1-01-01", "w": false, "size": "WS", "img": 2, "verdict": "只有 HERO", "fix": "—", "seen": "畫面裡沒有恐龍。", "imgs": ["img/EP1-01-01_2.jpg"]}, {"id": "EP1-01-02", "w": false, "size": "FS", "img": 1, "verdict": "只有 HERO", "fix": "—", "seen": "畫面裡沒有恐龍。", "imgs": ["img/EP1-01-02_1.jpg"]}, {"id": "EP1-01-02", "w": false, "size": "FS", "img": 2, "verdict": "只有 HERO", "fix": "—", "seen": "畫面裡沒有恐龍。", "imgs": ["img/EP1-01-02_2.jpg"]}, {"id": "EP1-01-03", "w": false, "size": "WS", "img": 1, "verdict": "太小", "fix": "TEEN 放大約 1.7 倍", "seen": "側拍，TEEN 在 HERO 正後方、差不多遠，頭頂反而比 HERO 的頭低，整隻跟 HERO 差不多高。", "imgs": ["img/EP1-01-03_1.jpg"]}, {"id": "EP1-01-03", "w": false, "size": "WS", "img": 2, "verdict": "太小", "fix": "TEEN 放大約 1.7 倍", "seen": "跟第 1 張一樣的側拍，TEEN 和 HERO 幾乎一樣高。", "imgs": ["img/EP1-01-03_2.jpg"]}, {"id": "EP1-01-03W", "w": true, "size": "EWS", "img": 1, "verdict": "太小", "fix": "TEEN 放大約 1.4 倍", "seen": "拉成極遠景，兩個都很小、差不多遠；TEEN 頭頂只比 HERO 的頭高一點（約 1.2 倍）。", "imgs": ["img/EP1-01-03W_1.jpg"]}, {"id": "EP1-01-03W", "w": true, "size": "EWS", "img": 2, "verdict": "太小", "fix": "TEEN 放大約 1.3 倍", "seen": "TEEN 頭頂比 HERO 高約三成，比例圖要高將近七成。", "imgs": ["img/EP1-01-03W_2.jpg"]}, {"id": "EP1-01-04", "w": false, "size": "FS", "img": 1, "verdict": "一致", "fix": "不用改", "seen": "正面追逐，HERO 在前、TEEN 在後面一段距離；TEEN 張嘴的頭就跟 HERO 的上半身一樣大，頭頂高出 HERO 很多。考慮 TEEN 比較遠，大小合理。", "imgs": ["img/EP1-01-04_1.jpg"]}, {"id": "EP1-01-04", "w": false, "size": "FS", "img": 2, "verdict": "一致", "fix": "不用改", "seen": "同第 1 張的構圖，TEEN 比 HERO 高約四成五，又在後面，跟比例圖一致。", "imgs": ["img/EP1-01-04_2.jpg"]}, {"id": "EP1-01-04W", "w": true, "size": "WS", "img": 1, "verdict": "略小", "fix": "TEEN 放大約 1.3 倍", "seen": "拉遠後 TEEN 頭頂只比 HERO 高約兩成，TEEN 在後面但沒有遠很多，偏小。", "imgs": ["img/EP1-01-04W_1.jpg"]}, {"id": "EP1-01-04W", "w": true, "size": "WS", "img": 2, "verdict": "太小", "fix": "TEEN 放大約 1.4 倍", "seen": "TEEN 頭頂跟 HERO 的頭差不多高，只比 HERO 高一成左右。", "imgs": ["img/EP1-01-04W_2.jpg"]}, {"id": "EP1-01-05", "w": false, "size": "MLS", "img": 1, "verdict": "一致", "fix": "不用改", "seen": "TEEN 在前景離鏡頭很近（背影、轉頭），HERO 在前方小路上跑遠，近大遠小合理。", "imgs": ["img/EP1-01-05_1.jpg"]}, {"id": "EP1-01-05", "w": false, "size": "MLS", "img": 2, "verdict": "一致", "fix": "不用改", "seen": "TEEN 在前景只露上半身，HERO 在前面比較遠，大小關係合理。", "imgs": ["img/EP1-01-05_2.jpg"]}, {"id": "EP1-01-05W", "w": true, "size": "FS", "img": 1, "verdict": "略小", "fix": "TEEN 放大約 1.15–1.2 倍", "seen": "全景，TEEN 和 HERO 在小路兩邊差不多遠，TEEN 比 HERO 高約四成五（前傾姿勢），比例圖是 1.68 倍。", "imgs": ["img/EP1-01-05W_1.jpg"]}, {"id": "EP1-01-05W", "w": true, "size": "FS", "img": 2, "verdict": "略小", "fix": "TEEN 放大約 1.15–1.2 倍", "seen": "跟第 1 張差不多，TEEN 比 HERO 高約五成，稍微偏小。", "imgs": ["img/EP1-01-05W_2.jpg"]}, {"id": "EP1-01-06", "w": false, "size": "WS", "img": 1, "verdict": "太小", "fix": "TEEN 放大約 1.4–1.5 倍", "seen": "側拍，HERO 跳過樹根，兩個差不多遠；TEEN 的頭跟 HERO 的頭一樣高，整隻只比 HERO 大一點。", "imgs": ["img/EP1-01-06_1.jpg"]}, {"id": "EP1-01-06", "w": false, "size": "WS", "img": 2, "verdict": "略小", "fix": "TEEN 放大約 1.2 倍", "seen": "TEEN 比第 1 張大，頭頂高出 HERO 一些；HERO 跳起來縮著身體，換算站直後 TEEN 約 1.4 倍，偏小。", "imgs": ["img/EP1-01-06_2.jpg"]}, {"id": "EP1-01-06W", "w": true, "size": "EWS", "img": 1, "verdict": "太小", "fix": "TEEN 放大約 1.3–1.4 倍", "seen": "極遠景，兩個差不多遠，TEEN 只比 HERO 高約兩成多。", "imgs": ["img/EP1-01-06W_1.jpg"]}, {"id": "EP1-01-06W", "w": true, "size": "EWS", "img": 2, "verdict": "太小", "fix": "TEEN 放大約 1.6 倍", "seen": "HERO 在 TEEN 後面（比較遠），卻跟 TEEN 差不多高；TEEN 明顯太小。", "imgs": ["img/EP1-01-06W_2.jpg"]}];const NOTES=["原本景別：TEEN 在後面追、正面拍（04）或在前景（05）都對；側拍並排（03、06）還是畫小。", "遠一級（W）那張全部偏小：拉遠以後 Flow 把 TEEN 畫得只比 HERO 高一兩成，放得下全身但比例沒變對。", "也就是說「多畫遠一級」解決了塞不下的問題，但沒解決 TEEN 被畫小的問題。"];
+const esc=t=>String(t??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const cls=v=>v==='一致'?'ok':v.startsWith('略')?'warn':v.startsWith('太')?'bad':'na';
+const name=w=>w==='codex'?'Codex':'Claude';
+document.getElementById('tb').insertAdjacentHTML('beforeend',R.map(r=>`<tr><td class=k>${r.id}</td><td class=k>${esc(r.size)}</td><td class=k>${r.img?'第 '+r.img+' 張':'兩張'}</td><td><span class="v ${cls(r.verdict)}">${esc(r.verdict)}</span></td><td>${esc(r.fix)}</td></tr>`).join(''));
+const both=R.filter(r=>r.verdict!=='只有 HERO');
+const grp=(f,t)=>{const a=both.filter(f);return `<li>${t}：${a.length} 張，一致 ${a.filter(r=>r.verdict==='一致').length}、略小 ${a.filter(r=>r.verdict==='略小').length}、太小 ${a.filter(r=>r.verdict==='太小').length}</li>`};
+document.getElementById('sum').innerHTML=grp(r=>1,'有 TEEN 的圖')+grp(r=>!r.w,'原本景別')+grp(r=>r.w,'遠一級（W）')+NOTES.map(n=>`<li>${n}</li>`).join('');
+document.getElementById('list').innerHTML=R.map(r=>`<div class="card shot"><div class="bar"><span class=k>${r.id}・${esc(r.size)}・第 ${r.img} 張</span><span class="v ${cls(r.verdict)}">${esc(r.verdict)}</span><span>${esc(r.fix)}</span></div>
+  <div class="imgs">${r.imgs.map(s=>`<img src="${esc(s)}" alt="${r.id}" loading="lazy">`).join('')}</div><p style="margin:8px 0 0">${esc(r.seen)}</p></div>`).join('');
+document.querySelectorAll('img').forEach(im=>im.onclick=()=>{const z=document.createElement('div');z.className='zoom';z.innerHTML=`<img src="${im.src}" alt="">`;z.onclick=()=>z.remove();document.body.appendChild(z)});
+</script>
+</body></html>
