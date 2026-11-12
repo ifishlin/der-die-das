@@ -89,9 +89,9 @@
   ]
  },
  "EP1-07-09W": {
-  "zh": "鏡頭在森林裡面貼著地面，從樹縫往外仰拍，對著河的方向。畫面左右兩邊是近處的粗樹幹和蘇鐵、針葉樹的枝葉，像框一樣圍住畫面。中間望出去是平坦的泥岸，再過去是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林；地平線壓得很低，上面是大片天空。上午的陽光從鏡頭右後方照過來。那棵大樹在畫面右邊外面的森林裡，看不到。",
-  "en": "Background: The camera is down at ground level inside the forest, looking up and out through a gap in the trees toward the river. On both sides of the picture are nearby thick tree trunks and cycad and conifer leaves, framing the view. Through the gap is flat mud, then a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest; the horizon sits very low, with a big sky above it. Morning sunlight comes from behind the camera on the right. The huge tree is in the forest just outside the picture on the right.",
-  "conflict": "相機 L24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 L21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
+  "zh": "鏡頭在森林邊上貼著地面，對著河的方向往上仰拍，畫面沒有東西擋住。近處是平坦的泥岸，再過去是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林；地平線壓得很低，上面是大片天空。上午的陽光從鏡頭右後方照過來。茂密的森林和那棵大樹在鏡頭後面，看不到。",
+  "en": "Background: The camera is at the edge of the forest, down at ground level, looking up and out toward the river with nothing blocking the view. Close by is flat mud, then a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest; the horizon sits very low, with a big sky above it. Morning sunlight comes from behind the camera on the right. The dense forest and the huge tree are behind the camera and are not in the picture.",
+  "conflict": "已解決（2026-11-13）：使用者決定當作沒有樹擋住，背景改成乾淨的遠景。原本：相機 L24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 L21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -118,9 +118,9 @@
   ]
  },
  "EP1-07-11W": {
-  "zh": "鏡頭在森林裡面，從樹縫往外對著河的方向拍。畫面左右兩邊是近處的樹幹和蘇鐵、針葉樹的枝葉，像框一樣圍住畫面。中間望出去，近一點是一叢蕨類，蕨類叢靠左的後邊長著一棵細細的小樹；蕨類四周是平坦、光禿禿的泥岸，再過去是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。那棵大樹在畫面右邊外面的森林裡，看不到。",
-  "en": "Background: The camera is inside the forest, looking out through a gap in the trees toward the river. On both sides of the picture are nearby tree trunks and cycad and conifer leaves, framing the view. Through the gap, closer in, is a clump of ferns with a thin young tree growing at its back left corner; around the ferns is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The huge tree is in the forest just outside the picture on the right.",
-  "conflict": "相機 K24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 K21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
+  "zh": "鏡頭在森林邊上，對著河的方向拍，畫面沒有東西擋住。近一點是一叢蕨類，蕨類叢靠左的後邊長著一棵細細的小樹；蕨類四周是平坦、光禿禿的泥岸，再過去是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。茂密的森林和那棵大樹在鏡頭後面，看不到。",
+  "en": "Background: The camera is at the edge of the forest, looking toward the river with nothing blocking the view. Closer in is a clump of ferns with a thin young tree growing at its back left corner; around the ferns is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The dense forest and the huge tree are behind the camera and are not in the picture.",
+  "conflict": "已解決（2026-11-13）：使用者決定當作沒有樹擋住，背景改成乾淨的遠景。原本：相機 K24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 K21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -174,9 +174,9 @@
   ]
  },
  "EP1-07-15W": {
-  "zh": "鏡頭在森林裡面，從樹縫往外對著河拍。畫面左右兩邊是近處的樹幹和蘇鐵、針葉樹的枝葉，像框一樣圍住畫面。中間望出去，近一點是一叢蕨類，那棵細樹從蕨類叢靠左的地方長出來；再過去是平坦的泥岸，然後是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。那棵大樹在畫面右邊外面的森林裡，看不到。",
-  "en": "Background: The camera is inside the forest, looking out through a gap in the trees toward the river. On both sides of the picture are nearby tree trunks and cycad and conifer leaves, framing the view. Through the gap, closer in, is a clump of ferns, with the thin tree growing out of the left part of it; beyond it is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The huge tree is in the forest just outside the picture on the right.",
-  "conflict": "相機 I24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 I21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
+  "zh": "鏡頭在森林邊上，對著河拍，畫面沒有東西擋住。近一點是一叢蕨類，那棵細樹從蕨類叢靠左的地方長出來；再過去是平坦的泥岸，然後是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。茂密的森林和那棵大樹在鏡頭後面，看不到。",
+  "en": "Background: The camera is at the edge of the forest, looking at the river with nothing blocking the view. Closer in is a clump of ferns, with the thin tree growing out of the left part of it; beyond it is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The dense forest and the huge tree are behind the camera and are not in the picture.",
+  "conflict": "已解決（2026-11-13）：使用者決定當作沒有樹擋住，背景改成乾淨的遠景。原本：相機 I24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 I21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
   "refs": [
    "REF_HERO",
    "REF_TREX",

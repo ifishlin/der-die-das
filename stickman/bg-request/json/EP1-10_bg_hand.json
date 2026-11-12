@@ -176,9 +176,9 @@
   ]
  },
  "EP1-10-18W": {
-  "zh": "鏡頭在空地一角外面的樹林裡，隔著幾棵樹斜斜地看進整片空地。畫面左邊緣有近處的樹幹和枝葉，畫面左邊是一大片茂密的樹林。樹林往右讓開，露出開闊的空地，地上鋪著落葉和矮矮的植物。空地正中間遠遠地橫躺著一根矮倒木；再過去、畫面中間偏右，一根倒下的大樹幹斜架著，樹幹下面有空隙。空地另一頭和右邊都被茂密的樹林圍住。傍晚的陽光從鏡頭左後方照過來，影子往右前方拉得很長。",
-  "en": "Background: The camera is inside the forest just outside one corner of the clearing, looking diagonally into the whole clearing past a few trees. Nearby tree trunks and branches show at the left edge of the picture, and the left side of the picture is a large stretch of dense forest of cycads, ginkgos and conifers. The trees open up toward the right, revealing the open clearing with leaf litter and low plants. Far away in the middle of the clearing, a low fallen log lies on the ground; beyond it, slightly right of the middle of the picture, a huge fallen tree trunk is propped up at a slant, with a gap underneath it. The far side and the right side of the clearing are closed in by dense forest. Early-evening sunlight comes from behind the camera on the left, casting long shadows ahead to the right.",
-  "conflict": "相機 C16 在樹林裡面，往 TEEN（H8）和 HERO（N9）看要隔著好幾排樹，跟「極遠景、環境是重點、空間拉開」的構圖有點衝突。照地圖寫成隔著幾棵樹看進空地；若要開闊視野，相機應移到空地邊緣。",
+  "zh": "鏡頭在空地的一角，斜斜地看進整片空地，畫面沒有東西擋住。畫面左邊是一大片茂密的樹林，樹林往右讓開，露出開闊的空地，地上鋪著落葉和矮矮的植物。空地正中間遠遠地橫躺著一根矮倒木；再過去、畫面中間偏右，一根倒下的大樹幹斜架著，樹幹下面有空隙。空地另一頭和右邊都被茂密的樹林圍住。傍晚的陽光從鏡頭左後方照過來，影子往右前方拉得很長。",
+  "en": "Background: The camera is at one corner of the clearing, looking diagonally into the whole clearing with nothing blocking the view. The left side of the picture is a large stretch of dense forest of cycads, ginkgos and conifers; the trees open up toward the right, revealing the open clearing with leaf litter and low plants. Far away in the middle of the clearing, a low fallen log lies on the ground; beyond it, slightly right of the middle of the picture, a huge fallen tree trunk is propped up at a slant, with a gap underneath it. The far side and the right side of the clearing are closed in by dense forest. Early-evening sunlight comes from behind the camera on the left, casting long shadows ahead to the right.",
+  "conflict": "已解決（2026-11-13）：使用者決定當作沒有樹擋住，背景改成乾淨的遠景。原本：相機 C16 在樹林裡面，往 TEEN（H8）和 HERO（N9）看要隔著好幾排樹，跟「極遠景、環境是重點、空間拉開」的構圖有點衝突。照地圖寫成隔著幾棵樹看進空地；若要開闊視野，相機應移到空地邊緣。",
   "refs": [
    "REF_HERO",
    "REF_TEEN",
