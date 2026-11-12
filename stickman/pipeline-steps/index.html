@@ -39,7 +39,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <tr><td>10</td><td><a href="#s10">設定圖</a> <span class=chg>改</span></td><td>✅</td><td>我寫 prompt，你在 Flow 畫、挑圖</td><td>人物與場景設定頁</td><td><code>build_scale_pairs.py</code></td></tr>
 <tr><td>11</td><td><a href="#s11">分鏡設計（送 request 給 Claude）</a> <span class=chg>改</span></td><td>🧪</td><td>Claude 設計，你看</td><td>分鏡回覆查詢頁</td><td><code>make_scene_request.py</code></td></tr>
 <tr><td>12</td><td><a href="#s12">檢查分鏡回覆</a> <span class=chg>改</span></td><td>🧪</td><td>我</td><td>—</td><td><code>check_scene_reply.py、compare_scene_replies.py</code></td></tr>
-<tr><td>13</td><td><a href="#s13">補背景</a> <span class=chg>改</span></td><td>🧪</td><td>程式算，你核對</td><td>分鏡表（每格地圖下面）</td><td><code>map_background.py</code></td></tr>
+<tr><td>13</td><td><a href="#s13">補背景和參考圖</a> <span class=chg>改</span></td><td>🧪</td><td>程式算，你核對</td><td>分鏡表（每格地圖下面）</td><td><code>add_background.py、map_background.py</code></td></tr>
 <tr><td>14</td><td><a href="#s14">Flow 畫圖</a> <span class=chg>改</span></td><td>🧪</td><td>我操作</td><td>—</td><td><code>flowbot/scene_draw.py</code></td></tr>
 <tr><td>15</td><td><a href="#s15">分鏡表＋驗收</a> <span class=chg>改</span></td><td>🧪</td><td>我先看，你看完寫意見</td><td>EP1 分鏡表</td><td><code>make_scale_check_v5.py</code></td></tr>
 <tr><td>16</td><td><a href="#s16">補救</a></td><td>✅</td><td>我提，你定</td><td>—</td><td><code>—</code></td></tr>
@@ -53,7 +53,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <tr><td>24</td><td><a href="#s24">上架（標題、縮圖、說明欄）</a></td><td>⬜</td><td>你</td><td>—</td><td><code>—</code></td></tr>
 <tr><td>25</td><td><a href="#s25">歐美版</a></td><td>⬜</td><td>你</td><td>—</td><td><code>—</code></td></tr>
 </table></div>
-<p class="note"><b>順序不能倒</b>：故事 → 分鏡清單 → 分幕 → 地圖 → 設定圖 → 分鏡設計 → 補背景 → 畫圖。前面一改，後面就要重做（EP1 v5 邊畫邊改劇本，結果全部重畫；11-12 實驗室改成一樓，第 4 幕要重問分鏡）。</p>
+<p class="note"><b>順序不能倒</b>：故事 → 分鏡清單 → 分幕 → 地圖 → 設定圖 → 分鏡設計 → 補背景和參考圖 → 畫圖。前面一改，後面就要重做（EP1 v5 邊畫邊改劇本，結果全部重畫；11-12 實驗室改成一樓，第 4 幕要重問分鏡）。</p>
 <h2 id="s1">1. 選章 ✅</h2>
 <p><b>誰：</b>你。</p>
 <p><b>怎麼做：</b>從《How to Survive History》挑一章，原文照片放在 source/how_to_survive_history/chNN_*。前三章對應 EP1～EP3。</p>
@@ -100,15 +100,16 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p class="chgline"><span class="chg">改</span> 新的做法：取代舊的走位、鏡頭、寫 prompt 三步</p>
 <p><b>誰：</b>Claude 設計，你看。<b>　給你用：</b>分鏡回覆查詢頁<b>　我用：</b><code>make_scene_request.py</code></p>
 <p><b>怎麼做：</b>每一幕做一份 request（旁白、地圖、角色和道具、能用的參考圖、分鏡原則），送 Claude CLI，回傳一幕的 JSON：走位、每格的 7 項鏡頭資訊（主體、景別、極特寫局部、方位、角度、構圖、畫面方向）、入鏡角色、參考圖、英文 prompt。原本「走位」「鏡頭」「寫 prompt」三步都在這裡一起做。</p>
-<p><b>request 裡的規則：</b></p><ul><li>景別名稱照官方 10 級指南，prompt 只寫英文名。</li><li>HERO 和大恐龍（TREX、TEEN、ANKY）同框：原本的景別恐龍可以只露一部分，另外多畫一張遠一級的（FS→WS、WS→EWS）。</li><li>prompt 不寫角色佔畫面幾成（實測 Flow 不照做）。</li><li>參考圖只能填 Flow 裡有的那幾張，沒有適合的就留空。</li><li>第 6 版起：prompt 不描述背景和光線，背景由程式從地圖補。</li></ul>
+<p><b>request 裡的規則：</b></p><ul><li>景別名稱照官方 10 級指南，prompt 只寫英文名。</li><li>HERO 和大恐龍（TREX、TEEN、ANKY）同框：原本的景別恐龍可以只露一部分，另外多畫一張遠一級的（FS→WS、WS→EWS）。</li><li>prompt 不寫角色佔畫面幾成（實測 Flow 不照做）。</li><li>參考圖不用模型選（refs 填空陣列），由「補背景和參考圖」那一步的程式決定。</li><li>第 6 版起：prompt 不描述背景和光線，背景由程式從地圖補。</li></ul>
 <p><b>版本：</b>每改一次規則就升一版（v1～v5），舊版 request 和回覆都留著。</p>
 <h2 id="s12">12. 檢查分鏡回覆 🧪</h2>
 <p class="chgline"><span class="chg">改</span> 新增</p>
 <p><b>誰：</b>我。<b>　我用：</b><code>check_scene_reply.py、compare_scene_replies.py</code></p>
 <p><b>檢查什麼：</b></p><ul><li>旁白一句不漏、不改字。</li><li>有 HERO＋大恐龍卻沒加拍遠一級。</li><li>參考圖是不是 Flow 裡有的。</li><li>角色站的格子能不能站、相機放的格子能不能放。</li></ul>
-<h2 id="s13">13. 補背景 🧪</h2>
-<p class="chgline"><span class="chg">改</span> 新增</p>
-<p><b>誰：</b>程式算，你核對。<b>　給你用：</b>分鏡表（每格地圖下面）<b>　我用：</b><code>map_background.py</code></p>
+<h2 id="s13">13. 補背景和參考圖 🧪</h2>
+<p class="chgline"><span class="chg">改</span> 新增；11-12 參考圖也改由這一步的程式決定</p>
+<p><b>誰：</b>程式算，你核對。<b>　給你用：</b>分鏡表（每格地圖下面）<b>　我用：</b><code>add_background.py、map_background.py</code></p>
+<p><b>參考圖：</b>由程式決定，模型不選（11-12 定）。順序：入鏡角色的設定圖 → HERO 和恐龍同框時那隻恐龍的比例圖 PAIR2 → 地點設定圖（實驗室 → REF_LAB）→ 畫面有手機、相機、電擊槍、回家按鈕、生存指南就附 REF_PROPS。只附 Flow 專案裡有的。</p>
 <p><b>怎麼做：</b>從相機往鏡頭對準的方向打一把扇形射線（預設 60°，入鏡角色放不下就加寬），撞到牆就停；沿路看到的物件和牆，依角度寫成畫面左／中／右，依距離寫遠近，再加上場景和光線，寫成英文接在 prompt 後面，中文給你核對。</p>
 <p><b>為什麼：</b>模型拿到地圖也常把背景寫反（第 7 幕 10 格把河寫成 &quot;forest behind&quot;）；第 4 幕前 7 格測試，補上背景後 Flow 會照地圖畫。</p>
 <p><b>限制：</b>只看水平方向；特寫的背景範圍、角色擋住的東西還沒算進去。戶外地形（河、泥岸、森林）的寫法還要補。</p>
