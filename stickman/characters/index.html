@@ -109,8 +109,48 @@ Five props, each shown alone and clearly separated, every one drawn from the fro
 Every prop must keep exactly this shape and these colors whenever it appears.</div></details>
 
 <h2 id="room">HERO 的房間 <span class="tag new">11-12</span></h2>
-<p class="sub">延畢生的小套房，大約 5 × 4.5 公尺。北邊牆上一扇百葉窗，早上的陽光從百葉窗照進來，窗下是書桌；書桌上一疊帳單、畢業學分不足通知、手機（插著充電線）、電擊槍、檯燈，牆上只有一個插座。西南角是沒整理的床，東南角是門。</p>
-<div class="grid"><figure><img loading="lazy" src="img/home_map.png" alt="HERO 房間地圖"><figcaption>第 2 幕的房間地圖（maps/home_morning.json，一格 0.5 公尺，北在上）。還沒有房間的設定圖（REF_ROOM），目前畫圖只靠地圖算出的背景描述。</figcaption></figure></div>
+<p class="sub">延畢生的小套房，室內約 5 × 4 公尺。北牆一扇百葉窗，窗下是書桌，桌上從左到右是檯燈、帳單堆、學分不足通知、手機（插著充電線）、電擊槍；書桌右邊牆上是房間唯一的插座。西南角是沒整理的床，東南角是門。<b>沒有時鐘。</b></p>
+<div class="grid"><figure><img loading="lazy" src="img/REF_ROOM.jpg" alt="HERO 房間設定圖第 1 版"><figcaption><b>房間設定圖第 1 版（REF_ROOM，2026-11-12）</b>：上面是從南牆中間往北看的主視角，下面三格是書桌俯拍、插座與手機和電擊槍、東南角的門。第 2、14 幕的每一格都附這張（包括沒有背景的桌面特寫）。<br>下方右格的床畫在左邊，是 prompt 寫錯（從書桌往東南看，床應該在右邊）；位置以主視角為準。</figcaption></figure>
+<figure><img loading="lazy" src="img/home_map.png" alt="HERO 房間地圖"><figcaption>房間地圖（maps/home_morning.json，一格 0.5 公尺，北在上）。已照設定圖調整：書桌縮成 2.5 公尺、置中在窗下，桌上物件照圖排，加上學分不足通知。第 14 幕的 home.json 同樣調整（晚上、只有檯燈）。</figcaption></figure></div>
+<details><summary>房間設定圖的 prompt（REF_ROOM v1）</summary><p class="note">在 Flow 開新的一張，16:9；可以附 REF_HERO 當畫風參考。</p><h3>中文對照</h3><div class="zhp">16:9，生成 1 張。扁平 2D 卡通的場景設定圖：粗黑外框、平塗顏色、簡單陰影，畫風跟附圖一樣。**畫面裡沒有任何角色或人。任何地方都不要有文字、字母或數字**：帳單、通知、手機螢幕上都不要。版面像美術設定頁，奶油色底：上半部一大格，下半部並排三小格，每格有細黑框。
+
+場景：又小又亂的單人學生套房，約 5 公尺寬、4 公尺深。米白色素牆、舊木地板、低矮的素天花板。早上，日光從半闔的百葉窗照進來，在房間裡落成一條條柔和的光紋。
+
+**上方大格（主視角）**：背靠南牆中間站，往北看整個房間。
+- 北牆中間：一扇半闔的橫百葉窗，約 2 公尺寬。
+- 窗戶正下方、沿著整面後牆：一張亂糟糟的長木書桌，約 3 公尺寬、1 公尺深。左端一盞關著的檯燈。窗前的桌面上一疊厚厚的欠費帳單，每張蓋著大紅章，還有一張畫著紅色警告圖示的通知單。桌子再右邊：一支面朝上、接著充電線的手機，旁邊一把沒插電的電擊槍。
+- 北牆、書桌右端旁邊、桌面高度：一個插座，房間裡只有這一個。手機的充電線從手機拉到這個插座。
+- 書桌前一張椅子，椅背朝我們。
+- 左前方（西南角，靠近我們的左邊）：一張沒整理的單人床，床頭靠西牆，被子亂成一團。
+- 右邊（東牆，斜看）：空白的米白色牆。
+- 椅子和我們之間的地板是空的。
+
+**下方左格（書桌俯拍）**：正上方往下看桌面：檯燈、蓋紅章的帳單堆、紅色警告圖示的通知單、充電線垂下桌緣的手機、沒插電的電擊槍。百葉窗的光紋落在桌面上。
+
+**下方中格（北牆右半特寫）**：書桌右端和桌上的手機、電擊槍，旁邊牆上唯一的插座，插著手機的充電線。
+
+**下方右格（從書桌往東南角看）**：東南角一扇關著的素面木門；這格左邊露出沒整理的床尾。
+
+三個小格畫的都是同一個房間、同樣的東西、同樣的顏色。</div><h3>英文（貼進 Flow）</h3><div class="prompt">16:9, generate 1 image. A location reference sheet for a flat 2D cartoon: thick black outlines, flat colors, simple shading, the same hand-drawn style as the attached sheet. No characters and no people anywhere. No text, letters or numbers anywhere in the picture — not on the bills, not on the notice, not on the phone screen. The sheet is laid out like a production design page on a cream background: one big panel across the top half, and three smaller panels side by side across the bottom half, each with a thin black frame.
+
+The place: a small, cramped and messy one-room student studio apartment, about 5 meters wide and 4 meters deep. Plain off-white walls, a worn wooden floor, a low plain ceiling. It is morning: daylight comes in through half-closed blinds and falls across the room in soft stripes.
+
+TOP PANEL (main wide view): We stand with our backs against the middle of the south wall and look straight across the room to the north wall.
+- Back wall (north wall), center: a window with half-closed horizontal blinds, about 2 meters wide.
+- Directly under the window, along the whole back wall: a long cluttered wooden desk, about 3 meters wide and 1 meter deep. At its left end a desk lamp, switched off. On the desk in front of the window: a thick stack of unpaid bills, each one stamped with a big red mark, and a single notice sheet with a red warning symbol. Further right on the desk: a smartphone lying face up with a charging cable, and next to it an unplugged stun gun.
+- Back wall, just to the right of the desk&#x27;s right end, at desk height: one single wall outlet — the only outlet in the room. The phone&#x27;s charging cable runs from the phone to this outlet.
+- In front of the desk, its back toward us: one desk chair.
+- Left foreground (south-west corner, close to us on the left): an unmade single bed with its head against the west wall, the blanket crumpled into a heap.
+- Right side (east wall), seen at an angle: a bare off-white wall.
+- The open floor between the chair and us is empty.
+
+BOTTOM LEFT PANEL (top-down view of the desk): looking straight down at the desk top — the desk lamp, the stack of red-stamped bills, the notice sheet with the red warning symbol, the smartphone with its charging cable running off the desk edge, and the unplugged stun gun. Stripes of light from the blinds fall across the desk.
+
+BOTTOM MIDDLE PANEL (close view of the north wall, right part): the right end of the desk with the phone and the stun gun on it, and the single wall outlet on the wall beside it with the phone&#x27;s charging cable plugged in.
+
+BOTTOM RIGHT PANEL (view toward the south-east corner, seen from the desk): the plain wooden room door in the south-east corner, closed, and on the left side of this panel the foot of the unmade bed.
+
+All three bottom panels show the same room, the same objects and the same colors as the top panel.</div></details>
 
 <h2 id="lab">博士的小屋：原型是柏克萊「舊放射實驗室」</h2>
 <p class="sub">位置在 HERO 的大學校園裡、校務大樓附近。外型照柏克萊大學的舊放射實驗室：兩層木造小樓、木板外牆、斜鐵皮屋頂。</p>
