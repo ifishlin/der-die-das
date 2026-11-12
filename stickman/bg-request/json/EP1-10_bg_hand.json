@@ -1,0 +1,188 @@
+{
+ "_doc": "第 10 幕每格背景描述，Claude 看地圖手寫，2026-11-13",
+ "EP1-10-01": {
+  "zh": "鏡頭在空地邊的樹叢裡往外拍，對著空地另一頭的樹林。畫面左右兩邊有一點近處的枝葉。眼前是一片開闊的森林空地，地上鋪著落葉和矮矮的植物。畫面左邊是一路往遠處延伸的樹林邊緣，那排樹林間有一道很暗的縫隙。空地往畫面右邊一直延伸出去；空地另一頭是一整排茂密的樹林，有蘇鐵、銀杏和針葉樹。傍晚的陽光從畫面左邊斜斜照過來，影子往右拉得很長。矮倒木和斜架的大樹幹在畫面右邊外面，看不到。",
+  "en": "Background: The camera is among the bushes at the edge of a forest clearing, looking out across the clearing toward the trees on its far side. A few nearby leaves and branches show at the left and right edges of the picture. Ahead is an open patch of forest floor with leaf litter and low plants. On the left side of the picture, the edge of the forest runs away into the distance, and among those trees there is a very dark gap. The clearing continues out past the right edge of the picture. On the far side of the clearing stands a dense Cretaceous forest of cycads, ginkgos and conifers. Early-evening sunlight comes in low from the left side of the picture, casting long shadows to the right. The low fallen log and the big propped-up tree trunk are off to the right, outside the picture.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_RAPTOR",
+   "PAIR2_RAPTOR",
+   "REF_PROPS"
+  ]
+ },
+ "EP1-10-02": {
+  "zh": "鏡頭貼著地面，在空地靠邊的地方，對著空地另一頭的樹林往上拍。畫面左邊緊貼著一排高大的樹，一路往遠處延伸。地上鋪著落葉和矮矮的植物，往前延伸到遠處的樹林。因為鏡頭很低往上看，畫面上半部是高高的樹梢和傍晚的天空。傍晚的陽光從畫面左邊的樹梢間斜斜照過來。",
+  "en": "Background: The camera is down on the ground near the edge of a forest clearing, looking up toward the trees on the far side of the clearing. Along the left side of the picture, very close, a row of tall trees runs away into the distance. The forest floor, with leaf litter and low plants, stretches ahead to the distant trees. Because the camera is so low and looking up, the upper part of the picture is tall treetops and the early-evening sky. Early-evening sunlight slants in through the treetops from the left side of the picture.",
+  "conflict": "",
+  "refs": [
+   "REF_RAPTOR"
+  ]
+ },
+ "EP1-10-03": {
+  "zh": "鏡頭對著空地另一頭的樹林。畫面裡只看得到遠處一整排茂密的樹林，有蘇鐵、銀杏和針葉樹。傍晚的陽光從鏡頭左後方照過來。",
+  "en": "Background: The camera faces the trees on the far side of the clearing. All that shows is a distant, dense wall of Cretaceous forest: cycads, ginkgos and conifers. Early-evening sunlight comes from behind the camera on the left.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS"
+  ]
+ },
+ "EP1-10-04": {
+  "zh": "鏡頭對著空地另一頭。這是很近的特寫，畫面邊緣只模糊地露出一點空地的地面和遠處的樹林。傍晚的陽光從鏡頭後面照過來。",
+  "en": "Background: The camera faces across the clearing. This is a very close shot; only a little blurry forest floor and distant trees show at the edges of the picture. Early-evening sunlight comes from behind the camera.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS"
+  ]
+ },
+ "EP1-10-05": {
+  "zh": "鏡頭對著空地另一頭。這是很近的特寫，畫面邊緣只模糊地露出一點空地的地面和遠處的樹林。傍晚的陽光從鏡頭後面照過來。",
+  "en": "Background: The camera faces across the clearing. This is a very close shot; only a little blurry forest floor and distant trees show at the edges of the picture. Early-evening sunlight comes from behind the camera.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS"
+  ]
+ },
+ "EP1-10-06": {
+  "zh": "鏡頭在空地一角的樹叢裡往外拍，斜斜地對著空地另一頭的角落。畫面左右兩邊有一點近處的枝葉。眼前是開闊的森林空地，地上鋪著落葉和矮矮的植物。畫面左邊是一路延伸到遠處的樹林邊緣，那排樹林間、畫面左半邊有一道很暗的縫隙。空地另一頭和左邊都被茂密的樹林圍住。傍晚的陽光從畫面左邊斜斜照過來。矮倒木和斜架的大樹幹在畫面右邊外面，看不到。",
+  "en": "Background: The camera is among the bushes at one corner of a forest clearing, looking diagonally across it toward the opposite corner. A few nearby leaves and branches show at the left and right edges of the picture. Ahead is an open patch of forest floor with leaf litter and low plants. On the left side of the picture, the edge of the forest runs away into the distance, and among those trees, in the left half of the picture, there is a very dark gap. The far side and the left side of the clearing are closed in by dense forest of cycads, ginkgos and conifers. Early-evening sunlight slants in from the left side of the picture. The low fallen log and the big propped-up tree trunk are off to the right, outside the picture.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_RAPTOR",
+   "PAIR2_RAPTOR",
+   "REF_PROPS"
+  ]
+ },
+ "EP1-10-07": {
+  "zh": "鏡頭對著空地邊的樹林。這是很近的特寫，畫面裡只看得到不遠處密密的樹林枝葉，有蘇鐵和針葉樹。傍晚的陽光從畫面右前方的樹林後面透過來，有一點逆光。",
+  "en": "Background: The camera faces the edge of the forest beside the clearing. This is a very close shot; only the dense leaves and branches of cycads and conifers a short distance away show. Early-evening sunlight shines through the trees from ahead on the right side of the picture, slightly backlit.",
+  "conflict": "",
+  "refs": [
+   "REF_RAPTOR",
+   "REF_PROPS"
+  ]
+ },
+ "EP1-10-08": {
+  "zh": "鏡頭在空地邊的樹叢裡往外拍，對著空地另一頭的樹林。畫面左右兩邊有一點近處的枝葉。空地中間偏右的地上橫躺著一根矮倒木，左右橫著放。畫面右邊，一根倒下的大樹幹斜架著，從畫面右緣一直往遠處延伸，樹幹下面有空隙。空地另一頭是一整排茂密的樹林，畫面左邊的樹林邊緣也一路往遠處延伸。地上鋪著落葉和矮矮的植物。傍晚的陽光從畫面左邊斜斜照過來，倒木的影子往右拉長。",
+  "en": "Background: The camera is among the bushes at the edge of a forest clearing, looking out across the clearing toward the trees on its far side. A few nearby leaves and branches show at the left and right edges of the picture. Slightly right of the middle of the clearing, a low fallen log lies on the ground, running across the picture from left to right. On the right side of the picture, a huge fallen tree trunk is propped up at a slant, running from the right edge of the picture away into the distance, with a gap underneath it. On the far side of the clearing stands a dense forest of cycads, ginkgos and conifers, and on the left side of the picture the forest edge also runs away into the distance. The ground is covered with leaf litter and low plants. Early-evening sunlight slants in from the left side of the picture, and the log's shadow stretches to the right.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_RAPTOR",
+   "PAIR2_RAPTOR"
+  ]
+ },
+ "EP1-10-09": {
+  "zh": "鏡頭斜斜地對著空地另一頭的樹林。畫面裡是開闊的空地，遠處是一整排茂密的樹林，有蘇鐵、銀杏和針葉樹。傍晚的陽光從畫面右前方低低地照過來，有一點逆光。斜架的大樹幹就在鏡頭後面不遠，畫面裡看不到。",
+  "en": "Background: The camera faces diagonally across the clearing toward the trees on its far side. The picture shows the open clearing and, in the distance, a dense wall of cycads, ginkgos and conifers. Early-evening sunlight comes in low from ahead on the right side of the picture, slightly backlit. The big propped-up tree trunk is a short way behind the camera and is not in the picture.",
+  "conflict": "",
+  "refs": [
+   "REF_PACHY"
+  ]
+ },
+ "EP1-10-10": {
+  "zh": "鏡頭在空地邊上，斜斜地對著空地另一頭的樹林。畫面左半邊、離鏡頭不遠的地上橫躺著一根矮倒木。畫面右邊，一根倒下的大樹幹斜架著，從畫面右緣往遠處延伸，樹幹下面有空隙。地上鋪著落葉和矮矮的植物。空地另一頭是一整排茂密的樹林。傍晚的陽光從畫面左邊照過來。",
+  "en": "Background: The camera is at the edge of the clearing, looking diagonally across it toward the trees on its far side. In the left half of the picture, not far from the camera, a low fallen log lies on the ground. On the right side of the picture, a huge fallen tree trunk is propped up at a slant, running from the right edge of the picture away into the distance, with a gap underneath it. The ground is covered with leaf litter and low plants. On the far side of the clearing stands a dense forest of cycads, ginkgos and conifers. Early-evening sunlight comes from the left side of the picture.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_PACHY",
+   "PAIR2_PACHY"
+  ]
+ },
+ "EP1-10-11": {
+  "zh": "鏡頭在空地邊的樹林邊緣，對著空地另一頭的樹林。畫面右邊，一根倒下的大樹幹斜架著，從畫面右邊近處往遠處延伸，樹幹下面有空隙。畫面左邊是開闊的空地，地上鋪著落葉和矮矮的植物。空地另一頭是一整排茂密的樹林。傍晚的陽光從畫面左邊照過來。",
+  "en": "Background: The camera is at the edge of the forest, looking across the clearing toward the trees on its far side. On the right side of the picture, a huge fallen tree trunk is propped up at a slant, running from close by on the right away into the distance, with a gap underneath it. On the left side of the picture is the open clearing, with leaf litter and low plants. On the far side of the clearing stands a dense forest of cycads, ginkgos and conifers. Early-evening sunlight comes from the left side of the picture.",
+  "conflict": "地圖上 HERO（t=4 在 Q11）正好站在相機（Q14）和腫頭龍（Q9）中間，prompt 寫只有腫頭龍一個角色。背景照地圖寫，不影響；角色要不要入鏡請確認。",
+  "refs": [
+   "REF_PACHY"
+  ]
+ },
+ "EP1-10-12": {
+  "zh": "鏡頭在空地邊的樹林邊緣，貼著地面，對著空地另一頭的樹林往上拍。畫面中間、離鏡頭不遠的地上橫躺著一根矮倒木，左右橫著放。空地另一頭是一整排茂密的樹林；因為鏡頭很低往上看，畫面上半部是高高的樹梢和傍晚的天空。傍晚的陽光從畫面左邊照過來。",
+  "en": "Background: The camera is down on the ground at the edge of the forest, looking up across the clearing toward the trees on its far side. In the middle of the picture, not far from the camera, a low fallen log lies on the ground, running across the picture from left to right. On the far side of the clearing stands a dense forest of cycads, ginkgos and conifers; because the camera is so low and looking up, the upper part of the picture is tall treetops and the early-evening sky. Early-evening sunlight comes from the left side of the picture.",
+  "conflict": "",
+  "refs": [
+   "REF_STRUTHIO"
+  ]
+ },
+ "EP1-10-13": {
+  "zh": "鏡頭在空地一角的樹林邊緣，斜斜地對著空地另一頭的樹林。畫面中間偏左、不遠的地上橫躺著一根矮倒木。畫面右邊邊緣露出一段斜架著的大樹幹，樹幹下面有空隙。地上鋪著落葉和矮矮的植物。空地另一頭和左邊都是茂密的樹林。傍晚的陽光從畫面左邊斜斜照過來。",
+  "en": "Background: The camera is at the edge of the forest at one corner of the clearing, looking diagonally across it toward the trees on its far side. Slightly left of the middle of the picture, not far away, a low fallen log lies on the ground. At the right edge of the picture, part of a huge propped-up fallen tree trunk shows, with a gap underneath it. The ground is covered with leaf litter and low plants. The far side and the left side of the clearing are dense forest of cycads, ginkgos and conifers. Early-evening sunlight slants in from the left side of the picture.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_STRUTHIO",
+   "PAIR2_STRUTHIO"
+  ]
+ },
+ "EP1-10-14": {
+  "zh": "鏡頭在空地邊的高處，斜斜往下看整片空地，對著空地另一頭的樹林。地上鋪著落葉和矮矮的植物。畫面下方中間、離鏡頭不遠的地上橫躺著一根矮倒木，左右橫著放。畫面右邊，一根倒下的大樹幹斜架著，從畫面右邊近處往遠處延伸，樹幹下面有空隙。空地左右兩邊和另一頭都被茂密的樹林圍住。傍晚的陽光從畫面左邊照過來，影子往右拉得很長。",
+  "en": "Background: The camera is up high at the edge of the clearing, looking down at the whole clearing and toward the trees on its far side. The ground is covered with leaf litter and low plants. In the lower middle of the picture, not far from the camera, a low fallen log lies on the ground, running across the picture from left to right. On the right side of the picture, a huge fallen tree trunk is propped up at a slant, running from close by on the right away into the distance, with a gap underneath it. The clearing is closed in on the left, on the right and on the far side by dense forest of cycads, ginkgos and conifers. Early-evening sunlight comes from the left side of the picture, casting long shadows to the right.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_RAPTOR",
+   "REF_PACHY",
+   "REF_STRUTHIO",
+   "PAIR2_RAPTOR",
+   "PAIR2_PACHY",
+   "PAIR2_STRUTHIO"
+  ]
+ },
+ "EP1-10-15": {
+  "zh": "鏡頭在空地邊的高處，斜斜往下看整片空地，對著空地另一頭的樹林。地上鋪著落葉和矮矮的植物。畫面下方中間、離鏡頭不遠的地上橫躺著一根矮倒木，左右橫著放。畫面右邊，一根倒下的大樹幹斜架著，從畫面右邊近處往遠處延伸，樹幹下面有空隙。空地左右兩邊和另一頭都被茂密的樹林圍住。傍晚的陽光從畫面左邊照過來，影子往右拉得很長。",
+  "en": "Background: The camera is up high at the edge of the clearing, looking down at the whole clearing and toward the trees on its far side. The ground is covered with leaf litter and low plants. In the lower middle of the picture, not far from the camera, a low fallen log lies on the ground, running across the picture from left to right. On the right side of the picture, a huge fallen tree trunk is propped up at a slant, running from close by on the right away into the distance, with a gap underneath it. The clearing is closed in on the left, on the right and on the far side by dense forest of cycads, ginkgos and conifers. Early-evening sunlight comes from the left side of the picture, casting long shadows to the right.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_RAPTOR",
+   "REF_PACHY",
+   "REF_STRUTHIO",
+   "PAIR2_RAPTOR",
+   "PAIR2_PACHY",
+   "PAIR2_STRUTHIO"
+  ]
+ },
+ "EP1-10-16": {
+  "zh": "鏡頭斜斜地對著空地另一頭的樹林。畫面裡是開闊的空地；遠處、畫面中間偏右露出一段斜架著的大樹幹，再過去是一整排茂密的樹林。傍晚的陽光從鏡頭左後方照過來。",
+  "en": "Background: The camera faces diagonally across the clearing toward the trees on its far side. The picture shows the open clearing; in the distance, slightly right of the middle, part of a huge propped-up fallen tree trunk shows, and beyond it stands a dense wall of cycads, ginkgos and conifers. Early-evening sunlight comes from behind the camera on the left.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS"
+  ]
+ },
+ "EP1-10-17": {
+  "zh": "鏡頭貼著地面，對著空地邊的樹林往上拍。空地的地面一路延伸到不遠處的樹林邊緣。樹林正中間有一道很暗的縫隙，裡面黑漆漆的看不清楚。因為鏡頭很低往上看，畫面上半部是高高的樹梢和傍晚的天空。傍晚的太陽就在正前方的樹林後面，逆光，樹林看起來很暗，樹梢邊緣發亮。",
+  "en": "Background: The camera is down on the ground, looking up toward the edge of the forest beside the clearing. The forest floor stretches a short way ahead to the edge of the trees. Right in the middle of that tree line is a very dark gap between the trees, pitch black inside. Because the camera is so low and looking up, the upper part of the picture is tall treetops and the early-evening sky. The low evening sun is straight ahead, behind those trees, so the scene is backlit: the trees look dark and their tops glow at the edges.",
+  "conflict": "",
+  "refs": [
+   "REF_TEEN"
+  ]
+ },
+ "EP1-10-18": {
+  "zh": "鏡頭在空地邊的樹叢裡往外拍，對著空地另一頭的樹林。畫面左右兩邊有一點近處的枝葉。眼前是開闊的森林空地，地上鋪著落葉和矮矮的植物。畫面左邊是一路往遠處延伸的樹林邊緣，靠近畫面左緣的樹林間有一道很暗的縫隙。畫面右邊、空地中間的地上橫躺著一根矮倒木。空地另一頭是一整排茂密的樹林。傍晚的陽光從畫面左邊斜斜照過來。斜架的大樹幹在畫面右邊外面，看不到。",
+  "en": "Background: The camera is among the bushes at the edge of a forest clearing, looking out across the clearing toward the trees on its far side. A few nearby leaves and branches show at the left and right edges of the picture. Ahead is an open patch of forest floor with leaf litter and low plants. On the left side of the picture, the edge of the forest runs away into the distance, and near the left edge of the picture there is a very dark gap among those trees. On the right side of the picture, in the middle of the clearing, a low fallen log lies on the ground. On the far side of the clearing stands a dense forest of cycads, ginkgos and conifers. Early-evening sunlight slants in from the left side of the picture. The big propped-up tree trunk is off to the right, outside the picture.",
+  "conflict": "",
+  "refs": [
+   "REF_HERO",
+   "REF_TEEN",
+   "PAIR2_TEEN"
+  ]
+ },
+ "EP1-10-18W": {
+  "zh": "鏡頭在空地一角外面的樹林裡，隔著幾棵樹斜斜地看進整片空地。畫面左邊緣有近處的樹幹和枝葉，畫面左邊是一大片茂密的樹林。樹林往右讓開，露出開闊的空地，地上鋪著落葉和矮矮的植物。空地正中間遠遠地橫躺著一根矮倒木；再過去、畫面中間偏右，一根倒下的大樹幹斜架著，樹幹下面有空隙。空地另一頭和右邊都被茂密的樹林圍住。傍晚的陽光從鏡頭左後方照過來，影子往右前方拉得很長。",
+  "en": "Background: The camera is inside the forest just outside one corner of the clearing, looking diagonally into the whole clearing past a few trees. Nearby tree trunks and branches show at the left edge of the picture, and the left side of the picture is a large stretch of dense forest of cycads, ginkgos and conifers. The trees open up toward the right, revealing the open clearing with leaf litter and low plants. Far away in the middle of the clearing, a low fallen log lies on the ground; beyond it, slightly right of the middle of the picture, a huge fallen tree trunk is propped up at a slant, with a gap underneath it. The far side and the right side of the clearing are closed in by dense forest. Early-evening sunlight comes from behind the camera on the left, casting long shadows ahead to the right.",
+  "conflict": "相機 C16 在樹林裡面，往 TEEN（H8）和 HERO（N9）看要隔著好幾排樹，跟「極遠景、環境是重點、空間拉開」的構圖有點衝突。照地圖寫成隔著幾棵樹看進空地；若要開闊視野，相機應移到空地邊緣。",
+  "refs": [
+   "REF_HERO",
+   "REF_TEEN",
+   "PAIR2_TEEN"
+  ]
+ }
+}

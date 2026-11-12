@@ -1,0 +1,23 @@
+{
+ "_doc": "第 5 幕每格背景描述，Claude 看劇本 S03-1 和 prompt 手寫（這一幕沒有地圖），2026-11-13",
+ "EP1-05-01": {
+  "zh": "鏡頭從正上方往下看一張攤平的手繪舊羊皮紙地圖，地圖填滿整個畫面。地圖上畫的是白堊紀晚期的北美洲：一片寬寬的藍色內海從畫面上緣直直貫穿到下緣，把陸地分成左右兩大塊。陸地是手繪的綠色。紙面泛黃，邊角有點舊。光線平均地照在整張紙上。",
+  "en": "Background: The camera looks straight down at a flat, hand-drawn old parchment map that fills the whole picture. The map shows Late Cretaceous North America: a wide blue inland sea runs straight from the top edge of the picture to the bottom edge, splitting the land into two large landmasses, one on the left and one on the right. The land is drawn in green. The paper is yellowed and a little worn at the corners. Even light falls across the whole sheet.",
+  "conflict": "劇本 S03-1 的畫面是「空拍：一大片白堊紀森林和一條河，森林裡閃了一下藍光」，是實景空拍；prompt 改成手繪舊地圖（為了交代旁白「中間隔著一大片海」，也符合不做平面圖表的規定）。背景照 prompt 的地圖寫。",
+  "refs": []
+ },
+ "EP1-05-02": {
+  "zh": "鏡頭從正上方往下看同一張手繪舊羊皮紙地圖，比上一張靠近一些，對著左邊那塊陸地。左邊那塊綠色陸地佔了畫面左半；藍色內海從畫面上緣直直貫穿到下緣，佔了畫面右半；海的另一邊，畫面右邊緣露出右邊那塊陸地的一小條。紙面泛黃。光線平均地照在整張紙上。",
+  "en": "Background: The camera looks straight down at the same hand-drawn old parchment map, a little closer than before, centered on the left landmass. The green left landmass fills the left half of the picture; the blue inland sea runs straight from the top edge to the bottom edge and fills the right half; across the sea, a thin strip of the right landmass shows at the right edge of the picture. The paper is yellowed. Even light falls across the whole sheet.",
+  "conflict": "同 EP1-05-01：劇本是實景空拍，prompt 是手繪地圖；背景照 prompt 寫。",
+  "refs": [
+   "REF_HERO"
+  ]
+ },
+ "EP1-05-03": {
+  "zh": "鏡頭從正上方往下看同一張手繪舊羊皮紙地圖，更靠近了，只看得到左邊那塊陸地的一部分。綠色的森林填滿整個畫面，畫成一叢一叢的手繪樹冠；一條藍色的河彎彎曲曲地穿過森林。紙面泛黃。光線平均地照在整張紙上。",
+  "en": "Background: The camera looks straight down at the same hand-drawn old parchment map, closer still, so only part of the left landmass shows. Green forest fills the whole picture, drawn as clusters of hand-drawn treetops; a blue river winds through the forest. The paper is yellowed. Even light falls across the whole sheet.",
+  "conflict": "劇本是實景空拍「一大片森林和一條河」；prompt 是手繪地圖上的森林，沒有寫河。背景沿用 prompt 的地圖形式，但照劇本加了一條河。",
+  "refs": []
+ }
+}

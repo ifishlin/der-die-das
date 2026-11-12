@@ -1,0 +1,15 @@
+{
+ "_doc": "第 15 幕每格背景描述，Claude 看劇本 S10-6 和 prompt 手寫（這一幕沒有地圖），2026-11-13",
+ "EP1-15-01": {
+  "zh": "鏡頭平平地往前看著一片很暗的夜空。整個畫面都是夜空，看不到地面。天上撒滿細細小小的星星，大小、亮度不太一樣。沒有月亮，光只來自星星，整個畫面很暗。",
+  "en": "Background: The camera looks straight ahead into a very dark night sky. The whole picture is night sky; no ground shows. The sky is scattered with many tiny stars of slightly different sizes and brightness. There is no moon; the only light comes from the stars, and the whole picture is dark.",
+  "conflict": "",
+  "refs": []
+ },
+ "EP1-15-02": {
+  "zh": "鏡頭平平地往前看著同一片很暗的夜空。整個畫面都是夜空，看不到地面。天上撒滿細細小小的星星。沒有月亮，除了星星之外，畫面裡唯一的亮光來自那顆越來越近的亮星，它四周的夜空被照得微微發亮。",
+  "en": "Background: The camera looks straight ahead into the same very dark night sky. The whole picture is night sky; no ground shows. The sky is scattered with many tiny stars. There is no moon; apart from the stars, the only light in the picture comes from the approaching bright star, which makes the sky around it glow faintly.",
+  "conflict": "",
+  "refs": []
+ }
+}

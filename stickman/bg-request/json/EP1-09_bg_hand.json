@@ -1,0 +1,74 @@
+{
+  "_doc": "第 9 幕每格背景描述，Claude 看地圖手寫，2026-11-13",
+  "EP1-09-01": {
+    "zh": "鏡頭站在一條又寬又淺的河裡，橫著看向河岸。畫面下緣是很近的淺淺河水，河水從畫面左邊往右邊流。水面往前一小段接到一條濕濕的沙岸，沙岸過去是一大片寬闊的乾河床，地上是龜裂的泥巴和碎石，在畫面裡左右鋪開。乾河床上，畫面中間偏右躺著一根曬白的長漂流木；再往右一點有一顆平頂的大石頭，大概到腰那麼高；更右邊有一小堆石頭。乾河床再過去是一道低低的土坡河岸，岸上長滿高到腰的蕨類，蕨類後面是蘇鐵和銀杏的森林。森林裡有一棵特別高的針葉樹，在畫面中間偏右高高冒出來。畫面中間偏左，蕨類中間有一條森林小徑的出口。午後的太陽在鏡頭右後方，把乾河床照得很亮，影子往左前方拉。",
+    "en": "Background: The camera stands in a wide, shallow river and looks across at the riverbank. Along the bottom of the picture is shallow river water very close to the camera, flowing from the left side of the picture to the right side. A little way ahead the water meets a strip of wet sandy bank, and past that is a wide dry riverbed of cracked mud and pebbles, spreading across the picture from left to right. On the dry riverbed, slightly right of the middle, lies a long bleached driftwood log; a bit further right is a flat-topped boulder about waist high; further right still is a small pile of stones. Past the dry riverbed is a low earthen bank covered in waist-high ferns, and behind the ferns is a forest of cycads and ginkgo trees. One very tall conifer rises high above the forest, slightly right of the middle of the picture. Slightly left of the middle, a narrow forest trail comes out between the ferns. The afternoon sun is behind the camera on the right; it lights up the dry riverbed brightly, and shadows fall forward to the left.",
+    "conflict": "",
+    "refs": [
+      "REF_HERO",
+      "REF_PROPS"
+    ]
+  },
+  "EP1-09-02": {
+    "zh": "鏡頭貼著乾河床的地面，往上斜斜地看向河岸那一邊。畫面下緣只露出一點點龜裂的泥巴和碎石，畫面大半是天空。不遠處是一道低低的土坡河岸，岸上的高蕨類只露出頂端，後面是蘇鐵和銀杏的森林，樹梢往上伸進天空。畫面右邊有一棵特別高的針葉樹，比其他樹都高。午後的太陽在鏡頭正後方，把蕨類和樹照得很亮。那條寬寬的淺河在鏡頭後面，畫面裡看不到。",
+    "en": "Background: The camera sits right on the ground of the dry riverbed and looks up at an angle toward the riverbank. Only a thin strip of cracked mud and pebbles shows along the bottom of the picture; most of the picture is sky. Not far away is a low earthen bank; only the tops of the tall ferns on it show, and behind them is a forest of cycads and ginkgo trees whose treetops reach up into the sky. On the right side of the picture stands one very tall conifer, taller than all the other trees. The afternoon sun is directly behind the camera and lights up the ferns and trees brightly. The wide shallow river is behind the camera and is not in the picture.",
+    "conflict": "",
+    "refs": [
+      "REF_HERO",
+      "REF_PROPS"
+    ]
+  },
+  "EP1-09-03": {
+    "zh": "鏡頭站在乾河床上，平平地看向河岸那一邊。這是近一點的鏡頭，只看得到一小塊景：乾河床的龜裂泥巴和碎石往前一小段，接到一道低低的土坡河岸；岸上是一叢一叢高到腰的蕨類，畫面正中間有一叢特別茂密的蕨類。蕨類後面是蘇鐵和銀杏的森林。畫面左上方，樹林裡冒出一棵特別高的針葉樹。午後的陽光從鏡頭右後方照過來，把蕨類照得很亮。那條寬寬的淺河在鏡頭後面，畫面裡看不到。",
+    "en": "Background: The camera stands on the dry riverbed and looks level toward the riverbank. This is a closer shot, so only a small part of the scene shows: a short stretch of cracked mud and pebbles leads to a low earthen bank; on the bank are clumps of waist-high ferns, with one especially thick clump of ferns right in the middle of the picture. Behind the ferns is a forest of cycads and ginkgo trees. In the upper left of the picture, one very tall conifer rises out of the forest. Afternoon sunlight comes from behind the camera on the right and lights up the ferns. The wide shallow river is behind the camera and is not in the picture.",
+    "conflict": "",
+    "refs": [
+      "REF_HERO",
+      "REF_PROPS"
+    ]
+  },
+  "EP1-09-04": {
+    "zh": "這是近到只看得到手機的特寫，手機幾乎填滿整個畫面。手機周圍露出的一點點是河岸上的高蕨類，綠綠的一片。午後的陽光從鏡頭右後方照過來。",
+    "en": "Background: This is an extreme close-up; the phone fills almost the whole picture. The little that shows around the phone is the tall ferns on the riverbank, a patch of green. Afternoon sunlight comes from behind the camera on the right.",
+    "conflict": "",
+    "refs": [
+      "REF_HERO",
+      "REF_PROPS"
+    ]
+  },
+  "EP1-09-05": {
+    "zh": "這是很近的鏡頭，只看得到一小塊景：後面是一道低低的土坡河岸，岸上長滿高高的蕨類，蕨類再過去是深綠色的森林。午後的陽光從鏡頭右後方照過來。",
+    "en": "Background: This is a very close shot, so only a small part of the scene shows: a low earthen bank covered in tall ferns, and past the ferns a dark green forest. Afternoon sunlight comes from behind the camera on the right.",
+    "conflict": "",
+    "refs": [
+      "REF_HERO",
+      "REF_PROPS"
+    ]
+  },
+  "EP1-09-06": {
+    "zh": "鏡頭站在乾河床上，斜斜地看向河岸那一邊。這是近一點的鏡頭：乾河床的碎石和龜裂泥巴往前一小段，接到一道低低的土坡河岸，岸上長滿高到腰的蕨類；畫面中間偏右有一叢特別茂密的蕨類。蕨類後面是蘇鐵和銀杏的森林，畫面正中間上方有一棵特別高的針葉樹冒出來。午後的陽光從鏡頭右後方照過來。那條寬寬的淺河在鏡頭後面，畫面裡看不到。",
+    "en": "Background: The camera stands on the dry riverbed and looks at an angle toward the riverbank. This is a closer shot: a short stretch of pebbles and cracked mud leads to a low earthen bank covered in waist-high ferns; slightly right of the middle of the picture is an especially thick clump of ferns. Behind the ferns is a forest of cycads and ginkgo trees, and one very tall conifer rises above it at the top middle of the picture. Afternoon sunlight comes from behind the camera on the right. The wide shallow river is behind the camera and is not in the picture.",
+    "conflict": "",
+    "refs": [
+      "REF_HERO",
+      "REF_PROPS"
+    ]
+  },
+  "EP1-09-07": {
+    "zh": "鏡頭站在乾河床上，斜斜地看向河岸那一邊。龜裂的泥巴和碎石從鏡頭前面鋪開；畫面右邊很近的地方有一小堆石頭。乾河床過去是一道低低的土坡河岸，岸上長滿高到腰的蕨類。畫面中間偏右，岸上有一叢特別茂密的蕨類，葉子正在晃動。蕨類後面是蘇鐵和銀杏的森林，畫面中間有一棵特別高的針葉樹高高冒出來。畫面左邊遠處，蕨類中間有一條森林小徑的出口。午後的陽光從鏡頭後面照過來，把河岸照得很亮。那條寬寬的淺河在鏡頭左後方，畫面裡看不到。",
+    "en": "Background: The camera stands on the dry riverbed and looks at an angle toward the riverbank. Cracked mud and pebbles spread out from in front of the camera; very close to the camera on the right side of the picture is a small pile of stones. Past the dry riverbed is a low earthen bank covered in waist-high ferns. Slightly right of the middle of the picture, on the bank, is an especially thick clump of ferns whose leaves are shaking. Behind the ferns is a forest of cycads and ginkgo trees, with one very tall conifer rising high in the middle of the picture. Far away on the left side of the picture, a narrow forest trail comes out between the ferns. Afternoon sunlight comes from behind the camera and lights up the bank. The wide shallow river is behind the camera on the left and is not in the picture.",
+    "conflict": "地圖的蕨類叢（V6，標明這時會晃）在 prompt 裡沒有寫；背景照地圖寫了「葉子正在晃動」。地圖註記裡面藏著一團黑影，那屬於角色，背景沒寫。",
+    "refs": [
+      "REF_HERO",
+      "REF_PROPS"
+    ]
+  },
+  "EP1-09-08": {
+    "zh": "這是只看得到眼睛的極近特寫，畫面幾乎被臉填滿，看不到周圍的景物。午後的陽光從鏡頭右後方照在臉上。",
+    "en": "Background: This is an extreme close-up of the eyes; the face fills almost the whole picture and none of the surroundings can be seen. Afternoon sunlight falls on the face from behind the camera on the right.",
+    "conflict": "",
+    "refs": [
+      "REF_HERO"
+    ]
+  }
+}

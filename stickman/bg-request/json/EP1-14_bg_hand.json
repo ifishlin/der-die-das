@@ -1,0 +1,15 @@
+{
+ "_doc": "第 14 幕每格背景描述和參考圖，主對話 Claude 看 home 地圖（晚上，只有檯燈）和 v7 分鏡手寫，2026-11-13。",
+ "EP1-14-01": {
+  "zh": "從斜上方看書桌桌面，晚上。一疊帳單在畫面中間偏左，右邊是學分不足通知，左邊緣露出檯燈的底座。桌子後面是窗戶那面牆，畫面上方露出百葉窗的下半，窗外是黑的。只有左邊的檯燈亮著，暖黃的光照在帳單上，四周比較暗。",
+  "en": "Background: Looking down at an angle at the desk top, at night. The stack of bills is a little left of the middle of the picture, the notice sheet to its right, and the base of the desk lamp shows at the left edge. Behind the desk is the window wall; the lower half of the blinds shows at the top of the picture, and it is dark outside the window. Only the desk lamp on the left is on; its warm yellow light falls on the bills, and the rest is dim.",
+  "refs": ["ROOM_WINDOW_WALL"],
+  "conflict": ""
+ },
+ "EP1-14-02": {
+  "zh": "從斜上方往下看，發亮的手機幾乎佔滿畫面，邊緣只露出一點木頭桌面，充電線從右下角接進來。晚上，房間很暗，只有螢幕的光和左邊檯燈照過來的暖光。",
+  "en": "Background: Looking down from above at an angle. The glowing phone fills almost the whole picture; only a thin strip of wooden desk top shows around the edges, with the charging cable coming in from the lower right. It is night and the room is dark; the only light is the phone screen and the warm glow of the desk lamp from the left.",
+  "refs": ["REF_PROPS"],
+  "conflict": ""
+ }
+}
