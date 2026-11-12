@@ -1,25 +1,25 @@
 {
  "_doc": "第 3 幕每格背景描述，Claude 看地圖手寫，2026-11-13",
  "EP1-03-01": {
-  "zh": "鏡頭從高處往下拍校園，對著校務大樓。畫面下方是一片草地，草地過去，一條校園步道從畫面左邊橫到右邊。步道另一邊是一棟很長的白色石造校務大樓，佔了畫面大半，往左延伸出畫面。大樓右邊隔著一排茂密的樹叢，是一間老舊的兩層木造小屋，木板外牆、斜斜的鐵皮屋頂，左右和後面都被樹圍著；小屋在畫面右邊，只露出一部分。小屋正面朝向步道，有一小段步道從大步道通到小屋門口。早上的陽光從畫面右邊照過來。",
-  "en": "Background: Seen from up high, the camera looks down across a university campus toward the administration building. At the bottom of the picture is a lawn; beyond the lawn, a paved campus walkway runs across the picture from left to right. On the other side of the walkway stands a long white stone administration building that fills most of the picture and continues past the left edge. To the right of the building, past a strip of dense leafy trees, is an old two-story wooden hut with weathered plank walls and a slanted tin roof, with trees around its sides and back; the hut is at the right side of the picture and only part of it shows. The front of the hut faces the walkway, and a short path leads from the walkway to its door. Morning sunlight comes from the right side of the picture.",
-  "conflict": "",
+  "zh": "鏡頭從高處往下拍校園，對著校務大樓。一條校園步道從畫面左邊橫到右邊。步道另一邊是一棟很長的白色石造校務大樓，佔了畫面大半，往左延伸出畫面。大樓右邊隔著一排茂密的樹叢，是一間老舊的兩層木造小屋，木板外牆、斜斜的鐵皮屋頂，左右和後面都被樹圍著；小屋在畫面右邊，只露出一部分。小屋正面朝向步道，有一小段步道從大步道通到小屋門口。早上的陽光從畫面右邊照過來。",
+  "en": "Background: Seen from up high, the camera looks down across a university campus toward the administration building. A paved campus walkway runs across the picture from left to right. On the other side of the walkway stands a long white stone administration building that fills most of the picture and continues past the left edge. To the right of the building, past a strip of dense leafy trees, is an old two-story wooden hut with weathered plank walls and a slanted tin roof, with trees around its sides and back; the hut is at the right side of the picture and only part of it shows. The front of the hut faces the walkway, and a short path leads from the walkway to its door. Morning sunlight comes from the right side of the picture.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO"
   ]
  },
  "EP1-03-02": {
-  "zh": "鏡頭站在草地上，正對著老舊木造小屋的正面。畫面下方是草地，草地過去，一條校園步道從畫面左邊橫到右邊。步道另一邊，一小段短步道直直通到小屋的大門。小屋在畫面正中間，兩層樓，木板外牆、斜斜的鐵皮屋頂，大門上貼滿警告貼紙。短步道兩邊各有一叢樹，小屋左右兩邊也被茂密的樹叢圍住。畫面左邊緣，樹叢後面露出白色石造校務大樓的一角。早上的陽光從畫面右邊照過來。",
-  "en": "Background: The camera stands on a lawn, facing the front of an old wooden hut straight on. At the bottom of the picture is the lawn; beyond it, a paved campus walkway runs across the picture from left to right. On the other side of the walkway, a short path leads straight to the hut's front door. The hut stands in the middle of the picture: two stories, weathered plank walls, a slanted tin roof, and a front door covered in warning stickers. A clump of trees stands on each side of the short path, and dense leafy trees close in on both sides of the hut. At the left edge of the picture, behind the trees, a corner of a large white stone administration building shows. Morning sunlight comes from the right side of the picture.",
-  "conflict": "",
+  "zh": "鏡頭正對著老舊木造小屋的正面。一條校園步道從畫面左邊橫到右邊。步道另一邊，一小段短步道直直通到小屋的大門。小屋在畫面正中間，兩層樓，木板外牆、斜斜的鐵皮屋頂，大門上貼滿警告貼紙。短步道兩邊各有一叢樹，小屋左右兩邊也被茂密的樹叢圍住。畫面左邊緣，樹叢後面露出白色石造校務大樓的一角。早上的陽光從畫面右邊照過來。",
+  "en": "Background: The camera faces the front of an old wooden hut straight on. A paved campus walkway runs across the picture from left to right. On the other side of the walkway, a short path leads straight to the hut's front door. The hut stands in the middle of the picture: two stories, weathered plank walls, a slanted tin roof, and a front door covered in warning stickers. A clump of trees stands on each side of the short path, and dense leafy trees close in on both sides of the hut. At the left edge of the picture, behind the trees, a corner of a large white stone administration building shows. Morning sunlight comes from the right side of the picture.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO"
   ]
  },
  "EP1-03-03": {
-  "zh": "鏡頭貼在地上，從門口那一小段短步道往上仰看小屋正面。畫面底下是短步道的地面。小屋的大門在畫面正中間，門上貼滿警告貼紙；大門四周是老舊的木板外牆，往上延伸超出畫面頂端。小屋左右兩邊是茂密的樹叢，樹梢往上伸。早上的陽光從畫面右邊照過來，照亮木板牆和門上的貼紙。",
-  "en": "Background: The camera sits right on the ground on the short path at the hut's door, looking up at the front of the hut. The bottom of the picture is the paved ground of the short path. The hut's front door is in the middle of the picture, covered in warning stickers; around the door, the old weathered plank wall rises up and runs past the top edge of the picture. Dense leafy trees stand on both sides of the hut, their tops reaching upward. Morning sunlight comes from the right side of the picture, lighting up the plank wall and the stickers on the door.",
-  "conflict": "",
+  "zh": "鏡頭貼在地上，從門口那一小段短步道往上仰看小屋正面。小屋的大門在畫面正中間，門上貼滿警告貼紙；大門四周是老舊的木板外牆，往上延伸超出畫面頂端。小屋左右兩邊是茂密的樹叢，樹梢往上伸。早上的陽光從畫面右邊照過來，照亮木板牆和門上的貼紙。",
+  "en": "Background: The camera sits right on the ground on the short path at the hut's door, looking up at the front of the hut. The hut's front door is in the middle of the picture, covered in warning stickers; around the door, the old weathered plank wall rises up and runs past the top edge of the picture. Dense leafy trees stand on both sides of the hut, their tops reaching upward. Morning sunlight comes from the right side of the picture, lighting up the plank wall and the stickers on the door.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO"
   ]

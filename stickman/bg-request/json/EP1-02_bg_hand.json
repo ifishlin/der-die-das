@@ -1,63 +1,96 @@
 {
  "_doc": "第 2 幕每格背景描述和參考圖，主對話 Claude 看 home_morning 地圖（REF_ROOM 第 2 版後的位置）和 v7 分鏡手寫，2026-11-13。牆面圖：ROOM_WINDOW_WALL＝窗戶那面牆、ROOM_DOOR_WALL＝門那面牆、ROOM_BED_WALL＝床靠著的牆、ROOM_BARE_WALL＝空牆。舊地圖時寫的版本在 EP1-02_bg_hand_oldmap.json。",
  "EP1-02-01": {
-  "zh": "鏡頭從房間後半往窗戶那面牆看。牆的正中間是一扇百葉窗，窗戶下面靠牆放著一張長書桌，桌上從左到右是檯燈、一疊帳單、學分不足通知、手機、電擊槍。書桌右邊的牆上有一個插座，插著手機的充電線。畫面左邊很近的地方露出那張沒整理的床的一角。房門在鏡頭後面，看不到。早上的陽光從百葉窗照進來。",
-  "en": "Background: The camera looks from the back half of the room toward the window wall. In the middle of that wall is a window with half-closed blinds. Under the window a long wooden desk stands against the wall; on it, from left to right: a desk lamp, a stack of bills with red stamps, a notice with a red warning symbol, a phone on a charging cable, a stun gun. On the wall to the right of the desk is a single wall outlet with the phone's charging cable plugged in. Very close on the left side of the picture, a corner of the unmade bed shows. The room door is behind the camera and is not in the picture. Morning sunlight comes in through the blinds.",
-  "refs": ["REF_HERO", "ROOM_WINDOW_WALL", "REF_PROPS"],
-  "conflict": ""
+  "zh": "鏡頭從房間後半往窗戶那面牆看。牆的正中間是一扇百葉窗，窗戶下面靠牆放著一張長書桌，桌上從左到右是檯燈、一疊帳單、學分不足通知、手機、電擊槍。書桌右邊的牆上有一個插座，插著手機的充電線。房門在鏡頭後面，看不到。早上的陽光從百葉窗照進來。",
+  "en": "Background: The camera looks from the back half of the room toward the window wall. In the middle of that wall is a window with half-closed blinds. Under the window a long wooden desk stands against the wall; on it, from left to right: a desk lamp, a stack of bills with red stamps, a notice with a red warning symbol, a phone on a charging cable, a stun gun. On the wall to the right of the desk is a single wall outlet with the phone's charging cable plugged in. The room door is behind the camera and is not in the picture. Morning sunlight comes in through the blinds.",
+  "refs": [
+   "REF_HERO",
+   "ROOM_WINDOW_WALL",
+   "REF_PROPS"
+  ],
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。"
  },
  "EP1-02-02": {
   "zh": "從斜上方往下看書桌桌面。那疊帳單佔滿畫面中間，四周是木頭桌面；帳單左邊露出一點檯燈的底座，右邊露出學分不足通知的一角。畫面最上緣露出一點窗台，早上的陽光從百葉窗照在桌面上，留下一條條光紋。",
   "en": "Background: Looking down at the wooden desk top from above at an angle. The stack of bills fills the middle of the picture, with bare desk surface around it; the base of the desk lamp just shows to the left of the bills, and a corner of the notice sheet just shows to the right. Along the top edge of the picture a strip of the window sill shows, and morning sunlight through the blinds falls across the desk in stripes.",
-  "refs": ["ROOM_WINDOW_WALL"],
+  "refs": [
+   "ROOM_WINDOW_WALL"
+  ],
   "conflict": ""
  },
  "EP1-02-03": {
   "zh": "從斜上方往下看書桌桌面。學分不足通知在畫面中間，四周是木頭桌面；通知單左邊露出那疊帳單的一角。畫面最上緣露出一點窗台，早上的陽光從百葉窗照在桌面上，留下一條條光紋。",
   "en": "Background: Looking down at the wooden desk top from above at an angle. The notice sheet is in the middle of the picture, with bare desk surface around it; a corner of the stack of bills just shows to the left of it. Along the top edge of the picture a strip of the window sill shows, and morning sunlight through the blinds falls across the desk in stripes.",
-  "refs": ["ROOM_WINDOW_WALL"],
+  "refs": [
+   "ROOM_WINDOW_WALL"
+  ],
   "conflict": ""
  },
  "EP1-02-04": {
-  "zh": "鏡頭在書桌這邊，對著坐在椅子上的 HERO，所以 HERO 背後是房間的另一頭，那面有房門的牆。HERO 頭的後面是一面米白色的空牆；畫面左邊遠處露出房門的一角，畫面右邊露出床尾和皺成一團的被子。畫面下緣露出一點書桌的邊。窗戶在鏡頭後面，看不到；早上的陽光從鏡頭後面照在 HERO 臉上。",
-  "en": "Background: The camera is on the desk side, facing HERO in his chair, so behind HERO is the other end of the room, the wall with the door. Right behind HERO's head is a plain off-white wall; far back on the left side of the picture a corner of the room door shows, and on the right side the foot of the bed with a crumpled blanket shows. Along the bottom edge of the picture a little of the desk edge shows. The window is behind the camera and is not in the picture; morning sunlight comes from behind the camera onto HERO's face.",
-  "refs": ["REF_HERO", "ROOM_DOOR_WALL"],
-  "conflict": ""
+  "zh": "鏡頭在書桌這邊，對著坐在椅子上的 HERO，所以 HERO 背後是房間的另一頭，那面有房門的牆。HERO 頭的後面是一面米白色的空牆；畫面左邊遠處露出房門的一角，畫面右邊露出床尾和皺成一團的被子。窗戶在鏡頭後面，看不到；早上的陽光從鏡頭後面照在 HERO 臉上。",
+  "en": "Background: The camera is on the desk side, facing HERO in his chair, so behind HERO is the other end of the room, the wall with the door. Right behind HERO's head is a plain off-white wall; far back on the left side of the picture a corner of the room door shows, and on the right side the foot of the bed with a crumpled blanket shows. The window is behind the camera and is not in the picture; morning sunlight comes from behind the camera onto HERO's face.",
+  "refs": [
+   "REF_HERO",
+   "ROOM_DOOR_WALL"
+  ],
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。"
  },
  "EP1-02-05": {
   "zh": "從斜上方看書桌的右半邊。手機在左、電擊槍在右，並排放在桌上；手機的充電線往右拉到牆上的插座，插座在畫面右上方。桌子後面是米白色的牆，畫面左上方露出百葉窗的右下角。陽光從左上方的窗戶照在桌面上。",
   "en": "Background: Looking down at an angle at the right half of the desk. The phone is on the left and the stun gun on the right, side by side on the desk; the phone's charging cable runs to the right, up to the wall outlet in the upper right of the picture. Behind the desk is the plain off-white wall; in the upper left of the picture the lower right corner of the window blinds shows. Sunlight from the window at the upper left falls on the desk.",
-  "refs": ["ROOM_WINDOW_WALL", "REF_PROPS"],
+  "refs": [
+   "ROOM_WINDOW_WALL",
+   "REF_PROPS"
+  ],
   "conflict": ""
  },
  "EP1-02-06": {
   "zh": "鏡頭平平地對著書桌右端後面的牆。畫面右邊是牆上唯一的插座，插著一條充電線；充電線沿著桌面往左，接到畫面左邊桌上的手機。手機和插座之間的桌面上，躺著那把沒插電的電擊槍。畫面最右邊是房間的轉角，轉過去是一面空牆。其他地方是米白色的牆。陽光從畫面左邊的窗戶照過來。",
   "en": "Background: The camera looks straight at the wall behind the right end of the desk. On the right side of the picture is the only wall outlet in the room, with one charging cable plugged in; the cable runs left along the desk to the phone on the left side of the picture. On the desk between the phone and the outlet lies the unplugged stun gun. At the far right edge is the corner of the room, turning onto a bare wall. Everything else is plain off-white wall. Sunlight comes from the window to the left of the picture.",
-  "refs": ["ROOM_WINDOW_WALL", "ROOM_BARE_WALL", "REF_PROPS"],
+  "refs": [
+   "ROOM_WINDOW_WALL",
+   "ROOM_BARE_WALL",
+   "REF_PROPS"
+  ],
   "conflict": "分鏡構圖寫「充電線沿著桌面連到畫面左側的手機」沒提電擊槍；照地圖電擊槍在手機和插座之間，背景照地圖寫。"
  },
  "EP1-02-07": {
   "zh": "從斜上方往下看，發亮的手機佔滿畫面中間，四周是木頭桌面；充電線從手機底部往右拉出畫面，畫面右邊露出電擊槍的一角。",
   "en": "Background: Looking down from above at an angle. The glowing phone fills the middle of the picture, with wooden desk top around it; the charging cable runs from the bottom of the phone out of the picture to the right, and a corner of the stun gun just shows on the right side.",
-  "refs": ["REF_PROPS"],
+  "refs": [
+   "REF_PROPS"
+  ],
   "conflict": ""
  },
  "EP1-02-08": {
-  "zh": "鏡頭在書桌邊，斜斜地對著坐在椅子上的 HERO，HERO 背後是房間另一頭的角落。HERO 背後偏右露出那扇關著的房門，門旁邊是米白色的空牆；畫面左邊是另一面空牆。畫面下緣露出一點書桌的邊。窗戶在鏡頭後面，看不到；早上的陽光從鏡頭後面照在 HERO 身上。",
-  "en": "Background: The camera is at the edge of the desk, looking at HERO in his chair at an angle, so behind HERO is the far corner of the room. Behind HERO, a little to the right, the closed room door shows, with plain off-white wall beside it; on the left side of the picture is another bare wall. Along the bottom edge a little of the desk edge shows. The window is behind the camera and is not in the picture; morning sunlight comes from behind the camera onto HERO.",
-  "refs": ["REF_HERO", "REF_PROPS", "ROOM_BARE_WALL", "ROOM_DOOR_WALL"],
-  "conflict": ""
+  "zh": "鏡頭在書桌邊，斜斜地對著坐在椅子上的 HERO，HERO 背後是房間另一頭的角落。HERO 背後偏右露出那扇關著的房門，門旁邊是米白色的空牆；畫面左邊是另一面空牆。窗戶在鏡頭後面，看不到；早上的陽光從鏡頭後面照在 HERO 身上。",
+  "en": "Background: The camera is at the edge of the desk, looking at HERO in his chair at an angle, so behind HERO is the far corner of the room. Behind HERO, a little to the right, the closed room door shows, with plain off-white wall beside it; on the left side of the picture is another bare wall. The window is behind the camera and is not in the picture; morning sunlight comes from behind the camera onto HERO.",
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS",
+   "ROOM_BARE_WALL",
+   "ROOM_DOOR_WALL"
+  ],
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。"
  },
  "EP1-02-09": {
   "zh": "鏡頭在 HERO 右後方的高處，往書桌斜斜看下去。HERO 前面是那張長書桌，那疊帳單在畫面左邊的桌上，旁邊是學分不足通知；書桌後面是窗戶那面牆，百葉窗在畫面中間偏右。早上的陽光從百葉窗照進來，照在桌面和 HERO 的背上。",
   "en": "Background: The camera is high up behind HERO's right shoulder, looking down at an angle toward the desk. In front of HERO is the long desk; the stack of bills lies on the left side of the picture, with the notice sheet beside it. Behind the desk is the window wall, with the blinds a little right of the middle of the picture. Morning sunlight comes in through the blinds onto the desk and HERO's back.",
-  "refs": ["REF_HERO", "ROOM_WINDOW_WALL"],
+  "refs": [
+   "REF_HERO",
+   "ROOM_WINDOW_WALL"
+  ],
   "conflict": ""
  },
  "EP1-02-10": {
   "zh": "鏡頭在書桌左端，往房門那個角落看。畫面中間偏右的遠處是房間的轉角：轉角左邊是一面米白色的空牆，轉角右邊緊貼著那扇關著的木門。HERO 和門之間是空蕩蕩的木頭地板，地上有幾件衣服和紙。窗戶和書桌在鏡頭後面，看不到；早上的陽光從鏡頭後面照進來。",
   "en": "Background: The camera is at the left end of the desk, looking toward the corner with the door. Far away, a little right of the middle of the picture, is the corner of the room: to the left of the corner is a plain off-white bare wall, and right next to the corner on the right is the closed wooden door. Between HERO and the door is empty wooden floor with a few clothes and papers on it. The window and the desk are behind the camera and are not in the picture; morning sunlight comes from behind the camera.",
-  "refs": ["REF_HERO", "REF_PROPS", "ROOM_BARE_WALL", "ROOM_DOOR_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS",
+   "ROOM_BARE_WALL",
+   "ROOM_DOOR_WALL"
+  ],
   "conflict": ""
  }
 }

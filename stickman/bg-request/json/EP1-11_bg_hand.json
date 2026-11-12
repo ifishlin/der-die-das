@@ -1,18 +1,18 @@
 {
   "_doc": "第 11 幕每格背景描述，Claude 看地圖手寫，2026-11-13",
   "EP1-11-01": {
-    "zh": "鏡頭站在森林小路上，順著小路往前看。小路是一條泥土路，從鏡頭腳下筆直往前延伸很長一段，最後消失在遠處的樹林裡。小路兩邊是茂密的白堊紀森林，有蘇鐵、銀杏和高大的針葉樹，樹幹高高聳起，像兩道牆夾著小路。很遠的地方，小路左邊的樹林讓開，露出一片被夕陽照得橘亮的空地；小路遠處還有一截大樹根從地面拱起來，看起來小小的。夕陽在鏡頭正後方，低低地照過來，整條小路被染成橘色，樹影往前拉得很長。",
-    "en": "Background: The camera stands on a forest trail and looks straight along it. The trail is a dirt path that runs straight ahead for a long way from right in front of the camera and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers, the trunks rising high like two walls along the trail. Far ahead, the trees on the left side of the trail open up into a forest clearing glowing orange in the sunset light; far along the trail a big tree root sticks up out of the ground, looking small. The setting sun is directly behind the camera, low in the sky; the whole trail is tinted orange and the tree shadows stretch far ahead.",
-    "conflict": "",
+    "zh": "鏡頭站在森林小路上，順著小路往前看。小路是一條泥土路，筆直往前延伸很長一段，最後消失在遠處的樹林裡。小路兩邊是茂密的白堊紀森林，有蘇鐵、銀杏和高大的針葉樹，樹幹高高聳起，像兩道牆夾著小路。很遠的地方，小路左邊的樹林讓開，露出一片被夕陽照得橘亮的空地；小路遠處還有一截大樹根從地面拱起來，看起來小小的。夕陽在鏡頭正後方，低低地照過來，整條小路被染成橘色，樹影往前拉得很長。",
+    "en": "Background: The camera stands on a forest trail and looks straight along it. The trail is a dirt path that runs straight ahead for a long way and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers, the trunks rising high like two walls along the trail. Far ahead, the trees on the left side of the trail open up into a forest clearing glowing orange in the sunset light; far along the trail a big tree root sticks up out of the ground, looking small. The setting sun is directly behind the camera, low in the sky; the whole trail is tinted orange and the tree shadows stretch far ahead.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
     "refs": [
       "REF_HERO",
       "REF_PROPS"
     ]
   },
   "EP1-11-02": {
-    "zh": "鏡頭站在小路旁邊的樹林邊上，橫著看向小路。小路是一條泥土路，從畫面左邊橫過整個畫面延伸到右邊，被夕陽染成橘色。鏡頭很近的地方，畫面邊上有幾片蘇鐵葉子。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和針葉樹的樹幹一根接一根。夕陽在畫面左邊，低低地從樹縫照進來，樹幹的影子往右拉得很長。順著小路往右走，樹林會讓開一片空地，在畫面外面。",
-    "en": "Background: The camera stands at the edge of the trees beside the trail and looks across at it. The trail is a dirt path that runs across the whole picture from the left side to the right side, tinted orange by the sunset. Very close to the camera, a few cycad fronds poke in at the edges of the picture. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, trunk after trunk. The setting sun is on the left side of the picture, low, shining in between the trunks, and the shadows of the trunks stretch far to the right. Further along the trail to the right the trees open up into a clearing, outside the picture.",
-    "conflict": "",
+    "zh": "鏡頭站在小路旁邊，橫著看向小路。小路是一條泥土路，從畫面左邊橫過整個畫面延伸到右邊，被夕陽染成橘色。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和針葉樹的樹幹一根接一根。夕陽在畫面左邊，低低地從樹縫照進來，樹幹的影子往右拉得很長。順著小路往右走，樹林會讓開一片空地，在畫面外面。",
+    "en": "Background: The camera stands beside the trail and looks across at it. The trail is a dirt path that runs across the whole picture from the left side to the right side, tinted orange by the sunset. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, trunk after trunk. The setting sun is on the left side of the picture, low, shining in between the trunks, and the shadows of the trunks stretch far to the right. Further along the trail to the right the trees open up into a clearing, outside the picture.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
     "refs": [
       "REF_HERO",
       "REF_TEEN",
@@ -21,9 +21,9 @@
     ]
   },
   "EP1-11-02W": {
-    "zh": "鏡頭站在小路旁邊的樹林裡，隔著幾棵樹看向小路。畫面左右兩邊很近的地方有幾根樹幹和蘇鐵葉子。小路是一條泥土路，從畫面左邊橫過整個畫面延伸到右邊，被夕陽染成橘色。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和高大的針葉樹的樹幹一根接一根，畫面上方是一片樹冠。夕陽在畫面左邊，低低地從樹縫照進來，樹幹的影子往右拉得很長。順著小路往右走，樹林會讓開一片空地，在畫面外面。",
-    "en": "Background: The camera stands among the trees beside the trail and looks at the trail past a few trees. Very close to the camera, a few tree trunks and cycad fronds stand at the left and right edges of the picture. The trail is a dirt path that runs across the whole picture from the left side to the right side, tinted orange by the sunset. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers, trunk after trunk, with a band of tree crowns across the top of the picture. The setting sun is on the left side of the picture, low, shining in between the trunks, and the shadows of the trunks stretch far to the right. Further along the trail to the right the trees open up into a clearing, outside the picture.",
-    "conflict": "",
+    "zh": "鏡頭站在小路旁邊，橫著看向小路。小路是一條泥土路，從畫面左邊橫過整個畫面延伸到右邊，被夕陽染成橘色。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和高大的針葉樹的樹幹一根接一根，畫面上方是一片樹冠。夕陽在畫面左邊，低低地從樹縫照進來，樹幹的影子往右拉得很長。順著小路往右走，樹林會讓開一片空地，在畫面外面。",
+    "en": "Background: The camera stands beside the trail and looks across at it. The trail is a dirt path that runs across the whole picture from the left side to the right side, tinted orange by the sunset. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers, trunk after trunk, with a band of tree crowns across the top of the picture. The setting sun is on the left side of the picture, low, shining in between the trunks, and the shadows of the trunks stretch far to the right. Further along the trail to the right the trees open up into a clearing, outside the picture.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
     "refs": [
       "REF_HERO",
       "REF_TEEN",
@@ -32,9 +32,9 @@
     ]
   },
   "EP1-11-03": {
-    "zh": "鏡頭站在森林小路上，順著小路往前看。小路是一條泥土路，從鏡頭前面筆直往前延伸，最後消失在遠處的樹林裡。小路兩邊是茂密的白堊紀森林，蘇鐵、銀杏和高大的針葉樹夾著小路。夕陽就在小路正前方的樹林後面，低低的，逆光照過來，樹的輪廓邊緣發出橘色的亮光，小路上的樹影朝鏡頭拉過來。鏡頭右手邊有一片空地、鏡頭後面不遠處有一截大樹根，都在畫面外面。",
-    "en": "Background: The camera stands on a forest trail and looks straight along it. The trail is a dirt path that runs straight ahead from in front of the camera and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers. The setting sun is low behind the trees straight ahead at the end of the trail, shining toward the camera; the edges of the trees glow orange against the light, and the tree shadows on the trail stretch toward the camera. Just to the camera's right there is a forest clearing, and a little way behind the camera a big tree root sticks out of the ground; both are outside the picture.",
-    "conflict": "",
+    "zh": "鏡頭站在森林小路上，順著小路往前看。小路是一條泥土路，筆直往前延伸，最後消失在遠處的樹林裡。小路兩邊是茂密的白堊紀森林，蘇鐵、銀杏和高大的針葉樹夾著小路。夕陽就在小路正前方的樹林後面，低低的，逆光照過來，樹的輪廓邊緣發出橘色的亮光，小路上的樹影朝鏡頭拉過來。鏡頭右手邊有一片空地、鏡頭後面不遠處有一截大樹根，都在畫面外面。",
+    "en": "Background: The camera stands on a forest trail and looks straight along it. The trail is a dirt path that runs straight ahead and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers. The setting sun is low behind the trees straight ahead at the end of the trail, shining toward the camera; the edges of the trees glow orange against the light, and the tree shadows on the trail stretch toward the camera. Just to the camera's right there is a forest clearing, and a little way behind the camera a big tree root sticks out of the ground; both are outside the picture.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
     "refs": [
       "REF_HERO",
       "REF_TEEN",
@@ -43,9 +43,9 @@
     ]
   },
   "EP1-11-03W": {
-    "zh": "鏡頭站在森林小路上，順著小路往前看。小路是一條泥土路，筆直往前延伸，最後消失在遠處的樹林裡。小路左邊是一整片茂密的白堊紀森林，有蘇鐵、銀杏和高大的針葉樹。小路右邊靠鏡頭的這一段，樹林讓開一片平平的空地，被夕陽照得橘亮；空地再往前，小路右邊又是茂密的樹林。夕陽就在小路正前方的樹林後面，低低的，逆光照過來，樹的輪廓邊緣發出橘色的亮光，樹影朝鏡頭拉過來。那截大樹根就在鏡頭後面，畫面裡看不到。",
-    "en": "Background: The camera stands on a forest trail and looks straight along it. The trail is a dirt path that runs straight ahead and disappears into the trees far away. On the left side of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers. On the right side of the trail, along the stretch nearest the camera, the trees open up into a flat forest clearing glowing orange in the sunset light; past the clearing, the right side of the trail is dense forest again. The setting sun is low behind the trees straight ahead at the end of the trail, shining toward the camera; the edges of the trees glow orange against the light and the tree shadows stretch toward the camera. The big tree root is just behind the camera and is not in the picture.",
-    "conflict": "",
+    "zh": "鏡頭站在森林小路上，順著小路往前看。小路是一條泥土路，筆直往前延伸，最後消失在遠處的樹林裡。小路兩邊是茂密的白堊紀森林，有蘇鐵、銀杏和高大的針葉樹。夕陽就在小路正前方的樹林後面，低低的，逆光照過來，樹的輪廓邊緣發出橘色的亮光，樹影朝鏡頭拉過來。那截大樹根就在鏡頭後面，畫面裡看不到。",
+    "en": "Background: The camera stands on a forest trail and looks straight along it. The trail is a dirt path that runs straight ahead and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers. The setting sun is low behind the trees straight ahead at the end of the trail, shining toward the camera; the edges of the trees glow orange against the light and the tree shadows stretch toward the camera. The big tree root is just behind the camera and is not in the picture.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。原本寫的空地在小路右邊靠鏡頭那一段，位在鏡頭和角色之間，這次一併拿掉。",
     "refs": [
       "REF_HERO",
       "REF_TEEN",
@@ -74,9 +74,9 @@
     ]
   },
   "EP1-11-05W": {
-    "zh": "鏡頭站在小路旁邊的樹林邊上，橫著看向小路。小路是一條泥土路，從畫面左邊橫過畫面延伸到右邊，被夕陽染成橘色。鏡頭很近的地方，畫面下緣有幾片蘇鐵葉子。小路對面是一片平平的森林空地，被夕陽照得橘亮；空地再過去是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，畫面右邊邊上也是樹林。夕陽在畫面左邊，低低地照過來，影子往右拉得很長。畫面左邊外面一點點，小路上有一截大樹根從地面拱起來，看不到。",
-    "en": "Background: The camera stands at the edge of the trees beside the trail and looks across at it. The trail is a dirt path that runs across the picture from the left side to the right side, tinted orange by the sunset. Very close to the camera, a few cycad fronds poke in along the bottom edge of the picture. On the other side of the trail is a flat forest clearing glowing orange in the sunset light; past the clearing is a dense Cretaceous forest of cycads, ginkgos and conifers, and there are trees at the right edge of the picture too. The setting sun is on the left side of the picture, low, and shadows stretch far to the right. Just past the left edge of the picture a big tree root sticks up out of the trail; it is not visible.",
-    "conflict": "",
+    "zh": "鏡頭站在小路旁邊的樹林邊上，橫著看向小路。小路是一條泥土路，從畫面左邊橫過畫面延伸到右邊，被夕陽染成橘色。小路對面是一片平平的森林空地，被夕陽照得橘亮；空地再過去是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，畫面右邊邊上也是樹林。夕陽在畫面左邊，低低地照過來，影子往右拉得很長。畫面左邊外面一點點，小路上有一截大樹根從地面拱起來，看不到。",
+    "en": "Background: The camera stands at the edge of the trees beside the trail and looks across at it. The trail is a dirt path that runs across the picture from the left side to the right side, tinted orange by the sunset. On the other side of the trail is a flat forest clearing glowing orange in the sunset light; past the clearing is a dense Cretaceous forest of cycads, ginkgos and conifers, and there are trees at the right edge of the picture too. The setting sun is on the left side of the picture, low, and shadows stretch far to the right. Just past the left edge of the picture a big tree root sticks up out of the trail; it is not visible.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
     "refs": [
       "REF_HERO",
       "REF_TEEN",
@@ -117,9 +117,9 @@
     ]
   },
   "EP1-11-08": {
-    "zh": "鏡頭站在空地邊緣的樹林邊上，看向一片森林空地。空地很平，地面被夕陽照成橘色，從鏡頭前面往前鋪開。畫面右邊是一條泥土小路，貼著空地的邊從鏡頭旁邊往前延伸；小路上，畫面中間偏右不遠處，有一截大樹根從地面拱起來。小路再右邊是樹林。空地左邊和最遠的那一頭都被茂密的白堊紀森林圍住，有蘇鐵、銀杏和針葉樹。鏡頭很近的地方，畫面左邊邊上有幾片蘇鐵葉子。夕陽在鏡頭正後方，低低地照過來，樹影往前長長地拖進空地。",
-    "en": "Background: The camera stands at the edge of the trees beside a forest clearing and looks into it. The clearing is flat, its ground tinted orange by the sunset, spreading out ahead from in front of the camera. On the right side of the picture a dirt trail runs along the edge of the clearing, starting beside the camera and going straight ahead; on the trail, slightly right of the middle of the picture and not far away, a big tree root sticks up out of the ground. To the right of the trail is forest. On the left and at the far end, the clearing is surrounded by dense Cretaceous forest of cycads, ginkgos and conifers. Very close to the camera, a few cycad fronds poke in at the left edge of the picture. The setting sun is directly behind the camera, low, and the tree shadows stretch long ahead across the clearing.",
-    "conflict": "",
+    "zh": "鏡頭站在空地邊緣的樹林邊上，看向一片森林空地。空地很平，地面被夕陽照成橘色，往遠處鋪開。畫面右邊是一條泥土小路，貼著空地的邊往遠處延伸；小路上，畫面中間偏右不遠處，有一截大樹根從地面拱起來。小路再右邊是樹林。空地左邊和最遠的那一頭都被茂密的白堊紀森林圍住，有蘇鐵、銀杏和針葉樹。夕陽在鏡頭正後方，低低地照過來，樹影往前長長地拖進空地。",
+    "en": "Background: The camera stands at the edge of the trees beside a forest clearing and looks into it. The clearing is flat, its ground tinted orange by the sunset, spreading out into the distance. On the right side of the picture a dirt trail runs along the edge of the clearing into the distance; on the trail, slightly right of the middle of the picture and not far away, a big tree root sticks up out of the ground. To the right of the trail is forest. On the left and at the far end, the clearing is surrounded by dense Cretaceous forest of cycads, ginkgos and conifers. The setting sun is directly behind the camera, low, and the tree shadows stretch long ahead across the clearing.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
     "refs": [
       "REF_HERO",
       "REF_TEEN",
@@ -128,9 +128,9 @@
     ]
   },
   "EP1-11-08W": {
-    "zh": "鏡頭站在樹林裡，隔著幾棵樹看向一片森林空地。畫面左右兩邊很近的地方有幾根樹幹和蘇鐵葉子，像框一樣框住畫面。往前不遠，樹林到了盡頭，一片平平的空地往前鋪開，地面被夕陽照成橘色。畫面右邊，一條泥土小路從鏡頭旁邊經過，貼著空地的邊往前延伸；小路上，畫面中間偏右的遠處有一截大樹根從地面拱起來。空地左邊和最遠的那一頭被茂密的蘇鐵、銀杏和針葉樹圍住。夕陽在鏡頭正後方，低低地照過來，樹影往前長長地拖進空地。",
-    "en": "Background: The camera stands among the trees and looks past a few trunks toward a forest clearing. Very close to the camera, a few tree trunks and cycad fronds stand at the left and right edges of the picture, framing it. A short way ahead the trees end and a flat clearing spreads out, its ground tinted orange by the sunset. On the right side of the picture a dirt trail passes beside the camera and runs ahead along the edge of the clearing; far along the trail, slightly right of the middle of the picture, a big tree root sticks up out of the ground. On the left and at the far end, the clearing is surrounded by dense cycads, ginkgos and conifers. The setting sun is directly behind the camera, low, and the tree shadows stretch long ahead across the clearing.",
-    "conflict": "",
+    "zh": "鏡頭看向一片森林空地。空地很平，地面被夕陽照成橘色，往遠處鋪開。畫面右邊，一條泥土小路貼著空地的邊往遠處延伸；小路上，畫面中間偏右的遠處有一截大樹根從地面拱起來。小路再右邊是樹林。空地左邊和最遠的那一頭被茂密的蘇鐵、銀杏和針葉樹圍住。夕陽在鏡頭正後方，低低地照過來，樹影往前長長地拖進空地。",
+    "en": "Background: The camera looks toward a forest clearing. The clearing is flat, its ground tinted orange by the sunset, spreading out into the distance. On the right side of the picture a dirt trail runs along the edge of the clearing into the distance; far along the trail, slightly right of the middle of the picture, a big tree root sticks up out of the ground. To the right of the trail is forest. On the left and at the far end, the clearing is surrounded by dense cycads, ginkgos and conifers. The setting sun is directly behind the camera, low, and the tree shadows stretch long ahead across the clearing.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。相機（J5）在樹林裡，照使用者決定當作沒有樹擋住，鏡頭和空地之間的樹幹、葉子都拿掉。",
     "refs": [
       "REF_HERO",
       "REF_TEEN",
@@ -139,17 +139,17 @@
     ]
   },
   "EP1-11-09": {
-    "zh": "鏡頭站在樹林裡，隔著幾棵樹看向一片森林空地。畫面左右兩邊很近的地方有幾根樹幹和蘇鐵葉子。往前不遠，樹林到了盡頭，一片平平的空地往前鋪開，地面被夕陽照成橘色。畫面右邊，一條泥土小路從鏡頭旁邊經過，貼著空地的邊往前延伸；小路上，畫面中間偏右的遠處有一截大樹根從地面拱起來。空地左邊和最遠的那一頭被茂密的蘇鐵、銀杏和針葉樹圍住。夕陽在鏡頭正後方，低低地照過來，樹影往前長長地拖進空地。",
-    "en": "Background: The camera stands among the trees and looks past a few trunks toward a forest clearing. Very close to the camera, a few tree trunks and cycad fronds stand at the left and right edges of the picture. A short way ahead the trees end and a flat clearing spreads out, its ground tinted orange by the sunset. On the right side of the picture a dirt trail passes beside the camera and runs ahead along the edge of the clearing; far along the trail, slightly right of the middle of the picture, a big tree root sticks up out of the ground. On the left and at the far end, the clearing is surrounded by dense cycads, ginkgos and conifers. The setting sun is directly behind the camera, low, and the tree shadows stretch long ahead across the clearing.",
-    "conflict": "prompt 寫 The camera is on the trail ahead of TEEN，地圖上相機（J5）在小路旁的樹林裡、看向空地；背景照地圖寫。",
+    "zh": "鏡頭看向一片森林空地。空地很平，地面被夕陽照成橘色，往遠處鋪開。畫面右邊，一條泥土小路貼著空地的邊往遠處延伸；小路上，畫面中間偏右的遠處有一截大樹根從地面拱起來。小路再右邊是樹林。空地左邊和最遠的那一頭被茂密的蘇鐵、銀杏和針葉樹圍住。夕陽在鏡頭正後方，低低地照過來，樹影往前長長地拖進空地。",
+    "en": "Background: The camera looks toward a forest clearing. The clearing is flat, its ground tinted orange by the sunset, spreading out into the distance. On the right side of the picture a dirt trail runs along the edge of the clearing into the distance; far along the trail, slightly right of the middle of the picture, a big tree root sticks up out of the ground. To the right of the trail is forest. On the left and at the far end, the clearing is surrounded by dense cycads, ginkgos and conifers. The setting sun is directly behind the camera, low, and the tree shadows stretch long ahead across the clearing.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。相機（J5）在樹林裡，照使用者決定當作沒有樹擋住。prompt 寫 The camera is on the trail ahead of TEEN，地圖上相機（J5）在小路旁的樹林裡、看向空地；背景照地圖寫。",
     "refs": [
       "REF_TEEN"
     ]
   },
   "EP1-11-10": {
-    "zh": "鏡頭貼著空地的地面，往上看向空地邊緣的樹林。畫面下緣是一點點被夕陽照成橘色的平地；不遠處空地到了盡頭，一整排高大的蘇鐵、銀杏和針葉樹像牆一樣立起來。因為鏡頭很低，樹幹往上聳得很高，樹冠遮住大半天空。畫面左邊邊上，一條泥土小路沿著空地邊緣往遠處延伸，鑽進樹林。夕陽就在正前方的樹林後面，低低的，逆光照過來，樹的輪廓邊緣發出橘色的亮光。那截大樹根在鏡頭左後方，畫面裡看不到。",
-    "en": "Background: The camera sits right on the ground of a forest clearing and looks up toward the trees at the edge of the clearing. Along the bottom of the picture is a thin strip of flat ground tinted orange by the sunset; not far away the clearing ends and a row of tall cycads, ginkgos and conifers stands up like a wall. Because the camera is so low, the trunks rise very high and the tree crowns cover most of the sky. At the left edge of the picture a dirt trail runs along the edge of the clearing into the distance and disappears into the trees. The setting sun is low behind the trees straight ahead, shining toward the camera, and the edges of the trees glow orange against the light. The big tree root is behind the camera on the left and is not in the picture.",
-    "conflict": "prompt 寫 The camera is on the trail ahead of TEEN，地圖上相機（O5）在空地裡，小路在畫面左邊；背景照地圖寫。",
+    "zh": "鏡頭貼著空地的地面，往上看向空地邊緣的樹林。不遠處空地到了盡頭，一整排高大的蘇鐵、銀杏和針葉樹像牆一樣立起來。因為鏡頭很低，樹幹往上聳得很高，樹冠遮住大半天空。畫面左邊邊上，一條泥土小路沿著空地邊緣往遠處延伸，鑽進樹林。夕陽就在正前方的樹林後面，低低的，逆光照過來，樹的輪廓邊緣發出橘色的亮光。那截大樹根在鏡頭左後方，畫面裡看不到。",
+    "en": "Background: The camera sits right on the ground of a forest clearing and looks up toward the trees at the edge of the clearing. Not far away the clearing ends and a row of tall cycads, ginkgos and conifers stands up like a wall. Because the camera is so low, the trunks rise very high and the tree crowns cover most of the sky. At the left edge of the picture a dirt trail runs along the edge of the clearing into the distance and disappears into the trees. The setting sun is low behind the trees straight ahead, shining toward the camera, and the edges of the trees glow orange against the light. The big tree root is behind the camera on the left and is not in the picture.",
+    "conflict": "2026-11-13 照新規定拿掉前面的東西。prompt 寫 The camera is on the trail ahead of TEEN，地圖上相機（O5）在空地裡，小路在畫面左邊；背景照地圖寫。",
     "refs": [
       "REF_TEEN"
     ]

@@ -1,17 +1,17 @@
 {
  "_doc": "第 6 幕每格背景描述，Claude 看地圖手寫，2026-11-13",
  "EP1-06-01": {
-  "zh": "鏡頭貼近地面，對著森林空地中間的一小片泥地。泥地在畫面正中間，是薄薄一層濕泥，四周是鋪著落葉和矮草的森林地面。泥地後面，畫面左邊是一顆長滿青苔的大石頭，畫面右邊是一片高高的蕨類。泥地正上方的空中，一圈藍色的時光隧道光正在縮小、快要消失。上午的陽光從鏡頭右後方照過來。",
-  "en": "Background: The camera is down near the ground, facing a small patch of mud in the middle of a forest clearing. The mud patch is in the middle of the picture, just a thin layer of wet mud, surrounded by forest floor with leaf litter and low plants. Beyond the mud, on the left side of the picture, is a big moss-covered boulder, and on the right side is a patch of tall ferns. In the air right above the mud patch, a ring of blue time-tunnel light is shrinking and about to vanish. Morning sunlight comes from behind the camera on the right.",
-  "conflict": "",
+  "zh": "鏡頭貼近地面，對著森林空地中間一小片薄薄的泥地。泥地後面是鋪著落葉和矮草的森林地面；畫面左邊是一顆長滿青苔的大石頭，畫面右邊是一片高高的蕨類。泥地正上方的空中，一圈藍色的時光隧道光正在縮小、快要消失。上午的陽光從鏡頭右後方照過來。",
+  "en": "Background: The camera is down near the ground, facing a small, thin patch of mud in the middle of a forest clearing. Beyond the mud is forest floor with leaf litter and low plants; on the left side of the picture is a big moss-covered boulder, and on the right side is a patch of tall ferns. In the air right above the mud patch, a ring of blue time-tunnel light is shrinking and about to vanish. Morning sunlight comes from behind the camera on the right.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO"
   ]
  },
  "EP1-06-02": {
-  "zh": "鏡頭站在森林空地上，對著空地的另一頭。畫面中間偏下是一小片薄薄的泥地，四周是鋪著落葉和矮草的地面。泥地後面，畫面左邊是一顆長滿青苔的大石頭，畫面右邊是一片高高的蕨類。再過去，空地像一條寬走道往前延伸，左右兩邊都是又高又密的森林，有蘇鐵、銀杏和針葉樹。走道盡頭很遠的地方是一條寬寬的河，河對岸是朦朧的樹林。上午的陽光從鏡頭右後方照過來，空氣看起來又熱又濕。",
-  "en": "Background: The camera stands in a forest clearing, facing the far end of the clearing. Just below the middle of the picture is a small, thin patch of mud, surrounded by ground covered in leaf litter and low plants. Beyond the mud, on the left side of the picture, is a big moss-covered boulder, and on the right side is a patch of tall ferns. Farther on, the clearing stretches away like a wide corridor, with tall, dense forest of cycads, ginkgos and conifers on both the left and the right. Far away at the end of the corridor is a wide river, and on its far bank stands a hazy forest. Morning sunlight comes from behind the camera on the right; the air looks hot and humid.",
-  "conflict": "",
+  "zh": "鏡頭站在森林空地上，對著空地中間一小片薄薄的泥地和空地的另一頭。泥地後面是鋪著落葉和矮草的地面；畫面左邊是一顆長滿青苔的大石頭，畫面右邊是一片高高的蕨類。再過去，空地像一條寬走道往前延伸，左右兩邊都是又高又密的森林，有蘇鐵、銀杏和針葉樹。走道盡頭很遠的地方是一條寬寬的河，河對岸是朦朧的樹林。上午的陽光從鏡頭右後方照過來，空氣看起來又熱又濕。",
+  "en": "Background: The camera stands in a forest clearing, facing a small, thin patch of mud in the middle of the clearing and the far end of the clearing. Beyond the mud is ground covered in leaf litter and low plants; on the left side of the picture is a big moss-covered boulder, and on the right side is a patch of tall ferns. Farther on, the clearing stretches away like a wide corridor, with tall, dense forest of cycads, ginkgos and conifers on both the left and the right. Far away at the end of the corridor is a wide river, and on its far bank stands a hazy forest. Morning sunlight comes from behind the camera on the right; the air looks hot and humid.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO",
    "REF_PROPS"
@@ -35,27 +35,27 @@
   ]
  },
  "EP1-06-05": {
-  "zh": "鏡頭站在一片高到腰的蕨類裡，斜斜地對著空地的另一頭。蕨類的葉子填滿畫面下緣，一直往後長一小段。蕨類過去是開闊的空地，空地往前延伸到很遠；畫面左邊是又高又密的森林，有蘇鐵、銀杏和針葉樹；畫面右邊很遠的地方，露出一條寬寬的河和河對岸朦朧的樹林。上午的陽光從鏡頭右後方照過來。",
-  "en": "Background: The camera stands in a patch of waist-high ferns, looking at an angle toward the far end of the clearing. Fern fronds fill the bottom edge of the picture and continue a short way back. Beyond the ferns is the open clearing, stretching far away; on the left side of the picture is tall, dense forest of cycads, ginkgos and conifers; far away on the right side of the picture, a wide river shows, with a hazy forest on its far bank. Morning sunlight comes from behind the camera on the right.",
-  "conflict": "",
+  "zh": "鏡頭斜斜地對著一片高到腰的蕨類和空地的另一頭。蕨類往後再長一小段，蕨類過去是開闊的空地，空地往前延伸到很遠；畫面左邊是又高又密的森林，有蘇鐵、銀杏和針葉樹；畫面右邊很遠的地方，露出一條寬寬的河和河對岸朦朧的樹林。上午的陽光從鏡頭右後方照過來。",
+  "en": "Background: The camera looks at an angle toward a patch of waist-high ferns and the far end of the clearing. The ferns continue a short way back, and beyond the ferns is the open clearing, stretching far away; on the left side of the picture is tall, dense forest of cycads, ginkgos and conifers; far away on the right side of the picture, a wide river shows, with a hazy forest on its far bank. Morning sunlight comes from behind the camera on the right.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO",
    "REF_PROPS"
   ]
  },
  "EP1-06-06": {
-  "zh": "鏡頭站在森林空地上，對著空地邊上靠近森林的那一角。畫面左邊，緊挨著空地的是又高又密的森林，有蘇鐵、銀杏和針葉樹。畫面右邊很近的地方是一小片薄薄的泥地；泥地再過去是一片高到腰的蕨類。畫面中間偏右，空地往前延伸到很遠，盡頭是一條寬寬的河，河對岸是朦朧的樹林。地面鋪著落葉和矮草。上午的陽光從鏡頭右後方照過來。",
-  "en": "Background: The camera stands in a forest clearing, facing a corner of the clearing close to the forest edge. On the left side of the picture, right up against the clearing, is tall, dense forest of cycads, ginkgos and conifers. Close by on the right side of the picture is a small, thin patch of mud; beyond the mud is a patch of waist-high ferns. Just right of the middle of the picture, the clearing stretches far away and ends at a wide river, with a hazy forest on its far bank. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the right.",
-  "conflict": "",
+  "zh": "鏡頭站在森林空地上，對著空地邊上靠近森林的那一角。畫面左邊，緊挨著空地的是又高又密的森林，有蘇鐵、銀杏和針葉樹。畫面右邊是一片高到腰的蕨類。畫面中間偏右，空地往前延伸到很遠，盡頭是一條寬寬的河，河對岸是朦朧的樹林。地面鋪著落葉和矮草。上午的陽光從鏡頭右後方照過來。",
+  "en": "Background: The camera stands in a forest clearing, facing a corner of the clearing close to the forest edge. On the left side of the picture, right up against the clearing, is tall, dense forest of cycads, ginkgos and conifers. On the right side of the picture is a patch of waist-high ferns. Just right of the middle of the picture, the clearing stretches far away and ends at a wide river, with a hazy forest on its far bank. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the right.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO",
    "REF_PROPS"
   ]
  },
  "EP1-06-06W": {
-  "zh": "鏡頭站在森林空地上，往後退得比較遠，對著空地邊上靠近森林的那一角。畫面左邊是又高又密的森林，有蘇鐵、銀杏和針葉樹，樹頂高到超出畫面上緣。畫面右邊很近的地方是一小片薄薄的泥地，泥地再過去是一片高到腰的蕨類，蕨類過去是空地另一邊的森林。畫面中間，空地像一條寬走道往前延伸到很遠，盡頭是一條寬寬的河，河對岸是朦朧的樹林。地面鋪著落葉和矮草。上午的陽光從鏡頭右後方照過來，空氣看起來又熱又濕。",
-  "en": "Background: The camera stands in a forest clearing, pulled well back, facing a corner of the clearing close to the forest edge. On the left side of the picture is tall, dense forest of cycads, ginkgos and conifers, the treetops rising past the top edge of the picture. Close by on the right side of the picture is a small, thin patch of mud; beyond it is a patch of waist-high ferns, and beyond the ferns is the forest on the other side of the clearing. In the middle of the picture, the clearing stretches far away like a wide corridor and ends at a wide river, with a hazy forest on its far bank. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the right; the air looks hot and humid.",
-  "conflict": "",
+  "zh": "鏡頭站在森林空地上，往後退得比較遠，對著空地邊上靠近森林的那一角。畫面左邊是又高又密的森林，有蘇鐵、銀杏和針葉樹，樹頂高到超出畫面上緣。畫面右邊是一片高到腰的蕨類，蕨類過去是空地另一邊的森林。畫面中間，空地像一條寬走道往前延伸到很遠，盡頭是一條寬寬的河，河對岸是朦朧的樹林。地面鋪著落葉和矮草。上午的陽光從鏡頭右後方照過來，空氣看起來又熱又濕。",
+  "en": "Background: The camera stands in a forest clearing, pulled well back, facing a corner of the clearing close to the forest edge. On the left side of the picture is tall, dense forest of cycads, ginkgos and conifers, the treetops rising past the top edge of the picture. On the right side of the picture is a patch of waist-high ferns, and beyond the ferns is the forest on the other side of the clearing. In the middle of the picture, the clearing stretches far away like a wide corridor and ends at a wide river, with a hazy forest on its far bank. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the right; the air looks hot and humid.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO",
    "REF_PROPS"
@@ -70,9 +70,9 @@
   ]
  },
  "EP1-06-08": {
-  "zh": "鏡頭站在森林空地上，正對著空地靠近森林的那一邊。畫面左邊，緊挨著空地的是又高又密的森林，有蘇鐵、銀杏和針葉樹。畫面右邊是一小片薄薄的泥地，泥地再過去是一片高到腰的蕨類。畫面中間，空地往前延伸到很遠，盡頭是一條寬寬的河，河對岸是朦朧的樹林。地面鋪著落葉和矮草。上午的陽光從鏡頭右後方照過來。",
-  "en": "Background: The camera stands in a forest clearing, facing straight toward the side of the clearing near the forest. On the left side of the picture, right up against the clearing, is tall, dense forest of cycads, ginkgos and conifers. On the right side of the picture is a small, thin patch of mud, and beyond it a patch of waist-high ferns. In the middle of the picture, the clearing stretches far away and ends at a wide river, with a hazy forest on its far bank. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the right.",
-  "conflict": "",
+  "zh": "鏡頭站在森林空地上，正對著空地靠近森林的那一邊。畫面左邊，緊挨著空地的是又高又密的森林，有蘇鐵、銀杏和針葉樹。畫面右邊是一片高到腰的蕨類。畫面中間，空地往前延伸到很遠，盡頭是一條寬寬的河，河對岸是朦朧的樹林。地面鋪著落葉和矮草。上午的陽光從鏡頭右後方照過來。",
+  "en": "Background: The camera stands in a forest clearing, facing straight toward the side of the clearing near the forest. On the left side of the picture, right up against the clearing, is tall, dense forest of cycads, ginkgos and conifers. On the right side of the picture is a patch of waist-high ferns. In the middle of the picture, the clearing stretches far away and ends at a wide river, with a hazy forest on its far bank. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the right.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO",
    "REF_ANKY",
@@ -81,9 +81,9 @@
   ]
  },
  "EP1-06-08W": {
-  "zh": "鏡頭從稍高的地方，正對著森林空地靠近森林的那一邊，看得比較遠。畫面左邊，緊挨著空地的是又高又密的森林，有蘇鐵、銀杏和針葉樹。畫面右邊是一小片薄薄的泥地，泥地再過去是一片高到腰的蕨類，蕨類過去是空地另一邊的森林。畫面中間，空地像一條寬走道往前延伸到很遠，盡頭是一條寬寬的河，河對岸是朦朧的樹林。地面鋪著落葉和矮草。上午的陽光從鏡頭右後方照過來。",
-  "en": "Background: From a slightly raised position, the camera faces straight toward the side of the forest clearing near the forest, seeing a long way. On the left side of the picture, right up against the clearing, is tall, dense forest of cycads, ginkgos and conifers. On the right side of the picture is a small, thin patch of mud; beyond it is a patch of waist-high ferns, and beyond the ferns is the forest on the other side of the clearing. In the middle of the picture, the clearing stretches far away like a wide corridor and ends at a wide river, with a hazy forest on its far bank. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the right.",
-  "conflict": "",
+  "zh": "鏡頭從稍高的地方，正對著森林空地靠近森林的那一邊，看得比較遠。畫面左邊，緊挨著空地的是又高又密的森林，有蘇鐵、銀杏和針葉樹。畫面右邊是一片高到腰的蕨類，蕨類過去是空地另一邊的森林。畫面中間，空地像一條寬走道往前延伸到很遠，盡頭是一條寬寬的河，河對岸是朦朧的樹林。地面鋪著落葉和矮草。上午的陽光從鏡頭右後方照過來。",
+  "en": "Background: From a slightly raised position, the camera faces straight toward the side of the forest clearing near the forest, seeing a long way. On the left side of the picture, right up against the clearing, is tall, dense forest of cycads, ginkgos and conifers. On the right side of the picture is a patch of waist-high ferns, and beyond the ferns is the forest on the other side of the clearing. In the middle of the picture, the clearing stretches far away like a wide corridor and ends at a wide river, with a hazy forest on its far bank. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the right.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO",
    "REF_ANKY",
@@ -92,9 +92,9 @@
   ]
  },
  "EP1-06-09": {
-  "zh": "鏡頭站在森林空地上，斜斜地對著空地邊上的森林。畫面下方是一小片薄薄的泥地。泥地過去，畫面正中間略偏右是一顆長滿青苔的大石頭，石頭後面緊挨著又高又密的森林，有蘇鐵、銀杏和針葉樹，橫過整個畫面。畫面右邊，森林前面是開闊的空地。地面鋪著落葉和矮草。上午的陽光從鏡頭左後方照過來。",
-  "en": "Background: The camera stands in a forest clearing, looking at an angle toward the forest at the edge of the clearing. At the bottom of the picture is a small, thin patch of mud. Beyond the mud, in the middle of the picture and slightly to the right, is a big moss-covered boulder, and right behind the boulder is tall, dense forest of cycads, ginkgos and conifers, running across the whole picture. On the right side of the picture, in front of the forest, is open clearing. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the left.",
-  "conflict": "prompt 寫甲龍在 HERO「後方偏左」；照地圖（相機 J30、HERO H29、甲龍 D27–F28），甲龍幾乎就在 HERO 正後方、略偏右。背景照地圖寫。",
+  "zh": "鏡頭站在森林空地上，斜斜地對著空地邊上的森林。畫面正中間略偏右是一顆長滿青苔的大石頭，石頭後面緊挨著又高又密的森林，有蘇鐵、銀杏和針葉樹，橫過整個畫面。畫面右邊，森林前面是開闊的空地。地面鋪著落葉和矮草。上午的陽光從鏡頭左後方照過來。",
+  "en": "Background: The camera stands in a forest clearing, looking at an angle toward the forest at the edge of the clearing. In the middle of the picture and slightly to the right is a big moss-covered boulder, and right behind the boulder is tall, dense forest of cycads, ginkgos and conifers, running across the whole picture. On the right side of the picture, in front of the forest, is open clearing. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the left.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。prompt 寫甲龍在 HERO「後方偏左」；照地圖（相機 J30、HERO H29、甲龍 D27–F28），甲龍幾乎就在 HERO 正後方、略偏右。背景照地圖寫。",
   "refs": [
    "REF_HERO",
    "REF_ANKY",
@@ -103,9 +103,9 @@
   ]
  },
  "EP1-06-09W": {
-  "zh": "鏡頭站在森林空地上，往後退得比較遠，斜斜地對著空地邊上的森林。畫面下方是一小片薄薄的泥地。泥地過去，畫面正中間是一顆長滿青苔的大石頭，石頭後面緊挨著又高又密的森林，有蘇鐵、銀杏和針葉樹，橫過整個畫面。畫面右邊，森林前面是一大片開闊的空地。地面鋪著落葉和矮草。上午的陽光從鏡頭左後方照過來。",
-  "en": "Background: The camera stands in a forest clearing, pulled farther back, looking at an angle toward the forest at the edge of the clearing. At the bottom of the picture is a small, thin patch of mud. Beyond the mud, in the middle of the picture, is a big moss-covered boulder, and right behind the boulder is tall, dense forest of cycads, ginkgos and conifers, running across the whole picture. On the right side of the picture, in front of the forest, is a wide stretch of open clearing. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the left.",
-  "conflict": "prompt 寫甲龍在 HERO「後方偏左」；照地圖（相機 J31、HERO H29、甲龍 D27–F28），甲龍在 HERO 正後方、畫面中間。背景照地圖寫。",
+  "zh": "鏡頭站在森林空地上，往後退得比較遠，斜斜地對著空地邊上的森林。畫面正中間是一顆長滿青苔的大石頭，石頭後面緊挨著又高又密的森林，有蘇鐵、銀杏和針葉樹，橫過整個畫面。畫面右邊，森林前面是一大片開闊的空地。地面鋪著落葉和矮草。上午的陽光從鏡頭左後方照過來。",
+  "en": "Background: The camera stands in a forest clearing, pulled farther back, looking at an angle toward the forest at the edge of the clearing. In the middle of the picture is a big moss-covered boulder, and right behind the boulder is tall, dense forest of cycads, ginkgos and conifers, running across the whole picture. On the right side of the picture, in front of the forest, is a wide stretch of open clearing. The ground is covered in leaf litter and low plants. Morning sunlight comes from behind the camera on the left.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。prompt 寫甲龍在 HERO「後方偏左」；照地圖（相機 J31、HERO H29、甲龍 D27–F28），甲龍在 HERO 正後方、畫面中間。背景照地圖寫。",
   "refs": [
    "REF_HERO",
    "REF_ANKY",
@@ -123,9 +123,9 @@
   ]
  },
  "EP1-06-11": {
-  "zh": "鏡頭站在森林空地上，斜斜地對著空地的另一頭。畫面下方是一片高到腰的蕨類。蕨類過去是開闊的空地，再過去是又高又密的森林，有蘇鐵、銀杏和針葉樹。上午的陽光在鏡頭正後方。畫面右邊外面，越過空地是一條河，畫面裡看不到。",
-  "en": "Background: The camera stands in a forest clearing, looking at an angle toward the far end of the clearing. At the bottom of the picture is a patch of waist-high ferns. Beyond the ferns is open clearing, and beyond that is tall, dense forest of cycads, ginkgos and conifers. The morning sun is directly behind the camera. Off to the right of the picture, across the clearing, is a river, which is not in the picture.",
-  "conflict": "",
+  "zh": "鏡頭站在森林空地上，斜斜地對著一片高到腰的蕨類。蕨類過去是開闊的空地，再過去是又高又密的森林，有蘇鐵、銀杏和針葉樹。上午的陽光在鏡頭正後方。畫面右邊外面，越過空地是一條河，畫面裡看不到。",
+  "en": "Background: The camera stands in a forest clearing, looking at an angle toward a patch of waist-high ferns. Beyond the ferns is open clearing, and beyond that is tall, dense forest of cycads, ginkgos and conifers. The morning sun is directly behind the camera. Off to the right of the picture, across the clearing, is a river, which is not in the picture.",
+  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
   "refs": [
    "REF_HERO",
    "REF_PROPS"
