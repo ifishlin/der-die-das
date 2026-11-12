@@ -39,7 +39,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <tr><td>10</td><td><a href="#s10">設定圖</a> <span class=chg>改</span></td><td>✅</td><td>我寫 prompt，你在 Flow 畫、挑圖</td><td>人物與場景設定頁</td><td><code>build_scale_pairs.py</code></td></tr>
 <tr><td>11</td><td><a href="#s11">分鏡設計（送 request 給 Claude）</a> <span class=chg>改</span></td><td>🧪</td><td>Claude 設計，你看</td><td>分鏡回覆查詢頁</td><td><code>make_scene_request.py</code></td></tr>
 <tr><td>12</td><td><a href="#s12">檢查分鏡回覆</a> <span class=chg>改</span></td><td>🧪</td><td>我</td><td>—</td><td><code>check_scene_reply.py、compare_scene_replies.py</code></td></tr>
-<tr><td>13</td><td><a href="#s13">補背景和參考圖</a> <span class=chg>改</span></td><td>🧪</td><td>程式算，你核對</td><td>分鏡表（每格地圖下面）</td><td><code>add_background.py、map_background.py</code></td></tr>
+<tr><td>13</td><td><a href="#s13">補背景和參考圖</a> <span class=chg>改</span></td><td>🧪</td><td>背景由 LLM 手寫，你核對</td><td>分鏡表（每格地圖下面的「中文 prompt」）</td><td><code>背景：docs/requests/EP1-NN_bg_hand.json；參考圖：add_background.py</code></td></tr>
 <tr><td>14</td><td><a href="#s14">Flow 畫圖</a> <span class=chg>改</span></td><td>🧪</td><td>我操作</td><td>—</td><td><code>flowbot/scene_draw.py</code></td></tr>
 <tr><td>15</td><td><a href="#s15">分鏡表＋驗收</a> <span class=chg>改</span></td><td>🧪</td><td>我先看，你看完寫意見</td><td>EP1 分鏡表</td><td><code>make_scale_check_v5.py</code></td></tr>
 <tr><td>16</td><td><a href="#s16">補救</a></td><td>✅</td><td>我提，你定</td><td>—</td><td><code>—</code></td></tr>
@@ -107,12 +107,12 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>誰：</b>我。<b>　我用：</b><code>check_scene_reply.py、compare_scene_replies.py</code></p>
 <p><b>檢查什麼：</b></p><ul><li>旁白一句不漏、不改字。</li><li>有 HERO＋大恐龍卻沒加拍遠一級。</li><li>參考圖是不是 Flow 裡有的。</li><li>角色站的格子能不能站、相機放的格子能不能放。</li></ul>
 <h2 id="s13">13. 補背景和參考圖 🧪</h2>
-<p class="chgline"><span class="chg">改</span> 新增；11-12 參考圖也改由這一步的程式決定</p>
-<p><b>誰：</b>程式算，你核對。<b>　給你用：</b>分鏡表（每格地圖下面）<b>　我用：</b><code>add_background.py、map_background.py</code></p>
-<p><b>參考圖：</b>由程式決定，模型不選（11-12 定）。順序：入鏡角色的設定圖 → HERO 和恐龍同框時那隻恐龍的比例圖 PAIR2 → 地點設定圖（實驗室 → REF_LAB）→ 畫面有手機、相機、電擊槍、回家按鈕、生存指南就附 REF_PROPS。只附 Flow 專案裡有的。</p>
-<p><b>怎麼做：</b>從相機往鏡頭對準的方向打一把扇形射線（預設 60°，入鏡角色放不下就加寬），撞到牆就停；沿路看到的物件和牆，依角度寫成畫面左／中／右，依距離寫遠近，再加上場景和光線，寫成英文接在 prompt 後面，中文給你核對。</p>
-<p><b>為什麼：</b>模型拿到地圖也常把背景寫反（第 7 幕 10 格把河寫成 &quot;forest behind&quot;）；第 4 幕前 7 格測試，補上背景後 Flow 會照地圖畫。</p>
-<p><b>限制：</b>只看水平方向；特寫的背景範圍、角色擋住的東西還沒算進去。戶外地形（河、泥岸、森林）的寫法還要補。</p>
+<p class="chgline"><span class="chg">改</span> 11-12 改成 LLM 手寫，程式拼的背景停用</p>
+<p><b>誰：</b>背景由 LLM 手寫，你核對。<b>　給你用：</b>分鏡表（每格地圖下面的「中文 prompt」）<b>　我用：</b><code>背景：docs/requests/EP1-NN_bg_hand.json；參考圖：add_background.py</code></p>
+<p><b>規定（2026-11-12 使用者定）：</b></p><ul><li>任何跟 prompt 有關的都不可以用程式：背景描述、每格附哪些參考圖、prompt 文字，都由 LLM 逐格看地圖決定；程式只負責搬運（貼進 Flow、下載、切圖）。可以用程式組 request 去問模型，但無論如何一定要是模型決定。</li><li>景的描述由 LLM 負責，不可以用程式拼。LLM 一格一格看地圖（相機位置、視野），用直白的句子寫，像在描述一張照片。</li><li>寫法：先講鏡頭對著哪面牆或哪個方向，再講那邊有什麼；東西用彼此的關係定位（窗下的書桌、書桌前的椅子、靠左牆的床）；最後講不在畫面裡的門窗和光線。</li><li>不寫東南西北（Flow 沒有地圖）、不寫幾公尺（Flow 不會量距離）、不用「前景／中景／背景」「畫面最後面」這種分層詞。</li><li>範本：EP1-02-01。中文給你核對，英文接在 prompt 後面。</li></ul>
+<p><b>參考圖：</b>由 LLM 逐格決定（11-12 改，原本由程式依入鏡角色和關鍵字選，已停用）：入鏡角色的設定圖、HERO 和恐龍同框時的比例圖 PAIR2、畫面裡看得到的牆面圖（房間 ROOM_*_WALL、實驗室 LAB_*_WALL：正對一面牆附 1 張、對著角落附 2 張、鏡頭背後不附）、畫面有道具就附 REF_PROPS。舊做法：順序：入鏡角色的設定圖 → HERO 和恐龍同框時那隻恐龍的比例圖 PAIR2 → 地點設定圖（實驗室 → REF_LAB、HERO 房間 → REF_ROOM）→ 畫面有手機、相機、電擊槍、回家按鈕、生存指南就附 REF_PROPS。只附 Flow 專案裡有的。</p>
+<p><b>為什麼不用程式：</b>map_background.py 用射線算出看到什麼再拼句子，寫出「背後是西牆」「離相機約 4 公尺」「背景橫跨整個畫面：書桌」，Flow 看不懂、使用者也看不懂；02-08 因此把窗戶畫到 HERO 背後。程式最多拿來對照哪些東西在視野裡，句子不能用。</p>
+<p><b>為什麼要補背景：</b>分鏡設計的模型拿到地圖也常把背景寫反（第 7 幕 10 格把河寫成 &quot;forest behind&quot;）；補上背景後 Flow 會照著畫。</p>
 <h2 id="s14">14. Flow 畫圖 🧪</h2>
 <p class="chgline"><span class="chg">改</span> 改成整幕畫、一次 4 張（11-12 起）；修了判斷</p>
 <p><b>誰：</b>我操作。<b>　我用：</b><code>flowbot/scene_draw.py</code></p>
