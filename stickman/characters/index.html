@@ -32,6 +32,9 @@ ul{margin:4px 0;padding-left:1.3em}
 details{margin:12px 0}
 summary{cursor:pointer;font-weight:600;color:var(--acc)}
 .src{font-size:12.5px;color:var(--mut);word-break:break-all}
+.prompt{white-space:pre-wrap;font:12.5px/1.55 ui-monospace,Menlo,monospace;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0;max-height:420px;overflow:auto}
+.zhp{white-space:pre-wrap;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0}
+table.t{border-collapse:collapse;font-size:13.5px;margin:8px 0}table.t td,table.t th{border-bottom:1px solid var(--line);padding:4px 10px;text-align:left}
 </style></head><body><main>
 <a href="../" style="font-size:14px">← Stickman 實驗頁</a>
 <h1>人物與場景設定</h1>
@@ -109,15 +112,31 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
 
 <h2 id="props">道具</h2>
 <div class="grid">
-<figure><img loading="lazy" src="img/REF_PROPS.jpg" alt="道具設定圖"><figcaption>道具設定圖（REF_PROPS），每樣都畫了正面和側面，畫面裡出現這些道具的格子都會附這張圖。</figcaption></figure>
+<figure><img loading="lazy" src="img/REF_PROPS.jpg" alt="道具設定圖"><figcaption><b>舊版</b>道具設定圖（REF_PROPS），每樣都畫了正面和側面，畫面裡出現這些道具的格子都會附這張圖。<b>左下的手環要改成回家按鈕，這張要照下面的新 prompt 重畫</b>。</figcaption></figure>
 <div class="card"><dl>
 <dt>手機</dt><dd>HERO 的。房間只有一個插座，他拿來充手機，所以手機永遠是滿電的，可惜在白堊紀沒有訊號。</dd>
 <dt>電擊槍</dt><dd>博士叫他帶的。因為插座拿去充手機，電量是零，最後被他拿去丟盜龍。側面有電量燈（綠＝有電、紅＝沒電）。</dd>
 <dt>相機</dt><dd>任務要拍照用。EP1 最後掉進泥巴裡，博士拿它的維修費抵薪水。</dd>
-<dt>手環</dt><dd>用膠帶纏得亂七八糟，只有一顆紅色按鈕，按了就回家。不動的時候要拍一下。</dd>
+<dt>回家按鈕 <span class="tag new">11-12 改</span></dt><dd>不是手環了：手掌大小的深灰色自製小盒，用膠帶纏得亂七八糟，上面只有一顆大紅按鈕，旁邊一個小燈，按了就回家。不動的時候要拍一下。沒有錶帶，不戴在手上，平常放背包。</dd>
 <dt>生存指南</dt><dd>綠色厚書，封面是一個在跑的小人。EP1 留在實驗室，第一頁只寫兩個字「快跑」；EP2 HERO 這次帶了。</dd>
 </dl></div>
 </div>
+
+<details><summary>道具設定圖新版 prompt（v6，回家按鈕）</summary><p class="note">在 Flow 重畫時附 REF_HERO 當畫風參考，<b>不要附舊的 REF_PROPS</b>（舊的是手環，會把手環帶回來）。第 4 項以外的四樣沒改。</p><div class="prompt">Create a landscape 16:9 prop reference sheet for a 2D cartoon about time travel to the age of dinosaurs. The attached HERO sheet is from the same story; use it ONLY to match the drawing style. Flat 2D cartoon illustration, warm off-white background #F6F1E7, crisp thick black outlines #202020, simple shapes, flat colors only. No people, no hands, no scenery. No text, no letters, no numbers, no logos anywhere.
+
+Five props, each shown alone and clearly separated, every one drawn from the front AND from the side so its shape is fixed:
+
+1. HERO&#x27;s smartphone: a modern flagship-style smartphone with thin even bezels, rounded corners, a small pill-shaped cutout at the top of the screen, and a square camera bump with three round lenses on the back, in a clear phone case. NO logo on the back. Show it once from the front with the screen on showing only a simple glowing app grid (no letters), and once from the back.
+
+2. The stun gun: a chunky toy-like yellow and black stun gun about the size of a TV remote, two short metal prongs at the front, one big red switch on top, a small battery window on the side. Show it once with the battery window full green and once with the battery window empty red.
+
+3. The camera: a boxy old silver-and-black compact camera with a big round lens, a flash on top, a wrist strap, and a small screen on the back.
+
+4. The return button: a small homemade handheld device that fits in the palm of one hand — just one big round red push button on top of a small, chunky dark grey box, the box held together with wraps of grey duct tape, with a tiny light next to the button. It is NOT a wristband or a watch: no strap, no band, nothing to wear on the wrist. Show it once from the front with the light off, once from the front with the light glowing, and once from the side.
+
+5. The survival guide: a thick, heavy hardcover book with a plain dark green cover and a simple running stick figure drawn on the cover (no title).
+
+Every prop must keep exactly this shape and these colors whenever it appears.</div></details>
 
 <h2 id="lab">博士的小屋：原型是柏克萊「舊放射實驗室」</h2>
 <p class="sub">位置在 HERO 的大學校園裡、校務大樓附近。外型照柏克萊大學的舊放射實驗室：兩層木造小樓、木板外牆、斜鐵皮屋頂。</p>
@@ -141,6 +160,51 @@ summary{cursor:pointer;font-weight:600;color:var(--acc)}
 <figure><img loading="lazy" src="img/REF_LAB.jpg" alt="舊版實驗室設定圖">
 <figcaption><b>舊版</b>實驗室設定圖（REF_LAB），畫的是洗衣店地下室：小窗外是洗衣機、鐵門上掛鐵鍊。室內的時光機、黑板、工作台可以留著參考，<b>外觀和地下室的部分要照新設定重畫</b>。</figcaption></figure>
 </div>
+
+<h3 id="lab-v2">室內配置新版（2026-11-12）<span class="tag new">新</span></h3>
+<p class="sub">研究小屋<b>一樓</b>，沒有樓梯；室內 8 × 6 公尺，跟第 3 幕小屋外觀一樣大。氣氛參考回到未來布朗博士的車庫，只借「滿牆時鐘、會出錯的自製機器、住在實驗室的生活痕跡」這類通用元素。上面那張舊 REF_LAB（地下室）要照這份重畫。</p>
+<div class="grid"><figure><img loading="lazy" src="img/lab_map_v2.png" alt="實驗室新地圖"><figcaption>新地圖（maps/lab.json）：一格 0.5 公尺，北在上。紅框＝地上的東西，藍框＝掛在牆上或高處（時鐘、窗戶）。</figcaption></figure><div class="card"><h3>地圖位置 → 設定圖主視角的位置</h3><table class="t"><tr><th>地圖位置</th><th>東西</th><th>主視角裡的位置</th></tr><tr><td>B1–H1（北牆西半）</td><td>滿牆的時鐘</td><td>後牆左半</td></tr><tr><td>B2（西北角）</td><td>自動咖啡機小桌</td><td>後牆左角</td></tr><tr><td>I2（北牆中間偏東）</td><td>時光機圓環</td><td>後牆中間偏右</td></tr><tr><td>M3</td><td>紅色拉桿</td><td>圓環右邊</td></tr><tr><td>N2（東北角）</td><td>控制台</td><td>後牆右角</td></tr><tr><td>A4–A8（西牆）</td><td>黑板</td><td>左牆（斜看）</td></tr><tr><td>A10–A11（西牆）</td><td>電影海報</td><td>左牆，比黑板近</td></tr><tr><td>Q5–Q9（東牆）</td><td>電子工作桌</td><td>右牆（斜看）</td></tr><tr><td>N12（東南角）</td><td>行軍床、東窗</td><td>右前角</td></tr><tr><td>F14（南牆偏西）</td><td>前門</td><td>在我們左後方，畫面外</td></tr><tr><td>I13 附近（南牆中間）</td><td>觀察點</td><td>主視角的相機</td></tr></table></div></div>
+<details><summary>實驗室設定圖新版 prompt（REF_LAB v2）</summary><p class="note">在 Flow 開新的一張，16:9。<b>不要附舊的 REF_LAB</b>（舊的是地下室）；可以附 REF_PROF 當畫風參考。</p><h3>中文對照</h3><div class="zhp">16:9，生成 1 張。扁平 2D 卡通的場景設定圖：粗黑外框、平塗顏色、簡單陰影，畫風跟附圖一樣。**畫面裡沒有任何角色或人。任何地方都不要有文字、字母或數字**：黑板、海報、時鐘、螢幕上都不要。版面像美術設定頁，奶油色底：上半部一大格，下半部並排三小格，每格有細黑框。
+
+場景：大學校園裡老舊兩層木造小屋的一樓，改裝成雜亂的自製科技實驗室。只有一個房間，約 8 公尺寬、6 公尺深，**完全沒有樓梯**。直條木板牆（暖褐色）、舊木地板、低矮的外露木樑天花板（約 2.6 公尺高），電線沿著木樑拉，吊著幾顆燈泡。早上，暖色的陽光從窗戶照進來。
+
+**上方大格（主視角）**：背靠南牆中間站（前門在我們左邊一點），往北看整個房間。地板中間是一片約 4 公尺寬的空地。
+- 北牆左半：從腰部高度到天花板掛滿各式各樣的時鐘（圓掛鐘、布穀鳥鐘、鬧鐘、方形廚房鐘），每個時間都不一樣，鐘面素面、沒有數字。
+- 西北角：一張小木桌，上面是用玻璃管、齒輪、漏斗和凹陷水壺拼成的搖搖晃晃自製自動咖啡機。
+- 北牆中間偏右：時光機，直立的大金屬圓環，直徑約 2 公尺，放在矮木座上，纏著銅線和膠帶，粗黑電纜從底座拖過地板。圓環中間是暗的、空的。
+- 圓環右邊：木箱上伸出一支大紅色拉桿。
+- 東北角：靠牆的大型自製控制台，一整面圓形轉盤、撥動開關、小指示燈，上面放三台方方的舊 CRT 螢幕，顯示簡單的綠色波形。
+- 左牆（西牆，斜看）：大綠色黑板，只有幾個粉筆塗鴉和亂線（沒有字）；旁邊、離我們近一點，貼著一張電影海報，畫著暴龍和劍龍（只有圖、沒有片名）。
+- 右牆（東牆，斜看）：沿牆一張長的電子工作桌，擺滿示波器、烙鐵、電路板、糾纏的電線、零件盒、一本厚厚的生存指南和一個金屬水壺。
+- 右前角（東南角，靠近我們、在右邊緣）：一張亂糟糟的行軍床，皺巴巴的毯子，床邊地上一個空泡麵碗，上方是東牆的小窗。
+
+**下方左格（北牆右半特寫）**：金屬時光機圓環和底座、地上的粗電纜、旁邊木箱上的紅色拉桿，以及有轉盤開關和綠螢幕 CRT 的控制台。
+
+**下方中格（西北角和西牆特寫）**：掛滿時鐘的牆、下面小桌上的自製咖啡機、旁邊西牆上的綠色黑板，再過去是電影海報。
+
+**下方右格（東側特寫）**：雜亂的電子工作桌，上面有示波器、烙鐵、電路板、厚生存指南和水壺；桌子最遠那頭是東窗下的亂行軍床，早上的陽光斜照在床上。
+
+三個小格畫的都是同一個房間、同樣的東西、同樣的顏色。</div><h3>英文（貼進 Flow）</h3><div class="prompt">16:9, generate 1 image. A location reference sheet for a flat 2D cartoon: thick black outlines, flat colors, simple shading, the same hand-drawn style as the attached sheet. No characters and no people anywhere. No text, letters or numbers anywhere in the picture — not on the chalkboard, not on the poster, not on the clocks, not on the screens. The sheet is laid out like a production design page on a cream background: one big panel across the top half, and three smaller panels side by side across the bottom half, each with a thin black frame.
+
+The place: the ground floor of an old two-story wooden hut on a university campus, turned into a cluttered homemade tech lab. It is one single room, about 8 meters wide and 6 meters deep, with NO staircase anywhere. Weathered vertical wooden plank walls in warm brown, an old wooden plank floor, and a low ceiling of exposed wooden beams about 2.6 meters high. Electric cables are strung along the beams, and a few bare light bulbs hang down on cords. It is morning: warm daylight comes in through the windows.
+
+TOP PANEL (main wide view): We stand with our backs against the middle of the south wall, a little to the right of the front door, and look straight across the room to the north wall. The middle of the floor is an open, empty stretch of wooden floor about 4 meters wide.
+- Back wall (north wall), left half: dozens of mismatched clocks cover the wall from waist height up to the ceiling — round wall clocks, cuckoo clocks, alarm clocks, square kitchen clocks — every clock showing a different time, with plain faces and no numbers.
+- Back left corner (north-west): a small wooden table holding a rickety homemade automatic coffee machine built from glass tubes, gears, a funnel and a dented kettle.
+- Back wall, center-right: the time machine — a big upright metal ring about 2 meters across, standing on a low wooden base, wrapped in copper wire and tape, with thick black cables snaking across the floor from its base. The ring is dark and empty inside.
+- Just to the right of the ring: a big red lever sticking up out of a wooden box.
+- Back right corner (north-east): a big homemade control console against the wall — a whole wall of round dials, toggle switches and small blinking lights, with three old boxy CRT monitors on top showing simple green waveforms.
+- Left wall (west wall), seen at an angle: a big green chalkboard with only a few chalk doodles and scribbled lines (no writing), and next to it, closer to us, a movie poster tacked to the wall showing a picture of a T. rex and a stegosaurus (picture only, no title).
+- Right wall (east wall), seen at an angle: a long electronics workbench along the wall, crowded with an oscilloscope, a soldering iron, circuit boards, tangled wires, small parts boxes, a thick survival guidebook and a metal water bottle.
+- Front right corner (south-east), close to us at the right edge: a messy folding cot with a crumpled blanket and an empty instant-noodle cup on the floor beside it, under a small window in the east wall.
+
+BOTTOM LEFT PANEL (close view of the north wall, right part): the big metal time machine ring on its base with the thick cables on the floor, the red lever in its wooden box beside it, and the dial-and-switch control console with the green-screen CRT monitors.
+
+BOTTOM MIDDLE PANEL (close view of the north-west corner and west wall): the wall full of mismatched clocks, the homemade coffee machine on its small table below them, and the green chalkboard on the west wall beside it, with the movie poster further along the wall.
+
+BOTTOM RIGHT PANEL (close view of the east side): the cluttered electronics workbench with the oscilloscope, soldering iron, circuit boards, the thick survival guidebook and the water bottle on it, and at its far end the messy cot under the east window with morning sunlight falling across it.
+
+All three bottom panels show the same room, the same objects and the same colors as the top panel.</div></details>
 
 <h2 id="admin">校務大樓：原型是柏克萊 Sproul Hall</h2>
 <div class="grid">
