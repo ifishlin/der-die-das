@@ -108,7 +108,7 @@
  "EP1-12-09": {
   "zh": "鏡頭對著空地邊的樹林。不遠處就是一整排茂密的樹林，有蘇鐵、銀杏和針葉樹，地上鋪著落葉和矮矮的植物。黃昏的夕陽在畫面左前方的樹林後面，有一點逆光，樹梢邊緣發亮。",
   "en": "Background: The camera faces the edge of the forest beside the clearing. A short way off stands a dense wall of cycads, ginkgos and conifers, and the ground is covered with leaf litter and low plants. The low dusk sun is behind the trees ahead on the left side of the picture, slightly backlit, and the treetops glow at the edges.",
-  "conflict": "照地圖，相機 G30 往 HERO（E29）看時，甲龍（D27–F28）在 HERO 的畫面右邊；composition 和 prompt 寫甲龍的頭在畫面左邊、HERO 在右邊，左右相反。背景照地圖寫，角色左右請確認。",
+  "conflict": "已解決（2026-11-13）：照地圖把 prompt 改成 HERO 在左、甲龍在右。原本：照地圖，相機 G30 往 HERO（E29）看時，甲龍（D27–F28）在 HERO 的畫面右邊；composition 和 prompt 寫甲龍的頭在畫面左邊、HERO 在右邊，左右相反。背景照地圖寫，角色左右請確認。",
   "refs": [
    "REF_HERO",
    "REF_ANKY",
@@ -119,7 +119,7 @@
  "EP1-12-09W": {
   "zh": "鏡頭斜斜地對著空地邊的樹林。地上鋪著落葉和矮矮的植物，往前不遠就是一整排茂密的樹林，一路往畫面右邊遠處延伸。黃昏的夕陽在畫面左前方的樹林後面，有一點逆光。",
   "en": "Background: The camera faces diagonally toward the edge of the forest beside the clearing. The ground is covered with leaf litter and low plants, and a short way ahead stands a dense wall of cycads, ginkgos and conifers that runs off into the distance toward the right side of the picture. The low dusk sun is behind the trees ahead on the left side of the picture, slightly backlit.",
-  "conflict": "照地圖，相機 G31 往 HERO（E29）看時，甲龍（D27–F28）在 HERO 的畫面右邊；composition 和 prompt 寫甲龍在畫面左邊、HERO 在右邊，左右相反。背景照地圖寫，角色左右請確認。",
+  "conflict": "已解決（2026-11-13）：照地圖把 prompt 改成 HERO 在左、甲龍在右。原本：照地圖，相機 G31 往 HERO（E29）看時，甲龍（D27–F28）在 HERO 的畫面右邊；composition 和 prompt 寫甲龍在畫面左邊、HERO 在右邊，左右相反。背景照地圖寫，角色左右請確認。",
   "refs": [
    "REF_HERO",
    "REF_ANKY",
