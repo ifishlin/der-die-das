@@ -112,7 +112,7 @@ table.t{border-collapse:collapse;font-size:13.5px;margin:8px 0}table.t td,table.
 
 <h2 id="props">道具</h2>
 <div class="grid">
-<figure><img loading="lazy" src="img/REF_PROPS.jpg" alt="道具設定圖"><figcaption><b>舊版</b>道具設定圖（REF_PROPS），每樣都畫了正面和側面，畫面裡出現這些道具的格子都會附這張圖。<b>左下的手環要改成回家按鈕，這張要照下面的新 prompt 重畫</b>。</figcaption></figure>
+<figure><img loading="lazy" src="img/REF_PROPS.jpg" alt="道具設定圖第 2 版"><figcaption><b>道具設定圖第 2 版（REF_PROPS，2026-11-12）</b>：手機、電擊槍（綠＝有電、紅＝沒電）、相機、<b>回家按鈕</b>（燈不亮／燈亮／側面）、生存指南，每樣都有正面和側面。畫面裡出現這些道具的格子都附這張圖。回家按鈕被畫了兩排，內容一樣，不影響使用。</figcaption></figure>
 <div class="card"><dl>
 <dt>手機</dt><dd>HERO 的。房間只有一個插座，他拿來充手機，所以手機永遠是滿電的，可惜在白堊紀沒有訊號。</dd>
 <dt>電擊槍</dt><dd>博士叫他帶的。因為插座拿去充手機，電量是零，最後被他拿去丟盜龍。側面有電量燈（綠＝有電、紅＝沒電）。</dd>
@@ -122,7 +122,8 @@ table.t{border-collapse:collapse;font-size:13.5px;margin:8px 0}table.t td,table.
 </dl></div>
 </div>
 
-<details><summary>道具設定圖新版 prompt（v6，回家按鈕）</summary><p class="note">在 Flow 重畫時附 REF_HERO 當畫風參考，<b>不要附舊的 REF_PROPS</b>（舊的是手環，會把手環帶回來）。第 4 項以外的四樣沒改。</p><div class="prompt">Create a landscape 16:9 prop reference sheet for a 2D cartoon about time travel to the age of dinosaurs. The attached HERO sheet is from the same story; use it ONLY to match the drawing style. Flat 2D cartoon illustration, warm off-white background #F6F1E7, crisp thick black outlines #202020, simple shapes, flat colors only. No people, no hands, no scenery. No text, no letters, no numbers, no logos anywhere.
+<details><summary>舊版道具設定圖（手環版）</summary><figure><img loading="lazy" src="img/REF_PROPS_v1_wristband.jpg" alt="舊版道具設定圖"><figcaption>第 1 版，回家裝置畫成纏膠帶的手環，11-12 改成按鈕後不再使用。</figcaption></figure></details>
+<details><summary>道具設定圖第 2 版的 prompt（v6，回家按鈕）</summary><p class="note">在 Flow 重畫時附 REF_HERO 當畫風參考，<b>不要附舊的 REF_PROPS</b>（舊的是手環，會把手環帶回來）。第 4 項以外的四樣沒改。</p><div class="prompt">Create a landscape 16:9 prop reference sheet for a 2D cartoon about time travel to the age of dinosaurs. The attached HERO sheet is from the same story; use it ONLY to match the drawing style. Flat 2D cartoon illustration, warm off-white background #F6F1E7, crisp thick black outlines #202020, simple shapes, flat colors only. No people, no hands, no scenery. No text, no letters, no numbers, no logos anywhere.
 
 Five props, each shown alone and clearly separated, every one drawn from the front AND from the side so its shape is fixed:
 
@@ -157,14 +158,15 @@ Every prop must keep exactly this shape and these colors whenever it appears.</d
 <div class="grid" style="margin-top:16px">
 <figure><img loading="lazy" src="https://history.lbl.gov/wp-content/uploads/sites/11/2014/10/XBD9703-01129-large.jpg" alt="寫滿字的舊黑板">
 <figcaption>Berkeley Lab 歷史網站上的黑板照片：「E.O.L. has NOBEL Prize」「CHAMPAGNE PARTY NOV. 17」，後面是直條木板牆。原網頁沒有說明，<b>「是在這間小屋裡拍的」是推斷，沒有證實</b>。可以當博士室內黑板的參考。<br><span class="src">圖片直接連到 Berkeley Lab 網站，只當參考。</span></figcaption></figure>
-<figure><img loading="lazy" src="img/REF_LAB.jpg" alt="舊版實驗室設定圖">
+<figure><img loading="lazy" src="img/REF_LAB_v1_basement.jpg" alt="舊版實驗室設定圖">
 <figcaption><b>舊版</b>實驗室設定圖（REF_LAB），畫的是洗衣店地下室：小窗外是洗衣機、鐵門上掛鐵鍊。室內的時光機、黑板、工作台可以留著參考，<b>外觀和地下室的部分要照新設定重畫</b>。</figcaption></figure>
 </div>
 
 <h3 id="lab-v2">室內配置新版（2026-11-12）<span class="tag new">新</span></h3>
-<p class="sub">研究小屋<b>一樓</b>，沒有樓梯；室內 8 × 6 公尺，跟第 3 幕小屋外觀一樣大。氣氛參考回到未來布朗博士的車庫，只借「滿牆時鐘、會出錯的自製機器、住在實驗室的生活痕跡」這類通用元素。上面那張舊 REF_LAB（地下室）要照這份重畫。</p>
-<div class="grid"><figure><img loading="lazy" src="img/lab_map_v2.png" alt="實驗室新地圖"><figcaption>新地圖（maps/lab.json）：一格 0.5 公尺，北在上。紅框＝地上的東西，藍框＝掛在牆上或高處（時鐘、窗戶）。</figcaption></figure><div class="card"><h3>地圖位置 → 設定圖主視角的位置</h3><table class="t"><tr><th>地圖位置</th><th>東西</th><th>主視角裡的位置</th></tr><tr><td>B1–H1（北牆西半）</td><td>滿牆的時鐘</td><td>後牆左半</td></tr><tr><td>B2（西北角）</td><td>自動咖啡機小桌</td><td>後牆左角</td></tr><tr><td>I2（北牆中間偏東）</td><td>時光機圓環</td><td>後牆中間偏右</td></tr><tr><td>M3</td><td>紅色拉桿</td><td>圓環右邊</td></tr><tr><td>N2（東北角）</td><td>控制台</td><td>後牆右角</td></tr><tr><td>A4–A8（西牆）</td><td>黑板</td><td>左牆（斜看）</td></tr><tr><td>A10–A11（西牆）</td><td>電影海報</td><td>左牆，比黑板近</td></tr><tr><td>Q5–Q9（東牆）</td><td>電子工作桌</td><td>右牆（斜看）</td></tr><tr><td>N12（東南角）</td><td>行軍床、東窗</td><td>右前角</td></tr><tr><td>F14（南牆偏西）</td><td>前門</td><td>在我們左後方，畫面外</td></tr><tr><td>I13 附近（南牆中間）</td><td>觀察點</td><td>主視角的相機</td></tr></table></div></div>
-<details><summary>實驗室設定圖新版 prompt（REF_LAB v2）</summary><p class="note">在 Flow 開新的一張，16:9。<b>不要附舊的 REF_LAB</b>（舊的是地下室）；可以附 REF_PROF 當畫風參考。</p><h3>中文對照</h3><div class="zhp">16:9，生成 1 張。扁平 2D 卡通的場景設定圖：粗黑外框、平塗顏色、簡單陰影，畫風跟附圖一樣。**畫面裡沒有任何角色或人。任何地方都不要有文字、字母或數字**：黑板、海報、時鐘、螢幕上都不要。版面像美術設定頁，奶油色底：上半部一大格，下半部並排三小格，每格有細黑框。
+<p class="sub">研究小屋<b>一樓</b>，沒有樓梯；室內 8 × 6 公尺，跟第 3 幕小屋外觀一樣大。氣氛參考回到未來布朗博士的車庫，只借「滿牆時鐘、會出錯的自製機器、住在實驗室的生活痕跡」這類通用元素。舊 REF_LAB（地下室）已經照這份重畫成第 2 版。</p>
+<div class="grid"><figure><img loading="lazy" src="img/REF_LAB.jpg" alt="實驗室設定圖第 2 版"><figcaption><b>實驗室設定圖第 2 版（REF_LAB，2026-11-12）</b>：上面是從南牆中間往北看的主視角，下面三格是時光機與控制台、時鐘牆與咖啡機與黑板、工作桌與行軍床。以後實驗室的格子都附這張。<br>跟地圖不一樣的地方：電影海報畫在黑板<b>北邊</b>（靠時鐘那一角），地圖上在黑板南邊，待決定改哪一邊。</figcaption></figure>
+<figure><img loading="lazy" src="img/lab_map_v2.png" alt="實驗室新地圖"><figcaption>新地圖（maps/lab.json）：一格 0.5 公尺，北在上。紅框＝地上的東西，藍框＝掛在牆上或高處（時鐘、窗戶）。</figcaption></figure><div class="card"><h3>地圖位置 → 設定圖主視角的位置</h3><table class="t"><tr><th>地圖位置</th><th>東西</th><th>主視角裡的位置</th></tr><tr><td>B1–H1（北牆西半）</td><td>滿牆的時鐘</td><td>後牆左半</td></tr><tr><td>B2（西北角）</td><td>自動咖啡機小桌</td><td>後牆左角</td></tr><tr><td>I2（北牆中間偏東）</td><td>時光機圓環</td><td>後牆中間偏右</td></tr><tr><td>M3</td><td>紅色拉桿</td><td>圓環右邊</td></tr><tr><td>N2（東北角）</td><td>控制台</td><td>後牆右角</td></tr><tr><td>A4–A8（西牆）</td><td>黑板</td><td>左牆（斜看）</td></tr><tr><td>A10–A11（西牆）</td><td>電影海報</td><td>左牆，比黑板近</td></tr><tr><td>Q5–Q9（東牆）</td><td>電子工作桌</td><td>右牆（斜看）</td></tr><tr><td>N12（東南角）</td><td>行軍床、東窗</td><td>右前角</td></tr><tr><td>F14（南牆偏西）</td><td>前門</td><td>在我們左後方，畫面外</td></tr><tr><td>I13 附近（南牆中間）</td><td>觀察點</td><td>主視角的相機</td></tr></table></div></div>
+<details><summary>實驗室設定圖第 2 版的 prompt（REF_LAB v2）</summary><p class="note">在 Flow 開新的一張，16:9。<b>不要附舊的 REF_LAB</b>（舊的是地下室）；可以附 REF_PROF 當畫風參考。</p><h3>中文對照</h3><div class="zhp">16:9，生成 1 張。扁平 2D 卡通的場景設定圖：粗黑外框、平塗顏色、簡單陰影，畫風跟附圖一樣。**畫面裡沒有任何角色或人。任何地方都不要有文字、字母或數字**：黑板、海報、時鐘、螢幕上都不要。版面像美術設定頁，奶油色底：上半部一大格，下半部並排三小格，每格有細黑框。
 
 場景：大學校園裡老舊兩層木造小屋的一樓，改裝成雜亂的自製科技實驗室。只有一個房間，約 8 公尺寬、6 公尺深，**完全沒有樓梯**。直條木板牆（暖褐色）、舊木地板、低矮的外露木樑天花板（約 2.6 公尺高），電線沿著木樑拉，吊著幾顆燈泡。早上，暖色的陽光從窗戶照進來。
 
