@@ -1,16 +1,16 @@
 {
  "_doc": "第 13 幕每格背景描述和參考圖，Claude 看 lab 地圖和 v7 分鏡手寫，2026-11-13。牆面圖：LAB_MACHINE_WALL＝時光機那面牆、LAB_DOOR_WALL＝門那面牆、LAB_CHALKBOARD_WALL＝黑板那面牆、LAB_WORKBENCH_WALL＝工作桌那面牆。這幕鏡頭都在靠門這一頭往時光機那面牆拍。",
  "EP1-13-01": {
-  "zh": "鏡頭在高處，從靠門的這一頭往下斜斜看向時光機那面牆。HERO 身後是老舊的木板地板，一路延伸到牆邊。畫面上緣露出時光機那面牆的下半段：時光機大金屬圓環的下半圈和木頭底座在 HERO 腳的那一頭，粗電纜從底座拖到地上；圓環右邊是放著紅色拉桿的木箱。時鐘和控制台在畫面上緣外面，看不到；大門在鏡頭後面。早上的陽光從畫面右邊和鏡頭後面的窗戶照進來，加上吊燈泡的暖光。",
-  "en": "Background: The camera is high up at the door end of the lab, looking down at an angle toward the time machine wall. Behind HERO the old wooden plank floor runs back to the wall. Along the top edge of the picture the lower part of the time machine wall shows: the lower half of the big round metal time machine ring and its wooden base are at the end where HERO's feet point, with thick cables snaking from the base across the floor; to the right of the ring is the wooden box with the red lever. The clocks and the control console are above the top edge of the picture and are not seen; the front door is behind the camera. Morning sunlight comes in through windows to the right of the picture and behind the camera, plus the warm glow of the hanging bulbs.",
+  "zh": "鏡頭在高處，從靠門的這一頭往下斜斜看著時光機那面牆前面的地板。畫面大部分是老舊的木板地板。畫面上緣露出時光機那面牆的下半段：時光機大金屬圓環的下半圈和木頭底座在 HERO 腳的那一頭，粗電纜從底座拖到地上；圓環右邊是放著紅色拉桿的木箱。時鐘和控制台在畫面上緣外面，看不到；大門在鏡頭後面。早上的陽光從畫面右邊和鏡頭後面的窗戶照進來，加上吊燈泡的暖光。",
+  "en": "Background: The camera is high up at the door end of the lab, looking down at an angle at the floor in front of the time machine wall. Most of the picture is the old wooden plank floor. Along the top edge of the picture the lower part of the time machine wall shows: the lower half of the big round metal time machine ring and its wooden base are at the end where HERO's feet point, with thick cables snaking from the base across the floor; to the right of the ring is the wooden box with the red lever. The clocks and the control console are above the top edge of the picture and are not seen; the front door is behind the camera. Morning sunlight comes in through windows to the right of the picture and behind the camera, plus the warm glow of the hanging bulbs.",
   "refs": ["REF_HERO", "REF_PROPS", "LAB_MACHINE_WALL"],
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。"
+  "conflict": ""
  },
  "EP1-13-02": {
-  "zh": "鏡頭正對著時光機那面牆。畫面中間偏左是時光機的大金屬圓環，在 HERO 腳的那一頭，粗電纜從圓環底下拖到地上；博士身後偏右是木箱上的紅色拉桿；畫面右緣露出角落控制台的一角，上面有轉盤和亮著綠光的舊螢幕。大門在鏡頭後面，看不到。早上的陽光從畫面右邊和鏡頭後面的窗戶照進來，加上吊燈泡的暖光。",
-  "en": "Background: The camera faces the time machine wall. A little left of the middle of the picture is the big round metal time machine ring, at the end where HERO's feet point, with thick cables snaking from its base across the floor; behind PROF, a little to the right, is the red lever on a wooden box; at the right edge of the picture a corner of the control console shows, with dials and old monitors glowing green. The front door is behind the camera and is not in the picture. Morning sunlight comes in through windows to the right of the picture and behind the camera, plus the warm glow of the hanging bulbs.",
+  "zh": "鏡頭正對著時光機那面牆。畫面中間偏左是時光機的大金屬圓環，在 HERO 腳的那一頭，粗電纜從圓環底下拖到地上；博士身後偏右是木箱上的紅色拉桿；畫面右緣露出角落控制台的一角，上面有轉盤和亮著綠光的舊螢幕。地上是老舊的木板地板。大門在鏡頭後面，看不到。早上的陽光從畫面右邊和鏡頭後面的窗戶照進來，加上吊燈泡的暖光。",
+  "en": "Background: The camera faces the time machine wall. A little left of the middle of the picture is the big round metal time machine ring, at the end where HERO's feet point, with thick cables snaking from its base across the floor; behind PROF, a little to the right, is the red lever on a wooden box; at the right edge of the picture a corner of the control console shows, with dials and old monitors glowing green. The floor is old wooden planks. The front door is behind the camera and is not in the picture. Morning sunlight comes in through windows to the right of the picture and behind the camera, plus the warm glow of the hanging bulbs.",
   "refs": ["REF_HERO", "REF_PROF", "REF_PROPS", "LAB_MACHINE_WALL"],
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。站位（t2）博士是蹲著，分鏡寫平視、相機高 1.3，比蹲著的博士眼睛高；背景照相機高度寫，若改成蹲姿眼高，圓環會在畫面裡顯得更高、更大。"
+  "conflict": "站位（t2）博士是蹲著，分鏡寫平視、相機高 1.3，比蹲著的博士眼睛高；背景照相機高度寫，若改成蹲姿眼高，圓環會在畫面裡顯得更高、更大。"
  },
  "EP1-13-03": {
   "zh": "鏡頭對著時光機那面牆。博士身後偏左是時光機大金屬圓環的右半圈，粗電纜拖在地上；畫面右緣是木箱上的紅色拉桿。大門在鏡頭後面，看不到。早上的陽光從畫面右邊的窗戶照進來，加上吊燈泡的暖光。",
@@ -55,9 +55,9 @@
   "conflict": ""
  },
  "EP1-13-10": {
-  "zh": "鏡頭在靠門的這一頭，正對著時光機那面牆。畫面左邊的牆上掛滿大大小小、時間都不一樣的時鐘；中間偏左是時光機的大金屬圓環，粗電纜從圓環底下拖到地上；圓環右邊是木箱上的紅色拉桿；畫面右邊的角落是控制台，上面有轉盤、開關和亮著綠光的舊螢幕。咖啡機小桌在畫面左邊外面，看不到；大門在鏡頭後面。早上的陽光從畫面右邊和鏡頭後面的窗戶照進來，加上木樑上吊燈泡的暖光。",
-  "en": "Background: The camera is at the door end of the lab, facing the time machine wall. On the left side of the picture the wall is covered with mismatched clocks all showing different times; a little left of the middle stands the big round metal time machine ring, with thick cables snaking from its base across the floor; to the right of the ring is the red lever on a wooden box; in the corner on the right side of the picture is the control console, with dials, switches and old monitors glowing green. The small coffee machine table is off the picture to the left and is not seen; the front door is behind the camera. Morning sunlight comes in through windows to the right of the picture and behind the camera, plus the warm glow of the bare bulbs hanging from the ceiling beams.",
+  "zh": "鏡頭在靠門的這一頭，正對著時光機那面牆。畫面左邊的牆上掛滿大大小小、時間都不一樣的時鐘；中間偏左是時光機的大金屬圓環，粗電纜從圓環底下拖到地上；圓環右邊是木箱上的紅色拉桿；畫面右邊的角落是控制台，上面有轉盤、開關和亮著綠光的舊螢幕。圓環前面是一大片空著的木地板。咖啡機小桌在畫面左邊外面，看不到；大門在鏡頭後面。早上的陽光從畫面右邊和鏡頭後面的窗戶照進來，加上木樑上吊燈泡的暖光。",
+  "en": "Background: The camera is at the door end of the lab, facing the time machine wall. On the left side of the picture the wall is covered with mismatched clocks all showing different times; a little left of the middle stands the big round metal time machine ring, with thick cables snaking from its base across the floor; to the right of the ring is the red lever on a wooden box; in the corner on the right side of the picture is the control console, with dials, switches and old monitors glowing green. In front of the ring is a wide open stretch of wooden floor. The small coffee machine table is off the picture to the left and is not seen; the front door is behind the camera. Morning sunlight comes in through windows to the right of the picture and behind the camera, plus the warm glow of the bare bulbs hanging from the ceiling beams.",
   "refs": ["REF_PROF", "REF_HERO", "REF_PROPS", "LAB_MACHINE_WALL"],
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。"
+  "conflict": ""
  }
 }

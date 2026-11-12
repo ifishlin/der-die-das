@@ -1,9 +1,9 @@
 {
  "_doc": "第 7 幕每格背景描述，Claude 看地圖手寫，2026-11-13",
  "EP1-07-01": {
-  "zh": "鏡頭站在森林邊上，背對森林，對著河。HERO 後面是一條很寬、流得很慢的河，從畫面左邊橫到右邊。河對岸是一條平平的泥灘，泥灘後面是開闊、朦朧的森林，顏色很淡，樹和樹之間有空隙。上午的陽光從鏡頭右後方照過來，照亮河面和對岸。茂密的森林和那棵大樹都在鏡頭後面，畫面裡看不到。",
-  "en": "Background: The camera stands at the edge of the forest with its back to the trees, facing the river. Behind HERO, a wide, slow river crosses the picture from left to right. On the far bank is a strip of flat muddy riverside ground, and behind it a distant, open, hazy forest, soft and pale, with gaps between the trees. Morning sunlight comes from behind the camera on the right and lights up the water and the far bank. The dense forest and the huge tree are behind the camera and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。prompt 寫相機在近岸（on the near riverbank），地圖上相機 L21 是森林邊緣第一排；照地圖寫成站在森林邊上、背對森林。另外地圖的腳印 L19 就在鏡頭正前方很近的地方，但地圖規定腳印只在腳印那幾格出現（only_shots），所以沒寫，讓腳印第一次在 03 出現。",
+  "zh": "鏡頭站在森林邊上，背對森林，對著河。腳下是一大片平坦、光禿禿的泥岸，一直延伸到水邊。再過去是一條很寬、流得很慢的河，從畫面左邊橫到右邊。河對岸是一條平平的泥灘，泥灘後面是開闊、朦朧的森林，顏色很淡，樹和樹之間有空隙。上午的陽光從鏡頭右後方照過來，照亮河面和對岸。茂密的森林和那棵大樹都在鏡頭後面，畫面裡看不到。",
+  "en": "Background: The camera stands at the edge of the forest with its back to the trees, facing the river. Right in front is a wide, flat stretch of bare mud that runs all the way to the water. Beyond it a wide, slow river crosses the picture from left to right. On the far bank is a strip of flat muddy riverside ground, and behind it a distant, open, hazy forest, soft and pale, with gaps between the trees. Morning sunlight comes from behind the camera on the right and lights up the water and the far bank. The dense forest and the huge tree are behind the camera and are not in the picture.",
+  "conflict": "prompt 寫相機在近岸（on the near riverbank），地圖上相機 L21 是森林邊緣第一排；照地圖寫成站在森林邊上、背對森林。另外地圖的腳印 L19 就在鏡頭正前方很近的地方，但地圖規定腳印只在腳印那幾格出現（only_shots），所以沒寫，讓腳印第一次在 03 出現。",
   "refs": [
    "REF_HERO",
    "REF_EDMONTO",
@@ -12,18 +12,18 @@
   ]
  },
  "EP1-07-02": {
-  "zh": "鏡頭站在泥岸上靠近水邊的地方，沿著河岸拍過去，河在右手邊、森林在左手邊。HERO 後面，畫面右邊是很寬的河面，河對岸是一條泥灘和朦朧、顏色很淡的森林；畫面左邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹。夾在河和森林中間的泥岸一直往遠處延伸。上午的陽光從鏡頭左後方照過來。森林邊那棵大樹在鏡頭左後方，看不到。",
-  "en": "Background: The camera stands on the mud bank close to the water's edge and looks along the riverbank, with the river on the right and the forest on the left. Behind HERO, on the right side of the picture, is a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest; on the left side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers. The strip of bare mud between the river and the forest stretches far into the distance. Morning sunlight comes from behind the camera on the left. The huge tree at the forest edge is behind the camera on the left and is not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+  "zh": "鏡頭站在泥岸上靠近水邊的地方，沿著河岸拍過去，河在右手邊、森林在左手邊。畫面右邊是河：水邊就在很近的地方，再過去是很寬的河面，河對岸是一條泥灘和朦朧、顏色很淡的森林。畫面左邊是平坦、光禿禿的泥地，再過去是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹。夾在河和森林中間的泥岸一直往遠處延伸。上午的陽光從鏡頭左後方照過來。森林邊那棵大樹在鏡頭左後方，看不到。",
+  "en": "Background: The camera stands on the mud bank close to the water's edge and looks along the riverbank, with the river on the right and the forest on the left. On the right side of the picture is the river: the water's edge is very close, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. On the left side of the picture is flat bare mud, and beyond it the edge of a dense Cretaceous forest of cycads, ginkgos and conifers. The strip of mud between the river and the forest stretches far into the distance. Morning sunlight comes from behind the camera on the left. The huge tree at the forest edge is behind the camera on the left and is not in the picture.",
+  "conflict": "",
   "refs": [
    "REF_HERO",
    "REF_PROPS"
   ]
  },
  "EP1-07-03": {
-  "zh": "鏡頭在森林邊上高高地往下拍，背對森林、對著河的方向。HERO 後面是平坦、光禿禿的泥地，一直延伸到水邊，畫面上緣是一條河面。上午的陽光從鏡頭右後方照過來。茂密的森林在鏡頭後面，看不到。",
-  "en": "Background: The camera is high up at the edge of the forest, looking down, with its back to the trees and facing toward the river. Behind HERO is flat, bare mud that runs up to the water's edge, and along the top of the picture is a strip of the river. Morning sunlight comes from behind the camera on the right. The dense forest is behind the camera and is not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。地圖上腳印 L19 在 HERO（L18）和鏡頭之間，算前面的東西，已從描述拿掉；腳印由 prompt 負責（prompt 有寫）。",
+  "zh": "鏡頭在森林邊上高高地往下拍，背對森林、對著河的方向。畫面裡大部分是平坦、光禿禿的泥地。HERO 腳邊、靠鏡頭這一側的泥地上，有一個很大的三趾腳印，大小正好是成年暴龍自己的腳，腳印裡只積了一點雨水。泥地往上延伸到水邊，畫面上緣是一條河面。上午的陽光從鏡頭右後方照過來。茂密的森林在鏡頭後面，看不到。",
+  "en": "Background: The camera is high up at the edge of the forest, looking down, with its back to the trees and facing toward the river. Most of the picture is flat, bare mud. In the mud right by HERO's feet, on the side toward the camera, is a huge three-toed footprint pressed into the mud, exactly the size of an adult T. rex's own foot, with only a little rainwater inside it. The mud runs up to the water's edge, and along the top of the picture is a strip of the river. Morning sunlight comes from behind the camera on the right. The dense forest is behind the camera and is not in the picture.",
+  "conflict": "",
   "refs": [
    "REF_HERO"
   ]
@@ -35,17 +35,17 @@
   "refs": []
  },
  "EP1-07-05": {
-  "zh": "鏡頭在河邊的水面上方高處，背對河，往下對著岸上和森林拍。HERO 後面是一大片平坦、光禿禿、空蕩蕩的泥地，只有他腳邊那一個很大的三趾腳印，大小正好是成年暴龍自己的腳，腳印裡只積了一點雨水；泥地上沒有別的腳印。HERO 右邊再遠一點的泥地上有一叢蕨類，蕨類叢邊上長著一棵細細的小樹。畫面上緣是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹。上午的陽光從畫面左邊照過來。森林邊那棵大樹在畫面左邊外面，看不到。",
-  "en": "Background: The camera is high above the water at the river's edge, with its back to the river, looking down at the bank and the forest. Behind HERO is a wide, flat, empty stretch of bare mud. The only mark in it is one huge three-toed footprint right by his feet, exactly the size of an adult T. rex's own foot, with only a little rainwater inside it; there are no other footprints anywhere. A little farther away, to HERO's right, is a clump of ferns with a thin young tree growing at its edge. Along the top of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers. Morning sunlight comes from the left side of the picture. The huge tree at the forest edge is just outside the picture on the left.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+  "zh": "鏡頭在河邊的水面上方高處，背對河，往下對著岸上和森林拍。畫面下緣露出一點河水的邊。往上是一大片平坦、光禿禿、空蕩蕩的泥地，只有 HERO 腳邊那一個很大的三趾腳印，大小正好是成年暴龍自己的腳，腳印裡只積了一點雨水；泥地上沒有別的腳印。HERO 右邊再遠一點的泥地上有一叢蕨類，蕨類叢邊上長著一棵細細的小樹。畫面上緣是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹。上午的陽光從畫面左邊照過來。森林邊那棵大樹在畫面左邊外面，看不到。",
+  "en": "Background: The camera is high above the water at the river's edge, with its back to the river, looking down at the bank and the forest. A thin strip of river water shows along the bottom edge of the picture. Above it is a wide, flat, empty stretch of bare mud. The only mark in it is one huge three-toed footprint right by HERO's feet, exactly the size of an adult T. rex's own foot, with only a little rainwater inside it; there are no other footprints anywhere. A little farther away, to HERO's right, is a clump of ferns with a thin young tree growing at its edge. Along the top of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers. Morning sunlight comes from the left side of the picture. The huge tree at the forest edge is just outside the picture on the left.",
+  "conflict": "",
   "refs": [
    "REF_HERO"
   ]
  },
  "EP1-07-06": {
-  "zh": "鏡頭站在森林邊上，背對森林，對著河。鴨嘴龍群站在河對岸一條平平的泥灘上，牠們後面是開闊、朦朧的森林，顏色很淡，樹和樹之間有空隙。上午的陽光從鏡頭右後方照過來，照亮對岸。茂密的森林和那棵大樹在鏡頭後面，畫面裡看不到。",
-  "en": "Background: The camera stands at the edge of the forest with its back to the trees, facing the river. The hadrosaurs stand on a strip of flat muddy riverside ground on the far bank, and behind them is a distant, open, hazy forest, soft and pale, with gaps between the trees. Morning sunlight comes from behind the camera on the right and lights up the far bank. The dense forest and the huge tree are behind the camera and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。河在鏡頭和鴨嘴龍之間，照新規定沒寫；但這格 prompt 也沒提到河，構圖又要「河橫在前景」，請決定河要不要另外寫進 prompt。照走位 t=3 HERO 在 L18，正好在相機和鴨嘴龍之間、離鏡頭很近，但 cast 沒有 HERO。描述裡沒寫他，請確認這格要不要讓 HERO 入鏡。",
+  "zh": "鏡頭站在森林邊上，背對森林，對著河。畫面下緣露出一點這一岸的泥地，再過去是很寬、流得很慢的河，橫過整個畫面。河對岸是一條平平的泥灘，泥灘後面是開闊、朦朧的森林，顏色很淡，樹和樹之間有空隙。上午的陽光從鏡頭右後方照過來，照亮對岸。茂密的森林和那棵大樹在鏡頭後面，畫面裡看不到。",
+  "en": "Background: The camera stands at the edge of the forest with its back to the trees, facing the river. A little of the mud on this side shows along the bottom edge of the picture, and beyond it a wide, slow river crosses the whole picture. On the far bank is a strip of flat muddy riverside ground, and behind it a distant, open, hazy forest, soft and pale, with gaps between the trees. Morning sunlight comes from behind the camera on the right and lights up the far bank. The dense forest and the huge tree are behind the camera and are not in the picture.",
+  "conflict": "照走位 t=3 HERO 在 L18，正好在相機和鴨嘴龍之間、離鏡頭很近，但 cast 沒有 HERO。描述裡沒寫他，請確認這格要不要讓 HERO 入鏡。",
   "refs": [
    "REF_EDMONTO"
   ]
@@ -59,9 +59,9 @@
   ]
  },
  "EP1-07-08": {
-  "zh": "鏡頭在泥岸上，沿著河岸斜斜地對著森林邊的那棵大樹拍。畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹；森林邊上那棵比其他樹都高大很多的樹在畫面右邊。HERO 後面，畫面左邊的泥岸一直往遠處延伸，最左邊遠處露出一點河面。HERO 和大樹之間隔著一大片空的泥地。上午的太陽在畫面前方、大樹那一邊的天上，逆光。河大部分在鏡頭左後方，蕨類叢和細樹在畫面右邊外面，都看不到。",
-  "en": "Background: The camera is on the mud bank, looking at an angle along the riverbank toward the huge tree at the forest edge. On the right side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers, and at that edge, on the right side of the picture, stands one huge tree much bigger than the rest. Behind HERO, on the left side of the picture, the bare mud bank stretches far into the distance, and at the far left a little of the river shows in the distance. Between HERO and the huge tree is a wide, empty stretch of mud. The morning sun is in the sky ahead, above the huge tree, so the picture is backlit. Most of the river is behind the camera on the left, and the clump of ferns and the thin tree are just outside the picture on the right.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+  "zh": "鏡頭在泥岸上，沿著河岸斜斜地對著森林邊的那棵大樹拍。畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹；森林邊上那棵比其他樹都高大很多的樹在畫面右邊。畫面左邊是平坦、光禿禿的泥岸，一直往遠處延伸，最左邊遠處露出一點河面。HERO 和大樹之間隔著一大片空的泥地。上午的太陽在畫面前方、大樹那一邊的天上，逆光。河大部分在鏡頭左後方，蕨類叢和細樹在畫面右邊外面，都看不到。",
+  "en": "Background: The camera is on the mud bank, looking at an angle along the riverbank toward the huge tree at the forest edge. On the right side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers, and at that edge, on the right side of the picture, stands one huge tree much bigger than the rest. On the left side of the picture, flat bare mud stretches far into the distance, and at the far left a little of the river shows in the distance. Between HERO and the huge tree is a wide, empty stretch of mud. The morning sun is in the sky ahead, above the huge tree, so the picture is backlit. Most of the river is behind the camera on the left, and the clump of ferns and the thin tree are just outside the picture on the right.",
+  "conflict": "",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -69,9 +69,9 @@
   ]
  },
  "EP1-07-08W": {
-  "zh": "鏡頭站在水邊，沿著河岸斜斜地對著森林邊的那棵大樹拍，看得比較遠。畫面最左邊遠處，沿著岸邊露出一條河水，往遠處延伸。HERO 和大樹之間隔著一大片平坦、光禿禿、空蕩蕩的泥岸。畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹；森林邊上那棵比其他樹都高大很多的樹在畫面右邊，離鏡頭很遠。上午的太陽在畫面前方、大樹那一邊的天上，逆光。河大部分在鏡頭左後方，蕨類叢和細樹在畫面右邊外面，都看不到。",
-  "en": "Background: The camera stands at the water's edge, looking at an angle along the riverbank toward the huge tree at the forest edge, and sees a long way. Far off at the left edge of the picture, a strip of river water runs along the bank into the distance. Between HERO and the huge tree is a wide, flat, empty stretch of bare mud. On the right side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers, and at that edge, on the right side of the picture and far from the camera, stands one huge tree much bigger than the rest. The morning sun is in the sky ahead, above the huge tree, so the picture is backlit. Most of the river is behind the camera on the left, and the clump of ferns and the thin tree are just outside the picture on the right.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+  "zh": "鏡頭站在水邊，沿著河岸斜斜地對著森林邊的那棵大樹拍，看得比較遠。畫面最左邊沿著岸邊是一條河水，往遠處延伸。畫面中間是一大片平坦、光禿禿、空蕩蕩的泥岸。畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹；森林邊上那棵比其他樹都高大很多的樹在畫面右邊，離鏡頭很遠。上午的太陽在畫面前方、大樹那一邊的天上，逆光。河大部分在鏡頭左後方，蕨類叢和細樹在畫面右邊外面，都看不到。",
+  "en": "Background: The camera stands at the water's edge, looking at an angle along the riverbank toward the huge tree at the forest edge, and sees a long way. Along the far left edge of the picture runs a strip of river water beside the bank, stretching into the distance. Across the middle of the picture is a wide, flat, empty stretch of bare mud. On the right side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers, and at that edge, on the right side of the picture and far from the camera, stands one huge tree much bigger than the rest. The morning sun is in the sky ahead, above the huge tree, so the picture is backlit. Most of the river is behind the camera on the left, and the clump of ferns and the thin tree are just outside the picture on the right.",
+  "conflict": "",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -79,9 +79,9 @@
   ]
  },
  "EP1-07-09": {
-  "zh": "鏡頭在森林邊上貼著地面，背對森林、對著河的方向往上仰拍。HERO 和暴龍後面，地平線壓得很低：是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。地平線以上大半是天空。上午的陽光從鏡頭右後方照過來。茂密的森林和那棵大樹在鏡頭後面，看不到。",
-  "en": "Background: The camera is down at ground level at the edge of the forest, with its back to the trees, looking up and out toward the river. Behind HERO and the T. rex the horizon sits very low: a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Above the horizon, most of the picture is sky. Morning sunlight comes from behind the camera on the right. The dense forest and the huge tree are behind the camera and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。照走位對岸 L4 的鴨嘴龍群會在畫面裡，但 cast 沒有牠們、prompt 寫只有兩個角色；依規則描述裡不寫角色，請決定要不要入鏡。",
+  "zh": "鏡頭在森林邊上貼著地面，背對森林、對著河的方向往上仰拍。地平線壓得很低：近處是平坦的泥地，再過去是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。地平線以上大半是天空。畫面左邊邊上露出幾片近處的枝葉。上午的陽光從鏡頭右後方照過來。茂密的森林和那棵大樹在鏡頭後面，看不到。",
+  "en": "Background: The camera is down at ground level at the edge of the forest, with its back to the trees, looking up and out toward the river. The horizon sits very low: close by is flat mud, then a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Above the horizon, most of the picture is sky. A few nearby leaves poke in along the left edge of the picture. Morning sunlight comes from behind the camera on the right. The dense forest and the huge tree are behind the camera and are not in the picture.",
+  "conflict": "照走位對岸 L4 的鴨嘴龍群會在畫面裡，但 cast 沒有牠們、prompt 寫只有兩個角色；依規則描述裡不寫角色，請決定要不要入鏡。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -89,9 +89,9 @@
   ]
  },
  "EP1-07-09W": {
-  "zh": "鏡頭在森林邊上貼著地面，對著河的方向往上仰拍，視線沒有被任何樹擋住。HERO 和暴龍後面是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林；地平線壓得很低，上面是大片天空。上午的陽光從鏡頭右後方照過來。茂密的森林和那棵大樹在鏡頭後面，看不到。",
-  "en": "Background: The camera is at the edge of the forest, down at ground level, looking up and out toward the river with nothing blocking the view. Behind HERO and the T. rex is a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest; the horizon sits very low, with a big sky above it. Morning sunlight comes from behind the camera on the right. The dense forest and the huge tree are behind the camera and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。已解決（2026-11-13）：使用者決定當作沒有樹擋住，背景改成乾淨的遠景。原本：相機 L24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 L21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
+  "zh": "鏡頭在森林裡面貼著地面，從樹縫往外仰拍，對著河的方向。畫面左右兩邊是近處的粗樹幹和蘇鐵、針葉樹的枝葉，像框一樣圍住畫面。中間望出去是平坦的泥岸，再過去是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林；地平線壓得很低，上面是大片天空。上午的陽光從鏡頭右後方照過來。那棵大樹在畫面右邊外面的森林裡，看不到。",
+  "en": "Background: The camera is down at ground level inside the forest, looking up and out through a gap in the trees toward the river. On both sides of the picture are nearby thick tree trunks and cycad and conifer leaves, framing the view. Through the gap is flat mud, then a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest; the horizon sits very low, with a big sky above it. Morning sunlight comes from behind the camera on the right. The huge tree is in the forest just outside the picture on the right.",
+  "conflict": "相機 L24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 L21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -108,9 +108,9 @@
   ]
  },
  "EP1-07-11": {
-  "zh": "鏡頭在森林邊上，背對森林、對著河的方向。HERO 左後方長著一棵細細的小樹。HERO 和暴龍後面是平坦、光禿禿的泥岸，再過去是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。那棵大樹在鏡頭右後方，看不到。",
-  "en": "Background: The camera is at the edge of the forest, with its back to the trees, facing toward the river. Behind HERO on the left grows a thin young tree. Behind HERO and the T. rex is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The huge tree is behind the camera on the right and is not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。HERO 鑽進去的蕨類叢靠鏡頭那一半在 HERO 前面，描述裡不寫，蕨類交給 prompt（prompt 有寫）。照走位對岸 L4 的鴨嘴龍群會在畫面裡，但 cast 沒有牠們；依規則描述裡不寫角色，請決定要不要入鏡。",
+  "zh": "鏡頭在森林邊上，背對森林、對著河的方向。畫面中間偏左是一叢蕨類，蕨類叢靠左的後邊長著一棵細細的小樹。蕨類四周是平坦、光禿禿的泥岸，再過去是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。畫面邊上露出幾片近處的枝葉。上午的陽光從鏡頭右後方照過來。那棵大樹在鏡頭右後方，看不到。",
+  "en": "Background: The camera is at the edge of the forest, with its back to the trees, facing toward the river. Just left of the middle of the picture is a clump of ferns, with a thin young tree growing at its back left corner. Around the ferns is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. A few nearby leaves poke in along the edges of the picture. Morning sunlight comes from behind the camera on the right. The huge tree is behind the camera on the right and is not in the picture.",
+  "conflict": "照走位對岸 L4 的鴨嘴龍群會在畫面裡，但 cast 沒有牠們；依規則描述裡不寫角色，請決定要不要入鏡。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -118,9 +118,9 @@
   ]
  },
  "EP1-07-11W": {
-  "zh": "鏡頭在森林邊上，對著河的方向拍，視線沒有被任何樹擋住。HERO 左後方長著一棵細細的小樹。HERO 和暴龍後面是平坦、光禿禿的泥岸，再過去是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。茂密的森林和那棵大樹在鏡頭後面，看不到。",
-  "en": "Background: The camera is at the edge of the forest, looking toward the river with nothing blocking the view. Behind HERO on the left grows a thin young tree. Behind HERO and the T. rex is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The dense forest and the huge tree are behind the camera and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。HERO 鑽進去的蕨類叢靠鏡頭那一半在 HERO 前面，描述裡不寫，蕨類交給 prompt（prompt 有寫）。已解決（2026-11-13）：使用者決定當作沒有樹擋住，背景改成乾淨的遠景。原本：相機 K24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 K21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
+  "zh": "鏡頭在森林裡面，從樹縫往外對著河的方向拍。畫面左右兩邊是近處的樹幹和蘇鐵、針葉樹的枝葉，像框一樣圍住畫面。中間望出去，近一點是一叢蕨類，蕨類叢靠左的後邊長著一棵細細的小樹；蕨類四周是平坦、光禿禿的泥岸，再過去是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。那棵大樹在畫面右邊外面的森林裡，看不到。",
+  "en": "Background: The camera is inside the forest, looking out through a gap in the trees toward the river. On both sides of the picture are nearby tree trunks and cycad and conifer leaves, framing the view. Through the gap, closer in, is a clump of ferns with a thin young tree growing at its back left corner; around the ferns is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The huge tree is in the forest just outside the picture on the right.",
+  "conflict": "相機 K24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 K21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -128,9 +128,9 @@
   ]
  },
  "EP1-07-12": {
-  "zh": "鏡頭在森林邊上，背對森林、對著泥岸和河。暴龍口鼻的後面是平坦的泥岸，再過去是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。茂密的森林在鏡頭後面，看不到。",
-  "en": "Background: The camera is at the edge of the forest, with its back to the trees, facing the mud bank and the river. Behind the T. rex's snout is flat mud, then a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The dense forest is behind the camera and is not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。畫面左邊的蕨類離鏡頭很近，算前面的東西，已拿掉；蕨類交給 prompt（prompt 有寫）。地圖小圖把鏡頭對準暴龍身體 N20（斜著沿河岸拍），那樣蕨類會在鏡頭後面；但構圖要蕨類在畫面左邊、鼻子湊在蕨類旁，所以照鼻子實際的位置（蕨類旁、K19 一帶）寫成鏡頭對著河。對岸 L4 的鴨嘴龍群可能入鏡但不在 cast，沒寫。",
+  "zh": "鏡頭在森林邊上，背對森林、對著泥岸和河。暴龍口鼻的後面是平坦的泥岸，再過去是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。畫面左邊很近的地方是一叢蕨類。上午的陽光從鏡頭右後方照過來。茂密的森林在鏡頭後面，看不到。",
+  "en": "Background: The camera is at the edge of the forest, with its back to the trees, facing the mud bank and the river. Behind the T. rex's snout is flat mud, then a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Very close on the left side of the picture is a clump of ferns. Morning sunlight comes from behind the camera on the right. The dense forest is behind the camera and is not in the picture.",
+  "conflict": "地圖小圖把鏡頭對準暴龍身體 N20（斜著沿河岸拍），那樣蕨類會在鏡頭後面；但構圖要蕨類在畫面左邊、鼻子湊在蕨類旁，所以照鼻子實際的位置（蕨類旁、K19 一帶）寫成鏡頭對著河。對岸 L4 的鴨嘴龍群可能入鏡但不在 cast，沒寫。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -138,9 +138,9 @@
   ]
  },
  "EP1-07-12W": {
-  "zh": "鏡頭在森林邊上，背對森林、對著泥岸和河，比上一格退後一點。暴龍頭的後面是平坦的泥岸，再過去是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。茂密的森林在鏡頭後面，看不到。",
-  "en": "Background: The camera is at the edge of the forest, with its back to the trees, facing the mud bank and the river, a little farther back than the previous shot. Behind the T. rex's head is flat mud, then a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The dense forest is behind the camera and is not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。畫面左下的蕨類離鏡頭很近，算前面的東西，已拿掉；蕨類交給 prompt（prompt 有寫）。同 12：地圖小圖對準暴龍身體 N20，蕨類會在鏡頭後面；照構圖和鼻子實際位置寫成鏡頭對著河。對岸 L4 的鴨嘴龍群可能入鏡但不在 cast，沒寫。",
+  "zh": "鏡頭在森林邊上，背對森林、對著泥岸和河，比上一格退後一點。暴龍頭的後面是平坦的泥岸，再過去是很寬的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。畫面左下是一叢蕨類。畫面邊上露出幾片近處的枝葉。上午的陽光從鏡頭右後方照過來。茂密的森林在鏡頭後面，看不到。",
+  "en": "Background: The camera is at the edge of the forest, with its back to the trees, facing the mud bank and the river, a little farther back than the previous shot. Behind the T. rex's head is flat mud, then a wide river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. In the lower left of the picture is a clump of ferns. A few nearby leaves poke in along the edges of the picture. Morning sunlight comes from behind the camera on the right. The dense forest is behind the camera and is not in the picture.",
+  "conflict": "同 12：地圖小圖對準暴龍身體 N20，蕨類會在鏡頭後面；照構圖和鼻子實際位置寫成鏡頭對著河。對岸 L4 的鴨嘴龍群可能入鏡但不在 cast，沒寫。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -164,9 +164,9 @@
   ]
  },
  "EP1-07-15": {
-  "zh": "鏡頭在森林邊上，背對森林、對著河。HERO 和暴龍後面是平坦的泥岸，然後是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。那棵大樹在鏡頭右後方，看不到。",
-  "en": "Background: The camera is at the edge of the forest, with its back to the trees, facing the river. Behind HERO and the T. rex is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The huge tree is behind the camera on the right and is not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。蕨類叢在鏡頭和 HERO、暴龍之間，已拿掉；細樹由 prompt 負責。照走位對岸 L4 的鴨嘴龍群會在畫面裡，但 cast 沒有牠們；依規則描述裡不寫角色，請決定要不要入鏡。",
+  "zh": "鏡頭在森林邊上，背對森林、對著河。畫面下方偏右、很近的地方是一叢蕨類，那棵細樹就從蕨類叢靠左的地方長出來。再過去是平坦的泥岸，然後是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。畫面邊上露出幾片近處的枝葉。上午的陽光從鏡頭右後方照過來。那棵大樹在鏡頭右後方，看不到。",
+  "en": "Background: The camera is at the edge of the forest, with its back to the trees, facing the river. Very close, in the lower right of the picture, is a clump of ferns, and the thin tree grows out of the left part of that clump. Beyond it is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. A few nearby leaves poke in along the edges of the picture. Morning sunlight comes from behind the camera on the right. The huge tree is behind the camera on the right and is not in the picture.",
+  "conflict": "照走位對岸 L4 的鴨嘴龍群會在畫面裡，但 cast 沒有牠們；依規則描述裡不寫角色，請決定要不要入鏡。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -174,9 +174,9 @@
   ]
  },
  "EP1-07-15W": {
-  "zh": "鏡頭在森林邊上，對著河拍，視線沒有被任何樹擋住。HERO 和暴龍後面是平坦的泥岸，然後是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。茂密的森林和那棵大樹在鏡頭後面，看不到。",
-  "en": "Background: The camera is at the edge of the forest, looking at the river with nothing blocking the view. Behind HERO and the T. rex is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The dense forest and the huge tree are behind the camera and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。蕨類叢在鏡頭和 HERO、暴龍之間，已拿掉；細樹由 prompt 負責。已解決（2026-11-13）：使用者決定當作沒有樹擋住，背景改成乾淨的遠景。原本：相機 I24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 I21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
+  "zh": "鏡頭在森林裡面，從樹縫往外對著河拍。畫面左右兩邊是近處的樹幹和蘇鐵、針葉樹的枝葉，像框一樣圍住畫面。中間望出去，近一點是一叢蕨類，那棵細樹從蕨類叢靠左的地方長出來；再過去是平坦的泥岸，然後是很寬、流得很慢的河，河對岸是一條泥灘和朦朧、顏色很淡的森林。上午的陽光從鏡頭右後方照過來。那棵大樹在畫面右邊外面的森林裡，看不到。",
+  "en": "Background: The camera is inside the forest, looking out through a gap in the trees toward the river. On both sides of the picture are nearby tree trunks and cycad and conifer leaves, framing the view. Through the gap, closer in, is a clump of ferns, with the thin tree growing out of the left part of it; beyond it is flat bare mud, then a wide, slow river, and on the far bank a strip of muddy ground and a distant, hazy, pale forest. Morning sunlight comes from behind the camera on the right. The huge tree is in the forest just outside the picture on the right.",
+  "conflict": "相機 I24 在茂密森林裡第 4 排，往外拍會被樹擋住；照地圖寫成從樹縫往外拍、兩邊有樹幹枝葉。若要乾淨畫面，相機應移到森林邊緣 I21。另外對岸 L4 的鴨嘴龍群在畫面裡但不在 cast，沒寫。",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -203,9 +203,9 @@
   ]
  },
  "EP1-07-17W": {
-  "zh": "鏡頭在泥岸上往上仰拍，背對河，斜斜地對著森林邊緣，比上一格退後一點。暴龍腳邊有一叢蕨類。暴龍後面是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹，樹梢上面是天空；森林邊上那棵比其他樹都高大很多的樹在畫面中間遠處。上午的太陽在畫面前方偏右的天上，有點逆光。河在鏡頭左後方，看不到。",
-  "en": "Background: The camera is on the mud bank looking up, with its back to the river, facing the forest edge at an angle, a little farther back than the previous shot. A clump of ferns grows by the T. rex's feet. Behind the T. rex is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers, with sky above the treetops; far away in the middle of the picture, the huge tree at the forest edge stands much taller than the rest. The morning sun is in the sky ahead and slightly to the right, so the picture is a little backlit. The river is behind the camera on the left and is not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+  "zh": "鏡頭在泥岸上往上仰拍，背對河，斜斜地對著森林邊緣，比上一格退後一點。畫面下方是平坦的泥地，暴龍腳邊有一叢蕨類。再過去是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹，樹梢上面是天空；森林邊上那棵比其他樹都高大很多的樹在畫面中間遠處。上午的太陽在畫面前方偏右的天上，有點逆光。河在鏡頭左後方，看不到。",
+  "en": "Background: The camera is on the mud bank looking up, with its back to the river, facing the forest edge at an angle, a little farther back than the previous shot. Along the bottom of the picture is flat mud, with a clump of ferns by the T. rex's feet. Beyond is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers, with sky above the treetops; far away in the middle of the picture, the huge tree at the forest edge stands much taller than the rest. The morning sun is in the sky ahead and slightly to the right, so the picture is a little backlit. The river is behind the camera on the left and is not in the picture.",
+  "conflict": "",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -213,9 +213,9 @@
   ]
  },
  "EP1-07-18": {
-  "zh": "鏡頭在泥岸上靠森林的那一邊，沿著河岸拍過去，森林在右手邊、河在左手邊。暴龍腳邊有一叢蕨類，蕨類叢左邊長著一棵細細的小樹。暴龍和 HERO 後面，畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹，一路往遠處延伸；遠處森林邊上那棵比其他樹都高大很多的樹在畫面中間偏右。畫面左邊是平坦、光禿禿的泥岸，再過去是很寬的河，都往遠處延伸。上午的陽光從畫面右前方照過來。鏡頭後面，泥岸和河繼續往另一頭延伸，看不到。",
-  "en": "Background: The camera is on the forest side of the mud bank, looking along the riverbank, with the forest on the right and the river on the left. By the T. rex's feet is a clump of ferns, with a thin young tree growing on its left. Behind the T. rex and HERO, on the right side of the picture, the edge of a dense Cretaceous forest of cycads, ginkgos and conifers runs off into the distance; far away at that edge, a little right of the middle of the picture, stands one huge tree much bigger than the rest. On the left side of the picture is flat bare mud and, beyond it, a wide river, both stretching into the distance. Morning sunlight comes from the front right of the picture. Behind the camera, the bank and the river continue the other way and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+  "zh": "鏡頭在泥岸上靠森林的那一邊，沿著河岸拍過去，森林在右手邊、河在左手邊。畫面右邊緊挨著茂密的森林邊緣，有蘇鐵、銀杏和針葉樹，一路往遠處延伸；遠處森林邊上那棵比其他樹都高大很多的樹在畫面中間偏右。畫面左邊是平坦、光禿禿的泥岸，再過去是很寬的河。畫面中間的泥地上有一叢蕨類，蕨類叢左邊長著一棵細細的小樹。上午的陽光從畫面右前方照過來。鏡頭後面，泥岸和河繼續往另一頭延伸，看不到。",
+  "en": "Background: The camera is on the forest side of the mud bank, looking along the riverbank, with the forest on the right and the river on the left. Right alongside on the right side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers, running off into the distance; far away at that edge, a little right of the middle of the picture, stands one huge tree much bigger than the rest. On the left side of the picture is flat bare mud, and beyond it a wide river. On the mud in the middle of the picture is a clump of ferns, with a thin young tree growing on its left. Morning sunlight comes from the front right of the picture. Behind the camera, the bank and the river continue the other way and are not in the picture.",
+  "conflict": "",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -223,9 +223,9 @@
   ]
  },
  "EP1-07-18W": {
-  "zh": "鏡頭站在森林邊上，沿著河岸拍過去，比上一格退後一點。暴龍腳邊有一叢蕨類，蕨類叢左邊長著一棵細細的小樹。暴龍和 HERO 後面，畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹，一路往遠處延伸；遠處森林邊上那棵比其他樹都高大很多的樹在畫面右邊。畫面左邊是平坦、光禿禿的泥岸，再過去是很寬的河，都往遠處延伸。上午的陽光從畫面右前方照過來。鏡頭後面，泥岸和河繼續往另一頭延伸，看不到。",
-  "en": "Background: The camera stands at the edge of the forest, looking along the riverbank, a little farther back than the previous shot. By the T. rex's feet is a clump of ferns, with a thin young tree growing on its left. Behind the T. rex and HERO, on the right side of the picture, the edge of a dense Cretaceous forest of cycads, ginkgos and conifers runs off into the distance; far away at that edge, on the right side of the picture, stands one huge tree much bigger than the rest. On the left side of the picture is flat bare mud and, beyond it, a wide river, both stretching into the distance. Morning sunlight comes from the front right of the picture. Behind the camera, the bank and the river continue the other way and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+  "zh": "鏡頭站在森林邊上，沿著河岸拍過去，比上一格退後一點。畫面右邊緊挨著鏡頭就是茂密的森林，有蘇鐵、銀杏和針葉樹，森林邊緣一路往遠處延伸；遠處森林邊上那棵比其他樹都高大很多的樹在畫面右邊。畫面左邊是平坦、光禿禿的泥岸，再過去是很寬的河。畫面中間的泥地上有一叢蕨類，蕨類叢左邊長著一棵細細的小樹。上午的陽光從畫面右前方照過來。鏡頭後面，泥岸和河繼續往另一頭延伸，看不到。",
+  "en": "Background: The camera stands at the edge of the forest, looking along the riverbank, a little farther back than the previous shot. On the right side of the picture, right next to the camera, is a dense Cretaceous forest of cycads, ginkgos and conifers, its edge running off into the distance; far away at that edge, on the right side of the picture, stands one huge tree much bigger than the rest. On the left side of the picture is flat bare mud, and beyond it a wide river. On the mud in the middle of the picture is a clump of ferns, with a thin young tree growing on its left. Morning sunlight comes from the front right of the picture. Behind the camera, the bank and the river continue the other way and are not in the picture.",
+  "conflict": "",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -233,9 +233,9 @@
   ]
  },
  "EP1-07-19": {
-  "zh": "鏡頭在泥岸上，沿著河岸拍過去，河在左手邊、森林在右手邊。HERO 和暴龍後面，泥岸一路延伸到遠處；畫面左邊是很寬的河，沿著岸邊往遠處延伸；畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹。HERO 右後方的泥地上有一叢蕨類，旁邊長著一棵細細的小樹。遠處森林邊上那棵比其他樹都高大很多的樹在畫面中間偏右。上午的陽光從畫面右前方照過來，有點逆光。鏡頭後面，泥岸和河繼續往另一頭延伸，看不到。",
-  "en": "Background: The camera is on the mud bank looking along the riverbank, with the river on the left and the forest on the right. Behind HERO and the T. rex, the bare mud bank stretches far into the distance; on the left side of the picture a wide river runs along the bank into the distance; on the right side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers. Behind HERO on the right, on the mud, is a clump of ferns with a thin young tree beside it. Far away at the forest edge, a little right of the middle of the picture, stands one huge tree much bigger than the rest. Morning sunlight comes from the front right of the picture, a little against the camera. Behind the camera, the bank and the river continue the other way and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+  "zh": "鏡頭在泥岸上，沿著河岸拍過去，河在左手邊、森林在右手邊。畫面左邊是很寬的河，沿著岸邊往遠處延伸。畫面中間是平坦、光禿禿的泥岸，一路延伸到遠處。畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹；靠右的泥地上有一叢蕨類，旁邊長著一棵細細的小樹。遠處森林邊上那棵比其他樹都高大很多的樹在畫面中間偏右。上午的陽光從畫面右前方照過來，有點逆光。鏡頭後面，泥岸和河繼續往另一頭延伸，看不到。",
+  "en": "Background: The camera is on the mud bank looking along the riverbank, with the river on the left and the forest on the right. On the left side of the picture is a wide river, running along the bank into the distance. Through the middle of the picture, flat bare mud stretches far into the distance. On the right side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers; on the mud toward the right is a clump of ferns with a thin young tree beside it. Far away at the forest edge, a little right of the middle of the picture, stands one huge tree much bigger than the rest. Morning sunlight comes from the front right of the picture, a little against the camera. Behind the camera, the bank and the river continue the other way and are not in the picture.",
+  "conflict": "",
   "refs": [
    "REF_HERO",
    "REF_TREX",
@@ -243,9 +243,9 @@
   ]
  },
  "EP1-07-19W": {
-  "zh": "鏡頭站在泥岸上靠水邊的地方，沿著河岸拍過去，比上一格退後一點。HERO 和暴龍後面，一大片平坦、光禿禿的泥岸一路延伸到遠處；畫面左邊是很寬的河，沿著岸邊往遠處延伸；畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹。HERO 右後方的泥地上有一叢蕨類，旁邊長著一棵細細的小樹。遠處森林邊上那棵比其他樹都高大很多的樹在畫面中間偏右。上午的陽光從畫面右前方照過來，有點逆光。鏡頭後面，泥岸和河繼續往另一頭延伸，看不到。",
-  "en": "Background: The camera stands on the mud bank near the water's edge, looking along the riverbank, a little farther back than the previous shot. Behind HERO and the T. rex, a wide stretch of flat bare mud runs far into the distance; on the left side of the picture the wide river runs along the bank into the distance; on the right side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers. Behind HERO on the right, on the mud, is a clump of ferns with a thin young tree beside it. Far away at the forest edge, a little right of the middle of the picture, stands one huge tree much bigger than the rest. Morning sunlight comes from the front right of the picture, a little against the camera. Behind the camera, the bank and the river continue the other way and are not in the picture.",
-  "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+  "zh": "鏡頭站在泥岸上靠水邊的地方，沿著河岸拍過去，比上一格退後一點。畫面左邊緊挨著就是河，很寬，沿著岸邊往遠處延伸。畫面中間是一大片平坦、光禿禿的泥岸，一路延伸到遠處。畫面右邊是茂密的森林邊緣，有蘇鐵、銀杏和針葉樹；靠右的泥地上有一叢蕨類，旁邊長著一棵細細的小樹。遠處森林邊上那棵比其他樹都高大很多的樹在畫面中間偏右。上午的陽光從畫面右前方照過來，有點逆光。鏡頭後面，泥岸和河繼續往另一頭延伸，看不到。",
+  "en": "Background: The camera stands on the mud bank near the water's edge, looking along the riverbank, a little farther back than the previous shot. Right alongside on the left side of the picture is the wide river, running along the bank into the distance. Through the middle of the picture, a wide stretch of flat bare mud runs far into the distance. On the right side of the picture is the edge of a dense Cretaceous forest of cycads, ginkgos and conifers; on the mud toward the right is a clump of ferns with a thin young tree beside it. Far away at the forest edge, a little right of the middle of the picture, stands one huge tree much bigger than the rest. Morning sunlight comes from the front right of the picture, a little against the camera. Behind the camera, the bank and the river continue the other way and are not in the picture.",
+  "conflict": "",
   "refs": [
    "REF_HERO",
    "REF_TREX",

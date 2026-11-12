@@ -1,9 +1,9 @@
 {
   "_doc": "第 8 幕每格背景描述，Claude 看地圖手寫，2026-11-13",
   "EP1-08-01": {
-    "zh": "鏡頭貼著地面，順著一條窄窄的森林小路往前看。小路是踩出來的泥土路，筆直往前延伸，最後消失在遠處的樹林裡。小路兩邊都是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹。因為鏡頭很低，兩邊的樹幹高高往上聳，樹冠在畫面上方圍攏，中間露出一條天空。正午的太陽很高，在畫面左上方，陽光從樹葉的縫隙灑下來，小路上有斑駁的樹影。那根橫在小路上的倒木在鏡頭後面，畫面裡看不到。",
-    "en": "Background: The camera sits right on the ground and looks straight along a narrow forest trail. The trail is trodden dirt; it runs straight ahead and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers. Because the camera is so low, the tree trunks on both sides rise up very tall, and their crowns close in at the top of the picture with a strip of sky between them. The midday sun is high in the upper left; sunlight falls through gaps in the leaves and leaves dappled shadows on the trail. The fallen log lying across the trail is behind the camera and is not in the picture.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+    "zh": "鏡頭貼著地面，順著一條窄窄的森林小路往前看。小路是踩出來的泥土路，從鏡頭腳下筆直往前延伸，最後消失在遠處的樹林裡。小路兩邊都是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹。因為鏡頭很低，兩邊的樹幹高高往上聳，樹冠在畫面上方圍攏，中間露出一條天空。正午的太陽很高，在畫面左上方，陽光從樹葉的縫隙灑下來，小路上有斑駁的樹影。那根橫在小路上的倒木在鏡頭後面，畫面裡看不到。",
+    "en": "Background: The camera sits right on the ground and looks straight along a narrow forest trail. The trail is trodden dirt; it runs straight ahead from right in front of the camera and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers. Because the camera is so low, the tree trunks on both sides rise up very tall, and their crowns close in at the top of the picture with a strip of sky between them. The midday sun is high in the upper left; sunlight falls through gaps in the leaves and leaves dappled shadows on the trail. The fallen log lying across the trail is behind the camera and is not in the picture.",
+    "conflict": "",
     "refs": [
       "REF_HERO",
       "REF_TREX",
@@ -12,9 +12,9 @@
     ]
   },
   "EP1-08-01W": {
-    "zh": "鏡頭貼著地面，順著一條窄窄的森林小路往前看。小路是踩出來的泥土路，筆直往前延伸很長一段，越遠越窄，最後消失在遠處的樹林裡。小路兩邊都是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，像兩道高牆夾著小路。因為鏡頭很低，樹幹高高往上聳，樹冠在畫面上方圍攏，中間露出一條天空。正午的太陽很高，在畫面左上方，陽光從樹葉的縫隙灑下來，小路上有斑駁的樹影。鏡頭後面不遠處有一根橫在小路上的倒木，畫面裡看不到。",
-    "en": "Background: The camera sits right on the ground and looks straight along a narrow forest trail. The trail is trodden dirt; it runs straight ahead for a long way, getting narrower and narrower, and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, standing like two tall walls along the trail. Because the camera is so low, the trunks rise up very tall and their crowns close in at the top of the picture with a strip of sky between them. The midday sun is high in the upper left; sunlight falls through gaps in the leaves and leaves dappled shadows on the trail. A little way behind the camera a fallen log lies across the trail; it is not in the picture.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+    "zh": "鏡頭貼著地面，順著一條窄窄的森林小路往前看。小路是踩出來的泥土路，從鏡頭腳下筆直往前延伸很長一段，越遠越窄，最後消失在遠處的樹林裡。小路兩邊都是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，像兩道高牆夾著小路。因為鏡頭很低，樹幹高高往上聳，樹冠在畫面上方圍攏，中間露出一條天空。正午的太陽很高，在畫面左上方，陽光從樹葉的縫隙灑下來，小路上有斑駁的樹影。鏡頭後面不遠處有一根橫在小路上的倒木，畫面裡看不到。",
+    "en": "Background: The camera sits right on the ground and looks straight along a narrow forest trail. The trail is trodden dirt; it runs straight ahead for a long way from right in front of the camera, getting narrower and narrower, and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, standing like two tall walls along the trail. Because the camera is so low, the trunks rise up very tall and their crowns close in at the top of the picture with a strip of sky between them. The midday sun is high in the upper left; sunlight falls through gaps in the leaves and leaves dappled shadows on the trail. A little way behind the camera a fallen log lies across the trail; it is not in the picture.",
+    "conflict": "",
     "refs": [
       "REF_HERO",
       "REF_TREX",
@@ -23,9 +23,9 @@
     ]
   },
   "EP1-08-02": {
-    "zh": "鏡頭站在小路旁邊，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面，一直延伸到右邊。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和針葉樹擠在一起，樹幹一根接一根。正午的太陽很高，在鏡頭後上方，陽光照在小路和對面的樹上，小路被照得很亮。順著小路往右走很遠，路上橫著一根倒木，在畫面外面。",
-    "en": "Background: The camera stands beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers crowded together, trunk after trunk. The midday sun is high up behind the camera; it shines on the trail and on the trees across it, and the trail looks bright. Far along the trail to the right a fallen log lies across it, outside the picture.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+    "zh": "鏡頭站在小路旁邊的樹林裡，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面，一直延伸到右邊。鏡頭很近的地方，畫面下緣和兩側邊上有幾片蘇鐵葉子和細枝。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和針葉樹擠在一起，樹幹一根接一根。正午的太陽很高，在鏡頭後上方，陽光照在小路和對面的樹上，小路被照得很亮。順著小路往右走很遠，路上橫著一根倒木，在畫面外面。",
+    "en": "Background: The camera stands among the trees beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side. Very close to the camera, a few cycad fronds and thin branches poke in along the bottom and side edges of the picture. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers crowded together, trunk after trunk. The midday sun is high up behind the camera; it shines on the trail and on the trees across it, and the trail looks bright. Far along the trail to the right a fallen log lies across it, outside the picture.",
+    "conflict": "",
     "refs": [
       "REF_HERO",
       "REF_TREX",
@@ -34,9 +34,9 @@
     ]
   },
   "EP1-08-02W": {
-    "zh": "鏡頭站在小路旁邊，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面，一直延伸到右邊，在畫面裡顯得比較小。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和高大的針葉樹擠在一起，畫面上方是一大片樹冠，樹梢之間露出一點天空。正午的太陽很高，在鏡頭後上方，把小路和對面的樹照得很亮。順著小路往右走很遠，路上橫著一根倒木，在畫面外面。",
-    "en": "Background: The camera stands beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side, and it looks fairly small in the picture. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers crowded together; the top of the picture is a wide band of tree crowns with a little sky showing between the treetops. The midday sun is high up behind the camera and lights up the trail and the trees across it. Far along the trail to the right a fallen log lies across it, outside the picture.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+    "zh": "鏡頭站在小路旁邊的樹林裡，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面，一直延伸到右邊，在畫面裡顯得比較小。鏡頭很近的地方，畫面下緣和兩側邊上有幾片蘇鐵葉子和細枝。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和高大的針葉樹擠在一起，畫面上方是一大片樹冠，樹梢之間露出一點天空。正午的太陽很高，在鏡頭後上方，把小路和對面的樹照得很亮。順著小路往右走很遠，路上橫著一根倒木，在畫面外面。",
+    "en": "Background: The camera stands among the trees beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side, and it looks fairly small in the picture. Very close to the camera, a few cycad fronds and thin branches poke in along the bottom and side edges of the picture. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers crowded together; the top of the picture is a wide band of tree crowns with a little sky showing between the treetops. The midday sun is high up behind the camera and lights up the trail and the trees across it. Far along the trail to the right a fallen log lies across it, outside the picture.",
+    "conflict": "",
     "refs": [
       "REF_HERO",
       "REF_TREX",
@@ -45,9 +45,9 @@
     ]
   },
   "EP1-08-03": {
-    "zh": "鏡頭站在森林小路上，順著小路往前看。小路是踩出來的泥土路，筆直往前延伸，最後消失在遠處的樹林裡。小路兩邊是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，樹木像兩道牆夾著小路。正午的太陽很高，在畫面左上方，陽光從樹葉的縫隙照下來，小路上有斑駁的樹影。那根橫在小路上的倒木就在鏡頭後面，畫面裡看不到。",
-    "en": "Background: The camera stands on a forest trail and looks straight along it. The trail is trodden dirt; it runs straight ahead and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, standing like two walls along the trail. The midday sun is high in the upper left; sunlight falls through gaps in the leaves and leaves dappled shadows on the trail. The fallen log lying across the trail is just behind the camera and is not in the picture.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+    "zh": "鏡頭站在森林小路上，順著小路往前看。小路是踩出來的泥土路，從鏡頭前面筆直往前延伸，最後消失在遠處的樹林裡。小路兩邊是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，樹木像兩道牆夾著小路。正午的太陽很高，在畫面左上方，陽光從樹葉的縫隙照下來，小路上有斑駁的樹影。那根橫在小路上的倒木就在鏡頭後面，畫面裡看不到。",
+    "en": "Background: The camera stands on a forest trail and looks straight along it. The trail is trodden dirt; it runs straight ahead from in front of the camera and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, standing like two walls along the trail. The midday sun is high in the upper left; sunlight falls through gaps in the leaves and leaves dappled shadows on the trail. The fallen log lying across the trail is just behind the camera and is not in the picture.",
+    "conflict": "",
     "refs": [
       "REF_HERO",
       "REF_TREX",
@@ -56,9 +56,9 @@
     ]
   },
   "EP1-08-03W": {
-    "zh": "鏡頭站在森林小路上，順著小路往前看。小路是踩出來的泥土路，筆直往前延伸很長一段，越遠越窄，最後消失在遠處的樹林裡。小路兩邊是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，像兩道高牆夾著小路。正午的太陽很高，在畫面左上方，陽光從樹葉的縫隙照下來，小路上有斑駁的樹影。",
-    "en": "Background: The camera stands on a forest trail and looks straight along it. The trail is trodden dirt; it runs straight ahead for a long way, getting narrower and narrower, and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, standing like two tall walls along the trail. The midday sun is high in the upper left; sunlight falls through gaps in the leaves and leaves dappled shadows on the trail.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。原本寫的倒木（Q5）在鏡頭和角色之間，這次一併拿掉。",
+    "zh": "鏡頭站在森林小路上，順著小路往前看。離鏡頭不遠的地方，畫面中間偏左，有一根粗大的倒木橫躺在小路上，擋住小路的左半邊。倒木再過去，小路筆直往前延伸很長一段，越遠越窄，最後消失在遠處的樹林裡。小路兩邊是茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，像兩道高牆夾著小路。正午的太陽很高，在畫面左上方，陽光從樹葉的縫隙照下來，小路和倒木上有斑駁的樹影。",
+    "en": "Background: The camera stands on a forest trail and looks straight along it. Not far from the camera, slightly left of the middle of the picture, a thick fallen log lies crosswise on the trail, blocking the left half of it. Past the log, the trail runs straight ahead for a long way, getting narrower and narrower, and disappears into the trees far away. On both sides of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, standing like two tall walls along the trail. The midday sun is high in the upper left; sunlight falls through gaps in the leaves and leaves dappled shadows on the trail and the log.",
+    "conflict": "",
     "refs": [
       "REF_HERO",
       "REF_TREX",
@@ -67,9 +67,9 @@
     ]
   },
   "EP1-08-04": {
-    "zh": "鏡頭站在小路旁邊，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過畫面延伸到右邊。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和針葉樹的樹幹一根接一根，往左延伸得很遠。正午的太陽很高，在鏡頭後上方，把小路照得很亮。順著小路往右不遠，路上橫著一根倒木，在畫面外面。",
-    "en": "Background: The camera stands beside the trail and looks across at it. The trail is a narrow dirt path that runs across the picture from the left side to the right side. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, trunk after trunk, stretching far away to the left. The midday sun is high up behind the camera and the trail looks bright. A short way along the trail to the right a fallen log lies across it, just outside the picture.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+    "zh": "鏡頭站在小路旁邊的樹林邊上，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過畫面延伸到右邊。鏡頭很近的地方，畫面邊上有幾片蘇鐵葉子。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和針葉樹的樹幹一根接一根，往左延伸得很遠。正午的太陽很高，在鏡頭後上方，把小路照得很亮。順著小路往右不遠，路上橫著一根倒木，在畫面外面。",
+    "en": "Background: The camera stands at the edge of the trees beside the trail and looks across at it. The trail is a narrow dirt path that runs across the picture from the left side to the right side. Very close to the camera, a few cycad fronds poke in at the edges of the picture. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, trunk after trunk, stretching far away to the left. The midday sun is high up behind the camera and the trail looks bright. A short way along the trail to the right a fallen log lies across it, just outside the picture.",
+    "conflict": "",
     "refs": [
       "REF_HERO",
       "REF_TREX",
@@ -78,9 +78,9 @@
     ]
   },
   "EP1-08-04W": {
-    "zh": "鏡頭站在小路旁邊，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面延伸到右邊。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和針葉樹的樹幹一根接一根，往左延伸得很遠，畫面上方是一片樹冠。正午的太陽很高，在鏡頭後上方，把小路照得很亮。畫面右邊外面一點點，小路上橫著一根倒木，看不到。",
-    "en": "Background: The camera stands beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, trunk after trunk, stretching far away to the left, with a band of tree crowns across the top of the picture. The midday sun is high up behind the camera and the trail looks bright. Just past the right edge of the picture a fallen log lies across the trail; it is not visible.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+    "zh": "鏡頭站在小路旁邊的樹林裡，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面延伸到右邊。鏡頭很近的地方，畫面下緣和邊上有幾片蘇鐵葉子。小路對面是一整片茂密的白堊紀森林，蘇鐵、銀杏和針葉樹的樹幹一根接一根，往左延伸得很遠，畫面上方是一片樹冠。正午的太陽很高，在鏡頭後上方，把小路照得很亮。畫面右邊外面一點點，小路上橫著一根倒木，看不到。",
+    "en": "Background: The camera stands among the trees beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side. Very close to the camera, a few cycad fronds poke in along the bottom and edges of the picture. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, trunk after trunk, stretching far away to the left, with a band of tree crowns across the top of the picture. The midday sun is high up behind the camera and the trail looks bright. Just past the right edge of the picture a fallen log lies across the trail; it is not visible.",
+    "conflict": "",
     "refs": [
       "REF_HERO",
       "REF_TREX",
@@ -98,9 +98,9 @@
     ]
   },
   "EP1-08-06": {
-    "zh": "鏡頭站在小路旁邊，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面延伸到右邊。畫面右邊，小路靠鏡頭這一半上橫躺著一根粗大的倒木，跟小路垂直。小路對面是一整片茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，樹幹一根接一根。正午的太陽很高，在鏡頭後上方，把小路和倒木照得很亮。",
-    "en": "Background: The camera stands beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side. On the right side of the picture, a thick fallen log lies on the near half of the trail, at a right angle to the trail. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, trunk after trunk. The midday sun is high up behind the camera and lights up the trail and the log.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。",
+    "zh": "鏡頭站在小路旁邊的樹林邊上，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面延伸到右邊。畫面右邊，小路靠鏡頭這一半上橫躺著一根粗大的倒木，跟小路垂直。小路對面是一整片茂密的白堊紀森林，有蘇鐵、銀杏和針葉樹，樹幹一根接一根。鏡頭很近的地方，畫面下緣有幾片蘇鐵葉子。正午的太陽很高，在鏡頭後上方，把小路和倒木照得很亮。",
+    "en": "Background: The camera stands at the edge of the trees beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side. On the right side of the picture, a thick fallen log lies on the near half of the trail, at a right angle to the trail. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and conifers, trunk after trunk. Very close to the camera, a few cycad fronds poke in along the bottom edge of the picture. The midday sun is high up behind the camera and lights up the trail and the log.",
+    "conflict": "",
     "refs": [
       "REF_HERO",
       "REF_TREX",
@@ -109,9 +109,9 @@
     ]
   },
   "EP1-08-06W": {
-    "zh": "鏡頭站在小路旁邊，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面延伸到右邊，在畫面裡顯得比較小。畫面右邊，小路靠鏡頭這一半上橫躺著一根粗大的倒木，跟小路垂直。小路對面是一整片茂密的白堊紀森林，有蘇鐵、銀杏和高大的針葉樹，畫面上方是一大片樹冠，樹梢之間露出一點天空。正午的太陽很高，在鏡頭後上方，把小路和倒木照得很亮。",
-    "en": "Background: The camera stands beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side, and it looks fairly small in the picture. On the right side of the picture, a thick fallen log lies on the near half of the trail, at a right angle to the trail. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers; the top of the picture is a wide band of tree crowns with a little sky between the treetops. The midday sun is high up behind the camera and lights up the trail and the log.",
-    "conflict": "2026-11-13 照新規定拿掉前面的東西。分鏡裡這格的相機格位（N8）和距離跟 EP1-08-06 完全一樣，只靠景別標成遠一級；地圖上兩格看出去的景相同，所以背景只多寫了樹冠和天空。",
+    "zh": "鏡頭站在小路旁邊的樹林邊上，橫著看向小路。小路是一條窄窄的泥土路，從畫面左邊橫過整個畫面延伸到右邊，在畫面裡顯得比較小。畫面右邊，小路靠鏡頭這一半上橫躺著一根粗大的倒木，跟小路垂直。小路對面是一整片茂密的白堊紀森林，有蘇鐵、銀杏和高大的針葉樹，畫面上方是一大片樹冠，樹梢之間露出一點天空。鏡頭很近的地方，畫面下緣有幾片蘇鐵葉子。正午的太陽很高，在鏡頭後上方，把小路和倒木照得很亮。",
+    "en": "Background: The camera stands at the edge of the trees beside the trail and looks across at it. The trail is a narrow dirt path that runs across the whole picture from the left side to the right side, and it looks fairly small in the picture. On the right side of the picture, a thick fallen log lies on the near half of the trail, at a right angle to the trail. On the other side of the trail is a dense Cretaceous forest of cycads, ginkgos and tall conifers; the top of the picture is a wide band of tree crowns with a little sky between the treetops. Very close to the camera, a few cycad fronds poke in along the bottom edge of the picture. The midday sun is high up behind the camera and lights up the trail and the log.",
+    "conflict": "分鏡裡這格的相機格位（N8）和距離跟 EP1-08-06 完全一樣，只靠景別標成遠一級；地圖上兩格看出去的景相同，所以背景只多寫了樹冠和天空。",
     "refs": [
       "REF_HERO",
       "REF_TREX",
