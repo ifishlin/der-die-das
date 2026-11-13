@@ -10,10 +10,13 @@ a{color:var(--acc)}h1{font-size:26px;margin:0}h2{font-size:18px;margin:0 0 4px}.
 ul{margin:4px 0 0;padding-left:22px}li{margin:6px 0}
 </style></head><body><main>
 <div style="font-size:14px"><a href="../">← Stickman</a>　<a href="../flowchart/">製作流程圖（25 步）</a>　<a href="../principles/">製作原則</a></div>
-<header><h1>Flow 畫完之後</h1><p class=sub>2026-11-13 改定。</p></header>
-<section class=card><h2>只做一件事：每格從 4 張挑出一張最合適的</h2>
-<p class=sub>挑的時候考慮：</p><ul><li><b>背景是否符合地圖</b>：對照這格的地圖和相機視野：該看到的有、不該看到的沒有，左右位置跟地圖一致。</li><li><b>人物、物品是否符合參考圖</b>：對照 REF_&lt;角色&gt;、REF_PROPS、牆面圖（ROOM_*／LAB_*）：長相、衣著、道具、場景擺設跟參考圖一致。</li><li><b>恐龍 size 是否吻合</b>：跟比例圖 PAIR_&lt;恐龍&gt; 並排目視，大小關係一致。</li></ul>
-<ul><li>不用判斷是 prompt 錯還是生圖錯，只挑最好的那張。</li>
-<li>在分鏡表上標示起來，建議你選這張。</li>
-<li><b>最後還是你來選。</b></li></ul></section>
+<header><h1>Flow 畫完之後</h1><p class=sub>2026-11-13 改定。先改 prompt 重畫，再選圖。</p></header>
+<section class=card><h2>第 1 步：你挑出 prompt 要改的格子</h2>
+<ul><li>你在分鏡表挑出 prompt 要改的格子，給我指示（按「表達不好，要重寫 prompt」，寫下要怎麼改）。</li>
+<li>我照你的指示改 prompt，這格重新生圖。</li></ul></section>
+<section class=card><h2>第 2 步：選圖（第 1 步結束後）</h2>
+<ul><li>我每格從 4 張挑出一張最合適的，在分鏡表標「Claude 建議」。不用判斷是 prompt 錯還是生圖錯，只挑最好的那張。</li>
+<li>挑的時候考慮：<ul><li><b>背景是否符合地圖</b>：對照這格的地圖和相機視野：該看到的有、不該看到的沒有，左右位置跟地圖一致。</li><li><b>人物、物品是否符合參考圖</b>：對照 REF_&lt;角色&gt;、REF_PROPS、牆面圖（ROOM_*／LAB_*）：長相、衣著、道具、場景擺設跟參考圖一致。</li><li><b>恐龍 size 是否吻合</b>：跟比例圖 PAIR_&lt;恐龍&gt; 並排目視，大小關係一致。</li></ul></li>
+<li><b>你根據我的建議和你自己的判斷選圖。</b>分鏡表每格只能選一張，選的是<b>要留下來的</b>。</li>
+<li>一格都沒選＝四張都不行，整格重畫。</li></ul></section>
 </main></body></html>
