@@ -42,7 +42,7 @@ th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertic
 .who{font-weight:700}.who.codex{color:var(--cx)}.who.claude{color:var(--cl)}
 .list{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,.62fr);align-items:start}@media (max-width:900px){.list{grid-template-columns:1fr}}.mapc img{width:100%;border-radius:4px;display:block;cursor:zoom-in}.bgz{margin-top:8px;background:var(--warn-soft);border-radius:6px;padding:8px 10px;font-size:13.5px;line-height:1.6}.bgn{margin:8px 0 0;font-size:12.5px;color:var(--mut)}
 .prz{margin-top:8px;font-size:14px;line-height:1.65;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px;white-space:pre-wrap}
-.ph{font-size:16px;margin:12px 0 2px;color:var(--fg)}.snote{margin:0 0 8px;padding:6px 10px;border-radius:6px;background:var(--warn-soft);color:var(--warn);font-weight:600;font-size:14px}.rejb{margin-left:auto;font:500 13px var(--sans);background:var(--panel);color:var(--bad);border:1px solid var(--bad);border-radius:6px;padding:3px 10px;cursor:pointer}.card.shot.rej{border:3px solid var(--bad)}.card.shot.rej .imgs{opacity:.45}.card.shot.rej .rejb{background:var(--bad);color:var(--panel)}.plab{margin:10px 0 0;font-weight:700;font-size:13.5px}.bgp{background:var(--warn-soft);border-radius:3px}.prz .bgp::before{content:"\A";white-space:pre}
+.ph{font-size:16px;margin:12px 0 2px;color:var(--fg)}.snote{margin:0 0 8px;padding:6px 10px;border-radius:6px;background:var(--warn-soft);color:var(--warn);font-weight:600;font-size:14px}.rw{margin:12px 0 4px}.rwb{font:600 13.5px var(--sans);background:var(--panel);color:var(--acc);border:1.5px solid var(--acc);border-radius:6px;padding:5px 12px;cursor:pointer;width:100%}.rw.on .rwb{background:var(--acc);color:var(--panel)}.rwt{width:100%;box-sizing:border-box;margin-top:6px;font:14px/1.5 var(--sans);background:var(--bg);color:var(--fg);border:1.5px solid var(--acc);border-radius:6px;padding:6px 8px}.rejb{margin-left:auto;font:500 13px var(--sans);background:var(--panel);color:var(--bad);border:1px solid var(--bad);border-radius:6px;padding:3px 10px;cursor:pointer}.card.shot.rej{border:3px solid var(--bad)}.card.shot.rej .imgs{opacity:.45}.card.shot.rej .rejb{background:var(--bad);color:var(--panel)}.plab{margin:10px 0 0;font-weight:700;font-size:13.5px}.bgp{background:var(--warn-soft);border-radius:3px}.prz .bgp::before{content:"\A";white-space:pre}
 .list.four .mapc{grid-row:span 2}
 .mapc p{margin:6px 0 0;font-size:12.5px;color:var(--mut)}.shot .imgs{display:block}.shot img{width:100%;border-radius:6px;display:block;cursor:zoom-in}
 .shot .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 8px}
@@ -57,7 +57,7 @@ ul{margin:4px 0 0;padding-left:20px}
 <div class="card"><h2>比例圖</h2><div class="charts" id="charts"></div></div>
 <div class="card"><h2>總表</h2><p class="sub">依幕分開，點幕名打開。</p><div id="tbs"></div><ul id="sum" style="margin-top:10px"></ul></div>
 <div id="list"></div>
-<div class="fbbar"><span id="fbn">還沒有意見</span><input id="fbg" placeholder="整體意見（可空白）"><span id="rejn" style="color:var(--bad);font-weight:600"></span><button id="fbc">複製全部意見</button><span id="fbm"></span></div>
+<div class="fbbar"><span id="fbn">還沒有意見</span><input id="fbg" placeholder="整體意見（可空白）"><span id="rejn" style="color:var(--bad);font-weight:600"></span><span id="rwn" style="color:var(--acc);font-weight:600"></span><button id="fbc">複製全部意見</button><span id="fbm"></span></div>
 <textarea id="fbout" readonly hidden></textarea>
 </main>
 <script>
@@ -82,7 +82,8 @@ const card=r=>`<div class="card shot" data-k="${r.id}#${r.img}"><div class="bar"
 const hasBg=r=>r.bg&&r.bg!=='none';
 const bgc=r=>r.bg==='none'?'<p class=bgn>背景描述：這一幕沒有地圖，不補</p>':r.bg?`<div class=bgz><b>${r.bg.hand?'背景（Claude 看地圖手寫）':'背景（程式從地圖算，視野 '+r.bg.fov+'°）'}</b><br>${esc(r.bg.zh)}</div><details><summary>英文版（補在 prompt 後面）</summary><div class=pr>${esc(r.bg.en)}</div></details>`:'<p class=bgn>背景描述：這格沒有地圖位置（插入鏡頭），不補</p>';
 // 每格右欄：地圖 → 中文 prompt（不用點就看得到）→ 英文 prompt、7 項資訊（收起來）（2026-11-12 使用者找不到中文）
-const zhp=r=>r.info?`<h3 class=ph>中文 prompt</h3><p class=bgn>送進 Flow 的完整內容翻成中文；黃底是補在後面的背景</p><div class=prz>${esc(r.info.prompt_zh||'（還沒翻譯）')}${hasBg(r)?`<span class=bgp>${esc(r.bg.zh)}</span>`:''}</div>${hasBg(r)?'':`<p class=bgn>這格沒有補背景（${r.bg==='none'?'這一幕沒有地圖':'沒有相機位置，例如插入特寫'}）</p>`}
+const rwb=r=>`<div class=rw data-id="${r.id}"><button class=rwb data-id="${r.id}">表達不好，要重寫 prompt</button><textarea class=rwt data-id="${r.id}" rows=3 placeholder="這格應該表達什麼？（例：要看得出暴龍追不上、很累）" hidden></textarea></div>`;
+const zhp=r=>r.info?`${rwb(r)}<h3 class=ph>中文 prompt</h3><p class=bgn>送進 Flow 的完整內容翻成中文；黃底是補在後面的背景</p><div class=prz>${esc(r.info.prompt_zh||'（還沒翻譯）')}${hasBg(r)?`<span class=bgp>${esc(r.bg.zh)}</span>`:''}</div>${hasBg(r)?'':`<p class=bgn>這格沒有補背景（${r.bg==='none'?'這一幕沒有地圖':'沒有相機位置，例如插入特寫'}）</p>`}
   <details><summary>英文 prompt（實際貼進 Flow 的）</summary><div class=pr>${esc(r.info.prompt)}${hasBg(r)?` <span class=bgp>${esc(r.bg.en)}</span>`:''}</div></details>
   <details><summary>分鏡 7 項資訊、參考圖</summary><table class=inf>${r.info.f.map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join('')}<tr><th>參考圖</th><td class=k>${esc(r.info.refs.join('、'))}</td></tr>${r.info.remedy&&r.info.remedy!=='N/A'?`<tr><th>補救</th><td>${esc(r.info.remedy)}</td></tr>`:''}</table></details>`:'';
 const mapc=r=>`<div class="card mapc">${r.map?`<img src="${r.map}" alt="${r.id} 地圖" loading="lazy"><p>${r.id}　${esc(r.size)}<br>黑框＝相機，黃色＝鏡頭看出去的範圍；圓點＝那一刻角色的位置，短線＝面向，淡色＝這格沒入鏡</p>`:'<p>這一幕沒有地圖</p>'}${zhp(r)}</div>`;
@@ -91,7 +92,7 @@ const shotRows=rs=>[...new Set(rs.map(r=>r.id))].map(id=>{const g=rs.filter(r=>r
                   : g.map(card).join('')+mapc(g[0])}).join('');
 document.getElementById('list').innerHTML=SCN.map(s=>`<details class="sc card"><summary><h2>${scInfo(s)}</h2></summary><div class="list${NOUT===4?' four':''}">${shotRows(R.filter(r=>r.scene===s))}</div></details>`).join('');   // 每幕預設收起來（2026-11-12 使用者要求）
 const KEY="storyboard-v7-fb";let FB={};try{FB=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(FB))}catch(e){};const n=Object.entries(FB).filter(([k,v])=>k!=='_rej'&&typeof v==='string'&&v.trim()).length;document.getElementById('fbn').textContent=n?`已寫 ${n} 則意見`:'還沒有意見'};
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(FB))}catch(e){};const n=Object.entries(FB).filter(([k,v])=>!k.startsWith('_')&&typeof v==='string'&&v.trim()).length;document.getElementById('fbn').textContent=n?`已寫 ${n} 則意見`:'還沒有意見'};
 document.querySelectorAll('textarea.fb').forEach(t=>{t.value=FB[t.dataset.k]||'';t.oninput=()=>{FB[t.dataset.k]=t.value;save()}});
 const g=document.getElementById('fbg');g.value=FB['_all']||'';g.oninput=()=>{FB['_all']=g.value;save()};
 // 不要的圖（2026-11-13 使用者要的）：點「不要這張」標紅框，複製意見時列出格號、第幾張、Flow 網址，Claude 照著刪
@@ -99,13 +100,22 @@ FB['_rej']=FB['_rej']||{};
 const paintRej=()=>{document.querySelectorAll('.card.shot').forEach(c=>{const on=!!FB['_rej'][c.dataset.k];c.classList.toggle('rej',on);const b=c.querySelector('.rejb');if(b)b.textContent=on?'取消不要':'不要這張'});
   const n=Object.keys(FB['_rej']).filter(k=>FB['_rej'][k]).length;document.getElementById('rejn').textContent=n?`已選 ${n} 張不要`:''};
 document.querySelectorAll('.rejb').forEach(b=>b.onclick=()=>{const k=b.dataset.k;if(FB['_rej'][k])delete FB['_rej'][k];else FB['_rej'][k]=true;save();paintRej()});
-save();paintRej();
+FB['_rw']=FB['_rw']||{};
+// 第 6 種意見（2026-11-13 使用者要的）：圖畫得沒問題，是這格表達得不好，要重寫 prompt。以「格」為單位。
+const paintRw=()=>{document.querySelectorAll('.rw').forEach(w=>{const id=w.dataset.id,on=id in FB['_rw'];const b=w.querySelector('.rwb'),ta=w.querySelector('.rwt');
+  w.classList.toggle('on',on);b.textContent=on?'取消（不重寫）':'表達不好，要重寫 prompt';ta.hidden=!on;if(on&&ta.value!==FB['_rw'][id])ta.value=FB['_rw'][id]});
+  const n=Object.keys(FB['_rw']).length;document.getElementById('rwn').textContent=n?`${n} 格要重寫 prompt`:''};
+document.querySelectorAll('.rwb').forEach(b=>b.onclick=()=>{const id=b.dataset.id;if(id in FB['_rw'])delete FB['_rw'][id];else FB['_rw'][id]='';save();paintRw()});
+document.querySelectorAll('.rwt').forEach(ta=>ta.oninput=()=>{FB['_rw'][ta.dataset.id]=ta.value;save()});
+save();paintRej();paintRw();
 const meta=Object.fromEntries(R.map(r=>[r.id+'#'+r.img,r]));
 document.getElementById('fbc').onclick=()=>{
   const lines=[document.title.includes('v7')?'【EP1 分鏡表 v7 意見】':'【恐龍比例檢查第 5 版 意見】'];
   if((FB['_all']||'').trim())lines.push('整體：'+FB['_all'].trim());
   R.forEach(r=>{const v=(FB[r.id+'#'+r.img]||'').trim();if(v)lines.push(`${r.id}${r.img?' 第 '+r.img+' 張':''}（${r.dino||'—'}，原判 ${r.verdict}）：${v}`)});
   const rej=R.filter(r=>FB['_rej'][r.id+'#'+r.img]);
+  const rwIds=[...new Set(R.map(r=>r.id))].filter(id=>id in FB['_rw']);
+  if(rwIds.length){lines.push('','【表達不好，要重寫 prompt】（'+rwIds.length+' 格）');rwIds.forEach(id=>{const r=R.find(x=>x.id===id);lines.push(`${id}｜旁白：${(r.narr||[]).join(' ')||'—'}`);lines.push(`  要表達：${(FB['_rw'][id]||'').trim()||'（沒寫）'}`)})}
   if(rej.length){lines.push('','【不要的圖，請刪除】（'+rej.length+' 張）');rej.forEach(r=>lines.push(`${r.id} 第 ${r.img} 張｜${r.url||'（沒有 Flow 網址）'}`))}
   const txt=lines.join('\n');const o=document.getElementById('fbout');o.value=txt;const m=document.getElementById('fbm');
   navigator.clipboard.writeText(txt).then(()=>{m.textContent='已複製，貼回給 Claude';o.hidden=true}).catch(()=>{o.hidden=false;o.select();m.textContent='自動複製失敗，請手動複製下面的文字'});
