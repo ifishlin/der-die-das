@@ -1,0 +1,84 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>製作流程圖</title><style>
+:root{--bg:#f5f2ea;--panel:#fffdf8;--fg:#24211c;--mut:#6d665a;--line:#e2dccf;--acc:#8a4b1f;--you:#2f6fa8;--you-s:#dbe9f7;--loop:#c0861a;--loop-s:#fbe6c8;--me:#8a857a;--me-s:#ecebe6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.7 "Noto Sans TC",system-ui,sans-serif;margin:0}
+main{max-width:1100px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:16px}
+a{color:var(--acc)}h1{font-size:26px;margin:0}h2{font-size:18px;margin:0 0 8px}.sub{color:var(--mut);margin:4px 0 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;min-width:0}
+.chart{overflow-x:auto;background:#fffdf8;border-radius:8px;padding:8px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0 0}.legend span{display:inline-flex;gap:6px;align-items:center;font-size:14px}
+.sw{width:16px;height:12px;border-radius:3px;display:inline-block;border:2px solid}
+.tag{font-size:12.5px;font-weight:600;border-radius:5px;padding:1px 8px;white-space:nowrap}
+.tag.you{background:var(--you-s);color:var(--you)}.tag.loop{background:var(--loop-s);color:#7a5208}.tag.me{background:var(--me-s);color:#55514a}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left}th{color:var(--mut);font-weight:500;font-size:12.5px}.n{text-align:right;width:2em}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script></head><body><main>
+<div style="font-size:14px"><a href="../">← Stickman</a>　<a href="../pipeline-steps/">步驟總表（每步的細節）</a></div>
+<header><h1>製作流程圖</h1><p class=sub>從書的一章到上架的 25 步。<b>橘色粗框</b>的步驟要跟你來回確認，確認了才往下走；虛線是常見的退回。</p>
+<div class=legend><span><i class=sw style="background:#fbe6c8;border-color:#c0861a"></i>來回確認（我做、你看、改到你說好）</span>
+<span><i class=sw style="background:#dbe9f7;border-color:#2f6fa8"></i>你做或你決定</span>
+<span><i class=sw style="background:#ecebe6;border-color:#8a857a"></i>我自己做，不用等你</span></div></header>
+<section class=card><div class=chart><pre class="mermaid">flowchart TD
+  S1["<b>【故事】</b><br/>1. 選章<br/><small>你</small>"]:::you
+  S2["2. 讀章、列重點<br/><small>我整理，你看</small>"]:::loop
+  S3["3. 套系列設定<br/><small>已定</small>"]:::me
+  S4["4. 大綱<br/><small>我提案，你確認</small>"]:::loop
+  S5["5. 寫故事<br/><small>我寫</small>"]:::me
+  S6["6. 審故事<br/><small>你改，來回到定案</small>"]:::you
+  S7["7. 分鏡清單＋旁白（定稿點）<br/><small>我切格，你確認定稿</small>"]:::loop
+  S8["<b>【分鏡與設定】</b><br/>8. 分幕<br/><small>我分，你看</small>"]:::loop
+  S9["9. 場景地圖<br/><small>我畫初稿，你改</small>"]:::loop
+  S10["10. 設定圖<br/><small>我寫 prompt，你在 Flow 畫、挑圖</small>"]:::loop
+  S11["11. 分鏡設計<br/><small>Claude 設計，你看</small>"]:::loop
+  S12["12. 檢查分鏡回覆<br/><small>我</small>"]:::me
+  S13["13. 補背景和參考圖<br/><small>LLM 手寫，你核對</small>"]:::loop
+  S14["<b>【畫圖與驗收】</b><br/>14. Flow 畫圖<br/><small>我操作</small>"]:::me
+  S15["15. 分鏡表＋驗收<br/><small>我先看，你寫意見</small>"]:::loop
+  S16["16. 補救<br/><small>我提，你定</small>"]:::loop
+  S17["17. 下載<br/><small>你決定解析度</small>"]:::you
+  S18["<b>【聲音與剪輯】</b><br/>18. 動畫（扣點）<br/><small>你決定，要花點數</small>"]:::you
+  S19["19. 旁白配音<br/><small>我做，你聽</small>"]:::loop
+  S20["20. 音效<br/><small>我做，你聽</small>"]:::loop
+  S21["21. 配樂<br/><small>你</small>"]:::you
+  S22["22. 運鏡＋組片＋字幕<br/><small>我做</small>"]:::me
+  S23["23. 看成片<br/><small>你看，記下問題</small>"]:::you
+  S24["<b>【發佈】</b><br/>24. 上架<br/><small>你</small>"]:::you
+  S25["25. 歐美版<br/><small>你</small>"]:::you
+  S1 --> S2
+  S2 --> S3
+  S3 --> S4
+  S4 --> S5
+  S5 --> S6
+  S6 --> S7
+  S7 --> S8
+  S8 --> S9
+  S9 --> S10
+  S10 --> S11
+  S11 --> S12
+  S12 --> S13
+  S13 --> S14
+  S14 --> S15
+  S15 --> S16
+  S16 --> S17
+  S17 --> S18
+  S18 --> S19
+  S19 --> S20
+  S20 --> S21
+  S21 --> S22
+  S22 --> S23
+  S23 --> S24
+  S24 --> S25
+  S6 -.->|改故事| S5
+  S12 -.->|回覆不合格，重問| S11
+  S13 -.->|背景跟地圖對不上| S9
+  S15 -.->|大小、背景不對| S16
+  S16 -.->|重畫| S14
+  S16 -.->|重問分鏡| S11
+  S23 -.->|看完退回對應步驟| S7
+  classDef you fill:#dbe9f7,stroke:#2f6fa8,color:#16324c,stroke-width:2px
+  classDef loop fill:#fbe6c8,stroke:#c0861a,color:#4a3208,stroke-width:3px
+  classDef me fill:#ecebe6,stroke:#8a857a,color:#3a372f</pre></div></section>
+<section class=card><h2>每一步誰做</h2><div class=tw><table><tr><th>#</th><th>步驟</th><th>類型</th><th>怎麼做</th></tr><tr><td class=n>1</td><td>選章</td><td><span class="tag you">你做／你決定</span></td><td>你</td></tr><tr><td class=n>2</td><td>讀章、列重點</td><td><span class="tag loop">來回確認</span></td><td>我整理，你看</td></tr><tr><td class=n>3</td><td>套系列設定</td><td><span class="tag me">我做</span></td><td>已定</td></tr><tr><td class=n>4</td><td>大綱</td><td><span class="tag loop">來回確認</span></td><td>我提案，你確認</td></tr><tr><td class=n>5</td><td>寫故事</td><td><span class="tag me">我做</span></td><td>我寫</td></tr><tr><td class=n>6</td><td>審故事</td><td><span class="tag you">你做／你決定</span></td><td>你改，來回到定案</td></tr><tr><td class=n>7</td><td>分鏡清單＋旁白（定稿點）</td><td><span class="tag loop">來回確認</span></td><td>我切格，你確認定稿</td></tr><tr><td class=n>8</td><td>分幕</td><td><span class="tag loop">來回確認</span></td><td>我分，你看</td></tr><tr><td class=n>9</td><td>場景地圖</td><td><span class="tag loop">來回確認</span></td><td>我畫初稿，你改</td></tr><tr><td class=n>10</td><td>設定圖</td><td><span class="tag loop">來回確認</span></td><td>我寫 prompt，你在 Flow 畫、挑圖</td></tr><tr><td class=n>11</td><td>分鏡設計</td><td><span class="tag loop">來回確認</span></td><td>Claude 設計，你看</td></tr><tr><td class=n>12</td><td>檢查分鏡回覆</td><td><span class="tag me">我做</span></td><td>我</td></tr><tr><td class=n>13</td><td>補背景和參考圖</td><td><span class="tag loop">來回確認</span></td><td>LLM 手寫，你核對</td></tr><tr><td class=n>14</td><td>Flow 畫圖</td><td><span class="tag me">我做</span></td><td>我操作</td></tr><tr><td class=n>15</td><td>分鏡表＋驗收</td><td><span class="tag loop">來回確認</span></td><td>我先看，你寫意見</td></tr><tr><td class=n>16</td><td>補救</td><td><span class="tag loop">來回確認</span></td><td>我提，你定</td></tr><tr><td class=n>17</td><td>下載</td><td><span class="tag you">你做／你決定</span></td><td>你決定解析度</td></tr><tr><td class=n>18</td><td>動畫（扣點）</td><td><span class="tag you">你做／你決定</span></td><td>你決定，要花點數</td></tr><tr><td class=n>19</td><td>旁白配音</td><td><span class="tag loop">來回確認</span></td><td>我做，你聽</td></tr><tr><td class=n>20</td><td>音效</td><td><span class="tag loop">來回確認</span></td><td>我做，你聽</td></tr><tr><td class=n>21</td><td>配樂</td><td><span class="tag you">你做／你決定</span></td><td>你</td></tr><tr><td class=n>22</td><td>運鏡＋組片＋字幕</td><td><span class="tag me">我做</span></td><td>我做</td></tr><tr><td class=n>23</td><td>看成片</td><td><span class="tag you">你做／你決定</span></td><td>你看，記下問題</td></tr><tr><td class=n>24</td><td>上架</td><td><span class="tag you">你做／你決定</span></td><td>你</td></tr><tr><td class=n>25</td><td>歐美版</td><td><span class="tag you">你做／你決定</span></td><td>你</td></tr></table></div></section>
+</main><script>mermaid.initialize({startOnLoad:true,theme:"base",flowchart:{htmlLabels:true,curve:"basis"}});</script></body></html>
