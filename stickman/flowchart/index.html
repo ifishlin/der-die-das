@@ -15,7 +15,7 @@ a{color:var(--acc)}h1{font-size:26px;margin:0}h2{font-size:18px;margin:0 0 8px}.
 .tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left}th{color:var(--mut);font-weight:500;font-size:12.5px}.n{text-align:right;width:2em}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script></head><body><main>
-<div style="font-size:14px"><a href="../">← Stickman</a>　<a href="../pipeline-steps/">步驟總表（每步的細節）</a></div>
+<div style="font-size:14px"><a href="../">← Stickman</a>　<a href="../pipeline-steps/">步驟總表（每步的細節）</a>　<a href="../revise-flow/">畫完之後的修改流程（另一張流程圖）</a></div>
 <header><h1>製作流程圖</h1><p class=sub>從書的一章到上架的 25 步。<b>橘色粗框</b>的步驟要跟你來回確認，確認了才往下走；虛線是常見的退回。</p>
 <div class=legend><span><i class=sw style="background:#fbe6c8;border-color:#c0861a"></i>來回確認（我做、你看、改到你說好）</span>
 <span><i class=sw style="background:#dbe9f7;border-color:#2f6fa8"></i>你做或你決定</span>
@@ -77,6 +77,8 @@ a{color:var(--acc)}h1{font-size:26px;margin:0}h2{font-size:18px;margin:0 0 8px}.
   S16 -.->|重畫| S14
   S16 -.->|重問分鏡| S11
   S23 -.->|看完退回對應步驟| S7
+  RF(["Flow 畫完之後的修改流程<br/><small>另一張流程圖</small>"]):::loop
+  S16 -.- RF
   classDef you fill:#dbe9f7,stroke:#2f6fa8,color:#16324c,stroke-width:2px
   classDef loop fill:#fbe6c8,stroke:#c0861a,color:#4a3208,stroke-width:3px
   classDef me fill:#ecebe6,stroke:#8a857a,color:#3a372f</pre></div></section>
