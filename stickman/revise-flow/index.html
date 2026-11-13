@@ -1,53 +1,19 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex"><title>畫完後的修改流程</title><style>
-:root{--bg:#f5f2ea;--panel:#fffdf8;--fg:#24211c;--mut:#6d665a;--line:#e2dccf;--acc:#8a4b1f;--you:#2f6fa8;--loop:#c0861a;--me:#8a857a}
+<meta name="robots" content="noindex"><title>畫完後的流程</title><style>
+:root{--bg:#f5f2ea;--panel:#fffdf8;--fg:#24211c;--mut:#6d665a;--line:#e2dccf;--acc:#8a4b1f}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;color-scheme:dark}
 body{background:var(--bg);color:var(--fg);font:15px/1.7 "Noto Sans TC",system-ui,sans-serif;margin:0}
 main{max-width:980px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
 a{color:var(--acc)}h1{font-size:26px;margin:0}h2{font-size:18px;margin:0 0 4px}.sub{color:var(--mut);margin:4px 0 8px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;min-width:0}
-.st{border-left:6px solid var(--me);padding:4px 0 4px 12px;margin:10px 0}.st.you{border-left-color:var(--you)}.st.loop{border-left-color:var(--loop)}
-h3{font-size:16px;margin:0;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}.n{font:700 14px ui-monospace,Menlo,monospace;color:var(--acc)}.who{font-size:13px;color:var(--mut);font-weight:400;margin-left:auto}
-ul{margin:4px 0 0;padding-left:22px}li{margin:3px 0}
-.chart{overflow-x:auto;background:#fffdf8;border-radius:8px;padding:8px}
-.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:500;font-size:12.5px}
-</style>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script></head><body><main>
+ul{margin:4px 0 0;padding-left:22px}li{margin:6px 0}
+</style></head><body><main>
 <div style="font-size:14px"><a href="../">← Stickman</a>　<a href="../flowchart/">製作流程圖（25 步）</a>　<a href="../principles/">製作原則</a></div>
-<header><h1>Flow 畫完之後的修改流程</h1><p class=sub>先由模型看圖找空間問題、判斷恐龍大小，每個問題分成 <b>prompt 錯</b>（第 1 條：改 prompt 重畫）或 <b>生成錯</b>（第 2 條：刪掉、用一樣的 prompt 補圖）；要加減格子走第 3 條。優先處理第 1 條。<b>橘色</b>你跟我一起，<b>藍色</b>你，<b>灰色</b>我。</p></header>
-<section class=card><div class=chart><pre class="mermaid">flowchart TD
-  S(["Flow 畫完一幕<br/><small>我先確認 4 個連結、親眼看圖</small>"]):::me
-  C0_1["0-1. 模型看圖（每一格）<br/><small>Claude 看圖（還沒做）</small>"]:::me
-  S --> C0_1
-  C0_2["0-2. 你確認、補意見<br/><small>我跟你</small>"]:::loop
-  C0_1 --> C0_2
-  Q{"哪一種問題？"}:::loop
-  C0_2 --> Q
-  T1_1["1-1. 重寫 prompt（或改地圖）<br/><small>分鏡模型＋我</small>"]:::me
-  Q -->|prompt 錯| T1_1
-  T1_2["1-2. 重畫<br/><small>我操作</small>"]:::me
-  T1_1 --> T1_2
-  T1_2 --> E
-  T2_1["2-1. 刪掉<br/><small>你／你授權我</small>"]:::you
-  Q -->|生成錯| T2_1
-  T2_2["2-2. 補圖（用一樣的 prompt）<br/><small>我操作</small>"]:::me
-  T2_1 --> T2_2
-  T2_2 --> E
-  T3_1["3-1. 判斷要退回哪一步<br/><small>我跟你</small>"]:::loop
-  Q -->|要加減格子| T3_1
-  T3_2["3-2. 改分鏡、背景、參考圖<br/><small>分鏡模型＋我</small>"]:::me
-  T3_1 --> T3_2
-  T3_3["3-3. 畫新格<br/><small>我操作</small>"]:::me
-  T3_2 --> T3_3
-  T3_3 --> E
-  Q -->|都 OK| E
-  E(["換進分鏡表<br/><small>舊版留在修改紀錄，可以還原</small>"]):::me
-  E -.->|新圖再檢查一次| C0_1
-  classDef you fill:#dbe9f7,stroke:#2f6fa8,color:#16324c,stroke-width:2px
-  classDef loop fill:#fbe6c8,stroke:#c0861a,color:#4a3208,stroke-width:3px
-  classDef me fill:#ecebe6,stroke:#8a857a,color:#3a372f</pre></div></section>
-<section class=card><h2>先檢查：空間和恐龍大小</h2><p class=sub>每個問題都先分清楚是 prompt 錯還是生成錯，決定走第 1 條還是第 2 條。</p><div class="st me"><h3><span class=n>0-1</span>模型看圖（每一格）<span class=who>Claude 看圖（還沒做）</span></h3><ul><li>給模型：這格的 4 張圖、prompt（中英文）、背景描述、地圖和相機視野、入鏡恐龍的比例圖 PAIR2。</li><li>空間問題：不該出現的東西（例：降落點看到河、HERO 背後多一扇窗）、左右不對（例：書桌該在左邊卻在右邊）、該出現的沒出現。</li><li>恐龍大小：每張跟比例圖並排目視，回答「OK」或「要放大／縮小約幾倍」；不用公式、不用地圖算距離。</li><li>每個問題都要歸類：prompt 錯（prompt 沒寫到、寫錯，4 張大多一起錯）還是生成錯（prompt 寫對，只有其中幾張畫錯）。</li><li>結果寫進分鏡表每格的意見欄，不另開頁。</li></ul></div><div class="st loop"><h3><span class=n>0-2</span>你確認、補意見<span class=who>我跟你</span></h3><ul><li>你看分鏡表上模型的判斷，同意、改掉或補充；也可以自己提出要加格子或減格子。</li><li>按鈕：「表達不好，要重寫 prompt」→ 第 1 條；「不要這張」→ 第 2 條。</li></ul></div></section><section class=card><h2>第 1 條：prompt 錯 → 改 prompt 重畫</h2><p class=sub>什麼時候走這條：模型或你判定 prompt 錯：沒寫到、寫錯，或寫了會畫錯（例：直接寫甲龍害偽裝破功、背景看得到不該看到的河）；恐龍大小 4 張都不對也算這條。</p><div class="st me"><h3><span class=n>1-1</span>重寫 prompt（或改地圖）<span class=who>分鏡模型＋我</span></h3><ul><li>改之前先把舊版存進修改紀錄（4 張圖、連結、分鏡、背景、參考圖、原因），可以還原。</li><li>分鏡模型只重新設計這幾格（scripts/make_rewrite_request.py）；背景和參考圖由我照地圖手寫。</li><li>是地圖造成的就改地圖；改之前列出會影響哪幾格給你決定。</li><li>恐龍大小不對只用兩種補救：恐龍只露一部分，或鏡頭拉遠一級；prompt 不寫佔畫面幾成。</li><li>整理好給你看，你說可以才畫。</li></ul></div><div class="st me"><h3><span class=n>1-2</span>重畫<span class=who>我操作</span></h3><ul><li>只重畫這幾格；畫完確認 4 個 Flow 連結、親眼看圖，換進分鏡表，再回到 0-1 檢查。</li></ul></div></section><section class=card><h2>第 2 條：生成錯 → 刪掉、補圖</h2><p class=sub>什麼時候走這條：prompt 沒問題，是 Flow 剛好畫壞幾張（例：一張畫成光頭、一張左右顛倒、一張恐龍特別小）。</p><div class="st you"><h3><span class=n>2-1</span>刪掉<span class=who>你／你授權我</span></h3><ul><li>從分鏡表拿掉；Flow 裡照那張圖的連結刪掉（預設你刪，你說可以我才照連結去刪）。</li><li>刪之前一樣存進修改紀錄。</li></ul></div><div class="st me"><h3><span class=n>2-2</span>補圖（用一樣的 prompt）<span class=who>我操作</span></h3><ul><li>同一格、同一個 prompt 再畫，補回被刪掉的張數；畫完確認連結、看圖，換進分鏡表。</li></ul></div></section><section class=card><h2>第 3 條：加格子、減格子</h2><p class=sub>什麼時候走這條：你覺得某段畫面不夠（要多一格）或重複（要刪一格）。先分兩種：旁白不用改，或旁白要改。</p><div class="st loop"><h3><span class=n>3-1</span>判斷要退回哪一步<span class=who>我跟你</span></h3><ul><li>旁白不用改（同一句旁白多配一張圖、兩格併成一格）：不用回到第 7 步，從第 11 步分鏡設計做起，只問那一幕的那幾格。</li><li>旁白要加句、刪句，或改到畫面上的人、物、動作、位置：回到第 7 步分鏡清單＋旁白；換地點要加地圖（第 9 步），已經配音的那句要重配。</li></ul></div><div class="st me"><h3><span class=n>3-2</span>改分鏡、背景、參考圖<span class=who>分鏡模型＋我</span></h3><ul><li>格號不重新編：新格接在後面編 a、b（例：EP1-06-05a），刪掉的格保留格號、標成已刪除，舊的連結、意見、修改紀錄才對得上。</li><li>刪一格時，它的旁白要分給前後格（檢查分鏡回覆會抓漏掉的旁白）。</li><li>新格的背景和參考圖由我照地圖手寫；被刪的格存進修改紀錄。</li></ul></div><div class="st me"><h3><span class=n>3-3</span>畫新格<span class=who>我操作</span></h3><ul><li>只畫新格；畫完確認連結、看圖，分鏡表照新順序排，再回到 0-1 檢查。</li></ul></div></section>
-<section class=card><h2>已經走過的輪次</h2><div class=tw><table><tr><th>輪次</th><th>改了什麼</th><th>格數</th></tr><tr><td>2026-11-13 第 1 輪（第 1 條）</td><td>12-02、12-02W（不畫甲龍，畫成像甲龍的石頭）、13-07（倒在地上要看得到下半身）、15-01、15-02（彗星＋極遠景看得到地面和恐龍）</td><td>5 格</td></tr><tr><td>2026-11-13 第 2 輪（第 1 條）</td><td>04-23（博士一拍，時光門打開，HERO 被吸進去）、06-06、06-06W（畫成石頭）；降落點地圖加一道樹林擋住河，第 6、12 幕背景提到河的 18 格一起重寫重畫</td><td>21 格</td></tr></table></div>
-<p class=sub>每一格的舊版和紀錄：docs/revisions/（總表 docs/revisions/EP1_log.json）；舊圖：scripts/flowbot/shots/scene/_history/；還原：python3 scripts/revisions.py restore 格號 r1</p></section>
-</main><script>mermaid.initialize({startOnLoad:true,theme:"base"});</script></body></html>
+<header><h1>Flow 畫完之後</h1><p class=sub>2026-11-13 改定。</p></header>
+<section class=card><h2>只做一件事：每格從 4 張挑出一張最合適的</h2>
+<p class=sub>挑的時候考慮：</p><ul><li><b>背景是否符合地圖</b>：對照這格的地圖和相機視野：該看到的有、不該看到的沒有，左右位置跟地圖一致。</li><li><b>人物、物品是否符合參考圖</b>：對照 REF_&lt;角色&gt;、REF_PROPS、牆面圖（ROOM_*／LAB_*）：長相、衣著、道具、場景擺設跟參考圖一致。</li><li><b>恐龍 size 是否吻合</b>：跟比例圖 PAIR_&lt;恐龍&gt; 並排目視，大小關係一致。</li></ul>
+<ul><li>不用判斷是 prompt 錯還是生圖錯，只挑最好的那張。</li>
+<li>在分鏡表上標示起來，建議你選這張。</li>
+<li><b>最後還是你來選。</b></li></ul></section>
+</main></body></html>
