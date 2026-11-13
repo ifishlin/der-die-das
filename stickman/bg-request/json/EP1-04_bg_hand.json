@@ -3,139 +3,229 @@
  "EP1-04-01": {
   "zh": "鏡頭在實驗室靠門的這一頭，往時光機那面牆和黑板那面牆的轉角看，轉角在畫面左邊大約三分之一的地方。轉角左邊是黑板那面牆，只看得到靠轉角的一段：暴龍電影海報，海報左邊露出大綠黑板的一角。轉角右邊是時光機那面牆：靠轉角是一張小桌，上面放著自製的咖啡機，桌子上方的牆掛滿大大小小、時間都不一樣的時鐘；時鐘右邊是時光機的大金屬圓環，粗電纜拖在地上，圓環右邊一小段被畫面右緣切掉。中間是一大片空著的木地板。紅色拉桿、控制台、工作桌和行軍床都在畫面右邊外面，看不到；大門在鏡頭後面。早上的陽光從畫面右邊和鏡頭後面的窗戶照進來，加上木樑上吊燈泡的暖光。",
   "en": "Background: The camera is at the door end of the lab, looking toward the corner where the time machine wall meets the chalkboard wall; the corner is about a third of the way in from the left of the picture. Left of the corner is the attached wall with the chalkboard, and only its part near the corner shows: the T. rex movie poster, with one corner of the big green chalkboard showing to the left of the poster. Right of the corner is the time machine wall: near the corner stands a small table with a rickety homemade coffee machine, and the wall above it is covered with mismatched clocks all showing different times; to the right of the clocks stands the big round metal time machine ring, with thick cables snaking across the floor, a small part of its right side cut off by the right edge of the picture. The middle is a wide open stretch of wooden floor. The red lever, the control console, the workbench and the cot are off the picture to the right and are not seen; the front door is behind the camera. Morning sunlight comes in through windows to the right of the picture and behind the camera, plus the warm glow of the bare bulbs hanging from the ceiling beams.",
-  "refs": ["REF_PROF", "REF_HERO", "REF_PROPS", "LAB_CHALKBOARD_WALL", "LAB_MACHINE_WALL"],
+  "refs": [
+   "REF_PROF",
+   "REF_HERO",
+   "REF_PROPS",
+   "LAB_CHALKBOARD_WALL",
+   "LAB_MACHINE_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-02": {
   "zh": "鏡頭對著工作桌那面牆。HERO 身後是電子工作桌靠右的一端，桌子往畫面左邊延伸，桌上看得到亮著綠色波形的示波器、烙鐵、電路板、一本厚厚的生存指南和水壺；工作桌上方的窗在畫面左上方。畫面右緣露出另一扇窗的一角。黑板在鏡頭後面，看不到。早上的陽光從 HERO 背後的窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera faces the workbench wall. Right behind HERO is the right end of the electronics workbench, which runs off toward the left of the picture; on it are an oscilloscope with a glowing green wave, a soldering iron, a circuit board, a thick survival guide and a water bottle. The window above the workbench is in the upper left of the picture. At the right edge a corner of another window shows. The chalkboard is behind the camera and is not in the picture. Morning sunlight comes in through the windows behind HERO, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROPS", "LAB_WORKBENCH_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS",
+   "LAB_WORKBENCH_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-03": {
   "zh": "鏡頭斜斜地對著時光機那面牆靠右的一段。HERO 身後偏左是時光機的大金屬圓環，粗電纜從圓環底下拖到地上；圓環右邊是木箱上的紅色拉桿，再過去畫面右緣是塞在角落的控制台，上面有轉盤、開關和亮著綠光的舊螢幕。時鐘和咖啡機在畫面左邊外面，看不到；大門在鏡頭後面。早上的陽光從畫面右邊的窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera looks at an angle toward the right part of the time machine wall. Behind HERO, a little to the left, is the big round metal time machine ring, with thick cables snaking from its base across the floor; to the right of the ring is the red lever on a wooden box, and beyond it, at the right edge of the picture, the control console wedged into the corner, with dials, switches and old monitors glowing green. The clocks and the coffee machine are off the picture to the left and are not seen; the front door is behind the camera. Morning sunlight comes in through windows to the right of the picture, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROF", "REF_PROPS", "LAB_MACHINE_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROF",
+   "REF_PROPS",
+   "LAB_MACHINE_WALL"
+  ],
   "conflict": "照站位（t2）博士在 D7、HERO 在 I7；鏡頭 G11 對著 HERO，博士在 HERO 左邊很遠的地方，腰上景框不進來，跟 prompt「博士在畫面左後方」對不上。背景照鏡頭對著 HERO 的方向寫（時光機那面牆）。若要博士入鏡，得把鏡頭往左轉，背後會變成時鐘和咖啡機那一段。"
  },
  "EP1-04-04": {
   "zh": "鏡頭斜斜地對著黑板那面牆。博士身後偏左是大綠黑板，上面有一點粉筆塗鴉；黑板右邊是暴龍電影海報，海報右邊就是牆角，畫面右緣露出一點轉角那面牆上的時鐘。牆上沒有窗。時光機和工作桌在鏡頭後面，看不到。早上的陽光從鏡頭後面的窗戶照進來，照在博士和黑板上，加上吊燈泡的暖光。",
   "en": "Background: The camera looks at an angle toward the chalkboard wall. Behind PROF, a little to the left, is the big green chalkboard with a few chalk scribbles on it; to the right of the chalkboard is the T. rex movie poster, and right after the poster is the corner of the room, where a few clocks on the next wall just show at the right edge of the picture. There is no window on this wall. The time machine and the workbench are behind the camera and are not in the picture. Morning sunlight comes in through windows behind the camera onto PROF and the chalkboard, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_PROF", "LAB_CHALKBOARD_WALL"],
+  "refs": [
+   "REF_PROF",
+   "LAB_CHALKBOARD_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-05": {
   "zh": "鏡頭在博士右後方，斜斜地對著黑板那面牆。博士面前是大綠黑板，佔了畫面左邊一大半，黑板下緣的木條上放著板擦和粉筆；黑板右邊是暴龍電影海報，海報右邊是牆角，畫面右緣剛好到轉角。牆上沒有窗。時光機和工作桌在鏡頭後面，看不到。早上的陽光從鏡頭後面的窗戶照到黑板上，加上吊燈泡的暖光。",
   "en": "Background: The camera is behind PROF and off to his right, looking at an angle toward the chalkboard wall. In front of PROF is the big green chalkboard, filling most of the left part of the picture, with an eraser and chalk on the wooden ledge along its bottom; to the right of the chalkboard is the T. rex movie poster, and to the right of the poster the wall reaches the corner of the room, right at the right edge of the picture. There is no window on this wall. The time machine and the workbench are behind the camera and are not in the picture. Morning sunlight comes in through windows behind the camera onto the chalkboard, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_PROF", "LAB_CHALKBOARD_WALL"],
+  "refs": [
+   "REF_PROF",
+   "LAB_CHALKBOARD_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-06": {
   "zh": "鏡頭正對著黑板那面牆。博士身後是大綠黑板，左右幾乎佔滿整個畫面，上面有一點粉筆塗鴉；畫面右緣露出暴龍電影海報的一角。牆上沒有窗。時光機和工作桌在鏡頭後面，看不到。早上的陽光從鏡頭後面的窗戶照在博士身上，加上吊燈泡的暖光。",
   "en": "Background: The camera faces the chalkboard wall straight on. Behind PROF is the big green chalkboard, stretching across almost the whole width of the picture, with a few chalk scribbles on it; a corner of the T. rex movie poster shows at the right edge of the picture. There is no window on this wall. The time machine and the workbench are behind the camera and are not in the picture. Morning sunlight comes in through windows behind the camera onto PROF, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_PROF", "LAB_CHALKBOARD_WALL"],
+  "refs": [
+   "REF_PROF",
+   "LAB_CHALKBOARD_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-07": {
   "zh": "鏡頭對著工作桌那面牆。HERO 身後是電子工作桌靠右的一端，桌子往畫面左邊延伸，桌上有亮著綠色波形的示波器、烙鐵、電路板、一本厚厚的生存指南和水壺；工作桌上方的窗在畫面左上方。畫面右邊露出行軍床的一端，上面堆著皺巴巴的毯子，床上方是另一扇窗。黑板在鏡頭後面，看不到。早上的陽光從 HERO 背後的窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera faces the workbench wall. Right behind HERO is the right end of the electronics workbench, which runs off toward the left of the picture; on it are an oscilloscope with a glowing green wave, a soldering iron, a circuit board, a thick survival guide and a water bottle. The window above the workbench is in the upper left of the picture. On the right side of the picture one end of the messy folding cot shows, with a crumpled blanket on it, and another window above the cot. The chalkboard is behind the camera and is not in the picture. Morning sunlight comes in through the windows behind HERO, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROPS", "LAB_WORKBENCH_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS",
+   "LAB_WORKBENCH_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-08": {
   "zh": "鏡頭斜斜地對著黑板那面牆。博士身後偏左是大綠黑板，上面有一點粉筆塗鴉；黑板右邊是暴龍電影海報，海報右邊就是牆角，畫面右緣露出一點轉角那面牆上的時鐘。牆上沒有窗。時光機和工作桌在鏡頭後面，看不到。早上的陽光從鏡頭後面的窗戶照進來，照在博士和黑板上，加上吊燈泡的暖光。",
   "en": "Background: The camera looks at an angle toward the chalkboard wall. Behind PROF, a little to the left, is the big green chalkboard with a few chalk scribbles on it; to the right of the chalkboard is the T. rex movie poster, and right after the poster is the corner of the room, where a few clocks on the next wall just show at the right edge of the picture. There is no window on this wall. The time machine and the workbench are behind the camera and are not in the picture. Morning sunlight comes in through windows behind the camera onto PROF and the chalkboard, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_PROF", "LAB_CHALKBOARD_WALL"],
+  "refs": [
+   "REF_PROF",
+   "LAB_CHALKBOARD_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-09": {
   "zh": "鏡頭對著工作桌那面牆。HERO 身後是電子工作桌靠右的一端，桌子往畫面左邊延伸，桌上看得到亮著綠色波形的示波器、烙鐵、電路板、一本厚厚的生存指南和水壺；工作桌上方的窗在畫面左上方。畫面右緣露出另一扇窗的一角。黑板在鏡頭後面，看不到。早上的陽光從 HERO 背後的窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera faces the workbench wall. Right behind HERO is the right end of the electronics workbench, which runs off toward the left of the picture; on it are an oscilloscope with a glowing green wave, a soldering iron, a circuit board, a thick survival guide and a water bottle. The window above the workbench is in the upper left of the picture. At the right edge a corner of another window shows. The chalkboard is behind the camera and is not in the picture. Morning sunlight comes in through the windows behind HERO, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROPS", "LAB_WORKBENCH_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS",
+   "LAB_WORKBENCH_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-10": {
   "zh": "鏡頭斜斜地對著黑板那面牆。博士身後偏左是大綠黑板，上面有一點粉筆塗鴉；黑板右邊是暴龍電影海報，海報右邊就是牆角，畫面右緣露出一點轉角那面牆上的時鐘。牆上沒有窗。時光機和工作桌在鏡頭後面，看不到。早上的陽光從鏡頭後面的窗戶照進來，照在博士和黑板上，加上吊燈泡的暖光。",
   "en": "Background: The camera looks at an angle toward the chalkboard wall. Behind PROF, a little to the left, is the big green chalkboard with a few chalk scribbles on it; to the right of the chalkboard is the T. rex movie poster, and right after the poster is the corner of the room, where a few clocks on the next wall just show at the right edge of the picture. There is no window on this wall. The time machine and the workbench are behind the camera and are not in the picture. Morning sunlight comes in through windows behind the camera onto PROF and the chalkboard, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_PROF", "LAB_CHALKBOARD_WALL"],
+  "refs": [
+   "REF_PROF",
+   "LAB_CHALKBOARD_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-11": {
   "zh": "鏡頭在靠門的這一頭，正對著時光機那面牆，整面牆都看得到。畫面左邊是一張小桌，上面放著自製的咖啡機，桌子上方的牆掛滿大大小小、時間都不一樣的時鐘；中間偏右是時光機的大金屬圓環，粗電纜從圓環底下拖到地上；圓環右邊是木箱上的紅色拉桿；畫面右邊的角落是控制台，上面有轉盤、開關和亮著綠光的舊螢幕。牆前面是一大片空著的木地板。大門在鏡頭後面，看不到。早上的陽光從畫面右邊和鏡頭後面的窗戶照進來，加上木樑上吊燈泡的暖光。",
   "en": "Background: The camera is at the door end of the lab, facing the time machine wall straight on, with the whole wall in view. On the left side of the picture is a small table with a rickety homemade coffee machine, and the wall above it is covered with mismatched clocks all showing different times; a little right of the middle stands the big round metal time machine ring, with thick cables snaking from its base across the floor; to the right of the ring is the red lever on a wooden box; in the corner on the right side of the picture is the control console, with dials, switches and old monitors glowing green. In front of the wall is a wide open stretch of wooden floor. The front door is behind the camera and is not in the picture. Morning sunlight comes in through windows to the right of the picture and behind the camera, plus the warm glow of the bare bulbs hanging from the ceiling beams.",
-  "refs": ["REF_HERO", "REF_PROF", "REF_PROPS", "LAB_MACHINE_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROF",
+   "REF_PROPS",
+   "LAB_MACHINE_WALL"
+  ],
   "conflict": "照站位（t5）博士在 D8；鏡頭 H13 對準 HERO（I8）時，博士落在畫面左緣外面，跟 prompt「博士在畫面左邊」對不上。鏡頭稍微往左轉兩人就都進得來，背後仍是時光機那面牆，背景照整面牆寫。"
  },
  "EP1-04-12": {
   "zh": "鏡頭斜斜地對著黑板那面牆。博士身後偏左是大綠黑板，上面有一點粉筆塗鴉；黑板右邊是暴龍電影海報，海報右邊是牆角，畫面右緣露出咖啡機小桌的一角和上面幾個時鐘。牆上沒有窗。時光機和工作桌在鏡頭後面，看不到。早上的陽光從鏡頭後面的窗戶照在博士身上，加上吊燈泡的暖光。",
   "en": "Background: The camera looks at an angle toward the chalkboard wall. Behind PROF, a little to the left, is the big green chalkboard with a few chalk scribbles on it; to the right of the chalkboard is the T. rex movie poster, and to the right of the poster is the corner of the room, where one corner of the small coffee machine table and a few clocks above it just show at the right edge of the picture. There is no window on this wall. The time machine and the workbench are behind the camera and are not in the picture. Morning sunlight comes in through windows behind the camera onto PROF, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_PROF", "LAB_CHALKBOARD_WALL"],
+  "refs": [
+   "REF_PROF",
+   "LAB_CHALKBOARD_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-13": {
   "zh": "鏡頭往黑板那面牆和時光機那面牆的轉角看，轉角在畫面右邊大約四分之三的地方。轉角左邊是黑板那面牆：大綠黑板佔了畫面左半邊，黑板右邊是暴龍電影海報，海報就在博士身後偏右。轉角右邊是時光機那面牆靠轉角的一小段：一張小桌上放著自製的咖啡機，桌子上方掛滿時鐘；時光機圓環在畫面右邊外面，看不到。博士腳下是空著的木地板。工作桌和行軍床在鏡頭後面。早上的陽光從鏡頭後面的窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera looks toward the corner where the chalkboard wall meets the time machine wall; the corner is about three quarters of the way across the picture from the left. Left of the corner is the attached wall with the chalkboard: the big green chalkboard fills the left half of the picture, and to the right of it is the T. rex movie poster, just behind PROF and a little to his right. Right of the corner is only a short stretch of the time machine wall near the corner: a small table with a rickety homemade coffee machine, with clocks covering the wall above it; the time machine ring is off the picture to the right and is not seen. Under PROF's feet is open wooden floor. The workbench and the cot are behind the camera. Morning sunlight comes in through windows behind the camera, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_PROF", "LAB_CHALKBOARD_WALL", "LAB_MACHINE_WALL"],
+  "refs": [
+   "REF_PROF",
+   "LAB_CHALKBOARD_WALL",
+   "LAB_MACHINE_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-14": {
   "zh": "鏡頭對著工作桌那面牆。HERO 身後偏左是電子工作桌靠右的一端，桌上露出水壺和一本厚厚的生存指南，上方是一扇窗；HERO 身後偏右是另一扇窗。黑板在鏡頭後面，看不到。早上的陽光從 HERO 背後的窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera faces the workbench wall. Behind HERO, a little to the left, is the right end of the electronics workbench, with a water bottle and a thick survival guide showing on it and a window above it; behind HERO, a little to the right, is another window. The chalkboard is behind the camera and is not in the picture. Morning sunlight comes in through the windows behind HERO, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROPS", "LAB_WORKBENCH_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS",
+   "LAB_WORKBENCH_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-15": {
   "zh": "鏡頭正對著時光機那面牆。兩人身後正中間是時光機的大金屬圓環，粗電纜從圓環底下拖到地上；圓環左邊的牆掛滿大大小小、時間都不一樣的時鐘，畫面左緣露出咖啡機小桌的一角。紅色拉桿和控制台在畫面右邊外面，看不到；大門在鏡頭後面。早上的陽光從畫面右邊的窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera faces the time machine wall straight on. Right in the middle behind the two of them is the big round metal time machine ring, with thick cables snaking from its base across the floor; the wall to the left of the ring is covered with mismatched clocks all showing different times, and one corner of the small coffee machine table shows at the left edge of the picture. The red lever and the control console are off the picture to the right and are not seen; the front door is behind the camera. Morning sunlight comes in through windows to the right of the picture, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_PROF", "REF_HERO", "REF_PROPS", "LAB_MACHINE_WALL"],
+  "refs": [
+   "REF_PROF",
+   "REF_HERO",
+   "REF_PROPS",
+   "LAB_MACHINE_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-16": {
   "zh": "鏡頭對著工作桌那面牆。HERO 身後是一扇窗，窗外是淡藍的天空；畫面左邊露出電子工作桌的一端，桌上放著水壺。黑板在鏡頭後面，看不到。早上的陽光從 HERO 背後的窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera faces the workbench wall. Behind HERO is a window with pale blue sky outside; on the left side of the picture one end of the electronics workbench shows, with a water bottle on it. The chalkboard is behind the camera and is not in the picture. Morning sunlight comes in through the window behind HERO, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "LAB_WORKBENCH_WALL"],
+  "refs": [
+   "REF_HERO",
+   "LAB_WORKBENCH_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-17": {
   "zh": "從斜上方往下看那隻托著盒子的手，手的後面只看得到老舊的木板地板，一條條木紋。早上的陽光從前方照過來，在地板上留下亮亮的一片。",
   "en": "Background: Looking down from above at an angle at the hand holding the box; behind the hand only the old wooden plank floor shows, with its long plank lines. Morning sunlight comes from ahead and leaves a bright patch on the floor.",
-  "refs": ["REF_HERO", "REF_PROPS"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS"
+  ],
   "conflict": "分鏡相機 height_m 0.9，比 HERO 托著盒子的手還低，跟「從上往下看」的俯角對不上；背景照俯角寫（往下只看到地板），沒有附牆面圖。"
  },
  "EP1-04-18": {
   "zh": "鏡頭貼著地板往上看，對著黑板那面牆和時光機那面牆的轉角，轉角在畫面右邊大約三分之二的地方。轉角左邊是黑板那面牆：大綠黑板靠右的一段和它右邊的暴龍電影海報，都在博士身後偏左、往上看過去。轉角右邊是時光機那面牆靠轉角的一段：牆上掛滿時鐘，下面是放著咖啡機的小桌；時光機圓環在畫面右邊外面，看不到。博士頭頂上是低矮的木樑天花板，電線沿著木樑拉，吊著幾顆燈泡。工作桌和行軍床在鏡頭後面。早上的陽光從鏡頭後面的窗戶照進來，加上燈泡的暖光。",
   "en": "Background: The camera is down at floor level looking up, toward the corner where the chalkboard wall meets the time machine wall; the corner is about two thirds of the way across the picture from the left. Left of the corner is the attached wall with the chalkboard: the right part of the big green chalkboard and the T. rex movie poster to its right, both seen from below, behind PROF and a little to his left. Right of the corner is the part of the time machine wall near the corner: the wall covered with clocks, and below them the small table with the homemade coffee machine; the time machine ring is off the picture to the right and is not seen. Above PROF's head is the low wooden-beam ceiling, with cables strung along the beams and a few bare bulbs hanging down. The workbench and the cot are behind the camera. Morning sunlight comes in through windows behind the camera, plus the warm glow of the bulbs.",
-  "refs": ["REF_PROF", "LAB_CHALKBOARD_WALL", "LAB_MACHINE_WALL"],
+  "refs": [
+   "REF_PROF",
+   "LAB_CHALKBOARD_WALL",
+   "LAB_MACHINE_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-19": {
   "zh": "鏡頭對著工作桌那面牆。畫面左邊是電子工作桌，桌上有亮著綠色波形的示波器、烙鐵、電路板和水壺，桌子上方是一扇窗；畫面左緣的角落露出控制台的側面。HERO 身後偏右是亂糟糟的行軍床，上面堆著皺巴巴的毯子，床邊地上有一個空泡麵杯，床上方是另一扇窗。黑板在鏡頭後面，看不到。早上的陽光從兩扇窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera faces the workbench wall. On the left side of the picture is the electronics workbench, with an oscilloscope showing a glowing green wave, a soldering iron, a circuit board and a water bottle on it, and a window above it; in the corner at the left edge the side of the control console shows. Behind HERO, a little to the right, is the messy folding cot with a crumpled blanket, an empty instant-noodle cup on the floor beside it, and another window above it. The chalkboard is behind the camera and is not in the picture. Morning sunlight comes in through the two windows, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROPS", "LAB_WORKBENCH_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS",
+   "LAB_WORKBENCH_WALL"
+  ],
   "conflict": "地圖寫生存指南放在工作桌上，但這格指南已經在 HERO 手上，背景就沒把指南寫在桌上；LAB_WORKBENCH_WALL 圖裡桌上有那本書，Flow 可能會在桌上再畫一本。"
  },
  "EP1-04-20": {
   "zh": "從斜上方往下看，HERO 四周是老舊的木板地板。畫面上緣露出門那面牆的下半段：那扇關著的木門在中間偏右，門左邊是空著的牆板。行軍床在畫面左邊外面，看不到；時光機和黑板在鏡頭後面。早上的陽光從畫面左邊的窗戶斜斜照在地板上，加上吊燈泡的暖光。",
   "en": "Background: Looking down from above at an angle, HERO is surrounded by the old wooden plank floor. Along the top edge of the picture the lower half of the door wall shows: the closed wooden front door a little right of the middle, and bare wall planks to the left of the door. The cot is off the picture to the left and is not seen; the time machine and the chalkboard are behind the camera. Morning sunlight from a window to the left of the picture falls across the floor at a slant, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROPS", "LAB_DOOR_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS",
+   "LAB_DOOR_WALL"
+  ],
   "conflict": ""
  },
  "EP1-04-21": {
   "zh": "鏡頭對著工作桌那面牆。畫面左邊是電子工作桌，桌上有亮著綠色波形的示波器、烙鐵、電路板和水壺，桌子上方是一扇窗；畫面左緣的角落露出控制台的側面。HERO 身後偏右是亂糟糟的行軍床，上面堆著皺巴巴的毯子，床邊地上有一個空泡麵杯，床上方是另一扇窗。黑板在鏡頭後面，看不到。早上的陽光從兩扇窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera faces the workbench wall. On the left side of the picture is the electronics workbench, with an oscilloscope showing a glowing green wave, a soldering iron, a circuit board and a water bottle on it, and a window above it; in the corner at the left edge the side of the control console shows. Behind HERO, a little to the right, is the messy folding cot with a crumpled blanket, an empty instant-noodle cup on the floor beside it, and another window above it. The chalkboard is behind the camera and is not in the picture. Morning sunlight comes in through the two windows, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROPS", "LAB_WORKBENCH_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROPS",
+   "LAB_WORKBENCH_WALL"
+  ],
   "conflict": "同 EP1-04-19：地圖寫生存指南放在工作桌上，這格指南被 HERO 扔在一旁，背景沒把指南寫在桌上；LAB_WORKBENCH_WALL 圖裡桌上有那本書，Flow 可能會多畫一本。"
  },
  "EP1-04-22": {
   "zh": "鏡頭斜斜地對著時光機那面牆靠右的一段。畫面左邊是時光機的大金屬圓環，粗電纜從圓環底下拖到地上，圓環左邊露出幾個掛在牆上的時鐘；圓環右邊、畫面中間偏右是木箱上的紅色拉桿；畫面右邊的角落是控制台，上面有轉盤、開關和亮著綠光的舊螢幕。黑板和大門在鏡頭後面，看不到。早上的陽光從畫面右邊的窗戶照進來，加上吊燈泡的暖光。",
   "en": "Background: The camera looks at an angle toward the right part of the time machine wall. On the left side of the picture is the big round metal time machine ring, with thick cables snaking from its base across the floor, and a few wall clocks showing to the left of the ring; to the right of the ring, a little right of the middle of the picture, is the red lever on a wooden box; in the corner on the right side of the picture is the control console, with dials, switches and old monitors glowing green. The chalkboard and the front door are behind the camera and are not in the picture. Morning sunlight comes in through windows to the right of the picture, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROF", "LAB_MACHINE_WALL"],
+  "refs": [
+   "REF_HERO",
+   "REF_PROF",
+   "LAB_MACHINE_WALL"
+  ],
   "conflict": "分鏡 look_at 是博士（O4）；鏡頭 L10 照這個方向拍，HERO 站的時光機圓環（J3）會落到畫面左緣外面，跟 prompt「HERO 在畫面左邊」對不上。背景照構圖寫（圓環在左、拉桿和博士在右），鏡頭要對準圓環和拉桿中間。"
  },
  "EP1-04-23": {
-  "zh": "鏡頭往時光機那面牆和工作桌那面牆的轉角看，轉角在畫面中間偏右。轉角左邊是時光機那面牆：畫面左邊是時光機的大金屬圓環，粗電纜從圓環底下拖到地上；圓環右邊是木箱上的紅色拉桿；轉角裡塞著控制台，上面有轉盤、開關和亮著綠光的舊螢幕。轉角右邊是工作桌那面牆靠轉角的一段：電子工作桌從控制台旁邊往畫面右邊延伸，桌上有示波器、烙鐵、電路板、一本厚厚的生存指南和水壺，桌子上方是一扇窗。時鐘和黑板在畫面左邊外面，看不到；大門在鏡頭後面。早上的陽光從工作桌上方的窗戶照進來，加上吊燈泡的暖光。",
-  "en": "Background: The camera looks toward the corner where the time machine wall meets the workbench wall; the corner is a little right of the middle of the picture. Left of the corner is the time machine wall: on the left side of the picture stands the big round metal time machine ring, with thick cables snaking from its base across the floor; to the right of the ring is the red lever on a wooden box; wedged into the corner is the control console, with dials, switches and old monitors glowing green. Right of the corner is the part of the attached wall with the workbench near the corner: the electronics workbench runs from beside the console toward the right of the picture, with an oscilloscope, a soldering iron, a circuit board, a thick survival guide and a water bottle on it, and a window above it. The clocks and the chalkboard are off the picture to the left and are not seen; the front door is behind the camera. Morning sunlight comes in through the window above the workbench, plus the warm glow of the hanging bulbs.",
-  "refs": ["REF_HERO", "REF_PROF", "REF_PROPS", "LAB_MACHINE_WALL", "LAB_WORKBENCH_WALL"],
-  "conflict": ""
+  "zh": "鏡頭對著時光機那面牆。畫面中間偏左是時光機的大金屬圓環和木頭底座，粗黑電纜拖在地上；圓環左邊的牆上掛滿各式時鐘，時鐘下面的角落是放咖啡機的小木桌；圓環右邊是紅色拉桿的木箱，再過去的角落是控制台和綠色螢幕。上面是木樑天花板，吊著幾顆燈泡。大門在鏡頭後面，看不到。早上的陽光從窗戶照進來，加上吊燈泡的暖光。",
+  "en": "Background: The camera faces the wall with the time machine. Left of the middle of the picture is the big metal ring of the time machine on its wooden base, with thick black cables lying on the floor; on the wall to the left of the ring hang dozens of mismatched clocks, with the small wooden table and the coffee machine in the corner below them; to the right of the ring is the wooden box of the red lever, and in the corner beyond it the control console with its green screens. Above is the wooden-beam ceiling with a few hanging bulbs. The front door is behind the camera and is not in the picture. Morning daylight comes in through the windows, plus the warm glow of the hanging bulbs.",
+  "refs": [
+   "REF_HERO",
+   "REF_PROF",
+   "REF_PROPS",
+   "LAB_MACHINE_WALL"
+  ],
+  "conflict": "2026-11-13 重寫 prompt（博士一拍，時光門打開，HERO 被吸進去）後主對話重寫背景和參考圖。舊版見 docs/revisions/。"
  }
 }

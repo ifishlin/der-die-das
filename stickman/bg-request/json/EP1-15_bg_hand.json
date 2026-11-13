@@ -1,15 +1,19 @@
 {
  "_doc": "第 15 幕每格背景描述，Claude 看劇本 S10-6 和 prompt 手寫（這一幕沒有地圖），2026-11-13",
  "EP1-15-01": {
-  "zh": "鏡頭平平地往前看著一片很暗的夜空。整個畫面都是夜空，看不到地面。天上撒滿細細小小的星星，大小、亮度不太一樣。沒有月亮，光只來自星星，整個畫面很暗。",
-  "en": "Background: The camera looks straight ahead into a very dark night sky. The whole picture is night sky; no ground shows. The sky is scattered with many tiny stars of slightly different sizes and brightness. There is no moon; the only light comes from the stars, and the whole picture is dark.",
-  "conflict": "",
-  "refs": []
+  "zh": "晚上。一大片撒滿小星星的黑色夜空，底下是一片寬闊的史前大地；低低的地平線上是暗色的山脈剪影和一整排森林。",
+  "en": "Background: Night. A vast dark sky scattered with small stars over a wide prehistoric land; along the low horizon are dark silhouetted mountains and a band of forest.",
+  "refs": [
+   "REF_EDMONTO"
+  ],
+  "conflict": "2026-11-13 重寫 prompt 後重寫背景和參考圖。舊版見 docs/revisions/。"
  },
  "EP1-15-02": {
-  "zh": "鏡頭平平地往前看著同一片很暗的夜空。整個畫面都是夜空，看不到地面。天上撒滿細細小小的星星。沒有月亮，除了星星之外，畫面裡唯一的亮光來自那顆越來越近的亮星，它四周的夜空被照得微微發亮。",
-  "en": "Background: The camera looks straight ahead into the same very dark night sky. The whole picture is night sky; no ground shows. The sky is scattered with many tiny stars. There is no moon; apart from the stars, the only light in the picture comes from the approaching bright star, which makes the sky around it glow faintly.",
-  "conflict": "",
-  "refs": []
+  "zh": "晚上，跟上一格同一片天和地：撒滿小星星的黑色夜空，低低的地平線上是暗色的山脈剪影和一整排森林；火球的光把天空照亮了一點。",
+  "en": "Background: Night, the same sky and land as the previous picture: a dark sky scattered with small stars, and along the low horizon dark silhouetted mountains and a band of forest; the glow of the fireball lights up the sky a little.",
+  "refs": [
+   "REF_EDMONTO"
+  ],
+  "conflict": "2026-11-13 重寫 prompt 後重寫背景和參考圖。舊版見 docs/revisions/。"
  }
 }
