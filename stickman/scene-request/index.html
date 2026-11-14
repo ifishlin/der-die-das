@@ -116,6 +116,8 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
 
 ━━━━━━━━━━━━━━━━━━━━
 【四、地圖】降落點空地・白天
+HERO 掉下來的森林空地。南邊是一片淺淺的泥地（G29），時光隧道出口在泥地正上方；甲龍趴在泥地西北邊 D27–F28，像一顆長青苔的大石頭；東北邊一片蕨類；空地北邊有一道樹林（D15–J16）把河擋住，只有最東邊 K15–K16 留一格缺口，從那裡穿過去才看得到河；河對岸有鴨嘴龍。東西兩側是森林。
+
 大小 14 欄（A–N）× 32 列（1–32），一格 2 公尺。北在上。時間：上午，太陽在東南方。
 格子用「欄字母＋列數字」表示。
      A B C D E F G H I J K L M N
@@ -133,8 +135,8 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
  12  R R R R R R R R R R R R R R
  13  R R R R R R R R R R R R R R
  14  R R R R R R R R R R R R R R
- 15  F F F g g g g g g g g F F F
- 16  F F F g g g g g g g g F F F
+ 15  F F F F F F F F F F g F F F
+ 16  F F F F F F F F F F g F F F
  17  F F F g g g g g g g g F F F
  18  F F F g g g g g g g g F F F
  19  F F F g g g g g g g g F F F
@@ -160,7 +162,7 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
   f = 蕨類叢（a thick patch of tall ferns）｜角色：可站｜相機：可放（蕨類高到 HERO 的腰）
   g = 森林裡的空地（an open patch of forest floor with leaf litter and low plants）｜角色：可站｜相機：可放
   m = 泥地（a patch of shallow mud on the forest floor (only a thin layer of mud, not a pit)）｜角色：可站｜相機：可放
-  s = 對岸河邊地（a strip of flat muddy riverside ground on the far bank）｜角色：不可站｜相機：不可放（對岸，太遠）
+  s = 對岸河邊地（a strip of flat muddy riverside ground on the far bank）｜角色：可站｜相機：不可放（對岸：鴨嘴龍群站在這裡喝水（HERO 過不去，但恐龍可以站））
   T = 時光隧道出口（HERO 掉下來的地方，掉下來後關閉）（the spot in the air where the blue time tunnel opens），位置：G29 正上方的空中
 甲龍頭朝東、尾錘朝西。甲龍和時光隧道出口的位置是固定的（之後另一幕會回到同一個地方），不能移動。
 地圖外面：北邊 對岸開闊、朦朧的森林往遠方延伸；東邊 寬闊的河和兩岸的森林往遠方延伸；西邊 寬闊的河和兩岸的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
@@ -223,6 +225,10 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
 - 7 項資訊填你想要的效果。想要的效果是 △ 或 ✗ 時，prompt 寫成畫得出來的補救版本，remedy 寫怎麼補（例：想要 CU → shot_size 填 CU，prompt 用 MCU 的句子，remedy 寫「prompt 用 MCU，剪輯時推近到 CU」）。prompt 不可以直接用 ✗ 的寫法。
 - 畫風那句固定寫：16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
 - 每個入鏡角色只能出現一次；寫明畫面裡只有哪些角色。
+- HERO 入鏡時，prompt 一定要寫膚色句（不然 Flow 會畫成有膚色）：臉和手都可能入鏡寫 &quot;HERO&#x27;s face and hands are pure paper white.&quot;；只露手寫 &quot;HERO&#x27;s hands are pure paper white.&quot;；只露臉寫 &quot;HERO&#x27;s face is pure paper white.&quot;（2026-11-13 補）
+- prompt 不要描述背景：不寫牆、地板、天花板、遠景、地形、天空、光線。只寫角色、動作、表情，以及角色碰到或用到的東西（例如他坐的椅子、按的拉桿、指著的黑板）。背景描述和要附哪些參考圖由 Claude（主對話）看地圖逐格寫，所以 camera.cell 和 camera.look_at 一定要填對。
+- prompt 裡不要寫角色佔畫面高度幾成或幾 percent（實測 Flow 不會照做）；大小靠景別、相機位置和局部入鏡決定。cast 的佔畫高照樣要填（給分鏡設計用），只是不要寫進 prompt。
+- refs 填空陣列 []：要附哪些參考圖由 Claude（主對話）逐格決定，你不用選。
   [景別]
    EWS ✓：Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject.
    WS △：Shot size: Wide Shot (WS). HERO&#x27;s whole body is clearly visible, with a lot of the surroundings around him.　（常畫成跟 FS 一樣大）
@@ -245,6 +251,16 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
    top ✗：Camera angle: Top-down shot (also called overhead shot): the camera is directly above HERO, looking straight down.　（最多高處斜看）
    aerial △：Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.　（只有配 EWS 成功）
   注意：寫了俯視、正上方、空拍，人物常會變小，景別被往遠拉一級。
+
+━━━━━━━━━━━━━━━━━━━━
+【七之二、加拍遠一級】
+只要畫面裡同時有 HERO 和大恐龍（TREX 成年暴龍、TEEN 青少年暴龍、ANKY 甲龍），除了你選的景別，還要另外多給一張「遠一級」的版本，剪輯時再挑：
+  ECU→CU、CU→MCU、MCU→MS、MS→MLS、MLS→FS、FS→WS、WS→EWS；原本就是 EWS 的不用加。
+- 原本那張：恐龍不用全身入鏡（可以只露一部分）。
+- 加拍的那張緊接在原本那張後面；id 是原本的 id 後面加 W（例：EP1-07-05W），variant_of 填原本的 id。沒有加拍的 shot，variant_of 填 N/A。
+- 旁白、t、走位、角度、水平方位都跟原本那張一樣；narration 照抄原本那張的句子（加拍的不算重複分配旁白）。
+- 只改：shot_size、camera（距離拉遠）、composition、cast 的佔畫高、prompt、untested、remedy。景別句一樣用【七】的實測句子。
+- shot_count 只算原本的張數，不算加拍的。
 
 ━━━━━━━━━━━━━━━━━━━━
 【八、工作順序】（照做，但不要輸出這段）
@@ -276,7 +292,8 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
  ],
  &quot;shots&quot;: [
   {
-   &quot;id&quot;: &quot;EP1-06-&lt;兩位數&gt;&quot;,
+   &quot;id&quot;: &quot;EP1-06-&lt;兩位數&gt;（加拍遠一級的再加 W）&quot;,
+   &quot;variant_of&quot;: &quot;&lt;加拍的填原本的 id；其他填 N/A&gt;&quot;,
    &quot;t&quot;: &quot;&lt;對應 blocking 的 t&gt;&quot;,
    &quot;narration&quot;: [
     &quot;&lt;旁白原句&gt;&quot;
@@ -302,9 +319,7 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
      &quot;frame_height&quot;: &quot;&lt;約佔畫高幾成&gt;&quot;
     }
    ],
-   &quot;refs&quot;: [
-    &quot;&lt;參考圖名稱&gt;&quot;
-   ],
+   &quot;refs&quot;: [],
    &quot;prompt&quot;: &quot;&lt;英文 prompt 全文&gt;&quot;,
    &quot;untested&quot;: [
     &quot;&lt;表上沒有的寫法&gt;&quot;
@@ -398,10 +413,7 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
      &quot;frame_height&quot;: &quot;約 2 成（趴著）&quot;
     }
    ],
-   &quot;refs&quot;: [
-    &quot;REF_HERO&quot;,
-    &quot;REF_PROPS&quot;
-   ],
+   &quot;refs&quot;: [],
    &quot;prompt&quot;: &quot;16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: …&quot;,
    &quot;untested&quot;: [],
    &quot;remedy&quot;: &quot;WS 常畫成 FS 一樣大：在 prompt 加大量環境描述&quot;
@@ -436,10 +448,7 @@ HERO 從空中掉下來，臉先著地。又熱又濕，蚊子圍上來。他拿
      &quot;frame_height&quot;: &quot;約 9 成&quot;
     }
    ],
-   &quot;refs&quot;: [
-    &quot;REF_HERO&quot;,
-    &quot;REF_PROPS&quot;
-   ],
+   &quot;refs&quot;: [],
    &quot;prompt&quot;: &quot;16:9, generate 1 image. …&quot;,
    &quot;untested&quot;: [],
    &quot;remedy&quot;: &quot;N/A&quot;
