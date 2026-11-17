@@ -35,8 +35,8 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <tr><td>5</td><td><a href="#s5">查核書外知識</a> <span class=chg>改</span></td><td class=pp>補的知識也查對錯和出處；全部整理成「科普準備報告」，你決定每點用不用。</td><td class=pp>科普準備報告（必要產出）<br><a href="../science-ep2/">EP2 科普準備報告</a><br><a href="../science-ratio/">EP1 科普點核對（舊格式）</a></td><td>🧪</td><td>CLI 模型查（同一份 request），我覆核，你決定用哪些</td><td><code>同「查核書上的知識點」</code></td></tr>
 <tr><td>6</td><td><a href="#s6">系列設定</a> <span class=chg>改</span></td><td class=pp>整個系列共用、做一次就好的設定集：①人物（HERO、博士）②人物關係（打工、賴帳）③表演方式（林克式發聲、第二人稱旁白）④畫風（粗手腳火柴人、皮膚純白）⑤固定場景和道具（實驗室、HERO 房間、校園、回家按鈕、相機、電擊槍、生存指南）。EP1 做完，之後只有要改這五類才回來。不含：各集的任務、賴帳理由（在大綱）、這集出現的恐龍或動物（大綱決定用哪些、設定圖再畫）。</td><td class=pp>設定集<br><a href="../characters/">人物與場景設定</a><br><a href="../dinos/">恐龍系列設定（這個時代）</a></td><td>✅</td><td>第一集做；要改設定時才做</td><td><code>—</code></td></tr>
 <tr><td>7</td><td><a href="#s7">大綱</a></td><td class=pp>這一集的骨架：每一段發生什麼、目的、用哪些查核過的知識點；加上固定橋段這集怎麼填（任務、忘了帶什麼、賴帳理由、接上一集的東西）和這集出現哪些動物。</td><td class=pp>大綱頁<br><a href="../outline-ep2/">EP2 大綱</a></td><td>✅</td><td>我提案，你確認（含固定橋段這集怎麼填）</td><td><code>—</code></td></tr>
-<tr><td>8</td><td><a href="#s8">寫故事</a></td><td class=pp>照大綱寫成完整的故事。</td><td class=pp>故事頁（還沒做 EP2 的；EP1 用的是審故事頁）<br><a href="../story-review/">恐龍年代兩集：審故事</a></td><td>✅</td><td>我寫</td><td><code>—</code></td></tr>
-<tr><td>9</td><td><a href="#s9">審故事</a></td><td class=pp>你改故事的邏輯、場景、道具、旁白，來回到定案。</td><td class=pp>故事頁的新舊對照<br><a href="../story-review/">恐龍年代兩集：審故事</a></td><td>✅</td><td>你</td><td><code>make_script_v6.py</code></td></tr>
+<tr><td>8</td><td><a href="#s8">寫故事</a></td><td class=pp>照大綱寫成完整的故事。每一句旁白有用到知識點的要標編號（#12），故事頁會把科普句標成綠底、用字數算科普比例（目標 30%）。</td><td class=pp>故事頁<br><a href="../story-ep2/">EP2 故事</a></td><td>✅</td><td>我寫</td><td><code>—</code></td></tr>
+<tr><td>9</td><td><a href="#s9">審故事</a></td><td class=pp>你改故事的邏輯、場景、道具、旁白，來回到定案。</td><td class=pp>故事頁：科普比例、綠底科普句、新舊對照<br><a href="../story-ep2/">EP2 故事</a><br><a href="../story-review/">恐龍年代兩集：審故事（EP1）</a></td><td>✅</td><td>你</td><td><code>make_script_v6.py</code></td></tr>
 <tr><td>10</td><td><a href="#s10">分鏡清單＋旁白（定稿點）</a></td><td class=pp>把故事切成一格一格的畫面，每格配好旁白；這一步定稿後，畫面內容就不再大改。</td><td class=pp>分鏡清單頁<br><a href="../storyboard-ep1ep2/">恐龍年代兩集：分鏡清單</a></td><td>✅</td><td>我切格，你確認定稿</td><td><code>—</code></td></tr>
 <tr><td>11</td><td><a href="#s11">分幕</a> <span class=chg>改</span></td><td class=pp>把同一地點、時間連續的格子合成一幕，之後設計和畫圖都以幕為單位。</td><td class=pp>分鏡清單頁（每格標出幕）<br><a href="../storyboard-ep1ep2/">恐龍年代兩集：分鏡清單</a></td><td>🧪</td><td>我分，你看</td><td><code>make_scene_request.py 的 CONF</code></td></tr>
 <tr><td>12</td><td><a href="#s12">場景地圖</a> <span class=chg>改</span></td><td class=pp>每個地點畫一張俯視地圖（樹、河、門、桌子在哪），讓同一地點的每一格畫面一致。</td><td class=pp>地圖編輯器（本機 http://127.0.0.1:8765/）＋分鏡表每格的地圖小圖<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>✅</td><td>我畫初稿，你改</td><td><code>render_map.py</code></td></tr>
@@ -115,13 +115,13 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>固定橋段這集怎麼填（2026-11-17 加）：</b></p><ul><li>大綱一定要有這一區，跟大綱一起給你確認：</li><li>博士這集的任務；主角自己的目的；這集忘了帶什麼；回家按鈕怎麼出狀況；博士這集用什麼理由賴帳。</li><li>接上一集的東西（例如 EP1 留在白堊紀的背包）、這集新出現的地點／道具／角色。</li></ul>
 <p><b>科普比例：</b>定為 30%，用秒數算，量法還沒定。</p>
 <h2 id="s8">8. 寫故事 ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>照大綱寫成完整的故事。</p>
-<p class=pp><b>檢查頁：</b>故事頁（還沒做 EP2 的；EP1 用的是審故事頁）<br><a href="../story-review/">恐龍年代兩集：審故事</a></p>
+<p class=pp><b>這步在幹嘛：</b>照大綱寫成完整的故事。每一句旁白有用到知識點的要標編號（#12），故事頁會把科普句標成綠底、用字數算科普比例（目標 30%）。</p>
+<p class=pp><b>檢查頁：</b>故事頁<br><a href="../story-ep2/">EP2 故事</a></p>
 <p><b>誰：</b>我寫。</p>
 <p><b>怎麼做：</b>照大綱寫成完整故事；旁白用自己的話改寫，不照念原文；角色只有反應音。</p>
 <h2 id="s9">9. 審故事 ✅</h2>
 <p class=pp><b>這步在幹嘛：</b>你改故事的邏輯、場景、道具、旁白，來回到定案。</p>
-<p class=pp><b>檢查頁：</b>故事頁的新舊對照<br><a href="../story-review/">恐龍年代兩集：審故事</a></p>
+<p class=pp><b>檢查頁：</b>故事頁：科普比例、綠底科普句、新舊對照<br><a href="../story-ep2/">EP2 故事</a><br><a href="../story-review/">恐龍年代兩集：審故事（EP1）</a></p>
 <p><b>誰：</b>你。<b>　我用：</b><code>make_script_v6.py</code></p>
 <p><b>怎麼做：</b>你修邏輯、場景、道具、旁白，來回直到定案。每改一版做一頁新舊左右對照。</p>
 <h2 id="s10">10. 分鏡清單＋旁白（定稿點） ✅</h2>
