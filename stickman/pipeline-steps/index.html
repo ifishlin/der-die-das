@@ -40,7 +40,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <tr><td>10</td><td><a href="#s10">分鏡清單＋旁白（定稿點）</a></td><td class=pp>把故事切成一格一格的畫面，每格配好旁白；這一步定稿後，畫面內容就不再大改。</td><td class=pp>分鏡清單頁<br><a href="../shotlist-ep2/">EP2 分鏡清單＋分幕＋地圖</a><br><a href="../storyboard-ep1ep2/">恐龍年代兩集：分鏡清單（EP1）</a></td><td>✅</td><td>我切格，你確認定稿</td><td><code>—</code></td></tr>
 <tr><td>11</td><td><a href="#s11">分幕</a> <span class=chg>改</span></td><td class=pp>把同一地點、時間連續的格子合成一幕，之後設計和畫圖都以幕為單位。</td><td class=pp>分鏡清單頁（照幕排）<br><a href="../shotlist-ep2/">EP2 分鏡清單＋分幕＋地圖</a></td><td>🧪</td><td>我分，你看</td><td><code>make_scene_request.py 的 CONF</code></td></tr>
 <tr><td>12</td><td><a href="#s12">場景地圖</a> <span class=chg>改</span></td><td class=pp>每個地點畫一張俯視地圖（樹、河、門、桌子在哪），讓同一地點的每一格畫面一致。</td><td class=pp>分鏡清單頁每幕的地圖；要改用地圖編輯器（本機 http://127.0.0.1:8765/）<br><a href="../shotlist-ep2/">EP2 分鏡清單＋分幕＋地圖</a><br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>✅</td><td>我畫初稿，你改</td><td><code>render_map.py</code></td></tr>
-<tr><td>13</td><td><a href="#s13">設定圖</a> <span class=chg>改</span></td><td class=pp>畫角色、道具、地點、這集的動物的設定圖，給 Flow 當參考圖，讓長相和大小每格一致。</td><td class=pp>設定集<br><a href="../characters/">人物與場景設定</a><br><a href="../dinos/">恐龍系列設定</a></td><td>✅</td><td>我寫 prompt，你在 Flow 畫、挑圖</td><td><code>build_scale_pairs.py</code></td></tr>
+<tr><td>13</td><td><a href="#s13">設定圖</a> <span class=chg>改</span></td><td class=pp>畫角色、道具、地點、這集的動物的設定圖，給 Flow 當參考圖，讓長相和大小每格一致。</td><td class=pp>新設定圖挑圖頁；定案的放設定集<br><a href="../refs-ep2/">EP2 新設定圖：挑圖</a><br><a href="../characters/">人物與場景設定</a><br><a href="../dinos/">恐龍系列設定</a></td><td>✅</td><td>我寫 prompt，你在 Flow 畫、挑圖</td><td><code>build_scale_pairs.py</code></td></tr>
 <tr><td>14</td><td><a href="#s14">分鏡設計（送 request 給 Claude）</a> <span class=chg>改</span></td><td class=pp>每一格決定鏡頭：拍誰、多遠、從哪個角度、人站哪裡，寫成英文 prompt。</td><td class=pp>分鏡回覆查詢<br><a href="../replies/">分鏡回覆查詢</a></td><td>🧪</td><td>Claude 設計，你看</td><td><code>make_scene_request.py</code></td></tr>
 <tr><td>15</td><td><a href="#s15">檢查分鏡回覆</a> <span class=chg>改</span></td><td class=pp>檢查分鏡模型的回覆有沒有漏旁白、站錯位置、用了不存在的參考圖。</td><td class=pp>我做，不用你檢查<br><a href="../replies/">分鏡回覆查詢</a></td><td>🧪</td><td>我</td><td><code>check_scene_reply.py、compare_scene_replies.py</code></td></tr>
 <tr><td>16</td><td><a href="#s16">補背景和參考圖</a> <span class=chg>改</span></td><td class=pp>照地圖寫每一格背景看得到什麼，決定每格附哪些參考圖。</td><td class=pp>分鏡表每格的中文 prompt、背景、參考圖<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>🧪</td><td>背景由 LLM 手寫，你核對</td><td><code>背景：docs/requests/EP1-NN_bg_hand.json；參考圖：add_background.py</code></td></tr>
@@ -148,7 +148,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>產出：</b>maps/&lt;id&gt;.json。改之前把舊版存到 maps/history/。</p>
 <h2 id="s13">13. 設定圖 ✅</h2>
 <p class=pp><b>這步在幹嘛：</b>畫角色、道具、地點、這集的動物的設定圖，給 Flow 當參考圖，讓長相和大小每格一致。</p>
-<p class=pp><b>檢查頁：</b>設定集<br><a href="../characters/">人物與場景設定</a><br><a href="../dinos/">恐龍系列設定</a></p>
+<p class=pp><b>檢查頁：</b>新設定圖挑圖頁；定案的放設定集<br><a href="../refs-ep2/">EP2 新設定圖：挑圖</a><br><a href="../characters/">人物與場景設定</a><br><a href="../dinos/">恐龍系列設定</a></p>
 <p class="chgline"><span class="chg">改</span> 移到分鏡設計前面：request 要列出能用的參考圖</p>
 <p><b>誰：</b>我寫 prompt，你在 Flow 畫、挑圖。<b>　我用：</b><code>build_scale_pairs.py</code></p>
 <p><b>要做的：</b></p><ul><li>角色：HERO、PROF、恐龍。</li><li>道具 REF_PROPS（第 2 版：回家按鈕）。</li><li>固定地點：REF_LAB（第 2 版：研究小屋一樓）。</li><li>1 對 1 比例圖 PAIR2：HERO 和每一隻恐龍，由程式從設定圖拼，不叫 Flow 畫；數字只有一份 heights.json。</li></ul>
