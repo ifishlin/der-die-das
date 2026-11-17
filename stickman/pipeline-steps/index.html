@@ -29,9 +29,9 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <h2 id="table">總表</h2><div class="tw"><table><tr><th>#</th><th>步驟</th><th>狀態</th><th>誰</th><th>給你用</th><th>我用</th></tr>
 <tr><td>1</td><td><a href="#s1">選章</a></td><td>✅</td><td>你</td><td>—</td><td><code>—</code></td></tr>
 <tr><td>2</td><td><a href="#s2">列出書上的知識點</a> <span class=chg>改</span></td><td>✅</td><td>CLI 模型做（request），我抽查，你看</td><td>—</td><td><code>request 範本：docs/science_requests/2_list_facts.md；scripts/science_request.py 2 EPn</code></td></tr>
-<tr><td>3</td><td><a href="#s3">查核書上的知識點</a> <span class=chg>改</span></td><td>🧪</td><td>CLI 模型查（request），我覆核，你決定用哪些</td><td>科普點核對頁（science-ratio/）</td><td><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></td></tr>
+<tr><td>3</td><td><a href="#s3">查核書上的知識點</a> <span class=chg>改</span></td><td>🧪</td><td>CLI 模型查（request），我覆核，你決定用哪些</td><td>科普準備報告（science-epn/）</td><td><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></td></tr>
 <tr><td>4</td><td><a href="#s4">討論要補的書外知識</a> <span class=chg>改</span></td><td>🧪</td><td>我先提，你增刪</td><td>—</td><td><code>—</code></td></tr>
-<tr><td>5</td><td><a href="#s5">查核書外知識</a> <span class=chg>改</span></td><td>🧪</td><td>CLI 模型查（同一份 request），我覆核，你決定用哪些</td><td>科普點核對頁（science-ratio/）</td><td><code>同「查核書上的知識點」</code></td></tr>
+<tr><td>5</td><td><a href="#s5">查核書外知識</a> <span class=chg>改</span></td><td>🧪</td><td>CLI 模型查（同一份 request），我覆核，你決定用哪些</td><td>科普準備報告（science-epn/）</td><td><code>同「查核書上的知識點」</code></td></tr>
 <tr><td>6</td><td><a href="#s6">套系列設定</a> <span class=chg>改</span></td><td>✅</td><td>已定</td><td>人物與場景設定頁</td><td><code>—</code></td></tr>
 <tr><td>7</td><td><a href="#s7">大綱</a></td><td>✅</td><td>我提案，你確認</td><td>—</td><td><code>—</code></td></tr>
 <tr><td>8</td><td><a href="#s8">寫故事</a></td><td>✅</td><td>我寫</td><td>—</td><td><code>—</code></td></tr>
@@ -70,12 +70,12 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>EP2 試跑：</b>2026-11-17 跑完，報告在 science-ep2/。</p>
 <h2 id="s3">3. 查核書上的知識點 🧪</h2>
 <p class="chgline"><span class="chg">改</span> 2026-11-17 新增：以前沒有這一步，EP1 是事後補查</p>
-<p><b>誰：</b>CLI 模型查（request），我覆核，你決定用哪些。<b>　給你用：</b>科普點核對頁（science-ratio/）<b>　我用：</b><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></p>
+<p><b>誰：</b>CLI 模型查（request），我覆核，你決定用哪些。<b>　給你用：</b>科普準備報告（science-epn/）<b>　我用：</b><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></p>
 <p><b>為什麼：</b>EP1 先寫故事、事後才查，結果改了 15 句旁白，還有一格要在畫面加註「實際上沒這麼誇張」。先查完，才知道故事可以用哪些、怎麼講。</p>
 <p><b>怎麼做：</b></p><ul><li>送 Claude CLI，開上網權限；一次 8～10 點，分批平行跑。</li><li>判定四級（正確／大致正確／有爭議／有誤）照範本裡的定義；有爭議、有誤的附適合旁白的建議說法。</li><li>出處順序：論文 → 博物館、大學 → 可信科普媒體；維基百科不能當唯一出處；每點至少 1 個、附網址；查不到就標「找不到出處」，不硬查。</li><li>程式只搬運：組 request、合併回覆、檢查網址打不打得開、產生科普頁。</li></ul>
 <p><b>我做：</b>有爭議、有誤的每點親自看；其他每批抽 2 點打開出處確認。</p>
 <p><b>你做：</b>每點決定用／不用／改說法，在對話裡告訴我，我記進 JSON。</p>
-<p><b>產出：</b>docs/science_facts_EPn.json（EP1 的格式，加「來源：書」欄位）＋科普點核對頁。</p>
+<p><b>產出：</b>docs/science/EPn_check/ 的查核結果；最後彙整進第 5 步的必要產出「科普準備報告」。</p>
 <h2 id="s4">4. 討論要補的書外知識 🧪</h2>
 <p class="chgline"><span class="chg">改</span> 2026-11-17 新增</p>
 <p><b>誰：</b>我先提，你增刪。</p>
@@ -83,9 +83,10 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>為什麼不給模型：</b>要配合故事判斷、要跟你來回討論。</p>
 <h2 id="s5">5. 查核書外知識 🧪</h2>
 <p class="chgline"><span class="chg">改</span> 2026-11-17 新增</p>
-<p><b>誰：</b>CLI 模型查（同一份 request），我覆核，你決定用哪些。<b>　給你用：</b>科普點核對頁（science-ratio/）<b>　我用：</b><code>同「查核書上的知識點」</code></p>
+<p><b>誰：</b>CLI 模型查（同一份 request），我覆核，你決定用哪些。<b>　給你用：</b>科普準備報告（science-epn/）<b>　我用：</b><code>同「查核書上的知識點」</code></p>
 <p><b>怎麼做：</b>跟查核書上的知識點同一份 request、同樣的規則，記在同一份 science_facts_EPn.json，標「來源：書外」。</p>
-<p><b>完成條件：</b>書上和書外的知識都查完、你確認了，才能開始寫大綱。大綱、旁白、片尾黑板附錄都只從這份挑。</p>
+<p><b>必要產出：科普準備報告：</b></p><ul><li>第 2～5 步做完，一定要產出一份「EPn 科普準備報告」網頁（stickman/science-epn/），沒有這份報告就不算做完（2026-11-17 使用者定，照 EP2 的格式）。</li><li>報告內容：摘要、每一步做了什麼和結果、要你決定的事、全部知識點（書上＋書外；每點的判定、書上原文和頁碼、科學上的說法、出處、建議旁白說法、Claude 覆核意見），可以依判定和來源篩選。</li><li>做法：scripts/make_science_report.py EPn check_urls（程式只搬運；摘要和覆核意見由 Claude 寫在 docs/science/EPn_report_notes.json）。同時加首頁卡片。</li><li>範例：EP2 科普準備報告（science-ep2/）。</li></ul>
+<p><b>完成條件：</b>科普準備報告上線、你看過並決定每點用不用（報告上「要你決定的」都回覆了），才能開始寫大綱。大綱、旁白、片尾黑板附錄都只從這份挑。</p>
 <p><b>之後加知識點：</b>劇本後來要加新的知識（例如 EP1 的地獄溪），回到「討論要補的書外知識」和這一步，你確認後再改劇本。</p>
 <h2 id="s6">6. 套系列設定 ✅</h2>
 <p class="chgline"><span class="chg">改</span> 加了實驗室和回家按鈕的設定</p>
