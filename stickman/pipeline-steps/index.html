@@ -32,7 +32,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <tr><td>3</td><td><a href="#s3">查核書上的知識點</a> <span class=chg>改</span></td><td>🧪</td><td>CLI 模型查（request），我覆核，你決定用哪些</td><td>科普準備報告（science-epn/）</td><td><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></td></tr>
 <tr><td>4</td><td><a href="#s4">討論要補的書外知識</a> <span class=chg>改</span></td><td>🧪</td><td>我先提，你增刪</td><td>—</td><td><code>—</code></td></tr>
 <tr><td>5</td><td><a href="#s5">查核書外知識</a> <span class=chg>改</span></td><td>🧪</td><td>CLI 模型查（同一份 request），我覆核，你決定用哪些</td><td>科普準備報告（science-epn/）</td><td><code>同「查核書上的知識點」</code></td></tr>
-<tr><td>6</td><td><a href="#s6">套系列設定</a> <span class=chg>改</span></td><td>✅</td><td>已定</td><td>人物與場景設定頁</td><td><code>—</code></td></tr>
+<tr><td>6</td><td><a href="#s6">套系列設定</a> <span class=chg>改</span></td><td>🧪</td><td>我提，你確認</td><td>人物與場景設定頁</td><td><code>—</code></td></tr>
 <tr><td>7</td><td><a href="#s7">大綱</a></td><td>✅</td><td>我提案，你確認</td><td>—</td><td><code>—</code></td></tr>
 <tr><td>8</td><td><a href="#s8">寫故事</a></td><td>✅</td><td>我寫</td><td>—</td><td><code>—</code></td></tr>
 <tr><td>9</td><td><a href="#s9">審故事</a></td><td>✅</td><td>你</td><td>新舊對照頁</td><td><code>make_script_v6.py</code></td></tr>
@@ -88,9 +88,10 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>必要產出：科普準備報告：</b></p><ul><li>第 2～5 步做完，一定要產出一份「EPn 科普準備報告」網頁（stickman/science-epn/），沒有這份報告就不算做完（2026-11-17 使用者定，照 EP2 的格式）。</li><li>報告內容：摘要、每一步做了什麼和結果、要你決定的事、全部知識點（書上＋書外；每點的判定、書上原文和頁碼、科學上的說法、出處、建議旁白說法、Claude 覆核意見），可以依判定和來源篩選。</li><li>做法：scripts/make_science_report.py EPn check_urls（程式只搬運；摘要和覆核意見由 Claude 寫在 docs/science/EPn_report_notes.json）。同時加首頁卡片。</li><li>範例：EP2 科普準備報告（science-ep2/）。</li></ul>
 <p><b>完成條件：</b>科普準備報告上線、你看過並決定每點用不用（報告上「要你決定的」都回覆了），才能開始寫大綱。大綱、旁白、片尾黑板附錄都只從這份挑。</p>
 <p><b>之後加知識點：</b>劇本後來要加新的知識（例如 EP1 的地獄溪），回到「討論要補的書外知識」和這一步，你確認後再改劇本。</p>
-<h2 id="s6">6. 套系列設定 ✅</h2>
-<p class="chgline"><span class="chg">改</span> 加了實驗室和回家按鈕的設定</p>
-<p><b>誰：</b>已定。<b>　給你用：</b>人物與場景設定頁</p>
+<h2 id="s6">6. 套系列設定 🧪</h2>
+<p class="chgline"><span class="chg">改</span> 2026-11-17 改：每集都要寫「這集怎麼套」和「新增的設定」給你確認</p>
+<p><b>誰：</b>我提，你確認。<b>　給你用：</b>人物與場景設定頁</p>
+<p><b>怎麼做（2026-11-17 改）：</b></p><ul><li>系列設定本身已定（下面），但每一集都要寫出「這一集怎麼套」給你確認，不能我自己決定：</li><li>① 固定橋段在這集怎麼出現：這次是什麼工作、博士這次用什麼理由賴帳、主角這次忘了帶什麼、回家按鈕怎麼用。</li><li>② 這集特有、要新增或接續的設定：前一集結尾帶回來的東西、新地點、新道具、新角色。</li><li>你確認了才進大綱；新增的設定寫回人物與場景設定頁。</li></ul>
 <p><b>設定：</b></p><ul><li>布朗博士，加上不想畢業又沒錢的資工延畢生來打工；每集博士都賴帳；主角老是忘了帶生存指南。</li><li>HERO、PROF 林克式發聲：有聲音、沒台詞，故事靠旁白和反應音。</li><li>畫風 v2 粗手腳火柴人，皮膚純白，不設定種族。</li><li>博士的實驗室在校園研究小屋一樓（不是地下室）；回家裝置是一顆按鈕（不是手環）。</li></ul>
 <h2 id="s7">7. 大綱 ✅</h2>
 <p><b>誰：</b>我提案，你確認。</p>
