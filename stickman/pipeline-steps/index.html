@@ -28,10 +28,10 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p class="sub">狀態：✅ 討論定案　🧪 做過、沒定案　⬜ 沒討論。「給你用」是做給你操作或看的頁面；「我用」是我跑的程式。標 <span class="chg">改</span> 的是這次跟 11-07 版不一樣的地方。</p>
 <h2 id="table">總表</h2><div class="tw"><table><tr><th>#</th><th>步驟</th><th>狀態</th><th>誰</th><th>給你用</th><th>我用</th></tr>
 <tr><td>1</td><td><a href="#s1">選章</a></td><td>✅</td><td>你</td><td>—</td><td><code>—</code></td></tr>
-<tr><td>2</td><td><a href="#s2">列出書上的知識點</a> <span class=chg>改</span></td><td>🧪</td><td>CLI 模型做（request），我抽查，你看</td><td>—</td><td><code>request 範本：docs/science_requests/2_list_facts.md；scripts/science_request.py 2 EPn</code></td></tr>
-<tr><td>3</td><td><a href="#s3">查核書上的知識點</a> <span class=chg>改</span></td><td>⬜</td><td>CLI 模型查（request），我覆核，你決定用哪些</td><td>科普點核對頁（science-ratio/）</td><td><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></td></tr>
-<tr><td>4</td><td><a href="#s4">討論要補的書外知識</a> <span class=chg>改</span></td><td>⬜</td><td>我先提，你增刪</td><td>—</td><td><code>—</code></td></tr>
-<tr><td>5</td><td><a href="#s5">查核書外知識</a> <span class=chg>改</span></td><td>⬜</td><td>CLI 模型查（同一份 request），我覆核，你決定用哪些</td><td>科普點核對頁（science-ratio/）</td><td><code>同「查核書上的知識點」</code></td></tr>
+<tr><td>2</td><td><a href="#s2">列出書上的知識點</a> <span class=chg>改</span></td><td>✅</td><td>CLI 模型做（request），我抽查，你看</td><td>—</td><td><code>request 範本：docs/science_requests/2_list_facts.md；scripts/science_request.py 2 EPn</code></td></tr>
+<tr><td>3</td><td><a href="#s3">查核書上的知識點</a> <span class=chg>改</span></td><td>🧪</td><td>CLI 模型查（request），我覆核，你決定用哪些</td><td>科普點核對頁（science-ratio/）</td><td><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></td></tr>
+<tr><td>4</td><td><a href="#s4">討論要補的書外知識</a> <span class=chg>改</span></td><td>🧪</td><td>我先提，你增刪</td><td>—</td><td><code>—</code></td></tr>
+<tr><td>5</td><td><a href="#s5">查核書外知識</a> <span class=chg>改</span></td><td>🧪</td><td>CLI 模型查（同一份 request），我覆核，你決定用哪些</td><td>科普點核對頁（science-ratio/）</td><td><code>同「查核書上的知識點」</code></td></tr>
 <tr><td>6</td><td><a href="#s6">套系列設定</a> <span class=chg>改</span></td><td>✅</td><td>已定</td><td>人物與場景設定頁</td><td><code>—</code></td></tr>
 <tr><td>7</td><td><a href="#s7">大綱</a></td><td>✅</td><td>我提案，你確認</td><td>—</td><td><code>—</code></td></tr>
 <tr><td>8</td><td><a href="#s8">寫故事</a></td><td>✅</td><td>我寫</td><td>—</td><td><code>—</code></td></tr>
@@ -60,14 +60,15 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <h2 id="s1">1. 選章 ✅</h2>
 <p><b>誰：</b>你。</p>
 <p><b>怎麼做：</b>從《How to Survive History》挑一章，原文照片放在 source/how_to_survive_history/chNN_*。前三章對應 EP1～EP3。</p>
-<h2 id="s2">2. 列出書上的知識點 🧪</h2>
+<h2 id="s2">2. 列出書上的知識點 ✅</h2>
 <p class="chgline"><span class="chg">改</span> 2026-11-17 改：寫成 request 交給 CLI 模型、直接讀照片；只給讀檔權限，保證只用書</p>
 <p><b>誰：</b>CLI 模型做（request），我抽查，你看。<b>　我用：</b><code>request 範本：docs/science_requests/2_list_facts.md；scripts/science_request.py 2 EPn</code></p>
 <p><b>怎麼做：</b></p><ul><li>送 Claude CLI，直接讀書頁照片；只給讀檔、不給上網，保證只用書。這一步不判斷對錯。</li><li>先做頁面檢查：照片和頁碼對照（沒印的推算、標「推定」）、前後頁接不接得上（缺頁）、照片裡別章的部分不列。</li><li>看不清楚不硬猜：列「建議重拍」清單（照片、頁、位置、問題），你重拍後再跑。</li><li>一點＝一句可以查證、講真實世界的話：數字、比較、因果、描述、專家說法、求生建議；圖表上的事實也算。玩笑、比喻、純劇情假設不算。</li><li>每點附書上那一句原文和頁碼；能分開查的就拆開；重複的合併；保留原文語氣（may、about → 可能、大約）；英制加公制換算。</li><li>產出 docs/science/EPn_book_facts.json。寧可多列不要漏，之後再篩。</li></ul>
 <p><b>為什麼不先抄全文：</b>2026-11-17 試過先把整章逐字抄成文字檔，模型因版權拒絕（整章逐字等於重製書的內容）。每點附原文那一句＋頁碼就夠查核用，照片留著隨時對照。</p>
-<p><b>我做：</b>抽幾頁對照照片，看有沒有抄錯、漏列。</p>
-<p><b>沒定的：</b>EP2 試跑後再調整範本。</p>
-<h2 id="s3">3. 查核書上的知識點 ⬜</h2>
+<p><b>逐頁核對（2v，EP2 加的）：</b></p><ul><li>第 2 步讀完，程式把照片轉正（upright/）、切成單頁（pages/），每頁送一份 request（只給讀檔），模型對照照片逐字核對每一點、找漏列。</li><li>EP2 第一次讀：5 張照片拍成橫的，只讀出 45 點、還誤報要重拍；轉正後 90 點，逐頁核對再改正 22 點（數字、單位、編造的專家名字）、補 5 點。</li><li>範本：docs/science_requests/2v_verify_page.md；scripts/science_request.py 2v EPn</li></ul>
+<p><b>我做：</b>放大幾頁照片人工對照，看有沒有抄錯、漏列。</p>
+<p><b>EP2 試跑：</b>2026-11-17 跑完，報告在 science-ep2/。</p>
+<h2 id="s3">3. 查核書上的知識點 🧪</h2>
 <p class="chgline"><span class="chg">改</span> 2026-11-17 新增：以前沒有這一步，EP1 是事後補查</p>
 <p><b>誰：</b>CLI 模型查（request），我覆核，你決定用哪些。<b>　給你用：</b>科普點核對頁（science-ratio/）<b>　我用：</b><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></p>
 <p><b>為什麼：</b>EP1 先寫故事、事後才查，結果改了 15 句旁白，還有一格要在畫面加註「實際上沒這麼誇張」。先查完，才知道故事可以用哪些、怎麼講。</p>
@@ -75,12 +76,12 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>我做：</b>有爭議、有誤的每點親自看；其他每批抽 2 點打開出處確認。</p>
 <p><b>你做：</b>每點決定用／不用／改說法，在對話裡告訴我，我記進 JSON。</p>
 <p><b>產出：</b>docs/science_facts_EPn.json（EP1 的格式，加「來源：書」欄位）＋科普點核對頁。</p>
-<h2 id="s4">4. 討論要補的書外知識 ⬜</h2>
+<h2 id="s4">4. 討論要補的書外知識 🧪</h2>
 <p class="chgline"><span class="chg">改</span> 2026-11-17 新增</p>
 <p><b>誰：</b>我先提，你增刪。</p>
 <p><b>怎麼做：</b>我用固定清單逐項想：地點、年代、氣候、地形、植物、會遇到的動物、人能吃喝什麼、有什麼危險、跟現在的對照（今天是哪裡）。每項寫「故事需要什麼、書上有沒有講」，你增刪後定案。例：EP1 的落點 Hell Creek、當時沒有草原、天氣很熱。</p>
 <p><b>為什麼不給模型：</b>要配合故事判斷、要跟你來回討論。</p>
-<h2 id="s5">5. 查核書外知識 ⬜</h2>
+<h2 id="s5">5. 查核書外知識 🧪</h2>
 <p class="chgline"><span class="chg">改</span> 2026-11-17 新增</p>
 <p><b>誰：</b>CLI 模型查（同一份 request），我覆核，你決定用哪些。<b>　給你用：</b>科普點核對頁（science-ratio/）<b>　我用：</b><code>同「查核書上的知識點」</code></p>
 <p><b>怎麼做：</b>跟查核書上的知識點同一份 request、同樣的規則，記在同一份 science_facts_EPn.json，標「來源：書外」。</p>
