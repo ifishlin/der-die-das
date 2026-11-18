@@ -49,7 +49,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <tr><td>19</td><td><a href="#s19">補救</a></td><td class=pp>畫錯的格子決定怎麼救：改 prompt 重畫、重問分鏡，或換鏡頭。</td><td class=pp>修改紀錄<br><a href="../redraw-review/">EP1 修改紀錄</a></td><td>✅</td><td>我提，你定</td><td><code>—</code></td></tr>
 <tr><td>20</td><td><a href="#s20">下載</a></td><td class=pp>把選定的圖從 Flow 下載下來。</td><td class=pp>定稿畫面（每格你選的那張）<br><a href="../picks-v7/">EP1 定稿畫面</a></td><td>🧪</td><td>你決定解析度</td><td><code>download_scene.py</code></td></tr>
 <tr><td>21</td><td><a href="#s21">動畫（扣點）</a></td><td class=pp>決定哪些格要做成動畫（要花 Flow 點數）。</td><td class=pp>還沒有檢查頁</td><td>⬜</td><td>你（要花點數）</td><td><code>—</code></td></tr>
-<tr><td>22</td><td><a href="#s22">潤旁白</a> <span class=chg>改</span></td><td class=pp>把每格的旁白順成念得通順的錄音稿，意思和資訊不變。</td><td class=pp>旁白順稿對照<br><a href="../narration-smooth/">EP1 旁白順稿對照</a></td><td>✅</td><td>我做，你看</td><td><code>make_narration_request.py、make_narration_compare.py</code></td></tr>
+<tr><td>22</td><td><a href="#s22">潤旁白</a> <span class=chg>改</span></td><td class=pp>把每格的旁白順成念得通順的錄音稿，意思和資訊不變。</td><td class=pp>旁白順稿對照<br><a href="../narration-smooth-ep2/">EP2 旁白順稿對照</a><br><a href="../narration-smooth/">EP1 旁白順稿對照</a></td><td>✅</td><td>我做，你看</td><td><code>make_narration_request.py、make_narration_compare.py</code></td></tr>
 <tr><td>23</td><td><a href="#s23">旁白配音</a></td><td class=pp>錄旁白（你自己錄），切成每一格的聲音。</td><td class=pp>錄音旁白對照<br><a href="../narration-recording/">EP1 錄音旁白對照</a></td><td>🧪</td><td>我做，你聽</td><td><code>studio_sichu_narr.sh</code></td></tr>
 <tr><td>24</td><td><a href="#s24">音效</a></td><td class=pp>每一格配上音效。</td><td class=pp>分鏡表、定稿畫面上的音效（定稿畫面可以試聽）<br><a href="../picks-v7/">EP1 定稿畫面</a></td><td>🧪</td><td>我做，你聽</td><td><code>MMAudio、TangoFlux</code></td></tr>
 <tr><td>25</td><td><a href="#s25">配樂</a></td><td class=pp>選背景音樂。</td><td class=pp>還沒有檢查頁</td><td>⬜</td><td>你</td><td><code>—</code></td></tr>
@@ -211,7 +211,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>要討論：</b>要不要做、哪幾格做、點數預算、放在配音之前還是之後。</p>
 <h2 id="s22">22. 潤旁白 ✅</h2>
 <p class=pp><b>這步在幹嘛：</b>把每格的旁白順成念得通順的錄音稿，意思和資訊不變。</p>
-<p class=pp><b>檢查頁：</b>旁白順稿對照<br><a href="../narration-smooth/">EP1 旁白順稿對照</a></p>
+<p class=pp><b>檢查頁：</b>旁白順稿對照<br><a href="../narration-smooth-ep2/">EP2 旁白順稿對照</a><br><a href="../narration-smooth/">EP1 旁白順稿對照</a></p>
 <p class="chgline"><span class="chg">改</span> 2026-11-18 加入（EP1 11-14 做過）</p>
 <p><b>誰：</b>我做，你看。<b>　我用：</b><code>make_narration_request.py、make_narration_compare.py</code></p>
 <p><b>怎麼做：</b>程式把每一格目前的旁白整理成 request（只搬運），由模型順稿：用連接詞把破碎的旁白接起來、念得通順，可以改寫字句。做每幕每格「原本 ↔ 順過」的對照頁，有改的標底色。</p>
