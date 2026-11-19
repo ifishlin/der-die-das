@@ -1,0 +1,45 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><title>TEMPLATE 科普報告</title><style>
+:root{--bg:#f4f1ea;--panel:#fffdf8;--fg:#24211c;--mut:#6d665a;--line:#e2dccf;--acc:#8a4b1f;
+ --ok:#2f7d5b;--ok-s:#dcefe5;--ok2:#4f7a2a;--ok2-s:#e8f0da;--warn:#9a6a00;--warn-s:#f6ecd2;--bad:#b0362c;--bad-s:#f6dcd8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;
+ --ok:#6cc792;--ok-s:#1b2c22;--ok2:#a8cf6e;--ok2-s:#26301a;--warn:#e0b25a;--warn-s:#332a14;--bad:#ef7d72;--bad-s:#3a1f1c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;
+ --ok:#6cc792;--ok-s:#1b2c22;--ok2:#a8cf6e;--ok2-s:#26301a;--warn:#e0b25a;--warn-s:#332a14;--bad:#ef7d72;--bad-s:#3a1f1c;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.65 "Noto Sans TC",-apple-system,"PingFang TC",sans-serif;margin:0}
+main{max-width:960px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+a{color:var(--acc)}.top{font-size:14px}h1{font-size:26px;margin:0;text-wrap:balance}.sub{color:var(--mut);margin:6px 0 0;max-width:72ch}.mut{color:var(--mut)}
+.card,.fact{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{font:600 14px inherit;font-family:inherit;border:1.5px solid var(--line);background:var(--panel);color:var(--fg);border-radius:20px;padding:4px 14px;cursor:pointer}
+.chip.on{border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc)}.chip.bad{color:var(--bad)}.chip.warn{color:var(--warn)}.chip.ok2{color:var(--ok2)}.chip.ok{color:var(--ok)}
+.legend{margin:10px 0 0;font-size:13px;color:var(--mut);line-height:2}
+#list{display:flex;flex-direction:column;gap:10px}
+.fact{border-left:5px solid var(--line)}.fact.bad{border-left-color:var(--bad)}.fact.warn{border-left-color:var(--warn)}.fact.ok2{border-left-color:var(--ok2)}.fact.ok{border-left-color:var(--ok)}
+.hd{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.no{font:700 15px ui-monospace,Menlo,monospace;color:var(--mut)}.sh{font:12.5px ui-monospace,Menlo,monospace;color:var(--mut)}
+.v{display:inline-block;font-weight:600;font-size:12.5px;border-radius:5px;padding:0 8px}.v.ok{background:var(--ok-s);color:var(--ok)}.v.ok2{background:var(--ok2-s);color:var(--ok2)}.v.warn{background:var(--warn-s);color:var(--warn)}.v.bad{background:var(--bad-s);color:var(--bad)}
+.claim{font-size:17px;font-weight:600;margin:6px 0 8px}
+dl{display:grid;grid-template-columns:4.5em minmax(0,1fr);gap:4px 10px;margin:0;font-size:14px}dt{color:var(--mut);font-weight:500}dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.src a{word-break:break-word}
+.fix{margin-top:10px;padding:8px 12px;border-radius:6px;background:var(--warn-s);font-size:14.5px}.fix b{color:var(--warn)}
+@media (max-width:520px){dl{grid-template-columns:1fr}dt{margin-top:4px}}
+
+h2{font-size:18px;margin:0 0 8px}ul{margin:0;padding-left:1.3em}li{margin:3px 0}
+.tw{overflow-x:auto}table{border-collapse:collapse;font-size:14px;width:100%}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+.k{font-size:12.5px;border:1px solid var(--line);border-radius:5px;padding:0 6px}.t,.conf{font-size:12.5px;color:var(--mut)}
+.v.mut{background:var(--line);color:var(--mut)}.fact.mut{border-left-color:var(--line)}.chip.mut{color:var(--mut)}
+.rv{margin-top:8px;padding:8px 12px;border-radius:6px;background:var(--ok-s);font-size:14px}.rv b{color:var(--ok)}
+.bad-url{color:var(--bad);font-size:12.5px}
+.uu{font-size:12.5px;font-weight:700;border-radius:5px;padding:0 7px}.uu.ok{background:var(--ok-s);color:var(--ok)}.uu.bad{background:var(--bad);color:#fff}.uu.mut{color:var(--mut)}
+.use{margin-top:8px;padding:6px 12px;border-radius:6px;font-size:14px;border:1px solid var(--line)}.use.ok b{color:var(--ok)}.use.bad b{color:var(--bad)}
+</style></head><body><main><div class=top><a href="../page-spec/#templates">← 空白範本</a>　<a href="../pipeline-steps/">製作步驟總表</a></div>
+<header><h1>TEMPLATE 科普報告</h1>
+<p class=sub>A 科普（第 2～5 步）：列出書上的知識點 → 查核 → 想書外知識 → 查核；每點我判定可以用或不能用。書：Cassidy《How to Survive History》。共 0 點：書上 0、書外 0。</p></header>
+<section class=card><h2>摘要</h2><ul><li class=mut>第 5 步還沒做</li></ul></section>
+<section class=card><h2>統計</h2><p>判定：</p><p>可以用 <b>0</b>　不能用 <b>0</b></p><p class=mut>你沒看這份報告＝只有「可以用」的能用，其他一律不用。</p></section>
+<section class=card><h2>每一步做了什麼</h2><div class=tw><table><tr><th>步驟</th><th>做法</th><th>結果</th></tr><tr><td colspan=3 class=mut>第 2～5 步還沒做（每做完一步加一列）</td></tr></table></div></section>
+<section class="card sum"><h2>全部知識點</h2><div class=chips><button class="chip all on" data-f="">全部 0</button></div>
+<div class=chips style="margin-top:8px"><button class="chip kc" data-k="書上">書上 0</button><button class="chip kc" data-k="書外">書外 0</button></div><div class=chips style="margin-top:8px"></div>
+<p class=legend><b class="v bad">有誤</b> 書上說錯或說過頭　<b class="v warn">有爭議</b> 學界沒定論　<b class="v bad">找不到出處</b> 查不到可靠來源　<b class="v ok2">大致正確</b> 方向對、要小修　<b class="v ok">正確</b></p></section>
+<div id=list><article class="fact mut"><div class=hd><span class=no>#</span><span class="uu mut">可以用／不能用（第 3、5 步）</span><span class="v mut">判定（第 3、5 步）</span><span class="k">書上／書外</span><span class=t>類別</span></div><p class=claim>知識點一句話（第 2、4 步）</p><dl><dt>書上</dt><dd>頁碼和原文（第 2 步）；書外的寫「為什麼要」（第 4 步）</dd><dt>科學上</dt><dd>第 3、5 步還沒做</dd><dt>出處</dt><dd>第 3、5 步還沒做</dd></dl><div class=fix><b>建議旁白說法</b>　第 3、5 步還沒做</div><div class="use mut">可以用／不能用＋理由：第 3、5 步還沒做</div><div class=rv><b>Claude 覆核</b>　第 3、5 步還沒做</div></article></div></main><script>let F="",K="",U="";function apply(){document.querySelectorAll('.fact').forEach(a=>a.hidden=(!!F&&a.dataset.v!==F)||(!!K&&a.dataset.k!==K)||(!!U&&a.dataset.u!==U))}
+document.querySelectorAll('.chip.uc').forEach(b=>b.onclick=()=>{const on=!b.classList.contains('on');document.querySelectorAll('.chip.uc').forEach(x=>x.classList.remove('on'));if(on)b.classList.add('on');U=on?b.dataset.u:"";apply()});
+document.querySelectorAll('.chip[data-f]').forEach(b=>b.onclick=()=>{document.querySelectorAll('.chip[data-f]').forEach(x=>x.classList.toggle('on',x===b));F=b.dataset.f;apply()});
+document.querySelectorAll('.chip.kc').forEach(b=>b.onclick=()=>{const on=!b.classList.contains('on');document.querySelectorAll('.chip.kc').forEach(x=>x.classList.remove('on'));if(on)b.classList.add('on');K=on?b.dataset.k:"";apply()});</script></body></html>
