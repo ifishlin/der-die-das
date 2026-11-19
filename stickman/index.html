@@ -4,6 +4,12 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <title>Stickman 實驗頁</title>
 <style>
+.segbtns{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px;margin:14px 0}
+.segbtn{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:12px;border:2px solid var(--line);background:var(--panel);color:var(--fg);text-decoration:none;min-width:0}
+a.segbtn:hover{border-color:var(--acc)}.segbtn .sgc{font-size:30px;font-weight:800;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;flex:none;background:var(--line);color:var(--mut)}
+.segbtn .sgn{font-size:18px;font-weight:700;display:flex;flex-direction:column;flex:1;min-width:0}.segbtn small{font-size:12.5px;font-weight:400;color:var(--mut)}
+.segbtn .sgw{font-size:12.5px;color:var(--mut);white-space:nowrap}.segbtn.done .sgc{background:#2f8a55;color:#fff}.segbtn.doing .sgc{background:#2f6fa8;color:#fff}
+.segbtn.done{border-color:#2f8a55}.segbtn.doing{border-color:#2f6fa8}div.segbtn{opacity:.6}
 :root{--bg:#eef0ee;--panel:#fff;--fg:#1d2420;--mut:#66706a;--line:#d5dad6;--acc:#1f6b52}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;color-scheme:dark}
@@ -47,7 +53,7 @@ h3.grp{font-size:14px;color:var(--mut);font-weight:600;margin:18px 0 10px;letter
 <h2 class="grp">3. 劇情</h2>
 <div class="list">
   <a class="card" href="story/"><div class="cover"><div>劇情</div></div>
-    <div class="body"><time>27 頁・最近更新 2026-11-19</time><b>劇情</b><span>故事、拍攝清單和旁白、EP1 分鏡表。</span></div></a>
+    <div class="body"><time>20 頁・最近更新 2026-11-19</time><b>劇情</b><span>故事、拍攝清單和旁白、EP1 分鏡表。</span></div></a>
 </div>
 <hr class="sep">
 <h2 class="grp">4. 實驗</h2>
