@@ -46,8 +46,8 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <tr><td>16</td><td><a href="#s16">補背景和參考圖</a> <span class=chg>改</span></td><td class=pp>照地圖寫每一格背景看得到什麼，決定每格附哪些參考圖。</td><td class=pp>分鏡表每格的中文 prompt、背景、參考圖<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>🧪</td><td>背景由 LLM 手寫，你核對</td><td><code>背景：docs/requests/EP1-NN_bg_hand.json；參考圖：add_background.py</code></td></tr>
 <tr><td>17</td><td><a href="#s17">Flow 畫圖</a> <span class=chg>改</span></td><td class=pp>把 prompt 和參考圖送進 Flow，每格畫 4 張。</td><td class=pp>分鏡表每格的 4 張圖<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>🧪</td><td>我操作</td><td><code>flowbot/scene_draw.py</code></td></tr>
 <tr><td>18</td><td><a href="#s18">分鏡表＋驗收</a> <span class=chg>改</span></td><td class=pp>把畫好的圖排成分鏡表，我先標建議，你看完寫意見、挑每格要哪一張。</td><td class=pp>分鏡表（我標建議，你挑）<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>🧪</td><td>我先看，你看完寫意見</td><td><code>make_scale_check_v5.py</code></td></tr>
-<tr><td>19</td><td><a href="#s19">補救</a></td><td class=pp>畫錯的格子決定怎麼救：改 prompt 重畫、重問分鏡，或換鏡頭。</td><td class=pp>修改紀錄<br><a href="../redraw-review/">EP1 修改紀錄</a></td><td>✅</td><td>我提，你定</td><td><code>—</code></td></tr>
-<tr><td>20</td><td><a href="#s20">下載</a></td><td class=pp>把選定的圖從 Flow 下載下來。</td><td class=pp>定稿畫面（每格你選的那張）<br><a href="../picks-v7/">EP1 定稿畫面</a></td><td>🧪</td><td>你決定解析度</td><td><code>download_scene.py</code></td></tr>
+<tr><td>19</td><td><a href="#s19">補救</a></td><td class=pp>畫錯的格子決定怎麼救：改 prompt 重畫、重問分鏡，或換鏡頭。</td><td class=pp>分鏡表＋定稿畫面（必要產出，兩頁一致）；改過的 prompt 在修改紀錄<br><a href="../storyboard-ep2-final/">EP2 分鏡表（最新）</a><br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a><br><a href="../picks-v7/">EP1 定稿畫面</a><br><a href="../redraw-review/">EP1 修改紀錄</a></td><td>✅</td><td>我提，你定</td><td><code>—</code></td></tr>
+<tr><td>20</td><td><a href="#s20">下載</a></td><td class=pp>把選定的圖從 Flow 下載下來。</td><td class=pp>定稿畫面（第 19 步的產出，照它下載）<br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a><br><a href="../picks-v7/">EP1 定稿畫面</a></td><td>🧪</td><td>你決定解析度</td><td><code>download_scene.py</code></td></tr>
 <tr><td>21</td><td><a href="#s21">動畫（扣點）</a></td><td class=pp>決定哪些格要做成動畫（要花 Flow 點數）。</td><td class=pp>還沒有檢查頁</td><td>⬜</td><td>你（要花點數）</td><td><code>—</code></td></tr>
 <tr><td>22</td><td><a href="#s22">潤旁白</a> <span class=chg>改</span></td><td class=pp>把每格的旁白順成念得通順的錄音稿，意思和資訊不變。</td><td class=pp>旁白順稿對照<br><a href="../narration-smooth-ep2/">EP2 旁白順稿對照</a><br><a href="../narration-smooth/">EP1 旁白順稿對照</a></td><td>✅</td><td>我做，你看</td><td><code>make_narration_request.py、make_narration_compare.py</code></td></tr>
 <tr><td>23</td><td><a href="#s23">旁白配音</a></td><td class=pp>錄旁白（你自己錄），切成每一格的聲音。</td><td class=pp>錄音旁白對照<br><a href="../narration-recording/">EP1 錄音旁白對照</a></td><td>🧪</td><td>我做，你聽</td><td><code>studio_sichu_narr.sh</code></td></tr>
@@ -196,14 +196,15 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>Flow 畫完後（2026-11-13 改定）：</b></p><ul><li>第 1 步：你挑出 prompt 要改的格子、給指示；我照指示改 prompt，這格重新生圖。</li><li>第 2 步（第 1 步結束後）：我每格從 4 張挑一張標「Claude 建議」（看背景是否符合地圖；人物、物品是否符合參考圖；恐龍 size 是否吻合），不判斷是 prompt 錯還是生圖錯。</li><li>你根據建議和自己的判斷選圖：每格只能選一張，選的是要留下來的；一格都沒選＝四張都不行，整格重畫。</li></ul>
 <h2 id="s19">19. 補救 ✅</h2>
 <p class=pp><b>這步在幹嘛：</b>畫錯的格子決定怎麼救：改 prompt 重畫、重問分鏡，或換鏡頭。</p>
-<p class=pp><b>檢查頁：</b>修改紀錄<br><a href="../redraw-review/">EP1 修改紀錄</a></p>
+<p class=pp><b>檢查頁：</b>分鏡表＋定稿畫面（必要產出，兩頁一致）；改過的 prompt 在修改紀錄<br><a href="../storyboard-ep2-final/">EP2 分鏡表（最新）</a><br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a><br><a href="../picks-v7/">EP1 定稿畫面</a><br><a href="../redraw-review/">EP1 修改紀錄</a></p>
 <p><b>誰：</b>我提，你定。</p>
+<p><b>必要產出：定稿畫面（2026-11-19 使用者定）：</b></p><ul><li>補救做完，每格都有一張選定的圖，產出「定稿畫面」：照劇情順序排，每格放選定的那張＋旁白。</li><li>分鏡表和定稿畫面從同一份資料檔產生（EP2：episodes/002_chicxulub/final/storyboard.json），兩頁一定一致；改選只改資料檔，兩頁一起重新產生。</li><li>完成條件：定稿畫面每格都有圖、跟分鏡表一致，才進第 20 步下載。</li></ul>
 <p><b>2026-11-13 改定：</b></p><ul><li>Flow 畫完後我只做挑圖（上一步）；要不要補救、怎麼補，由你決定。下面是舊的做法，留著參考。</li></ul>
 <p><b>先後順序（2026-11-13 定，舊）：</b></p><ul><li>優先處理要改 prompt 的：prompt 沒寫對、沒寫到，或寫了會畫錯的（例：沒寫 HERO 站在圓環裡、直接寫甲龍害偽裝破功、沒寫手要純白、背景寫錯）。</li><li>多畫幾張就能解決的先不處理：prompt 已經寫對、只是 Flow 剛好畫歪一兩張（例：一張畫成光頭、一張細手細腳）。這種直接在分鏡表標「不要這張」，挑別張。</li><li>判斷方法：先打開那格的 prompt 看有沒有寫到。有寫到＝多畫幾張；沒寫到或寫錯＝改 prompt。</li><li>改 prompt 的格在分鏡表用「表達不好，要重寫 prompt」給意見；舊版存進修改紀錄（scripts/revisions.py），可以還原。</li><li>畫完之後要做什麼見「Flow 畫完之後」頁（stickman/revise-flow/）。</li></ul>
 <p><b>規則：</b></p><ul><li>大小不對只用兩種補救：恐龍只露一部分，或鏡頭拉遠。不用 Flow 的修改功能。</li><li>失敗就整段 prompt 重寫，不疊補丁句；每一格都重畫，舊圖只當構圖參考。</li><li>測試先講要回答什麼，對照只差一個條件。</li></ul>
 <h2 id="s20">20. 下載 🧪</h2>
 <p class=pp><b>這步在幹嘛：</b>把選定的圖從 Flow 下載下來。</p>
-<p class=pp><b>檢查頁：</b>定稿畫面（每格你選的那張）<br><a href="../picks-v7/">EP1 定稿畫面</a></p>
+<p class=pp><b>檢查頁：</b>定稿畫面（第 19 步的產出，照它下載）<br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a><br><a href="../picks-v7/">EP1 定稿畫面</a></p>
 <p><b>誰：</b>你決定解析度。<b>　我用：</b><code>download_scene.py</code></p>
 <p><b>怎麼做：</b>照記下的網址下載 2K。下載後檢查張數、解析度、Flow 垃圾桶裡有沒有誤丟的圖。</p>
 <h2 id="s21">21. 動畫（扣點） ⬜</h2>
