@@ -3,17 +3,19 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>製作步驟總表</title>
 <style>
-:root{--bg:#eef0ee;--panel:#fff;--fg:#1d2420;--mut:#66706a;--line:#d5dad6;--acc:#1f6b52;--code:#e4e8e5;--chg:#a0442c;--note:#fff4d2}
-@media (prefers-color-scheme:dark){:root{--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;--code:#262e2a;--chg:#e08a70;--note:#3a3320;color-scheme:dark}}
+:root{--bg:#eef0ee;--panel:#fff;--fg:#1d2420;--mut:#66706a;--line:#d5dad6;--acc:#1f6b52;--code:#e4e8e5;--chg:#a0442c;--note:#fff4d2;--stop:#fbe6c8;--lock:#e3d4f2}
+@media (prefers-color-scheme:dark){:root{--bg:#141816;--panel:#1d2320;--fg:#e6ebe8;--mut:#93a09a;--line:#2f3833;--acc:#6cc7a3;--code:#262e2a;--chg:#e08a70;--note:#3a3320;--stop:#4a3a1c;--lock:#3a2d4a;color-scheme:dark}}
 body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif;padding:28px max(16px,4vw) 64px}
-main{max-width:1600px;margin:0 auto}main>p,main>ul,main>h2{max-width:900px}table.prog td.pg{white-space:normal;min-width:9em;font-size:13px}table.prog td.pg span{display:block;color:var(--mut)}td.pg.wait{background:rgba(192,134,26,.2)}td.pg.doing{background:rgba(47,111,168,.18)}ul.now li{margin:3px 0}
+main{max-width:1600px;margin:0 auto}main>p,main>ul,main>h2{max-width:900px}
 a{color:var(--acc)}
 h1{font-size:26px;margin:8px 0 6px;text-wrap:balance}
 h2{font-size:19px;margin:36px 0 8px;padding-top:12px;border-top:1px solid var(--line);scroll-margin-top:12px}
+h2 .seg{font-size:13px;font-weight:600;color:var(--mut);border:1px solid var(--line);border-radius:5px;padding:0 6px;vertical-align:middle}
 code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:.88em;word-break:break-all}
 .sub{color:var(--mut);max-width:80ch}
 .tw{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px;margin:12px 0}
 table{border-collapse:collapse;width:100%;font-size:14px}
+tr.stop td{background:var(--stop)}tr.lock td{background:var(--lock);text-align:center;font-weight:700}
 td.pp{min-width:14em;max-width:34em;line-height:1.55}p.pp{background:var(--panel);border-left:4px solid var(--acc);padding:6px 12px;border-radius:4px}
 th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 th{color:var(--mut);font-weight:600;white-space:nowrap}
@@ -25,238 +27,233 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 </style></head><body><main>
 <a href="../">← stickman</a>
 <h1>從書的一章到成片：全部步驟</h1>
-<p class="sub">2026-11-17：寫故事之前先查科普：第 2～5 步改成「列書上知識點 → 查核 → 討論書外知識 → 查核書外知識」，細節還在討論。<br>2026-11-12 重新整理（11-07 那版已經過時：拿掉每格分析、走位／鏡頭／寫 prompt 合成分鏡設計、設定圖提前、新增分幕、檢查分鏡回覆、補背景）。依據 WORKFLOW.md、docs/production_sop.md 和 EP1 第 1～5 版實作紀錄。</p>
-<p class="sub">狀態：✅ 討論定案　🧪 做過、沒定案　⬜ 沒討論。「給你用」是做給你操作或看的頁面；「我用」是我跑的程式。標 <span class="chg">改</span> 的是這次跟 11-07 版不一樣的地方。</p>
-<h2 id="table">總表</h2><div class="tw"><table><tr><th>#</th><th>步驟</th><th>這步在幹嘛</th><th>檢查頁（在哪裡給你確認）</th><th>狀態</th><th>誰</th><th>我用</th></tr>
-<tr><td>1</td><td><a href="#s1">選章</a></td><td class=pp>決定這一集改編書的哪一章。</td><td class=pp>對話裡說</td><td>✅</td><td>你</td><td><code>—</code></td></tr>
-<tr><td>2</td><td><a href="#s2">列出書上的知識點</a> <span class=chg>改</span></td><td class=pp>把這一章裡所有講真實世界的事實，一條一條列出來（附原文和頁碼），先不管對錯。</td><td class=pp>不另外檢查，彙整進第 5 步的報告<br><a href="../science-ep2/">EP2 科普準備報告</a></td><td>✅</td><td>CLI 模型做（request），我抽查，你看</td><td><code>request 範本：docs/science_requests/2_list_facts.md；scripts/science_request.py 2 EPn</code></td></tr>
-<tr><td>3</td><td><a href="#s3">查核書上的知識點</a> <span class=chg>改</span></td><td class=pp>每一點上網查對不對、附出處；有問題的寫好旁白可以怎麼說。</td><td class=pp>不另外檢查，彙整進第 5 步的報告<br><a href="../science-ep2/">EP2 科普準備報告</a></td><td>🧪</td><td>CLI 模型查（request），我覆核，你決定用哪些</td><td><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></td></tr>
-<tr><td>4</td><td><a href="#s4">討論要補的書外知識</a> <span class=chg>改</span></td><td class=pp>故事需要、但書上沒講的知識（地點、年代、環境、動物…），列出來討論要補哪些。</td><td class=pp>我在對話列清單，你回增刪；定案的寫進報告<br><a href="../science-ep2/">EP2 科普準備報告</a></td><td>🧪</td><td>我先提，你增刪</td><td><code>—</code></td></tr>
-<tr><td>5</td><td><a href="#s5">查核書外知識</a> <span class=chg>改</span></td><td class=pp>補的知識也查對錯和出處；全部整理成「科普準備報告」，你決定每點用不用。</td><td class=pp>科普準備報告（必要產出）<br><a href="../science-ep2/">EP2 科普準備報告</a><br><a href="../science-ratio/">EP1 科普點核對（舊格式）</a></td><td>🧪</td><td>CLI 模型查（同一份 request），我覆核，你決定用哪些</td><td><code>同「查核書上的知識點」</code></td></tr>
-<tr><td>6</td><td><a href="#s6">系列設定</a> <span class=chg>改</span></td><td class=pp>整個系列共用、做一次就好的設定集：①人物（HERO、博士）②人物關係（打工、賴帳）③表演方式（林克式發聲、第二人稱旁白）④畫風（粗手腳火柴人、皮膚純白）⑤固定場景和道具（實驗室、HERO 房間、校園、回家按鈕、相機、電擊槍、生存指南）。EP1 做完，之後只有要改這五類才回來。不含：各集的任務、賴帳理由（在大綱）、這集出現的恐龍或動物（大綱決定用哪些、設定圖再畫）。</td><td class=pp>設定集<br><a href="../characters/">人物與場景設定</a><br><a href="../dinos/">恐龍系列設定（這個時代）</a></td><td>✅</td><td>第一集做；要改設定時才做</td><td><code>—</code></td></tr>
-<tr><td>7</td><td><a href="#s7">大綱</a> <span class=chg>改</span></td><td class=pp>這一集的骨架：每一段發生什麼、目的、用哪些查核過的知識點；加上固定橋段這集怎麼填（任務、忘了帶什麼、賴帳理由、接上一集的東西）和這集出現哪些動物。</td><td class=pp>大綱頁<br><a href="../outline-ep2/">EP2 大綱</a></td><td>🧪</td><td>CLI 模型寫（request），你確認（含固定橋段這集怎麼填）</td><td><code>request 範本：docs/story_requests/7_outline.md；scripts/make_outline_request.py build／send／check EPn</code></td></tr>
-<tr><td>8</td><td><a href="#s8">寫故事</a></td><td class=pp>照大綱寫成完整的故事。每一句旁白有用到知識點的要標編號（#12），故事頁會把科普句標成綠底、用字數算科普比例（目標 30%）。</td><td class=pp>故事頁<br><a href="../story-ep2/">EP2 故事</a></td><td>✅</td><td>我寫</td><td><code>—</code></td></tr>
-<tr><td>9</td><td><a href="#s9">審故事</a></td><td class=pp>你改故事的邏輯、場景、道具、旁白，來回到定案。</td><td class=pp>故事頁：科普比例、綠底科普句、新舊對照<br><a href="../story-ep2/">EP2 故事</a><br><a href="../story-review/">恐龍年代兩集：審故事（EP1）</a></td><td>✅</td><td>你</td><td><code>make_script_v6.py</code></td></tr>
-<tr><td>10</td><td><a href="#s10">拍攝清單＋旁白（定稿點）</a></td><td class=pp>把故事切成一格一格的畫面，每格配好旁白；這一步定稿後，畫面內容就不再大改。</td><td class=pp>拍攝清單頁<br><a href="../shotlist-ep2/">EP2 拍攝清單（切格＋分幕＋地圖）</a><br><a href="../storyboard-ep1ep2/">恐龍年代兩集：拍攝清單（EP1）</a></td><td>✅</td><td>我切格，你確認定稿</td><td><code>—</code></td></tr>
-<tr><td>11</td><td><a href="#s11">分幕</a> <span class=chg>改</span></td><td class=pp>把同一地點、時間連續的格子合成一幕，之後設計和畫圖都以幕為單位。</td><td class=pp>拍攝清單頁（照幕排）<br><a href="../shotlist-ep2/">EP2 拍攝清單（切格＋分幕＋地圖）</a></td><td>🧪</td><td>我分，你看</td><td><code>make_scene_request.py 的 CONF</code></td></tr>
-<tr><td>12</td><td><a href="#s12">場景地圖</a> <span class=chg>改</span></td><td class=pp>每個地點畫一張俯視地圖（樹、河、門、桌子在哪），讓同一地點的每一格畫面一致。</td><td class=pp>拍攝清單頁每幕的地圖；要改用地圖編輯器（本機 http://127.0.0.1:8765/）<br><a href="../shotlist-ep2/">EP2 拍攝清單（切格＋分幕＋地圖）</a><br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>✅</td><td>我畫初稿，你改</td><td><code>render_map.py</code></td></tr>
-<tr><td>13</td><td><a href="#s13">設定圖</a> <span class=chg>改</span></td><td class=pp>畫角色、道具、地點、這集的動物的設定圖，給 Flow 當參考圖，讓長相和大小每格一致。</td><td class=pp>新設定圖挑圖頁；定案的放設定集<br><a href="../refs-ep2/">EP2 新設定圖：挑圖</a><br><a href="../characters/">人物與場景設定</a><br><a href="../dinos/">恐龍系列設定</a></td><td>✅</td><td>我寫 prompt，你在 Flow 畫、挑圖</td><td><code>build_scale_pairs.py</code></td></tr>
-<tr><td>14</td><td><a href="#s14">分鏡設計（送 request 給 Claude）</a> <span class=chg>改</span></td><td class=pp>每一格決定鏡頭：拍誰、多遠、從哪個角度、人站哪裡，寫成英文 prompt。</td><td class=pp>分鏡回覆查詢<br><a href="../replies/">分鏡回覆查詢</a></td><td>🧪</td><td>Claude 設計，你看</td><td><code>make_scene_request.py</code></td></tr>
-<tr><td>15</td><td><a href="#s15">檢查分鏡回覆</a> <span class=chg>改</span></td><td class=pp>檢查分鏡模型的回覆有沒有漏旁白、站錯位置、用了不存在的參考圖。</td><td class=pp>我做，不用你檢查<br><a href="../replies/">分鏡回覆查詢</a></td><td>🧪</td><td>我</td><td><code>check_scene_reply.py、compare_scene_replies.py</code></td></tr>
-<tr><td>16</td><td><a href="#s16">補背景和參考圖</a> <span class=chg>改</span></td><td class=pp>照地圖寫每一格背景看得到什麼，決定每格附哪些參考圖。</td><td class=pp>分鏡表每格的中文 prompt、背景、參考圖<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>🧪</td><td>背景由 LLM 手寫，你核對</td><td><code>背景：docs/requests/EP1-NN_bg_hand.json；參考圖：add_background.py</code></td></tr>
-<tr><td>17</td><td><a href="#s17">Flow 畫圖</a> <span class=chg>改</span></td><td class=pp>把 prompt 和參考圖送進 Flow，每格畫 4 張。</td><td class=pp>分鏡表每格的 4 張圖<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>🧪</td><td>我操作</td><td><code>flowbot/scene_draw.py</code></td></tr>
-<tr><td>18</td><td><a href="#s18">分鏡表＋驗收</a> <span class=chg>改</span></td><td class=pp>把畫好的圖排成分鏡表，我先標建議，你看完寫意見、挑每格要哪一張。</td><td class=pp>分鏡表（我標建議，你挑）<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></td><td>🧪</td><td>我先看，你看完寫意見</td><td><code>make_scale_check_v5.py</code></td></tr>
-<tr><td>19</td><td><a href="#s19">補救</a></td><td class=pp>畫錯的格子決定怎麼救：改 prompt 重畫、重問分鏡，或換鏡頭。</td><td class=pp>分鏡表＋定稿畫面（必要產出，兩頁一致）；改過的 prompt 在修改紀錄<br><a href="../storyboard-ep2-final/">EP2 分鏡表（最新）</a><br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a><br><a href="../picks-v7/">EP1 定稿畫面</a><br><a href="../redraw-review/">EP1 修改紀錄</a></td><td>✅</td><td>我提，你定</td><td><code>—</code></td></tr>
-<tr><td>20</td><td><a href="#s20">下載</a></td><td class=pp>把選定的圖從 Flow 下載下來。</td><td class=pp>定稿畫面（第 19 步的產出，照它下載）<br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a><br><a href="../picks-v7/">EP1 定稿畫面</a></td><td>🧪</td><td>你決定解析度</td><td><code>download_scene.py</code></td></tr>
-<tr><td>21</td><td><a href="#s21">動畫（扣點）</a></td><td class=pp>決定哪些格要做成動畫（要花 Flow 點數）。</td><td class=pp>還沒有檢查頁</td><td>⬜</td><td>你（要花點數）</td><td><code>—</code></td></tr>
-<tr><td>22</td><td><a href="#s22">潤旁白</a> <span class=chg>改</span></td><td class=pp>把每格的旁白順成念得通順的錄音稿，意思和資訊不變。</td><td class=pp>旁白順稿對照<br><a href="../narration-smooth-ep2/">EP2 旁白順稿對照</a><br><a href="../narration-smooth/">EP1 旁白順稿對照</a></td><td>✅</td><td>我做，你看</td><td><code>make_narration_request.py、make_narration_compare.py</code></td></tr>
-<tr><td>23</td><td><a href="#s23">旁白配音</a></td><td class=pp>錄旁白（你自己錄），切成每一格的聲音。</td><td class=pp>錄音旁白對照<br><a href="../narration-recording/">EP1 錄音旁白對照</a></td><td>🧪</td><td>我做，你聽</td><td><code>studio_sichu_narr.sh</code></td></tr>
-<tr><td>24</td><td><a href="#s24">音效</a></td><td class=pp>每一格配上音效。</td><td class=pp>分鏡表、定稿畫面上的音效（定稿畫面可以試聽）<br><a href="../picks-v7/">EP1 定稿畫面</a></td><td>🧪</td><td>我做，你聽</td><td><code>MMAudio、TangoFlux</code></td></tr>
-<tr><td>25</td><td><a href="#s25">配樂</a></td><td class=pp>選背景音樂。</td><td class=pp>還沒有檢查頁</td><td>⬜</td><td>你</td><td><code>—</code></td></tr>
-<tr><td>26</td><td><a href="#s26">運鏡＋組片＋字幕</a></td><td class=pp>加上鏡頭移動、混音、字幕，組成整集影片。</td><td class=pp>桌面上的 mp4</td><td>🧪</td><td>我做</td><td><code>assemble.py</code></td></tr>
-<tr><td>27</td><td><a href="#s27">看成片</a></td><td class=pp>你看完整集，記下要改的地方。</td><td class=pp>桌面上的 mp4；問題在對話裡講</td><td>✅</td><td>你</td><td><code>—</code></td></tr>
-<tr><td>28</td><td><a href="#s28">上架（標題、縮圖、說明欄）</a></td><td class=pp>準備標題、縮圖、說明欄（含參考資料），上傳。</td><td class=pp>還沒有檢查頁</td><td>⬜</td><td>你</td><td><code>—</code></td></tr>
-<tr><td>29</td><td><a href="#s29">歐美版</a></td><td class=pp>換英文旁白和在地化細節，做歐美版。</td><td class=pp>還沒有檢查頁</td><td>⬜</td><td>你</td><td><code>—</code></td></tr>
+<p class="sub">2026-11-19 重新整理成 25 步：減少你要介入的點。你只在<b>粗剪</b>、<b>成片</b>、<b>封面和說明</b>停下來；科普報告、劇本、分場表照樣做出來，可以不看。舊的 29 步版本見 git 歷史。</p>
+<p class="sub">狀態：✅ 討論定案　🧪 做過、沒定案　⬜ 沒討論　⏸ 暫不做。<a href="../flowchart/">流程圖</a>（兩個循環、四條回頭線）。</p>
+<h2 id="segs">分段：哪些步驟是一起的</h2><div class="tw"><table><tr><th>段</th><th>步驟</th><th>段尾</th></tr>
+<tr class=""><td><b>— 開始</b></td><td>1. 選章</td><td>你提出這一集要做哪一章</td></tr>
+<tr class=""><td><b>A 科普</b></td><td>2. 列出書上的知識點 → 3. 查核書上的知識點 → 4. 想書外知識 → 5. 查核書外知識</td><td>產出科普報告；可以不看，不看就只用我判定可以用的</td></tr>
+<tr class=""><td><b>B 劇本</b></td><td>6. 系列設定 → 7. 大綱 → 8. 寫劇本 → 9. 潤旁白</td><td>產出劇本；可以不看</td></tr>
+<tr class=""><td><b>C 分場</b></td><td>10. 分場 → 11. 場景地圖 → 12. 設定圖</td><td>產出分場表（場、地圖、設定圖）；可以不看</td></tr>
+<tr class="stop"><td><b>D 分鏡</b></td><td>13. 分鏡設計（拆鏡頭） → 14. 檢查分鏡回覆 → 15. 補背景和參考圖 → 16. Flow 畫圖 → 17. 挑圖、下載、配音、壓粗剪</td><td>停：看粗剪</td></tr>
+<tr class="stop"><td><b>E 改版</b></td><td>18. 改版</td><td>停：寫意見，循環到你同意「粗剪定版」</td></tr>
+<tr class="lock"><td colspan=3>═══ 粗剪定版：鏡頭、選用條、旁白、配音鎖定，之後不回到第 17 步之前 ═══</td></tr>
+<tr class="stop"><td><b>F 成片</b></td><td>19. 動畫 → 20. 音效 → 21. 配樂 → 22. 運鏡＋組片 → 23. 看成片</td><td>停：看成片，循環到你滿意</td></tr>
+<tr class="stop"><td><b>G 包裝</b></td><td>24. 封面、標題、說明欄 → 25. 英文版</td><td>停：看封面、標題、說明欄（中文版、英文版）</td></tr>
 </table></div>
-<p class="sub">各集進度：每一集的頁面裡有自己的 29 步進度表（<a href="../story/ep1/#progress">EP1</a>、<a href="../story/ep2/#progress">EP2</a>）。</p>
-<p class="note"><b>順序不能倒</b>：列知識點 → 查核 → 補書外知識 → 查核 → 故事 → 拍攝清單 → 分幕 → 地圖 → 設定圖 → 分鏡設計 → 補背景和參考圖 → 畫圖。前面一改，後面就要重做（EP1 v5 邊畫邊改劇本，結果全部重畫；11-12 實驗室改成一樓，第 4 幕要重問分鏡）。</p>
-<h2 id="s1">1. 選章 ✅</h2>
+<h2 id="terms">用語（對應拍電影）</h2><div class="tw"><table><tr><th>用語</th><th>電影</th><th>意思</th></tr><tr><td><b>劇本</b></td><td>screenplay</td><td>只有文字：動作描述、旁白。沒有圖，不決定鏡頭。第 6～9 步。</td></tr><tr><td><b>分場表</b></td><td>script breakdown</td><td>要哪些場、每場的地圖、角色、服裝、道具、設定圖。第 10～12 步。</td></tr><tr><td><b>分鏡表</b></td><td>storyboard＋shot list</td><td>每場拆成鏡頭、每個鏡頭怎麼拍、畫出來的圖。第 13～17 步。</td></tr><tr><td><b>場</b></td><td>scene</td><td>同一個地點、用同一張地圖的一段（原本叫幕）。</td></tr><tr><td><b>鏡頭</b></td><td>shot</td><td>分鏡表上的一個畫面，配一段旁白（原本叫格）；第 14 步通過後鎖定。</td></tr><tr><td><b>遠景備份</b></td><td>coverage</td><td>HERO 和大恐龍同框時，同一個鏡頭再多拍一個遠一級的（原本叫遠一級、加拍）。不算新的鏡頭。</td></tr><tr><td><b>條</b></td><td>take</td><td>Flow 每次為一個鏡頭畫出的 4 張（原本叫候選圖）。</td></tr><tr><td><b>選用條</b></td><td>selected take</td><td>每個鏡頭挑出來用的那一條。</td></tr><tr><td><b>粗剪</b></td><td>rough cut</td><td>選用條＋配音＋字幕的中繼影片。</td></tr><tr><td><b>定版</b></td><td>picture lock</td><td>你同意粗剪後，鏡頭、選用條、旁白、配音鎖定。</td></tr></table></div>
+<h2 id="table">總表</h2><div class="tw"><table><tr><th>#</th><th>段</th><th>步驟</th><th>這步在幹嘛</th><th>檢查頁</th><th>狀態</th><th>誰</th><th>我用</th></tr>
+<tr><td>1</td><td>—</td><td><a href="#s1">選章</a></td><td class=pp>決定這一集改編書的哪一章。</td><td class=pp>對話裡說</td><td>✅</td><td>你</td><td><code>—</code></td></tr>
+<tr><td>2</td><td>A</td><td><a href="#s2">列出書上的知識點</a> <span class=chg>改</span></td><td class=pp>把這一章裡所有講真實世界的事實，一條一條列出來（附原文和頁碼），先不管對錯。</td><td class=pp>不停；彙整進第 5 步的科普報告<br><a href="../science-ep1-new/">EP1-new 科普報告</a></td><td>✅</td><td>CLI 模型做（request），我抽查；你不參加</td><td><code>request 範本：docs/science_requests/2_list_facts.md；scripts/science_request.py 2 EPn</code></td></tr>
+<tr><td>3</td><td>A</td><td><a href="#s3">查核書上的知識點</a> <span class=chg>改</span></td><td class=pp>每一點上網查對不對、附出處；我判定可以用或不能用。</td><td class=pp>不停；彙整進第 5 步的科普報告<br><a href="../science-ep1-new/">EP1-new 科普報告</a></td><td>✅</td><td>CLI 模型查（request），我覆核、決定用哪些；你不參加</td><td><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></td></tr>
+<tr><td>4</td><td>A</td><td><a href="#s4">想書外知識</a> <span class=chg>改</span></td><td class=pp>故事需要、但書上沒講的知識（地點、年代、環境、動物…），我自己列出來。</td><td class=pp>不停；彙整進第 5 步的科普報告<br><a href="../science-ep1-new/">EP1-new 科普報告</a></td><td>✅</td><td>我想；你不參加</td><td><code>—</code></td></tr>
+<tr><td>5</td><td>A</td><td><a href="#s5">查核書外知識</a> <span class=chg>改</span></td><td class=pp>書外知識也查對錯和出處；全部整理成科普報告，列出可以用和不能用的。</td><td class=pp>科普報告（可以不看）<br><a href="../science-ep1-new/">EP1-new 科普報告</a><br><a href="../science-ep2/">EP2 科普準備報告</a></td><td>✅</td><td>CLI 模型查（同一份 request），我覆核；你不參加</td><td><code>同「查核書上的知識點」；scripts/make_science_report.py</code></td></tr>
+<tr><td>6</td><td>B</td><td><a href="#s6">系列設定</a> <span class=chg>改</span></td><td class=pp>整個系列共用的設定，預設沿用。</td><td class=pp>設定集（預設沿用）<br><a href="../characters/">人物與場景設定</a></td><td>✅</td><td>預設沿用；你不參加</td><td><code>—</code></td></tr>
+<tr><td>7</td><td>B</td><td><a href="#s7">大綱</a> <span class=chg>改</span></td><td class=pp>這一集的骨架：每一段發生什麼、用哪些可以用的知識點，加上固定橋段這集怎麼填。</td><td class=pp>不停；放進劇本頁<br><a href="../outline-ep1-new/">EP1-new 大綱</a></td><td>✅</td><td>CLI 模型寫（request）；不停</td><td><code>request 範本：docs/story_requests/7_outline.md；scripts/make_outline_request.py build／send／check EPn</code></td></tr>
+<tr><td>8</td><td>B</td><td><a href="#s8">寫劇本</a> <span class=chg>改</span></td><td class=pp>照大綱寫成劇本：動作描述和旁白，只有文字。</td><td class=pp>不停；放進劇本頁<br><a href="../story-ep1-new/">EP1-new 故事</a></td><td>✅</td><td>我寫；不停</td><td><code>—</code></td></tr>
+<tr><td>9</td><td>B</td><td><a href="#s9">潤旁白</a> <span class=chg>改</span></td><td class=pp>把旁白順成念得通順的錄音稿；跟大綱、劇本放在同一頁（劇本頁）。</td><td class=pp>劇本頁（可以不看）<br><a href="../story-ep1-new/">EP1-new 故事</a></td><td>✅</td><td>模型順稿（request）；不停</td><td><code>make_narration_request.py</code></td></tr>
+<tr><td>10</td><td>C</td><td><a href="#s10">分場</a> <span class=chg>改</span></td><td class=pp>把劇本分成一場一場，每場一個地點，記下角色、服裝、道具。</td><td class=pp>不停；放進分場表<br><a href="../shotlist-ep1-new/">EP1-new 拍攝清單</a></td><td>✅</td><td>我做；不停</td><td><code>make_scene_request.py 的 CONF</code></td></tr>
+<tr><td>11</td><td>C</td><td><a href="#s11">場景地圖</a> <span class=chg>改</span></td><td class=pp>每個地點畫一張俯視地圖，讓同一地點的每個鏡頭畫面一致。</td><td class=pp>不停；放進分場表<br><a href="../shotlist-ep2/">EP2 拍攝清單（切格＋分幕＋地圖）</a></td><td>✅</td><td>我畫；不停</td><td><code>render_map.py</code></td></tr>
+<tr><td>12</td><td>C</td><td><a href="#s12">設定圖</a> <span class=chg>改</span></td><td class=pp>畫這集新的角色、道具、地點、動物的設定圖；跟場、地圖一起放進分場表。</td><td class=pp>分場表（可以不看）<br><a href="../refs-ep2/">EP2 新設定圖：挑圖</a><br><a href="../characters/">人物與場景設定</a></td><td>✅</td><td>我寫 prompt、我在 Flow 畫、我挑；不停</td><td><code>build_scale_pairs.py、flowbot</code></td></tr>
+<tr><td>13</td><td>D</td><td><a href="#s13">分鏡設計（拆鏡頭）</a> <span class=chg>改</span></td><td class=pp>每一場拆成鏡頭，決定每個鏡頭拍誰、多遠、什麼角度，寫成英文 prompt。</td><td class=pp>不停；放進分鏡表<br><a href="../replies/">分鏡回覆查詢</a></td><td>✅</td><td>Claude CLI 設計（request）；不停</td><td><code>make_scene_request.py</code></td></tr>
+<tr><td>14</td><td>D</td><td><a href="#s14">檢查分鏡回覆</a> <span class=chg>改</span></td><td class=pp>檢查旁白有沒有全部分到鏡頭、一字不差，遠景備份有沒有，欄位對不對。</td><td class=pp>不停；我做</td><td>✅</td><td>程式檢查＋我；不停</td><td><code>check_scene_reply.py</code></td></tr>
+<tr><td>15</td><td>D</td><td><a href="#s15">補背景和參考圖</a> <span class=chg>改</span></td><td class=pp>照地圖寫每個鏡頭的背景，決定每個鏡頭附哪些參考圖。</td><td class=pp>不停；分鏡表每個鏡頭的中文 prompt<br><a href="../storyboard-ep1-new/">EP1-new 分鏡表</a></td><td>✅</td><td>LLM 逐鏡頭手寫；不停</td><td><code>背景：docs/requests/EPn-NN_bg_hand.json；組合：assemble_*.py</code></td></tr>
+<tr><td>16</td><td>D</td><td><a href="#s16">Flow 畫圖</a></td><td class=pp>把 prompt 和參考圖送進 Flow，每個鏡頭畫 4 條。</td><td class=pp>不停</td><td>✅</td><td>我操作（EP1 本機；其他集新電腦 flow_runner）；不停</td><td><code>flowbot/scene_draw.py</code></td></tr>
+<tr><td>17</td><td>D</td><td><a href="#s17">挑圖、下載、配音、壓粗剪</a> <span class=chg>改</span></td><td class=pp>每個鏡頭挑一條、下載 2K、配音，壓成粗剪給你看。</td><td class=pp>停：粗剪；分鏡表和定稿畫面一致<br><a href="../storyboard-ep2-final/">EP2 分鏡表（最新）</a><br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a></td><td>✅</td><td>我做；做完停下來給你看粗剪</td><td><code>make_final_*.py、download_scene.py、voice_tools、assemble.py</code></td></tr>
+<tr><td>18</td><td>E</td><td><a href="#s18">改版</a> <span class=chg>改</span></td><td class=pp>照你看粗剪的意見，走四條線之一回頭改，再壓粗剪；循環到你同意定版。</td><td class=pp>停：你寫意見，循環到定版<br><a href="../storyboard-ep2-final/">EP2 分鏡表（最新）</a></td><td>✅</td><td>你寫意見，我照意見回頭改；循環</td><td><code>—</code></td></tr>
+<tr><td>19</td><td>F</td><td><a href="#s19">動畫</a> <span class=chg>改</span></td><td class=pp>暫不做。</td><td class=pp>暫不做</td><td>⏸</td><td>暫不做</td><td><code>—</code></td></tr>
+<tr><td>20</td><td>F</td><td><a href="#s20">音效</a> <span class=chg>改</span></td><td class=pp>定版後配環境音和事件音效。</td><td class=pp>不停</td><td>🧪</td><td>我做；不停</td><td><code>MMAudio、TangoFlux</code></td></tr>
+<tr><td>21</td><td>F</td><td><a href="#s21">配樂</a> <span class=chg>改</span></td><td class=pp>暫不做。</td><td class=pp>暫不做</td><td>⏸</td><td>暫不做</td><td><code>—</code></td></tr>
+<tr><td>22</td><td>F</td><td><a href="#s22">運鏡＋組片</a> <span class=chg>改</span></td><td class=pp>加上鏡頭移動、音效，從定版粗剪組成成片。</td><td class=pp>不停</td><td>🧪</td><td>我做；不停</td><td><code>assemble.py</code></td></tr>
+<tr><td>23</td><td>F</td><td><a href="#s23">看成片</a> <span class=chg>改</span></td><td class=pp>你看完整集；不滿意就回到 19～22 改。</td><td class=pp>停：成片 mp4；問題在對話裡講</td><td>✅</td><td>你看；循環</td><td><code>—</code></td></tr>
+<tr><td>24</td><td>G</td><td><a href="#s24">封面、標題、說明欄</a> <span class=chg>改</span></td><td class=pp>做封面、寫標題和說明欄，給你看；上傳你自己來。</td><td class=pp>停：還沒有頁面</td><td>🧪</td><td>我做，做完給你看</td><td><code>—</code></td></tr>
+<tr><td>25</td><td>G</td><td><a href="#s25">英文版</a> <span class=chg>改</span></td><td class=pp>旁白改寫成英文、英文配音、重組；英文封面和說明。</td><td class=pp>停：英文封面和說明；還沒有頁面</td><td>🧪</td><td>模型改寫旁白（request），我配音、重組；英文封面和說明給你看</td><td><code>—</code></td></tr>
+</table></div>
+<p class="sub">各集進度：每一集的頁面裡有自己的進度表（<a href="../story/ep1/#progress">EP1</a>、<a href="../story/ep2/#progress">EP2</a>、<a href="../story/ep1-new/#progress">EP1-new</a>）。</p>
+<p class="note"><b>順序不能倒</b>：科普 → 劇本 → 分場表 → 分鏡表 → 粗剪。前面一改，後面受影響的部分就要重做；所以改版時只重跑受影響的場或鏡頭。</p>
+<h2 id="s1">1. 選章 ✅ <span class="seg">— 開始</span></h2>
 <p class=pp><b>這步在幹嘛：</b>決定這一集改編書的哪一章。</p>
 <p class=pp><b>檢查頁：</b>對話裡說</p>
 <p><b>誰：</b>你。</p>
 <p><b>怎麼做：</b>從《How to Survive History》挑一章，原文照片放在 source/how_to_survive_history/chNN_*。前三章對應 EP1～EP3。</p>
-<h2 id="s2">2. 列出書上的知識點 ✅</h2>
+<h2 id="s2">2. 列出書上的知識點 ✅ <span class="seg">A 科普</span></h2>
 <p class=pp><b>這步在幹嘛：</b>把這一章裡所有講真實世界的事實，一條一條列出來（附原文和頁碼），先不管對錯。</p>
-<p class=pp><b>檢查頁：</b>不另外檢查，彙整進第 5 步的報告<br><a href="../science-ep2/">EP2 科普準備報告</a></p>
-<p class="chgline"><span class="chg">改</span> 2026-11-17 改：寫成 request 交給 CLI 模型、直接讀照片；只給讀檔權限，保證只用書</p>
-<p><b>誰：</b>CLI 模型做（request），我抽查，你看。<b>　我用：</b><code>request 範本：docs/science_requests/2_list_facts.md；scripts/science_request.py 2 EPn</code></p>
-<p><b>怎麼做：</b></p><ul><li>送 Claude CLI，直接讀書頁照片；只給讀檔、不給上網，保證只用書。這一步不判斷對錯。</li><li>先做頁面檢查：照片和頁碼對照（沒印的推算、標「推定」）、前後頁接不接得上（缺頁）、照片裡別章的部分不列。</li><li>看不清楚不硬猜：列「建議重拍」清單（照片、頁、位置、問題），你重拍後再跑。</li><li>一點＝一句可以查證、講真實世界的話：數字、比較、因果、描述、專家說法、求生建議；圖表上的事實也算。玩笑、比喻、純劇情假設不算。</li><li>每點附書上那一句原文和頁碼；能分開查的就拆開；重複的合併；保留原文語氣（may、about → 可能、大約）；英制加公制換算。</li><li>產出 docs/science/EPn_book_facts.json。寧可多列不要漏，之後再篩。</li></ul>
-<p><b>為什麼不先抄全文：</b>2026-11-17 試過先把整章逐字抄成文字檔，模型因版權拒絕（整章逐字等於重製書的內容）。每點附原文那一句＋頁碼就夠查核用，照片留著隨時對照。</p>
-<p><b>逐頁核對（2v，EP2 加的）：</b></p><ul><li>第 2 步讀完，程式把照片轉正（upright/）、切成單頁（pages/），每頁送一份 request（只給讀檔），模型對照照片逐字核對每一點、找漏列。</li><li>EP2 第一次讀：5 張照片拍成橫的，只讀出 45 點、還誤報要重拍；轉正後 90 點，逐頁核對再改正 22 點（數字、單位、編造的專家名字）、補 5 點。</li><li>範本：docs/science_requests/2v_verify_page.md；scripts/science_request.py 2v EPn</li></ul>
-<p><b>我做：</b>放大幾頁照片人工對照，看有沒有抄錯、漏列。</p>
-<p><b>EP2 試跑：</b>2026-11-17 跑完，報告在 science-ep2/。</p>
-<h2 id="s3">3. 查核書上的知識點 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>每一點上網查對不對、附出處；有問題的寫好旁白可以怎麼說。</p>
-<p class=pp><b>檢查頁：</b>不另外檢查，彙整進第 5 步的報告<br><a href="../science-ep2/">EP2 科普準備報告</a></p>
-<p class="chgline"><span class="chg">改</span> 2026-11-17 新增：以前沒有這一步，EP1 是事後補查</p>
-<p><b>誰：</b>CLI 模型查（request），我覆核，你決定用哪些。<b>　我用：</b><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></p>
-<p><b>為什麼：</b>EP1 先寫故事、事後才查，結果改了 15 句旁白，還有一格要在畫面加註「實際上沒這麼誇張」。先查完，才知道故事可以用哪些、怎麼講。</p>
-<p><b>怎麼做：</b></p><ul><li>送 Claude CLI，開上網權限；一次 8～10 點，分批平行跑。</li><li>判定四級（正確／大致正確／有爭議／有誤）照範本裡的定義；有爭議、有誤的附適合旁白的建議說法。</li><li>出處順序：論文 → 博物館、大學 → 可信科普媒體；維基百科不能當唯一出處；每點至少 1 個、附網址；查不到就標「找不到出處」，不硬查。</li><li>程式只搬運：組 request、合併回覆、檢查網址打不打得開、產生科普頁。</li></ul>
-<p><b>我做：</b>有爭議、有誤的每點親自看；其他每批抽 2 點打開出處確認。</p>
-<p><b>你做：</b>每點決定用／不用／改說法，在對話裡告訴我，我記進 JSON。</p>
-<p><b>產出：</b>docs/science/EPn_check/ 的查核結果；最後彙整進第 5 步的必要產出「科普準備報告」。</p>
-<h2 id="s4">4. 討論要補的書外知識 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>故事需要、但書上沒講的知識（地點、年代、環境、動物…），列出來討論要補哪些。</p>
-<p class=pp><b>檢查頁：</b>我在對話列清單，你回增刪；定案的寫進報告<br><a href="../science-ep2/">EP2 科普準備報告</a></p>
-<p class="chgline"><span class="chg">改</span> 2026-11-17 新增</p>
-<p><b>誰：</b>我先提，你增刪。</p>
-<p><b>怎麼做：</b>我用固定清單逐項想：地點、年代、氣候、地形、植物、會遇到的動物、人能吃喝什麼、有什麼危險、跟現在的對照（今天是哪裡）。每項寫「故事需要什麼、書上有沒有講」，你增刪後定案。例：EP1 的落點 Hell Creek、當時沒有草原、天氣很熱。</p>
-<p><b>為什麼不給模型：</b>要配合故事判斷、要跟你來回討論。</p>
-<h2 id="s5">5. 查核書外知識 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>補的知識也查對錯和出處；全部整理成「科普準備報告」，你決定每點用不用。</p>
-<p class=pp><b>檢查頁：</b>科普準備報告（必要產出）<br><a href="../science-ep2/">EP2 科普準備報告</a><br><a href="../science-ratio/">EP1 科普點核對（舊格式）</a></p>
-<p class="chgline"><span class="chg">改</span> 2026-11-17 新增</p>
-<p><b>誰：</b>CLI 模型查（同一份 request），我覆核，你決定用哪些。<b>　我用：</b><code>同「查核書上的知識點」</code></p>
-<p><b>怎麼做：</b>跟查核書上的知識點同一份 request、同樣的規則，記在同一份 science_facts_EPn.json，標「來源：書外」。</p>
-<p><b>必要產出：科普準備報告：</b></p><ul><li>第 2～5 步做完，一定要產出一份「EPn 科普準備報告」網頁（stickman/science-epn/），沒有這份報告就不算做完（2026-11-17 使用者定，照 EP2 的格式）。</li><li>報告內容：摘要、每一步做了什麼和結果、要你決定的事、全部知識點（書上＋書外；每點的判定、書上原文和頁碼、科學上的說法、出處、建議旁白說法、Claude 覆核意見），可以依判定和來源篩選。</li><li>做法：scripts/make_science_report.py EPn check_urls（程式只搬運；摘要和覆核意見由 Claude 寫在 docs/science/EPn_report_notes.json）。同時加首頁卡片。</li><li>範例：EP2 科普準備報告（science-ep2/）。</li></ul>
-<p><b>完成條件：</b>科普準備報告上線、你看過並決定每點用不用（報告上「要你決定的」都回覆了），才能開始寫大綱。大綱、旁白、片尾黑板附錄都只從這份挑。</p>
-<p><b>之後加知識點：</b>劇本後來要加新的知識（例如 EP1 的地獄溪），回到「討論要補的書外知識」和這一步，你確認後再改劇本。</p>
-<h2 id="s6">6. 系列設定 ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>整個系列共用、做一次就好的設定集：①人物（HERO、博士）②人物關係（打工、賴帳）③表演方式（林克式發聲、第二人稱旁白）④畫風（粗手腳火柴人、皮膚純白）⑤固定場景和道具（實驗室、HERO 房間、校園、回家按鈕、相機、電擊槍、生存指南）。EP1 做完，之後只有要改這五類才回來。不含：各集的任務、賴帳理由（在大綱）、這集出現的恐龍或動物（大綱決定用哪些、設定圖再畫）。</p>
-<p class=pp><b>檢查頁：</b>設定集<br><a href="../characters/">人物與場景設定</a><br><a href="../dinos/">恐龍系列設定（這個時代）</a></p>
-<p class="chgline"><span class="chg">改</span> 2026-11-17 改：只在第一集或要改設定時做；各集的固定橋段移到大綱</p>
-<p><b>誰：</b>第一集做；要改設定時才做。</p>
-<p><b>怎麼做（2026-11-17 改）：</b>整個系列共用、做一次就好的設定（下面）。EP1 已經做完，之後各集直接照用、跳過這一步；只有要新增或改系列設定（例如新的系列角色）時才回來，你確認後寫回人物與場景設定頁。各集固定橋段怎麼填，放在下一步「大綱」。</p>
+<p class=pp><b>檢查頁：</b>不停；彙整進第 5 步的科普報告<br><a href="../science-ep1-new/">EP1-new 科普報告</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：你不參加</p>
+<p><b>誰：</b>CLI 模型做（request），我抽查；你不參加。<b>　我用：</b><code>request 範本：docs/science_requests/2_list_facts.md；scripts/science_request.py 2 EPn</code></p>
+<p><b>怎麼做：</b></p><ul><li>送 Claude CLI，直接讀書頁照片；只給讀檔、不給上網，保證只用書。這一步不判斷對錯。</li><li>先做頁面檢查：照片和頁碼對照（沒印的推算、標「推定」）、前後頁接不接得上（缺頁）、照片裡別章的部分不列。</li><li>一點＝一句可以查證、講真實世界的話：數字、比較、因果、描述、專家說法、求生建議；圖表上的事實也算。玩笑、比喻、純劇情假設不算。</li><li>每點附書上那一句原文和頁碼；能分開查的就拆開；重複的合併；保留原文語氣（may、about → 可能、大約）；英制加公制換算。</li><li>產出 docs/science/EPn_book_facts.json。寧可多列不要漏，之後再篩。</li></ul>
+<p><b>逐頁核對（2v）：</b></p><ul><li>程式把照片轉正（upright/）、切成單頁（pages/），每頁送一份 request（只給讀檔），模型對照照片逐字核對每一點、找漏列。</li><li>範本：docs/science_requests/2v_verify_page.md；scripts/science_request.py 2v EPn</li></ul>
+<p><b>為什麼不先抄全文：</b>2026-11-17 試過先把整章逐字抄成文字檔，模型因版權拒絕。每點附原文那一句＋頁碼就夠查核用。</p>
+<h2 id="s3">3. 查核書上的知識點 ✅ <span class="seg">A 科普</span></h2>
+<p class=pp><b>這步在幹嘛：</b>每一點上網查對不對、附出處；我判定可以用或不能用。</p>
+<p class=pp><b>檢查頁：</b>不停；彙整進第 5 步的科普報告<br><a href="../science-ep1-new/">EP1-new 科普報告</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：用不用由我判定，你不參加</p>
+<p><b>誰：</b>CLI 模型查（request），我覆核、決定用哪些；你不參加。<b>　我用：</b><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></p>
+<p><b>為什麼：</b>EP1 先寫故事、事後才查，結果改了 15 句旁白。先查完，才知道故事可以用哪些、怎麼講。</p>
+<p><b>怎麼做：</b></p><ul><li>送 Claude CLI，開上網權限；一次 8～10 點，分批平行跑。</li><li>判定四級（正確／大致正確／有爭議／有誤）照範本裡的定義；有爭議、有誤的附適合旁白的建議說法。</li><li>出處順序：論文 → 博物館、大學 → 可信科普媒體；維基百科不能當唯一出處；每點至少 1 個、附網址；查不到就標「找不到出處」，不硬查。</li><li>程式只搬運：組 request、合併回覆、檢查網址打不打得開。</li></ul>
+<p><b>我做：</b>有爭議、有誤的每點親自看；其他每批抽 2 點打開出處確認。每點判定「可以用／不能用」。</p>
+<h2 id="s4">4. 想書外知識 ✅ <span class="seg">A 科普</span></h2>
+<p class=pp><b>這步在幹嘛：</b>故事需要、但書上沒講的知識（地點、年代、環境、動物…），我自己列出來。</p>
+<p class=pp><b>檢查頁：</b>不停；彙整進第 5 步的科普報告<br><a href="../science-ep1-new/">EP1-new 科普報告</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：原本「討論要補的書外知識」，改成我自己想、不跟你討論</p>
+<p><b>誰：</b>我想；你不參加。</p>
+<p><b>怎麼做：</b>我用固定清單逐項想：地點、年代、氣候、地形、植物、會遇到的動物、人能吃喝什麼、有什麼危險、跟現在的對照（今天是哪裡）。每項寫「故事需要什麼、書上有沒有講」，直接送下一步查核。</p>
+<h2 id="s5">5. 查核書外知識 ✅ <span class="seg">A 科普</span></h2>
+<p class=pp><b>這步在幹嘛：</b>書外知識也查對錯和出處；全部整理成科普報告，列出可以用和不能用的。</p>
+<p class=pp><b>檢查頁：</b>科普報告（可以不看）<br><a href="../science-ep1-new/">EP1-new 科普報告</a><br><a href="../science-ep2/">EP2 科普準備報告</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：不再停下來等你決定每點用不用</p>
+<p><b>誰：</b>CLI 模型查（同一份 request），我覆核；你不參加。<b>　我用：</b><code>同「查核書上的知識點」；scripts/make_science_report.py</code></p>
+<p><b>怎麼做：</b>跟查核書上的知識點同一份 request、同樣的規則，標「來源：書外」。</p>
+<p><b>必要產出：科普報告：</b></p><ul><li>一定要產出「EPn 科普報告」網頁（stickman/science-epn/），同時加首頁卡片。</li><li>內容：摘要、每一步做了什麼和結果、全部知識點（書上＋書外；判定、原文和頁碼、出處、建議旁白說法、我的覆核意見），列出哪些可以用、哪些不能用。</li><li>做法：scripts/make_science_report.py EPn（程式只搬運；摘要和覆核意見由我寫在 docs/science/EPn_report_notes.json）。</li></ul>
+<p><b>你看不看都照走（2026-11-19 使用者定）：</b>報告做好不停下來等你。你沒看＝只有我判定可以用的才能用，其他一律不用。大綱、旁白都只從可以用的挑。</p>
+<h2 id="s6">6. 系列設定 ✅ <span class="seg">B 劇本</span></h2>
+<p class=pp><b>這步在幹嘛：</b>整個系列共用的設定，預設沿用。</p>
+<p class=pp><b>檢查頁：</b>設定集（預設沿用）<br><a href="../characters/">人物與場景設定</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：預設沿用</p>
+<p><b>誰：</b>預設沿用；你不參加。</p>
+<p><b>怎麼做：</b>整個系列共用的設定（下面）預設沿用、跳過這一步；只有要新增或改系列設定時才回來。</p>
 <p><b>設定：</b></p><ul><li>布朗博士，加上不想畢業又沒錢的資工延畢生來打工；每集博士都賴帳；主角老是忘了帶生存指南。</li><li>HERO、PROF 林克式發聲：有聲音、沒台詞，故事靠旁白和反應音。</li><li>畫風 v2 粗手腳火柴人，皮膚純白，不設定種族。</li><li>博士的實驗室在校園研究小屋一樓（不是地下室）；回家裝置是一顆按鈕（不是手環）。</li></ul>
-<h2 id="s7">7. 大綱 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>這一集的骨架：每一段發生什麼、目的、用哪些查核過的知識點；加上固定橋段這集怎麼填（任務、忘了帶什麼、賴帳理由、接上一集的東西）和這集出現哪些動物。</p>
-<p class=pp><b>檢查頁：</b>大綱頁<br><a href="../outline-ep2/">EP2 大綱</a></p>
-<p class="chgline"><span class="chg">改</span> 2026-11-19 改成送 request：之前在對話裡手寫，加了一堆版本說明和待定事項，也沒辦法改</p>
-<p><b>誰：</b>CLI 模型寫（request），你確認（含固定橋段這集怎麼填）。<b>　我用：</b><code>request 範本：docs/story_requests/7_outline.md；scripts/make_outline_request.py build／send／check EPn</code></p>
-<p><b>固定架構：</b>冷開場 → 博士有工作 → 穿越 → 故事 → 回家 → 賴帳 → 預告。每段寫發生什麼、目的、用到哪幾個科普點（查核清單的編號；只能用查核通過的）。</p>
-<p><b>固定橋段這集怎麼填（2026-11-17 加）：</b></p><ul><li>大綱一定要有這一區，跟大綱一起給你確認：</li><li>博士這集的任務；主角自己的目的；這集忘了帶什麼；回家按鈕怎麼出狀況；博士這集用什麼理由賴帳。</li><li>接上一集的東西（例如 EP1 留在白堊紀的背包）、這集新出現的地點／道具／角色。</li></ul>
-<p><b>怎麼做（2026-11-19 改）：</b></p><ul><li>不在對話裡手寫。你的要求先寫進 episodes/&lt;集&gt;/outline_inputs.json（每條附出處，你確認過才算）；程式把系列設定、固定架構、你的要求、你口述的架構、查核過的知識點搬進 request，送 Claude CLI。</li><li>回覆只能有：每段的發生什麼、目的、知識點編號，和固定橋段七項；不准加版本說明、★、秒數、附註、待定事項、動物地點清單。程式檢查格式和知識點編號，通過才產生大綱頁。</li><li>要改：改你的要求或範本，重送；不在大綱裡直接補。</li></ul>
-<p><b>科普比例：</b>定為 30%，用秒數算，量法還沒定。</p>
-<h2 id="s8">8. 寫故事 ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>照大綱寫成完整的故事。每一句旁白有用到知識點的要標編號（#12），故事頁會把科普句標成綠底、用字數算科普比例（目標 30%）。</p>
-<p class=pp><b>檢查頁：</b>故事頁<br><a href="../story-ep2/">EP2 故事</a></p>
-<p><b>誰：</b>我寫。</p>
-<p><b>怎麼做：</b>照大綱寫成完整故事；旁白用自己的話改寫，不照念原文；角色只有反應音。</p>
-<h2 id="s9">9. 審故事 ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>你改故事的邏輯、場景、道具、旁白，來回到定案。</p>
-<p class=pp><b>檢查頁：</b>故事頁：科普比例、綠底科普句、新舊對照<br><a href="../story-ep2/">EP2 故事</a><br><a href="../story-review/">恐龍年代兩集：審故事（EP1）</a></p>
-<p><b>誰：</b>你。<b>　我用：</b><code>make_script_v6.py</code></p>
-<p><b>怎麼做：</b>你修邏輯、場景、道具、旁白，來回直到定案。每改一版做一頁新舊左右對照。</p>
-<h2 id="s10">10. 拍攝清單＋旁白（定稿點） ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>把故事切成一格一格的畫面，每格配好旁白；這一步定稿後，畫面內容就不再大改。</p>
-<p class=pp><b>檢查頁：</b>拍攝清單頁<br><a href="../shotlist-ep2/">EP2 拍攝清單（切格＋分幕＋地圖）</a><br><a href="../storyboard-ep1ep2/">恐龍年代兩集：拍攝清單（EP1）</a></p>
-<p><b>誰：</b>我切格，你確認定稿。</p>
-<p><b>切格規則：</b></p><ul><li>發生新的動作或事件。</li><li>主角換人（包括反應鏡頭）。</li><li>地點或時間變了。</li><li>要看清楚的東西需要換景別。</li><li>講一個新的知識點。</li></ul>
-<p><b>旁白定稿後：</b>換說法但意思不變、長度增減 2 秒內可以直接改；改到畫面上的人、物、動作、位置要退回這一步。</p>
-<p><b>產出：</b>script_vN.md（EP1 現在是 script_v8.md）。</p>
-<h2 id="s11">11. 分幕 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>把同一地點、時間連續的格子合成一幕，之後設計和畫圖都以幕為單位。</p>
-<p class=pp><b>檢查頁：</b>拍攝清單頁（照幕排）<br><a href="../shotlist-ep2/">EP2 拍攝清單（切格＋分幕＋地圖）</a></p>
-<p class="chgline"><span class="chg">改</span> 新增：以前沒有這一步</p>
-<p><b>誰：</b>我分，你看。<b>　我用：</b><code>make_scene_request.py 的 CONF</code></p>
-<p><b>怎麼做：</b>同一個地點、時間連續的格子合成一幕（EP1 分成 9 幕），之後分鏡設計、畫圖、檢查都以幕為單位。每幕對應一張地圖（沒有實景的幕不用地圖）。</p>
-<p><b>產出：</b>scenes_v1.json、make_scene_request.py 的 CONF（每幕用哪段旁白、哪張地圖、哪些角色）。</p>
-<h2 id="s12">12. 場景地圖 ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>每個地點畫一張俯視地圖（樹、河、門、桌子在哪），讓同一地點的每一格畫面一致。</p>
-<p class=pp><b>檢查頁：</b>拍攝清單頁每幕的地圖；要改用地圖編輯器（本機 http://127.0.0.1:8765/）<br><a href="../shotlist-ep2/">EP2 拍攝清單（切格＋分幕＋地圖）</a><br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></p>
-<p class="chgline"><span class="chg">改</span> 格子大小不再固定 2 公尺；加了可站／可放標記、朝向說明</p>
-<p><b>誰：</b>我畫初稿，你改。<b>　我用：</b><code>render_map.py</code></p>
-<p><b>怎麼做：</b></p><ul><li>故事有幾個地點就畫幾張地圖，地圖跟著地點走，不跟著段落走。</li><li>格子大小依地點定：戶外一格 2 公尺，實驗室這種室內一格 0.5 公尺。</li><li>每種地形、每個物件都標「角色可不可以站」「相機可不可以放」。</li><li>地圖上用紅字寫明房子正面朝哪邊、大門在哪一面。</li><li>每張地圖寫 outside，交代東南西北四個方向的遠景。</li><li>跨幕都在的東西（例如甲龍、隧道）畫地圖時就標位置。</li></ul>
+<h2 id="s7">7. 大綱 ✅ <span class="seg">B 劇本</span></h2>
+<p class=pp><b>這步在幹嘛：</b>這一集的骨架：每一段發生什麼、用哪些可以用的知識點，加上固定橋段這集怎麼填。</p>
+<p class=pp><b>檢查頁：</b>不停；放進劇本頁<br><a href="../outline-ep1-new/">EP1-new 大綱</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：不停，大綱跟劇本一起放在劇本頁</p>
+<p><b>誰：</b>CLI 模型寫（request）；不停。<b>　我用：</b><code>request 範本：docs/story_requests/7_outline.md；scripts/make_outline_request.py build／send／check EPn</code></p>
+<p><b>固定架構：</b>冷開場 → 博士有工作 → 穿越 → 故事 → 回家 → 賴帳 → 預告。每段寫發生什麼、目的、用到哪幾個科普點（查核清單的編號；只能用判定可以用的）。</p>
+<p><b>固定橋段這集怎麼填：</b></p><ul><li>大綱一定要有這一區：</li><li>博士這集的任務；主角自己的目的；這集忘了帶什麼；回家按鈕怎麼出狀況；博士這集用什麼理由賴帳。</li><li>接上一集的東西（例如 EP1 留在白堊紀的背包）、這集新出現的地點／道具／角色。</li></ul>
+<p><b>怎麼做：</b></p><ul><li>不在對話裡手寫。要求寫進 episodes/&lt;集&gt;/outline_inputs.json（每條附出處）；程式把系列設定、固定架構、要求、查核過的知識點搬進 request，送 Claude CLI。</li><li>回覆只能有：每段的發生什麼、目的、知識點編號，和固定橋段七項。程式檢查格式和知識點編號，通過就直接寫劇本，不停下來等你。</li></ul>
+<h2 id="s8">8. 寫劇本 ✅ <span class="seg">B 劇本</span></h2>
+<p class=pp><b>這步在幹嘛：</b>照大綱寫成劇本：動作描述和旁白，只有文字。</p>
+<p class=pp><b>檢查頁：</b>不停；放進劇本頁<br><a href="../story-ep1-new/">EP1-new 故事</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：原本「寫故事」改名；「審故事」拿掉</p>
+<p><b>誰：</b>我寫；不停。</p>
+<p><b>劇本是什麼：</b>三本之一（電影的 screenplay）：只有文字，有動作描述和旁白（角色沒有台詞，旁白就是對白），沒有圖，也不決定拍幾個鏡頭。</p>
+<p><b>怎麼做：</b>照大綱寫；旁白用自己的話改寫，不照念原文；角色只有反應音。有用到知識點的旁白標編號（#12）。</p>
+<h2 id="s9">9. 潤旁白 ✅ <span class="seg">B 劇本</span></h2>
+<p class=pp><b>這步在幹嘛：</b>把旁白順成念得通順的錄音稿；跟大綱、劇本放在同一頁（劇本頁）。</p>
+<p class=pp><b>檢查頁：</b>劇本頁（可以不看）<br><a href="../story-ep1-new/">EP1-new 故事</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：從舊第 22 步移到這裡</p>
+<p><b>誰：</b>模型順稿（request）；不停。<b>　我用：</b><code>make_narration_request.py</code></p>
+<p><b>怎麼做：</b>把劇本的旁白送模型順稿：用連接詞把破碎的旁白接起來、念得通順，可以改寫字句；資訊不能掉、意思不能變。</p>
+<p><b>為什麼放這裡（2026-11-19 使用者定）：</b>粗剪要配音，旁白要先潤好；放在分場之前，後面全部照潤好的旁白走，不會有兩個版本。</p>
+<p><b>產出：劇本頁：</b>大綱、劇本、潤好的旁白放同一頁。可以不看，流程不停。</p>
+<h2 id="s10">10. 分場 ✅ <span class="seg">C 分場</span></h2>
+<p class=pp><b>這步在幹嘛：</b>把劇本分成一場一場，每場一個地點，記下角色、服裝、道具。</p>
+<p class=pp><b>檢查頁：</b>不停；放進分場表<br><a href="../shotlist-ep1-new/">EP1-new 拍攝清單</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：原本「拍攝清單＋旁白（定稿點）」和「分幕」合併；不再切格</p>
+<p><b>誰：</b>我做；不停。<b>　我用：</b><code>make_scene_request.py 的 CONF</code></p>
+<p><b>分場表是什麼：</b>三本之二（電影的 script breakdown）：導演拆完劇本後，列出要哪些場、每場在哪裡、出場角色、服裝、道具。不拆鏡頭。</p>
+<p><b>怎麼做：</b>同一個地點、時間連續的段落合成一場；每場對應一張地圖，記下用哪段旁白、哪些角色和道具。</p>
+<p><b>產出：</b>scenes_vN.json、make_scene_request.py 的 CONF。</p>
+<h2 id="s11">11. 場景地圖 ✅ <span class="seg">C 分場</span></h2>
+<p class=pp><b>這步在幹嘛：</b>每個地點畫一張俯視地圖，讓同一地點的每個鏡頭畫面一致。</p>
+<p class=pp><b>檢查頁：</b>不停；放進分場表<br><a href="../shotlist-ep2/">EP2 拍攝清單（切格＋分幕＋地圖）</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：不停</p>
+<p><b>誰：</b>我畫；不停。<b>　我用：</b><code>render_map.py</code></p>
+<p><b>怎麼做：</b></p><ul><li>故事有幾個地點就畫幾張地圖，地圖跟著地點走。</li><li>格子大小依地點定：戶外一格 2 公尺，室內一格 0.5 公尺。</li><li>每種地形、每個物件都標「角色可不可以站」「相機可不可以放」；跨場都在的東西畫地圖時就標位置。</li></ul>
 <p><b>地圖只用來決定畫面裡有什麼：</b>不拿地圖算距離、算大小。大小照比例圖目視。</p>
 <p><b>產出：</b>maps/&lt;id&gt;.json。改之前把舊版存到 maps/history/。</p>
-<h2 id="s13">13. 設定圖 ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>畫角色、道具、地點、這集的動物的設定圖，給 Flow 當參考圖，讓長相和大小每格一致。</p>
-<p class=pp><b>檢查頁：</b>新設定圖挑圖頁；定案的放設定集<br><a href="../refs-ep2/">EP2 新設定圖：挑圖</a><br><a href="../characters/">人物與場景設定</a><br><a href="../dinos/">恐龍系列設定</a></p>
-<p class="chgline"><span class="chg">改</span> 移到分鏡設計前面：request 要列出能用的參考圖</p>
-<p><b>誰：</b>我寫 prompt，你在 Flow 畫、挑圖。<b>　我用：</b><code>build_scale_pairs.py</code></p>
-<p><b>要做的：</b></p><ul><li>角色：HERO、PROF、恐龍。</li><li>道具 REF_PROPS（第 2 版：回家按鈕）。</li><li>固定地點：REF_LAB（第 2 版：研究小屋一樓）。</li><li>1 對 1 比例圖 PAIR2：HERO 和每一隻恐龍，由程式從設定圖拼，不叫 Flow 畫；數字只有一份 heights.json。</li></ul>
-<p><b>規則：</b></p><ul><li>地圖和設定圖要一致；不一致時以設定圖為準改地圖（圖會直接附給 Flow）。</li><li>設定圖上不要畫會變的東西。</li><li>畫好放 refs_v7/（上傳用 refs_v7/upload/），舊版移到 refs_v7/old/；Flow 專案裡也要換新、舊的改名或刪掉。</li></ul>
-<h2 id="s14">14. 分鏡設計（送 request 給 Claude） 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>每一格決定鏡頭：拍誰、多遠、從哪個角度、人站哪裡，寫成英文 prompt。</p>
-<p class=pp><b>檢查頁：</b>分鏡回覆查詢<br><a href="../replies/">分鏡回覆查詢</a></p>
-<p class="chgline"><span class="chg">改</span> 新的做法：取代舊的走位、鏡頭、寫 prompt 三步</p>
-<p><b>誰：</b>Claude 設計，你看。<b>　我用：</b><code>make_scene_request.py</code></p>
-<p><b>怎麼做：</b>每一幕做一份 request（旁白、地圖、角色和道具、能用的參考圖、分鏡原則），送 Claude CLI，回傳一幕的 JSON：走位、每格的 7 項鏡頭資訊（主體、景別、極特寫局部、方位、角度、構圖、畫面方向）、入鏡角色、參考圖、英文 prompt。原本「走位」「鏡頭」「寫 prompt」三步都在這裡一起做。</p>
-<p><b>request 裡的規則：</b></p><ul><li>景別名稱照官方 10 級指南，prompt 只寫英文名。</li><li>HERO 和大恐龍（TREX、TEEN、ANKY）同框：原本的景別恐龍可以只露一部分，另外多畫一張遠一級的（FS→WS、WS→EWS）。</li><li>prompt 不寫角色佔畫面幾成（實測 Flow 不照做）。</li><li>參考圖不用模型選（refs 填空陣列），由「補背景和參考圖」那一步的程式決定。</li><li>第 6 版起：prompt 不描述背景和光線，背景由程式從地圖補。</li><li>角色長相看參考圖、不用文字描述外觀；會隨劇情變的狀態（帽子沒了、滿身泥、相機摔裂、有沒有背包、手上拿什麼）一定要用文字寫；膚色句照舊（2026-11-19 使用者定）。</li></ul>
-<p><b>版本：</b>每改一次規則就升一版（v1～v5），舊版 request 和回覆都留著。</p>
-<h2 id="s15">15. 檢查分鏡回覆 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>檢查分鏡模型的回覆有沒有漏旁白、站錯位置、用了不存在的參考圖。</p>
-<p class=pp><b>檢查頁：</b>我做，不用你檢查<br><a href="../replies/">分鏡回覆查詢</a></p>
-<p class="chgline"><span class="chg">改</span> 新增</p>
-<p><b>誰：</b>我。<b>　我用：</b><code>check_scene_reply.py、compare_scene_replies.py</code></p>
-<p><b>檢查什麼：</b></p><ul><li>旁白一句不漏、不改字。</li><li>有 HERO＋大恐龍卻沒加拍遠一級。</li><li>參考圖是不是 Flow 裡有的。</li><li>角色站的格子能不能站、相機放的格子能不能放。</li></ul>
-<h2 id="s16">16. 補背景和參考圖 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>照地圖寫每一格背景看得到什麼，決定每格附哪些參考圖。</p>
-<p class=pp><b>檢查頁：</b>分鏡表每格的中文 prompt、背景、參考圖<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></p>
-<p class="chgline"><span class="chg">改</span> 11-12 改成 LLM 手寫，程式拼的背景停用</p>
-<p><b>誰：</b>背景由 LLM 手寫，你核對。<b>　我用：</b><code>背景：docs/requests/EP1-NN_bg_hand.json；參考圖：add_background.py</code></p>
-<p><b>規定（2026-11-12 使用者定）：</b></p><ul><li>任何跟 prompt 有關的都不可以用程式：背景描述、每格附哪些參考圖、prompt 文字，都由 LLM 逐格看地圖決定；程式只負責搬運（貼進 Flow、下載、切圖）。可以用程式組 request 去問模型，但無論如何一定要是模型決定。</li><li>景的描述由 LLM 負責，不可以用程式拼。LLM 一格一格看地圖（相機位置、視野），用直白的句子寫，像在描述一張照片。</li><li>寫法：先講鏡頭對著哪面牆或哪個方向，再講那邊有什麼；東西用彼此的關係定位（窗下的書桌、書桌前的椅子、靠左牆的床）；最後講不在畫面裡的門窗和光線。</li><li>不寫東南西北（Flow 沒有地圖）、不寫幾公尺（Flow 不會量距離）、不用「前景／中景／背景」「畫面最後面」這種分層詞。</li><li>範本：EP1-02-01。中文給你核對，英文接在 prompt 後面。</li></ul>
-<p><b>參考圖：</b>由 LLM 逐格決定（11-12 改，原本由程式依入鏡角色和關鍵字選，已停用）：入鏡角色的設定圖、HERO 和恐龍同框時的比例圖 PAIR2、畫面裡看得到的牆面圖（房間 ROOM_*_WALL、實驗室 LAB_*_WALL：正對一面牆附 1 張、對著角落附 2 張、鏡頭背後不附）、畫面有道具就附 REF_PROPS。舊做法：順序：入鏡角色的設定圖 → HERO 和恐龍同框時那隻恐龍的比例圖 PAIR2 → 地點設定圖（實驗室 → REF_LAB、HERO 房間 → REF_ROOM）→ 畫面有手機、相機、電擊槍、回家按鈕、生存指南就附 REF_PROPS。只附 Flow 專案裡有的。</p>
-<p><b>為什麼不用程式：</b>map_background.py 用射線算出看到什麼再拼句子，寫出「背後是西牆」「離相機約 4 公尺」「背景橫跨整個畫面：書桌」，Flow 看不懂、使用者也看不懂；02-08 因此把窗戶畫到 HERO 背後。程式最多拿來對照哪些東西在視野裡，句子不能用。</p>
-<p><b>為什麼要補背景：</b>分鏡設計的模型拿到地圖也常把背景寫反（第 7 幕 10 格把河寫成 &quot;forest behind&quot;）；補上背景後 Flow 會照著畫。</p>
-<h2 id="s17">17. Flow 畫圖 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>把 prompt 和參考圖送進 Flow，每格畫 4 張。</p>
-<p class=pp><b>檢查頁：</b>分鏡表每格的 4 張圖<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></p>
-<p class="chgline"><span class="chg">改</span> 改成整幕畫、一次 4 張（11-12 起）；修了判斷</p>
-<p><b>誰：</b>我操作。<b>　我用：</b><code>flowbot/scene_draw.py</code></p>
-<p><b>怎麼做：</b>一幕一幕畫：附參考圖、貼 prompt、送出，一次出 4 張，已畫好的格子跳過。</p>
-<p><b>判斷畫好沒：</b>有顏色，或畫面亮又有線條，就算畫好（舊判斷只看顏色，會把灰白、霧景誤判成失敗、丟垃圾桶）。</p>
-<p><b>安全規則：</b></p><ul><li>滑鼠動作像人手；被擋就停；你喊停就停。</li><li>不照固定座標點下載鍵或垃圾桶鍵；圖庫頁不按 ⌘A＋刪除；不永久刪除。</li><li>Flow 掛掉時先停，不一直重送。</li></ul>
-<h2 id="s18">18. 分鏡表＋驗收 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>把畫好的圖排成分鏡表，我先標建議，你看完寫意見、挑每格要哪一張。</p>
-<p class=pp><b>檢查頁：</b>分鏡表（我標建議，你挑）<br><a href="../storyboard-v7/">EP1 分鏡表 v7</a></p>
-<p class="chgline"><span class="chg">改</span> 取代舊的分鏡表和挑圖頁；11-13 起驗收改成只挑圖</p>
-<p><b>誰：</b>我先看，你看完寫意見。<b>　我用：</b><code>make_scale_check_v5.py</code></p>
-<p><b>分鏡表：</b>同一頁放每格的四張圖（缺圖留空位）、地圖與相機視野、背景描述、旁白、7 項資訊、prompt 中英文、恐龍比例判定、意見欄（寫完按複製貼回給我）。新的檢查都加在這頁，不另開頁。</p>
-<p><b>Flow 畫完後（2026-11-13 改定）：</b></p><ul><li>第 1 步：你挑出 prompt 要改的格子、給指示；我照指示改 prompt，這格重新生圖。</li><li>第 2 步（第 1 步結束後）：我每格從 4 張挑一張標「Claude 建議」（看背景是否符合地圖；人物、物品是否符合參考圖；恐龍 size 是否吻合），不判斷是 prompt 錯還是生圖錯。</li><li>你根據建議和自己的判斷選圖：每格只能選一張，選的是要留下來的；一格都沒選＝四張都不行，整格重畫。</li></ul>
-<h2 id="s19">19. 補救 ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>畫錯的格子決定怎麼救：改 prompt 重畫、重問分鏡，或換鏡頭。</p>
-<p class=pp><b>檢查頁：</b>分鏡表＋定稿畫面（必要產出，兩頁一致）；改過的 prompt 在修改紀錄<br><a href="../storyboard-ep2-final/">EP2 分鏡表（最新）</a><br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a><br><a href="../picks-v7/">EP1 定稿畫面</a><br><a href="../redraw-review/">EP1 修改紀錄</a></p>
-<p><b>誰：</b>我提，你定。</p>
-<p><b>必要產出：定稿畫面（2026-11-19 使用者定）：</b></p><ul><li>補救做完，每格都有一張選定的圖，產出「定稿畫面」：照劇情順序排，每格放選定的那張＋旁白。</li><li>分鏡表和定稿畫面從同一份資料檔產生（EP2：episodes/002_chicxulub/final/storyboard.json），兩頁一定一致；改選只改資料檔，兩頁一起重新產生。</li><li>完成條件：定稿畫面每格都有圖、跟分鏡表一致，才進第 20 步下載。</li></ul>
-<p><b>2026-11-13 改定：</b></p><ul><li>Flow 畫完後我只做挑圖（上一步）；要不要補救、怎麼補，由你決定。下面是舊的做法，留著參考。</li></ul>
-<p><b>先後順序（2026-11-13 定，舊）：</b></p><ul><li>優先處理要改 prompt 的：prompt 沒寫對、沒寫到，或寫了會畫錯的（例：沒寫 HERO 站在圓環裡、直接寫甲龍害偽裝破功、沒寫手要純白、背景寫錯）。</li><li>多畫幾張就能解決的先不處理：prompt 已經寫對、只是 Flow 剛好畫歪一兩張（例：一張畫成光頭、一張細手細腳）。這種直接在分鏡表標「不要這張」，挑別張。</li><li>判斷方法：先打開那格的 prompt 看有沒有寫到。有寫到＝多畫幾張；沒寫到或寫錯＝改 prompt。</li><li>改 prompt 的格在分鏡表用「表達不好，要重寫 prompt」給意見；舊版存進修改紀錄（scripts/revisions.py），可以還原。</li><li>畫完之後要做什麼見「Flow 畫完之後」頁（stickman/revise-flow/）。</li></ul>
-<p><b>規則：</b></p><ul><li>大小不對只用兩種補救：恐龍只露一部分，或鏡頭拉遠。不用 Flow 的修改功能。</li><li>失敗就整段 prompt 重寫，不疊補丁句；每一格都重畫，舊圖只當構圖參考。</li><li>測試先講要回答什麼，對照只差一個條件。</li></ul>
-<h2 id="s20">20. 下載 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>把選定的圖從 Flow 下載下來。</p>
-<p class=pp><b>檢查頁：</b>定稿畫面（第 19 步的產出，照它下載）<br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a><br><a href="../picks-v7/">EP1 定稿畫面</a></p>
-<p><b>誰：</b>你決定解析度。<b>　我用：</b><code>download_scene.py</code></p>
-<p><b>怎麼做：</b>照記下的網址下載 2K。下載後檢查張數、解析度、Flow 垃圾桶裡有沒有誤丟的圖。</p>
-<h2 id="s21">21. 動畫（扣點） ⬜</h2>
-<p class=pp><b>這步在幹嘛：</b>決定哪些格要做成動畫（要花 Flow 點數）。</p>
-<p class=pp><b>檢查頁：</b>還沒有檢查頁</p>
-<p><b>誰：</b>你（要花點數）。</p>
-<p><b>要討論：</b>要不要做、哪幾格做、點數預算、放在配音之前還是之後。</p>
-<h2 id="s22">22. 潤旁白 ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>把每格的旁白順成念得通順的錄音稿，意思和資訊不變。</p>
-<p class=pp><b>檢查頁：</b>旁白順稿對照<br><a href="../narration-smooth-ep2/">EP2 旁白順稿對照</a><br><a href="../narration-smooth/">EP1 旁白順稿對照</a></p>
-<p class="chgline"><span class="chg">改</span> 2026-11-18 加入（EP1 11-14 做過）</p>
-<p><b>誰：</b>我做，你看。<b>　我用：</b><code>make_narration_request.py、make_narration_compare.py</code></p>
-<p><b>怎麼做：</b>程式把每一格目前的旁白整理成 request（只搬運），由模型順稿：用連接詞把破碎的旁白接起來、念得通順，可以改寫字句。做每幕每格「原本 ↔ 順過」的對照頁，有改的標底色。</p>
-<p><b>規則：</b></p><ul><li>資訊不能掉、意思不能變；每格的內容留在原格，不搬到別格。</li><li>照第 10 步定稿後的規定：只換說法、每格長度增減 2 秒以內；改到畫面上的人、物、動作、位置就要退回第 10 步。</li><li>放在錄音前：畫面已經定了，可以對著定稿畫面順；順完的版本就是錄音稿。</li></ul>
-<h2 id="s23">23. 旁白配音 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>錄旁白（你自己錄），切成每一格的聲音。</p>
-<p class=pp><b>檢查頁：</b>錄音旁白對照<br><a href="../narration-recording/">EP1 錄音旁白對照</a></p>
-<p><b>誰：</b>我做，你聽。<b>　我用：</b><code>studio_sichu_narr.sh</code></p>
-<p><b>怎麼做：</b>Studio 上 GPT-SoVITS sichu2 每句念 3 遍，Whisper 挑最好的一遍，再轉 RVC 女聲。分數不能全信，要人耳聽。</p>
-<p><b>沒定的：</b>正式版用哪個聲音。</p>
-<h2 id="s24">24. 音效 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>每一格配上音效。</p>
-<p class=pp><b>檢查頁：</b>分鏡表、定稿畫面上的音效（定稿畫面可以試聽）<br><a href="../picks-v7/">EP1 定稿畫面</a></p>
-<p><b>誰：</b>我做，你聽。<b>　我用：</b><code>MMAudio、TangoFlux</code></p>
-<p><b>怎麼做：</b>環境音每個地點一段（MMAudio 看畫面生）；事件音效對準時間點。Stable Audio Open 太差不用；待試 HunyuanVideo-Foley、ThinkSound。</p>
-<h2 id="s25">25. 配樂 ⬜</h2>
-<p class=pp><b>這步在幹嘛：</b>選背景音樂。</p>
-<p class=pp><b>檢查頁：</b>還沒有檢查頁</p>
-<p><b>誰：</b>你。</p>
-<p><b>要決定：</b>要不要配樂、音樂從哪來、音量怎麼跟旁白搭。</p>
-<h2 id="s26">26. 運鏡＋組片＋字幕 🧪</h2>
-<p class=pp><b>這步在幹嘛：</b>加上鏡頭移動、混音、字幕，組成整集影片。</p>
-<p class=pp><b>檢查頁：</b>桌面上的 mp4</p>
-<p><b>誰：</b>我做。<b>　我用：</b><code>assemble.py</code></p>
-<p><b>運鏡：</b>只有跟劇情有關的格子才加：推近營造緊張、拉遠揭露大小、被打中短震動。</p>
-<p><b>組片、字幕：</b>每集一個時間軸檔；字幕依標點切短句，時間依字數分配。樣式和片頭片尾還沒定。</p>
-<h2 id="s27">27. 看成片 ✅</h2>
-<p class=pp><b>這步在幹嘛：</b>你看完整集，記下要改的地方。</p>
-<p class=pp><b>檢查頁：</b>桌面上的 mp4；問題在對話裡講</p>
-<p><b>誰：</b>你。</p>
-<p><b>怎麼做：</b>整集看一遍，記下問題，照下面的表退回對應步驟。</p>
-<h2 id="s28">28. 上架（標題、縮圖、說明欄） ⬜</h2>
-<p class=pp><b>這步在幹嘛：</b>準備標題、縮圖、說明欄（含參考資料），上傳。</p>
-<p class=pp><b>檢查頁：</b>還沒有檢查頁</p>
-<p><b>誰：</b>你。</p>
-<p><b>要決定：</b>標題、縮圖、說明欄（要註明參考書目）、章節時間點。</p>
-<h2 id="s29">29. 歐美版 ⬜</h2>
-<p class=pp><b>這步在幹嘛：</b>換英文旁白和在地化細節，做歐美版。</p>
-<p class=pp><b>檢查頁：</b>還沒有檢查頁</p>
-<p><b>誰：</b>你。</p>
-<p><b>已定的方向：</b>先做台灣版；歐美版只換旁白和在地化細節。</p>
-<h2 id="back">畫壞了退回哪一步</h2><div class="tw"><table><tr><th>問題</th><th>退回</th></tr><tr><td>劇情接不上</td><td>審故事、拍攝清單</td></tr><tr><td>旁白的科普說法有錯、要加新知識點</td><td>查核書上的知識點、討論要補的書外知識</td></tr><tr><td>長相、道具、大小比例不對</td><td>設定圖；大小用補救的兩種方法</td></tr><tr><td>背景跟地圖不一致、不像同一個地方</td><td>場景地圖、補背景</td></tr><tr><td>角色站錯位置、鏡頭角度不對</td><td>分鏡設計（重問那一幕）</td></tr><tr><td>畫圖程式誤判、卡住</td><td>Flow 畫圖</td></tr></table></div>
-<h2 id="removed">拿掉或暫停的步驟</h2><div class="tw"><table><tr><th>步驟</th><th>為什麼</th></tr><tr><td>每格分析</td><td>2026-11-12 使用者拿掉。每格要讓觀眾知道什麼、主角是誰，現在由分鏡設計的「主體」欄位和旁白決定。</td></tr><tr><td>走位、鏡頭、寫 prompt（三步）</td><td>合併成「分鏡設計」，由 Claude 依 request 一起設計；舊的 map_prompt.py、地圖編輯器排走位不再用。</td></tr><tr><td>空景</td><td>暫停使用：Flow 會把整張空景原樣搬進每一格，景別出不來；現在改用程式算背景描述。要不要恢復待決定。</td></tr><tr><td>挑圖頁</td><td>併進 EP1 分鏡表。</td></tr></table></div>
-<p class="sub">不做的：恐龍穿越系列的「收集論文資料、做命題卡、排季集數」三步，本專案不做；科普只查書上的知識點和討論定案的書外知識，不另外找題材。</p>
+<h2 id="s12">12. 設定圖 ✅ <span class="seg">C 分場</span></h2>
+<p class=pp><b>這步在幹嘛：</b>畫這集新的角色、道具、地點、動物的設定圖；跟場、地圖一起放進分場表。</p>
+<p class=pp><b>檢查頁：</b>分場表（可以不看）<br><a href="../refs-ep2/">EP2 新設定圖：挑圖</a><br><a href="../characters/">人物與場景設定</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：改成我畫、我挑，不停</p>
+<p><b>誰：</b>我寫 prompt、我在 Flow 畫、我挑；不停。<b>　我用：</b><code>build_scale_pairs.py、flowbot</code></p>
+<p><b>要做的：</b></p><ul><li>這集新出現的角色、恐龍、道具、地點。</li><li>1 對 1 比例圖 PAIR2：HERO 和每一隻恐龍，由程式從設定圖拼；數字只有一份 heights.json。</li></ul>
+<p><b>規則：</b></p><ul><li>地圖和設定圖要一致；不一致時以設定圖為準改地圖。</li><li>設定圖上不要畫會變的東西。</li><li>畫好放 refs_v7/（上傳用 refs_v7/upload/），舊版移到 refs_v7/old/。</li></ul>
+<p><b>產出：分場表：</b>場、每場的地圖、設定圖放同一頁。可以不看，流程不停。</p>
+<h2 id="s13">13. 分鏡設計（拆鏡頭） ✅ <span class="seg">D 分鏡</span></h2>
+<p class=pp><b>這步在幹嘛：</b>每一場拆成鏡頭，決定每個鏡頭拍誰、多遠、什麼角度，寫成英文 prompt。</p>
+<p class=pp><b>檢查頁：</b>不停；放進分鏡表<br><a href="../replies/">分鏡回覆查詢</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：拆鏡頭移到這一步</p>
+<p><b>誰：</b>Claude CLI 設計（request）；不停。<b>　我用：</b><code>make_scene_request.py</code></p>
+<p><b>分鏡表是什麼：</b>三本之三（電影的 storyboard＋shot list）：每場拆成幾個鏡頭、每個鏡頭怎麼拍、畫出來的樣子。</p>
+<p><b>怎麼做：</b>每一場做一份 request（這場的劇本和旁白、地圖、角色和道具、能用的參考圖、分鏡原則），送 Claude CLI。模型決定這場拆成幾個鏡頭，回傳每個鏡頭：走位、7 項鏡頭資訊（主體、景別、極特寫局部、方位、角度、構圖、畫面方向）、入鏡角色、英文 prompt。</p>
+<p><b>拆鏡頭（2026-11-19 使用者定）：</b></p><ul><li>鏡頭在這一步拆，由分鏡模型決定；request 不再附格子清單。</li><li>第 14 步檢查通過後，鏡頭數鎖定；之後不准再拆或併（只有改版走「分鏡表」那條線回來重做）。</li></ul>
+<p><b>request 裡的規則：</b></p><ul><li>景別名稱照官方 10 級指南，prompt 只寫英文名。</li><li>HERO 和大恐龍（TREX、TEEN、ANKY）同框：原本的景別恐龍可以只露一部分，另外多拍一個遠景備份（遠一級：FS→WS、WS→EWS）。</li><li>prompt 不寫角色佔畫面幾成；不描述背景和光線（第 15 步補）。</li><li>角色長相看參考圖、不用文字描述外觀；會隨劇情變的狀態（帽子沒了、滿身泥、相機摔裂、有沒有背包、手上拿什麼）一定要寫；膚色句照舊。</li></ul>
+<h2 id="s14">14. 檢查分鏡回覆 ✅ <span class="seg">D 分鏡</span></h2>
+<p class=pp><b>這步在幹嘛：</b>檢查旁白有沒有全部分到鏡頭、一字不差，遠景備份有沒有，欄位對不對。</p>
+<p class=pp><b>檢查頁：</b>不停；我做</p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：寫清楚檢查項目</p>
+<p><b>誰：</b>程式檢查＋我；不停。<b>　我用：</b><code>check_scene_reply.py</code></p>
+<p><b>檢查什麼：</b></p><ul><li>旁白：這場的旁白全部分到鏡頭裡，接起來一字不差、順序一樣（漏一句、改字、對調都不行）。</li><li>遠景備份：HERO 和大恐龍同框的鏡頭，都有一個遠一級的備份。</li><li>欄位值：景別、方位、角度、畫面方向只能從規定的選項挑。</li><li>欄位齊全：主體、構圖、動作、prompt、相機位置、入鏡角色每個鏡頭都要填。</li><li>膚色句：prompt 裡有 pure paper white（只提醒）。</li></ul>
+<p><b>不過怎麼辦：</b>整場重送 request；不准我自己改回覆。</p>
+<p><b>程式待改（2026-11-19）：</b>拿掉 shot_count 自我比對（它只拿模型回覆跟自己比，抓不到拆格）；旁白檢查改成照這場的劇本。</p>
+<h2 id="s15">15. 補背景和參考圖 ✅ <span class="seg">D 分鏡</span></h2>
+<p class=pp><b>這步在幹嘛：</b>照地圖寫每個鏡頭的背景，決定每個鏡頭附哪些參考圖。</p>
+<p class=pp><b>檢查頁：</b>不停；分鏡表每個鏡頭的中文 prompt<br><a href="../storyboard-ep1-new/">EP1-new 分鏡表</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：不停</p>
+<p><b>誰：</b>LLM 逐鏡頭手寫；不停。<b>　我用：</b><code>背景：docs/requests/EPn-NN_bg_hand.json；組合：assemble_*.py</code></p>
+<p><b>規定：</b></p><ul><li>任何跟 prompt 有關的都不可以用程式：背景描述、每個鏡頭附哪些參考圖、prompt 文字，都由 LLM 逐鏡頭看地圖決定；程式只搬運。</li><li>寫法：先講鏡頭對著哪面牆或哪個方向，再講那邊有什麼；東西用彼此的關係定位；不寫東南西北、不寫幾公尺、不用前景／中景／背景分層詞。</li></ul>
+<p><b>參考圖：</b>入鏡角色的設定圖、HERO 和恐龍同框時的比例圖 PAIR2（加 C 版說明句）、畫面裡看得到的牆面圖、有道具就附 REF_PROPS。只附 Flow 專案裡有的。</p>
+<h2 id="s16">16. Flow 畫圖 ✅ <span class="seg">D 分鏡</span></h2>
+<p class=pp><b>這步在幹嘛：</b>把 prompt 和參考圖送進 Flow，每個鏡頭畫 4 條。</p>
+<p class=pp><b>檢查頁：</b>不停</p>
+<p><b>誰：</b>我操作（EP1 本機；其他集新電腦 flow_runner）；不停。<b>　我用：</b><code>flowbot/scene_draw.py</code></p>
+<p><b>怎麼做：</b>一場一場畫：附參考圖、貼 prompt、送出，每個鏡頭（和遠景備份）一次出 4 條，已畫好的跳過。</p>
+<p><b>安全規則：</b></p><ul><li>滑鼠動作像人手；被擋就停；你喊停就停。</li><li>不照固定座標點下載鍵或垃圾桶鍵；不永久刪除。</li><li>Flow 掛掉時先停，不一直重送。</li></ul>
+<h2 id="s17">17. 挑圖、下載、配音、壓粗剪 ✅ <span class="seg">D 分鏡</span></h2>
+<p class=pp><b>這步在幹嘛：</b>每個鏡頭挑一條、下載 2K、配音，壓成粗剪給你看。</p>
+<p class=pp><b>檢查頁：</b>停：粗剪；分鏡表和定稿畫面一致<br><a href="../storyboard-ep2-final/">EP2 分鏡表（最新）</a><br><a href="../picks-ep2-final/">EP2 定稿畫面（最新）</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：原本的分鏡表＋驗收、下載、旁白配音合成一步；挑圖改由我做</p>
+<p><b>誰：</b>我做；做完停下來給你看粗剪。<b>　我用：</b><code>make_final_*.py、download_scene.py、voice_tools、assemble.py</code></p>
+<p><b>挑圖：</b>每個鏡頭從 4 條挑一條當選用條（看背景符不符合地圖、人物和物品符不符合參考圖、恐龍大小對不對比例圖）。遠景備份也一起比，挑一個用。</p>
+<p><b>下載：</b>選用條下載 2K；檢查張數、解析度、Flow 垃圾桶裡有沒有誤丟的圖。已經下載過的不重下。</p>
+<p><b>配音：</b>照潤好的旁白配音（Studio GPT-SoVITS＋Whisper 挑遍）。改版時只重配改到的句子。</p>
+<p><b>壓粗剪：</b></p><ul><li>只放三樣：每個鏡頭的選用條（靜止圖）、配音、旁白字幕。運鏡、音效、配樂、動畫都不放。</li><li>每個鏡頭停多久照配音長度。</li><li>為什麼（2026-11-19 使用者）：沒看到成品很難有意見，所以一定要在這裡壓出中繼版本。</li></ul>
+<p><b>產出：</b>分鏡表、定稿畫面、粗剪 mp4：從同一份資料檔產生，三樣一定一致。</p>
+<h2 id="s18">18. 改版 ✅ <span class="seg">E 改版</span></h2>
+<p class=pp><b>這步在幹嘛：</b>照你看粗剪的意見，走四條線之一回頭改，再壓粗剪；循環到你同意定版。</p>
+<p class=pp><b>檢查頁：</b>停：你寫意見，循環到定版<br><a href="../storyboard-ep2-final/">EP2 分鏡表（最新）</a></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：原本「補救」改成改版循環</p>
+<p><b>誰：</b>你寫意見，我照意見回頭改；循環。</p>
+<p><b>四條線（你的意見是哪一類，就回到哪一步）：</b></p><ul><li>劇本（旁白、段落、講解）→ 回第 8／9 步，重跑受影響的場。</li><li>分場表（地點、服裝、道具）→ 回第 10～12 步，重跑受影響的場。</li><li>分鏡表（景別、角度、鏡頭數）→ 回第 13 步，重跑受影響的鏡頭。</li><li>圖（prompt 對但畫歪、想換一條）→ 回第 16／17 步，重畫或換選用條。</li></ul>
+<p><b>規則：</b></p><ul><li>每則意見由我判斷屬於哪一條線；判斷不出來就問你。</li><li>只重跑受影響的場或鏡頭，其他不動；改完回第 17 步重壓粗剪給你看。</li><li>大小不對只用兩種補救：恐龍只露一部分，或鏡頭拉遠。不用 Flow 的修改功能。</li><li>失敗就整段 prompt 重寫，不疊補丁句。</li></ul>
+<p><b>出口：粗剪定版：</b>一直循環到你說「定版」。定版後鏡頭、選用條、旁白、配音全部鎖定，後面只從定版出發，不再回到第 17 步之前。</p>
+<h2 id="s19">19. 動畫 ⏸ <span class="seg">F 成片</span></h2>
+<p class=pp><b>這步在幹嘛：</b>暫不做。</p>
+<p class=pp><b>檢查頁：</b>暫不做</p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：暫不做</p>
+<p><b>誰：</b>暫不做。</p>
+<p><b>說明：</b>Flow 動畫要扣點；2026-11-19 使用者定先跳過。</p>
+<h2 id="s20">20. 音效 🧪 <span class="seg">F 成片</span></h2>
+<p class=pp><b>這步在幹嘛：</b>定版後配環境音和事件音效。</p>
+<p class=pp><b>檢查頁：</b>不停</p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：定版後才做</p>
+<p><b>誰：</b>我做；不停。<b>　我用：</b><code>MMAudio、TangoFlux</code></p>
+<p><b>怎麼做：</b>環境音每個地點一段（MMAudio 看畫面生）；事件音效對準時間點。不放進粗剪（音效很難做，改版時秒數一變就要重對）。</p>
+<h2 id="s21">21. 配樂 ⏸ <span class="seg">F 成片</span></h2>
+<p class=pp><b>這步在幹嘛：</b>暫不做。</p>
+<p class=pp><b>檢查頁：</b>暫不做</p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：暫不做</p>
+<p><b>誰：</b>暫不做。</p>
+<p><b>說明：</b>2026-11-19 使用者定先跳過。</p>
+<h2 id="s22">22. 運鏡＋組片 🧪 <span class="seg">F 成片</span></h2>
+<p class=pp><b>這步在幹嘛：</b>加上鏡頭移動、音效，從定版粗剪組成成片。</p>
+<p class=pp><b>檢查頁：</b>不停</p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：字幕在粗剪就有了</p>
+<p><b>誰：</b>我做；不停。<b>　我用：</b><code>assemble.py</code></p>
+<p><b>運鏡：</b>靜止圖上的鏡頭移動：zoom_in 推近、zoom_out 拉遠、pan_right 平移、zoom_to 推到某一點、shake_in 晃動推近。圖先放大成 4K 再運鏡才不會抖。</p>
+<p><b>組片：</b>定版粗剪＋音效＋運鏡＋字幕組成成片。</p>
+<h2 id="s23">23. 看成片 ✅ <span class="seg">F 成片</span></h2>
+<p class=pp><b>這步在幹嘛：</b>你看完整集；不滿意就回到 19～22 改。</p>
+<p class=pp><b>檢查頁：</b>停：成片 mp4；問題在對話裡講</p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：成片循環</p>
+<p><b>誰：</b>你看；循環。</p>
+<p><b>怎麼做：</b>整集看一遍，不滿意就回到第 19～22 步改，再看；直到你滿意。</p>
+<p><b>只能回頭到 19～22：</b>鏡頭、選用條、旁白、配音在粗剪定版時已經鎖定；成片階段不回到第 17 步之前。</p>
+<h2 id="s24">24. 封面、標題、說明欄 🧪 <span class="seg">G 包裝</span></h2>
+<p class=pp><b>這步在幹嘛：</b>做封面、寫標題和說明欄，給你看；上傳你自己來。</p>
+<p class=pp><b>檢查頁：</b>停：還沒有頁面</p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：原本「上架」，上傳移出流程</p>
+<p><b>誰：</b>我做，做完給你看。</p>
+<p><b>怎麼做：</b>從選用條挑一張做封面（或另外在 Flow 畫一張）；寫標題和說明欄（要註明參考書目）。</p>
+<p><b>上架：</b>不在流程裡，你自己傳。</p>
+<h2 id="s25">25. 英文版 🧪 <span class="seg">G 包裝</span></h2>
+<p class=pp><b>這步在幹嘛：</b>旁白改寫成英文、英文配音、重組；英文封面和說明。</p>
+<p class=pp><b>檢查頁：</b>停：英文封面和說明；還沒有頁面</p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：原本「歐美版」，定成只換旁白和配音</p>
+<p><b>誰：</b>模型改寫旁白（request），我配音、重組；英文封面和說明給你看。</p>
+<p><b>怎麼做：</b></p><ul><li>送 request 給模型，把每個鏡頭的旁白改寫成英文（一個鏡頭對一句，鏡頭數不變）。</li><li>英文配音；用定版的圖、音效、運鏡重組（秒數變了由程式重算）。</li><li>封面沿用中文版的圖，只換標題文字；標題、說明欄改寫成英文。</li></ul>
+<p><b>不做的：</b>圖、鏡頭、音效都不動。</p>
+<h2 id="back">回頭改：回到哪一步</h2><div class="tw"><table><tr><th>問題</th><th>回到</th></tr><tr><td>粗剪：劇本有問題（旁白、段落、講解）</td><td>改版 → 寫劇本／潤旁白</td></tr><tr><td>粗剪：分場表有問題（地點、服裝、道具）</td><td>改版 → 分場、場景地圖、設定圖</td></tr><tr><td>粗剪：分鏡有問題（景別、角度、鏡頭數）</td><td>改版 → 分鏡設計</td></tr><tr><td>粗剪：圖畫歪、想換一條</td><td>改版 → Flow 畫圖／挑圖</td></tr><tr><td>成片：音效、運鏡、組片不滿意</td><td>看成片 → 動畫～運鏡＋組片（不回到粗剪定版之前）</td></tr></table></div>
+<h2 id="removed">拿掉、合併或改名的步驟</h2><div class="tw"><table><tr><th>步驟</th><th>為什麼</th></tr><tr><td>審故事</td><td>2026-11-19 拿掉：不單獨列審查步驟；大綱和劇本放在同一頁，可以不看。</td></tr><tr><td>拍攝清單＋旁白（定稿點）、分幕</td><td>2026-11-19 合併成「分場」；鏡頭改在分鏡設計才拆。「拍攝清單」改叫「分場表」（電影的 shot list 是鏡頭表，屬於分鏡表）。</td></tr><tr><td>分鏡表＋驗收、下載、旁白配音</td><td>2026-11-19 合併成「挑圖、下載、配音、壓粗剪」。</td></tr><tr><td>補救</td><td>2026-11-19 改成「改版」循環（四條線）。</td></tr><tr><td>上架</td><td>2026-11-19 移出流程，你自己傳；改成「封面、標題、說明欄」。</td></tr><tr><td>每格分析；走位、鏡頭、寫 prompt（三步）</td><td>2026-11-12 拿掉或合併成分鏡設計。</td></tr></table></div>
+<p class="sub">不做的：恐龍穿越系列的「收集論文資料、做命題卡、排季集數」三步，本專案不做；科普只查書上的知識點和我列的書外知識，不另外找題材。</p>
 </main></body></html>
