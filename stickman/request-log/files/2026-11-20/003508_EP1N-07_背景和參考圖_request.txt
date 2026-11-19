@@ -1,0 +1,73 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟恐龍同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 7 場　河岸・上午
+
+【四、地圖】河岸・上午（河對岸有一群鴨嘴龍）
+寬闊的泥濘河岸。北邊是河，河對岸有一群鴨嘴龍；南邊是森林，暴龍從東南邊的大樹後面出來。河岸上有一個巨大的三趾腳印、一叢蕨類、一棵細樹。
+
+大小 24 欄（A–X）× 28 列（1–28），一格 2 公尺。北在上。時間：上午，太陽在東南方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T U V W X
+  1  D D D D D D D D D D D D D D D D D D D D D D D D
+  2  D D D D D D D D D D D D D D D D D D D D D D D D
+  3  s s s s s s s s s s s s s s s s s s s s s s s s
+  4  s s s s s s s s s s s s s s s s s s s s s s s s
+  5  R R R R R R R R R R R R R R R R R R R R R R R R
+  6  R R R R R R R R R R R R R R R R R R R R R R R R
+  7  R R R R R R R R R R R R R R R R R R R R R R R R
+  8  R R R R R R R R R R R R R R R R R R R R R R R R
+  9  R R R R R R R R R R R R R R R R R R R R R R R R
+ 10  R R R R R R R R R R R R R R R R R R R R R R R R
+ 11  R R R R R R R R R R R R R R R R R R R R R R R R
+ 12  R R R R R R R R R R R R R R R R R R R R R R R R
+ 13  R R R R R R R R R R R R R R R R R R R R R R R R
+ 14  R R R R R R R R R R R R R R R R R R R R R R R R
+ 15  b b b b b b b b b b b b b b b b b b b b b b b b
+ 16  b b b b b b b b b b b b b b b b b b b b b b b b
+ 17  b b b b b b b b b b b b b b b b b b b b b b b b
+ 18  b b b b b b b b b b b b b b b b b b b b b b b b
+ 19  b b b b b b b b 3 2 b 1 b b b b b b b b b b b b
+ 20  b b b b b b b b 2 2 b b b b b b b b b b b b b b
+ 21  b b b b b b b b b b b b b b b b b b b b b b b b
+ 22  F F F F F F F F F F F F F F F F F F F F F F F F
+ 23  F F F F F F F F F F F F F F F F F 4 F F F F F F
+ 24  F F F F F F F F F F F F F F F F F F F F F F F F
+ 25  F F F F F F F F F F F F F F F F F F F F F F F F
+ 26  F F F F F F F F F F F F F F F F F F F F F F F F
+ 27  F F F F F F F F F F F F F F F F F F F F F F F F
+ 28  F F F F F F F F F F F F F F F F F F F F F F F F
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 暴龍腳印（a three-toed T. rex footprint pressed into the mud, exactly the size of the adult T. rex's own foot, with only a little rainwater inside the footprint）｜角色：可站｜相機：可放（腳印裡積水，可以站在旁邊或踩進去）
+  2 = 蕨類叢（a clump of ferns）｜角色：可站｜相機：可放
+  3 = 細樹（a thin young tree）｜角色：不可站｜相機：不可放（會被壓彎的樹）
+  4 = 大樹（a huge tree at the forest edge）｜角色：不可站｜相機：不可放
+  D = 對岸的森林（開闊、朦朧）（a distant, open, hazy forest on the far bank, soft and pale, with gaps between the trees）｜角色：不可站｜相機：不可放（對岸，太遠）
+  F = 森林（蘇鐵、銀杏、針葉樹）（a dense Cretaceous forest of cycads, ginkgos and conifers）｜角色：不可站｜相機：可放（相機可以放在森林邊緣往外拍，前景會有枝葉）
+  R = 河（a wide slow river）｜角色：不可站｜相機：可放（相機可以在水面上方往岸上拍）
+  b = 泥地（河岸）（a wide flat stretch of bare mud）｜角色：可站｜相機：可放
+  s = 對岸河邊地（a strip of flat muddy riverside ground on the far bank）｜角色：可站｜相機：不可放（對岸：鴨嘴龍群站在這裡喝水（HERO 過不去，但恐龍可以站））
+北邊是河，鴨嘴龍群在河對岸。
+地圖外面：北邊 對岸開闊、朦朧的森林往遠方延伸；東邊 寬闊的河和兩岸的森林往遠方延伸；西邊 寬闊的河和兩岸的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
+
+【參考圖】
+- PAIR2_EDMONTO：HERO 和鴨嘴龍的身高比例圖
+- REF_EDMONTO：鴨嘴龍設定圖
+- REF_HERO：HERO 角色設定圖（戴帽子、背背包）
+- REF_PROPS：道具：手機、相機、電擊槍、回家按鈕、生存指南、帳單
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP1N-07-01", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "K20", "height_m": "1.7", "look_at": "對岸的鴨嘴龍群", "distance_m": "34"}, "in_frame": ["HERO", "EDMONTO"]}, {"id": "EP1N-07-02", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "K15", "height_m": "1.6", "look_at": "HERO", "distance_m": "4"}, "in_frame": ["HERO"]}]
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

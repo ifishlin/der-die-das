@@ -1,0 +1,6 @@
+把下面每一段英文 prompt 翻成通順的繁體中文（台灣用語）。景別、角度的英文名詞（例如 Medium Close-up (MCU)、Eye-level）保留英文；角色代號（HERO、PROF、TREX…）保留。只回一個 JSON 物件 {id: 中文}，不要 ``` 也不要說明。
+
+{
+ "EP1N-20-01": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only object in the picture is a single small asteroid high up and far away: a tiny glowing ball with a short glowing tail streaking behind it, flying toward the viewer. It is very small in the picture, the vast dark night sky is the main subject. Shot size: Extreme Wide Shot (EWS). The asteroid is very small in the picture; the environment is the main subject. The camera is on the ground looking up at the night sky.",
+ "EP1N-20-02": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only object in the picture is a single large bright asteroid, a glowing fireball with a long burning tail streaming behind it, bearing down toward the viewer and filling much of the upper part of the picture. Shot size: Wide Shot (WS). The asteroid's whole glowing body is clearly visible, with a lot of the dark night sky around it. The camera is on the ground looking up at the night sky."
+}

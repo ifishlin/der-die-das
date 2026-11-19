@@ -1,0 +1,790 @@
+{
+ "scene_id": "EP1N-12",
+ "notes": "這是一段劇情暫停的科普講解，用『定格—講解插圖—回到定格』的結構。頭尾兩張（01、18）是同一個構圖、同一個瞬間：HERO 站在倒木上向喘氣的暴龍揮手，一個問問題、一個回答，形成書擋；兩張都含 HERO＋大恐龍，各加一張遠一級（EWS）備選。中間 02–17 全是生存指南內頁式的手繪插圖，HERO 不在場，插圖裡的人畫成純白火柴人路人（不是 HERO），動物卡通自然色，畫面無字無數字，camera.cell 一律 N/A、t=0、無走位。五個指定實物視覺都用到：深礦井掉落動物（03、04、06）、放大兩倍的方塊（05）、會裂開的骨頭（07、08）、不同大小動物同跑道賽跑（11、12、14）、科學家電腦模擬（16）。全場角度一律 eye 平視：插圖是平面手繪、頭尾定格兩隻尺寸差很大又都要全身入鏡（TREX 5.06m vs HERO 1.72m），平視配 WS／EWS 最能把兩隻都放進去又不違反比例。37 句旁白依講解段落（礦井→跑步骨頭→燃料→希爾特→鐘擺算法→模擬與爭論→收束）順序分配，一句不漏不改。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "Q5",
+     "facing": "W",
+     "doing": "站在倒木上，轉向左（西）朝暴龍揮手（定格；開頭與結尾同一瞬間）"
+    }
+   ]
+  },
+  {
+   "who": "TREX",
+   "path": [
+    {
+     "t": "1",
+     "cell": "M5",
+     "facing": "E",
+     "doing": "在倒木西邊一小段距離，側腹起伏、喘著氣看 HERO，顯得疲累又有點洩氣（定格）"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-12-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "好，現在來回答這一集最重要的問題：牠為什麼追不上你？",
+    "答案呢，要從一口很深很深的礦井說起。"
+   ],
+   "subject": "HERO 與 TREX（倒木上的對峙定格）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面左側暴龍側面、面朝右，側腹喘氣；右側 HERO 站在倒木上、側面、面朝左揮手；兩者之間是小路的空檔；前景森林枝葉。",
+   "screen_direction": "left",
+   "action": "劇情定格的一刻：HERO 在倒木上得意地向喘到不行的暴龍揮手，旁白拋出全集核心問題。",
+   "camera": {
+    "cell": "O8",
+    "height_m": "2.2",
+    "look_at": "HERO 與 TREX 之間（倒木西側）",
+    "distance_m": "10"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（站在倒木上）",
+     "frame_height": "約 3 成"
+    },
+    {
+     "who": "TREX",
+     "visible": "全身側面",
+     "frame_height": "約 7 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX, the adult T. rex (exactly as in the attached TREX sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack; he stands on top of a fallen log, turned to his left, waving one hand toward the T. rex with a cocky little grin. HERO's face and hands are pure paper white. TREX stands a short distance away facing HERO, sides heaving, panting and worn-out, mouth slightly open, looking exhausted and a little sulky. Shot size: Wide Shot (WS). TREX's whole body is clearly visible, with a lot of the surroundings around him; HERO is much smaller, standing on the log. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS 大小；可接受，並已加 01W（EWS）作剪輯備選。"
+  },
+  {
+   "id": "EP1N-12-01W",
+   "variant_of": "EP1N-12-01",
+   "t": "1",
+   "narration": [
+    "好，現在來回答這一集最重要的問題：牠為什麼追不上你？",
+    "答案呢，要從一口很深很深的礦井說起。"
+   ],
+   "subject": "HERO 與 TREX（倒木上的對峙定格）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "同 01，但拉得更遠：左側暴龍、右側倒木上的 HERO 都變小，森林環境占大面積。",
+   "screen_direction": "left",
+   "action": "同 01 的定格瞬間，遠一級版本，突顯森林空間與兩者的距離。",
+   "camera": {
+    "cell": "O8",
+    "height_m": "3",
+    "look_at": "HERO 與 TREX 之間（倒木西側）",
+    "distance_m": "14"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（站在倒木上）",
+     "frame_height": "約 1.7 成"
+    },
+    {
+     "who": "TREX",
+     "visible": "全身側面",
+     "frame_height": "約 3.8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX, the adult T. rex (exactly as in the attached TREX sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack; he stands on top of a fallen log, turned to his left, waving one hand toward the T. rex with a cocky little grin. HERO's face and hands are pure paper white. TREX stands a short distance away facing HERO, sides heaving, panting and worn-out, mouth slightly open, looking exhausted and a little sulky. Shot size: Extreme Wide Shot (EWS). HERO and TREX are very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-02",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "一九二六年，英國的生物學家霍爾丹，寫了一篇文章，叫做〈剛剛好的大小〉。"
+   ],
+   "subject": "科學家（火柴人路人）在書桌前寫文章（手繪插圖）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面中央一位老派科學家坐在小書桌前低頭寫字，桌上一張空白紙；周圍留白。",
+   "screen_direction": "off_down",
+   "action": "科學家沾墨、低頭專注寫文章，表情若有所思，作為講解的開場插圖。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "科學家（路人火柴人）",
+     "visible": "膝上半身",
+     "frame_height": "約 6 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A single old-fashioned scientist drawn as a pure paper white stick figure with thick black outlines, sitting at a small wooden desk, dipping a pen and writing on a blank sheet of paper, looking thoughtful and absorbed. The paper is completely blank, with no writing or numbers on it. Only this one scientist in the picture; no HERO. Shot size: Medium Long Shot (MLS). The scientist is framed from the knees up. Camera direction: front three-quarter view, so we see his face and one side of his body. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-03",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "他說，把一隻老鼠，丟進一口深到不行的礦井，牠落地以後，拍拍身上的灰，照樣跑掉。"
+   ],
+   "subject": "深礦井剖面與掉下去又沒事的老鼠（手繪插圖）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "一條又深又窄的直立礦井側面剖面占滿畫面；頂端一隻小老鼠正掉下去，井底同一隻老鼠已落地、正拍灰跑開。",
+   "screen_direction": "off_down",
+   "action": "老鼠落地後拍拍身上的灰、一派輕鬆跑掉，表情無事又得意。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "老鼠（卡通）",
+     "visible": "全身（頂端落下＋井底跑開兩次）",
+     "frame_height": "約 1 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A tall vertical cross-section cutaway of a very deep, narrow mine shaft. Near the top, a small brown cartoon mouse is tumbling into the shaft; at the bottom the same mouse has landed completely unhurt and is cheerfully dusting itself off and scampering away, looking pleased and carefree. No people. No text or numbers anywhere. Only the mine shaft and the mouse in the picture. Shot size: Extreme Wide Shot (EWS). The mouse is very small; the deep shaft is the main subject and fills the picture. Camera direction: side view (a flat cutaway seen from the side). Camera angle: Eye-level, looking straight ahead.",
+   "untested": [
+    "垂直礦井側面剖面 cutaway 畫法（實測表上沒有）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-04",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "可是換成大一點的老鼠，會摔死；換成人，會摔碎；換成馬呢，會整隻濺開。"
+   ],
+   "subject": "深礦井剖面與越摔越慘的三種動物（手繪插圖，只畫灰塵雲）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "同一條深礦井剖面；由小到大三隻動物（大老鼠、人、馬）分別掉到井底，落地處只畫成一團團灰色灰塵雲。",
+   "screen_direction": "off_down",
+   "action": "三種體型掉下去、落地化成漫畫灰塵雲，一隻比一隻大團，搞笑不血腥。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "大老鼠／人（白火柴人）／馬（卡通）",
+     "visible": "下墜身影（落地化為灰塵雲）",
+     "frame_height": "各約 1 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. The same deep vertical mine-shaft cutaway. Three separate animals of increasing size — a large rat, a human drawn as a pure paper white stick figure, and a horse — are shown tumbling down and hitting the bottom, where each landing is drawn only as a comic puff of grey dust cloud, a bigger puff for the bigger one. No blood, no injury, nothing gory — just cartoon dust puffs. Natural colours for the animals. No people besides the white stick figure; no HERO. No text or numbers. Shot size: Extreme Wide Shot (EWS). The deep shaft dominates the picture; the falling figures are small. Camera direction: side view (a flat cutaway seen from the side). Camera angle: Eye-level, looking straight ahead.",
+   "untested": [
+    "垂直礦井側面剖面 cutaway 畫法（實測表上沒有）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-05",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "為什麼呢？掉下來的時候，空氣擋住你的力量，要看你的表面有多大；撞到地上的力道，要看你有多重。",
+    "問題就出在這裡：一個東西放大成兩倍高，表面積只變成四倍，體積和重量，卻變成八倍。"
+   ],
+   "subject": "一大一小兩個方塊（放大兩倍，手繪插圖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面左邊一個小方塊，右邊一個剛好兩倍高、兩倍寬、明顯更大更重的方塊，並排在平面上。",
+   "screen_direction": "toward",
+   "action": "用純粹的兩個方塊對比『放大兩倍』：右邊明顯又大又重，視覺上帶出四倍表面、八倍重量。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "小方塊",
+     "visible": "整個",
+     "frame_height": "約 3 成"
+    },
+    {
+     "who": "大方塊（兩倍）",
+     "visible": "整個",
+     "frame_height": "約 6 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. Two simple solid cubes standing side by side on a plain floor. On the left a small cube; on the right a cube exactly twice as tall and twice as wide, clearly much bigger and heavier-looking. Thick black outlines, flat colour fill. No text, no numbers, no labels anywhere. Only the two cubes in the picture; no characters, no animals. Shot size: Full Shot (FS). Both cubes are fully in frame, from top to bottom. Camera direction: front view, facing the cubes straight on. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-06",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "所以啊，越大的動物，掉下來就越停不住。要是一隻九噸重的暴龍掉進礦井，牠會像石頭一樣往下衝，重重砸在井底。"
+   ],
+   "subject": "暴龍像石頭一樣掉進深礦井（手繪插圖）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "同一條深礦井剖面；一隻巨大的卡通暴龍四肢亂舞地直直往下衝，井底一大團漫畫撞擊灰塵雲。",
+   "screen_direction": "off_down",
+   "action": "暴龍像被丟下的石頭一樣筆直墜落、重重砸底，表情瞪大眼睛、一臉滑稽驚慌。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "暴龍（插圖，卡通）",
+     "visible": "全身下墜",
+     "frame_height": "約 3 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A tall vertical cross-section cutaway of the same very deep, narrow mine shaft. A huge cartoon adult T. rex, natural earthy colours with a dark back and a pale belly, is plummeting straight down the shaft like a dropped stone, limbs flailing, eyes wide and comically alarmed; at the very bottom is a big comic puff of impact dust where it has slammed down. Funny, not gory; no blood. No people, no text, no numbers. Only the shaft and the T. rex in the picture. Shot size: Extreme Wide Shot (EWS). The deep shaft fills the picture; the falling T. rex is dropping down it. Camera direction: side view (a flat cutaway seen from the side). Camera angle: Eye-level, looking straight ahead.",
+   "untested": [
+    "垂直礦井側面剖面 cutaway 畫法（實測表上沒有）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-07",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "其實跑步，也是同一個道理。",
+    "骨頭撐得住多少力氣，看的是它有多粗，一樣只變成四倍；可是要撐的重量，卻變成八倍。"
+   ],
+   "subject": "一根會裂開的粗骨頭（手繪插圖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一根粗粗的卡通骨頭，中段一道鋸齒狀裂縫、幾塊碎屑迸飛。",
+   "screen_direction": "toward",
+   "action": "骨頭在過重負荷下中段裂開、碎片飛出，呈現『越重越撐不住』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "骨頭",
+     "visible": "整根",
+     "frame_height": "約 6 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A single thick cartoon leg bone shown on its own, with a jagged crack splitting across the middle and a couple of chips flying off, as if it is snapping under too much load. Thick black outline, flat off-white colour fill. No people, no text, no numbers. Only the one cracking bone in the picture. Shot size: Full Shot (FS). The whole bone is in frame, from end to end. Camera direction: front view, facing the bone straight on. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-08",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "所以動物越大，要站、要走、要跑，就需要越多的腿肌和腿骨。大到某個程度，跑步在物理上，就不可能了。",
+    "暴龍腿上的肌肉，比例幾乎比歷史上任何動物都高。",
+    "可是再壯也沒用，只要力氣超過快走，牠的腿骨就會碎掉。（停）"
+   ],
+   "subject": "暴龍的粗壯後腿與快要裂的腿骨（手繪插圖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "一隻側面站立的卡通暴龍占據畫面，兩條後腿畫得肌肉誇張鼓脹；一條腿上一個小剖面窗，露出腿骨開始出現鋸齒裂縫。",
+   "screen_direction": "right",
+   "action": "暴龍站著咬牙用力，強調腿肌比例超高，但腿骨已開始裂；收在笑點前的停頓。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "暴龍（插圖，卡通）",
+     "visible": "全身側面",
+     "frame_height": "約 8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A whole cartoon adult T. rex standing in profile, facing right, natural earthy colours with a dark back and pale belly. Its two powerful hind legs are drawn with exaggerated bulging muscle; through a little cutaway window in one thick leg, a jagged crack is just starting to appear in the leg bone. The T. rex is straining, teeth gritted. No people, no text, no numbers. Only the one T. rex in the picture. Shot size: Full Shot (FS). The whole T. rex is in frame, from head to feet. Camera direction: side view, seen exactly from the side. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [
+    "腿部剖面窗露出腿骨的畫法（實測表上沒有）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-09",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "那速度，又是怎麼來的呢？要看兩件事：肌肉有多大力氣，還有能多快加速。",
+    "加速，靠的是一種叫做 ATP 的快速燃料。它就像一小罐汽油，很有力，但一下子就燒完了。"
+   ],
+   "subject": "一小罐汽油（ATP 快速燃料的比喻，手繪插圖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面中央一個小小的紅色汽油罐，罐口竄出一小團明亮火焰、一縷煙，呈現爆發力強但很快燒完。",
+   "screen_direction": "toward",
+   "action": "小油罐口噴出一下猛烈火焰，比喻 ATP『很有力、一下就燒完』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "小汽油罐",
+     "visible": "整個",
+     "frame_height": "約 5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A single small red metal fuel can / jerry can, with a tiny bright flame bursting out of its spout and a little puff of smoke, as if it gives one powerful burst but burns out fast. Thick black outline, flat colours. No text, no numbers, no labels on the can. Only the fuel can in the picture; no characters, no animals. Shot size: Full Shot (FS). The whole can is in frame. Camera direction: front three-quarter view. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-10",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "而大動物的身體很省油。以每一公斤來算，大象燒的能量，比老鼠少得多。",
+    "要是你的身體像老鼠一樣耗油，你一天，得吃掉十一公斤的食物。",
+    "可是省油是有代價的，用來加速的燃料，比例上就比較少。"
+   ],
+   "subject": "省油的大象 vs 耗油的老鼠（手繪插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面左邊一隻大象悠哉地只舔一小滴燃料；右邊一隻小老鼠在比自己還高的一大堆食物前狼吞虎嚥。",
+   "screen_direction": "toward",
+   "action": "大象淡定省油、老鼠拼命進食，對比『每公斤大動物更省油』與『像老鼠就得狂吃』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "大象（卡通）",
+     "visible": "全身",
+     "frame_height": "約 7 成"
+    },
+    {
+     "who": "老鼠（卡通）＋食物堆",
+     "visible": "全身＋大食物堆",
+     "frame_height": "老鼠約 2 成、食物堆約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. On the left a big cartoon elephant, looking calm and content, lazily sipping from a single tiny drop of fuel; on the right a tiny cartoon mouse, looking frantic and ravenous, gobbling from a huge pile of food taller than itself. Both drawn flat and cartoonish, in natural colours. No people, no text, no numbers. Only the elephant, the mouse and the food pile in the picture. Shot size: Wide Shot (WS). Both animals are fully visible and the size difference is clear. Camera direction: side view. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS 大小；插圖可接受，不另加遠一級。"
+  },
+  {
+   "id": "EP1N-12-11",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "二〇一七年，德國的科學家希爾特，只用動物的體重，就算出了牠們能跑多快。",
+    "結果是：最小的跑不快，最大的也跑不快，跑最快的，是不大不小、剛剛好的。"
+   ],
+   "subject": "不同大小動物在同一跑道賽跑（手繪插圖）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "一條側面的跑道，幾隻大小差很多的卡通動物由左往右賽跑：最小的老鼠、遙遙領先的中型動物（狗或羚羊）、落在最後笨重的大象。",
+   "screen_direction": "right",
+   "action": "中等體型的動物明顯領先衝刺，最小與最大的都落後，點出『不大不小剛剛好最快』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "老鼠／中型動物／大象（卡通）",
+     "visible": "全身側面賽跑",
+     "frame_height": "大象約 4 成、中型約 2.5 成、老鼠約 0.8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A running track seen from the side, with several cartoon animals of very different sizes racing from left to right: a tiny mouse at the back, a medium-sized dog or antelope grinning in the clear lead, and a huge elephant lumbering and puffing at the very back. The medium one is winning. Natural colours, flat cartoon style. No people, no text, no numbers, no lane numbers. Only the animals and the track in the picture. Shot size: Extreme Wide Shot (EWS). The track and all the racers are in frame; the animals are fairly small. Camera direction: side view. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-12",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "只要超過大約兩千七百公斤的恐龍，年輕、體能好的人，大概都跑得掉。",
+    "當然啦，身材也有關係。同樣的體重，人跟獵豹，跑起來就差得遠了。（停）"
+   ],
+   "subject": "人、獵豹、笨重大恐龍同場賽跑（手繪插圖）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側面跑道上，左邊一個純白火柴人和一隻獵豹由左往右衝，獵豹遠遠超前人；人後方很遠一隻笨重大恐龍被甩在後面。",
+   "screen_direction": "right",
+   "action": "獵豹飆到最前、人其次、大恐龍遠遠落後，同時帶出『人跑得掉大恐龍』與『同體重身材差很多』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "人（白火柴人）",
+     "visible": "全身側面奔跑",
+     "frame_height": "約 2.5 成"
+    },
+    {
+     "who": "獵豹（卡通）",
+     "visible": "全身側面衝刺",
+     "frame_height": "約 2 成"
+    },
+    {
+     "who": "大恐龍（插圖，卡通）",
+     "visible": "全身側面落後",
+     "frame_height": "約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A running track seen from the side. A pure paper white human stick figure and a cheetah sprint from left to right, both looking determined, the cheetah streaking far ahead of the human; well behind them a huge slow cartoon dinosaur in earthy colours lumbers along, left in the dust and looking tired. Flat cartoon style. No text, no numbers. Only these three in the picture; the human is a plain white stick figure, not HERO. Shot size: Extreme Wide Shot (EWS). The whole track and all three runners are in frame. Camera direction: side view. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-13",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "那科學家，又是怎麼算出暴龍有多快的呢？",
+    "一九七〇年代，英國的動物學家亞歷山大，發現了一件事：不管是雪貂還是犀牛，動物跑起來，都遵守同一套規律。",
+    "所以只要量出恐龍的屁股有多高、一步跨多遠，就能估出牠的速度。就像看鐘擺有多長，就知道它擺得多快。",
+    "不過呢，這只是很粗略的算法，誤差可能很大。"
+   ],
+   "subject": "恐龍邁步與旁邊的鐘擺（鐘擺比喻，手繪插圖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面中央一隻側面邁步中的卡通恐龍，一腿在前一腿在後、跨出一大步；旁邊一個簡單的鐘擺（吊著小球）正在擺動。",
+   "screen_direction": "right",
+   "action": "恐龍大步前進，身旁鐘擺同步擺動，呈現『用屁股高度和步幅＝像看鐘擺長度估擺速』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "恐龍（插圖，卡通）",
+     "visible": "全身側面邁步",
+     "frame_height": "約 6 成"
+    },
+    {
+     "who": "鐘擺",
+     "visible": "整個",
+     "frame_height": "約 5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A cartoon dinosaur shown in profile, facing right, mid-stride with one leg forward and one leg back taking a big step; beside it a simple pendulum, a ball on a string, swings to suggest its gait works like a pendulum. Hand-drawn diagram style, thick outlines, natural earthy colour. No text, no numbers, no measurement labels or marks. Only the dinosaur and the pendulum in the picture. Shot size: Full Shot (FS). The whole dinosaur and the pendulum are in frame. Camera direction: side view. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [
+    "恐龍旁放一個擺動鐘擺的比喻畫法（實測表上沒有）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-14",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "用這種方法算，大型的肉食恐龍，大概跑得比人快一點。",
+    "到了二〇二〇年，又有一組科學家，把好幾套算法湊在一起，加上新挖到的化石，一口氣估算了七十幾種恐龍。"
+   ],
+   "subject": "一整排各式恐龍，前方肉食恐龍微幅領先一個人（手繪插圖）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面滿滿一長排大小形狀各異的卡通恐龍並列，像一本物種圖鑑；最前方一隻大型肉食恐龍只比一個奔跑的純白火柴人稍微領先。",
+   "screen_direction": "right",
+   "action": "一字排開眾多恐龍，前景肉食恐龍與奔跑的人幾乎並駕、恐龍略快一點，帶出『一口氣估了七十幾種』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "眾多恐龍（插圖，卡通）",
+     "visible": "全身側面排列",
+     "frame_height": "多數約 2–4 成"
+    },
+    {
+     "who": "人（白火柴人）",
+     "visible": "全身側面奔跑",
+     "frame_height": "約 2.5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A long line-up of many different cartoon dinosaurs of all shapes and sizes standing side by side, like a whole catalogue of species, in natural earthy colours; at the front one big meat-eating dinosaur jogs just slightly ahead of a small pure paper white human stick figure who is running hard. No text, no numbers. The human is a plain white stick figure, not HERO. Shot size: Extreme Wide Shot (EWS). Many small dinosaurs fill the frame. Camera direction: side view. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-15",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "而早在二〇〇二年，科學家哈欽森，就在一篇論文裡直接說：暴龍不是快跑者。",
+    "牠頂多只能慢跑一小段，而且起步很慢。",
+    "另一位科學家史尼夫利也算過，成年暴龍的時速，不會超過二十公里。",
+    "差不多，就跟一個普通人拚命衝刺一樣快。"
+   ],
+   "subject": "暴龍吃力慢跑、人全力衝刺並駕齊驅（手繪插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側面，一隻卡通暴龍沉重地慢跑，右邊一個純白火柴人拚命衝刺，兩者齊頭並進、同速；由左往右。",
+   "screen_direction": "right",
+   "action": "暴龍起步慢、吃力慢跑，人用盡全力衝刺剛好跟上，呈現『頂多跟普通人衝刺一樣快』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "暴龍（插圖，卡通）",
+     "visible": "全身側面慢跑",
+     "frame_height": "約 7 成"
+    },
+    {
+     "who": "人（白火柴人）",
+     "visible": "全身側面衝刺",
+     "frame_height": "約 2.5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A cartoon adult T. rex in earthy colours jogging heavily, and a pure paper white human stick figure sprinting flat-out right beside it, the two going at exactly the same speed, neck and neck, from left to right. The T. rex looks laboured and slow to get going; the human is sprinting all-out, straining. No text, no numbers. Only the T. rex and the one white stick-figure human in the picture; not HERO. Shot size: Wide Shot (WS). Both are fully visible side by side. Camera direction: side view. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS 大小；插圖可接受，不另加遠一級。"
+  },
+  {
+   "id": "EP1N-12-16",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "到了二〇一七年，還有科學家用電腦，把暴龍的骨頭和肌肉，整個模擬出來。結果是：牠只能快走，真的跑起來，腿骨會撐不住。"
+   ],
+   "subject": "科學家（白火柴人）盯著電腦上的暴龍骨骼肌肉模擬（手繪插圖）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面一位純白火柴人科學家坐在電腦前；螢幕上是一隻正在走路的暴龍骨骼＋肌肉模型圖。",
+   "screen_direction": "off_right",
+   "action": "科學家專注看著螢幕上的暴龍骨肌模擬，呈現『電腦模擬出牠只能快走』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "科學家（白火柴人）",
+     "visible": "膝上半身",
+     "frame_height": "約 6 成"
+    },
+    {
+     "who": "電腦（螢幕含暴龍骨肌圖）",
+     "visible": "整台",
+     "frame_height": "約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. A scientist drawn as a pure paper white stick figure, looking focused and curious, sitting at a computer; on the computer screen is a cartoon diagram of a T. rex skeleton with muscles, shown mid-walk. The scientist watches the screen. Thick black outlines, flat colours. No text or numbers anywhere, including on the screen. Only the one scientist and the computer in the picture; no HERO. Shot size: Medium Long Shot (MLS). The scientist and the computer are framed from about the knees up. Camera direction: front three-quarter view. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-17",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "不過，這件事到現在，其實還在吵。也有人算出，暴龍說不定能跑到時速三十幾公里，跟腳踏車差不多。",
+    "但不管是哪一個答案，有一件事是確定的：暴龍加速慢，轉彎更慢。腳程不錯的人，很有機會邊跑邊轉彎，把牠甩在後面。",
+    "只不過，有些恐龍的長腿，是為了走遠路也不會累。（停）"
+   ],
+   "subject": "人急轉彎甩開笨重暴龍，背景一隻長腿恐龍（手繪插圖）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "前景一個純白火柴人一邊衝刺一邊往左急轉彎逃開；身後一隻巨大暴龍笨拙地在轉彎途中失衡、跟不上；遠方背景一隻細長長腿恐龍穩穩邁步。",
+   "screen_direction": "left",
+   "action": "人俐落急轉甩開轉彎遲鈍的暴龍，遠處長腿恐龍悠悠走遠路；收在笑點前的停頓。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "人（白火柴人）",
+     "visible": "全身急轉奔跑",
+     "frame_height": "約 2.5 成"
+    },
+    {
+     "who": "暴龍（插圖，卡通）",
+     "visible": "全身笨拙轉彎",
+     "frame_height": "約 5 成"
+    },
+    {
+     "who": "長腿恐龍（插圖，背景）",
+     "visible": "全身側面邁步",
+     "frame_height": "約 2 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors, like a hand-drawn page from a survival handbook. No text anywhere in the picture. In the foreground a pure paper white human stick figure sprinting and cutting a sharp sideways turn to the left to escape, looking focused; behind him a huge cartoon T. rex in earthy colours leans awkwardly and off-balance mid-turn, too slow and clumsy to follow, looking frustrated. Far in the background a slender, long-legged dinosaur strides along steadily. Flat cartoon style. No text, no numbers. The human is a plain white stick figure, not HERO. Shot size: Extreme Wide Shot (EWS). The whole chase and the background dinosaur are in frame; the figures are smallish. Camera direction: side view. Camera angle: Eye-level, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-12-18",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "所以啊，剛剛那隻……不是不想追你，是追不動。"
+   ],
+   "subject": "HERO 與 TREX（回到劇情，與開頭定格同一構圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "與 01 完全相同：左側暴龍側面喘氣面朝右，右側 HERO 站在倒木上側面面朝左揮手，中間小路空檔，前景森林枝葉。",
+   "screen_direction": "left",
+   "action": "講解結束、畫面恢復動態：仍是定格那一刻的構圖，旁白收束『不是不想追，是追不動』。",
+   "camera": {
+    "cell": "O8",
+    "height_m": "2.2",
+    "look_at": "HERO 與 TREX 之間（倒木西側）",
+    "distance_m": "10"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（站在倒木上）",
+     "frame_height": "約 3 成"
+    },
+    {
+     "who": "TREX",
+     "visible": "全身側面",
+     "frame_height": "約 7 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX, the adult T. rex (exactly as in the attached TREX sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack; he stands on top of a fallen log, turned to his left, waving one hand toward the T. rex with a cocky little grin. HERO's face and hands are pure paper white. TREX stands a short distance away facing HERO, sides heaving, panting and worn-out, mouth slightly open, looking exhausted and a little sulky. Shot size: Wide Shot (WS). TREX's whole body is clearly visible, with a lot of the surroundings around him; HERO is much smaller, standing on the log. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS 大小；需與 01 構圖一致，並已加 18W（EWS）作剪輯備選。"
+  },
+  {
+   "id": "EP1N-12-18W",
+   "variant_of": "EP1N-12-18",
+   "t": "1",
+   "narration": [
+    "所以啊，剛剛那隻……不是不想追你，是追不動。"
+   ],
+   "subject": "HERO 與 TREX（回到劇情，與開頭定格同一構圖）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "同 18，但拉得更遠：左側暴龍、右側倒木上的 HERO 都變小，森林環境占大面積。",
+   "screen_direction": "left",
+   "action": "同 18 的瞬間，遠一級版本，收束整段講解。",
+   "camera": {
+    "cell": "O8",
+    "height_m": "3",
+    "look_at": "HERO 與 TREX 之間（倒木西側）",
+    "distance_m": "14"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（站在倒木上）",
+     "frame_height": "約 1.7 成"
+    },
+    {
+     "who": "TREX",
+     "visible": "全身側面",
+     "frame_height": "約 3.8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX, the adult T. rex (exactly as in the attached TREX sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack; he stands on top of a fallen log, turned to his left, waving one hand toward the T. rex with a cocky little grin. HERO's face and hands are pure paper white. TREX stands a short distance away facing HERO, sides heaving, panting and worn-out, mouth slightly open, looking exhausted and a little sulky. Shot size: Extreme Wide Shot (EWS). HERO and TREX are very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  }
+ ]
+}

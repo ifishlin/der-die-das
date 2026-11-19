@@ -1,0 +1,58 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟恐龍同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 15 場　暫停講解：急轉彎・下午（定格）
+
+【四、地圖】暫停講解：急轉彎（森林空地）
+森林中的一片空地，四周是森林。空地中間有一根矮倒木，東邊一根倒下的大樹幹斜架著，下面有空隙。西邊樹林間有一道很暗的縫隙。
+
+大小 26 欄（A–Z）× 16 列（1–16），一格 2 公尺。北在上。時間：傍晚，太陽在西方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+  1  F F F F F F F F F F F F F F F F F F F F F F F F F F
+  2  F F F F F F F F F F F F F F F F F F F F F F F F F F
+  3  F F F F F F F F F F F F F F F F F F F F F F F F F F
+  4  F F F F F F F F F F F F F F F F F F F F F F F F F F
+  5  F F F F F F F g g g g g g g g g g g g g F F F F F F
+  6  F F F F F F F g g g g g g g g g g 2 g g F F F F F F
+  7  F F F F F F F g g g g g g g g g g 2 g g F F F F F F
+  8  F F F F F 3 F g g g g g g g g g g 2 g g F F F F F F
+  9  F F F F F F F g g g g g g g g g g 2 g g F F F F F F
+ 10  F F F F F F F g g g g g g 1 1 g g 2 g g F F F F F F
+ 11  F F F F F F F g g g g g g g g g g 2 g g F F F F F F
+ 12  F F F F F F F g g g g g g g g g g 2 g g F F F F F F
+ 13  F F F F F F F g g g g g g g g g g g g g F F F F F F
+ 14  F F F F F F F F F F F F F F F F F F F F F F F F F F
+ 15  F F F F F F F F F F F F F F F F F F F F F F F F F F
+ 16  F F F F F F F F F F F F F F F F F F F F F F F F F F
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 矮倒木（a low fallen log）｜角色：可站｜相機：可放（矮，可以跳過去）
+  2 = 倒下的大樹幹（a huge fallen tree trunk propped up, with a gap underneath）｜角色：不可站｜相機：不可放（斜架著，下面有空隙）
+  3 = 樹間的黑影（a very dark gap between the trees）｜角色：可站｜相機：不可放（TEEN 從這裡走出來）
+  F = 森林（蘇鐵、銀杏、針葉樹）（a dense Cretaceous forest of cycads, ginkgos and conifers）｜角色：不可站｜相機：可放（樹林：角色不進去，相機可以躲在樹叢邊）
+  g = 森林裡的空地（an open patch of forest floor with leaf litter and low plants）｜角色：可站｜相機：可放
+TEEN 從西邊樹林的暗縫衝出來（照第 14 場）。
+地圖外面：北邊 茂密的森林往遠方延伸；東邊 茂密的森林往遠方延伸；西邊 茂密的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
+
+【參考圖】
+- PAIR2_TEEN：HERO 和青少年暴龍的身高比例圖
+- REF_HERO：HERO 角色設定圖（戴帽子、背背包）
+- REF_LAB：博士實驗室（第 2 版）全景
+- REF_PROPS：道具：手機、相機、電擊槍、回家按鈕、生存指南、帳單
+- REF_TEEN：青少年暴龍設定圖
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP1N-15-01", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "M16", "height_m": "1.7", "look_at": "HERO（兼顧左側的 TEEN）", "distance_m": "11.7"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-01W", "variant_of": "EP1N-15-01", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "M16", "height_m": "1.7", "look_at": "HERO（兼顧左側的 TEEN）", "distance_m": "13"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-02", "variant_of": "N/A", "shot_size": "CU", "angle": "high", "camera": {"cell": "N/A（實驗室，不在本場地圖上）", "height_m": "0.9", "look_at": "桌上的生存指南", "distance_m": "0.8"}, "in_frame": []}, {"id": "EP1N-15-03", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "Q12", "height_m": "1.6", "look_at": "HERO", "distance_m": "2.8"}, "in_frame": ["HERO"]}, {"id": "EP1N-15-04", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["科學家", "獵豹", "黑斑羚", "獅子", "斑馬"]}, {"id": "EP1N-15-05", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["獵豹", "黑斑羚"]}, {"id": "EP1N-15-06", "variant_of": "N/A", "shot_size": "WS", "angle": "high", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["黑斑羚", "獵豹"]}, {"id": "EP1N-15-07", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-07W", "variant_of": "EP1N-15-07", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-08", "variant_of": "N/A", "shot_size": "WS", "angle": "high", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-08W", "variant_of": "EP1N-15-08", "shot_size": "EWS", "angle": "high", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-09", "variant_of": "N/A", "shot_size": "WS", "angle": "high", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-09W", "variant_of": "EP1N-15-09", "shot_size": "EWS", "angle": "high", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-10", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["科學家", "獵豹"]}, {"id": "EP1N-15-11", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-11W", "variant_of": "EP1N-15-11", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-12", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "M16", "height_m": "1.7", "look_at": "HERO（兼顧左側的 TEEN）", "distance_m": "11.7"}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-15-12W", "variant_of": "EP1N-15-12", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "M16", "height_m": "1.7", "look_at": "HERO（兼顧左側的 TEEN）", "distance_m": "13"}, "in_frame": ["HERO", "TEEN"]}]
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

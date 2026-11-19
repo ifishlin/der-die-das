@@ -1,0 +1,56 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟恐龍同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 3 場　校園・校務大樓旁的研究小屋外・早上
+
+【四、地圖】校園・校務大樓旁的老舊研究小屋（外面）・早上
+校園裡。北邊西側是白色石材的校務大樓（只畫到東端，往西還很長）；大樓東邊隔一排樹叢，是一間老舊的兩層木造小屋（正面朝南，西、北、東三面被樹圍起來）（木板外牆、斜鐵皮屋頂），南牆的門上貼滿警告貼紙。南邊一條東西向的校園步道，有一小段步道通到小屋門口；再往南是草地和幾棵樹。
+★ 研究小屋正面朝南（面向校園步道），大門在南牆中間
+★ 小屋西、北、東三面被樹圍起來；只有正面門口的步道是空的
+★ 校務大樓在小屋西邊，中間隔著樹叢
+大小 15 欄（A–O）× 10 列（1–10），一格 2 公尺。北在上。時間：早上，太陽在東方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O
+  1  B B B B B B B B B T H H H H T
+  2  B B B B B B B B B T H H H H T
+  3  B B B B B B B B B T H d d H T
+  4  B B B B B B B B B T T p p T T
+  5  p p p p p p p p p p p p p p p
+  6  p p p p p p p p p p p p p p p
+  7  g g g g g g g g g g g g g g g
+  8  g g 1 g g g g g g g g g g g 3
+  9  g g g g g g g g 2 g g g g g g
+ 10  g g g g g g g g g g g g g g g
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 樹（a leafy campus tree）｜角色：不可站｜相機：不可放
+  2 = 樹（a leafy campus tree）｜角色：不可站｜相機：不可放
+  3 = 樹（a leafy campus tree）｜角色：不可站｜相機：不可放
+  B = 校務大樓（白色石材）（a large white stone university administration building）｜角色：不可站｜相機：不可放
+  H = 老舊研究小屋（兩層木造）（an old two-story wooden hut with weathered plank walls and a slanted tin roof）｜角色：不可站｜相機：不可放
+  T = 樹叢（圍著小屋）（a dense cluster of leafy trees）｜角色：不可站｜相機：不可放（小屋西、東兩側和前面兩角種滿樹，把小屋圍起來；正面門口步道留空）
+  d = 大門（小屋正面，朝南）（the hut's front door, covered in warning stickers）｜角色：不可站｜相機：不可放（南牆中間，對著門口短步道）
+  g = 草地（a campus lawn）｜角色：可站｜相機：可放
+  p = 校園步道（a paved campus walkway）｜角色：可站｜相機：可放
+HERO 從南邊的步道走到小屋門口（站在門前是 L4–M4）。
+地圖外面：北邊 小屋後面（北邊）是一整片茂密的樹林，把小屋圍住；東邊 校園草地和樹往遠方延伸；西邊 校務大樓繼續往西延伸，後面是校園；南邊 校園草地和樹往遠方延伸。
+
+【參考圖】
+- REF_HERO：HERO 角色設定圖（戴帽子、背背包）
+- REF_HUT：校園研究小屋外觀
+- REF_PROPS：道具：手機、相機、電擊槍、回家按鈕、生存指南、帳單
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP1N-03-01", "variant_of": "N/A", "shot_size": "EWS", "angle": "high", "camera": {"cell": "H10", "height_m": "9", "look_at": "HERO（H6）與整片校園", "distance_m": "12"}, "in_frame": ["HERO"]}, {"id": "EP1N-03-02", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "L10", "height_m": "2", "look_at": "HERO（L5）與小屋正門（L3）", "distance_m": "10"}, "in_frame": ["HERO"]}, {"id": "EP1N-03-03", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "L7", "height_m": "1.5", "look_at": "小屋大門（L3）與門前的 HERO（L4）", "distance_m": "6"}, "in_frame": ["HERO"]}]
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

@@ -1,0 +1,77 @@
+```json
+{
+  "shots": {
+    "EP1N-06-01": {
+      "zh": "鏡頭很低、貼近地面朝空地望去。主角後方是一片鋪著落葉和矮草的森林空地往遠處延伸，地上有一小片淺淺的泥地，靠右邊有一叢高到腰的蕨類；空地盡頭有一排樹林擋著，兩側是蘇鐵、銀杏和針葉樹組成的茂密森林。上午的陽光低而偏暖，在地上灑下光斑，影子拉得很長。",
+      "en": "Background: A low camera near the ground looks across the clearing. Behind the character, an open patch of forest floor with leaf litter and low plants stretches away; there is a small patch of shallow mud on the ground and a clump of tall ferns to the right; a line of trees closes off the far end of the clearing, and a dense Cretaceous forest of cycads, ginkgos and conifers lines both sides. Low, warm morning sunlight dapples the floor and casts long shadows.",
+      "refs": ["REF_HERO"]
+    },
+    "EP1N-06-02": {
+      "zh": "鏡頭朝空地另一側望去。主角後方是鋪著落葉的森林空地和腳邊一小片淺淺的泥地，再後面是往遠方延伸的茂密森林。上午低斜偏暖的陽光穿過樹葉灑下來。",
+      "en": "Background: The view faces across the clearing. Behind the character is forest floor with leaf litter and a small patch of shallow mud underfoot, with dense forest stretching away beyond. Low, warm morning sunlight filters through the leaves.",
+      "refs": ["REF_HERO"]
+    },
+    "EP1N-06-03": {
+      "zh": "極近景，畫面幾乎只看得到手機螢幕。後方是模糊、對不到焦的森林地面和落葉，透著上午偏暖的光，看不出其他可辨認的環境。",
+      "en": "Background: An extreme close-up in which almost only the phone screen is seen. Behind it is blurred, out-of-focus forest floor with leaf litter in low, warm morning light, with no other recognizable surroundings.",
+      "refs": ["REF_HERO", "REF_PROPS"]
+    },
+    "EP1N-06-04": {
+      "zh": "鏡頭從一叢蕨類裡朝空地望去，畫面邊緣帶著蕨葉。主角後方是鋪著落葉的森林空地和一小片淺淺的泥地，再遠處是茂密的森林。上午的陽光低而偏暖，在地面灑下光斑。",
+      "en": "Background: The camera looks out from within a clump of ferns toward the clearing, with fern fronds along the edges of the frame. Behind the character is forest floor with leaf litter and a small patch of shallow mud, with dense forest further back. Low, warm morning sunlight dapples the ground.",
+      "refs": ["REF_HERO"]
+    },
+    "EP1N-06-05": {
+      "zh": "鏡頭朝空地望去。主角後方是鋪著落葉和矮草的森林空地，地上有一小片淺淺的泥地，旁邊有一叢高蕨類；再遠處是往遠方延伸的茂密森林。上午低斜偏暖的陽光把影子拉長。",
+      "en": "Background: The view faces across the clearing. Behind the character is open forest floor with leaf litter and low plants, a small patch of shallow mud on the ground, a clump of tall ferns to one side, and dense forest stretching away beyond. Low morning sunlight casts long shadows.",
+      "refs": ["REF_HERO"]
+    },
+    "EP1N-06-06": {
+      "zh": "鏡頭朝空地一側的樹林望去。主角和甲龍後方是一排由蘇鐵、銀杏和針葉樹組成的茂密森林，樹林前是鋪著落葉的空地。上午的陽光低而偏暖，從側後方斜射進樹林，地上有拉長的影子。",
+      "en": "Background: The view faces the trees at one side of the clearing. Behind the character and the ankylosaur stands a dense forest of cycads, ginkgos and conifers, with open leaf-littered ground in front of the trees. Low, warm morning sunlight slants in from the side and rear, casting long shadows on the ground.",
+      "refs": ["REF_HERO", "REF_ANKY", "PAIR2_ANKY"]
+    },
+    "EP1N-06-06W": {
+      "zh": "鏡頭拉遠望去，整片空地都入鏡。主角和甲龍後方是一側的茂密森林，更遠處空地盡頭有一排樹林；空地上鋪著落葉和矮草，中間有一小片淺淺的泥地，一側有一叢高蕨類，四周被蘇鐵、銀杏和針葉樹圍住。上午低斜偏暖的陽光在地上灑下光斑。",
+      "en": "Background: A distant view takes in the whole clearing. Behind the character and the ankylosaur is the dense forest on one side, with a line of trees closing off the far end of the clearing beyond; the clearing is covered with leaf litter and low plants, with a small patch of shallow mud in the middle, a clump of tall ferns to one side, and cycads, ginkgos and conifers all around. Low, slanting warm morning sunlight dapples the ground.",
+      "refs": ["REF_HERO", "REF_ANKY", "PAIR2_ANKY"]
+    },
+    "EP1N-06-07": {
+      "zh": "極近景，畫面幾乎被甲龍的頭部佔滿。後方是模糊、對不到焦的森林地面和落葉，透著上午偏暖的光。",
+      "en": "Background: An extreme close-up almost entirely filled by the ankylosaur's head. Behind it is blurred, out-of-focus forest floor with leaf litter in low, warm morning light.",
+      "refs": ["REF_ANKY"]
+    },
+    "EP1N-06-08": {
+      "zh": "鏡頭朝空地望去。甲龍和主角後方是一片鋪著落葉的森林空地往遠處延伸，空地盡頭有一排樹林；靠右邊有一叢高蕨類，兩側是蘇鐵、銀杏和針葉樹的茂密森林。上午低斜偏暖的陽光把影子拉長。",
+      "en": "Background: The view faces across the clearing. Behind the ankylosaur and the character, open leaf-littered forest floor stretches away to a line of trees at the far end; a clump of tall ferns stands to the right, and dense forests of cycads, ginkgos and conifers line both sides. Low, slanting warm morning sunlight casts long shadows.",
+      "refs": ["REF_HERO", "REF_ANKY", "PAIR2_ANKY"]
+    },
+    "EP1N-06-08W": {
+      "zh": "鏡頭拉遠望去，整片空地都入鏡。甲龍和主角後方是鋪著落葉和矮草的森林空地，一直延伸到遠處的一排樹林；空地上有一小片淺淺的泥地，一側有一叢高蕨類，四周被蘇鐵、銀杏和針葉樹圍住。上午低斜偏暖的陽光灑滿地面。",
+      "en": "Background: A distant view takes in the whole clearing. Behind the ankylosaur and the character is open forest floor with leaf litter and low plants reaching all the way to a line of trees in the distance; there is a small patch of shallow mud, a clump of tall ferns to one side, and cycads, ginkgos and conifers all around. Low, slanting warm morning sunlight covers the ground with dappled light.",
+      "refs": ["REF_HERO", "REF_ANKY", "PAIR2_ANKY"]
+    },
+    "EP1N-06-09": {
+      "zh": "鏡頭從一叢蕨類裡朝空地望去，畫面邊緣帶著蕨葉。主角和甲龍後方是鋪著落葉的空地和一排由蘇鐵、銀杏和針葉樹組成的茂密森林。上午低斜偏暖的陽光從樹林間透進來。",
+      "en": "Background: The camera looks out from within a clump of ferns toward the clearing, with fern fronds along the edges of the frame. Behind the character and the ankylosaur is leaf-littered open ground and a dense forest of cycads, ginkgos and conifers. Low, slanting warm morning sunlight comes through the trees.",
+      "refs": ["REF_HERO", "REF_ANKY", "PAIR2_ANKY"]
+    },
+    "EP1N-06-09W": {
+      "zh": "鏡頭朝空地望去。主角和甲龍後方是鋪著落葉和矮草的空地和一排蘇鐵、銀杏、針葉樹的茂密森林；靠右邊有一叢高蕨類。上午低斜偏暖的陽光在地上留下拉長的影子。",
+      "en": "Background: The view faces across the clearing. Behind the character and the ankylosaur is open ground with leaf litter and low plants and a dense forest of cycads, ginkgos and conifers; a clump of tall ferns stands to the right. Low, slanting warm morning sunlight casts long shadows on the ground.",
+      "refs": ["REF_HERO", "REF_ANKY", "PAIR2_ANKY"]
+    },
+    "EP1N-06-10": {
+      "zh": "鏡頭朝空地盡頭的樹林望去。主角後方是一排由蘇鐵、銀杏和針葉樹組成的茂密樹林擋住去路，靠右邊樹林間露出一道缺口，從缺口看出去是一條寬緩的河，對岸是一片平坦的泥灘、泥灘上遠遠有一群鴨嘴龍，再遠處是淡而朦朧的森林。上午有薄霧，陽光低而偏暖。",
+      "en": "Background: The view faces the trees at the far end of the clearing. Behind the character, a dense line of cycads, ginkgos and conifers blocks the way; to the right there is a gap in the trees, and through it a wide, slow river can be seen, with a flat muddy bank on the far side where a group of hadrosaurs stands in the distance, and a pale, hazy forest beyond. The morning is misty, with low, warm sunlight.",
+      "refs": ["REF_HERO"]
+    },
+    "EP1N-06-11": {
+      "zh": "鏡頭朝空地盡頭的樹林望去。主角後方是一排蘇鐵、銀杏和針葉樹的茂密樹林，靠右邊樹林間露出一道缺口，從缺口看出去是一條寬緩的河，對岸的泥灘上遠遠有一群鴨嘴龍，再遠處是淡而朦朧的森林。上午有薄霧，陽光低斜偏暖。",
+      "en": "Background: The view faces the trees at the far end of the clearing. Behind the character is a dense line of cycads, ginkgos and conifers, with a gap in the trees to the right; through the gap a wide, slow river can be seen, with a group of hadrosaurs in the distance on the muddy far bank and a pale, hazy forest beyond. The morning is misty, with low, slanting warm sunlight.",
+      "refs": ["REF_HERO"]
+    }
+  },
+  "redo": []
+}
+```

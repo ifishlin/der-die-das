@@ -1,0 +1,58 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟恐龍同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 13 場　乾河床・下午
+
+【四、地圖】河的下游・乾河床・下午
+河水由北往南流（下游在南）。HERO 從北邊的小徑出口下來，沿著河往南走。西邊是一條寬約 20 公尺的河（對岸先是一排河邊地，再過去是開闊、朦朧的森林），中間是寬闊的乾河床，東邊河岸往上是蕨類叢，再後面是森林。
+
+大小 25 欄（A–Y）× 10 列（1–10），一格 2 公尺。北在上。時間：午後，太陽在西南方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T U V W X Y
+  1  D D s s R R R R R R R R R R w d d d d d b f 5 F F
+  2  D D s s R R R R R R R R R R w d d d d d b f f F F
+  3  D D s s R R R R R R R R R R w 2 2 d d d b f f F F
+  4  D D s s R R R R R R R R R R w d d d d d b F f 6 F
+  5  D D s s R R R R R R R R R R R d d d d d b f f F F
+  6  D D s s R R R R R R R R R R R d 1 d d d b 4 f F F
+  7  D D s s R R R R R R R R R R R d d d d d b f f F F
+  8  D D s s R R R R R R R R R R R d d d 3 d b f f F F
+  9  D D s s R R R R R R R R R R R d d d d d b F f F F
+ 10  D D s s R R R R R R R R R R d d d d d d b f f F F
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 大石頭（a flat-topped boulder about 1 m high）｜角色：不可站｜相機：不可放（可以靠著或躲在後面）
+  2 = 漂流木（a long bleached driftwood log lying on the ground）｜角色：不可站｜相機：不可放（可以跨過）
+  3 = 小石堆（a small pile of stones）｜角色：可站｜相機：可放
+  4 = 蕨類叢（S06-6 會晃）（a clump of tall ferns）｜角色：可站｜相機：可放
+  5 = 小徑出口（the end of a narrow forest trail）｜角色：可站｜相機：可放
+  6 = 大樹（a very tall conifer tree）｜角色：不可站｜相機：不可放
+  D = 對岸的森林（開闊、朦朧）（a distant, open, hazy forest on the far bank, soft and pale, with gaps between the trees）｜角色：不可站｜相機：不可放（對岸，太遠）
+  F = 森林（蘇鐵、銀杏）（a forest of cycads and ginkgo trees）｜角色：不可站｜相機：可放（相機可以放在森林邊緣往外拍，前景會有枝葉）
+  R = 河（淺水）（a wide shallow river）｜角色：不可站｜相機：可放（相機可以在水面上方往岸上拍）
+  b = 河岸斜坡（a low earthen bank）｜角色：可站｜相機：可放
+  d = 乾河床（碎石、龜裂泥）（a wide dry riverbed of cracked mud and pebbles）｜角色：可站｜相機：可放
+  f = 蕨類叢（a dense thicket of tall ferns）｜角色：可站｜相機：可放（蕨類高到 HERO 的腰）
+  s = 對岸河邊地（a strip of flat muddy riverside ground on the far bank）｜角色：不可站｜相機：不可放（對岸，太遠）
+  w = 濕沙岸（wet sandy riverbank）｜角色：可站｜相機：可放
+河水由北往南流（下游在南）；HERO 從北邊的小徑出口下來，沿著河往南走。東邊的蕨類叢最後動了一下。
+地圖外面：北邊 上游：寬闊的河和乾河床一直延伸到遠方，河對岸是一排河邊地，再過去是開闊、朦朧的森林；東邊 茂密的森林往遠方延伸；西邊 對岸開闊、朦朧的森林往遠方延伸；南邊 下游：寬闊的河往遠方彎過去，對岸是開闊、朦朧的森林。
+
+【參考圖】
+- REF_HERO：HERO 角色設定圖（戴帽子、背背包）
+- REF_PROPS：道具：手機、相機、電擊槍、回家按鈕、生存指南、帳單
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP1N-13-01", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "T1", "height_m": "1.6", "look_at": "HERO", "distance_m": "6"}, "in_frame": ["HERO"]}, {"id": "EP1N-13-02", "variant_of": "N/A", "shot_size": "MLS", "angle": "eye", "camera": {"cell": "S7", "height_m": "1.6", "look_at": "HERO", "distance_m": "4.5"}, "in_frame": ["HERO"]}, {"id": "EP1N-13-03", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "R6", "height_m": "1.6", "look_at": "HERO", "distance_m": "4"}, "in_frame": ["HERO"]}, {"id": "EP1N-13-04", "variant_of": "N/A", "shot_size": "ECU", "angle": "high", "camera": {"cell": "T6", "height_m": "1.4", "look_at": "HERO 手上的手機螢幕", "distance_m": "0.3"}, "in_frame": ["HERO"]}, {"id": "EP1N-13-05", "variant_of": "N/A", "shot_size": "CU", "angle": "eye", "camera": {"cell": "S6", "height_m": "1.6", "look_at": "HERO 的臉", "distance_m": "2"}, "in_frame": ["HERO"]}, {"id": "EP1N-13-06", "variant_of": "N/A", "shot_size": "MLS", "angle": "eye", "camera": {"cell": "R7", "height_m": "1.6", "look_at": "HERO（他背後東邊 V6 的蕨類叢一起入鏡）", "distance_m": "4.5"}, "in_frame": ["HERO"]}]
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

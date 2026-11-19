@@ -1,0 +1,55 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟恐龍同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 16 場　白堊紀森林・爛泥巴小路（追逐）・黃昏
+
+【四、地圖】森林泥巴小路・黃昏（回到開場那一刻）
+夕陽下的森林。中間一條東西向的小路（追逐路線，HERO 往東跑）；路的東北邊是一片空地，甲龍趴在空地裡像一顆長青苔的大石頭。四周是森林。
+
+大小 20 欄（A–T）× 10 列（1–10），一格 3 公尺。北在上。時間：黃昏，太陽在西方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T
+  1  F F F F F F F F F F F F F F F F F F F F
+  2  F F F F F F F F F F F F F F F F F F F F
+  3  F F F F F F F F F F F F g g g g g g g F
+  4  F F F F F F F F F F F F g g g g g g g F
+  5  F F F F F F F F F F F F g g g g g g g F
+  6  p p p p p p p p p p p p p p p p 1 p p p
+  7  p p p p p p p p p p p p p p p p p p p p
+  8  F F F F F F F F F F F F F F F F F F F F
+  9  F F F F F F F F F F F F F F F F F F F F
+ 10  F F F F F F F F F F F F F F F F F F F F
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 樹根（a big tree root sticking out of the ground）｜角色：不可站｜相機：不可放（不能站上去，可以跳過）
+  F = 森林（蘇鐵、銀杏、針葉樹）（a dense Cretaceous forest of cycads, ginkgos and conifers）｜角色：不可站｜相機：可放（相機可以放在森林邊緣往外拍，前景會有枝葉）
+  g = 空地（夕陽）（a forest clearing in orange sunset light）｜角色：可站｜相機：可放
+  p = 森林小路（夕陽）（a forest trail in orange sunset light）｜角色：可站｜相機：可放
+開頭跟第 1 場是同一刻、同一張地圖（可以照第 1 場的構圖）。講到博士的話時可以閃回實驗室上課（不在這張地圖：camera.cell 填 N/A）。急轉彎在小路東北邊的空地上 Z 字形。
+地圖外面：北邊 夕陽下的森林往遠方延伸；東邊 夕陽下的森林往遠方延伸；西邊 夕陽下的森林往遠方延伸；南邊 夕陽下的森林往遠方延伸。
+
+【參考圖】
+- PAIR2_TEEN：HERO 和青少年暴龍的身高比例圖
+- REF_HERO：HERO 角色設定圖（戴帽子、背背包）
+- REF_PROPS：道具：手機、相機、電擊槍、回家按鈕、生存指南、帳單
+- REF_TEEN：青少年暴龍設定圖
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP1N-16-01", "variant_of": "N/A", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "C10", "height_m": 1.6, "look_at": "HERO", "distance_m": 12}, "in_frame": ["HERO"]}, {"id": "EP1N-16-02", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "D8", "height_m": 2.3, "look_at": "TEEN", "distance_m": 9}, "in_frame": ["TEEN", "HERO"]}, {"id": "EP1N-16-02W", "variant_of": "EP1N-16-02", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "B9", "height_m": 2.3, "look_at": "TEEN", "distance_m": 17}, "in_frame": ["TEEN", "HERO"]}, {"id": "EP1N-16-03", "variant_of": "N/A", "shot_size": "MLS", "angle": "eye", "camera": {"cell": "M7", "height_m": 1.6, "look_at": "HERO", "distance_m": 7}, "in_frame": ["HERO"]}, {"id": "EP1N-16-04", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "O7", "height_m": 1.6, "look_at": "HERO", "distance_m": 7}, "in_frame": ["HERO"]}, {"id": "EP1N-16-05", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "P4", "height_m": 1.6, "look_at": "HERO", "distance_m": 7}, "in_frame": ["HERO"]}, {"id": "EP1N-16-06", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "O8", "height_m": 1.6, "look_at": "HERO", "distance_m": 12}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-16-06W", "variant_of": "EP1N-16-06", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "N9", "height_m": 1.6, "look_at": "HERO", "distance_m": 18}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-16-07", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "R8", "height_m": 1.6, "look_at": "HERO", "distance_m": 10}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-16-07W", "variant_of": "EP1N-16-07", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "R10", "height_m": 1.6, "look_at": "HERO", "distance_m": 15}, "in_frame": ["HERO", "TEEN"]}, {"id": "EP1N-16-08", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "P8", "height_m": 2.0, "look_at": "TEEN", "distance_m": 13}, "in_frame": ["TEEN"]}, {"id": "EP1N-16-09", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "P7", "height_m": 2.0, "look_at": "TEEN", "distance_m": 10}, "in_frame": ["TEEN"]}, {"id": "EP1N-16-10", "variant_of": "N/A", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "N6", "height_m": 1.6, "look_at": "HERO", "distance_m": 16}, "in_frame": ["HERO"]}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}
