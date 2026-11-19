@@ -25,10 +25,7 @@ tr.seg td{background:var(--segbg)}tr.seg span{color:var(--mut);font-size:13px}tr
 <span><i class=sw style="background:#f4f4f4;border-color:#bbb;border-style:dashed"></i>暫不做</span>
 <span><i class=sw style="background:#e3d4f2;border-color:#6a3fa0"></i>定版（過了不回頭）</span></div></header>
 <section class=card><div class=chart><pre class="mermaid">flowchart TD
-  subgraph G0["— 開始"]
-    direction TB
     S1["1. 選章"]:::you
-  end
   subgraph GA["A 科普"]
     direction TB
     S2["2. 列出書上的知識點"]:::me
@@ -57,10 +54,7 @@ tr.seg td{background:var(--segbg)}tr.seg span{color:var(--mut);font-size:13px}tr
     S16["16. Flow 畫圖"]:::me
     S17["17. 挑圖、下載、配音、壓粗剪<br/><b>📄 分鏡表＋粗剪</b>"]:::stop
   end
-  subgraph GE["E 改版"]
-    direction TB
-    S18["18. 改版<br/><b>📄 新粗剪</b>"]:::stop
-  end
+    S18["<small>E 改版</small><br/>18. 改版<br/><b>📄 新粗剪</b>"]:::stop
   subgraph GF["F 成片"]
     direction TB
     S19["19. 動畫"]:::skip
@@ -99,16 +93,21 @@ tr.seg td{background:var(--segbg)}tr.seg span{color:var(--mut);font-size:13px}tr
   S24 --> S25
   S18 ==>|你同意| LOCK{{"粗剪定版<br/><small>鏡頭、選用條、旁白、配音鎖定</small>"}}:::lock
   LOCK ==> S19
-  S18 -.->|① 劇本：旁白、段落、講解| S8
-  S18 -.->|② 分場表：地點、服裝、道具| S10
-  S18 -.->|③ 分鏡表：景別、角度、鏡頭數| S13
-  S18 -.->|④ 圖：重畫、換選用條| S16
-  S18 -.->|重壓粗剪| S17
-  S23 -.->|成片不滿意：只回 19～22| S19
+  S18 -.-> R0(["① 劇本：旁白、段落、講解<br/>→ 回第 8 步"]):::back
+  R0 -.-> S17
+  S18 -.-> R1(["② 分場表：地點、服裝、道具<br/>→ 回第 10 步"]):::back
+  R1 -.-> S17
+  S18 -.-> R2(["③ 分鏡表：景別、角度、鏡頭數<br/>→ 回第 13 步"]):::back
+  R2 -.-> S17
+  S18 -.-> R3(["④ 圖：重畫、換選用條<br/>→ 回第 16 步"]):::back
+  R3 -.-> S17
+  S23 -.-> RF(["成片不滿意<br/>→ 只回第 19～22 步"]):::back
+  RF -.-> S19
   classDef you fill:#dbe9f7,stroke:#2f6fa8,color:#16324c,stroke-width:2px
   classDef stop fill:#fbe6c8,stroke:#c0861a,color:#4a3208,stroke-width:3px
   classDef opt fill:#eaf4e4,stroke:#5b8f45,color:#24401a,stroke-width:2px,stroke-dasharray:5 3
   classDef me fill:#ecebe6,stroke:#8a857a,color:#3a372f
+  classDef back fill:#fff,stroke:#c0861a,color:#4a3208,stroke-dasharray:4 3
   classDef skip fill:#f4f4f4,stroke:#bbb,color:#999,stroke-dasharray:3 3
   classDef lock fill:#e3d4f2,stroke:#6a3fa0,color:#2c1748,stroke-width:3px</pre></div></section>
 <section class=card><h2>每一步誰做</h2><div class=tw><table><tr><th>#</th><th>步驟</th><th>類型</th><th>誰</th></tr><tr class=seg><td colspan=4><b>— 開始</b>　<span>你提出這一集要做哪一章</span></td></tr><tr><td class=n>1</td><td>選章</td><td><span class="tag you">你做</span></td><td>你</td></tr><tr class=seg><td colspan=4><b>A 科普</b>　<span>產出科普報告；可以不看，不看就只用我判定可以用的</span></td></tr><tr><td class=n>2</td><td>列出書上的知識點</td><td><span class="tag me">我做，不停</span></td><td>CLI 模型做（request），我抽查；你不參加</td></tr><tr><td class=n>3</td><td>查核書上的知識點</td><td><span class="tag me">我做，不停</span></td><td>CLI 模型查（request），我覆核、決定用哪些；你不參加</td></tr><tr><td class=n>4</td><td>想書外知識</td><td><span class="tag me">我做，不停</span></td><td>我想；你不參加</td></tr><tr><td class=n>5</td><td>查核書外知識<br><small><b>📄 科普報告（可不看）</b></small></td><td><span class="tag opt">產出可不看</span></td><td>CLI 模型查（同一份 request），我覆核；你不參加</td></tr><tr class=seg><td colspan=4><b>B 劇本</b>　<span>產出劇本；可以不看</span></td></tr><tr><td class=n>6</td><td>系列設定</td><td><span class="tag me">我做，不停</span></td><td>預設沿用；你不參加</td></tr><tr><td class=n>7</td><td>大綱</td><td><span class="tag me">我做，不停</span></td><td>CLI 模型寫（request）；不停</td></tr><tr><td class=n>8</td><td>寫劇本</td><td><span class="tag me">我做，不停</span></td><td>我寫；不停</td></tr><tr><td class=n>9</td><td>潤旁白<br><small><b>📄 劇本（可不看）</b></small></td><td><span class="tag opt">產出可不看</span></td><td>模型順稿（request）；不停</td></tr><tr class=seg><td colspan=4><b>C 分場</b>　<span>產出分場表（場、地圖、設定圖）；可以不看</span></td></tr><tr><td class=n>10</td><td>分場</td><td><span class="tag me">我做，不停</span></td><td>我做；不停</td></tr><tr><td class=n>11</td><td>場景地圖</td><td><span class="tag me">我做，不停</span></td><td>我畫；不停</td></tr><tr><td class=n>12</td><td>設定圖<br><small><b>📄 分場表（可不看）</b></small></td><td><span class="tag opt">產出可不看</span></td><td>我寫 prompt、我在 Flow 畫、我挑；不停</td></tr><tr class=seg><td colspan=4><b>D 分鏡</b>　<span>停：看粗剪</span></td></tr><tr><td class=n>13</td><td>分鏡設計（拆鏡頭）</td><td><span class="tag me">我做，不停</span></td><td>Claude CLI 設計（request）；不停</td></tr><tr><td class=n>14</td><td>檢查分鏡回覆</td><td><span class="tag me">我做，不停</span></td><td>程式檢查＋我；不停</td></tr><tr><td class=n>15</td><td>補背景和參考圖</td><td><span class="tag me">我做，不停</span></td><td>LLM 逐鏡頭手寫；不停</td></tr><tr><td class=n>16</td><td>Flow 畫圖</td><td><span class="tag me">我做，不停</span></td><td>我操作（EP1 本機；其他集新電腦 flow_runner）；不停</td></tr><tr><td class=n>17</td><td>挑圖、下載、配音、壓粗剪<br><small><b>📄 分鏡表＋粗剪</b></small></td><td><span class="tag stop">停：等你</span></td><td>我做；做完停下來給你看粗剪</td></tr><tr class=seg><td colspan=4><b>E 改版</b>　<span>停：寫意見，循環到你同意「粗剪定版」</span></td></tr><tr><td class=n>18</td><td>改版<br><small><b>📄 新粗剪</b></small></td><td><span class="tag stop">停：等你</span></td><td>你寫意見，我照意見回頭改；循環</td></tr><tr class=lock><td colspan=4>═══ 粗剪定版：之後不回到第 17 步之前 ═══</td></tr><tr class=seg><td colspan=4><b>F 成片</b>　<span>停：看成片，循環到你滿意</span></td></tr><tr><td class=n>19</td><td>動畫</td><td><span class="tag skip">暫不做</span></td><td>暫不做</td></tr><tr><td class=n>20</td><td>音效</td><td><span class="tag me">我做，不停</span></td><td>我做；不停</td></tr><tr><td class=n>21</td><td>配樂</td><td><span class="tag skip">暫不做</span></td><td>暫不做</td></tr><tr><td class=n>22</td><td>運鏡＋組片</td><td><span class="tag me">我做，不停</span></td><td>我做；不停</td></tr><tr><td class=n>23</td><td>看成片<br><small><b>📄 成片</b></small></td><td><span class="tag stop">停：等你</span></td><td>你看；循環</td></tr><tr class=seg><td colspan=4><b>G 包裝</b>　<span>停：看封面、標題、說明欄（中文版、英文版）</span></td></tr><tr><td class=n>24</td><td>封面、標題、說明欄<br><small><b>📄 封面、說明</b></small></td><td><span class="tag stop">停：等你</span></td><td>我做，做完給你看</td></tr><tr><td class=n>25</td><td>英文版<br><small><b>📄 英文成片、封面、說明</b></small></td><td><span class="tag stop">停：等你</span></td><td>模型改寫旁白（request），我配音、重組；英文封面和說明給你看</td></tr></table></div></section>
