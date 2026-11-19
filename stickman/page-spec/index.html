@@ -1,0 +1,374 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><title>檢查文件格式</title><style>
+:root{--bg:#f4f1ea;--panel:#fffdf8;--fg:#24211c;--mut:#6d665a;--line:#e2dccf;--acc:#8a4b1f;--rq:#2f6fa8;--me:#c0761a;--you:#2f7d5b;--pg:#8a8478;--fl:#7a4fa8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;--rq:#7fb2e5;--me:#e0a050;--you:#6cc792;--pg:#a59d8f;--fl:#b896e0;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;--rq:#7fb2e5;--me:#e0a050;--you:#6cc792;--pg:#a59d8f;--fl:#b896e0;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.65 "Noto Sans TC",-apple-system,"PingFang TC",sans-serif;margin:0}
+main{max-width:1200px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+a{color:var(--acc)}h1{font-size:26px;margin:0}h2{font-size:20px;margin:12px 0 0}h3{font-size:17px;margin:0 0 4px}.mut{color:var(--mut)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;min-width:0}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600;white-space:nowrap}
+code{font-size:12.5px}pre{font-size:12.5px;background:var(--bg);border-radius:6px;padding:8px 12px;overflow-x:auto;margin:6px 0 0}summary{cursor:pointer}
+.lg{display:inline-block;font-size:12.5px;font-weight:600;border-radius:4px;padding:0 7px;color:#fff;background:var(--pg)}.lg.rq{background:var(--rq)}.lg.me{background:var(--me)}.lg.you{background:var(--you)}.lg.fl{background:var(--fl)}
+svg text{font-family:inherit}.doc{fill:var(--panel);stroke:var(--acc);stroke-width:2}.dt{fill:var(--fg);font-size:16px;font-weight:700}.ds{fill:var(--mut);font-size:12.5px}
+.src{fill:var(--panel);stroke-width:2;stroke:var(--pg)}.src.rq{stroke:var(--rq)}.src.me{stroke:var(--me)}.src.you{stroke:var(--you)}.src.fl{stroke:var(--fl)}
+.st{fill:var(--fg);font:12.5px ui-monospace,Menlo,monospace}.sw{fill:var(--mut);font-size:12px}.ln{fill:none;stroke:var(--line);stroke-width:1.6;marker-end:url(#a)}.ah{fill:var(--mut)}
+ul{margin:0;padding-left:1.3em}
+</style></head><body><main><div style="font-size:14px"><a href="../">← 首頁</a>　<a href="../pipeline-steps/">製作步驟總表</a></div><header><h1>檢查文件的格式與資料來源</h1><p class=mut>第 2～18 步的七份檢查文件，每個欄位從哪個資料檔的哪個欄位來、資料檔由誰產生、格式是什麼。來源：docs/page_spec.json（第 1 版，2026-11-19）。</p></header><section class=card><h2 style="margin:0 0 6px">規定</h2><ul><li>頁面上每一個欄位都要對到一個資料檔的一個欄位；對不到的不准寫進頁面。</li><li>資料檔只能有這裡列的欄位；多了、少了，產生頁面的程式就報錯、不產生頁面。</li><li>request 的回傳格式＝資料檔格式；我手寫的資料也照同樣固定格式填，不准自由寫。</li><li>程式只搬運和計算（統計、比對新舊、檢查網址、畫地圖），不寫內容。</li><li>頁面不放：要你決定／待定事項／問題清單、版本說明、★、附註、秒數。模型或我要問的事在對話裡問。</li></ul></section><h2>關係圖</h2><section class=card><p><span class="lg rq">request</span> 送 Claude CLI，照範本，回覆存成資料檔　<span class="lg me">我</span> Claude 在對話裡照固定格式寫進資料檔（分工本來就是我做的步驟）　<span class="lg you">你</span> 使用者決定或寫的　<span class="lg pg">程式</span> 程式計算或搬運，不寫內容　<span class="lg fl">Flow</span> Google Flow 畫出來的圖和連結　</p><div class=tw><svg viewBox="0 0 980 1376" width="980" height="1376" role="img" aria-label="資料檔和檢查文件的關係圖"><defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" class="ah"/></marker></defs><rect class="doc" x="640" y="96" width="320" height="60" rx="8"/><text class="dt" x="800" y="122" text-anchor="middle">科普準備報告</text><text class="ds" x="800" y="142" text-anchor="middle">第 2～5 步</text><rect class="src rq" x="10" y="10" width="300" height="40" rx="6"/><text class="st" x="20" y="27">book_facts</text><text class="sw" x="20" y="43">request（R2）・第 2 步</text><path class="ln" d="M310 30.0 C480 30.0,480 126,640 126"/><rect class="src me" x="10" y="58" width="300" height="40" rx="6"/><text class="st" x="20" y="75">extra_facts</text><text class="sw" x="20" y="91">我・第 4 步</text><path class="ln" d="M310 78.0 C480 78.0,480 126,640 126"/><rect class="src rq" x="10" y="106" width="300" height="40" rx="6"/><text class="st" x="20" y="123">check</text><text class="sw" x="20" y="139">request（R3）・第 3、5 步</text><path class="ln" d="M310 126.0 C480 126.0,480 126,640 126"/><rect class="src pg" x="10" y="154" width="300" height="40" rx="6"/><text class="st" x="20" y="171">url_check</text><text class="sw" x="20" y="187">程式・第 3、5 步</text><path class="ln" d="M310 174.0 C480 174.0,480 126,640 126"/><rect class="src me" x="10" y="202" width="300" height="40" rx="6"/><text class="st" x="20" y="219">report_notes</text><text class="sw" x="20" y="235">我・第 5 步</text><path class="ln" d="M310 222.0 C480 222.0,480 126,640 126"/><rect class="doc" x="640" y="282" width="320" height="60" rx="8"/><text class="dt" x="800" y="308" text-anchor="middle">系列設定（人物與場景設定）</text><text class="ds" x="800" y="328" text-anchor="middle">第 6 步</text><rect class="src me" x="10" y="268" width="300" height="40" rx="6"/><text class="st" x="20" y="285">characters</text><text class="sw" x="20" y="301">我・第 6 步</text><path class="ln" d="M310 288.0 C480 288.0,480 312,640 312"/><rect class="src pg" x="10" y="316" width="300" height="40" rx="6"/><text class="st" x="20" y="333">map_preview</text><text class="sw" x="20" y="349">程式・第 12 步</text><path class="ln" d="M310 336.0 C480 336.0,480 312,640 312"/><rect class="doc" x="640" y="382" width="320" height="60" rx="8"/><text class="dt" x="800" y="408" text-anchor="middle">大綱</text><text class="ds" x="800" y="428" text-anchor="middle">第 7 步</text><rect class="src rq" x="10" y="382" width="300" height="40" rx="6"/><text class="st" x="20" y="399">outline</text><text class="sw" x="20" y="415">request（R7）・第 7 步</text><path class="ln" d="M310 402.0 C480 402.0,480 412,640 412"/><rect class="doc" x="640" y="468" width="320" height="60" rx="8"/><text class="dt" x="800" y="494" text-anchor="middle">故事</text><text class="ds" x="800" y="514" text-anchor="middle">第 8～9 步</text><rect class="src me" x="10" y="468" width="300" height="40" rx="6"/><text class="st" x="20" y="485">story</text><text class="sw" x="20" y="501">我・第 8、9 步</text><path class="ln" d="M310 488.0 C480 488.0,480 498,640 498"/><rect class="doc" x="640" y="592" width="320" height="60" rx="8"/><text class="dt" x="800" y="618" text-anchor="middle">拍攝清單</text><text class="ds" x="800" y="638" text-anchor="middle">第 10～12 步</text><rect class="src me" x="10" y="554" width="300" height="40" rx="6"/><text class="st" x="20" y="571">shotlist</text><text class="sw" x="20" y="587">我・第 10、11 步</text><path class="ln" d="M310 574.0 C480 574.0,480 622,640 622"/><rect class="src me" x="10" y="602" width="300" height="40" rx="6"/><text class="st" x="20" y="619">maps</text><text class="sw" x="20" y="635">我・第 12 步</text><path class="ln" d="M310 622.0 C480 622.0,480 622,640 622"/><rect class="src pg" x="10" y="650" width="300" height="40" rx="6"/><text class="st" x="20" y="667">map_preview</text><text class="sw" x="20" y="683">程式・第 12 步</text><path class="ln" d="M310 670.0 C480 670.0,480 622,640 622"/><rect class="doc" x="640" y="754" width="320" height="60" rx="8"/><text class="dt" x="800" y="780" text-anchor="middle">設定圖</text><text class="ds" x="800" y="800" text-anchor="middle">第 13 步</text><rect class="src me" x="10" y="716" width="300" height="40" rx="6"/><text class="st" x="20" y="733">ref_prompts</text><text class="sw" x="20" y="749">我・第 13 步</text><path class="ln" d="M310 736.0 C480 736.0,480 784,640 784"/><rect class="src me" x="10" y="764" width="300" height="40" rx="6"/><text class="st" x="20" y="781">ref_picks</text><text class="sw" x="20" y="797">我＋你・第 13 步</text><path class="ln" d="M310 784.0 C480 784.0,480 784,640 784"/><rect class="src fl" x="10" y="812" width="300" height="40" rx="6"/><text class="st" x="20" y="829">ref_images</text><text class="sw" x="20" y="845">Flow・第 13 步</text><path class="ln" d="M310 832.0 C480 832.0,480 784,640 784"/><rect class="doc" x="640" y="1084" width="320" height="60" rx="8"/><text class="dt" x="800" y="1110" text-anchor="middle">分鏡表</text><text class="ds" x="800" y="1130" text-anchor="middle">第 16～18 步</text><rect class="src me" x="10" y="878" width="300" height="40" rx="6"/><text class="st" x="20" y="895">shotlist</text><text class="sw" x="20" y="911">我・第 10、11 步</text><path class="ln" d="M310 898.0 C480 898.0,480 1114,640 1114"/><rect class="src me" x="10" y="926" width="300" height="40" rx="6"/><text class="st" x="20" y="943">maps</text><text class="sw" x="20" y="959">我・第 12 步</text><path class="ln" d="M310 946.0 C480 946.0,480 1114,640 1114"/><rect class="src rq" x="10" y="974" width="300" height="40" rx="6"/><text class="st" x="20" y="991">scene_reply</text><text class="sw" x="20" y="1007">request（R14）・第 14 步</text><path class="ln" d="M310 994.0 C480 994.0,480 1114,640 1114"/><rect class="src rq" x="10" y="1022" width="300" height="40" rx="6"/><text class="st" x="20" y="1039">prompt_zh</text><text class="sw" x="20" y="1055">request（R14t）・第 14 步</text><path class="ln" d="M310 1042.0 C480 1042.0,480 1114,640 1114"/><rect class="src me" x="10" y="1070" width="300" height="40" rx="6"/><text class="st" x="20" y="1087">bg_hand</text><text class="sw" x="20" y="1103">我・第 16 步</text><path class="ln" d="M310 1090.0 C480 1090.0,480 1114,640 1114"/><rect class="src me" x="10" y="1118" width="300" height="40" rx="6"/><text class="st" x="20" y="1135">draw_conf</text><text class="sw" x="20" y="1151">我・第 16 步</text><path class="ln" d="M310 1138.0 C480 1138.0,480 1114,640 1114"/><rect class="src fl" x="10" y="1166" width="300" height="40" rx="6"/><text class="st" x="20" y="1183">flow_results</text><text class="sw" x="20" y="1199">Flow・第 17 步</text><path class="ln" d="M310 1186.0 C480 1186.0,480 1114,640 1114"/><rect class="src me" x="10" y="1214" width="300" height="40" rx="6"/><text class="st" x="20" y="1231">picks</text><text class="sw" x="20" y="1247">我・第 18 步</text><path class="ln" d="M310 1234.0 C480 1234.0,480 1114,640 1114"/><rect class="src me" x="10" y="1262" width="300" height="40" rx="6"/><text class="st" x="20" y="1279">size</text><text class="sw" x="20" y="1295">我・第 18 步</text><path class="ln" d="M310 1282.0 C480 1282.0,480 1114,640 1114"/><rect class="src you" x="10" y="1310" width="300" height="40" rx="6"/><text class="st" x="20" y="1327">user_picks</text><text class="sw" x="20" y="1343">你・第 18 步</text><path class="ln" d="M310 1330.0 C480 1330.0,480 1114,640 1114"/></svg></div></section><h2>七份檢查文件</h2><section class=card id="science"><h3>科普準備報告　<span class=mut>第 2～5 步・science-&lt;ep&gt;/</span></h3><p class=mut>產生頁面：<code>scripts/make_science_report.py</code></p><div class=tw><table><tr><th>區塊</th><th>欄位</th><th>來源（資料檔.欄位）</th><th>誰</th></tr><tr><td rowspan="1"><b>摘要</b><br><span class=mut>條列</span></td><td>每一點</td><td><code>report_notes.summary[]</code></td><td>我</td></tr><tr><td rowspan="3"><b>每一步做了什麼</b><br><span class=mut>表格</span></td><td>步驟</td><td><code>report_notes.steps[][0]</code></td><td>我</td></tr><tr><td>做法</td><td><code>report_notes.steps[][1]</code></td><td>我</td></tr><tr><td>結果</td><td><code>report_notes.steps[][2]</code></td><td>我</td></tr><tr><td rowspan="14"><b>全部知識點</b><br><span class=mut>篩選＋卡片</span></td><td>篩選：判定、來源的點數</td><td><code>程式統計</code></td><td>程式</td></tr><tr><td>編號</td><td><code>book_facts.facts[].n／extra_facts.facts[].n</code></td><td>request、我</td></tr><tr><td>判定</td><td><code>check.results[].verdict（report_notes.override 有就用它）</code></td><td>request、我</td></tr><tr><td>來源（書上／書外）</td><td><code>程式：在 book_facts 還是 extra_facts</code></td><td>request、我</td></tr><tr><td>類別</td><td><code>book_facts.facts[].type／extra_facts.facts[].type</code></td><td>request、我</td></tr><tr><td>信心</td><td><code>check.results[].confidence</code></td><td>request</td></tr><tr><td>知識點一句話</td><td><code>book_facts.facts[].claim_zh／extra_facts.facts[].claim_zh</code></td><td>request、我</td></tr><tr><td>書上原文和頁碼（書上的）</td><td><code>book_facts.facts[].quote、pages</code></td><td>request</td></tr><tr><td>換算</td><td><code>book_facts.facts[].convert</code></td><td>request</td></tr><tr><td>為什麼要（書外的）</td><td><code>extra_facts.facts[].group、why</code></td><td>我</td></tr><tr><td>科學上</td><td><code>check.results[].sci</code></td><td>request</td></tr><tr><td>出處</td><td><code>check.results[].src（url_check 打不開的標紅）</code></td><td>request、程式</td></tr><tr><td>建議旁白說法</td><td><code>check.results[].fix</code></td><td>request</td></tr><tr><td>Claude 覆核</td><td><code>report_notes.review</code></td><td>我</td></tr></table></div></section><section class=card id="characters"><h3>系列設定（人物與場景設定）　<span class=mut>第 6 步・characters/</span></h3><p class=mut>產生頁面：<code>要新做：scripts/make_characters_page.py</code></p><div class=tw><table><tr><th>區塊</th><th>欄位</th><th>來源（資料檔.欄位）</th><th>誰</th></tr><tr><td rowspan="6"><b>人物</b><br><span class=mut>每人一段</span></td><td>設定圖</td><td><code>characters.people[].ref</code></td><td>我</td></tr><tr><td>身分</td><td><code>characters.people[].identity</code></td><td>我</td></tr><tr><td>外型</td><td><code>characters.people[].look</code></td><td>我</td></tr><tr><td>聲音</td><td><code>characters.people[].voice</code></td><td>我</td></tr><tr><td>動機／任務</td><td><code>characters.people[].motive</code></td><td>我</td></tr><tr><td>幕後設定</td><td><code>characters.people[].backstory</code></td><td>我</td></tr><tr><td rowspan="4"><b>道具</b><br><span class=mut>表格</span></td><td>道具</td><td><code>characters.props[].name</code></td><td>我</td></tr><tr><td>設定圖</td><td><code>characters.props[].ref</code></td><td>我</td></tr><tr><td>長相</td><td><code>characters.props[].look</code></td><td>我</td></tr><tr><td>用途</td><td><code>characters.props[].use</code></td><td>我</td></tr><tr><td rowspan="6"><b>固定地點</b><br><span class=mut>每處一段</span></td><td>設定圖</td><td><code>characters.places[].ref</code></td><td>我</td></tr><tr><td>原型</td><td><code>characters.places[].prototype</code></td><td>我</td></tr><tr><td>地圖、尺寸</td><td><code>characters.places[].map、size＋map_preview</code></td><td>我、程式</td></tr><tr><td>地圖上的東西</td><td><code>characters.places[].objects[]</code></td><td>我</td></tr><tr><td>每面牆附哪張牆面圖</td><td><code>characters.places[].walls[]</code></td><td>我</td></tr><tr><td>鏡頭規則</td><td><code>characters.places[].camera_rules[]</code></td><td>我</td></tr><tr><td rowspan="2"><b>設定圖的 prompt</b><br><span class=mut>每張一段</span></td><td>英文</td><td><code>characters.prompts[].en</code></td><td>我</td></tr><tr><td>中文對照</td><td><code>characters.prompts[].zh</code></td><td>我</td></tr><tr><td rowspan="1"><b>共用規則</b><br><span class=mut>條列</span></td><td>每一條</td><td><code>characters.rules[]</code></td><td>我</td></tr></table></div></section><section class=card id="outline"><h3>大綱　<span class=mut>第 7 步・outline-&lt;ep&gt;/</span></h3><p class=mut>產生頁面：<code>scripts/make_outline_page.py</code></p><div class=tw><table><tr><th>區塊</th><th>欄位</th><th>來源（資料檔.欄位）</th><th>誰</th></tr><tr><td rowspan="1"><b>固定橋段這集怎麼填</b><br><span class=mut>兩欄表格</span></td><td>七項</td><td><code>outline.beats</code></td><td>request</td></tr><tr><td rowspan="5"><b>段落</b><br><span class=mut>表格</span></td><td>#</td><td><code>outline.segments[].n</code></td><td>request</td></tr><tr><td>段</td><td><code>outline.segments[].name</code></td><td>request</td></tr><tr><td>發生什麼</td><td><code>outline.segments[].what</code></td><td>request</td></tr><tr><td>目的</td><td><code>outline.segments[].purpose</code></td><td>request</td></tr><tr><td>知識點</td><td><code>outline.segments[].facts（連到科普報告）</code></td><td>request</td></tr></table></div></section><section class=card id="story"><h3>故事　<span class=mut>第 8～9 步・story-&lt;ep&gt;/</span></h3><p class=mut>產生頁面：<code>scripts/make_story_page.py（改成讀 story_vN.json）</code></p><div class=tw><table><tr><th>區塊</th><th>欄位</th><th>來源（資料檔.欄位）</th><th>誰</th></tr><tr><td rowspan="2"><b>科普比例</b><br><span class=mut>表格</span></td><td>段落</td><td><code>story.segments[].name</code></td><td>我</td></tr><tr><td>科普字、全部字、比例</td><td><code>程式：lines[].facts 不是空的算科普，數字數</code></td><td>程式</td></tr><tr><td rowspan="3"><b>段落</b><br><span class=mut>每段一節</span></td><td>段號和段名</td><td><code>story.segments[].n、name</code></td><td>我</td></tr><tr><td>這段發生什麼</td><td><code>story.segments[].what</code></td><td>我</td></tr><tr><td>旁白（科普句綠底、標編號）</td><td><code>story.segments[].lines[].text、facts</code></td><td>我</td></tr><tr><td rowspan="1"><b>新舊對照</b><br><span class=mut>左右兩欄（第 9 步改版才有）</span></td><td>舊版、新版的段落</td><td><code>程式：story_vN-1.json 和 story_vN.json 照 segments.n 對照</code></td><td>程式</td></tr></table></div></section><section class=card id="shotlist"><h3>拍攝清單　<span class=mut>第 10～12 步・shotlist-&lt;ep&gt;/</span></h3><p class=mut>產生頁面：<code>scripts/make_shotlist_page.py（改成讀 shotlist_vN.json）</code></p><div class=tw><table><tr><th>區塊</th><th>欄位</th><th>來源（資料檔.欄位）</th><th>誰</th></tr><tr><td rowspan="4"><b>總覽</b><br><span class=mut>表格</span></td><td>幕</td><td><code>shotlist.scenes[].id</code></td><td>我</td></tr><tr><td>地點</td><td><code>shotlist.scenes[].place</code></td><td>我</td></tr><tr><td>格數</td><td><code>程式：shots 數量</code></td><td>程式</td></tr><tr><td>地圖</td><td><code>shotlist.scenes[].map</code></td><td>我</td></tr><tr><td rowspan="1"><b>地圖總覽</b><br><span class=mut>圖</span></td><td>每張地圖和用在哪幾幕</td><td><code>map_preview＋shotlist.scenes[].map</code></td><td>我、程式</td></tr><tr><td rowspan="11"><b>每一幕</b><br><span class=mut>每幕一節＋表格</span></td><td>幕號、地點、時間</td><td><code>shotlist.scenes[].id、place、time</code></td><td>我</td></tr><tr><td>地圖</td><td><code>maps（shotlist.scenes[].map 指定哪張）＋map_preview</code></td><td>我、程式</td></tr><tr><td>格</td><td><code>shotlist.scenes[].shots[].id</code></td><td>我</td></tr><tr><td>畫面</td><td><code>shotlist.scenes[].shots[].picture</code></td><td>我</td></tr><tr><td>類型</td><td><code>shotlist.scenes[].shots[].type</code></td><td>我</td></tr><tr><td>景別</td><td><code>shotlist.scenes[].shots[].shot_size</code></td><td>我</td></tr><tr><td>旁白</td><td><code>shotlist.scenes[].shots[].narration</code></td><td>我</td></tr><tr><td>聲音</td><td><code>shotlist.scenes[].shots[].sound</code></td><td>我</td></tr><tr><td>分類</td><td><code>shotlist.scenes[].shots[].category</code></td><td>我</td></tr><tr><td>知識點</td><td><code>shotlist.scenes[].shots[].facts</code></td><td>我</td></tr><tr><td>看得到的細節</td><td><code>shotlist.scenes[].shots[].visible</code></td><td>我</td></tr><tr><td rowspan="1"><b>道具時間線</b><br><span class=mut>表格</span></td><td>道具、出現、中段、後段、最後</td><td><code>shotlist.props[]</code></td><td>我</td></tr></table></div></section><section class=card id="refs"><h3>設定圖　<span class=mut>第 13 步・refs-&lt;ep&gt;/</span></h3><p class=mut>產生頁面：<code>scripts/make_ref_picks_page.py</code></p><div class=tw><table><tr><th>區塊</th><th>欄位</th><th>來源（資料檔.欄位）</th><th>誰</th></tr><tr><td rowspan="8"><b>每張設定圖</b><br><span class=mut>每張一節</span></td><td>中文名和代號</td><td><code>ref_picks.refs.&lt;NAME&gt;.zh＋NAME</code></td><td>我＋你</td></tr><tr><td>用在哪幾段</td><td><code>ref_picks.refs.&lt;NAME&gt;.role</code></td><td>我＋你</td></tr><tr><td>四張候選圖</td><td><code>ref_images</code></td><td>Flow</td></tr><tr><td>每張檢查結果</td><td><code>ref_picks.refs.&lt;NAME&gt;.checks</code></td><td>我＋你</td></tr><tr><td>Claude 建議和理由</td><td><code>ref_picks.refs.&lt;NAME&gt;.suggest、why</code></td><td>我＋你</td></tr><tr><td>你選的</td><td><code>ref_picks.refs.&lt;NAME&gt;.user</code></td><td>我＋你</td></tr><tr><td>prompt（中文對照）</td><td><code>ref_prompts.shots[].prompt_zh</code></td><td>我</td></tr><tr><td>附的參考圖</td><td><code>ref_prompts.shots[].refs</code></td><td>我</td></tr></table></div></section><section class=card id="storyboard"><h3>分鏡表　<span class=mut>第 16～18 步・storyboard-&lt;ep&gt;/</span></h3><p class=mut>產生頁面：<code>scripts/make_design_page.py（改成照這份規範）</code></p><div class=tw><table><tr><th>區塊</th><th>欄位</th><th>來源（資料檔.欄位）</th><th>誰</th></tr><tr><td rowspan="18"><b>每一幕</b><br><span class=mut>每幕一節＋每格一張卡</span></td><td>幕號、地點、格數</td><td><code>shotlist.scenes[].id、place＋程式計數</code></td><td>我</td></tr><tr><td>格號</td><td><code>scene_reply.shots[].id</code></td><td>request</td></tr><tr><td>四張圖（缺圖留空位，點圖開 Flow）</td><td><code>flow_results</code></td><td>Flow</td></tr><tr><td>Claude 建議和理由</td><td><code>picks.&lt;格號&gt;.pick、why</code></td><td>我</td></tr><tr><td>你選的</td><td><code>user_picks.&lt;格號&gt;.pick</code></td><td>你</td></tr><tr><td>旁白</td><td><code>scene_reply.shots[].narration</code></td><td>request</td></tr><tr><td>景別・方位・角度・極特寫局部</td><td><code>scene_reply.shots[].shot_size、azimuth、angle、ecu_part</code></td><td>request</td></tr><tr><td>主體</td><td><code>scene_reply.shots[].subject</code></td><td>request</td></tr><tr><td>動作</td><td><code>scene_reply.shots[].action</code></td><td>request</td></tr><tr><td>畫面方向</td><td><code>scene_reply.shots[].screen_direction</code></td><td>request</td></tr><tr><td>入鏡</td><td><code>scene_reply.shots[].cast</code></td><td>request</td></tr><tr><td>構圖</td><td><code>scene_reply.shots[].composition</code></td><td>request</td></tr><tr><td>地圖與相機視野</td><td><code>程式：maps＋scene_reply.shots[].camera 畫出來</code></td><td>request、我</td></tr><tr><td>參考圖</td><td><code>bg_hand.&lt;格號&gt;.refs＋draw_conf</code></td><td>我</td></tr><tr><td>完整 prompt（中文）</td><td><code>prompt_zh.&lt;格號&gt;＋bg_hand.&lt;格號&gt;.zh</code></td><td>request、我</td></tr><tr><td>英文原文（收合）</td><td><code>scene_reply.shots[].prompt＋bg_hand.&lt;格號&gt;.en</code></td><td>request、我</td></tr><tr><td>恐龍比例判定（HERO＋大恐龍才有）</td><td><code>size.&lt;格號&gt;_&lt;張&gt;</code></td><td>我</td></tr><tr><td>意見欄（寫完按複製）</td><td><code>頁面輸入框，不存資料</code></td><td>—</td></tr></table></div></section><h2>資料檔格式</h2><details class=card id="d-book_facts"><summary><code>book_facts</code>　<span class="lg rq">request</span>　request R2　第 2 步　<code class=mut>docs/science/&lt;EP&gt;_book_facts.json</code></summary><pre>{
+ &quot;ep&quot;: &quot;集&quot;,
+ &quot;chapter&quot;: &quot;章名&quot;,
+ &quot;pages&quot;: {
+  &quot;photo_to_page&quot;: {
+   &quot;&lt;照片&gt;&quot;: &quot;&lt;頁碼&gt;&quot;
+  },
+  &quot;ignored&quot;: &quot;不列的部分&quot;,
+  &quot;continuity&quot;: &quot;前後頁接不接得上&quot;
+ },
+ &quot;reshoot&quot;: [
+  {
+   &quot;photo&quot;: &quot;照片&quot;,
+   &quot;page&quot;: &quot;頁&quot;,
+   &quot;where&quot;: &quot;位置&quot;,
+   &quot;problem&quot;: &quot;問題&quot;
+  }
+ ],
+ &quot;count&quot;: &quot;點數&quot;,
+ &quot;facts&quot;: [
+  {
+   &quot;n&quot;: &quot;編號&quot;,
+   &quot;claim_zh&quot;: &quot;知識點一句話&quot;,
+   &quot;quote&quot;: &quot;書上原文&quot;,
+   &quot;pages&quot;: [
+    &quot;頁碼&quot;
+   ],
+   &quot;type&quot;: &quot;數字／比較／因果／描述／專家說法／求生建議&quot;,
+   &quot;who&quot;: &quot;專家名（有才寫）&quot;,
+   &quot;hedge&quot;: &quot;原文語氣（may、about）&quot;,
+   &quot;convert&quot;: &quot;英制→公制（有才寫）&quot;
+  }
+ ]
+}</pre></details><details class=card id="d-extra_facts"><summary><code>extra_facts</code>　<span class="lg me">我</span>　第 4 步　<code class=mut>docs/science/&lt;EP&gt;_extra_facts.json</code></summary><p class=mut>我照固定清單提，你增刪後定案</p><pre>{
+ &quot;facts&quot;: [
+  {
+   &quot;n&quot;: &quot;編號（接在書上之後）&quot;,
+   &quot;group&quot;: &quot;地點／年代／氣候／地形／植物／動物／吃喝／危險／跟現在對照&quot;,
+   &quot;claim_zh&quot;: &quot;知識點一句話&quot;,
+   &quot;why&quot;: &quot;故事為什麼需要&quot;,
+   &quot;type&quot;: &quot;同上&quot;
+  }
+ ]
+}</pre></details><details class=card id="d-check"><summary><code>check</code>　<span class="lg rq">request</span>　request R3　第 3、5 步　<code class=mut>docs/science/&lt;EP&gt;_check/&lt;批&gt;_batch_&lt;k&gt;.json</code></summary><pre>{
+ &quot;ep&quot;: &quot;集&quot;,
+ &quot;results&quot;: [
+  {
+   &quot;n&quot;: &quot;編號&quot;,
+   &quot;verdict&quot;: &quot;正確／大致正確／有爭議／有誤／找不到出處&quot;,
+   &quot;sci&quot;: &quot;科學上的說法 2～4 句&quot;,
+   &quot;src&quot;: [
+    [
+     &quot;出處名稱&quot;,
+     &quot;網址&quot;
+    ]
+   ],
+   &quot;fix&quot;: &quot;建議旁白說法（正確的空字串）&quot;,
+   &quot;confidence&quot;: &quot;高／中／低&quot;
+  }
+ ]
+}</pre></details><details class=card id="d-url_check"><summary><code>url_check</code>　<span class="lg pg">程式</span>　第 3、5 步　<code class=mut>docs/science/&lt;EP&gt;_url_check.json</code></summary><pre>{
+ &quot;&lt;網址&gt;&quot;: &quot;HTTP 狀態碼&quot;
+}</pre></details><details class=card id="d-report_notes"><summary><code>report_notes</code>　<span class="lg me">我</span>　第 5 步　<code class=mut>docs/science/&lt;EP&gt;_report_notes.json</code></summary><pre>{
+ &quot;summary&quot;: [
+  &quot;摘要一句&quot;
+ ],
+ &quot;steps&quot;: [
+  [
+   &quot;步驟&quot;,
+   &quot;做法&quot;,
+   &quot;結果&quot;
+  ]
+ ],
+ &quot;review&quot;: {
+  &quot;&lt;編號&gt;&quot;: &quot;Claude 覆核意見&quot;
+ },
+ &quot;override&quot;: {
+  &quot;&lt;編號&gt;&quot;: &quot;改過的判定（跟模型不同時）&quot;
+ }
+}</pre></details><details class=card id="d-characters"><summary><code>characters</code>　<span class="lg me">我</span>　第 6 步　<code class=mut>docs/series/characters.json</code></summary><p class=mut>你確認；新建，取代現在手寫的 HTML</p><pre>{
+ &quot;people&quot;: [
+  {
+   &quot;id&quot;: &quot;HERO／PROF&quot;,
+   &quot;name&quot;: &quot;名稱&quot;,
+   &quot;ref&quot;: &quot;設定圖檔名&quot;,
+   &quot;identity&quot;: &quot;身分&quot;,
+   &quot;look&quot;: &quot;外型&quot;,
+   &quot;voice&quot;: &quot;聲音&quot;,
+   &quot;motive&quot;: &quot;動機／任務&quot;,
+   &quot;backstory&quot;: &quot;幕後設定（故事裡不講）&quot;
+  }
+ ],
+ &quot;props&quot;: [
+  {
+   &quot;name&quot;: &quot;道具&quot;,
+   &quot;ref&quot;: &quot;設定圖檔名&quot;,
+   &quot;look&quot;: &quot;長相&quot;,
+   &quot;use&quot;: &quot;用途&quot;
+  }
+ ],
+ &quot;places&quot;: [
+  {
+   &quot;id&quot;: &quot;地點代號&quot;,
+   &quot;name&quot;: &quot;名稱&quot;,
+   &quot;ref&quot;: &quot;設定圖檔名&quot;,
+   &quot;prototype&quot;: &quot;原型&quot;,
+   &quot;map&quot;: &quot;地圖 id&quot;,
+   &quot;size&quot;: &quot;尺寸&quot;,
+   &quot;objects&quot;: [
+    {
+     &quot;n&quot;: &quot;#&quot;,
+     &quot;name&quot;: &quot;東西&quot;,
+     &quot;cell&quot;: &quot;格&quot;,
+     &quot;pos&quot;: &quot;位置&quot;
+    }
+   ],
+   &quot;walls&quot;: [
+    {
+     &quot;wall&quot;: &quot;牆&quot;,
+     &quot;refs&quot;: [
+      &quot;牆面圖&quot;
+     ]
+    }
+   ],
+   &quot;camera_rules&quot;: [
+    &quot;鏡頭規則&quot;
+   ]
+  }
+ ],
+ &quot;prompts&quot;: [
+  {
+   &quot;ref&quot;: &quot;設定圖檔名&quot;,
+   &quot;en&quot;: &quot;英文 prompt&quot;,
+   &quot;zh&quot;: &quot;中文對照&quot;
+  }
+ ],
+ &quot;rules&quot;: [
+  &quot;共用規則&quot;
+ ]
+}</pre></details><details class=card id="d-outline"><summary><code>outline</code>　<span class="lg rq">request</span>　request R7　第 7 步　<code class=mut>episodes/&lt;集&gt;/outline_reply.json</code></summary><pre>{
+ &quot;beats&quot;: {
+  &quot;博士這集的任務&quot;: &quot;&quot;,
+  &quot;主角自己的目的&quot;: &quot;&quot;,
+  &quot;這集忘了帶什麼&quot;: &quot;&quot;,
+  &quot;回家按鈕出什麼狀況&quot;: &quot;&quot;,
+  &quot;博士用什麼理由賴帳&quot;: &quot;&quot;,
+  &quot;接上一集的東西&quot;: &quot;&quot;,
+  &quot;這集新出現的&quot;: &quot;&quot;
+ },
+ &quot;segments&quot;: [
+  {
+   &quot;n&quot;: &quot;#&quot;,
+   &quot;name&quot;: &quot;段名&quot;,
+   &quot;what&quot;: &quot;發生什麼&quot;,
+   &quot;purpose&quot;: &quot;目的&quot;,
+   &quot;facts&quot;: [
+    &quot;知識點編號&quot;
+   ]
+  }
+ ],
+ &quot;unused&quot;: [
+  &quot;沒用到的知識點編號&quot;
+ ],
+ &quot;questions&quot;: [
+  &quot;模型要問的（只在對話轉述，不上頁面）&quot;
+ ]
+}</pre></details><details class=card id="d-story"><summary><code>story</code>　<span class="lg me">我</span>　第 8、9 步　<code class=mut>episodes/&lt;集&gt;/story_vN.json</code></summary><p class=mut>新建，取代 story_vN.md</p><pre>{
+ &quot;ep&quot;: &quot;集&quot;,
+ &quot;version&quot;: &quot;N&quot;,
+ &quot;segments&quot;: [
+  {
+   &quot;n&quot;: &quot;段號（對到大綱 segments.n）&quot;,
+   &quot;name&quot;: &quot;段名&quot;,
+   &quot;what&quot;: &quot;這段發生什麼&quot;,
+   &quot;lines&quot;: [
+    {
+     &quot;text&quot;: &quot;一句旁白&quot;,
+     &quot;facts&quot;: [
+      &quot;知識點編號（沒有就空陣列）&quot;
+     ]
+    }
+   ]
+  }
+ ]
+}</pre></details><details class=card id="d-shotlist"><summary><code>shotlist</code>　<span class="lg me">我</span>　第 10、11 步　<code class=mut>episodes/&lt;集&gt;/shotlist_vN.json</code></summary><p class=mut>新建，取代 script_vN.md＋scenes_vN.json；旁白一字不改照搬故事</p><pre>{
+ &quot;ep&quot;: &quot;集&quot;,
+ &quot;version&quot;: &quot;N&quot;,
+ &quot;scenes&quot;: [
+  {
+   &quot;id&quot;: &quot;幕號&quot;,
+   &quot;place&quot;: &quot;地點&quot;,
+   &quot;time&quot;: &quot;時間&quot;,
+   &quot;map&quot;: &quot;地圖 id（沒有實景寫 null）&quot;,
+   &quot;shots&quot;: [
+    {
+     &quot;id&quot;: &quot;格號 Sxx-n&quot;,
+     &quot;segment&quot;: &quot;段號&quot;,
+     &quot;picture&quot;: &quot;畫面&quot;,
+     &quot;type&quot;: &quot;畫面／特寫插入／效果&quot;,
+     &quot;shot_size&quot;: &quot;景別初定&quot;,
+     &quot;narration&quot;: [
+      &quot;旁白句（照故事）&quot;
+     ],
+     &quot;sound&quot;: &quot;聲音&quot;,
+     &quot;category&quot;: &quot;劇情／科普／搞笑&quot;,
+     &quot;facts&quot;: [
+      &quot;知識點編號&quot;
+     ],
+     &quot;visible&quot;: &quot;看得到的細節&quot;
+    }
+   ]
+  }
+ ],
+ &quot;props&quot;: [
+  {
+   &quot;prop&quot;: &quot;道具&quot;,
+   &quot;appear&quot;: &quot;出現&quot;,
+   &quot;mid&quot;: &quot;中段&quot;,
+   &quot;late&quot;: &quot;後段&quot;,
+   &quot;end&quot;: &quot;最後&quot;
+  }
+ ]
+}</pre></details><details class=card id="d-maps"><summary><code>maps</code>　<span class="lg me">我</span>　第 12 步　<code class=mut>episodes/001_trex_run/maps/&lt;id&gt;.json</code></summary><p class=mut>我畫初稿，你用地圖編輯器改</p><pre>{
+ &quot;id&quot;: &quot;&quot;,
+ &quot;name&quot;: &quot;&quot;,
+ &quot;cols&quot;: &quot;&quot;,
+ &quot;rows&quot;: &quot;&quot;,
+ &quot;cell_m&quot;: &quot;&quot;,
+ &quot;north&quot;: &quot;&quot;,
+ &quot;types&quot;: &quot;地形：可站／可放相機&quot;,
+ &quot;grid&quot;: &quot;&quot;,
+ &quot;objects&quot;: &quot;物件&quot;,
+ &quot;labels&quot;: &quot;&quot;,
+ &quot;outside&quot;: &quot;四個方向的遠景&quot;,
+ &quot;desc&quot;: &quot;&quot;,
+ &quot;time&quot;: &quot;&quot;,
+ &quot;sun&quot;: &quot;&quot;,
+ &quot;light&quot;: &quot;&quot;
+}</pre></details><details class=card id="d-map_preview"><summary><code>map_preview</code>　<span class="lg pg">程式</span>　第 12 步　<code class=mut>episodes/001_trex_run/maps/preview/&lt;id&gt;.png</code></summary><pre>地圖圖片（從 maps/&lt;id&gt;.json 畫）</pre></details><details class=card id="d-ref_prompts"><summary><code>ref_prompts</code>　<span class="lg me">我</span>　第 13 步　<code class=mut>docs/requests/&lt;EP&gt;-REF&lt;k&gt;_reply_claude.json</code></summary><pre>{
+ &quot;shots&quot;: [
+  {
+   &quot;id&quot;: &quot;&lt;EP&gt;-REF-&lt;NAME&gt;&quot;,
+   &quot;refs&quot;: [
+    &quot;附的參考圖&quot;
+   ],
+   &quot;prompt_zh&quot;: &quot;中文&quot;,
+   &quot;prompt&quot;: &quot;英文（貼進 Flow）&quot;
+  }
+ ]
+}</pre></details><details class=card id="d-ref_picks"><summary><code>ref_picks</code>　<span class="lg me">我＋你</span>　第 13 步　<code class=mut>episodes/&lt;集&gt;/refs/picks.json</code></summary><p class=mut>checks／suggest／why 我寫；user 是你選的</p><pre>{
+ &quot;date&quot;: &quot;&quot;,
+ &quot;refs&quot;: {
+  &quot;&lt;NAME&gt;&quot;: {
+   &quot;zh&quot;: &quot;中文名&quot;,
+   &quot;role&quot;: &quot;用在哪幾段&quot;,
+   &quot;files&quot;: &quot;檔名前綴&quot;,
+   &quot;req&quot;: &quot;對到 ref_prompts 的 id&quot;,
+   &quot;checks&quot;: {
+    &quot;1&quot;: &quot;第 1 張檢查結果&quot;,
+    &quot;2&quot;: &quot;&quot;,
+    &quot;3&quot;: &quot;&quot;,
+    &quot;4&quot;: &quot;&quot;
+   },
+   &quot;suggest&quot;: &quot;建議第幾張&quot;,
+   &quot;why&quot;: &quot;理由&quot;,
+   &quot;user&quot;: &quot;你選第幾張&quot;
+  }
+ }
+}</pre></details><details class=card id="d-ref_images"><summary><code>ref_images</code>　<span class="lg fl">Flow</span>　第 13 步　<code class=mut>episodes/&lt;集&gt;/refs/&lt;NAME&gt;_&lt;1-4&gt;.jpg</code></summary><pre>四張候選圖</pre></details><details class=card id="d-scene_reply"><summary><code>scene_reply</code>　<span class="lg rq">request</span>　request R14　第 14 步　<code class=mut>docs/requests/&lt;EP&gt;-&lt;幕&gt;_vN_reply_claude.json</code></summary><pre>{
+ &quot;scene_id&quot;: &quot;&quot;,
+ &quot;shot_count&quot;: &quot;&quot;,
+ &quot;notes&quot;: &quot;整體說明（不上頁面）&quot;,
+ &quot;blocking&quot;: [
+  {
+   &quot;who&quot;: &quot;&quot;,
+   &quot;path&quot;: [
+    {
+     &quot;t&quot;: &quot;&quot;,
+     &quot;cell&quot;: &quot;&quot;,
+     &quot;facing&quot;: &quot;&quot;,
+     &quot;doing&quot;: &quot;&quot;
+    }
+   ]
+  }
+ ],
+ &quot;shots&quot;: [
+  {
+   &quot;id&quot;: &quot;格號（加拍遠一級加 W）&quot;,
+   &quot;variant_of&quot;: &quot;&quot;,
+   &quot;t&quot;: &quot;&quot;,
+   &quot;narration&quot;: [
+    &quot;旁白原句&quot;
+   ],
+   &quot;subject&quot;: &quot;主體&quot;,
+   &quot;shot_size&quot;: &quot;EWS…ECU&quot;,
+   &quot;ecu_part&quot;: &quot;極特寫局部&quot;,
+   &quot;azimuth&quot;: &quot;方位&quot;,
+   &quot;angle&quot;: &quot;角度&quot;,
+   &quot;composition&quot;: &quot;構圖&quot;,
+   &quot;screen_direction&quot;: &quot;畫面方向&quot;,
+   &quot;action&quot;: &quot;動作&quot;,
+   &quot;camera&quot;: {
+    &quot;cell&quot;: &quot;&quot;,
+    &quot;height_m&quot;: &quot;&quot;,
+    &quot;look_at&quot;: &quot;&quot;,
+    &quot;distance_m&quot;: &quot;&quot;
+   },
+   &quot;cast&quot;: [
+    {
+     &quot;who&quot;: &quot;&quot;,
+     &quot;visible&quot;: &quot;&quot;,
+     &quot;frame_height&quot;: &quot;&quot;
+    }
+   ],
+   &quot;refs&quot;: [],
+   &quot;prompt&quot;: &quot;英文 prompt&quot;,
+   &quot;untested&quot;: [],
+   &quot;remedy&quot;: &quot;&quot;
+  }
+ ]
+}</pre></details><details class=card id="d-prompt_zh"><summary><code>prompt_zh</code>　<span class="lg rq">request</span>　request R14t　第 14 步　<code class=mut>docs/requests/&lt;EP&gt;-&lt;幕&gt;_vN_prompt_zh.json</code></summary><pre>{
+ &quot;&lt;格號&gt;&quot;: &quot;英文 prompt 的中文翻譯&quot;
+}</pre></details><details class=card id="d-bg_hand"><summary><code>bg_hand</code>　<span class="lg me">我</span>　第 16 步　<code class=mut>docs/requests/&lt;EP&gt;_vN_bg_hand_&lt;x&gt;.json</code></summary><p class=mut>逐格看地圖手寫背景、決定參考圖（分工：背景和參考圖由我寫）</p><pre>{
+ &quot;&lt;格號&gt;&quot;: {
+  &quot;zh&quot;: &quot;背景中文&quot;,
+  &quot;en&quot;: &quot;背景英文&quot;,
+  &quot;refs&quot;: [
+   &quot;參考圖&quot;
+  ]
+ }
+}</pre></details><details class=card id="d-draw_conf"><summary><code>draw_conf</code>　<span class="lg me">我</span>　第 16 步　<code class=mut>docs/requests/&lt;EP&gt;_vN_draw.json</code></summary><pre>{
+ &quot;nobag_scenes&quot;: [
+  &quot;沒背包的幕&quot;
+ ],
+ &quot;bag_shots&quot;: [
+  &quot;有背包的格&quot;
+ ],
+ &quot;plants&quot;: &quot;植物參考圖&quot;,
+ &quot;sky&quot;: {
+  &quot;&lt;幕&gt;&quot;: &quot;天空樣本＋色碼&quot;
+ },
+ &quot;replace&quot;: {
+  &quot;&lt;舊參考圖&gt;&quot;: &quot;&lt;新參考圖&gt;&quot;
+ }
+}</pre></details><details class=card id="d-flow_results"><summary><code>flow_results</code>　<span class="lg fl">Flow</span>　第 17 步　<code class=mut>flow_runner/results/&lt;job&gt;/&lt;格號&gt;/urls.json、&lt;k&gt;_full.jpg</code></summary><pre>{
+ &quot;&lt;k&gt;&quot;: &quot;Flow 連結&quot;
+}</pre></details><details class=card id="d-picks"><summary><code>picks</code>　<span class="lg me">我</span>　第 18 步　<code class=mut>docs/picks/&lt;EP&gt;_vN.json</code></summary><p class=mut>照 docs/picks/PICK_PROMPT.md 的檢查清單逐張看</p><pre>{
+ &quot;&lt;格號&gt;&quot;: {
+  &quot;pick&quot;: &quot;建議第幾張&quot;,
+  &quot;why&quot;: &quot;理由&quot;
+ }
+}</pre></details><details class=card id="d-size"><summary><code>size</code>　<span class="lg me">我</span>　第 18 步　<code class=mut>docs/size/&lt;EP&gt;.json</code></summary><p class=mut>HERO＋大恐龍同框才有，跟比例圖並排目視</p><pre>{
+ &quot;&lt;格號&gt;_&lt;張&gt;&quot;: &quot;恐龍：一致／略大／略小（理由）&quot;
+}</pre></details><details class=card id="d-user_picks"><summary><code>user_picks</code>　<span class="lg you">你</span>　第 18 步　<code class=mut>docs/picks/&lt;EP&gt;_vN_user.json</code></summary><p class=mut>你在意見欄寫完按複製貼回對話，我照抄</p><pre>{
+ &quot;&lt;格號&gt;&quot;: {
+  &quot;pick&quot;: &quot;你選的（沒選＝整格重畫）&quot;,
+  &quot;note&quot;: &quot;意見&quot;
+ }
+}</pre></details><h2>request</h2><section class=card><div class=tw><table><tr><th>id</th><th>步驟</th><th>名稱</th><th>範本</th><th>程式</th><th>回傳</th></tr><tr><td><code>R2</code></td><td>2</td><td>列出書上的知識點</td><td><code>docs/science_requests/2_list_facts.md</code></td><td><code>scripts/science_request.py 2 &lt;EP&gt;</code></td><td><a href="#d-book_facts"><code>book_facts</code></a></td></tr><tr><td><code>R2v</code></td><td>2</td><td>逐頁核對</td><td><code>docs/science_requests/2v_verify_page.md</code></td><td><code>scripts/science_request.py 2v &lt;EP&gt;</code></td><td><a href="#d-book_facts"><code>book_facts（修正和補列併回同一份）</code></a></td></tr><tr><td><code>R3</code></td><td>3、5</td><td>查核知識點（書上、書外同一份）</td><td><code>docs/science_requests/3_check.md</code></td><td><code>scripts/science_request.py 3 &lt;EP&gt;</code></td><td><a href="#d-check"><code>check</code></a></td></tr><tr><td><code>R7</code></td><td>7</td><td>大綱</td><td><code>docs/story_requests/7_outline.md</code></td><td><code>scripts/make_outline_request.py build|send|check</code></td><td><a href="#d-outline"><code>outline</code></a></td></tr><tr><td><code>R14</code></td><td>14</td><td>分鏡設計（一幕一份）</td><td><code>scripts/make_scene_request.py 內的 REQUEST</code></td><td><code>scripts/make_scene_request.py</code></td><td><a href="#d-scene_reply"><code>scene_reply</code></a></td></tr><tr><td><code>R14t</code></td><td>14</td><td>prompt 翻中文</td><td><code>scripts/translate_prompts.py 內</code></td><td><code>scripts/translate_prompts.py</code></td><td><a href="#d-prompt_zh"><code>prompt_zh</code></a></td></tr></table></div></section></main></body></html>
