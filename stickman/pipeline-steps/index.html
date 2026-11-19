@@ -162,7 +162,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p class="chgline"><span class="chg">改</span> 新的做法：取代舊的走位、鏡頭、寫 prompt 三步</p>
 <p><b>誰：</b>Claude 設計，你看。<b>　我用：</b><code>make_scene_request.py</code></p>
 <p><b>怎麼做：</b>每一幕做一份 request（旁白、地圖、角色和道具、能用的參考圖、分鏡原則），送 Claude CLI，回傳一幕的 JSON：走位、每格的 7 項鏡頭資訊（主體、景別、極特寫局部、方位、角度、構圖、畫面方向）、入鏡角色、參考圖、英文 prompt。原本「走位」「鏡頭」「寫 prompt」三步都在這裡一起做。</p>
-<p><b>request 裡的規則：</b></p><ul><li>景別名稱照官方 10 級指南，prompt 只寫英文名。</li><li>HERO 和大恐龍（TREX、TEEN、ANKY）同框：原本的景別恐龍可以只露一部分，另外多畫一張遠一級的（FS→WS、WS→EWS）。</li><li>prompt 不寫角色佔畫面幾成（實測 Flow 不照做）。</li><li>參考圖不用模型選（refs 填空陣列），由「補背景和參考圖」那一步的程式決定。</li><li>第 6 版起：prompt 不描述背景和光線，背景由程式從地圖補。</li></ul>
+<p><b>request 裡的規則：</b></p><ul><li>景別名稱照官方 10 級指南，prompt 只寫英文名。</li><li>HERO 和大恐龍（TREX、TEEN、ANKY）同框：原本的景別恐龍可以只露一部分，另外多畫一張遠一級的（FS→WS、WS→EWS）。</li><li>prompt 不寫角色佔畫面幾成（實測 Flow 不照做）。</li><li>參考圖不用模型選（refs 填空陣列），由「補背景和參考圖」那一步的程式決定。</li><li>第 6 版起：prompt 不描述背景和光線，背景由程式從地圖補。</li><li>角色長相看參考圖、不用文字描述外觀；會隨劇情變的狀態（帽子沒了、滿身泥、相機摔裂、有沒有背包、手上拿什麼）一定要用文字寫；膚色句照舊（2026-11-19 使用者定）。</li></ul>
 <p><b>版本：</b>每改一次規則就升一版（v1～v5），舊版 request 和回覆都留著。</p>
 <h2 id="s15">15. 檢查分鏡回覆 🧪</h2>
 <p class=pp><b>這步在幹嘛：</b>檢查分鏡模型的回覆有沒有漏旁白、站錯位置、用了不存在的參考圖。</p>
