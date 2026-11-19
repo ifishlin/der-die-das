@@ -1,0 +1,417 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><title>EP1-new 故事</title><style>
+:root{--bg:#f4f1ea;--panel:#fffdf8;--fg:#24211c;--mut:#6d665a;--line:#e2dccf;--acc:#8a4b1f;--nar:#efe7d6;--star:#c0861a;--sci:#dcefe5;--scib:#2f7d5b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;--nar:#2f2a22;--star:#e0b25a;--sci:#1b2c22;--scib:#6cc792;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;--nar:#2f2a22;--star:#e0b25a;--sci:#1b2c22;--scib:#6cc792;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15.5px/1.75 "Noto Sans TC",-apple-system,"PingFang TC",sans-serif;margin:0}
+main{max-width:1500px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+a{color:var(--acc)}h1{font-size:26px;margin:0}h2{font-size:19px;margin:0 0 6px}h3{font-size:16px;margin:0 0 6px}.mut{color:var(--mut)}
+.card,.seg{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 18px;min-width:0;max-width:900px}
+.tabs{display:flex;gap:8px}.tab{font:600 14px inherit;font-family:inherit;border:1.5px solid var(--line);background:var(--panel);color:var(--fg);border-radius:20px;padding:5px 16px;cursor:pointer}.tab.on{border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc)}
+.nar{background:var(--nar);border-radius:8px;padding:6px 14px;margin:6px 0 10px}.nar p{margin:2px 0}
+.nar p.sci{background:var(--sci);border-left:4px solid var(--scib);margin:2px -10px;padding:0 6px}
+.rt{font-size:13px;font-weight:600;color:var(--scib);margin-left:6px}.big{font-size:24px;color:var(--scib)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left}.n{text-align:right}
+.bar{display:inline-block;width:120px;height:10px;background:var(--line);border-radius:5px;overflow:hidden;vertical-align:middle}.bar i{display:block;height:100%;background:var(--scib)}
+.act{margin:8px 0 4px}.act.sub{margin-left:1.4em}
+.star{color:var(--star);font-weight:700}.fn{font:12px ui-monospace,Menlo,monospace}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.col{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:0}.col.new{border-color:var(--acc)}
+.colhead{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-weight:700;color:var(--mut)}
+@media (max-width:760px){.row,.colhead{grid-template-columns:1fr}}
+#cmp{display:flex;flex-direction:column;gap:10px}
+</style></head><body><main><div style="font-size:14px"><a href="../story/ep1-new/">← EP1-new</a>　<a href="../outline-ep1-new/">EP1-new 大綱</a>　<a href="../science-ep1-new/">EP1-new 科普準備報告</a></div>
+<header><h1>EP1-new〈你跑得贏暴龍嗎？〉故事 v4（加深入講解）</h1><p class=mut>第 8 步寫故事、第 9 步審故事的檢查點。米色底是旁白、<b>綠底是科普</b>（有知識點編號），<span class=star>★</span> 是這版新改的地方，#編號點了會跳到科普準備報告。你在對話裡回意見，我改成下一版，舊版留著對照。</p></header>
+<section class=card><p># EP1-new〈你跑得贏暴龍嗎？〉故事 v4（加深入講解）</p>
+<p>2026-11-19。第 8 步寫故事：照大綱（outline_reply.json，15 段）在成品的故事裡加進四段講解。</p>
+<p class="act">- <b>舊的 11 段</b>：沿用成品，內容照故事 v3 原文，不改；只把段落編號改成新的順序。</p>
+<p class="act">- <b>新的 4 段</b>：段落 4（地獄溪）、段落 6（暴龍的眼睛和鼻子）、段落 8（為什麼大恐龍跑不快）、段落 11（急轉彎）。米色是旁白，有 #編號的是科普句，編號連到 EP1-new 科普準備報告。</p>
+<p class="act">- <b>回家裝置</b>：照 11-14 定的設定是一顆按鈕（大綱模型問到；舊段原文寫手環的地方，成品已經是按鈕）。</p></section>
+<section class=card><h2>科普比例 <span class=big>89%</span>（目標 30%）</h2><p class=mut>綠底的旁白是科普（有標知識點編號），其他是劇情。用念出來的字數算：科普 2035 字／全部 2291 字。約 9.5 分鐘（每秒 4 字估）。</p><div class=tw><table><tr><th>段</th><th>科普字</th><th>全部字</th><th>比例</th><th></th></tr><tr><td><a href="#s0">段落 0　冷開場 🔥</a></td><td class=n>0</td><td class=n>32</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s1">段落 1　走投無路 😄</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s2">段落 2　行前教育 😄</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s3">段落 3　抵達白堊紀 😄</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s4">段落 4　你掉在哪裡：六千六百萬年前的地獄溪</a></td><td class=n>443</td><td class=n>495</td><td class=n>89%</td><td><span class=bar><i style="width:89%"></i></span></td></tr><tr><td><a href="#s5">段落 5　遇見暴龍 😬→🔥</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s6">段落 6　暴龍的眼睛和鼻子</a></td><td class=n>201</td><td class=n>266</td><td class=n>76%</td><td><span class=bar><i style="width:76%"></i></span></td></tr><tr><td><a href="#s7">段落 7　第一次逃跑 😬→😄</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s8">段落 8　為什麼大恐龍跑不快</a></td><td class=n>972</td><td class=n>1042</td><td class=n>93%</td><td><span class=bar><i style="width:93%"></i></span></td></tr><tr><td><a href="#s9">段落 9　假勝利 😄→😬</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s10">段落 10　威脅排行榜 😬 遞增</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s11">段落 11　被追的時候怎麼逃：急轉彎</a></td><td class=n>419</td><td class=n>456</td><td class=n>92%</td><td><span class=bar><i style="width:92%"></i></span></td></tr><tr><td><a href="#s12">段落 12　決戰 🔥</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s13">段落 13　回家 😄</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s14">段落 14　尾聲＋預告 😄</a></td><td class=n>0</td><td class=n>0</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><b>合計</b></td><td class=n><b>2035</b></td><td class=n><b>2291</b></td><td class=n><b>89%</b></td><td></td></tr></table></div></section>
+<div class=tabs><button class="tab on" data-t="full">v4 全文</button><button class="tab" data-t="cmp">v3 ↔ v4 逐段對照</button></div>
+<div id=full style="display:flex;flex-direction:column;gap:12px"><section class="seg" id="s0"><h2>段落 0　冷開場 🔥 <span class=rt>科普 0／32 字・0%</span></h2><p>HERO 在一片爛泥巴的森林裡狂奔。後面一隻暴龍越追越近，嘴巴比他整個人還大。他跳起來的那一刻，時間停住。</p>
+<div class=nar>
+<p>你一定很想問：我到底是怎麼跑到這裡來的？</p>
+<p>這件事呢，要從今天早上開始說起。</p>
+</div>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s1"><h2>段落 1　走投無路 😄 </h2><p class="act">- <b>書桌上的三樣東西</b>：</p>
+<p class="act">- 蓋滿逾期章的帳單。</p>
+<p class="act">- 【改】畢業學分不足通知：你已經延畢兩年，現在最關心你的人，是系辦助理。（原：論文逾期通知）</p>
+<p class="act">- 一支手機和一把電擊槍，但房間只有一個插座，你當然拿來充手機。</p>
+<p class="act">- <b>博士的訊息</b>：又有工作，時薪很不錯，記得帶電擊槍。上次他也說會付錢。看看那疊帳單，還是去吧。</p>
+<p class="act">- <b>實驗室</b>：【改】在校園裡，校務大樓附近一間老舊的研究小屋。（原：藏在自助洗衣店的地下室，門上的鎖比樓上的洗衣機還多。）</p>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s2"><h2>段落 2　行前教育 😄 </h2><p class="act">- <b>這次要去哪</b>：博士說要去白堊紀，【改】六千六百五十萬年前的北美洲（原：七千萬年前）。你一直低頭滑手機。</p>
+<p class="act">- <b>侏羅紀</b>：你只問了一句「為什麼不去侏羅紀」，因為那部電影你看了五遍。博士很不高興：侏羅紀根本沒有暴龍，電影光片名就在騙你。他在黑板畫時間線，劍龍在侏羅紀，暴龍排在白堊紀最後面。</p>
+<p class="act">- <b>第一課：越大隻，跑越慢</b>：身高變兩倍，腿的力氣只多四倍，體重卻重了八倍，腿撐不住。你在滑手機。</p>
+<p class="act">- <b>第二課：最快的是不大不小的</b>：大約九十公斤；超過兩千七百公斤，就會被自己的體重拖慢。你打了個大哈欠。</p>
+<p class="act">- <b>碼表</b>：博士叫你跑一趟。一般人時速大約二十四公里，奧運選手四十四公里。結果你邊滑手機邊慢慢走完。</p>
+<p class="act">- <b>第三課：跑越快，越難轉彎</b>：獵豹追羚羊，羚羊三次能逃掉兩次。博士示範急轉彎，差點閃到腰。你抬頭看了一眼，又低頭滑。</p>
+<p class="act">- <b>裝備</b>：相機、樣本袋、一個用膠帶纏得亂七八糟的手環，只有一顆按鈕，按了就回家。沒拍到暴龍、沒帶回牙齒，就不付錢。</p>
+<p class="act">- <b>生存指南 vs 洋芋片</b>：博士給了一本又厚又重的生存指南，你選了洋芋片。指南和水壺都留在桌上。</p>
+<p class="act">- <b>出發</b>：博士說等你準備好再拉拉桿，結果直接拉了。機器沒反應，他用力拍了一下。</p>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s3"><h2>段落 3　抵達白堊紀 😄 </h2><p class="act">- <b>落地</b>：時間回到【改】六千六百五十萬年前的北美洲（原：七千萬年前）。北美洲中間隔著一大片海，你掉在西邊這一半，臉先著地。</p>
+<p class="act">- <b>蚊子</b>：這裡又熱又濕，連南北極都沒有冰。第一個來歡迎你的是蚊子。都過了【改】六千六百五十萬年（原：七千萬年），蚊子還是一模一樣。</p>
+<p class="act">- <b>沒訊號</b>：你上網搜尋「白堊紀要怎麼活下去」，沒有訊號。對啊，【改】六千六百五十萬年前（原：七千萬年前），哪來的基地台。</p>
+<p class="act">- <b>石頭</b>：這時代還沒有草原，到處是蕨類。你坐上一顆長滿青苔的大石頭，覺得這份工作還不錯。然後石頭眨了一下眼睛：那是一隻甲龍，尾巴上有骨錘。還好牠只想繼續睡，你踮著腳溜走。</p>
+<p class="act">- <b>口渴</b>：水壺跟生存指南一起留在實驗室。你聽到水聲，決定先不要太相信它。</p>
+<p class="act">- <b>鴨嘴龍</b>：河對岸一群鴨嘴龍在喝水，每隻都跟大象差不多大。你拍了一張，可惜不是暴龍，不算數。</p>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s4"><h2>段落 4　你掉在哪裡：六千六百萬年前的地獄溪 <span class=rt>科普 443／495 字・89%</span></h2><p>拍完鴨嘴龍，劇情先停一下。鏡頭從滿身泥的 HERO 一路往上拉高：河邊的平原、森林、西邊的山、東邊的海，最後看到整片北美洲，停在「你在這裡」。再跳到今天的同一個地方對照，最後鏡頭降回 HERO 身邊，接下一段的腳印。</p>
+<div class=nar>
+<p>先停一下。你知道你現在在哪裡嗎？</p>
+<p class=sci>這裡叫做地獄溪，在今天美國蒙大拿州的東邊。 <a class=fn href="../science-ep1-new/#f101">#101</a></p>
+<p>只不過，你早到了六千六百萬年。</p>
+<p class=sci>這裡的泥土，是一層一層慢慢堆起來的。最上面那薄薄的一層，就是將來小行星撞地球那一刻留下來的。 <a class=fn href="../science-ep1-new/#f102">#102</a></p>
+<p>我們把鏡頭拉高一點。</p>
+<p class=sci>你腳下是一大片平平的河邊平原，河水從西邊的山上流下來，一路往東流進海裡。 <a class=fn href="../science-ep1-new/#f103">#103</a></p>
+<p class=sci>西邊那排山，就是洛磯山。不過它現在還很年輕，才剛開始慢慢長高。 <a class=fn href="../science-ep1-new/#f6">#6</a> <a class=fn href="../science-ep1-new/#f103">#103</a></p>
+<p class=sci>再往東看。原本有一片大海，把北美洲切成東西兩半。現在它已經退得差不多了，只剩一道淺淺的海灣，從南邊伸上來。 <a class=fn href="../science-ep1-new/#f104">#104</a></p>
+<p class=sci>天氣呢？這裡溫暖又潮濕，一年平均大約十一、二度，比現在的蒙大拿暖和一些。 <a class=fn href="../science-ep1-new/#f105">#105</a> <a class=fn href="../science-ep1-new/#f5">#5</a></p>
+<p class=sci>就算是最冷的月份，也只有兩、三度，冬天不會整個凍起來。 <a class=fn href="../science-ep1-new/#f105">#105</a></p>
+<p class=sci>一年裡有比較濕的時候，也有比較乾的時候，但不會乾到變成旱季。 <a class=fn href="../science-ep1-new/#f106">#106</a></p>
+<p class=sci>其實整個地球都比現在熱，南極、北極連一片大冰原都沒有。 <a class=fn href="../science-ep1-new/#f107">#107</a></p>
+<p class=sci>森林裡大部分是開花的植物，棕櫚、木蘭、闊葉的大樹；地上長滿蕨類，河邊還有水杉，也看得到蘇鐵和銀杏。 <a class=fn href="../science-ep1-new/#f108">#108</a> <a class=fn href="../science-ep1-new/#f10">#10</a></p>
+<p class=sci>這些樹大多不算太高，是中小型的樹。 <a class=fn href="../science-ep1-new/#f109">#109</a></p>
+<p class=sci>住在這裡的也不只恐龍。河裡有鱷魚、烏龜和魚，草叢裡有蜥蜴和蛇，樹上有鳥，地上還有小小的哺乳動物在鑽來鑽去。 <a class=fn href="../science-ep1-new/#f110">#110</a></p>
+<p>（停）</p>
+<p class=sci>六千六百萬年以後，這裡變成一片乾巴巴的荒地。 <a class=fn href="../science-ep1-new/#f112">#112</a></p>
+<p class=sci>風和雨把一層一層的泥土沖開，埋在裡面的骨頭就露了出來。 <a class=fn href="../science-ep1-new/#f112">#112</a></p>
+<p class=sci>一九〇二年，人類挖到的第一具暴龍骨頭，就是在這裡。 <a class=fn href="../science-ep1-new/#f112">#112</a></p>
+<p>所以，你現在站的地方……（停）就是暴龍的老家。</p>
+</div></section><section class="seg" id="s5"><h2>段落 5　遇見暴龍 😬→🔥 </h2><p class="act">- <b>腳印</b>：鞋子旁邊有一個三趾腳印，跟你的腿差不多長，邊緣還在滲水。找不到下一個腳印，表示牠就停在這裡。</p>
+<p class="act">- <b>回頭</b>：對岸的鴨嘴龍全都抬頭，看著你的後面。你不想回頭，但還是回頭了。樹後面探出一顆頭，牠沒吼叫，牠在聞。</p>
+<p class="act">- <b>暴龍有多大</b>：跟長頸鹿一樣高、跟大象一樣重，大約八公噸，一口能咬穿三角龍的骨頭。你只到牠的膝蓋。</p>
+<p class="act">- <b>手機裡存的〈遇到暴龍的三個求生秘訣〉</b>：</p>
+<p class="act">1. 躲起來：你鑽進蕨類，屁股露在外面。蕨類擋得住眼睛，擋不住鼻子，暴龍的鼻子比狗還靈。</p>
+<p class="act">2. 不動就看不到：那是電影騙你的，暴龍的眼睛比老鷹還好。</p>
+<p class="act">3. 爬到樹上：那棵樹比你想的還軟，把你送到牠嘴前。</p>
+<p class="act">- <b>指南</b>：那本生存指南的第一頁只寫了兩個字「快跑」，可惜它在實驗室。</p>
+<p class="act">- <b>想起第一課</b>：牠張大嘴。博士講過，越大隻的跑越慢，那時候你在滑手機。牠咬空，你掉下來，拔腿就跑。</p>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s6"><h2>段落 6　暴龍的眼睛和鼻子 <span class=rt>科普 201／266 字・76%</span></h2><p>HERO 剛拔腿逃走，劇情又停一下，回頭解釋剛剛「躲蕨類」「裝不動」為什麼都沒用。定格在 HERO 屁股露在蕨類外、暴龍鼻子湊過來的那一刻，再切到暴龍看出去的畫面。</p>
+<div class=nar>
+<p>等一下，先暫停。剛剛那兩招，為什麼一點用都沒有？</p>
+<p class=sci>「你不動，暴龍就看不到你」，這句話是從電影《侏羅紀公園》來的。科學上，沒有任何根據。 <a class=fn href="../science-ep1-new/#f115">#115</a></p>
+<p class=sci>暴龍的兩隻眼睛都朝向前面，兩邊看到的範圍，重疊了大約五十五度，比老鷹還要寬。 <a class=fn href="../science-ep1-new/#f113">#113</a></p>
+<p class=sci>所以牠很會判斷，你離牠有多遠。 <a class=fn href="../science-ep1-new/#f113">#113</a></p>
+<p class=sci>牠的視力，最好的時候，可能是人的十三倍。 <a class=fn href="../science-ep1-new/#f114">#114</a></p>
+<p class=sci>鼻子就更厲害了。牠腦袋裡負責聞味道的部分又大又發達，是恐龍裡鼻子最靈的那一群。 <a class=fn href="../science-ep1-new/#f116">#116</a></p>
+<p>那牠的鼻子，有沒有比狗還靈呢？</p>
+<p class=sci>這個嘛，科學家也說不準。光算鼻子裡的「氣味開關」，狗說不定還多一點。 <a class=fn href="../science-ep1-new/#f117">#117</a></p>
+<p>那科學家是怎麼知道的？</p>
+<p class=sci>他們把暴龍的頭骨拿去做斷層掃描，看腦袋裡面留下來的形狀，就能推出牠的眼睛和鼻子有多好。 <a class=fn href="../science-ep1-new/#f118">#118</a></p>
+<p>所以你剛剛那一招……（停）牠看得一清二楚，也聞得一清二楚。</p>
+</div></section><section class="seg" id="s7"><h2>段落 7　第一次逃跑 😬→😄 </h2><p class="act">- <b>快走的暴龍</b>：牠追上來，但越追越慢。七公噸的身體根本跑不起來，最快大約時速十九公里，這叫快走。</p>
+<p class="act">- <b>任務完成一半</b>：你邊跑邊回頭拍了一張，有點糊，但看得出是暴龍。</p>
+<p class="act">- <b>說再見</b>：你站上倒木跟牠揮手說再見，牠喘著氣看你，眼神好像有點受傷。</p>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s8"><h2>段落 8　為什麼大恐龍跑不快 <span class=rt>科普 972／1042 字・93%</span></h2><p>HERO 站在倒木上跟喘氣的暴龍揮手，劇情停下來，完整講解。畫面用實物和會動的手繪：礦井、放大的方塊、會裂的骨頭、同一條跑道上的動物賽跑、科學家的電腦模擬。最後回到倒木上的 HERO。</p>
+<div class=nar>
+<p>好，現在來回答這一集最重要的問題：牠為什麼追不上你？</p>
+<p>答案，要從一口很深很深的礦井說起。</p>
+<p class=sci>一九二六年，英國的生物學家霍爾丹寫了一篇文章，叫做〈剛剛好的大小〉。 <a class=fn href="../science-ep1-new/#f16">#16</a></p>
+<p class=sci>他說：把一隻老鼠丟進一口深到不行的礦井，牠落地以後，拍拍身上的灰，照樣跑掉。 <a class=fn href="../science-ep1-new/#f13">#13</a></p>
+<p class=sci>換成大一點的老鼠，會摔死；人會摔碎；馬呢，會整隻濺開。 <a class=fn href="../science-ep1-new/#f14">#14</a> <a class=fn href="../science-ep1-new/#f15">#15</a></p>
+<p class=sci>為什麼？掉下來的時候，空氣擋住你的力量，要看你的表面有多大；撞到地上的力道，要看你有多重。 <a class=fn href="../science-ep1-new/#f19">#19</a></p>
+<p class=sci>問題就出在這裡：一個東西放大成兩倍高，表面積只變成四倍，體積和重量卻變成八倍。 <a class=fn href="../science-ep1-new/#f18">#18</a></p>
+<p class=sci>所以，越大的動物，掉下來越停不住。如果一隻九噸重的暴龍掉進礦井，牠會像石頭一樣往下衝，重重砸在井底。 <a class=fn href="../science-ep1-new/#f17">#17</a></p>
+<p class=sci>跑步，也是同一個道理。 <a class=fn href="../science-ep1-new/#f27">#27</a></p>
+<p class=sci>骨頭撐得住多少力氣，看的是它有多粗，只會變成四倍；要撐的重量，卻變成八倍。 <a class=fn href="../science-ep1-new/#f27">#27</a></p>
+<p class=sci>所以動物越大，要站、要走、要跑，就需要越多的腿肌和腿骨。大到某個程度，跑步在物理上就不可能了。 <a class=fn href="../science-ep1-new/#f28">#28</a> <a class=fn href="../science-ep1-new/#f29">#29</a></p>
+<p class=sci>暴龍腿上的肌肉，比例幾乎比歷史上任何動物都高。 <a class=fn href="../science-ep1-new/#f23">#23</a></p>
+<p class=sci>可是再壯也沒用，只要力氣超過快走，牠的腿骨就會碎掉。 <a class=fn href="../science-ep1-new/#f30">#30</a></p>
+<p>（停）</p>
+<p class=sci>那速度是怎麼來的？要看兩件事：肌肉有多大力氣，還有能多快加速。 <a class=fn href="../science-ep1-new/#f39">#39</a> <a class=fn href="../science-ep1-new/#f40">#40</a></p>
+<p class=sci>加速，靠的是一種叫做 ATP 的快速燃料，就像一小罐汽油，很有力，但一下子就燒完了。 <a class=fn href="../science-ep1-new/#f41">#41</a></p>
+<p class=sci>大動物的身體很省油，以每一公斤來算，大象燒的能量比老鼠少得多。 <a class=fn href="../science-ep1-new/#f42">#42</a></p>
+<p class=sci>如果你的身體像老鼠一樣耗油，你一天得吃掉十一公斤的食物。 <a class=fn href="../science-ep1-new/#f43">#43</a></p>
+<p class=sci>可是省油的代價，就是用來加速的燃料，比例上比較少。 <a class=fn href="../science-ep1-new/#f81">#81</a></p>
+<p class=sci>二〇一七年，德國的科學家希爾特，只用動物的體重，就算出了牠們能跑多快。 <a class=fn href="../science-ep1-new/#f80">#80</a></p>
+<p class=sci>結果是：最小的跑不快，最大的也跑不快，跑最快的，是不大不小、剛剛好的。 <a class=fn href="../science-ep1-new/#f44">#44</a></p>
+<p class=sci>超過大約兩千七百公斤的恐龍，年輕、體能好的人，大概都跑得掉。 <a class=fn href="../science-ep1-new/#f44">#44</a></p>
+<p class=sci>當然，身材也有關係。同樣的體重，人跟獵豹，跑起來就差得遠了。 <a class=fn href="../science-ep1-new/#f45">#45</a></p>
+<p>（停）</p>
+<p>那科學家，又是怎麼算出暴龍有多快的？</p>
+<p class=sci>一九七〇年代，英國的動物學家亞歷山大發現：不管是雪貂還是犀牛，動物跑起來，都遵守同一套規律。 <a class=fn href="../science-ep1-new/#f46">#46</a></p>
+<p class=sci>所以只要量出恐龍的屁股有多高、一步跨多遠，就能估出牠的速度，就像看鐘擺有多長，就知道它擺得多快。 <a class=fn href="../science-ep1-new/#f47">#47</a></p>
+<p class=sci>不過這只是很粗略的算法，誤差可能很大。 <a class=fn href="../science-ep1-new/#f48">#48</a></p>
+<p class=sci>用這種方法算，大型的肉食恐龍，大概跑得比人快一點。 <a class=fn href="../science-ep1-new/#f49">#49</a></p>
+<p class=sci>二〇二〇年，又有一組科學家，把好幾套算法湊在一起，加上新挖到的化石，一口氣估算了七十幾種恐龍。 <a class=fn href="../science-ep1-new/#f50">#50</a></p>
+<p class=sci>二〇〇二年，科學家哈欽森在一篇論文裡直接說：暴龍不是快跑者。 <a class=fn href="../science-ep1-new/#f25">#25</a></p>
+<p class=sci>牠頂多只能慢跑一小段，而且起步很慢。 <a class=fn href="../science-ep1-new/#f26">#26</a></p>
+<p class=sci>另一位科學家史尼夫利算過，成年暴龍的時速，不會超過二十公里。 <a class=fn href="../science-ep1-new/#f31">#31</a></p>
+<p class=sci>差不多就跟一個普通人拚命衝刺一樣快。 <a class=fn href="../science-ep1-new/#f32">#32</a></p>
+<p class=sci>二〇一七年，還有科學家用電腦，把暴龍的骨頭和肌肉整個模擬出來。結果是：牠只能快走，真的跑起來，腿骨會撐不住。 <a class=fn href="../science-ep1-new/#f119">#119</a></p>
+<p class=sci>不過，這件事到現在還在吵。也有人算出，暴龍說不定能跑到時速三十幾公里，跟腳踏車差不多。 <a class=fn href="../science-ep1-new/#f120">#120</a></p>
+<p class=sci>不管是哪一個答案，有一件事是確定的：暴龍加速慢，轉彎更慢。腳程不錯的人，很有機會邊跑邊轉彎，把牠甩在後面。 <a class=fn href="../science-ep1-new/#f33">#33</a></p>
+<p class=sci>只不過，有些恐龍的長腿，是為了走遠路也不會累。 <a class=fn href="../science-ep1-new/#f71">#71</a></p>
+<p>（停）</p>
+<p>所以剛剛那隻……不是不想追你，是追不動。</p>
+</div></section><section class="seg" id="s9"><h2>段落 9　假勝利 😄→😬 </h2><p class="act">- <b>得意</b>：你沿著河往下游走，吹著口哨，只差一顆牙齒。【改】你是史上第一個跑贏暴龍的大學生，也是第一個延畢兩年的。（原：資工系學生）你開心地自拍。</p>
+<p class="act">- <b>想起第二課</b>：笑容突然僵住。跑最快的，不是最大隻的，是剛剛好的。</p>
+<p class="act">- <b>蕨類在動</b>：背後的蕨類動了一下，可是今天根本沒有風。</p>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s10"><h2>段落 10　威脅排行榜 😬 遞增 </h2><p class="act">- <b>第一隻：盜龍</b>：比你還高，全身羽毛，腳上有彎刀般的爪子，時速大約二十四到三十二公里，跟你差不多快。</p>
+<p class="act">- 你掏出電擊槍，電量是零，因為昨晚插座拿去充手機了。手機電量百分之百，可惜沒訊號。</p>
+<p class="act">- 你把電擊槍丟過去，剛好打中牠的頭，牠歪頭看你：就這樣喔？</p>
+<p class="act">- 你跳過一根倒木，牠沒跳過去。</p>
+<p class="act">- 【改】<b>第二隻：腫頭龍</b>（原：艾伯塔龍，暴龍的表親，九公尺，時速三十五公里，頭卡在樹幹底下）</p>
+<p class="act">- 牠頭頂有一塊又圓又厚的骨頭，像戴了一頂安全帽出門。</p>
+<p class="act">- 牠低著頭直直衝過來，你往旁邊一閃，牠撞上的是你後面那根大樹幹。</p>
+<p class="act">- 【改】<b>第三隻：似鴕龍</b>（原：三角洲奔龍，時速四十八公里）</p>
+<p class="act">- 長得像一隻沒有翅膀的大鴕鳥，腿又細又長。</p>
+<p class="act">- 牠衝到你身邊，一口叼走你的帽子，看起來只想要那頂帽子。</p>
+<p class="act">- <b>牠們在逃命</b>：三隻又追上來，把你圍在中間，然後突然往三個方向跑掉，不是因為你。蟲不叫、鳥不叫，你懂了：牠們是在逃命。黑影裡有一雙黃眼睛。</p>
+<p class="act">- <b>青少年暴龍</b>：十四歲，還沒長胖，大約九百公斤，時速可以到五十三公里。成年暴龍吃三角龍，青少年暴龍最愛吃跟你差不多大的東西。你們對上眼，這次不用博士教，你拔腿就跑。</p>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s11"><h2>段落 11　被追的時候怎麼逃：急轉彎 <span class=rt>科普 419／456 字・92%</span></h2><p>青少年暴龍從黑影裡衝出來，HERO 轉身要跑的那一刻定格變灰。這時候本來該翻開生存指南，可是它又留在實驗室了。旁白講完戰術，畫面解凍，接回決戰。</p>
+<div class=nar>
+<p>定格。</p>
+<p>這時候，你應該翻開生存指南。（停）可惜，它又留在實驗室了。</p>
+<p>那我們只好自己來。</p>
+<p class=sci>有一位研究動物怎麼跑的科學家，叫做威爾森。他在獵豹、獅子還有牠們的獵物身上裝上感應器，量出牠們到底跑多快、怎麼轉彎。 <a class=fn href="../science-ep1-new/#f53">#53</a></p>
+<p class=sci>獵豹跑起來，比黑斑羚快很多；獅子也比斑馬快一些。 <a class=fn href="../science-ep1-new/#f54">#54</a> <a class=fn href="../science-ep1-new/#f55">#55</a></p>
+<p class=sci>可是黑斑羚和斑馬，每三次被追，有兩次都逃掉了。 <a class=fn href="../science-ep1-new/#f56">#56</a></p>
+<p class=sci>牠們靠的不是速度。黑斑羚明明可以跑得超級快，被追的時候反而不跑到最快。 <a class=fn href="../science-ep1-new/#f66">#66</a></p>
+<p class=sci>牠們等到最後一刻，猛地一轉彎。追太快的那一個，來不及跟著轉，只能眼睜睜看牠溜走。 <a class=fn href="../science-ep1-new/#f57">#57</a></p>
+<p class=sci>所以要抓到你，光跑得快還不夠，還得轉得比你靈活。 <a class=fn href="../science-ep1-new/#f58">#58</a></p>
+<p class=sci>這些是在草原上研究獅子和獵豹得到的，不過放到恐龍身上，道理也是一樣。 <a class=fn href="../science-ep1-new/#f58">#58</a></p>
+<p class=sci>面對跑得比你快的對手，別想用直線拚贏。要用頭腦和假動作，讓牠猜不到你下一步往哪跑。 <a class=fn href="../science-ep1-new/#f65">#65</a></p>
+<p class=sci>第一招：牠還遠遠的時候，你就一直左彎右拐，但不要停、不要變慢，先把距離拉開。 <a class=fn href="../science-ep1-new/#f68">#68</a></p>
+<p class=sci>第二招：等牠快追到你，只剩兩、三步的時候，猛地煞車，來一個急轉彎，再衝出去。 <a class=fn href="../science-ep1-new/#f69">#69</a></p>
+<p class=sci>牠跑太快，煞不住，只能繞一個大圈，一下子就被你甩開一兩步。 <a class=fn href="../science-ep1-new/#f69">#69</a></p>
+<p class=sci>對了，科學家量速度的時候，常用「每秒幾公尺」。每秒一公尺，差不多是時速三點六公里。 <a class=fn href="../science-ep1-new/#f59">#59</a></p>
+<p class=sci>如果這兩招都不管用呢？寫這本書的作者還有一些腦洞：鑽進大恐龍塞不進去的小洞，或者把牠引進陷阱。（停）說不定有用。 <a class=fn href="../science-ep1-new/#f77">#77</a></p>
+<p>好，解除定格。</p>
+</div></section><section class="seg" id="s12"><h2>段落 12　決戰 🔥 </h2><p class="act">- <b>回到開場那一刻</b>：牠在後面喘氣，聞起來像很久沒刷牙。</p>
+<p class="act">- <b>想起第三課</b>：跑越快越難轉彎。你急轉彎，牠衝過頭；再轉一次，又衝過頭。牠摔了一大跤，又爬起來。</p>
+<p class="act">- <b>撐不住了</b>：人類本來很會跑長跑，只要撐久一點就好。【改】問題是，你連體育學分都還沒修完。※（原：問題是，你是資工系的。）</p>
+<p class="act">- <b>石頭</b>：你繞回一開始掉下來的那片空地，天已經黃昏。你絆倒，滾到那顆大石頭後面縮成一團。暴龍來不及轉彎，一頭撞上石頭。石頭眨了一下眼，一尾錘把青少年暴龍打飛。你早就忘了那顆石頭，但石頭還記得你。</p>
+<p class="act">- <b>任務完成</b>：一顆比香蕉還大的暴龍牙彈到你腳邊，放心，不是你的。牙齒有了，照片也有了。你一開心，相機就掉進泥巴裡。</p>
+<p class="act">- <b>洋芋片</b>：你想起背包裡還有一包一路捨不得吃的洋芋片，整包遞給甲龍：謝謝你啊，石頭。牠吃了一口。這可是【改】六千六百五十萬年來（原：七千萬年來），地球上的第一包洋芋片。</p>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s13"><h2>段落 13　回家 😄 </h2><p class="act">- <b>手環沒反應</b>：按了兩次都沒反應。你想起博士修東西的那一招，往膠帶上用力一拍，手環亮了。果然，博士做的東西都要拍一下才會動。</p>
+<p class="act">- <b>背包</b>：你抱著牙齒和相機跳進隧道。隧道關上後，背包留在地上，旁邊是睡著的石頭和空的洋芋片袋。裡面有你的錢包，還有學生證。</p>
+<p>（沿用成品，這一段不改。）</p></section><section class="seg" id="s14"><h2>段落 14　尾聲＋預告 😄 </h2><p class="act">- <b>賴帳</b>：</p>
+<p class="act">- 你滿身泥巴躺在實驗室地上，交出牙齒和照片，博士開心得不得了。</p>
+<p class="act">- 照片還在，但相機已經不太算是相機了。</p>
+<p class="act">- 博士把信封裡的鈔票抽走，換成一張收據：壞掉的相機、電擊槍。算下來，你反而倒欠博士錢。</p>
+<p class="act">- <b>下一張任務單</b>：畫著一顆拖著長尾巴的亮星星。博士說下次一定付錢，他上次也這麼說。</p>
+<p class="act">- <b>書桌</b>：又多了一張帳單，還好手機是充飽的。</p>
+<p class="act">- <b>預告</b>：六千六百萬年前，有一顆小行星正朝著地球飛過來。如果你這次遇到的，就是讓恐龍滅絕的那一顆，會怎麼樣呢？</p>
+<p>（沿用成品，這一段不改。）</p></section><section class=card></section></div>
+<div id=cmp hidden><div class=colhead><div>v3（舊）</div><div>v4（新）</div></div><div class=row><div class=col><h3>段落 0　冷開場 🔥</h3><p>HERO 在一片爛泥巴的森林裡狂奔。後面一隻暴龍越追越近，嘴巴比他整個人還大。他跳起來的那一刻，時間停住。</p>
+<div class=nar>
+<p>你一定很想問：我到底是怎麼跑到這裡來的？</p>
+<p>這件事呢，要從今天早上開始說起。</p>
+</div></div><div class="col new"><h3>段落 0　冷開場 🔥</h3><p>HERO 在一片爛泥巴的森林裡狂奔。後面一隻暴龍越追越近，嘴巴比他整個人還大。他跳起來的那一刻，時間停住。</p>
+<div class=nar>
+<p>你一定很想問：我到底是怎麼跑到這裡來的？</p>
+<p>這件事呢，要從今天早上開始說起。</p>
+</div>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><h3>段落 1　走投無路 😄</h3><p class="act">- <b>書桌上的三樣東西</b>：</p>
+<p class="act">- 蓋滿逾期章的帳單。</p>
+<p class="act">- 【改】畢業學分不足通知：你已經延畢兩年，現在最關心你的人，是系辦助理。（原：論文逾期通知）</p>
+<p class="act">- 一支手機和一把電擊槍，但房間只有一個插座，你當然拿來充手機。</p>
+<p class="act">- <b>博士的訊息</b>：又有工作，時薪很不錯，記得帶電擊槍。上次他也說會付錢。看看那疊帳單，還是去吧。</p>
+<p class="act">- <b>實驗室</b>：【改】在校園裡，校務大樓附近一間老舊的研究小屋。（原：藏在自助洗衣店的地下室，門上的鎖比樓上的洗衣機還多。）</p></div><div class="col new"><h3>段落 1　走投無路 😄</h3><p class="act">- <b>書桌上的三樣東西</b>：</p>
+<p class="act">- 蓋滿逾期章的帳單。</p>
+<p class="act">- 【改】畢業學分不足通知：你已經延畢兩年，現在最關心你的人，是系辦助理。（原：論文逾期通知）</p>
+<p class="act">- 一支手機和一把電擊槍，但房間只有一個插座，你當然拿來充手機。</p>
+<p class="act">- <b>博士的訊息</b>：又有工作，時薪很不錯，記得帶電擊槍。上次他也說會付錢。看看那疊帳單，還是去吧。</p>
+<p class="act">- <b>實驗室</b>：【改】在校園裡，校務大樓附近一間老舊的研究小屋。（原：藏在自助洗衣店的地下室，門上的鎖比樓上的洗衣機還多。）</p>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><h3>段落 2　行前教育 😄</h3><p class="act">- <b>這次要去哪</b>：博士說要去白堊紀，【改】六千六百五十萬年前的北美洲（原：七千萬年前）。你一直低頭滑手機。</p>
+<p class="act">- <b>侏羅紀</b>：你只問了一句「為什麼不去侏羅紀」，因為那部電影你看了五遍。博士很不高興：侏羅紀根本沒有暴龍，電影光片名就在騙你。他在黑板畫時間線，劍龍在侏羅紀，暴龍排在白堊紀最後面。</p>
+<p class="act">- <b>第一課：越大隻，跑越慢</b>：身高變兩倍，腿的力氣只多四倍，體重卻重了八倍，腿撐不住。你在滑手機。</p>
+<p class="act">- <b>第二課：最快的是不大不小的</b>：大約九十公斤；超過兩千七百公斤，就會被自己的體重拖慢。你打了個大哈欠。</p>
+<p class="act">- <b>碼表</b>：博士叫你跑一趟。一般人時速大約二十四公里，奧運選手四十四公里。結果你邊滑手機邊慢慢走完。</p>
+<p class="act">- <b>第三課：跑越快，越難轉彎</b>：獵豹追羚羊，羚羊三次能逃掉兩次。博士示範急轉彎，差點閃到腰。你抬頭看了一眼，又低頭滑。</p>
+<p class="act">- <b>裝備</b>：相機、樣本袋、一個用膠帶纏得亂七八糟的手環，只有一顆按鈕，按了就回家。沒拍到暴龍、沒帶回牙齒，就不付錢。</p>
+<p class="act">- <b>生存指南 vs 洋芋片</b>：博士給了一本又厚又重的生存指南，你選了洋芋片。指南和水壺都留在桌上。</p>
+<p class="act">- <b>出發</b>：博士說等你準備好再拉拉桿，結果直接拉了。機器沒反應，他用力拍了一下。</p></div><div class="col new"><h3>段落 2　行前教育 😄</h3><p class="act">- <b>這次要去哪</b>：博士說要去白堊紀，【改】六千六百五十萬年前的北美洲（原：七千萬年前）。你一直低頭滑手機。</p>
+<p class="act">- <b>侏羅紀</b>：你只問了一句「為什麼不去侏羅紀」，因為那部電影你看了五遍。博士很不高興：侏羅紀根本沒有暴龍，電影光片名就在騙你。他在黑板畫時間線，劍龍在侏羅紀，暴龍排在白堊紀最後面。</p>
+<p class="act">- <b>第一課：越大隻，跑越慢</b>：身高變兩倍，腿的力氣只多四倍，體重卻重了八倍，腿撐不住。你在滑手機。</p>
+<p class="act">- <b>第二課：最快的是不大不小的</b>：大約九十公斤；超過兩千七百公斤，就會被自己的體重拖慢。你打了個大哈欠。</p>
+<p class="act">- <b>碼表</b>：博士叫你跑一趟。一般人時速大約二十四公里，奧運選手四十四公里。結果你邊滑手機邊慢慢走完。</p>
+<p class="act">- <b>第三課：跑越快，越難轉彎</b>：獵豹追羚羊，羚羊三次能逃掉兩次。博士示範急轉彎，差點閃到腰。你抬頭看了一眼，又低頭滑。</p>
+<p class="act">- <b>裝備</b>：相機、樣本袋、一個用膠帶纏得亂七八糟的手環，只有一顆按鈕，按了就回家。沒拍到暴龍、沒帶回牙齒，就不付錢。</p>
+<p class="act">- <b>生存指南 vs 洋芋片</b>：博士給了一本又厚又重的生存指南，你選了洋芋片。指南和水壺都留在桌上。</p>
+<p class="act">- <b>出發</b>：博士說等你準備好再拉拉桿，結果直接拉了。機器沒反應，他用力拍了一下。</p>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><h3>段落 3　抵達白堊紀 😄</h3><p class="act">- <b>落地</b>：時間回到【改】六千六百五十萬年前的北美洲（原：七千萬年前）。北美洲中間隔著一大片海，你掉在西邊這一半，臉先著地。</p>
+<p class="act">- <b>蚊子</b>：這裡又熱又濕，連南北極都沒有冰。第一個來歡迎你的是蚊子。都過了【改】六千六百五十萬年（原：七千萬年），蚊子還是一模一樣。</p>
+<p class="act">- <b>沒訊號</b>：你上網搜尋「白堊紀要怎麼活下去」，沒有訊號。對啊，【改】六千六百五十萬年前（原：七千萬年前），哪來的基地台。</p>
+<p class="act">- <b>石頭</b>：這時代還沒有草原，到處是蕨類。你坐上一顆長滿青苔的大石頭，覺得這份工作還不錯。然後石頭眨了一下眼睛：那是一隻甲龍，尾巴上有骨錘。還好牠只想繼續睡，你踮著腳溜走。</p>
+<p class="act">- <b>口渴</b>：水壺跟生存指南一起留在實驗室。你聽到水聲，決定先不要太相信它。</p>
+<p class="act">- <b>鴨嘴龍</b>：河對岸一群鴨嘴龍在喝水，每隻都跟大象差不多大。你拍了一張，可惜不是暴龍，不算數。</p></div><div class="col new"><h3>段落 3　抵達白堊紀 😄</h3><p class="act">- <b>落地</b>：時間回到【改】六千六百五十萬年前的北美洲（原：七千萬年前）。北美洲中間隔著一大片海，你掉在西邊這一半，臉先著地。</p>
+<p class="act">- <b>蚊子</b>：這裡又熱又濕，連南北極都沒有冰。第一個來歡迎你的是蚊子。都過了【改】六千六百五十萬年（原：七千萬年），蚊子還是一模一樣。</p>
+<p class="act">- <b>沒訊號</b>：你上網搜尋「白堊紀要怎麼活下去」，沒有訊號。對啊，【改】六千六百五十萬年前（原：七千萬年前），哪來的基地台。</p>
+<p class="act">- <b>石頭</b>：這時代還沒有草原，到處是蕨類。你坐上一顆長滿青苔的大石頭，覺得這份工作還不錯。然後石頭眨了一下眼睛：那是一隻甲龍，尾巴上有骨錘。還好牠只想繼續睡，你踮著腳溜走。</p>
+<p class="act">- <b>口渴</b>：水壺跟生存指南一起留在實驗室。你聽到水聲，決定先不要太相信它。</p>
+<p class="act">- <b>鴨嘴龍</b>：河對岸一群鴨嘴龍在喝水，每隻都跟大象差不多大。你拍了一張，可惜不是暴龍，不算數。</p>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><p class=mut>（舊版沒有這一段）</p></div><div class="col new"><h3>段落 4　你掉在哪裡：六千六百萬年前的地獄溪</h3><p>拍完鴨嘴龍，劇情先停一下。鏡頭從滿身泥的 HERO 一路往上拉高：河邊的平原、森林、西邊的山、東邊的海，最後看到整片北美洲，停在「你在這裡」。再跳到今天的同一個地方對照，最後鏡頭降回 HERO 身邊，接下一段的腳印。</p>
+<div class=nar>
+<p>先停一下。你知道你現在在哪裡嗎？</p>
+<p class=sci>這裡叫做地獄溪，在今天美國蒙大拿州的東邊。 <a class=fn href="../science-ep1-new/#f101">#101</a></p>
+<p>只不過，你早到了六千六百萬年。</p>
+<p class=sci>這裡的泥土，是一層一層慢慢堆起來的。最上面那薄薄的一層，就是將來小行星撞地球那一刻留下來的。 <a class=fn href="../science-ep1-new/#f102">#102</a></p>
+<p>我們把鏡頭拉高一點。</p>
+<p class=sci>你腳下是一大片平平的河邊平原，河水從西邊的山上流下來，一路往東流進海裡。 <a class=fn href="../science-ep1-new/#f103">#103</a></p>
+<p class=sci>西邊那排山，就是洛磯山。不過它現在還很年輕，才剛開始慢慢長高。 <a class=fn href="../science-ep1-new/#f6">#6</a> <a class=fn href="../science-ep1-new/#f103">#103</a></p>
+<p class=sci>再往東看。原本有一片大海，把北美洲切成東西兩半。現在它已經退得差不多了，只剩一道淺淺的海灣，從南邊伸上來。 <a class=fn href="../science-ep1-new/#f104">#104</a></p>
+<p class=sci>天氣呢？這裡溫暖又潮濕，一年平均大約十一、二度，比現在的蒙大拿暖和一些。 <a class=fn href="../science-ep1-new/#f105">#105</a> <a class=fn href="../science-ep1-new/#f5">#5</a></p>
+<p class=sci>就算是最冷的月份，也只有兩、三度，冬天不會整個凍起來。 <a class=fn href="../science-ep1-new/#f105">#105</a></p>
+<p class=sci>一年裡有比較濕的時候，也有比較乾的時候，但不會乾到變成旱季。 <a class=fn href="../science-ep1-new/#f106">#106</a></p>
+<p class=sci>其實整個地球都比現在熱，南極、北極連一片大冰原都沒有。 <a class=fn href="../science-ep1-new/#f107">#107</a></p>
+<p class=sci>森林裡大部分是開花的植物，棕櫚、木蘭、闊葉的大樹；地上長滿蕨類，河邊還有水杉，也看得到蘇鐵和銀杏。 <a class=fn href="../science-ep1-new/#f108">#108</a> <a class=fn href="../science-ep1-new/#f10">#10</a></p>
+<p class=sci>這些樹大多不算太高，是中小型的樹。 <a class=fn href="../science-ep1-new/#f109">#109</a></p>
+<p class=sci>住在這裡的也不只恐龍。河裡有鱷魚、烏龜和魚，草叢裡有蜥蜴和蛇，樹上有鳥，地上還有小小的哺乳動物在鑽來鑽去。 <a class=fn href="../science-ep1-new/#f110">#110</a></p>
+<p>（停）</p>
+<p class=sci>六千六百萬年以後，這裡變成一片乾巴巴的荒地。 <a class=fn href="../science-ep1-new/#f112">#112</a></p>
+<p class=sci>風和雨把一層一層的泥土沖開，埋在裡面的骨頭就露了出來。 <a class=fn href="../science-ep1-new/#f112">#112</a></p>
+<p class=sci>一九〇二年，人類挖到的第一具暴龍骨頭，就是在這裡。 <a class=fn href="../science-ep1-new/#f112">#112</a></p>
+<p>所以，你現在站的地方……（停）就是暴龍的老家。</p>
+</div></div></div><div class=row><div class=col><h3>段落 4　遇見暴龍 😬→🔥</h3><p class="act">- <b>腳印</b>：鞋子旁邊有一個三趾腳印，跟你的腿差不多長，邊緣還在滲水。找不到下一個腳印，表示牠就停在這裡。</p>
+<p class="act">- <b>回頭</b>：對岸的鴨嘴龍全都抬頭，看著你的後面。你不想回頭，但還是回頭了。樹後面探出一顆頭，牠沒吼叫，牠在聞。</p>
+<p class="act">- <b>暴龍有多大</b>：跟長頸鹿一樣高、跟大象一樣重，大約八公噸，一口能咬穿三角龍的骨頭。你只到牠的膝蓋。</p>
+<p class="act">- <b>手機裡存的〈遇到暴龍的三個求生秘訣〉</b>：</p>
+<p class="act">1. 躲起來：你鑽進蕨類，屁股露在外面。蕨類擋得住眼睛，擋不住鼻子，暴龍的鼻子比狗還靈。</p>
+<p class="act">2. 不動就看不到：那是電影騙你的，暴龍的眼睛比老鷹還好。</p>
+<p class="act">3. 爬到樹上：那棵樹比你想的還軟，把你送到牠嘴前。</p>
+<p class="act">- <b>指南</b>：那本生存指南的第一頁只寫了兩個字「快跑」，可惜它在實驗室。</p>
+<p class="act">- <b>想起第一課</b>：牠張大嘴。博士講過，越大隻的跑越慢，那時候你在滑手機。牠咬空，你掉下來，拔腿就跑。</p></div><div class="col new"><h3>段落 5　遇見暴龍 😬→🔥</h3><p class="act">- <b>腳印</b>：鞋子旁邊有一個三趾腳印，跟你的腿差不多長，邊緣還在滲水。找不到下一個腳印，表示牠就停在這裡。</p>
+<p class="act">- <b>回頭</b>：對岸的鴨嘴龍全都抬頭，看著你的後面。你不想回頭，但還是回頭了。樹後面探出一顆頭，牠沒吼叫，牠在聞。</p>
+<p class="act">- <b>暴龍有多大</b>：跟長頸鹿一樣高、跟大象一樣重，大約八公噸，一口能咬穿三角龍的骨頭。你只到牠的膝蓋。</p>
+<p class="act">- <b>手機裡存的〈遇到暴龍的三個求生秘訣〉</b>：</p>
+<p class="act">1. 躲起來：你鑽進蕨類，屁股露在外面。蕨類擋得住眼睛，擋不住鼻子，暴龍的鼻子比狗還靈。</p>
+<p class="act">2. 不動就看不到：那是電影騙你的，暴龍的眼睛比老鷹還好。</p>
+<p class="act">3. 爬到樹上：那棵樹比你想的還軟，把你送到牠嘴前。</p>
+<p class="act">- <b>指南</b>：那本生存指南的第一頁只寫了兩個字「快跑」，可惜它在實驗室。</p>
+<p class="act">- <b>想起第一課</b>：牠張大嘴。博士講過，越大隻的跑越慢，那時候你在滑手機。牠咬空，你掉下來，拔腿就跑。</p>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><p class=mut>（舊版沒有這一段）</p></div><div class="col new"><h3>段落 6　暴龍的眼睛和鼻子</h3><p>HERO 剛拔腿逃走，劇情又停一下，回頭解釋剛剛「躲蕨類」「裝不動」為什麼都沒用。定格在 HERO 屁股露在蕨類外、暴龍鼻子湊過來的那一刻，再切到暴龍看出去的畫面。</p>
+<div class=nar>
+<p>等一下，先暫停。剛剛那兩招，為什麼一點用都沒有？</p>
+<p class=sci>「你不動，暴龍就看不到你」，這句話是從電影《侏羅紀公園》來的。科學上，沒有任何根據。 <a class=fn href="../science-ep1-new/#f115">#115</a></p>
+<p class=sci>暴龍的兩隻眼睛都朝向前面，兩邊看到的範圍，重疊了大約五十五度，比老鷹還要寬。 <a class=fn href="../science-ep1-new/#f113">#113</a></p>
+<p class=sci>所以牠很會判斷，你離牠有多遠。 <a class=fn href="../science-ep1-new/#f113">#113</a></p>
+<p class=sci>牠的視力，最好的時候，可能是人的十三倍。 <a class=fn href="../science-ep1-new/#f114">#114</a></p>
+<p class=sci>鼻子就更厲害了。牠腦袋裡負責聞味道的部分又大又發達，是恐龍裡鼻子最靈的那一群。 <a class=fn href="../science-ep1-new/#f116">#116</a></p>
+<p>那牠的鼻子，有沒有比狗還靈呢？</p>
+<p class=sci>這個嘛，科學家也說不準。光算鼻子裡的「氣味開關」，狗說不定還多一點。 <a class=fn href="../science-ep1-new/#f117">#117</a></p>
+<p>那科學家是怎麼知道的？</p>
+<p class=sci>他們把暴龍的頭骨拿去做斷層掃描，看腦袋裡面留下來的形狀，就能推出牠的眼睛和鼻子有多好。 <a class=fn href="../science-ep1-new/#f118">#118</a></p>
+<p>所以你剛剛那一招……（停）牠看得一清二楚，也聞得一清二楚。</p>
+</div></div></div><div class=row><div class=col><h3>段落 5　第一次逃跑 😬→😄</h3><p class="act">- <b>快走的暴龍</b>：牠追上來，但越追越慢。七公噸的身體根本跑不起來，最快大約時速十九公里，這叫快走。</p>
+<p class="act">- <b>任務完成一半</b>：你邊跑邊回頭拍了一張，有點糊，但看得出是暴龍。</p>
+<p class="act">- <b>說再見</b>：你站上倒木跟牠揮手說再見，牠喘著氣看你，眼神好像有點受傷。</p></div><div class="col new"><h3>段落 7　第一次逃跑 😬→😄</h3><p class="act">- <b>快走的暴龍</b>：牠追上來，但越追越慢。七公噸的身體根本跑不起來，最快大約時速十九公里，這叫快走。</p>
+<p class="act">- <b>任務完成一半</b>：你邊跑邊回頭拍了一張，有點糊，但看得出是暴龍。</p>
+<p class="act">- <b>說再見</b>：你站上倒木跟牠揮手說再見，牠喘著氣看你，眼神好像有點受傷。</p>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><p class=mut>（舊版沒有這一段）</p></div><div class="col new"><h3>段落 8　為什麼大恐龍跑不快</h3><p>HERO 站在倒木上跟喘氣的暴龍揮手，劇情停下來，完整講解。畫面用實物和會動的手繪：礦井、放大的方塊、會裂的骨頭、同一條跑道上的動物賽跑、科學家的電腦模擬。最後回到倒木上的 HERO。</p>
+<div class=nar>
+<p>好，現在來回答這一集最重要的問題：牠為什麼追不上你？</p>
+<p>答案，要從一口很深很深的礦井說起。</p>
+<p class=sci>一九二六年，英國的生物學家霍爾丹寫了一篇文章，叫做〈剛剛好的大小〉。 <a class=fn href="../science-ep1-new/#f16">#16</a></p>
+<p class=sci>他說：把一隻老鼠丟進一口深到不行的礦井，牠落地以後，拍拍身上的灰，照樣跑掉。 <a class=fn href="../science-ep1-new/#f13">#13</a></p>
+<p class=sci>換成大一點的老鼠，會摔死；人會摔碎；馬呢，會整隻濺開。 <a class=fn href="../science-ep1-new/#f14">#14</a> <a class=fn href="../science-ep1-new/#f15">#15</a></p>
+<p class=sci>為什麼？掉下來的時候，空氣擋住你的力量，要看你的表面有多大；撞到地上的力道，要看你有多重。 <a class=fn href="../science-ep1-new/#f19">#19</a></p>
+<p class=sci>問題就出在這裡：一個東西放大成兩倍高，表面積只變成四倍，體積和重量卻變成八倍。 <a class=fn href="../science-ep1-new/#f18">#18</a></p>
+<p class=sci>所以，越大的動物，掉下來越停不住。如果一隻九噸重的暴龍掉進礦井，牠會像石頭一樣往下衝，重重砸在井底。 <a class=fn href="../science-ep1-new/#f17">#17</a></p>
+<p class=sci>跑步，也是同一個道理。 <a class=fn href="../science-ep1-new/#f27">#27</a></p>
+<p class=sci>骨頭撐得住多少力氣，看的是它有多粗，只會變成四倍；要撐的重量，卻變成八倍。 <a class=fn href="../science-ep1-new/#f27">#27</a></p>
+<p class=sci>所以動物越大，要站、要走、要跑，就需要越多的腿肌和腿骨。大到某個程度，跑步在物理上就不可能了。 <a class=fn href="../science-ep1-new/#f28">#28</a> <a class=fn href="../science-ep1-new/#f29">#29</a></p>
+<p class=sci>暴龍腿上的肌肉，比例幾乎比歷史上任何動物都高。 <a class=fn href="../science-ep1-new/#f23">#23</a></p>
+<p class=sci>可是再壯也沒用，只要力氣超過快走，牠的腿骨就會碎掉。 <a class=fn href="../science-ep1-new/#f30">#30</a></p>
+<p>（停）</p>
+<p class=sci>那速度是怎麼來的？要看兩件事：肌肉有多大力氣，還有能多快加速。 <a class=fn href="../science-ep1-new/#f39">#39</a> <a class=fn href="../science-ep1-new/#f40">#40</a></p>
+<p class=sci>加速，靠的是一種叫做 ATP 的快速燃料，就像一小罐汽油，很有力，但一下子就燒完了。 <a class=fn href="../science-ep1-new/#f41">#41</a></p>
+<p class=sci>大動物的身體很省油，以每一公斤來算，大象燒的能量比老鼠少得多。 <a class=fn href="../science-ep1-new/#f42">#42</a></p>
+<p class=sci>如果你的身體像老鼠一樣耗油，你一天得吃掉十一公斤的食物。 <a class=fn href="../science-ep1-new/#f43">#43</a></p>
+<p class=sci>可是省油的代價，就是用來加速的燃料，比例上比較少。 <a class=fn href="../science-ep1-new/#f81">#81</a></p>
+<p class=sci>二〇一七年，德國的科學家希爾特，只用動物的體重，就算出了牠們能跑多快。 <a class=fn href="../science-ep1-new/#f80">#80</a></p>
+<p class=sci>結果是：最小的跑不快，最大的也跑不快，跑最快的，是不大不小、剛剛好的。 <a class=fn href="../science-ep1-new/#f44">#44</a></p>
+<p class=sci>超過大約兩千七百公斤的恐龍，年輕、體能好的人，大概都跑得掉。 <a class=fn href="../science-ep1-new/#f44">#44</a></p>
+<p class=sci>當然，身材也有關係。同樣的體重，人跟獵豹，跑起來就差得遠了。 <a class=fn href="../science-ep1-new/#f45">#45</a></p>
+<p>（停）</p>
+<p>那科學家，又是怎麼算出暴龍有多快的？</p>
+<p class=sci>一九七〇年代，英國的動物學家亞歷山大發現：不管是雪貂還是犀牛，動物跑起來，都遵守同一套規律。 <a class=fn href="../science-ep1-new/#f46">#46</a></p>
+<p class=sci>所以只要量出恐龍的屁股有多高、一步跨多遠，就能估出牠的速度，就像看鐘擺有多長，就知道它擺得多快。 <a class=fn href="../science-ep1-new/#f47">#47</a></p>
+<p class=sci>不過這只是很粗略的算法，誤差可能很大。 <a class=fn href="../science-ep1-new/#f48">#48</a></p>
+<p class=sci>用這種方法算，大型的肉食恐龍，大概跑得比人快一點。 <a class=fn href="../science-ep1-new/#f49">#49</a></p>
+<p class=sci>二〇二〇年，又有一組科學家，把好幾套算法湊在一起，加上新挖到的化石，一口氣估算了七十幾種恐龍。 <a class=fn href="../science-ep1-new/#f50">#50</a></p>
+<p class=sci>二〇〇二年，科學家哈欽森在一篇論文裡直接說：暴龍不是快跑者。 <a class=fn href="../science-ep1-new/#f25">#25</a></p>
+<p class=sci>牠頂多只能慢跑一小段，而且起步很慢。 <a class=fn href="../science-ep1-new/#f26">#26</a></p>
+<p class=sci>另一位科學家史尼夫利算過，成年暴龍的時速，不會超過二十公里。 <a class=fn href="../science-ep1-new/#f31">#31</a></p>
+<p class=sci>差不多就跟一個普通人拚命衝刺一樣快。 <a class=fn href="../science-ep1-new/#f32">#32</a></p>
+<p class=sci>二〇一七年，還有科學家用電腦，把暴龍的骨頭和肌肉整個模擬出來。結果是：牠只能快走，真的跑起來，腿骨會撐不住。 <a class=fn href="../science-ep1-new/#f119">#119</a></p>
+<p class=sci>不過，這件事到現在還在吵。也有人算出，暴龍說不定能跑到時速三十幾公里，跟腳踏車差不多。 <a class=fn href="../science-ep1-new/#f120">#120</a></p>
+<p class=sci>不管是哪一個答案，有一件事是確定的：暴龍加速慢，轉彎更慢。腳程不錯的人，很有機會邊跑邊轉彎，把牠甩在後面。 <a class=fn href="../science-ep1-new/#f33">#33</a></p>
+<p class=sci>只不過，有些恐龍的長腿，是為了走遠路也不會累。 <a class=fn href="../science-ep1-new/#f71">#71</a></p>
+<p>（停）</p>
+<p>所以剛剛那隻……不是不想追你，是追不動。</p>
+</div></div></div><div class=row><div class=col><h3>段落 6　假勝利 😄→😬</h3><p class="act">- <b>得意</b>：你沿著河往下游走，吹著口哨，只差一顆牙齒。【改】你是史上第一個跑贏暴龍的大學生，也是第一個延畢兩年的。（原：資工系學生）你開心地自拍。</p>
+<p class="act">- <b>想起第二課</b>：笑容突然僵住。跑最快的，不是最大隻的，是剛剛好的。</p>
+<p class="act">- <b>蕨類在動</b>：背後的蕨類動了一下，可是今天根本沒有風。</p></div><div class="col new"><h3>段落 9　假勝利 😄→😬</h3><p class="act">- <b>得意</b>：你沿著河往下游走，吹著口哨，只差一顆牙齒。【改】你是史上第一個跑贏暴龍的大學生，也是第一個延畢兩年的。（原：資工系學生）你開心地自拍。</p>
+<p class="act">- <b>想起第二課</b>：笑容突然僵住。跑最快的，不是最大隻的，是剛剛好的。</p>
+<p class="act">- <b>蕨類在動</b>：背後的蕨類動了一下，可是今天根本沒有風。</p>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><h3>段落 7　威脅排行榜 😬 遞增</h3><p class="act">- <b>第一隻：盜龍</b>：比你還高，全身羽毛，腳上有彎刀般的爪子，時速大約二十四到三十二公里，跟你差不多快。</p>
+<p class="act">- 你掏出電擊槍，電量是零，因為昨晚插座拿去充手機了。手機電量百分之百，可惜沒訊號。</p>
+<p class="act">- 你把電擊槍丟過去，剛好打中牠的頭，牠歪頭看你：就這樣喔？</p>
+<p class="act">- 你跳過一根倒木，牠沒跳過去。</p>
+<p class="act">- 【改】<b>第二隻：腫頭龍</b>（原：艾伯塔龍，暴龍的表親，九公尺，時速三十五公里，頭卡在樹幹底下）</p>
+<p class="act">- 牠頭頂有一塊又圓又厚的骨頭，像戴了一頂安全帽出門。</p>
+<p class="act">- 牠低著頭直直衝過來，你往旁邊一閃，牠撞上的是你後面那根大樹幹。</p>
+<p class="act">- 【改】<b>第三隻：似鴕龍</b>（原：三角洲奔龍，時速四十八公里）</p>
+<p class="act">- 長得像一隻沒有翅膀的大鴕鳥，腿又細又長。</p>
+<p class="act">- 牠衝到你身邊，一口叼走你的帽子，看起來只想要那頂帽子。</p>
+<p class="act">- <b>牠們在逃命</b>：三隻又追上來，把你圍在中間，然後突然往三個方向跑掉，不是因為你。蟲不叫、鳥不叫，你懂了：牠們是在逃命。黑影裡有一雙黃眼睛。</p>
+<p class="act">- <b>青少年暴龍</b>：十四歲，還沒長胖，大約九百公斤，時速可以到五十三公里。成年暴龍吃三角龍，青少年暴龍最愛吃跟你差不多大的東西。你們對上眼，這次不用博士教，你拔腿就跑。</p></div><div class="col new"><h3>段落 10　威脅排行榜 😬 遞增</h3><p class="act">- <b>第一隻：盜龍</b>：比你還高，全身羽毛，腳上有彎刀般的爪子，時速大約二十四到三十二公里，跟你差不多快。</p>
+<p class="act">- 你掏出電擊槍，電量是零，因為昨晚插座拿去充手機了。手機電量百分之百，可惜沒訊號。</p>
+<p class="act">- 你把電擊槍丟過去，剛好打中牠的頭，牠歪頭看你：就這樣喔？</p>
+<p class="act">- 你跳過一根倒木，牠沒跳過去。</p>
+<p class="act">- 【改】<b>第二隻：腫頭龍</b>（原：艾伯塔龍，暴龍的表親，九公尺，時速三十五公里，頭卡在樹幹底下）</p>
+<p class="act">- 牠頭頂有一塊又圓又厚的骨頭，像戴了一頂安全帽出門。</p>
+<p class="act">- 牠低著頭直直衝過來，你往旁邊一閃，牠撞上的是你後面那根大樹幹。</p>
+<p class="act">- 【改】<b>第三隻：似鴕龍</b>（原：三角洲奔龍，時速四十八公里）</p>
+<p class="act">- 長得像一隻沒有翅膀的大鴕鳥，腿又細又長。</p>
+<p class="act">- 牠衝到你身邊，一口叼走你的帽子，看起來只想要那頂帽子。</p>
+<p class="act">- <b>牠們在逃命</b>：三隻又追上來，把你圍在中間，然後突然往三個方向跑掉，不是因為你。蟲不叫、鳥不叫，你懂了：牠們是在逃命。黑影裡有一雙黃眼睛。</p>
+<p class="act">- <b>青少年暴龍</b>：十四歲，還沒長胖，大約九百公斤，時速可以到五十三公里。成年暴龍吃三角龍，青少年暴龍最愛吃跟你差不多大的東西。你們對上眼，這次不用博士教，你拔腿就跑。</p>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><p class=mut>（舊版沒有這一段）</p></div><div class="col new"><h3>段落 11　被追的時候怎麼逃：急轉彎</h3><p>青少年暴龍從黑影裡衝出來，HERO 轉身要跑的那一刻定格變灰。這時候本來該翻開生存指南，可是它又留在實驗室了。旁白講完戰術，畫面解凍，接回決戰。</p>
+<div class=nar>
+<p>定格。</p>
+<p>這時候，你應該翻開生存指南。（停）可惜，它又留在實驗室了。</p>
+<p>那我們只好自己來。</p>
+<p class=sci>有一位研究動物怎麼跑的科學家，叫做威爾森。他在獵豹、獅子還有牠們的獵物身上裝上感應器，量出牠們到底跑多快、怎麼轉彎。 <a class=fn href="../science-ep1-new/#f53">#53</a></p>
+<p class=sci>獵豹跑起來，比黑斑羚快很多；獅子也比斑馬快一些。 <a class=fn href="../science-ep1-new/#f54">#54</a> <a class=fn href="../science-ep1-new/#f55">#55</a></p>
+<p class=sci>可是黑斑羚和斑馬，每三次被追，有兩次都逃掉了。 <a class=fn href="../science-ep1-new/#f56">#56</a></p>
+<p class=sci>牠們靠的不是速度。黑斑羚明明可以跑得超級快，被追的時候反而不跑到最快。 <a class=fn href="../science-ep1-new/#f66">#66</a></p>
+<p class=sci>牠們等到最後一刻，猛地一轉彎。追太快的那一個，來不及跟著轉，只能眼睜睜看牠溜走。 <a class=fn href="../science-ep1-new/#f57">#57</a></p>
+<p class=sci>所以要抓到你，光跑得快還不夠，還得轉得比你靈活。 <a class=fn href="../science-ep1-new/#f58">#58</a></p>
+<p class=sci>這些是在草原上研究獅子和獵豹得到的，不過放到恐龍身上，道理也是一樣。 <a class=fn href="../science-ep1-new/#f58">#58</a></p>
+<p class=sci>面對跑得比你快的對手，別想用直線拚贏。要用頭腦和假動作，讓牠猜不到你下一步往哪跑。 <a class=fn href="../science-ep1-new/#f65">#65</a></p>
+<p class=sci>第一招：牠還遠遠的時候，你就一直左彎右拐，但不要停、不要變慢，先把距離拉開。 <a class=fn href="../science-ep1-new/#f68">#68</a></p>
+<p class=sci>第二招：等牠快追到你，只剩兩、三步的時候，猛地煞車，來一個急轉彎，再衝出去。 <a class=fn href="../science-ep1-new/#f69">#69</a></p>
+<p class=sci>牠跑太快，煞不住，只能繞一個大圈，一下子就被你甩開一兩步。 <a class=fn href="../science-ep1-new/#f69">#69</a></p>
+<p class=sci>對了，科學家量速度的時候，常用「每秒幾公尺」。每秒一公尺，差不多是時速三點六公里。 <a class=fn href="../science-ep1-new/#f59">#59</a></p>
+<p class=sci>如果這兩招都不管用呢？寫這本書的作者還有一些腦洞：鑽進大恐龍塞不進去的小洞，或者把牠引進陷阱。（停）說不定有用。 <a class=fn href="../science-ep1-new/#f77">#77</a></p>
+<p>好，解除定格。</p>
+</div></div></div><div class=row><div class=col><h3>段落 8　決戰 🔥</h3><p class="act">- <b>回到開場那一刻</b>：牠在後面喘氣，聞起來像很久沒刷牙。</p>
+<p class="act">- <b>想起第三課</b>：跑越快越難轉彎。你急轉彎，牠衝過頭；再轉一次，又衝過頭。牠摔了一大跤，又爬起來。</p>
+<p class="act">- <b>撐不住了</b>：人類本來很會跑長跑，只要撐久一點就好。【改】問題是，你連體育學分都還沒修完。※（原：問題是，你是資工系的。）</p>
+<p class="act">- <b>石頭</b>：你繞回一開始掉下來的那片空地，天已經黃昏。你絆倒，滾到那顆大石頭後面縮成一團。暴龍來不及轉彎，一頭撞上石頭。石頭眨了一下眼，一尾錘把青少年暴龍打飛。你早就忘了那顆石頭，但石頭還記得你。</p>
+<p class="act">- <b>任務完成</b>：一顆比香蕉還大的暴龍牙彈到你腳邊，放心，不是你的。牙齒有了，照片也有了。你一開心，相機就掉進泥巴裡。</p>
+<p class="act">- <b>洋芋片</b>：你想起背包裡還有一包一路捨不得吃的洋芋片，整包遞給甲龍：謝謝你啊，石頭。牠吃了一口。這可是【改】六千六百五十萬年來（原：七千萬年來），地球上的第一包洋芋片。</p></div><div class="col new"><h3>段落 12　決戰 🔥</h3><p class="act">- <b>回到開場那一刻</b>：牠在後面喘氣，聞起來像很久沒刷牙。</p>
+<p class="act">- <b>想起第三課</b>：跑越快越難轉彎。你急轉彎，牠衝過頭；再轉一次，又衝過頭。牠摔了一大跤，又爬起來。</p>
+<p class="act">- <b>撐不住了</b>：人類本來很會跑長跑，只要撐久一點就好。【改】問題是，你連體育學分都還沒修完。※（原：問題是，你是資工系的。）</p>
+<p class="act">- <b>石頭</b>：你繞回一開始掉下來的那片空地，天已經黃昏。你絆倒，滾到那顆大石頭後面縮成一團。暴龍來不及轉彎，一頭撞上石頭。石頭眨了一下眼，一尾錘把青少年暴龍打飛。你早就忘了那顆石頭，但石頭還記得你。</p>
+<p class="act">- <b>任務完成</b>：一顆比香蕉還大的暴龍牙彈到你腳邊，放心，不是你的。牙齒有了，照片也有了。你一開心，相機就掉進泥巴裡。</p>
+<p class="act">- <b>洋芋片</b>：你想起背包裡還有一包一路捨不得吃的洋芋片，整包遞給甲龍：謝謝你啊，石頭。牠吃了一口。這可是【改】六千六百五十萬年來（原：七千萬年來），地球上的第一包洋芋片。</p>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><h3>段落 9　回家 😄</h3><p class="act">- <b>手環沒反應</b>：按了兩次都沒反應。你想起博士修東西的那一招，往膠帶上用力一拍，手環亮了。果然，博士做的東西都要拍一下才會動。</p>
+<p class="act">- <b>背包</b>：你抱著牙齒和相機跳進隧道。隧道關上後，背包留在地上，旁邊是睡著的石頭和空的洋芋片袋。裡面有你的錢包，還有學生證。</p></div><div class="col new"><h3>段落 13　回家 😄</h3><p class="act">- <b>手環沒反應</b>：按了兩次都沒反應。你想起博士修東西的那一招，往膠帶上用力一拍，手環亮了。果然，博士做的東西都要拍一下才會動。</p>
+<p class="act">- <b>背包</b>：你抱著牙齒和相機跳進隧道。隧道關上後，背包留在地上，旁邊是睡著的石頭和空的洋芋片袋。裡面有你的錢包，還有學生證。</p>
+<p>（沿用成品，這一段不改。）</p></div></div><div class=row><div class=col><h3>段落 10　尾聲＋預告 😄</h3><p class="act">- <b>賴帳</b>：</p>
+<p class="act">- 你滿身泥巴躺在實驗室地上，交出牙齒和照片，博士開心得不得了。</p>
+<p class="act">- 照片還在，但相機已經不太算是相機了。</p>
+<p class="act">- 博士把信封裡的鈔票抽走，換成一張收據：壞掉的相機、電擊槍。算下來，你反而倒欠博士錢。</p>
+<p class="act">- <b>下一張任務單</b>：畫著一顆拖著長尾巴的亮星星。博士說下次一定付錢，他上次也這麼說。</p>
+<p class="act">- <b>書桌</b>：又多了一張帳單，還好手機是充飽的。</p>
+<p class="act">- <b>預告</b>：六千六百萬年前，有一顆小行星正朝著地球飛過來。如果你這次遇到的，就是讓恐龍滅絕的那一顆，會怎麼樣呢？</p></div><div class="col new"><h3>段落 14　尾聲＋預告 😄</h3><p class="act">- <b>賴帳</b>：</p>
+<p class="act">- 你滿身泥巴躺在實驗室地上，交出牙齒和照片，博士開心得不得了。</p>
+<p class="act">- 照片還在，但相機已經不太算是相機了。</p>
+<p class="act">- 博士把信封裡的鈔票抽走，換成一張收據：壞掉的相機、電擊槍。算下來，你反而倒欠博士錢。</p>
+<p class="act">- <b>下一張任務單</b>：畫著一顆拖著長尾巴的亮星星。博士說下次一定付錢，他上次也這麼說。</p>
+<p class="act">- <b>書桌</b>：又多了一張帳單，還好手機是充飽的。</p>
+<p class="act">- <b>預告</b>：六千六百萬年前，有一顆小行星正朝著地球飛過來。如果你這次遇到的，就是讓恐龍滅絕的那一顆，會怎麼樣呢？</p>
+<p>（沿用成品，這一段不改。）</p></div></div></div></main><script>document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===b));
+document.getElementById('full').hidden=b.dataset.t!=='full';document.getElementById('cmp').hidden=b.dataset.t!=='cmp'});</script></body></html>
