@@ -1,0 +1,61 @@
+I have enough verified data across all 8 points. Compiling the JSON.
+
+```json
+{"ep": "EP1", "results": [
+ {"n": 101,
+  "verdict": "正確",
+  "sci": "Hell Creek 地層位於美國蒙大拿州東部，在 Jordan 鎮北方、Fort Peck 水庫一帶的惡地出露最典型，向外延伸到北達科他、南達科他、懷俄明。由 Barnum Brown 於 1907 年命名，就是以當地一條名為 Hell Creek 的溪流及其支流旁的露頭命名。",
+  "src": [["Hell Creek Formation（維基百科，整理 Barnum Brown 1907 命名與地理範圍，附原始文獻）", "https://en.wikipedia.org/wiki/Hell_Creek_Formation"], ["Fowler 2020, The Hell Creek Formation, Montana: A Stratigraphic Review, Geosciences 10(11):435", "https://www.mdpi.com/2076-3263/10/11/435"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 102,
+  "verdict": "大致正確",
+  "sci": "Hell Creek 地層大約在 6800 萬到 6600 萬年前（Maastrichtian 末到最早 Paleocene）堆積，整層約 2 百萬年。頂部恰好是白堊紀—古近紀（K–Pg）界線，年代測定為約 6604 萬年前，那一層含撞擊噴出物與銥異常，就是小行星撞擊事件留下的。『6700 到 6600 萬』的下限略保守，底部可能老到約 6800 萬年前。",
+  "src": [["Fastovsky & Bercovici 2016, The Hell Creek Formation and its contribution to the K–Pg extinction: a short primer, Cretaceous Research 57:368–390", "https://ui.adsabs.harvard.edu/abs/2016CrRes..57..368F/abstract"], ["Hell Creek Formation（維基百科，~68–65.5 Ma、K–Pg 界線 66.04 Ma）", "https://en.wikipedia.org/wiki/Hell_Creek_Formation"]],
+  "fix": "「這層地層大約是六千七、八百萬年前到六千六百萬年前慢慢堆出來的，最上面那一薄層，正好就是小行星撞地球那一刻留下來的。」",
+  "confidence": "中"},
+
+ {"n": 103,
+  "verdict": "正確",
+  "sci": "當時這裡是沿著內陸海（Western Interior Seaway）西岸、向西延伸到正在隆起的洛磯山脈之間的一片低平、森林密布的濱海沖積平原。河流把西邊新生洛磯山（Laramide 造山運動的產物）的泥沙往東搬運、注入內陸海。注意：洛磯山在白堊紀末已經在隆起（『新生的』），不是完全沒有，所以書上『當時沒有洛磯山脈』的說法要修正成『當時的洛磯山還很年輕、正在長高』。",
+  "src": [["Hell Creek Formation（維基百科：broad coastal plain extended westward from the seaway to the newly formed Rocky Mountains）", "https://en.wikipedia.org/wiki/Hell_Creek_Formation"], ["Fastovsky & Bercovici 2016, Cretaceous Research 57:368–390（濱海平原、河道注入內陸海）", "https://ui.adsabs.harvard.edu/abs/2016CrRes..57..368F/abstract"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 104,
+  "verdict": "大致正確",
+  "sci": "白堊紀末這道貫穿北美中部的內陸海正在最後一次大退縮，被 Dakotas 一帶的三角洲／潮坪（『Dakota 地峽』）分割，往南退向墨西哥灣。到接近 6600 萬年前時，海水大致只剩從南方伸進來的淺海灣，而北達科他的 Hell Creek 地層裡仍找得到半鹹水與海相貝類，顯示海的影響還摸得到那一帶。『只剩一道南來的淺海灣、北端約在今天北達科他』是合理的簡化，但海到底退到哪、是否還有北側殘留，學界仍有討論。",
+  "src": [["Western Interior Seaway（維基百科：divided across the Dakotas and retreated south towards the Gulf of Mexico）", "https://en.wikipedia.org/wiki/Western_Interior_Seaway"], ["Hartman & Kirkland 2002, The Dakota Isthmus — Closing the Late Cretaceous Western Interior Seaway", "https://www.researchgate.net/publication/233416409_The_Dakota_Isthmus_-_Closing_the_Late_Cretaceous_Western_Interior_Seaway"]],
+  "fix": "「原本切開整個北美的大內陸海，這時候已經退得差不多了，只剩一道淺淺的海灣從南邊伸上來，海水的邊緣大概就在今天北達科他附近。」",
+  "confidence": "中"},
+
+ {"n": 105,
+  "verdict": "大致正確",
+  "sci": "葉片化石分析（CLAMP）估計當時 Hell Creek 的年均溫約 11–12°C，暖月約 20°C、冷月約 2.6°C，氣候溫暖潮濕、無嚴酷寒冬、雨量充足，整體偏副熱帶到溫帶。這比今天蒙大拿東部（年均約 6–7°C）暖，但只高約 4–5°C，說『高很多』略嫌誇張；冷月均溫在冰點上下，冬天偶有霜，不會長期結冰則大致成立。",
+  "src": [["Hell Creek Formation（維基百科：MAT 11.3–11.6°C，冷月 2.6°C，mild、無嚴寒）", "https://en.wikipedia.org/wiki/Hell_Creek_Formation"], ["Vellekoop 等整理之 florule／CLAMP 分析（GSA Special Paper 503, ch.6：A florule from the base of the Hell Creek Formation…Implications for vegetation and climate）", "https://pubs.geoscienceworld.org/books/book/chapter-pdf/979757/spe503-06.pdf"]],
+  "fix": "「那時候這裡溫暖又潮濕，比現在的蒙大拿暖和一些，冬天也不太冷、不會整個凍起來。」",
+  "confidence": "中"},
+
+ {"n": 106,
+  "verdict": "大致正確",
+  "sci": "葉片化石的 CLAMP 分析顯示雨量確實有季節性：生長季降雨大致在乾季每季 5–34 公分、濕季 38–82 公分之間，也就是一年裡有比較濕和比較乾的時段。不過這不是極端的乾季／雨季，整體仍算雨水充足；少數科普資料甚至描述『幾乎沒有乾季』，所以講『有季節變化』方向正確，但別說成強烈旱季。",
+  "src": [["GSA Special Paper 503, ch.6（CLAMP：生長季與乾/濕季降雨區間，顯示降水有季節性）", "https://pubs.geoscienceworld.org/books/book/chapter-pdf/979757/spe503-06.pdf"], ["Hell Creek Formation（維基百科：mild、ample precipitation）", "https://en.wikipedia.org/wiki/Hell_Creek_Formation"]],
+  "fix": "「一年裡有比較濕的時候，也有比較乾的時候，但不會乾到變成旱季。」",
+  "confidence": "中"},
+
+ {"n": 107,
+  "verdict": "正確",
+  "sci": "白堊紀末（包含 Hell Creek 的年代）整體屬溫室氣候，全球比今天暖，南北極沒有大型永久冰原。晚白堊紀其實正從中白堊紀的高溫慢慢降溫，但即使降溫後也仍沒有明顯的大陸冰蓋。",
+  "src": [["Hull 等 / O'Brien 等整理，Evidence for global cooling in the Late Cretaceous（PMC：greenhouse climate、absence of major polar ice caps、still without significant continental ice）", "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4082635/"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 108,
+  "verdict": "正確",
+  "sci": "Hell Creek 的植物化石以開花植物（被子植物）為壓倒性多數，約佔所有植物類群的九成以上；林下有蕨類，河岸林中也有水杉（Metasequoia）、Glyptostrobus 與柏科（Cupressaceae）等針葉樹，另有少量蘇鐵類與銀杏。書上列的蕨類、無花果（榕屬）、蘇鐵、銀杏都在合理範圍內。",
+  "src": [["Paleobiota of the Hell Creek Formation（維基百科：被子植物約 92%、Metasequoia／Glyptostrobus／Cupressaceae、蕨類與銀杏）", "https://en.wikipedia.org/wiki/Paleobiota_of_the_Hell_Creek_Formation"], ["GSA Special Paper 503, ch.6（type area 葉片化石群落組成）", "https://pubs.geoscienceworld.org/books/book/chapter-pdf/979757/spe503-06.pdf"]],
+  "fix": "",
+  "confidence": "高"}
+]}
+```

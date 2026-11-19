@@ -1,0 +1,132 @@
+
+你要查證一份兒童科普動畫（EP1）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 1,
+  "claim_zh": "那個時代有史上最強的掠食者，攻擊地球上出現過最大的陸生動物",
+  "quote": "the most powerful predators in history attacked the largest land animals the planet has ever seen",
+  "pages": [
+   "p.1"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 2,
+  "claim_zh": "有重達八十噸的爬行類",
+  "quote": "eighty-ton reptiles",
+  "pages": [
+   "p.1"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "80 短噸 ≈ 72.6 公噸"
+ },
+ {
+  "n": 3,
+  "claim_zh": "有體型像長頸鹿一樣大的動物會飛",
+  "quote": "an animal the size of a giraffe take flight",
+  "pages": [
+   "p.1"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 4,
+  "claim_zh": "要回到約 7000 萬年前的中生代（恐龍時代）",
+  "quote": "you travel back 70 million years to the Mesozoic era—back to the Dinosaur Age",
+  "pages": [
+   "p.1"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 5,
+  "claim_zh": "當時氣候溫暖，路易斯安那河口沼澤般的濕熱一路北達蒙大拿",
+  "quote": "In the warmed climate, you'll feel the sticky heat of the Louisiana bayous as far north as Montana",
+  "pages": [
+   "p.1"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 6,
+  "claim_zh": "當時沒有洛磯山脈和內華達山脈",
+  "quote": "the absence of Rocky Mountains and the Sierra Nevada",
+  "pages": [
+   "p.1"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 7,
+  "claim_zh": "當時有海覆蓋美國中西部",
+  "quote": "the sea covering the midwestern United States",
+  "pages": [
+   "p.1"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 8,
+  "claim_zh": "當時印度是一座島",
+  "quote": "the island of India",
+  "pages": [
+   "p.1"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP1", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。
