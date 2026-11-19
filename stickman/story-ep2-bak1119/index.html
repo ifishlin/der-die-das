@@ -1,0 +1,905 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><title>EP2 故事</title><style>
+:root{--bg:#f4f1ea;--panel:#fffdf8;--fg:#24211c;--mut:#6d665a;--line:#e2dccf;--acc:#8a4b1f;--nar:#efe7d6;--star:#c0861a;--sci:#dcefe5;--scib:#2f7d5b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;--nar:#2f2a22;--star:#e0b25a;--sci:#1b2c22;--scib:#6cc792;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1b1a17;--panel:#24221e;--fg:#ece7dc;--mut:#a59d8f;--line:#3a362f;--acc:#e0a070;--nar:#2f2a22;--star:#e0b25a;--sci:#1b2c22;--scib:#6cc792;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15.5px/1.75 "Noto Sans TC",-apple-system,"PingFang TC",sans-serif;margin:0}
+main{max-width:1500px;margin:0 auto;padding-block:20px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+a{color:var(--acc)}h1{font-size:26px;margin:0}h2{font-size:19px;margin:0 0 6px}h3{font-size:16px;margin:0 0 6px}.mut{color:var(--mut)}
+.card,.seg{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 18px;min-width:0;max-width:900px}
+.tabs{display:flex;gap:8px}.tab{font:600 14px inherit;font-family:inherit;border:1.5px solid var(--line);background:var(--panel);color:var(--fg);border-radius:20px;padding:5px 16px;cursor:pointer}.tab.on{border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc)}
+.nar{background:var(--nar);border-radius:8px;padding:6px 14px;margin:6px 0 10px}.nar p{margin:2px 0}
+.nar p.sci{background:var(--sci);border-left:4px solid var(--scib);margin:2px -10px;padding:0 6px}
+.rt{font-size:13px;font-weight:600;color:var(--scib);margin-left:6px}.big{font-size:24px;color:var(--scib)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:5px 8px;text-align:left}.n{text-align:right}
+.bar{display:inline-block;width:120px;height:10px;background:var(--line);border-radius:5px;overflow:hidden;vertical-align:middle}.bar i{display:block;height:100%;background:var(--scib)}
+.act{margin:8px 0 4px}.act.sub{margin-left:1.4em}
+.star{color:var(--star);font-weight:700}.fn{font:12px ui-monospace,Menlo,monospace}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.col{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:0}.col.new{border-color:var(--acc)}
+.colhead{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-weight:700;color:var(--mut)}
+@media (max-width:760px){.row,.colhead{grid-template-columns:1fr}}
+#cmp{display:flex;flex-direction:column;gap:10px}
+</style></head><body><main><div style="font-size:14px"><a href="../story/ep2/">← EP2</a>　<a href="../outline-ep2/">EP2 大綱</a>　<a href="../science-ep2/">EP2 科普準備報告</a></div>
+<header><h1>EP2〈小行星撞地球，你活得下來嗎？〉故事 v6（加長版，旁白已順稿）</h1><p class=mut>第 8 步寫故事、第 9 步審故事的檢查點。米色底是旁白、<b>綠底是科普</b>（有知識點編號），<span class=star>★</span> 是這版新改的地方，#編號點了會跳到科普準備報告。你在對話裡回意見，我改成下一版，舊版留著對照。</p></header>
+<section class=card><p># EP2〈小行星撞地球，你活得下來嗎？〉故事 v6（加長版，旁白已順稿）</p>
+<p>2026-11-19。<b>v6 是照拍攝清單 v4（script_v4.md）對齊的版本，旁白一個字都沒改</b>：段落名稱改成跟拍攝清單一樣；補上拍攝清單有、故事漏寫的事件（段落 2 出發進時光機）；把跟拍攝清單對不上的描述改掉（小玻璃珠不發紅、白色塑膠袋）。大綱同時改成 outline_v4.json。</p>
+<p>2026-11-18（v5）。照大綱 v3（outline_v3.json）寫。</p>
+<p class="act">- <b>為什麼有 v5</b>：第 1 版成片只有 7 分鐘（EP1 14 分鐘），旁白只有 EP1 的四成。使用者：查核過還沒用的知識點全部加進去；開頭博士講課不能多，盡量穿插在故事裡或放結尾；高處加一段阿拉莫龍；撞擊後要有三個時間點（地震、火雨、音爆），台詞講撞擊後多久。</p>
+<p class="act">- <b>旁白已順稿</b>：使用者要「改好後直接順稿」。v4 有的句子沿用第 22 步順好的版本（narration_smooth_EP2_reply_claude.json），新句子照同樣口吻寫，可以直接錄音。</p>
+<p class="act">- 旁白：<code>&gt;</code> 開頭；（停）是笑點前的長停頓；段落後面 #編號對應 EP2 科普準備報告。<span class=star>★</span>＝v5 新加的。</p>
+<p>## ⚠ 要你先看的</p>
+<p class="act">1. <b>阿拉莫龍不在地獄溪（✅ 使用者 11-18：照寫，不講地點）</b>：阿拉莫龍的化石只在北美南部（今天的德州、新墨西哥、猶他）。地獄溪在蒙大拿，相隔一千多公里。第 4 段先照你的要求寫成 HERO 從高處看到；要嗎改成「如果往南走一千多公里，會看到…」（HERO 透過相機想像），還是照寫？這點我沒有送查核，是我知道的，要的話可以查。</p>
+<p class="act">2. <b>三個時間點 <a class=fn href="../science-ep2/#f137">#137</a>～<a class=fn href="../science-ep2/#f139">#139</a> 已查核（11-18，docs/science/EP2_check/timing_batch_01.json）</b>：地震約 10 分鐘（正確）、火雨約 15 分鐘（大致正確，原寫 15～20 分鐘）、音爆約兩個半小時（正確，模型估算）。查核另外指出：玻璃珠落地時「燒紅」沒有證據，見最下面。</p>
+<p class="act">3. <b><a class=fn href="../science-ep2/#f8">#8</a> 一億倍有誤</b>：v4 的「核彈的一億倍」刪掉，改用 <a class=fn href="../science-ep2/#f55">#55</a>「比氫彈大好幾千萬倍」，放在第 7 段。</p>
+<p class="act">4. <b>長度</b>：旁白約 4300 字，照第 1 版的念速估約 14～15 分鐘。</p></section>
+<section class=card><h2>科普比例 <span class=big>68%</span>（目標 30%）</h2><p class=mut>綠底的旁白是科普（有標知識點編號），其他是劇情。用念出來的字數算：科普 2457 字／全部 3607 字。約 15.0 分鐘（每秒 4 字估）。</p><div class=tw><table><tr><th>段</th><th>科普字</th><th>全部字</th><th>比例</th><th></th></tr><tr><td><a href="#s0">段落 0　冷開場 🔥</a></td><td class=n>16</td><td class=n>64</td><td class=n>25%</td><td><span class=bar><i style="width:25%"></i></span></td></tr><tr><td><a href="#s1">段落 1　背包 😄</a></td><td class=n>0</td><td class=n>169</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s2">段落 2　行前教育（縮短）😄</a></td><td class=n>99</td><td class=n>205</td><td class=n>48%</td><td><span class=bar><i style="width:48%"></i></span></td></tr><tr><td><a href="#s3">段落 3　回到白堊紀，找石頭敘舊 😄</a></td><td class=n>89</td><td class=n>196</td><td class=n>45%</td><td><span class=bar><i style="width:45%"></i></span></td></tr><tr><td><a href="#s4">段落 4　高處：阿拉莫龍、矮暴龍打三角龍 😄</a></td><td class=n>70</td><td class=n>179</td><td class=n>39%</td><td><span class=bar><i style="width:39%"></i></span></td></tr><tr><td><a href="#s5">段落 5　等待：白天的月亮上的坑 😄</a></td><td class=n>294</td><td class=n>364</td><td class=n>81%</td><td><span class=bar><i style="width:81%"></i></span></td></tr><tr><td><a href="#s6">段落 6　它來了 😬</a></td><td class=n>140</td><td class=n>174</td><td class=n>80%</td><td><span class=bar><i style="width:80%"></i></span></td></tr><tr><td><a href="#s7">段落 7　地平線那一邊：撞擊的十分鐘 🔥</a></td><td class=n>367</td><td class=n>394</td><td class=n>93%</td><td><span class=bar><i style="width:93%"></i></span></td></tr><tr><td><a href="#s8">段落 8　翻開生存指南 😬</a></td><td class=n>256</td><td class=n>301</td><td class=n>85%</td><td><span class=bar><i style="width:85%"></i></span></td></tr><tr><td><a href="#s9">段落 9　關我屁事 → 背包 😄</a></td><td class=n>0</td><td class=n>57</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s10">段落 10　追石頭 🔥😄</a></td><td class=n>62</td><td class=n>105</td><td class=n>59%</td><td><span class=bar><i style="width:59%"></i></span></td></tr><tr><td><a href="#s11">段落 11　逃難 🔥</a></td><td class=n>186</td><td class=n>267</td><td class=n>70%</td><td><span class=bar><i style="width:70%"></i></span></td></tr><tr><td><a href="#s12">段落 12　山洞 😬→😄</a></td><td class=n>62</td><td class=n>163</td><td class=n>38%</td><td><span class=bar><i style="width:38%"></i></span></td></tr><tr><td><a href="#s13">段落 13　你沒看到的後來 😬</a></td><td class=n>531</td><td class=n>561</td><td class=n>95%</td><td><span class=bar><i style="width:95%"></i></span></td></tr><tr><td><a href="#s14">段落 14　六千六百萬年後：怎麼找到它的 😄</a></td><td class=n>285</td><td class=n>302</td><td class=n>94%</td><td><span class=bar><i style="width:94%"></i></span></td></tr><tr><td><a href="#s15">段落 15　回家、賴帳 😄</a></td><td class=n>0</td><td class=n>73</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><a href="#s16">段落 16　預告</a></td><td class=n>0</td><td class=n>33</td><td class=n>0%</td><td><span class=bar><i style="width:0%"></i></span></td></tr><tr><td><b>合計</b></td><td class=n><b>2457</b></td><td class=n><b>3607</b></td><td class=n><b>68%</b></td><td></td></tr></table></div></section>
+<div class=tabs><button class="tab on" data-t="full">v6 全文</button><button class="tab" data-t="cmp">v5 ↔ v6 逐段對照</button></div>
+<div id=full style="display:flex;flex-direction:column;gap:12px"><section class="seg" id="s0"><h2>段落 0　冷開場 🔥 <span class=rt>科普 16／64 字・25%</span></h2><p>天空熱得發紅，小玻璃珠（透明、不發紅）一顆顆落下，樹林一處一處燒起來。石頭（甲龍）在前面亂跑，HERO 的背包勾在牠的尾錘上，甩來甩去；HERO 在後面拚命追。畫面停住，倒回開頭。</p>
+<div class=nar>
+<p>此時此刻，你正在跑。</p>
+<p>而你前面那隻甲龍，正帶著你的背包。</p>
+<p class=sci>至於天上掉下來的，是一顆顆小玻璃珠。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p>這時候你一定很想問：我只是回來拿個背包，怎麼會變成這樣？</p>
+</div></section><section class="seg" id="s1"><h2>段落 1　背包 😄 <span class=rt>科普 0／169 字・0%</span></h2><p class="act">1. HERO 的書桌：一疊帳單、EP1 博士給的收據（上面畫著壞掉的相機）。</p>
+<div class=nar>
+<p>先把時間倒回去一點。你的書桌上，帳單又多了幾張。</p>
+<p>帳單旁邊，還有一張博士給的收據，上面畫著一台壞掉的相機。</p>
+</div>
+<p class="act">2. 學校餐廳：HERO 排隊、要刷學生證，摸遍口袋都沒有。</p>
+<div class=nar>
+<p>到了中午，你到學校餐廳排隊。</p>
+<p>結果輪到你的時候，才發現學生證不見了。</p>
+<p>（停）這時你才想起來，它在你的背包裡。</p>
+<p>而你的背包，還躺在三天前的白堊紀。</p>
+<p>就這樣，沒了學生證，你連學校餐廳的飯都吃不到。</p>
+</div>
+<p class="act">3. 實驗室：HERO 想借時光機，博士眼睛一亮。</p>
+<div class=nar>
+<p>所以你只好去找博士，想借時光機。</p>
+<p>博士一聽，眼睛都亮了，說：可以啊，不過你要順便幫我拍一張照片。</p>
+<p>（停）不拍，就不借。</p>
+</div></section><section class="seg" id="s2"><h2>段落 2　行前教育（縮短）😄 <span class=rt>科普 99／205 字・48%</span></h2><p>博士在黑板上畫，HERO 低頭滑手機。v4 這段的大坑（<a class=fn href="../science-ep2/#f112">#112</a>–<a class=fn href="../science-ep2/#f114">#114</a>）搬到第 14 段，撞擊威力（<a class=fn href="../science-ep2/#f8">#8</a>→<a class=fn href="../science-ep2/#f55">#55</a>）搬到第 7 段，爆炸範圍（<a class=fn href="../science-ep2/#f56">#56</a>）搬到第 8 段。</p>
+<p class="act">1. 博士畫一顆拖著尾巴的星，旁邊畫一座聖母峰，再把小行星畫得比它還高。</p>
+<div class=nar>
+<p>博士要你拍的，是天上那一顆所謂的「新星」。</p>
+<p class=sci>其實呢，它是一顆小行星，叫做 Chicxulub，念作「希克蘇魯伯」。<a class=fn href="../science-ep2/#f9">#9</a></p>
+<p class=sci>它大概有十公里寬，比聖母峰還要高。<a class=fn href="../science-ep2/#f101">#101</a></p>
+</div>
+<p class="act">2. 博士畫出北美洲和墨西哥，小行星從右上角斜斜地飛向猶加敦半島。</p>
+<div class=nar>
+<p class=sci>而它會斜斜地，從東北邊衝下來，撞在今天墨西哥的猶加敦半島。<a class=fn href="../science-ep2/#f104">#104</a> <a class=fn href="../science-ep2/#f9">#9</a></p>
+</div>
+<p class="act">3. HERO 頭都沒抬。</p>
+<div class=nar>
+<p>而你，只聽到兩個字：流星。</p>
+<p>（停）拍流星，這有什麼難的。</p>
+</div>
+<p class="act">4. 博士推過來生存指南；HERO 塞進一個白色超商塑膠袋。出發前又往袋子裡裝了洋芋片、食物和水。</p>
+<div class=nar>
+<p>說完，博士又把那本生存指南推了過來。這一次，你倒是有把它塞進袋子裡。</p>
+<p>你還帶了洋芋片、食物和水。不過這些不是給你自己的，是要帶給一位老朋友。</p>
+<p class=sci>（停）書上說，想在這次撞擊後活下來，你得帶保暖的衣服，和至少六年份的糧食。<a class=fn href="../science-ep2/#f88">#88</a></p>
+<p>而你，帶了一袋洋芋片。</p>
+</div>
+<p class="act">5. 博士拉下拉桿，時光機亮起來，HERO 提著塑膠袋被吸進隧道。（沒有旁白）</p></section><section class="seg" id="s3"><h2>段落 3　回到白堊紀，找石頭敘舊 😄 <span class=rt>科普 89／196 字・45%</span></h2><p class="act">1. 時光隧道打開，HERO 回到 EP1 那片空地。<span class=star>★</span>四周是棕櫚樹、蕨類，還有幾棵開著粉紅花的樹。石頭在原地睡覺，背包就在牠旁邊。</p>
+<div class=nar>
+<p>時間，回到三天後的白堊紀，還是同一片空地。</p>
+<p class=sci><span class=star>★</span>這是白堊紀的最後幾天，也是最有名的那些大恐龍，活著的最後幾天。<a class=fn href="../science-ep2/#f1">#1</a></p>
+<p class=sci><span class=star>★</span>這時候的地球很暖，暖到連北極都長棕櫚樹。<a class=fn href="../science-ep2/#f2">#2</a></p>
+<p class=sci><span class=star>★</span>而且這裡，很可能剛好是春天。<a class=fn href="../science-ep2/#f106">#106</a></p>
+<p>（停）三天沒見，石頭還是一顆石頭。</p>
+</div>
+<p class="act">2. HERO 把洋芋片倒給石頭，石頭吃得很開心，<span class=star>★</span>尾巴甩來甩去。</p>
+<div class=nar>
+<p>你把洋芋片倒給牠，牠吃得很開心。畢竟這是牠這輩子吃到的第二包洋芋片。</p>
+<p><span class=star>★</span>牠一開心，尾巴就甩來甩去。</p>
+<p class=sci><span class=star>★</span>甲龍尾巴上那顆大錘子，就像拆房子用的大鐵球，打架的時候，能把對手砸爛。<a class=fn href="../science-ep2/#f6">#6</a></p>
+<p><span class=star>★</span>（停）你往旁邊退了兩步。</p>
+</div>
+<p class="act">3. HERO 把裝著指南、回家按鈕的袋子塞進背包，再把背包放回石頭身邊，只帶相機去拍照。</p>
+<div class=nar>
+<p>接著你把背包放在牠旁邊，只帶著相機出發。</p>
+<p>反正，拍完就回來拿嘛。</p>
+</div></section><section class="seg" id="s4"><h2>段落 4　高處：阿拉莫龍、矮暴龍打三角龍 😄 <span class=rt>科普 70／179 字・39%</span></h2><p class="act">1. HERO 爬上附近一塊比較高的地方，架好相機。遠方有一個大山洞（伏筆）。</p>
+<div class=nar>
+<p>你爬上附近一塊比較高的地方，架好相機。</p>
+<p>從這裡看出去，整片白堊紀都在眼前。</p>
+</div>
+<p class="act">2. <span class=star>★</span>遠處一群阿拉莫龍，長脖子伸到樹頂吃葉子。HERO 從相機看，往後退一步，再退一步，還是框不進整隻。（⚠ 阿拉莫龍不在地獄溪，見最上面第 1 點）</p>
+<div class=nar>
+<p><span class=star>★</span>遠遠的，有一群阿拉莫龍，正把脖子伸到樹頂上吃葉子。</p>
+<p class=sci><span class=star>★</span>那些葉子，離地面差不多有四層樓高。<a class=fn href="../science-ep2/#f5">#5</a></p>
+<p><span class=star>★</span>你想拍一張。往後退一步，再退一步。</p>
+<p><span class=star>★</span>（停）還是拍不進一整隻。</p>
+</div>
+<p class="act">3. 另一邊，一隻矮暴龍正在跟一隻三角龍打架。HERO 舉起相機想拍，又想起要拍的是天上那顆。</p>
+<div class=nar>
+<p>另一邊，一隻恐龍正在跟三角龍打架。</p>
+<p class=sci>牠長得像暴龍，卻小了好幾號，腿又細又長。<a class=fn href="../science-ep2/#f128">#128</a></p>
+<p class=sci>但牠不是小暴龍，牠叫矮暴龍，是另外一種恐龍。牠只有暴龍的十分之一重，跑得比暴龍快多了。<a class=fn href="../science-ep2/#f125">#125</a> <a class=fn href="../science-ep2/#f128">#128</a></p>
+<p>你又舉起相機。</p>
+<p>（停）不對，博士要的是天上那一顆。</p>
+</div></section><section class="seg" id="s5"><h2>段落 5　等待：白天的月亮上的坑 😄 <span class=rt>科普 294／364 字・81%</span></h2><p>下午偏晚，藍天上掛著一個淡淡的白天月亮（<span class=star>★</span>時間軸跟 v1 一樣：下午→黃昏→撞擊的白光→空地是夜裡、南方天邊發亮→逃難時天空橘紅；月亮段落在下午偏晚）。HERO 閒著沒事，用相機放大看月亮：上面全是圓圓的坑，坑中間有一座小山。旁白配月亮特寫和幾張手繪小插圖（望遠鏡、吃草的牛、牢房、炸彈坑）。</p>
+<div class=nar>
+<p><span class=star>★</span>等著等著，太陽偏西了，天上掛著一個淡淡的、白天的月亮。</p>
+<p><span class=star>★</span>你閒著沒事，用相機把月亮放大來看。</p>
+<p class=sci><span class=star>★</span>月亮上，全是一個一個圓圓的坑，有的坑中間，還有一座小山。<a class=fn href="../science-ep2/#f23">#23</a> <a class=fn href="../science-ep2/#f25">#25</a></p>
+<p class=sci><span class=star>★</span>四百多年前，伽利略用望遠鏡，也看到了這些坑。<a class=fn href="../science-ep2/#f21">#21</a></p>
+<p class=sci><span class=star>★</span>接下來的三百年，大部分的科學家都說：這些坑，是月亮上的火山口。<a class=fn href="../science-ep2/#f26">#26</a></p>
+<p class=sci><span class=star>★</span>也有一位德國天文學家說，他在坑裡面，看到牛在吃月亮上的草。<a class=fn href="../science-ep2/#f22">#22</a> <a class=fn href="../science-ep2/#f24">#24</a></p>
+<p class=sci><span class=star>★</span>（停）這一點，大家倒是都不信。<a class=fn href="../science-ep2/#f26">#26</a></p>
+<p class=sci><span class=star>★</span>後來，有一個俄國人，叫莫洛佐夫。他坐了二十五年的牢，在牢裡自學了十一種語言。<a class=fn href="../science-ep2/#f30">#30</a></p>
+<p class=sci><span class=star>★</span>出獄以後，他開始研究天文。<a class=fn href="../science-ep2/#f92">#92</a> <a class=fn href="../science-ep2/#f93">#93</a></p>
+<p class=sci><span class=star>★</span>他跑去看炸彈炸出來的坑，發現不管炸彈從哪個方向飛來，炸出來的坑，都是圓的。<a class=fn href="../science-ep2/#f27">#27</a> <a class=fn href="../science-ep2/#f28">#28</a> <a class=fn href="../science-ep2/#f29">#29</a></p>
+<p><span class=star>★</span>所以月亮上那些圓圓的坑，很可能是天上的石頭撞出來的。</p>
+<p class=sci><span class=star>★</span>差不多同一個時候，哈佛大學的一位院長也寫過：只要一顆十六公里大的石頭掉下來，就能毀掉地球上的生命。<a class=fn href="../science-ep2/#f31">#31</a></p>
+<p class=sci><span class=star>★</span>可是當時，大部分的天文學家都覺得，地球不可能被那麼大的石頭撞到。<a class=fn href="../science-ep2/#f19">#19</a></p>
+<p class=sci><span class=star>★</span>一直要到第一次世界大戰前後，大家才慢慢相信，這件事真的會發生。<a class=fn href="../science-ep2/#f18">#18</a></p>
+<p><span class=star>★</span>（停）你從相機裡抬起頭。</p>
+<p class=sci><span class=star>★</span>天上那顆星，又更亮了。<a class=fn href="../science-ep2/#f32">#32</a></p>
+</div></section><section class="seg" id="s6"><h2>段落 6　它來了 😬 <span class=rt>科普 140／174 字・80%</span></h2><p class="act">1. 天上那顆星，亮得不像話。</p>
+<div class=nar>
+<p class=sci>三天前，這顆星跟其他星星沒什麼兩樣。你在逃命的時候，根本沒注意到它。<a class=fn href="../science-ep2/#f7">#7</a></p>
+<p class=sci>可是現在，它越來越亮。比所有的星星亮，比行星亮，比月亮還亮。<a class=fn href="../science-ep2/#f7">#7</a></p>
+<p>你開始覺得怪怪的：這顆流星，怎麼這麼亮？</p>
+</div>
+<p class="act">2. 它比太陽還亮，劃過天空。</p>
+<div class=nar>
+<p class=sci>最後，它比太陽還亮。<a class=fn href="../science-ep2/#f7">#7</a></p>
+<p class=sci><span class=star>★</span>一般的流星，只有小石子那麼大，在天空很高的地方，就被空氣擋下來，燒掉了。<a class=fn href="../science-ep2/#f37">#37</a></p>
+<p class=sci><span class=star>★</span>可是這一顆，一秒鐘飛二十公里。對它來說，空氣就像水一樣，根本擋不住。<a class=fn href="../science-ep2/#f35">#35</a> <a class=fn href="../science-ep2/#f36">#36</a></p>
+<p class=sci>然後，它用幾秒鐘的時間，劃過了整片天空。<a class=fn href="../science-ep2/#f7">#7</a> <a class=fn href="../science-ep2/#f38">#38</a></p>
+</div>
+<p class="act">3. HERO 按下快門。它消失在南方的地平線，接著天邊一陣亮光。</p>
+<div class=nar>
+<p>你按下了快門。</p>
+<p>欸。</p>
+<p>（停）它沒有飛過去。</p>
+<p>它撞上了。</p>
+</div></section><section class="seg" id="s7"><h2>段落 7　地平線那一邊：撞擊的十分鐘 🔥 <span class=rt>科普 367／394 字・93%</span></h2><p>鏡頭飛到 HERO 看不到的撞擊點。手繪插圖風，HERO 不在場；比喻的地方配小插圖（游泳池裡的砲彈、槌子敲釘子）。</p>
+<div class=nar>
+<p><span class=star>★</span>在你看不到的地平線那一邊，發生了這些事。</p>
+<p class=sci><span class=star>★</span>小行星還沒碰到地面，它前面的空氣就被壓得燙到幾千度，把底下那片淺海，烤乾了一大半。<a class=fn href="../science-ep2/#f40">#40</a></p>
+<p class=sci><span class=star>★</span>接著，它用一秒鐘十六公里的速度，撞進了岩石。<a class=fn href="../science-ep2/#f41">#41</a></p>
+<p class=sci><span class=star>★</span>撞得太用力了，石頭不是碎掉，而是像水一樣，流開來。<a class=fn href="../science-ep2/#f42">#42</a></p>
+<p class=sci><span class=star>★</span>就像把一顆砲彈，丟進游泳池。<a class=fn href="../science-ep2/#f43">#43</a></p>
+<p class=sci><span class=star>★</span>先是往四面八方，濺起一圈土牆，比飛機飛得還要高。<a class=fn href="../science-ep2/#f45">#45</a></p>
+<p class=sci><span class=star>★</span>接著，中間又彈起一根柱子，比聖母峰還高。<a class=fn href="../science-ep2/#f46">#46</a></p>
+<p class=sci><span class=star>★</span>游泳池裡，這只要幾秒鐘；在這裡，要整整十分鐘。<a class=fn href="../science-ep2/#f44">#44</a></p>
+<p class=sci><span class=star>★</span>幾分鐘後，柱子垮了下來，只剩下一圈環狀的山。<a class=fn href="../science-ep2/#f47">#47</a></p>
+<p class=sci><span class=star>★</span>（停）就是你剛剛在月亮的坑中間，看到的那座小山。<a class=fn href="../science-ep2/#f25">#25</a> <a class=fn href="../science-ep2/#f47">#47</a></p>
+<p><span class=star>★</span>而且，那裡燙得不得了。</p>
+<p class=sci><span class=star>★</span>你用槌子敲釘子，敲完摸一下槌子，會是熱的。<a class=fn href="../science-ep2/#f49">#49</a> <a class=fn href="../science-ep2/#f50">#50</a></p>
+<p class=sci><span class=star>★</span>這一撞，等於把一座山那麼重的石頭的速度，一瞬間，全部變成熱。<a class=fn href="../science-ep2/#f48">#48</a> <a class=fn href="../science-ep2/#f51">#51</a></p>
+<p class=sci><span class=star>★</span>那裡變得比太陽表面還要燙，連空氣都燒成一團大火球，往外衝。<a class=fn href="../science-ep2/#f52">#52</a> <a class=fn href="../science-ep2/#f53">#53</a></p>
+<p class=sci><span class=star>★</span>一道衝擊波，用一小時一千六百公里的速度，往四面八方推出去。<a class=fn href="../science-ep2/#f54">#54</a></p>
+<p class=sci><span class=star>★</span>科學家說，地球上勉強能拿來比的，只有氫彈。可是這一撞，比一顆氫彈還要大上好幾千萬倍。<a class=fn href="../science-ep2/#f55">#55</a></p>
+<p class=sci><span class=star>★</span>有些石頭，甚至被炸得飛出了地球。<a class=fn href="../science-ep2/#f66">#66</a> <a class=fn href="../science-ep2/#f67">#67</a></p>
+<p class=sci><span class=star>★</span>科學家算過，可能有幾千塊，最後掉到了火星上；還有一兩塊，飛得更遠，撞上了木星的月亮。<a class=fn href="../science-ep2/#f68">#68</a></p>
+</div></section><section class="seg" id="s8"><h2>段落 8　翻開生存指南 😬 <span class=rt>科普 256／301 字・85%</span></h2><p class="act">1. HERO 跑回空地拿背包，翻出生存指南。</p>
+<div class=nar>
+<p>這是你這輩子，第一次那麼想看生存指南。</p>
+<p>於是你跑回去，從背包裡把它翻出來。</p>
+<p class=sci>翻開一看，你才知道，這一顆，就是讓恐龍滅絕的那一顆。<a class=fn href="../science-ep2/#f11">#11</a></p>
+</div>
+<p class="act">2. <span class=star>★</span>指南第一頁：爆炸範圍圖（書上 p.13，用我們的手繪風重畫，從 v4 第 2 段搬來）。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>指南上畫著一張圖：如果今天撞在同一個地方，德州的人會被炸死，紐約的人會被震聾，連阿根廷的窗戶，都會被震碎。<a class=fn href="../science-ep2/#f20">#20</a> <a class=fn href="../science-ep2/#f56">#56</a></p>
+<p class=sci><span class=star>★</span>想活下來，最好的位置，是在地球的另一邊。<a class=fn href="../science-ep2/#f14">#14</a> <a class=fn href="../science-ep2/#f17">#17</a></p>
+</div>
+<p class="act">3. 內頁世界地圖：撞擊點是骷髏，北美洲畫著火，大部分地方是雪花，只有很遠的熱帶島嶼畫著太陽。</p>
+<div class=nar>
+<p class=sci>而你在的地方，正畫著一團火。<a class=fn href="../science-ep2/#f80">#80</a></p>
+</div>
+<p class="act">4. 指南列著接下來會發生的事（每一項配一張手繪小插圖），<span class=star>★</span>順序跟故事裡發生的一樣。</p>
+<div class=nar>
+<p>指南上寫著，接下來會發生的事。</p>
+<p class=sci><span class=star>★</span>第一，地震。<a class=fn href="../science-ep2/#f57">#57</a></p>
+<p class=sci><span class=star>★</span>第二，天上會掉下小玻璃珠。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p class=sci>第三，它們會把天空烤得像一台開到最強火的烤箱，森林會燒起來。<a class=fn href="../science-ep2/#f71">#71</a> <a class=fn href="../science-ep2/#f72">#72</a></p>
+<p class=sci><span class=star>★</span>第四，一聲很大的音爆，不管你在地球的哪裡，都聽得到。<a class=fn href="../science-ep2/#f15">#15</a></p>
+<p class=sci>第五，不要待在水邊，會有大浪。<a class=fn href="../science-ep2/#f60">#60</a></p>
+<p class=sci><span class=star>★</span>本來，海是最好的隔熱墊，待在海邊最涼快。可是有大浪，所以很兩難。<a class=fn href="../science-ep2/#f65">#65</a> <a class=fn href="../science-ep2/#f94">#94</a></p>
+<p class=sci>想活下來，就快去高的地方，找一個山洞，越深越好。<a class=fn href="../science-ep2/#f16">#16</a> <a class=fn href="../science-ep2/#f70">#70</a></p>
+<p class=sci><span class=star>★</span>寫這本指南的科學家說：要活下來，你得在對的大陸、對的地方、對的高度，還有對的時間。<a class=fn href="../science-ep2/#f91">#91</a></p>
+</div></section><section class="seg" id="s9"><h2>段落 9　關我屁事 → 背包 😄 <span class=rt>科普 0／57 字・0%</span></h2><p class="act">1. HERO 闔上指南，看了看相機裡的照片。</p>
+<div class=nar>
+<p>你想了一下。</p>
+<p>（停）關我屁事，照片拍到了，可以回家了。</p>
+</div>
+<p class="act">2. 他把指南塞回背包，蹲下來要翻出按鈕——石頭搶先一步，把頭鑽進背包裡找洋芋片。</p>
+<div class=nar>
+<p>於是你把指南塞回背包，正要翻出那顆按鈕。</p>
+<p>可是石頭還想吃洋芋片，牠把頭鑽進了你的背包。</p>
+</div></section><section class="seg" id="s10"><h2>段落 10　追石頭 🔥😄 <span class=rt>科普 62／105 字・59%</span></h2><p class="act">1. 地面開始晃。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>你在地獄溪。算一算，撞擊後大約十分鐘，<a class=fn href="../science-ep2/#f137">#137</a></p>
+<p class=sci>地面開始搖了。<a class=fn href="../science-ep2/#f57">#57</a></p>
+</div>
+<p class="act">2. 石頭嚇得跳起來就跑，背包背帶勾在尾錘上被帶走，回家按鈕還在背包裡。</p>
+<div class=nar>
+<p>石頭嚇了一大跳，轉身就跑。</p>
+<p>（停）帶著你的背包。還有，你的回家按鈕。</p>
+<p class=sci><span class=star>★</span>背包勾在那顆大錘子上，甩來甩去。你想搶回來，又不太敢靠太近。<a class=fn href="../science-ep2/#f6">#6</a></p>
+</div>
+<p class="act">3. HERO 只好追。</p>
+<div class=nar>
+<p>你只好追上去。</p>
+<p class=sci>博士上課說過，越大隻的，跑得越慢。<a class=fn href="../science-ratio/">EP1 <a class=fn href="../science-ep2/#f5">#5</a></a></p>
+<p>（停）可是你連一隻甲龍都追不上。</p>
+</div></section><section class="seg" id="s11"><h2>段落 11　逃難 🔥 <span class=rt>科普 186／267 字・70%</span></h2><p class="act">1. 一邊追，天上開始落下小玻璃珠；高空一片發光發熱，天空被烤得通紅，樹林起火。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>撞擊後大約十五分鐘，<a class=fn href="../science-ep2/#f138">#138</a></p>
+<p class=sci>天上，開始下起小玻璃珠。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p class=sci><span class=star>★</span>這些小珠子，是被撞上天的岩石，融化以後，在高空又凝固成的。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p class=sci><span class=star>★</span>它們掉回來的時候，在很高很高的地方跟空氣摩擦，一顆一顆發光發熱。<a class=fn href="../science-ep2/#f70">#70</a> <a class=fn href="../science-ep2/#f72">#72</a></p>
+<p><span class=star>★</span>等掉到地上，已經不燙了；可是幾億顆一起在天上發熱，就把整片天空，烤得像一台開到最強火的烤箱。</p>
+<p class=sci><span class=star>★</span>樹林，就這樣一片一片燒了起來。<a class=fn href="../science-ep2/#f71">#71</a></p>
+<p class=sci><span class=star>★</span>不過，是不是全世界的森林都一起燒，科學家到現在還在吵。<a class=fn href="../science-ep2/#f71">#71</a></p>
+</div>
+<p class="act">2. 逃難途中，當地的恐龍也在逃：鴨嘴龍、三角龍、腫頭龍（又一頭撞上樹）、似鴕龍（嘴裡叼著 HERO 在 EP1 被搶走的帽子）。<span class=star>★</span>還有一隻在地上跑的鳥。</p>
+<div class=nar>
+<p>所有的恐龍都在逃。</p>
+<p>喔，那是你的帽子。</p>
+<p><span class=star>★</span>還有一隻鳥，也跟著你們一起跑。牠不會飛高，平常就住在地上。</p>
+<p class=sci><span class=star>★</span>樹都燒光了，會活下來的鳥，就是牠們這種，住在地上的鳥。<a class=fn href="../science-ep2/#f73">#73</a></p>
+</div>
+<p class="act">3. 哺乳類祖先出場：路邊一隻鼩鼱一溜煙鑽進地洞。</p>
+<div class=nar>
+<p class=sci>大傢伙拚命跑。<a class=fn href="../science-ep2/#f74">#74</a></p>
+<p class=sci>小傢伙呢，一鑽就沒事了。<a class=fn href="../science-ep2/#f74">#74</a></p>
+<p class=sci>牠吃蟲子，會鑽進洞裡躲熱，身上還有一層毛，之後再冷都不怕。<a class=fn href="../science-ep2/#f34">#34</a></p>
+<p class=sci>（停）而這個小傢伙，就是你的祖先。<a class=fn href="../science-ep2/#f33">#33</a></p>
+</div></section><section class="seg" id="s12"><h2>段落 12　山洞 😬→😄 <span class=rt>科普 62／163 字・38%</span></h2><p class="act">1. 石頭亂跑，剛好跑到 HERO 在高處看到的那個大山洞。<span class=star>★</span>就在這時候，一陣低沉的轟隆聲從南邊地平線滾過來，空氣和地面一起震，所有恐龍都愣了一下。</p>
+<div class=nar>
+<p>石頭一路亂跑，竟然跑到了你在高處看到的那個大山洞。</p>
+<p class=sci><span class=star>★</span>這時候，南邊的地平線，傳來一陣低低的轟隆聲，連空氣都在震。<a class=fn href="../science-ep2/#f15">#15</a></p>
+<p class=sci><span class=star>★</span>是音爆。撞擊後大約兩個半小時，它才終於傳到地獄溪。<a class=fn href="../science-ep2/#f139">#139</a></p>
+<p><span class=star>★</span>（停）聲音在空氣裡，走得最慢。</p>
+</div>
+<p class="act">2. HERO 追上石頭，拿回背包，拉著石頭跟恐龍們一起走進山洞。</p>
+<div class=nar>
+<p>你終於抓到了背包。本來，你只是想拿回背包而已。</p>
+<p class=sci>可是最後，你卻拉著牠，一起走了進去。<a class=fn href="../science-ep2/#f70">#70</a></p>
+</div>
+<p class="act">3. 往山洞深處看，深不見底。</p>
+<div class=nar>
+<p>這個洞，好深。</p>
+<p>（停）深到能通到地心嗎？</p>
+</div>
+<p class="act">4. 跟石頭說再見，按按鈕——沒反應。拍一下，隧道打開。</p>
+<div class=nar>
+<p>你跟石頭說再見，按下按鈕。</p>
+<p>沒反應。</p>
+<p>（停）你只好拍了它一下。</p>
+<p>這一次，你總算帶著背包回家了。</p>
+</div></section><section class="seg" id="s13"><h2>段落 13　你沒看到的後來 😬 <span class=rt>科普 531／561 字・95%</span></h2><p>手繪插圖講，HERO 不在場。</p>
+<div class=nar>
+<p>你走了之後，地球是這樣的。</p>
+<p class=sci><span class=star>★</span>一開始，是熱。<a class=fn href="../science-ep2/#f95">#95</a></p>
+<p class=sci><span class=star>★</span>不到一個小時，好幾道比高樓還高的大浪，衝上了墨西哥灣的海岸，衝進今天的墨西哥和美國南部。<a class=fn href="../science-ep2/#f61">#61</a> <a class=fn href="../science-ep2/#f62">#62</a></p>
+<p class=sci><span class=star>★</span>很遠的內陸，地震把河水往上游推，像一道比兩層樓還高的水牆，倒著衝回去。<a class=fn href="../science-ep2/#f63">#63</a></p>
+<p class=sci><span class=star>★</span>更倒楣的是，撞擊的地方，底下剛好埋著很多硫，還有很多石油。<a class=fn href="../science-ep2/#f75">#75</a></p>
+<p class=sci><span class=star>★</span>硫被炸上天，變成硫酸，接下來好幾年，像酸酸的雨一樣，一直下。<a class=fn href="../science-ep2/#f76">#76</a></p>
+<p class=sci><span class=star>★</span>石油燒成了厚厚的黑煙，飄到比雲還高的地方，連雨都洗不掉，就像替地球漆上了一層黑漆。<a class=fn href="../science-ep2/#f78">#78</a> <a class=fn href="../science-ep2/#f79">#79</a></p>
+<p class=sci>再加上森林燒出來的黑煙，大部分的陽光都被擋住，一擋就是好幾年。<a class=fn href="../science-ep2/#f81">#81</a></p>
+<p><span class=star>★</span>然後，是冷。</p>
+<p class=sci>地球變得又黑又冷，平均降了快三十度。<a class=fn href="../science-ep2/#f82">#82</a></p>
+<p class=sci><span class=star>★</span>連熱帶的島嶼，都只剩下平常一成的陽光。<a class=fn href="../science-ep2/#f86">#86</a></p>
+<p class=sci><span class=star>★</span>天氣冷，水就不太蒸發，雨少了八成，大部分的地方，都乾成了沙漠。<a class=fn href="../science-ep2/#f85">#85</a></p>
+<p class=sci><span class=star>★</span>所以這時候，最好的去處，是靠近赤道、有山的熱帶島嶼，那裡還有一點雨，也還有乾淨的水。<a class=fn href="../science-ep2/#f83">#83</a> <a class=fn href="../science-ep2/#f84">#84</a> <a class=fn href="../science-ep2/#f89">#89</a></p>
+<p class=sci><span class=star>★</span>最好還待在河邊。河裡有烏龜、鱷魚、魚，還有蛤蜊和蝸牛，可以撐比較久。<a class=fn href="../science-ep2/#f87">#87</a></p>
+<p class=sci>最後，地球上大概四分之三的生物消失了。<a class=fn href="../science-ep2/#f123">#123</a></p>
+<p class=sci><span class=star>★</span>在陸地上，比浣熊還大的哺乳動物，全部死光。<a class=fn href="../science-ep2/#f12">#12</a></p>
+<p class=sci>恐龍，只剩下在地上築巢的鳥。<a class=fn href="../science-ep2/#f11">#11</a> <a class=fn href="../science-ep2/#f73">#73</a></p>
+<p class=sci><span class=star>★</span>這是地球的生命史上，最重要的一刻：恐龍的時代結束了，哺乳動物的時代，開始了。<a class=fn href="../science-ep2/#f10">#10</a></p>
+<p class=sci>而這一天留下來的那一層土，今天在地獄溪的石頭最上面，還看得到。<a class=fn href="../science-ep2/#f122">#122</a></p>
+<p>對了，還記得那隻矮暴龍跟三角龍嗎？</p>
+<p class=sci>很久很久以後，人們在地獄溪挖到一具化石：一隻矮暴龍和一隻三角龍，纏在一起，埋在同一塊石頭裡。<a class=fn href="../science-ep2/#f126">#126</a></p>
+<p class=sci>三角龍身上，還插著一顆矮暴龍的牙齒，所以科學家叫牠們「決鬥恐龍」。<a class=fn href="../science-ep2/#f127">#127</a></p>
+</div>
+<p>（附註：不說牠們是打架時一起死的。）</p>
+<div class=nar>
+<p class=sci>（停）對了，書上還說：那時候如果你肚子餓，千萬別吃那種像鼩鼱的小動物。<a class=fn href="../science-ep2/#f90">#90</a></p>
+<p class=sci>吃錯一隻，說不定就沒有你了。<a class=fn href="../science-ep2/#f90">#90</a></p>
+</div></section><section class="seg" id="s14"><h2>段落 14　六千六百萬年後：怎麼找到它的 😄 <span class=rt>科普 285／302 字・94%</span></h2><p>插圖講，HERO 不在場。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>六千六百萬年後，科學家是怎麼知道這件事的？<a class=fn href="../science-ep2/#f105">#105</a></p>
+<p class=sci><span class=star>★</span>一九八零年，有一對科學家父子，在全世界都找得到的一層薄薄的土裡，發現很多地球上很少見的「銥」。他們說：這是一顆小行星帶來的。<a class=fn href="../science-ep2/#f121">#121</a></p>
+<p><span class=star>★</span>可是，撞出來的坑在哪裡？</p>
+<p class=sci><span class=star>★</span>其實早在一九七八年，就有一群在墨西哥找石油的人，先找到它了。<a class=fn href="../science-ep2/#f115">#115</a></p>
+<p class=sci><span class=star>★</span>它有一百八十公里寬。一半在陸地底下，一半在海底，<a class=fn href="../science-ep2/#f111">#111</a> <a class=fn href="../science-ep2/#f112">#112</a></p>
+<p class=sci><span class=star>★</span>還被埋在一公里厚的石頭下面，站在上面根本看不出來。<a class=fn href="../science-ep2/#f113">#113</a></p>
+<p class=sci><span class=star>★</span>只有坑的邊緣，排著一圈天然的水井。<a class=fn href="../science-ep2/#f112">#112</a> <a class=fn href="../science-ep2/#f113">#113</a> <a class=fn href="../science-ep2/#f114">#114</a></p>
+<p class=sci><span class=star>★</span>到了一九九一年，大家才確定，就是它。<a class=fn href="../science-ep2/#f115">#115</a></p>
+<p class=sci><span class=star>★</span>二零一六年，科學家在海上鑽井，一路鑽進那圈環狀的山，把石頭拿上來看。<a class=fn href="../science-ep2/#f117">#117</a></p>
+<p class=sci><span class=star>★</span>再化驗撞擊留下來的岩石，才知道：這顆小行星，是一種黑黑的「碳質小行星」，原本來自比木星還要遠的地方。<a class=fn href="../science-ep2/#f102">#102</a> <a class=fn href="../science-ep2/#f103">#103</a></p>
+<p><span class=star>★</span>（停）不過，故事還沒完。</p>
+<p class=sci><span class=star>★</span>差不多同一個時候，印度也有一場超級大的火山爆發。有些科學家認為，恐龍會滅絕，它也有份。<a class=fn href="../science-ep2/#f124">#124</a></p>
+</div></section><section class="seg" id="s15"><h2>段落 15　回家、賴帳 😄 <span class=rt>科普 0／73 字・0%</span></h2><div class=nar>
+<p>回來以後，你把照片交給博士，博士開心得不得了。</p>
+<p>當然，你也翻出了你的學生證。</p>
+<p>至於錢嘛，博士說，這次不是打工，是借時光機的交換條件，所以，沒有錢。</p>
+<p>不過，他送你一本書，叫《地心冒險》。</p>
+</div></section><section class="seg" id="s16"><h2>段落 16　預告 <span class=rt>科普 0／33 字・0%</span></h2><div class=nar>
+<p>下一集。地球變冷了，冷到整片大陸都是冰。</p>
+<p>你要怎麼在冰河時期，活過一個冬天呢？</p>
+</div></section><section class=card><p>## 查核附註：「燒紅的」小玻璃珠（已處理）</p>
+<p><a class=fn href="../science-ep2/#f138">#138</a> 查核（DePalma 2019 PNAS）：地獄溪的小玻璃珠落地時沒有證據是燒紅的。11-18 使用者定：旁白不說「燒紅」，森林起火講清楚是碎屑在高空把天空烤熱（<a class=fn href="../science-ep2/#f71">#71</a>、<a class=fn href="../science-ep2/#f72">#72</a>）；畫面上小玻璃珠一律透明、不發紅。</p></section></div>
+<div id=cmp hidden><div class=colhead><div>v5（舊）</div><div>v6（新）</div></div><div class=row><div class=col><h3>段落 0　冷開場 🔥</h3><p>天空熱得發紅，小玻璃珠一顆顆落下，樹林一處一處燒起來。石頭（甲龍）在前面亂跑，HERO 的背包勾在牠的尾錘上，甩來甩去；HERO 在後面拚命追。畫面停住，倒回開頭。</p>
+<div class=nar>
+<p>此時此刻，你正在跑。</p>
+<p>而你前面那隻甲龍，正帶著你的背包。</p>
+<p class=sci>至於天上掉下來的，是一顆顆小玻璃珠。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p>這時候你一定很想問：我只是回來拿個背包，怎麼會變成這樣？</p>
+</div></div><div class="col new"><h3>段落 0　冷開場 🔥</h3><p>天空熱得發紅，小玻璃珠（透明、不發紅）一顆顆落下，樹林一處一處燒起來。石頭（甲龍）在前面亂跑，HERO 的背包勾在牠的尾錘上，甩來甩去；HERO 在後面拚命追。畫面停住，倒回開頭。</p>
+<div class=nar>
+<p>此時此刻，你正在跑。</p>
+<p>而你前面那隻甲龍，正帶著你的背包。</p>
+<p class=sci>至於天上掉下來的，是一顆顆小玻璃珠。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p>這時候你一定很想問：我只是回來拿個背包，怎麼會變成這樣？</p>
+</div></div></div><div class=row><div class=col><h3>段落 1　背包 😄</h3><p class="act">1. HERO 的書桌：一疊帳單、EP1 博士給的收據（上面畫著壞掉的相機）。</p>
+<div class=nar>
+<p>先把時間倒回去一點。你的書桌上，帳單又多了幾張。</p>
+<p>帳單旁邊，還有一張博士給的收據，上面畫著一台壞掉的相機。</p>
+</div>
+<p class="act">2. 學校餐廳：HERO 排隊、要刷學生證，摸遍口袋都沒有。</p>
+<div class=nar>
+<p>到了中午，你到學校餐廳排隊。</p>
+<p>結果輪到你的時候，才發現學生證不見了。</p>
+<p>（停）這時你才想起來，它在你的背包裡。</p>
+<p>而你的背包，還躺在三天前的白堊紀。</p>
+<p>就這樣，沒了學生證，你連學校餐廳的飯都吃不到。</p>
+</div>
+<p class="act">3. 實驗室：HERO 想借時光機，博士眼睛一亮。</p>
+<div class=nar>
+<p>所以你只好去找博士，想借時光機。</p>
+<p>博士一聽，眼睛都亮了，說：可以啊，不過你要順便幫我拍一張照片。</p>
+<p>（停）不拍，就不借。</p>
+</div></div><div class="col new"><h3>段落 1　背包 😄</h3><p class="act">1. HERO 的書桌：一疊帳單、EP1 博士給的收據（上面畫著壞掉的相機）。</p>
+<div class=nar>
+<p>先把時間倒回去一點。你的書桌上，帳單又多了幾張。</p>
+<p>帳單旁邊，還有一張博士給的收據，上面畫著一台壞掉的相機。</p>
+</div>
+<p class="act">2. 學校餐廳：HERO 排隊、要刷學生證，摸遍口袋都沒有。</p>
+<div class=nar>
+<p>到了中午，你到學校餐廳排隊。</p>
+<p>結果輪到你的時候，才發現學生證不見了。</p>
+<p>（停）這時你才想起來，它在你的背包裡。</p>
+<p>而你的背包，還躺在三天前的白堊紀。</p>
+<p>就這樣，沒了學生證，你連學校餐廳的飯都吃不到。</p>
+</div>
+<p class="act">3. 實驗室：HERO 想借時光機，博士眼睛一亮。</p>
+<div class=nar>
+<p>所以你只好去找博士，想借時光機。</p>
+<p>博士一聽，眼睛都亮了，說：可以啊，不過你要順便幫我拍一張照片。</p>
+<p>（停）不拍，就不借。</p>
+</div></div></div><div class=row><div class=col><h3>段落 2　行前教育（縮短）😄</h3><p>博士在黑板上畫，HERO 低頭滑手機。v4 這段的大坑（<a class=fn href="../science-ep2/#f112">#112</a>–<a class=fn href="../science-ep2/#f114">#114</a>）搬到第 14 段，撞擊威力（<a class=fn href="../science-ep2/#f8">#8</a>→<a class=fn href="../science-ep2/#f55">#55</a>）搬到第 7 段，爆炸範圍（<a class=fn href="../science-ep2/#f56">#56</a>）搬到第 8 段。</p>
+<p class="act">1. 博士畫一顆拖著尾巴的星，旁邊畫一座聖母峰，再把小行星畫得比它還高。</p>
+<div class=nar>
+<p>博士要你拍的，是天上那一顆所謂的「新星」。</p>
+<p class=sci>其實呢，它是一顆小行星，叫做 Chicxulub，念作「希克蘇魯伯」。<a class=fn href="../science-ep2/#f9">#9</a></p>
+<p class=sci>它大概有十公里寬，比聖母峰還要高。<a class=fn href="../science-ep2/#f101">#101</a></p>
+</div>
+<p class="act">2. 博士畫出北美洲和墨西哥，小行星從右上角斜斜地飛向猶加敦半島。</p>
+<div class=nar>
+<p class=sci>而它會斜斜地，從東北邊衝下來，撞在今天墨西哥的猶加敦半島。<a class=fn href="../science-ep2/#f104">#104</a> <a class=fn href="../science-ep2/#f9">#9</a></p>
+</div>
+<p class="act">3. HERO 頭都沒抬。</p>
+<div class=nar>
+<p>而你，只聽到兩個字：流星。</p>
+<p>（停）拍流星，這有什麼難的。</p>
+</div>
+<p class="act">4. 博士推過來生存指南；HERO 塞進袋子。出發前裝了洋芋片、食物和水。</p>
+<div class=nar>
+<p>說完，博士又把那本生存指南推了過來。這一次，你倒是有把它塞進袋子裡。</p>
+<p>你還帶了洋芋片、食物和水。不過這些不是給你自己的，是要帶給一位老朋友。</p>
+<p class=sci>（停）書上說，想在這次撞擊後活下來，你得帶保暖的衣服，和至少六年份的糧食。<a class=fn href="../science-ep2/#f88">#88</a></p>
+<p>而你，帶了一袋洋芋片。</p>
+</div></div><div class="col new"><h3>段落 2　行前教育（縮短）😄</h3><p>博士在黑板上畫，HERO 低頭滑手機。v4 這段的大坑（<a class=fn href="../science-ep2/#f112">#112</a>–<a class=fn href="../science-ep2/#f114">#114</a>）搬到第 14 段，撞擊威力（<a class=fn href="../science-ep2/#f8">#8</a>→<a class=fn href="../science-ep2/#f55">#55</a>）搬到第 7 段，爆炸範圍（<a class=fn href="../science-ep2/#f56">#56</a>）搬到第 8 段。</p>
+<p class="act">1. 博士畫一顆拖著尾巴的星，旁邊畫一座聖母峰，再把小行星畫得比它還高。</p>
+<div class=nar>
+<p>博士要你拍的，是天上那一顆所謂的「新星」。</p>
+<p class=sci>其實呢，它是一顆小行星，叫做 Chicxulub，念作「希克蘇魯伯」。<a class=fn href="../science-ep2/#f9">#9</a></p>
+<p class=sci>它大概有十公里寬，比聖母峰還要高。<a class=fn href="../science-ep2/#f101">#101</a></p>
+</div>
+<p class="act">2. 博士畫出北美洲和墨西哥，小行星從右上角斜斜地飛向猶加敦半島。</p>
+<div class=nar>
+<p class=sci>而它會斜斜地，從東北邊衝下來，撞在今天墨西哥的猶加敦半島。<a class=fn href="../science-ep2/#f104">#104</a> <a class=fn href="../science-ep2/#f9">#9</a></p>
+</div>
+<p class="act">3. HERO 頭都沒抬。</p>
+<div class=nar>
+<p>而你，只聽到兩個字：流星。</p>
+<p>（停）拍流星，這有什麼難的。</p>
+</div>
+<p class="act">4. 博士推過來生存指南；HERO 塞進一個白色超商塑膠袋。出發前又往袋子裡裝了洋芋片、食物和水。</p>
+<div class=nar>
+<p>說完，博士又把那本生存指南推了過來。這一次，你倒是有把它塞進袋子裡。</p>
+<p>你還帶了洋芋片、食物和水。不過這些不是給你自己的，是要帶給一位老朋友。</p>
+<p class=sci>（停）書上說，想在這次撞擊後活下來，你得帶保暖的衣服，和至少六年份的糧食。<a class=fn href="../science-ep2/#f88">#88</a></p>
+<p>而你，帶了一袋洋芋片。</p>
+</div>
+<p class="act">5. 博士拉下拉桿，時光機亮起來，HERO 提著塑膠袋被吸進隧道。（沒有旁白）</p></div></div><div class=row><div class=col><h3>段落 3　回到白堊紀，找石頭敘舊 😄</h3><p class="act">1. 時光隧道打開，HERO 回到 EP1 那片空地。<span class=star>★</span>四周是棕櫚樹、蕨類，還有幾棵開著粉紅花的樹。石頭在原地睡覺，背包就在牠旁邊。</p>
+<div class=nar>
+<p>時間，回到三天後的白堊紀，還是同一片空地。</p>
+<p class=sci><span class=star>★</span>這是白堊紀的最後幾天，也是最有名的那些大恐龍，活著的最後幾天。<a class=fn href="../science-ep2/#f1">#1</a></p>
+<p class=sci><span class=star>★</span>這時候的地球很暖，暖到連北極都長棕櫚樹。<a class=fn href="../science-ep2/#f2">#2</a></p>
+<p class=sci><span class=star>★</span>而且這裡，很可能剛好是春天。<a class=fn href="../science-ep2/#f106">#106</a></p>
+<p>（停）三天沒見，石頭還是一顆石頭。</p>
+</div>
+<p class="act">2. HERO 把洋芋片倒給石頭，石頭吃得很開心，<span class=star>★</span>尾巴甩來甩去。</p>
+<div class=nar>
+<p>你把洋芋片倒給牠，牠吃得很開心。畢竟這是牠這輩子吃到的第二包洋芋片。</p>
+<p><span class=star>★</span>牠一開心，尾巴就甩來甩去。</p>
+<p class=sci><span class=star>★</span>甲龍尾巴上那顆大錘子，就像拆房子用的大鐵球，打架的時候，能把對手砸爛。<a class=fn href="../science-ep2/#f6">#6</a></p>
+<p><span class=star>★</span>（停）你往旁邊退了兩步。</p>
+</div>
+<p class="act">3. HERO 把裝著指南、回家按鈕的袋子塞進背包，再把背包放回石頭身邊，只帶相機去拍照。</p>
+<div class=nar>
+<p>接著你把背包放在牠旁邊，只帶著相機出發。</p>
+<p>反正，拍完就回來拿嘛。</p>
+</div></div><div class="col new"><h3>段落 3　回到白堊紀，找石頭敘舊 😄</h3><p class="act">1. 時光隧道打開，HERO 回到 EP1 那片空地。<span class=star>★</span>四周是棕櫚樹、蕨類，還有幾棵開著粉紅花的樹。石頭在原地睡覺，背包就在牠旁邊。</p>
+<div class=nar>
+<p>時間，回到三天後的白堊紀，還是同一片空地。</p>
+<p class=sci><span class=star>★</span>這是白堊紀的最後幾天，也是最有名的那些大恐龍，活著的最後幾天。<a class=fn href="../science-ep2/#f1">#1</a></p>
+<p class=sci><span class=star>★</span>這時候的地球很暖，暖到連北極都長棕櫚樹。<a class=fn href="../science-ep2/#f2">#2</a></p>
+<p class=sci><span class=star>★</span>而且這裡，很可能剛好是春天。<a class=fn href="../science-ep2/#f106">#106</a></p>
+<p>（停）三天沒見，石頭還是一顆石頭。</p>
+</div>
+<p class="act">2. HERO 把洋芋片倒給石頭，石頭吃得很開心，<span class=star>★</span>尾巴甩來甩去。</p>
+<div class=nar>
+<p>你把洋芋片倒給牠，牠吃得很開心。畢竟這是牠這輩子吃到的第二包洋芋片。</p>
+<p><span class=star>★</span>牠一開心，尾巴就甩來甩去。</p>
+<p class=sci><span class=star>★</span>甲龍尾巴上那顆大錘子，就像拆房子用的大鐵球，打架的時候，能把對手砸爛。<a class=fn href="../science-ep2/#f6">#6</a></p>
+<p><span class=star>★</span>（停）你往旁邊退了兩步。</p>
+</div>
+<p class="act">3. HERO 把裝著指南、回家按鈕的袋子塞進背包，再把背包放回石頭身邊，只帶相機去拍照。</p>
+<div class=nar>
+<p>接著你把背包放在牠旁邊，只帶著相機出發。</p>
+<p>反正，拍完就回來拿嘛。</p>
+</div></div></div><div class=row><div class=col><h3>段落 4　高處：阿拉莫龍、矮暴龍打三角龍 😄</h3><p class="act">1. HERO 爬上附近一塊比較高的地方，架好相機。遠方有一個大山洞（伏筆）。</p>
+<div class=nar>
+<p>你爬上附近一塊比較高的地方，架好相機。</p>
+<p>從這裡看出去，整片白堊紀都在眼前。</p>
+</div>
+<p class="act">2. <span class=star>★</span>遠處一群阿拉莫龍，長脖子伸到樹頂吃葉子。HERO 從相機看，往後退一步，再退一步，還是框不進整隻。（⚠ 阿拉莫龍不在地獄溪，見最上面第 1 點）</p>
+<div class=nar>
+<p><span class=star>★</span>遠遠的，有一群阿拉莫龍，正把脖子伸到樹頂上吃葉子。</p>
+<p class=sci><span class=star>★</span>那些葉子，離地面差不多有四層樓高。<a class=fn href="../science-ep2/#f5">#5</a></p>
+<p><span class=star>★</span>你想拍一張。往後退一步，再退一步。</p>
+<p><span class=star>★</span>（停）還是拍不進一整隻。</p>
+</div>
+<p class="act">3. 另一邊，一隻矮暴龍正在跟一隻三角龍打架。HERO 舉起相機想拍，又想起要拍的是天上那顆。</p>
+<div class=nar>
+<p>另一邊，一隻恐龍正在跟三角龍打架。</p>
+<p class=sci>牠長得像暴龍，卻小了好幾號，腿又細又長。<a class=fn href="../science-ep2/#f128">#128</a></p>
+<p class=sci>但牠不是小暴龍，牠叫矮暴龍，是另外一種恐龍。牠只有暴龍的十分之一重，跑得比暴龍快多了。<a class=fn href="../science-ep2/#f125">#125</a> <a class=fn href="../science-ep2/#f128">#128</a></p>
+<p>你又舉起相機。</p>
+<p>（停）不對，博士要的是天上那一顆。</p>
+</div></div><div class="col new"><h3>段落 4　高處：阿拉莫龍、矮暴龍打三角龍 😄</h3><p class="act">1. HERO 爬上附近一塊比較高的地方，架好相機。遠方有一個大山洞（伏筆）。</p>
+<div class=nar>
+<p>你爬上附近一塊比較高的地方，架好相機。</p>
+<p>從這裡看出去，整片白堊紀都在眼前。</p>
+</div>
+<p class="act">2. <span class=star>★</span>遠處一群阿拉莫龍，長脖子伸到樹頂吃葉子。HERO 從相機看，往後退一步，再退一步，還是框不進整隻。（⚠ 阿拉莫龍不在地獄溪，見最上面第 1 點）</p>
+<div class=nar>
+<p><span class=star>★</span>遠遠的，有一群阿拉莫龍，正把脖子伸到樹頂上吃葉子。</p>
+<p class=sci><span class=star>★</span>那些葉子，離地面差不多有四層樓高。<a class=fn href="../science-ep2/#f5">#5</a></p>
+<p><span class=star>★</span>你想拍一張。往後退一步，再退一步。</p>
+<p><span class=star>★</span>（停）還是拍不進一整隻。</p>
+</div>
+<p class="act">3. 另一邊，一隻矮暴龍正在跟一隻三角龍打架。HERO 舉起相機想拍，又想起要拍的是天上那顆。</p>
+<div class=nar>
+<p>另一邊，一隻恐龍正在跟三角龍打架。</p>
+<p class=sci>牠長得像暴龍，卻小了好幾號，腿又細又長。<a class=fn href="../science-ep2/#f128">#128</a></p>
+<p class=sci>但牠不是小暴龍，牠叫矮暴龍，是另外一種恐龍。牠只有暴龍的十分之一重，跑得比暴龍快多了。<a class=fn href="../science-ep2/#f125">#125</a> <a class=fn href="../science-ep2/#f128">#128</a></p>
+<p>你又舉起相機。</p>
+<p>（停）不對，博士要的是天上那一顆。</p>
+</div></div></div><div class=row><div class=col><h3>段落 5　等待：白天的月亮上的坑 😄 ★</h3><p>下午偏晚，藍天上掛著一個淡淡的白天月亮（<span class=star>★</span>時間軸跟 v1 一樣：下午→黃昏→撞擊的白光→空地是夜裡、南方天邊發亮→逃難時天空橘紅；月亮段落在下午偏晚）。HERO 閒著沒事，用相機放大看月亮：上面全是圓圓的坑，坑中間有一座小山。旁白配月亮特寫和幾張手繪小插圖（望遠鏡、吃草的牛、牢房、炸彈坑）。</p>
+<div class=nar>
+<p><span class=star>★</span>等著等著，太陽偏西了，天上掛著一個淡淡的、白天的月亮。</p>
+<p><span class=star>★</span>你閒著沒事，用相機把月亮放大來看。</p>
+<p class=sci><span class=star>★</span>月亮上，全是一個一個圓圓的坑，有的坑中間，還有一座小山。<a class=fn href="../science-ep2/#f23">#23</a> <a class=fn href="../science-ep2/#f25">#25</a></p>
+<p class=sci><span class=star>★</span>四百多年前，伽利略用望遠鏡，也看到了這些坑。<a class=fn href="../science-ep2/#f21">#21</a></p>
+<p class=sci><span class=star>★</span>接下來的三百年，大部分的科學家都說：這些坑，是月亮上的火山口。<a class=fn href="../science-ep2/#f26">#26</a></p>
+<p class=sci><span class=star>★</span>也有一位德國天文學家說，他在坑裡面，看到牛在吃月亮上的草。<a class=fn href="../science-ep2/#f22">#22</a> <a class=fn href="../science-ep2/#f24">#24</a></p>
+<p class=sci><span class=star>★</span>（停）這一點，大家倒是都不信。<a class=fn href="../science-ep2/#f26">#26</a></p>
+<p class=sci><span class=star>★</span>後來，有一個俄國人，叫莫洛佐夫。他坐了二十五年的牢，在牢裡自學了十一種語言。<a class=fn href="../science-ep2/#f30">#30</a></p>
+<p class=sci><span class=star>★</span>出獄以後，他開始研究天文。<a class=fn href="../science-ep2/#f92">#92</a> <a class=fn href="../science-ep2/#f93">#93</a></p>
+<p class=sci><span class=star>★</span>他跑去看炸彈炸出來的坑，發現不管炸彈從哪個方向飛來，炸出來的坑，都是圓的。<a class=fn href="../science-ep2/#f27">#27</a> <a class=fn href="../science-ep2/#f28">#28</a> <a class=fn href="../science-ep2/#f29">#29</a></p>
+<p><span class=star>★</span>所以月亮上那些圓圓的坑，很可能是天上的石頭撞出來的。</p>
+<p class=sci><span class=star>★</span>差不多同一個時候，哈佛大學的一位院長也寫過：只要一顆十六公里大的石頭掉下來，就能毀掉地球上的生命。<a class=fn href="../science-ep2/#f31">#31</a></p>
+<p class=sci><span class=star>★</span>可是當時，大部分的天文學家都覺得，地球不可能被那麼大的石頭撞到。<a class=fn href="../science-ep2/#f19">#19</a></p>
+<p class=sci><span class=star>★</span>一直要到第一次世界大戰前後，大家才慢慢相信，這件事真的會發生。<a class=fn href="../science-ep2/#f18">#18</a></p>
+<p><span class=star>★</span>（停）你從相機裡抬起頭。</p>
+<p class=sci><span class=star>★</span>天上那顆星，又更亮了。<a class=fn href="../science-ep2/#f32">#32</a></p>
+</div></div><div class="col new"><h3>段落 5　等待：白天的月亮上的坑 😄</h3><p>下午偏晚，藍天上掛著一個淡淡的白天月亮（<span class=star>★</span>時間軸跟 v1 一樣：下午→黃昏→撞擊的白光→空地是夜裡、南方天邊發亮→逃難時天空橘紅；月亮段落在下午偏晚）。HERO 閒著沒事，用相機放大看月亮：上面全是圓圓的坑，坑中間有一座小山。旁白配月亮特寫和幾張手繪小插圖（望遠鏡、吃草的牛、牢房、炸彈坑）。</p>
+<div class=nar>
+<p><span class=star>★</span>等著等著，太陽偏西了，天上掛著一個淡淡的、白天的月亮。</p>
+<p><span class=star>★</span>你閒著沒事，用相機把月亮放大來看。</p>
+<p class=sci><span class=star>★</span>月亮上，全是一個一個圓圓的坑，有的坑中間，還有一座小山。<a class=fn href="../science-ep2/#f23">#23</a> <a class=fn href="../science-ep2/#f25">#25</a></p>
+<p class=sci><span class=star>★</span>四百多年前，伽利略用望遠鏡，也看到了這些坑。<a class=fn href="../science-ep2/#f21">#21</a></p>
+<p class=sci><span class=star>★</span>接下來的三百年，大部分的科學家都說：這些坑，是月亮上的火山口。<a class=fn href="../science-ep2/#f26">#26</a></p>
+<p class=sci><span class=star>★</span>也有一位德國天文學家說，他在坑裡面，看到牛在吃月亮上的草。<a class=fn href="../science-ep2/#f22">#22</a> <a class=fn href="../science-ep2/#f24">#24</a></p>
+<p class=sci><span class=star>★</span>（停）這一點，大家倒是都不信。<a class=fn href="../science-ep2/#f26">#26</a></p>
+<p class=sci><span class=star>★</span>後來，有一個俄國人，叫莫洛佐夫。他坐了二十五年的牢，在牢裡自學了十一種語言。<a class=fn href="../science-ep2/#f30">#30</a></p>
+<p class=sci><span class=star>★</span>出獄以後，他開始研究天文。<a class=fn href="../science-ep2/#f92">#92</a> <a class=fn href="../science-ep2/#f93">#93</a></p>
+<p class=sci><span class=star>★</span>他跑去看炸彈炸出來的坑，發現不管炸彈從哪個方向飛來，炸出來的坑，都是圓的。<a class=fn href="../science-ep2/#f27">#27</a> <a class=fn href="../science-ep2/#f28">#28</a> <a class=fn href="../science-ep2/#f29">#29</a></p>
+<p><span class=star>★</span>所以月亮上那些圓圓的坑，很可能是天上的石頭撞出來的。</p>
+<p class=sci><span class=star>★</span>差不多同一個時候，哈佛大學的一位院長也寫過：只要一顆十六公里大的石頭掉下來，就能毀掉地球上的生命。<a class=fn href="../science-ep2/#f31">#31</a></p>
+<p class=sci><span class=star>★</span>可是當時，大部分的天文學家都覺得，地球不可能被那麼大的石頭撞到。<a class=fn href="../science-ep2/#f19">#19</a></p>
+<p class=sci><span class=star>★</span>一直要到第一次世界大戰前後，大家才慢慢相信，這件事真的會發生。<a class=fn href="../science-ep2/#f18">#18</a></p>
+<p><span class=star>★</span>（停）你從相機裡抬起頭。</p>
+<p class=sci><span class=star>★</span>天上那顆星，又更亮了。<a class=fn href="../science-ep2/#f32">#32</a></p>
+</div></div></div><div class=row><div class=col><h3>段落 6　它來了 😬</h3><p class="act">1. 天上那顆星，亮得不像話。</p>
+<div class=nar>
+<p class=sci>三天前，這顆星跟其他星星沒什麼兩樣。你在逃命的時候，根本沒注意到它。<a class=fn href="../science-ep2/#f7">#7</a></p>
+<p class=sci>可是現在，它越來越亮。比所有的星星亮，比行星亮，比月亮還亮。<a class=fn href="../science-ep2/#f7">#7</a></p>
+<p>你開始覺得怪怪的：這顆流星，怎麼這麼亮？</p>
+</div>
+<p class="act">2. 它比太陽還亮，劃過天空。</p>
+<div class=nar>
+<p class=sci>最後，它比太陽還亮。<a class=fn href="../science-ep2/#f7">#7</a></p>
+<p class=sci><span class=star>★</span>一般的流星，只有小石子那麼大，在天空很高的地方，就被空氣擋下來，燒掉了。<a class=fn href="../science-ep2/#f37">#37</a></p>
+<p class=sci><span class=star>★</span>可是這一顆，一秒鐘飛二十公里。對它來說，空氣就像水一樣，根本擋不住。<a class=fn href="../science-ep2/#f35">#35</a> <a class=fn href="../science-ep2/#f36">#36</a></p>
+<p class=sci>然後，它用幾秒鐘的時間，劃過了整片天空。<a class=fn href="../science-ep2/#f7">#7</a> <a class=fn href="../science-ep2/#f38">#38</a></p>
+</div>
+<p class="act">3. HERO 按下快門。它消失在南方的地平線，接著天邊一陣亮光。</p>
+<div class=nar>
+<p>你按下了快門。</p>
+<p>欸。</p>
+<p>（停）它沒有飛過去。</p>
+<p>它撞上了。</p>
+</div></div><div class="col new"><h3>段落 6　它來了 😬</h3><p class="act">1. 天上那顆星，亮得不像話。</p>
+<div class=nar>
+<p class=sci>三天前，這顆星跟其他星星沒什麼兩樣。你在逃命的時候，根本沒注意到它。<a class=fn href="../science-ep2/#f7">#7</a></p>
+<p class=sci>可是現在，它越來越亮。比所有的星星亮，比行星亮，比月亮還亮。<a class=fn href="../science-ep2/#f7">#7</a></p>
+<p>你開始覺得怪怪的：這顆流星，怎麼這麼亮？</p>
+</div>
+<p class="act">2. 它比太陽還亮，劃過天空。</p>
+<div class=nar>
+<p class=sci>最後，它比太陽還亮。<a class=fn href="../science-ep2/#f7">#7</a></p>
+<p class=sci><span class=star>★</span>一般的流星，只有小石子那麼大，在天空很高的地方，就被空氣擋下來，燒掉了。<a class=fn href="../science-ep2/#f37">#37</a></p>
+<p class=sci><span class=star>★</span>可是這一顆，一秒鐘飛二十公里。對它來說，空氣就像水一樣，根本擋不住。<a class=fn href="../science-ep2/#f35">#35</a> <a class=fn href="../science-ep2/#f36">#36</a></p>
+<p class=sci>然後，它用幾秒鐘的時間，劃過了整片天空。<a class=fn href="../science-ep2/#f7">#7</a> <a class=fn href="../science-ep2/#f38">#38</a></p>
+</div>
+<p class="act">3. HERO 按下快門。它消失在南方的地平線，接著天邊一陣亮光。</p>
+<div class=nar>
+<p>你按下了快門。</p>
+<p>欸。</p>
+<p>（停）它沒有飛過去。</p>
+<p>它撞上了。</p>
+</div></div></div><div class=row><div class=col><h3>段落 7　地平線那一邊：撞擊的十分鐘 🔥 ★</h3><p>鏡頭飛到 HERO 看不到的撞擊點。手繪插圖風，HERO 不在場；比喻的地方配小插圖（游泳池裡的砲彈、槌子敲釘子）。</p>
+<div class=nar>
+<p><span class=star>★</span>在你看不到的地平線那一邊，發生了這些事。</p>
+<p class=sci><span class=star>★</span>小行星還沒碰到地面，它前面的空氣就被壓得燙到幾千度，把底下那片淺海，烤乾了一大半。<a class=fn href="../science-ep2/#f40">#40</a></p>
+<p class=sci><span class=star>★</span>接著，它用一秒鐘十六公里的速度，撞進了岩石。<a class=fn href="../science-ep2/#f41">#41</a></p>
+<p class=sci><span class=star>★</span>撞得太用力了，石頭不是碎掉，而是像水一樣，流開來。<a class=fn href="../science-ep2/#f42">#42</a></p>
+<p class=sci><span class=star>★</span>就像把一顆砲彈，丟進游泳池。<a class=fn href="../science-ep2/#f43">#43</a></p>
+<p class=sci><span class=star>★</span>先是往四面八方，濺起一圈土牆，比飛機飛得還要高。<a class=fn href="../science-ep2/#f45">#45</a></p>
+<p class=sci><span class=star>★</span>接著，中間又彈起一根柱子，比聖母峰還高。<a class=fn href="../science-ep2/#f46">#46</a></p>
+<p class=sci><span class=star>★</span>游泳池裡，這只要幾秒鐘；在這裡，要整整十分鐘。<a class=fn href="../science-ep2/#f44">#44</a></p>
+<p class=sci><span class=star>★</span>幾分鐘後，柱子垮了下來，只剩下一圈環狀的山。<a class=fn href="../science-ep2/#f47">#47</a></p>
+<p class=sci><span class=star>★</span>（停）就是你剛剛在月亮的坑中間，看到的那座小山。<a class=fn href="../science-ep2/#f25">#25</a> <a class=fn href="../science-ep2/#f47">#47</a></p>
+<p><span class=star>★</span>而且，那裡燙得不得了。</p>
+<p class=sci><span class=star>★</span>你用槌子敲釘子，敲完摸一下槌子，會是熱的。<a class=fn href="../science-ep2/#f49">#49</a> <a class=fn href="../science-ep2/#f50">#50</a></p>
+<p class=sci><span class=star>★</span>這一撞，等於把一座山那麼重的石頭的速度，一瞬間，全部變成熱。<a class=fn href="../science-ep2/#f48">#48</a> <a class=fn href="../science-ep2/#f51">#51</a></p>
+<p class=sci><span class=star>★</span>那裡變得比太陽表面還要燙，連空氣都燒成一團大火球，往外衝。<a class=fn href="../science-ep2/#f52">#52</a> <a class=fn href="../science-ep2/#f53">#53</a></p>
+<p class=sci><span class=star>★</span>一道衝擊波，用一小時一千六百公里的速度，往四面八方推出去。<a class=fn href="../science-ep2/#f54">#54</a></p>
+<p class=sci><span class=star>★</span>科學家說，地球上勉強能拿來比的，只有氫彈。可是這一撞，比一顆氫彈還要大上好幾千萬倍。<a class=fn href="../science-ep2/#f55">#55</a></p>
+<p class=sci><span class=star>★</span>有些石頭，甚至被炸得飛出了地球。<a class=fn href="../science-ep2/#f66">#66</a> <a class=fn href="../science-ep2/#f67">#67</a></p>
+<p class=sci><span class=star>★</span>科學家算過，可能有幾千塊，最後掉到了火星上；還有一兩塊，飛得更遠，撞上了木星的月亮。<a class=fn href="../science-ep2/#f68">#68</a></p>
+</div></div><div class="col new"><h3>段落 7　地平線那一邊：撞擊的十分鐘 🔥</h3><p>鏡頭飛到 HERO 看不到的撞擊點。手繪插圖風，HERO 不在場；比喻的地方配小插圖（游泳池裡的砲彈、槌子敲釘子）。</p>
+<div class=nar>
+<p><span class=star>★</span>在你看不到的地平線那一邊，發生了這些事。</p>
+<p class=sci><span class=star>★</span>小行星還沒碰到地面，它前面的空氣就被壓得燙到幾千度，把底下那片淺海，烤乾了一大半。<a class=fn href="../science-ep2/#f40">#40</a></p>
+<p class=sci><span class=star>★</span>接著，它用一秒鐘十六公里的速度，撞進了岩石。<a class=fn href="../science-ep2/#f41">#41</a></p>
+<p class=sci><span class=star>★</span>撞得太用力了，石頭不是碎掉，而是像水一樣，流開來。<a class=fn href="../science-ep2/#f42">#42</a></p>
+<p class=sci><span class=star>★</span>就像把一顆砲彈，丟進游泳池。<a class=fn href="../science-ep2/#f43">#43</a></p>
+<p class=sci><span class=star>★</span>先是往四面八方，濺起一圈土牆，比飛機飛得還要高。<a class=fn href="../science-ep2/#f45">#45</a></p>
+<p class=sci><span class=star>★</span>接著，中間又彈起一根柱子，比聖母峰還高。<a class=fn href="../science-ep2/#f46">#46</a></p>
+<p class=sci><span class=star>★</span>游泳池裡，這只要幾秒鐘；在這裡，要整整十分鐘。<a class=fn href="../science-ep2/#f44">#44</a></p>
+<p class=sci><span class=star>★</span>幾分鐘後，柱子垮了下來，只剩下一圈環狀的山。<a class=fn href="../science-ep2/#f47">#47</a></p>
+<p class=sci><span class=star>★</span>（停）就是你剛剛在月亮的坑中間，看到的那座小山。<a class=fn href="../science-ep2/#f25">#25</a> <a class=fn href="../science-ep2/#f47">#47</a></p>
+<p><span class=star>★</span>而且，那裡燙得不得了。</p>
+<p class=sci><span class=star>★</span>你用槌子敲釘子，敲完摸一下槌子，會是熱的。<a class=fn href="../science-ep2/#f49">#49</a> <a class=fn href="../science-ep2/#f50">#50</a></p>
+<p class=sci><span class=star>★</span>這一撞，等於把一座山那麼重的石頭的速度，一瞬間，全部變成熱。<a class=fn href="../science-ep2/#f48">#48</a> <a class=fn href="../science-ep2/#f51">#51</a></p>
+<p class=sci><span class=star>★</span>那裡變得比太陽表面還要燙，連空氣都燒成一團大火球，往外衝。<a class=fn href="../science-ep2/#f52">#52</a> <a class=fn href="../science-ep2/#f53">#53</a></p>
+<p class=sci><span class=star>★</span>一道衝擊波，用一小時一千六百公里的速度，往四面八方推出去。<a class=fn href="../science-ep2/#f54">#54</a></p>
+<p class=sci><span class=star>★</span>科學家說，地球上勉強能拿來比的，只有氫彈。可是這一撞，比一顆氫彈還要大上好幾千萬倍。<a class=fn href="../science-ep2/#f55">#55</a></p>
+<p class=sci><span class=star>★</span>有些石頭，甚至被炸得飛出了地球。<a class=fn href="../science-ep2/#f66">#66</a> <a class=fn href="../science-ep2/#f67">#67</a></p>
+<p class=sci><span class=star>★</span>科學家算過，可能有幾千塊，最後掉到了火星上；還有一兩塊，飛得更遠，撞上了木星的月亮。<a class=fn href="../science-ep2/#f68">#68</a></p>
+</div></div></div><div class=row><div class=col><h3>段落 8　翻開生存指南（撞擊後會發生什麼）😬</h3><p class="act">1. HERO 跑回空地拿背包，翻出生存指南。</p>
+<div class=nar>
+<p>這是你這輩子，第一次那麼想看生存指南。</p>
+<p>於是你跑回去，從背包裡把它翻出來。</p>
+<p class=sci>翻開一看，你才知道，這一顆，就是讓恐龍滅絕的那一顆。<a class=fn href="../science-ep2/#f11">#11</a></p>
+</div>
+<p class="act">2. <span class=star>★</span>指南第一頁：爆炸範圍圖（書上 p.13，用我們的手繪風重畫，從 v4 第 2 段搬來）。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>指南上畫著一張圖：如果今天撞在同一個地方，德州的人會被炸死，紐約的人會被震聾，連阿根廷的窗戶，都會被震碎。<a class=fn href="../science-ep2/#f20">#20</a> <a class=fn href="../science-ep2/#f56">#56</a></p>
+<p class=sci><span class=star>★</span>想活下來，最好的位置，是在地球的另一邊。<a class=fn href="../science-ep2/#f14">#14</a> <a class=fn href="../science-ep2/#f17">#17</a></p>
+</div>
+<p class="act">3. 內頁世界地圖：撞擊點是骷髏，北美洲畫著火，大部分地方是雪花，只有很遠的熱帶島嶼畫著太陽。</p>
+<div class=nar>
+<p class=sci>而你在的地方，正畫著一團火。<a class=fn href="../science-ep2/#f80">#80</a></p>
+</div>
+<p class="act">4. 指南列著接下來會發生的事（每一項配一張手繪小插圖），<span class=star>★</span>順序跟故事裡發生的一樣。</p>
+<div class=nar>
+<p>指南上寫著，接下來會發生的事。</p>
+<p class=sci><span class=star>★</span>第一，地震。<a class=fn href="../science-ep2/#f57">#57</a></p>
+<p class=sci><span class=star>★</span>第二，天上會掉下小玻璃珠。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p class=sci>第三，它們會把天空烤得像一台開到最強火的烤箱，森林會燒起來。<a class=fn href="../science-ep2/#f71">#71</a> <a class=fn href="../science-ep2/#f72">#72</a></p>
+<p class=sci><span class=star>★</span>第四，一聲很大的音爆，不管你在地球的哪裡，都聽得到。<a class=fn href="../science-ep2/#f15">#15</a></p>
+<p class=sci>第五，不要待在水邊，會有大浪。<a class=fn href="../science-ep2/#f60">#60</a></p>
+<p class=sci><span class=star>★</span>本來，海是最好的隔熱墊，待在海邊最涼快。可是有大浪，所以很兩難。<a class=fn href="../science-ep2/#f65">#65</a> <a class=fn href="../science-ep2/#f94">#94</a></p>
+<p class=sci>想活下來，就快去高的地方，找一個山洞，越深越好。<a class=fn href="../science-ep2/#f16">#16</a> <a class=fn href="../science-ep2/#f70">#70</a></p>
+<p class=sci><span class=star>★</span>寫這本指南的科學家說：要活下來，你得在對的大陸、對的地方、對的高度，還有對的時間。<a class=fn href="../science-ep2/#f91">#91</a></p>
+</div></div><div class="col new"><h3>段落 8　翻開生存指南 😬</h3><p class="act">1. HERO 跑回空地拿背包，翻出生存指南。</p>
+<div class=nar>
+<p>這是你這輩子，第一次那麼想看生存指南。</p>
+<p>於是你跑回去，從背包裡把它翻出來。</p>
+<p class=sci>翻開一看，你才知道，這一顆，就是讓恐龍滅絕的那一顆。<a class=fn href="../science-ep2/#f11">#11</a></p>
+</div>
+<p class="act">2. <span class=star>★</span>指南第一頁：爆炸範圍圖（書上 p.13，用我們的手繪風重畫，從 v4 第 2 段搬來）。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>指南上畫著一張圖：如果今天撞在同一個地方，德州的人會被炸死，紐約的人會被震聾，連阿根廷的窗戶，都會被震碎。<a class=fn href="../science-ep2/#f20">#20</a> <a class=fn href="../science-ep2/#f56">#56</a></p>
+<p class=sci><span class=star>★</span>想活下來，最好的位置，是在地球的另一邊。<a class=fn href="../science-ep2/#f14">#14</a> <a class=fn href="../science-ep2/#f17">#17</a></p>
+</div>
+<p class="act">3. 內頁世界地圖：撞擊點是骷髏，北美洲畫著火，大部分地方是雪花，只有很遠的熱帶島嶼畫著太陽。</p>
+<div class=nar>
+<p class=sci>而你在的地方，正畫著一團火。<a class=fn href="../science-ep2/#f80">#80</a></p>
+</div>
+<p class="act">4. 指南列著接下來會發生的事（每一項配一張手繪小插圖），<span class=star>★</span>順序跟故事裡發生的一樣。</p>
+<div class=nar>
+<p>指南上寫著，接下來會發生的事。</p>
+<p class=sci><span class=star>★</span>第一，地震。<a class=fn href="../science-ep2/#f57">#57</a></p>
+<p class=sci><span class=star>★</span>第二，天上會掉下小玻璃珠。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p class=sci>第三，它們會把天空烤得像一台開到最強火的烤箱，森林會燒起來。<a class=fn href="../science-ep2/#f71">#71</a> <a class=fn href="../science-ep2/#f72">#72</a></p>
+<p class=sci><span class=star>★</span>第四，一聲很大的音爆，不管你在地球的哪裡，都聽得到。<a class=fn href="../science-ep2/#f15">#15</a></p>
+<p class=sci>第五，不要待在水邊，會有大浪。<a class=fn href="../science-ep2/#f60">#60</a></p>
+<p class=sci><span class=star>★</span>本來，海是最好的隔熱墊，待在海邊最涼快。可是有大浪，所以很兩難。<a class=fn href="../science-ep2/#f65">#65</a> <a class=fn href="../science-ep2/#f94">#94</a></p>
+<p class=sci>想活下來，就快去高的地方，找一個山洞，越深越好。<a class=fn href="../science-ep2/#f16">#16</a> <a class=fn href="../science-ep2/#f70">#70</a></p>
+<p class=sci><span class=star>★</span>寫這本指南的科學家說：要活下來，你得在對的大陸、對的地方、對的高度，還有對的時間。<a class=fn href="../science-ep2/#f91">#91</a></p>
+</div></div></div><div class=row><div class=col><h3>段落 9　關我屁事 → 背包 😄</h3><p class="act">1. HERO 闔上指南，看了看相機裡的照片。</p>
+<div class=nar>
+<p>你想了一下。</p>
+<p>（停）關我屁事，照片拍到了，可以回家了。</p>
+</div>
+<p class="act">2. 他把指南塞回背包，蹲下來要翻出按鈕——石頭搶先一步，把頭鑽進背包裡找洋芋片。</p>
+<div class=nar>
+<p>於是你把指南塞回背包，正要翻出那顆按鈕。</p>
+<p>可是石頭還想吃洋芋片，牠把頭鑽進了你的背包。</p>
+</div></div><div class="col new"><h3>段落 9　關我屁事 → 背包 😄</h3><p class="act">1. HERO 闔上指南，看了看相機裡的照片。</p>
+<div class=nar>
+<p>你想了一下。</p>
+<p>（停）關我屁事，照片拍到了，可以回家了。</p>
+</div>
+<p class="act">2. 他把指南塞回背包，蹲下來要翻出按鈕——石頭搶先一步，把頭鑽進背包裡找洋芋片。</p>
+<div class=nar>
+<p>於是你把指南塞回背包，正要翻出那顆按鈕。</p>
+<p>可是石頭還想吃洋芋片，牠把頭鑽進了你的背包。</p>
+</div></div></div><div class=row><div class=col><h3>段落 10　追石頭 🔥😄</h3><p class="act">1. 地面開始晃。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>你在地獄溪。算一算，撞擊後大約十分鐘，<a class=fn href="../science-ep2/#f137">#137</a></p>
+<p class=sci>地面開始搖了。<a class=fn href="../science-ep2/#f57">#57</a></p>
+</div>
+<p class="act">2. 石頭嚇得跳起來就跑，背包背帶勾在尾錘上被帶走，回家按鈕還在背包裡。</p>
+<div class=nar>
+<p>石頭嚇了一大跳，轉身就跑。</p>
+<p>（停）帶著你的背包。還有，你的回家按鈕。</p>
+<p class=sci><span class=star>★</span>背包勾在那顆大錘子上，甩來甩去。你想搶回來，又不太敢靠太近。<a class=fn href="../science-ep2/#f6">#6</a></p>
+</div>
+<p class="act">3. HERO 只好追。</p>
+<div class=nar>
+<p>你只好追上去。</p>
+<p class=sci>博士上課說過，越大隻的，跑得越慢。<a class=fn href="../science-ratio/">EP1 <a class=fn href="../science-ep2/#f5">#5</a></a></p>
+<p>（停）可是你連一隻甲龍都追不上。</p>
+</div></div><div class="col new"><h3>段落 10　追石頭 🔥😄</h3><p class="act">1. 地面開始晃。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>你在地獄溪。算一算，撞擊後大約十分鐘，<a class=fn href="../science-ep2/#f137">#137</a></p>
+<p class=sci>地面開始搖了。<a class=fn href="../science-ep2/#f57">#57</a></p>
+</div>
+<p class="act">2. 石頭嚇得跳起來就跑，背包背帶勾在尾錘上被帶走，回家按鈕還在背包裡。</p>
+<div class=nar>
+<p>石頭嚇了一大跳，轉身就跑。</p>
+<p>（停）帶著你的背包。還有，你的回家按鈕。</p>
+<p class=sci><span class=star>★</span>背包勾在那顆大錘子上，甩來甩去。你想搶回來，又不太敢靠太近。<a class=fn href="../science-ep2/#f6">#6</a></p>
+</div>
+<p class="act">3. HERO 只好追。</p>
+<div class=nar>
+<p>你只好追上去。</p>
+<p class=sci>博士上課說過，越大隻的，跑得越慢。<a class=fn href="../science-ratio/">EP1 <a class=fn href="../science-ep2/#f5">#5</a></a></p>
+<p>（停）可是你連一隻甲龍都追不上。</p>
+</div></div></div><div class=row><div class=col><h3>段落 11　逃難 🔥</h3><p class="act">1. 一邊追，天上開始落下小玻璃珠；高空一片發光發熱，天空被烤得通紅，樹林起火。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>撞擊後大約十五分鐘，<a class=fn href="../science-ep2/#f138">#138</a></p>
+<p class=sci>天上，開始下起小玻璃珠。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p class=sci><span class=star>★</span>這些小珠子，是被撞上天的岩石，融化以後，在高空又凝固成的。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p class=sci><span class=star>★</span>它們掉回來的時候，在很高很高的地方跟空氣摩擦，一顆一顆發光發熱。<a class=fn href="../science-ep2/#f70">#70</a> <a class=fn href="../science-ep2/#f72">#72</a></p>
+<p><span class=star>★</span>等掉到地上，已經不燙了；可是幾億顆一起在天上發熱，就把整片天空，烤得像一台開到最強火的烤箱。</p>
+<p class=sci><span class=star>★</span>樹林，就這樣一片一片燒了起來。<a class=fn href="../science-ep2/#f71">#71</a></p>
+<p class=sci><span class=star>★</span>不過，是不是全世界的森林都一起燒，科學家到現在還在吵。<a class=fn href="../science-ep2/#f71">#71</a></p>
+</div>
+<p class="act">2. 逃難途中，當地的恐龍也在逃：鴨嘴龍、三角龍、腫頭龍（又一頭撞上樹）、似鴕龍（嘴裡叼著 HERO 在 EP1 被搶走的帽子）。<span class=star>★</span>還有一隻在地上跑的鳥。</p>
+<div class=nar>
+<p>所有的恐龍都在逃。</p>
+<p>喔，那是你的帽子。</p>
+<p><span class=star>★</span>還有一隻鳥，也跟著你們一起跑。牠不會飛高，平常就住在地上。</p>
+<p class=sci><span class=star>★</span>樹都燒光了，會活下來的鳥，就是牠們這種，住在地上的鳥。<a class=fn href="../science-ep2/#f73">#73</a></p>
+</div>
+<p class="act">3. 哺乳類祖先出場：路邊一隻鼩鼱一溜煙鑽進地洞。</p>
+<div class=nar>
+<p class=sci>大傢伙拚命跑。<a class=fn href="../science-ep2/#f74">#74</a></p>
+<p class=sci>小傢伙呢，一鑽就沒事了。<a class=fn href="../science-ep2/#f74">#74</a></p>
+<p class=sci>牠吃蟲子，會鑽進洞裡躲熱，身上還有一層毛，之後再冷都不怕。<a class=fn href="../science-ep2/#f34">#34</a></p>
+<p class=sci>（停）而這個小傢伙，就是你的祖先。<a class=fn href="../science-ep2/#f33">#33</a></p>
+</div></div><div class="col new"><h3>段落 11　逃難 🔥</h3><p class="act">1. 一邊追，天上開始落下小玻璃珠；高空一片發光發熱，天空被烤得通紅，樹林起火。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>撞擊後大約十五分鐘，<a class=fn href="../science-ep2/#f138">#138</a></p>
+<p class=sci>天上，開始下起小玻璃珠。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p class=sci><span class=star>★</span>這些小珠子，是被撞上天的岩石，融化以後，在高空又凝固成的。<a class=fn href="../science-ep2/#f69">#69</a></p>
+<p class=sci><span class=star>★</span>它們掉回來的時候，在很高很高的地方跟空氣摩擦，一顆一顆發光發熱。<a class=fn href="../science-ep2/#f70">#70</a> <a class=fn href="../science-ep2/#f72">#72</a></p>
+<p><span class=star>★</span>等掉到地上，已經不燙了；可是幾億顆一起在天上發熱，就把整片天空，烤得像一台開到最強火的烤箱。</p>
+<p class=sci><span class=star>★</span>樹林，就這樣一片一片燒了起來。<a class=fn href="../science-ep2/#f71">#71</a></p>
+<p class=sci><span class=star>★</span>不過，是不是全世界的森林都一起燒，科學家到現在還在吵。<a class=fn href="../science-ep2/#f71">#71</a></p>
+</div>
+<p class="act">2. 逃難途中，當地的恐龍也在逃：鴨嘴龍、三角龍、腫頭龍（又一頭撞上樹）、似鴕龍（嘴裡叼著 HERO 在 EP1 被搶走的帽子）。<span class=star>★</span>還有一隻在地上跑的鳥。</p>
+<div class=nar>
+<p>所有的恐龍都在逃。</p>
+<p>喔，那是你的帽子。</p>
+<p><span class=star>★</span>還有一隻鳥，也跟著你們一起跑。牠不會飛高，平常就住在地上。</p>
+<p class=sci><span class=star>★</span>樹都燒光了，會活下來的鳥，就是牠們這種，住在地上的鳥。<a class=fn href="../science-ep2/#f73">#73</a></p>
+</div>
+<p class="act">3. 哺乳類祖先出場：路邊一隻鼩鼱一溜煙鑽進地洞。</p>
+<div class=nar>
+<p class=sci>大傢伙拚命跑。<a class=fn href="../science-ep2/#f74">#74</a></p>
+<p class=sci>小傢伙呢，一鑽就沒事了。<a class=fn href="../science-ep2/#f74">#74</a></p>
+<p class=sci>牠吃蟲子，會鑽進洞裡躲熱，身上還有一層毛，之後再冷都不怕。<a class=fn href="../science-ep2/#f34">#34</a></p>
+<p class=sci>（停）而這個小傢伙，就是你的祖先。<a class=fn href="../science-ep2/#f33">#33</a></p>
+</div></div></div><div class=row><div class=col><h3>段落 12　山洞 😬→😄</h3><p class="act">1. 石頭亂跑，剛好跑到 HERO 在高處看到的那個大山洞。<span class=star>★</span>就在這時候，一陣低沉的轟隆聲從南邊地平線滾過來，空氣和地面一起震，所有恐龍都愣了一下。</p>
+<div class=nar>
+<p>石頭一路亂跑，竟然跑到了你在高處看到的那個大山洞。</p>
+<p class=sci><span class=star>★</span>這時候，南邊的地平線，傳來一陣低低的轟隆聲，連空氣都在震。<a class=fn href="../science-ep2/#f15">#15</a></p>
+<p class=sci><span class=star>★</span>是音爆。撞擊後大約兩個半小時，它才終於傳到地獄溪。<a class=fn href="../science-ep2/#f139">#139</a></p>
+<p><span class=star>★</span>（停）聲音在空氣裡，走得最慢。</p>
+</div>
+<p class="act">2. HERO 追上石頭，拿回背包，拉著石頭跟恐龍們一起走進山洞。</p>
+<div class=nar>
+<p>你終於抓到了背包。本來，你只是想拿回背包而已。</p>
+<p class=sci>可是最後，你卻拉著牠，一起走了進去。<a class=fn href="../science-ep2/#f70">#70</a></p>
+</div>
+<p class="act">3. 往山洞深處看，深不見底。</p>
+<div class=nar>
+<p>這個洞，好深。</p>
+<p>（停）深到能通到地心嗎？</p>
+</div>
+<p class="act">4. 跟石頭說再見，按按鈕——沒反應。拍一下，隧道打開。</p>
+<div class=nar>
+<p>你跟石頭說再見，按下按鈕。</p>
+<p>沒反應。</p>
+<p>（停）你只好拍了它一下。</p>
+<p>這一次，你總算帶著背包回家了。</p>
+</div></div><div class="col new"><h3>段落 12　山洞 😬→😄</h3><p class="act">1. 石頭亂跑，剛好跑到 HERO 在高處看到的那個大山洞。<span class=star>★</span>就在這時候，一陣低沉的轟隆聲從南邊地平線滾過來，空氣和地面一起震，所有恐龍都愣了一下。</p>
+<div class=nar>
+<p>石頭一路亂跑，竟然跑到了你在高處看到的那個大山洞。</p>
+<p class=sci><span class=star>★</span>這時候，南邊的地平線，傳來一陣低低的轟隆聲，連空氣都在震。<a class=fn href="../science-ep2/#f15">#15</a></p>
+<p class=sci><span class=star>★</span>是音爆。撞擊後大約兩個半小時，它才終於傳到地獄溪。<a class=fn href="../science-ep2/#f139">#139</a></p>
+<p><span class=star>★</span>（停）聲音在空氣裡，走得最慢。</p>
+</div>
+<p class="act">2. HERO 追上石頭，拿回背包，拉著石頭跟恐龍們一起走進山洞。</p>
+<div class=nar>
+<p>你終於抓到了背包。本來，你只是想拿回背包而已。</p>
+<p class=sci>可是最後，你卻拉著牠，一起走了進去。<a class=fn href="../science-ep2/#f70">#70</a></p>
+</div>
+<p class="act">3. 往山洞深處看，深不見底。</p>
+<div class=nar>
+<p>這個洞，好深。</p>
+<p>（停）深到能通到地心嗎？</p>
+</div>
+<p class="act">4. 跟石頭說再見，按按鈕——沒反應。拍一下，隧道打開。</p>
+<div class=nar>
+<p>你跟石頭說再見，按下按鈕。</p>
+<p>沒反應。</p>
+<p>（停）你只好拍了它一下。</p>
+<p>這一次，你總算帶著背包回家了。</p>
+</div></div></div><div class=row><div class=col><h3>段落 13　你沒看到的後來（加長）😬</h3><p>手繪插圖講，HERO 不在場。</p>
+<div class=nar>
+<p>你走了之後，地球是這樣的。</p>
+<p class=sci><span class=star>★</span>一開始，是熱。<a class=fn href="../science-ep2/#f95">#95</a></p>
+<p class=sci><span class=star>★</span>不到一個小時，好幾道比高樓還高的大浪，衝上了墨西哥灣的海岸，衝進今天的墨西哥和美國南部。<a class=fn href="../science-ep2/#f61">#61</a> <a class=fn href="../science-ep2/#f62">#62</a></p>
+<p class=sci><span class=star>★</span>很遠的內陸，地震把河水往上游推，像一道比兩層樓還高的水牆，倒著衝回去。<a class=fn href="../science-ep2/#f63">#63</a></p>
+<p class=sci><span class=star>★</span>更倒楣的是，撞擊的地方，底下剛好埋著很多硫，還有很多石油。<a class=fn href="../science-ep2/#f75">#75</a></p>
+<p class=sci><span class=star>★</span>硫被炸上天，變成硫酸，接下來好幾年，像酸酸的雨一樣，一直下。<a class=fn href="../science-ep2/#f76">#76</a></p>
+<p class=sci><span class=star>★</span>石油燒成了厚厚的黑煙，飄到比雲還高的地方，連雨都洗不掉，就像替地球漆上了一層黑漆。<a class=fn href="../science-ep2/#f78">#78</a> <a class=fn href="../science-ep2/#f79">#79</a></p>
+<p class=sci>再加上森林燒出來的黑煙，大部分的陽光都被擋住，一擋就是好幾年。<a class=fn href="../science-ep2/#f81">#81</a></p>
+<p><span class=star>★</span>然後，是冷。</p>
+<p class=sci>地球變得又黑又冷，平均降了快三十度。<a class=fn href="../science-ep2/#f82">#82</a></p>
+<p class=sci><span class=star>★</span>連熱帶的島嶼，都只剩下平常一成的陽光。<a class=fn href="../science-ep2/#f86">#86</a></p>
+<p class=sci><span class=star>★</span>天氣冷，水就不太蒸發，雨少了八成，大部分的地方，都乾成了沙漠。<a class=fn href="../science-ep2/#f85">#85</a></p>
+<p class=sci><span class=star>★</span>所以這時候，最好的去處，是靠近赤道、有山的熱帶島嶼，那裡還有一點雨，也還有乾淨的水。<a class=fn href="../science-ep2/#f83">#83</a> <a class=fn href="../science-ep2/#f84">#84</a> <a class=fn href="../science-ep2/#f89">#89</a></p>
+<p class=sci><span class=star>★</span>最好還待在河邊。河裡有烏龜、鱷魚、魚，還有蛤蜊和蝸牛，可以撐比較久。<a class=fn href="../science-ep2/#f87">#87</a></p>
+<p class=sci>最後，地球上大概四分之三的生物消失了。<a class=fn href="../science-ep2/#f123">#123</a></p>
+<p class=sci><span class=star>★</span>在陸地上，比浣熊還大的哺乳動物，全部死光。<a class=fn href="../science-ep2/#f12">#12</a></p>
+<p class=sci>恐龍，只剩下在地上築巢的鳥。<a class=fn href="../science-ep2/#f11">#11</a> <a class=fn href="../science-ep2/#f73">#73</a></p>
+<p class=sci><span class=star>★</span>這是地球的生命史上，最重要的一刻：恐龍的時代結束了，哺乳動物的時代，開始了。<a class=fn href="../science-ep2/#f10">#10</a></p>
+<p class=sci>而這一天留下來的那一層土，今天在地獄溪的石頭最上面，還看得到。<a class=fn href="../science-ep2/#f122">#122</a></p>
+<p>對了，還記得那隻矮暴龍跟三角龍嗎？</p>
+<p class=sci>很久很久以後，人們在地獄溪挖到一具化石：一隻矮暴龍和一隻三角龍，纏在一起，埋在同一塊石頭裡。<a class=fn href="../science-ep2/#f126">#126</a></p>
+<p class=sci>三角龍身上，還插著一顆矮暴龍的牙齒，所以科學家叫牠們「決鬥恐龍」。<a class=fn href="../science-ep2/#f127">#127</a>（不說牠們是打架時一起死的）</p>
+<p class=sci>（停）對了，書上還說：那時候如果你肚子餓，千萬別吃那種像鼩鼱的小動物。<a class=fn href="../science-ep2/#f90">#90</a></p>
+<p class=sci>吃錯一隻，說不定就沒有你了。<a class=fn href="../science-ep2/#f90">#90</a></p>
+</div></div><div class="col new"><h3>段落 13　你沒看到的後來 😬</h3><p>手繪插圖講，HERO 不在場。</p>
+<div class=nar>
+<p>你走了之後，地球是這樣的。</p>
+<p class=sci><span class=star>★</span>一開始，是熱。<a class=fn href="../science-ep2/#f95">#95</a></p>
+<p class=sci><span class=star>★</span>不到一個小時，好幾道比高樓還高的大浪，衝上了墨西哥灣的海岸，衝進今天的墨西哥和美國南部。<a class=fn href="../science-ep2/#f61">#61</a> <a class=fn href="../science-ep2/#f62">#62</a></p>
+<p class=sci><span class=star>★</span>很遠的內陸，地震把河水往上游推，像一道比兩層樓還高的水牆，倒著衝回去。<a class=fn href="../science-ep2/#f63">#63</a></p>
+<p class=sci><span class=star>★</span>更倒楣的是，撞擊的地方，底下剛好埋著很多硫，還有很多石油。<a class=fn href="../science-ep2/#f75">#75</a></p>
+<p class=sci><span class=star>★</span>硫被炸上天，變成硫酸，接下來好幾年，像酸酸的雨一樣，一直下。<a class=fn href="../science-ep2/#f76">#76</a></p>
+<p class=sci><span class=star>★</span>石油燒成了厚厚的黑煙，飄到比雲還高的地方，連雨都洗不掉，就像替地球漆上了一層黑漆。<a class=fn href="../science-ep2/#f78">#78</a> <a class=fn href="../science-ep2/#f79">#79</a></p>
+<p class=sci>再加上森林燒出來的黑煙，大部分的陽光都被擋住，一擋就是好幾年。<a class=fn href="../science-ep2/#f81">#81</a></p>
+<p><span class=star>★</span>然後，是冷。</p>
+<p class=sci>地球變得又黑又冷，平均降了快三十度。<a class=fn href="../science-ep2/#f82">#82</a></p>
+<p class=sci><span class=star>★</span>連熱帶的島嶼，都只剩下平常一成的陽光。<a class=fn href="../science-ep2/#f86">#86</a></p>
+<p class=sci><span class=star>★</span>天氣冷，水就不太蒸發，雨少了八成，大部分的地方，都乾成了沙漠。<a class=fn href="../science-ep2/#f85">#85</a></p>
+<p class=sci><span class=star>★</span>所以這時候，最好的去處，是靠近赤道、有山的熱帶島嶼，那裡還有一點雨，也還有乾淨的水。<a class=fn href="../science-ep2/#f83">#83</a> <a class=fn href="../science-ep2/#f84">#84</a> <a class=fn href="../science-ep2/#f89">#89</a></p>
+<p class=sci><span class=star>★</span>最好還待在河邊。河裡有烏龜、鱷魚、魚，還有蛤蜊和蝸牛，可以撐比較久。<a class=fn href="../science-ep2/#f87">#87</a></p>
+<p class=sci>最後，地球上大概四分之三的生物消失了。<a class=fn href="../science-ep2/#f123">#123</a></p>
+<p class=sci><span class=star>★</span>在陸地上，比浣熊還大的哺乳動物，全部死光。<a class=fn href="../science-ep2/#f12">#12</a></p>
+<p class=sci>恐龍，只剩下在地上築巢的鳥。<a class=fn href="../science-ep2/#f11">#11</a> <a class=fn href="../science-ep2/#f73">#73</a></p>
+<p class=sci><span class=star>★</span>這是地球的生命史上，最重要的一刻：恐龍的時代結束了，哺乳動物的時代，開始了。<a class=fn href="../science-ep2/#f10">#10</a></p>
+<p class=sci>而這一天留下來的那一層土，今天在地獄溪的石頭最上面，還看得到。<a class=fn href="../science-ep2/#f122">#122</a></p>
+<p>對了，還記得那隻矮暴龍跟三角龍嗎？</p>
+<p class=sci>很久很久以後，人們在地獄溪挖到一具化石：一隻矮暴龍和一隻三角龍，纏在一起，埋在同一塊石頭裡。<a class=fn href="../science-ep2/#f126">#126</a></p>
+<p class=sci>三角龍身上，還插著一顆矮暴龍的牙齒，所以科學家叫牠們「決鬥恐龍」。<a class=fn href="../science-ep2/#f127">#127</a></p>
+</div>
+<p>（附註：不說牠們是打架時一起死的。）</p>
+<div class=nar>
+<p class=sci>（停）對了，書上還說：那時候如果你肚子餓，千萬別吃那種像鼩鼱的小動物。<a class=fn href="../science-ep2/#f90">#90</a></p>
+<p class=sci>吃錯一隻，說不定就沒有你了。<a class=fn href="../science-ep2/#f90">#90</a></p>
+</div></div></div><div class=row><div class=col><h3>段落 14　六千六百萬年後：怎麼找到它的 😄 ★</h3><p>插圖講，HERO 不在場。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>六千六百萬年後，科學家是怎麼知道這件事的？<a class=fn href="../science-ep2/#f105">#105</a></p>
+<p class=sci><span class=star>★</span>一九八零年，有一對科學家父子，在全世界都找得到的一層薄薄的土裡，發現很多地球上很少見的「銥」。他們說：這是一顆小行星帶來的。<a class=fn href="../science-ep2/#f121">#121</a></p>
+<p><span class=star>★</span>可是，撞出來的坑在哪裡？</p>
+<p class=sci><span class=star>★</span>其實早在一九七八年，就有一群在墨西哥找石油的人，先找到它了。<a class=fn href="../science-ep2/#f115">#115</a></p>
+<p class=sci><span class=star>★</span>它有一百八十公里寬。一半在陸地底下，一半在海底，<a class=fn href="../science-ep2/#f111">#111</a> <a class=fn href="../science-ep2/#f112">#112</a></p>
+<p class=sci><span class=star>★</span>還被埋在一公里厚的石頭下面，站在上面根本看不出來。<a class=fn href="../science-ep2/#f113">#113</a></p>
+<p class=sci><span class=star>★</span>只有坑的邊緣，排著一圈天然的水井。<a class=fn href="../science-ep2/#f112">#112</a> <a class=fn href="../science-ep2/#f113">#113</a> <a class=fn href="../science-ep2/#f114">#114</a></p>
+<p class=sci><span class=star>★</span>到了一九九一年，大家才確定，就是它。<a class=fn href="../science-ep2/#f115">#115</a></p>
+<p class=sci><span class=star>★</span>二零一六年，科學家在海上鑽井，一路鑽進那圈環狀的山，把石頭拿上來看。<a class=fn href="../science-ep2/#f117">#117</a></p>
+<p class=sci><span class=star>★</span>再化驗撞擊留下來的岩石，才知道：這顆小行星，是一種黑黑的「碳質小行星」，原本來自比木星還要遠的地方。<a class=fn href="../science-ep2/#f102">#102</a> <a class=fn href="../science-ep2/#f103">#103</a></p>
+<p><span class=star>★</span>（停）不過，故事還沒完。</p>
+<p class=sci><span class=star>★</span>差不多同一個時候，印度也有一場超級大的火山爆發。有些科學家認為，恐龍會滅絕，它也有份。<a class=fn href="../science-ep2/#f124">#124</a></p>
+</div></div><div class="col new"><h3>段落 14　六千六百萬年後：怎麼找到它的 😄</h3><p>插圖講，HERO 不在場。</p>
+<div class=nar>
+<p class=sci><span class=star>★</span>六千六百萬年後，科學家是怎麼知道這件事的？<a class=fn href="../science-ep2/#f105">#105</a></p>
+<p class=sci><span class=star>★</span>一九八零年，有一對科學家父子，在全世界都找得到的一層薄薄的土裡，發現很多地球上很少見的「銥」。他們說：這是一顆小行星帶來的。<a class=fn href="../science-ep2/#f121">#121</a></p>
+<p><span class=star>★</span>可是，撞出來的坑在哪裡？</p>
+<p class=sci><span class=star>★</span>其實早在一九七八年，就有一群在墨西哥找石油的人，先找到它了。<a class=fn href="../science-ep2/#f115">#115</a></p>
+<p class=sci><span class=star>★</span>它有一百八十公里寬。一半在陸地底下，一半在海底，<a class=fn href="../science-ep2/#f111">#111</a> <a class=fn href="../science-ep2/#f112">#112</a></p>
+<p class=sci><span class=star>★</span>還被埋在一公里厚的石頭下面，站在上面根本看不出來。<a class=fn href="../science-ep2/#f113">#113</a></p>
+<p class=sci><span class=star>★</span>只有坑的邊緣，排著一圈天然的水井。<a class=fn href="../science-ep2/#f112">#112</a> <a class=fn href="../science-ep2/#f113">#113</a> <a class=fn href="../science-ep2/#f114">#114</a></p>
+<p class=sci><span class=star>★</span>到了一九九一年，大家才確定，就是它。<a class=fn href="../science-ep2/#f115">#115</a></p>
+<p class=sci><span class=star>★</span>二零一六年，科學家在海上鑽井，一路鑽進那圈環狀的山，把石頭拿上來看。<a class=fn href="../science-ep2/#f117">#117</a></p>
+<p class=sci><span class=star>★</span>再化驗撞擊留下來的岩石，才知道：這顆小行星，是一種黑黑的「碳質小行星」，原本來自比木星還要遠的地方。<a class=fn href="../science-ep2/#f102">#102</a> <a class=fn href="../science-ep2/#f103">#103</a></p>
+<p><span class=star>★</span>（停）不過，故事還沒完。</p>
+<p class=sci><span class=star>★</span>差不多同一個時候，印度也有一場超級大的火山爆發。有些科學家認為，恐龍會滅絕，它也有份。<a class=fn href="../science-ep2/#f124">#124</a></p>
+</div></div></div><div class=row><div class=col><h3>段落 15　回家、賴帳 😄</h3><div class=nar>
+<p>回來以後，你把照片交給博士，博士開心得不得了。</p>
+<p>當然，你也翻出了你的學生證。</p>
+<p>至於錢嘛，博士說，這次不是打工，是借時光機的交換條件，所以，沒有錢。</p>
+<p>不過，他送你一本書，叫《地心冒險》。</p>
+</div></div><div class="col new"><h3>段落 15　回家、賴帳 😄</h3><div class=nar>
+<p>回來以後，你把照片交給博士，博士開心得不得了。</p>
+<p>當然，你也翻出了你的學生證。</p>
+<p>至於錢嘛，博士說，這次不是打工，是借時光機的交換條件，所以，沒有錢。</p>
+<p>不過，他送你一本書，叫《地心冒險》。</p>
+</div></div></div><div class=row><div class=col><h3>段落 16　預告 😄</h3><div class=nar>
+<p>下一集。地球變冷了，冷到整片大陸都是冰。</p>
+<p>你要怎麼在冰河時期，活過一個冬天呢？</p>
+</div></div><div class="col new"><h3>段落 16　預告</h3><div class=nar>
+<p>下一集。地球變冷了，冷到整片大陸都是冰。</p>
+<p>你要怎麼在冰河時期，活過一個冬天呢？</p>
+</div></div></div></div></main><script>document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===b));
+document.getElementById('full').hidden=b.dataset.t!=='full';document.getElementById('cmp').hidden=b.dataset.t!=='cmp'});</script></body></html>
