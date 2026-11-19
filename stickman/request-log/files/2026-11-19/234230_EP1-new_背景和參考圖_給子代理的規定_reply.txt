@@ -1,0 +1,34 @@
+# EP1-new 第 15 步：逐鏡頭手寫背景和參考圖（給寫背景的 LLM）
+
+專案：/Volumes/Fish/personal/stickman_pipeline（Google Flow 生圖的火柴人科普動畫）。你負責指定的幾「場」：每個鏡頭（含 W 結尾的遠景備份）寫一段背景描述（中文＋英文）並決定要附哪些參考圖。**只寫背景和參考圖，不改分鏡模型寫的 prompt。**
+
+## 輸入（每一場 NN）
+- 分鏡回覆：`docs/requests/EP1N-NN_reply_claude.json` → `shots[]`：id、composition、camera（cell 相機格子、look_at、height_m、distance_m）、cast、action、prompt、blocking（走位：每個角色在哪一格、面朝哪）。
+- 這場用哪張地圖：`episodes/001_trex_run_new/breakdown.json` 的 `scenes[NN-1].map`（null＝插圖，沒有地圖）。
+- 地圖：`episodes/001_trex_run/maps/<map>.json`（grid、types 地形、objects 物件和格子、outside 地圖外四個方向的遠景、time、sun 太陽方位、desc）；預覽圖 `episodes/001_trex_run/maps/preview/<map>.png`。
+- 這場的角色狀態和場景說明：`episodes/001_trex_run_new/scene_conf_v2.py` 的 `CONF[NN]`。
+- **同一個地方之前寫過的背景（照它的寫法和用詞，保持連戲）**：舊 EP1 第 k 幕 `docs/requests/EP1-kk_bg_hand.json`；講解插圖的寫法 `docs/requests/EP1_n1_bg_hand.json`。
+  對應：新場 1←舊幕 1；2←2；3←3；4←4；5←5；6←6；7、9←7；11←8；13←9；14←10；16←11；17←12；18←13；19←14；20←15；講解場 8、10、12、15 看 EP1_n1_bg_hand.json 的 EP1-16、17、18、19。
+
+## 背景描述怎麼寫（規定，不能違反）
+1. 一個鏡頭一個鏡頭看：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫什麼（地圖只用來決定畫面裡出現什麼）。
+2. 先講鏡頭對著哪面牆或哪個方向的景，再講那邊有什麼；東西用彼此的關係定位（窗下的書桌、書桌前的椅子、河對岸的泥灘）。最後講光線（照地圖的 sun、time）。
+3. **不准**寫東南西北（Flow 沒有地圖）、**不准**寫幾公尺、**不准**用「前景／中景／背景」「畫面最後面」這種分層詞。
+4. 不重複描述角色長相和動作（那是 prompt 的事）；角色碰到的東西（他坐的石頭、靠的樹幹）可以寫位置。
+5. 插圖鏡頭（camera.cell 是 N/A、HERO 不在場的講解畫面）：照 EP1_n1_bg_hand.json 的格式寫「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色，像生存指南後頁的插圖。畫面上沒有任何字或數字。」
+6. 英文：以 "Background: " 開頭（插圖也是），直白的句子，像在描述一張照片。中文跟英文意思一樣。
+
+## 參考圖怎麼選（只能用 `episodes/001_trex_run/refs_v7/upload/` 裡有的檔名，不含 .jpg）
+- 入鏡角色的設定圖：HERO → `REF_HERO`；第 18、19 場 HERO 沒背背包 → `REF_HERO_NOBAG`；PROF → `REF_PROF`；恐龍 → `REF_TREX`、`REF_TEEN`、`REF_ANKY`、`REF_EDMONTO`、`REF_RAPTOR`、`REF_PACHY`、`REF_STRUTHIO`。
+- HERO 跟大恐龍同框：一定附那隻的比例圖 `PAIR2_<名字>`（TREX、TEEN、ANKY、EDMONTO、RAPTOR、PACHY、STRUTHIO）。
+- 畫面裡有道具（手機、相機、電擊槍、回家按鈕、生存指南、帳單）→ `REF_PROPS`；暴龍牙 → `REF_TOOTH`；小屋外觀 → `REF_HUT`；北美洲古地圖 → `REF_NA66`；小行星 → `REF_ASTEROID`。
+- 實驗室（第 4、18 場）：每面牆三張，正對一面牆拍附 `LAB_<牆>_F`，斜拍牆角附 `LAB_<牆>_L` 或 `_R`；牆名：`CHALK` 黑板牆、`MACHINE` 時光機牆、`DOOR` 大門牆、`BENCH` 工作桌牆。鏡頭背後的牆不附。**不准用** `LAB_*_WALL`、`REF_LAB`。
+- HERO 房間（第 2、19 場）：`ROOM_WINDOW_WALL`、`ROOM_DOOR_WALL`、`ROOM_BED_WALL`、`ROOM_BARE_WALL`，看得到哪面附哪面（正對一面附 1 張、對著角落附 2 張、背後不附）。
+- 插圖鏡頭通常不附（插圖裡畫 HERO 的才附 REF_HERO）。
+
+## 輸出
+寫一個 JSON 檔 `docs/requests/bg_parts/EP1N-NN_bg.json`（每場一個檔）：
+```json
+{"EP1N-NN-01": {"zh": "背景中文", "en": "Background: ...", "refs": ["REF_HERO", "..."]}, "EP1N-NN-01W": {...}}
+```
+這一場回覆裡**每一個** shot id 都要有（含 W）。寫完自己檢查：沒有東南西北、沒有公尺、沒有前景中景背景、refs 檔名都存在、沒有 LAB_*_WALL。最後回報每場寫了幾個鏡頭、有沒有拿不準的地方（一句話）。

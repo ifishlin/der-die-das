@@ -1,0 +1,357 @@
+{
+ "scene_id": "EP1N-08",
+ "notes": "這一場是劇情暫停的講解段，節奏是『定格 → 一路往上拉高 → 跳到今天 → 降回主角』。拆成 10 個鏡頭：①定格主角（河岸）②腳下泥土特寫插入 ③拉高到河邊平原（主角變小點，還在本地圖）④更高、看到西邊山與東邊海（出地圖）⑤整片北美洲（REF_NA66，你在這裡）⑥白堊紀森林插圖 ⑦小動物插圖 ⑧今天的荒地＋露出的骨頭 ⑨一九〇二挖暴龍插圖 ⑩降回主角（跟①同構圖同瞬間，是回到劇情的錨點）。全程只有主角本人（第 7 場剛拍完鴨嘴龍），沒有活體大恐龍同框，所以不需要加拍遠一級。走位：主角定在 L20 不動、面朝北（河的方向），下一場他低頭看腳邊的腳印（L19）。特別說明：講解插圖（⑥⑦⑧⑨）和出地圖的空拍（④⑤）camera.cell 填 N/A、t 填 0，畫面『整張就是內容』，沒有可以交給主對話補的『場景背景』，所以這幾格的 prompt 必須把插圖／地形內容寫出來（這點與一般角色鏡頭『prompt 不寫背景』的規則不衝突，因為那條規則是給有地圖座標的角色鏡頭用的）。①②③⑩是主角的真實鏡頭，仍照規則只寫角色與他碰到的東西，背景交給主對話。⑤的真實大陸與固定畫風句（flat cartoon）有潛在衝突，靠 REF_NA66 參考圖，已列入 untested。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "L20",
+     "facing": "N",
+     "doing": "定格站在河岸泥地上，剛放下胸前的相機，滿身泥，面朝北邊的河"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-08-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "先停一下。你知道你現在在哪裡嗎？",
+    "這裡叫做地獄溪，就在今天美國蒙大拿州的東邊。",
+    "只不過啊，你早到了六千六百萬年。"
+   ],
+   "subject": "HERO",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 置中，全身入鏡，剛放下相機、一臉茫然；前景無物，背景是泥濘河岸（交給主對話）。",
+   "screen_direction": "toward",
+   "action": "劇情定格的那一刻：HERO 站著不動，雙手剛把胸前的相機放下，身體微微僵住，像是忽然被喊停。",
+   "camera": {
+    "cell": "L17",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "6"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（戴帽、滿身泥、胸前斜背小相機、背著背包）",
+     "frame_height": "約 85%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet). He is wearing his cap, his body and legs are smeared with mud, a small camera hangs on a strap across his chest, and he is wearing his backpack. He stands completely still, having just lowered the camera, looking slightly stunned and out of place. HERO's face and hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is on the riverbank ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-08-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "你腳下的泥土，是一層一層慢慢堆起來的。最上面那薄薄的一層，就是將來小行星撞地球那一刻，留下來的。"
+   ],
+   "subject": "HERO 的鞋子與腳下的泥土（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "鞋子與腳下的泥土",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面幾乎被 HERO 沾滿泥的鞋子與腳邊的濕泥填滿，鞋子微陷進泥裡、壓出淺淺的凹痕，可看到一層薄薄的新泥。",
+   "screen_direction": "off_down",
+   "action": "插入鏡頭：鏡頭俯看 HERO 的鞋子踩在軟泥上的瞬間，鞋底邊緣陷進泥裡。",
+   "camera": {
+    "cell": "L19",
+    "height_m": "1.0",
+    "look_at": "HERO 的鞋子",
+    "distance_m": "1.5"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只有雙腳的鞋子與小腿下段（滿泥）",
+     "frame_height": "約 70%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only part of HERO in the picture is his muddy shoes (exactly as in the attached HERO character sheet), pressed into soft wet mud, with the edges of the shoes sinking in and a thin fresh top layer of mud around them. No other character in the picture. Shot size: Extreme Close-up (ECU). HERO's muddy shoes pressed into the soft wet mud fill the picture. Camera angle: High angle: the camera is high above HERO's feet, looking down at the shoes.",
+   "untested": [
+    "ECU 句用在物件（鞋子＋泥土）而非眼睛，實測只驗證過眼睛",
+    "High angle 俯看腳下，實測 high 只會輕微往下看"
+   ],
+   "remedy": "若畫得不夠近或俯角不夠，剪輯時推近、裁切到腳下的泥土那一塊。"
+  },
+  {
+   "id": "EP1N-08-03",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "來，我們把鏡頭拉高一點。",
+    "你腳下是一大片平平的河邊平原。河水從西邊的山上流下來，一路往東，流進海裡。"
+   ],
+   "subject": "河邊平原（HERO 是河岸上的一個小點）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "高空往下看：一條寬緩的河橫過畫面、河邊是大片光禿泥地，HERO 是泥地上一個很小的單一人影，環境是主體。",
+   "screen_direction": "off_up",
+   "action": "鏡頭開始往上拉高的瞬間，整片平原攤開，HERO 縮成一個小點。",
+   "camera": {
+    "cell": "L20",
+    "height_m": "100",
+    "look_at": "HERO 與河邊平原",
+    "distance_m": "100"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（極小的一個點）",
+     "frame_height": "約 3%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. An aerial view looking down from high in the sky over a wide, flat river plain: a broad, slow river curving across the land with bare muddy banks beside it. HERO (exactly as in the attached HERO character sheet), wearing his cap, his body smeared with mud, a small camera on a strap across his chest and his backpack on, is a single tiny figure standing on the mud bank, very small in the frame. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "空拍地形＋極小 HERO 的組合（aerial 僅在配 EWS 時成功，此格即 EWS，風險中等）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-08-04",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "西邊那排山，就是洛磯山。不過它現在還很年輕，才剛開始慢慢長高。",
+    "再往東看，原本有一片大海，把北美洲切成東西兩半。不過現在，它已經退得差不多了，只剩一道淺淺的海灣，從南邊伸上來。"
+   ],
+   "subject": "地獄溪一帶的整片地形（出地圖的空拍）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "更高的空拍：左邊（西）一排低矮、剛開始隆起的年輕山脈；河從山邊往右（東）流過平原、在畫面最右邊接上大海；畫面下方（南）有一道細細的淺海灣往上伸。中央有一個很小的亮點標示 HERO 的位置。",
+   "screen_direction": "N/A",
+   "action": "鏡頭繼續拉高，整個地區的地形一次入鏡：西山、東海、南邊的海灣。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "40000",
+    "look_at": "地獄溪地區（HERO 的位置亮點）",
+    "distance_m": "40000"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只是一個很小的位置亮點",
+     "frame_height": "約 1%（亮點）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A very high aerial view of the whole region, looking down: on the left (west) a low range of young mountains just beginning to rise; a wide river running from those mountains across a flat green plain toward the right (east), where it meets a sea along the far right edge; and a narrow, shallow arm of sea reaching up from the bottom (south). A tiny faint glowing point near the center marks where one person stands. No characters in the picture, only the landscape. No text or numbers anywhere.",
+   "untested": [
+    "整片地形的高空空拍（西山／東海／南海灣的地景，表上無對應句，整張為地景描述）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-08-05",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "那天氣呢？這裡溫暖又潮濕，一年平均大概十一、二度，比現在的蒙大拿還暖一些。",
+    "就算是最冷的月份，也只有兩、三度，冬天也不會整個凍起來。",
+    "一年當中，有比較濕的時候，也有比較乾的時候，但不會乾到變成旱季。",
+    "而且啊，其實整個地球都比現在熱，連南極、北極，都沒有一片大冰原。"
+   ],
+   "subject": "從太空看整片北美洲（你在這裡）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "從太空往下看的北美洲大陸（照 REF_NA66 的 66Ma 樣貌），大陸置中，上面有一個小小的發亮點標示 HERO 現在站的地方；沒有任何文字。",
+   "screen_direction": "N/A",
+   "action": "拉高的終點：整片北美洲入鏡，一個小亮點定住『你在這裡』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "400000",
+    "look_at": "北美洲大陸（HERO 位置亮點）",
+    "distance_m": "400000"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只是一個發亮的小點",
+     "frame_height": "約 1%（亮點）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A realistic view of the North American continent seen from high in space, matching the attached reference map of the continent, with a single small glowing dot marking one spot on the land. No other characters. No text or numbers anywhere.",
+   "untested": [
+    "『真實的太空俯視大陸』與固定畫風句（flat 2D cartoon）在同一段 prompt 內互相衝突，靠 REF_NA66 參考圖主導"
+   ],
+   "remedy": "若真實大陸被畫成卡通色塊，依賴主對話附上 REF_NA66，必要時以參考圖為準重畫；亮點位置可於剪輯另加。"
+  },
+  {
+   "id": "EP1N-08-06",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "森林裡，大部分是開花的植物，像棕櫚、木蘭、闊葉的大樹。地上長滿蕨類，河邊還有水杉，也看得到蘇鐵和銀杏。",
+    "這些樹大多不算太高，都是中小型的樹。"
+   ],
+   "subject": "白堊紀森林（講解插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "生存指南內頁式的手繪插圖，攤開一片森林：開花的棕櫚、盛開的木蘭、闊葉大樹，地上鋪滿蕨類，水邊幾棵水杉，還有蘇鐵與銀杏；樹大多是中小型。畫面無人、無恐龍、無字。",
+   "screen_direction": "N/A",
+   "action": "插圖定格：一片開花的白堊紀森林。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A survival-guidebook-style hand-drawn illustration of a Cretaceous forest, drawn with thick black outlines and flat natural colors: flowering plants everywhere — palm trees, magnolia trees in bloom, broad-leaved trees — with a thick carpet of ferns on the ground, a few dawn redwoods by the water, and some cycads and ginkgo trees. The trees are mostly small to medium in height, none of them very tall. No people, no dinosaurs, no text or numbers anywhere.",
+   "untested": [
+    "整張講解插圖的植物內容描述（無角色鏡頭，表上無對應句）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-08-07",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "住在這裡的，也不是只有恐龍。河裡有鱷魚、烏龜和魚，草叢裡有蜥蜴和蛇，樹上有鳥，地上還有小小的哺乳動物，鑽來鑽去。（停）"
+   ],
+   "subject": "河邊的小動物（講解插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "生存指南內頁式手繪插圖，把各種小動物擺在一張圖裡：河裡一隻鱷魚、一隻烏龜和幾條魚；草叢裡一條蜥蜴和一條蛇；樹上一隻小鳥；地上幾隻小哺乳動物鑽來鑽去。自然顏色、無人、無字。",
+   "screen_direction": "N/A",
+   "action": "插圖定格：一幅『住在這裡的小動物們』，最後停在小哺乳動物鑽動的俏皮一刻（接笑點停頓）。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A survival-guidebook-style hand-drawn illustration of the small creatures living here, thick black outlines and flat natural colors: in the river a crocodile, a turtle and a few fish; in the grass a lizard and a snake; a small bird perched in a tree; and a few tiny mammals scurrying on the ground. No people, no dinosaurs, no text or numbers anywhere.",
+   "untested": [
+    "整張講解插圖的小動物內容描述（無角色鏡頭，表上無對應句）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-08-08",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "再過六千六百萬年，這裡會變成一片乾巴巴的荒地。",
+    "風和雨把一層一層的泥土沖開，埋在裡面的骨頭，就這樣露了出來。"
+   ],
+   "subject": "今天的地獄溪荒地（講解插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "同一個地方六千六百萬年後：乾燥的荒地、條紋狀的光禿土坡，幾乎沒有樹、沒有人與人造物；其中一道被沖刷的土坡上，露出一截大大的化石骨頭。",
+   "screen_direction": "N/A",
+   "action": "插圖定格：乾巴巴的荒地，鏡頭可從全景推進到那截露出的骨頭。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A survival-guidebook-style hand-drawn illustration of the same place 66 million years later: dry badlands, bare striped earth slopes with clearly layered stripes, almost no trees, and no people or man-made things. In one eroded slope a large fossil bone is exposed, washed out of the layers of earth. Thick black outlines, flat earthy colors. No text or numbers anywhere.",
+   "untested": [
+    "整張荒地地景＋露出骨頭的插圖描述（無角色鏡頭，表上無對應句）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-08-09",
+   "variant_of": "N/A",
+   "t": "0",
+   "narration": [
+    "一九〇二年，人類挖到的第一具暴龍骨頭，就是在這裡。"
+   ],
+   "subject": "化石獵人挖暴龍（講解插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "生存指南內頁式手繪插圖：畫面中一個化石獵人（跟角色設定圖同畫風的火柴人路人，純白皮膚，戴 1900 年代的帽子、穿舊式衣服）蹲著，小心地刷開泥土，露出一具巨大的暴龍頭骨。只有這一個人。",
+   "screen_direction": "off_down",
+   "action": "插圖定格：化石獵人低頭刷開泥土、暴龍頭骨半露出地面的一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "化石獵人（插圖路人）",
+     "visible": "全身，蹲姿",
+     "frame_height": "約 45%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A survival-guidebook-style hand-drawn illustration: a single fossil hunter — a stick figure in the same style as the character sheets, wearing an old-fashioned early-1900s hat and clothes — kneeling and carefully brushing the soil off a huge, partly exposed T. rex skull in the ground. The fossil hunter's face and hands are pure paper white. Thick black outlines, flat natural colors. Only this one figure, no other people, no text or numbers anywhere.",
+   "untested": [
+    "插圖路人（化石獵人）＋大型暴龍頭骨的整張插圖描述（表上無對應句）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-08-10",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "所以啊，你現在站的這個地方……（停）就是暴龍的老家。"
+   ],
+   "subject": "HERO",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "跟第 01 格完全相同的構圖與瞬間：HERO 置中、全身入鏡、剛放下相機一臉茫然；回到劇情的錨點鏡頭。",
+   "screen_direction": "toward",
+   "action": "鏡頭降回主角身邊，回到定格那一刻：HERO 原地站著沒動，剛放下相機，一臉茫然。與第 01 格同構圖、同姿勢、同瞬間。",
+   "camera": {
+    "cell": "L17",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "6"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（戴帽、滿身泥、胸前斜背小相機、背著背包）",
+     "frame_height": "約 85%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet). He is wearing his cap, his body and legs are smeared with mud, a small camera hangs on a strap across his chest, and he is wearing his backpack. He stands completely still, having just lowered the camera, looking slightly stunned and out of place, in exactly the same pose as before. HERO's face and hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is on the riverbank ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  }
+ ]
+}

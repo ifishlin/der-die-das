@@ -1,0 +1,214 @@
+{
+ "scene_id": "EP1N-11",
+ "notes": "全場 6 顆主鏡頭＋2 顆「遠一級」加拍（01W、05W），共 8 格。敘事節奏：先建立威脅（01 暴龍逼近）→ 揭露暴龍跑不動（02 單拍暴龍喘、慢）→ 回到 HERO 的動作（03 邊跑邊回頭拍照）→ 插入鏡頭看照片結果、收第一個笑點（04）→ 揮手道別的主畫面（05 兩人同框、拉開距離）→ 收在暴龍受傷的眼神（06 反打特寫）。連戲：01–05 相機一律放在小路南側（往北拍），讓 HERO 一路往東＝畫面向右、暴龍從左後追，左右方向全場一致；只有 06 為了讓暴龍「看著你」的受傷眼神成立，才切到小路東側反打正面，是刻意的情緒反打。01 用地面貼地仰視放大暴龍體積與地面震動；02 平視完整呈現七噸身體的沉重；03 中近動態抓回頭與抖手按快門；04 插入相機螢幕交代糊照片。凡 HERO 與成年暴龍同框（01、05）都照規定多給遠一級版本，剪輯再挑。"
+ ,
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "K5", "facing": "E", "doing": "全力往東逃，驚恐"},
+    {"t": "2", "cell": "M5", "facing": "E", "doing": "繼續往東跑，暴龍落在後面"},
+    {"t": "3", "cell": "O5", "facing": "E", "doing": "一邊跑一邊把頭往後（西）轉，舉起相機按下快門"},
+    {"t": "4", "cell": "P5", "facing": "E", "doing": "邊跑邊低頭看相機螢幕上的照片"},
+    {"t": "5", "cell": "Q5", "facing": "W", "doing": "站上倒木、轉身面向西邊的暴龍，高舉手揮手道別"},
+    {"t": "6", "cell": "Q5", "facing": "W", "doing": "站在倒木上看著遠處的暴龍"}
+   ]
+  },
+  {
+   "who": "TREX",
+   "path": [
+    {"t": "1", "cell": "G5", "facing": "E", "doing": "全速追，每一步都讓地面震動"},
+    {"t": "2", "cell": "I5", "facing": "E", "doing": "速度明顯慢下來，沉重的身體喘著氣、腿發軟"},
+    {"t": "3", "cell": "I5", "facing": "E", "doing": "幾乎停住，落後一大截"},
+    {"t": "4", "cell": "I5", "facing": "E", "doing": "停下大口喘氣"},
+    {"t": "5", "cell": "I5", "facing": "E", "doing": "站在遠處喘著氣看 HERO"},
+    {"t": "6", "cell": "I5", "facing": "E", "doing": "喘著氣看 HERO，眼神有點受傷"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-11-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["牠追上來了，地面每震動一下，你就覺得自己死定了。"],
+   "subject": "HERO（前景往東逃）與逼近的 TREX",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "low",
+   "composition": "HERO 在畫面右側（東、在前）全力奔逃；成年暴龍在畫面左後方（西）張口逼近、身體高聳頂到畫面上緣；貼地仰視，前景可有小路邊的枝葉。",
+   "screen_direction": "right",
+   "action": "暴龍一步踏下、地面彷彿震動的瞬間，HERO 側臉驚恐、張口喘氣拚命往前衝。",
+   "camera": {"cell": "I8", "height_m": 0.2, "look_at": "HERO 與 TREX 之間、偏 HERO", "distance_m": 11},
+   "cast": [
+    {"who": "HERO", "visible": "全身（側面）", "frame_height": "約 45%"},
+    {"who": "TREX", "visible": "腿到上半身，頭可能被畫面上緣切到（逼近感）", "frame_height": "約 95%（局部、頂天）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX (exactly as in the attached TREX character sheet). HERO is running hard to the right, wearing his cap, his body covered in mud, a small camera on a strap across his chest and a backpack on his back; his face is in profile, wide-eyed and terrified with his mouth open. HERO's face and hands are pure paper white. Behind him and to the left, the adult TREX charges after him, eyes fierce and jaws open in a roar, towering over him. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body.",
+   "untested": ["Extreme low-angle（貼地仰視）目前只在單人站立畫面驗證過，這裡用在 HERO＋暴龍的追逐同框"],
+   "remedy": "若暴龍被畫得不夠壓迫或仰視不足，優先挑 01W 遠一級版本；剪輯可再往暴龍方向輕推。"
+  },
+  {
+   "id": "EP1N-11-01W",
+   "variant_of": "EP1N-11-01",
+   "t": "1",
+   "narration": ["牠追上來了，地面每震動一下，你就覺得自己死定了。"],
+   "subject": "HERO（前景往東逃）與逼近的 TREX",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "low",
+   "composition": "鏡頭拉遠：HERO 在畫面右側較小、全身可見，暴龍在左後方完整入鏡、身形巨大，兩者間可看出追逐距離與大量森林環境。",
+   "screen_direction": "right",
+   "action": "暴龍一步踏下、地面彷彿震動的瞬間，HERO 側臉驚恐、張口喘氣拚命往前衝。",
+   "camera": {"cell": "H8", "height_m": 0.2, "look_at": "HERO 與 TREX 之間、偏 HERO", "distance_m": 13},
+   "cast": [
+    {"who": "HERO", "visible": "全身（側面）", "frame_height": "約 28%"},
+    {"who": "TREX", "visible": "全身", "frame_height": "約 82%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX (exactly as in the attached TREX character sheet). HERO is running hard to the right, wearing his cap, his body covered in mud, a small camera on a strap across his chest and a backpack on his back; his face is in profile, wide-eyed and terrified with his mouth open. HERO's face and hands are pure paper white. Behind him and to the left, the whole adult TREX charges after him, eyes fierce and jaws open in a roar, dwarfing him. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body.",
+   "untested": ["Extreme low-angle 配 EWS、兩角色同框"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-11-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "可是追著追著，牠的速度慢了下來。七噸重的身體，根本跑不起來，腿只要一跑，骨頭就撐不住。",
+    "牠最快，大概只有時速十九公里。（停）這個速度啊，叫做快走。"
+   ],
+   "subject": "TREX（成年暴龍）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "暴龍佔滿畫面中央、側身朝右移動，沉重的身體、吃力的後腿是重點；HERO 已跑出畫面外（右）。",
+   "screen_direction": "right",
+   "action": "暴龍從奔跑降成吃力的半走，重心下沉、腿發軟、張口大口喘氣的那一刻。",
+   "camera": {"cell": "I8", "height_m": 2.5, "look_at": "TREX 身體中段", "distance_m": 9},
+   "cast": [
+    {"who": "TREX", "visible": "全身（側面）", "frame_height": "約 85%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: the adult TREX (exactly as in the attached TREX character sheet). It has slowed from a run to a heavy, laboured walk, moving to the right; its huge seven-tonne body sags, its legs strain and buckle, its mouth is open and it is panting hard, eyes weary and exhausted. Shot size: Full Shot (FS). The TREX's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the trail and sees the TREX exactly from the side. Camera angle: Eye-level: the camera is at the TREX's eye height, looking straight ahead.",
+   "untested": ["side view 的實測句原本寫兩個角色，這裡只放暴龍一個主體"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-11-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["你一邊跑，一邊回頭舉起相機。手一直在抖，但你還是按下了快門。"],
+   "subject": "HERO",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央往右跑，頭往左後方（西）轉，雙手把小相機高舉過肩朝後拍；暴龍不入鏡。",
+   "screen_direction": "right",
+   "action": "身體還往前衝、頭已回轉，雙手發抖舉著相機按下快門的瞬間。",
+   "camera": {"cell": "O7", "height_m": 1.7, "look_at": "HERO 上半身", "distance_m": 6},
+   "cast": [
+    {"who": "HERO", "visible": "膝蓋以上（側面、頭回轉）", "frame_height": "約 88%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet). He is running to the right while twisting his head back over his shoulder to look behind him; he has lifted the small camera (normally on the strap across his chest) and holds it up in both trembling hands, pressing the shutter. He wears his cap, his body is covered in mud, and a backpack on his back. His turned-back face is scared but gritting with determination. HERO's face and hands are pure paper white. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: side view. The camera is beside the trail and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["side view 實測句原為兩角色，這裡單人"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-11-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": ["照片有點糊，但看得出來是暴龍。（停）任務，總算完成一半啦。"],
+   "subject": "HERO 手中的小相機與螢幕上的照片（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "相機的螢幕",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "小相機與螢幕佔滿畫面中央，HERO 兩隻白色手掌在下緣捧著相機；螢幕上是一張糊糊但認得出暴龍的照片。",
+   "screen_direction": "toward",
+   "action": "低頭看剛拍到的照片的那一刻，螢幕正對鏡頭。",
+   "camera": {"cell": "P5", "height_m": 1.6, "look_at": "相機螢幕", "distance_m": 0.4},
+   "cast": [
+    {"who": "HERO", "visible": "只有雙手（捧著相機）", "frame_height": "約 30%（畫面下緣）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Extreme close-up insert of a small handheld camera held up in two hands; the camera and its small screen fill most of the frame. On the screen is a slightly blurry photo in which an adult TREX is clearly recognisable. Only HERO's two hands are visible at the bottom, holding the camera. HERO's hands are pure paper white.",
+   "untested": ["以物件（相機螢幕）為主體的 ECU 插入鏡頭，非表上眼睛句；螢幕內嵌一張照片"],
+   "remedy": "若螢幕裡的照片畫得太清楚，剪輯時可加輕微模糊；若出現文字，重生。"
+  },
+  {
+   "id": "EP1N-11-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": ["你站上倒下來的樹幹，跟牠揮手說再見。"],
+   "subject": "HERO（站在倒木上揮手）與遠處的 TREX",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面右側、站在倒木上、側身朝左，高舉一隻手揮手；暴龍在畫面左側遠處、很小，站著看他。中間是拉開的距離。",
+   "screen_direction": "left",
+   "action": "HERO 站上倒木、轉身面向西邊，得意地高舉手揮手道別的瞬間。",
+   "camera": {"cell": "Q7", "height_m": 1.7, "look_at": "HERO", "distance_m": 6},
+   "cast": [
+    {"who": "HERO", "visible": "全身（站在倒木上、側面）", "frame_height": "約 68%"},
+    {"who": "TREX", "visible": "全身，但在遠處很小", "frame_height": "約 16%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX (exactly as in the attached TREX character sheet). HERO stands up on a fallen log on the right, turned to the left, waving one hand high in a cheerful goodbye with a relieved, cheeky grin; he wears his cap, his body covered in mud, the small camera back on the strap across his chest, and a backpack on his back. HERO's face and hands are pure paper white. Far away to the left stands the adult TREX, small in the distance, its mouth open and panting as it watches him. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-11-05W",
+   "variant_of": "EP1N-11-05",
+   "t": "5",
+   "narration": ["你站上倒下來的樹幹，跟牠揮手說再見。"],
+   "subject": "HERO（站在倒木上揮手）與遠處的 TREX",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "鏡頭拉遠：HERO 在右側倒木上揮手較小、全身清楚，暴龍在左側遠處更小，兩者間的距離與大量森林環境更明顯。",
+   "screen_direction": "left",
+   "action": "HERO 站上倒木、轉身面向西邊，得意地高舉手揮手道別的瞬間。",
+   "camera": {"cell": "Q8", "height_m": 1.7, "look_at": "HERO", "distance_m": 9},
+   "cast": [
+    {"who": "HERO", "visible": "全身（站在倒木上、側面）", "frame_height": "約 45%"},
+    {"who": "TREX", "visible": "全身，遠處很小", "frame_height": "約 11%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX (exactly as in the attached TREX character sheet). HERO stands up on a fallen log on the right, turned to the left, waving one hand high in a cheerful goodbye with a relieved, cheeky grin; he wears his cap, his body covered in mud, the small camera back on the strap across his chest, and a backpack on his back. HERO's face and hands are pure paper white. Far away to the left stands the adult TREX, small in the distance, its mouth open and panting as it watches him. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-11-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": ["牠站在遠遠的地方，喘著氣看你，那個眼神，好像還有點受傷呢。"],
+   "subject": "TREX（成年暴龍）的臉",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "暴龍的頭、頸、胸佔滿畫面、正對鏡頭；這是朝東反打，暴龍望向鏡頭（＝望向東邊的 HERO）。HERO 不入鏡。",
+   "screen_direction": "toward",
+   "action": "暴龍停下、胸口起伏喘氣，抬眼望向鏡頭、眼神柔軟又帶點受傷的那一刻。",
+   "camera": {"cell": "K5", "height_m": 4, "look_at": "TREX 的頭與眼睛", "distance_m": 6},
+   "cast": [
+    {"who": "TREX", "visible": "頭、頸、胸（正面）", "frame_height": "約 95%（局部）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: the adult TREX (exactly as in the attached TREX character sheet). It stands still, its chest heaving as it pants, looking straight toward the viewer; its eyes are soft and a little hurt, an almost wounded, reproachful look. Shot size: Medium Close-up (MCU). The TREX is framed from the chest up; the bottom edge of the picture is at its chest. Camera direction: front view. The camera is on the trail ahead of the TREX, facing it. Camera angle: Eye-level: the camera is at the TREX's eye height, looking straight ahead.",
+   "untested": ["front／eye／MCU 實測句替換成暴龍主體"],
+   "remedy": "想要的是更近的受傷眼神（CU）；MCU 常畫成到腰（對暴龍＝露出更多身體），剪輯時往暴龍的臉與眼睛推近到 CU。"
+  }
+ ]
+}

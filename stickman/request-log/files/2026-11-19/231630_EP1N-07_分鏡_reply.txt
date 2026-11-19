@@ -1,0 +1,116 @@
+{
+ "scene_id": "EP1N-07",
+ "notes": "這一場是降落後第一段喘息，節奏放緩，兩句旁白兩張圖就夠。第 1 張用背對鏡頭的遠景建立環境：HERO 站在河岸前景（背影當觀眾的眼睛），對岸一排鴨嘴龍低頭喝水，靠背影＋遠處龐然大物的體積感傳達「每一隻跟大象差不多大、脾氣很好」，EDMONTO 不是暴龍/甲龍，不需要加拍遠一級。第 2 張切到河面上方往岸上拍 HERO 正面舉相機按快門，把動作講清楚，笑點（可惜不是暴龍）交給旁白在這張的停頓裡推近。HERO 從上一場森林走到水邊後幾乎定點，只有從「看」到「舉相機」兩個瞬間。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": 1,
+     "cell": "M15",
+     "facing": "N",
+     "doing": "走到河岸水邊站定，望向對岸喝水的鴨嘴龍群"
+    },
+    {
+     "t": 2,
+     "cell": "M15",
+     "facing": "N",
+     "doing": "把胸前斜背的小相機舉到臉前，雙手按下快門拍照"
+    }
+   ]
+  },
+  {
+   "who": "EDMONTO",
+   "path": [
+    {
+     "t": 1,
+     "cell": "M4",
+     "facing": "S",
+     "doing": "一群鴨嘴龍在對岸河邊一字排開（約 K3–O4），低頭朝河面喝水"
+    },
+    {
+     "t": 2,
+     "cell": "M4",
+     "facing": "S",
+     "doing": "同上，繼續低頭喝水，不理會對岸的 HERO"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-07-01",
+   "variant_of": "N/A",
+   "t": 1,
+   "narration": [
+    "河的對岸，有一群鴨嘴龍在喝水，每一隻都跟大象差不多大，看起來脾氣很好。"
+   ],
+   "subject": "HERO（前景背影）；對岸 EDMONTO 群為敘事焦點",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 置中偏下、背對鏡頭站在近岸前景；畫面上方遠處、對岸中央一字排開三隻 EDMONTO 低頭喝水，體積明顯但比 HERO 小半截；HERO 左右各留河岸與河面空間",
+   "screen_direction": "away",
+   "action": "HERO 站定不動，背對我們望向對岸；三隻鴨嘴龍悠閒地低頭喝水，姿態溫和",
+   "camera": {
+    "cell": "M19",
+    "height_m": 1.7,
+    "look_at": "HERO 背影與對岸 EDMONTO 群",
+    "distance_m": 8
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "背影全身，頭到腳",
+     "frame_height": "約 42%"
+    },
+    {
+     "who": "EDMONTO",
+     "visible": "三隻全身，低頭喝水",
+     "frame_height": "約 28%（每隻）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two kinds of characters are in the picture: HERO (exactly as in the attached HERO character sheet) and a group of three EDMONTO hadrosaurs (exactly as in the attached EDMONTO character sheet). HERO is wearing his hat, is smeared with mud, has a small camera slung across his chest, and wears a backpack; HERO's hands are pure paper white. HERO stands in the foreground with his back to the camera, standing still and looking ahead at the hadrosaurs. Far ahead and much smaller, the three EDMONTO hadrosaurs stand in a row with their heads lowered, calmly drinking. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is behind HERO, looking the way HERO faces; HERO's back is nearer the camera and the EDMONTO hadrosaurs are farther ahead; HERO stands to one side, so he does not hide them. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "back view 的實測句原本是雙人追逐（TEEN 近、HERO 遠），這裡改成 HERO 近景背影、EDMONTO 群在遠處當第二主體",
+    "遠景三隻 EDMONTO 一字排開、低頭喝水的群體畫法"
+   ],
+   "remedy": "WS 常被畫成 FS（HERO 偏大、環境偏少），可接受；若 EDMONTO 群畫得偏小，不另補救，靠旁白點明並在剪輯保留此遠景。"
+  },
+  {
+   "id": "EP1N-07-02",
+   "variant_of": "N/A",
+   "t": 2,
+   "narration": [
+    "你拍了一張照片。（停）可惜不是暴龍，不算數。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 置中，膝上入鏡，雙手把小相機舉到臉前朝鏡頭方向按快門；畫面只有 HERO",
+   "screen_direction": "toward",
+   "action": "HERO 舉起相機、雙手按下快門的那一刻，身體微微前傾對準對岸（朝鏡頭方向）",
+   "camera": {
+    "cell": "M13",
+    "height_m": 1.7,
+    "look_at": "HERO",
+    "distance_m": 4
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "正面、頭到膝，臉、雙手與相機清楚",
+     "frame_height": "約 70%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO (exactly as in the attached HERO character sheet) is in the picture. HERO is wearing his hat, is smeared with mud, and wears a backpack; he has lifted the small camera that was slung across his chest and now holds it up in both hands in front of his face, pressing the shutter to take a photo, aiming it toward the camera. HERO's face and hands are pure paper white. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front view. The camera is ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  }
+ ]
+}

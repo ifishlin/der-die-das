@@ -1,0 +1,353 @@
+{
+ "scene_id": "EP1N-06",
+ "notes": "全場 11 句旁白拆成 11 個主鏡頭，照 HERO 從泥地一路往北走到河邊缺口的動線排，剪起來是一條連續的移動線，最後把視線帶向北邊缺口接下一場的河。節奏上：01 建立墜落＋環境、02 蚊子笑點、03 手機螢幕插入、04 切 HERO 死臉當沒訊號的哽、05 建立及腰蕨類、06 坐上『石頭』（錨點，第 17 場要回同一處）、07 眼睛特寫做揭露的爆點、08 揭露整隻甲龍＋骨錘＋HERO 嚇僵、09 踮腳尖溜走的喜感、10 空水壺的失落、11 聽到水聲轉頭當懸念鉤子。甲龍 D27–F28 固定不動；凡是 HERO 和甲龍同框（06、08、09）都另外加一張遠一級版本（06W／08W／09W）備剪。手機螢幕與『沒訊號』都只用轉圈圖示和訊號槓打叉來表現，不出現任何文字，符合不可有字的規定。甲龍在 06 全身被青苔蓋住偽裝成大石頭、臉藏起來，07 只露眼睛，08 才露出完整盔甲與尾錘。背景（隧道藍光、森林、泥地、蕨類、缺口）一律不寫進 prompt，交給主對話逐格補，所以每格 camera.cell 和 look_at 都按地圖填好。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "G29", "facing": "S", "doing": "剛從上方隧道墜下，臉先著地，趴在泥地上四肢攤開"},
+    {"t": "2", "cell": "G29", "facing": "N", "doing": "撐起上半身坐在泥地裡，被飛來的蚊子煩，抬手要拍"},
+    {"t": "3", "cell": "H29", "facing": "N", "doing": "站起來，雙手把手機舉到面前，盯著一直轉圈的畫面"},
+    {"t": "4", "cell": "H29", "facing": "N", "doing": "把手機放低，發現沒訊號，一臉死臉"},
+    {"t": "5", "cell": "H27", "facing": "N", "doing": "走進及腰的蕨類叢，撥開蕨葉、東張西望找地方坐，眼睛往右後方（甲龍方向）瞟"},
+    {"t": "6", "cell": "E27", "facing": "E", "doing": "爬上像大石頭的甲龍背上坐著，擦汗，放鬆露出滿意笑容"},
+    {"t": "7", "cell": "E27", "facing": "E", "doing": "仍坐在『石頭』上（此刻石頭的眼睛眨了一下，HERO 還沒察覺）"},
+    {"t": "8", "cell": "G27", "facing": "W", "doing": "驚覺是活的，連滾帶爬跳到東邊地上站定，僵住瞪著整隻甲龍"},
+    {"t": "9", "cell": "H25", "facing": "NE", "doing": "踮著腳尖、誇張地往東北偷偷溜走，回頭瞄睡著的甲龍"},
+    {"t": "10", "cell": "H20", "facing": "N", "doing": "走到一半停下，把背包拿到胸前打開往裡看，發現放水壺的地方空的"},
+    {"t": "11", "cell": "J18", "facing": "N", "doing": "聽到水聲，身體一頓、抬頭朝缺口方向側耳，半信半疑"}
+   ]
+  },
+  {
+   "who": "ANKY",
+   "path": [
+    {"t": "6", "cell": "D27-F28", "facing": "E", "doing": "趴著熟睡，全身被青苔蓋住偽裝成一顆大石頭，頭朝東、尾錘朝西"},
+    {"t": "7", "cell": "D27-F28", "facing": "E", "doing": "睡夢中一隻眼睛眨開又半闔"},
+    {"t": "8", "cell": "D27-F28", "facing": "E", "doing": "露出完整盔甲和尾錘，睡眼惺忪地又要繼續睡，沒有攻擊意圖"},
+    {"t": "9", "cell": "D27-F28", "facing": "E", "doing": "又睡回去，眼睛閉上，像一座青苔土丘"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-06-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["你是臉先著地的，而身後的隧道，也跟著關了起來。"],
+   "subject": "HERO（墜地趴在泥地上）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 臉朝下攤在畫面中央偏前的泥地上，四肢張開；畫面上方、他身後是逐漸收合的時光隧道藍光；周圍是森林空地與泥地。相機貼近地面，和趴著的他同高。",
+   "screen_direction": "off_down",
+   "action": "墜落著地的瞬間之後——HERO 臉陷在泥裡、整個人攤平，狼狽又發暈。",
+   "camera": {"cell": "F32", "height_m": "0.4", "look_at": "HERO", "distance_m": "6.3"},
+   "cast": [
+    {"who": "HERO", "visible": "全身趴著（臉側、雙手可見）", "frame_height": "約35%（橫躺）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), nothing else. HERO has just crashed down face-first and lies sprawled prone on the ground, arms and legs splayed out, his face pressed into the mud. He is wearing his hat, with a small camera on a strap across his chest and a backpack on his back; he is spattered with wet mud all over and his head is dripping with sweat. HERO's face and hands are pure paper white. Expression: dazed and miserable, eyes squeezed shut, one cheek mashed into the ground. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the clearing, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成接近 FS，若 HERO 顯得偏大，剪輯時當全景用、或輕微拉遠框；front34 大致可做到。"
+  },
+  {
+   "id": "EP1N-06-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["這裡又熱又濕，因為那時候的地球比現在熱多了，連南北極都沒有大冰原呢。而第一個跑來歡迎你的，是蚊子。（停）都過了六千六百五十萬年，蚊子還是一模一樣。"],
+   "subject": "HERO（被蚊子煩）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，撐起上半身坐在泥裡，一手半舉要拍；一隻蚊子在他臉前方偏上嗡嗡飛。前景是泥地。",
+   "screen_direction": "off_up",
+   "action": "HERO 鬥雞眼盯著臉前的蚊子、皺眉抬手要拍的那一刻，煩躁又狼狽。",
+   "camera": {"cell": "H28", "height_m": "1.1", "look_at": "HERO", "distance_m": "2.8"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上（臉、單手）", "frame_height": "約85%"},
+    {"who": "蚊子", "visible": "全身", "frame_height": "約4%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two things in the picture: HERO (exactly as in the attached HERO character sheet) and a single small cartoon mosquito, nothing else. HERO has just pushed himself up to sit in the mud, one hand half-raised as if to swat; he is cross-eyed and scowling at a single mosquito hovering right in front of his face. He wears his hat, a small camera on a strap across his chest and a backpack; he is covered in wet mud and dripping with sweat. HERO's face and hands are pure paper white. Expression: irritated and cross-eyed, a scrunched annoyed frown. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the clearing, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫到腰部，若下緣太低，剪輯時推近到胸上；front34 大致可做到。"
+  },
+  {
+   "id": "EP1N-06-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["你打開 Google，搜尋：白堊紀要怎麼活下去？結果畫面一直轉圈、轉圈。"],
+   "subject": "HERO 手上的手機螢幕（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "手機螢幕與 HERO 的雙手拇指",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "手機幾乎塞滿畫面，螢幕正對鏡頭，上面只有一個轉到一半的圓形載入圈圈，沒有任何文字；HERO 的白色拇指壓在手機下緣兩角。",
+   "screen_direction": "toward",
+   "action": "搜尋送出後、畫面只剩載入圈圈一直空轉的那一刻。",
+   "camera": {"cell": "H30", "height_m": "1.3", "look_at": "手機螢幕", "distance_m": "1.0"},
+   "cast": [
+    {"who": "HERO", "visible": "只有雙手拇指", "frame_height": "拇指約15%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO's two hands and his smartphone are in the picture, nothing else. A tight insert of a smartphone held up in HERO's two hands with the screen facing the camera; the screen shows only a round loading spinner caught mid-spin (a circular loading icon) and nothing else — no text at all. HERO's thumbs rest at the bottom corners of the phone. HERO's hands are pure paper white. Shot size: Extreme Close-up (ECU). Only the phone screen and HERO's thumbs fill the picture. Camera direction: front view. The camera is directly in front of the phone screen, facing it. Camera angle: Eye-level: the camera is level with the phone, looking straight at the screen.",
+   "untested": [
+    "ECU 句用在物件（手機螢幕）而非眼睛",
+    "front 句用在正對手機螢幕的插入鏡頭"
+   ],
+   "remedy": "手機插入鏡頭；若螢幕畫得偏小，剪輯時推近到螢幕；螢幕只放轉圈圖示、不放任何文字。"
+  },
+  {
+   "id": "EP1N-06-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": ["原來是沒有訊號。（停）對啊，六千六百五十萬年前，哪來的基地台。"],
+   "subject": "HERO（看著沒訊號的手機）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，胸部以上；一手把手機拿低在胸前，螢幕上是訊號槓打叉的『沒訊號』圖示（無文字）；他對著鏡頭一臉死臉。",
+   "screen_direction": "toward",
+   "action": "從轉圈切到這裡——HERO 認命地垮下臉，死魚眼直視前方的無奈瞬間。",
+   "camera": {"cell": "I27", "height_m": "1.5", "look_at": "HERO", "distance_m": "4.5"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上（臉、單手、手機）", "frame_height": "約85%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), nothing else. HERO holds his smartphone loosely in one hand down near his chest; the screen shows a 'no signal' icon (signal bars with a cross through them) and nothing else — no text at all. He wears his hat, a small camera on a strap across his chest and a backpack; muddy and sweaty. HERO's face and hands are pure paper white. Expression: flat, deadpan, unimpressed, lips pressed in a thin line. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the clearing, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫到腰部，若下緣太低，剪輯時推近到胸上；front34 大致可做到。"
+  },
+  {
+   "id": "EP1N-06-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": ["你想找片草地坐下來休息，可是這個時代，草還沒長成草原呢。放眼望去都是蕨類，高到你的腰。"],
+   "subject": "HERO（站在及腰蕨類中）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 站在畫面中央偏左，一叢叢蕨類淹到他腰部，一手撥開蕨葉、轉頭往畫面右方張望；偽裝成石頭的甲龍還在畫面右方框外，尚未入鏡。",
+   "screen_direction": "off_right",
+   "action": "HERO 在及腰蕨類裡東張西望、想找塊地方坐下，視線往右方（石頭所在）瞟去，為下一鏡的發現鋪陳。",
+   "camera": {"cell": "G25", "height_m": "1.5", "look_at": "HERO", "distance_m": "4.5"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（下半身被蕨類遮住）", "frame_height": "約80%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), nothing else. HERO stands in a thick patch of tall ferns that come up to his waist, one hand pushing a fern frond aside, turning his head to look around for somewhere to sit. He wears his hat, a small camera on a strap across his chest and a backpack; muddy and sweaty. HERO's face and hands are pure paper white. Expression: tired but mildly hopeful, glancing around. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the clearing, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "front34 大致可做到；FS、eye 皆為可靠寫法。"
+  },
+  {
+   "id": "EP1N-06-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": ["還好旁邊剛好有一顆長滿青苔的大石頭，又平又涼，大小剛剛好。今天第一次，你覺得這份工作還不錯嘛。"],
+   "subject": "HERO（坐在偽裝成石頭的甲龍背上），次要：ANKY（偽裝的石頭）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面中央是一座被青苔完全蓋住、看起來像大石頭的低矮土丘（睡著的甲龍，頭在右、尾在左）；HERO 坐在它背上，身形明顯比這團大東西小，擦著汗、放鬆。這是錨點鏡頭（第 17 場會回到同一處）。",
+   "screen_direction": "toward",
+   "action": "HERO 一屁股坐上『石頭』、擦汗、露出今天第一個滿意笑容的那一刻；石頭其實是熟睡的甲龍。",
+   "camera": {"cell": "H28", "height_m": "1.8", "look_at": "HERO", "distance_m": "6.3"},
+   "cast": [
+    {"who": "HERO", "visible": "坐姿全身（臉、雙手）", "frame_height": "約55%"},
+    {"who": "ANKY", "visible": "偽裝成青苔土丘的背部（部分，頭腳藏起）", "frame_height": "約50%（畫面下半）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and ANKY (exactly as in the attached ANKY character sheet), nothing else. ANKY is a large ankylosaur fast asleep and lying still, its broad back and armor completely overgrown with thick moss so that it looks exactly like a big, flat, moss-covered boulder; its head and legs are tucked down and hard to make out. HERO sits perched on top of this mossy back as if it were a rock, relaxed, one hand wiping his brow, finally taking a rest. He is much smaller than the big mossy animal he sits on. He wears his hat, a small camera on a strap across his chest and a backpack; muddy and sweaty. HERO's face and hands are pure paper white. Expression — HERO: relaxed and content, a small satisfied smile; ANKY: asleep, eye closed, peaceful. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the clearing, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成接近 FS，若 HERO 太大、蓋不出整座石丘，剪輯改用遠一級 06W；front34 大致可做到。"
+  },
+  {
+   "id": "EP1N-06-06W",
+   "variant_of": "EP1N-06-06",
+   "t": "6",
+   "narration": ["還好旁邊剛好有一顆長滿青苔的大石頭，又平又涼，大小剛剛好。今天第一次，你覺得這份工作還不錯嘛。"],
+   "subject": "HERO（坐在偽裝成石頭的甲龍背上），次要：ANKY（偽裝的石頭）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "遠一級：整座青苔石丘（睡著的甲龍）連同坐在上面的小小 HERO 都在空地裡，環境是重點，更能看清他與這團龐然大物的大小關係。",
+   "screen_direction": "toward",
+   "action": "同 06：HERO 坐上石頭擦汗、滿意；此版更遠、強調大小對比。",
+   "camera": {"cell": "J30", "height_m": "1.8", "look_at": "HERO", "distance_m": "11.7"},
+   "cast": [
+    {"who": "HERO", "visible": "坐姿全身", "frame_height": "約28%"},
+    {"who": "ANKY", "visible": "偽裝成青苔土丘的背部（部分）", "frame_height": "約35%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and ANKY (exactly as in the attached ANKY character sheet), nothing else. ANKY is a large ankylosaur fast asleep and lying still, its broad back and armor completely overgrown with thick moss so that it looks exactly like a big, flat, moss-covered boulder; its head and legs are tucked down and hard to make out. HERO sits perched on top of this mossy back as if it were a rock, relaxed, one hand wiping his brow. He is much smaller than the big mossy animal he sits on. He wears his hat, a small camera on a strap across his chest and a backpack; muddy and sweaty. HERO's face and hands are pure paper white. Expression — HERO: relaxed and content, a small satisfied smile; ANKY: asleep, eye closed, peaceful. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the clearing, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "EWS 為可靠寫法；front34 大致可做到。"
+  },
+  {
+   "id": "EP1N-06-07",
+   "variant_of": "N/A",
+   "t": "7",
+   "narration": ["然後，那顆石頭，眨了一下眼睛。"],
+   "subject": "ANKY 的一隻眼睛（插入／揭露鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "ANKY 的眼睛",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面被一隻爬蟲類眼睛和周圍帶青苔的鱗甲皮膚塞滿；眼皮眨到一半，剛掀開一條縫；四周是青苔與疙瘩狀的甲片。沒有 HERO。",
+   "screen_direction": "toward",
+   "action": "『石頭』上一隻眼睛忽然眨開——全場的揭露爆點。",
+   "camera": {"cell": "G28", "height_m": "1.0", "look_at": "ANKY 的頭部眼睛", "distance_m": "1.2"},
+   "cast": [
+    {"who": "ANKY", "visible": "只有一隻眼睛和周圍帶青苔的鱗甲皮膚", "frame_height": "眼睛約40%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one thing is in the picture: a single eye of ANKY (exactly as in the attached ANKY character sheet), set in mossy, bumpy armored hide; no HERO, nothing else. The eye is a sleepy reptile eye caught in the middle of a blink, the scaly eyelid half-closed; thick moss and knobbly armor plates surround it. Expression: drowsy and half-awake, the eye just flicking open. Shot size: Extreme Close-up (ECU). Only ANKY's eye and the mossy scaly skin around it fill the picture. Camera direction: front three-quarter view. The camera is in front of ANKY's head and off to one side, so we see the eye and one side of the head. Camera angle: Eye-level: the camera is at the eye's height, looking straight at it.",
+   "untested": [
+    "front34 句改寫套用在甲龍頭部（原句為 HERO／trail）"
+   ],
+   "remedy": "眼睛 ECU 為實測可靠寫法；方位句為改寫版，若構圖偏掉剪輯時微調即可。"
+  },
+  {
+   "id": "EP1N-06-08",
+   "variant_of": "N/A",
+   "t": "8",
+   "narration": ["原來那是一隻甲龍，全身都是盔甲，尾巴上還有一顆骨錘。那骨錘一揮，可以把你打到下個月去。還好，牠只想繼續睡覺。"],
+   "subject": "ANKY（整隻甲龍揭露），次要：HERO（嚇僵）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "甲龍側躺橫跨整個畫面：右端是低矮的骨質頭（一隻半開的睡眼），背上滿是甲片與青苔，左端是沉重尾巴末端一顆大骨錘；HERO 站在畫面最右、緊貼著甲龍，明顯比這隻動物的體長小一截，整個人僵住。",
+   "screen_direction": "right",
+   "action": "青苔『石頭』原形畢露成一隻披甲、帶尾錘的甲龍、睡眼惺忪又要睡回去；HERO 在旁邊嚇到定格、張嘴倒抽一口氣。",
+   "camera": {"cell": "F31", "height_m": "1.4", "look_at": "ANKY", "distance_m": "7.6"},
+   "cast": [
+    {"who": "ANKY", "visible": "側躺全身（頭、背甲、尾錘）", "frame_height": "高度約35%，橫向佔滿畫面"},
+    {"who": "HERO", "visible": "站姿全身（臉、雙手）", "frame_height": "約45%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: ANKY (exactly as in the attached ANKY character sheet) and HERO (exactly as in the attached HERO character sheet), nothing else. ANKY is a large armored ankylosaur lying on the ground side-on, its whole body stretching across the picture: a low bony head with one drowsy half-open eye at one end, a broad back covered in armor plates with patches of moss, and a heavy tail ending in a big round bony club at the other end. ANKY is drowsy and just settling back down to sleep, jaw relaxed, not aggressive. HERO stands close beside the animal, much shorter than the animal is long, frozen stiff with shock, arms rigid at his sides. He wears his hat, a small camera on a strap across his chest and a backpack; muddy and sweaty. HERO's face and hands are pure paper white. Expression — HERO: wide-eyed and terrified, eyebrows up, mouth open in a silent gasp; ANKY: drowsy and half-lidded, settling back to sleep. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside ANKY and sees ANKY and HERO exactly from the side. Camera angle: Eye-level: the camera is at eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成接近 FS，若甲龍體長塞不下，改用遠一級 08W；side、eye 皆為可靠寫法。"
+  },
+  {
+   "id": "EP1N-06-08W",
+   "variant_of": "EP1N-06-08",
+   "t": "8",
+   "narration": ["原來那是一隻甲龍，全身都是盔甲，尾巴上還有一顆骨錘。那骨錘一揮，可以把你打到下個月去。還好，牠只想繼續睡覺。"],
+   "subject": "ANKY（整隻甲龍揭露），次要：HERO（嚇僵）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "遠一級：側躺的整隻甲龍與旁邊渺小的 HERO 都在空地裡，環境為主，確保 6 公尺長的甲龍連尾錘都完整入鏡、大小對比更清楚。",
+   "screen_direction": "right",
+   "action": "同 08：甲龍原形畢露、HERO 嚇僵；此版更遠、確保全身與尾錘入鏡。",
+   "camera": {"cell": "F32", "height_m": "1.5", "look_at": "ANKY", "distance_m": "10.0"},
+   "cast": [
+    {"who": "ANKY", "visible": "側躺全身（頭、背甲、尾錘）", "frame_height": "高度約22%，橫向佔大半畫面"},
+    {"who": "HERO", "visible": "站姿全身", "frame_height": "約25%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: ANKY (exactly as in the attached ANKY character sheet) and HERO (exactly as in the attached HERO character sheet), nothing else. ANKY is a large armored ankylosaur lying on the ground side-on, its whole body stretching across the picture: a low bony head with one drowsy half-open eye at one end, a broad back covered in armor plates with patches of moss, and a heavy tail ending in a big round bony club at the other end. ANKY is drowsy and just settling back down to sleep, jaw relaxed, not aggressive. HERO stands close beside the animal, much shorter than the animal is long, frozen stiff with shock, arms rigid at his sides. He wears his hat, a small camera on a strap across his chest and a backpack; muddy and sweaty. HERO's face and hands are pure paper white. Expression — HERO: wide-eyed and terrified, mouth open in a silent gasp; ANKY: drowsy and half-lidded, settling back to sleep. Shot size: Extreme Wide Shot (EWS). The two characters are small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside ANKY and sees ANKY and HERO exactly from the side. Camera angle: Eye-level: the camera is at eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "EWS、side、eye 皆為可靠寫法。"
+  },
+  {
+   "id": "EP1N-06-09",
+   "variant_of": "N/A",
+   "t": "9",
+   "narration": ["你踮著腳尖，偷偷溜走。"],
+   "subject": "HERO（踮腳尖溜走），次要：ANKY（背景睡著的石丘）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "前景 HERO 以誇張踮腳姿勢往畫面右方潛行、回頭往左後方看；畫面左方背景是睡著的青苔甲龍（低矮土丘、眼睛閉著）。HERO 明顯比那團動物小。",
+   "screen_direction": "right",
+   "action": "HERO 踮著腳尖、高抬膝、張手保持平衡，一邊往右溜、一邊回頭盯著睡著的甲龍，努力不弄出聲音。",
+   "camera": {"cell": "J27", "height_m": "1.5", "look_at": "HERO", "distance_m": "5.6"},
+   "cast": [
+    {"who": "HERO", "visible": "踮腳站姿全身（臉回頭、雙手）", "frame_height": "約75%"},
+    {"who": "ANKY", "visible": "背景青苔土丘（部分，眼閉）", "frame_height": "約30%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and ANKY (exactly as in the attached ANKY character sheet), nothing else. In the foreground HERO creeps away on an exaggerated tiptoe, knees lifted high, arms out for balance, leaning forward, his head turned back over his shoulder to look at ANKY. Behind him ANKY is the large moss-covered sleeping ankylosaur, lying low like a mossy mound with its eye shut. HERO is much smaller than the animal. He wears his hat, a small camera on a strap across his chest and a backpack; muddy and sweaty. HERO's face and hands are pure paper white. Expression — HERO: wincing and nervous, biting his lip, wide eyes, trying not to make a sound; ANKY: asleep, eye closed. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the clearing and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "FS、side、eye 皆為可靠寫法；若甲龍在背景被畫得偏大，改用遠一級 09W。"
+  },
+  {
+   "id": "EP1N-06-09W",
+   "variant_of": "EP1N-06-09",
+   "t": "9",
+   "narration": ["你踮著腳尖，偷偷溜走。"],
+   "subject": "HERO（踮腳尖溜走），次要：ANKY（背景睡著的石丘）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "遠一級：HERO 踮腳往右潛行在前、睡著的甲龍土丘在左後方，周圍空地也入鏡，大小關係更清楚。",
+   "screen_direction": "right",
+   "action": "同 09：HERO 踮腳尖回頭偷溜；此版更遠。",
+   "camera": {"cell": "K28", "height_m": "1.5", "look_at": "HERO", "distance_m": "8.5"},
+   "cast": [
+    {"who": "HERO", "visible": "踮腳站姿全身", "frame_height": "約45%"},
+    {"who": "ANKY", "visible": "背景青苔土丘（部分，眼閉）", "frame_height": "約25%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and ANKY (exactly as in the attached ANKY character sheet), nothing else. In the foreground HERO creeps away on an exaggerated tiptoe, knees lifted high, arms out for balance, leaning forward, his head turned back over his shoulder to look at ANKY. Behind him ANKY is the large moss-covered sleeping ankylosaur, lying low like a mossy mound with its eye shut. HERO is much smaller than the animal. He wears his hat, a small camera on a strap across his chest and a backpack; muddy and sweaty. HERO's face and hands are pure paper white. Expression — HERO: wincing and nervous, biting his lip, wide eyes, trying not to make a sound; ANKY: asleep, eye closed. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside the clearing and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成接近 FS；side、eye 皆為可靠寫法。"
+  },
+  {
+   "id": "EP1N-06-10",
+   "variant_of": "N/A",
+   "t": "10",
+   "narration": ["走著走著，你口渴了。打開背包一看，放水壺的地方空空的。（停）原來水壺跟生存指南，一起留在實驗室了。"],
+   "subject": "HERO（看空背包）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央、腰部以上；把背包拿下來捧在胸前打開，低頭往裡看，放水壺的主袋明顯空空的。",
+   "screen_direction": "off_down",
+   "action": "HERO 口渴，打開背包低頭一看、發現水壺不在的失落瞬間，嘴角一垮。",
+   "camera": {"cell": "I18", "height_m": "1.5", "look_at": "HERO", "distance_m": "4.5"},
+   "cast": [
+    {"who": "HERO", "visible": "腰部以上（臉、雙手、背包）", "frame_height": "約80%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), nothing else. HERO has taken his backpack off and holds it open in both hands in front of his chest, peering down into the empty main pocket where a water bottle should be; the pocket is clearly empty. He still wears his hat and the small camera on a strap across his chest; muddy and sweaty. HERO's face and hands are pure paper white. Expression: dismayed, a flat disappointed frown, looking down into the empty bag. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the clearing, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常被畫成膝上景，若下緣太低，剪輯時推近到腰上；front34 大致可做到。"
+  },
+  {
+   "id": "EP1N-06-11",
+   "variant_of": "N/A",
+   "t": "11",
+   "narration": ["這時候，你聽到了水聲，這是今天的第一個好消息。（停）不過你決定，先別太相信它。"],
+   "subject": "HERO（聽到水聲）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央、腰部以上；身體一頓、抬頭把頭偏向畫外上方（北邊缺口／水聲方向），一手虛攏在耳邊，挑起一邊眉毛。視線把觀眾帶往缺口方向，接下一場的河。",
+   "screen_direction": "off_up",
+   "action": "HERO 走到一半忽然停住、豎耳朝畫外的水聲偏頭，一臉又期待又半信半疑的那一刻。",
+   "camera": {"cell": "I17", "height_m": "1.5", "look_at": "HERO", "distance_m": "2.8"},
+   "cast": [
+    {"who": "HERO", "visible": "腰部以上（臉、單手）", "frame_height": "約80%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), nothing else. HERO freezes mid-step and perks up, lifting and tilting his head toward a sound off-screen, one hand cupped near his ear. He wears his hat, a small camera on a strap across his chest and a backpack; muddy and sweaty. HERO's face and hands are pure paper white. Expression: perked up and alert, one eyebrow raised in wary suspicion, with a flicker of hope. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the clearing, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常被畫成膝上景，若下緣太低，剪輯時推近到腰上；front34 大致可做到。"
+  }
+ ]
+}

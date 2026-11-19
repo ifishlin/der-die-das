@@ -1,0 +1,118 @@
+{
+ "scene_id": "EP1N-07",
+ "notes": "短場，只有兩句旁白，用「正拍／反拍」兩張收掉：第 1 張是過肩建立鏡頭，HERO 背影擺在前景下方，河對岸一群低頭喝水的鴨嘴龍散在中後景，一次交代「對岸、一群、跟大象差不多大、脾氣很好」，也用寬河把 HERO 和恐龍隔開、凸顯他過不去。第 2 張切回 HERO 正面，舉相機按快門的那一刻，臉是無奈的死魚臉，承接「可惜不是暴龍，不算數」的笑點。兩張都平視，建立鏡頭求客觀、反拍求情緒，切鏡有明確理由。EDMONTO（鴨嘴龍）不在 TREX／TEEN／ANKY 加拍清單內，且在河對岸本來就不需全身精準對比，故不加拍遠一級。走位：HERO 從南邊森林走到泥岸水邊 K17，站定看對岸、再舉相機拍照；鴨嘴龍群在對岸 s 格（I3–N3 一帶）低頭喝水。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "K17",
+     "facing": "N",
+     "doing": "走到泥岸水邊站定，望向河對岸低頭喝水的鴨嘴龍群"
+    },
+    {
+     "t": "2",
+     "cell": "K17",
+     "facing": "N",
+     "doing": "把胸前的小相機舉到臉前，對著對岸按下快門，表情無奈"
+    }
+   ]
+  },
+  {
+   "who": "EDMONTO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "K3",
+     "facing": "S",
+     "doing": "一群（約 I3–N3）聚在對岸河邊，低頭喝水，神情溫馴"
+    },
+    {
+     "t": "2",
+     "cell": "K3",
+     "facing": "S",
+     "doing": "繼續低頭喝水"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-07-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "河的對岸，有一群鴨嘴龍在喝水，每一隻都跟大象差不多大，看起來脾氣很好。"
+   ],
+   "subject": "對岸喝水的鴨嘴龍群（EDMONTO）；次要主體：前景 HERO 的背影",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 背影在畫面下方偏左的前景，臉不入鏡；畫面中後景、河對岸橫向散開一群低頭喝水的鴨嘴龍；兩者之間是寬闊的河。",
+   "screen_direction": "toward",
+   "action": "鴨嘴龍群全部低頭在水邊喝水的靜態一刻；HERO 站定、背對鏡頭凝望對岸。",
+   "camera": {
+    "cell": "K20",
+    "height_m": "1.7",
+    "look_at": "對岸的鴨嘴龍群",
+    "distance_m": "34"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "背面全身（臉不入鏡）",
+     "frame_height": "約 40%"
+    },
+    {
+     "who": "EDMONTO",
+     "visible": "全身（一群，各自全身入鏡）",
+     "frame_height": "每隻約 18%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two subjects in the picture: HERO (exactly as in the attached HERO character sheet) and a group of EDMONTO duck-billed dinosaurs (exactly as in the attached EDMONTO character sheet). HERO wears a cap, is covered in mud, with a small camera on a strap across his chest and a backpack on his back; he stands still in the near foreground, seen from behind, looking away from us toward the dinosaurs. HERO's hands are pure paper white. In the background, a group of several EDMONTO duck-billed dinosaurs stand close together with their heads lowered to drink; their faces are calm, heavy-lidded and good-natured. Shot size: Wide Shot (WS). The EDMONTO group's whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: front view. The camera is on the mud bank ahead of the EDMONTO group, facing them. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "過肩構圖：HERO 背影放前景、同時主體是遠處的一群恐龍（兩個主體、front view 指向遠景那群）",
+    "a group of several EDMONTO drinking with heads lowered（多隻同種恐龍成群低頭喝水）"
+   ],
+   "remedy": "WS 常被畫成接近 FS，若鴨嘴龍群被畫得太大或不夠遠，改用 EWS 句重畫；過肩若模型漏掉前景 HERO 背影，可接受只拍恐龍群當 HERO 主觀視角。"
+  },
+  {
+   "id": "EP1N-07-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "你拍了一張照片。（停）可惜不是暴龍，不算數。"
+   ],
+   "subject": "HERO（舉相機拍照）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 置中，腰部以上入鏡；雙手把小相機舉到臉前按快門，相機半遮住臉但露出無奈表情。",
+   "screen_direction": "toward",
+   "action": "按下快門的那一刻：雙手舉相機到臉前，臉是死魚臉／無奈，像在說『又不是暴龍』。",
+   "camera": {
+    "cell": "K15",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "4"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "腰部以上：臉、雙手、小相機",
+     "frame_height": "約 75%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO (exactly as in the attached HERO character sheet) is in the picture, no other characters. HERO wears a cap, is covered in mud, with a backpack; he holds a small camera up in both hands in front of his face and presses the shutter to take a photo. His face is flat, deadpan and unimpressed. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is on the mud bank ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "holds a small camera up in both hands in front of his face and presses the shutter（雙手舉相機到臉前按快門）"
+   ],
+   "remedy": "MS 常被畫成膝上景（MLS），若畫成膝上，剪輯時裁到腰上即可；相機若遮住整張臉、看不到表情，重畫時把相機壓低一點、露出眼睛的無奈。"
+  }
+ ]
+}

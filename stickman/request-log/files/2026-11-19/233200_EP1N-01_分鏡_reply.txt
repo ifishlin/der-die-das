@@ -1,0 +1,234 @@
+{
+ "scene_id": "EP1N-01",
+ "notes": "冷開場追逐，6 句旁白拆成 6 顆主鏡（01–06），節奏由『建立環境→呈現速度→揭露威脅→放大威脅→逼近→定格懸念』遞進。01 用 EWS 側視當全系列第一個畫面，先立環境（高聳森林、爛泥小路），HERO 很小；此時先不露暴龍，保留冷開場的懸念。02 切到 HERO 迎面跑來的 MLS 前側 3/4，拉近看喘息與腿部動作，賣『跑得這麼快』。03 側視 WS 第一次把 TEEN 揭露在 HERO 身後、同框比出體型差（TEEN 約 HERO 的 1.68 倍）。04 切 TEEN 血盆大口的近景插入鏡頭（只有恐龍、仰角），對應『一張嘴比你整個人還大』的誇張。05 改用背視 WS，從兩者背後看 TEEN 逼在 HERO 身後、縮小的間距，賣『越追越近』。06 是定格錨點：HERO 躍過小路上的樹根（Q6）騰空、時間凍結，TEEN 的大嘴就在身後——此鏡會在第 16 場原樣重現，故用穩定好重現的側視平視。凡 HERO 與大恐龍同框（03、05、06）都另加一張遠一級（EWS）的 W 版本供剪輯挑；04 只有恐龍、01/02 只有 HERO，不需加拍。所有相機格皆在『相機可放』格，角色只走在小路（p）上，樹根只跳過不站。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "F6", "facing": "E", "doing": "沿泥巴小路往東狂奔，剛進畫面（建立環境）"},
+    {"t": "2", "cell": "I6", "facing": "E", "doing": "繼續往東、朝鏡頭方向拚命跑，喘氣用盡全力"},
+    {"t": "3", "cell": "K6", "facing": "E", "doing": "往東跑，身後 TEEN 被揭露"},
+    {"t": "4", "cell": "M6", "facing": "E", "doing": "往東跑（此時插入 TEEN 大口特寫，HERO 在前方畫外）"},
+    {"t": "5", "cell": "N6", "facing": "E", "doing": "往東跑，TEEN 緊追在後"},
+    {"t": "6", "cell": "Q6", "facing": "E", "doing": "躍起越過小路上的樹根、雙腳騰空，時間在此凍結（定格錨點）"}
+   ]
+  },
+  {
+   "who": "TEEN",
+   "path": [
+    {"t": "1", "cell": "B6", "facing": "E", "doing": "遠在西方疾衝（畫外，尚未揭露）"},
+    {"t": "2", "cell": "E6", "facing": "E", "doing": "持續往東疾衝（畫外）"},
+    {"t": "3", "cell": "H6", "facing": "E", "doing": "追到 HERO 身後、張口，被鏡頭揭露"},
+    {"t": "4", "cell": "K6", "facing": "E", "doing": "張開血盆大口朝前撲（大口特寫）"},
+    {"t": "5", "cell": "L6", "facing": "E", "doing": "縮小與 HERO 的距離，逼在身後"},
+    {"t": "6", "cell": "O6", "facing": "E", "doing": "大口全開朝 HERO 撲去，時間凍結"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-01-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["你正在跑，腳下全是爛泥巴。而兩旁的樹，比大樓還要高。"],
+   "subject": "HERO",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 很小，位於畫面中下偏左，沿小路往右（東）奔跑；左右與上方被高聳的森林填滿，爛泥小路向畫面縱深延伸。環境是主體。",
+   "screen_direction": "right",
+   "action": "HERO 前傾、擺臂、邁步狂奔的瞬間，剛衝進畫面。",
+   "camera": {"cell": "F9", "height_m": "1.6", "look_at": "HERO", "distance_m": "9"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 25%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only one character: HERO (exactly as in the attached HERO character sheet), with no hat (it was snatched away earlier), covered all over in mud, a small camera strapped across his chest, and a backpack on his back, sprinting hard to the right, body leaning forward, arms pumping, mid-stride. His expression is wide-eyed and straining, mouth open and gasping for breath. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the trail and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["side view 實測句原文含 TEEN，此格只有 HERO，已把 TEEN 拿掉"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-01-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["而你這輩子，從來沒跑得這麼快過。"],
+   "subject": "HERO",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 置於畫面中央偏左，迎面朝鏡頭跑來，膝蓋以上入鏡；泥巴往兩側濺開。",
+   "screen_direction": "toward",
+   "action": "HERO 擺臂、腿部邁開、全力衝刺的瞬間，臉上寫滿拚命。",
+   "camera": {"cell": "J7", "height_m": "1.6", "look_at": "HERO", "distance_m": "4"},
+   "cast": [
+    {"who": "HERO", "visible": "膝蓋以上", "frame_height": "約 75%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only one character: HERO (exactly as in the attached HERO character sheet), with no hat (it was snatched away earlier), covered all over in mud, a small camera strapped across his chest, and a backpack on his back, running flat-out straight toward the camera, arms pumping, legs mid-stride, mud splashing. His expression is desperate and wide-eyed, mouth open gasping. HERO's face and hands are pure paper white. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the trail, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-01-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["可是後面那個東西，跑得比你還快。"],
+   "subject": "TEEN",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面右側、較小，往右（東）跑；TEEN 在畫面左側、較高大，張口追在後面，兩者皆往右跑。TEEN 明顯高過 HERO（約 1.68 倍）。",
+   "screen_direction": "right",
+   "action": "TEEN 第一次被揭露在 HERO 身後、張口疾追的瞬間。",
+   "camera": {"cell": "J9", "height_m": "1.6", "look_at": "TEEN", "distance_m": "11"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 40%"},
+    {"who": "TEEN", "visible": "全身", "frame_height": "約 67%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows exactly two characters and nothing else: HERO (exactly as in the attached HERO character sheet), with no hat (it was snatched away earlier), covered all over in mud, a small camera strapped across his chest and a backpack on his back, running to the right on the near part of the trail; and behind him to the left, chasing, a TEEN (exactly as in the attached TEEN character sheet), a juvenile T-rex, much taller than HERO, mouth open, running to the right after him. HERO's expression is terrified, wide-eyed, mouth open mid-scream. TEEN's expression is ferocious, jaws open, teeth bared, eyes locked on HERO. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). TEEN's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS（△）常被畫成 FS；兩角色若塞不下，改用加拍的 03W（EWS）。"
+  },
+  {
+   "id": "EP1N-01-03W",
+   "variant_of": "EP1N-01-03",
+   "t": "3",
+   "narration": ["可是後面那個東西，跑得比你還快。"],
+   "subject": "TEEN",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "同 03，但拉遠一級：HERO 在右、TEEN 在左，兩者更小，四周森林與小路大量入鏡。",
+   "screen_direction": "right",
+   "action": "TEEN 被揭露在 HERO 身後、張口疾追的瞬間（遠景版）。",
+   "camera": {"cell": "J10", "height_m": "1.6", "look_at": "TEEN", "distance_m": "13"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 25%"},
+    {"who": "TEEN", "visible": "全身", "frame_height": "約 42%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows exactly two characters and nothing else: HERO (exactly as in the attached HERO character sheet), with no hat (it was snatched away earlier), covered all over in mud, a small camera strapped across his chest and a backpack on his back, running to the right on the near part of the trail; and behind him to the left, chasing, a TEEN (exactly as in the attached TEEN character sheet), a juvenile T-rex, much taller than HERO, mouth open, running to the right after him. HERO's expression is terrified, wide-eyed, mouth open mid-scream. TEEN's expression is ferocious, jaws open, teeth bared, eyes locked on HERO. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). TEEN is very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-01-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": ["牠光是一張嘴，就比你整個人還大。"],
+   "subject": "TEEN（頭與大嘴）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "low",
+   "composition": "TEEN 張開的大嘴與頭幾乎填滿整個畫面，略帶 3/4 側向、由下往上看，牙齒與口腔逼近鏡頭。只有恐龍。",
+   "screen_direction": "toward",
+   "action": "TEEN 血盆大口全開、朝鏡頭撲來的瞬間。",
+   "camera": {"cell": "L7", "height_m": "0.5", "look_at": "TEEN 的頭／大嘴", "distance_m": "4"},
+   "cast": [
+    {"who": "TEEN", "visible": "頭部與張開的大嘴", "frame_height": "約 90%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only one character: the head and wide-open jaws of a TEEN (exactly as in the attached TEEN character sheet), a juvenile T-rex, lunging straight toward the camera. Its jaws are gaping wide, rows of teeth bared, eyes locked forward, ferocious and hungry. Shot size: Close-up (CU). TEEN's open jaws and head fill most of the picture. Camera direction: front three-quarter view. The camera is ahead of TEEN and off to one side of the trail, so we see its face and one side of its head. Camera angle: Extreme low-angle shot, ground-level camera perspective, looking up at TEEN's open jaws.",
+   "untested": ["CU 實測句是 HERO 臉部，此格改寫成恐龍頭與大嘴填滿畫面", "低角度實測只驗證過單人站立全身，這裡用在恐龍頭部特寫"],
+   "remedy": "想要 CU（HERO 的 CU 實測為 ✗）：prompt 改用『頭與大嘴填滿畫面』的近距離寫法；若畫得不夠大，剪輯推近到 CU／ECU。"
+  },
+  {
+   "id": "EP1N-01-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": ["而且啊，牠還越追越近。"],
+   "subject": "TEEN",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "從兩者背後看往東跑：前景是 TEEN 的背影、佔去大半畫面；前方不遠處是較小的 HERO 背影。兩者間距很短，呈現逼近感。TEEN 偏小路一側，不擋住 HERO。",
+   "screen_direction": "away",
+   "action": "TEEN 逼在 HERO 身後、間距明顯縮小的瞬間。",
+   "camera": {"cell": "I6", "height_m": "1.6", "look_at": "TEEN", "distance_m": "9"},
+   "cast": [
+    {"who": "TEEN", "visible": "背面全身", "frame_height": "約 68%"},
+    {"who": "HERO", "visible": "背面全身（較小、在前方）", "frame_height": "約 28%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows exactly two characters and nothing else, both seen from behind, running away from the camera: in the foreground a TEEN (exactly as in the attached TEEN character sheet), a juvenile T-rex, its back filling much of the frame; and a short distance ahead of it, HERO (exactly as in the attached HERO character sheet), with no hat (it was snatched away earlier), covered all over in mud, a small camera strapped across his chest and a backpack on his back, running away. We see only their backs; no faces. HERO's hands are pure paper white. Shot size: Wide Shot (WS). TEEN's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is on the trail behind TEEN, looking the way they run; TEEN's back is nearer the camera and HERO's back is farther ahead. TEEN runs on one side of the trail, so he does not hide HERO. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS（△）可能偏大；需要更完整的空間與間距，改用加拍的 05W（EWS）。"
+  },
+  {
+   "id": "EP1N-01-05W",
+   "variant_of": "EP1N-01-05",
+   "t": "5",
+   "narration": ["而且啊，牠還越追越近。"],
+   "subject": "TEEN",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "同 05，但拉遠一級：TEEN 背影在前、HERO 背影在前方更遠處，兩者更小，森林小路大量入鏡。",
+   "screen_direction": "away",
+   "action": "TEEN 逼在 HERO 身後、間距縮小的瞬間（遠景版）。",
+   "camera": {"cell": "H6", "height_m": "1.6", "look_at": "TEEN", "distance_m": "12"},
+   "cast": [
+    {"who": "TEEN", "visible": "背面全身", "frame_height": "約 45%"},
+    {"who": "HERO", "visible": "背面全身", "frame_height": "約 18%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows exactly two characters and nothing else, both seen from behind, running away from the camera: in the foreground a TEEN (exactly as in the attached TEEN character sheet), a juvenile T-rex; and ahead of it, farther away, HERO (exactly as in the attached HERO character sheet), with no hat (it was snatched away earlier), covered all over in mud, a small camera strapped across his chest and a backpack on his back, running away. We see only their backs; no faces. HERO's hands are pure paper white. Shot size: Extreme Wide Shot (EWS). TEEN is very small in the picture; the environment is the main subject. Camera direction: back view. The camera is on the trail behind TEEN, looking the way they run; TEEN's back is nearer the camera and HERO's back is farther ahead. TEEN runs on one side of the trail, so he does not hide HERO. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-01-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": ["這時候你一定很想問：我到底是怎麼跑到這裡來的？別急，這件事要從今天早上說起。"],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側視定格：HERO 在畫面右側、騰空於躍起最高點、往右（東）飛越；TEEN 在畫面左側、緊跟在後、大口全開就在 HERO 身後。全畫面凍結。此為第 16 場要重現的錨點鏡頭。",
+   "screen_direction": "right",
+   "action": "HERO 躍過小路樹根、雙腳離地、手臂上揚的最高點；TEEN 大口撲到身後；時間在此凍結。",
+   "camera": {"cell": "P9", "height_m": "1.6", "look_at": "HERO", "distance_m": "9"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（騰空）", "frame_height": "約 42%"},
+    {"who": "TEEN", "visible": "全身", "frame_height": "約 70%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. This is a frozen freeze-frame, everything motionless in mid-action. The picture shows exactly two characters and nothing else: HERO (exactly as in the attached HERO character sheet), with no hat (it was snatched away earlier), covered all over in mud, a small camera strapped across his chest and a backpack on his back, caught in mid-air at the top of a leap to the right, both feet off the ground, legs tucked and arms thrown up; and close behind him to the left, a TEEN (exactly as in the attached TEEN character sheet), a juvenile T-rex, lunging to the right with its jaws wide open right behind HERO. HERO's expression is wide-eyed and terrified, mouth open mid-yell. TEEN's expression is ferocious, jaws gaping, teeth bared, eyes fixed on HERO. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). TEEN's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["加入 frozen freeze-frame（定格）描述，實測表上沒有"],
+   "remedy": "WS（△）可能偏大；定格瞬間若兩角色塞不下，改用加拍的 06W（EWS）。此為第 16 場要原樣重現的錨點鏡頭。"
+  },
+  {
+   "id": "EP1N-01-06W",
+   "variant_of": "EP1N-01-06",
+   "t": "6",
+   "narration": ["這時候你一定很想問：我到底是怎麼跑到這裡來的？別急，這件事要從今天早上說起。"],
+   "subject": "HERO",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "同 06，但拉遠一級：HERO 騰空在右、TEEN 在左，兩者更小，高聳森林與小路大量入鏡；全畫面凍結。",
+   "screen_direction": "right",
+   "action": "HERO 躍起最高點、TEEN 大口撲到身後、時間凍結的瞬間（遠景版）。",
+   "camera": {"cell": "P10", "height_m": "1.6", "look_at": "HERO", "distance_m": "12"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（騰空）", "frame_height": "約 26%"},
+    {"who": "TEEN", "visible": "全身", "frame_height": "約 43%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. This is a frozen freeze-frame, everything motionless in mid-action. The picture shows exactly two characters and nothing else: HERO (exactly as in the attached HERO character sheet), with no hat (it was snatched away earlier), covered all over in mud, a small camera strapped across his chest and a backpack on his back, caught in mid-air at the top of a leap to the right, both feet off the ground, legs tucked and arms thrown up; and close behind him to the left, a TEEN (exactly as in the attached TEEN character sheet), a juvenile T-rex, lunging to the right with its jaws wide open right behind HERO. HERO's expression is wide-eyed and terrified, mouth open mid-yell. TEEN's expression is ferocious, jaws gaping, teeth bared, eyes fixed on HERO. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["加入 frozen freeze-frame（定格）描述，實測表上沒有"],
+   "remedy": "N/A"
+  }
+ ]
+}

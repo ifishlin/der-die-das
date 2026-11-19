@@ -1,0 +1,1 @@
+（不是 request：Claude 主對話照固定清單列的書外知識，沒有送 request）

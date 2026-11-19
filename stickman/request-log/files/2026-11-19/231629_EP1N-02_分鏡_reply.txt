@@ -1,0 +1,343 @@
+{
+ "scene_id": "EP1N-02",
+ "notes": "這一場全程只有 HERO，沒有恐龍，所以不用加拍遠一級。整體拍法：用一張 WS 建立環境（HERO 孤單坐在延畢生小套房的書桌前），接著跟著旁白「三樣東西」做一段桌上物件的插入鏡頭蒙太奇（帳單→學分通知→手機與電擊槍→插座→手機螢幕），物件插入不放角色，讓紅色逾期章、紅色警告、唯一插座等視覺資訊單獨成立。中間與結尾用 HERO 的臉撐住三個笑點：narr4 的系辦助理冷笑話給一個 deadpan 反應、narr8 的『上次也說會付錢』給一個疲憊懷疑的表情、narr9 低頭看帳單、narr10 嘆氣起身走向門口（和開場 WS 形成首尾呼應，收束在他離開房間、往下一場走）。相機在需要看到臉時放在書桌上（書桌格可放相機）朝南拍 HERO；物件插入則放在桌面上方俯拍。景別 WS/MS/MCU 在實測是 △，prompt 照用實測句、remedy 註明剪輯時微調。物件插入沒有 HERO-only 的景別實測句，照自然插入寫、列進 untested。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "G4",
+     "facing": "N",
+     "doing": "坐在書桌前的椅子上，面向書桌（窗那面牆），看著桌上的帳單、通知、手機和電擊槍"
+    },
+    {
+     "t": "2",
+     "cell": "G6",
+     "facing": "SE",
+     "doing": "嘆一口氣，從椅子起身，轉身朝東南角的門走去"
+    },
+    {
+     "t": "3",
+     "cell": "J10",
+     "facing": "S",
+     "doing": "走到門口，準備出門（接下一場校園外）"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-02-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "話說，你的書桌上，擺著三樣東西。"
+   ],
+   "subject": "HERO 坐在書桌前（建立環境）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "HERO 偏畫面右下，坐在椅子上背對鏡頭、朝書桌；書桌與百葉窗在他前方（畫面上方），桌上一排物件隱約可見；房間空蕩，營造延畢生的孤單感",
+   "screen_direction": "away",
+   "action": "HERO 懶懶地坐在書桌前，背對鏡頭，肩膀微垮，望著桌上的東西，整個房間只有他一人",
+   "camera": {
+    "cell": "E8",
+    "height_m": "1.4",
+    "look_at": "HERO 與書桌",
+    "distance_m": "2.2"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "坐姿的背面與一側，後腦、背、肩膀，手搭在桌上",
+     "frame_height": "0.5"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), sitting on a desk chair in front of a cluttered wooden desk, slouching, seen from behind and slightly to one side. HERO's hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side, so HERO is seen from behind and one side as he sits at the desk. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "back34 實測句原本是雙人奔跑版（TEEN/trail），這裡改寫成單人坐姿版本"
+   ],
+   "remedy": "WS 常被畫成 FS（人偏大），剪輯時可微裁或接受；若人太大，下一版改用 EWS 句再往回推"
+  },
+  {
+   "id": "EP1N-02-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "第一樣，是帳單。電費、房租、學貸，而且每一張都蓋著紅紅的逾期章。"
+   ],
+   "subject": "一疊蓋滿紅色逾期章的帳單（物件插入）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "一疊帳單佔滿畫面中央，微微俯角，一張張疊著，每張上面都有大大的紅色圓形逾期章；畫面裡沒有角色",
+   "screen_direction": "off_down",
+   "action": "鏡頭貼近桌上那疊帳單，紅色逾期章一個疊一個，強調欠債的壓迫感",
+   "camera": {
+    "cell": "E2",
+    "height_m": "1.0",
+    "look_at": "帳單堆",
+    "distance_m": "0.4"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Close-up insert, looking slightly down at a thick stack of unpaid bills lying on a desk. Every bill is stamped with a big round red overdue mark; the red stamps are just shapes with no readable text. Only the stack of bills is in the picture, no characters.",
+   "untested": [
+    "物件插入沒有 HERO-only 的景別實測句，改用自然的 close-up insert 寫法"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-02-03",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "第二樣，是畢業學分不足的通知。沒錯，你已經延畢兩年了。"
+   ],
+   "subject": "一張畫著紅色警告圖示的學分不足通知（物件插入）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "單張通知紙平放在桌上佔滿畫面，微俯角，紙中央一個醒目的紅色警告三角形圖示；畫面裡沒有角色",
+   "screen_direction": "off_down",
+   "action": "鏡頭貼近桌上那張通知，紅色警告圖示正對鏡頭，和前一張帳單同樣的俯視插入節奏",
+   "camera": {
+    "cell": "F2",
+    "height_m": "1.0",
+    "look_at": "學分不足通知",
+    "distance_m": "0.4"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Close-up insert, looking slightly down at a single notice sheet lying flat on a desk, with one bold red warning triangle symbol in the middle and no readable text. Only the notice sheet is in the picture, no characters.",
+   "untested": [
+    "物件插入沒有 HERO-only 的景別實測句，改用自然的 close-up insert 寫法"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-02-04",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "（停）而現在最關心你的人，是系辦的助理。"
+   ],
+   "subject": "HERO 的臉（冷笑話反應）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 臉部置中，胸口以上入鏡，正面對著鏡頭；背景是書桌一角，不特別描述",
+   "screen_direction": "toward",
+   "action": "停頓後切到 HERO 一臉面無表情（deadpan）的臉，微微無奈，撐住『最關心你的人是系辦助理』這個反諷笑點",
+   "camera": {
+    "cell": "G2",
+    "height_m": "1.2",
+    "look_at": "HERO 的臉",
+    "distance_m": "1.0"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "胸口以上，整張臉正對鏡頭",
+     "frame_height": "0.85"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), with a flat, deadpan, unimpressed expression. HERO's face is pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in front of HERO at the desk, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫成到腰（MS），剪輯時往臉推近到 MCU"
+  },
+  {
+   "id": "EP1N-02-05",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "第三樣呢，是一支手機，跟一把電擊槍。那把電擊槍，是上次打工的時候博士給你的。"
+   ],
+   "subject": "桌上的手機與電擊槍（物件插入）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面左邊是插著充電線的手機，右邊是一把沒插電的電擊槍，兩樣並排在桌上，微俯角；畫面裡沒有角色",
+   "screen_direction": "off_down",
+   "action": "鏡頭俯看桌上並排的手機（接著充電線）和電擊槍，把『第三樣』的兩件東西一次交代清楚",
+   "camera": {
+    "cell": "H2",
+    "height_m": "1.0",
+    "look_at": "手機與電擊槍",
+    "distance_m": "0.5"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Close-up insert, looking slightly down at a desk: on the left a smartphone with a charging cable plugged into it, on the right an unplugged stun gun (as in the attached props sheet), lying side by side. Only the phone and the stun gun are in the picture, no characters.",
+   "untested": [
+    "物件插入沒有 HERO-only 的景別實測句，改用自然的 close-up insert 寫法"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-02-06",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "偏偏房間裡，只有一個插座。（停）所以你當然是拿來充手機啦。"
+   ],
+   "subject": "牆上唯一的插座與充電線（物件插入）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央是牆上孤零零一個插座，上面只插著一條充電線，線垂下來連到桌上的手機；強調『只有一個』的孤單感；畫面裡沒有角色",
+   "screen_direction": "off_down",
+   "action": "鏡頭對準牆上唯一的插座，唯一的插孔被充電線佔著、連到手機，點出笑點：有電擊槍也只能先充手機",
+   "camera": {
+    "cell": "I3",
+    "height_m": "1.0",
+    "look_at": "牆上的插座",
+    "distance_m": "0.8"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Close-up insert of a single wall outlet with just one charging cable plugged into it; the cable runs down to a smartphone resting on the desk below. Only the outlet, the cable and the phone are in the picture, no characters.",
+   "untested": [
+    "物件插入沒有 HERO-only 的景別實測句，改用自然的 close-up insert 寫法"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-02-07",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "就在這時候，手機亮了。是博士傳來的訊息：又有工作囉，時薪很不錯，記得帶電擊槍。"
+   ],
+   "subject": "亮起的手機螢幕（物件插入）",
+   "shot_size": "ECU",
+   "ecu_part": "手機螢幕",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "手機平放桌上，螢幕佔滿畫面並發出亮光，螢幕上一個新訊息的通知圖示（對話泡泡圖示，沒有可讀文字）；畫面裡沒有角色",
+   "screen_direction": "off_down",
+   "action": "原本暗著的手機螢幕突然亮起，彈出一個訊息通知圖示，製造『就在這時候』的轉折",
+   "camera": {
+    "cell": "H2",
+    "height_m": "0.9",
+    "look_at": "手機螢幕",
+    "distance_m": "0.3"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Extreme close-up insert, looking down at a smartphone lying on a desk, its screen glowing bright with a single new-message notification icon (a speech-bubble icon) and no readable text. A charging cable is plugged into the phone. Only the phone is in the picture, no characters.",
+   "untested": [
+    "物件插入沒有 HERO-only 的景別實測句，改用自然的 extreme close-up insert 寫法"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-02-08",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "其實啊，這已經不是你第一次幫博士打工了。而上一次，他也說會付錢。（停）"
+   ],
+   "subject": "HERO 拿起手機看訊息（懷疑反應）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 偏畫面中央稍右，腰部以上入鏡，前側 3/4 角度，低頭看著手上的手機；臉上是疲憊、半信半疑的表情",
+   "screen_direction": "off_down",
+   "action": "HERO 把手機拿到面前看，嘴角一撇、一臉『又來了，上次也說會付錢』的懷疑，停頓留白",
+   "camera": {
+    "cell": "H2",
+    "height_m": "1.2",
+    "look_at": "HERO",
+    "distance_m": "1.1"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "腰部以上，臉與雙手，手裡拿著手機",
+     "frame_height": "0.75"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), holding a smartphone up in both hands and looking down at it with a tired, skeptical, unconvinced expression. The phone screen is glowing but shows no readable text. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常被畫成膝上（MLS），剪輯時往上裁到腰際"
+  },
+  {
+   "id": "EP1N-02-09",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "你看了看桌上那一疊帳單。"
+   ],
+   "subject": "HERO 低頭看桌上的帳單（帳單在前景）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面左下前景是那疊紅色逾期章的帳單（放大、失焦感），HERO 在中後方偏右，腰部以上入鏡，低頭望向前景的帳單",
+   "screen_direction": "off_down",
+   "action": "HERO 視線落到桌上那疊帳單，眉頭微皺、無奈，把『錢』的壓力和前面的訊息連起來",
+   "camera": {
+    "cell": "E2",
+    "height_m": "1.2",
+    "look_at": "HERO（帳單在前景）",
+    "distance_m": "1.4"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "腰部以上，臉朝下看帳單",
+     "frame_height": "0.6"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), seated and looking down with a resigned, worried expression at a thick stack of unpaid bills in the lower foreground; the bills are stamped with big red overdue marks and have no readable text. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常被畫成膝上（MLS），剪輯時往上裁到腰際；帳單前景若被畫太小，剪輯時加入前一張帳單插入做節奏"
+  },
+  {
+   "id": "EP1N-02-10",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "唉，還是去吧。"
+   ],
+   "subject": "HERO 起身走向門口（離開房間）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 全身入鏡，位於畫面中央偏左，朝鏡頭（門口方向）走來；他身後（畫面上方）是書桌與百葉窗，整個房間一起入鏡，和開場 WS 首尾呼應",
+   "screen_direction": "toward",
+   "action": "HERO 嘆口氣從椅子起身，轉向東南角的門，朝鏡頭方向邁步，準備出門",
+   "camera": {
+    "cell": "I9",
+    "height_m": "1.5",
+    "look_at": "HERO",
+    "distance_m": "1.8"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身，頭到腳，正在邁步朝鏡頭走",
+     "frame_height": "0.75"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), having just stood up from a desk chair, mid-step, walking toward the camera with a resigned sigh. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（人偏大），剪輯時可微裁或接受；若人太大，下一版改用更遠的句子"
+  }
+ ]
+}

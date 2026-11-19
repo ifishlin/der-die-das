@@ -1,0 +1,1 @@
+（不是 request：子代理（LLM）照這份規定逐鏡頭寫背景和參考圖；結果在 docs/requests/bg_parts/）

@@ -1,0 +1,67 @@
+{
+ "scene_id": "EP1N-05",
+ "notes": "這一場是插圖（不是實景），用兩張高空俯瞰圖建立「時間、地點」並把觀眾從大陸尺度帶到降落的森林。第 1 張（配旁白 1、2）：從高空看整片 6,650 萬年前的北美洲，中間一條南北向的淺海把大陸切成東西兩半，西半部是森林與低矮山脈，西半部森林裡有一個很小的亮點＝HERO（不畫成人物，只用亮點）。剪輯時先全景（旁白 1 建立時間地點），再慢慢推近到西半部的亮點（旁白 2 說明海把大陸切兩半、你掉在西邊）。第 2 張（配旁白 3）：尺度再往下推，變成俯瞰整片森林樹冠，其中一處閃出一下藍光＝時光隧道開啟的瞬間，同時當作切進第 6 場降落點森林的轉場錨點。兩張都沒有角色演戲，所以 cast 空、不寫膚色句；這場是插圖，地形本身就是主體，所以 prompt 需要描述大陸／森林（屬於例外，不是當背景處理）。全程禁止任何文字與地圖標籤。aerial 實測只在配 EWS 時成功，兩張都用 EWS＋aerial。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP1N-05-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "時間，回到六千六百五十萬年前的北美洲。",
+    "那時候的北美洲，中間原本有一大片海，而你，就掉在西邊這一半。"
+   ],
+   "subject": "6,650 萬年前的北美洲大陸（中間一條南北向淺海分成東西兩半；西半部森林裡一個很小的亮點＝HERO）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "N/A",
+   "angle": "aerial",
+   "composition": "大陸填滿整個畫面；一條南北向的淺藍色內陸海從畫面中央由上往下貫穿，把大陸切成左右兩半；畫面左半（西半部）是綠色森林與低矮山脈，右半（東半部）是較低平的陸地；西半部森林裡有一個很小的亮點。",
+   "screen_direction": "N/A",
+   "action": "靜態建立鏡頭；到旁白 2 尾段，西半部森林裡一個小小的亮點微微發亮，暗示 HERO 的落點。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 300000,
+    "look_at": "北美洲大陸（中偏西，涵蓋內陸海與西半部森林）",
+    "distance_m": 600000
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn aerial view of the North American continent as it looked 66.5 million years ago, seen from high up in the sky. A wide shallow sea runs from top to bottom down the middle of the continent, splitting it into a left half and a right half. The left (western) half is covered in green forests and low mountains; the right (eastern) half is lower, flatter land. At one spot in the western forests there is a tiny pinpoint of bright light. No characters, no labels, no words, no map borders. Shot size: Extreme Wide Shot (EWS). The land is very small detail and the whole continent is the main subject, filling the picture. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "hand-drawn aerial paleogeographic continent illustration (大陸古地圖式插圖，非角色場景)",
+    "tiny pinpoint of bright light as a marker (用小亮點代表角色)"
+   ],
+   "remedy": "aerial 為 △，但實測配 EWS 可成功，故 EWS＋aerial 可用；若模型把海畫得不夠明顯，剪輯時以推近西半部亮點為主，不另補救。"
+  },
+  {
+   "id": "EP1N-05-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "你看，森林裡閃了一下藍光。"
+   ],
+   "subject": "一大片森林樹冠（其中一處閃出一下藍光＝隧道開啟瞬間）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "N/A",
+   "angle": "aerial",
+   "composition": "綠色森林樹冠填滿整個畫面；畫面中央偏一側的樹冠之間，有一道明亮的藍光閃現；沒有角色。",
+   "screen_direction": "N/A",
+   "action": "從大陸尺度往下推到森林尺度；樹冠之中某一點突然閃出一下藍光，當作切進第 6 場降落點的轉場錨點。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 2000,
+    "look_at": "森林樹冠（藍光閃現處）",
+    "distance_m": 2500
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn aerial view looking down from high in the sky at a vast green forest canopy that stretches across the whole picture. Among the treetops, at one spot, a single bright blue flash of light glows. No characters, no labels, no words. Shot size: Extreme Wide Shot (EWS). The forest is the main subject and fills the picture. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "hand-drawn aerial forest canopy with a single blue light flash (高空俯瞰森林樹冠＋藍光閃現)"
+   ],
+   "remedy": "aerial 為 △，配 EWS 可成功；若藍光不明顯，剪輯時在此點加一下藍光閃爍特效即可。"
+  }
+ ]
+}

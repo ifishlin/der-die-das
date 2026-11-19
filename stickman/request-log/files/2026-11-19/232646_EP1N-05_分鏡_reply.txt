@@ -1,0 +1,70 @@
+{
+ "scene_id": "EP1N-05",
+ "notes": "這一場是純插圖（不是實景），畫 6,650 萬年前的北美洲，從高空往下看的手繪真實大陸，不寫字、不做平面圖表。拆成兩張空拍 EWS：第一張建立時空＋地理（旁白 1、2），看見中間的西部內陸海把大陸切成東西兩半，西邊這一半有一個小小的發光亮點代表 HERO 掉落的位置；第二張推近到西邊的森林（旁白 3），林冠間閃一下藍光，當作切進第 6 場降落點森林的轉場錨點。兩張都用空拍＋EWS（實測 aerial 只有配 EWS 會成功）。沒有角色演戲，HERO 只是一個亮點，故不列 cast、不寫膚色句與表情。因為是插圖，主體就是大陸／森林本身，所以 prompt 必須描述地形（這是主體不是背景）。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP1N-05-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "時間，回到六千六百五十萬年前的北美洲。",
+    "那時候的北美洲，中間原本有一大片海，而你，就掉在西邊這一半。"
+   ],
+   "subject": "六千六百五十萬年前的北美洲大陸（含中央內陸海）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "N/A",
+   "angle": "aerial",
+   "composition": "整片北美洲大陸鋪滿畫面；一條狹長的中央內陸海從上到下把大陸切成畫面右邊的東半部和左邊的西半部；西半部（畫面左側）是綠色森林、河流與平原，中間偏左有一個小小的發光亮點；沒有前景角色。",
+   "screen_direction": "N/A",
+   "action": "鏡頭靜止俯瞰整塊大陸，西邊森林裡亮著一個微小的亮點，標出 HERO 掉落的位置；旁白引導觀眾從「北美洲」看到「中央的海」再到「西邊這一半的亮點」。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 60000,
+    "look_at": "北美洲大陸正中央",
+    "distance_m": 60000
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). The glowing dot is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. A hand-drawn map-like view from very high in the sky looking straight down at the whole North American continent as it was 66.5 million years ago: a long narrow shallow inland sea runs top to bottom down the middle, splitting the continent into an eastern landmass on the right and a western landmass on the left. The western half is covered with green forests, winding rivers and plains. A single tiny bright glowing dot sits in the western forests. No people, no animals, no text, no labels, no grid lines.",
+   "untested": [
+    "整張是手繪古地圖插圖（非角色場景、非實測構圖）",
+    "azimuth 與 screen_direction 皆 N/A（無角色朝向）",
+    "EWS 實測句主體改成 the glowing dot（原句為 HERO）"
+   ],
+   "remedy": "aerial 為 △，但搭 EWS 可成功，故照用；亮點若太不明顯，剪輯時再加光暈／推近強調西半部。"
+  },
+  {
+   "id": "EP1N-05-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "你看，森林裡閃了一下藍光。"
+   ],
+   "subject": "西邊森林的林冠（俯瞰）與其間閃現的藍光",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "N/A",
+   "angle": "aerial",
+   "composition": "滿畫面都是從高空往下看的濃密綠色森林林冠；畫面中央偏一處有一道小小的藍光閃現；沒有角色、沒有前景。",
+   "screen_direction": "N/A",
+   "action": "鏡頭由整塊大陸切近到西部森林上空，林冠之間閃過一道藍光，當作切進第 6 場降落點的轉場錨點。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 3000,
+    "look_at": "西部森林林冠中央",
+    "distance_m": 3000
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). The blue flash is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. A hand-drawn view from high in the sky looking straight down at a wide stretch of dense green forest canopy. A single small bright blue light flashes among the treetops. No people, no animals, no text, no labels, no grid lines.",
+   "untested": [
+    "整張是手繪森林俯瞰插圖（非角色場景、非實測構圖）",
+    "azimuth 與 screen_direction 皆 N/A（無角色朝向）",
+    "EWS 實測句主體改成 the blue flash（原句為 HERO）"
+   ],
+   "remedy": "aerial 為 △，但搭 EWS 可成功，故照用；藍光若不夠醒目，剪輯時再加發光／亮一下的動態效果，並可微推近。"
+  }
+ ]
+}

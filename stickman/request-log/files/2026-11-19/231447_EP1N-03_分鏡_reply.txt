@@ -1,0 +1,135 @@
+{
+ "scene_id": "EP1N-03",
+ "notes": "三句旁白＝三個鏡頭，功能遞進：①建立環境（學校裡）→②收到小屋與校務大樓的相對位置（小屋在大樓旁）→③門上警告標誌的笑點。鏡頭由遠到近、由廣到窄：第1張 EWS 高角度側拍，HERO 在校園步道上往右（往小屋方向）走，一次把校務大樓（畫左）和被樹圍住的小屋（畫右）都帶進來；第2張 WS 平視背面，HERO 走向小屋，觀眾順著他的背看到小屋與左側大樓的關係；第3張 FS 極低角度背面，HERO 站在貼滿警告貼紙的大門前仰頭看，低角度讓大門壓迫地聳立，替笑點製造不祥感。全場只有 HERO，無恐龍，故無加拍遠一級。警告標誌只畫圖示不寫字（已由畫風句的 No text 保證）。"
+ ,
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "F5",
+     "facing": "E",
+     "doing": "在東西向校園步道上，往東（往小屋方向）悠悠地走"
+    },
+    {
+     "t": "2",
+     "cell": "L5",
+     "facing": "N",
+     "doing": "走到小屋正前方，轉向北，踏上通往門口的短步道"
+    },
+    {
+     "t": "3",
+     "cell": "L4",
+     "facing": "N",
+     "doing": "站在大門正前方，仰頭看門上貼滿的警告貼紙，定住"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-03-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "博士的實驗室，就在學校裡。"
+   ],
+   "subject": "HERO（兼建立整個校園環境）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "high",
+   "composition": "HERO 小小地在畫面中偏左的步道上，側面朝右行走；畫左後方是白色石材校務大樓，畫右後方是被樹叢圍住的木造小屋；前景是草地與步道。",
+   "screen_direction": "right",
+   "action": "HERO 放鬆地邁步走在校園步道上，正跨出一步，朝畫面右邊（小屋方向）前進。",
+   "camera": {
+    "cell": "F10",
+    "height_m": "5",
+    "look_at": "HERO（兼帶校務大樓與小屋）",
+    "distance_m": "11"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（側面）",
+     "frame_height": "約 12%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet). HERO's face and hands are pure paper white. HERO is walking at a relaxed pace, mid-stride, heading to the right. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the walkway and sees HERO exactly from the side. Camera angle: High angle: the camera is high above HERO, looking down at him.",
+   "untested": [],
+   "remedy": "high 實測只會輕微俯視，屬可接受範圍；即使俯角不足，EWS 仍足以建立校園環境，不需補救。"
+  },
+  {
+   "id": "EP1N-03-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "就在校務大樓旁邊，一間老舊的木頭小屋。"
+   ],
+   "subject": "HERO（背面）與前方小屋",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央下方、背對鏡頭；正前方（畫面上方）是被樹圍住的木造小屋，畫面左側遠處是白色校務大樓，中間隔著一排樹叢。",
+   "screen_direction": "away",
+   "action": "HERO 背對鏡頭，正往小屋走去，踏上通往門口的短步道。",
+   "camera": {
+    "cell": "L9",
+    "height_m": "1.7",
+    "look_at": "HERO（背景小屋）",
+    "distance_m": "8"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（背面）",
+     "frame_height": "約 40%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet). HERO's face and hands are pure paper white. HERO is walking away from the camera, seen from behind, heading toward the hut ahead of him. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is on the walkway behind HERO, looking the way he walks; HERO's back is toward the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "back view 句改為單人版：移除原句的 TEEN，只描述 HERO 一人的背面"
+   ],
+   "remedy": "WS 常被畫成 FS（HERO 偏大、環境偏少）；可接受，若環境不足以辨認小屋與大樓的相對位置，剪輯時以此格呈現空間關係為重點即可。"
+  },
+  {
+   "id": "EP1N-03-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "門上那些警告標誌，你一個都不想知道是什麼意思。"
+   ],
+   "subject": "HERO（背面）與面前的警告大門",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "low",
+   "composition": "HERO 背對鏡頭、站在畫面中央偏下，仰頭看向正前方的小屋大門；大門貼滿警告貼紙，在低角度下高高聳立在 HERO 上方。",
+   "screen_direction": "away",
+   "action": "HERO 站定、背對鏡頭，頭往上抬，盯著貼滿警告貼紙的大門，整個人僵在門口的一瞬間。",
+   "camera": {
+    "cell": "L6",
+    "height_m": "0.2",
+    "look_at": "HERO（面前的小屋大門）",
+    "distance_m": "4"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（背面）",
+     "frame_height": "約 70%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet). HERO's face and hands are pure paper white. HERO is standing still, seen from behind, tilting his head up to look at the hut's front door right in front of him. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: back view. The camera is on the walkway behind HERO, looking the way he faces; HERO's back is toward the camera. Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body.",
+   "untested": [
+    "back view 句改為單人版：移除原句的 TEEN，只描述 HERO 一人的背面"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

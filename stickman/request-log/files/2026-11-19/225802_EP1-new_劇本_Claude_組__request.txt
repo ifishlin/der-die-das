@@ -1,0 +1,1 @@
+（不是 request：Claude 主對話：舊 11 段搬成品潤好的旁白、新 4 段照 story_v4；動作描述、知識點編號、2 句修正是 Claude 寫的。產出 script.json）

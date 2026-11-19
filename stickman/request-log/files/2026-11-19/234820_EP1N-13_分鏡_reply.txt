@@ -1,0 +1,255 @@
+{
+ "scene_id": "EP1N-13",
+ "notes": "這一場是全片第一個鬆弛→緊張的轉折。節奏設計：先鬆後緊。開場用遠景背影建立乾河床環境和主角悠哉逃生後的心情，接著拉到正面看他得意吹噓，再到自拍的喜劇高點（含一張手機螢幕插入鏡頭當履歷哏），然後臉部特寫讓笑容僵住、想起博士的話，最後拉開到中遠景做關鍵揭示：HERO 正面對鏡頭僵在原地，背後（東邊 V6 蕨類叢）晃了一下，直接接到第 14 場的盜龍。全場只有 HERO 入鏡，沒有恐龍同框，所以不需要加拍遠一級（W）版本。走位：HERO 從北邊小徑出口下來，沿乾河床往南走（T4→T5→T6），在 T6 轉身面向西邊的河自拍，之後都停在 T6。背後會晃的蕨類叢在 V6（HERO 東邊），所以第 5、6 兩張把相機放在西側（河床上）正面拍 HERO，蕨類自然落在他身後遠端，由主對話依地圖補背景並呈現晃動。CU（第 5 張）實測 ✗，prompt 用 MCU 句、剪輯推近補足。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "T4",
+     "facing": "S",
+     "doing": "沿乾河床往南走，悠哉吹口哨，背影遠離鏡頭"
+    },
+    {
+     "t": "2",
+     "cell": "T5",
+     "facing": "S",
+     "doing": "繼續往南走向鏡頭，得意地挺胸、對自己比大拇指"
+    },
+    {
+     "t": "3",
+     "cell": "T6",
+     "facing": "W",
+     "doing": "停步轉向西邊的河，舉起手機自拍，開心得意的笑"
+    },
+    {
+     "t": "4",
+     "cell": "T6",
+     "facing": "W",
+     "doing": "笑容突然僵住，手機還半舉在臉旁，眼神發直、開始不安"
+    },
+    {
+     "t": "5",
+     "cell": "T6",
+     "facing": "W",
+     "doing": "手機放到身側，僵在原地、肩膀緊繃；背後（東邊 V6）的蕨類叢晃了一下"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-13-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "逃過一劫的你，沿著河往下游走，還吹起了口哨。照片已經到手，現在只差一顆牙齒了。暴龍那麼多，總會有一隻掉牙吧。"
+   ],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏遠，背影往南（畫面深處）走；畫面右側遠處是河、左側近處是東岸的蕨類與森林，中間是開闊的乾河床。大量環境入鏡建立場景。",
+   "screen_direction": "away",
+   "action": "逃過一劫後放鬆地沿河床散步、像在吹口哨，手臂自然擺動，背對鏡頭漸漸走遠。",
+   "camera": {
+    "cell": "T1",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "6"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（背影）",
+     "frame_height": "約35%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack on his back. He is walking away from the camera, seen from behind, strolling in a relaxed, cheerful way as if whistling, with his arms loose at his sides. HERO's hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is on the dry riverbed behind HERO, looking the way he walks; HERO's back is nearer the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "back view 句改成走路（原實測句是跑）"
+   ],
+   "remedy": "WS △，常畫成 FS；若畫成 FS 仍可用，不另外補救。"
+  },
+  {
+   "id": "EP1N-13-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "而且你還跑贏了暴龍耶，你是史上第一個跑贏暴龍的大學生。（停）也是史上第一個，延畢兩年的。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，身體斜向、往鏡頭方向走來；得意挺胸、對自己比大拇指。左側是河的方向、右側是東岸蕨類森林方向。",
+   "screen_direction": "toward",
+   "action": "一臉得意地朝鏡頭走來，炫耀自己跑贏暴龍，講到延畢那句時是自嘲又自豪的賤笑。",
+   "camera": {
+    "cell": "S7",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "4.5"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "膝蓋以上",
+     "frame_height": "約70%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack on his back. He is strolling toward the camera at a slight angle, chest puffed out, pointing one thumb back at himself, with a proud, smug grin. HERO's face and hands are pure paper white. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "front34 △"
+   ],
+   "remedy": "front34 大致可用，偏差可接受。"
+  },
+  {
+   "id": "EP1N-13-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "你開心地自拍了一張。（停）"
+   ],
+   "subject": "HERO",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，正面向鏡頭；一隻手舉起手機靠近臉自拍，咧嘴大笑。身後是東岸的蕨類與森林。",
+   "screen_direction": "toward",
+   "action": "舉起手機自拍的那一刻，開心得意、笑得很燦爛。",
+   "camera": {
+    "cell": "R6",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "4"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "腰部以上",
+     "frame_height": "約78%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack on his back. He is holding up a smartphone in one raised hand to take a selfie, his face turned toward the phone and the camera, with a big, happy, proud grin. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is on the dry riverbed ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "舉手機自拍的動作"
+   ],
+   "remedy": "MS △，常畫成膝上；可接受或剪輯時裁到腰。"
+  },
+  {
+   "id": "EP1N-13-04",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "這張照片，應該可以放進履歷了吧。"
+   ],
+   "subject": "HERO 手上的手機螢幕（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "手機螢幕與握住它的手指",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "手機幾乎佔滿畫面，HERO 的手指在邊緣握住；螢幕上是一張小小的自拍照：一個沾滿泥巴的白色火柴人比著大拇指。畫面裡沒有臉。",
+   "screen_direction": "toward",
+   "action": "低頭看剛自拍好的照片那一刻，像在審視這張『履歷照』。",
+   "camera": {
+    "cell": "T6",
+    "height_m": "1.4",
+    "look_at": "HERO 手上的手機螢幕",
+    "distance_m": "0.3"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "單手手指（握手機，無臉）",
+     "frame_height": "約25%（邊緣）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only a smartphone held in HERO's hand; just the hand and fingers are visible, no face. On the phone's screen is a tiny cartoon snapshot of a muddy, pure-white stick figure giving a thumbs-up. HERO's hands are pure paper white. The camera faces the phone's screen straight on. Shot size: Extreme Close-up (ECU). Only the phone's screen and HERO's fingers around it fill the picture. Camera angle: High angle: the camera is above the phone, looking down at the screen.",
+   "untested": [
+    "手機螢幕插入鏡頭、螢幕上的小照片",
+    "ECU 句改寫成拍手機（原實測句是眼睛）",
+    "物件插入『正對螢幕』的 front 寫法"
+   ],
+   "remedy": "ECU 物件插入；high 常只有輕微俯角，可接受。螢幕內容是照片、不是第二個角色，若 Flow 誤判成兩個角色就把螢幕畫面簡化。"
+  },
+  {
+   "id": "EP1N-13-05",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "結果突然間，你的笑容僵住了。",
+    "你想起來，博士還講過一件事，只是那時候，你在打哈欠。跑最快的，不是最大隻的，而是剛剛好的。"
+   ],
+   "subject": "HERO 的臉",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 的臉佔畫面大部分，正面向鏡頭；手機還半舉在臉旁。背景只露一點東岸森林。",
+   "screen_direction": "toward",
+   "action": "笑容僵在臉上、嘴角還咧著但眼睛瞬間發直、瞪大，不安與恐懼慢慢爬上來——想起博士說過的話。",
+   "camera": {
+    "cell": "S6",
+    "height_m": "1.6",
+    "look_at": "HERO 的臉",
+    "distance_m": "2"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "胸部以上（以臉為主）",
+     "frame_height": "約90%（臉）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest, and still has the smartphone half-raised near his face. His happy grin has frozen stiff — the smile is locked in place but his eyes have gone wide, blank and uneasy, with dread creeping in. HERO's face and hands are pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is on the dry riverbed ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "想要 CU；CU ✗，prompt 用 MCU 句，剪輯時推近到 CU。"
+  },
+  {
+   "id": "EP1N-13-06",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "就在這時，你背後的蕨類，動了一下。（停）",
+    "可是，今天根本沒有風啊。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏左、正面偏 3/4 向鏡頭僵立；他的右後方（畫面右側上方）是東岸那叢高蕨類（V6），其中一株被帶動、折向一邊，像剛被什麼撥過。這是關鍵揭示鏡頭。",
+   "screen_direction": "toward",
+   "action": "手機垂到身側，HERO 僵在原地、肩膀緊繃、瞪大眼，察覺不對勁但還沒回頭；此刻身後的蕨類晃了一下。",
+   "camera": {
+    "cell": "R7",
+    "height_m": "1.6",
+    "look_at": "HERO（他背後東邊 V6 的蕨類叢一起入鏡）",
+    "distance_m": "4.5"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "膝蓋以上",
+     "frame_height": "約65%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack on his back, with the smartphone now lowered to his side. He stands frozen and stiff, shoulders tense, wide-eyed and worried, sensing something is wrong behind him but not yet turning around. HERO's face and hands are pure paper white. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "front34 △"
+   ],
+   "remedy": "front34 大致可用。背後（東邊 V6）會晃的蕨類叢是背景，由主對話依地圖加上並呈現晃動（一株被折向一邊）；剪輯時可在此格做輕微晃動並往蕨類推近。"
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+（不是 request：Claude 主對話決定 20 場怎麼分、每場角色狀態和道具。產出 breakdown.json）

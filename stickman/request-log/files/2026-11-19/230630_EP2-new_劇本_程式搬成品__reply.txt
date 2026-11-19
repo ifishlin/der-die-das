@@ -1,0 +1,62 @@
+"""EP2-new 第 8 步寫劇本（2026-11-19，新流程；使用者：以 EP2 成品為底重現、補正結構）→ script.json。
+來源（只搬運）：
+  旁白：EP2 成品 final/storyboard.json（段 S00～S16，每格的 narration 一句一行；空的格子跳過）
+  知識點編號：story_v6.md 每段 > 開頭的旁白行上的 #編號，照文字最像的那一行帶過來（相似度 ≥ 0.5 才帶）
+  動作描述：story_v6.md 每段不是旁白的說明行（編號的情節、段首說明）
+    python3 episodes/002_chicxulub/ep2_new/build_script.py"""
+import collections
+import difflib
+import json
+import re
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+EP2 = HERE.parent
+final = json.loads((EP2 / "final/storyboard.json").read_text())
+story = (EP2 / "story_v6.md").read_text()
+story = story[story.index("## 段落 0"):story.index("## 查核附註")]
+secs = [s for s in re.split(r"^## ", story, flags=re.M) if s.startswith("段落")]
+
+
+def parse(sec):
+    head, *body = sec.splitlines()
+    m = re.match(r"段落 (\d+)　(.+?)\s*[🔥😄😬→（].*$|段落 (\d+)　(.+)$", head)
+    n = int(m.group(1) or m.group(3))
+    name = (m.group(2) or m.group(4)).strip()
+    name = re.sub(r"（縮短）", "", name).strip()
+    quotes, action = [], []
+    for line in body:
+        s = line.strip()
+        if s.startswith(">"):
+            t = s.lstrip("> ").replace("★", "")
+            quotes.append((re.sub(r"\s*#\d+", "", t).strip(), [int(x) for x in re.findall(r"#(\d+)", t)]))
+        elif s and not s.startswith(("（", "-", "|", "※")):
+            s = re.sub(r"（★[^）]*）", "", re.sub(r"^\d+\.\s*", "", s)).replace("★", "")
+            s = "".join(x for x in re.split(r"(?<=。)", s) if not re.search(r"\bv\d|搬到第|#\d", x))   # 舊的編輯備註不進劇本
+            if s.strip():
+                action.append(s.strip())
+    return n, name, quotes, action
+
+
+parsed = {n: (name, q, a) for n, name, q, a in map(parse, secs)}
+cells = collections.OrderedDict()
+for c in final["cells"]:
+    cells.setdefault(int(c["seg"][1:]), []).append(c)
+
+segments = []
+for n, cs in cells.items():
+    name, quotes, action = parsed[n]
+    lines = []
+    for c in cs:
+        for t in c["narration"]:
+            t = t.strip()
+            if not t:
+                continue
+            facts = set()
+            for q, fs in quotes:
+                if fs and (q in t or difflib.SequenceMatcher(None, q, t).ratio() >= 0.5):
+                    facts |= set(fs)
+            lines.append({"id": f"{n}-{len(lines) + 1:02d}", "text": t, "facts": sorted(facts)})
+    segments.append({"n": n, "name": name, "action": action, "lines": lines})
+(HERE / "script.json").write_text(json.dumps({"ep": "EP2-NEW", "segments": segments}, ensure_ascii=False, indent=1))
+print(len(segments), "段", sum(len(s["lines"]) for s in segments), "句", sum(1 for s in segments for l in s["lines"] if l["facts"]), "句有知識點")
