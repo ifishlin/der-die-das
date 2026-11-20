@@ -160,10 +160,11 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p class=pp><b>這步在幹嘛：</b>每個地點畫一張俯視地圖，讓同一地點的每個鏡頭畫面一致。</p>
 <p class=pp><b>檢查頁：</b>C 分場表：每一場的地圖<br><a href="../breakdown-ep1-new/">C 分場表</a></p>
 <p class=pp><b>request：</b><span class=mut>不送 request：Claude 主對話＋程式畫預覽</span></p>
-<p class="chgline"><span class="chg">改</span> 2026-11-19：不停</p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：不停；2026-11-20：加時段檢查</p>
 <p><b>誰：</b>我畫；不停。<b>　我用：</b><code>render_map.py</code></p>
 <p><b>怎麼做：</b></p><ul><li>故事有幾個地點就畫幾張地圖，地圖跟著地點走。</li><li>格子大小依地點定：戶外一格 2 公尺，室內一格 0.5 公尺。</li><li>每種地形、每個物件都標「角色可不可以站」「相機可不可以放」；跨場都在的東西畫地圖時就標位置。</li></ul>
 <p><b>地圖只用來決定畫面裡有什麼：</b>不拿地圖算距離、算大小。大小照比例圖目視。</p>
+<p><b>時段要跟分場一致（2026-11-20）：</b>每張地圖的時段（time）要跟用到它的每一場一致；不一致（例如分場寫「下午到傍晚」、地圖寫「傍晚」）就停下來問，不能帶著矛盾進第 12 步。</p>
 <p><b>產出：</b>maps/&lt;id&gt;.json。改之前把舊版存到 maps/history/。</p>
 <h2 id="s12">12. 設定圖 ✅ <span class="seg">C 分場</span></h2>
 <p class=pp><b>這步在幹嘛：</b>畫這集新的角色、道具、地點、動物的設定圖；跟場、地圖一起放進分場表。</p>
@@ -171,7 +172,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p class=pp><b>request：</b><span class=mut>不送 request：Claude 寫 prompt、Flow 畫</span></p>
 <p class="chgline"><span class="chg">改</span> 2026-11-19：改成我畫、我挑，不停</p>
 <p><b>誰：</b>我寫 prompt、我在 Flow 畫、我挑；不停。<b>　我用：</b><code>build_scale_pairs.py、flowbot</code></p>
-<p><b>要做的：</b></p><ul><li>這集新出現的角色、恐龍、道具、地點。</li><li>1 對 1 比例圖 PAIR2：HERO 和每一隻恐龍，由程式從設定圖拼；數字只有一份 heights.json。</li></ul>
+<p><b>要做的：</b></p><ul><li>這集新出現的角色、恐龍、道具、地點。</li><li>1 對 1 比例圖 PAIR2：HERO 和每一隻恐龍，由程式從設定圖拼；數字只有一份 heights.json。</li><li>環境圖（2026-11-20）：每個戶外「地點＋時段」一張（不是每場一張；同地點同時段的幾場共用）。上半部只有天色漸層、下半部只有地面；不畫太陽、腳印、水窪、石頭、葉子等細節。室內（有牆面圖）和插圖場不用。第 15 步附上並加一句說明：只照它的顏色和質感，不照它的排列。</li></ul>
 <p><b>規則：</b></p><ul><li>地圖和設定圖要一致；不一致時以設定圖為準改地圖。</li><li>設定圖上不要畫會變的東西。</li><li>畫好放 refs_v7/（上傳用 refs_v7/upload/），舊版移到 refs_v7/old/。</li></ul>
 <p><b>產出：分場表：</b>場、每場的地圖、設定圖放同一頁。可以不看，流程不停。</p>
 <h2 id="s13">13. 分鏡設計（拆鏡頭） ✅ <span class="seg">D 分鏡</span></h2>
