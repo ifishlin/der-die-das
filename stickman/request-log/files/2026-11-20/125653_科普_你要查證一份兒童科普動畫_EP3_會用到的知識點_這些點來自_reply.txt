@@ -1,0 +1,30 @@
+All four points confirmed against primary/museum sources. Here are the results:
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 141,
+  "verdict": "正確",
+  "sci": "捷克 Předmostí 是格拉維特文化的遺址（約兩萬七千至三萬一千年前）。Germonpré 等人（2012）研究當地出土的犬科頭骨，辨識出三個頭骨具有狗的特徵（吻部較短、腦殼與上顎較寬），判定為「舊石器時代的狗」，其中一個嘴裡還含著猛獁象骨。這支持狗的馴化遠早於冰河期末的說法。",
+  "src": [["Germonpré et al. 2012, Journal of Archaeological Science 39:184–202, 'Palaeolithic dog skulls at the Gravettian Předmostí site'", "https://www.sciencedirect.com/science/article/abs/pii/S0305440311003499"], ["Archaeology Magazine, 'Top 10 Discoveries of 2011 — First Domesticated Dogs, Předmostí'", "https://archive.archaeology.org/1201/features/topten_czech.html"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 142,
+  "verdict": "正確",
+  "sci": "這些 Předmostí 的「原始狗（protodog）」到底是不是狗仍有爭議。Germonpré、Galeta 等人認為頭骨形態可與狼區分、屬早期狗；但 Morey、Drake、Janssens 等人用三維幾何形態分析後認為這些標本落在冰河期狼的變異範圍內，難以和狼區分，主張牠們只是狼。雙方至今仍在期刊上往來辯論。",
+  "src": [["Janssens et al. 2021 與 Galeta et al. 2022 之往來評論, The Anatomical Record 'Morphological differences between putative Paleolithic dogs and wolves'", "https://anatomypubs.onlinelibrary.wiley.com/doi/10.1002/ar.24935"], ["Perri et al. 2020, Journal of Archaeological Science 'The enigma of the Předmostí protodogs'", "https://www.sciencedirect.com/science/article/abs/pii/S0305440320300820"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 143,
+  "verdict": "正確",
+  "sci": "學界普遍接受、沒有爭議的最早的狗，年代約在一萬三千五百至一萬五千年前。德國的 Bonn-Oberkassel 狗約一萬四千年前（14,000 BP ±200），和一對男女一起下葬，是目前最早被確認、且與人合葬的家犬；牠死時約七個半月大，牙齒病變顯示牠曾重病、很可能受過人照顧。",
+  "src": [["Bonn–Oberkassel dog, Wikipedia（引 Street, Napierala & Janssens 2015, Rheinische Ausgrabungen 72:253–274）", "https://en.wikipedia.org/wiki/Bonn%E2%80%93Oberkassel_dog"], ["UCL, 'Archaeologists re-examine famous 14,000-year-old dog, Bonn-Oberkassel' (2018)", "https://www.ucl.ac.uk/human-evolution/news/2018/feb/archaeologists-re-examine-famous-14000-year-old-dog-bonn-oberkassel-germany"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 144,
+  "verdict": "正確",
+  "sci": "帕夫洛夫人（約兩萬五千年前）的時代確實還沒有任何家畜。羊、山羊最早約一萬至一萬一千年前在近東「肥沃月彎」被馴養，牛、豬大約一萬年前跟上，都和小麥、大麥的農業革命同步。（狗是唯一的例外，馴化更早，但狗不算放牧的家畜。）",
+  "src": [["National Geographic Education, 'The Development of Agriculture'", "https://education.nationalgeographic.org/resource/development-agriculture/"], ["Zeder 2008, PNAS 105:11597–11604, 'Domestication and early agriculture in the Mediterranean Basin'", "https://www.pnas.org/doi/10.1073/pnas.0801317105"]],
+  "fix": "",
+  "confidence": "高"}
+]}
+```
