@@ -1,0 +1,160 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch05_pompeii/pages/p56.jpg（書的 p.56；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 44,
+  "claim_zh": "Herculaneum 位在火山噴氣口西邊僅四英里",
+  "quote": "Herculaneum sits barely four miles west of the volcanic vent",
+  "pages": [
+   "p.56"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "barely",
+  "convert": "約 6.4 公里"
+ },
+ {
+  "n": 45,
+  "claim_zh": "噴發頭幾個小時，盛行風讓 Herculaneum 大致避開了多數落灰與浮石",
+  "quote": "for the first few hours of the eruption the prevailing winds largely spared it from most of the ash and pumice",
+  "pages": [
+   "p.56"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "largely",
+  "convert": ""
+ },
+ {
+  "n": 46,
+  "claim_zh": "維蘇威觸及更深岩漿、引發初次火山碎屑流時，受熱氣體與火山灰掃過 Herculaneum，幾乎瞬間殺死城裡所有人",
+  "quote": "the heated gas and ash blew through Herculaneum and killed everyone there almost instantly",
+  "pages": [
+   "p.56"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "almost",
+  "convert": ""
+ },
+ {
+  "n": 47,
+  "claim_zh": "考古學家在城裡發現焦痕，顯示有一團極高溫的雲吞沒了 Herculaneum 的居民",
+  "quote": "Archaeologists have found scorch marks in the city that suggest [a temperature] engulfed Herculaneum's citizens",
+  "pages": [
+   "p.56"
+  ],
+  "type": "數字",
+  "who": "考古學家",
+  "hedge": "suggest",
+  "convert": "（溫度數字辨讀不確定，見 reshoot，待核對）"
+ },
+ {
+  "n": 48,
+  "claim_zh": "落灰後來包住罹難者，考古學家得以用石膏灌回這些空腔、重現最後姿態",
+  "quote": "archaeologists were able to refill these spaces with plaster and re-create final poses",
+  "pages": [
+   "p.56"
+  ],
+  "type": "描述",
+  "who": "考古學家",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 49,
+  "claim_zh": "這些姿態幾乎沒有極端高溫受害者常見的防禦性（拳擊手式）姿勢，顯示 Herculaneum 的羅馬人死得太快、來不及感到痛苦",
+  "quote": "These poses show almost no signs of the [pugilistic] defensive stance typically taken by victims of extreme heat, which suggests to Petrone that the Romans in Herculaneum died so quickly they never consciously registered discomfort",
+  "pages": [
+   "p.56"
+  ],
+  "type": "專家說法",
+  "who": "Pier Paolo Petrone",
+  "hedge": "suggests",
+  "convert": "（『pugilistic』一字辨讀，字本身清楚）"
+ },
+ {
+  "n": 50,
+  "claim_zh": "Petrone 在一名 Herculaneum 罹難者頭骨裡發現一塊玻璃質的腦組織，顯示那團雲把腦加熱到瞬間玻璃化",
+  "quote": "Petrone even found a glassy piece of brain matter in the skull of one Herculaneum victim, suggesting the cloud heated this person's brain so quickly it vitrified",
+  "pages": [
+   "p.56"
+  ],
+  "type": "專家說法",
+  "who": "Pier Paolo Petrone",
+  "hedge": "suggesting",
+  "convert": ""
+ },
+ {
+  "n": 51,
+  "claim_zh": "Herculaneum 距龐貝略多於九英里",
+  "quote": "Herculaneum is a little more than nine miles from Pompeii",
+  "pages": [
+   "p.56"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "a little more than",
+  "convert": "約 14.5 公里"
+ },
+ {
+  "n": 52,
+  "claim_zh": "火山碎屑流大約下午兩點才襲擊 Herculaneum",
+  "quote": "the pyroclastic flow doesn't hit until around 2 p.m.",
+  "pages": [
+   "p.56"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "around",
+  "convert": ""
+ },
+ {
+  "n": 53,
+  "claim_zh": "用每小時三英里的平均步行速度走四小時，下午一點多可抵達 Herculaneum",
+  "quote": "the average walking pace of three miles per hour and arrive in Herculaneum just after 1 p.m.",
+  "pages": [
+   "p.56"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "3 mph 約 4.8 公里／時"
+ },
+ {
+  "n": 54,
+  "claim_zh": "Herculaneum 曾是羅馬權貴的海濱度假城，有大理石大宅和藏有古希臘羅馬經典的圖書館",
+  "quote": "Herculaneum was a beach resort town for the Roman elite. You'll find big, beautiful houses clad in marble and libraries filled with Ancient Greek and Roman classics.",
+  "pages": [
+   "p.56"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.56",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.56"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

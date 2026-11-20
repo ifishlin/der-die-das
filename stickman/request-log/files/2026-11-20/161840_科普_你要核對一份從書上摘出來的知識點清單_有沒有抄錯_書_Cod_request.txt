@@ -1,0 +1,161 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch05_pompeii/pages/p49.jpg（書的 p.49；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 1,
+  "claim_zh": "龐貝是羅馬人生活的海濱港市",
+  "quote": "a peaceful, seaside hub of Roman life … the port town of Pompeii",
+  "pages": [
+   "p.49"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 2,
+  "claim_zh": "龐貝有噴泉林立的街道",
+  "quote": "walk fountain-lined streets",
+  "pages": [
+   "p.49"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 3,
+  "claim_zh": "當地的酒是用長在極肥沃火山土壤裡的葡萄釀的",
+  "quote": "local wine made from grapes grown in fantastically rich volcanic soils",
+  "pages": [
+   "p.49"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 4,
+  "claim_zh": "維蘇威火山在西元 79 年 8 月 24 日噴發",
+  "quote": "on August 24, 79 CE",
+  "pages": [
+   "p.49"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "西元 79 年 8 月 24 日"
+ },
+ {
+  "n": 5,
+  "claim_zh": "噴發前後發生一次規模 5.9 的地震",
+  "quote": "a 5.9-magnitude earthquake",
+  "pages": [
+   "p.49"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 6,
+  "claim_zh": "附近的維蘇威火山升起一團黑雲",
+  "quote": "see a black cloud rise from the nearby Mount Vesuvius",
+  "pages": [
+   "p.49"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 7,
+  "claim_zh": "維蘇威火山每秒噴出 150 萬噸熔岩",
+  "quote": "begins to disgorge 1.5 million tons of molten rock per second",
+  "pages": [
+   "p.49"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "約 136 萬公噸／秒（以美製短噸計）"
+ },
+ {
+  "n": 8,
+  "claim_zh": "釋放的熱能是廣島原子彈的 10 萬倍",
+  "quote": "release 100,000 times the thermal energy of the Hiroshima bomb",
+  "pages": [
+   "p.49"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 9,
+  "claim_zh": "你站的龐貝離火山僅六英里",
+  "quote": "you stand a mere six miles away",
+  "pages": [
+   "p.49"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "約 9.7 公里"
+ },
+ {
+  "n": 10,
+  "claim_zh": "Pier Paolo Petrone 是那不勒斯費德里科二世大學的法醫人類學家",
+  "quote": "Pier Paolo Petrone, a forensic anthropologist at the University of Naples Federico II",
+  "pages": [
+   "p.49"
+  ],
+  "type": "專家說法",
+  "who": "Pier Paolo Petrone，法醫人類學家",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 11,
+  "claim_zh": "Petrone 回覆說許多龐貝人在噴發中存活，但大概只有立刻採取行動的人",
+  "quote": "many did. \"But likely only those who took immediate action.\"",
+  "pages": [
+   "p.49",
+   "p.50"
+  ],
+  "type": "專家說法",
+  "who": "Pier Paolo Petrone",
+  "hedge": "likely",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.49",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.49"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

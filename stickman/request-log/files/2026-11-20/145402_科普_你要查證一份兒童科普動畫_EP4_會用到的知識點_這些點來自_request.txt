@@ -1,0 +1,135 @@
+
+你要查證一份兒童科普動畫（EP4）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 49,
+  "claim_zh": "建議：絕不要把繩子繞在手、手指或身體任何部位上。",
+  "quote": "never wrapping the rope around your hands, fingers, or any other body part",
+  "pages": [
+   "p.46"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "「never wrapping the rope around your hands, fingers, or any other body part」不在 p.46。頁碼標錯。"
+ },
+ {
+  "n": 50,
+  "claim_zh": "繩子的張力會輕易壓碎身體部位；如果同伴撐不住，你可能被拖在滑動的石塊後面。",
+  "quote": "if your comrades fail, you could be dragged behind the sliding rock",
+  "pages": [
+   "p.46"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "「if your comrades fail, you could be dragged behind the sliding rock」不在 p.46。頁碼標錯。"
+ },
+ {
+  "n": 51,
+  "claim_zh": "同一條繩子加越多人拉會出現邊際效益遞減，但也正因如此才可能拉動八十噸的花崗岩塊。",
+  "quote": "diminishing returns when adding pullers to a rope, which is how hauling that eighty-ton granite block is even possible",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "80 短噸≈72.6 公噸",
+  "verify_note": "「diminishing returns when adding pullers…」不在 p.46。本頁開頭的「the forces can scale far beyond what would seem intuitively possible」是其後續，但清單引的那句本身在前一頁。頁碼標錯。"
+ },
+ {
+  "n": 52,
+  "claim_zh": "1995 年 6 月 6 日，德國法蘭克福一群童軍排成 650 人的拔河。",
+  "quote": "On June 6, 1995, a group of Boy Scouts in Frankfurt, Germany, lined up for a 650-person game of tug-of-war.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 53,
+  "claim_zh": "那條兩吋粗的尼龍繩斷裂、高速彈回，當場打死站最前面的兩名童軍、打傷二十五人。",
+  "quote": "When the two-inch-thick nylon rope broke, it snapped back with such speed it killed the two scouts standing in front and injured twenty-five others.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "兩吋≈5.1 公分"
+ },
+ {
+  "n": 54,
+  "claim_zh": "其他大型拔河比賽曾扯斷手臂、手指，並壓碎手掌。",
+  "quote": "Other large tug-of-war matches have severed arms, fingers, and crushed hands.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 55,
+  "claim_zh": "1997 年 10 月 25 日，台灣有 1,600 人對一條承載額定不到一半的繩子施加 18 萬磅的力。",
+  "quote": "On October 25, 1997, in Taiwan, 1,600 people applied 180,000 pounds of force to a rope rated for less than half that.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "180,000 磅≈81,650 公斤（約 81.6 公噸）"
+ },
+ {
+  "n": 56,
+  "claim_zh": "斷掉的繩子猛力彈回，把站最前面兩人的手臂扯斷。",
+  "quote": "The severed line ripped backward with such force it tore the arms off the two people in front.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

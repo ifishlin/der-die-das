@@ -1,0 +1,27 @@
+我逐字讀完照片後發現一個嚴重問題：**這張 p.57 的實際內容，和清單上標在 p.57 的五個知識點完全對不起來。**
+
+照片右頁（頁眉 POMPEII＝p.57）講的是：往南或往北逃、龐貝離火山口六英里、往南要跑過 Stabiae（約四英里半，老普林尼死在那）、普林尼式火山雲落灰、小普林尼對黑暗的描述。完全沒有出現清單裡的 Naples、Herculaneum、十三英里、八月下旬補水、Petrone、「就地避難」這些內容。
+
+```json
+{"page": "p.57",
+ "checks": [
+  {"n": 55, "ok": false, "problem": "這段 quote（Naples outskirts / another four miles）在 p.57 上找不到。本頁完全沒提 Naples 或 Herculaneum。本頁談的是往南逃、過 Stabiae『約四英里半』，不是往北到 Naples『再四英里』。此知識點疑似標錯頁（可能在相鄰頁談『往北』的段落）。", "quote": "", "claim_zh": ""},
+  {"n": 56, "ok": false, "problem": "quote『the total distance from Pompeii to Naples is thirteen miles』在 p.57 找不到。本頁只給『six miles from the vent of Vesuvius』與 Stabiae『four and a half miles』兩個距離，沒有 Pompeii→Naples 十三英里。疑似標錯頁。", "quote": "", "claim_zh": ""},
+  {"n": 57, "ok": false, "problem": "quote（late-August heat / drink fresh water）在 p.57 找不到。本頁沒有補水或八月高溫的求生建議。疑似標錯頁。", "quote": "", "claim_zh": ""},
+  {"n": 58, "ok": false, "problem": "quote『Many residents initially take shelter…open window』在 p.57 找不到。本頁沒有『居民就地避難、留下逃生時間窗』的敘述。疑似標錯頁。", "quote": "", "claim_zh": ""},
+  {"n": 59, "ok": false, "problem": "Petrone 的這句引言在 p.57 找不到。本頁引用的是小普林尼（Pliny the Younger）對黑暗的描述，沒有 Petrone 的話。疑似標錯頁。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "龐貝離維蘇威火山口六英里", "quote": "you and the rest of the Pompeiians will find yourselves six miles from the vent of Vesuvius with only two options: Run north or run south.", "pages": ["p.57"], "type": "數字", "who": "作者", "hedge": "", "convert": "約 9.7 公里"},
+  {"claim_zh": "往南逃至少要跑過 Stabiae 鎮，約四英里半外", "quote": "you'll need to run at least past the town of Stabiae—around four and a half miles away", "pages": ["p.57"], "type": "數字", "who": "作者", "hedge": "around", "convert": "約 7.2 公里"},
+  {"claim_zh": "老普林尼（小普林尼的舅舅／叔叔）死在 Stabiae", "quote": "because that was where Pliny the Elder (the Younger's uncle) died.", "pages": ["p.57"], "type": "描述", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "維蘇威在西元前 1995 年曾有一次大噴發，摧毀了一支青銅時代的人群", "quote": "the massive Vesuvius eruption in 1995 BCE and the Bronze Age population it destroyed", "pages": ["p.57"], "type": "數字", "who": "作者", "hedge": "", "convert": "西元前 1995 年"},
+  {"claim_zh": "往南逃會順著盛行風方向，普林尼式火山雲會持續對你落下火山灰和浮石", "quote": "you'll also run in the direction of the prevailing winds, which means the Plinian cloud will continuously rain ash and pumice on you.", "pages": ["p.57"], "type": "描述", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "小普林尼形容那片黑暗：不像無月或多雲的夜，而像在上鎖的房間裡把燈熄掉", "quote": "not so much a moonless or cloudy night, but as if the lamp had [been put] out in a locked room.", "pages": ["p.57"], "type": "專家說法", "who": "Pliny the Younger（小普林尼）", "hedge": "", "convert": ""}
+ ],
+ "unclear": [
+  {"where": "右頁最後一句（往南逃段落提到的日期）", "problem": "『on the morning of the twenty-fifth』附近有一處被行距壓到、不完全清楚，無法 100% 確認是否還接了其他數字或細節。"},
+  {"where": "右頁底部彎折處最後一行", "problem": "只讀得出『…n of Pompeii went, he』，因書頁彎曲且模糊，無法確認完整句子。"},
+  {"where": "小普林尼引言中段", "problem": "『the lamp had ___ out』中間一個動詞被頁面彎折遮住，依語意推測為 been put，但照片上看不清。"}
+ ]}
+```

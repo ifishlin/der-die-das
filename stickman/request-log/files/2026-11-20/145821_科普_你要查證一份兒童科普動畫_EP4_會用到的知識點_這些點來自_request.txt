@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP4）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "claim_zh": "考古學家在採石場底部的石屑和碎石下，發現一條舊斜坡的遺跡，以約 11% 的和緩坡度升到地表。",
+  "quote": "the remains of an old ramp that ascends to the surface at a reasonable 11 percent grade",
+  "pages": [
+   "p.39"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "數字待重拍確認",
+  "convert": "11 percent grade＝坡度 11%",
+  "n": 89,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "若那條斜坡依原軌跡延伸，Redding 說它會抵達金字塔西南角、約 120 英尺的高度；那只到頂端的四分之一，但到那時超過半數的石灰岩石塊已經鋪好了。",
+  "quote": "it would arrive at the pyramid's southwest corner at approximately 120 feet of altitude. That's only a quarter of the way to the top, but by then more than half of the limestone blocks would have been laid.",
+  "pages": [
+   "p.39"
+  ],
+  "type": "數字",
+  "who": "作者（引述 Redding）",
+  "hedge": "數字待重拍確認",
+  "convert": "120 feet≈37 公尺",
+  "n": 90,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "尼羅河裡充滿血吸蟲（schistosomes），一種扁蟲，會鑽過皮膚、經靜脈系統進到肝臟，在那裡成熟並產卵。",
+  "quote": "The river teems with the blood parasite schistosomes, a flatworm that burrows through the skin, travels through the venous system to the liver, matures, and lays eggs",
+  "pages": [
+   "p.40"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 91,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "古埃及醫生相當擅長處理外傷性骨折，會用夾板固定（許多骨折因此癒合），有些病人甚至熬過截肢；一份描述治療鼻骨骨折的莎草紙，做法跟今天差不多。",
+  "quote": "doctors immobilized them in splints. Some even seem to have survived amputations. ... Ancient Egyptian doctors were fairly proficient at caring for traumatic bone injuries. A papyrus describing treatment for a broken nose doesn't differ much from what you would receive today.",
+  "pages": [
+   "p.40"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "fairly proficient（相當擅長）；seem to have（似乎）；待重拍確認部分字句",
+  "convert": "",
+  "n": 92,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "但古埃及針對內科或間接病因（如關節炎、疾病、寄生蟲）的藥方效果差很多；醫療莎草紙裡有許多噁心的藥方，包括動物糞便做的藥膏、死蒼蠅和煮熟老鼠熬的湯。",
+  "quote": "medications for internal or indirect causes of suffering, such as arthritis, disease, or parasites were not nearly as effective. Medical papyri ... with revolting prescriptions for diseases, including ointments of animal dung, and broths of dead flies and cooked mice.",
+  "pages": [
+   "p.40"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀（「Medical papyri ... legion with」一句影像略模糊），待重拍確認",
+  "convert": "",
+  "n": 93,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "感染血吸蟲後 4 到 6 週會發燒並變得極度倦怠。",
+  "quote": "Four to six weeks after infection, you'll develop a fever and become extremely lethargic.",
+  "pages": [
+   "p.41"
+  ],
+  "type": "事實",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 94,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "血吸蟲病轉為慢性後，依蟲卵流向，可能造成腸道疾病、癌症、癲癇發作，甚至死亡。",
+  "quote": "the infection becomes chronic, and depending on where the eggs flow, they can cause intestinal disease, cancers, seizures, or death.",
+  "pages": [
+   "p.41"
+  ],
+  "type": "事實",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 95,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "CDC 認為血吸蟲病是世界上僅次於瘧疾、第二具破壞力的寄生蟲。",
+  "quote": "Schistosomiasis is considered by the CDC to be the world's second most devastating parasite after malaria",
+  "pages": [
+   "p.41"
+  ],
+  "type": "事實",
+  "who": "作者／CDC",
+  "hedge": "",
+  "convert": "",
+  "n": 96,
+  "verify_note": "逐頁核對補列"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

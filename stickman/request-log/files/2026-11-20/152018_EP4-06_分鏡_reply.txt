@@ -1,0 +1,447 @@
+{
+ "scene_id": "EP4-06",
+ "notes": "這一場是博士透過 HERO 手機上課的講解段落，整體用『手機框 + 手繪插圖』的教學蒙太奇來拍：先用一張 HERO 在船上看手機的實拍鏡頭建立『手機亮了、博士開講』的框架，中段全部切成跟角色設定同畫風的手繪插圖（粗黑線、平塗、純白皮膚路人、畫面不出現任何字或數字），最後在笑點前切回手機螢幕的博士當轉場錨點，再用一張巨大金字塔 vs. 七公分半象牙小人的極遠景收尾當笑點。因為沒有實景、沒有地圖，所有鏡頭 camera.cell=N/A、t=0、blocking=[]。插圖內容依旁白推進：人口之多→全國分 42 區（地圖）→法老底下的王室／軍隊／祭司→收稅記帳的文官→以物易物繳牛繳穀→量尼羅河水位核稅→勞役→不繳稅的處罰→博士補充→象牙小人對比金字塔。節奏上把性質相近、同一張插圖能講完的旁白合併（2~4、8~9、10~12），避免功能重複的鏡頭。所有插圖數字一律由旁白講，畫面不寫數字。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP4-06-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "這時候，你口袋裡的手機亮了起來，博士要上課了。"
+   ],
+   "subject": "HERO 在船上舉起亮起來的手機看，螢幕上是博士",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏左，雙手把手機舉在胸前、低頭看；手機略朝鏡頭傾斜，螢幕上的博士（REF_PROF）在畫面右側偏小；前景是手機，背景之後由 Claude 用前一場的船接。",
+   "screen_direction": "off_down",
+   "action": "手機剛亮起的那一刻，HERO 挑眉、有點好奇又有點意外地低頭看螢幕，博士在螢幕上正要開口講課。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "HERO 與他手上的手機",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "腰以上、臉、雙手、手機",
+     "frame_height": "約 85%"
+    },
+    {
+     "who": "PROF（螢幕）",
+     "visible": "手機螢幕上胸以上",
+     "frame_height": "約 12%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one real character: HERO (exactly as in the attached HERO character sheet), in his summer clothes (short-sleeve shirt, shorts, flip-flops, no hat, no backpack). HERO holds up his phone in both hands at chest height and looks down at its just-lit screen, eyebrows raised, curious and a little surprised. The phone is tilted toward the camera so we can see its screen: on the screen is PROF (exactly as in the attached PROF character sheet), shown from the chest up as if on a video call, mid-explanation with a friendly open mouth. The phone screen shows only PROF — no text, no numbers, no icons. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "phone tilted toward camera showing PROF on its screen as a video call"
+   ],
+   "remedy": "shot_size 想要 MS，prompt 用 MS 句；MS 常被畫成膝上，若畫太寬，剪輯時裁到腰。螢幕上的博士若畫太小，剪輯需要時微推近。"
+  },
+  {
+   "id": "EP4-06-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "他說，胡夫統治的埃及，大概住了超過一百萬人。",
+    "當然那時候沒有人口普查，這只是學者估算出來的。",
+    "而這項工程大到，可能牽動了全國每一個人的生活。"
+   ],
+   "subject": "插圖：尼羅河沿岸擠滿成百上千個小小古埃及人",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "一條藍色河流從畫面中央縱向貫穿，兩側綠色農田鋪滿整個畫面，上面密密麻麻散佈數百個極小的火柴人，佈滿全幅以表現『超過一百萬人』。",
+   "screen_direction": "toward",
+   "action": "從高空俯瞰，整片土地上無數小人同時在耕作、走動、搬東西，呈現人口之多、全國都在動。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "尼羅河沿岸的人群",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：古埃及人群",
+     "visible": "數百個全身小火柴人",
+     "frame_height": "每個約 3~5%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration in the same cartoon style as the character sheets (thick black lines, flat simple shapes) — NOT a photo, NOT an infographic or chart. A vast crowd of several hundred tiny ancient-Egyptian stick-figure people spread all across a wide green strip of farmland beside one simple blue river, so many that they fill the whole land, showing a huge population. Some are farming, some walking, some carrying baskets. Every person is a stick figure with a pure paper-white round head and pure white skin, same style as the character sheets; their tiny faces are plain and busy. No text and no numbers anywhere. Shot size: Extreme Wide Shot (EWS). The people are very small; the whole land and the crowd are the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "hand-drawn teaching illustration style (non-photo cartoon map/scene)",
+    "crowd of several hundred tiny stick figures"
+   ],
+   "remedy": "aerial 只有配 EWS 才成功，此張正是 EWS，照用。"
+  },
+  {
+   "id": "EP4-06-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "整個埃及分成四十二個行政區。"
+   ],
+   "subject": "插圖：古埃及地圖，被分成很多小行政區",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "top",
+   "composition": "一張平放的手繪卡通地圖佔滿畫面：中央一條縱向藍色尼羅河，兩側土地被粗黑線切成約四十個不同平塗色的小塊。無人物。",
+   "screen_direction": "N/A",
+   "action": "鏡頭正對這張攤平的地圖，呈現整個埃及被切成許多小區。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "地圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A flat hand-drawn cartoon map of ancient Egypt, drawn in the same thick-black-line flat-color style as the character sheets — NOT a realistic map, NOT a photo. One long vertical blue river (the Nile) runs down the middle, and the land on both sides is divided by thick black lines into many small regions (about forty small patches), each patch a different flat color. The map is shown flat, seen from straight above. There are no people. No text, no numbers and no labels anywhere on the map. Shot size: Wide Shot (WS); the whole map fills the frame. Camera angle: the flat map is seen from directly above (top-down), lying flat.",
+   "untested": [
+    "flat hand-drawn cartoon map divided into many colored regions, seen from above"
+   ],
+   "remedy": "shot_size 想要把整張地圖當主體，用 WS 句；top-down 對實景角色 ✗，但這裡是一張平放的 2D 地圖，從正上方看是自然的，若被畫成略帶透視也可接受。"
+  },
+  {
+   "id": "EP4-06-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "法老底下大致分成幾個系統：管國王身邊事務的王室、打仗的軍隊、管神廟的祭司，"
+   ],
+   "subject": "插圖：法老高踞上方，底下分成王室、軍隊、祭司三群人",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面上方中央一個較大的法老坐在高台王座上；下方分三群較小的火柴人：左邊是拿扇子托盤的王室侍從，中間是持矛持盾的士兵，右邊是光頭白袍的祭司。",
+   "screen_direction": "toward",
+   "action": "一幅群像式的權力結構圖：法老威嚴端坐，三群人各司其職分列其下。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "法老與三群人",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：法老",
+     "visible": "全身坐姿",
+     "frame_height": "約 35%"
+    },
+    {
+     "who": "插圖：王室侍從群",
+     "visible": "全身小火柴人",
+     "frame_height": "每個約 18%"
+    },
+    {
+     "who": "插圖：士兵群",
+     "visible": "全身小火柴人",
+     "frame_height": "每個約 18%"
+    },
+    {
+     "who": "插圖：祭司群",
+     "visible": "全身小火柴人",
+     "frame_height": "每個約 18%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration in the same cartoon style as the character sheets (thick black lines, flat simple shapes) — NOT a photo, NOT a chart. It shows ancient Egypt's chain of command as a group tableau: at the top center sits one larger Pharaoh stick figure on a raised throne, wearing a simple striped headcloth, looking stern and proud. Below and around him are three clear groups of smaller people: on the left a cluster of royal-household attendants holding fans and trays; in the center a line of soldiers holding spears and round shields; on the right a group of priests with shaved heads in plain white robes. Every person is a stick figure with a pure paper-white round head and pure white skin. Faces: the Pharaoh proud and stern, the attendants, soldiers and priests attentive and calm. No text and no numbers anywhere. Shot size: Wide Shot (WS). The Pharaoh and all three groups are clearly visible with the surrounding space around them. Camera direction: front view. Camera angle: Eye-level.",
+   "untested": [
+    "hand-drawn group tableau of a Pharaoh above three groups of people"
+   ],
+   "remedy": "shot_size 想要 WS，WS 常被畫成跟 FS 一樣近；若畫太近導致三群人塞不下，剪輯無法補救時可重畫拉遠。"
+  },
+  {
+   "id": "EP4-06-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "還有一大群負責收稅、記帳的文官。"
+   ],
+   "subject": "插圖：一大群文官盤坐記帳、清點",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "一大群文官成排盤腿而坐，每人膝上一卷空白莎草紙、手拿蘆葦筆低頭書寫；身旁堆著一籃籃、一罐罐要清點的實物。",
+   "screen_direction": "toward",
+   "action": "眾文官忙著記帳、清點稅物，神情專注嚴肅，表現龐大的稅務官僚體系。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "文官群",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：文官群",
+     "visible": "盤坐全身小火柴人",
+     "frame_height": "每個約 25%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration in the same cartoon style as the character sheets (thick black lines, flat simple shapes) — NOT a photo, NOT a chart. A large group of ancient-Egyptian tax officials / scribes sit cross-legged in rows, each holding an open papyrus scroll on his lap and a reed pen, busy writing and counting with serious focused faces. Beside them are baskets and stacked clay jars they are tallying. Every person is a stick figure with a pure paper-white round head and pure white skin. The scrolls are completely blank. No text, no numbers and no letters anywhere. Shot size: Wide Shot (WS); the whole group of scribes and their baskets are visible. Camera direction: front view. Camera angle: Eye-level.",
+   "untested": [
+    "rows of seated scribes with blank papyrus scrolls"
+   ],
+   "remedy": "shot_size 想要 WS 以容下一大群人，若被畫近導致人數變少，剪輯無法補救時重畫拉遠。"
+  },
+  {
+   "id": "EP4-06-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那時候沒有錢幣，大家用東西換東西，連繳稅也是繳實物。",
+    "養牛的地方繳牛，種麥的地方就繳穀子。"
+   ],
+   "subject": "插圖：農民扛著牛和穀子去向稅官繳實物稅",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "左邊兩個農民往右走：一個牽著一頭卡通牛，一個肩上扛著大穀袋、手提一籃麥穗；右邊站著一個拿卷軸點收的稅官。整排側面呈現。",
+   "screen_direction": "right",
+   "action": "農民吃力地扛著牛和穀子往右走向稅官繳稅，稅官點頭清點，表現以物易物、實物繳稅。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "農民、牛與稅官",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：農民",
+     "visible": "全身，扛穀子／牽牛",
+     "frame_height": "約 50%"
+    },
+    {
+     "who": "插圖：牛",
+     "visible": "全身",
+     "frame_height": "約 40%"
+    },
+    {
+     "who": "插圖：稅官",
+     "visible": "全身，拿卷軸",
+     "frame_height": "約 55%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration in the same cartoon style as the character sheets (thick black lines, flat simple shapes) — NOT a photo, NOT a chart. It shows paying tax in goods, not coins. On the left, two ancient-Egyptian stick-figure farmers walk toward the right: one leads a cartoon cow (natural brown, correct realistic cow proportions) by a rope, the other carries a big heavy grain sack on his shoulder and a basket of wheat ears, straining under the load. On the right stands a tax official holding a scroll, nodding as he receives them, looking businesslike. Every person is a stick figure with a pure paper-white round head and pure white skin. There is no money and no coins. No text and no numbers anywhere. Shot size: Wide Shot (WS). Camera direction: side view. The camera is beside them and sees the farmers, the cow and the official from the side. Camera angle: Eye-level.",
+   "untested": [
+    "farmers hauling a cow and a grain sack toward a tax official (barter tax)"
+   ],
+   "remedy": "shot_size 想要 WS，若畫太近塞不下牛和三人，剪輯無法補救時重畫拉遠。"
+  },
+  {
+   "id": "EP4-06-07",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "稅率大約是一成。",
+    "不過官員不會去量農夫到底收了多少，怕他們把收成藏起來。",
+    "他們量的是尼羅河洪水有多高，再對照往年，算出這一區該繳多少。"
+   ],
+   "subject": "插圖：文官拿量尺／量桿在尼羅河邊量洪水高度",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "右邊一個文官站在水邊，手扶一根豎直插進左邊藍色洪水裡的木量桿，桿上有刻痕（無數字）；他微彎腰低頭看水位對著刻度。整張側面。",
+   "screen_direction": "left",
+   "action": "文官專注地盯著水面在量桿上的位置，正在量尼羅河洪水的高度來核算稅額。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "量水位的文官",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：文官",
+     "visible": "全身，扶量桿",
+     "frame_height": "約 85%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration in the same cartoon style as the character sheets (thick black lines, flat simple shapes) — NOT a photo, NOT a chart. One single ancient-Egyptian official measures the height of the Nile flood. He stands on the right at the water's edge and holds a tall wooden measuring pole that goes straight down into the blue flood water on the left; the pole has plain carved notches as marks but NO numbers and NO text. He leans slightly and looks down at the water line against the pole, concentrating. He is a stick figure with a pure paper-white round head and pure white skin. No text and no numbers anywhere. Shot size: Full Shot (FS). The official's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside him and sees him and the pole from the side. Camera angle: Eye-level.",
+   "untested": [
+    "measuring pole with plain notches (no numbers) in flood water"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-06-08",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "而每年那幾個月的勞役，同樣算是稅的一部分。"
+   ],
+   "subject": "插圖：一隊勞工用繩子拖一塊巨大石塊",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "一排約八個勞工在畫面左側拉著粗繩，往右拖一塊巨大的淺色石塊；旁邊一個監工舉著手臂。側面排開。",
+   "screen_direction": "right",
+   "action": "勞工們身體前傾、用力拉繩，汗珠飛濺、吃力但賣命地把大石塊往右拖，表現勞役。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "拖石塊的勞工隊",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：勞工群",
+     "visible": "全身，拉繩前傾",
+     "frame_height": "每個約 40%"
+    },
+    {
+     "who": "插圖：監工",
+     "visible": "全身，舉手臂",
+     "frame_height": "約 45%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration in the same cartoon style as the character sheets (thick black lines, flat simple shapes) — NOT a photo, NOT a chart. It shows corvée labor: a gang of about eight ancient-Egyptian stick-figure workers on the left pull thick ropes to drag one huge pale stone block across the ground toward the right. They lean far forward, straining hard, with sweat drops flying and tired but determined faces. One overseer stands to the side with one arm raised. Every person is a stick figure with a pure paper-white round head and pure white skin. No text and no numbers anywhere. Shot size: Wide Shot (WS); the whole line of workers and the big stone block are visible. Camera direction: side view. The camera is beside them and sees the pulling line from the side. Camera angle: Eye-level.",
+   "untested": [
+    "gang of workers hauling one huge stone block with ropes"
+   ],
+   "remedy": "shot_size 想要 WS，若畫太近塞不下整隊人與大石塊，剪輯無法補救時重畫拉遠。"
+  },
+  {
+   "id": "EP4-06-09",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "不交稅的人會被打、被關，有時候連全家都被扣住。"
+   ],
+   "subject": "插圖：看守舉棍打縮在地上的農夫，後方有被綁住的家人",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "左邊一個看守站著高舉木棍要打；右邊一個瘦農夫縮在地上、雙手抱頭；背景兩個家人被繩子綁在一起、低頭。俯視往下看縮在地上的農夫。",
+   "screen_direction": "off_left",
+   "action": "看守舉棍下打的那一刻，農夫驚恐縮地、張嘴、抬眼看向左邊的看守，背景家人被扣住，氣氛緊張陰沉。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "被打的農夫",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：看守",
+     "visible": "全身，舉棍",
+     "frame_height": "約 70%"
+    },
+    {
+     "who": "插圖：農夫",
+     "visible": "蹲縮全身、臉",
+     "frame_height": "約 40%"
+    },
+    {
+     "who": "插圖：被綁家人",
+     "visible": "背景全身",
+     "frame_height": "每個約 25%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration in the same cartoon style as the character sheets (thick black lines, flat simple shapes) — NOT a photo, NOT a chart. A tense, grim moment showing the punishment for not paying tax. On the left a tax guard stands and raises a wooden stick to strike. On the right a thin farmer cowers on the ground, arms up over his head, wide-eyed and terrified with his mouth open, looking up toward the guard. In the background two more family members are tied together with rope, heads down, scared. Every person is a stick figure with a pure paper-white round head and pure white skin. No text and no numbers anywhere. Shot size: Medium Shot (MS). Camera angle: High angle: the camera is above the scene, looking down at the cowering farmer.",
+   "untested": [
+    "grim punishment tableau: guard raising a stick over a cowering farmer, bound family behind"
+   ],
+   "remedy": "shot_size 想要 MS，MS 常被畫成膝上，剪輯裁到腰；angle 想要 high，high 句常只有輕微往下看，剪輯時可再往下壓一點強調農夫的脆弱。"
+  },
+  {
+   "id": "EP4-06-10",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "說到這裡，博士補了一句："
+   ],
+   "subject": "插入鏡頭：手機螢幕上的博士補一句話",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "手機幾乎佔滿畫面，螢幕上是博士（胸以上）；畫面最下緣只露出 HERO 一隻純白的手和手指扶著手機。",
+   "screen_direction": "toward",
+   "action": "博士豎起一根手指、帶著狡黠得意的小笑，像是要補一句關鍵的話；切回手機螢幕當轉場、吊笑點。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "手機螢幕上的博士",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "PROF（螢幕）",
+     "visible": "手機螢幕上胸以上",
+     "frame_height": "約 55%"
+    },
+    {
+     "who": "HERO",
+     "visible": "下緣一隻手與手指",
+     "frame_height": "約 15%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. An insert shot of a smartphone held up in one hand; only HERO's pure paper-white hand and fingers show at the bottom edge holding the phone. The phone fills most of the frame. On its screen is PROF (exactly as in the attached PROF character sheet), shown from the chest up as if on a video call, raising one finger and giving a knowing, wry little smile as he adds an extra remark. The screen shows only PROF — no text, no numbers, no icons. HERO's hand is pure paper white. Shot size: Close-up (CU): the phone and its screen fill most of the picture. Camera direction: front view. Camera angle: Eye-level.",
+   "untested": [
+    "object close-up of a phone whose screen (showing PROF) fills most of the frame"
+   ],
+   "remedy": "shot_size 想要 CU（手機螢幕佔滿），CU 對實景人臉 ✗，但這裡主體是手機這個物件、不是真人臉貼滿，風險較低；若博士在螢幕上被畫太小，剪輯時推近到螢幕。"
+  },
+  {
+   "id": "EP4-06-11",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "蓋了史上最大金字塔的胡夫，目前確定留下來的雕像，只有一尊大約七公分半的象牙小人。"
+   ],
+   "subject": "插圖：巨大金字塔旁邊站著一尊超小的象牙雕像",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "右側一座巨大的金字塔幾乎佔滿整個畫面；左側地面上站著一尊小到像一點的象牙坐像小人，形成誇張的大小對比。無人物。",
+   "screen_direction": "N/A",
+   "action": "靜態定格的笑點：史上最大的金字塔 vs. 只剩一尊七公分半的象牙小人，用極端的大小落差製造反差笑果。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "金字塔與象牙小雕像",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：金字塔",
+     "visible": "整座",
+     "frame_height": "約 90%"
+    },
+    {
+     "who": "插圖：象牙小雕像",
+     "visible": "整尊",
+     "frame_height": "約 5%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration in the same cartoon style as the character sheets (thick black lines, flat simple shapes) — NOT a photo, NOT a chart. A size-contrast gag. On the right, one enormous pyramid rises and fills almost the whole frame, gigantic. On the left, on the bare ground, stands one absurdly tiny carved ivory figurine of a seated king, only a few centimetres tall, so small it looks like a little speck next to the giant pyramid. The figurine is smooth off-white ivory. There are no people. No text and no numbers anywhere. Shot size: Extreme Wide Shot (EWS). The pyramid is huge and the little ivory figure is very small; the extreme scale contrast between them is the main subject. Camera angle: Eye-level.",
+   "untested": [
+    "extreme scale-contrast gag: giant pyramid vs. a tiny ivory figurine"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

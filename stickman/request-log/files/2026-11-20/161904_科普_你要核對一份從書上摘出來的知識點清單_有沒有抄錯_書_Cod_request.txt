@@ -1,0 +1,160 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch05_pompeii/pages/p51.jpg（書的 p.51；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 17,
+  "claim_zh": "維蘇威噴發的初期階段不是最危險的",
+  "quote": "the early stages of Vesuvius's eruption were not the most dangerous",
+  "pages": [
+   "p.51"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 18,
+  "claim_zh": "岩漿房裡加壓岩漿溶有氣體，裂開噴氣口就像打開巨大汽水罐，過熱氣體以超音速衝出狹窄噴氣口",
+  "quote": "blasted through the volcano's narrow vent at supersonic speeds",
+  "pages": [
+   "p.51"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 19,
+  "claim_zh": "火山吸入周圍冷空氣加熱，形成一股衝向平流層的過熱上升氣流",
+  "quote": "created a rushing upward lift of superheated air that screamed toward the stratosphere",
+  "pages": [
+   "p.51"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 20,
+  "claim_zh": "那團雲熱到足以熔化鉛",
+  "quote": "The cloud was hot enough to melt lead",
+  "pages": [
+   "p.51"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "鉛熔點約 327°C（621°F）"
+ },
+ {
+  "n": 21,
+  "claim_zh": "8 月 24 日吹西南偏南風，所以熔岩碎塊冷卻後落在龐貝",
+  "quote": "because the wind on August 24 blew south-southwest, they dropped on Pompeii",
+  "pages": [
+   "p.51"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 22,
+  "claim_zh": "起初熔岩像雪一樣落下，隨噴發持續，浮石大到、猛到足以壓垮房屋",
+  "quote": "pieces of pumice came down with enough size and ferocity to collapse houses",
+  "pages": [
+   "p.51"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 23,
+  "claim_zh": "這個落石堆積過程花了好幾個小時",
+  "quote": "But that took hours.",
+  "pages": [
+   "p.51"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 24,
+  "claim_zh": "岩漿房氣體耗盡後，噴發威力下降",
+  "quote": "As the gasses within the magma chamber depleted, the eruption lost power.",
+  "pages": [
+   "p.51"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 25,
+  "claim_zh": "火山雲太濃密時雲柱會崩塌，只升幾百英尺就落下，下降時加速，到地面像過熱沙暴以高速公路車速流動",
+  "quote": "it flows like a superheated sandstorm moving at autobahn speeds",
+  "pages": [
+   "p.51"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "數百英尺約 100 公尺以上"
+ },
+ {
+  "n": 26,
+  "claim_zh": "火山碎屑流可達華氏 1,800 度，濃到能讓人窒息，可延伸數英里",
+  "quote": "these \"pyroclastic flows\" can be 1,800 degrees Fahrenheit, dense enough to suffocate you, and extend for miles",
+  "pages": [
+   "p.51"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "can be",
+  "convert": "約 982°C；數英里約數公里"
+ },
+ {
+  "n": 27,
+  "claim_zh": "8 月 25 日清晨，一股火山碎屑流殺死龐貝所有還留在城裡的人",
+  "quote": "In the early morning hours of August 25, a pyroclastic flow killed everyone remaining in Pompeii.",
+  "pages": [
+   "p.51"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.51",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.51"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

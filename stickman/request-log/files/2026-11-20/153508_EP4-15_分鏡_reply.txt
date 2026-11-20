@@ -1,0 +1,215 @@
+{
+ "scene_id": "EP4-15",
+ "notes": "全場只有 HERO 一個角色，動作集中在「按鈕—泡水—回家」這條小事件線，所以用節奏分鏡：遠—近—全—近—遠。開場 WS 先把傍晚吉薩工地和半完工金字塔立起來（HERO 面南、金字塔在他背後遠處），同一張停住演「沒反應」的冷笑點。接著切 ECU 插入鏡頭特寫按鈕（縫卡細沙、燙到手縮），點出問題。再切 FS 看他蹲下把按鈕泡進水桶，動作完整、水桶在前景。再一個 ECU 插入特寫按鈕亮起來，當作問題的回報（跟第二張互相呼應）。最後用 WS 收，和開場同機位形成書擋，白光一閃人消失，離開古埃及。相機全部放在 HERO 正南邊（M16／M17，傍晚太陽在西，不逆光），HERO 面南＝正對相機，方位一律 front；角度用平視為主，插入鏡頭靠距離拉近。沒有大動物，不用加拍遠一級。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "M15",
+     "facing": "S",
+     "doing": "站著，雙手捧回家按鈕在胸前，用拇指按下去（沒有反應）"
+    },
+    {
+     "t": "2",
+     "cell": "M15",
+     "facing": "S",
+     "doing": "低頭看按鈕，手指被燙到往回縮——按鈕縫裡卡滿細沙、很燙"
+    },
+    {
+     "t": "3",
+     "cell": "M15",
+     "facing": "S",
+     "doing": "蹲下，把按鈕伸進正南邊 M16 沙地上的工人水桶裡，在水裡搖晃沖掉細沙、順便降溫"
+    },
+    {
+     "t": "4",
+     "cell": "M15",
+     "facing": "S",
+     "doing": "把按鈕從水裡提起，按鈕亮了起來"
+    },
+    {
+     "t": "5",
+     "cell": "M15",
+     "facing": "S",
+     "doing": "站直捧著按鈕，白光一閃，人在光裡消失"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-15-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "該回家了，你按下回家按鈕。",
+    "（停）沒有反應。"
+   ],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面正中、全身，雙手捧按鈕在胸前按下；背景是他身後遠處灰撲撲的半完工金字塔階梯和傍晚天空。環境大量入鏡，建立「傍晚吉薩工地」。這張同時停住演『沒反應』的冷笑點（剪輯時可推近）。",
+   "screen_direction": "off_down",
+   "action": "拇指按下按鈕的那一刻，表情期待；接著維持不動，什麼都沒發生",
+   "camera": {
+    "cell": "M16",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "10"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身，頭到腳",
+     "frame_height": "約 5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), standing and holding a small cracked home button in both hands in front of his chest, pressing it with one thumb. HERO's face and hands are pure paper white. His expression is hopeful and expectant, eyebrows raised, looking down at the button. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is on the open ground ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（HERO 偏大、環境偏少）；可接受，背景金字塔由參考圖補，剪輯沿用即可，不另縮放。"
+  },
+  {
+   "id": "EP4-15-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "按鈕的縫裡卡滿了細沙，而且燙得你差點拿不住。"
+   ],
+   "subject": "回家按鈕（HERO 手指）",
+   "shot_size": "ECU",
+   "ecu_part": "回家按鈕與 HERO 的手指",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "按鈕佔滿畫面正中，看得到縫裡塞滿細沙；HERO 的手指在按鈕周圍、指尖往回縮，像被燙到。畫面裡沒有臉、沒有其他東西。純插入鏡頭，交代『卡沙＋燙』這個問題。",
+   "screen_direction": "toward",
+   "action": "指尖碰到按鈕又縮回來的那一瞬間，表現很燙",
+   "camera": {
+    "cell": "M16",
+    "height_m": "1.2",
+    "look_at": "回家按鈕",
+    "distance_m": "0.4"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只有手指入鏡（無臉）；按鈕約佔畫高 7 成",
+     "frame_height": "手指約 3 成、按鈕約 7 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Extreme close-up insert of a small home button held in HERO's fingers; the button is cracked and its seams are packed full of fine sand, and HERO's fingertips flinch back from it as if it is burning hot. Only HERO's fingers and the button are in the picture; no face. HERO's hands are pure paper white. Shot size: Extreme Close-up (ECU). Only the home button and HERO's fingers around it fill the picture. Camera direction: front view. The camera is directly in front of the button, facing it. Camera angle: Eye-level: the camera is at the button's height, looking straight at it.",
+   "untested": [
+    "ECU 實測句原本是『Only HERO's eyes and the glasses around them fill the picture』用在眼睛；這裡換成物件（按鈕＋手指），物件 ECU 未實測。"
+   ],
+   "remedy": "若畫得不夠近（變成 CU／MCU），剪輯時再推近到 ECU；構圖已確保畫面只有按鈕和手指。"
+  },
+  {
+   "id": "EP4-15-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "你把它泡進工地倒在沙子上用的那桶水裡，沖掉細沙，順便降溫。"
+   ],
+   "subject": "HERO",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面正中、蹲下的全身；前景下緣是沙地上的工人水桶，他把按鈕伸進桶裡在水中搖晃。背景遠處金字塔。全身＋水桶都入鏡，動作看得完整。",
+   "screen_direction": "off_down",
+   "action": "蹲著把按鈕浸進水桶、手在水裡攪，沖掉細沙的那一刻，表情專注、略鬆一口氣",
+   "camera": {
+    "cell": "M17",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "5"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（蹲姿）＋雙手，臉入鏡",
+     "frame_height": "約 7 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), crouching down and dipping the small cracked home button into a workers' water bucket on the ground in front of him, his hand swishing it in the water to wash out the sand. HERO's face and hands are pure paper white. His expression is focused and a little relieved, mouth set in a small determined line. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is on the open ground ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-15-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "終於，它亮了。"
+   ],
+   "subject": "回家按鈕（HERO 手指）",
+   "shot_size": "ECU",
+   "ecu_part": "亮起來的回家按鈕與 HERO 的手指",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "剛從水裡提起的按鈕佔滿畫面正中，表面還掛著水珠、整顆亮了起來；HERO 的手指捧在按鈕周圍，下緣可見一點水桶邊。純插入鏡頭，當作問題解決的回報，和第 02 張互相呼應。",
+   "screen_direction": "toward",
+   "action": "按鈕由暗轉亮、發出光的那一瞬間",
+   "camera": {
+    "cell": "M16",
+    "height_m": "0.7",
+    "look_at": "回家按鈕",
+    "distance_m": "0.4"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只有手指入鏡（無臉）；按鈕約佔畫高 7 成",
+     "frame_height": "手指約 3 成、按鈕約 7 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Extreme close-up insert of the small home button just lifted dripping from the water, held in HERO's fingers; the button has lit up and glows. Water droplets cling to it. Only HERO's fingers and the glowing button are in the picture; no face. HERO's hands are pure paper white. Shot size: Extreme Close-up (ECU). Only the home button and HERO's fingers around it fill the picture. Camera direction: front view. The camera is directly in front of the button, facing it. Camera angle: Eye-level: the camera is at the button's height, looking straight at it.",
+   "untested": [
+    "ECU 實測句原本用在眼睛，這裡換成物件（發亮的按鈕＋手指），物件 ECU 未實測。"
+   ],
+   "remedy": "若畫得不夠近，剪輯時再推近到 ECU；構圖已確保畫面只有按鈕和手指。"
+  },
+  {
+   "id": "EP4-15-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "光一閃，你回到了現代。"
+   ],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面正中、全身，雙手捧按鈕；按鈕爆出一團白光向外擴散、把 HERO 包住。背景是他身後遠處金字塔和傍晚天空。和開場第 01 張同機位，形成離開古埃及的書擋。",
+   "screen_direction": "toward",
+   "action": "白光從按鈕炸開、瞬間吞掉 HERO 的那一刻，表情鬆一口氣、微微睜大眼",
+   "camera": {
+    "cell": "M16",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "10"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身，頭到腳，臉入鏡",
+     "frame_height": "約 5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), standing upright holding the small home button in both hands as it flares with a sudden burst of bright white light that bursts outward and engulfs him. HERO's face and hands are pure paper white. His expression is relieved, eyes slightly wide, a faint smile. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is on the open ground ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "按鈕爆出白光包住角色的傳送效果（burst of white light engulfing him）未實測。"
+   ],
+   "remedy": "WS 常被畫成 FS，可接受，和第 01 張同機位沿用即可。白光若畫得太滿遮住角色，剪輯時可選光較小的一張、或用這張當轉場過曝幀。"
+  }
+ ]
+}

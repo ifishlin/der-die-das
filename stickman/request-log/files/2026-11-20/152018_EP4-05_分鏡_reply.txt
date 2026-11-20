@@ -1,0 +1,85 @@
+{
+ "scene_id": "EP4-05",
+ "notes": "這一場只有一句旁白、又是過場，所以拆 2 張就夠，走「人物動作 → 環境建立」的經典剪接：第 1 張貼著 HERO 把「上船」這個動作演清楚（側面、平視、看得到隊伍→碼頭→船的流動），旁白整句放這裡；第 2 張切成高空極遠景，船離岸駛入開闊的河面，用環境的尺度把『順著尼羅河往下開』的旅程感做出來，同時當無旁白的收尾拍，自然接到下一場『口袋手機亮起』。沒有大動物，不用加拍遠一級。地圖上『北＝下游』但北邊格子其實是被淹的田，開闊水面畫在南邊（R），所以實際把船離岸的方向框成『駛離碼頭、朝開闊水面遠去』，相機只能擺在北岸（唯一可放相機的陸地），往水面俯看。角色長相、服裝、背景（河、天、棕櫚、田）全交給參考圖與主對話逐格附圖，prompt 只寫角色、動作、表情和他們踏上／乘坐的船。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "G3", "facing": "SE", "doing": "在河岸排隊的農民工人隊伍末端等著上船"},
+    {"t": "2", "cell": "J4", "facing": "S", "doing": "走到木碼頭邊緣，一腳踩上擠滿人的木船（上船的瞬間）"},
+    {"t": "3", "cell": "K6", "facing": "S", "doing": "擠在船上，船已離開碼頭、駛入開闊的河面（船為載具，故在 R 格）"}
+   ]
+  },
+  {
+   "who": "WORKERS",
+   "path": [
+    {"t": "1", "cell": "E3", "facing": "SE", "doing": "一長排被徵召的農民在泥岸排隊，前面的人陸續往碼頭移動"},
+    {"t": "2", "cell": "I5", "facing": "S", "doing": "前排工人已踩上船、往船中央擠，隊伍後段還在碼頭與岸上"},
+    {"t": "3", "cell": "K6", "facing": "S", "doing": "全部擠在船上，隨船駛離碼頭"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-05-01",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "七月中，你就跟著他們上了船，順著尼羅河往下開。"
+   ],
+   "subject": "HERO（上船的瞬間），連同周圍一排被徵召的農民工人",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "正側面平視。畫面左下方是擠滿人的木船與已經踏上船的前排工人，HERO 在畫面中央一腳跨上船；右邊是還在碼頭和岸上排隊的工人隊伍往右延伸。前景是船與碼頭邊緣，背景是氾濫的河與對岸。",
+   "screen_direction": "left",
+   "action": "HERO 重心前傾、一腳踩上船沿、兩手微張保持平衡的那一刻，臉上有點緊張、睜大眼睛；周圍工人表情平淡疲憊，一個個往船中央擠。",
+   "camera": {
+    "cell": "M4",
+    "height_m": "1.6",
+    "look_at": "HERO（J4）",
+    "distance_m": "15"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "全身（頭到腳，正側面）", "frame_height": "約 5 成"},
+    {"who": "WORKERS", "visible": "前排全身、碼頭與隊伍後段的人部分被畫面上下緣或彼此裁切", "frame_height": "前排約 5 成、後段隊伍約 3～4 成遞減"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and a crowd of Egyptian conscripted WORKERS (exactly as in the attached WORKERS character sheet). Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside the landing and sees HERO and the workers exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. HERO is in summer clothes (short-sleeve shirt, shorts, flip-flops, no hat, no backpack), stepping down off the edge of a wooden landing onto the side of a crowded long wooden riverboat, moving toward the left of the frame, one foot reaching onto the boat and both arms slightly out to keep his balance. A line of workers is crammed ahead of him climbing aboard the boat on the left, and more workers wait in a queue stretching to the right behind him. HERO looks a little tense and uncertain, wide-eyed, mouth slightly open. The workers around him have plain, tired, blank expressions. HERO's face and hands are pure paper white. The workers' faces and hands are pure paper white.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（主體偏大、周邊環境變少）；可接受，隊伍→碼頭→船的環境與對岸靠背景參考圖補足，剪輯時維持原框。"
+  },
+  {
+   "id": "EP4-05-02",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [],
+   "subject": "載滿工人的木船（HERO 與工人在船上，都很小），尼羅河面為環境主體",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "aerial",
+   "composition": "高空俯看。整片氾濫的開闊河面佔畫面大部分，小小的木船在畫面中下方、船尾朝向鏡頭，正離開上方的碼頭往開闊水面遠去；碼頭與泥岸在畫面上緣，遠處是被水淹的田和幾叢棕櫚。",
+   "screen_direction": "away",
+   "action": "船已離岸、整船人緊緊擠在一起，正順著水流滑向開闊的河面，鏡頭俯瞰牠縮小成水面上的一點，帶出旅程與河的尺度。",
+   "camera": {
+    "cell": "I4",
+    "height_m": "30",
+    "look_at": "木船（K6，已駛離碼頭的開闊水面）",
+    "distance_m": "35"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "全身，極小，擠在船中央", "frame_height": "約 1 成"},
+    {"who": "WORKERS", "visible": "全身，極小，一大群擠滿整船", "frame_height": "約 1 成，往船尾遞減"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and a large crowd of Egyptian conscripted WORKERS (exactly as in the attached WORKERS character sheet), all very small and crammed aboard one long wooden riverboat. Shot size: Extreme Wide Shot (EWS). The boat is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. Camera direction: back view. The camera is behind the boat, looking the way it sails; the boat's stern is nearer the camera and the boat glides forward, moving away from the camera. HERO is in summer clothes (short-sleeve shirt, shorts, flip-flops, no hat, no backpack), standing crammed among the workers near the middle of the boat. HERO's face and hands are pure paper white. The workers' faces and hands are pure paper white.",
+   "untested": [
+    "back view 的句子改寫成單一條船、船尾朝鏡頭駛離（原實測句是小路上 TEEN／HERO 兩個跑者的寫法）",
+    "aerial 俯角搭配一條離岸小船（原只在 aerial+EWS 地形空景驗證過）"
+   ],
+   "remedy": "aerial 只有配 EWS 才成功，已配 EWS；若俯角不足、只畫成高處斜看，剪輯時可接受。EWS 下人物臉太小不畫表情，膚色句仍寫以防 Flow 上膚色。"
+  }
+ ]
+}

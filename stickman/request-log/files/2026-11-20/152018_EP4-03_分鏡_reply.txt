@@ -1,0 +1,211 @@
+{
+ "scene_id": "EP4-03",
+ "notes": "這一場要完成四件事：①建立『落到又熱又陌生的尼羅河岸』的環境與落差（旁白1–3）；②把 HERO 推進被徵召的勞工隊伍（旁白4）；③翻案『蓋金字塔的是奴隸』，呈現這些人是自由勞工（旁白5–7）；④用服裝對比做笑點收束（旁白8–10）。節奏設計：先一個 EWS establishing 建立環境與熱；切進 FS 讓 HERO 被擠進人群；再用 WS 群像揭露『自由勞工』這個資訊點；接著 FS 特寫兩名工人的纏腰布與長裙（服裝資訊，也替下一格鋪笑點）；再切到 HERO 高角度低頭看自己的短褲拖鞋（對比）；最後 MS 收在『伸手找生存指南卻摸空』的笑點。全場沒有大動物，不需加拍遠一級。背景（河、碼頭、船、淹水的田、棕櫚、熱到發晃的天）一律不寫進 prompt，交給主對話依地圖座標配參考圖；camera.cell 與 look_at 已填好。走位：HERO 在 D4 落地→被推進 E3 隊伍後就定點，後面幾顆都在 E3 做反應；工人沿 C3–G3 的隊伍面朝東(往碼頭)緩慢前進，服裝特寫那顆讓 F3/G3 兩名工人暫時轉向河邊(鏡頭)。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "D4", "facing": "N", "doing": "光一閃落地，熱到發昏，抬手遮陽、瞇眼看亮得發白的天"},
+    {"t": "2", "cell": "E3", "facing": "E", "doing": "被人群推進隊伍，踉蹌往東(畫面右)跌進排隊的工人中間"},
+    {"t": "3", "cell": "E3", "facing": "E", "doing": "站在隊伍中間，格格不入地跟著往碼頭方向等著上船"},
+    {"t": "4", "cell": "E3", "facing": "E", "doing": "在隊伍中(此鏡頭沒入鏡，僅維持位置連戲)"},
+    {"t": "5", "cell": "E3", "facing": "E", "doing": "低頭看自己的短褲和拖鞋，微抬一隻穿拖鞋的腳"},
+    {"t": "6", "cell": "E3", "facing": "E", "doing": "反射性伸手往身側／背後摸生存指南，摸了個空"}
+   ]
+  },
+  {
+   "who": "WORKERS",
+   "path": [
+    {"t": "1", "cell": "C3,D3,E3,F3,G3", "facing": "E", "doing": "一排被徵召的農民面朝東、沿河岸往碼頭排隊等上船"},
+    {"t": "2", "cell": "C3,D3,F3,G3", "facing": "E", "doing": "隊伍擠動，把剛落地的 HERO 擠進 E3 的空位，繼續往前排"},
+    {"t": "3", "cell": "C3,D3,F3,G3", "facing": "E", "doing": "一個接一個、神情疲累耐煩地等著上船；工頭拿短木杖在旁"},
+    {"t": "4", "cell": "F3,G3", "facing": "SE", "doing": "前排一名男工人與一名女工人暫時轉向河邊(鏡頭)站著，露出纏腰布與窄長裙"},
+    {"t": "5", "cell": "D3,F3,G3", "facing": "E", "doing": "繼續排隊往碼頭移動，沒注意 HERO 在低頭看自己"},
+    {"t": "6", "cell": "D3,F3,G3", "facing": "E", "doing": "繼續排隊往碼頭移動"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-03-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "光一閃，你落到了古埃及的夏天。",
+    "熱，熱到空氣都在晃。",
+    "這裡的夏天常常接近攝氏三十八度，碰上熱浪還會更高。"
+   ],
+   "subject": "HERO（落地瞬間），次要主體：排隊的 WORKERS 隊伍",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 很小，站在畫面中央偏左的河岸泥地上，抬手遮陽往上看；畫面中段是一排往右延伸、面朝碼頭的工人隊伍；環境(河、碼頭、船、淹水的田、棕櫚)是主角。前景空曠泥地，背景一路延伸到遠方。",
+   "screen_direction": "off_up",
+   "action": "落地那一刻：HERO 剛從光裡冒出來，一手遮在額前瞇眼抬頭，被熱和強光逼得站不穩，整個人顯得渺小。",
+   "camera": {
+    "cell": "N2",
+    "height_m": "2",
+    "look_at": "HERO",
+    "distance_m": "51"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "全身約 12%"},
+    {"who": "WORKERS", "visible": "前排數人全身，後排簡化", "frame_height": "全身約 18%（近鏡頭者略大、遠者更小）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters are HERO (exactly as in the attached HERO character sheet) and a group of Egyptian WORKERS (exactly as in the attached WORKERS character sheet). HERO wears his summer outfit (short-sleeve shirt, shorts, flip-flops), no hat and no bag; he has just appeared, dazed and overheated, standing with one hand shielding his eyes and squinting up at the bright sky. The WORKERS stand in a line, waiting, weary and indifferent. HERO's face and hands are pure paper white. The workers' faces and hands are pure paper white. Expression: HERO dazed and squinting, mouth slightly open, overwhelmed by the heat; the workers look tired and indifferent. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-03-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "你被推進一群人裡，跟著排隊。"
+   ],
+   "subject": "HERO（被擠進隊伍），次要主體：周圍 WORKERS",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，踉蹌往右(畫面右＝往東的碼頭方向)跌進隊伍；左右兩側都是比他冷靜的工人，貼得很近把他夾在中間，形成被推擠、被吞進人群的壓迫感。",
+   "screen_direction": "right",
+   "action": "被推的那一刻：HERO 重心前傾、手腳張開穩住自己，驚慌地跌進一排陌生人中間。",
+   "camera": {
+    "cell": "F4",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "7"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "全身約 88%"},
+    {"who": "WORKERS", "visible": "兩側各一到兩人，部分身體被畫面裁掉", "frame_height": "約 95%（多半只見軀幹、被裁切）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters are HERO (exactly as in the attached HERO character sheet) and several Egyptian WORKERS (exactly as in the attached WORKERS character sheet). HERO wears his summer outfit (short-sleeve shirt, shorts, flip-flops), no hat and no bag; he is being jostled and pushed into the line, stumbling forward to the right, off balance, arms out to steady himself. The WORKERS crowd close around him on both sides, standing calm and weary in the queue. HERO's face and hands are pure paper white. The workers' faces and hands are pure paper white. Expression: HERO startled and overwhelmed, wide-eyed, mouth open; the workers calm and indifferent. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-03-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "有很長一段時間，學者都以為，蓋金字塔的一定是奴隸。",
+    "可是跟你一起排隊的這些人，並不是奴隸。",
+    "他們是自由的埃及勞工。"
+   ],
+   "subject": "WORKERS 隊伍（群像），次要主體：排在隊伍中的 HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "沿著隊伍方向拍：一排工人一個接一個面朝鏡頭、由近(畫面下方)往遠(畫面上方)排成一列；HERO 夾在隊伍中段、明顯和大家不一樣(現代夏裝)。畫面左側是河與船的方向，大量環境入鏡交代『排隊上船』的處境。",
+   "screen_direction": "toward",
+   "action": "隊伍靜靜等待的一刻：工人們神情平常、耐心地站著，沒有被鞭打、沒有鎖鏈——是一群普通自由人；HERO 在其中東張西望、顯得突兀。",
+   "camera": {
+    "cell": "H4",
+    "height_m": "1.8",
+    "look_at": "WORKERS 隊伍（含 HERO）",
+    "distance_m": "16"
+   },
+   "cast": [
+    {"who": "WORKERS", "visible": "前排全身，後排漸小、部分簡化", "frame_height": "前排約 85%、後排約 40%"},
+    {"who": "HERO", "visible": "全身，站在隊伍中段", "frame_height": "全身約 55%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters are a line of Egyptian WORKERS (exactly as in the attached WORKERS character sheet) and HERO (exactly as in the attached HERO character sheet) standing among them. The WORKERS — men in white linen loincloths, women in narrow long dresses, a foreman holding a short wooden staff — stand one behind another in a queue, facing the camera, waiting to board; they are ordinary free people, no chains, patient and weary. HERO stands in the middle of the line in his summer outfit (short-sleeve shirt, shorts, flip-flops), no hat and no bag, looking out of place and uneasy. HERO's face and hands are pure paper white. The workers' faces and hands are pure paper white. Expression: the workers tired, patient and indifferent; HERO uneasy and out of place, glancing around. Shot size: Wide Shot (WS). The whole line of workers is clearly visible, with a lot of the surroundings around them. Camera direction: front view. The camera is ahead of the workers, facing them. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（主體偏大、環境偏少）；剪輯時接受，或輕微拉遠框取。"
+  },
+  {
+   "id": "EP4-03-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "男人圍著一條纏腰布，女人穿著窄窄的長裙，或是有肩帶的披肩。"
+   ],
+   "subject": "兩名 WORKERS（一男一女）的服裝",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面左側是圍白色纏腰布的男工人、右側是穿窄長裙(有肩帶披肩)的女工人，兩人並肩、全身入鏡面向鏡頭，當作服裝資訊的插入特寫；背景是河岸隊伍。",
+   "screen_direction": "toward",
+   "action": "兩名工人安靜站著讓觀眾看清楚衣著：男人的纏腰布、女人的窄長裙與肩帶披肩，和稍後 HERO 的現代夏裝形成對比。",
+   "camera": {
+    "cell": "F4",
+    "height_m": "1.4",
+    "look_at": "男、女兩名 WORKERS",
+    "distance_m": "6"
+   },
+   "cast": [
+    {"who": "WORKERS", "visible": "男工人全身、女工人全身", "frame_height": "男約 90%、女約 88%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters are two Egyptian WORKERS (exactly as in the attached WORKERS character sheet): on the left a man wearing a white linen loincloth wrapped around his hips, on the right a woman wearing a narrow close-fitting long dress with a shoulder strap and a shawl. They stand side by side facing the camera, full body. Their faces and hands are pure paper white. Expression: both calm, weary and patient. Shot size: Full Shot (FS). Their whole bodies, from head to feet, just fit in the picture. Camera direction: front three-quarter view. The camera is ahead of the two workers and off to one side, so we see their faces and one side of their bodies. Camera angle: Eye-level: the camera is at their eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-03-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "你低頭看看自己的短褲和拖鞋。"
+   ],
+   "subject": "HERO（低頭看自己的夏裝）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "HERO 一人置中偏左，從前上方俯看：低著頭、視線往下落在自己的短褲和拖鞋上，一隻穿拖鞋的腳微微抬起。高角度讓他顯得侷促、和周遭格格不入。",
+   "screen_direction": "off_down",
+   "action": "意識到自己穿錯的一刻：HERO 垂頭看自己的短褲與拖鞋，一腳微抬，露出又窘又無奈的表情。",
+   "camera": {
+    "cell": "F4",
+    "height_m": "2.4",
+    "look_at": "HERO",
+    "distance_m": "7"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "全身（低頭、略透視壓縮）", "frame_height": "全身約 82%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character is HERO (exactly as in the attached HERO character sheet), wearing his summer outfit (short-sleeve shirt, shorts, flip-flops), no hat and no bag. He bows his head and looks down at his own bare legs, shorts and flip-flops, lifting one flip-flopped foot slightly as he inspects himself. HERO's face and hands are pure paper white. Expression: dismayed and sheepish, realizing he is underdressed, mouth a small worried line. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: High angle: the camera is high above HERO, looking down at him.",
+   "untested": [],
+   "remedy": "high 實測只有輕微俯角；主要靠 HERO 低頭看自己的姿勢表現『往下看』，剪輯時可再略微下壓。"
+  },
+  {
+   "id": "EP4-03-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "你伸手想拿生存指南。（停）它又躺在博士的桌上。"
+   ],
+   "subject": "HERO（伸手摸空的笑點）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 置中、腰部以上入鏡、正面對鏡頭；一隻手反射性伸到身側／背後想抓生存指南，手卻握住空氣——身上沒有背包什麼都沒有。臉部表情是這顆的重點。",
+   "screen_direction": "toward",
+   "action": "笑點定格：HERO 伸手一摸，先是期待、隨即整張臉垮下來——手是空的，生存指南根本不在身上。",
+   "camera": {
+    "cell": "F3",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "5"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "腰部以上（含伸出的手臂）", "frame_height": "上半身約 90%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character is HERO (exactly as in the attached HERO character sheet), wearing his summer outfit (short-sleeve shirt, shorts, flip-flops), no hat and no bag. He reaches one hand around to his side and back as if to grab a book, but his hand closes on empty air — there is no bag and nothing there. HERO's face and hands are pure paper white. Expression: hopeful for a split second then crestfallen, eyes wide, mouth falling open in dismay. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常被畫成膝上(MLS)；可接受，或剪輯時推近到胸上強化表情。"
+  }
+ ]
+}

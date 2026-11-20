@@ -1,0 +1,20 @@
+{"ep": "EP4", "results": [
+ {"n": 113,
+  "verdict": "大致正確",
+  "sci": "這是作者自己的推算，不是直接引用的研究數字。以主流估計的約 58～60 噸雕像、172 名拉繩者計算：在「濕沙」上摩擦係數約 0.3（Fall 等人 2014 的 PRL 實驗），需要的總拉力約 17 萬牛頓，每人分擔約 100 公斤力（約 220 磅）；若估得保守一點，落在每人 100～200 磅力之間都算合理，所以「約 150 磅」是對的量級。不過「等於在平路上拉動一輛大車」比較誇張——平路上讓一輛車滾動起來的滾動阻力通常只要兩三百牛頓（幾十磅力），比 150 磅力小。原文本身就用了 approximately／roughly 的語氣。",
+  "src": [["Fall et al. 2014, Physical Review Letters 112:175502 — Sliding Friction on Wet and Dry Sand (濕沙把拖行阻力降約一半)", "https://www.sci.news/physics/science-ancient-egyptians-wet-sand-01894.html"], ["Wikipedia（轉引原始估計：172 人、約 58 噸）", "https://en.wikipedia.org/wiki/Djehutihotep"]],
+  "fix": "為了把這塊大石頭拖過沙地，他們把人分成一隊一隊，讓每個人大概出一百多磅的力——差不多像一群人合力推一台拋錨的大車那樣，使勁又整齊。",
+  "confidence": "中"},
+ {"n": 114,
+  "verdict": "正確",
+  "sci": "有同行審查的拔河研究支持。綜述指出，拔河比賽中選手拉繩的最大力「可能超過體重的 150%」，動態拉力大致落在體重的 106%～182%，部分測量甚至到 200% 左右。所以「平均選手能拉出約自身體重 1.5 倍的力」符合文獻，書上說法沒問題。",
+  "src": [["Vairo et al. 2022, Int. J. Environ. Res. Public Health 19(1):3 — Analysis of Tug of War Competition: A Narrative Complete Review", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8751099/"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 115,
+  "verdict": "有誤",
+  "sci": "書上描述的是 Djehutihotep 壁畫裡那尊被 172 人拖行的巨像，但細節對不上主流說法。學界常引的重量是「約 58～60 噸」，不是 80 噸；高度約 6.8 公尺；材質多半被認為是雪花石膏／方解石（travertine／alabaster）或石灰岩，不是黑色花崗岩；而且它是一尊「坐姿人像」，不是一塊石板。這尊像本身早已遺失（1890 年前後被破壞），所有資料都來自一張舊照片和摹本，所以數字本就有不確定性，但「80 噸黑色花崗岩石板」在重量、材質、形狀三點上都偏離現有證據。",
+  "src": [["Wikipedia（約 58 噸、6.8 公尺、172 人；轉引原始估計可再查證）", "https://en.wikipedia.org/wiki/Djehutihotep"], ["Science / AAAS — ScienceShot: Ancient Painting Reveals How Egyptians Lugged Statues Across the Desert", "https://www.science.org/content/article/scienceshot-ancient-painting-reveals-how-egyptians-lugged-statues-across-desert"]],
+  "fix": "他們要搬的是一尊比好幾個人還高的巨大石像，重達幾十噸——差不多等於好幾頭大象疊起來那麼重。",
+  "confidence": "中"}
+]}

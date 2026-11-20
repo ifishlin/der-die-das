@@ -1,0 +1,315 @@
+{
+ "scene_id": "EP4-09",
+ "notes": "全場 12 顆。敘事脈絡：先用兩顆建立環境（HERO 被帶進村的 WS＋拉到空拍 EWS 看整座像大城市的工人村），一顆看營房（HERO 背影看他今晚要睡的地方），一顆夜戲（高角度俯看大通鋪擠滿幾十人）。隔天早上進入食物線：麵包坊＋啤酒大缸環境顆、HERO 領到豐盛早餐、HERO 舉起啤酒疑惑（笑點 MCU）、插入鏡頭特寫濃稠像粥的啤酒（解謎）。再用骨頭堆＋動物顆講消耗量、工人圍坐吃得比家鄉好、工頭領好牛肉＋遠方趕來的牛講階級與成本，最後用一顆插圖（現代遊客騎馬被沙裡土磚牆絆到）收尾，帶出考古發現。非平視鏡頭都有理由：空拍＝建立城市規模；夜戲高角度＝呈現幾十人擠通鋪的擁擠與脆弱；啤酒插入高角度＝往罐裡看才看得到濃稠質地；骨頭堆高角度＝呈現堆得多。本集無大型動物（牛羊屬一般體型），故不加拍遠一級。營房內部（cell 4）角色不可站、相機不可放，夜戲把相機放在營房開口的路上（row6, D6, 可放）往內拍，HERO 位置標在通鋪 D7（劇情需要睡在裡面）。插圖顆不綁地圖座標，camera 欄填 N/A。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "H3", "facing": "S", "doing": "傍晚被工人帶著沿村裡的路走進工人村"},
+    {"t": "2", "cell": "E6", "facing": "S", "doing": "站在路上，看著今晚要睡的長營房"},
+    {"t": "3", "cell": "D7", "facing": "S", "doing": "晚上躺在大通鋪上，和幾十個工人擠著睡"},
+    {"t": "4", "cell": "H5", "facing": "S", "doing": "早上在領餐處領到麵包、啤酒和燉牛腳"},
+    {"t": "5", "cell": "H5", "facing": "S", "doing": "舉起啤酒罐，一臉疑惑地看"},
+    {"t": "6", "cell": "H5", "facing": "S", "doing": "和工人們坐在一起吃早餐"}
+   ]
+  },
+  {
+   "who": "WORKERS",
+   "path": [
+    {"t": "1", "cell": "H4", "facing": "S", "doing": "一名工人走在前面，帶 HERO 進村"},
+    {"t": "3", "cell": "C7", "facing": "N", "doing": "幾十個工人躺在大通鋪（B7–F8）上睡覺"},
+    {"t": "4", "cell": "G4", "facing": "N", "doing": "麵包師傅顧冒煙的烤爐；釀酒工人（J4）攪拌啤酒大缸"},
+    {"t": "4", "cell": "H6", "facing": "N", "doing": "發餐工人在領餐處發麵包和啤酒"},
+    {"t": "5", "cell": "I4", "facing": "SW", "doing": "工頭（拿短木杖）領到一小塊好牛肉，發餐工人（I5）遞給他"},
+    {"t": "6", "cell": "G5", "facing": "E", "doing": "工人們圍坐在領餐處吃早餐"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-09-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["你被帶到金字塔旁邊的工人村。"],
+   "subject": "HERO 被工人帶著走進工人村",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央全身入鏡，走向鏡頭；帶路的工人在他前方稍偏一側（畫面右）；四周是工人村的環境。",
+   "screen_direction": "toward",
+   "action": "HERO 跟在工人後面走進村子，東張西望、有點不知所措的那一刻。",
+   "camera": {"cell": "H6", "height_m": "1.6", "look_at": "HERO", "distance_m": "15"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 5 成"},
+    {"who": "WORKERS", "visible": "帶路工人全身", "frame_height": "約 5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only HERO and one Egyptian worker, and no one else. HERO (exactly as in the attached HERO character sheet), wearing no hat and carrying no backpack. HERO's face and hands are pure paper white. HERO looks around wide-eyed, curious and a little overwhelmed. The Egyptian worker (exactly as in the attached WORKERS character sheet) walks a step ahead of HERO, leading him forward; the worker's face and hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is on the street ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成跟 FS 一樣大（HERO 填滿畫面）；若太大，剪輯時稍微縮框，或重生時加「with a lot of the surroundings」。"
+  },
+  {
+   "id": "EP4-09-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["這裡住了好幾萬個工人，熱鬧得像當時世界上最早出現的大城市。"],
+   "subject": "整座工人村（HERO 只是畫面裡很小的一點）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "高空俯瞰一大片工人村，HERO 是畫面中一個很小的身影在村裡的路上；環境（一排排營房）是主角。",
+   "screen_direction": "toward",
+   "action": "從高空拉出，呈現綿延的營房和熱鬧的村子，HERO 渺小地走在其中。",
+   "camera": {"cell": "K3", "height_m": "60", "look_at": "工人村中央", "distance_m": "60"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（很小）", "frame_height": "約 0.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only HERO, and no one else. HERO (exactly as in the attached HERO character sheet), wearing no hat and carrying no backpack, is a tiny figure pure paper white, walking along the street. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: front view. The camera is ahead of HERO, facing the village. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [],
+   "remedy": "空拍只在配 EWS 時成功；若角度不夠高，加重「high in the sky, looking down at a wide stretch」。"
+  },
+  {
+   "id": "EP4-09-03",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["一排排長長的營房，隨便一棟至少就能住兩千人。"],
+   "subject": "長長的泥磚營房（HERO 背影為前景）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背影站在畫面中央偏下的前景，面向遠方；一排排長營房在他前方鋪展，佔滿畫面。",
+   "screen_direction": "away",
+   "action": "HERO 背對鏡頭站著，仰望眼前綿延的長營房的那一刻。",
+   "camera": {"cell": "E3", "height_m": "1.6", "look_at": "HERO 背影與營房", "distance_m": "15"},
+   "cast": [
+    {"who": "HERO", "visible": "背影全身", "frame_height": "約 5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only HERO, and no one else. HERO (exactly as in the attached HERO character sheet), wearing no hat and carrying no backpack; HERO's hands are pure paper white. HERO stands with his back to the camera, looking at the long barracks ahead of him. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is on the street behind HERO, looking the way he faces; HERO's back is nearer the camera.",
+   "untested": ["back-view 句原文是 TEEN＋HERO 兩人追逐版，這裡改寫成單一角色站立背影。"],
+   "remedy": "背面句去掉第二個跑者，單人背影；若模型多畫一個 HERO 當前景，重生強調 only HERO。"
+  },
+  {
+   "id": "EP4-09-04",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["你晚上就睡在這裡，跟幾十個人擠在大通鋪上。"],
+   "subject": "擠滿人的大通鋪（HERO 在其中）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "從營房開口往內、略高往下俯看；長長的大通鋪橫向鋪展，幾十個工人並排擠著躺；HERO 在中央附近。",
+   "screen_direction": "off_up",
+   "action": "夜裡，HERO 和幾十人肩並肩擠在通鋪上熟睡的那一刻。",
+   "camera": {"cell": "D6", "height_m": "3", "look_at": "大通鋪與睡著的 HERO", "distance_m": "7"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（躺著）", "frame_height": "約 1.5 成"},
+    {"who": "WORKERS", "visible": "幾十人躺著，前排清楚、後排簡化", "frame_height": "每人約 1.2 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows HERO and dozens of Egyptian workers lying side by side, packed tightly together on a long shared sleeping platform. HERO (exactly as in the attached HERO character sheet), wearing no hat and carrying no backpack; HERO's face and hands are pure paper white; HERO is fast asleep, eyes closed, mouth slightly open. The workers (exactly as in the attached WORKERS character sheet) are asleep too; the few nearest the camera are drawn clearly, the ones farther back simplified; all the workers' faces and hands are pure paper white. Camera angle: High angle: the camera is high above HERO, looking down at him.",
+   "untested": ["WS 句省略（夜戲通鋪以高角度俯看全排人呈現，未放景別句以免被拉成單人）；高角度俯看一整排躺著的人。"],
+   "remedy": "若人數不夠多或不夠擠，重生強調 dozens, packed tightly；若角度不夠俯，加重 high above, looking down。"
+  },
+  {
+   "id": "EP4-09-05",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": ["旁邊還有麵包坊，還有釀啤酒的地方。"],
+   "subject": "麵包坊（冒煙烤爐）與釀啤酒的大缸",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面左邊是麵包師傅顧著冒煙的泥磚烤爐，右邊是釀酒工人攪拌啤酒大缸；兩人分站兩側工作。",
+   "screen_direction": "away",
+   "action": "清晨，麵包師傅烤麵包、釀酒工人攪缸，兩頭同時忙碌的一刻。",
+   "camera": {"cell": "I6", "height_m": "1.6", "look_at": "烤爐與啤酒大缸之間", "distance_m": "10"},
+   "cast": [
+    {"who": "WORKERS", "visible": "麵包師傅全身（左）", "frame_height": "約 4 成"},
+    {"who": "WORKERS", "visible": "釀酒工人全身（右）", "frame_height": "約 4 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only two Egyptian workers, and no one else. On the left, a baker (exactly as in the attached WORKERS character sheet) tends a clay bread oven with smoke rising from it, looking focused. On the right, a brewer (exactly as in the attached WORKERS character sheet) stirs a big clay vat of beer with a long paddle, looking busy. Both workers' faces and hands are pure paper white. Shot size: Wide Shot (WS). The two workers' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: front view. The camera is on the sand ahead of the workers, facing them. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead.",
+   "untested": ["front／WS 句主詞改成兩名工人（複數）。"],
+   "remedy": "WS 若被拉近，縮框；若烤爐冒煙或大缸不明顯，重生強調 smoke rising / big clay vat。"
+  },
+  {
+   "id": "EP4-09-06",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": ["早餐吃得飽飽的：啤酒、麵包，還有燉牛腳。"],
+   "subject": "HERO 領到豐盛早餐",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，膝上入鏡，雙手捧著麵包、啤酒罐和燉牛腳；發餐工人在畫面右側遞食物。",
+   "screen_direction": "off_down",
+   "action": "HERO 低頭看著懷裡一堆豐盛早餐、滿足又期待的一刻。",
+   "camera": {"cell": "H6", "height_m": "1.5", "look_at": "HERO", "distance_m": "5"},
+   "cast": [
+    {"who": "HERO", "visible": "膝蓋以上", "frame_height": "約 7.5 成"},
+    {"who": "WORKERS", "visible": "發餐工人手臂與上半身（右側）", "frame_height": "約 5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only HERO and one Egyptian worker, and no one else. HERO (exactly as in the attached HERO character sheet), wearing no hat and carrying no backpack; HERO's face and hands are pure paper white; HERO looks down at the food in his arms, pleased and hungry with a happy grin. HERO holds a round loaf of bread, a clay jar of beer, and a stewed ox foot in his arms. A server (exactly as in the attached WORKERS character sheet) at the right hands him the food; the server's face and hands are pure paper white. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front view. The camera is on the sand ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-09-07",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": ["等一下，早餐喝啤酒？"],
+   "subject": "HERO 疑惑地看著手上的啤酒",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，胸部以上入鏡，一手把啤酒罐舉到臉旁，盯著它看。",
+   "screen_direction": "off_down",
+   "action": "HERO 舉起啤酒罐、挑眉皺眉、一臉『現在是喝這個？』的疑惑定格。",
+   "camera": {"cell": "H6", "height_m": "1.5", "look_at": "HERO 的臉與啤酒罐", "distance_m": "2.5"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上，一手持啤酒罐", "frame_height": "約 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only HERO, and no one else. HERO (exactly as in the attached HERO character sheet), wearing no hat and carrying no backpack; HERO's face and hands are pure paper white; HERO holds up a clay jar of beer close to his face and stares at it with a puzzled, skeptical frown, one eyebrow raised and head slightly tilted. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is on the sand ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫成到腰（像 MS）；剪輯時推近到胸上，或重生保留。"
+  },
+  {
+   "id": "EP4-09-08",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "原來古埃及的啤酒濃濃稠稠的像粥，酒精很淡，連小孩都喝。",
+    "對他們來說，這東西不是用來喝醉的，比較像是能喝的麵包。"
+   ],
+   "subject": "插入鏡頭：濃稠像粥的啤酒",
+   "shot_size": "ECU",
+   "ecu_part": "啤酒罐口與裡面濃稠像粥的啤酒",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面幾乎被啤酒罐填滿；HERO 純白的手輕輕傾斜罐身，露出濃稠、混濁、像粥一樣的啤酒。無臉入鏡。",
+   "screen_direction": "off_down",
+   "action": "手把罐子傾斜，濃稠的啤酒緩緩流動、幾乎不流的那一刻。",
+   "camera": {"cell": "H6", "height_m": "1.0", "look_at": "啤酒罐內", "distance_m": "1"},
+   "cast": [
+    {"who": "HERO", "visible": "只露一隻手（傾罐）", "frame_height": "約 3 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only a clay jar and HERO's hand, and no face. HERO's hand is pure paper white, tilting the clay jar so we can see the thick, cloudy, porridge-like beer inside it, barely flowing. Shot size: Extreme Close-up (ECU). Only the clay jar and the thick porridge-like beer inside it fill the picture. Camera angle: High angle: the camera is high above the jar, looking down into it.",
+   "untested": ["ECU 句原文是『眼睛＋眼鏡』，這裡改寫成『罐子＋裡面的啤酒』物件版；高角度俯看物件（原測只在人物驗證）。"],
+   "remedy": "ECU 寫物件未實測；若太遠退成 CU，重生強調 Only the jar and the beer fill the picture。"
+  },
+  {
+   "id": "EP4-09-09",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "考古學家在這裡挖出好幾萬根動物骨頭，大多是牛、綿羊和山羊。",
+    "他們估計，這裡每天要吃掉將近兩公噸的肉，才餵得飽這麼多工人。"
+   ],
+   "subject": "成堆的牛羊骨頭（旁有牛羊與待處理的肉）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面中央是一大堆牛羊骨頭；旁邊站著幾頭牛和綿羊、山羊，一側攤著幾塊肉。無人。",
+   "screen_direction": "toward",
+   "action": "骨頭堆得像小山、牛羊在旁、呈現每天消耗量驚人的一刻。",
+   "camera": {"cell": "K6", "height_m": "3", "look_at": "牛羊骨頭堆", "distance_m": "6"},
+   "cast": [
+    {"who": "CATTLE", "visible": "一頭牛全身", "frame_height": "約 3.5 成"},
+    {"who": "SHEEP", "visible": "綿羊、山羊全身（數隻）", "frame_height": "每隻約 2 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows a huge heap of cattle and sheep bones, with a few cattle, sheep and goats standing nearby and some cuts of meat laid on a mat; no people. The animals (exactly as in the attached ANIMALS character sheet) stand calm and placid. Shot size: Wide Shot (WS). The bone heap and animals are clearly visible, with a lot of the surroundings around them. Camera direction: front view. The camera is on the street facing the bone heap. Camera angle: High angle: the camera is high above the heap, looking down at it.",
+   "untested": ["WS／front／high 句主詞改成骨頭堆與動物（非 HERO）。"],
+   "remedy": "若骨頭堆不夠大，重生強調 huge heap；高角度若不足，加重 high above, looking down。"
+  },
+  {
+   "id": "EP4-09-10",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": ["工人分到的肉、魚、麵包和啤酒，比他們在家鄉吃得還好。"],
+   "subject": "一群工人（含 HERO）圍坐吃早餐",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "幾個工人和 HERO 並排圍坐吃早餐，面向鏡頭；桌面／地上擺著麵包、肉、魚和啤酒。",
+   "screen_direction": "toward",
+   "action": "大家吃得津津有味、吃得飽足滿意的一刻。",
+   "camera": {"cell": "H6", "height_m": "1.5", "look_at": "圍坐吃飯的工人與 HERO", "distance_m": "7"},
+   "cast": [
+    {"who": "HERO", "visible": "坐姿全身（含食物）", "frame_height": "約 4.5 成"},
+    {"who": "WORKERS", "visible": "數名工人坐姿全身", "frame_height": "每人約 4.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows HERO and several Egyptian workers, and no one else, sitting together and eating breakfast. HERO (exactly as in the attached HERO character sheet), wearing no hat and carrying no backpack; HERO's face and hands are pure paper white; HERO eats happily, looking well-fed and content. The workers (exactly as in the attached WORKERS character sheet) eat bread, meat and fish and drink beer, all looking satisfied; all the workers' faces and hands are pure paper white. Shot size: Wide Shot (WS). The whole group is clearly visible, with a lot of the surroundings around them. Camera direction: front view. The camera is on the sand ahead of the group, facing them. Camera angle: Eye-level: the camera is at the group's eye height, looking straight ahead.",
+   "untested": ["front／WS 句主詞改成 HERO 與一群工人。"],
+   "remedy": "WS 若被拉近，縮框；若人太少，重生強調 several workers。"
+  },
+  {
+   "id": "EP4-09-11",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "比較好的牛肉，通常留給管事的人和技術工匠，每天分一小塊。",
+    "因為一頭牛要從很遠的三角洲牧場趕過來，貴到差不多要工人存上大半年的薪水。"
+   ],
+   "subject": "工頭領到一小塊好牛肉（遠方趕來的牛在旁）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面中央是拿短木杖的工頭，正接過發餐工人遞來的一小塊牛肉；畫面一側站著一頭牛。",
+   "screen_direction": "off_down",
+   "action": "工頭低頭看手上那一小塊珍貴牛肉、神情略帶優越的一刻。",
+   "camera": {"cell": "I6", "height_m": "1.6", "look_at": "工頭", "distance_m": "10"},
+   "cast": [
+    {"who": "WORKERS", "visible": "工頭全身（拿木杖）", "frame_height": "約 5.5 成"},
+    {"who": "WORKERS", "visible": "發餐工人全身", "frame_height": "約 5 成"},
+    {"who": "CATTLE", "visible": "一頭牛全身", "frame_height": "約 4.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows two Egyptian workers and one cow, and no one else. In the center, an overseer (exactly as in the attached WORKERS character sheet) holding a short wooden staff receives a small cut of beef handed to him by a server (exactly as in the attached WORKERS character sheet); the overseer looks down at the beef with a satisfied, slightly superior expression. To one side stands a single cow (exactly as in the attached ANIMALS character sheet), looking calm. Both workers' faces and hands are pure paper white. Shot size: Wide Shot (WS). The workers and the cow are clearly visible, with a lot of the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of the overseer and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the overseer's eye height, looking straight ahead.",
+   "untested": ["front34／WS 句主詞改成工頭（含牛）。"],
+   "remedy": "front34 大致做到；若方向跑掉，重生強調 off to one side。"
+  },
+  {
+   "id": "EP4-09-12",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "這座工人城和他們的墓地，都是考古學家一點一點挖出來的。",
+    "那片墓地，還是因為一位遊客騎馬經過，馬被埋在沙裡的土磚牆絆了一跤，才意外被發現的。"
+   ],
+   "subject": "插圖：現代遊客騎馬，馬被沙裡的土磚牆絆到",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面中央是一名現代遊客騎著馬，側面；馬的前腳正絆到沙裡半露出的一道低矮土磚牆，身子往前栽；前景是半埋的土磚牆。",
+   "screen_direction": "right",
+   "action": "馬往右走、前腳絆到土磚牆、整個往前一個踉蹌，遊客驚呼的那一刻。",
+   "camera": {"cell": "N/A（插圖）", "height_m": "N/A", "look_at": "馬與騎馬遊客（側面）", "distance_m": "N/A"},
+   "cast": [
+    {"who": "TOURIST", "visible": "騎在馬上全身", "frame_height": "約 5.5 成"},
+    {"who": "HORSE", "visible": "馬全身", "frame_height": "約 5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. This is a hand-drawn illustration. The picture shows only a modern tourist in casual clothes riding a brown horse, and no one else. The horse stumbles, its front legs buckling, as it trips over a low mudbrick wall half-buried in the sand; the tourist lurches forward, alarmed, mouth open in surprise; the horse's eyes are wide and startled. Shot size: Wide Shot (WS). The horse and rider are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside the horse and sees the horse and rider exactly from the side. Camera angle: Eye-level: the camera is at the horse's eye height, looking straight ahead.",
+   "untested": ["side 句主詞改成馬與騎馬遊客（物件／非本系列角色的插圖）。"],
+   "remedy": "插圖顆，不綁地圖；若絆倒姿勢不明顯，重生強調 front legs buckling, tripping over the wall。"
+  }
+ ]
+}

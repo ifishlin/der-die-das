@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP4）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "claim_zh": "採石組的工人會領到一支銅鑿子；銅很軟、不是鑿石的好材料，但比當時其他可用的材料好。",
+  "quote": "you'll receive a copper chisel. Copper is soft, and thus a poor metal for chiseling rock, but it's better than the era's alternatives.",
+  "pages": [
+   "p.37"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "n": 81,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "銅從紅海對岸的小型銅礦採得，因此很貴。",
+  "quote": "it was sourced from small copper mines across the Red Sea, it's expensive.",
+  "pages": [
+   "p.37"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "n": 82,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "埃及當局為防銅被遺失或偷走，甚至會秤量每名工人帶進工地的銅量。",
+  "quote": "weigh the amount of copper each worker took into the field.",
+  "pages": [
+   "p.37"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "n": 83,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "採石工（quarriers）是全年工作、事先備好大量石灰岩塊；季節性工人則是負責搬運石頭。",
+  "quote": "Quarriers worked year-round preparing huge numbers of limestone blocks that would then be lifted into place when the swell of summer labor arrived. You are that labor.",
+  "pages": [
+   "p.37"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "n": 84,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "埃及學家 Mark Lehner 稱金字塔斜坡是「所有金字塔建造中最棘手的問題之一」。",
+  "quote": "one of the thorniest problems in all of pyramid building",
+  "pages": [
+   "p.38"
+  ],
+  "type": "描述",
+  "who": "Mark Lehner（作者引用）",
+  "hedge": "",
+  "convert": "",
+  "n": 85,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "一條長而平緩、直達塔頂的斜坡，所需材料會比整座金字塔本身還多。",
+  "quote": "a long, gentle ramp to the top would have required more material than the entire pyramid itself",
+  "pages": [
+   "p.38"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 86,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "Djehutihotep 墓中的一幅圖顯示 172 名工人用繩索、雪橇和潑水潤滑的路面，把一座約 58 噸的巨大雕像拖運超過 20 英里、越過平坦地形。",
+  "quote": "One image in the tomb of Djehutihotep shows 172 workers hauling a colossal fifty-eight-ton statue more than twenty miles over flat terrain using nothing but ropes, a sled, and a water-lubricated path.",
+  "pages": [
+   "p.39"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "數字待重拍確認",
+  "convert": "fifty-eight-ton≈58 噸；twenty miles≈32 公里",
+  "n": 87,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "吉薩的石灰岩採石場是金字塔建造者開挖的，距離金字塔底座僅約四分之一英里。",
+  "quote": "the Giza limestone quarry, which the pyramid builders dug just a quarter mile from the pyramid's base",
+  "pages": [
+   "p.39"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "數字待重拍確認",
+  "convert": "a quarter mile≈0.4 公里（約 400 公尺）",
+  "n": 88,
+  "verify_note": "逐頁核對補列"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

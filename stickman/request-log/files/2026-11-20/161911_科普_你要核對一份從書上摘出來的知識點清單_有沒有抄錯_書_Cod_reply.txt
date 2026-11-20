@@ -1,0 +1,25 @@
+書上這一頁右半邊被裁掉了（地圖右側、內文每行的行尾都看不到），我只能核對看得見的左半部。以下逐點核對，看不到的部分全部寫進 `unclear`，沒有猜。
+
+```json
+{"page": "p.50",
+ "checks": [
+  {"n": 11, "ok": true, "problem": "可見的「did. \"But likely only those w…」與 quote 相符，語氣 likely 正確；但行尾被裁，「many」「ho took immediate action.」看不到（見 unclear）", "quote": "", "claim_zh": ""},
+  {"n": 12, "ok": true, "problem": "可見「Unfortunately, instead of…」「…peiians took shelter from the…」與 quote 相符；行尾「immediately evacuating, some Pom-」「falling ash」被裁（見 unclear）", "quote": "", "claim_zh": ""},
+  {"n": 13, "ok": true, "problem": "可見「but it is a mistake.」相符；前半「This may seem prudent,」在上一行行尾被裁（見 unclear）", "quote": "", "claim_zh": ""},
+  {"n": 14, "ok": true, "problem": "那不勒斯灣小圖整個在被裁掉的右側，完全看不到，無法核對（見 unclear）", "quote": "", "claim_zh": ""},
+  {"n": 15, "ok": true, "problem": "可見並相符：Good Bakery、Market（只見 Mark…）、Road to Naples、Road to Vesuvius、Road to the Beach；Central Baths、The Forum、Eastern Roads、Roads to Stabia 在被裁的右側，看不到（見 unclear）", "quote": "", "claim_zh": ""},
+  {"n": 16, "ok": true, "problem": "可見並相符：Yes!!（Road to Naples）、No!!（Road to Vesuvius）、Road to the Beach 旁有骷髏；「Do not stop here.」（Central Baths）及 Stabia／Eastern Roads 的骷髏在被裁的右側，看不到（見 unclear）", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "（圖）地圖標題下註明時間為西元79年8月24日（時刻數字被裁，只見到「10」）", "quote": "圖：AUGUST 24, 79 CE, 10…", "pages": ["p.50"], "type": "描述", "who": "作者（地圖）", "hedge": "", "convert": ""}
+ ],
+ "unclear": [
+  {"where": "內文每一行的行尾（右側全被裁）", "problem": "第 11 點的「many」「ho took immediate action.」、第 12 點的「immediately evacuating, some Pom-」「falling ash. This may seem prudent,」都看不到，只能確認左半部文字相符，無法逐字確認整句"},
+  {"where": "地圖右半（Pompeii Evacuation Route 右側）", "problem": "Central Baths、The Forum、Eastern Roads、Roads to Stabia、以及這些路上的骷髏、「Do not stop here.」手寫字全部被裁掉，看不到，無法核對第 15、16 點的這些項目"},
+  {"where": "地圖右下的那不勒斯灣小圖（第 14 點）", "problem": "整張內嵌小圖都在被裁的右側，Misenum／Pozzuoli／Naples／Herculaneum／Vesuvius／Pompeii／Stabia／Capri 一個都看不到，完全無法核對"},
+  {"where": "地圖標題", "problem": "只見「POMPEII EVACUATIO…」，ROUTE 被裁；時間「AUGUST 24, 79 CE, 10…」後面的時刻數字被裁"},
+  {"where": "Good Bakery 旁手寫字「Order one loaf. TO GO!」", "problem": "另有一句手寫玩笑話，非事實知識點，清單未列屬正常，列此僅供對照"}
+ ]}
+```
+
+補充說明（非 JSON）：這張照片右側裁掉太多，地圖與每行行尾都缺，建議**重拍一張完整涵蓋右半頁的 p.50** 再核一次第 14～16 點；目前看得見的部分都沒發現抄錯。

@@ -1,0 +1,350 @@
+{
+ "scene_id": "EP4-14",
+ "notes": "這一場分三段：①熱衰竭（1～4 句）＝HERO 在水邊的實景戲，先 EWS 建立運河工地＋遠方半完工金字塔，再切 HERO 頭暈特寫，製造『他快撐不住』。②誘惑與危險（5～6 句）＝背影遠望河水（他想跳），硬切鱷魚眼睛特寫當危機揭露。③科普插圖連發（7～22 句）＝血吸蟲、生病小人、木乃伊、工人勞動、涼鞋腳、墓地骨頭、醫者夾板、爛藥方、金字塔摔落梗，用插圖與實景交錯維持節奏。鱷魚只露眼睛、體積小，沒有和 HERO 同框，所以不需要加拍遠一級。插圖鏡頭（S05~S07、S10~S13）是觀念性 cutaway，不在運河地圖空間裡，camera.cell 以 HERO 所在的 J3 當名目錨點，look_at 標『插圖』，7 項資訊描述插圖本身的構圖；實景鏡頭（S01~S04、S08、S09）的背景（運河、碼頭、金字塔、棕櫚）由主對話依地圖加參考圖，prompt 本身不描述背景。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "J3", "facing": "S", "doing": "熱到頭暈，站在北岸水邊扶額發昏"},
+    {"t": "2", "cell": "J3", "facing": "S", "doing": "走到水邊盯著運河水，好想一頭跳下去"},
+    {"t": "3", "cell": "J3", "facing": "S", "doing": "退開一點，看著碼頭的工人卸石頭"}
+   ]
+  },
+  {
+   "who": "WORKERS",
+   "path": [
+    {"t": "1", "cell": "I3", "facing": "E", "doing": "在 HERO 旁邊的沙地上癱坐休息"},
+    {"t": "3", "cell": "F4", "facing": "N", "doing": "在西邊碼頭合力把大石塊從船上往岸上拉"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-14-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "拉完石頭，真正難熬的，其實是這個夏天本身。",
+    "酷熱最容易要人命的，就是剛上工的頭幾天。"
+   ],
+   "subject": "HERO（置於工地環境中，遠方金字塔）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 小小地站在畫面中央偏上的北岸水邊；左側（西）沙地上有癱坐休息的工人；前景下方是運河水面；上方遠處是沙漠斜坡與半完工的金字塔（背景由參考圖加）。",
+   "screen_direction": "toward",
+   "action": "HERO 肩膀下垂、單手抹汗，一臉熱到虛脫地呆站著；工人們在一旁沙地上癱坐休息。",
+   "camera": {"cell": "J8", "height_m": "2", "look_at": "HERO J3", "distance_m": "100"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（很小）", "frame_height": "約佔畫高 1.5 成"},
+    {"who": "WORKERS", "visible": "全身（很小，數人）", "frame_height": "各約佔畫高 1.2 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and a small group of Egyptian WORKERS. HERO stands alone, shoulders slumped, one hand wiping sweat off his forehead, looking faint and overheated, eyes half-closed and weary. HERO's face and hands are pure paper white. Several WORKERS sit and sprawl on the ground off to one side, resting, looking tired and hot; their faces and hands are pure paper white. A couple of large cut stone blocks sit beside them. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: front view. The camera is on the ground ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-14-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "美國的統計說，跟高溫有關的死亡，將近一半發生在上工第一天，超過七成發生在前兩週。",
+    "一開始是頭暈、頭痛、抽筋、想吐；嚴重的話會嘔吐、脈搏變弱，甚至神智不清。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 置中，胸部以上入鏡，單手扶額、身體微晃；背景是北岸沙地與遠方斜坡（參考圖加）。",
+   "screen_direction": "toward",
+   "action": "HERO 單手扶額、眼神渙散、臉脹紅，快要站不穩的那一刻。",
+   "camera": {"cell": "J4", "height_m": "1.5", "look_at": "HERO J3", "distance_m": "5"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上", "frame_height": "約佔畫高 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this character is in the picture: HERO (exactly as in the attached HERO character sheet). HERO presses one hand to his forehead, swaying slightly, woozy and dizzy; his eyes are half-closed and unfocused, his cheeks flushed, mouth slightly open as if nauseous and about to faint. HERO's face and hands are pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is on the ground ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫成到腰（MS）；剪輯時再往臉推近到胸口即可。"
+  },
+  {
+   "id": "EP4-14-03",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "你看著旁邊的尼羅河，好想一頭跳下去。"
+   ],
+   "subject": "HERO（背影）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背對鏡頭站在畫面中央的水邊，微微前傾望著前方的運河水面與停著的船（水與對岸由參考圖加）。",
+   "screen_direction": "away",
+   "action": "HERO 站在水邊微微前傾、雙手垂著，像被水吸過去、好想一頭跳下去的那一刻。",
+   "camera": {"cell": "J2", "height_m": "1.6", "look_at": "HERO J3", "distance_m": "8"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影", "frame_height": "約佔畫高 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this character is in the picture: HERO (exactly as in the attached HERO character sheet), seen from behind. HERO stands at the water's edge, leaning slightly forward, arms hanging loose, looking longingly at the water as if he wants to dive in. HERO's hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: back view. The camera is on the ground behind HERO, looking the way he faces; HERO's back is toward the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-14-04",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "千萬別。水流很急，河裡還有鱷魚。"
+   ],
+   "subject": "鱷魚（只露眼睛和鼻孔）",
+   "shot_size": "ECU",
+   "ecu_part": "鱷魚的眼睛和鼻孔",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中段只露出一對冷冷的鱷魚眼睛和鼻孔浮在水面上，正對著岸上；水面佔大部分（水面由參考圖加）。",
+   "screen_direction": "toward",
+   "action": "鱷魚靜靜浮著，只露出眼睛和鼻孔，冷冷盯著岸上 HERO 的那一刻，暗藏殺機。",
+   "camera": {"cell": "J4", "height_m": "0.5", "look_at": "鱷魚 J6", "distance_m": "15"},
+   "cast": [
+    {"who": "鱷魚", "visible": "只有眼睛和鼻孔", "frame_height": "眼睛橫跨畫面中段，佔畫高約 2 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this animal is in the picture: a crocodile (exactly as in the attached animal sheet) with only its eyes and nostrils showing above the water. Its eyes are cold, narrow and watchful, quietly menacing, staring straight at the camera. Shot size: Extreme Close-up (ECU). Only the crocodile's eyes and nostrils fill the picture. Camera direction: front view. The camera is on the water surface ahead of the crocodile, facing it. Camera angle: Eye-level: the camera is at the water surface, looking straight at the eyes.",
+   "untested": [],
+   "remedy": "眼睛特寫用長鏡頭式緊框拍 15m 外的鱷魚；若框不夠緊，剪輯時再推近。"
+  },
+  {
+   "id": "EP4-14-05",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "而且水裡，還藏著一種叫血吸蟲的小扁蟲。",
+    "牠會鑽過你的皮膚，順著血管跑到肝臟，在那裡長大、產卵。"
+   ],
+   "subject": "血吸蟲（卡通，鑽進皮膚）",
+   "shot_size": "ECU",
+   "ecu_part": "血吸蟲鑽進皮膚的地方",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面中央一條卡通化的血吸蟲，側面看牠正把頭鑽進一小片膚白的皮膚、往皮下的血管鑽；乾淨背景、無字。",
+   "screen_direction": "toward",
+   "action": "血吸蟲正把頭鑽進皮膚、往血管裡去的一刻；卡通、好笑不噁心。",
+   "camera": {"cell": "J3", "height_m": "1.2", "look_at": "插圖（血吸蟲）", "distance_m": "1"},
+   "cast": [
+    {"who": "血吸蟲（插圖）", "visible": "整條蟲＋一小片皮膚", "frame_height": "蟲約佔畫寬 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. No characters — only this illustration: a single small cartoon schistosome flatworm with tiny dot eyes and a mischievous look (silly, not disgusting), shown in side profile, poking its head into a small patch of pure paper-white skin and burrowing toward a blood vessel underneath. Clean plain background. Shot size: Extreme Close-up (ECU). Only the cartoon worm and the patch of skin it burrows into fill the picture. Camera direction: side view. The camera is beside the worm and sees it exactly from the side. Camera angle: Eye-level: the camera is level with the worm, looking straight at it.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-14-06",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "感染過幾個星期，你就會開始發燒，整個人累到提不起勁。",
+    "要是拖成慢性的，還可能引起腸道的病、癌症、癲癇，甚至死掉。",
+    "它是世界上僅次於瘧疾、破壞力第二大的寄生蟲。"
+   ],
+   "subject": "被感染後發燒虛弱的小人（插圖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "一個白色小人癱在地上、滿頭汗、臉脹紅、提不起勁；肚子附近有一兩隻小小的卡通血吸蟲；乾淨背景、無字。",
+   "screen_direction": "toward",
+   "action": "小人無力癱著、冒汗、臉色發紅發燙、虛脫的那一刻。",
+   "camera": {"cell": "J3", "height_m": "2.0", "look_at": "插圖（生病小人）", "distance_m": "2"},
+   "cast": [
+    {"who": "生病的小人（插圖）", "visible": "全身橫躺", "frame_height": "橫躺約佔畫寬 6 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this illustration: a plain white stick figure (same simple style as the character sheets) lying limp on the ground, sweating heavily, cheeks flushed red, looking feverish, miserable and completely drained of energy; a couple of tiny cartoon worms hover near its belly. Its face and hands are pure paper white. Clean plain background. Shot size: Full Shot (FS). The figure's whole body just fits in the picture. Camera direction: front view. The camera is in front of the figure, facing it. Camera angle: High angle: the camera is high above the figure, looking down at it.",
+   "untested": [],
+   "remedy": "high 只會輕微往下看；可接受。"
+  },
+  {
+   "id": "EP4-14-07",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "考古學家就在好幾具古埃及的木乃伊身上，驗出了血吸蟲。"
+   ],
+   "subject": "木乃伊（卡通，不恐怖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一具卡通木乃伊，白色繃帶裹著，靜靜躺著；乾淨背景、無字。",
+   "screen_direction": "toward",
+   "action": "木乃伊靜靜躺著、全身纏著繃帶的一刻，暗示身上驗出了血吸蟲。",
+   "camera": {"cell": "J3", "height_m": "1.5", "look_at": "插圖（木乃伊）", "distance_m": "2"},
+   "cast": [
+    {"who": "木乃伊（插圖）", "visible": "全身", "frame_height": "約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this illustration: a cartoon ancient Egyptian mummy wrapped in pale linen bandages, lying still, friendly and not scary. Clean plain background. Shot size: Full Shot (FS). The mummy's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is in front of the mummy, facing it. Camera angle: Eye-level: the camera is level with the mummy, looking straight at it.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-14-08",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "在這裡，工人們常常一連忙上好多天，才能歇一天。"
+   ],
+   "subject": "WORKERS（在碼頭拉大石塊）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "幾個工人排成一列、彎腰拉著繩子，把一塊大石塊從船上往岸上拖；側面看過去，石塊在畫面左、工人往畫面右施力（石塊往北岸＝畫面右）。背景碼頭與船由參考圖加。",
+   "screen_direction": "right",
+   "action": "一列工人咬牙彎腰、合力把幾噸重的大石塊往岸上拉的那一刻。",
+   "camera": {"cell": "G4", "height_m": "1.6", "look_at": "WORKERS F4", "distance_m": "20"},
+   "cast": [
+    {"who": "WORKERS", "visible": "全身（數人一列）", "frame_height": "各約佔畫高 5.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: a line of Egyptian WORKERS (exactly as in the attached WORKERS sheet). They crouch and lean back in a row, gripping a thick rope, straining with gritted, exhausted faces to drag one huge heavy cut stone block. Their faces and hands are pure paper white. Shot size: Wide Shot (WS). The workers' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside the workers and sees them exactly from the side. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS；工人全身入鏡即可接受。"
+  },
+  {
+   "id": "EP4-14-09",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "搬著幾噸重的大石頭，腳上穿的卻只是露出腳趾的涼鞋。"
+   ],
+   "subject": "工人的腳（露趾涼鞋）＋大石塊",
+   "shot_size": "ECU",
+   "ecu_part": "穿著露趾涼鞋的腳",
+   "azimuth": "side",
+   "angle": "high",
+   "composition": "畫面下半是地面，一雙白色的腳穿著簡單的露趾涼鞋，就踩在一塊沉重大石塊與粗繩旁邊；腳趾露在外面。無字。",
+   "screen_direction": "toward",
+   "action": "一雙穿著露趾涼鞋的白腳，就在幾噸重的大石塊旁邊使力踩住的那一刻，腳趾暴露在外。",
+   "camera": {"cell": "G4", "height_m": "0.3", "look_at": "工人的腳 F4", "distance_m": "3"},
+   "cast": [
+    {"who": "工人的腳", "visible": "小腿以下＋涼鞋", "frame_height": "腳約佔畫高 6 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this: a close-up of a pair of pure paper-white bare feet in simple open-toe sandals, the toes showing, planted and straining on the ground right next to a huge heavy cut stone block and a thick rope. No faces in the picture. Shot size: Extreme Close-up (ECU). Only the feet in open-toe sandals and the stone block beside them fill the picture. Camera direction: side view. The camera is beside the feet and sees them exactly from the side. Camera angle: High angle: the camera is high above the feet, looking down at them.",
+   "untested": [],
+   "remedy": "high 只會輕微往下看；可接受。"
+  },
+  {
+   "id": "EP4-14-10",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "工人墓地的骨頭上，手臂、腿、手，到處都是骨折的痕跡。",
+    "大多數人有嚴重的關節炎，有些人甚至失去了手或腳。",
+    "他們平均三十五歲，就過世了。"
+   ],
+   "subject": "工人墓地的骨頭（有骨折癒合痕跡）",
+   "shot_size": "ECU",
+   "ecu_part": "骨頭上癒合的骨折腫起處",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "幾根卡通化的骨頭（手臂、腿、手骨）排在地上，上面有癒合後鼓起的骨折痕跡，其中一截少了手掌；乾淨、不血腥、無字。",
+   "screen_direction": "toward",
+   "action": "一組工人墓地出土的骨頭，清楚看得到一處處癒合的骨折腫塊，其中一截少了手掌的那一刻。",
+   "camera": {"cell": "J3", "height_m": "2.0", "look_at": "插圖（骨頭）", "distance_m": "1.5"},
+   "cast": [
+    {"who": "骨頭（插圖）", "visible": "數根骨頭", "frame_height": "骨頭群約佔畫面 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this illustration: a few simple cartoon human bones laid out — an arm bone, a leg bone and a hand — each showing a healed fracture as a rounded bump; one bone is missing its hand. Clean cartoon style, not gory, not scary, plain background. Shot size: Extreme Close-up (ECU). Only the bones and their healed-fracture bumps fill the picture. Camera direction: front view. The camera is in front of the bones, facing them. Camera angle: High angle: the camera is high above the bones, looking down at them.",
+   "untested": [],
+   "remedy": "high 只會輕微往下看；可接受。"
+  },
+  {
+   "id": "EP4-14-11",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "還好，古埃及的醫者很會處理骨折，懂得用夾板固定。",
+    "很多骨折都順利長好，有些人甚至撐過了截肢，活了下來。"
+   ],
+   "subject": "古埃及醫者用夾板固定斷手（手部特寫）",
+   "shot_size": "ECU",
+   "ecu_part": "醫者纏夾板的手與病人的前臂",
+   "azimuth": "side",
+   "angle": "high",
+   "composition": "兩隻白色的手正把一副木夾板、用亞麻布條綁在另一個人的斷前臂上；只拍手和前臂，不拍臉；乾淨、無字。",
+   "screen_direction": "toward",
+   "action": "醫者的手正把木夾板貼上斷臂、纏上布條固定的那一刻。",
+   "camera": {"cell": "J3", "height_m": "1.3", "look_at": "插圖（夾板）", "distance_m": "1"},
+   "cast": [
+    {"who": "醫者的手＋病人前臂（插圖）", "visible": "雙手＋前臂＋木夾板", "frame_height": "約佔畫面 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this illustration: a close-up of two pure paper-white hands carefully wrapping a wooden splint and linen strips around another person's pure paper-white broken forearm. Only hands and forearm are shown, no faces. Clean cartoon style, plain background. Shot size: Extreme Close-up (ECU). Only the hands, the forearm and the wooden splint fill the picture. Camera direction: side view. The camera is beside the hands and sees them exactly from the side. Camera angle: High angle: the camera is high above the hands, looking down at them.",
+   "untested": [],
+   "remedy": "high 只會輕微往下看；可接受。"
+  },
+  {
+   "id": "EP4-14-12",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "可是碰上關節炎、寄生蟲這種病，他們的藥方就差多了，",
+    "像是動物糞便做的藥膏，還有死蒼蠅和煮熟老鼠熬的湯。"
+   ],
+   "subject": "古怪藥方（糞便藥膏、死蒼蠅、煮老鼠的湯）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "擺在一起的幾樣古怪藥方：一小罐動物糞便做的藥膏、一撮死蒼蠅、一鍋煮著一隻老鼠的湯；卡通、好笑不噁心、無字。",
+   "screen_direction": "toward",
+   "action": "幾樣古怪藥方擺在一起的那一刻：糞便藥膏、死蒼蠅、煮老鼠的湯，畫得卡通又好笑。",
+   "camera": {"cell": "J3", "height_m": "1.8", "look_at": "插圖（藥方）", "distance_m": "1.5"},
+   "cast": [
+    {"who": "古怪藥方（插圖）", "visible": "藥膏罐、死蒼蠅、老鼠湯鍋", "frame_height": "擺設約佔畫面 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this illustration: a small comic still-life of weird ancient remedies — a little clay jar of ointment made from animal dung, a small pile of dead flies, and a cooking pot with a boiled rat (simple cartoon, X-for-eyes, silly rather than disgusting). Clean cartoon style, plain background. Shot size: Full Shot (FS). The whole little arrangement of remedies just fits in the picture. Camera direction: front view. The camera is in front of the arrangement, facing it. Camera angle: High angle: the camera is high above the arrangement, looking down at it.",
+   "untested": [
+    "FS 景別句把『whole body』改成『whole little arrangement』（主體不是人）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-14-13",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "對了，好幾千年後，還一直有人爬上金字塔又摔下來，後來終於禁止攀爬了。"
+   ],
+   "subject": "金字塔＋爬上去又摔下來的小人（梗圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "一座階梯狀的金字塔占畫面大部分；一個小小的白色小人爬到半高、正手滑往下摔；底下另一個小人揮手做出『不准再爬』的手勢；無字、無任何標誌文字。",
+   "screen_direction": "off_down",
+   "action": "一個小人爬到金字塔半腰、腳一滑驚慌往下摔的那一刻；底下另一個人揮手示意不准再爬。",
+   "camera": {"cell": "J3", "height_m": "1.6", "look_at": "插圖（金字塔）", "distance_m": "50"},
+   "cast": [
+    {"who": "爬塔往下摔的小人（插圖）", "visible": "全身（很小）", "frame_height": "約佔畫高 1.5 成"},
+    {"who": "底下揮手的小人（插圖）", "visible": "全身（很小）", "frame_height": "約佔畫高 1.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only this illustration: a stepped half-built pyramid, and two tiny plain white stick figures — one has climbed about halfway up and is slipping and tumbling down, wide-eyed and flailing in panic; the other stands at the base, waving both arms to signal 'stop climbing'. Both figures' faces and hands are pure paper white. Clean cartoon style, no signs and no letters anywhere. Shot size: Wide Shot (WS). The whole stepped pyramid is clearly visible, with the two tiny figures small against it. Camera direction: front view. The camera is in front of the pyramid, facing it. Camera angle: Eye-level: the camera is at the figures' eye height, looking straight ahead.",
+   "untested": [
+    "WS 景別句改寫成以金字塔為主體、小人很小"
+   ],
+   "remedy": "WS 可能被拉得更遠、人物更小；剪輯時可裁切強調往下摔的小人。"
+  }
+ ]
+}

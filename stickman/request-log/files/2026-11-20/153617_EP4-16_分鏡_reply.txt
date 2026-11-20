@@ -1,0 +1,184 @@
+{
+ "scene_id": "EP4-16",
+ "notes": "回到實驗室的收尾戲，5 句旁白拆 5 顆鏡頭，節奏是：建立環境雙人鏡 → HERO 得意亮證據 → 博士潑冷水 → HERO 討錢被打槍 → 麵包袋只剩屑的笑點插入。兩人在室內中央空地對話（HERO 剛從北牆時光機圓環回來，站西側 J10 面東；博士站東側 N10 面西），南向雙人鏡的背景正好帶到北牆的時光機和時鐘，交代他剛穿越回來。沒有大動物，不用加拍遠一級。開場用 WS 側面雙人鏡建立空間與『一身風沙』的狀態；中間兩顆單人 MCU 做正反打（HERO 的得意 vs 博士的不以為然）；第 4 顆回到側面雙人鏡拍『伸手討錢 vs 搖手指』的互動；最後切到工作桌上麵包袋的 ECU 插入鏡，博士的食指入鏡指著只剩屑的袋子，把『指了指那袋麵包／只剩麵包屑』的笑點收在物件上。全片除開場建立鏡外都走平視正反打，單人特寫是為了情緒與笑點對撞，理由明確。MCU／MS／WS 實測偏鬆，remedy 都寫剪輯推近補救。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    { "t": "1", "cell": "J10", "facing": "E", "doing": "一身風沙，舉起手機轉向博士給他看證據" },
+    { "t": "2", "cell": "J10", "facing": "E", "doing": "把手機螢幕轉向鏡頭，得意展示證據" },
+    { "t": "3", "cell": "J10", "facing": "E", "doing": "站著等博士反應（不在此鏡頭內）" },
+    { "t": "4", "cell": "J10", "facing": "E", "doing": "收起手機，伸出一隻空手掌向博士討工錢" },
+    { "t": "5", "cell": "J10", "facing": "E", "doing": "順著博士指的方向看過去（不在此鏡頭內）" }
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    { "t": "1", "cell": "N10", "facing": "W", "doing": "探身看 HERO 手機上的證據" },
+    { "t": "2", "cell": "N10", "facing": "W", "doing": "看手機（不在此鏡頭內）" },
+    { "t": "3", "cell": "N10", "facing": "W", "doing": "揮揮手表示不以為然，另一手叉腰" },
+    { "t": "4", "cell": "N10", "facing": "W", "doing": "左右搖食指說『不』" },
+    { "t": "5", "cell": "N10", "facing": "E", "doing": "轉身伸手指向東邊工作桌上的麵包袋" }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-16-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "回到實驗室，你一身風沙，把證據拿給博士看。"
+   ],
+   "subject": "HERO 和 PROF（雙人建立鏡）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面左、滿身風沙舉手機；PROF 在畫面右、探身看手機；兩人側面相對。背景（北牆）帶到時光機圓環和滿牆時鐘，交代他剛穿越回來。",
+   "screen_direction": "right",
+   "action": "HERO 把手機螢幕轉向博士的那一刻，博士正探身過來看。",
+   "camera": {
+    "cell": "L17",
+    "height_m": "1.5",
+    "look_at": "HERO 與 PROF 中間（約 L10）",
+    "distance_m": "3.5"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "全身（頭到腳）", "frame_height": "約 55%" },
+    { "who": "PROF", "visible": "全身（頭到腳）", "frame_height": "約 55%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) on the left, and PROF (exactly as in the attached PROF character sheet) on the right. HERO is covered head to toe in fine sand and dust, in his summer clothes, holding up a smartphone and turning its lit screen toward PROF. PROF stands facing HERO and leans in slightly to look at the phone. HERO's face and hands are pure paper white. PROF's face and hands are pure paper white. HERO looks eager and proud, grinning; PROF looks mildly skeptical, one eyebrow raised. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside the pair and sees HERO and PROF exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "side 句的 trail 改成 the pair、TEEN 改成 PROF（雙人側面建立鏡）"
+   ],
+   "remedy": "WS 常被畫成 FS；只要兩人全身都入鏡即可用，否則重生。"
+  },
+  {
+   "id": "EP4-16-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "你親眼證實了：蓋金字塔的不是奴隸，而是輪流服役、吃得飽飽的農民。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 置中，滿身風沙，舉手機把螢幕轉向鏡頭，螢幕上是一群工人分食麵包的小圖，畫面只有 HERO。",
+   "screen_direction": "toward",
+   "action": "HERO 得意地把手機證據亮向鏡頭的那一刻。",
+   "camera": {
+    "cell": "M11",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "1.6"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "胸部以上、臉和舉手機的手", "frame_height": "約 95%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet). He is covered head to toe in fine sand and dust, in his summer clothes, holding up a smartphone in one hand and turning its screen toward the camera; the screen shows a small picture of cheerful workers eating bread together. HERO's face and hands are pure paper white. HERO looks proud and triumphant, with a big grin. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常畫成腰上、front34 大致可；剪輯時再推近到 MCU。"
+  },
+  {
+   "id": "EP4-16-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "博士卻說，這個嘛，大家早就知道了，不算什麼新發現。"
+   ],
+   "subject": "PROF",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "PROF 置中，一手在胸前揮手表示不以為然，另一手叉腰，畫面只有 PROF，和上一顆 HERO 的 MCU 形成正反打。",
+   "screen_direction": "toward",
+   "action": "博士攤手、擺出『這沒什麼』的不屑表情那一刻。",
+   "camera": {
+    "cell": "L12",
+    "height_m": "1.6",
+    "look_at": "PROF",
+    "distance_m": "1.4"
+   },
+   "cast": [
+    { "who": "PROF", "visible": "胸部以上、臉和雙手", "frame_height": "約 90%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He waves one hand dismissively in front of his chest, with the other hand resting on his hip. PROF's face and hands are pure paper white. PROF looks unimpressed and dismissive, with a flat, deadpan expression and a slight shrug. Shot size: Medium Close-up (MCU). PROF is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [
+    "front34 句的 HERO 改成 PROF"
+   ],
+   "remedy": "MCU 常畫成腰上；剪輯時再推近到 MCU。"
+  },
+  {
+   "id": "EP4-16-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "而且你的工錢，他早就先付過了。"
+   ],
+   "subject": "HERO 和 PROF（互動雙人鏡）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面左、伸出空手掌朝右向博士討錢；PROF 在畫面右、搖著食指說不。兩人側面相對。",
+   "screen_direction": "right",
+   "action": "HERO 伸出討錢的手、博士搖食指拒絕的那一刻。",
+   "camera": {
+    "cell": "L15",
+    "height_m": "1.4",
+    "look_at": "HERO 與 PROF 中間（約 L10）",
+    "distance_m": "2.5"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "腰部以上、臉和伸出的手", "frame_height": "約 85%" },
+    { "who": "PROF", "visible": "腰部以上、臉和搖動的食指", "frame_height": "約 85%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) on the left, and PROF (exactly as in the attached PROF character sheet) on the right. HERO, still covered head to toe in fine sand and dust, holds out one open empty palm toward PROF, asking for money. PROF wags one index finger from side to side, saying no. HERO's face and hands are pure paper white. PROF's face and hands are pure paper white. HERO looks hopeful but puzzled; PROF looks smug and amused, with a knowing little smile. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: side view. The camera is beside the pair and sees HERO and PROF exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "side 句的 trail 改成 the pair、TEEN 改成 PROF（雙人側面互動鏡）"
+   ],
+   "remedy": "MS 常畫成膝上；只要兩人上半身和手勢清楚即可，剪輯時再推近。"
+  },
+  {
+   "id": "EP4-16-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "他指了指那袋麵包。（停）裡面只剩下麵包屑。"
+   ],
+   "subject": "工作桌上的麵包袋（博士的食指入鏡指著它）",
+   "shot_size": "ECU",
+   "ecu_part": "麵包袋開口內的麵包屑與 PROF 的食指",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面幾乎填滿一個開口倒向鏡頭的紙麵包袋，裡面只剩幾顆麵包屑、旁邊也散落幾顆；PROF 的食指從側邊入鏡指著袋子。純插入鏡頭，沒有別的角色。",
+   "screen_direction": "off_left",
+   "action": "博士的食指指向麵包袋、鏡頭停在只剩麵包屑的空袋上的那一刻（笑點）。",
+   "camera": {
+    "cell": "T6",
+    "height_m": "0.9",
+    "look_at": "工作桌上的麵包袋（U6）",
+    "distance_m": "0.5"
+   },
+   "cast": [
+    { "who": "PROF", "visible": "只有右手和食指（指向袋子）", "frame_height": "約 35%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. No full characters in the picture, only one hand: PROF's hand (exactly as in the attached PROF character sheet) with the index finger pointing at an open paper bread bag that lies on its side, mostly empty, with just a few bread crumbs inside it and a few more scattered beside it. PROF's hand is pure paper white. Shot size: Extreme Close-up (ECU). Only the open bread bag, the crumbs inside it, and PROF's pointing finger fill the picture. Camera direction: front view. The camera is right in front of the bread bag, facing it. Camera angle: Eye-level: the camera is at the level of the bread bag, looking straight at it.",
+   "untested": [
+    "ECU 用在物件＋局部的手（麵包袋＋食指）未實測",
+    "front 句改成對準麵包袋、eye 句改成與麵包袋同高"
+   ],
+   "remedy": "ECU 物件未實測；若畫不出細節可改用 CU 句（袋子填滿畫面），剪輯時再推近到麵包屑。"
+  }
+ ]
+}

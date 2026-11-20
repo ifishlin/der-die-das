@@ -1,0 +1,395 @@
+{
+ "scene_id": "EP4-13",
+ "notes": "這一場是全集最長的一段安全講課，結構上分三塊：①建立工地規模與危險（01 空拍大全景→02 Hemiunu 低角下令→03 花崗岩橫梁低角特寫，先把『八十噸、幾百人』的壓迫感立起來）；②HERO 在繩邊聽課（04），接著一連串插圖與插入鏡頭把旁白視覺化（05 正確姿勢、06 受傷、07 繩子不繞手、08 被拖、09～12 德國/台灣兩次大型拔河斷繩、13 連鋼筋都拉斷）——這段刻意離開吉薩現場、用中性背景的插圖，對應旁白的『教學／舉例』語氣，不畫血腥，只畫繩斷彈回與人群摔倒；③回到 HERO：14 他聽完退到側面、15 手機螢幕博士補一條工作守則、16 他把抱怨吞回去、用剛學到的後傾姿勢用力拉，收在工作本身。沒有大動物，不用加拍遠一級。插圖與插入鏡頭的 camera.cell 為就近取的合法格，背景走中性留白（由主對話定）。所有 HERO 入鏡都寫了純白膚色句；臉入鏡的都寫了當下表情。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "J14", "facing": "N", "doing": "排在長繩西段，雙手握住棕櫚纖維繩，緊張地聽講"},
+    {"t": "2", "cell": "J15", "facing": "SW", "doing": "聽完危險，側身退開、警戒地回看繩子和石塊"},
+    {"t": "3", "cell": "I14", "facing": "N", "doing": "退到繩子側面，身體後傾、用腿撐，用力拉"}
+   ]
+  },
+  {
+   "who": "HEMIUNU",
+   "path": [
+    {"t": "1", "cell": "N15", "facing": "W", "doing": "站在石塊堆高處，舉長木杖、張口下令"}
+   ]
+  },
+  {
+   "who": "WORKERS",
+   "path": [
+    {"t": "1", "cell": "I14-N14", "facing": "N", "doing": "幾百人排在長繩兩邊，一起往北拉滑橇上的橫梁"},
+    {"t": "3", "cell": "I14-N14", "facing": "N", "doing": "繼續拉繩，HERO 在側面一起拉"}
+   ]
+  },
+  {
+   "who": "PROF（螢幕）",
+   "path": [
+    {"t": "2", "cell": "N/A（手機螢幕）", "facing": "S", "doing": "在 HERO 手機螢幕上講課，螢幕上沒有字"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-13-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["然後，最難的一關來了。"],
+   "subject": "拉繩的幾百人隊伍與花崗岩橫梁（建立工地規模）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "aerial",
+   "composition": "空拍俯瞰，長繩隊伍兩排佔畫面中段、背影朝上方（北）拉；畫面下方是滑橇上的橫梁；人很小、環境是重點，建立『幾百人一起拉一塊巨石』的規模",
+   "screen_direction": "away",
+   "action": "幾百人同時後傾拉繩、橫梁在滑橇上被往北拖的一瞬，建立最難關卡的壓迫規模",
+   "camera": {"cell": "K20", "height_m": "60", "look_at": "拉繩隊伍（K14）與橫梁（K16）", "distance_m": "160"},
+   "cast": [
+    {"who": "WORKERS", "visible": "全身背影（幾百人）", "frame_height": "每人約 6%"},
+    {"who": "花崗岩橫梁＋滑橇", "visible": "整塊", "frame_height": "約 12%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). The crowd of workers is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. Camera direction: back view. The camera is behind the long line of workers, looking the way they pull; the workers' backs are nearer the camera. Hundreds of white stick-figure workers (exactly as in the attached WORKERS character sheet) are lined up in two rows along one very long rope, all leaning back and pulling together toward the far side, dragging a huge dark grey-black granite beam that rests on a wooden sledge. Their faces and hands are pure paper white. The picture contains only the crowd of workers and the granite beam on its sledge.",
+   "untested": ["EWS 句主體改成 the crowd of workers（原句為 HERO）", "aerial＋EWS 用於群眾背影"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-13-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["總建築師 Hemiunu 親自下令：你和另外幾百個人，各就拉繩位置。"],
+   "subject": "HEMIUNU（站在石塊堆上下令）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "低角仰視，Hemiunu 立在畫面中上方的石塊堆上、舉杖張口；畫面下緣前景是幾個工人握繩的背影，用仰角強調他的權威與體型",
+   "screen_direction": "off_left",
+   "action": "Hemiunu 舉長木杖、張口喝令各就位的一刻，威嚴壓場",
+   "camera": {"cell": "K15", "height_m": "1", "look_at": "HEMIUNU（N15）", "distance_m": "60"},
+   "cast": [
+    {"who": "HEMIUNU", "visible": "全身（仰視）", "frame_height": "約 78%"},
+    {"who": "WORKERS", "visible": "前景幾人握繩背影（上半身）", "frame_height": "約 30%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). HEMIUNU's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is on the ground ahead of HEMIUNU, facing him. Extreme low-angle shot, ground-level camera perspective, looking up at HEMIUNU's full body. HEMIUNU (exactly as in the attached HEMIUNU character sheet) stands on a stack of stone blocks, raising his long wooden staff high and shouting an order, stern and commanding with his mouth open. His face and hands are pure paper white. In the lower foreground are the backs of a few white stick-figure workers (as in the attached WORKERS character sheet) holding the long rope, their hands pure paper white. The picture contains only HEMIUNU and the few workers' backs.",
+   "untested": ["WS 句主體改成 HEMIUNU", "low 句＋WS 同框前景工人背影"],
+   "remedy": "WS 可能被畫成接近 FS；若畫太滿，剪輯略拉遠，低角度優先保留"
+  },
+  {
+   "id": "EP4-13-03",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["要拉的是一塊花崗岩橫梁，幾十噸重，最重的可能到八十噸。"],
+   "subject": "滑橇上的花崗岩橫梁（物件插入）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "低角仰視橫梁，深灰黑巨石橫佔畫面中段、壓迫鏡頭；滑橇和繫在滑橇前端的粗繩入鏡，強調『幾十噸重』",
+   "screen_direction": "away",
+   "action": "巨大橫梁靜靜壓在滑橇上、粗繩繃緊將被往前拖的一刻，突顯重量",
+   "camera": {"cell": "K17", "height_m": "1", "look_at": "花崗岩橫梁（K16）", "distance_m": "22"},
+   "cast": [
+    {"who": "花崗岩橫梁＋滑橇＋繩", "visible": "橫梁大部分、滑橇前端、繩頭", "frame_height": "約 80%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Shot (MS). The granite beam is framed close and fills much of the picture. Extreme low-angle shot, ground-level camera perspective, looking up at the huge granite beam. A huge dark grey-black granite beam, tens of tons in weight, rests on a heavy wooden sledge, with a thick palm-fibre rope tied to the front of the sledge. The beam looks enormous and crushingly heavy. The picture contains only the granite beam, the wooden sledge, and the rope.",
+   "untested": ["MS 句用於物件（花崗岩橫梁）而非人", "low 句 looking up at the beam（物件）"],
+   "remedy": "物件 MS；若框太鬆，剪輯推近"
+  },
+  {
+   "id": "EP4-13-04",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["動手前，先學幾招保命的。", "英格蘭拔河協會有一位當了很久祕書的專家，看了幾十年的拔河比賽。"],
+   "subject": "HERO（在繩邊就位、聽講）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側視，HERO 在畫面中央握繩、側臉朝左（北）；左右是沿繩站的幾個工人側影，平視帶出他緊張的神情",
+   "screen_direction": "left",
+   "action": "HERO 雙手抓繩、緊張地側身待命，像要上課的學生",
+   "camera": {"cell": "H14", "height_m": "1.6", "look_at": "HERO（J14）", "distance_m": "40"},
+   "cast": [
+    {"who": "HERO", "visible": "膝上側身、側臉、雙手", "frame_height": "約 85%"},
+    {"who": "WORKERS", "visible": "左右幾人側身握繩（膝上）", "frame_height": "約 82%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: side view. The camera is beside the rope and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. HERO (exactly as in the attached HERO character sheet), in his summer clothes, stands at the long rope, both hands gripping the thick palm-fibre rope, bracing himself, looking tense and a little scared. HERO's face and hands are pure paper white. A few white stick-figure workers (as in the attached WORKERS character sheet) stand along the rope beside him, their faces and hands pure paper white. The picture contains only HERO and the workers beside him at the rope.",
+   "untested": ["side 句 trail 改成 rope、去掉 TEEN"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-13-05",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["他說：手臂打直，身體往後倒，用腿出力，別只靠手拉。", "最好是用更有力的背和腿去「推」，而不是用手去「拉」，才比較不會受傷。"],
+   "subject": "插圖路人（示範正確拔河姿勢）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側視插圖，中性背景；一個路人全身側面：手臂打直、身體後傾、屈膝用腿撐，繩子往畫面左邊延伸，清楚示範姿勢",
+   "screen_direction": "left",
+   "action": "路人維持標準後傾姿勢用力拉繩的定格，當教學示範",
+   "camera": {"cell": "J18", "height_m": "1.5", "look_at": "示範路人（插圖）", "distance_m": "5"},
+   "cast": [
+    {"who": "插圖路人", "visible": "全身側面", "frame_height": "約 90%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Full Shot (FS). The person's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the person and sees him exactly from the side. Camera angle: Eye-level: the camera is at the person's eye height, looking straight ahead. A single plain white stick-figure person (a bystander, exactly in the attached character-sheet style) demonstrates the correct tug-of-war stance: arms held straight out, body leaning far back, knees bent and legs braced pushing against the ground, holding a thick rope that runs off to one side. His expression is focused and straining with effort. His face and hands are pure paper white. The picture contains only this one person and the rope.",
+   "untested": ["主體換成插圖路人（非 HERO）"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-13-06",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["有一項拔河世界賽選手的研究就發現，受傷最多的是背，差不多每十個受傷就有四個；手的擦傷、水泡也很常見。"],
+   "subject": "插圖路人（示意背部受傷、手起水泡）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "前側視插圖，中性背景；路人腰部以上入鏡，一手按著下背、一手舉起露出發紅起水泡的手掌，臉痛苦皺著",
+   "screen_direction": "off_down",
+   "action": "路人齜牙咧嘴、按著痠痛的背、亮出起水泡的手，示意常見傷",
+   "camera": {"cell": "J18", "height_m": "1.6", "look_at": "受傷路人（插圖）", "distance_m": "4"},
+   "cast": [
+    {"who": "插圖路人", "visible": "腰部以上、臉、雙手", "frame_height": "約 80%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Shot (MS). The person is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of the person and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the person's eye height, looking straight ahead. A single plain white stick-figure person winces in pain, one hand pressed to his lower back, the other hand raised showing a sore, reddened, blistered palm. His expression is grimacing and pained. His face and hands are pure paper white. No blood, only red sore marks. The picture contains only this one person.",
+   "untested": ["front34、MS 句主體換成插圖路人"],
+   "remedy": "front34、MS 可能偏移；插圖容錯高，N/A"
+  },
+  {
+   "id": "EP4-13-07",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["而最重要的一條：絕對不要把繩子繞在手、手指，或身上任何地方。"],
+   "subject": "一雙手握繩（插入鏡頭，示範正確握法）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "俯視插入，中性背景；兩隻白手在畫面中央，粗繩橫過攤開的掌心、沒有繞過手指或手腕，強調『不繞手』",
+   "screen_direction": "left",
+   "action": "兩手以正確方式平握粗繩、繩子只搭在掌心、沒纏任何地方的定格",
+   "camera": {"cell": "J18", "height_m": "1.4", "look_at": "握繩的雙手（插圖）", "distance_m": "1"},
+   "cast": [
+    {"who": "插圖路人的手", "visible": "兩隻手與一段繩", "frame_height": "約 70%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A close insert shot. Camera angle: High angle: the camera is high above the hands, looking down at them. Two white stick-figure hands grip a thick palm-fibre rope the correct way: the rope lies across the open palms and is NOT wrapped or looped around the fingers, the thumb, or the wrist. The hands are pure paper white. The picture contains only the two hands and the rope.",
+   "untested": ["手部近景插入（非實測景別句）", "high 句 looking down at the hands（物件）"],
+   "remedy": "想要 CU：shot_size 填 CU，prompt 用物件近景插入句；若太寬，剪輯推近成特寫"
+  },
+  {
+   "id": "EP4-13-08",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["因為繩子的拉力，可以輕易壓碎你的骨頭。", "萬一旁邊的人一撐不住，你就會被拖在滑動的石頭後面。"],
+   "subject": "插圖：滑動的石頭與被拖在後面的人",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側視插圖，中性背景；畫面左邊是滑橇上滑動的大石，右後方一個路人被繩子勾住、倒在地上被往左拖行",
+   "screen_direction": "left",
+   "action": "石頭往左滑、路人被拖在石頭後面翻滾、驚恐張大眼的一刻（不畫血腥）",
+   "camera": {"cell": "H18", "height_m": "1.6", "look_at": "被拖的路人與石頭（插圖）", "distance_m": "15"},
+   "cast": [
+    {"who": "滑橇大石", "visible": "整塊", "frame_height": "約 45%"},
+    {"who": "插圖路人", "visible": "全身倒地", "frame_height": "約 28%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). The scene's whole body is clearly visible, with a lot of the surroundings around it. Camera direction: side view. The camera is beside the scene and sees it exactly from the side. Camera angle: Eye-level: the camera is at eye height, looking straight ahead. An illustration: a huge heavy stone on a wooden sledge slides along the ground to the left, and a single plain white stick-figure person is dragged on the ground behind it, tumbling, caught by the rope. His expression is wide-eyed and alarmed. His face and hands are pure paper white. No blood. The picture contains only the sliding stone on its sledge and the one dragged person.",
+   "untested": ["WS、side 句用於插圖場景（石頭、路人）"],
+   "remedy": "WS 可能偏 FS；插圖容錯高，N/A"
+  },
+  {
+   "id": "EP4-13-09",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["這種大型拔河，真的出過事。", "1995 年，德國一群童軍，大約六百五十個人，排成一條超長的拔河。"],
+   "subject": "插圖：德國 1995 超長拔河隊伍（約六百五十人）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "aerial",
+   "composition": "空拍側視插圖，中性背景；一條極長的繩、兩排幾百個路人橫貫畫面，人很小，呈現『超長』的規模；畫面上沒有任何年份字樣",
+   "screen_direction": "left",
+   "action": "幾百人分兩排沿一條超長繩對拉、全體後傾的定格，建立事故前的規模",
+   "camera": {"cell": "K20", "height_m": "50", "look_at": "拔河人龍（插圖）", "distance_m": "200"},
+   "cast": [
+    {"who": "插圖群眾", "visible": "全身（約六百五十人）", "frame_height": "每人約 5%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). The crowd is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. An illustration: a very long line of hundreds of plain white stick-figure people, arranged in two rows along one extremely long rope, a giant tug of war stretching across the whole picture, everyone leaning back and pulling. Their faces and hands are pure paper white. The picture contains only this huge crowd and the rope.",
+   "untested": ["EWS 句主體改成 the crowd", "aerial＋EWS 用於插圖群眾"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-13-10",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["結果繩子突然斷掉，像鞭子一樣彈回去；一個孩子被打中，另一個在大家摔成一團時被壓傷，都沒能救回來。"],
+   "subject": "插圖：德國拔河繩斷、人群摔成一團",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側視插圖，中性背景；斷掉的繩頭在空中像鞭子往右甩回，近處一群路人摔倒疊成一團，最近的臉驚慌（不畫血腥）",
+   "screen_direction": "right",
+   "action": "繩子斷裂、繩頭如鞭往右彈回、人群往同側摔倒的瞬間",
+   "camera": {"cell": "J18", "height_m": "1.6", "look_at": "斷繩與摔倒人群（插圖）", "distance_m": "28"},
+   "cast": [
+    {"who": "插圖群眾", "visible": "近處數人全身、後方群眾", "frame_height": "最近約 30%"},
+    {"who": "斷掉的繩", "visible": "彈回的繩頭", "frame_height": "橫貫畫面"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). The crowd's whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside the crowd and sees them exactly from the side. Camera angle: Eye-level: the camera is at eye height, looking straight ahead. An illustration: the long rope has suddenly snapped; the broken end whips back through the air to the right like a whip; the crowd of plain white stick-figure people tumble and fall together in a heap. The nearest figures look alarmed and shocked. Their faces and hands are pure paper white. No blood. The picture contains only the snapped rope and the falling crowd.",
+   "untested": ["WS、side 句用於插圖群眾"],
+   "remedy": "WS 可能偏 FS；插圖容錯高，N/A"
+  },
+  {
+   "id": "EP4-13-11",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["1997 年，台灣也有一千六百個人，一起拉一條承受不了那麼大力氣的繩子。"],
+   "subject": "插圖：台灣 1997 超大拔河隊伍（約一千六百人）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "aerial",
+   "composition": "空拍側視插圖，中性背景；比德國那張更長、更多人（上千人）兩排拉一條繩，佔滿畫面；沒有任何年份字樣",
+   "screen_direction": "left",
+   "action": "上千人沿一條繩對拉、規模更大的定格，鋪陳更嚴重的事故",
+   "camera": {"cell": "K20", "height_m": "60", "look_at": "拔河人龍（插圖）", "distance_m": "300"},
+   "cast": [
+    {"who": "插圖群眾", "visible": "全身（約一千六百人）", "frame_height": "每人約 4%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). The crowd is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. An illustration: an even bigger crowd, well over a thousand plain white stick-figure people, in two very long rows pulling one enormous long rope, a giant tug of war filling the whole picture, everyone leaning back and pulling. Their faces and hands are pure paper white. The picture contains only this huge crowd and the rope.",
+   "untested": ["EWS 句主體改成 the crowd", "aerial＋EWS 用於插圖群眾"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-13-12",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["他們使出了十八萬磅的力，繩子一斷，猛力彈回，把站在最前面兩個人的手臂都扯斷了。"],
+   "subject": "插圖：台灣拔河繩斷、最前兩人被猛力彈飛摔倒",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側視插圖，中性背景；繩子猛力斷裂往右彈回，站最前面的兩個路人被往後掀飛、雙臂亂揮摔倒；只畫繩斷彈回與人摔飛，不畫血腥、不畫斷臂細節",
+   "screen_direction": "right",
+   "action": "繩子一斷、猛力往右彈回、最前兩人被掀飛離地的瞬間（不畫血腥）",
+   "camera": {"cell": "J18", "height_m": "1.6", "look_at": "斷繩與最前兩人（插圖）", "distance_m": "28"},
+   "cast": [
+    {"who": "插圖路人（最前兩人）", "visible": "全身被彈飛", "frame_height": "約 40%"},
+    {"who": "斷掉的繩", "visible": "彈回的繩頭", "frame_height": "橫貫畫面"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). The people's whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside them and sees them exactly from the side. Camera angle: Eye-level: the camera is at eye height, looking straight ahead. An illustration: the rope snaps under enormous force and recoils violently backward to the right; the two plain white stick-figure people at the very front are thrown backward off their feet, arms flailing. Their expressions are shocked and alarmed. Their faces and hands are pure paper white. No blood; show only the snapping rope and the people thrown down. The picture contains only the snapped rope and the people at the front being thrown back.",
+   "untested": ["WS、side 句用於插圖群眾"],
+   "remedy": "WS 可能偏 FS；插圖容錯高，N/A"
+  },
+  {
+   "id": "EP4-13-13",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["這麼多人一起拉的力氣，大到連鋼筋都能拉斷。"],
+   "subject": "一根鋼筋被拉斷（物件插入，力量的比喻）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "近景插入，中性背景；一根粗鋼筋橫在畫面中央，被兩端拉扯、從中間斷開、斷口往左右彈開，具體化『連鋼筋都拉斷』的力量",
+   "screen_direction": "left",
+   "action": "粗鋼筋被兩端拉到從中斷裂、斷口迸開的瞬間",
+   "camera": {"cell": "J18", "height_m": "1.4", "look_at": "斷裂的鋼筋（插圖）", "distance_m": "1"},
+   "cast": [
+    {"who": "鋼筋", "visible": "整根橫貫、斷口", "frame_height": "約 50%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A close insert shot. Camera angle: Eye-level: the camera is at the bar's height, looking straight at it. A thick steel reinforcing bar (rebar) is pulled from both ends and snaps in two, the broken metal ends springing apart. The picture contains only the steel bar snapping.",
+   "untested": ["物件近景插入（鋼筋，非實測景別句）"],
+   "remedy": "想要 CU：shot_size 填 CU，prompt 用物件近景插入句；若太寬，剪輯推近"
+  },
+  {
+   "id": "EP4-13-14",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["所以，最好別站在繩子和石頭的前面。"],
+   "subject": "HERO（退到側面）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "前側視，HERO 在畫面中央半轉身、往畫面左邊側步退開，回頭警戒地看繩子方向；平視帶出他聽完危險後的閃避",
+   "screen_direction": "left",
+   "action": "HERO 側身後退、回頭戒備地瞄一眼繩子和石頭、臉上發毛的一刻",
+   "camera": {"cell": "J17", "height_m": "1.6", "look_at": "HERO（J15）", "distance_m": "40"},
+   "cast": [
+    {"who": "HERO", "visible": "膝上、臉、雙手", "frame_height": "約 82%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. HERO (exactly as in the attached HERO character sheet), in his summer clothes, steps sideways out of the way to the left, half-turned, glancing back warily with a nervous, cautious look, moving away from the rope and the stone. HERO's face and hands are pure paper white. The picture contains only HERO.",
+   "untested": ["front34、MLS 句用於 HERO 退場"],
+   "remedy": "front34 大致可做到，N/A"
+  },
+  {
+   "id": "EP4-13-15",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["博士還轉述了埃及學家 Colleen Darnell 說的，古埃及人寫下的工作守則：", "不要偷東西，上工不要喝醉，還有，愛抱怨的人會被看不起。"],
+   "subject": "HERO 手機螢幕上的博士（插入鏡頭）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "近景插入，中性背景；一隻純白的手握著手機、手機正對鏡頭，螢幕上是博士在講話；螢幕上沒有任何字",
+   "screen_direction": "toward",
+   "action": "博士在螢幕上一臉好笑又說教地唸工作守則的一刻",
+   "camera": {"cell": "J16", "height_m": "1.4", "look_at": "HERO 手上的手機螢幕", "distance_m": "0.5"},
+   "cast": [
+    {"who": "HERO（手）", "visible": "握手機的手", "frame_height": "約 70%"},
+    {"who": "PROF", "visible": "螢幕上的博士（上半身）", "frame_height": "螢幕內約 60%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A close insert shot. Camera angle: Eye-level: the camera is at the phone's height, looking straight at it. A smartphone is held in a pure paper white hand. On the screen is PROF (exactly as in the attached PROF character sheet), talking with a slightly amused, lecturing expression. There is no text on the screen. The picture contains only the white hand and the phone.",
+   "untested": ["手機螢幕插入（PROF 在螢幕上），非實測景別句"],
+   "remedy": "想要 CU：shot_size 填 CU，prompt 用手機插入句；若太寬，剪輯推近"
+  },
+  {
+   "id": "EP4-13-16",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["你默默把抱怨吞了回去，退到繩子旁邊，用力拉。"],
+   "subject": "HERO（退到繩側、用剛學的姿勢用力拉）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側視全身，HERO 在畫面中央、側臉朝左（北），手臂打直、身體後傾、屈膝用腿撐，用力拉繩；左右幾個工人側影一起拉，呼應 05 的正確姿勢",
+   "screen_direction": "left",
+   "action": "HERO 咬牙、把抱怨吞回去、擺出剛學到的後傾姿勢用力拉繩的定格，收束整場",
+   "camera": {"cell": "H14", "height_m": "1.6", "look_at": "HERO（I14）", "distance_m": "40"},
+   "cast": [
+    {"who": "HERO", "visible": "全身側面、側臉、雙手", "frame_height": "約 90%"},
+    {"who": "WORKERS", "visible": "左右幾人側身拉繩（全身）", "frame_height": "約 88%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the rope and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. HERO (exactly as in the attached HERO character sheet), in his summer clothes, is braced at the side of the long rope in the correct tug-of-war stance: arms straight, body leaning far back, legs bent and pushing, pulling the thick palm-fibre rope with all his strength, teeth gritted, looking determined and resigned. HERO's face and hands are pure paper white. A few white stick-figure workers (as in the attached WORKERS character sheet) pull on the rope beside him, their faces and hands pure paper white. The picture contains only HERO and the workers beside him.",
+   "untested": ["side 句 trail 改成 rope、去掉 TEEN"],
+   "remedy": "N/A"
+  }
+ ]
+}

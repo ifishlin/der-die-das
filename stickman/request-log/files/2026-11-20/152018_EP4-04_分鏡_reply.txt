@@ -1,0 +1,201 @@
+{
+ "scene_id": "EP4-04",
+ "notes": "這一場是純講解插圖，沒有實景也沒有走位，全部手繪插圖畫風、畫面不能有任何字（數字由旁白講）；插圖裡的人是跟 HERO 同畫風的古埃及路人（純白皮膚），不是 HERO 本人。七句旁白拆成 6 張圖，照「總覽→源頭→好處→問題→解法→勞役」的邏輯推進：①空拍遠景建立『每年夏天氾濫』的大環境（配旁白 1、2，旁白 1 的『搞懂為什麼被抓來』就靠這張把因果鋪開）；②空拍遠景把水的源頭拉到南邊的衣索比亞高地，用高山＋一路往北流的河強調『遙遠、一路流下來』；③平視遠景給黑色淤泥＋兩岸綠油油的農田，呈現『變成最肥沃農田』的好處，放一個滿足的農夫；④平視全景切到單一農夫站在被水淹掉的田邊、拿著用不上的鋤頭發呆，呈現『泡在水裡沒辦法種田』的問題（跟③的勤耕形成對比）；⑤平視遠景法老點名找閒下來的農夫服勞役；⑥平視側面遠景一排工人像埃及壁畫式的隊伍扛土出力，收在白天勞動上，接下一場上船。角度盡量用實測乾淨的 eye／aerial(+EWS)；空拍景別主體是環境，azimuth 不適用填 N/A。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP4-04-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "你很快就搞懂，自己為什麼會被抓來這裡。",
+    "原來每年夏天，尼羅河都會氾濫。"
+   ],
+   "subject": "氾濫的尼羅河谷（整片環境）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "N/A",
+   "angle": "aerial",
+   "composition": "河道橫貫畫面，河水暴漲漫過左右兩岸的田；藍色洪水攤開一大片，沒有人物，純環境總覽。",
+   "screen_direction": "left",
+   "action": "一眼看見整條尼羅河夏天氾濫、淹過兩岸的瞬間，建立『每年都這樣』的大環境。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 600,
+    "look_at": "氾濫的尼羅河谷",
+    "distance_m": 1000
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration (not a photo, not a flat diagram) of the Nile valley during the annual summer flood: the river runs across the land and has overflowed far past its banks, blue flood water spread wide over the fields on both sides. Shot size: Extreme Wide Shot (EWS). The flooded river valley is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. There are no people in the picture.",
+   "untested": [],
+   "remedy": "aerial 實測只在搭 EWS 時成功，已搭 EWS，維持原樣即可。"
+  },
+  {
+   "id": "EP4-04-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那些水，是從遙遠的衣索比亞高地一路流下來的。"
+   ],
+   "subject": "衣索比亞高地與往北流的尼羅河（環境）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "N/A",
+   "angle": "aerial",
+   "composition": "畫面最右邊是高聳崎嶇的高地山脈，上面有雨雲；一條長長的藍色河帶把水從山那邊一路往左（北）拉過乾燥的土地。沒有人物。",
+   "screen_direction": "left",
+   "action": "鏡頭把水的源頭拉到遙遠南方高地，用高山＋一路向左流的長河強調『從很遠的地方一路流下來』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 600,
+    "look_at": "尼羅河與衣索比亞高地",
+    "distance_m": 1000
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration (not a photo, not a flat diagram): tall rugged highland mountains stand at the far right of the picture with rain clouds over them, and a long blue river carries the flood water away from the mountains, flowing toward the left across dry land. Shot size: Extreme Wide Shot (EWS). The river and highlands are very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. There are no people in the picture.",
+   "untested": [],
+   "remedy": "aerial 實測只在搭 EWS 時成功，已搭 EWS，維持原樣即可。"
+  },
+  {
+   "id": "EP4-04-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "大水把淤泥帶到這片乾燥的土地，讓兩岸變成世界上最肥沃的農田之一。"
+   ],
+   "subject": "農夫（次要：黑色淤泥與綠色農田）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "藍色河邊一條發亮的黑色淤泥帶，再往外兩岸鋪滿綠油油的農作物；一個古埃及農夫在畫面中偏右彎腰照顧作物，環境佔大面積。",
+   "screen_direction": "off_down",
+   "action": "農夫滿足地彎腰照料肥沃農田的瞬間，呈現淤泥帶來好處、土地變肥沃（跟後面淹水發呆形成對比）。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.6,
+    "look_at": "農夫",
+    "distance_m": 8
+   },
+   "cast": [
+    {
+     "who": "古埃及農夫（插圖路人，非 HERO）",
+     "visible": "全身",
+     "frame_height": "約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration (not a photo, not a flat diagram): along the edge of the blue river lies a band of shiny black silt mud, and beyond it the banks are covered with lush green crops. In the picture there is only one character: an ancient Egyptian farmer stickman (exactly the thick-outline round-white-head stickman style of the attached character sheets, not HERO); his skin is pure paper white. He is bent over tending the green crops, looking down at the plants with a content, faintly smiling face. Shot size: Wide Shot (WS). The farmer's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of the farmer and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the farmer's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成接近 FS（農夫偏大）；主體是環境，若農夫太大剪輯可裁切，或由主對話在背景補更多農田。front34 為 △，大致可做到。"
+  },
+  {
+   "id": "EP4-04-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "可是田泡在水裡的那幾個月，農夫根本沒辦法種田。"
+   ],
+   "subject": "農夫（站在淹水的田邊發呆）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "一整片田被靜止的藍色洪水淹沒；農夫站在畫面中央偏左的水邊，手垂著拿一把用不上的木鋤，肩膀下垂。",
+   "screen_direction": "off_down",
+   "action": "農夫無精打采站在被淹掉的田邊、看著水發呆的瞬間，呈現『泡在水裡沒辦法種田』的無奈（與前一張勤耕對比）。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.6,
+    "look_at": "農夫",
+    "distance_m": 5
+   },
+   "cast": [
+    {
+     "who": "古埃及農夫（插圖路人，非 HERO）",
+     "visible": "全身（頭到腳）",
+     "frame_height": "約 8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration (not a photo, not a flat diagram): a wide field is completely covered by standing blue flood water. In the picture there is only one character: an ancient Egyptian farmer stickman (exactly the thick-outline round-white-head stickman style of the attached character sheets, not HERO); his skin is pure paper white. He stands at the water's edge holding a useless wooden hoe, shoulders slumped, looking down at the flooded field with a bored, glum, idle expression. Shot size: Full Shot (FS). The farmer's whole body, from head to feet, just fits in the picture. Camera direction: front three-quarter view. The camera is ahead of the farmer and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the farmer's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "front34 為 △，大致可做到；其餘景別角度皆實測 ✓，N/A。"
+  },
+  {
+   "id": "EP4-04-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "於是法老就把這些閒下來的農夫找來，服幾個月的勞役。"
+   ],
+   "subject": "法老與被找來的農夫群",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面左邊一個法老站在高起處、往右指；畫面右邊一排古埃及農夫站著聽命；環境佔不少面積。",
+   "screen_direction": "right",
+   "action": "法老伸手往右點名、農夫列隊聽命的瞬間，呈現『把閒下來的農夫找來服勞役』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.6,
+    "look_at": "法老與農夫群",
+    "distance_m": 9
+   },
+   "cast": [
+    {
+     "who": "法老（插圖角色，非 HERO）",
+     "visible": "全身",
+     "frame_height": "約 5 成"
+    },
+    {
+     "who": "古埃及農夫群（插圖路人，非 HERO）",
+     "visible": "全身",
+     "frame_height": "約 3.5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration (not a photo, not a flat diagram): on the left a pharaoh stickman figure (same thick-outline round-white-head stickman style as the attached character sheets, wearing a simple ancient Egyptian striped headdress and holding a short crook) stands raised up and points to his right toward a row of farmers; on the right, a line of ancient Egyptian farmer stickman figures stand together. All of them are stickman figures in the character-sheet style, not HERO, and all of their skin is pure paper white. The pharaoh has a stern, commanding face; the farmers look resigned and obedient. Shot size: Wide Shot (WS). The figures' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: front view. The camera is in front of the group, facing them. Camera angle: Eye-level: the camera is at the figures' eye height, looking straight ahead.",
+   "untested": [
+    "法老造型（simple ancient Egyptian striped headdress + short crook）不在實測表上，屬內容描述。"
+   ],
+   "remedy": "WS 可能被畫得偏大，若人物太大剪輯可裁切或由主對話補背景；front／eye 皆 ✓。"
+  },
+  {
+   "id": "EP4-04-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "他們一批一批輪流上工，白天出力，天黑收工。"
+   ],
+   "subject": "一排出力勞動的工人隊伍",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "一排古埃及工人以側面、由左往右橫過畫面，每人扛著一籃土或拿著挖掘工具，身體往前傾出力；像埃及壁畫式的隊伍。",
+   "screen_direction": "right",
+   "action": "一整排工人白天側身扛土、往右推進出力的瞬間，收在『一批一批輪流、白天出力』的勞動上。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.6,
+    "look_at": "工人隊伍",
+    "distance_m": 9
+   },
+   "cast": [
+    {
+     "who": "古埃及工人群（插圖路人，非 HERO）",
+     "visible": "全身（側面）",
+     "frame_height": "約 4.5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn teaching illustration (not a photo, not a flat diagram): a row of ancient Egyptian worker stickman figures move in profile across the picture from left to right, each carrying a basket of earth or a digging tool, bodies leaning forward into the effort, like an Egyptian wall-painting procession. All of them are stickman figures in the exact character-sheet style, not HERO, and all of their skin is pure paper white. Their faces, seen from the side, look strained and effortful in the daytime. Shot size: Wide Shot (WS). The workers' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside the workers and sees them exactly from the side. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 可能被畫得偏大，若人物太大剪輯可裁切或由主對話補背景；side／eye 皆 ✓。"
+  }
+ ]
+}

@@ -1,0 +1,173 @@
+{
+ "scene_id": "EP4-01",
+ "notes": "全集冷開場，5 張圖。節奏：先建立「夏天＋HERO 累癱搬箱」的環境與笑料基礎（S01 遠景），再揭露博士悠悠指著窗外太陽（S02 兩人側拍），接著用兩張金字塔插圖把旁白的誇張尺度視覺化（S03 完工金字塔 EWS 建立巨大感、S04 仰視看比汽車還重的大石塊往上堆、賣重量與「一塊接一塊」），最後切回 HERO 低頭看箱子、面無表情的定格笑點（S05 中景，看得到箱子和臉）。本集沒有大動物，不需加拍遠一級。插圖（S03、S04）是古埃及場景、不在實驗室地圖上，相機格子填 N/A。HERO 全程抱著同一箱器材，連戲一致；博士從 S02 起站在 HERO 右側（東側）指向右邊窗外的大太陽（東窗，早上的光）。相機都放在角色南側往北拍，螢幕左＝西、右＝東，與地圖一致。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    { "t": "1", "cell": "L11", "facing": "S", "doing": "雙手抱著器材箱，彎腰踉蹌、張嘴大喘、滿頭大汗" },
+    { "t": "2", "cell": "L11", "facing": "NE", "doing": "抱著箱子，斜眼看向右邊的博士和窗外，一臉狐疑" },
+    { "t": "3", "cell": "L11", "facing": "NE", "doing": "抱著箱子站著聽博士講金字塔" },
+    { "t": "4", "cell": "L11", "facing": "S", "doing": "低頭盯著手上的箱子，面無表情" }
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    { "t": "1", "cell": "O10", "facing": "E", "doing": "站在 HERO 右側，準備開口" },
+    { "t": "2", "cell": "O10", "facing": "E", "doing": "舉起一隻手，悠悠地指向右邊窗外的大太陽" },
+    { "t": "3", "cell": "O10", "facing": "E", "doing": "維持指著窗外，繼續說金字塔的事" }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-01-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "今天，你只不過幫博士搬一箱東西，就喘得像剛跑完馬拉松。"
+   ],
+   "subject": "HERO（抱著器材箱、累到快垮）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面正中略偏下，彎腰抱箱佔中景；四周留大量空間建立夏天的實驗室環境；博士尚未入鏡",
+   "screen_direction": "toward",
+   "action": "HERO 抱著沉重的箱子踉蹌、張嘴大喘、汗水四濺，一副快撐不住的樣子",
+   "camera": {
+    "cell": "L18",
+    "height_m": "1.55",
+    "look_at": "HERO",
+    "distance_m": "3.5"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "全身，頭到腳", "frame_height": "全身約佔畫高五成半" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet). HERO's face and hands are pure paper white. HERO is lugging a big heavy cardboard box of equipment in both arms, hunched forward and staggering as if it is far too heavy, mouth wide open gasping for air with his tongue out, big sweat drops flinging off his head; exhausted, overwhelmed, about-to-collapse expression. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is on the floor ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（HERO 偏大）；HERO 全身仍完整入鏡即可，剪輯時可稍微拉遠框。"
+  },
+  {
+   "id": "EP4-01-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "博士卻在旁邊悠悠說了一句：四千五百年前，有一群人，就在比這還熱的天氣裡，"
+   ],
+   "subject": "PROF（指著窗外太陽講話）；次要：HERO（抱箱狐疑）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面左側、抱著箱子斜眼看；PROF 在畫面右側站直、舉手指向畫面更右邊（畫外的東窗太陽）；兩人側身對著鏡頭",
+   "screen_direction": "off_right",
+   "action": "博士一派輕鬆地抬手指向右邊窗外的大太陽、淡淡微笑；HERO 累癱抱箱、斜眼投來不信任的一瞥",
+   "camera": {
+    "cell": "M16",
+    "height_m": "1.55",
+    "look_at": "PROF",
+    "distance_m": "3.1"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "膝蓋以上、抱著箱子", "frame_height": "膝上約佔畫高七成半" },
+    { "who": "PROF", "visible": "膝蓋以上、一手上舉指向右", "frame_height": "膝上約佔畫高七成" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Two characters are in the picture: HERO (exactly as in the attached HERO character sheet) and PROF (exactly as in the attached PROF character sheet). HERO's face and hands are pure paper white. PROF's face and hands are pure paper white. HERO is on the left, still clutching the big heavy cardboard box of equipment, slumped and dripping with sweat, panting with his mouth open and shooting a sideways skeptical glance; worn-out, unconvinced expression. PROF is on the right, standing tall and relaxed with one arm raised, calmly pointing off past the right edge of the frame; serene, matter-of-fact, with a faint knowing smile. Shot size: Medium Long Shot (MLS). HERO and PROF are framed from the knees up; the bottom edge of the picture is at their knees. Camera direction: side view. The camera is beside them and sees HERO and PROF exactly from the side. Camera angle: Eye-level: the camera is at their eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-01-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "一塊一塊，堆出了一座一百四十六公尺高的石頭山。",
+    "之後將近四千年，它都是全世界最高的建築。"
+   ],
+   "subject": "完工的白色金字塔（插圖，REF_PYRAMID 第三格）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "巨大的白色金字塔位於畫面正中，獨自聳立於空曠沙漠；底部幾隻小駱駝做比例尺，凸顯高度；無角色",
+   "screen_direction": "off_up",
+   "action": "完工、光滑面的白色金字塔在烈日下泛著白光，孤傲矗立，底部的駱駝小到幾乎看不見，襯出它的巨大",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "金字塔",
+    "distance_m": "300"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. No people in the picture. A single colossal finished smooth-sided white limestone pyramid, exactly like the completed white pyramid in the attached REF_PYRAMID reference, gleaming pale and towering alone over a vast empty desert under a blazing sun, with a few tiny camels at its base for scale. Shot size: Extreme Wide Shot (EWS). The pyramid sits in a vast desert and the wide environment is the main subject. Camera direction: front view. The camera faces one flat side of the pyramid head-on. Camera angle: Eye-level: the camera is at ground eye height, looking straight ahead.",
+   "untested": [
+    "EWS 句改成以金字塔（非 HERO）為主體、放進沙漠環境，未實測。"
+   ],
+   "remedy": "插圖以 REF_PYRAMID 為準；若金字塔被畫太小，剪輯時推近，或下一版改用 WS 句。"
+  },
+  {
+   "id": "EP4-01-04",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "而且他們差不多每隔幾分鐘，就得放上一塊比汽車還重的大石頭。",
+    "就這樣一塊接一塊，整整蓋了一代人。"
+   ],
+   "subject": "一塊比汽車還重的大石塊，被一群小工人往斜坡上推（插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "畫面中央是一塊巨大石塊正被拉上建造斜坡，四周是拉繩、撬槓的小小古埃及工人；仰視讓石塊壓在工人上方，凸顯重量；背景是半完工的金字塔",
+   "screen_direction": "off_up",
+   "action": "巨石正被撬上斜坡頂、即將就定位，小工人們拉繩撐槓、使盡全力，石塊明顯比汽車還大還重",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "大石塊",
+    "distance_m": "12"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A single colossal pale limestone block, clearly bigger and heavier than a car, being hauled and levered up a long construction ramp by a team of tiny straining ancient Egyptian workers pulling thick ropes and pushing wooden levers, the giant block tipping into place near the top of a half-built pyramid. The workers are tiny simple cartoon figures. Shot size: Wide Shot (WS). The giant stone block and the workers around it are clearly visible, with a lot of the construction ramp around them. Camera direction: front view. The camera faces the ramp and the block head-on. Extreme low-angle shot, ground-level camera perspective, looking up at the colossal stone block looming overhead.",
+   "untested": [
+    "WS＋Extreme low-angle 句套用在插圖（石塊、古埃及工人，非 HERO），未實測。"
+   ],
+   "remedy": "若仰視讓石塊變小或拉成更遠景別，退回 eye-level WS；重點是石塊明顯比工人與汽車大。"
+  },
+  {
+   "id": "EP4-01-05",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "你低頭看了看手上的箱子。（停）你不信。"
+   ],
+   "subject": "HERO（低頭看箱子、面無表情）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 置中，雙手抱著的箱子在畫面下緣（腰部一帶），臉在上半；正對鏡頭、低頭看箱",
+   "screen_direction": "off_down",
+   "action": "HERO 低頭盯著手上的箱子，隨即露出面無表情、一眉微挑、嘴抿成一條線的「我才不信」定格",
+   "camera": {
+    "cell": "L14",
+    "height_m": "1.55",
+    "look_at": "HERO",
+    "distance_m": "1.5"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "腰部以上、含臉和抱著的箱子", "frame_height": "頭到腰約佔畫高八成" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet). HERO's face and hands are pure paper white. HERO is holding the big heavy cardboard box of equipment in both arms, tilting his head down to stare at the box; flat, deadpan, utterly unconvinced expression, one eyebrow raised, lips pressed into a flat line, still glistening with sweat. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is on the floor ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常被畫成 MLS（膝上）；仍看得到箱子和臉，可接受，剪輯時再推近到胸上強化定格笑點。"
+  }
+ ]
+}

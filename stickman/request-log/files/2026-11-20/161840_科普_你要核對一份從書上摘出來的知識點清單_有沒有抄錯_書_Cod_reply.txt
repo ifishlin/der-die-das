@@ -1,0 +1,24 @@
+書的照片已逐字對過。以下為結果：
+
+```json
+{"page": "p.49",
+ "checks": [
+  {"n": 1, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 2, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 3, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 4, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 5, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 6, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 7, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 8, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 9, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 10, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 11, "ok": false, "problem": "這張照片（p.49）只到「When I emailed Pier Paolo Petrone, a forensic anthropologist at the University of Naples Federico II, asking if any」就結束，引用的核心句子「many did. \"But likely only those who took immediate action.\"」在 p.50，這一頁無法逐字核對；須看 p.50 才能確認。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "噴發時可聽見一聲遠方的轟隆聲迴盪在街道上", "quote": "hear a distant boom echo through the streets", "pages": ["p.49"], "type": "描述", "who": "作者", "hedge": "", "convert": ""}
+ ],
+ "unclear": [
+  {"where": "第 11 點的引用句", "problem": "p.49 頁尾只到「asking if any」，Petrone 回覆的原句在 p.50，照片看不到，無法逐字比對。"}
+ ]}
+```

@@ -1,0 +1,61 @@
+查證完成。以下是結果。
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 105,
+  "verdict": "正確",
+  "sci": "主流埃及學界普遍認定左塞爾的「階梯金字塔」（薩卡拉，約公元前 2670 年）由其大臣印和闐設計，做法正是把傳統的「馬斯塔巴」式扁平長椅狀石墓一層層往上疊成六階，是後來真正金字塔的前身。mastaba 一詞在阿拉伯文裡本就是「長椅」的意思，書上的比喻很準。",
+  "src": [["World History Encyclopedia, Old Kingdom of Egypt", "https://www.worldhistory.org/Old_Kingdom_of_Egypt/"], ["Wikipedia, Pyramid of Djoser（供查原始出處）", "https://en.wikipedia.org/wiki/Pyramid_of_Djoser"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 106,
+  "verdict": "正確",
+  "sci": "斯尼夫魯早期的兩座金字塔確實出問題：美杜姆（Meidum）金字塔側面角度太陡（約 54 度），結構撐不住而崩塌（學界對是施工中還是後來崩塌仍有爭論）；達舒爾的「彎曲金字塔」則蓋在黏土、沙、礫石的鬆軟地基上，起初以 55 度角興建，蓋到一半基座出現裂縫，工匠只好把角度改成約 43 度，才出現那個「彎折」的外形。「鬆軟地基」和「角度太陡」兩個錯誤都有文獻支持。",
+  "src": [["Wikipedia, Bent Pyramid（引述達舒爾鬆軟地基與改角度）", "https://en.wikipedia.org/wiki/Bent_Pyramid"], ["World History Encyclopedia, Old Kingdom of Egypt", "https://www.worldhistory.org/Old_Kingdom_of_Egypt/"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 107,
+  "verdict": "正確",
+  "sci": "古埃及後期確實分成 42 個行政區，希臘人稱 nomes（埃及原字 sepat），其中上埃及 22 個、下埃及 20 個。要注意這個數字是後期才固定的，早期區數較少且隨時代變動，但「42」是學界與古籍沿用的經典數字。",
+  "src": [["Encyclopædia Britannica, \"Nome\" (ancient Egyptian government)", "https://www.britannica.com/topic/nome-ancient-Egyptian-government"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 108,
+  "verdict": "大致正確",
+  "sci": "古埃及的治理確實涵蓋王室朝廷、軍隊、神廟／祭司集團、以及以書記官為骨幹的民政體系，書上列的四大塊方向沒錯。但要注意兩點：一是用「church（教會）」形容埃及的神廟與祭司並不精確，埃及是多神信仰、沒有「教會」這種組織；二是「分成四個部門」是一種簡化說法，並非古埃及真有這樣的正式建制。",
+  "src": [["Brewminate, Hierarchy and Organization in the Government of Ancient Egypt", "https://brewminate.com/hierarchy-and-organization-in-the-government-of-ancient-egypt/"], ["Ancient Egypt Online, The Government of Ancient Egypt", "https://www.ancient-egypt-online.com/ancient-egypt-government.html"]],
+  "fix": "法老底下大致可以分成幾個系統在運作：管國王身邊事務的王室、打仗的軍隊、管神廟祭祀的祭司，還有一大群負責收稅、記帳、管地方的文官。（把「教會」改成「神廟／祭司」，並說成「大致可分成幾個系統」而不是硬性的四部門。）",
+  "confidence": "中"},
+
+ {"n": 109,
+  "verdict": "大致正確",
+  "sci": "古埃及到波斯時期（約公元前 525 年）之前確實沒有鑄幣，經濟靠成熟的以物易物，稅也是「實物稅」——用穀物、牛隻、布料、油、啤酒等實物繳納，這些都有充分文獻支持。至於「三角洲繳牛、南方繳穀」則是作者的舉例式簡化：穀物其實是全國最主要的稅目、南北都種，三角洲因為有草場而較偏畜牧，這個對比方向對，但不宜講得太絕對。",
+  "src": [["World History Encyclopedia, Ancient Egyptian Taxes & the Cattle Count", "https://www.worldhistory.org/article/1012/ancient-egyptian-taxes--the-cattle-count/"]],
+  "fix": "那時候的埃及沒有錢幣，大家用東西換東西，連繳稅也是繳實物——各地拿自己盛產的來交，養牛的地方繳牛、種麥的地方繳穀子。（保留趣味，但不把三角洲／南方講成唯一固定的對應。）",
+  "confidence": "中"},
+
+ {"n": 110,
+  "verdict": "正確",
+  "sci": "古埃及收成稅（Shemu）常被引用的基準稅率大約就是收成的一成（10%）左右，書上「約 10%」的說法站得住腳。可補一句：實際稅率會因地區、年份而不同，加上其他各種實物與勞役負擔後，農民實際被拿走的往往更多，所以 10% 比較像「田賦的基準比例」。",
+  "src": [["UCLA Encyclopedia of Egyptology, \"Economy\"（學術）", "https://escholarship.org/content/qt2t01s4qj/qt2t01s4qj.pdf"], ["World History Encyclopedia, Ancient Egyptian Taxes & the Cattle Count", "https://www.worldhistory.org/article/1012/ancient-egyptian-taxes--the-cattle-count/"]],
+  "fix": "",
+  "confidence": "中"},
+
+ {"n": 111,
+  "verdict": "正確",
+  "sci": "古埃及確實用「尼羅河水位計（nilometer）」量每年氾濫的水位高度——水位高代表淤泥多、收成好，官方就據此、再參考往年收成，替各地核定當年的稅額，而不是等收割後一株株去數農民的產量。這是文獻與考古都支持的做法，工具名稱 nilometer 也確認無誤（書上對這個字的辨讀疑慮可以放心）。",
+  "src": [["National Geographic, \"Ancient Device for Determining Taxes Discovered in Egypt\"", "https://www.nationalgeographic.com/history/article/160517-nilometer-discovered-ancient-egypt-nile-river-archaeology"], ["Wikipedia, Nilometer（供查原始出處）", "https://en.wikipedia.org/wiki/Nilometer"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 112,
+  "verdict": "正確",
+  "sci": "書中這段是作者訪問埃及學家 Colleen Darnell 的引述，確切用字只能以書本為準，無法另外獨立查證；但其「內容」與現存古埃及智慧文獻（sebayt）高度吻合：《阿尼箴言》《卜塔霍特普箴言》等都勸誡不要酗酒、不要在不該喝的場合喝醉，《亡靈書》的「清白告白」裡明文說「我沒有偷竊」，而這類箴言普遍推崇沉著安靜的人、貶抑愛爭吵抱怨的「暴躁之人」。所以引述的道德觀是有根據的。",
+  "src": [["Wikipedia, Instruction of Amenemope / The Maxims of Ptahhotep（埃及智慧文獻與勸誡酗酒、推崇沉靜）", "https://en.wikipedia.org/wiki/The_Maxims_of_Ptahhotep"], ["Wikipedia, Colleen Darnell（確認其埃及學家身分與新王國文獻專長）", "https://en.wikipedia.org/wiki/Colleen_Darnell"]],
+  "fix": "",
+  "confidence": "中"}
+]}
+```

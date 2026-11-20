@@ -1,0 +1,35 @@
+讀完照片後，我發現一個嚴重的問題，先說明再給 JSON。
+
+這張 `p56.jpg` 拍到的是一個跨頁。左頁（p.56）內容是：岩漿減壓→普林尼式柱（Plinian column，以小普林尼命名、他在那不勒斯灣對岸記錄噴發）、柱高超過十二英里、火山學家 James Moore（USGS）「別住在火山旁」、火山因肥沃土壤吸引人類聚居。右頁內容是：小普林尼形容黑暗「像關著的房間裡燈熄了」、Petrone 談逃生者往北／往南、龐貝到那不勒斯的路、最後才帶出「往北會經過 Herculaneum……維蘇威第一波火山碎屑湧流掃過 Herculaneum」。
+
+**清單上 n.44～54 這些句子（四英里、避開落灰、焦痕溫度、石膏灌模、玻璃化腦、九英里、下午兩點、每小時三英里、大理石大宅圖書館），一句都不在這張照片裡。** 它們是在這一頁「帶出 Herculaneum」之後的**下一頁（或再後面）**才展開的細節。也就是說這份清單把 n.44～54 的頁碼標錯了（應該在 p.56 的後面）。
+
+```json
+{"page": "p.56",
+ "checks": [
+  {"n": 44, "ok": false, "problem": "此句不在這張照片內。p.56 講的是普林尼式柱、James Moore、火山吸引聚居；右頁結尾才首次帶出 Herculaneum。『barely four miles west of the volcanic vent』這類細節在後一頁，頁碼標錯。", "quote": "", "claim_zh": ""},
+  {"n": 45, "ok": false, "problem": "此句不在這張照片內（盛行風讓 Herculaneum 避開落灰浮石的說法，p.56 沒有，在後頁）。", "quote": "", "claim_zh": ""},
+  {"n": 46, "ok": false, "problem": "此句不在這張照片內（受熱氣體與火山灰幾乎瞬間殺死城裡所有人，p.56 沒有，在後頁）。", "quote": "", "claim_zh": ""},
+  {"n": 47, "ok": false, "problem": "此句不在這張照片內（考古學家發現焦痕／溫度，p.56 沒有，在後頁）。", "quote": "", "claim_zh": ""},
+  {"n": 48, "ok": false, "problem": "此句不在這張照片內（石膏灌空腔重現姿態，p.56 沒有，在後頁）。", "quote": "", "claim_zh": ""},
+  {"n": 49, "ok": false, "problem": "此句不在這張照片內（pugilistic 防禦姿勢／死得太快，p.56 沒有，在後頁）。", "quote": "", "claim_zh": ""},
+  {"n": 50, "ok": false, "problem": "此句不在這張照片內（頭骨內玻璃質腦組織／玻璃化，p.56 沒有，在後頁）。", "quote": "", "claim_zh": ""},
+  {"n": 51, "ok": false, "problem": "此句不在這張照片內（Herculaneum 距龐貝略多於九英里，p.56 沒有，在後頁）。p.56 只說往北會經過 Herculaneum。", "quote": "", "claim_zh": ""},
+  {"n": 52, "ok": false, "problem": "此句不在這張照片內（火山碎屑流約下午兩點襲擊 Herculaneum，p.56 沒有，在後頁）。", "quote": "", "claim_zh": ""},
+  {"n": 53, "ok": false, "problem": "此句不在這張照片內（每小時三英里走四小時、一點多抵達，p.56 沒有，在後頁）。", "quote": "", "claim_zh": ""},
+  {"n": 54, "ok": false, "problem": "此句不在這張照片內（大理石大宅與古典圖書館的度假城描述，p.56 沒有，在後頁）。p.56 只以『small Roman resort town of Herculaneum』一句帶過。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "噴發的灰氣雲上升形成『普林尼式柱』（Plinian column），以小普林尼命名，他在那不勒斯灣對岸記錄了這次維蘇威噴發", "quote": "the eruptive cloud of ash and gas rose in a formation called a Plinian column (named after Pliny the Younger, who documented the Vesuvius eruption from across the Bay of Naples)", "pages": ["p.56"], "type": "描述", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "維蘇威的噴發柱升到超過十二英里高，遠高於客機巡航高度", "quote": "Mount Vesuvius's column rose more than twelve miles high, far above the cruising altitude of passenger jets", "pages": ["p.56"], "type": "數字", "who": "作者", "hedge": "more than", "convert": "十二英里約 19.3 公里"},
+  {"claim_zh": "火山學家、USGS 榮譽退休科學家 James Moore 說，躲過火山噴發最好的辦法很簡單：『別住在火山旁！』", "quote": "When I asked James Moore, a volcanologist and scientist emeritus at the U.S. Geological Survey, how best to survive an erupting volcano, he said it's quite easy: \"Don't live near one!\"", "pages": ["p.56"], "type": "專家說法", "who": "James Moore", "hedge": "", "convert": ""},
+  {"claim_zh": "火山往往吸引人類聚居，因為過去的噴發能產生富含養分的土壤", "quote": "volcanoes tend to attract human societies because their previous eruptions can produce nutrient-rich soils", "pages": ["p.56"], "type": "因果", "who": "作者", "hedge": "tend to", "convert": ""},
+  {"claim_zh": "小普林尼在筆記裡形容那片黑暗『不太像無月或陰天的夜晚，而像在上鎖的房間裡燈熄滅了』", "quote": "\"not so much a moonless or cloudy night, but as if the lamp had gone out in a locked room.\"", "pages": ["p.56"], "type": "描述", "who": "小普林尼", "hedge": "", "convert": ""},
+  {"claim_zh": "Petrone 說有證據顯示往北、往南都有人成功逃生；根據倖存者留下的文字記錄，成功逃出的人多半往北逃，而遇難者的遺體多在南邊被發現", "quote": "there's evidence of successful escapes to both north and south ... the written records of those who survived suggest that most of the successful escapees fled north—while most of the bodies of the attempted escapees ... were found to the south", "pages": ["p.56"], "type": "專家說法", "who": "Pier Paolo Petrone", "hedge": "suggest", "convert": ""},
+  {"claim_zh": "往北逃會經過小型羅馬度假城 Herculaneum，而維蘇威的第一波火山碎屑湧流掃過了 Herculaneum", "quote": "you'll pass through the small Roman resort town of Herculaneum on your way to Naples—and Vesuvius's first pyroclastic surge flowed through Herculaneum", "pages": ["p.56"], "type": "描述", "who": "作者", "hedge": "", "convert": ""}
+ ],
+ "unclear": [
+  {"where": "右頁最上方被書頁彎曲／裁切遮住的一兩行（『Eventually, the falling cloud will become so … the darkness as …』之前）", "problem": "開頭幾個字被陰影和頁緣遮住，無法逐字確認，但不影響已能辨讀的內容。"},
+  {"where": "整頁頁碼歸屬", "problem": "照片是跨頁，左頁為 p.56、右頁應為 p.57；清單 n.44～54 的內容在兩頁都找不到，應在再往後的頁面，請重新確認 n.44～54 要對應的照片頁。"}
+ ]}
+```

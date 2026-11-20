@@ -1,0 +1,100 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch05_pompeii/pages/p53.jpg（書的 p.53；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 33,
+  "claim_zh": "深處岩石因為壓力升高了熔點，所以保持固態",
+  "quote": "the melting point of rock deep underground [rises], as does the pressure, and the mantle remains solid",
+  "pages": [
+   "p.53"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）"
+ },
+ {
+  "n": 34,
+  "claim_zh": "岩漿生成需要不尋常的壓力下降，或不尋常地混入物質（水）來降低熔點",
+  "quote": "magma creation requires an unusual drop in pressure, or an unusual pollution … to … lower its melting temperature",
+  "pages": [
+   "p.53"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）"
+ },
+ {
+  "n": 35,
+  "claim_zh": "水滲入地函是造就世界上許多最強火山的原因",
+  "quote": "The intrusion of water into the mantle is the process responsible for many of the world's most powerful volcanoes",
+  "pages": [
+   "p.53"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）"
+ },
+ {
+  "n": 36,
+  "claim_zh": "水降低板塊熔點，促成了史上最具災難性的噴發之一（喀拉喀托，1883 年）",
+  "quote": "one of the most catastrophic eruptions in history … [Krakatoa], 1883",
+  "pages": [
+   "p.53"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（火山名與年份傾斜難辨，待重拍核對）"
+ },
+ {
+  "n": 37,
+  "claim_zh": "以龐貝這例子，非洲板塊往下隱沒到亞得里亞海／歐亞板塊之下，沿義大利東側",
+  "quote": "[Italy's boot / African plate] … beneath the Eurasian plate … Italy's east coast",
+  "pages": [
+   "p.53"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（板塊名傾斜難辨，待重拍核對）"
+ },
+ {
+  "n": 38,
+  "claim_zh": "含水的海洋板塊隱沒到大陸板塊之下、潛入較熱深處，使地函熔化，較輕的岩漿上冒",
+  "quote": "When an oceanic plate with water in its structure submerges beneath a continental slab … the weakened mantle melts and the lighter magma bubbles [toward the surface]",
+  "pages": [
+   "p.53"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）"
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.53",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.53"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

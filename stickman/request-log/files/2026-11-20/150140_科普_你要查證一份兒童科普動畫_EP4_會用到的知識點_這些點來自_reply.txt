@@ -1,0 +1,61 @@
+四個研究群組都回來了，來源都經實際開頁確認。整理成最終 JSON：
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 73,
+  "verdict": "大致正確",
+  "sci": "尼羅河氾濫季（Akhet）淹沒農田、農民無法耕作，確實成為金字塔工程的輪調勞力來源，這是主流共識。但完整圖像是雙層勞動力：吉薩工人城另有一批全年受雇的常設技術工匠（Lehner 推估輪調宿舍一次約容 1,600～2,000 名臨時工），而且這些人不是奴隸——骨骸與大量牛羊骨顯示他們吃得很好。原書框架抓到一半，但不能漏掉『另有常設工匠』和『徵調農民、非奴隸』兩點。",
+  "src": [["Harvard Magazine 2003, \"Who Built the Pyramids?\"（引 Mark Lehner；輪調工班、非奴隸、1,600–2,000 名輪調勞工）", "https://www.harvardmagazine.com/2003/07/who-built-the-pyramids-html"], ["Ancient Egypt Research Associates (AERA), \"The Lost City of the Pyramid Builders\"", "https://aeraweb.org/projects/lost-city/"]],
+  "fix": "尼羅河一年一次的大洪水把農田都淹了，農民沒辦法種田，就輪流去幫忙蓋金字塔。他們不是奴隸喔——有專門的師傅帶著，大家還吃得飽飽的，有麵包、啤酒和肉。",
+  "confidence": "高"},
+
+ {"n": 74,
+  "verdict": "大致正確",
+  "sci": "吉薩有人工港口／水道的考古與文獻證據：Sheisha 等人 2022 年在 PNAS 用花粉與沉積岩心重建尼羅河古『庫夫支流』，證實造金字塔期間水能通到距河約 7 公里的吉薩工地；Lehner 的 AERA 2009 年在吉薩發現人工盆地，文獻稱此港為 She-Khufu。紅海岸 Wadi al-Jarf 的『梅勒日記』（Tallet & Marouard 2013）也記錄用船把 Tura 白石灰岩運到吉薩。但『上千艘船』沒有依據——梅勒日記顯示的是小規模操作（約 40 名船員、每月運約 200 塊石），無任何來源支持上千艘船同時運料。",
+  "src": [["Sheisha, H. et al. 2022, PNAS, \"Nile waterscapes facilitated the construction of the Giza pyramids\"（經 phys.org 轉述確認，PNAS 原文被 403 擋）", "https://phys.org/news/2022-08-khufu-nile-river-giza-stones.html"], ["Diary of Merer（轉述 Tallet & Marouard 2013；Tura→吉薩水運、港口 She-Khufu、約 40 名船員）", "https://en.wikipedia.org/wiki/Diary_of_Merer"]],
+  "fix": "古埃及人很聰明，他們利用尼羅河的一條支流，開出水道和港口，直接把沉重的石頭用船運到金字塔工地旁邊。有位叫梅勒的官員還把運石頭的日子寫進日記，流傳到今天！（不要講『上千艘船』這種沒根據的數字。）",
+  "confidence": "高"},
+
+ {"n": 75,
+  "verdict": "大致正確",
+  "sci": "大金字塔完工時確實整座覆有白色 Tura 石灰岩外殼、磨得光滑、在陽光下發亮，這點正確；外殼後來多被剝除搬去開羅建城，今天只剩少數底層原位石，卡夫拉金字塔頂端仍保留部分原殼。但『半完工就閃亮白殼』這個細節有誤：拋光是整座連頂石蓋好之後、由上往下削修研磨才完成的，『半完工』階段只是階梯狀的粗核心、灰撲撲不會發亮。",
+  "src": [["Great Pyramid of Giza（Tura 石材、外殼剝除始末）", "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"], ["Giza pyramid complex（卡夫拉頂端保留外殼）", "https://en.wikipedia.org/wiki/Giza_pyramid_complex"]],
+  "fix": "金字塔要整座蓋好以後，工人才從塔頂一路往下把外層的白石灰岩磨得又平又亮，完工時在陽光下閃閃發光；還在半途、只堆成一層層階梯的時候，它其實是灰撲撲、沒發亮的。",
+  "confidence": "高"},
+
+ {"n": 76,
+  "verdict": "大致正確",
+  "sci": "Redding 與 Lehner 確認住在營區、有住房的是技術工匠（非奴隸），吃的是上等牛肉（多為兩歲以下公牛）。但『每人每天 1/4 磅（113 克）牛肉』這個精確數字查不到 Redding/Lehner 原始出處，應是書作者從『每天約 4,000 磅肉 ÷ 約一萬人』自行換算而來；而且 Redding 強調肉是按身分分配（監工吃牛肉多、一般工人以羊/山羊為主），不是人人每天都有定量牛肉。量級接近，但精確數字無來源。",
+  "src": [["Harvard Magazine 2003, \"Who Built the Pyramids?\"（prime beef、兩歲以下公牛、skilled workers）", "https://www.harvardmagazine.com/2003/07/who-built-the-pyramids-html"], ["Owen Jarus, NBC News（引 Redding：每人每天需 45–50 克蛋白質、一半來自肉）", "https://www.nbcnews.com/id/wbna51643726"]],
+  "fix": "考古學家發現，蓋金字塔的技術工匠吃的是上等牛肉——每天大概幾口、相當於一小塊的份量，而不是天天大吃。（避免寫死『1/4 磅』這個沒出處的精確數字。）",
+  "confidence": "中"},
+
+ {"n": 77,
+  "verdict": "大致正確",
+  "sci": "『牛來自遙遠的尼羅河三角洲牧場、再趕到吉薩宰殺』和『牛是奢侈品』都有 Redding 明確依據。但『整整一年工資』查不到 Redding/Lehner 這樣說，是書作者的比喻。用學術價格表核算：古埃及一頭牛約 50～120 deben，工匠家庭月收入約 12～15 deben，即一頭牛約等於 4 個月到近一年薪水——取上限才接近『一年』，一般約半年多，且這是新王國物價、非吉薩當時（舊王國）的數字。方向對（牛極貴），但『整整一年』偏高。",
+  "src": [["Richard Redding, via Archaeology Wiki 2013, \"Feeding the Pyramid Builders\"（三角洲牧場→吉薩宰殺）", "https://www.archaeology.wiki/blog/2013/04/25/feeding-the-pyramid-builders/"], ["\"Money, Lack of Money and Barter in Ancient Egypt\", Facts and Details（牛價 ox≈111 deben、cow≈50 deben）", "https://africame.factsanddetails.com/article/entry-1208.html"]],
+  "fix": "在古埃及，一頭牛貴得嚇人，差不多要工人攢上大半年的薪水，而且牛要從好遠的尼羅河三角洲牧場趕過來——所以能吃到牛肉，是很體面的事。",
+  "confidence": "中"},
+
+ {"n": 78,
+  "verdict": "大致正確",
+  "sci": "『每天消耗超過 4,000 磅（約 1,800 公斤）』是 Redding 本人根據營區出土約 17.5 萬件動物骨骸（約 8,000 件牛骨、25,000 件羊/山羊骨、1,000 件豬骨）推估的，有多個來源一致確認。但關鍵修正：這 4,000 磅是『肉』——牛、綿羊、山羊都算進去，不是只有牛肉。知識點寫成『牛肉』不精確，牛肉只佔其中一部分。",
+  "src": [["Owen Jarus, NBC News（引 Redding：每天宰殺超過 4,000 磅肉，來自牛、羊、山羊）", "https://www.nbcnews.com/id/wbna51643726"], ["Archaeology Wiki 2013, \"Feeding the Pyramid Builders\"（4,000 磅肉/天、骨骸計數）", "https://www.archaeology.wiki/blog/2013/04/25/feeding-the-pyramid-builders/"]],
+  "fix": "考古學家數了營區裡好幾萬根動物骨頭，估出這裡每天要吃掉超過 4,000 磅（將近 2 公噸）的肉——牛肉、羊肉都算進去，才餵得飽上萬個工人。",
+  "confidence": "高"},
+
+ {"n": 79,
+  "verdict": "大致正確",
+  "sci": "吉薩工人城出土約 17.5 萬根獸骨以牛、綿羊、山羊為主，工地每天供應超過 4,000 磅肉，外加魚、豆類、穀物和啤酒，麵包與啤酒以配給口糧形式發放；Redding 說工人在這裡吃得比自己村裡好。『鯰魚是給低階勞工、上等牛肉和大魚留給上層』出現在 LiveScience／Scientific American 報導但全文打不開，列為旁證。『牛蹄燉菜』和『乾麵包泡進啤酒軟化』是原書生動描述，查不到考古出處，建議旁白別講死。",
+  "src": [["Archaeology Magazine 2013, \"Pyramid Builders Were Well Fed\"（每天 4,000 磅牛羊山羊肉＋魚＋啤酒）", "https://archaeology.org/news/2013/04/25/130425-egypt-pyramids-food/"], ["Ancient Egypt Research Associates, \"Feeding Pyramid Workers\"（麵包＋啤酒作為王室工程配給口糧）", "https://aeraweb.org/feeding-pyramid-workers/"]],
+  "fix": "考古學家在工人村挖出十幾萬根動物骨頭——大多是牛、羊和山羊。金字塔工人每天分到大量的肉、魚、麵包和啤酒，吃得比在家鄉還好；鯰魚算比較差的部分，上等的牛肉和大魚通常留給管事的。（避免斷言『牛蹄燉菜』和『乾麵包泡啤酒軟化』，查不到出處。）",
+  "confidence": "中"},
+
+ {"n": 80,
+  "verdict": "大致正確",
+  "sci": "古埃及啤酒『營養重於酒精』的核心說法站得住：它濃稠混濁、含大量固形物、近似粥（被稱為『液體麵包』），酒精濃度低（約 2～4%），是全家人（含小孩）每餐飲用的日常主食與熱量來源，而非主要用來喝醉——KU Leuven 復原研究直接支持。只有『略帶酸味、像康普茶』這個比喻找不到硬出處（古法發酵常帶微酸、方向合理，但屬延伸描述），建議語氣放軟。",
+  "src": [["KU Leuven, \"For ancient Egyptians, beer was the best thing since sliced bread\"（每餐喝、全家含小孩、約 3～4% 低酒精、營養主食）", "https://www.arts.kuleuven.be/scicomm/english/research-stories/interviews/egyptian-beer"]],
+  "fix": "古埃及的啤酒跟我們想的不一樣——它濃濃稠稠像粥，酒精很淡（大概只有 3、4%），連小孩都喝；對他們來說，啤酒不是用來喝醉的，而是每天重要的食物和營養來源，有點像能喝的麵包。喝起來可能有點酸。",
+  "confidence": "高"}
+]}
+```

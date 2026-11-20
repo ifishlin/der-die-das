@@ -1,0 +1,28 @@
+The relevant text for claims 17–27 is **not legible on this photo**. This page (p.51) is dominated by a full-page illustration — the "EVACUATION ROUTE" map of Pompeii (labeled "79 CE, 10 A.M.–ISH") and the Bay of Naples inset map. The only body text on the page is the top-left column (about Pompeiians not evacuating / falling ash), and the right-hand column is cut off at the book's edge and unreadable. None of the quoted sentences (Vesuvius eruption stages, supersonic vent, melting lead, August 24 wind, pyroclastic flows, August 25, etc.) appears in any legible text here.
+
+I cannot confirm these against this image, so per your instruction I'm reporting them as unclear rather than guessing.
+
+```json
+{"page": "p.51",
+ "checks": [
+  {"n": 17, "ok": false, "problem": "此頁照片看不到這句。p.51 幾乎整頁是『EVACUATION ROUTE』龐貝地圖＋拿坡里灣插圖，唯一可讀內文是左上欄（關於沒立刻疏散、落灰），右欄被書邊裁掉不可辨識，無法逐字核對。", "quote": "", "claim_zh": ""},
+  {"n": 18, "ok": false, "problem": "同上，quote 對應內文不在此頁可辨識範圍，無法核對。", "quote": "", "claim_zh": ""},
+  {"n": 19, "ok": false, "problem": "同上，無法核對。", "quote": "", "claim_zh": ""},
+  {"n": 20, "ok": false, "problem": "同上，無法核對（含『melt lead』數字/換算也無法確認）。", "quote": "", "claim_zh": ""},
+  {"n": 21, "ok": false, "problem": "同上，無法核對（August 24、south-southwest 皆無法在此頁確認）。", "quote": "", "claim_zh": ""},
+  {"n": 22, "ok": false, "problem": "同上，無法核對。", "quote": "", "claim_zh": ""},
+  {"n": 23, "ok": false, "problem": "同上，無法核對。", "quote": "", "claim_zh": ""},
+  {"n": 24, "ok": false, "problem": "同上，無法核對。", "quote": "", "claim_zh": ""},
+  {"n": 25, "ok": false, "problem": "同上，無法核對（autobahn speeds、數百英尺換算皆無法確認）。", "quote": "", "claim_zh": ""},
+  {"n": 26, "ok": false, "problem": "同上，無法核對（1,800 degrees Fahrenheit、miles 等數字/單位皆無法確認）。", "quote": "", "claim_zh": ""},
+  {"n": 27, "ok": false, "problem": "同上，無法核對（August 25、early morning 皆無法在此頁確認）。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [],
+ "unclear": [
+  {"where": "整頁 p.51", "problem": "此頁幾乎是整頁插圖：上半為『EVACUATION ROUTE / 79 CE, 10 A.M.–ISH』龐貝城地圖（標註 Road to Vesuvius、No!!、Do not stop here. Central Baths、Eastern Roads、Market、The Forum、Roads to Stabia、Road to Beach），下半為 BAY OF NAPLES 插圖（Naples、Pompeii、Herculaneum、Misenum、Stabia、Capri）。清單 n17–n27 的 quote 都不出現在此頁可辨識的文字中。"},
+  {"where": "左上欄內文", "problem": "僅能讀到殘句：『…ed the eruption, he wrote back to say that man[y]… y those who took immediate action.” …nstead of immediately evacuating, some Pom[peians]… from the falling ash. This may seem pruden[t]』，與 n17–n27 內容不符。"},
+  {"where": "右欄內文", "problem": "被書的右側邊緣裁切，只剩每行開頭 1–2 個字（Fort…, Vesu…, and, out, sea… 等），完全無法辨識整句，因此無法確認 n17–n27 的 quote 是否在此頁。"}
+ ]}
+```
+
+補充說明（非 JSON 內容）：清單把 n17–n27 標在 p.51，但這張照片的 p.51 是地圖頁，看不到那些句子。很可能是**頁碼對應有誤**，或需要**右欄完整、未被裁切的照片**才能核對。建議重拍 p.51 右欄（或確認這些知識點實際落在哪一頁）後再核。

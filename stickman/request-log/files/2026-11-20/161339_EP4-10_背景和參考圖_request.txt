@@ -1,0 +1,31 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 10 場　插圖：博士上課——金字塔怎麼來的（手機螢幕＋手繪插圖，不是實景）・—
+
+【四、地圖】插圖：博士上課——金字塔怎麼來的
+這一幕不是實景，沒有地圖，也沒有走位：blocking 填空陣列 []，camera.cell 填 N/A，shots[].t 填 0；【六】裡跟地圖有關的檢查不用做。
+
+【參考圖】
+- REF_HEMIUNU：總建築師 Hemiunu：又高又胖、彩色珠子領圈、百褶長裙、長木杖（EP4）
+- REF_PROF：博士角色設定圖
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP4-10-01", "variant_of": "N/A", "shot_size": "CU", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "手機螢幕", "distance_m": "N/A"}, "in_frame": ["PROF（螢幕內）", "HERO（只有手）"]}, {"id": "EP4-10-02", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "馬斯塔巴", "distance_m": "N/A"}, "in_frame": []}, {"id": "EP4-10-03", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "階梯金字塔", "distance_m": "N/A"}, "in_frame": ["印和闐（插圖火柴人）"]}, {"id": "EP4-10-04", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "失敗的金字塔", "distance_m": "N/A"}, "in_frame": []}, {"id": "EP4-10-05", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "彎曲金字塔", "distance_m": "N/A"}, "in_frame": []}, {"id": "EP4-10-06", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "紅色金字塔", "distance_m": "N/A"}, "in_frame": []}, {"id": "EP4-10-07", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "大金字塔側面", "distance_m": "N/A"}, "in_frame": []}, {"id": "EP4-10-08", "variant_of": "N/A", "shot_size": "WS", "angle": "high", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "金字塔地基", "distance_m": "N/A"}, "in_frame": []}, {"id": "EP4-10-09", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "Hemiunu", "distance_m": "N/A"}, "in_frame": ["Hemiunu（插圖火柴人）"]}, {"id": "EP4-10-10", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "Ankhhaf 與莎草紙", "distance_m": "N/A"}, "in_frame": ["Ankhhaf（插圖火柴人）"]}, {"id": "EP4-10-11", "variant_of": "N/A", "shot_size": "EWS", "angle": "aerial", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "三座金字塔", "distance_m": "N/A"}, "in_frame": []}, {"id": "EP4-10-12", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "岩層剖面", "distance_m": "N/A"}, "in_frame": []}, {"id": "EP4-10-13", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "獵戶座腰帶三星與三座金字塔", "distance_m": "N/A"}, "in_frame": []}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

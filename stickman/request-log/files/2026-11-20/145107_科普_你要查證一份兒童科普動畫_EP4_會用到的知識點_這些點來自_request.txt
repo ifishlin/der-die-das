@@ -1,0 +1,139 @@
+
+你要查證一份兒童科普動畫（EP4）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 33,
+  "claim_zh": "中暑的症狀包括頭暈、頭痛、肌肉抽筋或噁心，嚴重會進展到嘔吐、脈搏微弱、神智混亂。",
+  "quote": "dizziness, headaches, muscle cramps, or nausea",
+  "pages": [
+   "p.40"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "verify_note": "書上症狀惡化順序是 vomiting, faint pulse, or confusion，claim_zh 漏掉「脈搏微弱（faint pulse）」。quote 逐字正確。"
+ },
+ {
+  "n": 34,
+  "claim_zh": "圖：標出採石場（Rock quarry）與臨時斜坡（Temporary ramps），斜坡讓工人把石塊拉上定位。（本頁未見圖標題「THE GREAT PYRAMID — LIKELY CONSTRUCTION METHOD」）",
+  "quote": "圖：標註 Rock quarry、Temporary ramps allowed workers to haul blocks into place",
+  "pages": [
+   "p.40"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "likely（可能的）",
+  "convert": "",
+  "verify_note": "本頁只見「Rock quarry」箭頭與「Temporary ramps / allowed workers to haul blocks into place」兩個標註，未見圖的標題「THE GREAT PYRAMID — LIKELY CONSTRUCTION METHOD」（標題可能在上一頁或被裁切）。斜坡功能敘述正確。"
+ },
+ {
+  "n": 35,
+  "claim_zh": "想跳進尼羅河消暑，但其實不該，因為河裡有鱷魚（水流也急）。",
+  "quote": "crocodiles",
+  "pages": [
+   "p.41"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "verify_note": "這一頁通篇沒有出現 'crocodiles' 這個字，也沒有任何跳進尼羅河消暑、水流湍急的內容。p.41 右頁談的是血吸蟲病（感染後 4–6 週發燒倦怠、轉為慢性、CDC 列為僅次於瘧疾的第二大寄生蟲禍害、在木乃伊上驗出）以及爬金字塔／工地意外的危險（金字塔面 52 度、吉薩工人墓骨骸骨折）。這條知識點被標錯頁，p.41 查不到出處。"
+ },
+ {
+  "n": 36,
+  "claim_zh": "總建築師 Hemiunu 是胡夫最有權勢的官員之一，也是所有王室工程的負責人。",
+  "quote": "director of all royal projects",
+  "pages": [
+   "p.42"
+  ],
+  "type": "描述",
+  "who": "Hemiunu（胡夫的總建築師）",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "verify_note": "p.42 上找不到 quote「director of all royal projects」，也沒有講 Hemiunu 是最有權勢官員／所有王室工程負責人。p.42 只有關於 Hemiunu 的註腳，而且註腳說的是：過去認為他是『chief pyramid architect』，Ankhhaf 才是『the project's director』。此知識點疑似標錯頁（原文應在前一頁 p.41），需重拍 p.41 確認。"
+ },
+ {
+  "n": 37,
+  "claim_zh": "mastaba 是一種長椅形狀的陵墓。",
+  "quote": "mastaba",
+  "pages": [
+   "p.42"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "verify_note": "p.42 上沒有「mastaba」這個字，也沒有 mastaba 是長椅形陵墓的說明。此頁開頭即為句子中段（接續前頁），mastaba 內容應在前一頁 p.41，標錯頁，需重拍 p.41 確認。"
+ },
+ {
+  "n": 38,
+  "claim_zh": "Djoser 的（階梯）金字塔是一層層長椅堆疊而成，像一個巨大的結婚蛋糕（由 Imhotep 設計）。",
+  "quote": "like a giant wedding cake",
+  "pages": [
+   "p.42"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "verify_note": "p.42 上沒有「like a giant wedding cake」，也沒有 Djoser 階梯金字塔、Imhotep 的描述。內容疑似在前一頁 p.41，標錯頁，需重拍 p.41 確認。"
+ },
+ {
+  "n": 39,
+  "claim_zh": "Snefru 王改良這套技術，造出埃及著名的平滑面金字塔。",
+  "quote": "smooth-faced pyramid",
+  "pages": [
+   "p.42"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "verify_note": "p.42 上沒有「smooth-faced pyramid」這個片語。此頁只講 Snefru 前兩次蓋金字塔的錯誤與彎曲金字塔，沒有『改良技術造出平滑面金字塔』的句子。內容疑似在前一頁 p.41，標錯頁，需重拍 p.41 確認。"
+ },
+ {
+  "n": 40,
+  "claim_zh": "Snefru 蓋金字塔前兩次都失敗：其中「彎曲金字塔（Bent Pyramid）」出現嚴重裂縫，蓋到一半得大幅縮小角度。",
+  "quote": "Bent Pyramid",
+  "pages": [
+   "p.42"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": ""
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

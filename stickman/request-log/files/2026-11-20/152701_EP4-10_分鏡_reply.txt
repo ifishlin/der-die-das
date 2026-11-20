@@ -1,0 +1,512 @@
+{
+ "scene_id": "EP4-10",
+ "notes": "這是一場「手機螢幕＋手繪插圖」的講解場，沒有地圖、沒有走位：blocking 填 []、camera.cell 一律 N/A、t 一律 0。整場節奏＝博士的聲音（旁白）配一連串手繪插圖，像翻一本繪本。第 1 張先用手機螢幕上的博士建立「晚上又開課了」的框架（插入鏡頭），之後每一個知識點配一張插圖，按金字塔演化史順序走：馬斯塔巴→印和闐的階梯金字塔→斯尼夫魯的失敗→彎曲金字塔→紅色金字塔→胡夫大金字塔的陡角→巨大又超平的地基→誰蓋的（Hemiunu／Ankhhaf 兩說）→吉薩斜線之謎（岩層說／獵戶座說）。插圖全部用角色設定圖同一種火柴人／卡通畫風：粗黑線、平塗色、簡單形狀，不是寫實照片也不是平面圖表；畫面上一律不能有任何字或數字（數字全由旁白講）。插圖裡的人是跟 HERO 同畫風、但純白皮膚、不是 HERO 本人的古埃及路人；只有 Hemiunu 用 REF_HEMIUNU、博士用 REF_PROF。拇指量平整度（第 11 句）另切一張 ECU 插入鏡頭當強調。全場 13 張，17 句旁白一句不漏。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP4-10-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "晚上，手機又亮了，博士要講金字塔是怎麼來的。"
+   ],
+   "subject": "手機螢幕上的博士（REF_PROF），HERO 的手拿著發亮的手機",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "手機在畫面中央偏下，被 HERO 純白的手舉著；螢幕佔據大半畫面，博士在螢幕正中央，面朝觀眾講課；夜裡只有手機自己在發光。",
+   "screen_direction": "toward",
+   "action": "手機剛亮起，博士在螢幕上開講，舉起一根食指、眉毛上揚、一臉興奮。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "手機螢幕上的 PROF",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "PROF（手機螢幕上）",
+     "visible": "胸部以上，臉入鏡",
+     "frame_height": "約 6 成"
+    },
+    {
+     "who": "HERO",
+     "visible": "只有一隻手（拿手機）",
+     "frame_height": "約 1.5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. An insert shot of a single smartphone glowing in the dark, held up in HERO's hand (HERO exactly as in the attached HERO character sheet); only the hand enters the frame and nothing else of HERO. HERO's hand is pure paper white. The phone screen fills most of the frame; on the screen is PROF (exactly as in the attached PROF character sheet), shown from the chest up, facing straight out toward the viewer, mid-lecture with one index finger raised, eyebrows up, enthusiastic and animated. Shot size: Medium Close-up (MCU). PROF is framed from the chest up; the bottom edge of the screen is at his chest. Camera direction: front view. The camera is directly in front of the phone, facing it. Camera angle: Eye-level, looking straight at the phone. The screen shows no text, numbers, or icons. Only HERO's hand and PROF on the screen appear; no one else.",
+   "untested": [
+    "insert of a glowing phone screen with a character (PROF) shown on the screen"
+   ],
+   "remedy": "MCU 常畫成到腰；剪輯時可推近到胸上，讓博士更清楚。"
+  },
+  {
+   "id": "EP4-10-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "最早，埃及人的墳墓是一種長椅形狀的東西，叫做「馬斯塔巴」。"
+   ],
+   "subject": "馬斯塔巴（長椅形的泥磚墳墓）插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "馬斯塔巴在畫面中央偏右，一塊又矮又寬、頂平、側面略斜的長方體，像一張長椅；左邊站一個小小的純白火柴人埃及路人，轉向右邊看著它、伸手指它。",
+   "screen_direction": "off_right",
+   "action": "小人指著這座長椅形的墳墓介紹它。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "馬斯塔巴插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "馬斯塔巴（插圖物件）",
+     "visible": "整座",
+     "frame_height": "約 5 成（寬度佔大半）"
+    },
+    {
+     "who": "埃及路人火柴人",
+     "visible": "全身，臉入鏡",
+     "frame_height": "約 2.5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration (not a photo, not an infographic) of an ancient Egyptian mastaba tomb: one low, wide, bench-shaped block of mud brick with a flat top and gently sloping sides, like a long bench sitting on the sand. At the left stands one small plain stick-figure Egyptian with pure paper-white skin, turned to the right toward the tomb, one arm raised pointing at it, a small neutral smile. Shot size: Wide Shot (WS). The whole mastaba is clearly visible with open sandy ground around it. The camera is in front of the tomb and slightly off to one side, so we see its front and one sloping side, at eye level. Only this one little figure appears. No text or numbers anywhere.",
+   "untested": [
+    "front three-quarter + eye-level wording adapted for an object illustration"
+   ],
+   "remedy": "WS 可能畫成偏 FS 大小；剪輯時微調即可，不另補。"
+  },
+  {
+   "id": "EP4-10-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "後來有一位叫印和闐的人，把一層一層的長椅疊起來，",
+    "替法老左塞爾，蓋出了一座像大型結婚蛋糕的階梯金字塔。"
+   ],
+   "subject": "階梯金字塔（一層層長椅疊起來，像結婚蛋糕）＋印和闐插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "階梯金字塔在畫面中央，一層層由大到小往上疊的平台，整體像巨大的多層結婚蛋糕；左下角站一個小小的純白火柴人（印和闐），抬頭往上得意地指著它。",
+   "screen_direction": "off_up",
+   "action": "印和闐抬頭、得意地把這座疊起來的階梯金字塔展示出來，一臉驕傲。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "階梯金字塔插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "階梯金字塔（插圖物件）",
+     "visible": "整座",
+     "frame_height": "約 7 成"
+    },
+    {
+     "who": "印和闐火柴人",
+     "visible": "全身，臉入鏡",
+     "frame_height": "約 2 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration (not a photo, not an infographic) of an Egyptian step pyramid: several flat rectangular stone tiers stacked on top of one another, each tier smaller than the one below, so the whole thing rises in big steps like a giant tiered wedding cake. At the lower left stands one small stick-figure Egyptian (Imhotep) with pure paper-white skin, looking up and gesturing proudly up at it with a proud grin. Shot size: Wide Shot (WS). The whole step pyramid is clearly visible with open ground around it. Front three-quarter view at eye level, so we see the front and one side of the stepped structure. Only this one little figure appears. No text or numbers anywhere.",
+   "untested": [
+    "front three-quarter + eye-level wording adapted for a tall object illustration"
+   ],
+   "remedy": "WS 可能偏 FS；剪輯微調，不另補。"
+  },
+  {
+   "id": "EP4-10-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "再後來，斯尼夫魯王想把一層層階梯，改成光滑的斜面。",
+    "可是這沒那麼容易，他前兩座蓋得太陡，地基又太軟，結果都失敗了。"
+   ],
+   "subject": "斯尼夫魯王想改光滑斜面、但前兩座太陡太軟失敗的插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "中央站著戴簡單王冠的純白火柴人國王（斯尼夫魯），兩手舉高一臉懊惱；右邊是兩座又陡又窄、裂開並歪倒、陷進鬆軟沙地的金字塔；左邊畫一個淡淡的虛線輪廓，是他想要的光滑斜面金字塔。",
+   "screen_direction": "off_right",
+   "action": "國王看著右邊兩座崩壞的陡金字塔攤手懊惱，嘴張開一臉沮喪。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "斯尼夫魯與失敗金字塔插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "斯尼夫魯王火柴人",
+     "visible": "全身，臉入鏡",
+     "frame_height": "約 3 成"
+    },
+    {
+     "who": "兩座失敗的陡金字塔（插圖物件）",
+     "visible": "整座",
+     "frame_height": "約 5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration of King Sneferu's failed attempts. In the centre stands a small stick-figure Egyptian king with a simple crown and pure paper-white skin, arms thrown up in frustration, mouth open in dismay. On the right side are two very steep, narrow pyramids that are cracking and leaning over, sinking into soft sandy ground. On the left is a faint dashed ghost-outline of a smooth-sided pyramid (the smooth slope he wished for). Shot size: Wide Shot (WS). The king and both leaning pyramids are clearly visible with ground around them. Front view at eye level. Only this one king figure appears. No text or numbers anywhere.",
+   "untested": [
+    "dashed ghost-outline shape used to show an intended smooth pyramid"
+   ],
+   "remedy": "WS 可能偏 FS；剪輯微調，不另補。"
+  },
+  {
+   "id": "EP4-10-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "其中一座蓋到一半發現太陡，只好把角度改平緩一點，就變成了彎彎的「彎曲金字塔」。"
+   ],
+   "subject": "彎曲金字塔（下半陡、上半緩，側面明顯折彎）插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "彎曲金字塔在畫面中央，嚴格側面：下半段以很陡的角度往上，到一半突然換成比較緩的角度，輪廓明顯折彎；底部站一個很小的純白火柴人工人，抬頭搔頭。",
+   "screen_direction": "off_up",
+   "action": "小工人抬頭看著這座半途改角度的彎曲金字塔，一臉疑惑搔著頭。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "彎曲金字塔插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "彎曲金字塔（插圖物件）",
+     "visible": "整座側面",
+     "frame_height": "約 7 成"
+    },
+    {
+     "who": "工人火柴人",
+     "visible": "全身，臉入鏡",
+     "frame_height": "約 1.5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration of the Bent Pyramid, drawn in strict side profile: the lower half rises at a steep angle, then the upper half suddenly changes to a shallower, gentler angle, giving the pyramid a clearly bent, kinked outline. At the base stands one tiny stick-figure Egyptian worker with pure paper-white skin, looking up and scratching his head, puzzled. Shot size: Wide Shot (WS). The whole bent pyramid is clearly visible with open ground around it. Pure side view at eye level. Only this one little figure appears. No text or numbers anywhere.",
+   "untested": [
+    "pure side-view wording adapted for an object illustration"
+   ],
+   "remedy": "WS 可能偏 FS；剪輯微調，不另補。"
+  },
+  {
+   "id": "EP4-10-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "記取教訓後，他在堅硬的岩石上，蓋出了埃及第一座真正成功的金字塔：紅色金字塔。"
+   ],
+   "subject": "紅色金字塔（光滑斜面、立在堅硬岩石上）插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "紅色金字塔在畫面中央偏右，一座真正光滑斜面、紅褐色石頭的金字塔，穩穩立在堅硬的灰色岩盤上；左邊站一個小小的純白火柴人埃及人，轉向右比讚。",
+   "screen_direction": "off_right",
+   "action": "小人對著這座成功的光滑紅金字塔比出大拇指，滿意地笑。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "紅色金字塔插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "紅色金字塔（插圖物件）",
+     "visible": "整座",
+     "frame_height": "約 7 成"
+    },
+    {
+     "who": "埃及人火柴人",
+     "visible": "全身，臉入鏡",
+     "frame_height": "約 2 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration of the Red Pyramid: a true smooth-sided pyramid of reddish stone, sitting solidly on hard grey bedrock. At the left stands one small stick-figure Egyptian with pure paper-white skin, turned right toward the pyramid, giving a thumbs-up with a pleased, satisfied smile. Shot size: Wide Shot (WS). The whole pyramid is clearly visible with ground around it. Front three-quarter view at eye level, so we see the front and one smooth side. Only this one little figure appears. No text or numbers anywhere.",
+   "untested": [
+    "front three-quarter + eye-level wording adapted for an object illustration"
+   ],
+   "remedy": "WS 可能偏 FS；剪輯微調，不另補。"
+  },
+  {
+   "id": "EP4-10-07",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "到了胡夫這一座，側面角度大約五十二度，已經很接近垂直了。"
+   ],
+   "subject": "胡夫大金字塔側面陡角（約 52 度、接近垂直）插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "大金字塔在畫面中央，嚴格側面：一座又高又光滑、兩側很陡、接近直立的三角形；底角畫一個簡單的角度弧線（不寫數字）強調陡度；底部站一個很小的純白火柴人抬頭仰望。",
+   "screen_direction": "off_up",
+   "action": "小人抬頭仰望這座陡峭高聳的大金字塔，張嘴一臉敬畏。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "大金字塔側面插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "胡夫大金字塔（插圖物件）",
+     "visible": "整座側面",
+     "frame_height": "約 8 成"
+    },
+    {
+     "who": "埃及人火柴人",
+     "visible": "全身，臉入鏡",
+     "frame_height": "約 1 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration of the Great Pyramid of Khufu in strict side profile: a tall, smooth-sided triangle with very steep sides, close to upright. A simple drawn angle mark (a small arc, no numbers) sits at the bottom corner to show how steep the slope is. At the base stands one tiny stick-figure Egyptian with pure paper-white skin, looking up in awe, mouth open. Shot size: Wide Shot (WS). The whole pyramid is clearly visible with ground around it. Pure side view at eye level. Only this one little figure appears. No text or numbers anywhere.",
+   "untested": [
+    "plain angle-arc mark used to show a steep slope without numbers"
+   ],
+   "remedy": "WS 可能偏 FS；剪輯微調，不另補。"
+  },
+  {
+   "id": "EP4-10-08",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "它的底座，大概有十座美式足球場那麼大，"
+   ],
+   "subject": "大金字塔底座 vs 十座美式足球場的大小對比插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "從上往下看：畫面中央一個大正方形輪廓代表大金字塔底座的範圍，裡面和旁邊排著十個小小的綠色美式足球場（純綠色、簡單白色邊線和小門柱，不寫任何字或數字），用來顯示底座大約有十座球場大。",
+   "screen_direction": "toward",
+   "action": "俯視的大小對比圖：大正方形底座塞得下約十座足球場。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "底座對比插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "底座正方形＋十座足球場（插圖物件）",
+     "visible": "整個俯視範圍",
+     "frame_height": "約 8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration seen from above, comparing sizes: a large square outline marks the footprint of the Great Pyramid's base, and inside and beside it are ten small green American-football-field rectangles (plain green with simple white boundary lines and tiny goalposts, but no writing or numbers) laid out to show it is about ten football fields across. Shot size: Wide Shot (WS). The whole square footprint and the football fields are clearly visible. High angle, the camera looking down at the footprint from above. No characters. No text or numbers anywhere.",
+   "untested": [
+    "top-down size-comparison diagram (square footprint vs ten football fields)"
+   ],
+   "remedy": "high 只有輕微俯視，底座可能畫成斜角俯瞰；對比仍成立，可接受不另補。"
+  },
+  {
+   "id": "EP4-10-09",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "卻被整得幾乎完全水平，整片高高低低差不到一個拇指寬。"
+   ],
+   "subject": "拇指貼在整平石面上、量出高低差不到一個拇指寬（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "拇指",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "極近特寫：一大片整得很平、淡色的石面接近平視；一根純白的大拇指橫貼在石面上，顯示最高和最低點的落差只差一個拇指寬。",
+   "screen_direction": "toward",
+   "action": "拇指貼著石面，量出整片地基幾乎完全水平、落差小到只有一個拇指寬。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "拇指與石面插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "純白拇指（插圖）",
+     "visible": "一根拇指橫貼石面",
+     "frame_height": "約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. An extreme close-up insert, a hand-drawn illustration: a flat expanse of pale leveled stone seen almost edge-on, and a single pure paper-white thumb laid sideways against the surface, showing that the difference between the highest and lowest point of the stone is barely a thumb's width. Shot size: Extreme Close-up (ECU). Only the thumb against the flat stone surface fills the picture. Eye level, side view. Only the one white thumb appears, nothing else. No text or numbers anywhere.",
+   "untested": [
+    "ECU of a thumb against a flat stone surface (ECU 只有眼睛驗證過)"
+   ],
+   "remedy": "ECU 非眼睛的局部成功率低；若畫不出，prompt 改成近拍手指貼在石面（MCU／CU 句），剪輯時再推近到 ECU。"
+  },
+  {
+   "id": "EP4-10-10",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那麼，到底是誰負責蓋的？",
+    "大家通常認為，是胡夫身邊最有權力的官員之一，總建築師 Hemiunu。"
+   ],
+   "subject": "總建築師 Hemiunu（REF_HEMIUNU）插圖",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "Hemiunu 在畫面中央，一位有威嚴、有權勢的總建築師，純白皮膚，抬頭挺胸、雙臂交叉、一臉自信；右後方有一座小小的金字塔剪影。",
+   "screen_direction": "toward",
+   "action": "位高權重的總建築師 Hemiunu 自信地站著、下巴微抬，擺出有權勢的姿態。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "Hemiunu 插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "Hemiunu",
+     "visible": "腰部以上，臉入鏡",
+     "frame_height": "約 7.5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration portrait of Hemiunu, Khufu's chief architect (exactly as in the attached Hemiunu character sheet), a dignified, powerful official with pure paper-white skin, standing tall and confident, chin up, arms crossed, a proud authoritative expression. Behind him at the right is a small smooth pyramid silhouette. Shot size: Medium Shot (MS). Hemiunu is framed from the waist up; the bottom edge of the picture is at his waist. Front three-quarter view at eye level, so we see his face and one side. Only Hemiunu appears. No text or numbers anywhere.",
+   "untested": [
+    "front three-quarter + eye-level wording adapted for an illustrated portrait"
+   ],
+   "remedy": "MS 常畫成膝上；剪輯時推近到腰上。"
+  },
+  {
+   "id": "EP4-10-11",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "不過 2013 年找到的那本梅勒日記，又指向了胡夫的兄弟，Ankhhaf。"
+   ],
+   "subject": "梅勒日記（莎草紙）指向胡夫的兄弟 Ankhhaf 的插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "左邊是一卷攤開的老舊莎草紙（梅勒日記），上面滿是看不懂的波浪塗鴉（不是真的字、沒有數字）；右邊站一個純白火柴人埃及人（Ankhhaf，胡夫的兄弟），往左看向日記；中間一條簡單的箭頭從日記指向他。",
+   "screen_direction": "off_left",
+   "action": "日記用一條箭頭指向站在右邊、神情謙和、抬手回應的兄弟 Ankhhaf。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "日記與 Ankhhaf 插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "Ankhhaf 火柴人",
+     "visible": "全身，臉入鏡",
+     "frame_height": "約 5 成"
+    },
+    {
+     "who": "莎草紙日記（插圖物件）",
+     "visible": "整卷攤開",
+     "frame_height": "約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration: on the left, an old opened papyrus scroll (Merer's diary) covered in illegible wavy scribble marks (no real letters or numbers); on the right, one stick-figure Egyptian (Ankhhaf, Khufu's brother) with pure paper-white skin stepping forward with a modest, mild expression, looking left toward the diary. A simple drawn arrow runs from the diary to him. Shot size: Wide Shot (WS). The papyrus and the figure are both clearly visible. Front view at eye level. Only this one figure appears. No text or numbers anywhere.",
+   "untested": [
+    "wavy illegible scribble to stand in for ancient writing without real text"
+   ],
+   "remedy": "WS 可能偏 FS；剪輯微調，不另補。"
+  },
+  {
+   "id": "EP4-10-12",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "還有，吉薩的金字塔為什麼排成一條斜線？",
+    "有一種說法是，高原底下的石灰岩是斜著走的，它們剛好蓋在最硬的那條岩脊上。"
+   ],
+   "subject": "吉薩三座金字塔排成斜線、底下石灰岩斜走的剖面插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "吉薩高原的切開剖面：三座大小略微遞減的光滑金字塔，從畫面左下往右上排成一條斜線；地面像剖面一樣被切開，露出底下斜著走的石灰岩層，其中一條又厚又深的堅硬岩脊剛好落在這一排金字塔正下方。",
+   "screen_direction": "right",
+   "action": "俯視剖面圖，把三座排成斜線的金字塔和它們底下斜走的硬岩脊連起來。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "吉薩斜線與岩層剖面插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "三座金字塔＋斜走岩層剖面（插圖物件）",
+     "visible": "整片剖面",
+     "frame_height": "約 8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration of the Giza plateau as a cutaway landscape: three smooth-sided pyramids of slightly decreasing size arranged in a straight diagonal line running from the lower left into the distance at the upper right. The ground is cut open like a cross-section to reveal slanting limestone rock layers underneath, with one thick, darker, hard rock ridge highlighted exactly beneath the row of pyramids. Shot size: Wide Shot (WS). All three pyramids and the sliced rock layers are clearly visible. High angle, front three-quarter view looking down over the plateau. No characters. No text or numbers anywhere.",
+   "untested": [
+    "cutaway cross-section wording adapted for a landscape illustration",
+    "high + front three-quarter combined for an object illustration"
+   ],
+   "remedy": "high 只有輕微俯視；斜線與岩層關係仍看得出，可接受不另補。"
+  },
+  {
+   "id": "EP4-10-13",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "也有人說，這跟天上獵戶座腰帶的三顆星有關；到現在，都還沒有定論。"
+   ],
+   "subject": "獵戶座腰帶三顆星 vs 三座金字塔斜線對應（尚無定論）插圖",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "上下分區：上方是夜空，三顆亮星排成一條斜線（獵戶座腰帶）；下方是三座金字塔，排成同樣的斜線；每顆星和一座金字塔之間用細虛線連起來；畫面一角站一個純白火柴人埃及人，雙手攤開聳肩。",
+   "screen_direction": "off_up",
+   "action": "小人抬頭看著天上三顆星，雙手一攤聳肩，一臉不確定，表示到現在都還沒有定論。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "獵戶座腰帶對應插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "三顆星＋三座金字塔（插圖物件）",
+     "visible": "上下兩排與連線",
+     "frame_height": "約 8 成"
+    },
+    {
+     "who": "埃及人火柴人",
+     "visible": "全身，臉入鏡",
+     "frame_height": "約 1.8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration split top and bottom: across the top is a dark night sky with three bright stars in a straight slanting line (Orion's belt); across the bottom are three pyramids arranged in the same slanting line. Thin dotted lines connect each star to a pyramid. At the lower corner stands one small stick-figure Egyptian with pure paper-white skin, shrugging with both palms turned up and an unsure, puzzled expression. Shot size: Wide Shot (WS). The three stars, the three pyramids and the little figure are all clearly visible. Front view at eye level. Only this one figure appears. No text or numbers anywhere.",
+   "untested": [
+    "dotted lines linking three stars to three pyramids to show a proposed correspondence"
+   ],
+   "remedy": "WS 可能偏 FS；剪輯微調，不另補。"
+  }
+ ]
+}

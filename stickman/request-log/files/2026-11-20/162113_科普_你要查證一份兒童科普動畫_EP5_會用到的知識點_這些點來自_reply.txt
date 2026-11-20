@@ -1,0 +1,24 @@
+三點都查證完畢。以下為結果。
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 222,
+  "verdict": "大致正確",
+  "sci": "維蘇威火山一帶的羅馬人確實吃一種圓形、表面用刀劃出放射狀切痕分成八瓣（也有六瓣）的麵包，叫 panis quadratus。龐貝 Modestus 麵包店的烤爐裡就出土了 81 條烤成炭的圓麵包。而最有名、上面壓著麵包師傅印記（signaculum）的那一條，其實是在隔壁的赫庫蘭尼姆出土，印文清楚寫著「Celer，Quintus Granius Verus 的奴隸（所烤）」。所以「切成八瓣的炭化圓麵包」龐貝有，「壓著師傅印記的那一條」嚴格說是赫庫蘭尼姆的。",
+  "src": [["Nunc est bibendum, \"Can Pompeii's bread be recreated?\"（引述 Fiorelli 1861 發掘紀錄與 Celer 印記麵包）", "https://nunc.ch/en/can-pompeiis-bread-be-recreated/"], ["Breadtopia, \"Panis Quadratus: Ancient Bread of Pompeii\"", "https://breadtopia.com/panis-quadratus-ancient-bread-of-pompeii/"]],
+  "fix": "龐貝的麵包店賣一種烤得圓圓的麵包，上面用刀劃成八瓣，剝起來很方便。有些麵包還被烤成了黑炭留到今天，連麵包師傅蓋上去的印章都看得一清二楚。（畫圖照這個畫即可；若旁白要很精確，印章那一條可說成「這一帶的麵包」而不是特指龐貝，因為最有名的那條是鄰鎮赫庫蘭尼姆出土的。）",
+  "confidence": "高"},
+ {"n": 231,
+  "verdict": "正確",
+  "sci": "維蘇威火山最後一次噴發是 1944 年 3 月，之後進入休眠至今（目前警戒為綠色）。義大利民防規劃的「紅區」（最可能被火山碎屑流掃過、須預先全員撤離的區域）涵蓋 25 個市鎮，住了大約 67 萬到 70 萬人；若把周邊受影響範圍都算進去，人數更多。所以「六、七十萬人」這個講法站得住。",
+  "src": [["Scandone, Giacomelli & others / NHESS 20:2037–2075 (2020), \"Invited perspectives: The volcanoes of Naples…\"（紅區約 70 萬人、25 市鎮）", "https://nhess.copernicus.org/articles/20/2037/2020/"], ["Dipartimento Protezione Civile / IoNonRischio, \"Vesuvius – what to know\"（1944 年最後噴發、紅區 25 市鎮）", "https://www.iononrischio.gov.it/en/get-ready/volcanoes/vesuvius/what-know/"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 241,
+  "verdict": "正確",
+  "sci": "在赫庫蘭尼姆古海灘與岸邊那排石造船屋（fornici）裡，考古學家陸續找到約 300 具（近年統計總數約 340 具）骨骸。這些人逃到海邊，想從拿坡里灣搭船逃走，卻在船還沒來得及載走他們之前，就被高溫的火山碎屑流追上而喪命。這也推翻了早期以為赫庫蘭尼姆居民大多成功撤離的看法。",
+  "src": [["HeritageDaily (2020), \"Vesuvius victims died slower than believed\"（船屋與海灘共 ≥340 人）", "https://www.heritagedaily.com/2020/01/vesuvius-victims-died-slower-than-believed/125604"], ["Live Science, \"Vesuvius victims baked slowly as they died\"（赫庫蘭尼姆海濱骨骸、逃海未果）", "https://www.livescience.com/vesuvius-victims-herculaneum.html"]],
+  "fix": "",
+  "confidence": "高"}
+]}
+```

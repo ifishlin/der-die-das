@@ -1,0 +1,20 @@
+照片打開了。清單是空的（`[]`），所以沒有既有知識點要逐條比對；我把這一頁可查證的事實當作「漏列」列出。另外這張照片頁碼印的是 **56**（不是 p.58），我寫進 unclear。
+
+```json
+{"page": "p.58",
+ "checks": [],
+ "missing": [
+   {"claim_zh": "Herculaneum 位在維蘇威火山噴發口以西僅約四英里。", "quote": "Herculaneum sits barely four miles west of the volcanic vent", "pages": ["p.58"], "type": "地理", "who": "", "hedge": "", "convert": "四英里 ≈ 6.4 公里"},
+   {"claim_zh": "噴發最初幾小時，盛行風讓 Herculaneum 大致躲過了大部分火山灰和浮石。", "quote": "but for the first few hours of the eruption the prevailing winds largely spared it from most of the ash and pumice", "pages": ["p.58"], "type": "事件", "who": "", "hedge": "largely（大致）", "convert": ""},
+   {"claim_zh": "當維蘇威首次觸及更深層岩漿、引發第一波火山碎屑流時，高熱的氣體和火山灰掃過 Herculaneum，幾乎瞬間殺死城裡所有人。", "quote": "But when Vesuvius first tapped into the deeper magma that triggered its initial pyroclastic flow, the heated gas and ash blew through Herculaneum and killed everyone there almost instantly.", "pages": ["p.58"], "type": "事件", "who": "", "hedge": "almost instantly（幾乎瞬間）", "convert": ""},
+   {"claim_zh": "考古學家在城裡發現焦痕，顯示那團雲吞沒居民時溫度可能高達華氏 930 度。", "quote": "Archaeologists have found scorch marks in the city that suggest the cloud may have been as hot as 930 degrees Fahrenheit when it engulfed Herculaneum's citizens.", "pages": ["p.58"], "type": "科學", "who": "", "hedge": "suggest / may have been（顯示／可能）", "convert": "華氏 930 度 ≈ 攝氏 499 度"},
+   {"claim_zh": "這些姿勢幾乎沒有極端高熱受害者典型的拳擊手式防禦姿態，Petrone 據此認為 Herculaneum 的羅馬人死得太快，從未有意識地感受到痛苦。", "quote": "These poses show almost no signs of the boxer-like defensive stance typically taken by victims of extreme heat, which suggests to Petrone that the Romans in Herculaneum died so quickly they never consciously registered discomfort.", "pages": ["p.58"], "type": "考古", "who": "Petrone", "hedge": "almost no / suggests（幾乎沒有／推測）", "convert": ""},
+   {"claim_zh": "Petrone 還在一名 Herculaneum 罹難者的頭骨裡發現一塊玻璃狀的腦組織，顯示那團雲把這個人的大腦加熱得太快，使其玻璃化。", "quote": "Petrone even found a glassy piece of brain matter in the skull of one Herculaneum victim, suggesting the cloud heated this person's brain so quickly it vitrified.", "pages": ["p.58"], "type": "考古", "who": "Petrone", "hedge": "suggesting（顯示）", "convert": ""},
+   {"claim_zh": "Herculaneum 距 Pompeii 九英里多一點，火山碎屑流直到下午兩點左右才抵達。", "quote": "Herculaneum is a little more than nine miles from Pompeii, and the pyroclastic flow doesn't hit until around 2 p.m.", "pages": ["p.58"], "type": "地理", "who": "", "hedge": "a little more than / around（多一點／左右）", "convert": "九英里 ≈ 14.5 公里"},
+   {"claim_zh": "Herculaneum 曾是羅馬菁英的海灘度假城鎮。", "quote": "Herculaneum was a beach resort town for the Roman elite.", "pages": ["p.58"], "type": "歷史", "who": "", "hedge": "", "convert": ""}
+ ],
+ "unclear": [
+   {"where": "頁碼", "problem": "任務標為 p.58、檔名為 p58.jpg，但照片頁底印的頁碼是 56；無法確認是書的實體頁 56 還是 58。"},
+   {"where": "最後一段尾句", "problem": "「You'll find large, beautiful houses clad in marble and libraries filled with Ancient Greek and Roman classics. Some of these…」句子在頁面底部被截斷，下文看不到，不確定是否還有可查證事實，故未列入 missing。"}
+ ]}
+```

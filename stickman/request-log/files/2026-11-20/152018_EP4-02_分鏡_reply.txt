@@ -1,0 +1,306 @@
+{
+ "scene_id": "EP4-02",
+ "notes": "全場 9 顆鏡頭，走三段節奏。第一段（S1–S2，實驗室中央偏東）：側面雙人鏡，HERO 伸手要錢、博士卻塞來一袋麵包，S1 用 WS 兼做建立鏡頭（背景帶到北牆時光機＝目的地），S2 推近到 MLS 打笑點。第二段（S3–S5，西牆黑板）：S3 背對鏡頭的黑板全景，揭示金字塔；S4 切黑板金字塔的特寫插入鏡頭，讓資訊獨立一拍；S5 博士轉身 ¾ 面對鏡頭、指著斜坡和大問號，臉入鏡，把「斜坡怎麼搭」這個最難解的勾子推到最強。第三段（S6–S9）：S6 回雙人鏡，博士指向時光機派 HERO 出發；S7 切到 HERO 正面近景，低頭看那袋麵包、認命；S8 切到東牆工作桌，HERO 把生存指南推回桌上（回扣笑點）；S9 無旁白的轉場錨點，HERO 背影走進金屬圓環，接下一場的「光一閃」。相機全程平視；景別變化都對應敘事功能，避免連兩拍功能重複。黑板是博士「用到／指著」的物件，依規則可寫進 prompt；問號依本場指定保留，用「question-mark symbol」描述、其餘不寫任何文字。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    { "t": "1", "cell": "M10", "facing": "W", "doing": "面向博士，伸出一手掌心朝上要錢" },
+    { "t": "2", "cell": "M10", "facing": "W", "doing": "雙手接過麵包布袋，低頭看袋子" },
+    { "t": "3", "cell": "L13", "facing": "W", "doing": "站在房間東側看博士畫黑板（此拍不入鏡）" },
+    { "t": "4", "cell": "L13", "facing": "W", "doing": "繼續看黑板（插入鏡頭，不入鏡）" },
+    { "t": "5", "cell": "L13", "facing": "W", "doing": "繼續看黑板（此拍不入鏡）" },
+    { "t": "6", "cell": "H10", "facing": "W", "doing": "手拿麵包袋，聽博士交代任務" },
+    { "t": "7", "cell": "H10", "facing": "W", "doing": "低頭看手上那袋麵包，認命" },
+    { "t": "8", "cell": "T8", "facing": "E", "doing": "走到工作桌前，把生存指南推回桌上" },
+    { "t": "9", "cell": "L4", "facing": "N", "doing": "手提麵包袋，背對鏡頭跨步走進時光機圓環" }
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    { "t": "1", "cell": "J10", "facing": "E", "doing": "面向 HERO，一手正要往旁邊拿東西" },
+    { "t": "2", "cell": "J10", "facing": "E", "doing": "把麵包布袋塞進 HERO 手裡，得意地笑" },
+    { "t": "3", "cell": "B12", "facing": "W", "doing": "背對鏡頭站在黑板前，舉手指著畫好的金字塔" },
+    { "t": "4", "cell": "B12", "facing": "W", "doing": "站在黑板旁（插入鏡頭只拍黑板，不入鏡）" },
+    { "t": "5", "cell": "B11", "facing": "SE", "doing": "轉身 ¾ 面向鏡頭，回手指黑板上的斜坡和大問號" },
+    { "t": "6", "cell": "D10", "facing": "E", "doing": "轉向 HERO，一手指向北牆的時光機派他出發" }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-02-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "上一次你學乖了，這次打定主意：要先拿到錢，再上時光機。"
+   ],
+   "subject": "HERO（伸手要錢）；次要：PROF",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側面雙人鏡：PROF 在畫面左（西）、HERO 在畫面右（東），兩人面對面成側影；背景是北牆的時光機圓環，建立環境也點出目的地。",
+   "screen_direction": "left",
+   "action": "HERO 掌心朝上向左伸手要錢，眉毛上揚、一臉期待；PROF 輕鬆微笑，一手開始往旁邊伸。",
+   "camera": {
+    "cell": "L17",
+    "height_m": "1.5",
+    "look_at": "HERO 與 PROF 之間",
+    "distance_m": "3.5"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "全身", "frame_height": "約 50%" },
+    { "who": "PROF", "visible": "全身", "frame_height": "約 50%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and PROF (exactly as in the attached PROF character sheet). HERO stands on the right and holds out one open hand toward PROF, palm up, asking for money; HERO's face and hands are pure paper white; his expression is eager and expectant, eyebrows raised. PROF stands on the left facing him, one hand just starting to reach to the side; PROF's expression is an easy, cheerful grin. Shot size: Wide Shot (WS). HERO and PROF's whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside them and sees HERO and PROF exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "WS 套用在兩個人全身（實測句原本以單人 HERO 寫）"
+   ],
+   "remedy": "WS 常畫成接近 FS；兩人全身能入鏡即可，若偏滿屬可接受範圍。"
+  },
+  {
+   "id": "EP4-02-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "博士說沒問題，然後塞給你一袋麵包。",
+    "還說，這是預付的工錢。"
+   ],
+   "subject": "HERO 與 PROF（交麵包）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "延續 S1 推近：PROF 在畫面左、HERO 在畫面右，兩人側影，麵包布袋在兩人中間交到 HERO 手上。",
+   "screen_direction": "off_down",
+   "action": "PROF 把一個布麵包袋塞進 HERO 手裡，得意地笑；HERO 雙手接住、低頭盯著袋子看，表情呆愣、有點失望（期待是錢）。",
+   "camera": {
+    "cell": "L14",
+    "height_m": "1.5",
+    "look_at": "HERO 與 PROF 之間的麵包袋",
+    "distance_m": "2.0"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "膝上", "frame_height": "約 75%" },
+    { "who": "PROF", "visible": "膝上", "frame_height": "約 75%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and PROF (exactly as in the attached PROF character sheet). PROF stands on the left and shoves a small cloth drawstring bag (the bread bag from the attached props sheet) into HERO's hands; PROF's expression is a proud, pleased grin. HERO stands on the right taking the bag in both hands and looking down at it; HERO's face and hands are pure paper white; his expression is flat, deadpan and a little let down. Shot size: Medium Long Shot (MLS). HERO and PROF are framed from the knees up; the bottom edge of the picture is at their knees. Camera direction: side view. The camera is beside them and sees HERO and PROF exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-02-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "原來博士想弄懂一件事：吉薩大金字塔，到底是怎麼蓋起來的？"
+   ],
+   "subject": "PROF 與黑板上的金字塔圖",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "PROF 背對鏡頭站在西牆綠黑板前、偏畫面左下；黑板上的金字塔粉筆圖在畫面右上，PROF 舉手指著它。",
+   "screen_direction": "away",
+   "action": "博士背對我們面向黑板，舉起一手指向畫好的大金字塔，像在揭曉他的執念。",
+   "camera": {
+    "cell": "H12",
+    "height_m": "1.5",
+    "look_at": "PROF 與黑板",
+    "distance_m": "3.0"
+   },
+   "cast": [
+    { "who": "PROF", "visible": "全身（背影）", "frame_height": "約 85%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet), seen from behind, standing at a green chalkboard with his back to the camera. On the chalkboard is a chalk drawing of a large pyramid; PROF raises one arm and points up at the pyramid drawing. The drawing is only simple chalk shapes, no letters or words. Shot size: Full Shot (FS). PROF's whole body, from head to feet, just fits in the picture. Camera direction: back view. The camera is behind PROF, looking the way he faces; PROF's back is nearer the camera. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [
+    "back view 套用在單人站立（實測句原為兩人奔跑）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-02-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "這座塔，古埃及人把它叫做「胡夫的地平線」。",
+    "工人大概花了二十幾年，堆了超過兩百萬塊大石頭，才把它蓋起來。"
+   ],
+   "subject": "黑板上的金字塔粉筆圖（插入鏡頭）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "插入鏡頭，畫面裡沒有角色：正對綠黑板，金字塔粉筆圖（旁邊有一道斜坡）佔滿大部分畫面。",
+   "screen_direction": "toward",
+   "action": "靜態插入：黑板上一座大金字塔的粉筆圖，旁邊斜靠一道斜坡，線條簡單。",
+   "camera": {
+    "cell": "D9",
+    "height_m": "1.4",
+    "look_at": "黑板上的金字塔圖",
+    "distance_m": "1.5"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. No characters in the picture. A close view of a green chalkboard: a chalk drawing of a large pyramid with a ramp leaning against one side. The drawing is only simple chalk shapes, no letters or words. Shot size: Close-up (CU). The chalk pyramid drawing fills most of the picture. Camera direction: front view. The camera is directly in front of the chalkboard, facing it straight on. Camera angle: Eye-level: the camera is level with the drawing, looking straight at it.",
+   "untested": [
+    "CU 套用在黑板粉筆圖（實測 CU 只在臉上測過）",
+    "front／eye 句改寫給物件（實測句原為角色）"
+   ],
+   "remedy": "若圖畫得太遠太小，剪輯時推近到 CU。"
+  },
+  {
+   "id": "EP4-02-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "沒有奴隸，也沒有大型機器，靠的是繩子、滑橇，和很多很多的人。",
+    "而其中最難解的，就是那道斜坡到底是怎麼搭的。"
+   ],
+   "subject": "PROF（指著斜坡和問號）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "PROF 在畫面中央，身體 ¾ 轉向鏡頭、臉入鏡，手回指身後黑板；斜坡和大問號的粉筆圖在畫面右側。",
+   "screen_direction": "right",
+   "action": "博士轉身面向我們，一手往身後右上方指著黑板上的斜坡和一個大問號，眼睛睜大、神情激動，像在說這才是真正的謎。",
+   "camera": {
+    "cell": "F11",
+    "height_m": "1.5",
+    "look_at": "PROF 與黑板右側的斜坡、問號",
+    "distance_m": "2.0"
+   },
+   "cast": [
+    { "who": "PROF", "visible": "腰上", "frame_height": "約 80%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet), turned three-quarters toward the camera, standing beside a green chalkboard and pointing back up at it with one arm. On the chalkboard is a chalk drawing of a pyramid with a ramp leaning against it and a big chalk question-mark symbol next to the ramp; PROF points at the ramp and the question mark. PROF's expression is intense and excited, eyes wide, as if this is the real puzzle. The drawing is only simple chalk shapes and a question-mark symbol, no letters or words. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上、front34 只做到大致 ¾；可接受，必要時剪輯微推近。"
+  },
+  {
+   "id": "EP4-02-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "所以博士要你回到西元前 2550 年，古埃及的古王國時期，",
+    "去幫法老胡夫，蓋他的陵墓。"
+   ],
+   "subject": "PROF（派任務）；次要：HERO",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "雙人鏡：PROF 在畫面左、HERO 在畫面右，兩人面對面；PROF 一手往 HERO 身後上方（北牆時光機方向）比，時光機在背景。",
+   "screen_direction": "right",
+   "action": "博士轉向 HERO、舉手指向身後的時光機，神情熱切地交代任務；HERO 手拿麵包袋站著聽，一臉警戒又不情願。",
+   "camera": {
+    "cell": "F15",
+    "height_m": "1.5",
+    "look_at": "PROF（兼顧 HERO）",
+    "distance_m": "2.5"
+   },
+   "cast": [
+    { "who": "PROF", "visible": "膝上", "frame_height": "約 75%" },
+    { "who": "HERO", "visible": "膝上（後側 ¾）", "frame_height": "約 72%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: PROF (exactly as in the attached PROF character sheet) on the left and HERO (exactly as in the attached HERO character sheet) on the right, facing each other. PROF turns to HERO and raises one arm, gesturing off past HERO toward a big ring-shaped metal time machine; PROF's expression is earnest and eager, explaining the mission. HERO stands listening, holding a small cloth drawstring bag (the bread bag from the attached props sheet); HERO's face and hands are pure paper white; his expression is wary and reluctant. Shot size: Medium Long Shot (MLS). PROF and HERO are framed from the knees up; the bottom edge of the picture is at their knees. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "front34 大致可做到；偶爾會把 HERO 多畫成前景，挑圖時避開即可。"
+  },
+  {
+   "id": "EP4-02-07",
+   "variant_of": "N/A",
+   "t": "7",
+   "narration": [
+    "你看了看那袋麵包，還是決定去了。"
+   ],
+   "subject": "HERO（低頭看麵包）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 置中，正面對鏡頭，雙手捧著麵包袋在胸腰之間，低頭看袋子。",
+   "screen_direction": "off_down",
+   "action": "HERO 雙手捧著麵包袋低頭端詳，輕輕嘆一口氣，表情認命又有點無奈，像是已經決定還是去。",
+   "camera": {
+    "cell": "E10",
+    "height_m": "1.5",
+    "look_at": "HERO",
+    "distance_m": "1.5"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "腰上", "frame_height": "約 80%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), holding a small cloth drawstring bag (the bread bag from the attached props sheet) in both hands and looking down at it; HERO's face and hands are pure paper white; his expression is resigned and a little defeated, giving a small sigh. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上，可接受。"
+  },
+  {
+   "id": "EP4-02-08",
+   "variant_of": "N/A",
+   "t": "8",
+   "narration": [
+    "生存指南又被推了過來，你又把它放回桌上。"
+   ],
+   "subject": "HERO（把生存指南推回工作桌）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側面：HERO 置中成側影，面向畫面右邊的電子工作桌，一手把生存指南推回桌面；工作桌在畫面右緣。",
+   "screen_direction": "right",
+   "action": "HERO 站在工作桌前，一手把被推過來的生存指南又推回桌上，另一手還提著麵包袋；表情呆板、認命，像在想「又來了」。",
+   "camera": {
+    "cell": "T12",
+    "height_m": "1.5",
+    "look_at": "HERO 與工作桌",
+    "distance_m": "2.0"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "腰上（側面）", "frame_height": "約 80%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), seen from the side, standing at an electronics workbench and pushing a survival guide book back onto the bench with one hand, while still holding a small cloth drawstring bag (the bread bag from the attached props sheet) in his other hand; HERO's face and hands are pure paper white; his expression is flat, deadpan and resigned, as if thinking 'here we go again'. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: side view. The camera is beside HERO and sees him exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上，可接受。"
+  },
+  {
+   "id": "EP4-02-09",
+   "variant_of": "N/A",
+   "t": "9",
+   "narration": [],
+   "subject": "HERO（走進時光機圓環，轉場錨點）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背影置中，正跨步走進畫面前方（北）的金屬圓環時光機；一手提著麵包袋在身側。無旁白，作為接下一場「光一閃」的轉場錨點。",
+   "screen_direction": "away",
+   "action": "HERO 背對鏡頭、提著麵包袋，下定決心跨步走進圓環那一刻。",
+   "camera": {
+    "cell": "L10",
+    "height_m": "1.5",
+    "look_at": "HERO 與時光機圓環",
+    "distance_m": "3.0"
+   },
+   "cast": [
+    { "who": "HERO", "visible": "全身（背影）", "frame_height": "約 85%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), seen from behind, stepping forward into a big ring-shaped metal time machine; he holds a small cloth drawstring bag (the bread bag from the attached props sheet) at his side; HERO's hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: back view. The camera is behind HERO, looking the way he faces; HERO's back is nearer the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "back view 套用在單人走進圓環（實測句原為兩人奔跑）"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

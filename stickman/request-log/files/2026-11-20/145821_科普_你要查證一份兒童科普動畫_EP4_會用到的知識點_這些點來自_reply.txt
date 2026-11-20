@@ -1,0 +1,59 @@
+```json
+{"ep": "EP4", "results": [
+ {"n": 89,
+  "verdict": "有爭議",
+  "sci": "吉薩大金字塔是怎麼蓋的、特別是用什麼樣的坡道運石塊，學界至今沒有共識。AERA（Mark Lehner、Richard Redding 團隊）在古夫金字塔西南角、靠近採石場一帶，確實挖到過疑似補給坡道的石牆地基遺跡，方向朝採石場延伸；但「坡度約 11%」是研究者依遺跡做的重建推算，不是直接量到的定論，整條外部坡道的樣貌仍在爭論中（有學者認為至今沒有確鑿的外部坡道證據）。2018 年 Hatnub 採石場另發現的運石坡道則陡得多（約 20 度）。",
+  "src": [["Archaeology Magazine, \"Return to the Great Pyramid\"（AERA 西南角坡道地基）", "https://archive.archaeology.org/0907/etc/khufu_pyramid.html"], ["Mark Lehner / Ancient Egypt Research Associates（維基整理，附原始文獻）", "https://en.wikipedia.org/wiki/Mark_Lehner"]],
+  "fix": "考古學家在金字塔西南角、靠近採石場的地方，挖到一段像是舊坡道的遺跡——很緩，大概每走一百步才升高十步左右。這是其中一種對『金字塔怎麼運石塊』的解釋，但這題到今天其實還沒有定論。",
+  "confidence": "中"},
+
+ {"n": 90,
+  "verdict": "大致正確",
+  "sci": "大金字塔原高約 146.6 公尺（481 英尺）。120 英尺約 37 公尺，正好約是全高的四分之一，這部分算得通。而且金字塔底寬上窄，體積集中在底部：蓋到四分之一高時，用簡單幾何算（1 −(3/4)³≈58%）確實已有超過一半的石塊鋪好——所以『才到四分之一高、卻已鋪過半石塊』這個反直覺的說法是成立的。至於坡道延伸會剛好抵達『西南角 120 英尺處』，是 Redding 依西南角坡道遺跡做的重建推算，屬單一研究者的模型，不是公認結論。",
+  "src": [["Great Pyramid of Giza（原高 146.6 m、約 230 b m 底邊、約 230 萬石塊）", "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"], ["Archaeology Magazine, \"Return to the Great Pyramid\"（西南角坡道遺跡）", "https://archive.archaeology.org/0907/etc/khufu_pyramid.html"]],
+  "fix": "照研究者的推算，這條坡道只蓋到金字塔的四分之一高——可是別小看這四分之一，因為金字塔底部又寬又厚，蓋到這裡時，其實一半以上的石塊都已經堆好了。",
+  "confidence": "中"},
+
+ {"n": 91,
+  "verdict": "正確",
+  "sci": "書上描述與寄生蟲學一致。血吸蟲（Schistosoma，屬扁形動物吸蟲）的幼蟲尾蚴在淡水中鑽入人皮膚，脫去分叉的尾巴變成裂體蚴，隨靜脈血流經心、肺到肝臟，在肝內發育成熟、雌雄配對，再移居到腸或膀胱周邊的靜脈叢產卵。蟲卵隨糞或尿排出。",
+  "src": [["CDC DPDx – Schistosomiasis（生活史：鑽皮膚→經靜脈循環至肺、心、肝成熟）", "https://www.cdc.gov/dpdx/schistosomiasis/index.html"], ["Merck Manual Professional – Schistosomiasis", "https://www.merckmanuals.com/professional/infectious-diseases/trematodes-flukes/schistosomiasis"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 92,
+  "verdict": "正確",
+  "sci": "古埃及醫生對外傷性骨折確實相當在行：會用木夾板加繃帶固定，考古上也發現過夾著夾板癒合的斷骨，部分個體看來撐過了截肢。最著名的《艾德溫·史密斯外科莎草紙》處理鼻骨骨折的做法——復位、用浸油脂的亞麻填塞、外部夾板固定——與今日鼻骨骨折的閉合復位原則非常接近。",
+  "src": [["ENT & Audiology News, \"Nasal trauma and surgery in the Edwin Smith Papyrus\"", "https://www.entandaudiologynews.com/features/history-of-ent/post/early-egyptian-medicine-nasal-trauma-and-surgery-in-the-edwin-smith-papyrus"], ["Blomstedt, \"Management of Fractures of the Humerus in Ancient Egypt…\", PMC2690737", "https://pmc.ncbi.nlm.nih.gov/articles/PMC2690737/"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 93,
+  "verdict": "正確",
+  "sci": "古埃及對內科或慢性病因（關節炎、感染、寄生蟲）的療效遠不如處理骨折。流傳下來的醫療莎草紙（如《埃伯斯莎草紙》約西元前 1550 年，收約 700 條藥方）確實充斥今天看來噁心的配方：動物糞便（驢、狗、蒼蠅糞等）做的藥膏，以及用死蒼蠅、老鼠等熬製的藥。做法多半出於巫術與象徵，而非有效的藥理。",
+  "src": [["Britannica – Ebers papyrus", "https://www.britannica.com/topic/Ebers-papyrus"], ["History.com, \"7 Unusual Ancient Medical Techniques\"（動物糞、死老鼠入藥）", "https://history.com/news/7-unusual-ancient-medical-techniques"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 94,
+  "verdict": "大致正確",
+  "sci": "感染後出現發燒、極度倦怠，是急性血吸蟲病（片山熱 Katayama fever）的典型表現，確實在感染後數週才發作。不過醫學文獻給的時間窗較寬，通常說感染後約 2～8 週（14～84 天），書上的『4 到 6 週』落在這區間內、偏中段，講成固定值稍嫌窄。症狀描述（發燒、倦怠、全身不適）則正確。",
+  "src": [["Merck Manual Professional – Schistosomiasis（急性期/片山熱）", "https://www.merckmanuals.com/professional/infectious-diseases/trematodes-flukes/schistosomiasis"], ["Medscape, Schistosomiasis Clinical Presentation（片山熱多在接觸疫水後 4–8 週）", "https://emedicine.medscape.com/article/228392-clinical"]],
+  "fix": "感染後過個幾星期，你會開始發燒，整個人累到提不起勁。",
+  "confidence": "中"},
+
+ {"n": 95,
+  "verdict": "正確",
+  "sci": "血吸蟲病轉為慢性後，病害主要來自卡在組織裡的蟲卵引發的發炎與纖維化，確切後果要看蟲卵流到哪裡：腸道型造成腸道疾病與肝脾纖維化；膀胱型（S. haematobium）長期可致膀胱癌（鱗狀細胞癌）；蟲卵異位到腦或脊髓則可能引發癲癇發作等神經症狀；嚴重者可致命。",
+  "src": [["CDC DPDx – Schistosomiasis（慢性肉芽腫、纖維化、鱗狀細胞癌、脊髓異位卵）", "https://www.cdc.gov/dpdx/schistosomiasis/index.html"], ["WHO Africa – Schistosomiasis (Bilharzia)", "https://www.afro.who.int/health-topics/schistosomiasis-bilharzia"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 96,
+  "verdict": "正確",
+  "sci": "CDC 長期以來即表述血吸蟲病是『僅次於瘧疾、全世界第二具破壞力的寄生蟲病』。全球約有超過 2 億人感染，WHO 估計每年約造成 20 萬人死亡，主要分布在非洲與其他熱帶、亞熱帶地區。",
+  "src": [["CDC, Parasites – Schistosomiasis（\"second only to malaria as the most devastating parasitic disease\"）；經 The END Fund 轉述並附 WHO 數據", "https://endfund.org/impact-stories/five-things-to-know-about-schistosomiasis/"], ["WHO Africa – Schistosomiasis (Bilharzia)", "https://www.afro.who.int/health-topics/schistosomiasis-bilharzia"]],
+  "fix": "",
+  "confidence": "高"}
+]}
+```

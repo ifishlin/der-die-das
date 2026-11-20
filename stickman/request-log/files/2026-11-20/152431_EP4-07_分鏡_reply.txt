@@ -1,0 +1,187 @@
+{
+ "scene_id": "EP4-07",
+ "notes": "四句旁白、四個鏡頭，節奏走「極遠景建立 → 中遠景說明運送 → 中近景揭露冷知識 → 中遠景點題白石灰岩」，由大到小再收束。第 1 張用空拍極遠景建立整條水道上一隊又一隊的船，HERO 只是船上的小點（POV 錨點，建立環境與規模）。第 2 張落到地面，用背側三分之四看工人把石塊、工具、食物一路扛往工地（北邊高原方向），帶出「送到吉薩工地旁邊」。第 3 張切近景給官員梅勒伏案寫日記，是一個揭露資訊／冷知識的插入式人物鏡頭，打破前兩張的廣度。第 4 張回到碼頭，刻意讓亮白石灰岩塊在前景被工人吃力搬起、HERO 在船上看著，點出外層白石灰岩從對岸圖拉運來。HERO『在船上』是本場設定，船隊格（3）雖標角色不可站，但 HERO 站在其中一艘船上屬場景給定的例外，已在走位註明。背景（整條船隊、碼頭、半完工金字塔、尼羅河）一律不寫進 prompt，靠 camera.cell／look_at 讓主對話配參考圖與背景；prompt 只寫角色、動作、表情和他們用到的東西（自己站的船、扛的石塊、紙草捲和蘆葦筆）。這一集沒有大動物，不加拍遠一級。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "K5",
+     "facing": "W",
+     "doing": "站在船隊中的一艘小木船上（場景給定的例外），舉手遮陽、望向西邊往工地駛去的船隊"
+    },
+    {
+     "t": "4",
+     "cell": "F5",
+     "facing": "N",
+     "doing": "隨船隊往西漂到接近西邊石頭碼頭，站在船上側身看著白石灰岩被卸下"
+    }
+   ]
+  },
+  {
+   "who": "WORKERS",
+   "path": [
+    {
+     "t": "2",
+     "cell": "I3",
+     "facing": "N",
+     "doing": "幾名工人背對鏡頭，扛著石塊、工具和食物籃往北邊高原上的工地走"
+    },
+    {
+     "t": "3",
+     "cell": "M3",
+     "facing": "S",
+     "doing": "官員梅勒盤腿坐在沙地上，把紙草捲攤在腿上，用蘆葦筆低頭寫運石頭的日記"
+    },
+    {
+     "t": "4",
+     "cell": "E4",
+     "facing": "W",
+     "doing": "一名工人在西邊石頭碼頭使勁把一塊亮白石灰岩從船上搬起"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-07-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "大水一漲，一隊又一隊的船，就沿著河、順著特地挖好的水道，"
+   ],
+   "subject": "整條水道上一隊又一隊的船隊（環境為主體）；HERO 是船上的小點",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "aerial",
+   "composition": "空拍俯瞰東西向的水道，船隊沿水道由右（東、尼羅河方向）往左（西、工地方向）排成一長列；HERO 是其中一艘船上的小人，偏畫面中央偏右；畫面上方（北）是通往高原的沙坡，背景能遠遠帶到半完工金字塔",
+   "screen_direction": "left",
+   "action": "HERO 站在船上、舉手遮陽，瞪大眼睛看著一整列船順水道往工地駛去的瞬間",
+   "camera": {
+    "cell": "J7",
+    "height_m": "45",
+    "look_at": "J5 水道中央與整列船隊",
+    "distance_m": "60"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身，但因極遠景只是小點",
+     "frame_height": "約 1 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet), standing on a small wooden boat, one hand raised to shade his eyes, looking out to the left, wide-eyed and amazed. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the canal and sees HERO exactly from the side. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [],
+   "remedy": "N/A（aerial 為△，僅配 EWS 時穩定，本張即 EWS）"
+  },
+  {
+   "id": "EP4-07-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "把石頭、工具、食物和工人，一路送到吉薩的工地旁邊。"
+   ],
+   "subject": "扛著石塊、工具、食物往工地走的工人（以最前面那名工人為景別基準）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "最前面的工人在畫面中央偏左、背對鏡頭扛著一塊灰色石塊往上方（北、工地）走；右後方一名工人扛木製工具、再後方一名女工人提食物籃；背景是往北升高的沙坡和遠處半完工金字塔",
+   "screen_direction": "away",
+   "action": "一行工人背對鏡頭、彎腰出力往高原工地走，前景工人肩上的石塊正壓著他的那一刻",
+   "camera": {
+    "cell": "J4",
+    "height_m": "2.5",
+    "look_at": "I3 最前面的工人",
+    "distance_m": "22"
+   },
+   "cast": [
+    {
+     "who": "WORKERS",
+     "visible": "前景工人膝上背影＋石塊；後方兩名工人上半身",
+     "frame_height": "前景工人約 6 成、第二名約 4 成半、女工人約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only Egyptian workers are in the picture (exactly as in the attached WORKERS character sheet), seen from behind and one side, walking away from the camera. The front worker shoulders a heavy grey stone block; behind him another worker carries a wooden tool on his shoulder and a woman carries a basket of food. The workers' faces and hands are pure paper white. Shot size: Medium Long Shot (MLS). The front worker is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: rear three-quarter view. The camera is behind the workers and off to one side; the workers are seen from behind and one side. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "back34 為△，偶爾會多畫一個前景人物或角度不足，挑圖時剔除多餘或比例不符的人物；MLS 穩定"
+  },
+  {
+   "id": "EP4-07-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "有一位叫梅勒的官員，還把運石頭的日子寫成了日記。"
+   ],
+   "subject": "官員梅勒伏案寫日記",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "梅勒在畫面中央，盤腿而坐、紙草捲攤在腿上、低頭書寫；前景是他手上的紙草捲與蘆葦筆；背景為工地沙地（由主對話配）",
+   "screen_direction": "off_down",
+   "action": "梅勒低頭、蘆葦筆落在紙草上、神情專注的那一刻（運石日記的瞬間）",
+   "camera": {
+    "cell": "M4",
+    "height_m": "1.2",
+    "look_at": "M3 梅勒",
+    "distance_m": "3"
+   },
+   "cast": [
+    {
+     "who": "WORKERS",
+     "visible": "梅勒胸部以上＋低頭的臉＋寫字的雙手與紙草捲",
+     "frame_height": "約 7 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: an Egyptian official named Merer (styled exactly as the overseer in the attached WORKERS character sheet), sitting cross-legged, holding a rolled papyrus open on his lap and writing on it with a thin reed pen, looking down at the papyrus, focused and absorbed. There are only faint ink marks on the papyrus and no readable writing. His face and hands are pure paper white. Shot size: Medium Close-up (MCU). Merer is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is on the ground ahead of Merer, facing him. Camera angle: Eye-level: the camera is at Merer's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 為△，常畫成到腰；prompt 用 MCU 句，若畫到腰，剪輯時推近到胸（MCU）"
+  },
+  {
+   "id": "EP4-07-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "外層要用的白色石灰岩，就是這樣從尼羅河對岸的圖拉採石場，一船一船運過來的。"
+   ],
+   "subject": "被工人從船上搬起的亮白石灰岩塊（前景）；HERO 在船上看著（次要）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "前景中央偏左是一名工人使勁抱起一塊亮白石灰岩、船板上還疊著幾塊白石；畫面右後方 HERO 站在自己的船上側身看著；背景為碼頭與往北升高通向半完工金字塔的沙坡（由主對話配）",
+   "screen_direction": "left",
+   "action": "工人吃力把一塊亮白石灰岩從船板抱起、往岸上（北）送的瞬間；HERO 張著嘴驚奇地看",
+   "camera": {
+    "cell": "D4",
+    "height_m": "2",
+    "look_at": "E4 搬石工人與白石灰岩塊",
+    "distance_m": "20"
+   },
+   "cast": [
+    {
+     "who": "WORKERS",
+     "visible": "搬石工人膝上＋出力的臉＋抱著的白石塊",
+     "frame_height": "約 6 成半"
+    },
+    {
+     "who": "HERO",
+     "visible": "站在船上的側身與臉（略遠、較小）",
+     "frame_height": "約 3 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Exactly two characters are in the picture: in the foreground a worker (exactly as in the attached WORKERS character sheet) straining as he lifts a bright white limestone block off the deck of a wooden boat, his face tight with effort; and farther back, HERO (exactly as in the attached HERO character sheet) standing on a small wooden boat, seen in profile, watching with an awed, open-mouthed expression. Several bright white limestone blocks are stacked on the boat's deck. The worker's face and hands are pure paper white. HERO's face and hands are pure paper white. Shot size: Medium Long Shot (MLS). The worker is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front three-quarter view. The camera is ahead of the worker and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the worker's eye height, looking straight ahead.",
+   "untested": [
+    "兩層景深指示 'in the foreground... and farther back'（前景工人＋較遠 HERO 的前後關係未實測）"
+   ],
+   "remedy": "front34 為△大致可；兩層景深未實測，若 HERO 被畫得與工人一樣大或比例不符，挑圖時剔除重生"
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch05_pompeii/pages/p50.jpg（書的 p.50；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 11,
+  "claim_zh": "Petrone 回覆說許多龐貝人在噴發中存活，但大概只有立刻採取行動的人",
+  "quote": "many did. \"But likely only those who took immediate action.\"",
+  "pages": [
+   "p.49",
+   "p.50"
+  ],
+  "type": "專家說法",
+  "who": "Pier Paolo Petrone",
+  "hedge": "likely",
+  "convert": ""
+ },
+ {
+  "n": 12,
+  "claim_zh": "有些龐貝人沒有立刻撤離，反而躲起來避落灰",
+  "quote": "instead of immediately evacuating, some Pompeiians took shelter from the falling ash",
+  "pages": [
+   "p.50"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 13,
+  "claim_zh": "躲避落灰看似謹慎，其實是錯的（應立刻撤離）",
+  "quote": "This may seem prudent, but it is a mistake.",
+  "pages": [
+   "p.50"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 14,
+  "claim_zh": "（圖）那不勒斯灣沿岸由西往東標出 Misenum、Pozzuoli、那不勒斯、Herculaneum、維蘇威、龐貝，南邊有 Stabia，灣口有 Capri 島",
+  "quote": "圖：Pompeii Evacuation Route 右下小圖，標註 Naples / BAY OF NAPLES / Puzzuoli / Misenum / Herculaneum / Pompeii / Vesuvius / Stabia / Capri",
+  "pages": [
+   "p.50"
+  ],
+  "type": "描述",
+  "who": "作者（地圖）",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 15,
+  "claim_zh": "（圖）龐貝城內有麵包店、Central Baths、Market、The Forum，對外有通往那不勒斯、維蘇威、Stabia、海灘的路及 Eastern Roads",
+  "quote": "圖：Pompeii Evacuation Route，標註 Good Bakery / Central Baths / Market / The Forum / Road to Naples / Road to Vesuvius / Eastern Roads / Roads to Stabia / Road to the Beach",
+  "pages": [
+   "p.50"
+  ],
+  "type": "描述",
+  "who": "作者（地圖）",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 16,
+  "claim_zh": "（圖）作者手寫建議：走往那不勒斯的路（Yes），別走往維蘇威的路（No），別在 Central Baths 停留；通往 Stabia、海灘、Eastern Roads 標骷髏",
+  "quote": "圖：手寫標註 Yes!! (Road to Naples) / No!! (Road to Vesuvius) / Do not stop here. (Central Baths)，三條路標骷髏",
+  "pages": [
+   "p.50"
+  ],
+  "type": "求生建議",
+  "who": "作者（地圖）",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.50",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.50"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

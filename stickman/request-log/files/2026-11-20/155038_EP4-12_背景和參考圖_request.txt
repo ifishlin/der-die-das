@@ -1,0 +1,75 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 12 場　吉薩工地・拉石頭・上午
+
+【四、地圖】吉薩工地・拉石頭・上午
+吉薩高原。正中偏北是半完工的大金字塔：底邊每邊約 230 公尺（12 格）、四邊對正東西南北，現在只堆到約 60 公尺高，是灰撲撲的一層層階梯、還沒有白色外殼。金字塔南邊是工地空地（放石塊、滑橇，拉石頭和大拉石在這裡），再往南幾百公尺是往下挖的採石場。一條臨時斜坡從採石場西北角往上，通到金字塔的西南角（#90）。金字塔東邊也有一塊工地空地，往東下坡是水道和港口。四周是沙漠；旁邊沒有別的金字塔、沒有人面獅身（#211）。
+★ 金字塔四邊對正方位、還是灰撲撲的階梯
+★ 採石場在南邊、斜坡通到金字塔西南角
+★ 旁邊沒有別的金字塔和人面獅身
+大小 22 欄（A–V）× 20 列（1–20），一格 20 公尺。北在上。時間：上午（第 8、11、12 場）；中午（第 13 場）；傍晚（第 15 場），太陽在東（早上）、南偏高（中午）、西（傍晚）方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T U V
+  1  z z z z z z z z z z z z z z z z z z z z z z
+  2  z z z z A A A A A A A A A A A A z z z z z z
+  3  z z z z A A A A A A A A A A A A z z z z z z
+  4  z z z z A A A A A A A A A A A A z z z z z z
+  5  z z z z A A A A A A A A A A A A j j j z z z
+  6  z z z z A A A A A A A A A A A A j j 7 j z z
+  7  z z z z A A A A A A A A A A A A j j j j z z
+  8  z z z z A A A A A A A A A A A A j j j j z z
+  9  z z z z A A A A A A A A A A A A j j j z z z
+ 10  z z z z A A A A A A A A A A A A z z z z z z
+ 11  z z z z A A A A A A A A A A A A z z z z z z
+ 12  z z z z A A A A A A A A A A A A z z z z z z
+ 13  z z z z A A A A A A A A A A A A z z z z z z
+ 14  z z z u u z z z 2 2 2 2 2 2 z z z z z z z z
+ 15  z z z u u z z z j j j j 6 3 z z z z z z z z
+ 16  z z z z u u 5 z j j 1 1 j j z z z z z z z z
+ 17  z z z z z u u q q q q q q q q z z z z z z z
+ 18  z z z z z z q q q 4 4 4 q q q q z z z z z z
+ 19  z z z z z z q q q q q q q q q q z z z z z z
+ 20  z z z z z z z q q q q q q q q z z z z z z z
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 大拉石的花崗岩橫梁（滑橇上）（a huge granite beam lying on a wooden sledge）｜角色：不可站｜相機：不可放
+  2 = 拉繩的隊伍（幾百人，繩子往北拉）（hundreds of workers lined along a long rope）｜角色：可站｜相機：可放
+  3 = Hemiunu 站的高處（石塊堆）（a stack of stone blocks where Hemiunu stands）｜角色：不可站｜相機：可放
+  4 = 採石工鑿石頭的地方（quarrymen cutting limestone blocks with copper chisels）｜角色：可站｜相機：可放
+  5 = 秤銅鑿子的地方（an official weighing copper chisels on a balance）｜角色：不可站｜相機：不可放
+  6 = HERO 按回家按鈕的地方（第 15 場）（where HERO stands at dusk）｜角色：可站｜相機：可放
+  7 = HERO 第一次抬頭看金字塔的地方（第 8 場）（where HERO first looks up at the pyramid）｜角色：可站｜相機：可放
+  A = 半完工的金字塔（站不上去）（the half-built pyramid）｜角色：不可站｜相機：不可放
+  j = 工地空地（放石塊、滑橇）（an open work yard with stone blocks and sledges）｜角色：可站｜相機：可放
+  q = 採石場（往下挖的大坑）（a limestone quarry pit cut down into the plateau）｜角色：可站｜相機：可放
+  u = 臨時斜坡（碎石和泥磚）（a temporary ramp of rubble and mudbrick）｜角色：可站｜相機：可放
+  z = 沙漠（open desert sand）｜角色：可站｜相機：可放
+工地空地在金字塔南邊（第 14～16 列）。
+地圖外面：北邊 沙漠高原，遠處什麼都沒有；東邊 下坡通到水道和港口，再過去是氾濫的尼羅河谷；西邊 沙漠；南邊 採石場再往南是工人村。
+
+【參考圖】
+- REF_HERO_SUMMER：HERO 夏天裝（短袖、短褲、拖鞋，沒帽子沒背包）（EP3）
+- REF_PROPS4：EP4 道具：銅鑿子和木槌、天平、棕櫚纖維繩、滑橇載石塊、水罐（倒水）、麵包和啤酒、卡沙的回家按鈕、布袋（EP4）
+- REF_PYRAMID：吉薩工地：半完工的金字塔（灰撲撲階梯、臨時斜坡）、採石場、完工的白色金字塔（EP4）
+- REF_WORKERS：古埃及金字塔工人：男工人（白纏腰布）、女工人（窄長裙、水罐）、工頭（短木杖）、年輕工人（光頭側髮）（EP4）
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP4-12-01", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "H16", "height_m": "1.6", "look_at": "HERO 和 FOREMAN 之間、被舉起的插圖", "distance_m": "3.5"}, "in_frame": ["FOREMAN", "HERO"]}, {"id": "EP4-12-02", "variant_of": "N/A", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "J15", "height_m": "1.3", "look_at": "工頭手上舉起的插圖（推到整張畫滿版）", "distance_m": "0.4"}, "in_frame": []}, {"id": "EP4-12-03", "variant_of": "N/A", "shot_size": "CU", "angle": "eye", "camera": {"cell": "J15", "height_m": "1.3", "look_at": "插圖裡滑橇前的倒水人（局部）", "distance_m": "0.3"}, "in_frame": []}, {"id": "EP4-12-04", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "H15", "height_m": "1.6", "look_at": "倒水的工人與水罐、腳前的濕沙", "distance_m": "4"}, "in_frame": ["WORKERS"]}, {"id": "EP4-12-05", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "L20", "height_m": "2.5", "look_at": "石橇、拉石隊伍與北邊的金字塔", "distance_m": "60"}, "in_frame": ["WORKERS"]}, {"id": "EP4-12-06", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "H14", "height_m": "1.5", "look_at": "HERO 握繩的手與臉", "distance_m": "2.5"}, "in_frame": ["HERO", "WORKERS"]}, {"id": "EP4-12-07", "variant_of": "N/A", "shot_size": "MLS", "angle": "eye", "camera": {"cell": "G14", "height_m": "1.6", "look_at": "拉繩隊伍前段與 HERO", "distance_m": "6"}, "in_frame": ["WORKERS", "HERO"]}, {"id": "EP4-12-08", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "O15", "height_m": "3", "look_at": "整條繩上的石橇與拉石隊伍", "distance_m": "50"}, "in_frame": ["WORKERS", "HERO"]}, {"id": "EP4-12-09", "variant_of": "N/A", "shot_size": "EWS", "angle": "aerial", "camera": {"cell": "L20", "height_m": "120", "look_at": "整個拉石工地（巨石、長繩、數百工人、金字塔）", "distance_m": "150"}, "in_frame": ["WORKERS"]}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

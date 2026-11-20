@@ -1,0 +1,357 @@
+{
+ "scene_id": "EP4-11",
+ "notes": "這一場是整集最吃旁白的科普段落（21 句），拍法以『清楚呈現概念』為主、但盡量用鏡頭敘事避免變成圖解。節奏分六個拍段：①上工建立環境（01）②採石工備石灰岩、HERO 當搬運季節工（02–03）③銅鑿子與秤銅的珍貴（04–06，用一張插入特寫強調工具的軟與可貴）④石頭的採集與重量，用遠景＋比例物件表現大小落差（07–09）⑤被編進二十人隊、面對『怎麼拉上去』的難題（10–11，仰視壓迫感）⑥斜坡理論用三張手繪插圖說明（12–14，畫面不能有字）。相機幾乎都在採石場南緣與工地空地，靠南往北拍可帶到半完工金字塔當背景（背景由主對話依地圖補，prompt 只寫角色與道具）。HERO 以『搬運工、滿頭大汗』貫穿；採石、秤銅、拉花崗岩等交給 WORKERS 與工頭。沒有大動物，不需加拍遠一級。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "L16", "facing": "N", "doing": "第二天一早走進工地空地來上工，一手抹後頸的汗"},
+    {"t": "3", "cell": "M16", "facing": "W", "doing": "繩子斜掛肩上，拉著載著石灰岩塊的木滑橇，全身前傾使勁、滿頭大汗"},
+    {"t": "7", "cell": "K18", "facing": "N", "doing": "從採石場往北朝金字塔方向走（遠景裡很小的身影），示意只要走幾分鐘"},
+    {"t": "10", "cell": "M15", "facing": "S", "doing": "站在二十人工作隊中間，面向工頭聽派工"},
+    {"t": "11", "cell": "F16", "facing": "N", "doing": "站在斜坡腳、一塊石灰岩旁，仰頭往上看高聳的金字塔，肩膀一垮"}
+   ]
+  },
+  {
+   "who": "WORKERS",
+   "path": [
+    {"t": "2", "cell": "J18", "facing": "S", "doing": "幾名採石工蹲在石灰岩塊上，用銅鑿子和木槌鑿石頭，石屑飛濺"},
+    {"t": "4", "cell": "J18", "facing": "W", "doing": "一名採石工舉起剛領到的新銅鑿子，翻看端詳"},
+    {"t": "5", "cell": "J18", "facing": "S", "doing": "採石工的手指握著銅鑿子、刃抵在石灰岩塊上（插入鏡頭）"},
+    {"t": "6", "cell": "G16", "facing": "E", "doing": "管事的官員把銅鑿子放上木天平的盤子秤重，盯著橫桿"},
+    {"t": "8", "cell": "J15", "facing": "E", "doing": "一名工人站在大小不一的石灰岩塊堆旁，手扶著最大的一塊"},
+    {"t": "9", "cell": "J16", "facing": "E", "doing": "幾名工人站在巨大的花崗岩橫梁旁拉繩，身形被橫梁襯得很小"},
+    {"t": "10", "cell": "M16", "facing": "N", "doing": "約二十人聚成一團面向工頭，等待派工"}
+   ]
+  },
+  {
+   "who": "FOREMAN",
+   "path": [
+    {"t": "10", "cell": "N16", "facing": "W", "doing": "拿著短木杖站在工作隊旁，面向隊伍訓話派工"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-11-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["第二天一早，你就上工了。"],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏下，背對鏡頭往前（北）走進工地；背景（主對話補）是半完工的金字塔佔上方，四周工地空地。",
+   "screen_direction": "away",
+   "action": "HERO 一早拖著步子走進工地，一手抹後頸的汗，背影朝向遠處龐大的工程。",
+   "camera": {"cell": "L19", "height_m": "1.6", "look_at": "HERO（遠處帶到金字塔）", "distance_m": "60"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影，從頭到腳", "frame_height": "40%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), in his summer outfit (short sleeves, shorts, sandals, no hat, no backpack). Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is behind HERO, looking the way he walks; HERO's back is nearer the camera as he trudges away. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. HERO walks forward away from the camera to start the day's work, trudging with tired steps, one hand wiping sweat from the back of his neck. HERO's face and hands are pure paper white.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（人偏大）；剪輯時可再外推或靠背景比例補，不影響敘事。"
+  },
+  {
+   "id": "EP4-11-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["採石的工人一整年都待在這裡，先把大量的石灰岩塊備好。"],
+   "subject": "WORKERS（採石工）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "幾名採石工散布在畫面中下方的採石坑裡，鏡頭由北側高處往下俯看坑內；前景是被鑿到一半的石灰岩塊，坑壁與碎石往四周散開。",
+   "screen_direction": "off_down",
+   "action": "採石工蹲在大石灰岩塊上，一下一下用銅鑿子敲打，石屑飛濺，臉上都是使勁的汗。",
+   "camera": {"cell": "J15", "height_m": "8", "look_at": "採石工（J18）", "distance_m": "60"},
+   "cast": [
+    {"who": "WORKERS", "visible": "4～5 名採石工全身", "frame_height": "30%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are several WORKERS (exactly as in the attached WORKERS character sheet): quarrymen in white kilts. Shot size: Wide Shot (WS). The quarrymen's whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of the quarrymen and off to one side, so we see their faces and one side of their bodies. Camera angle: High angle: the camera is high above the quarrymen, looking down at them. The quarrymen are crouched over big pale limestone blocks, striking them with copper chisels and wooden mallets, chips of stone flying, their faces set and sweaty with effort. The quarrymen's faces and hands are pure paper white.",
+   "untested": [],
+   "remedy": "high △ 只會輕微往下看；靠坑壁與碎石入鏡表現往下挖的採石坑，若俯角不足就改 eye 平視拍坑邊，不強求正俯。"
+  },
+  {
+   "id": "EP4-11-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["而像你這種季節工，負責的就是搬。"],
+   "subject": "HERO",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏左，身體前傾往畫面左邊使勁；他身後（畫面右）拖著一具載石灰岩塊的木滑橇。",
+   "screen_direction": "left",
+   "action": "HERO 把粗繩斜掛在肩上，整個人前傾、咬牙把沉重的滑橇往前拖，汗水淋漓。",
+   "camera": {"cell": "L17", "height_m": "1.6", "look_at": "HERO", "distance_m": "28"},
+   "cast": [
+    {"who": "HERO", "visible": "膝蓋以上，含肩上的繩子與雙手", "frame_height": "75%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), in his summer outfit (short sleeves, shorts, sandals). Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. HERO leans hard into a thick rope slung across his shoulder, dragging a heavy wooden sledge, his whole body straining forward, teeth gritted, face screwed up with effort and drenched in sweat. HERO's face and hands are pure paper white.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-11-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": ["採石組的人，每人領一支銅鑿子。"],
+   "subject": "WORKERS（一名採石工）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "一名採石工在畫面正中，腰部以上入鏡；雙手舉著一支新銅鑿子在臉前翻看。",
+   "screen_direction": "toward",
+   "action": "採石工把剛領到的新銅鑿子舉到眼前，手指轉動端詳，眉毛微揚、帶點好奇。",
+   "camera": {"cell": "I18", "height_m": "1.6", "look_at": "採石工（J18）", "distance_m": "20"},
+   "cast": [
+    {"who": "WORKERS", "visible": "一名採石工腰部以上，含雙手與銅鑿子", "frame_height": "70%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is one WORKER (exactly as in the attached WORKERS character sheet): a quarryman in a white kilt. Shot size: Medium Shot (MS). The quarryman is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is ahead of the quarryman, facing him. Camera angle: Eye-level: the camera is at the quarryman's eye height, looking straight ahead. The quarryman holds up a brand-new reddish copper chisel in front of his face, turning it in his fingers and inspecting it, eyebrows raised with mild curiosity. The quarryman's face and hands are pure paper white.",
+   "untested": [],
+   "remedy": "MS 常被畫成膝上；若下緣過低，剪輯時往上裁到胸腰之間。"
+  },
+  {
+   "id": "EP4-11-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "銅其實很軟，不太適合鑿石頭，可是那時候也沒有更好的工具了。",
+    "而且銅得靠船隊，從紅海對岸的礦區運回來，非常珍貴。"
+   ],
+   "subject": "銅鑿子（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "握著銅鑿子的手指與鑿子的刃",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面被一支銅鑿子的刃和握著它的幾根手指佔滿；刃抵在一塊淺色石灰岩的表面上。",
+   "screen_direction": "off_down",
+   "action": "銅鑿子的刃壓在堅硬的石灰岩上、被敲打，刃緣看得出有點鈍、有凹痕，暗示銅很軟。",
+   "camera": {"cell": "I18", "height_m": "1.5", "look_at": "銅鑿子的刃", "distance_m": "3"},
+   "cast": [
+    {"who": "WORKERS", "visible": "只有握鑿子的手指", "frame_height": "50%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. No character's face is in the picture — only a hand and a tool. In the picture is a single reddish copper chisel held by a worker's fingers, its tip pressed against the surface of a pale limestone block. Shot size: Extreme Close-up (ECU). Only the copper chisel and the fingers gripping it fill the picture. Camera direction: front view. The camera is in front of the chisel, facing it. Camera angle: Eye-level: the camera is level with the chisel, looking straight at it. The copper chisel is pressed and tapped against the hard limestone; its cutting edge looks slightly blunt and dented, as if the soft metal is wearing down. The worker's fingers are pure paper white.",
+   "untested": ["ECU 用在物件（銅鑿子）：實測只驗證過眼睛，物件 ECU 未測。"],
+   "remedy": "若 ECU 畫得太寬（只到手腕），prompt 改用 CU 的構圖句，剪輯時再推近成 ECU。"
+  },
+  {
+   "id": "EP4-11-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": ["所以管事的人，會仔細秤每個工人帶進來的銅，一點都不能少。"],
+   "subject": "WORKERS（秤銅的官員）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "管事的官員在畫面中央偏右，腰部以上入鏡；畫面左是他面前的一具木天平，盤上放著幾支銅鑿子。",
+   "screen_direction": "toward",
+   "action": "官員小心把銅鑿子一支支放上天平的盤子，盯著橫桿看是否平衡，眉頭微皺、神情謹慎。",
+   "camera": {"cell": "H16", "height_m": "1.6", "look_at": "秤銅官員（G16）", "distance_m": "20"},
+   "cast": [
+    {"who": "WORKERS", "visible": "官員腰部以上，含雙手；木天平與銅鑿子", "frame_height": "70%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is one WORKER (exactly as in the attached WORKERS character sheet): an overseer in a white kilt. Shot size: Medium Shot (MS). The overseer is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of the overseer and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the overseer's eye height, looking straight ahead. The overseer carefully sets copper chisels one by one onto the pan of a simple wooden balance scale, watching the beam, brow furrowed in careful concentration. The overseer's face and hands are pure paper white.",
+   "untested": [],
+   "remedy": "MS 常被畫成膝上；若下緣過低，剪輯時往上裁。"
+  },
+  {
+   "id": "EP4-11-07",
+   "variant_of": "N/A",
+   "t": "7",
+   "narration": ["採石場就在金字塔旁邊，差不多幾百公尺，走幾分鐘就到。"],
+   "subject": "吉薩工地全景（HERO 為極小身影）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "aerial",
+   "composition": "高空俯瞰：畫面下方（南）是採石坑與工地空地，中央一個極小的 HERO 正往上（北）走，上方（北）是半完工的金字塔；呈現採石場到金字塔只隔幾百公尺。",
+   "screen_direction": "away",
+   "action": "HERO 是個小點，從採石場往金字塔方向走幾步，示意兩地很近、走幾分鐘就到。",
+   "camera": {"cell": "K20", "height_m": "30", "look_at": "半完工的金字塔", "distance_m": "260"},
+   "cast": [
+    {"who": "HERO", "visible": "極小的全身背影", "frame_height": "8%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), drawn very small. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: back view. The camera is behind HERO, looking the way he walks; HERO's tiny back is turned to the camera as he walks away across the open ground. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. HERO is a tiny figure walking a short distance across the worksite. HERO's face and hands are pure paper white.",
+   "untested": [],
+   "remedy": "aerial △ 只在配 EWS 時成立；本張就是 EWS，可用。採石場與金字塔的相對位置由主對話依地圖補背景。"
+  },
+  {
+   "id": "EP4-11-08",
+   "variant_of": "N/A",
+   "t": "8",
+   "narration": [
+    "石頭大多是附近採的石灰岩，平均每塊大約兩噸半。",
+    "輕的只有一噸，重的可以到八十噸。"
+   ],
+   "subject": "石灰岩塊（一名工人作比例）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面中、右是幾塊大小不一、方方正正的石灰岩塊堆在地上；畫面左一名工人站在最大那塊旁邊、手扶著它，當作大小比例。",
+   "screen_direction": "toward",
+   "action": "工人站在齊腰高的大石塊旁、手搭在石塊上，旁邊還有更小的石塊，呈現石塊大小的落差。",
+   "camera": {"cell": "L15", "height_m": "1.6", "look_at": "石灰岩塊堆（J15）", "distance_m": "40"},
+   "cast": [
+    {"who": "WORKERS", "visible": "一名工人全身", "frame_height": "45%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is one WORKER (exactly as in the attached WORKERS character sheet) standing beside a group of cut stone blocks. Shot size: Wide Shot (WS). The worker and the blocks are clearly visible, with a lot of the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of the worker and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the worker's eye height, looking straight ahead. Several square-cut pale limestone blocks of clearly different sizes are stacked on the ground; the worker stands next to the biggest block, which rises past his waist, resting one hand on it, looking a little tired. The worker's face and hands are pure paper white.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS；靠工人與大石塊的比例傳達石塊大小，若人偏大剪輯外推。"
+  },
+  {
+   "id": "EP4-11-09",
+   "variant_of": "N/A",
+   "t": "9",
+   "narration": ["最重的花崗岩，還得從南邊大約八百公里外的亞斯文運過來。"],
+   "subject": "花崗岩橫梁（幾名工人作比例）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面中央橫躺一根巨大的深灰色花崗岩橫梁、架在木滑橇上，從側面看幾乎橫跨整個畫面；幾名工人站在梁旁拉繩，身高只到梁的一半，顯得很小。",
+   "screen_direction": "left",
+   "action": "工人在巨大的花崗岩橫梁旁拉著滑橇的繩子，人被梁襯得很小，強調這塊石頭有多重、多遠運來。",
+   "camera": {"cell": "N15", "height_m": "1.6", "look_at": "花崗岩橫梁（K16）", "distance_m": "63"},
+   "cast": [
+    {"who": "WORKERS", "visible": "2～3 名工人全身，很小", "frame_height": "15%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are a few WORKERS (exactly as in the attached WORKERS character sheet), looking tiny beside an enormous stone beam. Shot size: Wide Shot (WS). The whole granite beam and the workers are visible, with surroundings around them. Camera direction: side view. The camera is beside the beam, seeing it exactly from the side. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead. One colossal dark-grey granite beam rests on a massive wooden sledge; two or three workers stand beside it hauling ropes attached to the sledge, dwarfed, barely reaching halfway up the height of the beam. The workers' faces and hands are pure paper white.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-11-10",
+   "variant_of": "N/A",
+   "t": "10",
+   "narration": ["你被編進一個二十人一組的工作隊。"],
+   "subject": "二十人工作隊（HERO 在其中）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央聚成一團約二十名工人，都面向鏡頭這側；畫面右側是拿短木杖的工頭；HERO 是人群中間一個小小的身影。",
+   "screen_direction": "toward",
+   "action": "二十名工人圍成一團面向工頭聽派工，工頭舉著木杖站在一旁，HERO 夾在人群中間，被編進了這一隊。",
+   "camera": {"cell": "M18", "height_m": "1.6", "look_at": "工作隊", "distance_m": "60"},
+   "cast": [
+    {"who": "WORKERS", "visible": "約二十名工人全身，較小", "frame_height": "18%"},
+    {"who": "FOREMAN", "visible": "全身，含短木杖", "frame_height": "20%"},
+    {"who": "HERO", "visible": "全身，夾在人群中", "frame_height": "16%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The characters in the picture are a large work gang of about twenty WORKERS (exactly as in the attached WORKERS character sheet) gathered in a cluster, plus the FOREMAN (exactly as in the attached WORKERS character sheet) holding a short wooden staff, and HERO (exactly as in the attached HERO character sheet, in his summer outfit) standing among the gang. Shot size: Extreme Wide Shot (EWS). The figures are small in the picture; the whole crowd is the main subject. Camera direction: front view. The camera is in front of the gang, facing them. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead. About twenty workers stand clustered together facing the foreman, who stands to one side holding his staff, looking stern; HERO is one small figure in the middle of the crowd. HERO's face and hands are pure paper white. The workers' and the foreman's faces and hands are pure paper white.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-11-11",
+   "variant_of": "N/A",
+   "t": "11",
+   "narration": ["問題來了：這麼重的石頭，到底要怎麼拉上去？"],
+   "subject": "HERO",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "low",
+   "composition": "極低角度仰視：HERO 在畫面下方偏中、背側對鏡頭，仰頭往上看；他身旁一塊石灰岩塊；畫面上方由高聳的金字塔（背景補）壓下來，突顯難題之大。",
+   "screen_direction": "off_up",
+   "action": "HERO 站在斜坡腳、一手搭在身旁的石灰岩塊上，頭往後仰到底、肩膀一垮，望著高聳在上的金字塔，一副被難倒、不知如何是好的樣子。",
+   "camera": {"cell": "G17", "height_m": "0.3", "look_at": "HERO（及其仰望的金字塔）", "distance_m": "28"},
+   "cast": [
+    {"who": "HERO", "visible": "全身，後側 3/4，頭往後仰", "frame_height": "55%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), in his summer outfit, standing beside a single limestone block. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side; we see HERO from behind and one side. Camera angle: Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body. HERO stands with his head tilted all the way back and his shoulders slumped, one hand resting on a limestone block beside him, gazing up at something towering high above and ahead of him, his whole posture small and daunted. HERO's face and hands are pure paper white.",
+   "untested": [],
+   "remedy": "Extreme low-angle 目前在單人站立畫面驗證過；HERO 為單人站立，符合。金字塔的高聳壓迫感由主對話依地圖補背景。"
+  },
+  {
+   "id": "EP4-11-12",
+   "variant_of": "N/A",
+   "t": "12",
+   "narration": [
+    "連最懂金字塔的專家都說，斜坡要怎麼搭，是蓋金字塔最傷腦筋的難題之一。",
+    "如果做一條長長的、緩緩的坡道直通塔頂，用掉的材料會比金字塔本身還多。",
+    "所以學者推測，他們是用一段一段的臨時斜坡，把石塊拉上去定位。"
+   ],
+   "subject": "手繪插圖：一段段臨時斜坡（全畫面，無字）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "整張畫面是一張手繪示意插圖：半完工的階梯金字塔以斜上方鳥瞰角度畫出，側邊不同高度搭著幾段短短的、分開的臨時斜坡，旁邊一個採石坑；畫面上完全沒有字。",
+   "screen_direction": "away",
+   "action": "插圖裡幾個極小的火柴人沿著其中一段斜坡把一塊石塊往上拉，示意『一段一段的臨時斜坡』這個概念。",
+   "camera": {"cell": "F16", "height_m": "1.5", "look_at": "手繪插圖（全畫面）", "distance_m": "2"},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The whole picture is a simple hand-drawn explanatory illustration, like a loose sketch on paper, with no words, numbers or labels of any kind. The illustration shows a half-built stepped pyramid seen from a three-quarter bird's-eye angle, with several short, separate temporary rubble ramps built against its sides at different levels, and a limestone quarry pit beside it; a few tiny stick-figure workers drag a single stone block up one of the ramp segments. Drawn in a loose hand-sketched style. No text anywhere in the picture.",
+   "untested": ["全畫面手繪示意插圖（非實景，含極小的示意火柴人）。"],
+   "remedy": "若模型自動加上文字或標註，重生成並再次強調 no text、no labels。"
+  },
+  {
+   "id": "EP4-11-13",
+   "variant_of": "N/A",
+   "t": "13",
+   "narration": [
+    "考古學家也在採石場底下的碎石裡，挖到一段像是舊坡道的遺跡，坡度很緩。",
+    "不過這只是其中一種解釋，到今天還沒有定論。"
+   ],
+   "subject": "手繪插圖：採石場底下的舊坡道遺跡（剖面，無字）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "整張畫面是一張手繪剖面示意圖：採石場地底的側切面，一段長長、坡度很緩的舊坡道由夯實碎石構成，半埋在鬆散的碎石堆下，像是剛被挖出來；畫面上沒有任何字。",
+   "screen_direction": "off_down",
+   "action": "插圖用側剖面畫出一段很緩的舊坡道遺跡埋在碎石裡，表現考古挖到的證據；坡度刻意畫得很平緩。",
+   "camera": {"cell": "F16", "height_m": "1.5", "look_at": "手繪剖面插圖（全畫面）", "distance_m": "2"},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The whole picture is a simple hand-drawn explanatory illustration, like a cut-away cross-section sketch on paper, with no characters and no words, numbers or labels of any kind. The illustration shows a side cut-away view of a quarry floor, with a long, very shallow, gently sloping old ramp of packed rubble half-buried under loose stone chips and debris, as if just uncovered by digging. Drawn in a loose hand-sketched style. No text anywhere in the picture.",
+   "untested": ["全畫面手繪剖面示意插圖（非實景）。"],
+   "remedy": "若出現文字或標註，重生成並再次強調 no text、no labels。"
+  },
+  {
+   "id": "EP4-11-14",
+   "variant_of": "N/A",
+   "t": "14",
+   "narration": [
+    "照研究者的推算，這條坡道只蓋到金字塔的四分之一高。",
+    "可是別小看這四分之一：金字塔底部又寬又厚，蓋到這裡時，一半以上的石塊其實都已經堆好了。",
+    "學者還推測，金字塔蓋好以後，工人就把斜坡拆掉，把碎石倒回挖出來的大坑裡。"
+   ],
+   "subject": "手繪插圖：坡道只到四分之一高、底部已堆過半（剖面，無字）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "整張畫面是一張手繪剖面示意圖：階梯金字塔的側剖面，一條碎石斜坡只爬到約四分之一高；寬厚的下半部已經密密堆滿石塊，上半部還只是空的輪廓；一個不帶字的彎箭頭示意碎石被從坡道倒回採石坑。畫面上沒有任何字。",
+   "screen_direction": "off_up",
+   "action": "插圖用剖面同時表現三件事：坡道只到 1/4 高、下半部石塊已堆過半、以及之後把坡道拆掉倒回大坑；全靠圖形不靠文字。",
+   "camera": {"cell": "F16", "height_m": "1.5", "look_at": "手繪剖面插圖（全畫面）", "distance_m": "2"},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The whole picture is a simple hand-drawn explanatory illustration, like a side cut-away cross-section sketch on paper, with no characters and no words, numbers or labels of any kind. The illustration shows a side-on cut-away of a stepped pyramid: a rubble ramp climbing only about one quarter of the way up one side, while the whole wide lower part of the pyramid is already densely packed with stacked stone blocks and the upper part is still just an empty outline. A small curved arrow (no words) suggests rubble being tipped from the ramp back down into a pit. Drawn in a loose hand-sketched style. No text anywhere in the picture.",
+   "untested": ["全畫面手繪剖面示意插圖（非實景，含一個不帶字的示意箭頭）。"],
+   "remedy": "若箭頭旁出現文字或模型加上標註，重生成並再次強調 no text、no labels。"
+  }
+ ]
+}

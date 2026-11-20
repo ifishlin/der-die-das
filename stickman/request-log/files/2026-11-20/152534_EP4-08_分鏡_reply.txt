@@ -1,0 +1,199 @@
+{
+ "scene_id": "EP4-08",
+ "notes": "這一場是 HERO 第一次看到金字塔的『反應→揭露→細節→想像→空景』段落，共 5 張。第1張先給反應（仰角正面，HERO 後仰張嘴、金字塔在鏡外），第2張反打揭露金字塔的巨大與 60 公尺高（HERO 背影極小當比例、金字塔塞滿畫面）。第3張拉近東面階梯＋工人拖石橇，交代『灰撲撲、一層層像階梯』並帶出工地生氣、銜接下一場工人村。第4張插圖：完工發亮的白色金字塔，配旁白4~6（未來式）。第5張空拍極遠景：孤零零一座半完工金字塔、四周全是空沙漠，強調沒有別的金字塔和人面獅身。HERO 全場站在 S6 面朝西看金字塔，工人在東邊工地空地。金字塔是背景，角色鏡頭的 prompt 不描述它，交給主對話依 camera.look_at 和參考圖補；第4、5張是物件／地景插圖，例外地在 prompt 直接描述主體。早上太陽在東，照亮朝東的金字塔面。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "S6",
+     "facing": "W",
+     "doing": "停下腳步，上半身後仰、抬頭張大嘴看西邊半完工的金字塔"
+    }
+   ]
+  },
+  {
+   "who": "WORKERS",
+   "path": [
+    {
+     "t": "1",
+     "cell": "R7",
+     "facing": "W",
+     "doing": "三四個工人拉著載石塊的木滑橇，往西邊金字塔方向使勁拖"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-08-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "然後，你就看到了它。"
+   ],
+   "subject": "HERO（看到金字塔的反應）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "HERO 置中，全身入鏡，上半身後仰、頭往上抬；金字塔在鏡頭後方（畫外上方），畫面只有 HERO 和他仰望的動作。前景為工地空地，背景為亮晃晃的天空。",
+   "screen_direction": "off_up",
+   "action": "HERO 剛停下腳步，整個人往後仰、抬頭張大嘴，定格在震驚的一瞬間",
+   "camera": {
+    "cell": "R6",
+    "height_m": "0.3",
+    "look_at": "HERO",
+    "distance_m": "6"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身，臉和手",
+     "frame_height": "約 8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing his summer outfit — short-sleeve shirt, shorts and flip-flops, no hat and no backpack. HERO has stopped walking and is leaning his upper body backwards, tilting his head far up to stare at something very tall high above and in front of him; his arms hang loosely at his sides and his whole posture is frozen in amazement. His expression is wide-eyed and awestruck, jaw dropped, mouth hanging wide open in a silent gasp. HERO's face and hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is on the ground ahead of HERO, facing him. Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body.",
+   "untested": [
+    "HERO 上半身後仰、頭往上抬的仰望姿勢（craning-up pose）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-08-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "半完工的金字塔，已經從高原上冒出大約六十公尺高。"
+   ],
+   "subject": "半完工的金字塔（HERO 背影當比例）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "HERO 背影很小，在畫面右下角前景；巨大的半完工金字塔占滿畫面中央到左上，從底到塔頂整座入鏡，顯出 60 公尺的高度。背景四周是空曠高原。",
+   "screen_direction": "away",
+   "action": "HERO 背對鏡頭站著仰頭，渺小地望著眼前塞滿畫面的巨大金字塔",
+   "camera": {
+    "cell": "U8",
+    "height_m": "1.6",
+    "look_at": "半完工金字塔中心（HERO 背影在前景）",
+    "distance_m": "200"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "背影全身",
+     "frame_height": "約 1 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), in his summer outfit — short-sleeve shirt, shorts and flip-flops, no hat and no backpack. HERO is seen from behind, standing still and very small near the bottom of the picture, his head tilted up as he gazes at the huge thing far ahead of him. HERO's hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side; HERO is seen from behind and one side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "rear three-quarter 套用在單一站立 HERO（沒有第二個角色）"
+   ],
+   "remedy": "若模型多畫一個 HERO 當前景，剪掉只留一人。金字塔的巨大與高度由主對話依 look_at 補背景"
+  },
+  {
+   "id": "EP4-08-03",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "它還沒發亮，灰撲撲的，一層一層像階梯。"
+   ],
+   "subject": "拖石橇的工人（前景）＋金字塔東面灰撲撲的階梯（背景）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "三四個工人背對鏡頭在畫面下半部，拉著載石塊的木滑橇往西（畫面上方）拖；上半部與左右被金字塔東面一層層灰撲撲的石灰岩階梯填滿，看得出是未磨亮的階梯狀。",
+   "screen_direction": "away",
+   "action": "工人彎腰使勁、往金字塔方向拖滑橇的一瞬間，身後是高聳的階梯狀石面",
+   "camera": {
+    "cell": "S8",
+    "height_m": "1.6",
+    "look_at": "WORKERS（背景為半完工金字塔東面階梯）",
+    "distance_m": "28"
+   },
+   "cast": [
+    {
+     "who": "WORKERS",
+     "visible": "背影／側背，全身",
+     "frame_height": "約 3 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are a few WORKERS (exactly as in the attached WORKERS character sheet). Three or four workers are hauling a thick rope tied to a heavy wooden sledge that carries a large pale limestone block; they lean forward and strain hard as they drag the sledge away from the camera. Any visible face is straining with effort, teeth gritted, brows furrowed. The workers' faces and hands are pure paper white. Shot size: Wide Shot (WS). The workers' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: rear three-quarter view. The camera is behind the workers and off to one side; the workers are seen from behind and one side as they haul away. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead.",
+   "untested": [
+    "WS 套用在一群工人",
+    "rear three-quarter 套用在一群人"
+   ],
+   "remedy": "WS 常被畫成 FS；階梯狀石面由主對話依 look_at 補為背景。若石面層數不夠明顯可剪輯接受或改稍遠一級"
+  },
+  {
+   "id": "EP4-08-04",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "要等整座蓋好，工人才會從塔頂一路往下，",
+    "把外層的白色石灰岩磨得又平又亮，",
+    "到那時候，它就會在陽光下閃閃發光。"
+   ],
+   "subject": "完工後磨亮發光的白色金字塔（想像插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面中央是一座完工的白色金字塔，前側 3/4 角度看得到兩個發亮的面，占畫面大部分；四周是明亮天空與空曠地景。無任何角色。",
+   "screen_direction": "toward",
+   "action": "完工的金字塔表面光滑、在陽光下閃閃發亮的定格",
+   "camera": {
+    "cell": "U6",
+    "height_m": "1.6",
+    "look_at": "完工白色金字塔（想像插圖，REF_PYRAMID 第三格）",
+    "distance_m": "190"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. There are no characters in this picture. The picture shows a single completed pyramid: a perfect four-sided pyramid fully cased in smooth, polished white limestone. Its flat triangular faces are gleaming bright white and catching the sunlight so the whole surface shines; the edges are clean and sharp and the apex is a crisp point. The pyramid is completely finished and smooth — no steps, no rubble, no scaffolding, no ramps. It is seen from a front three-quarter angle so that two of its bright faces are visible, giving it a solid three-dimensional shape.",
+   "untested": [
+    "整張是建築物插圖、無角色",
+    "front three-quarter 與建築物外觀描述未用實測句"
+   ],
+   "remedy": "用 REF_PYRAMID 第三格（完工白色金字塔）當參考，由主對話附圖；此為物件插圖例外地在 prompt 直接描述主體"
+  },
+  {
+   "id": "EP4-08-05",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "對了，你在這裡，看不到另外兩座金字塔，也看不到人面獅身像。",
+    "因為它們，都是胡夫之後的國王才蓋的。"
+   ],
+   "subject": "孤零零一座半完工金字塔與四周空曠的沙漠高原",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "畫面中央是一座灰撲撲的半完工階梯金字塔，四面八方全是空曠的沙漠高原延伸到地平線，沒有任何其他金字塔或人面獅身像。空曠感是重點。無角色。",
+   "screen_direction": "toward",
+   "action": "高空俯瞰整片高原，只有一座未完工金字塔孤立在空蕩的沙漠中",
+   "camera": {
+    "cell": "S10",
+    "height_m": "300",
+    "look_at": "半完工金字塔與四周空曠高原",
+    "distance_m": "340"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. There are no characters in this picture. The picture shows one single half-built pyramid — a dusty grey stepped pyramid of rough layered stone with no white casing — standing completely alone on a vast, flat, open desert plateau. All around it is nothing but bare pale desert sand stretching to the far horizon in every direction: no other pyramids, no sphinx, no statues, no other large structures of any kind — only this one unfinished pyramid in an empty landscape. Shot size: Extreme Wide Shot (EWS). The pyramid is very small in the picture; the wide empty environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "整張是地景插圖、無角色",
+    "EWS 套用在建築物與地景"
+   ],
+   "remedy": "aerial＋EWS 已實測可行；由主對話確保四周空曠、無其他金字塔與人面獅身"
+  }
+ ]
+}

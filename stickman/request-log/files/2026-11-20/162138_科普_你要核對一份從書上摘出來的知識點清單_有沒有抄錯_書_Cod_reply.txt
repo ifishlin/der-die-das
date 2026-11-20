@@ -1,0 +1,14 @@
+清單是空的（`[]`），所以沒有 checks 要核對。我只需要列出這一頁可查證的漏列知識點。
+
+```json
+{"page": "p.59",
+ "checks": [],
+ "missing": [
+   {"claim_zh": "從龐貝到拿坡里的總距離是 13 英里。", "quote": "the total distance from Pompeii to Naples is thirteen miles", "pages": ["p.59"], "type": "地理/距離", "who": "", "hedge": "", "convert": "13 英里 ≈ 20.9 公里"},
+   {"claim_zh": "要確保腦不被玻璃化，必須抵達拿坡里的外圍，還要再走 4 英里。", "quote": "you need to reach the outskirts of Naples—another four miles away", "pages": ["p.59"], "type": "地理/距離", "who": "", "hedge": "", "convert": "4 英里 ≈ 6.4 公里"},
+   {"claim_zh": "Petrone 找到並出示了一顆玻璃化（vitrified）的腦的照片，是維蘇威火山受難者的遺骸。", "quote": "he showed me a picture of the vitrified brain he found", "pages": ["p.59"], "type": "考古發現", "who": "Petrone", "hedge": "", "convert": ""}
+ ],
+ "unclear": [
+   {"where": "左側頁邊（p.58 的文字）", "problem": "是相鄰頁被切到的殘字，無法完整判讀，但不屬於 p.59 內容，故不列入核對。"}
+ ]}
+```

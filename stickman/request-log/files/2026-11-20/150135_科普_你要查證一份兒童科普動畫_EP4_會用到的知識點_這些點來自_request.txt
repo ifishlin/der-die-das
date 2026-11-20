@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP4）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "claim_zh": "印和闐（Imhotep）在傳統埃及長椅狀墳墓「馬斯塔巴」（mastaba）上創新，把一層層長椅疊起來，發明了金字塔的前身（為國王左塞爾 Djoser 所建）。",
+  "quote": "invented the predecessor to the pyramid by innovating on the traditional Egyptian bench-like tomb known as a mastaba",
+  "pages": [
+   "p.43"
+  ],
+  "type": "事實",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 105,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "斯尼夫魯頭兩次蓋金字塔犯了致命錯誤：把金字塔蓋在鬆軟的地面上，又把側面斜度做得太陡。",
+  "quote": "He built his pyramids on soft ground and then compounded this mistake by angling the sides too steeply",
+  "pages": [
+   "p.43"
+  ],
+  "type": "事實",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 106,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "古埃及劃分為 42 個行政區（稱為 \"nomes\"）。",
+  "quote": "Egypt's forty-two regions (or \"nomes\")",
+  "pages": [
+   "p.44"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 107,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "法老的政府分成四個部門：王室、軍隊、神廟（church）、民政。",
+  "quote": "worked in four branches of government: the royal court, the army, the church, and civil government",
+  "pages": [
+   "p.44"
+  ],
+  "type": "事實",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 108,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "古埃及不用貨幣，而是靠成熟的以物易物制度，稅按各地物產繳納——尼羅河三角洲繳牛、南方繳穀物。",
+  "quote": "Ancient Egypt relied on a system of sophisticated barter rather than money... The nomes of the Nile Delta, for example, paid in cattle, while in the south they paid in grain.",
+  "pages": [
+   "p.44"
+  ],
+  "type": "事實",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 109,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "稅率約為 10%。",
+  "quote": "Tax rates hovered around 10 percent",
+  "pages": [
+   "p.44"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 110,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "官方不直接丈量農民產量（怕農民藏收成），而是量尼羅河洪水的高度、再參考往年產量來推算該地的稅。",
+  "quote": "measured the height of the Nile's flood using \"nilometers\" and, referencing past years' production as a guide, assigned each region a tax",
+  "pages": [
+   "p.44"
+  ],
+  "type": "事實",
+  "who": "作者",
+  "hedge": "量測工具英文原字辨讀存疑（見 unclear）",
+  "convert": "",
+  "n": 111,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "Colleen Darnell 表示古埃及智慧文獻顯示當時的行為規範很清楚：不要偷竊、不要在工作時喝醉，愛抱怨的人會被人看不起。",
+  "quote": "Ancient Egyptian wisdom literature suggests the culture had clear mores: “Don’t steal. Don’t get drunk on the job. And people who complained were frowned upon,” she says.",
+  "pages": [
+   "p.45"
+  ],
+  "type": "專家說法",
+  "who": "Colleen Darnell（埃及學家）",
+  "hedge": "",
+  "convert": "",
+  "n": 112,
+  "verify_note": "逐頁核對補列"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

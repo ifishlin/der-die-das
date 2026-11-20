@@ -1,0 +1,135 @@
+
+你要查證一份兒童科普動畫（EP4）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 57,
+  "claim_zh": "Djehutihotep 的象形圖描繪了（埃及人拉石頭的）方法／原理。",
+  "quote": "the Djehutihotep hieroglyph depicts",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 58,
+  "claim_zh": "要把八十噸的石塊拉上 11% 的坡度，需要至少 343 名古埃及拉繩者在旁一起拉。",
+  "quote": "haul the eighty-ton rock up the 11 percent grade you'll pull with at least 343 Ancient Egyptian pullers standing alongside",
+  "pages": [
+   "p.46"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "at least（至少）",
+  "convert": "80 短噸≈72.6 公噸"
+ },
+ {
+  "n": 59,
+  "claim_zh": "眾人合力拉動時的力量，足以扯斷一段半吋粗的鋼筋（rebar）。",
+  "quote": "pulling with enough force to rip apart a half-inch piece of rebar",
+  "pages": [
+   "p.47"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": "半吋≈1.27 公分"
+ },
+ {
+  "n": 60,
+  "claim_zh": "有證據顯示古埃及的棕櫚纖維繩能承受極大的張力。",
+  "quote": "there's evidence that Egyptian palm-fibered ropes could withstand immense strain",
+  "pages": [
+   "p.47"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 61,
+  "claim_zh": "Hemiunu 下令你和另外 343 人就拉繩位置，並指揮你們把八十噸石塊拉上滑橇。",
+  "quote": "when Hemiunu orders you and 343 others to take your places along the ropes, and directs you to haul the eighty-ton stone block onto a sledge",
+  "pages": [
+   "p.47"
+  ],
+  "type": "數字",
+  "who": "作者（人物 Hemiunu）",
+  "hedge": "",
+  "convert": "80 短噸≈72.6 公噸",
+  "verify_note": "quote 把書上的字序前後對調了，不是逐字連續的原句。書上的順序是先「Hemiunu orders you and 343 others to take your places along the ropes」，再接「directs you to haul the eighty-ton stone block onto a sledge」；清單卻把「eighty-ton stone block onto a sledge」提到「when Hemiunu...」前面，兩段順序顛倒。claim_zh 的意思正確、不用改。"
+ },
+ {
+  "n": 62,
+  "claim_zh": "建議：你最好別站在（繩子／石塊）前面。",
+  "quote": "you probably shouldn't stand in front",
+  "pages": [
+   "p.47"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "probably（最好／大概）",
+  "convert": ""
+ },
+ {
+  "claim_zh": "與流行的迷思相反，蓋金字塔的是自由的埃及勞工，而非奴隸。",
+  "quote": "Contrary to popular myth, free Egyptian labor, rather than slave labor, built the pyramids.",
+  "pages": [
+   "p.34"
+  ],
+  "type": "破除迷思／事實",
+  "who": "書上直述（承接 Richard Redding 的說明）",
+  "hedge": "無模糊語氣，直述",
+  "convert": "",
+  "n": 63,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "Redding 解釋，這些工人是農民，古夫（Khufu）在尼羅河每年夏季氾濫、農民無農活可做時，徵召他們服四個月的勞役。",
+  "quote": "farmers, Redding explains, who Khufu conscripted for brutal four-month tours while they were idled by the Nile's annual summer flood",
+  "pages": [
+   "p.34"
+  ],
+  "type": "專家說法",
+  "who": "Richard Redding（Redding explains）",
+  "hedge": "Redding explains",
+  "convert": "",
+  "n": 64,
+  "verify_note": "逐頁核對補列"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

@@ -1,0 +1,32 @@
+```json
+{"page": "p.54",
+ "checks": [
+  {"n": 39, "ok": false,
+   "problem": "這一頁從頭到尾沒有出現 Limestone、CaCO3 或 CO2 等字。本頁可辨識、文字清晰，相關的岩漿成因段落講的是『水滲入板塊、降低熔點引發噴發』，不是『岩漿夾帶石灰岩受熱釋放 CO2』。quote「Limestone (CaCO3) … CO2」在 p.54 找不到，claim_zh 也沒有對應來源——這一點不屬於本頁（可能是別頁或抄錯頁碼）。convert 註記的『整段傾斜難辨』不成立，字其實看得清楚。",
+   "quote": "（本頁無此內容，無法提供改正後 quote）",
+   "claim_zh": "（本頁無此知識點，需改標到正確頁或刪除）"}
+ ],
+ "missing": [
+  {"claim_zh": "熔岩黏度是水的一萬倍到一億倍，連最稀的熔岩黏度也相當於室溫下的蜂蜜；除非在很陡的坡上，人通常跑得過它",
+   "quote": "lava ranges from 10,000 times to 100 million times the viscosity of water, which means even the runniest molten rock has the viscosity of room-temperature honey. Unless you're on a very steep slope, you can generally outrun it.",
+   "pages": ["p.54"], "type": "數據", "who": "作者", "hedge": "generally", "convert": ""},
+  {"claim_zh": "維蘇威的岩漿異常黏稠，其噴發在對數刻度的火山爆發指數（VEI）上達 8 分之 5，與 1980 年聖海倫斯火山噴發同級",
+   "quote": "its eruption registers as a formidable 5 out of 8 on the logrithmically scaled Volcanic Explosivity Index—the same as the Mount Saint Helens eruption in 1980",
+   "pages": ["p.54"], "type": "數據", "who": "作者", "hedge": "", "convert": "書上原文把 logarithmically 誤拼為 logrithmically，照抄即保留"},
+  {"claim_zh": "VEI 8 的噴發相當罕見",
+   "quote": "VEI 8 eruptions are quite rare. The most recent one occurred on New",
+   "pages": ["p.54"], "type": "事實", "who": "作者", "hedge": "", "convert": "句子在本頁末尾被截斷（『occurred on New…』），完整年代/地點在下一頁，待接續核對"},
+  {"claim_zh": "水滲入地函、降低板塊熔點，是許多最強烈火山（如 1883 年喀拉喀托）形成的第一步",
+   "quote": "water lowers a plate's melting temperature, this seemingly innocuous seepage is the first step of an incredibly volatile reaction that has led to some of the most catastrophic eruptions in history (see Krakatoa, 1883)",
+   "pages": ["p.54"], "type": "因果", "who": "作者", "hedge": "seemingly", "convert": ""},
+  {"claim_zh": "造成龐貝危險的隱沒板塊是亞得里亞海底下的非洲板塊，它滑入（且持續滑入）義大利東岸的歐亞板塊之下",
+   "quote": "the slab at fault is the sliver of the African plate below the Adriatic Sea, which slid (and indeed continues to slide) beneath the Eurasian plate along Italy's east coast",
+   "pages": ["p.54"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "水藉由削弱岩石的化學鍵來降低其熔點；換句話說，水對岩石的作用就像鹽對結冰的道路",
+   "quote": "\"Water\" lowers the melting temperature of rock by weakening its chemical bonds. In other words, water does to rock what salt does to an icy road.",
+   "pages": ["p.54"], "type": "因果", "who": "作者", "hedge": "", "convert": "頁面底部註腳；比喻部分不算知識點，取其化學鍵機制"}
+ ],
+ "unclear": [
+  {"where": "右欄最頂端數行", "problem": "書頁上緣被裁切且有重影，只讀得出零碎字（『to the surface…』『…tant (generally water) to enter the mantle』『temperature.』），無法確認完整句子，但下一句起（Your worrisome situation…）清楚；此截斷段落待重拍確認是否另含知識點"}
+ ]}
+```

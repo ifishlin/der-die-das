@@ -1,0 +1,60 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 14 場　工地旁的尼羅河水道邊・下午
+
+【四、地圖】工地旁的尼羅河水道邊・下午
+吉薩高原東邊山腳下、特地挖好的水道和港口。水道東西向，西邊通到高原腳下，東邊連到氾濫的尼羅河。北岸是沙地和兩個木頭碼頭，船在這裡卸下石頭、工具、食物和工人；再往北（往上）是往高原的沙漠斜坡，遠遠看得到半完工的金字塔。南岸是沙地、棕櫚樹和淹水的田。第 14 場 HERO 在北岸水邊休息，水裡有鱷魚。
+★ 金字塔在北邊高原上
+★ 水道東邊連到尼羅河
+大小 18 欄（A–R）× 8 列（1–8），一格 20 公尺。北在上。時間：夏天上午（第 7 場）；下午（第 14 場），太陽在東（上午）、西（下午）方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R
+  1  z z z z z z z z z z z z z z z z z z
+  2  z z z z z z z z z z z z z z z z z z
+  3  S S S S S S S S S 5 S S S S S S S S
+  4  S S S S 1 1 1 S S S S S 2 2 2 S S S
+  5  k k 3 3 3 3 3 3 3 3 3 3 3 3 k k k k
+  6  k k k k k k k k k 4 k k k k k k k k
+  7  S S S S S S S S S S S S S S S S S S
+  8  O O O N N N N N N N N N N N N N N N
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 西邊的碼頭（卸石頭）（a wooden quay where boats unload stone blocks）｜角色：可站｜相機：可放
+  2 = 東邊的碼頭（卸食物、工人）（a wooden quay where boats unload food and workers）｜角色：可站｜相機：可放
+  3 = 船隊（a line of wooden boats loaded with stone, tools and food）｜角色：不可站｜相機：不可放
+  4 = 鱷魚（第 14 場，只露出眼睛）（a crocodile with only its eyes above the water）｜角色：不可站｜相機：不可放
+  5 = HERO 想跳河的地方（第 14 場）（the canal edge where HERO stands）｜角色：可站｜相機：可放
+  N = 被水淹著的田（farm fields flooded with shallow water）｜角色：不可站｜相機：可放
+  O = 棕櫚樹叢（a cluster of date palms）｜角色：不可站｜相機：不可放
+  S = 沙地（工地的路面）（packed sand of the work site）｜角色：可站｜相機：可放
+  k = 挖好的水道和港口的水（the water of a dug canal and harbor basin）｜角色：不可站｜相機：不可放
+  z = 沙漠（open desert sand）｜角色：可站｜相機：可放
+HERO 站在北岸水邊 J3；鱷魚在 J6 的水裡。
+地圖外面：北邊 往上的沙漠斜坡，上面是吉薩高原，遠遠看得到半完工的金字塔（灰撲撲的階梯）；沒有別的金字塔、沒有人面獅身；東邊 水道連到很寬的尼羅河；西邊 水道盡頭在高原腳下；南邊 棕櫚樹和淹水的田。
+
+【參考圖】
+- REF_ANIMALS：古埃及動物：尼羅鱷（也有只露眼睛在水面的）、長角牛、綿羊、山羊（EP4）
+- REF_HERO_SUMMER：HERO 夏天裝（短袖、短褲、拖鞋，沒帽子沒背包）（EP3）
+- REF_PROPS4：EP4 道具：銅鑿子和木槌、天平、棕櫚纖維繩、滑橇載石塊、水罐（倒水）、麵包和啤酒、卡沙的回家按鈕、布袋（EP4）
+- REF_WORKERS：古埃及金字塔工人：男工人（白纏腰布）、女工人（窄長裙、水罐）、工頭（短木杖）、年輕工人（光頭側髮）（EP4）
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP4-14-01", "variant_of": "N/A", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "J8", "height_m": "2", "look_at": "HERO J3", "distance_m": "100"}, "in_frame": ["HERO", "WORKERS"]}, {"id": "EP4-14-02", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "J4", "height_m": "1.5", "look_at": "HERO J3", "distance_m": "5"}, "in_frame": ["HERO"]}, {"id": "EP4-14-03", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "J2", "height_m": "1.6", "look_at": "HERO J3", "distance_m": "8"}, "in_frame": ["HERO"]}, {"id": "EP4-14-04", "variant_of": "N/A", "shot_size": "ECU", "angle": "eye", "camera": {"cell": "J4", "height_m": "0.5", "look_at": "鱷魚 J6", "distance_m": "15"}, "in_frame": ["鱷魚"]}, {"id": "EP4-14-05", "variant_of": "N/A", "shot_size": "ECU", "angle": "eye", "camera": {"cell": "J3", "height_m": "1.2", "look_at": "插圖（血吸蟲）", "distance_m": "1"}, "in_frame": ["血吸蟲（插圖）"]}, {"id": "EP4-14-06", "variant_of": "N/A", "shot_size": "FS", "angle": "high", "camera": {"cell": "J3", "height_m": "2.0", "look_at": "插圖（生病小人）", "distance_m": "2"}, "in_frame": ["生病的小人（插圖）"]}, {"id": "EP4-14-07", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "J3", "height_m": "1.5", "look_at": "插圖（木乃伊）", "distance_m": "2"}, "in_frame": ["木乃伊（插圖）"]}, {"id": "EP4-14-08", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "G4", "height_m": "1.6", "look_at": "WORKERS F4", "distance_m": "20"}, "in_frame": ["WORKERS"]}, {"id": "EP4-14-09", "variant_of": "N/A", "shot_size": "ECU", "angle": "high", "camera": {"cell": "G4", "height_m": "0.3", "look_at": "工人的腳 F4", "distance_m": "3"}, "in_frame": ["工人的腳"]}, {"id": "EP4-14-10", "variant_of": "N/A", "shot_size": "ECU", "angle": "high", "camera": {"cell": "J3", "height_m": "2.0", "look_at": "插圖（骨頭）", "distance_m": "1.5"}, "in_frame": ["骨頭（插圖）"]}, {"id": "EP4-14-11", "variant_of": "N/A", "shot_size": "ECU", "angle": "high", "camera": {"cell": "J3", "height_m": "1.3", "look_at": "插圖（夾板）", "distance_m": "1"}, "in_frame": ["醫者的手＋病人前臂（插圖）"]}, {"id": "EP4-14-12", "variant_of": "N/A", "shot_size": "FS", "angle": "high", "camera": {"cell": "J3", "height_m": "1.8", "look_at": "插圖（藥方）", "distance_m": "1.5"}, "in_frame": ["古怪藥方（插圖）"]}, {"id": "EP4-14-13", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "J3", "height_m": "1.6", "look_at": "插圖（金字塔）", "distance_m": "50"}, "in_frame": ["爬塔往下摔的小人（插圖）", "底下揮手的小人（插圖）"]}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

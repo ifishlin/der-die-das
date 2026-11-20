@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP4）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "claim_zh": "Redding 告訴作者，這項工程規模大到可能牽動了當時約一百萬名古埃及人全體的生活。",
+  "quote": "the project was so large it probably touched the lives of all 1 million Ancient Egyptians",
+  "pages": [
+   "p.34"
+  ],
+  "type": "專家說法／估計",
+  "who": "Richard Redding（tells me 轉述）",
+  "hedge": "probably（可能）",
+  "convert": "",
+  "n": 65,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "埃及學家一直到 1990 年才發現這座工人營地，當時一名騎馬的遊客絆到一截露出沙面的石牆。",
+  "quote": "they didn't discover the work camp until 1990, when a tourist riding on horseback tripped over a stone wall peeking above the sand",
+  "pages": [
+   "p.34"
+  ],
+  "type": "事實／年份",
+  "who": "書上（Egyptologists）",
+  "hedge": "無",
+  "convert": "",
+  "n": 66,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "這座工人營地最多住了多達三萬人，在鼎盛時期是全世界最大的城市之一。",
+  "quote": "a work camp occupied by as many as 30,000... at its height, it was one of the world's largest cities",
+  "pages": [
+   "p.34"
+  ],
+  "type": "數字／事實",
+  "who": "書上",
+  "hedge": "as many as（多達）",
+  "convert": "",
+  "n": 67,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "營地有一系列大型軍營式的營房，可容納至少兩千人。",
+  "quote": "a series of large military-style barracks capable of housing at least 2,000 people",
+  "pages": [
+   "p.34"
+  ],
+  "type": "數字／事實",
+  "who": "書上",
+  "hedge": "at least（至少）",
+  "convert": "",
+  "n": 68,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "古埃及人會以毆打、監禁、偶爾還有肢解來懲罰逃稅者。",
+  "quote": "The Ancient Egyptians punished tax cheats with beatings, imprisonment, and occasionally mutilation.",
+  "pages": [
+   "p.34"
+  ],
+  "type": "事實",
+  "who": "書上",
+  "hedge": "occasionally（偶爾）",
+  "convert": "",
+  "n": 69,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "（興建期間）金字塔每一個白天工時、每五分鐘就放上一塊約五千磅重的石灰岩石塊，持續整整一個世代。",
+  "quote": "placed a 5,000-pound limestone block every five minutes during every daylight hour for an entire generation",
+  "pages": [
+   "p.34"
+  ],
+  "type": "數字／事實",
+  "who": "書上",
+  "hedge": "『5,000』位於被裁切的頁首『placed a 5,000』處，數字建議重拍確認",
+  "convert": "5,000 磅 ≈ 2.27 公噸",
+  "n": 70,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "吉薩金字塔的側面覆有白色石灰岩外殼，在陽光下閃閃發亮。",
+  "quote": "its sides glistening in its white limestone cladding",
+  "pages": [
+   "p.34"
+  ],
+  "type": "事實",
+  "who": "書上",
+  "hedge": "敘述於穿越情境中（you'll see），但白色石灰岩外殼為真實描述",
+  "convert": "",
+  "n": 71,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "尼羅河每年的氾濫把淤泥和水帶到乾旱國度，使河岸變成世界上最肥沃的農業區之一。",
+  "quote": "The Nile's annual flood brought life to this otherwise desert country. Its sediment and water transformed the banks of this parched land into one of the most productive agricultural areas in the world.",
+  "pages": [
+   "p.35"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 72,
+  "verify_note": "逐頁核對補列"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

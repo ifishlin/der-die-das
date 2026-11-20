@@ -1,0 +1,88 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch05_pompeii/pages/p52.jpg（書的 p.52；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 28,
+  "claim_zh": "逃生只有兩個方向：東邊有山擋、西邊有地中海擋，只能往北或往海灘走",
+  "quote": "Mountains block the path to the east, and the Mediterranean Sea blocks your path to the west",
+  "pages": [
+   "p.52"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）"
+ },
+ {
+  "n": 29,
+  "claim_zh": "維蘇威上一次噴發一般認為發生在西元前 217 年",
+  "quote": "Vesuvius's previous eruption [believed to have occurred in 217 BCE]",
+  "pages": [
+   "p.52"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "believed",
+  "convert": "西元前 217 年（傾斜頁，待重拍核對）"
+ },
+ {
+  "n": 30,
+  "claim_zh": "長期沉寂讓壓力累積，岩漿最終衝開岩石、以極大速度與猛烈程度衝出山頂噴氣口",
+  "quote": "it dramatically increased the pressure building beneath the mountain, so that when the magma finally dislodged the rock … it did so with [great] speed",
+  "pages": [
+   "p.52"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）"
+ },
+ {
+  "n": 31,
+  "claim_zh": "維蘇威的岩漿黏度極高，約為水的 1 萬到 1,000 萬倍",
+  "quote": "lava ranges from 10,000 [to] 10 million times more [viscous than water]",
+  "pages": [
+   "p.52"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（數字傾斜難辨，待重拍核對）"
+ },
+ {
+  "n": 32,
+  "claim_zh": "柏克萊加大火山學家 Stephen Self 說，熔岩流會輾平房屋這類不動的東西，但『人可以閃開』",
+  "quote": "\"people can move out of the way,\" says Stephen Self, a volcanologist at UC Berkeley",
+  "pages": [
+   "p.52"
+  ],
+  "type": "專家說法",
+  "who": "Stephen Self，火山學家，UC Berkeley",
+  "hedge": "",
+  "convert": "（人名傾斜難辨，待重拍核對）"
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.52",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.52"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

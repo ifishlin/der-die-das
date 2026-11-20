@@ -1,0 +1,262 @@
+{
+ "scene_id": "EP4-12",
+ "notes": "這場分兩段：前段（旁白1–8）是工頭把一張壁畫插圖給 HERO 看，用插入鏡頭呈現壁畫內容（滿滿的工人拉大雕像、有人在滑橇前倒水），再切到工地上真的有人往沙地倒水、濕沙變深，把『倒水』的科學演示給觀眾看；後段（旁白9–16）回到 HERO 手上的繩子，從他握繩的近景，一路拉開到一排工人、整個拉石隊伍，最後用空拍 EWS 當『好幾百人』的規模收尾。鏡頭排列是刻意的放大→拉遠的節奏：MS 看圖 → 壁畫全景/細節插入 → 真工地倒水 → 工地遠景 → HERO 握繩 MCU → 一排人 MLS → 整隊側面 WS → 空拍 EWS。空間上金字塔在北、鏡頭不能架在金字塔（A 格），所以所有工地鏡頭一律從南邊或東西兩側拍；拉石隊伍面朝北（行進方向，和壁畫一致），繩子往身後（南）接到石橇，因此正面臉只能靠側面鏡頭呈現，背影和遠景從南邊拍，金字塔自然落在背景。這一集沒有大動物，不需要加拍遠一級。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "J16", "facing": "N", "doing": "站在工地西側，看工頭舉起來的壁畫插圖，好奇"},
+    {"t": "2", "cell": "J14", "facing": "N", "doing": "走到繩子邊，雙手握住棕櫚纖維繩，面朝北（行進方向）"},
+    {"t": "3", "cell": "J14", "facing": "N", "doing": "身體前傾、腳抵著地、和整隊一起用力拉繩"}
+   ]
+  },
+  {
+   "who": "FOREMAN",
+   "path": [
+    {"t": "1", "cell": "J15", "facing": "S", "doing": "面朝 HERO，把壁畫插圖轉向他舉起來給他看，拿著短木杖"},
+    {"t": "2", "cell": "K14", "facing": "N", "doing": "在隊伍旁監看，拿短木杖"},
+    {"t": "3", "cell": "K14", "facing": "N", "doing": "在隊伍旁監看拉繩"}
+   ]
+  },
+  {
+   "who": "WORKERS",
+   "path": [
+    {"t": "1", "cell": "L15", "facing": "N", "doing": "倒水工人站在石橇前（北側），把水罐往沙地上倒；濕沙變深"},
+    {"t": "1", "cell": "K14", "facing": "N", "doing": "拉繩隊伍沿 row14（I14–N14）一排就位，面朝北，繩子往身後南邊接到石橇"},
+    {"t": "3", "cell": "K14", "facing": "N", "doing": "整隊一起前傾拉繩，石橇在沙上往北滑"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-12-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["工頭給你看了一張圖。"],
+   "subject": "FOREMAN（舉圖）和 HERO（看圖）雙人鏡頭，重點在『給他看圖』這個動作",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面左是 FOREMAN，把一張小小的手繪壁畫轉向 HERO 舉起來；右是 HERO 探身去看。兩人側面並立，背景（東側）是工地的石塊和滑橇。",
+   "screen_direction": "left",
+   "action": "工頭把圖轉向 HERO 的一刻；HERO 探身、挑眉、微張嘴，好奇又感興趣。",
+   "camera": {"cell": "H16", "height_m": "1.6", "look_at": "HERO 和 FOREMAN 之間、被舉起的插圖", "distance_m": "3.5"},
+   "cast": [
+    {"who": "FOREMAN", "visible": "臉、上半身、雙手（舉圖）", "frame_height": "約0.6"},
+    {"who": "HERO", "visible": "臉、上半身", "frame_height": "約0.6"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters are in the picture: FOREMAN (the foreman holding a short wooden staff, exactly as in the attached workers character sheet) on the left, and HERO (exactly as in the attached HERO character sheet) on the right. FOREMAN turns a small hand-painted picture toward HERO and holds it up; HERO leans in to look at it, eyebrows raised and mouth slightly open, curious and interested. FOREMAN has a friendly, instructive look. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: side view. The camera is beside the work yard and sees HERO and FOREMAN exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上景，可接受；剪輯需要時微裁到腰。"
+  },
+  {
+   "id": "EP4-12-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "那是後來一座墓裡的壁畫，畫的正是古埃及人怎麼拉重東西。",
+    "畫上一百七十多個工人，用繩子拉著一座將近六十噸重的大雕像。"
+   ],
+   "subject": "壁畫插圖全景（插入鏡頭）：一百多個工人拉一座大雕像",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "整個畫面就是那張手繪壁畫：一條長繩上好幾排小小的工人，把一座放在大滑橇上的巨大石雕往一邊拉；雕像比工人大很多。平面壁畫質感、土色。",
+   "screen_direction": "left",
+   "action": "靜止的壁畫，呈現『一大群人合力拉巨像』的場面。",
+   "camera": {"cell": "J15", "height_m": "1.3", "look_at": "工頭手上舉起的插圖（推到整張畫滿版）", "distance_m": "0.4"},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The entire frame is one hand-drawn ancient-Egyptian tomb wall-painting style illustration, flat and side-on, in earthy ochre, red-brown and black colors: more than a hundred and seventy tiny simple stick-like worker figures standing in several long rows, all holding one single long rope and pulling a giant stone statue that sits on a large wooden sledge. The statue is enormous compared with the tiny workers. Simple flat mural drawing. Absolutely no text, no hieroglyphs, no symbols, no letters and no numbers anywhere in the picture.",
+   "untested": [
+    "整個畫面是一張手繪壁畫插圖（插入鏡頭），不是用標準角色景別句",
+    "畫面中超過170個工人（確切數量不保證）"
+   ],
+   "remedy": "插入鏡頭：Flow 畫手繪壁畫風格不穩時重生；數量達不到就用『很多工人』示意，剪輯不要推太近以免看出瑕疵。"
+  },
+  {
+   "id": "EP4-12-03",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "雕像前面，還有一個人站在滑橇上，往地上倒水。",
+    "為什麼要倒水？"
+   ],
+   "subject": "壁畫局部細節（插入鏡頭）：站在滑橇前倒水的那個人",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "同一張壁畫的局部放大：畫面中央是一個站在大滑橇最前端的工人，傾倒一只圓罐，一道水倒在滑橇前的地上；他身後是巨像的前緣。",
+   "screen_direction": "off_down",
+   "action": "壁畫裡那個人正把水往地上倒的一刻。",
+   "camera": {"cell": "J15", "height_m": "1.3", "look_at": "插圖裡滑橇前的倒水人（局部）", "distance_m": "0.3"},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The entire frame is a close detail of the same hand-drawn ancient-Egyptian wall-painting (flat, side-on, earthy ochre and red-brown colors): one single worker figure stands at the very front of the large wooden sledge, tipping a round jar and pouring a stream of water down onto the ground in front of the sledge; just behind him rises the front of the giant stone statue. Simple flat mural drawing. Absolutely no text, no hieroglyphs, no symbols, no letters and no numbers anywhere in the picture.",
+   "untested": [
+    "整個畫面是手繪壁畫的局部細節（插入鏡頭），不是標準角色景別句"
+   ],
+   "remedy": "插入鏡頭：當作 02 的局部細節，和 02 風格要一致；剪輯上從 02 推近過來。"
+  },
+  {
+   "id": "EP4-12-04",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "因為沙子一濕，就變硬、變滑。",
+    "2014 年，荷蘭的科學家就做了實驗：在滑橇前面的沙子上灑適量的水，要出的力氣可以少大約一半。"
+   ],
+   "subject": "工地上真的倒水：一名工人往滑橇前的沙地倒水，沙子變深色",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面中央偏左是一名工人（側面，面朝左＝北／行進方向），傾倒一只大圓水罐，一道水落在他腳前的地上，地面有一塊深色濕沙在擴散；右邊是大石橇的前緣。由壁畫切到真實工地的呼應鏡頭。",
+   "screen_direction": "off_down",
+   "action": "工人把水倒在滑橇前沙地的一刻，低頭看著水，神情平淡、專注。",
+   "camera": {"cell": "H15", "height_m": "1.6", "look_at": "倒水的工人與水罐、腳前的濕沙", "distance_m": "4"},
+   "cast": [
+    {"who": "WORKERS", "visible": "一名倒水工人：全身＋水罐", "frame_height": "約0.85"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: a WORKER (exactly as in the attached workers character sheet) standing just in front of a big stone block that rests on a heavy wooden sledge. The WORKER holds a large round clay jar and tips it, pouring a clear stream of water down onto the ground in front of the sledge, where a dark wet patch is spreading. He looks down at the water, calm and matter-of-fact, concentrating. The WORKER's face and hands are pure paper white. Shot size: Full Shot (FS). The WORKER's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the work yard and sees the WORKER exactly from the side. Camera angle: Eye-level: the camera is at the WORKER's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP4-12-05",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["那座雕像，就這樣被一路拉了十幾公里。"],
+   "subject": "工地拉石的遠景（建立環境＋旅程感）：石橇、長繩、拉石隊伍、半完工金字塔",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "從南邊往北拍。前景是放在大滑橇上的巨石；越過它是一群工人，背對鏡頭、握著一條長繩把石橇往北（遠離鏡頭）拉；更遠的背景是灰撲撲、一層層階梯狀的半完工金字塔。沙地上有一條長長的拖痕從前景延伸到石橇，暗示拉了很遠。",
+   "screen_direction": "away",
+   "action": "整支隊伍背對鏡頭、前傾用力，石橇在沙上緩緩往北移動。",
+   "camera": {"cell": "L20", "height_m": "2.5", "look_at": "石橇、拉石隊伍與北邊的金字塔", "distance_m": "60"},
+   "cast": [
+    {"who": "WORKERS", "visible": "一群工人的背影＋拉繩的手臂", "frame_height": "約0.4"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only WORKERS (as in the attached workers character sheet). In the foreground a big stone block rests on a heavy wooden sledge; beyond it a crowd of workers stand with their backs to the camera, gripping one long thick palm-fibre rope and hauling the stone away from the camera, leaning their weight forward. We see their backs. The workers' hands are pure paper white. Shot size: Wide Shot (WS). The workers' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: back view. The camera is on the work yard behind the hauling crowd, looking the way they pull; their backs are to the camera and the big stone on its sledge is between the camera and the crowd. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead.",
+   "untested": [
+    "背面景別句原為單人／雙人追逐，這裡用於整群工人"
+   ],
+   "remedy": "WS 常畫成 FS；群像背影可接受，剪輯當建立鏡頭用。拖痕與金字塔由背景處理。"
+  },
+  {
+   "id": "EP4-12-06",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "你手上這條繩子，是棕櫚纖維做的，很結實，",
+    "能承受非常大的拉力，拿來拖和綁大石頭。"
+   ],
+   "subject": "HERO 雙手握住棕櫚纖維繩、用力拉的近景",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 側面在畫面中央，面朝左（北／拉的方向），雙手緊握一條粗糙的棕櫚纖維繩，繩子橫過畫面；左右畫面邊緣露出其他工人握著同一條繩的手臂。",
+   "screen_direction": "left",
+   "action": "HERO 前傾、雙手死命抓住繩子用力拉的一刻，咬牙、瞇眼使勁。",
+   "camera": {"cell": "H14", "height_m": "1.5", "look_at": "HERO 握繩的手與臉", "distance_m": "2.5"},
+   "cast": [
+    {"who": "HERO", "visible": "臉、胸以上、雙手（握繩）", "frame_height": "約0.75"},
+    {"who": "WORKERS", "visible": "畫面左右邊緣其他工人握繩的手臂", "frame_height": "約0.2"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO (exactly as in the attached HERO character sheet), plus the hands and arms of a few other WORKERS (as in the attached workers character sheet) at the left and right edges, are in the picture. HERO grips a thick, rough palm-fibre rope with both hands, the rope running horizontally across the frame; he leans forward and hauls hard, teeth gritted, eyes narrowed with effort. HERO's face and hands are pure paper white. The workers' hands are pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: side view. The camera is beside the rope and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常畫到腰；剪輯可推近到雙手握繩的 ECU 配『棕櫚纖維做的』。"
+  },
+  {
+   "id": "EP4-12-07",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "他們把人分成一隊一隊，讓每個人出大約一百多磅的力，",
+    "差不多就像一群人合力推一台拋錨的大車。",
+    "有拔河選手的研究說，一個人大概能拉出自己體重一倍半的力。"
+   ],
+   "subject": "一排拉繩工人（含 HERO）側面一起使勁，強調個人與小隊的出力",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "從西側看，一排工人一個接一個站在同一條粗繩上，全部面朝左（北）前傾拉繩，往畫面深處（東）排開；HERO 在隊伍前段（靠近鏡頭第二個），最清楚。大家腳抵著地、身體前傾。",
+   "screen_direction": "left",
+   "action": "整排人同一節奏前傾、咬牙使勁拉的一刻；HERO 在其中一樣使勁。",
+   "camera": {"cell": "G14", "height_m": "1.6", "look_at": "拉繩隊伍前段與 HERO", "distance_m": "6"},
+   "cast": [
+    {"who": "WORKERS", "visible": "最前工人全身（膝上）、後面數人漸小", "frame_height": "約0.8～0.5"},
+    {"who": "HERO", "visible": "臉、膝以上、雙手握繩", "frame_height": "約0.65"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. HERO (exactly as in the attached HERO character sheet) and several WORKERS (as in the attached workers character sheet) stand in a line one behind another, all gripping one long thick palm-fibre rope and hauling. HERO is near the front of the line, the second figure from the camera. They all lean forward in unison, legs braced, teeth gritted, faces straining with effort. HERO's face and hands are pure paper white. The workers' faces and hands are pure paper white. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: side view. The camera is beside the rope and sees HERO and the workers exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "側面景別句原為單人，這裡用於一排工人"
+   ],
+   "remedy": "多人側面可能把 HERO 畫得跟別人一樣；靠構圖（HERO 在前段）和參考圖強調；大小與前後位置相符即可。"
+  },
+  {
+   "id": "EP4-12-08",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "人越多，每個人出的力雖然會打一點折，",
+    "可是全部加起來，還是大到能拖動幾十噸的大石頭。"
+   ],
+   "subject": "整支拉石隊伍側面全景：大石橇＋長繩＋一長排工人，石橇在滑動",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "從東側看，左邊是放在滑橇上的大石塊，一條粗長繩往右橫過畫面，接到一長排往右（北）前傾拉繩的工人；HERO 在隊伍裡其中一個。石橇在沙上被拉動。遠背景（北／右）是半完工金字塔。",
+   "screen_direction": "right",
+   "action": "一長排人合力把石橇往右（北）拉動的一刻，石橇腳下沙子被推起。",
+   "camera": {"cell": "O15", "height_m": "3", "look_at": "整條繩上的石橇與拉石隊伍", "distance_m": "50"},
+   "cast": [
+    {"who": "WORKERS", "visible": "一長排工人側面（全身）", "frame_height": "約0.3～0.5"},
+    {"who": "HERO", "visible": "隊伍中一個，全身側面", "frame_height": "約0.35"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows WORKERS (as in the attached workers character sheet) and, among them, HERO (exactly as in the attached HERO character sheet). On the left a big stone block rests on a heavy wooden sledge; a long thick palm-fibre rope stretches from it across the picture to a long line of workers on the right who haul it, all leaning and straining to the right. HERO is one of the workers in the line. The workers' and HERO's faces and hands are pure paper white. Shot size: Wide Shot (WS). The workers' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside the rope and sees the whole line of workers exactly from the side. Camera angle: Eye-level: the camera is at the workers' eye height, looking straight ahead.",
+   "untested": [
+    "側面景別句原為單人，這裡用於整條隊伍的群像"
+   ],
+   "remedy": "WS 常畫成 FS，群像可接受；HERO 在隊伍裡偏小、不特別突出即可。金字塔由背景處理。"
+  },
+  {
+   "id": "EP4-12-09",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["而最重的那種，得要好幾百個人一起拉。"],
+   "subject": "空拍整個工地：好幾百個工人、一條超長繩、一塊巨石（規模收尾）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "aerial",
+   "composition": "高空往下看整片工地：一塊巨大的石塊放在大滑橇上，一條很長的粗繩往北延伸，好幾百個小小的工人排成一長條一起拉；四周是沙漠，北邊是半完工的階梯金字塔。工人很小，重點是『人多到不可思議』的規模。",
+   "screen_direction": "away",
+   "action": "好幾百人排成長長隊伍一起拉一塊巨石的全景，石橇往北移動。",
+   "camera": {"cell": "L20", "height_m": "120", "look_at": "整個拉石工地（巨石、長繩、數百工人、金字塔）", "distance_m": "150"},
+   "cast": [
+    {"who": "WORKERS", "visible": "數百個很小的工人排成長隊", "frame_height": "約0.05"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows a very large crowd — several hundred — of tiny WORKERS (as in the attached workers character sheet) in one very long line, all hauling one very long thick rope attached to an enormous stone block on a big wooden sledge. The workers are very small; the vast scale of the crowd and the huge stone is the main subject. The workers' faces and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). The workers are very small in the picture; the environment and the scale are the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "EWS＋aerial 用於數百人的群像與工地（實測句原為單人 HERO）"
+   ],
+   "remedy": "aerial 常只畫成高角度、EWS 配合較易成功；數量達不到就用『密密麻麻一長排』示意，剪輯可裁切強調長度。金字塔與沙漠由背景處理。"
+  }
+ ]
+}

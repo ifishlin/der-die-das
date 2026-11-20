@@ -1,0 +1,16 @@
+```json
+{"page": "p.52",
+ "checks": [
+  {"n": 28, "ok": false, "problem": "這張照片讀得到的內文跟 claim 對不上（照片講的是噴發後灰雲、超音速氣體、火山碎屑流、August 25 等），完全沒有出現『Mountains block the path to the east … Mediterranean Sea blocks your path to the west』這段；且頁面傾斜、右側整欄文字被裁掉，無法逐字核對。移到 unclear，不改寫。", "quote": "", "claim_zh": ""},
+  {"n": 29, "ok": false, "problem": "照片上看不到『217 BCE』或維蘇威前一次噴發的句子；內容對不上且右側被裁。無法確認年份。移到 unclear。", "quote": "", "claim_zh": ""},
+  {"n": 30, "ok": false, "problem": "照片上找不到此因果句的完整文字（右側被裁，且此頁談的是噴發後的情形）。無法逐字核對。移到 unclear。", "quote": "", "claim_zh": ""},
+  {"n": 31, "ok": false, "problem": "照片上看不到『10,000 to 10 million times more viscous than water』這組數字。無法確認位數。移到 unclear。", "quote": "", "claim_zh": ""},
+  {"n": 32, "ok": false, "problem": "照片上看不到 Stephen Self / UC Berkeley / 『people can move out of the way』這段。無法確認人名與引語。移到 unclear。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [],
+ "unclear": [
+  {"where": "整頁", "problem": "照片嚴重傾斜，且右側整欄文字（每一行結尾）都被裁掉，只讀得到每行開頭，無法取得完整句子。"},
+  {"where": "內容比對", "problem": "這張照片讀得到的主文是：『Fortunately, you'll have time to leave…Vesuvius's eruption…magma inside the magma chamber…cracking Vesuvius's vent…gargantuan can of soda…supersonic speeds…searing gas blasted out of the mountain…pyroclastic flows…early morning hours of August 25…one remaining in Pompeii.』——談的是噴發後灰雲與碎屑流。清單上標為 p.52 的五個知識點（28–32：東西逃生方向、217 BCE、黏度 10,000–10,000,000 倍、Stephen Self 引語）在這張照片上完全找不到。可能頁碼對應錯、或正確句子落在被裁掉的右半欄，需重拍端正、完整的 p.52 才能核對。"},
+  {"where": "左頁地圖", "problem": "左側露出一張地圖（可見『…eii』『…Stabia?』等殘字），但被裁切且模糊，無法辨讀。"}
+ ]}
+```

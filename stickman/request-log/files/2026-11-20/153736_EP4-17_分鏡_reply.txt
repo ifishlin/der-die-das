@@ -1,0 +1,96 @@
+{
+ "scene_id": "EP4-17",
+ "notes": "整集最後一場（下一集預告），兩句旁白剛好對應兩個角色，用「對比剪接」收尾最有喜感：第一鏡給博士（興奮、攤開新地圖、眼睛發亮＝下一集的鉤子），第二鏡切到 HERO（抱胸、死魚眼、放空算麵包錢＝吐槽笑點）。前一場（第 16 場）已在同一間實驗室，環境早建立好，不再補建立鏡頭，兩鏡都用單人 MS 收緊到角色身上，讓表情和肢體語言（博士的地圖／HERO 的抱胸）清楚。兩人在實驗室中央空地沿南北向面對面站（PROF 在 K10 朝南、HERO 在 K13 朝北，地圖攤在兩人之間），相機都放在東側偏移的格子（N12、N11）拍 front34，彼此不會擋到對方，拍出一組乾淨的正反打。兩鏡都平視，因為這是日常吐槽的收尾，不需要仰俯製造張力。地圖一定只有圖案沒有字。",
+ "blocking": [
+  {
+   "who": "PROF",
+   "path": [
+    {
+     "t": "1",
+     "cell": "K10",
+     "facing": "S",
+     "doing": "眼睛發亮、身體前傾，雙手攤開一張全新的地圖（只有圖案、沒有字）拿給南邊的 HERO 看"
+    }
+   ]
+  },
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "K13",
+     "facing": "N",
+     "doing": "抱著手臂，一臉再也不想被坑的死魚眼，眼神往上放空、還在心算那袋麵包多少錢"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP4-17-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "下一集，博士又盯上了另一個時代。"
+   ],
+   "subject": "PROF（連同他攤開的新地圖）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "PROF 在畫面正中略偏左，雙手攤開一張新地圖、往鏡頭這側微微傾斜；前景是他捧起的地圖（只有塗鴉、沒有字），臉在地圖上方，眼睛發亮。畫面裡只有 PROF。",
+   "screen_direction": "off_down",
+   "action": "博士身體前傾、把剛攤開的新地圖舉到胸前這一刻，眼睛亮晶晶盯著地圖、咧嘴興奮地笑，整個人躍躍欲試。",
+   "camera": {
+    "cell": "N12",
+    "height_m": "1.5",
+    "look_at": "PROF",
+    "distance_m": "1.8"
+   },
+   "cast": [
+    {
+     "who": "PROF",
+     "visible": "頭到腰，含捧著地圖的雙手",
+     "frame_height": "約 9 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: PROF (exactly as in the attached PROF character sheet). PROF is holding open a brand-new map with both hands, lifting it to his chest and tilting it toward the viewer; the map is covered only with little hand-drawn pictures and symbols, with absolutely no text, letters or numbers on it. He leans forward, his eyes sparkling and wide with excitement looking down at the new map, a big eager grin on his face. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 實測常畫成膝上景，可接受；若框太寬，剪輯時往腰上裁。"
+  },
+  {
+   "id": "EP4-17-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "而你，還在想那袋麵包到底算多少錢。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面正中略偏右，抱著手臂站著；臉朝鏡頭這側、眼神往上放空。畫面裡只有 HERO，背景只有實驗室。",
+   "screen_direction": "off_up",
+   "action": "HERO 抱著雙臂、下巴微抬，一臉死魚眼、毫不買帳，眼神飄向上方像還在心算那袋麵包的價錢這一刻。",
+   "camera": {
+    "cell": "N11",
+    "height_m": "1.5",
+    "look_at": "HERO",
+    "distance_m": "1.8"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "頭到腰，含抱在胸前的雙臂與雙手",
+     "frame_height": "約 9 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet). HERO's face and hands are pure paper white. HERO stands with his arms crossed over his chest, giving a flat, deadpan, utterly unimpressed look, his eyes drifting up as if he is still doing math in his head over a bag of bread. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 實測常畫成膝上景，可接受；若框太寬，剪輯時往腰上裁。"
+  }
+ ]
+}
