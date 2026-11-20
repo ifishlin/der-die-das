@@ -1,0 +1,211 @@
+{
+ "scene_id": "EP5-03",
+ "notes": "這一場的戲劇任務：建立龐貝＝熱鬧的海邊羅馬城，並帶出噴泉、速食攤、八瓣圓麵包、炭化麵包、火山土，最後收在 HERO 低頭找紀念品、接下一場的維蘇威插圖。拆成 7 格：①EWS 到達建立全城熱鬧（旁白1+2）→②FS 噴泉（旁白3）→③FS 背面 OTS 看熱食攤櫃台（旁白4）→④MS 正面端詳八瓣麵包、臉入鏡（旁白5）→⑤ECU 炭化麵包插入鏡頭（旁白6）→⑥WS 背面沿街逛、遠方安靜的綠色維蘇威在西北（旁白7+8，順勢過到下一場的火山插圖）→⑦MLS 前側 3/4 低頭找紀念品收尾（旁白9）。節奏：先大後小、環境→物件→人物情緒交錯。全程平視為主，只有炭化麵包插入用輕俯視拍桌面物件。走位沿東西向街道瀏覽南北兩側店面，相機只放在街面(Z)、人行道(I)、噴泉(3)、踏石(4)格。無大動物，不加拍遠一級。背景（店面、噴泉、火山、群眾）由主對話依地圖配參考圖，prompt 只寫角色、動作、表情和手上/碰到的東西。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "H4", "facing": "E", "doing": "光一閃出現在街心，拿著空玻璃罐，東張西望"},
+    {"t": "2", "cell": "E6", "facing": "E", "doing": "走到南側人行道噴泉旁，探頭看流水"},
+    {"t": "3", "cell": "I3", "facing": "N", "doing": "過街到北側人行道，看熱食小攤嵌陶罐的櫃台"},
+    {"t": "4", "cell": "D3", "facing": "S", "doing": "在麵包店前拿起一個八瓣圓麵包，轉身面向街端詳"},
+    {"t": "5", "cell": "D3", "facing": "N", "doing": "仍在麵包店旁（本格為插入鏡頭，不拍到他）"},
+    {"t": "6", "cell": "G4", "facing": "NW", "doing": "沿街往東逛，回望西北方遠處安靜的綠色火山"},
+    {"t": "7", "cell": "H4", "facing": "W", "doing": "低頭盯著石板路，想撿古羅馬紀念品，手抱空玻璃罐"}
+   ]
+  },
+  {
+   "who": "ROMANS",
+   "path": [
+    {"t": "1", "cell": "K3", "facing": "W", "doing": "人行道上數人來往、採買"},
+    {"t": "3", "cell": "H3", "facing": "N", "doing": "一名顧客在熱食攤前買熱食；攤主在櫃台後（I2 店內）"},
+    {"t": "4", "cell": "C3", "facing": "E", "doing": "麵包師傅在麵包店前顧店"},
+    {"t": "6", "cell": "K4", "facing": "W", "doing": "兩三個路人沿街走"},
+    {"t": "7", "cell": "L3", "facing": "W", "doing": "背景路人"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP5-03-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "光一閃，你站在一座熱鬧的海邊城市：龐貝。",
+    "這是羅馬人的港口城鎮，城裡大概住了一萬多人。"
+   ],
+   "subject": "HERO（街心剛出現），環境＝龐貝熱鬧街道",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 很小，站在畫面中央街心，一道光閃在他身上好認；街道兩側一整排店面與人行道向遠方延伸，幾個 ROMANS 散在兩旁走動採買，整體呈現熱鬧港市",
+   "screen_direction": "toward",
+   "action": "光一閃，HERO 剛在街心憑空出現，手拿空玻璃罐，轉頭四處張望、又驚又奇",
+   "camera": {"cell": "N4", "height_m": "1.6", "look_at": "HERO", "distance_m": "18"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 2 成（全身）"},
+    {"who": "ROMANS", "visible": "全身，數人散在兩側", "frame_height": "各約 1.5–2.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and several ROMANS (exactly as in the attached ROMANS character sheet). HERO has just appeared in a bright flash of light, standing in the middle of the street, holding an empty glass jar, turning his head to look around, wide-eyed and amazed with his mouth slightly open. HERO's face and hands are pure paper white. Several ROMANS go about their morning around him, calm and ordinary; their faces and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: front view. The camera is on the street ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-03-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "街上到處都是噴泉。"
+   ],
+   "subject": "HERO，次主體：街角石噴泉",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "噴泉在畫面中央偏左，HERO 在畫面右側、面朝左看噴泉；背景一兩個 ROMANS",
+   "screen_direction": "left",
+   "action": "HERO 在石噴泉旁停下，身子前傾，好奇地看著流出的水",
+   "camera": {"cell": "F4", "height_m": "1.6", "look_at": "HERO 與噴泉之間", "distance_m": "6.7"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 7 成（全身）"},
+    {"who": "ROMANS", "visible": "背景全身 1 人", "frame_height": "約 3 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and a ROMAN in the background (exactly as in the attached ROMANS character sheet). HERO stands beside a stone street fountain, holding an empty glass jar, leaning in to watch the running water with curious, intrigued eyes and raised eyebrows. HERO's face and hands are pure paper white. The ROMAN's face and hands are pure paper white, expression calm and ordinary. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the street, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-03-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "路邊一攤一攤賣熱食，櫃台裡嵌著陶罐，根本是羅馬人的速食店。"
+   ],
+   "subject": "HERO（背影前景）＋熱食小攤櫃台",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背影在畫面中央前景，鏡頭越過他的肩看向前方的熱食小攤；攤主在櫃台後、一名顧客在攤前，櫃台上嵌著一排陶罐",
+   "screen_direction": "away",
+   "action": "HERO 背對鏡頭站在人行道上，拿著空玻璃罐，望著嵌了陶罐的熱食櫃台",
+   "camera": {"cell": "I5", "height_m": "1.6", "look_at": "HERO 與熱食小攤", "distance_m": "6"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背面", "frame_height": "約 6.5 成（全身）"},
+    {"who": "ROMANS", "visible": "攤主櫃台後上半身、顧客全身", "frame_height": "各約 4–5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and two ROMANS (exactly as in the attached ROMANS character sheet): a vendor behind the counter and a customer in front of it. HERO stands with his back to us, holding an empty glass jar, looking at a street food counter with clay pots set into it. HERO's hands are pure paper white. The two ROMANS' faces and hands are pure paper white; the vendor looks busy and friendly, the customer calm. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: back view. The camera is on the street behind HERO, looking the way he faces; HERO's back is nearer the camera and the food counter is ahead of him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "back view 句改成單角色版（原實測句為 HERO＋TEEN 兩人追逐）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-03-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "麵包店賣一種圓圓的麵包，上面劃成八瓣，剝起來很方便。"
+   ],
+   "subject": "HERO 端詳八瓣圓麵包",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，雙手捧著一個八瓣圓麵包低頭看；背景麵包師傅站在麵包店顧店",
+   "screen_direction": "off_down",
+   "action": "HERO 雙手捧起一個劃成八瓣的圓麵包，低頭端詳，眉毛上揚、一臉好奇又佩服",
+   "camera": {"cell": "D5", "height_m": "1.6", "look_at": "HERO", "distance_m": "6"},
+   "cast": [
+    {"who": "HERO", "visible": "腰部以上、含臉與雙手捧麵包", "frame_height": "約 6 成（腰以上）"},
+    {"who": "ROMANS", "visible": "麵包師傅背景上半身", "frame_height": "約 3 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and one ROMAN baker (exactly as in the attached ROMANS character sheet). HERO holds a round loaf of bread scored into eight sections in both hands, looking down at it with curious, impressed interest and raised eyebrows. HERO's face and hands are pure paper white. Behind him the ROMAN baker stands at the bakery; the baker's face and hands are pure paper white, expression calm and busy. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is on the street ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "想要 MS；MS 句常被畫成膝上，剪輯時裁到腰即可，不影響捧麵包的重點。"
+  },
+  {
+   "id": "EP5-03-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "有些還被烤成了黑炭留到今天，連麵包師傅蓋的印章都看得到。"
+   ],
+   "subject": "炭化（黑炭）八瓣圓麵包＋師傅印章（插入鏡頭，無角色）",
+   "shot_size": "ECU",
+   "ecu_part": "炭化麵包頂上師傅蓋的圓形印章",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "一個被烤成黑炭的八瓣圓麵包填滿畫面，表面龜裂、焦黑，頂上有一個壓印的圓形印章痕清楚可見",
+   "screen_direction": "toward",
+   "action": "靜物插入：一個炭化變黑、劃成八瓣的圓麵包，頂上壓著一枚師傅的圓形印章痕",
+   "camera": {"cell": "D3", "height_m": "1.3", "look_at": "炭化麵包", "distance_m": "0.5"},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. There are no characters in the picture. A single round loaf of bread scored into eight sections, burnt to black charcoal, cracked and carbonized, with a baker's round stamp mark pressed into the top still clearly visible (an abstract impressed seal mark, no letters). Shot size: Extreme Close-up (ECU). Only the carbonized black loaf and the stamp mark on it fill the picture. Camera angle: High angle: the camera is high above the loaf, looking down at it.",
+   "untested": [
+    "ECU 用於靜物（實測句只驗證過 HERO 眼睛）",
+    "high 角度用於俯拍桌面靜物（實測只驗證過 HERO）"
+   ],
+   "remedy": "ECU 物件近拍；high 常只輕微俯視，剪輯時可再推近看清印章。"
+  },
+  {
+   "id": "EP5-03-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "這裡的酒，是用長在火山土裡的葡萄釀的。",
+    "火山噴過的地方，土特別肥，所以人總愛住在火山旁邊。"
+   ],
+   "subject": "HERO（背影沿街逛），環境＝街道通向西北方安靜的綠色維蘇威",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背影在畫面中央前景，街道向西北方遠處延伸，遠處屋頂上露出小小的、安靜的綠色火山；幾個 ROMANS 散在街上",
+   "screen_direction": "away",
+   "action": "HERO 背對鏡頭沿街往前逛，手拿空玻璃罐，望向遠方的地平線",
+   "camera": {"cell": "L5", "height_m": "1.6", "look_at": "HERO 與遠方火山方向", "distance_m": "15"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背面", "frame_height": "約 4.5 成（全身）"},
+    {"who": "ROMANS", "visible": "背景全身數人", "frame_height": "各約 2–3 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and a few ROMANS in the background (exactly as in the attached ROMANS character sheet). HERO strolls down the street with his back to us, holding an empty glass jar, glancing toward the distant horizon. HERO's hands are pure paper white. The ROMANS go about their day; their faces and hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is on the street behind HERO, looking the way he faces; HERO's back is nearer the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "back view 句改成單角色版（原實測句為 HERO＋TEEN 兩人追逐）"
+   ],
+   "remedy": "WS 句常被畫成接近 FS；可接受，剪輯時當全景用、保留遠方火山。"
+  },
+  {
+   "id": "EP5-03-07",
+   "variant_of": "N/A",
+   "t": "7",
+   "narration": [
+    "你一邊逛，一邊盯著地上，想撿幾個古羅馬的紀念品回去賣。"
+   ],
+   "subject": "HERO 低頭找紀念品",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏左，低著頭、視線朝下掃地面，手抱空玻璃罐；背景一兩個 ROMANS",
+   "screen_direction": "off_down",
+   "action": "HERO 慢慢晃著走，低頭、眼睛掃著石板路，手抱空玻璃罐，一臉專注又帶點貪念，盼望撿到能賣的古羅馬紀念品",
+   "camera": {"cell": "F5", "height_m": "1.6", "look_at": "HERO", "distance_m": "6.7"},
+   "cast": [
+    {"who": "HERO", "visible": "膝部以上、含臉與抱罐的雙手", "frame_height": "約 7.5 成（膝以上）"},
+    {"who": "ROMANS", "visible": "背景全身 1–2 人", "frame_height": "各約 3 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and a couple of ROMANS in the background (exactly as in the attached ROMANS character sheet). HERO ambles along with his head bowed, eyes scanning the ground, clutching an empty glass jar to his chest, wearing a focused, slightly sly and hopeful look. HERO's face and hands are pure paper white. The ROMANS' faces and hands are pure paper white, expressions calm and ordinary. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the street, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  }
+ ]
+}

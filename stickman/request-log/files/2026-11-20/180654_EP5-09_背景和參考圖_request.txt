@@ -1,0 +1,58 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 9 場　往北的海邊大路（經過赫庫蘭尼姆）・爆發那天・傍晚
+
+【四、地圖】往北的海邊大路（經過赫庫蘭尼姆）・傍晚
+龐貝往北的海邊大路，一格 200 公尺。西邊是那不勒斯灣，路沿著海邊的沙灘往北；東邊是長滿葡萄園的火山山坡，再往東（畫面外）是維蘇威，噴發柱在東南邊的天上。路的中段經過海邊的赫庫蘭尼姆：大理石大宅和圖書館，海邊有船屋。往北走到底是那不勒斯（畫面外）。
+★ 海在西邊、維蘇威在東邊
+★ 赫庫蘭尼姆在海邊
+大小 12 欄（A–L）× 8 列（1–8），一格 200 公尺。北在上。時間：傍晚到晚上（爆發那天），太陽在西（傍晚）方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L
+  1  U U U y x 4 N N N N N N
+  2  U U U y x x N N N N N N
+  3  U U U y 1 1 x N N N N N
+  4  U U U 2 1 1 x N N N N N
+  5  U U U y y x N N N N N N
+  6  U U U U y 3 N N N N N N
+  7  U U U U y 3 N N N N N N
+  8  U U U U y 3 N N N N N N
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 赫庫蘭尼姆的大宅（the marble villas and library of Herculaneum）｜角色：不可站｜相機：不可放
+  2 = 赫庫蘭尼姆的海邊船屋（arched stone boathouses on the beach）｜角色：不可站｜相機：不可放
+  3 = HERO 走的路（往北）（the coastal road HERO walks north on）｜角色：可站｜相機：可放
+  4 = HERO 挖回家按鈕的地方（第 12 場）（where HERO digs the home button out of the ash）｜角色：可站｜相機：可放
+  N = 葡萄園和田（vineyards and fields on the volcanic slopes）｜角色：可站｜相機：可放
+  U = 海（那不勒斯灣）（the blue Bay of Naples）｜角色：不可站｜相機：不可放
+  x = 海邊大路（a Roman coastal road）｜角色：可站｜相機：可放
+  y = 沙灘（a narrow sandy beach）｜角色：可站｜相機：可放
+海在西邊（畫面上 HERO 往北走時海在左邊）、維蘇威在東邊山坡上，噴發柱在東南邊的天上；赫庫蘭尼姆在 E3。
+地圖外面：北邊 大路一直通到那不勒斯；東邊 葡萄園山坡往上，是維蘇威火山，雲柱在東南邊的天上；西邊 那不勒斯灣；南邊 大路往南回到龐貝。
+
+【參考圖】
+- REF_HERO_SUMMER：HERO 夏天裝（短袖、短褲、拖鞋，沒帽子沒背包）（EP3）
+- REF_PROPS5：EP5 道具：裝火山灰的玻璃罐、欠薪本、八瓣圓麵包（含炭化的）、熱食小攤、浮石、埋在灰裡的回家按鈕、火山模型（EP5）
+- REF_ROMANS：龐貝居民：男人（紅褐短袍）、女人（藍色長袍）、麵包師傅、小孩（EP5）
+- REF_VESUVIUS：維蘇威：爆發前的綠色火山、像雨傘松的噴發柱和落浮石、夜裡垮下來的碎屑流（EP5）
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP5-09-01", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "F7", "height_m": "1.2", "look_at": "HERO", "distance_m": "4"}, "in_frame": ["HERO", "ROMANS"]}, {"id": "EP5-09-02", "variant_of": "N/A", "shot_size": "EWS", "angle": "aerial", "camera": {"cell": "F8", "height_m": "200", "look_at": "赫庫蘭尼姆全城／HERO", "distance_m": "500"}, "in_frame": ["HERO", "ROMANS"]}, {"id": "EP5-09-03", "variant_of": "N/A", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "G6", "height_m": "5", "look_at": "赫庫蘭尼姆與維蘇威／HERO", "distance_m": "400"}, "in_frame": ["HERO"]}, {"id": "EP5-09-04", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "E6", "height_m": "2.5", "look_at": "海邊斜躺的居民", "distance_m": "6"}, "in_frame": ["ROMANS", "HERO"]}, {"id": "EP5-09-05", "variant_of": "N/A", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "G5", "height_m": "10", "look_at": "噴發柱下的赫庫蘭尼姆／HERO", "distance_m": "400"}, "in_frame": ["HERO"]}, {"id": "EP5-09-06", "variant_of": "N/A", "shot_size": "MLS", "angle": "eye", "camera": {"cell": "H3", "height_m": "1.7", "look_at": "HERO", "distance_m": "7"}, "in_frame": ["HERO", "ROMANS"]}, {"id": "EP5-09-07", "variant_of": "N/A", "shot_size": "EWS", "angle": "high", "camera": {"cell": "G3", "height_m": "120", "look_at": "HERO／往北的長路", "distance_m": "300"}, "in_frame": ["HERO"]}, {"id": "EP5-09-08", "variant_of": "N/A", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "F2", "height_m": "3", "look_at": "HERO", "distance_m": "200"}, "in_frame": ["HERO"]}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

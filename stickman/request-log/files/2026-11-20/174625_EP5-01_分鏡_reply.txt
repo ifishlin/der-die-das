@@ -1,0 +1,113 @@
+{
+ "scene_id": "EP5-01",
+ "notes": "冷開場，四個鏡頭、一句旁白一張。節奏設計成「開門→(停)噴臉→揭曉原因→對比收尾」。前兩張把博士藏在鏡頭外（相機朝南對著門口），HERO 一臉無辜進門後緊接特寫被泡泡噴臉，用『停』那拍切出笑點；第三張才把相機轉到工作桌側面，揭曉『原來』是博士在做火山模型、滿屋泡泡；第四張拉成對望兩人景，呈現『他得意、你不得意』的反差當 button。沒有大動物，不用加拍遠一級。走位：HERO 從南牆大門(L20)進來、被噴後走進屋中央(M10)面向博士；博士全程在東牆工作桌(T6)做實驗，最後轉身到中央(R10)面向 HERO 炫耀。相機只放在木地板 o 格，角色只站在可站格。WS 實測常畫成 FS，可接受；CU 用 MCU 句補救後剪輯推近。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "L20", "facing": "N", "doing": "一手推開木門、跨步進屋"},
+    {"t": "2", "cell": "L20", "facing": "N", "doing": "被泡泡噴了一臉，往後縮"},
+    {"t": "4", "cell": "M10", "facing": "E", "doing": "走進屋中央，滿身泡泡，不爽地瞪著博士"}
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    {"t": "1", "cell": "T6", "facing": "E", "doing": "在東牆工作桌上做火山模型，正噴發"},
+    {"t": "3", "cell": "T6", "facing": "E", "doing": "俯身在噴發的火山模型旁，得意"},
+    {"t": "4", "cell": "R10", "facing": "W", "doing": "轉身到中央面向 HERO，挺胸炫耀"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP5-01-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["你一推開實驗室的門，"],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 置中略偏下，站在畫面中央的門口，正一手推門、跨步進來；四周是實驗室空間，博士不入鏡。",
+   "screen_direction": "toward",
+   "action": "HERO 一手推開木門、跨步進屋的瞬間，還沒發現異狀。",
+   "camera": {"cell": "L12", "height_m": "1.6", "look_at": "HERO", "distance_m": "4"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO is in the picture. HERO (exactly as in the attached HERO character sheet), summer outfit, no hat and no backpack, is pushing open a wooden door and stepping forward mid-stride, one hand still on the door edge, the other arm swinging. His face is relaxed and a little curious, unaware of anything, looking straight ahead. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is in the room ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 實測常畫成 FS、HERO 會偏大；此處 HERO 全身入鏡可接受，必要時剪輯略為裁切當 FS 用。"
+  },
+  {
+   "id": "EP5-01-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["（停）就被噴了一臉。"],
+   "subject": "HERO 的臉",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 的臉佔畫面中央，白泡泡從畫面右側噴濺上臉、往下滴，幾顆泡泡還懸在空中；背景簡單。",
+   "screen_direction": "toward",
+   "action": "停頓一拍後，泡泡「噗」地噴上 HERO 的臉，他往後一縮、瞇眼、死魚臉。",
+   "camera": {"cell": "L17", "height_m": "1.6", "look_at": "HERO", "distance_m": "1.5"},
+   "cast": [
+    {"who": "HERO", "visible": "胸口以上、臉和雙手", "frame_height": "約 8.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO is in the picture. HERO (exactly as in the attached HERO character sheet), summer outfit, no hat and no backpack, has just been sprayed in the face with a burst of white soapy foam and bubbles; blobs of white foam cling to his face and drip down, a few bubbles still in the air in front of him. He is flinching backward, eyes scrunched, mouth a flat line, deadpan and thoroughly unimpressed. HERO's face and hands are pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in the room ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "想要 CU（臉塞滿畫面當笑點）；CU 實測 ✗，prompt 改用 MCU 句，剪輯時推近到 CU。"
+  },
+  {
+   "id": "EP5-01-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["原來博士正在做火山模型，小蘇打加醋，噴得滿屋子都是泡泡。"],
+   "subject": "PROF（和噴發的火山模型）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "PROF 在畫面中央側身，畫面右手邊是正在噴發的火山模型，白泡泡四處飛濺、幾乎充滿整個畫面；呈現滿屋泡泡。",
+   "screen_direction": "right",
+   "action": "火山模型正噴出泡泡的瞬間，PROF 俯身在旁、滿臉得意。",
+   "camera": {"cell": "T13", "height_m": "1.4", "look_at": "PROF", "distance_m": "3.5"},
+   "cast": [
+    {"who": "PROF", "visible": "全身（側身）", "frame_height": "約 5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only PROF is in the picture. PROF (exactly as in the attached PROF character sheet) is leaning over a homemade toy volcano model that is erupting, a tall fountain of white baking-soda-and-vinegar foam gushing out of its top and bubbles flying all around him. He has a delighted, proud grin, eyes wide with glee, clearly thrilled with his experiment. Shot size: Wide Shot (WS). PROF's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is to the side and sees PROF exactly from the side. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 實測常畫成 FS；可接受，泡泡量不足時剪輯時可多保留周圍空間。"
+  },
+  {
+   "id": "EP5-01-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": ["他很得意，你很不得意。"],
+   "subject": "HERO 和 PROF",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面左、面向右；PROF 在畫面右、面向左；兩人對望形成反差。PROF 身後（畫面右）隱約是噴過的火山模型與殘留泡泡。",
+   "screen_direction": "right",
+   "action": "HERO 滴著泡泡、面無表情地瞪著；PROF 挺胸得意地笑，形成強烈對比。",
+   "camera": {"cell": "O17", "height_m": "1.5", "look_at": "HERO 和 PROF", "distance_m": "3.5"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 5 成"},
+    {"who": "PROF", "visible": "全身", "frame_height": "約 5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO and PROF are in the picture. On the left, HERO (exactly as in the attached HERO character sheet), summer outfit, no hat and no backpack, his face and body still spattered and dripping with white foam, stands stiffly facing right toward PROF, flat deadpan expression, thoroughly unimpressed, glaring. On the right, PROF (exactly as in the attached PROF character sheet) faces left toward HERO, chest puffed out, beaming an enormous proud grin, one hand gesturing proudly at himself. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). Both characters' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is to the side and sees HERO and PROF exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 實測常畫成 FS；兩人全身若畫得太滿、太近，剪輯時裁切即可。"
+  }
+ ]
+}

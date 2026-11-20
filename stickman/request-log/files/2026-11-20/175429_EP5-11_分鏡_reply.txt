@@ -1,0 +1,398 @@
+{
+ "scene_id": "EP5-11",
+ "notes": "整段是畫不出實景的講解，全部拆成手繪插圖鏡頭：沒有地圖、沒有走位，blocking 留空，每格 camera.cell=N/A、t=0。節奏上分三個敘事區塊：①考古揭曉（埋城→開挖→空洞→灌石膏→翻出人形→學者研究，用「空洞→灌漿→翻出」三拍做情緒揭露核心）；②兩位普林尼（小普林尼對岸寫信、老普林尼開船衝過去，再切一張空海面交代『再也沒有回來』，用硬切製造留白）；③今昔對照＋收尾笑點（今天擠滿房子的維蘇威→火山學家說話→搖手指的梗，(停) 之後獨立一格給笑點做節拍）。死者一律只畫白色石膏輪廓或剪影，不畫血腥。插圖裡的人是火柴人路人、純白皮膚，不是 HERO。這一集沒有大動物也沒有 HERO 同框，不用加拍遠一級。背景即主體，所以插圖內容照旁白寫進 prompt。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP5-11-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "後來呢？",
+    "龐貝被埋在四到六公尺厚的火山灰和浮石底下，一埋，就是一千六百多年。"
+   ],
+   "subject": "被火山灰整個埋住的龐貝城",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "畫面中央是一座被厚灰覆蓋的小城，只剩屋頂和柱子的隆起隱約透出；遠方背景是維蘇威的山形；沒有人。",
+   "screen_direction": "N/A",
+   "action": "整座城安靜地沉在厚厚一層灰裡，被埋住的凝止感。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 80,
+    "look_at": "被埋住的城鎮全景",
+    "distance_m": 90
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: a small ancient Roman town smothered and buried under a thick grey blanket of volcanic ash and pale pumice, so that only faint humps of rooftops and column-tops poke through the smooth grey layer; in the far background the single cone of Vesuvius. No people anywhere. Shot size: Extreme Wide Shot (EWS). The buried town is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "插圖把整座城畫成被灰覆蓋的隆起 (town smothered under an ash blanket)"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-11-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "一直到 1748 年，才開始被有系統地挖出來。"
+   ],
+   "subject": "拿鏟子開挖的 18 世紀工人",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "畫面中是三四個彎腰挖掘的工人，分布在挖掘坑上方與邊緣；他們正挖出一段埋住的石牆和一片瓦屋頂；四周是灰土堆。",
+   "screen_direction": "off_down",
+   "action": "工人彎腰、鏟子剛插進灰土，剛露出一角牆頭的那一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 6,
+    "look_at": "挖掘中的工人群",
+    "distance_m": 9
+   },
+   "cast": [
+    {
+     "who": "18 世紀挖掘工人（數名）",
+     "visible": "全身，彎腰低頭挖掘，臉朝下看不太到",
+     "frame_height": "約 3 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: a few 18th-century workmen in plain tunics and simple hats, drawn as stick figures with pure paper white skin and round white heads exactly like the attached character sheets, bent over and digging with shovels and picks, uncovering the top of a buried stone wall and a tiled rooftop out of the grey ash; their faces are turned down to their work. Only these diggers. Shot size: Wide Shot (WS). The diggers' whole bodies are clearly visible, with a lot of the dig site around them. Camera direction: front three-quarter view. The camera is ahead of the diggers and off to one side, so we see them and one side of the dig pit. Camera angle: High angle: the camera is high above the diggers, looking down at them.",
+   "untested": [],
+   "remedy": "high 實測只有輕微往下看；坑的深度若不夠，剪輯時可略裁上緣加強俯視。"
+  },
+  {
+   "id": "EP5-11-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "火山灰把遇難的人包了起來。身體腐爛以後，留下一個個人形的空洞。"
+   ],
+   "subject": "火山灰裡的人形空洞（插入鏡頭）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面幾乎塞滿一個蜷曲人形的空洞；周圍是灰色火山灰；空洞內是平塗的暗色，只有輪廓線，沒有身體細節。",
+   "screen_direction": "N/A",
+   "action": "一個蜷曲人形的空洞靜靜嵌在灰裡，只有輪廓、沒有血腥，淡淡的哀傷。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.2,
+    "look_at": "人形空洞",
+    "distance_m": 0.8
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration, an insert close-up: an empty human-shaped hollow cavity set in grey volcanic ash — a smooth dark void in the shape of a curled-up person, shown only as a plain silhouette outline, with no body, no gore and nothing frightening, quiet and sad. No people. Shot size: Close-up (CU). The human-shaped hollow fills most of the picture. Camera angle: High angle: the camera is above the cavity, looking down into it.",
+   "untested": [
+    "物件插入 CU（空洞），非人臉 CU",
+    "人形空洞 (human-shaped hollow cavity in ash)"
+   ],
+   "remedy": "CU 實測對人臉無效，但這是物件插入；若畫得太遠，剪輯時推近填滿畫面。"
+  },
+  {
+   "id": "EP5-11-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "1863 年，考古學家 Fiorelli 想到往洞裡灌石膏，"
+   ],
+   "subject": "往空洞裡灌石膏的考古學家",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "考古學家在畫面中偏左，蹲著傾斜手上的桶子；一道白色液態石膏從桶口流進右下方地上的洞；畫面下緣在他腰部。",
+   "screen_direction": "off_down",
+   "action": "桶子傾到一半、白色石膏正灌進洞裡的那一刻，他專注低頭看著。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.5,
+    "look_at": "灌石膏的考古學家",
+    "distance_m": 3
+   },
+   "cast": [
+    {
+     "who": "19 世紀考古學家 Fiorelli（火柴人路人）",
+     "visible": "腰部以上，蹲姿傾倒桶子，臉入鏡",
+     "frame_height": "約 7 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: a single 19th-century archaeologist in a plain shirt, drawn as a stick figure with pure paper white skin and a round white head exactly like the attached character sheets, kneeling and carefully tilting a bucket to pour a stream of white liquid plaster down into a hole in the ground; his face is focused and careful, brow slightly furrowed, eyes down on the pour. Only this one man. Shot size: Medium Shot (MS). The archaeologist is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is in front of the archaeologist and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the archaeologist's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上；若下緣掉到膝蓋，剪輯時裁到腰上。"
+  },
+  {
+   "id": "EP5-11-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "就把他們最後一刻的姿勢，原封不動地翻了出來。"
+   ],
+   "subject": "翻出來的白色石膏人形（最後姿勢）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "畫面中央偏下是一具蜷曲側躺的白色石膏人形，從頭到腳完整入鏡；周圍是挖開的灰土；相機從上方斜看下去。",
+   "screen_direction": "N/A",
+   "action": "最後一刻蜷曲的姿勢被原封不動翻出，白色、平靜，像一尊淡色雕像。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 3,
+    "look_at": "白色石膏人形",
+    "distance_m": 4
+   },
+   "cast": [
+    {
+     "who": "白色石膏人形（只畫輪廓、無細節）",
+     "visible": "蜷曲全身輪廓，頭到腳完整",
+     "frame_height": "約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: a single white plaster cast of a person, lying curled on its side on the ground in a final huddled pose — just a smooth, plain pale-white human form with only a simple outline, like a quiet statue; no face details, no gore, nothing frightening, calm and still. No living people. Shot size: Full Shot (FS). The whole plaster cast, from head to feet, just fits in the picture. Camera direction: front three-quarter view. The camera is in front of the plaster cast and off to one side, so we see it and one side of its form. Camera angle: High angle: the camera is high above the plaster cast, looking down at it.",
+   "untested": [
+    "白色石膏人形只畫輪廓 (plain white plaster cast, outline only)"
+   ],
+   "remedy": "high 實測只有輕微往下看；若俯角不足，剪輯時略裁上緣。"
+  },
+  {
+   "id": "EP5-11-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "像 Petrone 這樣的法醫人類學家，到今天都還在研究這些人。"
+   ],
+   "subject": "研究石膏人形的法醫人類學家",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "科學家在畫面偏左，穿白袍、俯身端詳；畫面右前方桌上放著一具白色石膏人形；畫面下緣在他腰部。",
+   "screen_direction": "off_down",
+   "action": "一手托著下巴、俯身專注端詳石膏人形的那一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.5,
+    "look_at": "研究中的法醫人類學家",
+    "distance_m": 3
+   },
+   "cast": [
+    {
+     "who": "現代法醫人類學家（火柴人路人）",
+     "visible": "腰部以上，俯身托腮，臉入鏡",
+     "frame_height": "約 7 成"
+    },
+    {
+     "who": "桌上白色石膏人形",
+     "visible": "桌上的輪廓，局部入鏡",
+     "frame_height": "約 3 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: a present-day forensic scientist in a lab coat, drawn as a stick figure with pure paper white skin and a round white head exactly like the attached character sheets, leaning in and studying a plain white plaster cast of a person that rests on a table; one hand near his chin, thoughtful and absorbed, eyes on the cast. Only the scientist and the cast. Shot size: Medium Shot (MS). The scientist is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is in front of the scientist and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the scientist's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上；若下緣掉到膝蓋，剪輯時裁到腰上。"
+  },
+  {
+   "id": "EP5-11-07",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "我們會知道那一天發生了什麼，主要是因為一個年輕人：小普林尼。",
+    "他在海灣對岸親眼看到，後來寫成了兩封信。"
+   ],
+   "subject": "在海灣對岸寫信的小普林尼",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "小普林尼坐在畫面左前方近岸邊，膝上一卷書、手握筆；畫面右方遠處隔著一大片海灣是冒煙的維蘇威；他抬頭望向右方對岸。",
+   "screen_direction": "off_right",
+   "action": "他停筆抬頭、望向對岸冒煙的火山，臉色發白、瞪大眼，卻還撐著繼續寫的那一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.5,
+    "look_at": "坐著寫信的小普林尼",
+    "distance_m": 8
+   },
+   "cast": [
+    {
+     "who": "小普林尼（古羅馬年輕人，REF_ROMANS）",
+     "visible": "坐姿全身，臉入鏡",
+     "frame_height": "約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: a young ancient Roman man (as in REF_ROMANS), drawn as a stick figure with pure paper white skin and a round white head exactly like the attached character sheets, sitting on the near shore of a wide bay with a scroll on his knee and a quill in his hand, pausing to look across the water to the right; his face is pale and shaken, eyes wide, but calm enough to keep writing. Far across the bay on the right, a smoking Vesuvius with a tall ash column. Only this one young man. Shot size: Wide Shot (WS). The young man's whole body is clearly visible, with a lot of the bay and the distant mountain around him. Camera direction: front three-quarter view. The camera is in front of the young man and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at the young man's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常畫成跟 FS 一樣大（人太大、海灣不夠），若對岸火山塞不進來，剪輯時維持原圖、靠旁白交代對岸。"
+  },
+  {
+   "id": "EP5-11-08",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "他的舅舅老普林尼，那天不但沒逃，還開船衝過海灣想去救人，"
+   ],
+   "subject": "開船衝過海灣的老普林尼",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "一艘小型古羅馬船在畫面中央偏左，側面朝右航行；船上一個很小的人影；畫面右方遠處是冒著高高灰柱的維蘇威；四周是大片暗色海灣。",
+   "screen_direction": "right",
+   "action": "小船正鼓力往右、直直朝冒煙的火山衝過去的那一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 2,
+    "look_at": "橫越海灣的小船",
+    "distance_m": 20
+   },
+   "cast": [
+    {
+     "who": "老普林尼（船上小人影，REF_ROMANS）",
+     "visible": "船上極小的全身人影，臉太小看不清",
+     "frame_height": "約 1 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: a small ancient Roman galley boat with a single tiny figure aboard (as in REF_ROMANS), drawn in the attached character-sheet style, rowing to the right across a wide dark bay, heading straight toward a smoking Vesuvius on the right that throws up a tall ash column; the boat drives right into the danger. Only this one small boat and figure. Shot size: Wide Shot (WS). The boat is clearly visible but small, with a lot of the bay and the smoking mountain around it. Camera direction: side view. The camera is beside the bay and sees the boat exactly from the side. Camera angle: Eye-level: the camera is at water level, looking straight across the bay.",
+   "untested": [
+    "側面航行的小船 (galley seen from the side crossing the bay)"
+   ],
+   "remedy": "WS 常畫太大；若船被畫得太大、灰柱塞不下，剪輯時略裁、靠旁白交代。"
+  },
+  {
+   "id": "EP5-11-09",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "結果，再也沒有回來。"
+   ],
+   "subject": "空蕩蕩的海灣",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "整個畫面是一大片靜止的暗色海水，延伸到灰濛濛的對岸；遠方是隱約冒煙的維蘇威；海面上空無一物，沒有船、沒有人。",
+   "screen_direction": "N/A",
+   "action": "海面完全空了，船已不見的留白與沉默，呼應『再也沒有回來』。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 2,
+    "look_at": "空蕩的海灣",
+    "distance_m": 100
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: a wide empty bay — just dark, still water stretching to a far shore dimmed under grey ash haze, with a faint smoking Vesuvius in the distance. No boat, no people — the water is completely empty. Shot size: Extreme Wide Shot (EWS). The empty bay fills the frame as a vast environment; any detail is very small. Camera angle: Eye-level: the camera is at water level, looking straight across the empty bay.",
+   "untested": [
+    "空景海灣 (empty bay, no subject)"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-11-10",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "維蘇威上一次噴發，是 1944 年。",
+    "今天，它的周圍，還住著六、七十萬人。"
+   ],
+   "subject": "今天山腳擠滿房子的維蘇威",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "畫面中是一座大火山錐；山的下坡和山腳密密麻麻擠滿現代房子和街道，一路爬到半山腰；整片城鎮把山團團圍住。",
+   "screen_direction": "N/A",
+   "action": "密集的現代房子緊貼著火山一路往上擠，形成『就住在火山旁邊』的今昔對照。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 120,
+    "look_at": "維蘇威與山腳城鎮全景",
+    "distance_m": 150
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: present-day Vesuvius, a single big volcano cone, with a dense carpet of modern houses and streets packed tightly all around its lower slopes and foot, crowding right up the mountainside. No people visible, just the sprawling town hugging the mountain. Shot size: Extreme Wide Shot (EWS). The mountain and the sprawling town are small in a wide view; the whole landscape is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-11-11",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "美國地質調查局的火山學家 James Moore 說，躲火山最好的辦法很簡單："
+   ],
+   "subject": "說話的火山學家 James Moore",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "火山學家在畫面正中，正面對著鏡頭講話，一手抬起比劃；畫面下緣在他腰部。",
+   "screen_direction": "toward",
+   "action": "講到一半、抬手比劃的那一刻，表情務實、帶點不以為然的淡定。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.5,
+    "look_at": "說話的火山學家",
+    "distance_m": 3
+   },
+   "cast": [
+    {
+     "who": "火山學家 James Moore（火柴人路人）",
+     "visible": "腰部以上，正面講話抬手，臉入鏡",
+     "frame_height": "約 8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: a present-day volcanologist in a plain shirt, drawn as a stick figure with pure paper white skin and a round white head exactly like the attached character sheets, talking straight to us with one hand raised in mid-explanation; his face is matter-of-fact and a little wry. Only this one man. Shot size: Medium Shot (MS). The man is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is in front of the man, facing him. Camera angle: Eye-level: the camera is at the man's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上；若下緣掉到膝蓋，剪輯時裁到腰上。"
+  },
+  {
+   "id": "EP5-11-12",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "（停）別住在火山旁邊。"
+   ],
+   "subject": "搖手指的火山學家（笑點）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "火山學家在畫面正中，正面對鏡頭；一根食指舉起來朝我們搖；畫面下緣在他胸口。",
+   "screen_direction": "toward",
+   "action": "舉起一根手指朝鏡頭搖、面無表情給出最簡單建議的那一刻（笑點）。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.5,
+    "look_at": "搖手指的火山學家",
+    "distance_m": 1.5
+   },
+   "cast": [
+    {
+     "who": "火山學家 James Moore（火柴人路人）",
+     "visible": "胸口以上＋舉起的食指，臉入鏡",
+     "frame_height": "約 9 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration: the same present-day volcanologist, drawn as a stick figure with pure paper white skin and a round white head exactly like the attached character sheets, wagging one raised index finger at us as if giving one simple piece of advice; his face is deadpan and matter-of-fact. Only this one man. Shot size: Medium Close-up (MCU). The man is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in front of the man, facing him. Camera angle: Eye-level: the camera is at the man's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常畫成到腰；若下緣掉到腰，剪輯時推近到胸上，強調搖動的手指做笑點。"
+  }
+ ]
+}

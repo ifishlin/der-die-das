@@ -1,0 +1,87 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 14 場　博士的實驗室（研究小屋一樓）・現代
+
+【四、地圖】博士的實驗室（預告）
+博士的科技實驗室，在校園老舊兩層木造研究小屋的一樓（沒有樓梯），室內 10 × 9 公尺（2026-11-14 使用者改成 HERO 房間 5 × 4.5 公尺的兩倍），照實驗室四面牆圖（LAB_*_WALL）排。南牆中間是大門（房子正面朝南）（外面貼滿警告貼紙），門東邊一扇窗；西牆中段是綠色黑板，北端貼電影海報；北牆西半掛滿各式時鐘，西北角時鐘下的小桌上是自製自動咖啡機；北牆中間是時光機金屬圓環，粗電纜拖在地上，右邊是紅色拉桿；東北角是一台塞在角落的轉盤、開關、指示燈加綠色 CRT 螢幕的控制台；東牆北段是電子工作桌（示波器、烙鐵、電路板，放生存指南和水壺），上方一扇窗；東牆南段一扇窗。中間是一塊空地。
+★ 南牆＝房子正面（朝南，面向校園步道），大門在南牆中間
+★ 西牆外是樹叢、再過去是校務大樓（所以西牆沒有窗）；北、東兩面外面也是樹
+大小 22 欄（A–V）× 20 列（1–20），一格 0.5 公尺。北在上。時間：白天（窗戶自然光＋吊燈泡），太陽在東（早上，從東窗照進來）方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T U V
+  1  W W W W W W W W W W W W W W W W W W W W W W
+  2  W y y y o o o o o o 5 5 5 5 o o o o o 7 7 W
+  3  W y y y o o o o o o 5 5 5 5 o 6 o o o o 8 W
+  4  4 o o o o o o o o o o o o o o o o o o o 8 W
+  5  4 o o o o o o o o o o o o o o o o o o o 8 W
+  6  W o o o o o o o o o o o o o o o o o o o 8 W
+  7  3 o o o o o o o o o o o o o o o o o o o 8 W
+  8  3 o o o o o o o o o o o o o o o o o o o 8 W
+  9  3 o o o o o o o o o o o o o o o o o o o o W
+ 10  3 o o o o o o o o o o o o o o o o o o o o W
+ 11  3 o o o o o o o o o o o o o o o o o o o o W
+ 12  3 o o o o o o o o o o o o o o o o o o o o W
+ 13  3 o o o o o o o o o o o o o o o o o o o o W
+ 14  W o o o o o o o o o o o o o o o o o o o o W
+ 15  W o o o o o o o o o o o o o o o o o o o o W
+ 16  W o o o o o o o o o o o o o o o o o o o o W
+ 17  W o o o o o o o o o o o o o o o o o o o o W
+ 18  W o o o o o o o o o o o o o o o o o o o o W
+ 19  W o o o o o o o o o o o o o o o o o o o o W
+ 20  W W W W W W W W W W 1 1 W W W W W W W W W W
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 大門（房子正面，朝南）（the hut's wooden front door）｜角色：可站｜相機：不可放（南牆中間，對著外面的門口步道（跟校園地圖一致））
+  3 = 綠色黑板（a big green chalkboard）｜角色：不可站｜相機：不可放（西牆中段）
+  4 = 電影海報（a movie poster tacked to the wall）｜角色：不可站｜相機：不可放（西牆北端，黑板北邊、靠時鐘那一角；劇情 S02-2 要用）
+  5 = 時光機（金屬圓環）（the big ring-shaped metal time machine, with thick cables snaking across the floor from it）｜角色：可站｜相機：不可放（北牆中間偏東；出發時站進圓環）
+  6 = 紅色拉桿（a big red lever on a wooden box）｜角色：不可站｜相機：可放（圓環東邊）
+  7 = 控制台（轉盤、開關、CRT 螢幕）（a big homemade control console: a wall of dials, switches and blinking lights with a few old CRT monitors）｜角色：不可站｜相機：可放（東北角，靠北牆）
+  8 = 電子工作桌（放生存指南和水壺）（an electronics workbench with an oscilloscope, a soldering iron and circuit boards, and a survival guide and a water bottle on it）｜角色：不可站｜相機：可放（靠東牆）
+  W = 木板牆（weathered wooden plank walls）｜角色：不可站｜相機：不可放
+  o = 木地板（an old wooden plank floor）｜角色：可站｜相機：可放
+  y = 自動咖啡機小桌（a small table with a rickety homemade automatic coffee machine made of tubes, gears and a dented kettle）｜角色：不可站｜相機：可放（北牆，時鐘下方、圓環西邊）
+  2 = 前門旁的窗（a small window next to the front door），位置：O20 正上方的空中
+  9 = 工作桌牆南段的窗（a small window above the folding cot），位置：V17 正上方的空中
+  x = 滿牆的時鐘（dozens of mismatched clocks — wall clocks, cuckoo clocks, alarm clocks — covering the wall, all showing different times），位置：B1 正上方的空中
+  z = 工作桌上方的窗（a small window above the workbench），位置：V5 正上方的空中
+
+地圖外面：北邊 牆，看不到外面；東邊 兩扇窗外是校園草地和樹，早上的陽光從這邊照進來；西邊 牆，看不到外面；南邊 大門和門邊的窗外是校園草地和樹。
+
+【參考圖】
+- LAB_BENCH_F：實驗室工作桌牆，正面（不含轉角）
+- LAB_BENCH_L：實驗室工作桌牆，左半＋左轉角
+- LAB_BENCH_R：實驗室工作桌牆，右半＋右轉角
+- LAB_CHALK_F：實驗室黑板牆，正面（不含轉角）
+- LAB_CHALK_L：實驗室黑板牆，左半＋左轉角
+- LAB_CHALK_R：實驗室黑板牆，右半＋右轉角
+- LAB_DOOR_F：實驗室大門牆，正面（不含轉角）
+- LAB_DOOR_L：實驗室大門牆，左半＋左轉角
+- LAB_DOOR_R：實驗室大門牆，右半＋右轉角
+- LAB_MACHINE_F：實驗室時光機牆，正面（不含轉角）
+- LAB_MACHINE_L：實驗室時光機牆，左半＋左轉角
+- LAB_MACHINE_R：實驗室時光機牆，右半＋右轉角
+- REF_HERO_SUMMER：HERO 夏天裝（短袖、短褲、拖鞋，沒帽子沒背包）（EP3）
+- REF_PROF：博士角色設定圖
+- REF_PROPS5：EP5 道具：裝火山灰的玻璃罐、欠薪本、八瓣圓麵包（含炭化的）、熱食小攤、浮石、埋在灰裡的回家按鈕、火山模型（EP5）
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP5-14-01", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "M19", "height_m": "1.6", "look_at": "PROF（兩人中間偏左）", "distance_m": "4.2"}, "in_frame": ["PROF", "HERO"]}, {"id": "EP5-14-02", "variant_of": "N/A", "shot_size": "CU", "angle": "eye", "camera": {"cell": "O13", "height_m": "1.2", "look_at": "欠薪本", "distance_m": "1.2"}, "in_frame": ["HERO"]}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

@@ -1,0 +1,368 @@
+{
+ "scene_id": "EP5-07",
+ "notes": "這一場是一段「災難逐步升級」的蒙太奇，用九個鏡頭。開場先用一張無人物的極遠景（EWS）建立威脅：噴發柱被風吹向龐貝。接著切到街心的 HERO：WS 抬頭看天（落石開始）→ 手部插入鏡頭 ECU（接住一顆浮石、輕飄飄）→ MCU 看著掌心、一臉沒事的假平靜（這正是旁白「還不是最危險的時候」的戲劇反諷）。然後時間跳接，WS 的 HERO 已被浮石埋到膝蓋、抱頭躲砸。再硬切兩張環境鏡頭：屋頂被壓垮（WS）。最後把鏡頭交給 ROMANS，呈現「沒有馬上逃」的致命選擇：WS 他們在街上猶豫 → FS 背影關門躲進屋。收在一張無人物、浮石堆到門口的靜止 FS，配（停）後的笑點旁白「其實，是錯的」——門關著、石頭越堆越高，暗示他們出不來了，也接到下一場 HERO 開始慌。HERO 全程站在街心 H4，攝影機都在南邊往北拍（front／front34），維持連戲；環境與 ROMANS 的鏡頭則換到別的格子與方向，形成剪接的功能對比。所有無人物的環境鏡頭（噴發柱、垮屋頂、關上的門）背景交給主對話配參考圖，prompt 只標景別與「畫面中沒有任何人物」。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "2",
+     "cell": "H4",
+     "facing": "S",
+     "doing": "站在街心，頭往後仰，抬頭看天上開始飄落的浮石，一手半舉"
+    },
+    {
+     "t": "3",
+     "cell": "H4",
+     "facing": "S",
+     "doing": "伸出一手、掌心向上，接住一顆落下的小浮石"
+    },
+    {
+     "t": "4",
+     "cell": "H4",
+     "facing": "S",
+     "doing": "把浮石舉到胸前，低頭看著掌心，一臉輕鬆好奇"
+    },
+    {
+     "t": "5",
+     "cell": "H4",
+     "facing": "S",
+     "doing": "時間過去，浮石已堆到膝蓋，HERO 彎身、雙手抱頭躲避越砸越大的石頭"
+    }
+   ]
+  },
+  {
+   "who": "ROMANS",
+   "path": [
+    {
+     "t": "7",
+     "cell": "D6",
+     "facing": "N",
+     "doing": "一家人（男、女、小孩）站在店門前的人行道上，腳邊浮石及踝，面向街道猶豫張望，沒有馬上逃"
+    },
+    {
+     "t": "8",
+     "cell": "D6",
+     "facing": "S",
+     "doing": "轉身走向自家木門，男人把厚重木門往內拉上，一家人躲進屋裡"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP5-07-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "那天的風，正好把那根噴發柱，吹向龐貝。"
+   ],
+   "subject": "維蘇威火山像雨傘松的噴發柱，被風吹向龐貝、壓在屋頂上方（環境為主，畫面中沒有人物）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "噴發柱盤踞畫面上半部與左上（西北方）的天空，往城市方向傾斜；下半部是一整排低矮的龐貝屋頂與一小段空蕩的街道；畫面中沒有任何人物",
+   "screen_direction": "toward",
+   "action": "噴發柱的雲傘被風推著往城市（鏡頭這一側）傾斜壓來，開始飄下零星浮石；定格建立環境與威脅",
+   "camera": {
+    "cell": "L5",
+    "height_m": "1.6",
+    "look_at": "西北方的維蘇威噴發柱",
+    "distance_m": "400"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS); the subject is far away and small and the environment is the main subject. There are no people and no characters anywhere in the picture. No text anywhere in the picture.",
+   "untested": [
+    "EWS 句用在無人物的風景鏡頭（實測句以 HERO 為主體）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-07-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "天上開始落下東西。",
+    "一開始，是小小的浮石，像下雪一樣。"
+   ],
+   "subject": "HERO 站在街心抬頭看天",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 全身在畫面中央偏左，頭往後仰看天；四周是東西向的街道與店面，空間大量入鏡，營造浮石像下雪般飄落的範圍感",
+   "screen_direction": "off_up",
+   "action": "HERO 頭往後仰、一手半舉，第一次注意到天上飄下東西；睜大眼、嘴微張的好奇瞬間",
+   "camera": {
+    "cell": "H6",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "6"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身，頭到腳",
+     "frame_height": "約 45%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is on the street ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), standing in the middle of the street, head tilted far back, looking straight up at the sky, one hand half-raised. HERO's face and hands are pure paper white. HERO's expression is wide-eyed wonder, mouth slightly open, looking up. No text anywhere in the picture.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（HERO 偏大、周圍少一點），可接受"
+  },
+  {
+   "id": "EP5-07-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "你伸手接了一顆，輕輕的，一點也不可怕。"
+   ],
+   "subject": "HERO 攤開的手掌與掌心裡一顆小浮石（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "手（手掌與手指）",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面幾乎被 HERO 攤開、純白的手掌填滿，掌心正中央躺著一顆小小的灰白浮石；沒有臉、沒有其他角色",
+   "screen_direction": "toward",
+   "action": "一顆小浮石剛落進攤開的掌心、停在那裡的瞬間；強調「輕輕的、一點也不可怕」的觸感與尺寸",
+   "camera": {
+    "cell": "H5",
+    "height_m": "1.2",
+    "look_at": "HERO 的手掌",
+    "distance_m": "0.4"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只有單手手掌與前臂",
+     "frame_height": "手掌約佔畫高 60%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Close-up (ECU). Only HERO's open hand and the small pumice stone resting in it fill the picture. Camera direction: front view. The camera is just in front of HERO's hand, facing the palm. Camera angle: Eye-level: the camera is at HERO's hand height, looking straight at the palm. Only HERO's open right hand is in the picture, palm up and pure paper white, with a single small pale-grey pumice stone (as in the attached props sheet) resting in the palm; the fingers are relaxed. No face and no other character in the picture. HERO's hand is pure paper white. No text anywhere in the picture.",
+   "untested": [
+    "ECU 句用在手（實測只驗證過眼睛，寫手屬未測）"
+   ],
+   "remedy": "若手掌不夠滿版，剪輯時推近裁切到只剩手掌與浮石"
+  },
+  {
+   "id": "EP5-07-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "其實，這還不是最危險的時候。"
+   ],
+   "subject": "HERO 胸上的臉，看著掌心的浮石",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 的臉與上胸在畫面中央偏右，拿著浮石的手舉在下緣附近；他低頭看掌心，一臉沒事的樣子",
+   "screen_direction": "off_down",
+   "action": "HERO 把小浮石舉到胸前、低頭端詳的瞬間；表情輕鬆好奇，與旁白「還不是最危險的時候」形成戲劇反諷",
+   "camera": {
+    "cell": "H5",
+    "height_m": "1.5",
+    "look_at": "HERO",
+    "distance_m": "1.8"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "胸口以上（臉＋拿浮石的手）",
+     "frame_height": "約 75%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), holding a single small pale-grey pumice stone (as in the attached props sheet) up near his chest and looking down at it. HERO's face and hands are pure paper white. HERO's expression is calm and mildly curious, a faint untroubled smile, eyebrows relaxed. No text anywhere in the picture.",
+   "untested": [],
+   "remedy": "MCU 常被畫成 MS（下緣到腰），剪輯時推近到胸上"
+  },
+  {
+   "id": "EP5-07-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "可是它一個鐘頭、一個鐘頭地落，",
+    "越來越大顆，越砸越用力，"
+   ],
+   "subject": "HERO 彎身抱頭，被浮石埋到膝蓋",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，彎身、雙臂抱頭；浮石堆到他膝蓋、蓋住雙腳與腳邊街面；四周街道入鏡，顯示堆積範圍",
+   "screen_direction": "off_down",
+   "action": "時間已經過去很久：HERO 抱頭縮身、被越砸越大的浮石埋到膝蓋的瞬間；表情驚恐閉眼、嘴抿緊",
+   "camera": {
+    "cell": "H6",
+    "height_m": "1.5",
+    "look_at": "HERO",
+    "distance_m": "6"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "頭到膝蓋（雙腳被浮石埋住）",
+     "frame_height": "約 50%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the street, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), standing hunched with both arms wrapped over his head, buried in pale pumice stones piled up to his knees. HERO's face and hands are pure paper white. HERO's expression is frightened, eyes squeezed shut, mouth tight, flinching as stones hit him. No text anywhere in the picture.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS，可接受"
+  },
+  {
+   "id": "EP5-07-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "最後，連屋頂都被壓垮了。"
+   ],
+   "subject": "一棟龐貝房子的瓦屋頂被浮石壓垮塌陷（環境，畫面中沒有人物）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "一棟店面／房子正面佔畫面中央，瓦屋頂往內塌陷、瓦片與浮石崩落；周圍街道與堆積的浮石入鏡；畫面中沒有任何人物",
+   "screen_direction": "toward",
+   "action": "屋頂被堆積的浮石壓到塌下來、碎瓦往鏡頭這側崩落的瞬間；災難升級的定格",
+   "camera": {
+    "cell": "K5",
+    "height_m": "1.6",
+    "look_at": "南側房子 K7 的屋頂",
+    "distance_m": "6"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS); the whole subject is clearly visible with a lot of the surroundings around it. There are no people and no characters anywhere in the picture. No text anywhere in the picture.",
+   "untested": [
+    "WS 句用在無人物的建築鏡頭（實測句以 HERO 為主體）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-07-07",
+   "variant_of": "N/A",
+   "t": "7",
+   "narration": [
+    "城裡有些人，沒有馬上逃。"
+   ],
+   "subject": "幾個站在街上猶豫、沒有逃的龐貝居民（ROMANS）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "三個 ROMANS（紅褐短袍的男人、藍色長袍的女人、到大人胸口高的小孩）聚在畫面中央偏左的人行道上，腳邊浮石及踝；四周街道入鏡",
+   "screen_direction": "off_left",
+   "action": "一家人站在自家門口前猶豫張望、沒有馬上動身逃的瞬間；表情不安、遲疑",
+   "camera": {
+    "cell": "C4",
+    "height_m": "1.5",
+    "look_at": "ROMANS",
+    "distance_m": "6.7"
+   },
+   "cast": [
+    {
+     "who": "ROMANS（男人）",
+     "visible": "幾乎全身",
+     "frame_height": "約 42%"
+    },
+    {
+     "who": "ROMANS（女人）",
+     "visible": "幾乎全身",
+     "frame_height": "約 40%"
+    },
+    {
+     "who": "ROMANS（小孩）",
+     "visible": "全身",
+     "frame_height": "約 28%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). The group of people is clearly visible, with a lot of the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of the ROMANS and off to one side of the street, so we see their faces and one side of their bodies. Camera angle: Eye-level: the camera is at their eye height, looking straight ahead. Only three characters in the picture: a group of ROMANS (exactly as in the attached ROMANS character sheet): a man in a red-brown short tunic, a woman in a blue long robe, and a child reaching the adults' chest height, all standing in ankle-deep pale pumice. Their faces and hands are pure paper white. They look around uncertainly, anxious and hesitant, not running. No text anywhere in the picture.",
+   "untested": [
+    "front34 句改寫成一組站立人物（原句以追逐中的 HERO 為主體）"
+   ],
+   "remedy": "WS 可能被畫成 FS，可接受"
+  },
+  {
+   "id": "EP5-07-08",
+   "variant_of": "N/A",
+   "t": "8",
+   "narration": [
+    "他們關上門，躲進屋子裡避落灰。",
+    "看起來很謹慎。"
+   ],
+   "subject": "ROMANS 的背影，把木門拉上、躲進屋裡",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "ROMANS 的背影在畫面中央偏左，男人伸手拉自家厚重木門；女人與小孩已在門內；門口下方堆著浮石",
+   "screen_direction": "away",
+   "action": "男人把厚重木門往內拉上、一家人退進屋裡的瞬間；看起來謹慎、慎重（背影，不露臉）",
+   "camera": {
+    "cell": "C5",
+    "height_m": "1.5",
+    "look_at": "ROMANS",
+    "distance_m": "4.2"
+   },
+   "cast": [
+    {
+     "who": "ROMANS（男人）",
+     "visible": "背影全身",
+     "frame_height": "約 55%"
+    },
+    {
+     "who": "ROMANS（女人）",
+     "visible": "背影大半身（在門內）",
+     "frame_height": "約 48%"
+    },
+    {
+     "who": "ROMANS（小孩）",
+     "visible": "背影全身（在門內）",
+     "frame_height": "約 35%"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Full Shot (FS). The people's whole bodies, from head to feet, just fit in the picture. Camera direction: rear three-quarter view. The camera is behind the ROMANS and off to one side of the street; we see them from behind and one side as they step toward their house door. Camera angle: Eye-level: the camera is at their eye height, looking straight ahead. Only three characters in the picture: ROMANS (exactly as in the attached ROMANS character sheet) seen from behind — a man in a red-brown short tunic pulling a heavy wooden house door closed as they step inside, a woman in a blue long robe and a child already in the doorway. Their hands are pure paper white. No text anywhere in the picture.",
+   "untested": [
+    "back34 句改寫成一家人關門的背影（原句以兩人追逐為主體）"
+   ],
+   "remedy": "back34 偶爾會多畫一個前景人物，可接受；背影不露臉故不需表情"
+  },
+  {
+   "id": "EP5-07-09",
+   "variant_of": "N/A",
+   "t": "9",
+   "narration": [
+    "（停）其實，是錯的。"
+   ],
+   "subject": "關上的木門，浮石越堆越高、堵在門口（環境，畫面中沒有人物）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "一扇關緊的龐貝木門佔畫面中央，浮石從門的下緣往上堆、已經堵住大半；畫面完全靜止、沒有任何人物",
+   "screen_direction": "toward",
+   "action": "門關著、浮石一點一點堆高堵住門口的靜止鏡頭；（停）之後的笑點收尾——看似謹慎、其實把自己困住了",
+   "camera": {
+    "cell": "D6",
+    "height_m": "1.4",
+    "look_at": "D7 的木門",
+    "distance_m": "3"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Full Shot (FS); the whole subject, from top to bottom, just fits in the picture. There are no people and no characters anywhere in the picture. No text anywhere in the picture.",
+   "untested": [
+    "FS 句用在無人物的門／物件鏡頭（實測句以 HERO 為主體）"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

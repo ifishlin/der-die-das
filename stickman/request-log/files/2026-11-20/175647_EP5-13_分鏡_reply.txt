@@ -1,0 +1,184 @@
+{
+ "scene_id": "EP5-13",
+ "notes": "五個鏡頭，安靜的對話＋收尾笑點，不用太多張。①側面 WS 建立 HERO 灰頭土臉回到實驗室、把火山灰罐放到東牆工作桌上，一張帶出空間、狀態和那罐灰；②博士 MCU，放大鏡後面那隻眼睛被放到超大，呈現「看了很久、仔細鑑定」的喜感；③MS 雙人，博士放下放大鏡搖頭下判決、HERO 垂頭喪氣，一張收掉第 3、4 句旁白（雜質太多、任務不算完成）；④欠薪本插入特寫，白手又畫一筆，接住「（停）又記了一筆」的笑點；⑤空手掌插入特寫收尾（錢幣一個都沒撿到）。重點走位調整：博士檢查時改成拿起罐子、轉身面向房間（朝南），鏡頭才拍得到他的正臉——原本面對東牆只會拍到背。HERO 擺好罐子後往南退一步，把舞台讓給博士，最後在原地開欠薪本、攤空手。沒有大動物，不用加拍遠一級。全場白天、東窗晨光。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "T5", "facing": "E", "doing": "灰頭土臉，雙手把裝滿火山灰的玻璃罐放到東牆工作桌上（罐子落在 U5）"},
+    {"t": "2", "cell": "S7", "facing": "N", "doing": "往南退一步，看博士拿放大鏡檢查"},
+    {"t": "3", "cell": "S7", "facing": "S", "doing": "聽到判決，轉開臉、垂頭喪氣、肩膀垮下"},
+    {"t": "4", "cell": "S7", "facing": "S", "doing": "低頭打開手上的欠薪本，又畫一筆"},
+    {"t": "5", "cell": "S7", "facing": "S", "doing": "攤開兩隻空空的手掌，一枚錢幣都沒有"}
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    {"t": "1", "cell": "S6", "facing": "E", "doing": "站在工作桌西側等著，看 HERO 放罐子"},
+    {"t": "2", "cell": "T5", "facing": "S", "doing": "拿起罐子轉身面向房間，舉放大鏡湊近看，看了很久"},
+    {"t": "3", "cell": "T5", "facing": "S", "doing": "放下放大鏡，面無表情地搖搖頭"},
+    {"t": "4", "cell": "T5", "facing": "S", "doing": "拿著罐子站著，判定結束"},
+    {"t": "5", "cell": "T5", "facing": "S", "doing": "站著"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP5-13-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "回到實驗室，你灰頭土臉，把那罐火山灰放在桌上。"
+   ],
+   "subject": "HERO（放火山灰罐），博士在旁為次要主體",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，側身把玻璃罐放上畫面右側的東牆工作桌；博士在畫面左前方、靠近鏡頭，側身看著；背景是實驗室內部（後方北牆、右側工作桌與東窗晨光）",
+   "screen_direction": "right",
+   "action": "HERO 滿身火山灰、神情疲憊又心虛，正把裝滿灰的玻璃罐穩穩放到工作桌上的那一刻",
+   "camera": {
+    "cell": "T13",
+    "height_m": "1.5",
+    "look_at": "HERO",
+    "distance_m": "4.0"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "全身入鏡", "frame_height": "約 45%"},
+    {"who": "PROF", "visible": "全身入鏡", "frame_height": "約 48%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and PROF (exactly as in the attached PROF character sheet). HERO is covered head to toe in grey volcanic ash, his summer clothes (short sleeves, shorts, flip-flops, no hat, no backpack) smudged grey, looking tired and sheepish. HERO's face and hands are pure paper white under the ash. HERO is setting a clear glass jar packed full of grey volcanic ash down onto the workbench with both hands. PROF stands to one side watching with a curious, skeptical look; PROF's face and hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside the bench and sees HERO and PROF exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（主體偏大），可接受；若畫面太滿，剪輯時略拉遠當全景用。"
+  },
+  {
+   "id": "EP5-13-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "博士拿放大鏡看了很久。"
+   ],
+   "subject": "PROF（舉放大鏡看火山灰罐）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "博士在畫面中央偏右，一手舉著玻璃罐、一手拿大放大鏡擋在臉前，放大鏡後面那隻眼睛被放到很大；畫面單純聚焦在他和罐子",
+   "screen_direction": "off_down",
+   "action": "博士瞇起一隻眼、另一隻眼透過鏡片被放到超大，眉頭緊皺、盯著罐裡的灰看了很久的那一刻",
+   "camera": {
+    "cell": "S8",
+    "height_m": "1.5",
+    "look_at": "PROF（與他手上的罐子）",
+    "distance_m": "1.6"
+   },
+   "cast": [
+    {"who": "PROF", "visible": "胸部以上入鏡", "frame_height": "約 75%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). PROF's face and hands are pure paper white. PROF holds up the clear glass jar packed full of grey volcanic ash in one hand and a big round magnifying glass in the other, peering at the ash through the lens; one of his eyes looks hugely enlarged through the magnifying glass, brow furrowed in intense, drawn-out concentration. Shot size: Medium Close-up (MCU). PROF is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫成 MS（下緣到腰）；若如此，剪輯時推近到胸上當 MCU 用。"
+  },
+  {
+   "id": "EP5-13-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "然後說：雜質太多了，看不出是夏天還是秋天。",
+    "任務，不算完成。"
+   ],
+   "subject": "PROF 與 HERO（雙人；博士下判決、HERO 反應），景別以 HERO 為準",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面左前方（離鏡頭較近）、灰頭土臉垂著頭；博士在畫面右後方，放下放大鏡與罐子、搖頭；兩人都略朝鏡頭",
+   "screen_direction": "off_down",
+   "action": "博士面無表情搖頭下判決、HERO 同時把臉轉開、低頭、肩膀垮下的那一刻",
+   "camera": {
+    "cell": "R11",
+    "height_m": "1.5",
+    "look_at": "HERO",
+    "distance_m": "2.0"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "腰部以上入鏡", "frame_height": "約 70%"},
+    {"who": "PROF", "visible": "腰部以上入鏡", "frame_height": "約 55%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and PROF (exactly as in the attached PROF character sheet). HERO is covered in grey volcanic ash, his summer clothes smudged grey, crestfallen with his head hung low and shoulders slumped. HERO's face and hands are pure paper white under the ash. PROF has lowered the magnifying glass and the jar and is shaking his head with a flat, unimpressed, disapproving look; PROF's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常被畫成膝上（MLS）；可接受，或剪輯時推近到腰當 MS 用。"
+  },
+  {
+   "id": "EP5-13-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "（停）你打開欠薪本，又記了一筆。"
+   ],
+   "subject": "HERO 的雙手與欠薪本（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "雙手與欠薪本攤開的頁面",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面中央是攤開的欠薪本，一隻白手拿短鉛筆在已經畫滿一排正字記號的那欄旁，再補上一筆；沒有臉、沒有其他角色",
+   "screen_direction": "off_down",
+   "action": "鉛筆尖落在頁面、又畫下一道新的記號的那一刻",
+   "camera": {
+    "cell": "S9",
+    "height_m": "1.7",
+    "look_at": "HERO 手上的欠薪本",
+    "distance_m": "1.0"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "只露雙手（無臉）", "frame_height": "手約佔畫高 40%，欠薪本在畫面中央"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO's hands are in the picture (no face, no other characters). HERO's hands are pure paper white. HERO's white hands hold a small worn ledger notebook open; one hand presses a stubby pencil to the page, adding a single fresh tally stroke to a column already crowded with tally strokes. Shot size: Extreme Close-up (ECU). Only HERO's hands and the open ledger page fill the picture. Camera direction: front view. The camera is in front of the ledger, facing it. Camera angle: High angle: the camera is high above the ledger, looking down at it.",
+   "untested": [
+    "ECU 句改寫成「手和欠薪本頁面」（原句只在眼睛上實測過）",
+    "front view 句改寫成對著本子",
+    "high 角度用在物件插入（原句只在人物上實測過，且 △）"
+   ],
+   "remedy": "若框太遠或俯角不足，剪輯時推近、裁成由上往下的俯視特寫；記號用正字筆畫、不出現文字數字。"
+  },
+  {
+   "id": "EP5-13-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "至於古羅馬的錢幣？你一個都沒撿到。"
+   ],
+   "subject": "HERO 攤開的兩隻空手掌（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "兩隻攤開向上的空手掌",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面中央是兩隻攤開、掌心朝上的白手掌，空空如也，掌紋裡只卡著一點灰；沒有臉、沒有其他角色",
+   "screen_direction": "off_down",
+   "action": "兩手攤開、掌心朝上，證明一枚錢幣都沒有的定格收尾",
+   "camera": {
+    "cell": "S9",
+    "height_m": "1.7",
+    "look_at": "HERO 的雙手",
+    "distance_m": "1.0"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "只露雙手手掌（無臉）", "frame_height": "約 60%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO's hands are in the picture (no face, no other characters). HERO's hands are pure paper white. Two empty open white palms held out and cupped upward, completely empty — not a single coin anywhere, only a little grey ash dust caught in the creases. Shot size: Extreme Close-up (ECU). Only HERO's two open empty palms fill the picture. Camera direction: front view. The camera is in front of the hands, facing them. Camera angle: High angle: the camera is high above the hands, looking down at them.",
+   "untested": [
+    "ECU 句改寫成「兩隻空手掌」（原句只在眼睛上實測過）",
+    "front view 句改寫成對著雙手",
+    "high 角度用在物件／手部插入（原句只在人物上實測過，且 △）"
+   ],
+   "remedy": "若框太遠或俯角不足，剪輯時推近、裁成由上往下看進空掌心的俯視特寫。"
+  }
+ ]
+}

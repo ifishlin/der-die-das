@@ -1,0 +1,254 @@
+{
+ "scene_id": "EP5-12",
+ "notes": "全場只有 HERO 一人，重點是「按鈕不見→發現被砸埋→跪地挖出擦淨→亮起→閃光回現代」這條情緒線。拆成 6 個鏡頭，一句旁白一格，節奏為：建立（孤身走到盡頭、灰雨）→笑點（空手，按鈕不見了）→揭露（插入：按鈕被浮石砸中埋在灰裡）→勞動（跪地咳嗽挖擦）→希望（插入：按鈕亮起）→收尾（白光一閃消失）。開場用 WS 背影把灰雨大路的環境帶出來、同時看得到他伸手要按的動作；第 2 格切到 front34 看他空手呆住的表情製造笑點；第 3、5 兩格用物件插入鏡頭（高角度俯視）分別交代『問題』和『解答』，形成對照；第 4、6 格用同一個側面機位（跪姿），讓挖灰的狼狽和最後的閃光在同一構圖裡收束，剪接上有呼應。本集無大動物，不需加拍遠一級。HERO 這場灰頭土臉，各格都要畫一身灰；按鈕＝REF_PROPS5。相機都放在可放格（F1=4、F2=x、E1=x），不出地圖。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "F2",
+     "facing": "N",
+     "doing": "沿海邊大路往北走到盡頭站定，舉起一手要按回家按鈕"
+    },
+    {
+     "t": "2",
+     "cell": "F1",
+     "facing": "N",
+     "doing": "低頭發現手上的回家按鈕不見了，呆住"
+    },
+    {
+     "t": "3",
+     "cell": "F1",
+     "facing": "N",
+     "doing": "看見腳邊地上被浮石砸中、埋進厚灰裡的按鈕（本格為物件插入，HERO 不入鏡）"
+    },
+    {
+     "t": "4",
+     "cell": "F1",
+     "facing": "N",
+     "doing": "跪在火山灰裡，一邊咳一邊把按鈕挖出來、擦掉上面的灰"
+    },
+    {
+     "t": "5",
+     "cell": "F1",
+     "facing": "N",
+     "doing": "雙手捧著擦乾淨的按鈕，看著它亮起"
+    },
+    {
+     "t": "6",
+     "cell": "F1",
+     "facing": "N",
+     "doing": "被一道白光包住，消失回到現代"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP5-12-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "你終於走到夠遠的地方，伸手要按回家按鈕。"
+   ],
+   "subject": "HERO（背影，伸手要按回家按鈕）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏下，背對鏡頭，單手往前上方舉起要按按鈕；四周留大量灰雨大路的環境，天上一直落灰。",
+   "screen_direction": "away",
+   "action": "HERO 走到路盡頭站定，背對鏡頭，舉起一手把回家按鈕高高抬起、正要按下的那一刻。",
+   "camera": {
+    "cell": "F2",
+    "height_m": "1.5",
+    "look_at": "HERO",
+    "distance_m": "7"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身背影，含舉起的手與手上的按鈕",
+     "frame_height": "約六成（全身，背影，周圍留大量環境）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), seen from behind and lightly dusted with grey volcanic ash. He stands and stretches one arm up and forward, about to press a small home-button device (exactly as in the attached props sheet) held up in his raised hand. HERO's hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is on the road behind HERO, looking the way he faces; HERO's back is toward the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "back view 句改寫成單角色版（表上原句為 HERO＋TEEN 兩人追逐）"
+   ],
+   "remedy": "WS 常畫成接近 FS、人物偏大；可接受，剪輯時再往外裁或配旁白的『夠遠的地方』強調孤身與距離。"
+  },
+  {
+   "id": "EP5-12-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "（停）按鈕不見了。"
+   ],
+   "subject": "HERO（盯著空掉的手掌）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏右，前側 3/4，低頭盯著自己攤開的空手掌（在畫面下緣附近），另一手僵在半空。",
+   "screen_direction": "off_down",
+   "action": "切到正面稍側，HERO 低頭盯著空空的手掌、另一手僵住，剛意識到按鈕不見了的那一刻（笑點）。表情瞪大眼、嘴巴張開錯愕。",
+   "action_note": "",
+   "camera": {
+    "cell": "F1",
+    "height_m": "1.6",
+    "look_at": "HERO",
+    "distance_m": "2.5"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "腰部以上，臉、兩隻手與攤開的空手掌",
+     "frame_height": "約八成（腰以上）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), lightly dusted with grey volcanic ash. He stares down at his own empty open palm, his other hand frozen in mid-air, having just realized the device is gone. His face is wide-eyed with his mouth open in dismay. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the road, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上、front34 常偏正面；若如此，剪輯時裁到胸上、略正面可接受，不影響『盯空手』的笑點。"
+  },
+  {
+   "id": "EP5-12-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "它被一顆浮石砸中，埋進了厚厚的火山灰裡。"
+   ],
+   "subject": "回家按鈕＋砸中它的浮石（物件插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "回家按鈕、壓在上面的浮石、周圍的火山灰",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面正中是半埋在厚灰裡的回家按鈕，一塊粗糙的灰色浮石正壓在它上面；四周全是厚厚的火山灰。無人。",
+   "screen_direction": "toward",
+   "action": "插入鏡頭：被浮石砸中的回家按鈕半埋在灰裡，浮石壓在上面，交代按鈕為什麼不見了。",
+   "camera": {
+    "cell": "F1",
+    "height_m": "3.0",
+    "look_at": "地上被浮石砸中的回家按鈕",
+    "distance_m": "1.2"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. There are no characters in the picture. The only things in the picture are the small home-button device (exactly as in the attached props sheet) half-buried in thick grey volcanic ash, with a rough chunk of grey pumice stone resting on top of it where it struck. Shot size: Extreme Close-up (ECU). Only the home-button device, the pumice stone on it, and the grey ash around them fill the picture. Camera angle: High angle: the camera is high above the device, looking down at it.",
+   "untested": [
+    "ECU 句用在地上的物件（按鈕＋浮石＋火山灰），非表上的『眼睛』範例",
+    "high angle 用在地上小物件"
+   ],
+   "remedy": "high angle 常只輕微俯視（top-down 無效），斜俯可接受；ECU 物件若生得太遠、佔比太小，剪輯時推近。"
+  },
+  {
+   "id": "EP5-12-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "你跪在地上，一邊咳，一邊把它挖出來，擦掉上面的灰。"
+   ],
+   "subject": "HERO（跪地咳嗽、挖按鈕擦灰）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 側面，跪在畫面中央的厚灰裡，一手往地上的灰裡挖、另一手抓著沾滿灰的按鈕擦；頭偏一邊咳嗽。",
+   "screen_direction": "off_down",
+   "action": "HERO 跪在厚灰裡，一手挖灰、一手抓著按鈕擦掉灰，頭轉向一側用力咳嗽、眼睛瞇緊、嘴巴張開的那一刻。一身灰。",
+   "camera": {
+    "cell": "E1",
+    "height_m": "1.1",
+    "look_at": "HERO",
+    "distance_m": "4.5"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（跪姿），臉、兩手與手上的按鈕",
+     "frame_height": "約七成（跪姿全身，含腳下的灰）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), covered in grey volcanic ash. He kneels on the ground, one hand digging and scooping through thick ash, the other hand holding the dusty home-button device (exactly as in the attached props sheet) and wiping the ash off it. His head is turned aside, coughing hard, his eyes squeezed shut and his mouth open. HERO's face and hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the road and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "side view 句改寫成單角色版（表上原句含 TEEN）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-12-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "終於，它亮了。"
+   ],
+   "subject": "回家按鈕（在 HERO 手中亮起）＋HERO 的手（物件插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "HERO 捧著的回家按鈕（發亮）與圍住它的手指",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面正中是 HERO 兩隻沾灰的手捧著的回家按鈕，按鈕正發出明亮的光；只見按鈕和捧住它的手指。",
+   "screen_direction": "toward",
+   "action": "插入鏡頭：擦乾淨的回家按鈕在 HERO 捧起的雙手裡亮起，光打在手指上的那一刻。",
+   "camera": {
+    "cell": "F1",
+    "height_m": "1.1",
+    "look_at": "HERO 手中發亮的回家按鈕",
+    "distance_m": "0.4"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只有捧著按鈕的兩隻手與手指",
+     "frame_height": "約六成（雙手捧物，臉不入鏡）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only thing in the picture is the home-button device (exactly as in the attached props sheet) glowing brightly, cupped in HERO's two ash-dusted hands. HERO's hands are pure paper white. Shot size: Extreme Close-up (ECU). Only the glowing home-button device and HERO's cupped fingers around it fill the picture. Camera angle: High angle: the camera is high above the hands, looking down at them.",
+   "untested": [
+    "ECU 句用在發亮的按鈕＋手，非表上的『眼睛』範例"
+   ],
+   "remedy": "high angle 常只輕微俯視，可接受斜俯；ECU 若生得太遠，剪輯時推近到只剩按鈕與手指。"
+  },
+  {
+   "id": "EP5-12-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "光一閃，你回到了現代。"
+   ],
+   "subject": "HERO（被白光包住消失）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 側面跪在畫面中央（與第 4 格同機位），一道強烈白光從他手中的按鈕爆開，向外擴散、半吞沒他的身體。",
+   "screen_direction": "off_down",
+   "action": "從按鈕爆出的強烈白光向外炸開、半吞沒跪著的 HERO，他眼睛瞇緊、縮著身子擋光、正要消失的那一刻。",
+   "camera": {
+    "cell": "E1",
+    "height_m": "1.1",
+    "look_at": "HERO",
+    "distance_m": "4.5"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身（跪姿），臉、雙手，部分被白光蓋住",
+     "frame_height": "約七成（跪姿全身，部分被強光吞沒）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), covered in grey volcanic ash, kneeling on the ground. A brilliant burst of pure white light explodes outward from the glowing home-button device (exactly as in the attached props sheet) in his hands, half swallowing him as he vanishes. His eyes are squeezed shut and his face braces against the blinding flash. HERO's face and hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the road and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "side view 句改寫成單角色版（表上原句含 TEEN）",
+    "從按鈕爆開的白光特效（劇情轉場用，非背景光線）"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

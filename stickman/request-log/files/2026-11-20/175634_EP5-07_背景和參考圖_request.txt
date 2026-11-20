@@ -1,0 +1,59 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 7 場　龐貝街上・落石・爆發那天・下午
+
+【四、地圖】龐貝街上・落石（下午）
+龐貝城裡一條東西向的石板路，兩邊是人行道和一整排店面。北邊那排有麵包店（架上一排八瓣圓麵包）、熱食小攤（櫃台嵌著陶罐）；南邊那排有一座街角噴泉。路面中間有過街的踏石。往西北看，房子上面露出遠方的維蘇威火山；爆發後，山頂的雨傘松雲柱就在那個方向。
+★ 維蘇威在西北邊
+★ 街是東西向
+大小 16 欄（A–P）× 8 列（1–8），一格 3 公尺。北在上。時間：上午到下午（爆發那天），太陽在東（上午）、南（中午）、西（下午）方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P
+  1  J J J J J J J J J J J J J J J J
+  2  J J J 1 1 J J J 2 2 J J J J J J
+  3  I I I I I I I I I I I I I I I I
+  4  Z Z Z Z Z Z Z Z Z Z Z 4 Z Z Z Z
+  5  Z Z Z Z Z Z Z 5 Z Z Z 4 Z Z Z Z
+  6  I I I I I 3 I I I I I I I I I I
+  7  J J J J J J J J J J J J J J J J
+  8  J J J J J J J J J J J J J J J J
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 麵包店（a bakery with round loaves cut into eight sections）｜角色：不可站｜相機：不可放
+  2 = 熱食小攤（a street food counter with clay pots set into it）｜角色：不可站｜相機：不可放
+  3 = 街角噴泉（a stone street fountain）｜角色：不可站｜相機：可放
+  4 = 過街踏石（raised stepping stones across the street）｜角色：可站｜相機：可放
+  5 = HERO 蹲著畫地圖的地方（第 8 場）（where HERO crouches to draw a map）｜角色：可站｜相機：可放
+  I = 人行道（a raised stone sidewalk）｜角色：可站｜相機：可放
+  J = 店面和房子（站不上去）（Roman shopfronts and houses with plaster walls and tiled roofs）｜角色：不可站｜相機：不可放
+  Z = 石板路（有過街踏石）（a Roman street paved with big stone slabs, with raised stepping stones）｜角色：可站｜相機：可放
+浮石從腳踝慢慢堆到膝蓋；有一棟房子的屋頂被壓垮。
+地圖外面：北邊 房子後面、西北方遠處是維蘇威火山；東邊 街道往東延伸；城外是山；西邊 街道往西延伸，往海的方向；南邊 房子後面是城牆和田。
+
+【參考圖】
+- REF_HERO_SUMMER：HERO 夏天裝（短袖、短褲、拖鞋，沒帽子沒背包）（EP3）
+- REF_POMPEII：龐貝街景：平常的石板街（踏石、店面、麵包店、熱食攤、噴泉）、爆發時落滿浮石的同一條街（EP5）
+- REF_PROPS5：EP5 道具：裝火山灰的玻璃罐、欠薪本、八瓣圓麵包（含炭化的）、熱食小攤、浮石、埋在灰裡的回家按鈕、火山模型（EP5）
+- REF_ROMANS：龐貝居民：男人（紅褐短袍）、女人（藍色長袍）、麵包師傅、小孩（EP5）
+- REF_VESUVIUS：維蘇威：爆發前的綠色火山、像雨傘松的噴發柱和落浮石、夜裡垮下來的碎屑流（EP5）
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP5-07-01", "variant_of": "N/A", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "L5", "height_m": "1.6", "look_at": "西北方的維蘇威噴發柱", "distance_m": "400"}, "in_frame": []}, {"id": "EP5-07-02", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "H6", "height_m": "1.6", "look_at": "HERO", "distance_m": "6"}, "in_frame": ["HERO"]}, {"id": "EP5-07-03", "variant_of": "N/A", "shot_size": "ECU", "angle": "eye", "camera": {"cell": "H5", "height_m": "1.2", "look_at": "HERO 的手掌", "distance_m": "0.4"}, "in_frame": ["HERO"]}, {"id": "EP5-07-04", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "H5", "height_m": "1.5", "look_at": "HERO", "distance_m": "1.8"}, "in_frame": ["HERO"]}, {"id": "EP5-07-05", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "H6", "height_m": "1.5", "look_at": "HERO", "distance_m": "6"}, "in_frame": ["HERO"]}, {"id": "EP5-07-06", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "K5", "height_m": "1.6", "look_at": "南側房子 K7 的屋頂", "distance_m": "6"}, "in_frame": []}, {"id": "EP5-07-07", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "C4", "height_m": "1.5", "look_at": "ROMANS", "distance_m": "6.7"}, "in_frame": ["ROMANS（男人）", "ROMANS（女人）", "ROMANS（小孩）"]}, {"id": "EP5-07-08", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "C5", "height_m": "1.5", "look_at": "ROMANS", "distance_m": "4.2"}, "in_frame": ["ROMANS（男人）", "ROMANS（女人）", "ROMANS（小孩）"]}, {"id": "EP5-07-09", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "D6", "height_m": "1.4", "look_at": "D7 的木門", "distance_m": "3"}, "in_frame": []}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

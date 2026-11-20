@@ -1,0 +1,115 @@
+{
+ "scene_id": "EP5-14",
+ "notes": "整集最後一場、兼下一集預告，只有兩句旁白，拆成兩張圖：第一張用遠景雙人鏡頭建立『博士又要出發』的懸念——PROF 在畫面左邊眼睛發亮攤開一張只有圖案的新地圖，HERO 在右邊抱著欠薪本一臉無奈，背景是北牆的時光機圓環，呼應『下一集』；第二張切成欠薪本的插入近景當笑點收尾——HERO 的白手捧著翻開的本子，頁面幾乎被正字記號寫滿，只剩底部一點空白。沒有大動物，不用加拍遠一級。兩張都平視，雙人用 front34 看得到兩張臉和地圖，插入鏡頭正對本子。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "O11",
+     "facing": "SW",
+     "doing": "站在 PROF 右邊，雙手抱著欠薪本貼在胸前，一臉不想再被坑的死魚眼"
+    },
+    {
+     "t": "2",
+     "cell": "O11",
+     "facing": "S",
+     "doing": "把欠薪本翻開、朝鏡頭方向捧著，露出寫滿正字記號的頁面"
+    }
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    {
+     "t": "1",
+     "cell": "L11",
+     "facing": "SE",
+     "doing": "眼睛發亮，雙手攤開一張新的地圖（只有圖案沒有字），側身朝 HERO 展示"
+    },
+    {
+     "t": "2",
+     "cell": "L11",
+     "facing": "SE",
+     "doing": "維持攤開地圖、興奮的姿勢（在插入鏡頭外）"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP5-14-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "下一集。博士又盯上了另一段歷史。"
+   ],
+   "subject": "PROF（攤開新地圖、眼睛發亮）；次要主體 HERO（抱欠薪本）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "PROF 在畫面左邊，雙手攤開一張只有圖案的新地圖、眼睛發亮；HERO 在畫面右邊，抱著欠薪本一臉無奈；兩人全身入鏡，背景（北牆）是時光機圓環，暗示下一趟旅程。",
+   "screen_direction": "right",
+   "action": "PROF 把攤開的新地圖轉向 HERO 的那一刻，興奮地盯著它；HERO 抱著本子紋風不動、滿臉拒絕。",
+   "camera": {
+    "cell": "M19",
+    "height_m": "1.6",
+    "look_at": "PROF（兩人中間偏左）",
+    "distance_m": "4.2"
+   },
+   "cast": [
+    {
+     "who": "PROF",
+     "visible": "全身（頭到腳）",
+     "frame_height": "約 6 成"
+    },
+    {
+     "who": "HERO",
+     "visible": "全身（頭到腳）",
+     "frame_height": "約 6 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: PROF (exactly as in the attached PROF character sheet) on the left and HERO (exactly as in the attached HERO character sheet) on the right. PROF stands on the left, eyes wide open and shining with excitement, both hands holding open a big new map turned toward HERO; the map shows only drawings and simple pictures, no letters and no words. HERO stands on the right, hugging a thick notebook tightly against his chest, flat, deadpan and unimpressed, like he does not want to get cheated again; HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). PROF's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 實測△常畫成接近 FS；相機已拉到 4.2m 讓兩人全身入鏡，若模型畫成 FS（兩人仍完整頭到腳）也可接受，不必重生。"
+  },
+  {
+   "id": "EP5-14-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "而你的欠薪本，快要寫滿了。"
+   ],
+   "subject": "欠薪本（翻開的頁面）＋ HERO 的雙手",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "翻開的欠薪本佔畫面中央偏滿，HERO 的白色雙手從左右捧著本子；頁面幾乎被密密麻麻的正字記號填滿，只剩底部留一點空白。無臉、無其他角色。",
+   "screen_direction": "toward",
+   "action": "本子被翻開、正對鏡頭的那一刻，整頁正字記號快要寫到底，只差最後幾行。",
+   "camera": {
+    "cell": "O13",
+    "height_m": "1.2",
+    "look_at": "欠薪本",
+    "distance_m": "1.2"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只有雙手",
+     "frame_height": "雙手約佔畫高 3 成（欠薪本佔畫面主要約 7 成）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. In the picture there is only an open thick notebook held up by a pair of hands; no face and no other characters. The hands belong to HERO (exactly as in the attached HERO character sheet); HERO's hands are pure paper white. The two open pages are almost completely covered with dense tally marks (many little groups of small vertical strokes), nearly every line filled, with only a little blank space left at the bottom. Close-up: the open notebook fills most of the frame, seen straight on from the front.",
+   "untested": [
+    "Close-up of an object (the notebook) filling most of the frame — 物件近景，無實測景別句"
+   ],
+   "remedy": "物件近景沒有實測句；用 Close-up of the open notebook 直接描述填滿畫面。若模型畫得太遠、本子太小，剪輯時推近到想要的 CU。"
+  }
+ ]
+}

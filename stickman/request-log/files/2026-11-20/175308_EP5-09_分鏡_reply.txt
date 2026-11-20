@@ -1,0 +1,234 @@
+{
+ "scene_id": "EP5-09",
+ "notes": "這一場是旁白帶景的「趕路＋介紹赫庫蘭尼姆」段落，HERO 幾乎全程是人群裡往北走的一個小人影，戲劇張力靠：先一個親密的起點動作（抓灰裝罐），再用建立鏡頭介紹這座看似安全的海邊度假城，再翻轉成危險（它其實更靠近火山、第一波半夜就掃到這），最後回到趕路、往那不勒斯延伸。全段海在西（往北走時在畫面左）、維蘇威雲柱在東南（畫面右）。共 8 張：①抓灰起步（唯一的近身動作鏡頭，建立任務）②高空建立全城＋海灣（配兩句，介紹城與大宅圖書館）③地面極遠景帶出城在維蘇威西邊的東西向關係④海邊悠閒的居民＝『看起來很安全』的對比鏡頭⑤全城被噴發柱壓住的不祥定場（連三句：更近火山、第一波先掃到、半夜來）⑥HERO 穿城而過的側面趕路特寫（本場最實的角色鏡頭）⑦高角度長路表現十幾公里的距離與時間⑧背影走向北方那不勒斯的收尾。景別背景（大宅、圖書館、船屋、海、雲柱）都不寫進 prompt，由主對話依 camera.cell／look_at 補；prompt 只有角色、動作、表情、拿的罐子和膚色句。沒有大動物，不加拍遠一級。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "F8", "facing": "N", "doing": "蹲下抓一把地上的火山灰裝進玻璃罐，準備往北走"},
+    {"t": "2", "cell": "F6", "facing": "N", "doing": "拿著罐子沿海邊大路往北走，赫庫蘭尼姆在前方"},
+    {"t": "3", "cell": "G4", "facing": "N", "doing": "走到赫庫蘭尼姆旁，大宅與海在他的左（西）側"},
+    {"t": "4", "cell": "G3", "facing": "N", "doing": "穿過赫庫蘭尼姆，先停下抬頭看東南天上的雲柱，再加快腳步"},
+    {"t": "5", "cell": "F2", "facing": "N", "doing": "過了城區，走在往北一路延伸的大路上"},
+    {"t": "6", "cell": "F1", "facing": "N", "doing": "繼續往北，朝畫面外的那不勒斯走去"}
+   ]
+  },
+  {
+   "who": "ROMANS",
+   "path": [
+    {"t": "1", "cell": "F7", "facing": "N", "doing": "逃難人群，和 HERO 一起沿大路往北走"},
+    {"t": "2", "cell": "F5", "facing": "N", "doing": "逃難人群往北走"},
+    {"t": "3", "cell": "G4", "facing": "N", "doing": "逃難人群往北走"},
+    {"t": "4", "cell": "G3", "facing": "N", "doing": "逃難人群穿過城區往北走"}
+   ]
+  },
+  {
+   "who": "ROMANS",
+   "path": [
+    {"t": "3", "cell": "E5", "facing": "S", "doing": "赫庫蘭尼姆的本地居民，在海邊斜躺閒聊、悠閒放鬆，完全沒察覺危險"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP5-09-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "你抓起一把落在地上的火山灰，裝進罐子裡，開始往北走。"
+   ],
+   "subject": "HERO 蹲下抓火山灰裝罐",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 蹲在畫面中央，一手捧灰、一手拿罐；身後兩個逃難的羅馬人往北經過，偏上、較小",
+   "screen_direction": "off_down",
+   "action": "HERO 蹲低，一手把一把灰色火山灰撥進另一手的玻璃罐，低頭看著灰，神情專注堅定——旅程的起點",
+   "camera": {"cell": "F7", "height_m": "1.2", "look_at": "HERO", "distance_m": "4"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（蹲姿），臉和手都入鏡", "frame_height": "65%"},
+    {"who": "ROMANS", "visible": "身後兩人的上半身，較小", "frame_height": "40%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and two Roman refugees behind him. HERO is crouched low, one hand scooping a handful of grey volcanic ash off the ground and dropping it into a glass jar held in his other hand; the jar is half full of grey ash. HERO looks down at the ash, his expression focused and determined. HERO's face and hands are pure paper white. Behind him two Roman refugees (as in the attached ROMANS character sheet) trudge past; their faces and hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is on the road ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-09-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "往北的路上，會經過一座海邊小城：赫庫蘭尼姆。",
+    "這裡是羅馬有錢人的度假勝地，有大理石大宅，還有藏著古希臘、羅馬經典的圖書館。"
+   ],
+   "subject": "赫庫蘭尼姆全城與海灣，HERO 在路上很小",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "aerial",
+   "composition": "海邊的赫庫蘭尼姆佔畫面中上，海灣在左（西），東南天上的雲柱在右上；HERO 與逃難人群是下方大路上的小點",
+   "screen_direction": "away",
+   "action": "高空俯瞰整座海邊城，建立環境；HERO 背影隨人群往城的方向前進",
+   "camera": {"cell": "F8", "height_m": "200", "look_at": "赫庫蘭尼姆全城／HERO", "distance_m": "500"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影，很小", "frame_height": "8%"},
+    {"who": "ROMANS", "visible": "全身，很小的一群人", "frame_height": "8%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet), very small and seen from behind, and a loose scattered crowd of Roman refugees around him. HERO walks north carrying a glass jar half full of grey ash. HERO's face and hands are pure paper white. The refugees (as in the attached ROMANS character sheet) have faces and hands that are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: back view. The camera is on the road behind HERO, looking the way he walks north; HERO's back is toward the camera. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [],
+   "remedy": "aerial 實測只在配 EWS 時成功，此處已配 EWS；若高空感不足就當高角度俯瞰用，不另補"
+  },
+  {
+   "id": "EP5-09-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "它就在維蘇威的西邊，大概七公里。"
+   ],
+   "subject": "赫庫蘭尼姆（左）與東邊的維蘇威雲柱（右）的東西向關係，HERO 很小",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "地面平視遠景：海邊的城與大宅在畫面左（西），冒著雲柱的維蘇威在右（東），兩者隔著開闊地；HERO 背影在下方路上很小",
+   "screen_direction": "away",
+   "action": "平視帶出『城在火山西邊、相距七公里』的空間關係；HERO 繼續往北",
+   "camera": {"cell": "G6", "height_m": "5", "look_at": "赫庫蘭尼姆與維蘇威／HERO", "distance_m": "400"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影，很小", "frame_height": "7%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet), very small and seen from behind, walking north and carrying a glass jar half full of grey ash. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: back view. The camera is on the road behind HERO, looking the way he walks north; HERO's back is toward the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-09-04",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "爆發的頭幾個鐘頭，風把火山灰往另一邊吹，這裡幾乎沒有落灰，看起來反而很安全。"
+   ],
+   "subject": "赫庫蘭尼姆海邊悠閒放鬆的本地居民",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "幾個本地居民在畫面中央偏前、斜躺或坐著閒聊，面朝鏡頭；天空乾淨；HERO 背影在右後方的路上很小",
+   "screen_direction": "toward",
+   "action": "本地人斜躺曬太陽、悠閒聊天，笑著、無憂無慮，完全不知道危險——和龐貝的慌亂形成對比",
+   "camera": {"cell": "E6", "height_m": "2.5", "look_at": "海邊斜躺的居民", "distance_m": "6"},
+   "cast": [
+    {"who": "ROMANS", "visible": "本地居民全身，斜躺／坐姿，臉入鏡", "frame_height": "55%"},
+    {"who": "HERO", "visible": "全身背影，遠處很小", "frame_height": "18%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: a few Herculaneum locals (as in the attached ROMANS character sheet) reclining and sitting in relaxed, lounging poses as if chatting, and HERO (exactly as in the attached HERO character sheet) very small in the distance walking north and carrying a glass jar of grey ash. The locals look relaxed, carefree and smiling, completely unaware of any danger; their faces and hands are pure paper white. HERO is seen from behind; HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). The locals' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: front view. The camera is in front of the reclining locals, facing them. Camera angle: Eye-level: the camera is at the locals' eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（人物偏大）；若畫成 FS，只要周圍環境夠多仍可用，不另補"
+  },
+  {
+   "id": "EP5-09-05",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "可是，它比龐貝更靠近火山。",
+    "第一波最可怕的東西，會先掃到這裡。",
+    "而那一波，是在半夜來的。"
+   ],
+   "subject": "被巨大噴發柱壓住的赫庫蘭尼姆全城（不祥定場），HERO 很小停在路上抬頭看",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "整座小城縮在畫面下緣，東南天上像雨傘松的巨大雲柱佔滿上半畫面、往城壓過來，天色轉暗；HERO 背影很小，停在路上仰頭望柱",
+   "screen_direction": "away",
+   "action": "HERO 停步、背對鏡頭抬頭看那根壓城的柱子；安逸的小城在它底下顯得渺小脆弱——危險的翻轉與懸念",
+   "camera": {"cell": "G5", "height_m": "10", "look_at": "噴發柱下的赫庫蘭尼姆／HERO", "distance_m": "400"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影，很小", "frame_height": "8%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet), very small and seen from behind, standing still on the road and looking up and ahead, carrying a glass jar of grey ash. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: back view. The camera is on the road behind HERO, looking the way he faces; HERO's back is toward the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-09-06",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "所以，你得趁白天，就穿過赫庫蘭尼姆，一直往前走。"
+   ],
+   "subject": "HERO 側面趕路，穿過赫庫蘭尼姆",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏左，側面大步往右（北）走，手裡拿著罐子；大宅在他身後（西）；身後一兩個逃難的羅馬人同向",
+   "screen_direction": "right",
+   "action": "HERO 咬緊牙、神情堅定急切，拎著火山灰罐大步穿過城區——本場最實的角色趕路鏡頭",
+   "camera": {"cell": "H3", "height_m": "1.7", "look_at": "HERO", "distance_m": "7"},
+   "cast": [
+    {"who": "HERO", "visible": "膝蓋以上側面，臉和手入鏡", "frame_height": "80%"},
+    {"who": "ROMANS", "visible": "身後一兩人的上半身", "frame_height": "45%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) and a couple of Roman refugees behind him. HERO strides north, carrying a glass jar half full of grey ash, his jaw set, his expression determined and urgent. HERO's face and hands are pure paper white. Behind him a couple of Roman refugees (as in the attached ROMANS character sheet) walk the same way; their faces and hands are pure paper white. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: side view. The camera is beside the road and sees HERO exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-09-07",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "它離龐貝大約十幾公里，用正常走路的速度，要走上好幾個鐘頭。"
+   ],
+   "subject": "往北一路延伸的海邊大路，HERO 很小，表現距離與時間",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "high",
+   "composition": "高角度俯瞰，大路由近往北延伸到遠處地平線（那不勒斯方向），海在左、葡萄園山坡在右；HERO 背影是路上很小的一點",
+   "screen_direction": "away",
+   "action": "從高處看這條長得望不到頭的路，表現十幾公里、要走好幾個鐘頭的距離感；HERO 繼續北行",
+   "camera": {"cell": "G3", "height_m": "120", "look_at": "HERO／往北的長路", "distance_m": "300"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影，很小", "frame_height": "7%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet), very small and seen from behind, walking north and carrying a glass jar of grey ash. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side of the road; HERO is seen from behind and one side. Camera angle: High angle: the camera is high above HERO, looking down at him.",
+   "untested": [],
+   "remedy": "high 實測只有輕微俯視；靠道路往北延伸到地平線的構圖表現距離，剪輯不另推"
+  },
+  {
+   "id": "EP5-09-08",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "過了赫庫蘭尼姆，再往前走幾公里，就到那不勒斯的城邊了。",
+    "想真正安全，還得再往那不勒斯外圍，多走一大段。"
+   ],
+   "subject": "HERO 背影走向北方畫面外的那不勒斯（收尾）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背影在畫面中央偏小，沿大路往北走遠，路一直延伸到畫面外（那不勒斯方向）；海在左、山坡在右，前方天色較乾淨",
+   "screen_direction": "away",
+   "action": "HERO 離開赫庫蘭尼姆、朝那不勒斯方向越走越遠，路還長——留下『還得再走一大段』的收尾懸念",
+   "camera": {"cell": "F2", "height_m": "3", "look_at": "HERO", "distance_m": "200"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影，小", "frame_height": "9%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet), small and seen from behind, walking away north up the road and carrying a glass jar of grey ash. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: back view. The camera is on the road behind HERO, looking the way he walks north; HERO's back is toward the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  }
+ ]
+}

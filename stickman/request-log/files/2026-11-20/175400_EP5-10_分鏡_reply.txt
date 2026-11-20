@@ -1,0 +1,341 @@
+This is an illustration-only scene (no map, no blocking), so I have everything I need from the brief and the reference frames. Here is the storyboard:
+
+```
+{
+ "scene_id": "EP5-10",
+ "notes": "整場是講解插圖，沒有實景、沒有地圖、沒有走位：blocking 空、camera.cell 一律 N/A、t 一律 0。20 句旁白照順序切成 10 個鏡頭，走一條『成因→撲向赫庫蘭尼姆→骨骸與鑑識→龐貝天亮一片黑』的敘事線。前四格是火山碎屑流的成因（噴發柱變弱→垮下來→衝下山坡→逼近的高溫雲牆），用 EWS→WS→WS→CU 由遠拉近、由全局推到威脅本身，製造壓迫。第 5、6 格到赫庫蘭尼姆海邊：雲牆吞沒夜裡的城、拱形船屋裡擠滿只畫成黑剪影的等船人，是本場情緒最重的一拍。第 7、8 格換到現代研究室，冷靜、臨床，不恐怖：學者看骨骸、看頭骨裡像玻璃的碎片。第 9 格龐貝天亮被第二波碎屑流吞掉，第 10 格收在『上鎖房間熄燈』的近全黑畫面，當作轉去下一場的黑底錨點。死者一律只畫黑剪影或輪廓，不畫血腥細節；全程不出現 HERO，插圖裡的人是純白皮膚的火柴人路人，古羅馬人照 REF_ROMANS。低角度（S02）用來讓垮下來的雲柱有壓頂感；俯視（S05、S09）用來呈現雲和城的空間關係與脆弱感；其餘用平視。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP5-10-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那天晚上，岩漿裡的氣體快用光了。",
+    "噴發的力道變弱了。可是，別以為這樣就沒事。"
+   ],
+   "subject": "夜裡的維蘇威火山與變弱的噴發柱",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "火山在畫面正中偏小，噴發柱從火山口往上但頂端無力地垮塌、變細；四周是大片夜空，少量浮石飄落。沒有人。",
+   "screen_direction": "N/A",
+   "action": "噴發柱失去衝力的那一刻：柱子頂端下沉、變細，不再強勁往上衝。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.6,
+    "look_at": "維蘇威火山與噴發柱",
+    "distance_m": 2500
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: Mount Vesuvius at night seen from far away, a tall column of ash rising from its crater but clearly losing its force — the top of the column is sagging, thinning and starting to droop instead of shooting strongly upward. A few small bits of pumice drift down. No people in the picture. Shot size: Extreme Wide Shot (EWS). The volcano is very small in the picture; the dark night environment is the main subject. Camera direction: front view. The camera is in front of the volcano, facing it. Camera angle: Eye-level, the camera looks straight toward the volcano.",
+   "untested": [
+    "景別／方位句的主語由 HERO 換成火山（地景，非人物）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-10-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那根太重的雲柱撐不住，只升了一點點就垮下來，"
+   ],
+   "subject": "撐不住、開始垮下來的噴發柱",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "火山在畫面下緣，沉重的灰黑雲柱佔滿畫面中上方，只升起一小段就從中段折斷、整團往下塌。仰視讓垮下來的雲柱有壓頂的重量感。沒有人。",
+   "screen_direction": "N/A",
+   "action": "雲柱撐不住的瞬間：柱身從中段彎折、整團灰黑物質開始往下塌陷。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 0,
+    "look_at": "垮下來的噴發柱",
+    "distance_m": 400
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: at night, the heavy ash column over Mount Vesuvius can no longer hold itself up — it rose only a little, then buckles in the middle and the whole dark grey-black mass begins to collapse downward. The volcano sits low at the bottom of the frame; the sagging, falling column fills the upper part. No people in the picture. Shot size: Wide Shot (WS). The whole volcano and collapsing column are clearly visible, with a lot of dark sky around them. Camera direction: front view. The camera is in front of the volcano, facing it. Extreme low-angle shot, ground-level camera perspective, looking up at the volcano and its collapsing column.",
+   "untested": [
+    "Extreme low-angle 低角度實測只在單人站立畫面驗證，用在地景／雲柱屬延伸",
+    "景別／方位句主語換成火山與雲柱"
+   ],
+   "remedy": "若雲柱沒有明顯塌陷感，剪輯時配旁白由上往下輕微移框，強調『垮下來』。"
+  },
+  {
+   "id": "EP5-10-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "一路往下衝，越衝越快，變成一股貼著地面的滾燙沙暴，",
+    "像高速公路上的車子那麼快。"
+   ],
+   "subject": "貼著地面衝下山坡的火山碎屑流",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "從側面看山坡，山坡由左上往右下傾斜；一股貼著地面的滾燙灰黑沙暴從左上順著坡面往右下猛衝，底部透出橘紅高溫，後方拖著速度線。沒有人。",
+   "screen_direction": "right",
+   "action": "碎屑流貼地加速往下衝的瞬間：雲底捲起塵土、底部發出橘紅熱光，整團往右下方飛奔。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.6,
+    "look_at": "衝下山坡的碎屑流",
+    "distance_m": 300
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: a hillside seen from the side, sloping down from upper-left to lower-right. A hot, ground-hugging storm of grey-black ash races down the slope from upper-left toward lower-right, its underside glowing orange-red with heat, kicking up dust, with speed lines trailing behind it to show how fast it moves. No people in the picture. Shot size: Wide Shot (WS). The whole rushing flow is clearly visible, with a lot of the slope and dark sky around it. Camera direction: side view. The camera is directly to one side of the slope, seeing the flow from the side. Camera angle: Eye-level, the camera looks straight toward the flow.",
+   "untested": [
+    "景別／方位句主語換成碎屑流（地景）",
+    "speed lines 速度線寫法"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-10-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "這叫做火山碎屑流。",
+    "它可以燙到攝氏一千度，濃到讓人沒辦法呼吸，一路衝出好幾公里。"
+   ],
+   "subject": "逼近鏡頭的滾燙濃密雲牆正面",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "翻滾的灰黑雲牆正面幾乎佔滿整個畫面，底部透出橘紅熾熱、上半是濃到看不透的灰黑塵煙，整團朝鏡頭壓過來。沒有人。",
+   "screen_direction": "toward",
+   "action": "高溫濃密的雲牆翻滾著朝鏡頭撲來的瞬間，底部熾紅、煙塵翻騰。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.0,
+    "look_at": "碎屑流的雲牆正面",
+    "distance_m": 20
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: a very close view of the churning front wall of the pyroclastic flow filling almost the whole picture — a boiling mass of grey-black ash, so thick you cannot see through it, with the lower part glowing hot orange-red, rolling straight toward the camera. No people in the picture. Shot size: Close-up (CU). The churning cloud front fills most of the picture. Camera direction: front view. The camera faces the oncoming cloud head-on. Camera angle: Eye-level, the camera looks straight into the cloud.",
+   "untested": [
+    "CU 實測對人臉無效，此處主體是雲牆（物件）不是臉，屬物件特寫延伸"
+   ],
+   "remedy": "若雲牆被畫得偏遠、沒有填滿畫面，剪輯時推近到雲牆正面。"
+  },
+  {
+   "id": "EP5-10-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "半夜，第一波先撲向了赫庫蘭尼姆。",
+    "幾乎一瞬間，就奪走了全城人的性命。"
+   ],
+   "subject": "被滾燙雲牆吞沒的夜裡海邊小城",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "畫面左側是深色夜空下的維蘇威方向，一道巨大的橘紅底灰黑雲牆從左往右橫掃；畫面右半是海邊的古羅馬小城屋頂與海岸線，雲牆正從左邊壓上、覆蓋整座城。俯視帶出雲和城的空間關係與城的渺小。只畫建築輪廓，不畫人的恐怖細節。",
+   "screen_direction": "right",
+   "action": "雲牆從左撲向右邊的海邊城、即將整個蓋住城鎮的那一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 60,
+    "look_at": "赫庫蘭尼姆小城與撲來的雲牆",
+    "distance_m": 500
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: a small ancient Roman seaside town at night, its rooftops and the coastline on the right side of the frame. A huge wall of grey-black ash with a glowing orange-red base sweeps in from the left and is about to cover the whole town. Only building outlines; no people and no gory detail. Shot size: Wide Shot (WS). The whole town and the oncoming cloud are clearly visible, with the sea and night sky around them. Camera direction: front view, facing the town and the cloud. Camera angle: High angle: the camera is high above, looking down at the town and the cloud.",
+   "untested": [
+    "景別／方位／角度句主語換成小城與雲牆（地景）"
+   ],
+   "remedy": "high 實測只有輕微往下看；若俯角不足，可接受，空間關係靠左雲右城的構圖維持。"
+  },
+  {
+   "id": "EP5-10-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "考古學家在海邊的船屋裡，找到大約三百具骨骸。",
+    "他們本來想從海上逃走，卻在等船的時候，被追上了。"
+   ],
+   "subject": "拱形船屋裡擠著等船的人（只畫剪影）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面是海邊一整排石造拱形船屋，正面對著鏡頭（鏡頭在海這一側往岸邊看）；每個拱洞裡都擠滿一團團黑色人影剪影，互相依偎、面朝大海。後方有逼近雲牆透出的微光打亮輪廓。人只畫成純黑剪影，沒有五官、沒有血腥細節。",
+   "screen_direction": "toward",
+   "action": "一群人擠在拱形船屋裡朝海的方向等船、依偎成一團的靜止瞬間。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.6,
+    "look_at": "船屋與裡面的人影",
+    "distance_m": 30
+   },
+   "cast": [
+    {
+     "who": "ROMANS（等船的人，只畫剪影）",
+     "visible": "全身黑色剪影，無五官",
+     "frame_height": "單個約3成，一團團填在各拱洞裡"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: a row of stone arched boat-house vaults along the seashore at night, facing the camera. Each arch is crowded with huddled people shown ONLY as plain solid black silhouettes with no faces and no gory detail, pressed together and facing out toward the sea, waiting. A faint glow from an approaching ash cloud behind rims their outlines. The people are ordinary ancient-Roman stick figures reduced to black silhouettes, not HERO. Shot size: Wide Shot (WS). The whole row of arches and the crowd are clearly visible, with the shore around them. Camera direction: front view. The camera is on the sea side in front of the arches, facing them. Camera angle: Eye-level, the camera looks straight toward the arches.",
+   "untested": [
+    "整排拱形船屋＋多團剪影人群的構圖",
+    "方位句主語換成船屋"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-10-07",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "從骨頭上燒過的痕跡算出來，那團雲大約有五百度。",
+    "這些人大多沒有被火燒的人常見的那種蜷縮姿勢。",
+    "有學者認為，他們死得非常快；也有研究認為，他們是被慢慢烤熱、悶死的。到現在還在爭論。"
+   ],
+   "subject": "研究室裡觀察骨骸的現代學者",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "畫面中央是一張檢驗台，台上平躺著一具只用簡單淺色輪廓畫出的骨架（平躺、四肢伸直，不是蜷縮，不血腥）；一位現代打扮的火柴人學者從畫面右側俯身靠近、專注地觀察。微微俯視以看清台面上平放的骨架。",
+   "screen_direction": "off_down",
+   "action": "學者俯身端詳平躺骨架、若有所思的瞬間，表情專注。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 2.0,
+    "look_at": "學者與檢驗台上的骨架",
+    "distance_m": 3
+   },
+   "cast": [
+    {
+     "who": "RESEARCHER（現代學者，火柴人路人）",
+     "visible": "上半身與頭臉",
+     "frame_height": "約5成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: a quiet, clinical research room. On an examination table lies a skeleton drawn only as a simple pale outline — lying flat with limbs stretched out straight, NOT curled up, with no blood and no gory detail. A modern ordinary stick-figure scientist leans in from the right, studying it closely with a calm, focused, thoughtful expression. The scientist is an ordinary modern stick figure, not HERO; the scientist's face and hands are pure paper white. Only the scientist and the table are in the picture. Shot size: Medium Shot (MS). The scientist is framed from the waist up. Camera direction: front three-quarter view. The camera is ahead of the scientist and off to one side, so we see the face and one side of the body. Camera angle: High angle: the camera is above, looking down at the scientist and the table.",
+   "untested": [
+    "淺色骨架輪廓（非血腥）畫法",
+    "MS 實測常畫成膝上"
+   ],
+   "remedy": "MS 若被畫成膝上也可接受，重點是看得到學者俯身與台上平躺的骨架；high 俯角若不足仍以構圖呈現平躺姿勢。"
+  },
+  {
+   "id": "EP5-10-08",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "Petrone 還在一位罹難者的頭骨裡，找到一塊像玻璃一樣的東西。",
+    "那是他的腦。超高的溫度，可能一瞬間就把腦燒成了玻璃。",
+    "這是目前全世界唯一的例子。"
+   ],
+   "subject": "研究室裡被檢視的頭骨與裡面像玻璃的碎片",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面近距離對著一個放在檯座上的頭骨，骨腔裡嵌著一小塊黑亮、像玻璃的碎片反著光；畫面一角是學者戴手套的手拿著放大鏡湊近觀察。臨床、冷靜，不恐怖、不血腥。",
+   "screen_direction": "off_down",
+   "action": "學者透過放大鏡端詳頭骨裡那塊玻璃狀碎片、好奇專注的瞬間。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.4,
+    "look_at": "頭骨與裡面的玻璃狀碎片",
+    "distance_m": 1.2
+   },
+   "cast": [
+    {
+     "who": "RESEARCHER（現代學者，火柴人路人）",
+     "visible": "只露戴手套拿放大鏡的手",
+     "frame_height": "手約2成（在畫面一角）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: a close view of a single skull resting on a small stand in a research room; inside the skull cavity sits a small glossy black glass-like fragment that catches the light. In one corner of the frame, a gloved hand holds a magnifying glass up to it. The mood is clinical and calm, not scary and not gory. The hand belongs to an ordinary modern stick-figure scientist, not HERO. Only the skull, the fragment and the hand with the magnifier are in the picture. Shot size: Close-up (CU). The skull and the glass-like fragment fill most of the picture. Camera direction: front view, facing the skull head-on. Camera angle: Eye-level, the camera looks straight at the skull.",
+   "untested": [
+    "CU 實測對人臉無效，此處主體是頭骨（物件）屬物件特寫延伸",
+    "骨腔內玻璃狀碎片的畫法"
+   ],
+   "remedy": "若頭骨被畫得偏遠，剪輯時推近到頭骨與碎片。"
+  },
+  {
+   "id": "EP5-10-09",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "第二天一早，一股火山碎屑流衝進了龐貝，把還沒逃走的人，全部帶走了。"
+   ],
+   "subject": "天亮時被碎屑流衝進吞沒的龐貝城",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "清晨灰白天光下的龐貝古城，一整片古羅馬街道、列柱與屋頂往遠方延伸；一道巨大的橘紅底灰黑雲牆從左邊灌進城、覆蓋屋頂。畫面前景街上只點綴幾個往右逃的極小黑色人影剪影。俯視帶出城的全貌與渺小。不畫血腥細節。",
+   "screen_direction": "right",
+   "action": "碎屑流從左邊灌進龐貝、即將蓋過全城的清晨瞬間；小小人影往右奔逃。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 80,
+    "look_at": "龐貝城與灌入的雲牆",
+    "distance_m": 800
+   },
+   "cast": [
+    {
+     "who": "ROMANS（逃走的人，極小剪影）",
+     "visible": "全身黑色剪影，無五官",
+     "frame_height": "約1成以下"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: the ancient city of Pompeii at dawn under pale grey morning light — rows of Roman streets, columns and rooftops stretching into the distance. A huge wall of grey-black ash with a glowing orange-red base pours into the city from the left and begins to bury the rooftops. In the streets, only a few tiny black silhouette figures run toward the right. No gory detail. Shot size: Extreme Wide Shot (EWS). The city is small and spread across the frame; the environment is the main subject. Camera direction: front view, facing the city. Camera angle: Aerial feel, the camera is high above, looking down over the whole city.",
+   "untested": [
+    "景別／角度句主語換成龐貝城（地景）",
+    "極小逃難剪影"
+   ],
+   "remedy": "寫高處俯視時人物常被縮小、景別往遠拉一級，正好符合本格 EWS 的需求，可接受。"
+  },
+  {
+   "id": "EP5-10-10",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那片黑暗，有人這樣形容：",
+    "不像沒有月亮的夜晚，而像在上鎖的房間裡，把燈熄掉。"
+   ],
+   "subject": "上鎖房間裡最後一盞燈熄滅的近全黑畫面",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "一間緊閉的小房間內部，畫面幾乎全黑；只在中央一張小桌上有一盞油燈，火苗只剩最後一點、正要熄滅，四周被純黑吞沒，房門緊閉。整張圖以大面積平塗黑色為主，收束成黑底，方便轉到下一場。沒有人。",
+   "screen_direction": "N/A",
+   "action": "房裡最後一點燈火即將熄滅、整個房間沉入全黑的瞬間。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": 1.5,
+    "look_at": "桌上將熄的油燈",
+    "distance_m": 4
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration, not a photo and not a flat diagram. Scene: the inside of a small, sealed, locked room, almost entirely pure flat black. The only light is a single small oil lamp on a table in the center, its flame down to one last tiny flicker, about to go out, swallowed on all sides by solid black; the door is shut. The frame is dominated by large areas of flat black. No people in the picture. Shot size: Wide Shot (WS). The whole dark room is visible but almost drowned in black. Camera direction: front view, facing into the room. Camera angle: Eye-level, the camera looks straight into the room.",
+   "untested": [
+    "大面積平塗純黑、僅一點燈火的近全黑畫面"
+   ],
+   "remedy": "若畫面偏亮，剪輯時壓暗並在旁白最後一句淡出到全黑，作為轉場黑底。"
+  }
+ ]
+}
+```

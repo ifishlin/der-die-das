@@ -1,0 +1,212 @@
+{
+ "scene_id": "EP5-02",
+ "notes": "這是一場以對話與鋪陳為主的實驗室戲，情緒走向：討錢落空→被塞空罐→博士對著黑板講火山爭議→HERO 只想著錢→忘了生存指南（系列固定笑點）。全場用平視，因為是日常互動、不需要壓迫或脆弱感，鏡頭變化靠景別與主體切換製造節奏。8 顆鏡頭：①側面雙人建立討錢與欠薪本笑點；②越肩鏡頭打博士「看都沒看」塞罐的笑點；③博士站黑板前講解，揭露火山／太陽／落葉／問號的畫；④黑板插入鏡頭，把『夏天(太陽) vs 秋天(落葉)』的資訊收在一格，承載兩句旁白；⑤回到 HERO 低頭看空罐，任務落地、情緒洩氣；⑥推近到 HERO 貪財的笑（想要 CU，用 MCU 句補救）；⑦金幣堆插入鏡頭當笑點 punchline；⑧遠景收尾：HERO 背對走向時光機圓環，工作桌上的生存指南被留下（靠 LAB_BENCH 參考圖呈現），博士在控制台旁得意。走位：HERO 大致固定在中央 J10，最後北移進圓環；博士從 G10（討錢區）→ C10（黑板）→ O4（控制台）。這一集沒有大動物，不需要加拍遠一級。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "J10", "facing": "W", "doing": "一手伸出越記越長的欠薪本、一手攤開空掌向博士討錢"},
+    {"t": "2", "cell": "J10", "facing": "W", "doing": "伸出的手被塞進一個空玻璃罐"},
+    {"t": "3", "cell": "J10", "facing": "W", "doing": "看著博士在黑板前講解（本鏡頭不入鏡）"},
+    {"t": "4", "cell": "J10", "facing": "W", "doing": "看黑板（插入鏡頭，不入鏡）"},
+    {"t": "5", "cell": "J10", "facing": "W", "doing": "低頭看手上的空玻璃罐，有點洩氣"},
+    {"t": "6", "cell": "J10", "facing": "W", "doing": "聽到『回到過去』，露出貪財的笑"},
+    {"t": "7", "cell": "J10", "facing": "W", "doing": "腦中幻想古羅馬金幣（插入鏡頭）"},
+    {"t": "8", "cell": "K6", "facing": "N", "doing": "點頭後背對鏡頭走向時光機圓環，生存指南被留在東側工作桌上"}
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    {"t": "1", "cell": "G10", "facing": "E", "doing": "雙手抱胸、無視欠薪本，面向 HERO"},
+    {"t": "2", "cell": "G10", "facing": "E", "doing": "頭轉開、看都沒看，就把空玻璃罐塞進 HERO 手裡"},
+    {"t": "3", "cell": "C10", "facing": "SE", "doing": "站在綠色黑板前，指著火山／太陽／落葉／問號的粉筆畫，興奮講解"},
+    {"t": "4", "cell": "C10", "facing": "E", "doing": "在黑板旁（插入鏡頭，不入鏡）"},
+    {"t": "5", "cell": "C10", "facing": "E", "doing": "繼續交代任務（不入鏡）"},
+    {"t": "6", "cell": "C10", "facing": "E", "doing": "（不入鏡）"},
+    {"t": "7", "cell": "C10", "facing": "E", "doing": "（不入鏡）"},
+    {"t": "8", "cell": "O4", "facing": "SW", "doing": "站在時光機控制台旁，得意地看 HERO 出發"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP5-02-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["你拿出一本小冊子，上面記著博士欠你的錢，一頁比一頁長。"],
+   "subject": "HERO 與 PROF（雙人）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "博士在畫面左（西）、HERO 在畫面右（東），兩人側面相對；HERO 伸出的欠薪本在兩人之間、攤開展成長長一條；背景是西側黑板牆一帶。",
+   "screen_direction": "left",
+   "action": "HERO 一手把越記越長的欠薪本遞向博士、一手攤開討錢，滿臉期待；博士抱胸無視。",
+   "camera": {"cell": "H16", "height_m": "1.5", "look_at": "HERO 與 PROF 之間", "distance_m": "3.1"},
+   "cast": [
+    {"who": "HERO", "visible": "膝蓋以上全身、臉、雙手、欠薪本", "frame_height": "約 78%"},
+    {"who": "PROF", "visible": "膝蓋以上全身、臉、雙手（抱胸）", "frame_height": "約 76%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet, in his summer outfit, no hat, no backpack) and PROF (exactly as in the attached PROF character sheet). HERO's face and hands are pure paper white. HERO stands on the right, holding out a small notebook whose page unfolds into a long strip of tally marks (marks only, no text, no numbers) toward PROF, his other hand open and empty asking for money; he looks hopeful and pleading, eyebrows raised, a small expectant smile. PROF stands on the left facing HERO with his arms crossed, ignoring the notebook, flat and unimpressed, a bored half-frown. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: side view. The camera is beside them and sees HERO and PROF exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-02-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["博士看都沒看，就把一個空玻璃罐塞進你手裡。"],
+   "subject": "PROF（越肩看向博士）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "前景右下是 HERO 的肩膀與伸出的一隻手（背對鏡頭）；畫面中後是博士，頭轉開、把空玻璃罐塞進 HERO 手裡。",
+   "screen_direction": "off_down",
+   "action": "博士眼睛看別處、一臉無所謂，手卻把空玻璃罐硬塞進 HERO 攤開的手掌。",
+   "camera": {"cell": "M10", "height_m": "1.5", "look_at": "PROF", "distance_m": "3.0"},
+   "cast": [
+    {"who": "PROF", "visible": "腰部以上、臉、雙手、玻璃罐", "frame_height": "約 70%"},
+    {"who": "HERO", "visible": "背對鏡頭的肩膀與一隻伸出的手（臉不入鏡）", "frame_height": "約 45%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: PROF (exactly as in the attached PROF character sheet) and HERO (exactly as in the attached HERO character sheet, summer outfit, no hat, no backpack), who is seen only as a close foreground shoulder and one outstretched open hand in the lower right, his back to us so his face is not visible. HERO's hands are pure paper white. We are looking over HERO's shoulder at PROF. PROF shoves an empty glass jar into HERO's open hand without even looking at him, his head turned away, flat deadpan bored expression, eyes looking off and down. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": ["越肩（over-the-shoulder）構圖，表上沒有，靠前景肩膀＋伸手描述"],
+   "remedy": "MS 常畫成膝上景，可接受；若前景肩膀沒出現，剪輯時用博士單人即可"
+  },
+  {
+   "id": "EP5-02-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["他說啊，學界為了一座火山到底是夏天還是秋天爆發，一直吵個不停。"],
+   "subject": "PROF（在黑板前講解）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "博士在畫面中偏左、前側 3/4 面向鏡頭；他身後／左側是綠色黑板，上面是火山、太陽、落葉和問號的粉筆畫；HERO 不入鏡。",
+   "screen_direction": "left",
+   "action": "博士張口講解、一手舉起往左指著黑板上的畫，神情興奮投入。",
+   "camera": {"cell": "H14", "height_m": "1.5", "look_at": "PROF 與黑板", "distance_m": "3.2"},
+   "cast": [
+    {"who": "PROF", "visible": "膝蓋以上、臉、雙手", "frame_height": "約 72%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet), standing in front of a big green chalkboard and pointing back at a chalk drawing on it. The chalk drawing shows a volcano, a sun, a single falling leaf, and a big question mark in the middle — drawing only, no text, no letters, no numbers. PROF is mid-explanation, animated and enthusiastic, mouth open as if talking, one arm raised pointing at the drawing. Shot size: Medium Long Shot (MLS). PROF is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "front34 大致做到即可；MLS 為 ✓"
+  },
+  {
+   "id": "EP5-02-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "傳統的說法，是西元 79 年的 8 月 24 日。",
+    "可是後來的證據，讓不少學者覺得，應該是秋天。"
+   ],
+   "subject": "黑板上的粉筆畫（插入鏡頭）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面滿版是綠色黑板的粉筆畫：左邊火山，上方太陽（代表夏天），右邊一片落葉（代表秋天），正中間一個大問號；沒有角色。",
+   "screen_direction": "toward",
+   "action": "靜態插入鏡頭；剪輯時可從太陽（夏）推移到落葉（秋），對應兩句旁白。",
+   "camera": {"cell": "D9", "height_m": "1.5", "look_at": "黑板上的粉筆畫", "distance_m": "1.5"},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. No characters in the picture. A close view of a big green chalkboard, the chalk drawing filling the frame: a volcano on the left, a sun above it, a single falling leaf on the right, and a big question mark in the middle. Drawing only — no text, no letters, no numbers. Camera directly facing the chalkboard, straight on. Shot size: Close-up (CU): the chalk drawing fills most of the picture. Camera angle: Eye-level: the camera is level with the chalkboard, looking straight ahead.",
+   "untested": ["物件（黑板畫）的 CU 插入鏡頭，非 HERO 臉的 CU"],
+   "remedy": "N/A（物件近景，Flow 可畫）"
+  },
+  {
+   "id": "EP5-02-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": ["總之，他要你回到那一天，裝一罐火山灰回來。"],
+   "subject": "HERO（低頭看空罐）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 居中偏右、前側 3/4 面向鏡頭，雙手捧著空玻璃罐在胸前低頭看它；博士不入鏡。",
+   "screen_direction": "off_down",
+   "action": "HERO 低頭盯著手上的空玻璃罐，一臉『我要的是錢』的洩氣與無奈。",
+   "camera": {"cell": "G9", "height_m": "1.5", "look_at": "HERO", "distance_m": "1.6"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上、臉、雙手、玻璃罐", "frame_height": "約 75%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet, summer outfit, no hat, no backpack), holding an empty glass jar in both hands at chest height and looking down at it. HERO's face and hands are pure paper white. His expression is deflated and unimpressed — he wanted money and got an empty jar; mouth a flat line, half-lidded eyes looking down at the jar. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常畫成到腰，可接受；剪輯時可裁到胸上"
+  },
+  {
+   "id": "EP5-02-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": ["你一聽到「回到過去」，腦子裡只有一件事："],
+   "subject": "HERO（貪財的笑）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 的臉佔畫面主體、正面朝鏡頭；手上仍捧著空罐在下緣；博士不入鏡。",
+   "screen_direction": "off_up",
+   "action": "聽到『回到過去』，HERO 瞬間露出貪財、作白日夢的大笑，眼睛發亮往上看。",
+   "camera": {"cell": "G10", "height_m": "1.5", "look_at": "HERO 的臉", "distance_m": "1.5"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上、臉、雙手捧罐", "frame_height": "約 88%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet, summer outfit, no hat, no backpack), still holding the empty glass jar. HERO's face and hands are pure paper white. A sudden greedy, scheming grin spreads across his face, eyes wide and dreamy looking up, a big delighted money-hungry smile. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "想要 CU，shot_size 填 CU，prompt 改用 MCU 句，剪輯時推近到 CU"
+  },
+  {
+   "id": "EP5-02-07",
+   "variant_of": "N/A",
+   "t": "7",
+   "narration": ["古羅馬的錢幣，應該很值錢吧。"],
+   "subject": "一堆金幣（HERO 的幻想・插入鏡頭）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面滿版是一大堆閃亮的古金幣，堆得高高的、反光發亮；沒有角色。",
+   "screen_direction": "toward",
+   "action": "HERO 腦中的幻想：一堆值錢的古羅馬金幣，閃閃發亮，當作笑點 punchline。",
+   "camera": {"cell": "J11", "height_m": "1.3", "look_at": "想像中的金幣堆", "distance_m": "0.8"},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. No characters in the picture. A close-up of a big heaping pile of shiny round gold coins, glinting and golden, filling the frame — plain smooth gold discs with no markings, no text, no letters, no numbers, no faces on the coins. Shot size: Close-up (CU): the pile of gold coins fills most of the picture. Camera angle: Eye-level: the camera is level with the pile, looking straight at it.",
+   "untested": ["物件（金幣堆）的 CU 插入鏡頭"],
+   "remedy": "N/A（物件近景，Flow 可畫）"
+  },
+  {
+   "id": "EP5-02-08",
+   "variant_of": "N/A",
+   "t": "8",
+   "narration": ["於是你點點頭。（停）生存指南，又留在了桌上。"],
+   "subject": "HERO（背對走向時光機）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "HERO 背對鏡頭、位於畫面中央偏左，走向北牆的金屬圓環時光機；畫面右側是東牆工作桌，上面留著生存指南（靠 LAB_BENCH 參考圖呈現）；博士站在圓環右邊的控制台旁。",
+   "screen_direction": "away",
+   "action": "HERO 點完頭、低著頭背對鏡頭走向圓環準備出發，手裡拿著空罐；生存指南被留在工作桌上沒帶走（系列笑點）。",
+   "camera": {"cell": "F15", "height_m": "1.5", "look_at": "HERO", "distance_m": "5.1"},
+   "cast": [
+    {"who": "HERO", "visible": "背面全身、雙手拿罐（臉不入鏡）", "frame_height": "約 48%"},
+    {"who": "PROF", "visible": "全身、臉", "frame_height": "約 52%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet, summer outfit, no hat, no backpack), seen from behind walking away from the camera toward a big ring-shaped metal time machine, about to step into the ring, holding the empty glass jar, his head slightly lowered as if he has just nodded; and PROF (exactly as in the attached PROF character sheet) standing by the time-machine controls on the right, facing HERO, proud and smug with a pleased grin. HERO's hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side, so we see HERO's back and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["back34 句改寫成單人版（原句是 TEEN＋HERO 兩人追逐）"],
+   "remedy": "WS 常畫得跟 FS 一樣大；想保留環境感，剪輯時可再拉遠或裁切"
+  }
+ ]
+}

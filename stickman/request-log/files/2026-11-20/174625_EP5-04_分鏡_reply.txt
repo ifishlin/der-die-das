@@ -1,0 +1,275 @@
+{
+ "scene_id": "EP5-04",
+ "notes": "這一場是「維蘇威的身世」講解段，12 句旁白拆成 9 張圖。第 1 張是唯一的實景：HERO 在龐貝街上背對鏡頭、抬頭望向遠方安靜的維蘇威，當作全段的入口（配第 1 句）。第 2～9 張全是手繪會動插圖（粗黑線、平塗、簡單形狀，沒有任何字或數字，數字由旁白講），順著旁白的因果鏈走：先用剖面圖建立『山怎麼來的＝板塊潛入義大利底下』（2,3），再拉遠看這塊地殼從非洲裂出來（4）；接著下到地底講『熱但壓力大、岩石不融化、需要水』這個關鍵轉折（5,6），看潛下去的地殼帶著海水一路下沉（7）；用左右兩格做『水讓岩石變弱＝結冰路上撒鹽』這個比喻（8）；岩漿上冒（9）；最後把鏡頭推向成果：世界上最猛的火山都是這樣生的、喀拉喀托（10,11），以及陶波炸掉一整個國家那麼大（12）。插圖鏡頭沒有地圖、沒有走位，camera.cell 與 t 皆依規則填 N/A／0。剪接節奏：實景→剖面→拉遠→下沉→比喻→上冒→爆發，由遠到近再到爆點，符合科普懸念逐步揭露。插圖沒有角色，不畫 HERO 本人，也用不到路人與死者剪影。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP5-04-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "遠方，就是維蘇威火山，現在看起來很安靜。"
+   ],
+   "subject": "HERO（背影，望向遠方的維蘇威）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 站在畫面中央偏下的前景，背對鏡頭、頭微仰；視線朝畫面深處的遠方望去，周圍留大量環境空間給遠方的火山（背景由 Claude 依 REF_VESUVIUS 第一格補）。",
+   "screen_direction": "away",
+   "action": "HERO 停下腳步，抬頭望向遠方那座看起來很安靜的火山，一派悠閒。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "遠方的維蘇威火山",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身背影（頭到腳、雙手自然垂放）",
+     "frame_height": "約 5 成（WS 背影，環境占大面積）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing a short-sleeve shirt, shorts and flip-flops, no hat and no backpack. HERO's hands are pure paper white. HERO stands with his back to the camera, head tilted slightly up, gazing far into the distance, relaxed. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is on the ground behind HERO, looking the way he gazes; HERO's back is to the camera so he does not hide the view ahead. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS；若 HERO 偏大，背影與遠方火山仍可讀，必要時剪輯時拉遠或重生時加強環境占比。"
+  },
+  {
+   "id": "EP5-04-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "這座山，是怎麼來的？",
+    "義大利底下，有一塊地殼，正慢慢鑽進歐洲板塊的下面。"
+   ],
+   "subject": "手繪剖面插圖：地殼潛入義大利底下",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "側向剖面：地表在畫面上方、中央偏右有一座簡單的火山錐；地表下兩塊厚地殼相接，左邊那塊地殼彎折著往右下方滑進右邊那塊底下，弧形箭頭標出緩慢下滑。",
+   "screen_direction": "off_down",
+   "action": "左側地殼緩緩彎下、鑽進右側板塊下面的那一瞬，火山錐靜靜立在上方。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory cross-section illustration (not a photo, not a labeled chart), simple shapes, flat earthy colors. A side-on cut-through of the ground: on the surface a single simple volcano cone; below the surface two thick blocks of the earth's crust meet, and the left slab of crust slowly bends and slides downward and under the right block, with simple curved arrows showing the slow downward sliding motion. No people. No text or numbers anywhere.",
+   "untested": [
+    "這是手繪插圖，主體不是角色；shot_size／azimuth／angle 依插圖內容填寫，不是【七】的實測角色句。"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-04-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "這塊地殼，本來是從非洲大陸裂出來的。"
+   ],
+   "subject": "手繪俯視地圖插圖：地殼從非洲裂出、往義大利漂",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "俯視地圖式：畫面左邊一塊大陸（非洲），右邊一塊靴形陸地（義大利）；一塊地殼沿鋸齒裂縫從非洲裂開，往右漂向義大利，箭頭指向右方。",
+   "screen_direction": "right",
+   "action": "地殼沿裂縫從非洲大陸剝離、朝義大利滑去的那一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory map-like illustration seen from above (not a photo, not a labeled chart), simple shapes, flat colors: a large continent on the left (Africa) and a smaller boot-shaped land on the right (Italy); a slab of crust tears away from the African continent along a jagged crack and drifts to the right toward Italy, with a simple arrow pointing right. No people. No text or numbers anywhere.",
+   "untested": [
+    "這是手繪插圖，主體不是角色；shot_size／azimuth／angle 依插圖內容填寫，不是【七】的實測角色句。俯視地圖的 aerial 視角用插圖描述，不套 HERO 的實測角度句。"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-04-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "地底深處雖然很熱，但壓力很大，岩石反而不容易融化。",
+    "想讓它融化，得靠一點特別的東西，通常是水。"
+   ],
+   "subject": "手繪剖面插圖：地底深處的岩石被壓住不融化、水是關鍵",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "靠近地底深處：畫面中央一塊完整的深色岩石，周圍小火焰（熱）與四面厚箭頭往內擠（壓力）；岩石依然完整沒融。畫面一側一顆亮藍色水滴被凸顯，當作缺的那個『特別的東西』。",
+   "screen_direction": "off_down",
+   "action": "四面壓力把岩石擠得緊緊、它卻不融的那一刻，旁邊一顆水滴亮起。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory cross-section illustration (not a photo, not a labeled chart), simple shapes, flat colors: deep underground, a solid dark chunk of rock sits intact, surrounded by small flame shapes showing great heat and thick heavy arrows pressing inward from all sides showing enormous pressure; the rock stays solid and does not melt. To one side, a single bright blue water droplet is highlighted as the special missing ingredient. No people. No text or numbers anywhere.",
+   "untested": [
+    "這是手繪插圖，主體不是角色；shot_size／azimuth／angle 依插圖內容填寫，不是【七】的實測角色句。"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-04-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那塊潛下去的地殼，就帶著海水，一路鑽進又熱又深的地方。"
+   ],
+   "subject": "手繪剖面插圖：地殼帶著海水下沉到又熱又深處",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "側向剖面：一塊地殼陡陡地往下插進下方發橘紅光的高溫深處，地殼裡夾帶著一粒粒藍色海水，往下的箭頭標出下沉方向。",
+   "screen_direction": "off_down",
+   "action": "地殼帶著藍色海水一路下鑽、沒入橘紅高溫區的那一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory cross-section illustration (not a photo, not a labeled chart), simple shapes, flat colors: a slab of crust plunges steeply downward into a hot deep region that glows orange-red, carrying small blue pockets and droplets of seawater down with it; a simple arrow shows the downward motion. No people. No text or numbers anywhere.",
+   "untested": [
+    "這是手繪插圖，主體不是角色；shot_size／azimuth／angle 依插圖內容填寫，不是【七】的實測角色句。"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-04-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "水會讓岩石變弱，就像在結冰的路上撒鹽，冰就融了。"
+   ],
+   "subject": "手繪左右兩格比喻插圖：水弱化岩石＝鹽融冰",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "左右並排兩格。左格：藍色水滲進一塊岩石，裂縫擴散、岩石崩碎變弱。右格：白色鹽粒撒在結冰路面上，冰化成水、融開。兩格畫法一致、簡單對照。",
+   "screen_direction": "off_down",
+   "action": "左格水滲入讓岩石裂開、右格鹽讓冰融成水的同一個『被弱化』瞬間。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration in two side-by-side panels (not a photo, not a labeled chart), simple shapes, flat colors. Left panel: bright blue water soaks into a block of rock, cracks spread through it and the rock crumbles and weakens. Right panel: white grains of salt are sprinkled onto an icy road and the ice turns to water and melts. No people. No text or numbers anywhere.",
+   "untested": [
+    "這是手繪插圖，主體不是角色；shot_size／azimuth／angle 依插圖內容填寫，不是【七】的實測角色句。左右兩格對照版面用插圖描述控制。"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-04-07",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "岩石一融，比較輕的岩漿就往上冒。"
+   ],
+   "subject": "手繪剖面插圖：岩漿往上冒",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "側向剖面：地底深處岩石已融成橘紅發光的岩漿團，較輕的岩漿沿裂縫往地表方向上升，向上的箭頭標出上冒方向。",
+   "screen_direction": "off_up",
+   "action": "岩漿從深處沿裂縫往上冒升的那一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory cross-section illustration (not a photo, not a labeled chart), simple shapes, flat colors: deep underground the melted rock has become glowing orange-red magma blobs, and the lighter magma rises upward through cracks toward the surface, with simple arrows showing the upward motion. No people. No text or numbers anywhere.",
+   "untested": [
+    "這是手繪插圖，主體不是角色；shot_size／azimuth／angle 依插圖內容填寫，不是【七】的實測角色句。"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-04-08",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "世界上很多最猛的火山，都是這樣生出來的。",
+    "像 1883 年的喀拉喀托，"
+   ],
+   "subject": "手繪插圖：猛烈火山爆發（喀拉喀托）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一座海上島嶼火山猛烈爆發，巨大深色火山灰柱沖天、一圈圈衝擊波往外擴；背景另有一兩座較小的噴發火山錐。",
+   "screen_direction": "off_up",
+   "action": "海上島嶼火山轟然爆開、灰柱沖天的爆發瞬間。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration (not a photo, not a labeled chart), simple shapes, flat colors: a powerful volcanic eruption bursts from an island in the sea, with a huge dark ash column and rings of shockwave spreading out; a couple of other erupting volcano cones sit smaller in the background. No people. No text or numbers anywhere.",
+   "untested": [
+    "這是手繪插圖，主體不是角色；shot_size／azimuth／angle 依插圖內容填寫，不是【七】的實測角色句。"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-04-09",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "還有兩萬六千多年前，紐西蘭的陶波火山，炸毀了差不多一整個國家那麼大的地方。"
+   ],
+   "subject": "手繪高空俯視插圖：陶波超級爆發、國家級大範圍被炸毀",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "高空俯視一大片陸地：中央一場超巨型火山爆發，沖天灰柱；一圈巨大的受災範圍覆蓋在陸地上，陰影範圍大得像一整個國家的輪廓，用來表現破壞規模。不畫人、不畫血腥。",
+   "screen_direction": "off_up",
+   "action": "超級爆發把國家那麼大的一片地方整個籠罩的震撼瞬間。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory illustration seen from high above (not a photo, not a labeled chart), simple shapes, flat colors: a gigantic volcanic eruption with a towering ash column and a vast circular blast zone shaded over the land, the shaded area as large as the outline of a whole country to show the scale of destruction. No people, no blood, no gore. No text or numbers anywhere.",
+   "untested": [
+    "這是手繪插圖，主體不是角色；shot_size／azimuth／angle 依插圖內容填寫，不是【七】的實測角色句。高空俯視 aerial 用插圖描述控制。"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

@@ -1,0 +1,235 @@
+{
+ "scene_id": "EP5-05",
+ "notes": "這是一段講解插圖的蒙太奇，不是實景，沒有地圖也沒有走位（blocking 空、camera.cell 皆 N/A、t 皆 0）。10 句旁白分成 8 張手繪插圖，照旁白邏輯鋪陳『維蘇威為什麼這麼猛』：①開場先用一張仰視的維蘇威建立『不是普通火山』的壓迫感；②蜂蜜鍋講岩漿黏（句 2＋3 合成一張，用緩慢垂落的濃蜜蜜絲表現黏度）；③地底石灰岩被烤＋汽水狂冒泡（句 4，左右分割：左邊地層剖面冒泡、右邊搖過的汽水噴發，把比喻畫清楚）；④塞住的汽水瓶鼓脹（句 5＋6，悶久＝壓力積，瓶身脹到出現裂紋）；⑤四千年前被埋的青銅時代村子（句 7，用俯視帶出脆弱感，死者只用純黑剪影，不畫血腥）；⑥一支很長的量尺標在約五／八高（句 8，只用長短與箭頭、絕不出現數字）；⑦聖海倫斯火山噴發（句 9，同級對照）；⑧拉遠回到那支量尺、頂端幾乎沒人到得了（句 10，與第 6 張呼應作收）。全部維持火柴人設定圖的手繪畫風：粗黑線、平塗色；插圖裡沒有 HERO、沒有任何字或數字。節奏上黏度（蜂蜜）→冒泡（汽水）→積壓（塞瓶）→歷史威力（埋村）→指數定級（量尺＋聖海倫斯）→稀有（量尺收尾），資訊遞進、不重複。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP5-05-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "而且，維蘇威可不是普通的火山。"
+   ],
+   "subject": "維蘇威火山（手繪插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "火山置中，單一主體填滿畫面中段；仰視讓山體顯得高大逼人，火山口有一縷灰煙往上飄，畫面其餘留白。",
+   "screen_direction": "N/A",
+   "action": "靜態建立鏡頭，火山矗立、口冒輕煙，營造『不尋常、不好惹』的第一印象。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "維蘇威火山",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A single hand-drawn illustration of Mount Vesuvius: one large cone-shaped volcano with a thin wisp of grey smoke drifting up from its crater. Only the volcano is in the picture, nothing else. Shot size: Wide Shot (WS). The whole volcano is clearly visible, with a lot of surroundings around it. Extreme low-angle shot, ground-level camera perspective, looking up at the volcano's full height. Camera direction: front view. The camera is in front of the volcano, facing it.",
+   "untested": [
+    "對插圖物件（火山）使用 WS 與 Extreme low-angle 句；low 句原本只在單人站立畫面驗證過"
+   ],
+   "remedy": "WS 常被畫成 FS，火山仍完整可接受；仰視若不足照用、不另補拍。"
+  },
+  {
+   "id": "EP5-05-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "它的岩漿非常黏，比水黏上成千上萬、甚至上百萬倍。",
+    "就算是最稀的岩漿，也像室溫下的蜂蜜一樣黏。"
+   ],
+   "subject": "一大鍋濃稠蜂蜜（手繪插圖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "蜂蜜鍋置中，木勺從上方提起，一條很粗、垂得很慢的蜜絲從勺子拉回鍋裡，強調『黏』；畫面只有鍋、勺、蜜。",
+   "screen_direction": "off_down",
+   "action": "木勺提起的瞬間，濃蜜拉成一條遲緩下垂的絲，黏度一眼看懂。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "蜂蜜鍋",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A single hand-drawn illustration of one big pot full of thick golden honey, with a wooden ladle lifted above it and a slow, very thick ribbon of honey stretching down from the ladle back into the pot. Only the pot, ladle and honey are in the picture. Shot size: Full Shot (FS). The whole pot of honey, from top to bottom, just fits in the picture. Camera angle: Eye-level: the camera is at the pot's height, looking straight ahead. Camera direction: front view. The camera is in front of the pot, facing it.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-05-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "岩漿往上衝的時候，還會烤到地底的石灰岩，把裡面的二氧化碳逼出來，像搖過的汽水一樣狂冒泡。"
+   ],
+   "subject": "地底石灰岩被烤冒泡＋搖過的汽水（手繪插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面左半是地層側剖面：下方橘色岩漿往上衝、烤著一條灰白石灰岩層，大量圓氣泡往上冒；右半是一瓶被搖過的汽水，白色泡沫從瓶口噴出。兩個元素並置把比喻說清楚。",
+   "screen_direction": "off_up",
+   "action": "氣泡與汽水泡沫同時往上狂冒的那一刻，呈現二氧化碳被逼出。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "地層剖面與汽水瓶",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A single hand-drawn illustration split into two parts: on the left, a side cutaway of the ground with glowing orange magma rising from below and baking a pale grey band of limestone rock, with many round gas bubbles streaming upward out of the rock; on the right, a shaken soda bottle with white foam bursting and spraying out of its open top. Only these objects are in the picture, no people. Shot size: Wide Shot (WS). The whole scene is clearly visible, with a lot of surroundings around it. Camera angle: Eye-level: the camera is at the scene's height, looking straight ahead. Camera direction: front view. The camera is in front of the scene, facing it.",
+   "untested": [
+    "左右分割的插圖構圖（地層剖面＋汽水瓶同框）"
+   ],
+   "remedy": "WS 可能被畫成較近景，只要兩個元素都完整入鏡即可。"
+  },
+  {
+   "id": "EP5-05-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "再加上，它已經安靜好幾百年了，上一次冒火，據說要追溯到兩千多年前。",
+    "悶得越久，壓力就積得越大。"
+   ],
+   "subject": "塞住、鼓脹的汽水瓶（手繪插圖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "瓶子置中、單一主體；瓶身被內壓撐得鼓脹外凸、側邊出現小裂紋，瓶內擠滿閉塞的氣泡，木塞緊緊卡住，表現『悶越久壓越大』。",
+   "screen_direction": "off_up",
+   "action": "塞緊的瓶子脹到極限、裂紋浮現、隨時要爆的臨界瞬間。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "汽水瓶",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A single hand-drawn illustration of one tightly corked glass soda bottle that is swollen and bulging outward under pressure, its sides straining with small stress cracks and the trapped fizzy bubbles crowding inside. Only the bottle is in the picture. Shot size: Full Shot (FS). The whole bottle, from top to bottom, just fits in the picture. Camera angle: Eye-level: the camera is at the bottle's height, looking straight ahead. Camera direction: front view. The camera is in front of the bottle, facing it.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-05-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "大約四千年前，它還有過一次更猛的大爆發，把一整群青銅時代的人都埋了。"
+   ],
+   "subject": "被火山灰埋掉的青銅時代村子（手繪插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "村子（幾間簡單圓屋）置於畫面中下，半埋在厚厚灰白火山灰裡；幾個純黑人形剪影（無臉、無細節、無血）往灰裡下沉。俯視帶出被掩埋的脆弱與整體關係。",
+   "screen_direction": "N/A",
+   "action": "村子與剪影人影一半沒入灰中、定格於被埋的那一刻。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "被埋的村子",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A single hand-drawn illustration of a small Bronze Age village of simple round huts, half-buried under a thick layer of grey ash, with a few plain solid-black human silhouettes (no faces, no detail, no blood) sinking into the ash. Shot size: Wide Shot (WS). The whole village is clearly visible, with a lot of surroundings around it. Camera angle: High angle: the camera is high above the village, looking down at it. Camera direction: front view. The camera is in front of the village, facing it.",
+   "untested": [
+    "對插圖村子使用 high 俯視句"
+   ],
+   "remedy": "high 只會輕微往下看，俯視感不足可接受；WS 可能偏 FS，村子與剪影清楚即可。"
+  },
+  {
+   "id": "EP5-05-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "所以這一次，它的威力在火山爆發指數裡，拿到了滿分八分裡的五分，"
+   ],
+   "subject": "一支很長的量尺（手繪插圖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "一支細長的直立量尺置中，像溫度計，只有等距的刻度短線、完全沒有數字；一個醒目的紅箭頭指在略高於中段、約五／八高的位置。只用長短和箭頭表示分級。",
+   "screen_direction": "N/A",
+   "action": "紅箭頭定格指向五／八高度那一格刻度。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "量尺",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Absolutely no numbers or digits anywhere. A single hand-drawn illustration of one tall vertical measuring gauge, like a thermometer, marked only with evenly spaced plain tick lines and no numbers, with a bright red arrow pointing to a tick a little above the middle, roughly five-eighths of the way up. Only the gauge and the arrow are in the picture. Shot size: Full Shot (FS). The whole gauge, from top to bottom, just fits in the picture. Camera angle: Eye-level: the camera is level with the gauge, looking straight ahead. Camera direction: front view. The camera is in front of the gauge, facing it.",
+   "untested": [
+    "垂直量尺構圖；要求完全無數字（只用刻度長短）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP5-05-07",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "跟 1980 年美國的聖海倫斯火山同一級。"
+   ],
+   "subject": "聖海倫斯火山噴發（手繪插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "火山置中，巨大的灰色火山灰煙柱從山頂猛噴上衝，主體佔畫面主要部分、兩側留環境空間，作為『同級』的視覺對照。",
+   "screen_direction": "off_up",
+   "action": "噴發柱衝天而起的那一刻，呈現同級威力。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "聖海倫斯火山",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A single hand-drawn illustration of Mount St Helens erupting: one volcano with a huge grey ash-and-smoke column blasting straight up out of its top. Only the volcano and its eruption are in the picture. Shot size: Wide Shot (WS). The whole volcano is clearly visible, with a lot of surroundings around it. Camera angle: Eye-level: the camera is at the volcano's height, looking straight ahead. Camera direction: front view. The camera is in front of the volcano, facing it.",
+   "untested": [],
+   "remedy": "WS 可能被畫成 FS，火山與噴發柱完整即可。"
+  },
+  {
+   "id": "EP5-05-08",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "能拿到八分的，非常非常少。"
+   ],
+   "subject": "拉遠的同一支量尺、頂端幾乎無人到達（手繪插圖）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭拉遠，第 6 張那支細長量尺整支入鏡、置中；只有最頂端一格刻度有小小發光標記，靠近頂端的大段空白，用空曠感表現『很少人到得了頂』。與第 6 張呼應作收。",
+   "screen_direction": "N/A",
+   "action": "整支量尺靜置、頂端孤零零發光、下方大片留白的收尾定格。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "量尺",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Absolutely no numbers or digits anywhere. A single hand-drawn illustration of the same tall vertical measuring gauge, marked only with evenly spaced plain tick lines and no numbers, seen from farther back so its full length is visible; only the very top tick is highlighted with a small glow, and the long stretch just below the top is empty, showing how rarely the very top is ever reached. Only the gauge is in the picture. Shot size: Wide Shot (WS). The whole gauge is clearly visible, with a lot of surroundings around it. Camera angle: Eye-level: the camera is level with the gauge, looking straight ahead. Camera direction: front view. The camera is in front of the gauge, facing it.",
+   "untested": [
+    "要求完全無數字；拉遠呈現整支量尺、頂端留白"
+   ],
+   "remedy": "WS 可能偏 FS，只要整支量尺與頂端標記完整入鏡即可。"
+  }
+ ]
+}
