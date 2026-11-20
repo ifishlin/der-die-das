@@ -30,7 +30,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p class="sub">2026-11-19 重新整理成 25 步：減少你要介入的點。你只在<b>粗剪</b>、<b>成片</b>、<b>封面和說明</b>停下來；科普報告、劇本、分場表照樣做出來，可以不看。舊的 29 步版本見 git 歷史。</p>
 <p class="sub">狀態：✅ 討論定案　🧪 做過、沒定案　⬜ 沒討論　⏸ 暫不做。<a href="../flowchart/">流程圖</a>（兩個循環、四條回頭線）。</p>
 <h2 id="segs">分段：哪些步驟是一起的</h2><div class="tw"><table><tr><th>段</th><th>步驟</th><th>段尾</th></tr>
-<tr class=""><td><b>— 開始</b></td><td>1. 選章</td><td>你提出這一集要做哪一章</td></tr>
+<tr class=""><td><b>— 開始</b></td><td>1. 選章、開 Flow 專案</td><td>你提出這一集要做哪一章</td></tr>
 <tr class=""><td><b>A 科普</b></td><td>2. 列出書上的知識點 → 3. 查核書上的知識點 → 4. 想書外知識 → 5. 查核書外知識</td><td>產出科普報告；可以不看，不看就只用我判定可以用的</td></tr>
 <tr class=""><td><b>B 劇本</b></td><td>6. 系列設定 → 7. 大綱 → 8. 寫劇本 → 9. 潤旁白</td><td>產出劇本；可以不看</td></tr>
 <tr class=""><td><b>C 分場</b></td><td>10. 分場 → 11. 場景地圖 → 12. 設定圖</td><td>產出分場表（場、地圖、設定圖）；可以不看</td></tr>
@@ -42,7 +42,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 </table></div>
 <h2 id="terms">用語（對應拍電影）</h2><div class="tw"><table><tr><th>用語</th><th>電影</th><th>意思</th></tr><tr><td><b>劇本</b></td><td>screenplay</td><td>只有文字：動作描述、旁白。沒有圖，不決定鏡頭。第 6～9 步。</td></tr><tr><td><b>分場表</b></td><td>script breakdown</td><td>要哪些場、每場的地圖、角色、服裝、道具、設定圖。第 10～12 步。</td></tr><tr><td><b>分鏡表</b></td><td>storyboard＋shot list</td><td>每場拆成鏡頭、每個鏡頭怎麼拍、畫出來的圖。第 13～17 步。</td></tr><tr><td><b>場</b></td><td>scene</td><td>同一個地點、用同一張地圖的一段（原本叫幕）。</td></tr><tr><td><b>鏡頭</b></td><td>shot</td><td>分鏡表上的一個畫面，配一段旁白（原本叫格）；第 14 步通過後鎖定。</td></tr><tr><td><b>遠景備份</b></td><td>coverage</td><td>HERO 和大恐龍同框時，同一個鏡頭再多拍一個遠一級的（原本叫遠一級、加拍）。不算新的鏡頭。</td></tr><tr><td><b>條</b></td><td>take</td><td>Flow 每次為一個鏡頭畫出的 4 張（原本叫候選圖）。</td></tr><tr><td><b>選用條</b></td><td>selected take</td><td>每個鏡頭挑出來用的那一條。</td></tr><tr><td><b>粗剪</b></td><td>rough cut</td><td>選用條＋配音＋字幕的中繼影片。</td></tr><tr><td><b>定版</b></td><td>picture lock</td><td>你同意粗剪後，鏡頭、選用條、旁白、配音鎖定。</td></tr></table></div>
 <h2 id="table">總表</h2><div class="tw"><table><tr><th>#</th><th>段</th><th>步驟</th><th>這步在幹嘛</th><th>檢查頁</th><th>request（點了看真實送出的全文）</th><th>狀態</th><th>誰</th><th>我用</th></tr>
-<tr><td>1</td><td>—</td><td><a href="#s1">選章</a></td><td class=pp>決定這一集改編書的哪一章。</td><td class=pp>對話裡說</td><td class=pp><span class=mut>不送 request：你</span></td><td>✅</td><td>你</td><td><code>—</code></td></tr>
+<tr><td>1</td><td>—</td><td><a href="#s1">選章、開 Flow 專案</a> <span class=chg>改</span></td><td class=pp>決定這一集改編書的哪一章，並在 Flow 開這一集的新專案（每集一個）。</td><td class=pp>對話裡說：哪一章、Flow 專案網址</td><td class=pp><span class=mut>不送 request：你</span></td><td>✅</td><td>你</td><td><code>—</code></td></tr>
 <tr><td>2</td><td>A</td><td><a href="#s2">列出書上的知識點</a> <span class=chg>改</span></td><td class=pp>把這一章裡所有講真實世界的事實，一條一條列出來（附原文和頁碼），先不管對錯。</td><td class=pp>A 科普報告：知識點（一句話、原文頁碼）、每一步做了什麼<br><a href="../science-ep1-new/">A 科普報告</a></td><td class=pp><b>R2</b> 列出知識點<br><a href="../request-log/files/2026-11-19/193237_EP1_列出書上的知識點_R2__request.txt" target="_blank">最近一次送出的全文</a><span class=mut>（11-19 19:32・EP1 列出書上的知識點（R2））</span><br><b>R2v</b> 逐頁核對<br><span class=mut>還沒有紀錄</span></td><td>✅</td><td>CLI 模型做（request），我抽查；你不參加</td><td><code>request 範本：docs/science_requests/2_list_facts.md；scripts/science_request.py 2 EPn</code></td></tr>
 <tr><td>3</td><td>A</td><td><a href="#s3">查核書上的知識點</a> <span class=chg>改</span></td><td class=pp>每一點上網查對不對、附出處；我判定可以用或不能用。</td><td class=pp>A 科普報告：判定、出處、建議說法、可以用／不能用<br><a href="../science-ep1-new/">A 科普報告</a></td><td class=pp><b>R3</b> 查核<br><a href="../request-log/files/2026-11-19/194148_EP1_查核_R3_書上第_1_批_request.txt" target="_blank">最近一次送出的全文</a><span class=mut>（11-19 19:41・EP1 查核（R3）書上第 1 批）</span></td><td>✅</td><td>CLI 模型查（request），我覆核、決定用哪些；你不參加</td><td><code>request 範本：docs/science_requests/3_check.md；scripts/science_request.py 3 EPn</code></td></tr>
 <tr><td>4</td><td>A</td><td><a href="#s4">想書外知識</a> <span class=chg>改</span></td><td class=pp>故事需要、但書上沒講的知識（地點、年代、環境、動物…），我自己列出來。</td><td class=pp>A 科普報告：書外知識點、為什麼要<br><a href="../science-ep1-new/">A 科普報告</a></td><td class=pp><span class=mut>不送 request：Claude 主對話（不送 request）</span></td><td>✅</td><td>我想；你不參加</td><td><code>—</code></td></tr>
@@ -71,12 +71,13 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p class="sub">各集進度：每一集的頁面裡有自己的進度表（<a href="../story/ep1-new/#progress">EP1-new</a>、<a href="../story/ep2-new/#progress">EP2-new</a>、<a href="../story/ep3/#progress">EP3</a>）。</p>
 <p class="note"><b>檢查頁連到哪一集</b>（2026-11-20）：這張總表的檢查頁以 EP1-new 為例；各集頁進度表裡的檢查頁一律連到<b>那一集自己的報告</b>（EP3 → science-ep3、script-ep3…），那一集還沒做的頁只寫「還沒做」，絕不連到別集。</p>
 <p class="note"><b>順序不能倒</b>：科普 → 劇本 → 分場表 → 分鏡表 → 粗剪。前面一改，後面受影響的部分就要重做；所以改版時只重跑受影響的場或鏡頭。</p>
-<h2 id="s1">1. 選章 ✅ <span class="seg">— 開始</span></h2>
-<p class=pp><b>這步在幹嘛：</b>決定這一集改編書的哪一章。</p>
-<p class=pp><b>檢查頁：</b>對話裡說</p>
+<h2 id="s1">1. 選章、開 Flow 專案 ✅ <span class="seg">— 開始</span></h2>
+<p class=pp><b>這步在幹嘛：</b>決定這一集改編書的哪一章，並在 Flow 開這一集的新專案（每集一個）。</p>
+<p class=pp><b>檢查頁：</b>對話裡說：哪一章、Flow 專案網址</p>
 <p class=pp><b>request：</b><span class=mut>不送 request：你</span></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-20 使用者：開 Flow 新專案的要求放在第 1 步，一開始就決定專案（EP3 做到第 12 步才發現沒有專案）</p>
 <p><b>誰：</b>你。</p>
-<p><b>怎麼做：</b>從《How to Survive History》挑一章，原文照片放在 source/how_to_survive_history/chNN_*。前三章對應 EP1～EP3。</p>
+<p><b>怎麼做：</b></p><ul><li>從《How to Survive History》挑一章，原文照片放在 source/how_to_survive_history/chNN_*。前三章對應 EP1～EP3。</li><li>同時在 Flow 開這一集的新專案（每集一個專案），把網址給我；我記進 scripts/flowbot/flow_projects.json（FLOW_EP=這一集）。</li><li>一開始就要決定專案：第 12 步畫設定圖、第 16 步畫分鏡都要用，等到那時候才開會卡住。</li></ul>
 <h2 id="s2">2. 列出書上的知識點 ✅ <span class="seg">A 科普</span></h2>
 <p class=pp><b>這步在幹嘛：</b>把這一章裡所有講真實世界的事實，一條一條列出來（附原文和頁碼），先不管對錯。</p>
 <p class=pp><b>檢查頁：</b>A 科普報告：知識點（一句話、原文頁碼）、每一步做了什麼<br><a href="../science-ep1-new/">A 科普報告</a></p>
