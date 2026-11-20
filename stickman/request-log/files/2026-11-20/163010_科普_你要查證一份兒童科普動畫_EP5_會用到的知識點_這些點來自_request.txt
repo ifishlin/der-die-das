@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP5）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "claim_zh": "水滲入地函、降低板塊熔點，是許多最強烈火山（如 1883 年喀拉喀托）形成的第一步",
+  "quote": "water lowers a plate's melting temperature, this seemingly innocuous seepage is the first step of an incredibly volatile reaction that has led to some of the most catastrophic eruptions in history (see Krakatoa, 1883)",
+  "pages": [
+   "p.54"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "seemingly",
+  "convert": "",
+  "n": 65,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "造成龐貝危險的隱沒板塊是亞得里亞海底下的非洲板塊，它滑入（且持續滑入）義大利東岸的歐亞板塊之下",
+  "quote": "the slab at fault is the sliver of the African plate below the Adriatic Sea, which slid (and indeed continues to slide) beneath the Eurasian plate along Italy's east coast",
+  "pages": [
+   "p.54"
+  ],
+  "type": "事實",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 66,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "水藉由削弱岩石的化學鍵來降低其熔點；換句話說，水對岩石的作用就像鹽對結冰的道路",
+  "quote": "\"Water\" lowers the melting temperature of rock by weakening its chemical bonds. In other words, water does to rock what salt does to an icy road.",
+  "pages": [
+   "p.54"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "頁面底部註腳；比喻部分不算知識點，取其化學鍵機制",
+  "n": 67,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "紐西蘭的 Mount Taupo 在約 26,500 年前噴發，摧毀了相當於薩爾瓦多（El Salvador）面積的區域。",
+  "quote": "Zealand's Mount Taupo 26,500 years ago, and it destroyed an area the size of El Salvador",
+  "pages": [
+   "p.55"
+  ],
+  "type": "比較／事實",
+  "who": "作者",
+  "hedge": "",
+  "convert": "26,500 年前；面積以薩爾瓦多類比",
+  "n": 68,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "熔岩依成分不同，黏度是水的 10,000 倍到 1 億倍；因此最稀的熔岩也有室溫蜂蜜的黏稠度。",
+  "quote": "lava ranges from 10,000 times to 100 million times the viscosity of water, which means even the runniest molten rock has the viscosity of room-temperature honey",
+  "pages": [
+   "p.55"
+  ],
+  "type": "事實／數據",
+  "who": "作者",
+  "hedge": "Depending on its composition（依成分而定）",
+  "convert": "10,000×–100,000,000× 水的黏度",
+  "n": 69,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "考古學家在鄰近的 Herculaneum 一處船屋發現大批遺體，看來是試圖搭船逃生的人。",
+  "quote": "archaeologists have found a large group of bodies in a boathouse in nearby Herculaneum who appear to have attempted just that",
+  "pages": [
+   "p.55"
+  ],
+  "type": "考古",
+  "who": "作者",
+  "hedge": "who appear to（看來是／推測）",
+  "convert": "",
+  "n": 70,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "壓力會因強化化學鍵而提高岩石的熔點，所以地底深處雖熱、地函仍維持固態；岩漿生成需要：異常的熱往淺處上升、異常的壓力下降，或異常的污染物（通常是水）進入地函降低熔點。",
+  "quote": "magma creation requires an unusual heat to rise closer to the surface, an unusual drop in pressure, or an unusual pollutant (generally water) to enter the mantle and lower its melting temperature",
+  "pages": [
+   "p.55"
+  ],
+  "type": "科學機制",
+  "who": "作者",
+  "hedge": "at least not usually（至少通常不是）",
+  "convert": "",
+  "n": 71,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "噴發的灰氣雲上升形成『普林尼式柱』（Plinian column），以小普林尼命名，他在那不勒斯灣對岸記錄了這次維蘇威噴發",
+  "quote": "the eruptive cloud of ash and gas rose in a formation called a Plinian column (named after Pliny the Younger, who documented the Vesuvius eruption from across the Bay of Naples)",
+  "pages": [
+   "p.56"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 72,
+  "verify_note": "逐頁核對補列"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

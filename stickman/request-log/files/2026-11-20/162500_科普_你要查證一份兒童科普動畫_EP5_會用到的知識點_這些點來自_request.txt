@@ -1,0 +1,134 @@
+
+你要查證一份兒童科普動畫（EP5）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 9,
+  "claim_zh": "你站的龐貝離火山僅六英里",
+  "quote": "you stand a mere six miles away",
+  "pages": [
+   "p.49"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "約 9.7 公里"
+ },
+ {
+  "n": 10,
+  "claim_zh": "Pier Paolo Petrone 是那不勒斯費德里科二世大學的法醫人類學家",
+  "quote": "Pier Paolo Petrone, a forensic anthropologist at the University of Naples Federico II",
+  "pages": [
+   "p.49"
+  ],
+  "type": "專家說法",
+  "who": "Pier Paolo Petrone，法醫人類學家",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 11,
+  "claim_zh": "Petrone 回覆說許多龐貝人在噴發中存活，但大概只有立刻採取行動的人",
+  "quote": "many did. \"But likely only those who took immediate action.\"",
+  "pages": [
+   "p.49",
+   "p.50"
+  ],
+  "type": "專家說法",
+  "who": "Pier Paolo Petrone",
+  "hedge": "likely",
+  "convert": "",
+  "verify_note": "這張照片（p.49）只到「When I emailed Pier Paolo Petrone, a forensic anthropologist at the University of Naples Federico II, asking if any」就結束，引用的核心句子「many did. \"But likely only those who took immediate action.\"」在 p.50，這一頁無法逐字核對；須看 p.50 才能確認。"
+ },
+ {
+  "n": 12,
+  "claim_zh": "有些龐貝人沒有立刻撤離，反而躲起來避落灰",
+  "quote": "instead of immediately evacuating, some Pompeiians took shelter from the falling ash",
+  "pages": [
+   "p.50"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 13,
+  "claim_zh": "躲避落灰看似謹慎，其實是錯的（應立刻撤離）",
+  "quote": "This may seem prudent, but it is a mistake.",
+  "pages": [
+   "p.50"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 14,
+  "claim_zh": "（圖）那不勒斯灣沿岸由西往東標出 Misenum、Pozzuoli、那不勒斯、Herculaneum、維蘇威、龐貝，南邊有 Stabia，灣口有 Capri 島",
+  "quote": "圖：Pompeii Evacuation Route 右下小圖，標註 Naples / BAY OF NAPLES / Puzzuoli / Misenum / Herculaneum / Pompeii / Vesuvius / Stabia / Capri",
+  "pages": [
+   "p.50"
+  ],
+  "type": "描述",
+  "who": "作者（地圖）",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 15,
+  "claim_zh": "（圖）龐貝城內有麵包店、Central Baths、Market、The Forum，對外有通往那不勒斯、維蘇威、Stabia、海灘的路及 Eastern Roads",
+  "quote": "圖：Pompeii Evacuation Route，標註 Good Bakery / Central Baths / Market / The Forum / Road to Naples / Road to Vesuvius / Eastern Roads / Roads to Stabia / Road to the Beach",
+  "pages": [
+   "p.50"
+  ],
+  "type": "描述",
+  "who": "作者（地圖）",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 16,
+  "claim_zh": "（圖）作者手寫建議：走往那不勒斯的路（Yes），別走往維蘇威的路（No），別在 Central Baths 停留；通往 Stabia、海灘、Eastern Roads 標骷髏",
+  "quote": "圖：手寫標註 Yes!! (Road to Naples) / No!! (Road to Vesuvius) / Do not stop here. (Central Baths)，三條路標骷髏",
+  "pages": [
+   "p.50"
+  ],
+  "type": "求生建議",
+  "who": "作者（地圖）",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

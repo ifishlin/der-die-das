@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP5）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 57,
+  "claim_zh": "要避免在八月下旬高溫下過度耗力，一有機會就補充清水",
+  "quote": "Avoid overexertion in the late-August heat and take any opportunity to drink fresh water.",
+  "pages": [
+   "p.57"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "quote（late-August heat / drink fresh water）在 p.57 找不到。本頁沒有補水或八月高溫的求生建議。疑似標錯頁。"
+ },
+ {
+  "n": 58,
+  "claim_zh": "許多居民一開始選擇就地避難，因此你離城時有一段相對暢通的時間窗",
+  "quote": "Many residents initially take shelter, so you'll have an open window for your departure",
+  "pages": [
+   "p.57"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "quote『Many residents initially take shelter…open window』在 p.57 找不到。本頁沒有『居民就地避難、留下逃生時間窗』的敘述。疑似標錯頁。"
+ },
+ {
+  "n": 59,
+  "claim_zh": "Petrone 說：大概只有那些能從情勢嚴重性判斷出該走的人，才及時逃出",
+  "quote": "\"Probably only those who managed to understand from the gravity of the situation escaped in time,\" Petrone told me.",
+  "pages": [
+   "p.57"
+  ],
+  "type": "專家說法",
+  "who": "Pier Paolo Petrone",
+  "hedge": "Probably",
+  "convert": "",
+  "verify_note": "Petrone 的這句引言在 p.57 找不到。本頁引用的是小普林尼（Pliny the Younger）對黑暗的描述，沒有 Petrone 的話。疑似標錯頁。"
+ },
+ {
+  "claim_zh": "噴發時可聽見一聲遠方的轟隆聲迴盪在街道上",
+  "quote": "hear a distant boom echo through the streets",
+  "pages": [
+   "p.49"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 60,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "（圖）地圖標題下註明時間為西元79年8月24日（時刻數字被裁，只見到「10」）",
+  "quote": "圖：AUGUST 24, 79 CE, 10…",
+  "pages": [
+   "p.50"
+  ],
+  "type": "描述",
+  "who": "作者（地圖）",
+  "hedge": "",
+  "convert": "",
+  "n": 61,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "熔岩黏度是水的一萬倍到一億倍，連最稀的熔岩黏度也相當於室溫下的蜂蜜；除非在很陡的坡上，人通常跑得過它",
+  "quote": "lava ranges from 10,000 times to 100 million times the viscosity of water, which means even the runniest molten rock has the viscosity of room-temperature honey. Unless you're on a very steep slope, you can generally outrun it.",
+  "pages": [
+   "p.54"
+  ],
+  "type": "數據",
+  "who": "作者",
+  "hedge": "generally",
+  "convert": "",
+  "n": 62,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "維蘇威的岩漿異常黏稠，其噴發在對數刻度的火山爆發指數（VEI）上達 8 分之 5，與 1980 年聖海倫斯火山噴發同級",
+  "quote": "its eruption registers as a formidable 5 out of 8 on the logrithmically scaled Volcanic Explosivity Index—the same as the Mount Saint Helens eruption in 1980",
+  "pages": [
+   "p.54"
+  ],
+  "type": "數據",
+  "who": "作者",
+  "hedge": "",
+  "convert": "書上原文把 logarithmically 誤拼為 logrithmically，照抄即保留",
+  "n": 63,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "VEI 8 的噴發相當罕見",
+  "quote": "VEI 8 eruptions are quite rare. The most recent one occurred on New",
+  "pages": [
+   "p.54"
+  ],
+  "type": "事實",
+  "who": "作者",
+  "hedge": "",
+  "convert": "句子在本頁末尾被截斷（『occurred on New…』），完整年代/地點在下一頁，待接續核對",
+  "n": 64,
+  "verify_note": "逐頁核對補列"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

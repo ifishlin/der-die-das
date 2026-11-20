@@ -1,0 +1,61 @@
+I have enough to finalize. The key finding: points 49 and 50 touch an active scientific debate (the 2020 York/Antiquity re-evaluation challenged the "instant death / extreme heat" model), and point 52's "2 p.m." contradicts the established timeline (Herculaneum was destroyed by the first surge around 1 a.m., overnight).
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 49,
+  "verdict": "有爭議",
+  "sci": "赫庫蘭尼姆罹難者大多沒有火災死者常見的「拳擊手姿勢」，這點是真的（Petrone 等人觀察到的）。但「死得太快、來不及痛苦」是 Petrone／Mastrolorenzo 一派的解讀，學界並無共識。2020 年 York 大學團隊（Martyn、Thompson 等）在《Antiquity》重新分析骨頭膠原蛋白，發現溫度可能低於 400°C、骨膠原仍保存，推論許多人其實是被慢慢烤熱或嗆死，死得並不快。兩種說法目前仍在爭論。",
+  "src": [["Petrone et al. 2020, N Engl J Med 382:383–384（腦玻璃化與高溫瞬死說）", "https://www.nejm.org/doi/full/10.1056/NEJMc1909867"], ["Martyn, Thompson et al. 2020, Antiquity『A re-evaluation of manner of death at Roman Herculaneum』", "https://www.cambridge.org/core/journals/antiquity/article/reevaluation-of-manner-of-death-at-roman-herculaneum-following-the-ad-79-eruption-of-vesuvius/FD54E5B954D8E86B9B59001C0B0CC0BB"], ["University of York 新聞『Vesuvius victims suffered a slower death than believed』2020", "https://www.york.ac.uk/news-and-events/news/2020/research/vesuvius-victims-slower-death-believed/"]],
+  "fix": "科學家發現赫庫蘭尼姆的罹難者，大多沒有被火燒的人常見的那種蜷縮「拳擊手姿勢」。有學者認為這代表他們死得非常快；不過也有研究認為，他們其實是被慢慢烤熱、悶死的。到底哪一種，科學家到現在還在爭論。",
+  "confidence": "高"},
+
+ {"n": 50,
+  "verdict": "大致正確",
+  "sci": "Petrone 團隊確實在赫庫蘭尼姆 Collegium Augustalium 一名約 25 歲男性罹難者的頭骨裡，發現一塊玻璃質物質，經蛋白質與脂肪酸分析判定為腦組織，推論極高溫（現場炭化木推估達約 500°C 以上）後迅速冷卻使其玻璃化（NEJM 2020、PLOS ONE 2020 均有發表，2025 年另有後續研究探討成因）。這是目前已知唯一一例，屬單一個案的非凡發現，且與『慢慢烤熱』的低溫說存在張力，連研究者都說機制仍是謎。書上用『suggesting（顯示／推測）』語氣，與現況相符。",
+  "src": [["Petrone et al. 2020『Heat-Induced Brain Vitrification…』N Engl J Med 382:383–384", "https://www.nejm.org/doi/full/10.1056/NEJMc1909867"], ["National Geographic『Vesuvius baked people… turned brain to glass』", "https://www.nationalgeographic.com/science/article/vesuvius-baked-people-turned-brain-to-glass"], ["Smithsonian Magazine『Mount Vesuvius Turned This Man's Brain to Glass』", "https://www.smithsonianmag.com/smart-news/mount-vesuvius-turned-mans-brain-cells-glass-180976073/"]],
+  "fix": "科學家在一位罹難者的頭骨裡，發現一塊像玻璃一樣的碎片，檢驗之後發現那竟然是他的腦——超高的溫度，可能一瞬間就把腦燒成了玻璃。這是目前全世界唯一發現的例子，怎麼辦到的，科學家到現在都還在研究。",
+  "confidence": "中"},
+
+ {"n": 51,
+  "verdict": "大致正確",
+  "sci": "赫庫蘭尼姆與龐貝兩座古城遺址直線距離約 16 公里（約 10 英里），依路線不同在 14～17 公里之間。書上『略多於九英里』（約 14.5 公里）落在這個範圍偏低端，方向正確、數字略小。",
+  "src": [["Rome2Rio 兩地交通與距離資料", "https://www.rome2rio.com/s/Herculaneum-Italy/Pompeii-Italy"]],
+  "fix": "赫庫蘭尼姆離龐貝大約十幾公里（將近十英里），走路得走上好幾個鐘頭。",
+  "confidence": "中"},
+
+ {"n": 52,
+  "verdict": "有誤",
+  "sci": "依主流重建，維蘇威在第一天約下午一點（普林尼記載『第七時』）進入普林尼式噴發，噴發柱在當天深夜崩塌，第一波火山碎屑流（surge）約在隔日凌晨一點左右衝下西北坡、數分鐘內吞沒赫庫蘭尼姆——也就是在黑夜裡、比龐貝被徹底掩埋還早。書上『下午兩點才襲擊』是作者求生情境的時鐘，不符實際歷史時間（相差約半天、且晝夜顛倒）。",
+  "src": [["Wikipedia『Eruption of Mount Vesuvius in 79 AD』（引 Sigurdsson 等重建的逐時序列）", "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"], ["Michigan Tech『Vesuvio: The eruption of A.D. 79』", "https://www.geo.mtu.edu/volcanoes/boris/mirror/mirrored_html/VESUVIO_79.html"]],
+  "fix": "別說是下午。真正摧毀赫庫蘭尼姆的那股炙熱火山碎屑流，其實是在半夜、天還黑的時候就突然衝了下來，比龐貝被埋得還要早。",
+  "confidence": "中"},
+
+ {"n": 53,
+  "verdict": "大致正確",
+  "sci": "每小時三英里（約 4.8 公里）是成人正常步行速度，這個設定合理；走四小時約 12 英里也和『龐貝→赫庫蘭尼姆九英里多』的距離相容。但『一點多抵達』的到達時刻是書中求生情境的時間軸，與真實災難發生在夜裡的事實不符，不宜當歷史時間照念。",
+  "src": [["Rome2Rio 兩地距離資料（佐證步行時數的距離基礎）", "https://www.rome2rio.com/s/Herculaneum-Italy/Pompeii-Italy"]],
+  "fix": "用正常走路的速度（一小時大約五公里）走上好幾個鐘頭。（講故事時不用給精確的到達鐘點，因為真實的災難是在夜裡發生的。）",
+  "confidence": "中"},
+
+ {"n": 54,
+  "verdict": "正確",
+  "sci": "赫庫蘭尼姆確是羅馬權貴的海濱度假城，留有貼大理石的豪宅。城郊的『莎草紙別墅（Villa of the Papyri）』更藏有古代世界唯一完整留存的圖書館，超過 1,800 卷莎草紙書卷（多為伊比鳩魯派希臘哲學，被噴發高溫碳化），一般認為屬凱撒岳父 Piso 家族。書上的描述與考古相符，僅『希臘羅馬經典』實以希臘哲學文本為主。",
+  "src": [["University of Oxford, Herculaneum Society『Papyri』", "https://www.herculaneum.ox.ac.uk/index.php/papyri/"], ["Wikipedia『Villa of the Papyri』（含原始出處與發掘史）", "https://en.wikipedia.org/wiki/Villa_of_the_Papyri"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 55,
+  "verdict": "大致正確",
+  "sci": "赫庫蘭尼姆到那不勒斯市區約 7～8 公里（約 4～5 英里），城郊更近。書上『再四英里』到那不勒斯郊區，數字合理。（原知識點標註此句疑似標錯頁，但就距離本身而言方向與量級正確。）",
+  "src": [["Rome2Rio／一般地理距離資料", "https://www.rome2rio.com/s/Herculaneum-Italy/Pompeii-Italy"]],
+  "fix": "從赫庫蘭尼姆再往那不勒斯走個幾公里，就到城邊了。",
+  "confidence": "中"},
+
+ {"n": 56,
+  "verdict": "大致正確",
+  "sci": "龐貝到那不勒斯直線約 22 公里、經陸路約 23～25 公里（約 14 英里）。書上『總共十三英里』（約 21 公里）略低於實際，但量級正確，且與『龐貝→赫庫蘭尼姆九英里＋赫庫蘭尼姆→那不勒斯四英里』內部自洽。（原知識點標註此句疑似標錯頁。）",
+  "src": [["Rome2Rio／一般地理距離資料", "https://www.rome2rio.com/s/Herculaneum-Italy/Pompeii-Italy"]],
+  "fix": "從龐貝一路走到那不勒斯，大約二十公里（十三、四英里）。",
+  "confidence": "中"}
+]}
+```

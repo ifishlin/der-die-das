@@ -1,0 +1,61 @@
+查證完成。以下是結果：
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 33,
+  "verdict": "正確",
+  "sci": "地函雖然溫度極高，但深處壓力也極大，壓力會把岩石的熔點（固相線）推高到實際溫度之上，所以岩石保持固態。例如在某深度地函約 2300°C，但該處熔點被壓力抬到約 3800°C，因此不熔化。這是標準地質學觀念。",
+  "src": [["Geosciences LibreTexts, 8.1 Magma and How It Forms（Chabot College / Shulman）", "https://geo.libretexts.org/Courses/Chabot_College/Introduction_to_Physical_Geology_(Shulman)/08:_Igneous_Rocks_and_Processes/8.01:_Magma_and_How_It_Forms"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 34,
+  "verdict": "正確",
+  "sci": "地函要熔化成岩漿，主要靠兩種機制：一是壓力下降（減壓熔融，物質上湧時壓力變小、熔點跟著降低），二是加入水等揮發物（助熔／flux melting，水降低岩石熔點）。書上提到這兩個正是最主要的兩種。嚴格說還有第三種「額外加熱」，但不提並不算錯。",
+  "src": [["Geosciences LibreTexts, 8.1 Magma and How It Forms", "https://geo.libretexts.org/Courses/Chabot_College/Introduction_to_Physical_Geology_(Shulman)/08:_Igneous_Rocks_and_Processes/8.01:_Magma_and_How_It_Forms"], ["Columbia University, Subduction Zones（flux melting 說明）", "https://www.columbia.edu/~vjd1/subd_zone_basic.htm"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 35,
+  "verdict": "正確",
+  "sci": "隱沒帶把海洋板塊帶下去的水，釋放進上方的地函楔形區、降低其熔點造成助熔熔融，正是世界上最猛烈的火山（如喀拉喀托、聖海倫斯、皮納圖博、維蘇威）的成因。水造成的火山通常比中洋脊或熱點火山更具爆發性。方向完全正確。",
+  "src": [["Columbia University, Subduction Zones", "https://www.columbia.edu/~vjd1/subd_zone_basic.htm"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 36,
+  "verdict": "正確",
+  "sci": "喀拉喀托（巽他海峽）位於印度-澳洲板塊隱沒到亞洲板塊之下的巽他火山弧，屬於「水助熔」型的隱沒帶火山。1883 年 8 月（高潮在 8 月 26–27 日）大噴發，造成逾 3.6 萬人死亡，是人類史上最具災難性的噴發之一。年份與性質皆正確。",
+  "src": [["Encyclopaedia / LiveScience, Krakatoa Volcano: Facts About the Deadly Eruption", "https://www.livescience.com/28186-krakatoa.html"], ["Wikipedia（找原始出處用），Sunda Arc", "https://en.wikipedia.org/wiki/Sunda_Arc"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 37,
+  "verdict": "大致正確",
+  "sci": "維蘇威屬坎帕尼亞火山弧，由非洲與歐亞板塊聚合的隱沒帶造成。但嚴格說正在隱沒的是「亞得里亞-愛奧尼亞微板塊」（約 6500 萬年前從非洲板塊裂出），往西北方潛入歐亞（第勒尼安）板塊之下，隱沒帶大致沿亞平寧山脈；維蘇威其實在義大利西岸。說「非洲板塊沿義大利東側往下隱沒」是過度簡化，方向對但細節不精確。",
+  "src": [["Geology.com, Mount Vesuvius, Italy（Campanian arc / Adriatic-Ionian microplate 說明）", "https://geology.com/volcanoes/vesuvius/"]],
+  "fix": "可以說：「義大利這塊地方，有一小片原本屬於非洲的板塊正慢慢鑽到歐洲板塊底下，一路往地球深處潛，這股力量就孕育出維蘇威火山。」不要強調「東岸」或指名單一大板塊。",
+  "confidence": "中"},
+
+ {"n": 38,
+  "verdict": "正確",
+  "sci": "含水的海洋板塊隱沒到大陸板塊之下、潛入高溫深處時，釋出的水會降低上方地函的熔點、使其部分熔融，較輕的岩漿便往上冒、形成火山。這是隱沒帶（弧後）火山的標準機制。唯一可補的小細節：熔化的主要是板塊上方的「地函楔」，不是下沉板塊本身，但書上的簡化描述不算錯。",
+  "src": [["Columbia University, Subduction Zones", "https://www.columbia.edu/~vjd1/subd_zone_basic.htm"], ["Geosciences LibreTexts, 8.1 Magma and How It Forms", "https://geo.libretexts.org/Courses/Chabot_College/Introduction_to_Physical_Geology_(Shulman)/08:_Igneous_Rocks_and_Processes/8.01:_Magma_and_How_It_Forms"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 39,
+  "verdict": "正確",
+  "sci": "這一點的 claim_zh 是空的（校對註記說此頁找不到對應內容，頁碼疑似標錯），所以沒有可查的『書上原句』。但 quote 指涉的科學本身成立：維蘇威的岩漿上升時會烤到底下的石灰岩／碳酸鹽岩，發生熱變質脫碳反應（CaCO₃→CaO+CO₂），釋出大量 CO₂，像汽水一樣讓岩漿起泡、增強爆發力。這是有同行審查研究支持的真實現象。建議製作端把此點改標到正確頁或補上明確 claim。",
+  "src": [["ScienceDaily（2016），Magma-limestone interaction can trigger explosive volcanic eruptions", "https://www.sciencedaily.com/releases/2016/08/160807183438.htm"], ["Dallai et al., Carbonate-derived CO₂ purging magma at depth: Somma-Vesuvius, Earth and Planetary Science Letters", "https://www.sciencedirect.com/science/article/abs/pii/S0012821X11004298"]],
+  "fix": "若要用這個知識點，可說：「維蘇威的岩漿往上衝時，會烤到地底的石灰岩，把裡面的二氧化碳逼出來，整鍋岩漿像搖過的汽水一樣狂冒泡，噴得更猛。」（但請先確認這點在書中的正確頁碼或出處。）",
+  "confidence": "高"},
+
+ {"n": 40,
+  "verdict": "正確",
+  "sci": "這一點的 claim_zh 也是空的（校對註記說此跨頁沒有出現 Pliny the Elder，疑似分到錯頁）。但 quote 指涉的史實本身正確：老普林尼（Pliny the Elder）在西元 79 年維蘇威噴發時，率艦隊從米塞努姆渡過那不勒斯灣，想就近觀察並救人，最後死於斯塔比亞（Stabiae）；他的外甥小普林尼寫給史家塔西佗的兩封信留下目擊紀錄，「普林尼式噴發」即因此得名。建議製作端把此點改標到正確頁或補上明確 claim。",
+  "src": [["Wikipedia（找原始出處用），Pliny the Elder", "https://en.wikipedia.org/wiki/Pliny_the_Elder"], ["Ancient World Magazine, Under Stabiae's ashes — Pliny the Elder's life and death", "https://www.ancientworldmagazine.com/articles/under-stabiaes-ashes-pliny-elders-life-death-through-nephews-writings/"]],
+  "fix": "若要用，可說：「有位叫老普林尼的羅馬博物學家，噴發當天不但沒逃，還開船衝過海灣想去救人，結果喪命；他外甥把那一天寫了下來，成了史上第一份火山噴發目擊報告。」（請先確認此點在書中的正確頁碼。）",
+  "confidence": "高"}
+]}
+```

@@ -1,0 +1,61 @@
+I have enough verified data. Here is the result.
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 73,
+  "verdict": "正確",
+  "sci": "維蘇威 79 年噴發的噴發柱，不同階段高度約 15～30 公里，在灰色浮石階段達到最高約 32～33 公里。十二英里（約 19.3 公里）落在這個範圍內，說「超過十二英里」沒有誇大。客機巡航高度約 10～12 公里（6～7.5 英里），所以噴發柱確實遠高於客機。",
+  "src": [["Carey & Sigurdsson 1987, GSA Bulletin 99(2):303–314（79 年噴發柱高度隨時間變化）", "https://pubs.geoscienceworld.org/gsa/gsabulletin/article-abstract/99/2/303/203275/Temporal-variations-in-column-height-and-magma"], ["Wikipedia 彙整學界數據：Eruption of Mount Vesuvius in 79 AD（柱高 15～33 km）", "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 74,
+  "verdict": "正確",
+  "sci": "James G. Moore 確實是美國地質調查所（USGS）的火山學家、榮譽退休科學家，是真實存在的專家。這句話是作者親自訪談他時得到的回答，屬於書中第一手引述，無法在外部文獻逐字核對，但「躲過噴發最可靠的方法就是別住在火山旁」這個觀念與災害科學一致：風險最低的就是不在危險區內。",
+  "src": [["USGS 人員頁 / 火山災害計畫，James G. Moore 為該所火山學家", "https://www.usgs.gov/programs/VHP"]],
+  "fix": "",
+  "confidence": "中"},
+
+ {"n": 75,
+  "verdict": "正確",
+  "sci": "火山土壤普遍肥沃：火山灰和岩石風化後釋出鉀、磷、鎂等植物養分，又疏鬆保水，是全球最高產的土壤之一。全球約 10% 人口住在活火山 100 公里內，部分正是被這種肥沃土壤吸引；像爪哇就因火山土養得起每平方公里上千人的高密度人口。",
+  "src": [["British Geological Survey, Living with volcanoes（火山土肥沃、吸引人群聚居）", "https://www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/living-with-volcanoes/"], ["The Conversation, How Mount Agung's eruption can create the world's most fertile soil", "https://theconversation.com/how-mount-agungs-eruption-can-create-the-worlds-most-fertile-soil-85134"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 76,
+  "verdict": "正確",
+  "sci": "這句出自小普林尼寫給塔西佗的信（書信集第六卷）。多個英譯版本都保留同一個意象：那片黑暗「不是無月或陰天夜晚的那種黑，而像在密閉的房間裡把燈吹熄」。書上的中文轉述與原文意思一致。",
+  "src": [["Pliny the Younger, Letters Book 6（Attalus 收錄全文英譯）", "https://www.attalus.org/old/pliny6.html"], ["UCSD SIO15 課程教材：小普林尼描述維蘇威噴發的信", "https://igppweb.ucsd.edu/~gabi/sio15/lectures/volcanoes/pliny.html"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 77,
+  "verdict": "正確",
+  "sci": "法醫人類學家 Pier Paolo Petrone 的看法在科普報導中有被幾乎逐字引述：龐貝通往那不勒斯（北向）的道路維護良好，倖存者留下的文字記錄顯示多數成功脫逃者往北走，而往南逃者的遺體較多被發現——這些人多半是太晚才逃。北向的 Cumae、Puteoli 等城也確實成了倖存者的落腳地。",
+  "src": [["Live Science, Where did Pompeii's refugees flee?（引述 Petrone：成功者多往北、遇難者遺體多在南）", "https://www.livescience.com/64854-where-pompeii-refugees-fled.html"], ["Steven Tuck 追蹤龐貝倖存者的研究報導，Live Science", "https://www.livescience.com/archaeology/evidence-of-more-than-200-survivors-of-mount-vesuvius-eruption-discovered-in-ancient-roman-records"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 78,
+  "verdict": "正確",
+  "sci": "Herculaneum（赫庫蘭尼姆）位在維蘇威西側、龐貝往那不勒斯方向的路上，是座小型羅馬濱海度假城。它比龐貝更靠近火山，被維蘇威第一波火山碎屑湧流掃過，溫度達約 500°C；海邊船屋裡躲避的人幾乎瞬間死亡，考古已挖出約 300 人中 80 具遺骸。",
+  "src": [["Nature, Herculaneum victims of Vesuvius in AD 79（第一波湧流與船屋罹難者）", "https://www.nature.com/articles/35071167"], ["Wikipedia 彙整：Herculaneum（位置與第一波 surge）", "https://en.wikipedia.org/wiki/Herculaneum"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 79,
+  "verdict": "正確",
+  "sci": "龐貝到維蘇威火山口的直線距離，常見說法約 8～10 公里（約 5～6 英里）。六英里（約 9.7 公里）落在這個範圍內。要注意 79 年的維蘇威是一座更高的單一山錐（Monte Somma），噴發口位置與今天的火山口不完全相同，所以用「約六英里」這種概略說法是穩當的。",
+  "src": [["Pompeii City, Where Is Pompeii（龐貝距火山口約 8 公里 / 5 英里）", "https://pompeiicity.com/en/where-is-pompeii"], ["Wikipedia, Eruption of Mount Vesuvius in 79 AD（龐貝與火山位置）", "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"]],
+  "fix": "",
+  "confidence": "中"},
+
+ {"n": 80,
+  "verdict": "大致正確",
+  "sci": "方向和地標正確：往南逃確實會先經過 Stabiae（今 Castellammare di Stabia）這個小鎮。但距離數字有疑問——史塔比亞在龐貝西南方約 4.5 公里（約 2.8 英里），而不是四英里半（約 7.2 公里）。書上的「四英里半」很可能是把 4.5 公里誤記成 4.5 英里。",
+  "src": [["Wikipedia, Stabiae（距龐貝約 4.5 km、距維蘇威約 16 km）", "https://en.wikipedia.org/wiki/Stabiae"]],
+  "fix": "往南邊逃的話，你至少得一路跑過史塔比亞這座小鎮——它就在龐貝南邊幾公里的地方。（避免講「四英里半」這個偏大的數字）",
+  "confidence": "中"}
+]}
+```

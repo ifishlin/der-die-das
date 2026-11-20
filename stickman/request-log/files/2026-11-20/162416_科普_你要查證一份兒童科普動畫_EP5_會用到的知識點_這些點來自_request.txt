@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP5）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 25,
+  "claim_zh": "火山雲太濃密時雲柱會崩塌，只升幾百英尺就落下，下降時加速，到地面像過熱沙暴以高速公路車速流動",
+  "quote": "it flows like a superheated sandstorm moving at autobahn speeds",
+  "pages": [
+   "p.51"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "數百英尺約 100 公尺以上",
+  "verify_note": "同上，無法核對（autobahn speeds、數百英尺換算皆無法確認）。"
+ },
+ {
+  "n": 26,
+  "claim_zh": "火山碎屑流可達華氏 1,800 度，濃到能讓人窒息，可延伸數英里",
+  "quote": "these \"pyroclastic flows\" can be 1,800 degrees Fahrenheit, dense enough to suffocate you, and extend for miles",
+  "pages": [
+   "p.51"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "can be",
+  "convert": "約 982°C；數英里約數公里",
+  "verify_note": "同上，無法核對（1,800 degrees Fahrenheit、miles 等數字/單位皆無法確認）。"
+ },
+ {
+  "n": 27,
+  "claim_zh": "8 月 25 日清晨，一股火山碎屑流殺死龐貝所有還留在城裡的人",
+  "quote": "In the early morning hours of August 25, a pyroclastic flow killed everyone remaining in Pompeii.",
+  "pages": [
+   "p.51"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "同上，無法核對（August 25、early morning 皆無法在此頁確認）。"
+ },
+ {
+  "n": 28,
+  "claim_zh": "逃生只有兩個方向：東邊有山擋、西邊有地中海擋，只能往北或往海灘走",
+  "quote": "Mountains block the path to the east, and the Mediterranean Sea blocks your path to the west",
+  "pages": [
+   "p.52"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）",
+  "verify_note": "這張照片讀得到的內文跟 claim 對不上（照片講的是噴發後灰雲、超音速氣體、火山碎屑流、August 25 等），完全沒有出現『Mountains block the path to the east … Mediterranean Sea blocks your path to the west』這段；且頁面傾斜、右側整欄文字被裁掉，無法逐字核對。移到 unclear，不改寫。"
+ },
+ {
+  "n": 29,
+  "claim_zh": "維蘇威上一次噴發一般認為發生在西元前 217 年",
+  "quote": "Vesuvius's previous eruption [believed to have occurred in 217 BCE]",
+  "pages": [
+   "p.52"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "believed",
+  "convert": "西元前 217 年（傾斜頁，待重拍核對）",
+  "verify_note": "照片上看不到『217 BCE』或維蘇威前一次噴發的句子；內容對不上且右側被裁。無法確認年份。移到 unclear。"
+ },
+ {
+  "n": 30,
+  "claim_zh": "長期沉寂讓壓力累積，岩漿最終衝開岩石、以極大速度與猛烈程度衝出山頂噴氣口",
+  "quote": "it dramatically increased the pressure building beneath the mountain, so that when the magma finally dislodged the rock … it did so with [great] speed",
+  "pages": [
+   "p.52"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）",
+  "verify_note": "照片上找不到此因果句的完整文字（右側被裁，且此頁談的是噴發後的情形）。無法逐字核對。移到 unclear。"
+ },
+ {
+  "n": 31,
+  "claim_zh": "維蘇威的岩漿黏度極高，約為水的 1 萬到 1,000 萬倍",
+  "quote": "lava ranges from 10,000 [to] 10 million times more [viscous than water]",
+  "pages": [
+   "p.52"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（數字傾斜難辨，待重拍核對）",
+  "verify_note": "照片上看不到『10,000 to 10 million times more viscous than water』這組數字。無法確認位數。移到 unclear。"
+ },
+ {
+  "n": 32,
+  "claim_zh": "柏克萊加大火山學家 Stephen Self 說，熔岩流會輾平房屋這類不動的東西，但『人可以閃開』",
+  "quote": "\"people can move out of the way,\" says Stephen Self, a volcanologist at UC Berkeley",
+  "pages": [
+   "p.52"
+  ],
+  "type": "專家說法",
+  "who": "Stephen Self，火山學家，UC Berkeley",
+  "hedge": "",
+  "convert": "（人名傾斜難辨，待重拍核對）",
+  "verify_note": "照片上看不到 Stephen Self / UC Berkeley / 『people can move out of the way』這段。無法確認人名與引語。移到 unclear。"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

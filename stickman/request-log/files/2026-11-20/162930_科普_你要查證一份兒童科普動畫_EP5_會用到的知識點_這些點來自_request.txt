@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP5）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "claim_zh": "維蘇威的噴發柱升到超過十二英里高，遠高於客機巡航高度",
+  "quote": "Mount Vesuvius's column rose more than twelve miles high, far above the cruising altitude of passenger jets",
+  "pages": [
+   "p.56"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "more than",
+  "convert": "十二英里約 19.3 公里",
+  "n": 73,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "火山學家、USGS 榮譽退休科學家 James Moore 說，躲過火山噴發最好的辦法很簡單：『別住在火山旁！』",
+  "quote": "When I asked James Moore, a volcanologist and scientist emeritus at the U.S. Geological Survey, how best to survive an erupting volcano, he said it's quite easy: \"Don't live near one!\"",
+  "pages": [
+   "p.56"
+  ],
+  "type": "專家說法",
+  "who": "James Moore",
+  "hedge": "",
+  "convert": "",
+  "n": 74,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "火山往往吸引人類聚居，因為過去的噴發能產生富含養分的土壤",
+  "quote": "volcanoes tend to attract human societies because their previous eruptions can produce nutrient-rich soils",
+  "pages": [
+   "p.56"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "tend to",
+  "convert": "",
+  "n": 75,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "小普林尼在筆記裡形容那片黑暗『不太像無月或陰天的夜晚，而像在上鎖的房間裡燈熄滅了』",
+  "quote": "\"not so much a moonless or cloudy night, but as if the lamp had gone out in a locked room.\"",
+  "pages": [
+   "p.56"
+  ],
+  "type": "描述",
+  "who": "小普林尼",
+  "hedge": "",
+  "convert": "",
+  "n": 76,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "Petrone 說有證據顯示往北、往南都有人成功逃生；根據倖存者留下的文字記錄，成功逃出的人多半往北逃，而遇難者的遺體多在南邊被發現",
+  "quote": "there's evidence of successful escapes to both north and south ... the written records of those who survived suggest that most of the successful escapees fled north—while most of the bodies of the attempted escapees ... were found to the south",
+  "pages": [
+   "p.56"
+  ],
+  "type": "專家說法",
+  "who": "Pier Paolo Petrone",
+  "hedge": "suggest",
+  "convert": "",
+  "n": 77,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "往北逃會經過小型羅馬度假城 Herculaneum，而維蘇威的第一波火山碎屑湧流掃過了 Herculaneum",
+  "quote": "you'll pass through the small Roman resort town of Herculaneum on your way to Naples—and Vesuvius's first pyroclastic surge flowed through Herculaneum",
+  "pages": [
+   "p.56"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 78,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "龐貝離維蘇威火山口六英里",
+  "quote": "you and the rest of the Pompeiians will find yourselves six miles from the vent of Vesuvius with only two options: Run north or run south.",
+  "pages": [
+   "p.57"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "約 9.7 公里",
+  "n": 79,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "往南逃至少要跑過 Stabiae 鎮，約四英里半外",
+  "quote": "you'll need to run at least past the town of Stabiae—around four and a half miles away",
+  "pages": [
+   "p.57"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "around",
+  "convert": "約 7.2 公里",
+  "n": 80,
+  "verify_note": "逐頁核對補列"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

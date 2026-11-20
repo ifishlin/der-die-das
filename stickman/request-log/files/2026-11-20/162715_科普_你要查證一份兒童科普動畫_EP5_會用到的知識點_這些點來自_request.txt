@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP5）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 33,
+  "claim_zh": "深處岩石因為壓力升高了熔點，所以保持固態",
+  "quote": "the melting point of rock deep underground [rises], as does the pressure, and the mantle remains solid",
+  "pages": [
+   "p.53"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）",
+  "verify_note": "這張照片找不到此 quote。照片頁腳印的頁碼是 51 不是 53，且整頁向左傾斜、左緣被裁切，每行開頭都看不到；可見內容全是在講火山噴發動力學（熔岩、浮石、火成碎屑流、8/24、龐貝被掩埋），沒有任何關於熔點／地函／壓力的句子。無法核對。"
+ },
+ {
+  "n": 34,
+  "claim_zh": "岩漿生成需要不尋常的壓力下降，或不尋常地混入物質（水）來降低熔點",
+  "quote": "magma creation requires an unusual drop in pressure, or an unusual pollution … to … lower its melting temperature",
+  "pages": [
+   "p.53"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）",
+  "verify_note": "同 n33：本頁無此句，內容與岩漿生成無關，且頁碼為 51、頁面傾斜裁切。無法核對。"
+ },
+ {
+  "n": 35,
+  "claim_zh": "水滲入地函是造就世界上許多最強火山的原因",
+  "quote": "The intrusion of water into the mantle is the process responsible for many of the world's most powerful volcanoes",
+  "pages": [
+   "p.53"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）",
+  "verify_note": "同 n33：本頁無提及水滲入地函，頁碼為 51、頁面傾斜裁切。無法核對。"
+ },
+ {
+  "n": 36,
+  "claim_zh": "水降低板塊熔點，促成了史上最具災難性的噴發之一（喀拉喀托，1883 年）",
+  "quote": "one of the most catastrophic eruptions in history … [Krakatoa], 1883",
+  "pages": [
+   "p.53"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（火山名與年份傾斜難辨，待重拍核對）",
+  "verify_note": "同 n33：本頁無提及喀拉喀托或 1883，頁碼為 51、頁面傾斜裁切。無法核對。"
+ },
+ {
+  "n": 37,
+  "claim_zh": "以龐貝這例子，非洲板塊往下隱沒到亞得里亞海／歐亞板塊之下，沿義大利東側",
+  "quote": "[Italy's boot / African plate] … beneath the Eurasian plate … Italy's east coast",
+  "pages": [
+   "p.53"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（板塊名傾斜難辨，待重拍核對）",
+  "verify_note": "同 n33：本頁無提及非洲／歐亞板塊或義大利板塊隱沒，頁碼為 51、頁面傾斜裁切。無法核對。"
+ },
+ {
+  "n": 38,
+  "claim_zh": "含水的海洋板塊隱沒到大陸板塊之下、潛入較熱深處，使地函熔化，較輕的岩漿上冒",
+  "quote": "When an oceanic plate with water in its structure submerges beneath a continental slab … the weakened mantle melts and the lighter magma bubbles [toward the surface]",
+  "pages": [
+   "p.53"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（傾斜頁，待重拍核對）",
+  "verify_note": "同 n33：本頁無提及海洋板塊隱沒使地函熔化，頁碼為 51、頁面傾斜裁切。無法核對。"
+ },
+ {
+  "n": 39,
+  "claim_zh": "（本頁無此知識點，需改標到正確頁或刪除）",
+  "quote": "（本頁無此內容，無法提供改正後 quote）",
+  "pages": [
+   "p.54"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（整段傾斜難辨，待重拍核對）",
+  "verify_note": "這一頁從頭到尾沒有出現 Limestone、CaCO3 或 CO2 等字。本頁可辨識、文字清晰，相關的岩漿成因段落講的是『水滲入板塊、降低熔點引發噴發』，不是『岩漿夾帶石灰岩受熱釋放 CO2』。quote「Limestone (CaCO3) … CO2」在 p.54 找不到，claim_zh 也沒有對應來源——這一點不屬於本頁（可能是別頁或抄錯頁碼）。convert 註記的『整段傾斜難辨』不成立，字其實看得清楚。"
+ },
+ {
+  "n": 40,
+  "claim_zh": "（此頁查無此內容）",
+  "quote": "（此頁無 Pliny the Elder，無法給改正 quote；疑似被分到錯的頁）",
+  "pages": [
+   "p.55"
+  ],
+  "type": "專家說法",
+  "who": "書上提到 Pliny the Elder",
+  "hedge": "",
+  "convert": "（整段傾斜難辨，待重拍核對）",
+  "verify_note": "照片其實很清楚（原本標「整段傾斜難辨」不成立）。整個跨頁（左頁書名欄 HOW TO SURVIVE、右頁章名欄 POMPEII）都沒有出現「Pliny the Elder」。唯一提到的人名是作者請教的火山學家「Petrone」。此知識點不在這一頁。"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

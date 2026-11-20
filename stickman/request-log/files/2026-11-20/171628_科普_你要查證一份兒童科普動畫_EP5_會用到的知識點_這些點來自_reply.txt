@@ -1,0 +1,61 @@
+All 8 claims researched and confirmed against sources. Here are the results:
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 81,
+  "verdict": "正確",
+  "sci": "老普林尼（Pliny the Elder）在西元 79 年維蘇威噴發時，率艦隊從 Misenum 出海救人，最後在對岸的 Stabiae 上岸，隔天被火山毒氣與灰嗆倒、死在海邊。他是小普林尼（Pliny the Younger）的舅舅，死後在遺囑中收小普林尼為養子。小普林尼沒跟著出海，事後寫信給史家 Tacitus 記下經過。",
+  "src": [["History.com, \"Pliny the Elder Died Trying to Save Friends from Vesuvius\"", "https://www.history.com/articles/pliny-the-elder-death-vesuvius"], ["University of Virginia, \"Eyewitness to the Eruption of A.D. 79\"（Pliny 書信）", "https://pompeii.iath.virginia.edu/pliny.html"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 82,
+  "verdict": "大致正確",
+  "sci": "維蘇威（Somma-Vesuvius）在青銅時代早期確實有一次比西元 79 年還大的「Avellino 噴發」（VEI 約 6），摧毀並封存了多處青銅時代聚落。Sevink 等人 2011 年發表的放射性碳定年給出「1995 ± 10 calBC」這個常被引用的數字，所以書上的 1995 BCE 來自真實文獻；但這個年代有爭議，後續研究提出約 1890 BCE 甚至更早的估計，學界尚無定論。",
+  "src": [["Sevink et al. 2011, Quaternary Science Reviews 30:1035–1046, \"Robust date for the Bronze Age Avellino eruption: 3945 ± 10 calBP (1995 ± 10 calBC)\"", "https://www.sciencedirect.com/science/article/abs/pii/S0277379111000382"], ["Wikipedia, \"Avellino eruption\"（整理各家定年與後續質疑，供找原始出處）", "https://en.wikipedia.org/wiki/Avellino_eruption"]],
+  "fix": "大約四千年前，維蘇威有過一次比龐貝那次還猛的大爆發，把當時一整群青銅時代的人都埋了。（不要講死「西元前 1995 年」，因為確切年份學界還在吵；用「大約四千年前」比較穩。）",
+  "confidence": "中"},
+
+ {"n": 83,
+  "verdict": "正確",
+  "sci": "西元 79 年噴發時，高空盛行風把火山柱吹向東南（SSE），火山灰和浮石主要落在維蘇威東南方的龐貝一帶（南側堆積厚達約 2.8 公尺）。龐貝正位於火山的南／東南方，所以往南逃就是朝落灰軸線跑，普林尼式火山雲會持續往你頭上灑灰和浮石。",
+  "src": [["Wikipedia, \"Eruption of Mount Vesuvius in 79 AD\"（風向 SSE、南側堆積 2.8 m）", "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"], ["Michigan Tech, \"Vesuvio: The eruption of A.D. 79\"", "https://www.geo.mtu.edu/volcanoes/boris/mirror/mirrored_html/VESUVIO_79.html"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 84,
+  "verdict": "正確",
+  "sci": "這句出自小普林尼寫給 Tacitus 的信（第 6.20 封），描述噴發造成的黑暗。常見英譯為那不是無月或多雲夜晚的暗，而「像在關起來的房間裡把燈熄掉」。書上的引用忠於原意（closed/locked room 只是譯法差異）。",
+  "src": [["Roman Letters, Pliny the Younger to Tacitus, Letter 6.20（原文與英譯）", "https://romanletters.org/letters/pliny_younger/6016/?view=original"], ["WiredPen, \"Pliny the Younger, letters on the eruption of Mount Vesuvius\"", "https://wiredpen.com/resources/pliny-the-younger-letters-on-the-eruption-of-mount-vesuvius/"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 85,
+  "verdict": "正確",
+  "sci": "Herculaneum（赫庫蘭尼姆）位在維蘇威西側，離火山口約 7 公里（約 4.3 英里），比東南方的龐貝更靠近火山。書上「勉強四英里」是合理的約略值，方向（西側）正確。",
+  "src": [["Wikipedia, \"Herculaneum\"（位於維蘇威西側約 7 km）", "https://en.wikipedia.org/wiki/Herculaneum"], ["Britannica, \"Herculaneum\"", "https://www.britannica.com/place/Herculaneum"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 86,
+  "verdict": "正確",
+  "sci": "因為火山柱被盛行風吹向東南，噴發最初十幾個小時的浮石和火山灰幾乎全落在龐貝一側；位於火山西側的 Herculaneum 在這個階段只受到輕微波及，大致躲過了落灰與浮石。",
+  "src": [["Wikipedia, \"Eruption of Mount Vesuvius in 79 AD\"（Herculaneum 在第一階段僅輕微受影響）", "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"], ["Wikipedia, \"Herculaneum\"", "https://en.wikipedia.org/wiki/Herculaneum"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 87,
+  "verdict": "正確",
+  "sci": "噴發後期火山柱崩塌，產生火山碎屑流／湧浪。第一波高溫火山碎屑湧浪（S1）橫掃 Herculaneum，高熱氣體與灰讓城裡的人幾乎瞬間死亡——骨骸多呈「生前姿勢」的屍體痙攣，正是瞬間高溫致死的特徵（海邊船屋裡約 300 多人同時罹難）。",
+  "src": [["Giordano et al. 2023, Scientific Reports, \"A new hazard scenario at Vesuvius: deadly thermal impact of detached ash cloud surges in 79 CE at Herculaneum\"", "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10079856/"], ["Mastrolorenzo et al., \"Herculaneum victims of the 79 AD Vesuvius eruption: a review\"", "https://www.researchgate.net/publication/337651967_The_Herculaneum_victims_of_the_79_AD_Vesuvius_eruption_a_review"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 88,
+  "verdict": "正確",
+  "sci": "多項研究從炭化木材、焦痕與近年的古地磁、玻璃化組織分析，估計吞沒 Herculaneum 的第一波火山灰雲溫度約在攝氏 500 度上下（2023 年研究給出約 555–495 ℃）。華氏 930 度（≈ 攝氏 499 度）正落在這個主流範圍內。註：近年研究指出這種溫度足以瞬間致死，但不足以把人體「汽化」，所以旁白可講高溫致命，別說整個人瞬間蒸發。",
+  "src": [["Giordano et al. 2023, Scientific Reports（第一波湧浪約 555–495 ℃）", "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10079856/"], ["Live Science, \"Vesuvius victims baked slowly as they died\"（約 500 ℃ / 932 ℉）", "https://www.livescience.com/vesuvius-victims-herculaneum.html"]],
+  "fix": "",
+  "confidence": "高"}
+]}
+```

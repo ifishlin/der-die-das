@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP5）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 41,
+  "claim_zh": "（此頁查無此內容）",
+  "quote": "（此頁無此句，無法給改正 quote）",
+  "pages": [
+   "p.55"
+  ],
+  "type": "描述",
+  "who": "書上引 Pliny",
+  "hedge": "",
+  "convert": "（整段傾斜難辨，待重拍核對）",
+  "verify_note": "照片清楚可讀，頁上完全沒有「落下的雲讓白天變黑夜」或「closed room with the lamp put out」這類描述，也沒有引 Pliny。此頁右頁講的是岩漿如何生成、左頁講逃生方向與熔岩黏度。"
+ },
+ {
+  "n": 42,
+  "claim_zh": "逃生只有兩個可行方向：往北朝那不勒斯（Naples）或往南朝 Stabiae 鎮；兩邊都有問題，但好在都不至於被熔岩淹死。",
+  "quote": "Your only two viable options, Petrone tells me, will be to run north, toward Naples, or south, toward the town of Stabiae. There are issues with both, but fortunately none of those issues involves melting in a river of lava.",
+  "pages": [
+   "p.55"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（整段傾斜難辨，待重拍核對）",
+  "verify_note": "方向對（往北 Naples、往南 Stabiae），但書上沒有說「有證據顯示往北和往南都有人成功逃生」，也沒有「通往那不勒斯的路維護良好」。書是把南北當成『僅有的兩個可行選項』，並說兩邊都有問題，只是不至於被熔岩淹死。claim 加料（successful escapes、road well maintained 均非書上文字）。"
+ },
+ {
+  "n": 43,
+  "claim_zh": "（原 n43 的 pyroclastic surge 內容此頁查無；此頁對 Herculaneum 的實際敘述見 missing）",
+  "quote": "archaeologists have found a large group of bodies in a boathouse in nearby Herculaneum who appear to have attempted just that",
+  "pages": [
+   "p.55"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（整段傾斜難辨，待重拍核對）",
+  "verify_note": "此頁沒有「維蘇威第一波火山碎屑湧浪流經 Herculaneum」。Herculaneum 在本頁只出現在另一個脈絡：考古學家在 Herculaneum 一處船屋發現大批試圖搭船逃生的遇難者遺體。n43 的因果句不在這一頁。"
+ },
+ {
+  "n": 44,
+  "claim_zh": "Herculaneum 位在火山噴氣口西邊僅四英里",
+  "quote": "Herculaneum sits barely four miles west of the volcanic vent",
+  "pages": [
+   "p.56"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "barely",
+  "convert": "約 6.4 公里",
+  "verify_note": "此句不在這張照片內。p.56 講的是普林尼式柱、James Moore、火山吸引聚居；右頁結尾才首次帶出 Herculaneum。『barely four miles west of the volcanic vent』這類細節在後一頁，頁碼標錯。"
+ },
+ {
+  "n": 45,
+  "claim_zh": "噴發頭幾個小時，盛行風讓 Herculaneum 大致避開了多數落灰與浮石",
+  "quote": "for the first few hours of the eruption the prevailing winds largely spared it from most of the ash and pumice",
+  "pages": [
+   "p.56"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "largely",
+  "convert": "",
+  "verify_note": "此句不在這張照片內（盛行風讓 Herculaneum 避開落灰浮石的說法，p.56 沒有，在後頁）。"
+ },
+ {
+  "n": 46,
+  "claim_zh": "維蘇威觸及更深岩漿、引發初次火山碎屑流時，受熱氣體與火山灰掃過 Herculaneum，幾乎瞬間殺死城裡所有人",
+  "quote": "the heated gas and ash blew through Herculaneum and killed everyone there almost instantly",
+  "pages": [
+   "p.56"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "almost",
+  "convert": "",
+  "verify_note": "此句不在這張照片內（受熱氣體與火山灰幾乎瞬間殺死城裡所有人，p.56 沒有，在後頁）。"
+ },
+ {
+  "n": 47,
+  "claim_zh": "考古學家在城裡發現焦痕，顯示有一團極高溫的雲吞沒了 Herculaneum 的居民",
+  "quote": "Archaeologists have found scorch marks in the city that suggest [a temperature] engulfed Herculaneum's citizens",
+  "pages": [
+   "p.56"
+  ],
+  "type": "數字",
+  "who": "考古學家",
+  "hedge": "suggest",
+  "convert": "（溫度數字辨讀不確定，見 reshoot，待核對）",
+  "verify_note": "此句不在這張照片內（考古學家發現焦痕／溫度，p.56 沒有，在後頁）。"
+ },
+ {
+  "n": 48,
+  "claim_zh": "落灰後來包住罹難者，考古學家得以用石膏灌回這些空腔、重現最後姿態",
+  "quote": "archaeologists were able to refill these spaces with plaster and re-create final poses",
+  "pages": [
+   "p.56"
+  ],
+  "type": "描述",
+  "who": "考古學家",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "此句不在這張照片內（石膏灌空腔重現姿態，p.56 沒有，在後頁）。"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

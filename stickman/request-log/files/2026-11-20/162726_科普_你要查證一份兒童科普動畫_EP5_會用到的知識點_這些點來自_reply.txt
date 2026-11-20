@@ -1,0 +1,61 @@
+I have enough to assess all the real claims. Here are the results.
+
+```json
+{"ep": "EP5", "results": [
+ {"n": 41,
+  "verdict": "找不到出處",
+  "sci": "這一點沒有可查證的知識內容——claim 與 quote 都標記「此頁查無此內容」，等於沒有主張可以查。查核團隊自己的 verify_note 也說該頁沒有「落下的雲讓白天變黑夜」或「熄燈密室」這類描述，也沒有引 Pliny。沒有命題就無從判定對錯。",
+  "src": [["（無可查證命題，未進行外部查證）", ""]],
+  "fix": "這一點建議直接刪掉、不要寫進旁白；若想保留『白天變黑夜』的畫面感，那其實是小普林尼（Pliny the Younger）書信裡對火山灰雲遮天的描述，要用請另外查小普林尼第 6 卷第 16、20 封信的原文再寫。",
+  "confidence": "高"},
+
+ {"n": 42,
+  "verdict": "大致正確",
+  "sci": "方向在地理上成立：那不勒斯（古 Neapolis）在維蘇威西北、Stabiae 在東南/南。更關鍵的科學點是——西元 79 年這次是『普林尼式』爆炸噴發，不是會流出熔岩的噴發，致命的是火山碎屑湧浪（pyroclastic surge）和落下的浮石火山灰，不是『熔岩之河』，所以書上說『不會被熔岩淹死』是對的。但要注意：往南的 Stabiae 本身後來也被波及（老普林尼就死在 Stabiae 海邊），南北兩邊其實都不安全。claim 另外加的『有證據顯示南北都有人成功逃生』『往那不勒斯的路維護良好』無法查證，建議拿掉。",
+  "src": [["Eruption of Mount Vesuvius in 79 AD（普林尼式噴發、無熔岩流、致命為火山碎屑湧浪）", "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"], ["HISTORY: The eruption of Mount Vesuvius in 79 AD", "https://www.history.co.uk/article/the-eruption-of-mount-vesuvius-in-79-ad-and-the-destruction-of-pompeii"]],
+  "fix": "可以說：『能跑的只有兩條路——往北去那不勒斯，或往南去 Stabiae。好消息是維蘇威不會噴出像河一樣的熔岩；壞消息是它噴的是又燙又快的氣體火山灰，南邊北邊其實都躲不太掉，跑得夠早才是重點。』不要講『兩邊都有人成功逃走』『路況很好』這些查不到的細節。",
+  "confidence": "中"},
+
+ {"n": 43,
+  "verdict": "正確",
+  "sci": "quote 本身（考古學家在 Herculaneum 一處船屋發現大批試圖搭船逃生的遇難者遺體）是確有其事：1980–90 年代在 Herculaneum 古海岸的船庫拱室（boat chambers / fornici）陸續挖出約 300 具骸骨，被認為是等待海上救援或準備搭船時，被火山碎屑湧浪瞬間殺死。至於原 n43 那句『第一波火山碎屑湧浪流經 Herculaneum』的因果句，查核團隊說不在這一頁，這點本身在科學上是對的（見 n46），只是頁碼對不上。",
+  "src": [["National Geographic: Uncovering Herculaneum's haunting final moments（船屋骸骨群）", "https://www.nationalgeographic.com/history/article/mount-vesuvius-victims-herculaneum-archival"], ["Mastrolorenzo et al. 2001, Nature 410:769–770 — Herculaneum victims of Vesuvius in AD 79", "https://www.nature.com/articles/35071167"]],
+  "fix": "可以說：『考古學家在 Herculaneum 的海邊船庫裡，發現一大群擠在一起的遺骸——他們本來想從海上逃走，卻在等船的時候被火山一瞬間追上。』",
+  "confidence": "高"},
+
+ {"n": 44,
+  "verdict": "大致正確",
+  "sci": "Herculaneum 位在維蘇威火山口的西側，距離主流數字約 7 公里（約 4.3 英里）。書上寫『barely four miles（將近 4 英里，約 6.4 公里）west of the vent』比實測略短一點，但方向（西）正確、量級也對，屬可接受的概數；國家地理等來源也常直接寫『約七公里／四英里』。",
+  "src": [["National Geographic: Herculaneum（crater 距城約七公里／四英里）", "https://www.nationalgeographic.com/history/article/mount-vesuvius-victims-herculaneum-archival"], ["Wikipedia: Herculaneum（位置與距維蘇威距離，引原始資料）", "https://en.wikipedia.org/wiki/Herculaneum"]],
+  "fix": "可以說：『Herculaneum 就在維蘇威西邊、大概七公里外』——用『七公里』比『四英里』對台灣小朋友更好懂，數字也更貼近實測。",
+  "confidence": "高"},
+
+ {"n": 45,
+  "verdict": "正確",
+  "sci": "噴發頭幾個小時，高空盛行風把噴發柱吹向東南方的 Pompeii 和 Stabiae，所以浮石和火山灰幾乎都落在那一側；位在火山西側的 Herculaneum 在這段時間只落了很薄一層浮石，大致躲過初期的落灰落石。這是火山地層學的共識。",
+  "src": [["Eruption of Mount Vesuvius in 79 AD（噴發柱被風吹向東南、Herculaneum 西側初期灰少）", "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"], ["Wikipedia: Herculaneum（西側、初期僅薄層浮石）", "https://en.wikipedia.org/wiki/Herculaneum"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 46,
+  "verdict": "正確",
+  "sci": "噴發柱塌下來後產生的火山碎屑流/湧浪，最先在半夜左右掃過火山西側的 Herculaneum，又燙又快的氣體和火山灰幾乎在瞬間殺死城裡所有人——骸骨的姿態自然、沒有掙扎痛苦的扭曲，顯示死亡來得非常快。這是主流結論。（book 把它歸因於『觸及更深岩漿』的機制較細節、學界講法不一，但『湧浪幾乎瞬間殺死所有人』這個結果是對的。）",
+  "src": [["Mastrolorenzo et al. 2001, Nature 410:769–770 — Herculaneum victims of Vesuvius in AD 79", "https://www.nature.com/articles/35071167"], ["LiveScience: Vesuvius victims（Herculaneum 居民被湧浪瞬間致死）", "https://www.livescience.com/vesuvius-victims-herculaneum.html"]],
+  "fix": "可以說：『第一波又燙又急的氣體火山灰，半夜就先撲向西邊的 Herculaneum，幾乎在一瞬間奪走全城人的性命。』不用特別強調『因為碰到更深的岩漿』——那個機制比較不確定。",
+  "confidence": "高"},
+
+ {"n": 47,
+  "verdict": "正確",
+  "sci": "考古學家在 Herculaneum 骨骸上發現高溫痕跡（骨頭爆裂、牙齒與骨質的熱變化等），推估湧浪抵達時溫度高達約 500℃（有研究甚至推到 500℃ 以上），足以讓居民幾乎瞬間死亡；2020 年還有一篇研究報告一名罹難者腦組織被高溫玻璃化（vitrified）的罕見現象。確切溫度數字各研究略有出入，但『極高溫雲吞沒居民』的判定成立。",
+  "src": [["Mastrolorenzo et al. 2001, Nature 410:769–770（約 500℃ 熱致瞬間死亡）", "https://www.nature.com/articles/35071167"], ["The Conversation: Brain vitrification（腦組織玻璃化，高溫證據）", "https://theconversation.com/brain-vitrification-new-research-shows-how-the-vesuvius-eruption-turned-a-mans-brain-to-glass-250918"]],
+  "fix": "可以說：『考古學家從骨頭上的燒灼痕跡算出來，撲過來的那團雲熱到大約五百度——幾乎是一瞬間就結束了一切。』確切溫度不用咬死，說『大約五百度那麼燙』即可。",
+  "confidence": "高"},
+
+ {"n": 48,
+  "verdict": "大致正確",
+  "sci": "『火山灰包住遺體、遺體腐爛後留下空腔、再灌石膏重現最後姿態』這套技術確有其事，是 1863 年由考古學家 Fiorelli 在 Pompeii（龐貝）發明的，石膏像連衣服皺褶、表情都保留下來。但有一個重要區別：石膏灌模主要發生在 Pompeii；Herculaneum 因為被高溫湧浪掃過，遺體是碳化/只剩骨骸，並沒有留下可灌石膏的空腔。所以這句若放在 Herculaneum 的脈絡會錯，放在 Pompeii 才對。",
+  "src": [["Smithsonian Magazine: Haunting Casts Preserving Pompeii Victims' Final Moments", "https://www.smithsonianmag.com/smart-news/haunting-casts-preserving-pompeii-victims-final-moments-2000-years-ago-go-on-display-in-a-solemn-new-exhibition-180988350/"], ["Archaeological Park of Pompeii: The Permanent Exhibition of Casts（Fiorelli 石膏灌模技術）", "https://www.pompeionline.net/en/archaeological-park-of-pompeii/the-permanent-exhibition-of-casts-and-organic-remains-from-pompeii"]],
+  "fix": "要講清楚是『龐貝』：『在龐貝，火山灰把遇難者包起來，身體腐爛後留下人形空洞；一百多年前有位考古學家想到往洞裡灌石膏，就把他們最後一刻的姿勢原封不動翻了出來。』不要把這套石膏像說成 Herculaneum——那邊的人只剩骨頭，是用別的方式研究的。",
+  "confidence": "高"}
+]}
+```
