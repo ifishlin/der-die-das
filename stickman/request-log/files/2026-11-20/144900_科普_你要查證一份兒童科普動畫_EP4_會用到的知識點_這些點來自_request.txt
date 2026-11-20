@@ -1,0 +1,140 @@
+
+你要查證一份兒童科普動畫（EP4）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 17,
+  "claim_zh": "抵達時會看到半完工的吉薩金字塔露出高原之上約 61 公尺（200 英尺）高。",
+  "quote": "rising 200 feet",
+  "pages": [
+   "p.35"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "數字待重拍確認",
+  "convert": "200 英尺≈61 公尺",
+  "verify_note": "引文 'rising 200 feet' 書上逐字相符、數字正確（200 feet），hedge『數字待重拍確認』可解除。但 claim_zh 加了書上沒有的『約』──書上寫法是確定的 'rising 200 feet above the plateau'（露出高原之上 200 英尺），不該添加約略語氣。"
+ },
+ {
+  "n": 18,
+  "claim_zh": "埃及學家長久以來假設蓋金字塔的工人一定是奴隸。",
+  "quote": "Egyptologists had long assumed the pyramid workers must have been slaves",
+  "pages": [
+   "p.35"
+  ],
+  "type": "專家說法",
+  "who": "埃及學家（Egyptologists，書上未指名）",
+  "hedge": "assumed（假設）",
+  "convert": "",
+  "verify_note": "這句不在 p.35。本頁（ANCIENT EGYPT 頁）結束於 'the massive work camp you'll see beneath it.'，完全沒有出現 Egyptologists 假設工人是奴隸的內容。應在下一頁（p.36），需重新查證並更正頁碼；無法從本頁提供更正引文。"
+ },
+ {
+  "n": 19,
+  "claim_zh": "工人的營區直到 1990 年才被發現。",
+  "quote": "didn't discover the work camp until 1990",
+  "pages": [
+   "p.35"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "這句不在 p.35。本頁沒有『1990 年才發現營區』的字句（應在 p.36）。無法從本頁提供更正引文。"
+ },
+ {
+  "n": 20,
+  "claim_zh": "營區是一名遊客被露出沙面的石牆絆倒後才被發現，揭露出一座城。",
+  "quote": "tripped over a stone wall",
+  "pages": [
+   "p.35"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "verify_note": "這句不在 p.35。本頁沒有『遊客被石牆絆倒』的字句（應在 p.36）。無法從本頁提供更正引文。"
+ },
+ {
+  "n": 21,
+  "claim_zh": "男人工作時穿纏腰布（kilt）、裡面不穿；女人穿窄長裙或有肩帶的披肩。",
+  "quote": "shawls with shoulder straps",
+  "pages": [
+   "p.36"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "verify_note": "這頁找不到「shawls with shoulder straps」，也沒有任何纏腰布、披肩、男女服裝的敘述。p.36 整頁在講工人伙食（牛肉、鯰魚燉菜、啤酒），與這點無關。可能頁碼標錯，須重拍／改頁碼確認。"
+ },
+ {
+  "n": 22,
+  "claim_zh": "當地氣溫常達華氏 110 度。",
+  "quote": "110 degrees",
+  "pages": [
+   "p.36"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "數字待重拍確認",
+  "convert": "華氏 110 度≈攝氏 43 度",
+  "verify_note": "這頁找不到「110 degrees」，也沒有任何氣溫、華氏度數的敘述。整頁在講伙食，與氣溫無關。可能頁碼標錯。"
+ },
+ {
+  "n": 23,
+  "claim_zh": "斜坡（ramp）系統的設計，據埃及學家 Mark Lehner 說，是金字塔研究裡「最棘手的問題之一」。",
+  "quote": "one of the thorniest problems",
+  "pages": [
+   "p.36"
+  ],
+  "type": "專家說法",
+  "who": "Mark Lehner（埃及學家）",
+  "hedge": "引文與頁碼待重拍確認",
+  "convert": "",
+  "verify_note": "這頁找不到「one of the thorniest problems」，也沒有 Mark Lehner、斜坡（ramp）或建造方法的敘述。整頁在講伙食與啤酒，與斜坡無關。可能頁碼標錯。"
+ },
+ {
+  "n": 24,
+  "claim_zh": "工人早餐吃得飽飽的，有啤酒、麵包和牛腳。",
+  "quote": "a belly full of beer, bread, and cow's feet",
+  "pages": [
+   "p.37"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": "",
+  "verify_note": "quote 是書上真句子的片段（原文「with a belly full of beer, bread, and cow's feet」），但 claim_zh 漏掉了早餐還有「牛腳（cow's feet）」這一項，只講麵包配啤酒。"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

@@ -1,0 +1,22 @@
+I've read the page carefully. The photo is a two-page spread; the left page is **p.42** (page number "42" visible at bottom-left), the right is p.43. I only checked p.42 as instructed.
+
+Key finding: **p.42 only contains the "Bent Pyramid" content (n40) plus a footnote about the Hemiunu/Ankhhaf authorship debate.** The quotes for n36–n39 (mastaba, wedding cake, smooth-faced pyramid, "director of all royal projects") do **not** appear on p.42 — that content is on the preceding page (the page opens mid-sentence: "though that research hardly came without cost."). This matches the hedge note "片段辨讀，待重拍確認".
+
+```json
+{"page": "p.42",
+ "checks": [
+  {"n": 36, "ok": false, "problem": "p.42 上找不到 quote「director of all royal projects」，也沒有講 Hemiunu 是最有權勢官員／所有王室工程負責人。p.42 只有關於 Hemiunu 的註腳，而且註腳說的是：過去認為他是『chief pyramid architect』，Ankhhaf 才是『the project's director』。此知識點疑似標錯頁（原文應在前一頁 p.41），需重拍 p.41 確認。", "quote": "", "claim_zh": ""},
+  {"n": 37, "ok": false, "problem": "p.42 上沒有「mastaba」這個字，也沒有 mastaba 是長椅形陵墓的說明。此頁開頭即為句子中段（接續前頁），mastaba 內容應在前一頁 p.41，標錯頁，需重拍 p.41 確認。", "quote": "", "claim_zh": ""},
+  {"n": 38, "ok": false, "problem": "p.42 上沒有「like a giant wedding cake」，也沒有 Djoser 階梯金字塔、Imhotep 的描述。內容疑似在前一頁 p.41，標錯頁，需重拍 p.41 確認。", "quote": "", "claim_zh": ""},
+  {"n": 39, "ok": false, "problem": "p.42 上沒有「smooth-faced pyramid」這個片語。此頁只講 Snefru 前兩次蓋金字塔的錯誤與彎曲金字塔，沒有『改良技術造出平滑面金字塔』的句子。內容疑似在前一頁 p.41，標錯頁，需重拍 p.41 確認。", "quote": "", "claim_zh": ""},
+  {"n": 40, "ok": true, "problem": "", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "Snefru 前兩次蓋金字塔犯的錯：把金字塔蓋在鬆軟地基上，又把邊坡角度做得太陡；陡峭的側面讓外緣承受巨大壓力，使金字塔隨著增高逐漸陷入沙中，第一次在完工前就倒塌。", "quote": "He built his pyramids on soft ground and then compounded this mistake by angling the sides too steeply", "pages": ["p.42"], "type": "描述", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "大金字塔總建築師的身分有爭議：二十世紀多數時間學界依 Hemiunu 墓（位於大金字塔下方）中的象形文字，認定他是首席金字塔建築師；但 2013 年在紅海附近發現一名建造者的日記，使此說受到質疑——這份被稱為已知最古老的莎草紙，由一位名叫 Merer 的官員所寫，他負責把金字塔的白色石灰岩石塊從 Tura 的採石場運到 Giza；Merer 記載胡夫同父異母的兄弟 Ankhhaf 才是工程的負責人。", "quote": "Merer writes that Khufu's half brother Ankhhaf served as the project's director", "pages": ["p.42"], "type": "描述", "who": "作者（註腳）", "hedge": "", "convert": ""}
+ ],
+ "unclear": [
+  {"where": "p.42 底部註腳", "problem": "照片旋轉 90 度、註腳字體很小，人名與地名拼寫（Hemiunu、Merer、Ankhhaf、Tura、Giza）雖可辨讀但建議重拍正放大圖以逐字確認。"},
+  {"where": "n36–n39 對應原文", "problem": "這四點的 quote 都不在 p.42（本頁開頭即接續前一頁的句子），原文應在 p.41；需重拍 p.41 才能核對 mastaba、wedding cake、smooth-faced pyramid、Hemiunu 職稱等 quote。"}
+ ]}
+```

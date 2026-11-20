@@ -1,0 +1,80 @@
+{
+ "scene_id": "EP3-18",
+ "notes": "整集最後一場（下集預告），兩句旁白各一個單人鏡頭，用 A／B 對切做對比笑點：先 PROF 俯身攤地圖、眼睛發亮，點出『又要出任務』；再切 HERO 抱手臂、面無表情，點出『這次先收錢』。兩句旁白一人一句，剛好一人一鏡，不需要多餘的建立鏡頭。PROF 鏡頭刻意讓相機往北看，背景帶到北牆時光機圓環，呼應『另一個時代』。場內只有 HERO 和 PROF，沒有大動物，所以不需要加拍遠一級。HERO 仍穿猛獁毛皮大衣（接前一場最後一句）。地圖只畫圖案、不能有字。",
+ "blocking": [
+  {
+   "who": "PROF",
+   "path": [
+    {"t": "1", "cell": "T7", "facing": "SE", "doing": "俯身在工作桌上攤開一張新地圖，雙手按著地圖兩端攤平，眼睛發亮、咧嘴興奮地盯著地圖"},
+    {"t": "2", "cell": "T7", "facing": "SE", "doing": "同上，維持俯身看地圖、眼睛發亮"}
+   ]
+  },
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "M11", "facing": "NE", "doing": "站著，雙臂交叉抱在胸前，斜眼看向興奮的博士"},
+    {"t": "2", "cell": "M11", "facing": "NE", "doing": "同上，面無表情抱著手臂，一臉不想再被坑"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-18-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "下一集，博士又盯上了另一個時代。"
+   ],
+   "subject": "PROF",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "PROF 居中偏左，俯身壓著攤開的地圖；地圖在他面前的桌面上、畫面右下方前景；背景深處是北牆的時光機圓環（呼應『另一個時代』）",
+   "screen_direction": "off_down",
+   "action": "博士雙手把新地圖攤平按在桌上，俯身盯著地圖，眼睛睜大發亮、咧嘴興奮大笑——鎖定下一個時代的那一刻",
+   "camera": {
+    "cell": "T11",
+    "height_m": "1.5",
+    "look_at": "PROF",
+    "distance_m": "2.0"
+   },
+   "cast": [
+    {"who": "PROF", "visible": "頭、臉、上半身到腰、按著地圖的雙手", "frame_height": "約佔畫高 70%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). PROF's face and hands are pure paper white. PROF is leaning forward over a table, both hands spreading a new map flat on the tabletop in front of him; the map shows only hand-drawn pictures and symbols, absolutely no letters or numbers anywhere on it. His eyes are wide and gleaming, glowing with manic excitement, and he has a huge eager open-mouthed grin as he stares down at the map. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side of the table, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上、front34 只是大致做到；若 PROF 畫太小或下緣掉到膝蓋，剪輯時推近到胸上（MS→MCU）強調發亮的眼睛。"
+  },
+  {
+   "id": "EP3-18-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "這一次，你決定先把錢拿到手，再上時光機。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 居中，雙臂交叉抱胸，側眼瞥向畫面外右邊（興奮的博士）；背景是空的實驗室地板和南側門牆",
+   "screen_direction": "off_right",
+   "action": "HERO 抱著手臂站著，一眉微挑、面無表情斜眼瞥向博士——打定主意這次要先收錢的那一刻",
+   "camera": {
+    "cell": "P8",
+    "height_m": "1.5",
+    "look_at": "HERO",
+    "distance_m": "2.1"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "頭、臉、上半身到腰、交叉的雙臂", "frame_height": "約佔畫高 65%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing a shaggy mammoth-fur coat, short pants and slippers, no hat and no backpack. HERO's face and hands are pure paper white. HERO is standing still with his arms crossed tightly over his chest, giving a flat, deadpan, thoroughly unimpressed look with one eyebrow raised, glancing sideways out of frame to the right. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上；若身體入鏡過多，剪輯時推近到胸上（MS→MCU）強調面無表情和交叉的手臂。"
+  }
+ ]
+}

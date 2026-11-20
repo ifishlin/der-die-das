@@ -1,0 +1,292 @@
+{
+ "scene_id": "EP3-13",
+ "notes": "這一場是畫不出實景的講解，全部畫成生存指南內頁的手繪插圖（粗黑線、平塗色，跟角色設定圖同畫風，不是平面圖表、不是照片，畫面上一個字都不能有）。沒有 HERO、沒有真 MAMMOTH 同框，插圖裡的人是跟 HERO 同畫風的純白火柴人路人（不是 HERO 本人），動物是卡通畫風、自然顏色。沒有地圖、沒有走位：blocking 空、camera.cell／look_at／height／distance 一律 N/A、t 一律 0、不用加拍遠一級。13 句旁白拆成 8 個鏡頭：先用空拍遠景建立「三面陷阱」的地形（1-3），再到挖掘現場帶出一百多頭猛獁象（4），接著用兩張對照鏡頭演「舊說法：撿屍」（5-6）與「新證據：被挑來獵」（7），然後兩張特寫插入關鍵鐵證——肋骨裡的燧石矛尖（8-9）與穿透皮脂的剖面（10-11），最後用戰利品堆（12）和人象對峙（13）收尾，對峙鏡頭同時當作錨點，銜接下一場『現在，輪到你們了』。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP3-13-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "在今天波蘭的克拉科夫，有一個地方，叫做 Spadzista。",
+    "它在一座小山丘上，北邊是山壁，東邊和西邊，是窪地和峽谷。",
+    "三面都過不去，就像一個陷阱。"
+   ],
+   "subject": "Spadzista 遺址地形（小山丘＋北面山壁＋東西窪地峽谷）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "小山丘在畫面正中央；上緣（北側）一道高聳陡峭的岩壁擋在丘後；左右兩側是深陷的窪地和狹窄峽谷；只有下緣（南側）有一條緩坡開口通上丘頂，整座丘被三面天然屏障圍住，像一個陷阱。",
+   "screen_direction": "N/A",
+   "action": "從高空俯瞰整個遺址，一眼看出只有一個入口、三面都是過不去的峭壁與深溝。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "小山丘遺址",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration (not a photo, not a flat diagram) of a small grassy hill seen from high in the sky. Shot size: Extreme Wide Shot (EWS). The hill is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. Along the top edge a tall steep rocky cliff wall rises behind the hill; on the left and right sides deep sunken hollows and narrow ravines cut down around it; only the bottom side has a gentle open slope leading up to the hilltop, so the hill is boxed in on three sides like a natural trap. Natural earthy green and brown colours. The picture has no people and no animals in it.",
+   "untested": [
+    "hand-drawn survival-guide illustration (not a photo, not a flat diagram)",
+    "地形內容描述（cliff/ravines/trap）非實測表句"
+   ],
+   "remedy": "aerial 只在配 EWS 時成功，這張正是 EWS aerial；若人物/物件被縮小不影響（本張無角色）。"
+  },
+  {
+   "id": "EP3-13-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "考古學家在這裡，挖出了一百多頭猛獁象。"
+   ],
+   "subject": "考古學家挖掘現場與成堆的猛獁象骨頭",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "畫面散布大量白色猛獁象大骨頭和彎曲象牙，堆得到處都是；幾個穿現代工作服的火柴人考古學家蹲在骨堆之間，用小刷子和小工具清理。",
+   "screen_direction": "N/A",
+   "action": "考古學家低頭專注地刷土、清理，一大片數不清的猛獁象骨頭鋪滿地面，強調數量驚人。",
+   "action_note": "",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "挖掘現場",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "考古學家（插圖火柴人路人，純白）",
+     "visible": "全身，低頭蹲著",
+     "frame_height": "約 3 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration of an archaeological dig. Shot size: Wide Shot (WS). The whole dig is clearly visible with a lot of the surroundings around it. Camera angle: High angle: the camera is high above the dig, looking down at it. The ground is covered with a huge scattered pile of big white mammoth bones and long curved tusks, far too many to count. Among the bones crouch a few plain stick-figure people with pure paper-white heads and bodies, wearing simple modern work clothes, their faces calm and focused as they brush dirt off the bones with small tools. The picture has only these stick-figure diggers and the mammoth bones.",
+   "untested": [
+    "挖掘現場內容描述非實測表句"
+   ],
+   "remedy": "WS 常被畫成 FS，但本張靠大量骨堆鋪滿地面維持廣度；high 只輕微往下看，可接受。"
+  },
+  {
+   "id": "EP3-13-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "以前，很多科學家都覺得，古人只是撿死掉的猛獁象來吃，",
+    "不是真的去獵。"
+   ],
+   "subject": "一頭倒地死去的猛獁象，火柴人路人徒手撿肉（沒有武器）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面中央一頭側躺死掉的猛獁象（閉眼、舌頭外露）；左右幾個純白火柴人路人圍在旁邊，徒手撿肉，手上都沒有矛、沒有任何武器。",
+   "screen_direction": "N/A",
+   "action": "火柴人彎腰從死猛獁象身上撿肉，表情平靜、只是在撿東西吃，完全沒有打獵的動作或武器。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "死去的猛獁象",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "猛獁象（死，插圖，自然棕色長毛）",
+     "visible": "側躺全身",
+     "frame_height": "約 5 成"
+    },
+    {
+     "who": "火柴人路人（插圖，純白）",
+     "visible": "全身，彎腰",
+     "frame_height": "約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration. Shot size: Wide Shot (WS). Camera direction: side view, seen exactly from the side. Camera angle: Eye-level, looking straight ahead. In the centre lies one dead cartoon woolly mammoth on its side, eyes closed, shaggy natural brown fur, curved tusks on the ground. Around it stand a few plain stick-figure people with pure paper-white heads and bodies, bending over and picking meat off the carcass with their bare hands, calm and matter-of-fact faces. None of the people hold any spear or weapon of any kind. The picture has only the dead mammoth and these stick-figure people.",
+   "untested": [
+    "死猛獁象＋撿屍內容描述非實測表句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-13-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "可是這些猛獁象死掉的年紀，不像是自然老死的，比較像是被挑出來獵的。"
+   ],
+   "subject": "拿矛的火柴人獵人，從一群活猛獁象裡挑出特定一頭",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "畫面右側一小群站著的活猛獁象（大小不一）；左側幾個拿矛的純白火柴人獵人，其中一個伸長手臂指向象群裡被挑中的那一頭。",
+   "screen_direction": "right",
+   "action": "獵人舉矛、伸手指向象群中某一頭，像在挑目標，不是隨便撿；被指的那頭特別突出。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "獵人與象群",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "火柴人獵人（插圖，純白，持矛）",
+     "visible": "全身，舉手指向右",
+     "frame_height": "約 4 成"
+    },
+    {
+     "who": "猛獁象群（活，插圖，自然棕色）",
+     "visible": "站立全身，數頭",
+     "frame_height": "約 5 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration. Shot size: Wide Shot (WS). Camera direction: front three-quarter view, we see the hunters' faces and one side of their bodies. Camera angle: Eye-level, looking straight ahead. On the right side of the picture stands a small herd of living cartoon woolly mammoths of different sizes, shaggy natural brown fur. On the left stand a few plain stick-figure hunters with pure paper-white heads and bodies, each holding a simple wooden spear; one of them stretches out an arm and points to the right at one particular mammoth in the herd, choosing it as a target. The hunters' faces are focused and determined. The picture has only these stick-figure hunters and the mammoth herd.",
+   "untested": [
+    "挑選目標的指向動作描述非實測表句"
+   ],
+   "remedy": "WS 若被畫成 FS 仍可接受；重點在指向挑選的動作。"
+  },
+  {
+   "id": "EP3-13-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "後來，考古學家 Piotr Wojtal，在一根猛獁象的肋骨裡，",
+    "找到一塊兩萬四千年前的燧石矛尖，還深深地卡在骨頭裡。"
+   ],
+   "subject": "一根猛獁象肋骨，中段深深卡著一塊燧石矛尖（物件插入鏡頭）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面中央一整根彎曲的白色猛獁象肋骨橫過畫面；中段卡著一塊深灰色、有打製痕的燧石矛尖，尖端深深嵌進骨頭、周圍骨頭有裂痕。",
+   "screen_direction": "N/A",
+   "action": "鏡頭貼近那根肋骨，燧石矛尖牢牢卡在骨頭裡，像拔不出來，強調這是直接證據。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "肋骨與燧石矛尖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration, extreme close view of a single object filling the picture. One long curved white mammoth rib bone lies across the frame. Stuck into the middle of the rib is a dark grey knapped flint spear point, its tip driven deep into the bone, with small cracks in the bone around it, as if it cannot be pulled out. The picture shows only this rib bone and the embedded flint point, no people and no animals.",
+   "untested": [
+    "物件特寫（肋骨＋燧石矛尖）：實測表只驗證過 HERO 臉部 CU，物件 CU 未測"
+   ],
+   "remedy": "CU 物件未在實測表，若 Flow 把骨頭畫太遠，剪輯時再推近；prompt 已用『extreme close view of a single object filling the picture』加強貼近。"
+  },
+  {
+   "id": "EP3-13-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "它穿過了四英寸厚、大約十公分的皮和脂肪，才插進骨頭。",
+    "這，就是鐵證。"
+   ],
+   "subject": "剖面插圖：燧石矛尖穿過厚皮與脂肪、插進肋骨",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側視剖面：最外層一層厚厚的棕色帶毛皮，中間一層黃色脂肪，最裡面一塊白色肋骨；一支燧石矛從畫面左邊穿過皮和脂肪，尖端卡進右邊的骨頭裡。",
+   "screen_direction": "right",
+   "action": "定格在矛尖穿透外層皮毛、厚脂肪、最後插進最裡層肋骨的那一刻，清楚看出穿透的深度。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "皮脂與肋骨剖面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration, a close side-on cut-away (cross-section) view. From left to right there are three layers: first a thick outer layer of brown furry mammoth skin, then a thick yellow layer of fat, and behind them a solid white rib bone. A dark grey flint spear point comes in from the left, pierces all the way through the skin and the fat, and its tip is driven into the bone on the right. The picture shows only this cut-away of skin, fat, bone and the spear point, no people and no animals.",
+   "untested": [
+    "剖面（cut-away / cross-section）插圖寫法未在實測表",
+    "物件 CU 未測"
+   ],
+   "remedy": "剖面與物件 CU 未實測；若畫得偏遠，剪輯推近。層次靠顏色（棕皮→黃脂→白骨）區分，不放任何文字或數字。"
+  },
+  {
+   "id": "EP3-13-07",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "這些人不只獵猛獁象，而且，幾乎只獵猛獁象。"
+   ],
+   "subject": "火柴人獵人身邊堆滿猛獁象象牙與骨頭的營地（幾乎全是猛獁象）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "畫面中央幾個拿矛的純白火柴人獵人；四周堆滿大量猛獁象的長彎牙和大骨頭，堆成小山，幾乎看不到其他種動物的骨頭。",
+   "screen_direction": "N/A",
+   "action": "獵人站在滿地猛獁象象牙與骨堆中，像在清點戰利品，露出得意的表情，強調他們幾乎專獵猛獁象。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "獵人與象牙骨堆",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "火柴人獵人（插圖，純白，持矛）",
+     "visible": "全身，站立",
+     "frame_height": "約 4 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration. Shot size: Wide Shot (WS). Camera direction: front three-quarter view. Camera angle: High angle, the camera is high above, looking down. In the centre stand a few plain stick-figure hunters with pure paper-white heads and bodies, each holding a simple wooden spear, with proud satisfied faces. All around them are huge heaps of long curved mammoth tusks and big mammoth bones piled up like small mounds, and almost no bones of any other kind of animal. The picture has only these stick-figure hunters and the mammoth tusks and bones.",
+   "untested": [
+    "象牙骨堆營地內容描述非實測表句"
+   ],
+   "remedy": "high 只輕微往下看，可接受；WS 若偏 FS 仍可用，重點在象牙骨堆的量。"
+  },
+  {
+   "id": "EP3-13-08",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "Wojtal 說：這是人跟猛獁象的戰爭。"
+   ],
+   "subject": "一排火柴人獵人舉矛，正面對峙一頭活猛獁象",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面左側一排純白火柴人獵人，全部舉起矛、朝右推進；畫面右側一頭高大的活猛獁象，長鼻高舉、長牙朝前、眼睛瞪大；中間留一段緊張的空隙，形成對峙。",
+   "screen_direction": "right",
+   "action": "人與象兩方對峙的定格瞬間：獵人舉矛前傾、表情兇狠堅定；猛獁象舉鼻、低頭亮牙、憤怒瞪眼，像一場戰爭正要開打。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "人象對峙",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "火柴人獵人（插圖，純白，持矛，一排）",
+     "visible": "全身，舉矛前傾",
+     "frame_height": "約 4 成"
+    },
+    {
+     "who": "猛獁象（活，插圖，自然棕色長毛）",
+     "visible": "側身全身，舉鼻亮牙",
+     "frame_height": "約 7 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration. Shot size: Wide Shot (WS). Camera direction: side view, the whole stand-off seen from the side. Camera angle: Eye-level, looking straight ahead. On the left side a row of plain stick-figure hunters with pure paper-white heads and bodies raise their simple wooden spears and lean forward to the right, their faces fierce and determined. On the right side stands one big living cartoon woolly mammoth with shaggy natural brown fur, trunk raised high, tusks forward and eyes wide and angry. A tense gap of empty ground is left between them, like a war about to begin. The picture has only the row of stick-figure hunters and the one mammoth.",
+   "untested": [
+    "人象對峙（stand-off）構圖描述非實測表句"
+   ],
+   "remedy": "不用加拍遠一級（插圖裡是通用猛獁象、非真 MAMMOTH 與 HERO 同框）；WS 已足以容下大猛獁象與整排獵人。"
+  }
+ ]
+}

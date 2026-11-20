@@ -1,0 +1,307 @@
+{
+ "scene_id": "EP3-04",
+ "notes": "這一場的戲劇任務：建立「落在兩萬五千年前冰河時期草原」的時空、把『冷』與穿著夏天衣服的反差變成笑點、揭露地平線上的冰河高牆、再帶出乾冷氣候的科普。全場只有 HERO，沒有大動物，所以不需要加拍遠一級。HERO 落在降落點 H5 之後幾乎原地不動（爬山坡往下看是下一場），只做轉身、低頭、摸口袋等小動作。節奏安排：先 EWS 建立環境與到達（1 閃現）→ 切 MCU 冷的情緒反應 → 轉身 WS／EWS 揭露並放大冰河牆的尺度（HERO 背影當比例尺）→ 低角度 FS 把人物壓在明亮空曠的天空下做『亮卻不暖』的反差 → MCU 摸口袋找指南的笑點（含停頓）→ 腳部插入鏡頭＋全身 FS 做『穿得像去海邊』的視覺笑點 → 側身 WS 與 MCU 帶氣候數字 → 最後 EWS 乾燥荒原、HERO 望向東邊低地，順勢接下一場往河谷走。相機幾乎都放在 HERO 正南方（看向北方＝冰河方向），維持地理一致：畫面右＝東、左＝西、冰河在上方。冰河、天空、殘雪、草原等背景不寫進 prompt，由主對話依地圖逐格補；prompt 只有 HERO、動作、表情、夏天穿著與手上的測量器，並一律加膚色句。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "H5", "facing": "S", "doing": "光一閃落地，雙臂抱著自己、縮肩發抖，手裡拿著測量器"},
+    {"t": "2", "cell": "H5", "facing": "S", "doing": "抱臂縮肩，凍到鼻子發痛、皺眉"},
+    {"t": "3", "cell": "H5", "facing": "N", "doing": "轉身面向北方，望向地平線上的冰河高牆"},
+    {"t": "4", "cell": "H5", "facing": "S", "doing": "抬一隻手遮強光、瞇眼，仍發抖"},
+    {"t": "5", "cell": "H5", "facing": "S", "doing": "伸手摸短褲口袋找生存指南，撲了個空，另一手還握著測量器"},
+    {"t": "6", "cell": "H5", "facing": "S", "doing": "低頭看自己穿拖鞋的腳"},
+    {"t": "7", "cell": "H5", "facing": "S", "doing": "站著抱臂發抖，短袖短褲拖鞋全身入鏡"},
+    {"t": "8", "cell": "H5", "facing": "E", "doing": "側身望向草原遠處，發怔"},
+    {"t": "9", "cell": "H5", "facing": "S", "doing": "抖得牙齒打顫、縮成一團"},
+    {"t": "10", "cell": "H5", "facing": "E", "doing": "側身望向東邊低地，準備往河谷方向走"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-04-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "光一閃，你回到了兩萬五千年前。",
+    "這裡是今天的東歐，現在是春天。"
+   ],
+   "subject": "HERO",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 是畫面正中偏下的一個小人，四周是遼闊空曠的草原；背景上方的地平線是冰河。",
+   "screen_direction": "toward",
+   "action": "閃現落地的那一刻，HERO 突然出現在空曠草原中央，抱著自己、縮肩發抖。",
+   "camera": {"cell": "H9", "height_m": "1.5", "look_at": "HERO", "distance_m": "40"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 1 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt, shorts and flip-flops, no backpack, holding a small handheld measuring device in one hand. He has just appeared and stands hugging himself, shoulders hunched, shivering. HERO's face and hands are pure paper white. His tiny face shows a startled, wide-eyed expression. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: front view. The camera is on the ground ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-04-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "你的第一個感覺是：冷。",
+    "冷到你的鼻子，一下子就痛了起來。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 的頭與胸佔滿畫面中央；雙手抱肩的手部在下緣附近。",
+   "screen_direction": "toward",
+   "action": "凍到皺眉、瞇眼、咬牙，肩膀聳到耳朵旁，鼻子和臉頰縮緊。",
+   "camera": {"cell": "H6", "height_m": "1.6", "look_at": "HERO", "distance_m": "3"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上、抱肩的雙手", "frame_height": "約 9 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt, shivering violently, both arms wrapped tightly around himself, shoulders hunched up to his ears. HERO's face and hands are pure paper white. His expression: wincing in pain, eyes squeezed, teeth gritted from the cold, nose and cheeks pinched. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is on the ground ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫成到腰，剪輯時推近到胸口。"
+  },
+  {
+   "id": "EP3-04-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "這是人類歷史上最冷的時期之一，而你，剛好站在地球上最冷的地方之一。",
+    "遠方是一整片冰河，比摩天大樓還要高。"
+   ],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背影在畫面中央偏下，全身清楚；畫面上方的地平線是一道白色冰河高牆，四周是空曠草原。",
+   "screen_direction": "away",
+   "action": "HERO 轉身背對鏡頭、抱著自己，望向遠方地平線上的冰河。",
+   "camera": {"cell": "H7", "height_m": "1.6", "look_at": "HERO", "distance_m": "15"},
+   "cast": [
+    {"who": "HERO", "visible": "背面全身", "frame_height": "約 4 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt, shorts and flip-flops, no backpack, holding a small handheld measuring device. He is seen from behind, standing and hugging himself, shivering, gazing out at the far horizon ahead of him. HERO's hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is on the ground behind HERO, looking the way he faces; we see HERO from behind.",
+   "untested": [
+    "single-subject back view adaptation（實測句原為雙角色追逐版，這裡改成單人背影）"
+   ],
+   "remedy": "WS 常被畫成 FS，若人物太大、環境不夠，剪輯時略拉遠或維持；背景冰河由主對話依地圖補。"
+  },
+  {
+   "id": "EP3-04-04",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "它蓋住了今天的加拿大、斯堪地那維亞，還有北歐。",
+    "冰原正中間最厚的地方，超過一英里，也就是一千六百公尺。",
+    "就算是靠近邊緣、比較薄的地方，那道冰牆還是高得嚇人。"
+   ],
+   "subject": "HERO",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背影是畫面下方很小的一個點；整個上半畫面被地平線上的冰河高牆佔滿，強調尺度。",
+   "screen_direction": "away",
+   "action": "HERO 背對鏡頭、渺小地站著，面對巨大的冰牆（放大尺度對比）。",
+   "camera": {"cell": "H10", "height_m": "1.6", "look_at": "HERO", "distance_m": "50"},
+   "cast": [
+    {"who": "HERO", "visible": "背面全身", "frame_height": "約 1 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt, shorts and flip-flops, no backpack. He is a tiny figure seen from behind, standing still and hugging himself. HERO's hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: back view. The camera is on the ground behind HERO, looking the way he faces; we see HERO from behind.",
+   "untested": [
+    "single-subject back view adaptation（單人背影版）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-04-05",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "天空很藍，一朵雲都沒有，太陽很亮，卻一點也不暖。"
+   ],
+   "subject": "HERO",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "從貼地仰視 HERO，HERO 全身佔畫面中央，頭頂上方是大片明亮空曠的天空；用低角度把人物壓在空曠天空下做『亮卻不暖』的反差。",
+   "screen_direction": "toward",
+   "action": "HERO 抬一隻手遮強光、瞇眼，另一手握著測量器，仍然縮肩發抖。",
+   "camera": {"cell": "H6", "height_m": "0.2", "look_at": "HERO", "distance_m": "4"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（仰視）", "frame_height": "約 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt, shorts and flip-flops, no backpack, holding a small handheld measuring device in one hand and raising the other hand to shield his eyes from a bright glare. He is shivering, knees slightly bent. HERO's face and hands are pure paper white. His expression: squinting against bright light, miserable and cold. Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is on the ground ahead of HERO, facing him.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-04-06",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "你伸手想拿生存指南。（停）它還在博士的桌上。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 胸部以上在畫面中央，一手拍著短褲口袋、低頭往下看那隻空手；另一手握著測量器在畫面側邊。",
+   "screen_direction": "off_down",
+   "action": "摸口袋找生存指南卻撲空的那一刻；表情從期待轉成錯愕（配合『（停）』的停頓笑點）。",
+   "camera": {"cell": "H6", "height_m": "1.6", "look_at": "HERO", "distance_m": "3"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上、摸口袋的手", "frame_height": "約 9 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt. One hand pats the empty pocket of his shorts, searching for something that is not there; the other hand holds a small handheld measuring device. He looks down at the empty pocket. HERO's face and hands are pure paper white. His expression: a hopeful look turning to dismay, mouth slightly open, eyebrows raised. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is on the ground ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫成到腰，剪輯時推近到胸口。"
+  },
+  {
+   "id": "EP3-04-07",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "你再低頭看看自己：短袖、短褲、拖鞋。"
+   ],
+   "subject": "HERO 的雙腳（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "穿拖鞋的雙腳與小腿",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "插入鏡頭：畫面只有 HERO 穿拖鞋的雙腳與小腿，從上方斜俯看；腳站在地上。",
+   "screen_direction": "off_down",
+   "action": "HERO 低頭看自己腳上的拖鞋——跟寒冷地面形成荒謬對比的細節鏡頭。",
+   "camera": {"cell": "H5", "height_m": "1.6", "look_at": "HERO", "distance_m": "1.5"},
+   "cast": [
+    {"who": "HERO", "visible": "只有雙腳與小腿（穿拖鞋）", "frame_height": "約 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Insert shot showing only HERO's lower legs and feet in flip-flops (exactly as in the attached HERO character sheet), standing on the ground. No other part of HERO is visible. HERO's legs and feet are pure paper white. Shot size: Extreme Close-up (ECU). Only HERO's feet in flip-flops fill the picture. Camera angle: High angle: the camera is high above HERO's feet, looking down at them.",
+   "untested": [
+    "ECU 用在腳（實測只驗證過眼睛）",
+    "腳部近距離高角度俯視插入鏡頭"
+   ],
+   "remedy": "若畫不出乾淨的腳部 ECU，改用中近景拍下半身與拖鞋，剪輯時裁切推近到雙腳。"
+  },
+  {
+   "id": "EP3-04-08",
+   "variant_of": "N/A",
+   "t": "7",
+   "narration": [
+    "你穿得，像是要去海邊。"
+   ],
+   "subject": "HERO",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 全身在畫面中央，短袖短褲拖鞋一覽無遺，四周是空曠寒冷的草原——完整呈現『像去海邊』的荒謬對比。",
+   "screen_direction": "toward",
+   "action": "HERO 抱臂站著發抖，一身夏天海邊打扮，表情又冷又尷尬。",
+   "camera": {"cell": "H6", "height_m": "1.6", "look_at": "HERO", "distance_m": "5"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt, shorts and flip-flops, no backpack, holding a small handheld measuring device. He stands with both arms wrapped around himself, shivering, shoulders hunched. HERO's face and hands are pure paper white. His expression: miserable and sheepish, teeth gritted. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is on the ground ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-04-09",
+   "variant_of": "N/A",
+   "t": "8",
+   "narration": [
+    "這時候的地球，全世界平均起來，比今天冷了大約六度。",
+    "聽起來好像不多，可是就是這六度，讓冰蓋住了大半個北半球。"
+   ],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 側面全身在畫面中央偏左，面朝畫面右方（東）；四周是大片空曠草原，拉出大尺度環境感。",
+   "screen_direction": "off_right",
+   "action": "HERO 側身站著、抱臂發抖，望向草原遠處，神情發怔。",
+   "camera": {"cell": "H7", "height_m": "1.6", "look_at": "HERO", "distance_m": "16"},
+   "cast": [
+    {"who": "HERO", "visible": "側面全身", "frame_height": "約 4 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt, shorts and flip-flops, no backpack, holding a small handheld measuring device. He is seen exactly from the side, standing and hugging himself, shivering, gazing out across the land. HERO's face and hands are pure paper white. His expression: dazed and overwhelmed, cold. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside HERO and sees him exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "single-subject side view adaptation（單人側面版）"
+   ],
+   "remedy": "WS 常被畫成 FS，若環境不夠，剪輯時略拉遠。"
+  },
+  {
+   "id": "EP3-04-10",
+   "variant_of": "N/A",
+   "t": "9",
+   "narration": [
+    "現在是春天，可是到了冬天，這裡會連續好幾個星期都在零下十幾度，",
+    "最冷的時候，接近零下二十度。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 胸部以上在畫面中央，前側 3/4 角度，看得到臉和一側身體；抱臂縮肩。",
+   "screen_direction": "toward",
+   "action": "抖得牙齒打顫、眼眶泛淚、縮成一團，冷到極點的那一刻。",
+   "camera": {"cell": "I6", "height_m": "1.6", "look_at": "HERO", "distance_m": "3"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上、抱肩的手", "frame_height": "約 9 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt, shivering hard with arms clamped around himself, shoulders hunched, slightly curled. HERO's face and hands are pure paper white. His expression: teeth chattering, eyes watering, utterly frozen. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫成到腰、front34 只大致做到，剪輯時推近到胸口。"
+  },
+  {
+   "id": "EP3-04-11",
+   "variant_of": "N/A",
+   "t": "10",
+   "narration": [
+    "而且，這裡很乾。",
+    "因為北邊那一大片冰，把大西洋吹來的水氣，全都擋住了。",
+    "所以這裡一年下的雨，少得跟沙漠差不多。"
+   ],
+   "subject": "HERO",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 側面是畫面下方很小的一個點，面朝畫面右方（東／低地）；大片乾燥荒涼的草原延伸到遠方，強調乾旱與空曠，並把視線帶向東邊、接下一場往河谷走。",
+   "screen_direction": "off_right",
+   "action": "HERO 渺小地側身站著，望向東邊低地，像在打量接下來要去的方向。",
+   "camera": {"cell": "H9", "height_m": "1.6", "look_at": "HERO", "distance_m": "40"},
+   "cast": [
+    {"who": "HERO", "visible": "側面全身", "frame_height": "約 1 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing a short-sleeved summer shirt, shorts and flip-flops, no backpack. He is a tiny figure seen from the side, standing and hugging himself, gazing off toward the lower land in the distance. HERO's face and hands are pure paper white. His tiny face looks weary and longing. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside HERO and sees him exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "single-subject side view adaptation（單人側面版）"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

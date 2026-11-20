@@ -1,0 +1,161 @@
+{
+ "scene_id": "EP3-05",
+ "notes": "這一場是安靜的觀察戲，戲劇任務是透過 HERO 的視角，揭露「光禿禿高地」與「翠綠河谷」的強烈對比。全場 HERO 都趴在坡頂邊緣 F7 不動（上一場降落在西邊乾草原，這場他從西邊爬上坡頂），所以走位只有「爬上來、趴下看」兩個時間點。拆成 4 張：①背面建立鏡頭——HERO 爬到邊緣趴下往東俯看，確立視角與他還在發抖的狀態（第 1 句）；②空拍極遠景大揭露——一張同時收進光禿高地與翠綠河谷，完成高低對比（第 2、3 句合併，一個揭露鏡頭就夠，不拆兩張免得功能重複）；③河谷俯瞰無人鏡頭——貼近看河谷草地與河，呈現肥土長滿草的細節（第 4 句）；④側面剖面極遠景——從南邊側看山坡剖面，左邊乾禿、右邊翠綠，HERO 小小趴在稜線上做總結對比（第 5 句）。四張分別是背面／空拍／俯瞰／側面，角度與敘事功能都不同，不重複。這場沒有大動物（猛獁象是第 8 段清晨才出現），所以不需要加拍遠一級。prompt 不描述地形、天空、河谷等背景，交給主對話依地圖逐格補；相機格子與 look_at 都已對準。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "F7",
+     "facing": "E",
+     "doing": "從西邊坡上爬到坡頂邊緣，趴下，撐著手肘抬頭往東看下去，還在發抖"
+    },
+    {
+     "t": "2",
+     "cell": "F7",
+     "facing": "E",
+     "doing": "趴在坡頂邊緣，繼續往東俯瞰下方的河谷"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-05-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "你爬上一個小山坡，往下看。"
+   ],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "high",
+   "composition": "HERO 在畫面中央偏下，趴在坡頂邊緣，背對鏡頭；他的前方（畫面上方與遠處）是往東下降的坡與下方的河谷。前景是光禿碎石的坡頂邊緣。",
+   "screen_direction": "away",
+   "action": "HERO 剛爬到坡頂，整個人趴在邊緣撐著手肘、抬頭往東下方看；肩膀還在發抖，一副又冷又好奇的樣子。",
+   "camera": {
+    "cell": "E7",
+    "height_m": "3",
+    "look_at": "HERO",
+    "distance_m": "6"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "整個身體背面（背、腿、腳底），頭抬起",
+     "frame_height": "約 3 成（趴著，身體橫向）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO is in the picture. HERO (exactly as in the attached HERO character sheet), wearing his summer outfit: short sleeves, shorts, flip-flops, no hat and no backpack. HERO is lying prone flat on his belly at the very edge, propped up on his elbows with his head raised, his shoulders still shivering with cold, seen from behind. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is behind HERO, looking the same way he looks; HERO's back is toward the camera. Camera angle: High angle: the camera is high above HERO, looking down at him.",
+   "untested": [
+    "back view 句改成單人版（拿掉 TEEN，只留 HERO 背對鏡頭）"
+   ],
+   "remedy": "high 實測只有輕微往下看；剪輯時可把框往下移、強調俯看河谷的落差。"
+  },
+  {
+   "id": "EP3-05-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "高的地方光禿禿的，像北極的荒漠。",
+    "可是低的地方，河谷裡，卻長滿了草。"
+   ],
+   "subject": "整片山坡地形（高處光禿、低處翠綠的河谷），HERO 為前景小小的次要主體",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "aerial",
+   "composition": "畫面左半／近處（西）是光禿禿的碎石高地，HERO 是極小的一個人趴在左側稜線邊緣（背對鏡頭）；畫面右半／遠處（東）是往下的坡與長滿綠草的河谷，一條河由北往南流過。高低、乾綠的對比一次收進一張。",
+   "screen_direction": "away",
+   "action": "鏡頭從高空俯瞰整片地形的一刻：乾禿的高地與翠綠的河谷同時入鏡，HERO 小小趴在稜線上往下看。",
+   "camera": {
+    "cell": "D7",
+    "height_m": "70",
+    "look_at": "整片河谷與高地（HERO 在前景稜線）",
+    "distance_m": "220"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "整個身體，背面，極小",
+     "frame_height": "約 5 成…不，約 5%（極小）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO is in the picture, as a very small figure. HERO (exactly as in the attached HERO character sheet), wearing his summer outfit: short sleeves, shorts, flip-flops, no hat and no backpack, lying prone at the edge and seen from behind, very tiny in the frame. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: back view. The camera is behind HERO, looking the same way he looks; HERO's back is toward the camera. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "back view 句改成單人版（拿掉 TEEN）"
+   ],
+   "remedy": "aerial 實測需搭配 EWS 才成立，本張已用 EWS。"
+  },
+  {
+   "id": "EP3-05-03",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "因為冰河一直把磨碎的石頭粉帶下來，變成很肥的土。"
+   ],
+   "subject": "河谷底的翠綠草地與河（肥沃的土長滿牧草）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "HERO 的俯瞰視角，畫面裡沒有人：中央到下方是河谷底肥沃的綠草地，一條清澈的河由上（北）往下（南）流過畫面右側。整片綠意盎然。",
+   "screen_direction": "off_down",
+   "action": "鏡頭從坡頂往下俯看河谷底的一刻：滿滿的綠草與流水，呈現肥土長草的豐饒。",
+   "camera": {
+    "cell": "F7",
+    "height_m": "22",
+    "look_at": "河谷草地與河（L8 一帶）",
+    "distance_m": "120"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. No people and no animals anywhere in the picture. Shot size: Wide Shot (WS). The lush river valley floor and the river are the main subject and are clearly visible, with a lot of the surroundings around them. Camera angle: High angle: the camera is high above, looking down at the valley floor.",
+   "untested": [
+    "WS 句改成以地形為主體的無人版（拿掉 HERO）",
+    "high angle 句拿掉 HERO、改成俯看地形"
+   ],
+   "remedy": "high 實測只有輕微往下看；本張是地形俯瞰，輕微下看仍讀得出河谷，必要時剪輯時下移框。"
+  },
+  {
+   "id": "EP3-05-04",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "有水的河谷熱熱鬧鬧，乾的高地什麼都沒有，兩邊差得不得了。"
+   ],
+   "subject": "山坡的側面剖面（左乾禿、右翠綠的對比），HERO 為稜線上的小小次要主體",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "從南邊側看整段山坡剖面：畫面左邊（西）是光禿禿的碎石高地、一片灰黃死寂；畫面右邊（東）是往下的坡與翠綠的河谷和河，生機盎然。HERO 小小地側面趴在中央偏上的稜線上。左右兩半形成強烈對比。",
+   "screen_direction": "off_down",
+   "action": "一張定格的總結鏡頭：左乾右綠並列，HERO 夾在兩邊的交界上，把「兩邊差得不得了」一眼看完。",
+   "camera": {
+    "cell": "F11",
+    "height_m": "20",
+    "look_at": "山坡剖面與稜線上的 HERO",
+    "distance_m": "85"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "整個身體，側面，極小",
+     "frame_height": "約 6%（極小）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO is in the picture, as a very small figure. HERO (exactly as in the attached HERO character sheet), wearing his summer outfit: short sleeves, shorts, flip-flops, no hat and no backpack, lying prone on the ground and seen from the side, very tiny in the frame. HERO's face and hands are pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: side view. The camera is to one side of HERO and sees him exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "side view 句改成單人版（拿掉 TEEN，只留 HERO）"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

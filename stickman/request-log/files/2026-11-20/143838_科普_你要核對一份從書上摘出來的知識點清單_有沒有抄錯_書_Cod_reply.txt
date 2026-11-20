@@ -1,0 +1,20 @@
+書上照片我逐字讀過了。這一頁（p.36）左欄（頁碼「36」清楚可見）的內容整頁都在講**食物和啤酒**，跟清單上標的三點（纏腰布／披肩、華氏 110 度、Lehner 斜坡）完全對不上。三點的 quote 在這頁上一個字都找不到。
+
+```json
+{"page": "p.36",
+ "checks": [
+  {"n": 21, "ok": false, "problem": "這頁找不到「shawls with shoulder straps」，也沒有任何纏腰布、披肩、男女服裝的敘述。p.36 整頁在講工人伙食（牛肉、鯰魚燉菜、啤酒），與這點無關。可能頁碼標錯，須重拍／改頁碼確認。", "quote": "", "claim_zh": ""},
+  {"n": 22, "ok": false, "problem": "這頁找不到「110 degrees」，也沒有任何氣溫、華氏度數的敘述。整頁在講伙食，與氣溫無關。可能頁碼標錯。", "quote": "", "claim_zh": ""},
+  {"n": 23, "ok": false, "problem": "這頁找不到「one of the thorniest problems」，也沒有 Mark Lehner、斜坡（ramp）或建造方法的敘述。整頁在講伙食與啤酒，與斜坡無關。可能頁碼標錯。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "有住房的技術工匠每天吃四分之一磅牛肉；由於牛要從遙遠的三角洲牧場趕來，一頭牛要花埃及工匠一整年的工資，這在當時是難得的奢侈。", "quote": "The skilled, housed laborers ate a quarter pound of beef per day", "pages": ["p.36"], "type": "數字", "who": "作者", "hedge": "", "convert": "四分之一磅≈113 公克"},
+  {"claim_zh": "一頭牛要花埃及工匠一整年的工資。", "quote": "a single cow cost an Egyptian craftsman a year's worth of wages", "pages": ["p.36"], "type": "描述", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "考古學家發現的骨頭數量多到讓他們相信，這個營區每天消耗 4,000 磅牛肉。", "quote": "the camp consumed 4,000 pounds of beef daily", "pages": ["p.36"], "type": "數字", "who": "考古學家", "hedge": "", "convert": "4,000 磅≈1,814 公斤"},
+  {"claim_zh": "身為普通勞工，（據 Redding 說）你大概吃的是鯰魚、山羊或牛蹄燉菜，配一塊要泡進啤酒裡軟化的乾麵包。", "quote": "you will probably eat catfish, goat, or cow's feet stew along with a chunk of stale bread", "pages": ["p.36"], "type": "描述", "who": "Redding", "hedge": "", "convert": ""},
+  {"claim_zh": "埃及啤酒的營養價值大於酒精性，是略帶康普茶般微酸酒味、略有飽足感的飲料。", "quote": "Egyptian beer was more nutritious than alcoholic", "pages": ["p.36"], "type": "描述", "who": "作者", "hedge": "", "convert": ""}
+ ],
+ "unclear": [
+  {"where": "整頁", "problem": "照片是側拍、解析度偏低，但文字仍可辨讀。重點是：清單 n21/n22/n23 的三個 quote 在這頁都不存在，p.36 整頁內容是工人伙食（牛肉、鯰魚燉菜、啤酒），強烈懷疑頁碼標錯或清單與頁碼對應錯位，建議重拍並核對頁碼。"}
+ ]}
+```

@@ -1,0 +1,52 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch04_ancient_egypt/pages/p44.jpg（書的 p.44；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 42,
+  "claim_zh": "胡夫統治超過 130 萬名子民，並調動他們來蓋金字塔。",
+  "quote": "1.3 million subjects",
+  "pages": [
+   "p.44"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "數字待重拍確認",
+  "convert": ""
+ },
+ {
+  "n": 43,
+  "claim_zh": "每年徵召數萬名農民投入工程。",
+  "quote": "tens of thousands of farmers every year",
+  "pages": [
+   "p.44"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.44",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.44"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

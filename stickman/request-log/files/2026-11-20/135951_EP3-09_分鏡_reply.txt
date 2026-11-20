@@ -1,0 +1,374 @@
+{
+ "scene_id": "EP3-09",
+ "notes": "這一場是博士在 HERO 手上測量器小螢幕裡上課的插圖段落，整段畫不出實景，全部畫成生存指南內頁的手繪插圖（粗黑線、平塗色、同角色設定畫風），不能有任何字或數字，數字一律由旁白講。拍法：開場用一張測量器螢幕（螢幕上是博士、正在提問）當框架起手；中間九張依旁白順序走——板塊相撞把新岩石推出地面、新岩石像海綿吸二氧化碳、澳洲北漂擠窄印尼海道、把『開關』物化成一根被扳下的大拉桿、岩石抬升加溫暖的雨把礦物沖進海、碳被鎖進石灰岩地球變冷、地球畫成慢慢晃的陀螺、晃到角度冬陽變弱海洋吸更多碳、最後一張把『棉被被掀掉』物化成一隻純白火柴人手把被子從地球北半球掀開露出厚冰層；收尾先插一張測量器螢幕暗掉，再切回實景：HERO 還穿著短袖短褲拖鞋、抱著手臂發抖，當笑點收場。插圖沒有地圖、沒有走位，blocking 填空、camera.cell=N/A、t=0；插圖只有講解內容、不畫 HERO 本人、不放字。有火柴人手入鏡的插圖要寫手是純白；最後實景 HERO 要寫膚色句和發抖表情。這場沒有 MAMMOTH 與 HERO 同框，不需加拍遠一級。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP3-09-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那這一次的冰河期，又是怎麼開始的？"
+   ],
+   "subject": "HERO 手上測量器的小螢幕，螢幕上是博士正在上課（插入鏡頭）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "測量器填滿畫面中央，螢幕佔大部分，螢幕裡 PROF 的頭和上半身在正中，正對鏡頭",
+   "screen_direction": "toward",
+   "action": "PROF 在小螢幕裡抬眉、張口像在拋出一個問題的那一刻，正在講課",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "測量器螢幕",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "PROF（螢幕）",
+     "visible": "螢幕裡 PROF 的頭和上半身",
+     "frame_height": "約 4 成（在測量器螢幕範圍內）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Insert shot: a close view of the small handheld measuring device (REF_PROPS3). On its small screen is PROF (exactly as in the attached PROF character sheet), talking mid-lecture, eyebrows raised and mouth open as if posing a question, an inquisitive curious look. Only the device and PROF on its screen are in the picture. No text or numbers on the screen.",
+   "untested": [
+    "插入鏡頭：直接描述測量器螢幕的近景，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A（物件／螢幕近景，Flow 可直接畫）"
+  },
+  {
+   "id": "EP3-09-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "科學家很重視一個說法：冰河期，常常跟熱帶的板塊相撞有關。",
+    "板塊一撞，就會把一大堆新的岩石，推出地面。"
+   ],
+   "subject": "插圖：兩塊板塊迎面相撞，把一大堆新岩石推出地面",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "剖面側視：左右兩塊厚地殼板塊朝中間擠，中央一堆鋸齒狀新岩石被往上頂出地面；畫面只有板塊與岩石",
+   "screen_direction": "off_up",
+   "action": "兩塊板塊撞在一起、中間新岩石正被擠著往上頂出的那一刻，有擠壓動態線",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖畫面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration, cross-section side view: two thick slabs of the earth's crust ramming head-on into each other, crumpling and shoving a big jagged pile of fresh pale rock up out of the ground between them, with motion lines showing the slabs pressing together. Only the slabs and the rock. No people, no animals. No text or numbers.",
+   "untested": [
+    "手繪插圖整張構圖直接描述，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-09-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "而這種新的岩石，最會吸二氧化碳。"
+   ],
+   "subject": "插圖：一塊新岩石像海綿一樣把二氧化碳吸進去",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一塊新的淺色岩石，四周空氣裡深灰色的氣體（二氧化碳）被向內的小箭頭捲著吸進岩石",
+   "screen_direction": "toward",
+   "action": "深灰氣體正被岩石吸進去的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖畫面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: a single chunk of fresh pale rock in the open air acting like a sponge, with dark grey wisps of gas in the air curving and being sucked inward into the rock, shown with small inward motion arrows. Only the rock and the wisps of gas. No people, no animals. No text or numbers.",
+   "untested": [
+    "手繪插圖整張構圖直接描述，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-09-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "大約三百萬年前，澳洲一路往北漂。",
+    "它把印尼一帶的海上通道，擠得越來越窄。"
+   ],
+   "subject": "插圖：地球上澳洲往北漂，把印尼一帶的海道擠窄",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一顆簡單的地球，下方澳洲這塊陸地往上（往北）漂、帶一支粗箭頭；澳洲與上方一串島嶼之間的海道被擠得越來越窄",
+   "screen_direction": "off_up",
+   "action": "澳洲正往北推、海道被夾窄的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖畫面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: a simple round globe seen from space; the continent of Australia drawn as a chunky landmass slowly drifting upward (northward) toward a cluster of islands, a bold arrow showing its movement, and the strip of sea between Australia and the islands being squeezed narrower. Only the globe, the landmasses and the arrow. No people, no animals. No text or numbers.",
+   "untested": [
+    "手繪插圖整張構圖直接描述，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-09-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "科學家推測，這可能就是把地球推進冰河期的開關之一。"
+   ],
+   "subject": "插圖：把『開關』物化成一根被扳下的大拉桿，旁邊一顆小地球開始結霜",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面左側一根巨大的老式牆上拉桿被扳下，一隻純白火柴人的手握著拉桿；右側一顆小地球開始變淡、結霜",
+   "screen_direction": "off_down",
+   "action": "拉桿正被扳到底、小地球開始結霜的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖畫面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: a giant old-fashioned wall lever being thrown down into the 'on' position by a stick-figure hand; the hand is pure paper white. Beside the lever a small round globe begins to turn pale and frosty. Only the lever, the hand and the small globe. No text or numbers.",
+   "untested": [
+    "手繪插圖整張構圖直接描述，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-09-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "當時，很多新鮮的岩石被抬了起來。",
+    "溫暖的雨，把岩石裡的鈣和鎂沖進海裡，"
+   ],
+   "subject": "插圖：新鮮岩石被抬高，溫暖的雨沖下來、把礦物順著溪流帶進海裡",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面上方一排鋸齒狀的新岩石被抬得高高的，雨從上面落下，小溪順坡而下，帶著淺色礦物顆粒流進畫面下緣的藍色海水",
+   "screen_direction": "off_down",
+   "action": "雨落在抬升的岩石上、礦物隨溪水沖進海的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖畫面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: a range of jagged fresh pale rocks pushed up high, with warm rain pouring down on them and little streams running down the slopes carrying pale specks of minerals into a blue sea along the bottom of the picture. Only the rocks, the rain, the streams and the sea. No people, no animals. No text or numbers.",
+   "untested": [
+    "手繪插圖整張構圖直接描述，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-09-07",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "把幾十億噸的碳，鎖進了石灰岩，地球，就冷了下來。"
+   ],
+   "subject": "插圖：碳被鎖進海底石灰岩，地球冷了下來",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "下半畫面是海底，一層層淺色石灰岩夾著被壓進去的深色碳塊；上半畫面水面上方一顆小地球變淡藍、結霜",
+   "screen_direction": "off_down",
+   "action": "深色碳塊被壓鎖進石灰岩層、小地球降溫結霜的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖畫面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: under the sea, dark lumps of carbon being pressed and locked into pale layered limestone rock on the seabed; above the water a small round globe turns pale blue and frosty as it cools. Only the sea, the limestone layers, the carbon lumps and the small globe. No people, no animals. No text or numbers.",
+   "untested": [
+    "手繪插圖整張構圖直接描述，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-09-08",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "可是，就算在冰河期裡面，地球也還是會忽冷忽熱。",
+    "因為地球轉的時候，會像陀螺一樣，慢慢地晃。",
+    "大約四萬年，晃一圈。"
+   ],
+   "subject": "插圖：地球畫成一顆傾斜、慢慢晃的陀螺",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一顆被畫成陀螺的地球，軸傾斜著旋轉，軸頂畫一圈虛線箭頭表示慢慢晃一圈",
+   "screen_direction": "right",
+   "action": "陀螺地球傾斜旋轉、軸頂沿虛線慢慢繞的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖畫面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: planet Earth drawn as a child's spinning top, tilted on its axis and slowly wobbling, with a dotted circular arrow around the top of its axis showing the slow wobble. Only the spinning-top Earth and the dotted arrow. No people, no animals. No text or numbers.",
+   "untested": [
+    "手繪插圖整張構圖直接描述，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-09-09",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "晃到某些角度的時候，冬天照到的陽光變少，",
+    "海流跟著改變，海洋就把更多的碳吸了進去。",
+    "兩萬五千年前，北半球剛好晃到最低點。",
+    "空氣裡的二氧化碳，只剩下工業時代以前的三分之二左右。"
+   ],
+   "subject": "插圖：地球傾到北半球背對太陽，冬陽變弱、海流把更多碳吸進深海",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面左上一顆小小的淡色冬陽，中央地球北半球明顯傾斜背著太陽、只被幾道細弱斜射的陽光打到；畫面下方海洋有打轉的洋流箭頭，把深色碳顆粒往深海拉下去",
+   "screen_direction": "off_down",
+   "action": "北半球傾到背光、弱陽斜射、洋流把碳往深海捲下去的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖畫面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: a tilted Earth with its northern half leaning away from a small pale winter sun in the upper left, thin weak sun rays striking the north at a shallow angle; below, swirling ocean current arrows pull dark specks of carbon down into the deep sea. Only the Earth, the sun, the rays and the ocean currents. No people, no animals. No text or numbers.",
+   "untested": [
+    "手繪插圖整張構圖直接描述，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-09-10",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "棉被被掀掉了，巨大的冰層，蓋住了北半球大部分的地方。",
+    "也就是，你現在看到的這個世界。"
+   ],
+   "subject": "插圖：一隻純白火柴人的手把棉被從地球北半球掀開，露出厚厚的冰層",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一顆地球，一條厚棉被正被一隻純白火柴人的手往上掀開；被子被掀走的北半球整片蓋著厚白冰層",
+   "screen_direction": "off_up",
+   "action": "棉被被掀起、北半球厚冰層一下子露出來的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖畫面",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: a thick cozy quilt being yanked up and off the top of a round globe by a stick-figure hand; the hand is pure paper white. Where the quilt is pulled away, the whole northern half of the globe is revealed buried under thick white ice sheets. Only the globe, the quilt, the hand and the ice. No text or numbers.",
+   "untested": [
+    "手繪插圖整張構圖直接描述，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-09-11",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "博士說完了，螢幕，暗了下來。"
+   ],
+   "subject": "HERO 手上測量器的小螢幕，整個暗掉（插入鏡頭）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "測量器填滿畫面中央，螢幕整片全黑、什麼都沒有",
+   "screen_direction": "toward",
+   "action": "螢幕剛剛暗下來、變成一片漆黑的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "測量器螢幕",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Insert shot: a close view of the same small handheld measuring device (REF_PROPS3), its screen now gone completely dark and black with nothing on it. Only the device in the picture. No text or numbers.",
+   "untested": [
+    "插入鏡頭：直接描述測量器螢幕的近景，沒有套用表上的 HERO 身體景別句"
+   ],
+   "remedy": "N/A（物件／螢幕近景，Flow 可直接畫）"
+  },
+  {
+   "id": "EP3-09-12",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "而你，還穿著短褲。"
+   ],
+   "subject": "HERO（回到實景，穿短袖短褲發抖）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 站在畫面正中，正對鏡頭，從頭到腳整個入鏡，抱著自己的手臂縮著發抖；畫面只有 HERO",
+   "screen_direction": "toward",
+   "action": "HERO 抱著手臂、縮著肩膀、冷得發抖、牙齒打架的那一刻",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "HERO",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "全身，頭到腳",
+     "frame_height": "約 9 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing a short-sleeve shirt, shorts and flip-flops, no hat and no backpack. HERO is hugging his own arms and shivering hard, shoulders hunched, teeth chattering, wide-eyed and miserable, freezing cold. HERO's face and hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  }
+ ]
+}

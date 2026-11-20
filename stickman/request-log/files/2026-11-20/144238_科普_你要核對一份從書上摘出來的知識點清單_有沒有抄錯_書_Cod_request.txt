@@ -1,0 +1,172 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch04_ancient_egypt/pages/p46.jpg（書的 p.46；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 47,
+  "claim_zh": "要用更有力的背和腿的肌肉去「推」而不是「拉」、同時身體後傾、保持雙腳打直，才比較不會受傷。",
+  "quote": "your more powerful back and leg muscles to push, rather than pull, and lean back while doing so in order to keep your feet straight",
+  "pages": [
+   "p.46"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 48,
+  "claim_zh": "一項針對 1998 年拔河世界錦標賽選手的研究中，某類傷害占了將近一半的受傷，手部受傷也占相當比例。",
+  "quote": "In a study on the competitors in the 1998 Tug-of-War World Championships",
+  "pages": [
+   "p.46"
+  ],
+  "type": "專家說法",
+  "who": "書引述一項研究（研究者未指名）",
+  "hedge": "行首那類傷害的名稱（疑似背部拉傷）字跡待確認",
+  "convert": ""
+ },
+ {
+  "n": 49,
+  "claim_zh": "建議：絕不要把繩子繞在手、手指或身體任何部位上。",
+  "quote": "never wrapping the rope around your hands, fingers, or any other body part",
+  "pages": [
+   "p.46"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 50,
+  "claim_zh": "繩子的張力會輕易壓碎身體部位；如果同伴撐不住，你可能被拖在滑動的石塊後面。",
+  "quote": "if your comrades fail, you could be dragged behind the sliding rock",
+  "pages": [
+   "p.46"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 51,
+  "claim_zh": "同一條繩子加越多人拉會出現邊際效益遞減，但也正因如此才可能拉動八十噸的花崗岩塊。",
+  "quote": "diminishing returns when adding pullers to a rope, which is how hauling that eighty-ton granite block is even possible",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "80 短噸≈72.6 公噸"
+ },
+ {
+  "n": 52,
+  "claim_zh": "1995 年 6 月 6 日，德國法蘭克福一群童軍排成 650 人的拔河。",
+  "quote": "On June 6, 1995, a group of Boy Scouts in Frankfurt, Germany, lined up for a 650-person game of tug-of-war.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 53,
+  "claim_zh": "那條兩吋粗的尼龍繩斷裂、高速彈回，當場打死站最前面的兩名童軍、打傷二十五人。",
+  "quote": "When the two-inch-thick nylon rope broke, it snapped back with such speed it killed the two scouts standing in front and injured twenty-five others.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "兩吋≈5.1 公分"
+ },
+ {
+  "n": 54,
+  "claim_zh": "其他大型拔河比賽曾扯斷手臂、手指，並壓碎手掌。",
+  "quote": "Other large tug-of-war matches have severed arms, fingers, and crushed hands.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 55,
+  "claim_zh": "1997 年 10 月 25 日，台灣有 1,600 人對一條承載額定不到一半的繩子施加 18 萬磅的力。",
+  "quote": "On October 25, 1997, in Taiwan, 1,600 people applied 180,000 pounds of force to a rope rated for less than half that.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "180,000 磅≈81,650 公斤（約 81.6 公噸）"
+ },
+ {
+  "n": 56,
+  "claim_zh": "斷掉的繩子猛力彈回，把站最前面兩人的手臂扯斷。",
+  "quote": "The severed line ripped backward with such force it tore the arms off the two people in front.",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 57,
+  "claim_zh": "Djehutihotep 的象形圖描繪了（埃及人拉石頭的）方法／原理。",
+  "quote": "the Djehutihotep hieroglyph depicts",
+  "pages": [
+   "p.46"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 58,
+  "claim_zh": "要把八十噸的石塊拉上 11% 的坡度，需要至少 343 名古埃及拉繩者在旁一起拉。",
+  "quote": "haul the eighty-ton rock up the 11 percent grade you'll pull with at least 343 Ancient Egyptian pullers standing alongside",
+  "pages": [
+   "p.46"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "at least（至少）",
+  "convert": "80 短噸≈72.6 公噸"
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.46",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.46"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

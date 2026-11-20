@@ -1,0 +1,21 @@
+All twelve quotes match the book word-for-word. Here is the result:
+
+```json
+{"page": "p.33",
+ "checks": [
+  {"n": 1, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 2, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 3, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 4, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 5, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 6, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 7, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 8, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 9, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 10, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 11, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 12, "ok": true, "problem": "", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [],
+ "unclear": []}
+```

@@ -1,0 +1,13 @@
+核對完成。照片是橫置的，我逐字讀了兩頁（左頁 HOW TO SURVIVE、右頁 ANCIENT EGYPT）。
+
+```json
+{"page": "p.43",
+ "checks": [{"n": 41, "ok": false, "problem": "這一頁找不到「less than 1 degree」，也沒有講金字塔朝正方位（cardinal/正北）對齊、誤差小於 1 度這件事。頁上真正可查證的數字是底座的「平整度」：Modern architects calculate the Great Pyramid's base to be flat to within less than a half inch across an area almost ten football fields in size。清單把『平整到小於半英寸』誤記成『對齊誤差小於 1 度』，quote 和 claim 都要改。", "quote": "flat to within less than a half inch across an area almost ten football fields in size", "claim_zh": "現代建築師測得大金字塔的底座，在將近十座美式足球場大小的面積上，平整到誤差小於半英寸。"}],
+ "missing": [
+  {"claim_zh": "斯尼夫魯（Snefru）從失敗中學到教訓，在堅硬的岩石地基上建出埃及第一座成功的真正金字塔——紅色金字塔（Red Pyramid）。", "quote": "he learned from his failures and built Egypt's first successful true pyramid—the Red Pyramid—on a foundation of solid rock", "pages": ["p.43"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "吉薩的石灰岩基岩走向由東北向西南斜穿高原，這也解釋了吉薩三座金字塔為何呈對角線排列。", "quote": "which streaks from northeast to southwest through the plateau and explains the diagonal orientation of the three Giza pyramids", "pages": ["p.43"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "印和闐（Imhotep）在傳統埃及長椅狀墳墓「馬斯塔巴」（mastaba）上創新，把一層層長椅疊起來，發明了金字塔的前身（為國王左塞爾 Djoser 所建）。", "quote": "invented the predecessor to the pyramid by innovating on the traditional Egyptian bench-like tomb known as a mastaba", "pages": ["p.43"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "斯尼夫魯頭兩次蓋金字塔犯了致命錯誤：把金字塔蓋在鬆軟的地面上，又把側面斜度做得太陡。", "quote": "He built his pyramids on soft ground and then compounded this mistake by angling the sides too steeply", "pages": ["p.43"], "type": "事實", "who": "作者", "hedge": "", "convert": ""}
+ ],
+ "unclear": []}
+```

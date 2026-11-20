@@ -1,0 +1,16 @@
+照片是橫放的，我逐字讀了右頁（p.41）的內文和左頁的圖說。這一頁完全沒有提到「鱷魚／crocodiles」，內容是血吸蟲病（schistosomiasis）和金字塔施工的危險。清單上 n=35 的 quote 對不上這一頁。
+
+```json
+{"page": "p.41",
+ "checks": [{"n": 35, "ok": false, "problem": "這一頁通篇沒有出現 'crocodiles' 這個字，也沒有任何跳進尼羅河消暑、水流湍急的內容。p.41 右頁談的是血吸蟲病（感染後 4–6 週發燒倦怠、轉為慢性、CDC 列為僅次於瘧疾的第二大寄生蟲禍害、在木乃伊上驗出）以及爬金字塔／工地意外的危險（金字塔面 52 度、吉薩工人墓骨骸骨折）。這條知識點被標錯頁，p.41 查不到出處。", "quote": "", "claim_zh": ""}],
+ "missing": [
+   {"claim_zh": "感染血吸蟲後 4 到 6 週會發燒並變得極度倦怠。", "quote": "Four to six weeks after infection, you'll develop a fever and become extremely lethargic.", "pages": ["p.41"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+   {"claim_zh": "血吸蟲病轉為慢性後，依蟲卵流向，可能造成腸道疾病、癌症、癲癇發作，甚至死亡。", "quote": "the infection becomes chronic, and depending on where the eggs flow, they can cause intestinal disease, cancers, seizures, or death.", "pages": ["p.41"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+   {"claim_zh": "CDC 認為血吸蟲病是世界上僅次於瘧疾、第二具破壞力的寄生蟲。", "quote": "Schistosomiasis is considered by the CDC to be the world's second most devastating parasite after malaria", "pages": ["p.41"], "type": "事實", "who": "作者／CDC", "hedge": "", "convert": ""},
+   {"claim_zh": "考古學家在多具古埃及木乃伊身上驗出血吸蟲（病）。", "quote": "archaeologists have detected it on numerous Ancient Egyptian mummies", "pages": ["p.41"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+   {"claim_zh": "金字塔的側面不是垂直的，但 52 度已經很接近垂直了。", "quote": "The pyramid's face wasn't vertical—but at 52 degrees it was close enough.", "pages": ["p.41"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+   {"claim_zh": "吉薩工人墓地的骨骸，手臂、腿、手上都有明顯骨折的跡象。", "quote": "skeletons in the workers' cemetery in Giza show signs of significant fractures in their arms, legs, and hands", "pages": ["p.41"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+   {"claim_zh": "許多骨折已癒合，顯示當時醫者用夾板固定傷處；有些人甚至似乎挺過了截肢。", "quote": "many of those fractures healed, suggesting doctors immobilized them in splints. Some even seem to have survived amputations.", "pages": ["p.41"], "type": "事實", "who": "作者", "hedge": "作者用 suggesting／seem 語氣推測", "convert": ""}
+ ],
+ "unclear": []}
+```

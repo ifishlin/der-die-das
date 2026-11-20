@@ -1,0 +1,322 @@
+{
+ "scene_id": "EP3-07",
+ "notes": "這一場是「猛獁草原」的巡禮戲：功能是建立這片又冷又大的草原，並一隻一隻揭露非洲與北極動物混在一起的荒謬組合，最後把 HERO 收進食物鏈裡當笑點。節奏上採『先大後小再大』：S01 建立 HERO 與空曠寒冷（WS 平視，看他發抖）、S02 用高角度 EWS 俯瞰全谷把奇怪組合一次攤開；接著跟著旁白一隻一隻帶：S03 深景把看似正常的北極狐／馴鹿／野牛排成一列、S04 近一點揭露長毛犀牛並讓 HERO 嚇傻（反應笑點）、S05 用貼地仰角把小狼獾擺在犀牛巨腿前做體型反差。再切對岸遠處掠食者：S06 EWS 帶到遠狼與更遠的獅、S07 拉近到洞獅公獅（強調沒有大鬃毛，這是旁白重點且與模型預設相反，必須明寫並引參考圖）、S08 熊與鬣狗。S09 切到西岸草叢貼地仰角的豹，製造懸念與威脅。最後兩張收尾：S10 EWS 從 HERO 背後望向北邊一整片草食動物與遠方猛獁象（豐饒感），S11 回到 HERO 中景正面，把『還有人類』落在他緊張的臉上，順勢接下一場他低頭看測量器。HERO 沿西岸由南往北走（F11→E10→F7→H5→H4）；對岸與遠處掠食者多為切出去的望遠鏡頭，不需 HERO 入鏡。全場只有 S10 同框 HERO＋猛獁象，但為 EWS，依規則不需加拍遠一級。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": 1, "cell": "F11", "facing": "N", "doing": "走進河谷底，縮著肩膀發抖，沿西岸起步往北"},
+    {"t": 2, "cell": "E10", "facing": "N", "doing": "沿西岸往北走，環顧四周奇怪的動物組合"},
+    {"t": 3, "cell": "F7", "facing": "NE", "doing": "停下腳步，盯著東側正在吃草的披毛犀，嚇傻"},
+    {"t": 4, "cell": "H5", "facing": "N", "doing": "繼續沿岸往北（此時鏡頭多切去拍對岸與遠處掠食者，HERO 不入鏡）"},
+    {"t": 5, "cell": "H4", "facing": "N", "doing": "走到草食動物群南側，望向北邊的野牛、馬、猛獁象，緊張地看"}
+   ]
+  },
+  {
+   "who": "ANIMALS",
+   "path": [
+    {"t": 1, "cell": "D9", "facing": "S", "doing": "北極狐，低頭覓食、神情機警"},
+    {"t": 1, "cell": "D6", "facing": "S", "doing": "馴鹿群，低頭吃草"},
+    {"t": 1, "cell": "F3", "facing": "S", "doing": "野牛群，低頭吃草"},
+    {"t": 1, "cell": "C3", "facing": "S", "doing": "幾匹野馬，低頭吃草"},
+    {"t": 1, "cell": "G7", "facing": "N", "doing": "披毛犀，身體成南北向側對東邊相機，低頭吃草"},
+    {"t": 1, "cell": "G9", "facing": "E", "doing": "狼獾，貼地小跑、抬頭機警"},
+    {"t": 1, "cell": "N4", "facing": "W", "doing": "狼群，站在對岸遠處，警覺地望向河谷"},
+    {"t": 1, "cell": "O8", "facing": "S", "doing": "一對洞獅（公獅無大鬃毛），側身朝南盯著獵物"},
+    {"t": 1, "cell": "M11", "facing": "N", "doing": "棕熊，四足緩步前行"},
+    {"t": 1, "cell": "O11", "facing": "W", "doing": "兩隻鬣狗，低頭鬼祟潛行"},
+    {"t": 1, "cell": "C11", "facing": "S", "doing": "豹，貼地壓低身體悄悄前移"},
+    {"t": 1, "cell": "L1", "facing": "S", "doing": "遠方北邊的猛獁象群，低頭吃草"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-07-01",
+   "variant_of": "N/A",
+   "t": 1,
+   "narration": [
+    "你沿著河谷走。這一片又冷又大的草原，叫做「猛獁草原」。"
+   ],
+   "subject": "HERO（沿河谷走，建立寒冷空曠的環境）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏下，全身入鏡朝鏡頭走來；四周是大量空曠草原，襯托他的渺小與孤單",
+   "screen_direction": "toward",
+   "action": "HERO 縮著脖子、雙臂緊抱胸前發抖，牙齒打顫，一步步往前走",
+   "camera": {"cell": "E10", "height_m": 1.5, "look_at": "HERO (F11)", "distance_m": 14},
+   "cast": [
+    {"who": "HERO", "visible": "全身（頭到腳）", "frame_height": "全身，約佔畫高 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), with no hat and no backpack, walking forward. HERO's face and hands are pure paper white. HERO is shivering with the cold, shoulders hunched up, both arms wrapped tightly around his chest, his face miserable with teeth chattering. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the bank, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成 FS（HERO 偏大）；剪輯時可當 FS 用或稍微往後裁留白。front34 為 △，若畫成正面亦可接受。"
+  },
+  {
+   "id": "EP3-07-02",
+   "variant_of": "N/A",
+   "t": 2,
+   "narration": [
+    "草原上的動物，組合得非常奇怪。"
+   ],
+   "subject": "整片河谷與散佈其上的奇怪動物組合（環境為主，HERO 為小小的前景錨點）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "aerial",
+   "composition": "高角度俯瞰整條河谷：近景下方 HERO 很小；中段草地上有馴鹿、野牛；中間一條河；對岸遠處有狼群；上方（北）天際有猛獁象。北極與非洲型動物混雜一畫",
+   "screen_direction": "off_right",
+   "action": "俯瞰的一瞬間，各種動物散落在廣闊草原各處，HERO 抬頭望向遠方這一片荒謬的動物園",
+   "camera": {"cell": "B6", "height_m": 40, "look_at": "河谷中段 (I6 一帶)", "distance_m": 120},
+   "cast": [
+    {"who": "HERO", "visible": "全身（很小的前景剪影）", "frame_height": "約佔畫高 8 分之 1"},
+    {"who": "ANIMALS 馴鹿群", "visible": "全身，中景小群", "frame_height": "約佔畫高 1 成"},
+    {"who": "ANIMALS 野牛群", "visible": "全身，中景小群", "frame_height": "約佔畫高 1 成"},
+    {"who": "ANIMALS 狼群", "visible": "全身，遠景小點", "frame_height": "約佔畫高半成"},
+    {"who": "ANIMALS 猛獁象", "visible": "全身，天際遠景", "frame_height": "約佔畫高 1 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are: HERO, a small herd of reindeer, a herd of steppe bison, a distant pack of wolves, and several woolly mammoths far away. HERO (exactly as in the attached HERO character sheet) is a tiny figure low in the foreground, with no hat and no backpack, shivering and hugging himself as he gazes out across the plain. HERO's face and hands are pure paper white. The reindeer and the steppe bison are grazing calmly, heads lowered; the far-off wolves and the woolly mammoths are small in the distance. Shot size: Extreme Wide Shot (EWS). The characters are very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "空拍俯瞰下水平方位不明確，未套用方位實測句"
+   ],
+   "remedy": "EWS＋aerial 為 △（只有配 EWS 成功）；若俯角不足，接受高角度遠景即可，仍能表達『動物散滿草原』。"
+  },
+  {
+   "id": "EP3-07-03",
+   "variant_of": "N/A",
+   "t": 2,
+   "narration": [
+    "有北極狐，有馴鹿，有野牛，這些看起來，都還算正常。"
+   ],
+   "subject": "看似正常的草食／北極動物三組（北極狐在前、馴鹿居中、野牛在後）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "沿西岸由南往北的深景排列：北極狐在近景左下、馴鹿群在中景、野牛群在較遠處；三層拉開空間，像一列『看起來很正常』的動物",
+   "screen_direction": "off_down",
+   "action": "三組動物各自低頭安靜吃草，神情平和、普通，沒有一絲緊張",
+   "camera": {"cell": "E9", "height_m": 1.5, "look_at": "馴鹿群 (D6)", "distance_m": 60},
+   "cast": [
+    {"who": "ANIMALS 北極狐", "visible": "全身（近景）", "frame_height": "約佔畫高 2 成"},
+    {"who": "ANIMALS 馴鹿群", "visible": "全身（中景）", "frame_height": "約佔畫高 2 成"},
+    {"who": "ANIMALS 野牛群", "visible": "全身（遠景）", "frame_height": "約佔畫高 1.8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are: one arctic fox, a small herd of reindeer, and a herd of steppe bison. The arctic fox is close in the foreground, the reindeer are in the middle distance, and the steppe bison are further back. All of them are grazing calmly with their heads lowered, looking peaceful and completely ordinary. Shot size: Wide Shot (WS). The animals' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside the bank and sees the animals from the side. Camera angle: Eye-level: the camera is at the animals' eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "三層深景若被壓縮，剪輯時以馴鹿為主體；WS 可能偏 FS，可接受。"
+  },
+  {
+   "id": "EP3-07-04",
+   "variant_of": "N/A",
+   "t": 3,
+   "narration": [
+    "可是旁邊，竟然有一隻全身長毛的犀牛，在吃草。"
+   ],
+   "subject": "披毛犀（荒謬感的揭露主體）；次要主體 HERO 的驚呆反應",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "披毛犀在畫面右側偏前、完整側身入鏡（展示整身長毛）；HERO 在其後方左側、較小，張口瞪眼反應",
+   "screen_direction": "off_down",
+   "action": "披毛犀低頭安穩吃草的一刻；HERO 在後方愣住，嘴巴張大、眼睛瞪圓",
+   "camera": {"cell": "H8", "height_m": 1.5, "look_at": "披毛犀 (G7)", "distance_m": 20},
+   "cast": [
+    {"who": "ANIMALS 披毛犀", "visible": "全身側面（頭到四足）", "frame_height": "全身，約佔畫高 7 成"},
+    {"who": "HERO", "visible": "全身（後方）", "frame_height": "全身，約佔畫高 4.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are: one woolly rhinoceros and HERO. The woolly rhinoceros is large toward the front, seen fully from the side, its whole shaggy long-haired body in profile, head lowered and grazing calmly and peacefully. Behind it stands HERO (exactly as in the attached HERO character sheet), with no hat and no backpack, still shivering, staring at the rhinoceros wide-eyed with his jaw dropped in astonishment. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). Their whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside the bank and sees the woolly rhinoceros exactly from the side. Camera angle: Eye-level: the camera is at the rhinoceros's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "犀牛非 MAMMOTH，不需加拍遠一級；WS 可能偏 FS，若犀牛較長而稍微超框可接受局部。"
+  },
+  {
+   "id": "EP3-07-05",
+   "variant_of": "N/A",
+   "t": 3,
+   "narration": [
+    "犀牛的旁邊，還有一隻狼獾。"
+   ],
+   "subject": "狼獾（小動物）；用披毛犀的巨腿當背景做體型反差",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "low",
+   "composition": "狼獾小小地在畫面前景中央、貼地側身；牠身後聳立著披毛犀的四條粗腿與長毛肚子，像柱子一樣罩住上方，凸顯狼獾的渺小",
+   "screen_direction": "right",
+   "action": "狼獾抬著小頭、機警地往畫面右側小跑的一刻；背景只有犀牛的巨腿",
+   "camera": {"cell": "G10", "height_m": 0.3, "look_at": "狼獾 (G9)", "distance_m": 6},
+   "cast": [
+    {"who": "ANIMALS 狼獾", "visible": "全身側面", "frame_height": "全身，約佔畫高 3.5 成"},
+    {"who": "ANIMALS 披毛犀", "visible": "只有四條腿與腹部（背景）", "frame_height": "腿與腹，約佔畫高 7 成（頂天的背景柱）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are: one wolverine and the legs of one woolly rhinoceros. The wolverine is small and low to the ground in the foreground, trotting along with its little head raised, alert and beady-eyed. Directly behind it rise only the four thick legs and the shaggy long-haired belly of a woolly rhinoceros, towering over the tiny wolverine like pillars. Shot size: Full Shot (FS). The wolverine's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the wolverine and sees it exactly from the side. Extreme low-angle shot, ground-level camera perspective, looking up at the wolverine.",
+   "untested": [
+    "Extreme low-angle 用在小動物（狼獾）＋背景巨大犀牛腿，非單人站立，未實測"
+   ],
+   "remedy": "low 目前只在單人站立驗證；若仰角不足，保留狼獾貼地、犀牛巨腿頂天的氣勢即可，剪輯時可裁掉上方多留巨腿。"
+  },
+  {
+   "id": "EP3-07-06",
+   "variant_of": "N/A",
+   "t": 4,
+   "narration": [
+    "遠處有一群狼，再過去，竟然還有獅子。"
+   ],
+   "subject": "對岸遠處的狼群，以及更遠的一對洞獅（環境遠景）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "從西岸越過河谷望向對岸：狼群在中遠景、較偏上（北）；更遠處（再過去）是一對更小的洞獅；全都很小，強調『遠處、再過去』的層次",
+   "screen_direction": "toward",
+   "action": "狼群抬頭、警覺地望向河谷這一側的一刻；更遠的洞獅只是小小的輪廓",
+   "camera": {"cell": "H5", "height_m": 1.5, "look_at": "狼群 (N4)", "distance_m": 120},
+   "cast": [
+    {"who": "ANIMALS 狼群", "visible": "全身（遠景小群）", "frame_height": "約佔畫高 1.5 成"},
+    {"who": "ANIMALS 洞獅", "visible": "全身（更遠處更小）", "frame_height": "約佔畫高 1 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are: a pack of wolves and a pair of cave lions. The pack of wolves stands on the far side of the valley, alert, heads turned to watch something across the plain. Even further beyond them is a pair of cave lions, smaller still in the far distance. Shot size: Extreme Wide Shot (EWS). The animals are very small in the picture; the environment is the main subject. Camera direction: side view. The camera is across the valley and sees the animals from the side. Camera angle: Eye-level: the camera is at the animals' eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-07-07",
+   "variant_of": "N/A",
+   "t": 4,
+   "narration": [
+    "那是「洞獅」，比今天非洲的獅子，還要再大一點。",
+    "從古人在洞穴裡畫的畫看起來，公洞獅好像沒有那一圈大鬃毛。"
+   ],
+   "subject": "一對洞獅（公獅無大鬃毛，是這段的重點）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "公洞獅在畫面中央偏左、完整側身入鏡，脖子線條清楚（看得出沒有鬃毛）；母獅在其右後方略小",
+   "screen_direction": "off_right",
+   "action": "公洞獅側身站立、眼神銳利地盯向畫面外右方的獵物；母獅也警戒；兩隻都精瘦、危險，神情飢餓",
+   "camera": {"cell": "N8", "height_m": 1.5, "look_at": "洞獅 (O8)", "distance_m": 6},
+   "cast": [
+    {"who": "ANIMALS 公洞獅", "visible": "全身側面（頭到爪）", "frame_height": "全身，約佔畫高 5.5 成"},
+    {"who": "ANIMALS 母洞獅", "visible": "全身（後方略小）", "frame_height": "全身，約佔畫高 5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are: a pair of cave lions, a male and a female. The male cave lion stands in profile toward the centre, lean and powerful, eyes sharp and hungry, staring at unseen prey off to one side. He has NO mane around his neck — a smooth-necked maneless lion, exactly as in the attached predator sheet. The female stands a little behind him, also watchful and alert. Shot size: Full Shot (FS). The male cave lion's whole body, from head to paws, just fits in the picture. Camera direction: side view. The camera is beside the lions and sees them exactly from the side. Camera angle: Eye-level: the camera is at the lions' eye height, looking straight ahead.",
+   "untested": [
+    "明寫公獅『NO mane / smooth-necked』以對抗模型『獅子有鬃毛』的強預設"
+   ],
+   "remedy": "無鬃毛是旁白重點且與模型預設相反，故破例明寫並引參考圖；若仍畫出鬃毛就重畫或再加強否定句。"
+  },
+  {
+   "id": "EP3-07-08",
+   "variant_of": "N/A",
+   "t": 4,
+   "narration": [
+    "還有熊，還有鬣狗。"
+   ],
+   "subject": "棕熊（前景大）與兩隻鬣狗（後方小）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "棕熊在畫面左側偏前、側身大大入鏡；兩隻鬣狗在其右後方較小、鬼祟地跟著",
+   "screen_direction": "left",
+   "action": "棕熊四足沉重地往畫面左側緩步、低頭晃著的一刻；兩隻鬣狗低頭、神情狡猾飢餓地潛行",
+   "camera": {"cell": "L11", "height_m": 1.5, "look_at": "棕熊 (M11)", "distance_m": 15},
+   "cast": [
+    {"who": "ANIMALS 棕熊", "visible": "全身側面", "frame_height": "全身，約佔畫高 5.5 成"},
+    {"who": "ANIMALS 鬣狗", "visible": "全身（後方兩隻）", "frame_height": "全身，約佔畫高 3 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are: one brown bear and two cave hyenas. The brown bear is large toward the front, lumbering along on all fours, head swinging low, looking heavy and grumpy. A little behind it are two cave hyenas, smaller, skulking with lowered heads and sly, hungry faces. Shot size: Wide Shot (WS). The animals' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: side view. The camera is beside the animals and sees them from the side. Camera angle: Eye-level: the camera is at the bear's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 可能偏 FS，可接受。"
+  },
+  {
+   "id": "EP3-07-09",
+   "variant_of": "N/A",
+   "t": 4,
+   "narration": [
+    "草叢裡，有一隻豹，正悄悄地移動。"
+   ],
+   "subject": "豹（壓低身體潛行，製造懸念與威脅）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "low",
+   "composition": "豹佔畫面中央、貼地壓低，從牠前側方拍，看得到臉和一側身體；貼地仰角，前景被草遮住一部分，更顯鬼祟",
+   "screen_direction": "off_right",
+   "action": "豹壓低到肚子幾乎貼地、抬起一隻前掌正要落下的一刻；雙眼瞇起、死盯畫面外右方的獵物，耳朵壓平，全身緊繃無聲",
+   "camera": {"cell": "D12", "height_m": 0.3, "look_at": "豹 (C11)", "distance_m": 10},
+   "cast": [
+    {"who": "ANIMALS 豹", "visible": "頭、肩、前肢（身體中段以上，下半身被草半遮）", "frame_height": "約佔畫高 4.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is: one leopard. The leopard is crouched very low, belly almost touching the ground, creeping forward with one front paw lifted mid-step. Its eyes are narrowed and locked on unseen prey off to one side, ears flattened, its whole body tense and silent. Shot size: Medium Shot (MS). The leopard is framed from the middle of its body forward, filling the frame with its head, shoulders and front legs. Camera direction: front three-quarter view. The camera is ahead of the leopard and off to one side, so we see its face and one side of its body. Extreme low-angle shot, ground-level camera perspective, looking up at the leopard.",
+   "untested": [
+    "MS 以四足動物（豹）取景，以身體中段為下緣；Extreme low-angle 用於爬行的豹，非站立單人"
+   ],
+   "remedy": "MS 常畫成偏近／膝上，若太近剪輯拉遠；low 於爬行動物未驗證，若仰角不足，保留貼地潛行的壓低感即可。"
+  },
+  {
+   "id": "EP3-07-10",
+   "variant_of": "N/A",
+   "t": 5,
+   "narration": [
+    "河谷裡的草很好，養活了一大堆大型的草食動物：野牛、馬，還有猛獁象。"
+   ],
+   "subject": "整片草食動物的豐饒（野牛、野馬、遠方猛獁象）；HERO 背影為前景錨點",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "HERO 背影在畫面左下前景、較小；他前方的草原上散佈著野牛群與野馬；最北邊天際線上有幾頭巨大的猛獁象輪廓，整片谷地滿是大型草食動物",
+   "screen_direction": "away",
+   "action": "HERO 背對鏡頭、縮著肩膀眺望北方的一刻；谷地裡的野牛、野馬低頭吃草，遠處猛獁象緩緩移動",
+   "camera": {"cell": "G6", "height_m": 1.5, "look_at": "北方谷地（野牛群／猛獁象）", "distance_m": 45},
+   "cast": [
+    {"who": "HERO", "visible": "背影全身（看不到臉）", "frame_height": "約佔畫高 2 成"},
+    {"who": "ANIMALS 野牛群", "visible": "全身（中景）", "frame_height": "約佔畫高 1.5 成"},
+    {"who": "ANIMALS 野馬", "visible": "全身（中景）", "frame_height": "約佔畫高 1.2 成"},
+    {"who": "ANIMALS 猛獁象", "visible": "全身（北方天際遠景）", "frame_height": "約佔畫高 1.2 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are: HERO, a herd of steppe bison, a few wild horses, and several woolly mammoths. HERO (exactly as in the attached HERO character sheet) is small in the lower foreground, seen from behind and one side, with no hat and no backpack, shoulders hunched with cold, looking out across the valley away from the camera. HERO's hands are pure paper white. Spread across the plain ahead of him are a herd of steppe bison and a few wild horses grazing, and far off on the horizon several large woolly mammoths. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side of the bank; HERO is nearer the camera, seen from behind and one side, and the herds are spread out ahead of him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "HERO 同框猛獁象但為 EWS，依規則不需加拍遠一級。back34 偶爾多畫一個 HERO 前景；若出現多餘 HERO 就重畫。"
+  },
+  {
+   "id": "EP3-07-11",
+   "variant_of": "N/A",
+   "t": 5,
+   "narration": [
+    "而盯著牠們的，是狼，是洞獅，還有人類。"
+   ],
+   "subject": "HERO（把『人類』這個掠食者落在他身上的收尾笑點）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏右、腰部以上入鏡，從前側方看得到他的臉；眼神瞥向畫面外左方的動物",
+   "screen_direction": "off_left",
+   "action": "HERO 緊張地盯著谷地裡的動物看、眼睛睜大、嘴巴微張、還在發抖的一刻——旁白說掠食者『還有人類』正好落在他臉上",
+   "camera": {"cell": "I3", "height_m": 1.5, "look_at": "HERO (H4)", "distance_m": 8},
+   "cast": [
+    {"who": "HERO", "visible": "腰部以上（臉清楚）", "frame_height": "腰上半身，約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), with no hat and no backpack. He is still shivering with cold, watching the animals out across the valley, his eyes wide and uneasy and his mouth slightly open, glancing nervously off to one side. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the bank, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上；若畫得偏遠，剪輯時推近到胸上。front34 為 △，可接受。此鏡頭收在 HERO 臉上，順勢接下一場他低頭看測量器。"
+  }
+ ]
+}

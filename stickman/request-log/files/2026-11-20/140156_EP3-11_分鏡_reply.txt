@@ -1,0 +1,450 @@
+{
+ "scene_id": "EP3-11",
+ "notes": "這一場是「趴在坡頂偷看河谷猛獁象群」的科普觀察戲，25 句旁白幾乎都在講猛獁象的外型、危險和滅絕，所以鏡頭主力是猛獁象本身，HERO 和獵人只在頭尾當「看的人」。整場 HERO（在坡頂 F7）和猛獁象（坡下河谷 K8 一帶、落單老公象 L2）距離很遠，從頭到尾都不會在同一個畫面裡以可比大小同框（他們是遠遠偷看），所以本場沒有觸發【七之二】的『遠一級加拍』——沒有任何一張同時有 HERO 和猛獁象當 cast。尺寸對比完全靠旁白＋猛獁象單獨鏡頭傳達，不靠並排。節奏設計：01 建立『偷看的人』（背影）→ 02 揭露象群（高角度俯看河谷）→ 03~06 逐段拆解外型（側面全身看肩高／插入象牙／前側看毛與隆起／特寫毛色）→ 07 低角度建立威脅感 → 08 切回 HERO 只有棍子石頭的脆弱反應 → 09 獵人指落單老公象、搖頭 → 10 落單老公象孤身 → 11 狂暴期衝鋒（低角、衝向鏡頭）→ 12 整群也別惹（平視群像）→ 13 空拍極遠景收在滅絕的輓歌感。非平視鏡頭都有理由：02 用 high 俯看才有『由高處往下看綠河谷』的偷看視角；07、11 用 Extreme low-angle 製造巨大壓迫與衝鋒威脅；13 用 aerial+EWS（唯一實測可行的空拍組合）做滅絕的空曠收尾。猛獁象配 Extreme low-angle、整群、衝向鏡頭這些都是 HERO 單人站姿以外的用法，列進 untested。MCU/CU 這些 △/✗ 景別，prompt 都用可生成的句子、remedy 註明剪輯推近。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "F7", "facing": "E", "doing": "趴在坡頂邊緣、手肘撐地，往東邊坡下的河谷看象群"},
+    {"t": "2", "cell": "F7", "facing": "NE", "doing": "順著獵人手指的方向，往東北邊看落單的老公象；手上沒拿武器，身邊地上有一根短木棍和幾顆石頭"}
+   ]
+  },
+  {
+   "who": "HUNTERS",
+   "path": [
+    {"t": "1", "cell": "F8", "facing": "E", "doing": "帶頭的男獵人趴在 HERO 南側邊緣往下看；另一名獵人趴在 F6（HERO 北側），都在坡頂 '1' 格一線排開"},
+    {"t": "2", "cell": "F8", "facing": "NE", "doing": "帶頭的男獵人伸出一隻手往東北方（落單老公象 L2 的方向）指，臉上表情凝重並搖頭"}
+   ]
+  },
+  {
+   "who": "MAMMOTH",
+   "path": [
+    {"t": "1", "cell": "K8", "facing": "N", "doing": "一群約六七頭猛獁象散在河谷草地 K8–M9 一帶低頭吃草；一頭落單的老公象遠在北邊 L2 單獨站著"},
+    {"t": "2", "cell": "M8", "facing": "SE", "doing": "示意狂暴期：一頭公象象鼻高舉、耳朵張開，朝鏡頭方向（東南）衝過來"},
+    {"t": "2", "cell": "L2", "facing": "SE", "doing": "落單老公象在北邊做同樣的衝鋒示意，朝鏡頭衝"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-11-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "第二天一早，獵人帶你趴在山坡上，往下看。"
+   ],
+   "subject": "HERO 和兩名獵人（趴在坡頂邊緣往下看的人），背影",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "high",
+   "composition": "三個人沿畫面由左到右排成一線趴在坡頂邊緣，全部背對鏡頭；HERO 在中間、比兩側獵人略矮；前景是他們的背和撐地的手肘，他們看向畫面深處下方的河谷",
+   "screen_direction": "away",
+   "action": "清晨，三人剛趴定，手肘撐地、頭往下探，剛要往河谷裡看的那一刻",
+   "camera": {
+    "cell": "E7",
+    "height_m": "3.5",
+    "look_at": "HERO 與兩名獵人的背（F6/F7/F8 一線）",
+    "distance_m": "22"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "整個背影、後腦、撐地的手肘和手，趴姿", "frame_height": "30%"},
+    {"who": "HUNTERS", "visible": "兩名獵人的整個背影、後腦與手肘（F6 與 F8）", "frame_height": "35%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only three characters are in the picture: HERO (exactly as in the attached HERO character sheet) and two of the Pavlovian hunters (exactly as in the attached hunter character sheets). All three lie flat on their bellies in a row, propped on their elbows, seen from behind, heads tilted down as they look down and away from the camera. HERO is in the middle and a little shorter than the two hunters on either side. Their faces are not visible. HERO's hands are pure paper white; the hunters' hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is on the hilltop behind HERO and the hunters, looking the way they look; HERO is in the middle so the hunters do not hide him. Camera angle: High angle: the camera is high above HERO, looking down at him.",
+   "untested": [
+    "三個角色並排趴姿、同時背影（back view 句原本是單一追逐主體）",
+    "High angle 俯看一排趴著的人"
+   ],
+   "remedy": "high 實測只有輕微下看；若俯角不夠，剪輯時往下壓一點或裁掉上緣天空強化往下看的感覺"
+  },
+  {
+   "id": "EP3-11-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "河谷裡，有一群猛獁象。",
+    "牠們大得，像一輛小巴士。",
+    "一頭成年的猛獁象，重達六噸。"
+   ],
+   "subject": "河谷裡一群吃草的猛獁象",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "從坡頂往下俯看，河谷裡約六七頭猛獁象散成一片，分佈在畫面中段偏下；一頭較大的成年公象在群體中間偏右，當作『小巴士那麼大』的視覺重點",
+   "screen_direction": "off_down",
+   "action": "象群低頭吃草、緩慢移動的清晨瞬間，牠們龐大的身軀填滿谷底",
+   "camera": {
+    "cell": "F7",
+    "height_m": "3",
+    "look_at": "河谷象群中心（K8–L8）",
+    "distance_m": "122"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "六七頭猛獁象的全身，從高處俯看", "frame_height": "22%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only woolly mammoths are in the picture: a herd of about seven woolly mammoths (exactly as in the attached mammoth character sheet) standing and grazing, scattered in a loose group, one of them noticeably larger than the rest. No people in the picture. They are calm, heads lowered, grazing. Shot size: Wide Shot (WS). The mammoths' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of the mammoths and off to one side, so we see their faces and one side of their bodies. Camera angle: High angle: the camera is high above the mammoths, looking down at them.",
+   "untested": [
+    "一整群猛獁象（表上的句子以單一主體校準）",
+    "High angle 俯看象群"
+   ],
+   "remedy": "high 只有輕微下看；若俯角不足，剪輯時裁上緣、往下壓；此鏡要『像小巴士那麼大』的尺度靠剪輯對群中最大那頭略推近"
+  },
+  {
+   "id": "EP3-11-03",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "公象的肩膀，離地大約三公尺，最大的到三公尺半；母象矮一點，大概兩公尺半。"
+   ],
+   "subject": "一頭成年公猛獁象（側面全身）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "單獨一頭公象佔畫面中央偏左，從象鼻到尾巴整個側面全身入鏡，肩膀隆起的最高點清楚可見，用來感受『肩高三公尺』",
+   "screen_direction": "right",
+   "action": "公象側身站立、低頭吃草，重心穩、肩膀高聳的靜態一刻",
+   "camera": {
+    "cell": "J8",
+    "height_m": "2.5",
+    "look_at": "公象 K8",
+    "distance_m": "20"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "一頭公象的整個側面全身（象鼻到尾）", "frame_height": "65%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: a single adult bull woolly mammoth (exactly as in the attached mammoth character sheet), standing and grazing, seen exactly from the side, its whole body from trunk to tail visible, its high humped shoulders clearly the tallest point. No people in the picture. Calm, placid expression, head lowered to graze. Shot size: Wide Shot (WS). The mammoth's whole body is clearly visible, with a lot of the surroundings around it. Camera direction: side view. The camera is beside the mammoth and sees it exactly from the side. Camera angle: Eye-level: the camera is at the mammoth's eye height, looking straight ahead.",
+   "untested": [
+    "側面全身一頭猛獁象（side view 句原本寫兩人追逐）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-11-04",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "牠們的象牙，有八英尺長，大約兩公尺半。",
+    "先往外、往上，再往內，捲成一個大圈，最長的，可以長到四公尺。"
+   ],
+   "subject": "公猛獁象的頭和螺旋象牙（插入鏡頭）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "象的頭和一對長長的螺旋象牙填滿畫面，象牙從兩側先往外、往上再往內捲成大圈的曲線清楚展開；象頭在中央",
+   "screen_direction": "toward",
+   "action": "鏡頭貼近象頭，強調兩根巨大象牙向內捲曲的大弧線這個資訊點",
+   "camera": {
+    "cell": "J8",
+    "height_m": "2.8",
+    "look_at": "公象 K8 的頭與象牙",
+    "distance_m": "12"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "象的頭、象鼻根部與整對螺旋象牙", "frame_height": "85%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: a single adult bull woolly mammoth (exactly as in the attached mammoth character sheet), its head and its pair of very long spiralling tusks filling the frame; the tusks sweep out, up and then curve inward into a big loop. No people in the picture. Calm, placid expression. Shot size: Medium Close-up (MCU). The mammoth is framed from the chest up; the bottom edge of the picture is at its chest. Camera direction: front three-quarter view. The camera is ahead of the mammoth and off to one side, so we see its face and one side of its body. Camera angle: Eye-level: the camera is at the mammoth's eye height, looking straight ahead.",
+   "untested": [
+    "MCU 框一頭猛獁象的頭＋象牙（MCU 句以 HERO 胸上校準）"
+   ],
+   "remedy": "MCU 常畫成到腰／偏遠；想要更近強調象牙大圈，剪輯時推近到 CU"
+  },
+  {
+   "id": "EP3-11-05",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "全身都是長長的毛，耳朵和尾巴，比今天的大象小很多。",
+    "肩膀上有一個凸起，頭頂也高高地拱起來。"
+   ],
+   "subject": "一頭公猛獁象（前側 3/4 全身，看輪廓）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "公象以前側 3/4 角度站在畫面中央，整個蓬鬆長毛的身體入鏡，肩上的高隆起、頭頂的高拱、細小的耳朵和短尾巴都清楚看得到",
+   "screen_direction": "toward",
+   "action": "公象前側站姿、略抬頭，長毛、隆起肩與拱頭的輪廓同時呈現的一刻",
+   "camera": {
+    "cell": "J9",
+    "height_m": "2.5",
+    "look_at": "公象 K8",
+    "distance_m": "28"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "一頭公象的前側 3/4 全身（長毛、小耳、短尾、肩隆、拱頭）", "frame_height": "65%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: a single adult bull woolly mammoth (exactly as in the attached mammoth character sheet), standing, its whole shaggy body visible, seen from the front three-quarter. Clearly show its long shaggy fur all over the body, its small ears and short tail, the high hump on its shoulders and the tall domed top of its head. No people in the picture. Calm, placid expression. Shot size: Wide Shot (WS). The mammoth's whole body is clearly visible, with a lot of the surroundings around it. Camera direction: front three-quarter view. The camera is ahead of the mammoth and off to one side, so we see its face and one side of its body. Camera angle: Eye-level: the camera is at the mammoth's eye height, looking straight ahead.",
+   "untested": [
+    "front three-quarter 一頭猛獁象全身（front34 句原本寫 HERO）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-11-06",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "牠們的毛，是深褐色的。",
+    "你在博物館看到的那種橘紅色的毛，其實是在地底埋了幾萬年，褪色變成的。"
+   ],
+   "subject": "猛獁象肩、側腹上的厚長毛（特寫插入鏡頭）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面幾乎被一片濃密、深褐色的厚長毛填滿，看得到一縷一縷垂下的長毛質感；沒有臉",
+   "screen_direction": "off_right",
+   "action": "鏡頭貼在象的肩側，強調毛是『深褐色』而非博物館的橘紅色這個對比",
+   "camera": {
+    "cell": "J8",
+    "height_m": "2.5",
+    "look_at": "公象 K8 的肩側毛",
+    "distance_m": "6"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "只有肩與側腹的一大片深褐色長毛（不入鏡臉）", "frame_height": "100%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: a single adult woolly mammoth (exactly as in the attached mammoth character sheet), a close view of the thick shaggy fur on its shoulder and flank; its face is not in the picture. The fur is deep dark brown, hanging in long strands. No people in the picture. Shot size: Medium Close-up (MCU). The subject is framed close; the bottom edge of the picture is at its chest. Camera direction: side view. The camera is beside the mammoth and sees the fur exactly from the side. Camera angle: Eye-level: the camera is at the mammoth's eye height, looking straight ahead.",
+   "untested": [
+    "MCU 特寫一片猛獁象毛皮質感（表上無毛皮特寫校準）"
+   ],
+   "remedy": "想要更貼近的毛皮質感 CU，剪輯時再推近；MCU 句確保至少畫得出一片近毛"
+  },
+  {
+   "id": "EP3-11-07",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "而牠，是人類獵過最危險的獵物。",
+    "今天的非洲象，是牠的近親，體型也差不多。",
+    "就算是拿著槍的盜獵者，有時候也會被非洲象殺死。"
+   ],
+   "subject": "一頭公猛獁象（低角度、威脅感）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "low",
+   "composition": "從近地面往上看一頭高大的公象，象身高聳佔滿畫面上半，象鼻微抬、面向鏡頭偏右，營造壓迫與危險感",
+   "screen_direction": "toward",
+   "action": "公象抬頭、耳朵張開、面露兇相，龐大身軀從低處仰望顯得更巨大的威脅一刻",
+   "camera": {
+    "cell": "N9",
+    "height_m": "0.3",
+    "look_at": "公象 M8",
+    "distance_m": "26"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "一頭公象前側全身，仰角下顯得高大", "frame_height": "78%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: a single adult bull woolly mammoth (exactly as in the attached mammoth character sheet), standing tall and powerful, facing toward the camera and off to one side, trunk slightly raised. No people in the picture. Fierce, aggressive expression, ears flared out. Extreme low-angle shot, ground-level camera perspective, looking up at the mammoth's full body. Shot size: Wide Shot (WS). The mammoth's whole body is clearly visible, with a lot of the surroundings around it. Camera direction: front three-quarter view. The camera is ahead of the mammoth and off to one side, so we see its face and one side of its body.",
+   "untested": [
+    "Extreme low-angle 用在猛獁象（仰角只在 HERO 單人站姿驗證過）"
+   ],
+   "remedy": "N/A（low 本身為 ✓，只是主體換成動物）"
+  },
+  {
+   "id": "EP3-11-08",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "而你，只有棍子和石頭。"
+   ],
+   "subject": "HERO（趴著往下看的反應）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 的上半身與臉佔畫面中央偏左，趴著撐起上身往下看；畫面右下角地上放著一根短木棍和幾顆石頭，當作他僅有的『武器』",
+   "screen_direction": "off_down",
+   "action": "HERO 看著谷底那些龐然大物，露出害怕、瞪大眼的表情，手旁只有棍子和石頭的無助一刻",
+   "camera": {
+    "cell": "G7",
+    "height_m": "0.4",
+    "look_at": "HERO F7 的臉",
+    "distance_m": "5"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "HERO 的臉、上半身、撐地的手，趴姿；身旁的木棍與石頭", "frame_height": "75%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet), lying prone and propped up on his elbows, looking down over the edge. Worried, frightened expression, wide-eyed. On the ground beside his hand lie a short wooden stick and a few stones. No one else in the picture. HERO's face and hands are pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "趴姿 HERO 以 MCU front34 取景"
+   ],
+   "remedy": "MCU 常畫到腰；想要更強調表情的 CU，剪輯時推近到臉"
+  },
+  {
+   "id": "EP3-11-09",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "獵人指著一頭落單的老公象，搖了搖頭。"
+   ],
+   "subject": "帶頭的男獵人（指著畫外的老公象、搖頭）＋旁邊的 HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "前景偏右是帶頭的男獵人，趴著伸出一隻手往畫面右方指；HERO 趴在他左後方一起看向右方；兩人都朝畫面右邊（畫外的落單老公象方向）",
+   "screen_direction": "off_right",
+   "action": "獵人一手指向遠處落單的老公象、同時搖頭的那一刻，HERO 順著看過去",
+   "camera": {
+    "cell": "G8",
+    "height_m": "0.5",
+    "look_at": "帶頭的男獵人 F8",
+    "distance_m": "22"
+   },
+   "cast": [
+    {"who": "HUNTERS", "visible": "帶頭男獵人的臉、上半身、伸出去指的手臂，趴姿", "frame_height": "55%"},
+    {"who": "HERO", "visible": "HERO 的臉與上半身，趴在獵人左後方", "frame_height": "45%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters are in the picture: the lead Pavlovian hunter (exactly as in the attached hunter character sheet) and HERO (exactly as in the attached HERO character sheet), both lying prone and propped on their elbows. The lead hunter, nearer the camera on the right, points with one outstretched arm toward something off to the right and shakes his head, grim expression. HERO lies beside and a little behind him on the left, looking the same way, tense and uneasy expression. HERO's face and hands are pure paper white; the hunter's face and hands are pure paper white. Shot size: Wide Shot (WS). Their whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of them and off to one side, so we see their faces and one side of their bodies. Camera angle: Eye-level: the camera is at their eye height, looking straight ahead.",
+   "untested": [
+    "兩人趴姿、其中一人伸手指向畫外的動作"
+   ],
+   "remedy": "WS 下搖頭表情偏小；剪輯時往獵人臉與手勢推近，交代『指＋搖頭』"
+  },
+  {
+   "id": "EP3-11-10",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "老公象常常自己走，看起來好像比較好下手，可是獵人很少去惹牠。",
+    "因為牠們又大，又兇，",
+    "特別是在「狂暴期」的時候。"
+   ],
+   "subject": "落單的老公猛獁象（側面全身，孤身）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "一頭老公象側身站在畫面中央，整個身體入鏡，四周空曠沒有別的象，強調牠落單、孤身",
+   "screen_direction": "left",
+   "action": "老公象側身獨自站著、神情疲態又警惕，孤單又不好惹的一刻",
+   "camera": {
+    "cell": "M2",
+    "height_m": "2.5",
+    "look_at": "落單老公象 L2",
+    "distance_m": "20"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "一頭老公象的整個側面全身", "frame_height": "62%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: a single old bull woolly mammoth (exactly as in the attached mammoth character sheet), standing alone, seen exactly from the side, its whole body visible. No other mammoths, no people in the picture. A weary, wary old expression. Shot size: Wide Shot (WS). The mammoth's whole body is clearly visible, with a lot of the surroundings around it. Camera direction: side view. The camera is beside the mammoth and sees it exactly from the side. Camera angle: Eye-level: the camera is at the mammoth's eye height, looking straight ahead.",
+   "untested": [
+    "側面全身單一老公象（side view 句原寫兩人）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-11-11",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "狂暴期的公象，連鳥、長頸鹿，甚至樹，都會攻擊。",
+    "你想把牠趕進陷阱？牠可能直接衝過來。"
+   ],
+   "subject": "狂暴期的公猛獁象（低角、衝向鏡頭）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "公象正面衝向鏡頭，佔滿畫面中央，象鼻高舉、耳朵張開；低角度讓牠壓迫地撲來",
+   "screen_direction": "toward",
+   "action": "狂暴期的公象象鼻甩高、耳朵張開、全速朝鏡頭衝過來的爆發一刻",
+   "camera": {
+    "cell": "M3",
+    "height_m": "0.3",
+    "look_at": "衝鋒的老公象 L2",
+    "distance_m": "26"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "一頭公象正面全身，衝向鏡頭，仰角", "frame_height": "80%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: a single bull woolly mammoth (exactly as in the attached mammoth character sheet), charging straight toward the camera, trunk raised high and ears flared out. No people in the picture. Enraged, violent expression. Extreme low-angle shot, ground-level camera perspective, looking up at the mammoth's full body. Shot size: Wide Shot (WS). The mammoth's whole body is clearly visible, with a lot of the surroundings around it. Camera direction: front view. The camera is ahead of the mammoth, facing it.",
+   "untested": [
+    "Extreme low-angle 用在猛獁象",
+    "猛獁象正面衝向鏡頭的動態姿勢"
+   ],
+   "remedy": "N/A（low 為 ✓，僅主體與動作換成衝鋒猛獁象）"
+  },
+  {
+   "id": "EP3-11-12",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "一大群的象，也一樣，不要去碰。"
+   ],
+   "subject": "緊靠在一起的一群猛獁象（群像）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "約五頭猛獁象緊緊擠成一團站在畫面中央，佔滿橫向畫面，形成一堵『肉牆』，強調一整群也惹不得",
+   "screen_direction": "toward",
+   "action": "象群聚攏、抬頭戒備、彼此靠得很近的一刻，像一面無法穿越的牆",
+   "camera": {
+    "cell": "J8",
+    "height_m": "2.8",
+    "look_at": "象群 K8",
+    "distance_m": "22"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "約五頭猛獁象的全身，前側 3/4 擠成一群", "frame_height": "55%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only woolly mammoths are in the picture: a tight group of about five woolly mammoths (exactly as in the attached mammoth character sheet) standing close together in a cluster, filling the width of the frame. No people in the picture. Calm but alert expressions, heads up. Shot size: Wide Shot (WS). The mammoths' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of the mammoths and off to one side, so we see their faces and one side of their bodies. Camera angle: Eye-level: the camera is at the mammoths' eye height, looking straight ahead.",
+   "untested": [
+    "一群猛獁象擠成一團的群像構圖"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-11-13",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "這些猛獁象，大約在一萬年前，就從歐洲和亞洲的大陸上消失了。",
+    "最後一小群，活在北極海的一座小島上，一直撐到大約四千年前。",
+    "那時候，埃及的金字塔，都已經蓋好了。"
+   ],
+   "subject": "廣闊地景裡的一小群猛獁象（空拍極遠景、輓歌收尾）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "從高空俯瞰一大片地景，一小群猛獁象非常小地散在畫面下半，大量空曠的環境是主體，營造空蕩、將要消失的感覺",
+   "screen_direction": "off_down",
+   "action": "象群渺小地走在廣袤土地上，鏡頭靜靜停住，收在滅絕的空寂感",
+   "camera": {
+    "cell": "F7",
+    "height_m": "60",
+    "look_at": "河谷象群（K8–L8）與整片地景",
+    "distance_m": "140"
+   },
+   "cast": [
+    {"who": "MAMMOTH", "visible": "一小群猛獁象，從高空看非常小", "frame_height": "8%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only woolly mammoths are in the picture: a small herd of woolly mammoths (exactly as in the attached mammoth character sheet) grazing, very small in the picture. No people in the picture. Shot size: Extreme Wide Shot (EWS). The mammoths are very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.",
+   "untested": [
+    "aerial + EWS 的空拍組合用在猛獁象群（aerial 只在配 EWS 時可行，此處即為該組合）"
+   ],
+   "remedy": "N/A（aerial 僅配 EWS 可行，本張正是此組合）"
+  }
+ ]
+}

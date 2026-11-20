@@ -1,0 +1,64 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 10 場　帕夫洛夫人的營地（河谷上方的山坡）・黃昏到晚上
+
+【四、地圖】帕夫洛夫人的營地（河谷上方的山坡）・黃昏到晚上
+小山坡北邊、靠近坡頂的一塊平地，帕夫洛夫人的營地。中間是骨頭燒的火堆；火堆旁有一堆猛獁象骨頭（垃圾堆）和一堆毛皮；西邊是做矛的工作區（燧石碎片、矛桿）。東邊是下坡，從營地邊緣往東看下去，整個河谷都看得到；北邊遠方月光下看得到冰牆（第 11 段）。附近沒有樹，只有草和碎石。
+★ 火燒的是骨頭，不是木頭
+★ 從營地往東看得到整個河谷
+★ 附近沒有樹
+大小 15 欄（A–O）× 10 列（1–10），一格 2 公尺。北在上。時間：黃昏到晚上（第 7、11 段）；上午（第 9 段）；清晨（第 12 段），太陽在東（早上）、西（黃昏）方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O
+  1  a a a a a a a a l l l l l l l
+  2  a a a a a a a a l l l l l l l
+  3  a a a m 2 2 m 3 m l l l l l l
+  4  a a a m m m m m m m l l l l l
+  5  a a a m m m 1 m m 5 l l l l l
+  6  a a a 4 4 m m m m 5 l l l l l
+  7  a a a m m m m m m m l l l l l
+  8  a a a a m m m m m m l l l l l
+  9  a a a a a a a a l l l l l l l
+ 10  a a a a a a a a l l l l l l l
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 骨頭燒的火堆（a fire burning bones instead of wood）｜角色：不可站｜相機：不可放
+  2 = 猛獁象骨頭堆（營地的垃圾堆）（a heap of mammoth bones, the camp's refuse pile）｜角色：不可站｜相機：不可放
+  3 = 毛皮堆（a pile of furs and skins）｜角色：不可站｜相機：不可放
+  4 = 做矛的工作區（燧石碎片、矛桿）（a work spot with flint chips and spear shafts）｜角色：可站｜相機：可放
+  5 = 營地邊緣（往東看得到河谷）（the camp's edge, looking down over the river valley）｜角色：可站｜相機：可放
+  a = 光禿禿的高地（像極地荒漠：碎石、零星乾草）（bare high ground like a polar desert, gravel and a few tufts of dry grass）｜角色：可站｜相機：可放
+  l = 山坡（乾草、碎石）（a dry grassy slope with loose gravel）｜角色：可站｜相機：可放
+  m = 營地地面（踩平的泥土）（trampled bare earth of the camp）｜角色：可站｜相機：可放
+火堆在 G5；從營地東邊邊緣（J5）往下看得到整個河谷。
+地圖外面：北邊 山坡往北延伸；很遠的北方地平線上看得到冰牆；東邊 下坡，下面是長滿綠草的河谷和一條河；西邊 光禿禿的高地，再過去是乾草原；南邊 同一片山坡往南，是 HERO 趴著看猛獁象的坡頂。
+
+【參考圖】
+- REF_CHILD：帕夫洛夫人的小孩（約八歲）（EP3）
+- REF_DOG：像狼的早期的狗（左眼上方淺色斑）（EP3）
+- REF_HERO_FUR：HERO 披毛皮大衣（EP3）
+- REF_HERO_SUMMER：HERO 夏天裝（短袖、短褲、拖鞋，沒帽子沒背包）（EP3）
+- REF_HUNTERS_A：帕夫洛夫獵人 A：帶頭的男獵人、女獵人（給大衣的那位）（EP3）
+- REF_HUNTERS_B：帕夫洛夫獵人 B：戴帽兜的年輕獵人、灰鬍子老獵人（EP3）
+- REF_PROPS3：EP3 道具：矛、投矛器、燧石矛尖、測量器、結霜的回家按鈕、黏土小人像、骨頭火（EP3）
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP3-10-01", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "N7", "height_m": "1.5", "look_at": "HERO", "distance_m": "2.2"}, "in_frame": ["HERO"]}, {"id": "EP3-10-02", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N7", "height_m": "1.6", "look_at": "HERO", "distance_m": "3"}, "in_frame": ["HERO"]}, {"id": "EP3-10-03", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "K7", "height_m": "1.6", "look_at": "火堆 G5", "distance_m": "8"}, "in_frame": ["HERO", "HUNTERS"]}, {"id": "EP3-10-04", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "G3", "height_m": "1.6", "look_at": "帶頭男獵人 F5", "distance_m": "3.5"}, "in_frame": ["HUNTERS"]}, {"id": "EP3-10-05", "variant_of": "N/A", "shot_size": "MLS", "angle": "eye", "camera": {"cell": "G8", "height_m": "1.6", "look_at": "女獵人 G6", "distance_m": "4"}, "in_frame": ["HUNTERS"]}, {"id": "EP3-10-06", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "H9", "height_m": "1.6", "look_at": "HERO 與帶頭男獵人之間", "distance_m": "6"}, "in_frame": ["HERO", "HUNTERS"]}, {"id": "EP3-10-07", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "H8", "height_m": "1.5", "look_at": "HERO", "distance_m": "4"}, "in_frame": ["HERO", "HUNTERS"]}, {"id": "EP3-10-08", "variant_of": "N/A", "shot_size": "ECU", "angle": "eye", "camera": {"cell": "G3", "height_m": "0.5", "look_at": "黏土女人像（火堆北緣 G4）", "distance_m": "1"}, "in_frame": ["N/A"]}, {"id": "EP3-10-09", "variant_of": "N/A", "shot_size": "CU", "angle": "high", "camera": {"cell": "I5", "height_m": "1.3", "look_at": "火堆 G5", "distance_m": "2"}, "in_frame": ["N/A"]}, {"id": "EP3-10-10", "variant_of": "N/A", "shot_size": "MLS", "angle": "eye", "camera": {"cell": "I8", "height_m": "1.3", "look_at": "HERO 與小孩之間", "distance_m": "4.5"}, "in_frame": ["HERO", "CHILD"]}, {"id": "EP3-10-11", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "J5", "height_m": "0.4", "look_at": "DOG H5", "distance_m": "4"}, "in_frame": ["DOG"]}, {"id": "EP3-10-12", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "J4", "height_m": "0.4", "look_at": "DOG 的頭 H5", "distance_m": "2.8"}, "in_frame": ["DOG"]}, {"id": "EP3-10-13", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "H6", "height_m": "1.6", "look_at": "HERO J6", "distance_m": "4"}, "in_frame": ["HERO"]}, {"id": "EP3-10-14", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "F6", "height_m": "1.5", "look_at": "HERO F4 與骨頭堆 F3", "distance_m": "4"}, "in_frame": ["HERO"]}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

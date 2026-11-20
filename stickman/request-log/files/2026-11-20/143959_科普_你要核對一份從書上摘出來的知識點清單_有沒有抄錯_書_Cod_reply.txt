@@ -1,0 +1,11 @@
+```json
+{"page": "p.39",
+ "checks": [{"n": 31, "ok": false, "problem": "整頁 p.39 完全沒有這句話，也沒提到任何溫度、華氏 100 度、夏季高溫或身體適應。這一頁從頭到尾講的是金字塔的斜坡（ramp）設計、採石場和搬運石塊，跟「100-degree summer heat」無關。quote「Egypt's 100-degree summer heat」在本頁查無此句，claim_zh 的內容也不在本頁；頁碼或 quote 疑似標錯。", "quote": "（本頁查無此句，無法提供改正）", "claim_zh": "（本頁查無對應內容，無法提供改正）"}],
+ "missing": [
+  {"claim_zh": "Djehutihotep 墓中的一幅圖顯示 172 名工人用繩索、雪橇和潑水潤滑的路面，把一座約 58 噸的巨大雕像拖運超過 20 英里、越過平坦地形。", "quote": "One image in the tomb of Djehutihotep shows 172 workers hauling a colossal fifty-eight-ton statue more than twenty miles over flat terrain using nothing but ropes, a sled, and a water-lubricated path.", "pages": ["p.39"], "type": "數字", "who": "作者", "hedge": "數字待重拍確認", "convert": "fifty-eight-ton≈58 噸；twenty miles≈32 公里"},
+  {"claim_zh": "吉薩的石灰岩採石場是金字塔建造者開挖的，距離金字塔底座僅約四分之一英里。", "quote": "the Giza limestone quarry, which the pyramid builders dug just a quarter mile from the pyramid's base", "pages": ["p.39"], "type": "數字", "who": "作者", "hedge": "數字待重拍確認", "convert": "a quarter mile≈0.4 公里（約 400 公尺）"},
+  {"claim_zh": "考古學家在採石場底部的石屑和碎石下，發現一條舊斜坡的遺跡，以約 11% 的和緩坡度升到地表。", "quote": "the remains of an old ramp that ascends to the surface at a reasonable 11 percent grade", "pages": ["p.39"], "type": "數字", "who": "作者", "hedge": "數字待重拍確認", "convert": "11 percent grade＝坡度 11%"},
+  {"claim_zh": "若那條斜坡依原軌跡延伸，Redding 說它會抵達金字塔西南角、約 120 英尺的高度；那只到頂端的四分之一，但到那時超過半數的石灰岩石塊已經鋪好了。", "quote": "it would arrive at the pyramid's southwest corner at approximately 120 feet of altitude. That's only a quarter of the way to the top, but by then more than half of the limestone blocks would have been laid.", "pages": ["p.39"], "type": "數字", "who": "作者（引述 Redding）", "hedge": "數字待重拍確認", "convert": "120 feet≈37 公尺"}
+ ],
+ "unclear": []}
+```

@@ -1,0 +1,21 @@
+照片我逐字讀過了。這一頁（p.46）從句中「means the forces can scale far beyond…」接續上一頁，內容依序是：童軍拔河（1995）、其他拔河斷肢、台灣 1997 事件、Djehutihotep 象形圖、343 名拉繩者。清單裡 n47–n51 的句子（推不要拉／1998 世錦賽研究／繩子別繞手／被拖在滑動石塊後／邊際效益遞減）**完全不在這一頁**，是前一頁的內容，頁碼標錯。
+
+```json
+{"page": "p.46",
+ "checks": [
+  {"n": 47, "ok": false, "problem": "這句（push rather than pull / lean back / keep feet straight）不在 p.46。本頁從上一頁句中接續，開頭是「means the forces can scale far beyond what would seem intuitively possible…」，沒有任何拔河姿勢建議。頁碼應為前一頁，無法在此頁核對內容。", "quote": "", "claim_zh": ""},
+  {"n": 48, "ok": false, "problem": "p.46 沒有提到 1998 Tug-of-War World Championships 或相關研究，整段傷害統計不在本頁。頁碼標錯（應在前一頁）。", "quote": "", "claim_zh": ""},
+  {"n": 49, "ok": false, "problem": "「never wrapping the rope around your hands, fingers, or any other body part」不在 p.46。頁碼標錯。", "quote": "", "claim_zh": ""},
+  {"n": 50, "ok": false, "problem": "「if your comrades fail, you could be dragged behind the sliding rock」不在 p.46。頁碼標錯。", "quote": "", "claim_zh": ""},
+  {"n": 51, "ok": false, "problem": "「diminishing returns when adding pullers…」不在 p.46。本頁開頭的「the forces can scale far beyond what would seem intuitively possible」是其後續，但清單引的那句本身在前一頁。頁碼標錯。", "quote": "", "claim_zh": ""},
+  {"n": 52, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 53, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 54, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 55, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 56, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 57, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 58, "ok": true, "problem": "", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [],
+ "unclear": []}
+```

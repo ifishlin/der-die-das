@@ -1,0 +1,64 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 11 場　河谷邊的小山坡（往下看猛獁象群）・隔天清晨
+
+【四、地圖】河谷邊的小山坡（往下看猛獁象群）・隔天清晨
+河谷西邊的一座小山坡。西半邊是坡頂，光禿禿的像極地荒漠（碎石、零星乾草）；往東是下坡；坡底是長滿綠草的河谷，一條河由北往南流。HERO 趴在坡頂邊緣往東看下去：高的地方什麼都沒有，河谷卻很綠，兩邊差很多。第 8 段清晨，一群猛獁象在河谷裡吃草，另有一頭老公象落單在北邊。營地在這片山坡再往北一點（不在這張地圖裡）。
+★ 坡頂光禿禿、河谷很綠
+★ 河由北往南流
+★ 營地在山坡北邊、死路在河谷南邊
+大小 18 欄（A–R）× 12 列（1–12），一格 20 公尺。北在上。時間：春天上午（第 3 段）；隔天清晨（第 8 段），太陽在東方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R
+  1  a a a a a l l l l G G G G R R G G G
+  2  a a a a a l l l l G G 3 G R R G G G
+  3  a a a a a l l l l G G G G G R R G G
+  4  a a a a a l l l l G G G G G R R G G
+  5  a a a a a a l l l l G G G G R R G G
+  6  a a a a a a l l l l G G G G R R G G
+  7  a a a a a 1 l l l l G G G G G R R G
+  8  a a a a a 1 l l l l 2 2 2 G G R R G
+  9  a a a a a l l l l G 2 2 2 G G R R G
+ 10  a a a a a l l l l G G G G G G R R G
+ 11  a a a a a l l l l l G G G G G R R G
+ 12  a a a a a l l l l l G G G G G R R G
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = HERO 趴著看的坡頂邊緣（the edge of the hilltop where HERO lies to look down）｜角色：可站｜相機：可放
+  2 = 猛獁象群（第 8 段）（a herd of woolly mammoths grazing）｜角色：不可站｜相機：不可放（第 8 段才有）
+  3 = 落單的老公象（第 8 段）（a lone old bull woolly mammoth）｜角色：不可站｜相機：不可放（第 8 段才有）
+  G = 河谷草地（長滿牧草，很綠）（lush green grass on the river valley floor）｜角色：可站｜相機：可放
+  R = 河（a cold, clear river）｜角色：不可站｜相機：不可放
+  a = 光禿禿的高地（像極地荒漠：碎石、零星乾草）（bare high ground like a polar desert, gravel and a few tufts of dry grass）｜角色：可站｜相機：可放
+  l = 山坡（乾草、碎石）（a dry grassy slope with loose gravel）｜角色：可站｜相機：可放
+HERO 和獵人趴在 F7；象群在 K8 一帶、老公象在 L2，都在坡下的河谷。後半段旁白講猛獁象的長相、牠多危險、什麼時候滅絕，鏡頭可以停在象群上。
+地圖外面：北邊 同一片山坡往北延伸，坡上有帕夫洛夫人的營地（遠遠看得到一點煙）；河谷也往北延伸；東邊 河的對岸是長草的河谷，再過去又是一道乾的山坡和高地；西邊 光禿禿的高地，再過去是乾草原（降落點的方向）；南邊 河谷往南延伸，遠處分出一條小支谷（死路在那裡）。
+
+【參考圖】
+- PAIR2_MAMMOTH：猛獁象和 HERO 的比例圖（公象肩高 3.0 m、人 1.72 m）（EP3）
+- REF_HERO_FUR：HERO 披毛皮大衣（EP3）
+- REF_HUNTERS_A：帕夫洛夫獵人 A：帶頭的男獵人、女獵人（給大衣的那位）（EP3）
+- REF_HUNTERS_B：帕夫洛夫獵人 B：戴帽兜的年輕獵人、灰鬍子老獵人（EP3）
+- REF_MAMMOTH：真猛獁象（公象）（EP3）
+- REF_PROPS3：EP3 道具：矛、投矛器、燧石矛尖、測量器、結霜的回家按鈕、黏土小人像、骨頭火（EP3）
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP3-11-01", "variant_of": "N/A", "shot_size": "WS", "angle": "high", "camera": {"cell": "E7", "height_m": "3.5", "look_at": "HERO 與兩名獵人的背（F6/F7/F8 一線）", "distance_m": "22"}, "in_frame": ["HERO", "HUNTERS"]}, {"id": "EP3-11-02", "variant_of": "N/A", "shot_size": "WS", "angle": "high", "camera": {"cell": "F7", "height_m": "3", "look_at": "河谷象群中心（K8–L8）", "distance_m": "122"}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-11-03", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "J8", "height_m": "2.5", "look_at": "公象 K8", "distance_m": "20"}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-11-04", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "J8", "height_m": "2.8", "look_at": "公象 K8 的頭與象牙", "distance_m": "12"}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-11-05", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "J9", "height_m": "2.5", "look_at": "公象 K8", "distance_m": "28"}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-11-06", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "J8", "height_m": "2.5", "look_at": "公象 K8 的肩側毛", "distance_m": "6"}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-11-07", "variant_of": "N/A", "shot_size": "WS", "angle": "low", "camera": {"cell": "N9", "height_m": "0.3", "look_at": "公象 M8", "distance_m": "26"}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-11-08", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "G7", "height_m": "0.4", "look_at": "HERO F7 的臉", "distance_m": "5"}, "in_frame": ["HERO"]}, {"id": "EP3-11-09", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "G8", "height_m": "0.5", "look_at": "帶頭的男獵人 F8", "distance_m": "22"}, "in_frame": ["HUNTERS", "HERO"]}, {"id": "EP3-11-10", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "M2", "height_m": "2.5", "look_at": "落單老公象 L2", "distance_m": "20"}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-11-11", "variant_of": "N/A", "shot_size": "WS", "angle": "low", "camera": {"cell": "M3", "height_m": "0.3", "look_at": "衝鋒的老公象 L2", "distance_m": "26"}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-11-12", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "J8", "height_m": "2.8", "look_at": "象群 K8", "distance_m": "22"}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-11-13", "variant_of": "N/A", "shot_size": "EWS", "angle": "aerial", "camera": {"cell": "F7", "height_m": "60", "look_at": "河谷象群（K8–L8）與整片地景", "distance_m": "140"}, "in_frame": ["MAMMOTH"]}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

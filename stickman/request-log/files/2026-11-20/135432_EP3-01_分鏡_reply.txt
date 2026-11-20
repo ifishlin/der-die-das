@@ -1,0 +1,164 @@
+{
+ "scene_id": "EP3-01",
+ "notes": "整集冷開場，先用一個遠景建立「大熱天躲在實驗室吹電扇」的情境與反差，再推近看 HERO 猛吹電扇的狼狽（笑點鋪陳）。接著博士從時光機那頭走過來、舉溫度計端詳帶出懸念，MCU 讓他一本正經說出「我們還活在冰河期」這句反差台詞（全場的鉤子）。然後切到 HERO 轉頭看窗外大太陽的疑惑特寫（笑點落地），最後用一個背影全景讓 HERO 望向窗外，旁白補充說明，當成收束＋轉場到下一場。全場無大型動物，不需加拍遠一級。走位：HERO 大半場在室內中段的電扇前（M13，電扇在 M15），最後走到東窗邊（R16）看太陽；博士從時光機旁（M6）走到 HERO 右側（P12）。相機都放在可放格、室內。多數平視；只有尺寸與情緒需要時改中近景，無刻意仰俯。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": 1, "cell": "M13", "facing": "S", "doing": "站在電扇（M15）前迎風吹，滿頭大汗"},
+    {"t": 2, "cell": "M13", "facing": "S", "doing": "把臉整個湊近電扇猛吹、眯眼享受"},
+    {"t": 3, "cell": "M13", "facing": "S", "doing": "繼續對著電扇，博士走到他右邊"},
+    {"t": 4, "cell": "M13", "facing": "NE", "doing": "轉頭看向右後方的博士"},
+    {"t": 5, "cell": "R16", "facing": "E", "doing": "走到東窗邊，看向窗外的大太陽，一臉疑惑"}
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    {"t": 2, "cell": "M6", "facing": "S", "doing": "從時光機旁往 HERO 走過來"},
+    {"t": 3, "cell": "P12", "facing": "SW", "doing": "走到 HERO 右側，舉起溫度計端詳"},
+    {"t": 4, "cell": "P12", "facing": "SW", "doing": "一本正經、面無表情地說出那句話"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-01-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["今天熱到柏油路都快融化了。"],
+   "subject": "HERO（站在電扇前）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "電扇在前景中央偏下，HERO 在電扇後方中央迎風站著、全身入鏡，身後是實驗室室內空間（北牆時光機方向）。畫面左右都留出大量環境。",
+   "screen_direction": "toward",
+   "action": "HERO 站在立扇前迎著風，滿頭大汗、一臉又熱又鬆一口氣的樣子；建立大熱天躲室內的情境。",
+   "camera": {"cell": "N19", "height_m": "1.6", "look_at": "HERO", "distance_m": "3.0"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（頭到腳）", "frame_height": "約 4 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet). HERO's face and hands are pure paper white. HERO stands in front of an electric standing fan, leaning into the breeze with his arms loose; he is very sweaty with big sweat drops on his face; his hands are empty. His expression is overheated but relieved: eyes half-closed, mouth open. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is on the floor ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常被畫成接近 FS（HERO 偏大、環境偏少）；可接受，剪輯時當建立鏡頭用即可。"
+  },
+  {
+   "id": "EP3-01-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["你躲在博士的實驗室裡，對著電扇猛吹。"],
+   "subject": "HERO（臉湊近電扇）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏右，臉與上半身入鏡；立扇在畫面左前景、對著他的臉吹。",
+   "screen_direction": "toward",
+   "action": "HERO 把整張臉湊到電扇前猛吹，眼睛眯成一條線、臉頰被風吹鼓、頭髮往後翻，一副爽到不行又滿頭汗的狼狽模樣（笑點鋪陳）。",
+   "camera": {"cell": "O17", "height_m": "1.6", "look_at": "HERO", "distance_m": "2.2"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上、含臉與雙手", "frame_height": "約 7.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet). HERO's face and hands are pure paper white. HERO leans his face right up into an electric standing fan, with his eyes squeezed shut and cheeks puffed out by the blast of air, blissfully relieved; big sweat drops on his face and his hair blown back by the wind; his hands are empty. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the floor, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被 Flow 畫成到腰的 MS；剪輯時往臉再推近一點到胸口 MCU。"
+  },
+  {
+   "id": "EP3-01-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["這時候博士走過來，看了看溫度計，忽然說了一句很奇怪的話。"],
+   "subject": "HERO（左）與 PROF（右）雙人",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "左邊是站在電扇前的 HERO，右邊稍後是走過來的 PROF；PROF 舉著溫度計低頭端詳。兩人膝上入鏡，前景可見電扇。",
+   "screen_direction": "off_down",
+   "action": "博士走到 HERO 右邊停下，舉起溫度計、低頭盯著看，一臉認真；HERO 仍對著電扇。帶出「博士要說話」的懸念。",
+   "camera": {"cell": "M18", "height_m": "1.6", "look_at": "HERO 與 PROF 之間", "distance_m": "2.5"},
+   "cast": [
+    {"who": "HERO", "visible": "膝蓋以上，含臉", "frame_height": "約 5.5 成"},
+    {"who": "PROF", "visible": "膝蓋以上，含臉與舉溫度計的手", "frame_height": "約 5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only characters in the picture are HERO (exactly as in the attached HERO character sheet) on the left and PROF (exactly as in the attached PROF character sheet) on the right. HERO's face and hands are pure paper white. PROF's face and hands are pure paper white. On the left, HERO stands in front of an electric standing fan, leaning into the breeze and sweaty, looking relieved. On the right and slightly behind, PROF holds a small thermometer up in one hand and peers down at it, looking serious and matter-of-fact. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the floor, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-01-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": ["他說，我們現在，其實還活在冰河期裡。"],
+   "subject": "PROF（說話）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "PROF 在畫面中央偏左，胸部以上入鏡，手上拿著溫度計；視線略往畫面右方（HERO 方向）。",
+   "screen_direction": "off_right",
+   "action": "博士面無表情、一本正經地把這句反差台詞說出口，像在講一件再平常不過的事（全場鉤子）。",
+   "camera": {"cell": "L12", "height_m": "1.6", "look_at": "PROF", "distance_m": "2.0"},
+   "cast": [
+    {"who": "PROF", "visible": "胸部以上，含臉與拿溫度計的手", "frame_height": "約 7.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is PROF (exactly as in the attached PROF character sheet). PROF's face and hands are pure paper white. PROF holds a small thermometer in one hand and speaks calmly, with a flat, deadpan, matter-of-fact expression, as if stating something perfectly ordinary; he glances slightly toward the right side of the frame. Shot size: Medium Close-up (MCU). PROF is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side of the floor, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被 Flow 畫成到腰的 MS；剪輯時往臉推近到胸口 MCU。"
+  },
+  {
+   "id": "EP3-01-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": ["你看看窗外的大太陽。（停）冰河期？在哪裡？"],
+   "subject": "HERO（疑惑看向窗外）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏左，胸部以上入鏡，臉以前側 3/4 朝鏡頭、視線往畫面右方外（窗戶／太陽方向）。",
+   "screen_direction": "off_right",
+   "action": "HERO 轉過身看向右邊畫外的大太陽，一臉問號：眉毛上揚、眼睛睜大、嘴微張，滿臉疑惑（笑點落地）；仍滿頭汗。",
+   "camera": {"cell": "T18", "height_m": "1.6", "look_at": "HERO", "distance_m": "1.4"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上，含臉與手", "frame_height": "約 7.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet). HERO's face and hands are pure paper white. HERO has turned to look off toward the right side of the frame, out of frame, puzzled and baffled: eyebrows raised, eyes wide, mouth slightly open in confusion; he is still sweaty. His hands are empty. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the floor, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被 Flow 畫成到腰的 MS；剪輯時往臉推近到胸口 MCU。"
+  },
+  {
+   "id": "EP3-01-06",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "其實沒錯，大家說的「冰河時期」，是個很容易搞混的名字。",
+    "因為那個冰河期，到今天都還沒結束。"
+   ],
+   "subject": "HERO（背影望向窗外）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背對鏡頭、全身入鏡站在畫面中央偏右，面朝前方的窗戶方向；畫面前方（他望出去那側）留白給窗外亮光。",
+   "screen_direction": "away",
+   "action": "HERO 背對我們站著望向窗外，一手抹著後頸的汗，安靜若有所思；當作冷開場收束與轉場的定格。",
+   "camera": {"cell": "M16", "height_m": "1.6", "look_at": "HERO", "distance_m": "2.5"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影（頭到腳）", "frame_height": "約 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet). HERO's hands are pure paper white. HERO stands with his back fully to the camera, seen from behind, looking ahead of him; one hand wiping sweat off the back of his neck, standing still and thoughtful; he is still sweaty. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: back view. The camera is on the floor behind HERO, looking the way he faces; HERO's back is to the camera. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "Camera direction: back view. The camera is on the floor behind HERO, looking the way he faces; HERO's back is to the camera."
+   ],
+   "remedy": "背面句改寫成單人版（原實測句是雙人追逐）；若 Flow 把 HERO 轉成側面或多畫一個人，改用原雙人 back 句並拿掉另一人、或剪輯時取背影段。"
+  }
+ ]
+}

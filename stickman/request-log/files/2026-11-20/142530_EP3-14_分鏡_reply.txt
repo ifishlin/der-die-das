@@ -1,0 +1,572 @@
+{
+ "scene_id": "EP3-14",
+ "notes": "全場 31 句旁白拆成 19 個基本鏡頭，加上 4 個「遠一級」版本（S06W/S08W/S09W/S15W，凡 HERO 與猛獁象同框者）。節奏＝建立對峙（S01–S04）→ 說明插圖（S05）→ HERO 投矛與追逐（S06–S09）→ 躲與貝爾插圖（S10–S14）→ 狗引開與終局（S15–S19）。S05 前後可否、S12/S13 蘇格蘭獵象人貝爾、是手繪說明插圖，不在地圖上，camera.cell 填 N/A（沒有實景背景，背景不用照地圖）。S10 是大石頭的空景（錨點，HERO 之後躲在它後面）。猛獁象肩高約 3.02 m、近 HERO（1.72 m）兩倍，凡全身同框 HERO 最多約佔畫高五成多；多數追逐鏡頭讓猛獁象只露一部分，另給遠一級版。低角度用在呈現猛獁象的巨大與威脅，高角度（S09）用來看清之字形走位的空間關係，俯拍／空拍（S01、S19）用來建立三面過不去的陷阱地形。獵人的臉和手、HERO 的臉和手都寫純白。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": 1, "cell": "I9", "facing": "N", "doing": "站在獵人排開的隊伍裡，拿著矛和投矛器，緊張"},
+    {"t": 2, "cell": "I9", "facing": "N", "doing": "用投矛器射出第一支矛"},
+    {"t": 3, "cell": "I9", "facing": "N", "doing": "看見猛獁象轉頭對著自己"},
+    {"t": 4, "cell": "H8", "facing": "S", "doing": "轉身開始逃，回頭看"},
+    {"t": 5, "cell": "G8", "facing": "SW", "doing": "之字形狂奔，往一側急轉"},
+    {"t": 6, "cell": "K6", "facing": "W", "doing": "鑽到大石頭 J6 後面蹲下躲藏"},
+    {"t": 9, "cell": "J7", "facing": "N", "doing": "從大石頭後面站起來探頭"}
+   ]
+  },
+  {
+   "who": "HUNTERS",
+   "path": [
+    {"t": 1, "cell": "E9–J9", "facing": "N", "doing": "四人在第 9 列正面排開，舉矛戒備"},
+    {"t": 2, "cell": "E9–J9", "facing": "N", "doing": "一支接一支把矛射向猛獁象"},
+    {"t": 8, "cell": "E9–J9", "facing": "N", "doing": "趁猛獁象被狗引開，從正面連續投矛"}
+   ]
+  },
+  {
+   "who": "DOG",
+   "path": [
+    {"t": 1, "cell": "F10", "facing": "N", "doing": "在獵人腳邊"},
+    {"t": 7, "cell": "G7", "facing": "N", "doing": "衝出去對著猛獁象狂叫"},
+    {"t": 9, "cell": "H8", "facing": "N", "doing": "站在倒下的猛獁象旁"}
+   ]
+  },
+  {
+   "who": "MAMMOTH",
+   "path": [
+    {"t": 1, "cell": "G5", "facing": "S", "doing": "被趕進死路，暴怒，面對獵人"},
+    {"t": 2, "cell": "G5", "facing": "S", "doing": "暴怒，鼻子高舉嘶吼"},
+    {"t": 3, "cell": "G6", "facing": "SE", "doing": "轉頭對準 HERO"},
+    {"t": 4, "cell": "H7", "facing": "SE", "doing": "朝 HERO 衝過來"},
+    {"t": 5, "cell": "H8", "facing": "S", "doing": "笨重地追 HERO"},
+    {"t": 6, "cell": "I7", "facing": "E", "doing": "在大石頭附近衝過頭、轉彎慢"},
+    {"t": 7, "cell": "H6", "facing": "SW", "doing": "被狗的吠叫吸引，轉過頭去"},
+    {"t": 8, "cell": "H6", "facing": "SW", "doing": "正面被一支接一支的矛射中"},
+    {"t": 9, "cell": "G6", "facing": "W", "doing": "前腿一軟，側倒在地"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-14-01",
+   "variant_of": "N/A",
+   "t": 1,
+   "narration": ["現在，輪到你們了。"],
+   "subject": "整個三面過不去的陷阱場：北邊暴怒的猛獁象、南邊排開的獵人和 HERO",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "空拍俯瞰整塊草地；畫面上方是被逼到北側、鼻子高舉的猛獁象，下方一排小小的獵人與 HERO 正面對著牠，中間偏右是汽車大的石頭；三面是岩壁、峽谷、窪地圍住，只有下方南邊有開口",
+   "screen_direction": "toward",
+   "action": "對峙的一瞬間：獵人排好、矛舉起，猛獁象被困在盡頭，氣氛凝住",
+   "camera": {"cell": "H12", "height_m": 30, "look_at": "arena center (G7)", "distance_m": 45},
+   "cast": [
+    {"who": "MAMMOTH", "visible": "全身，鼻子高舉", "frame_height": "約 18%"},
+    {"who": "HUNTERS", "visible": "四人全身", "frame_height": "各約 9%"},
+    {"who": "HERO", "visible": "全身", "frame_height": "約 8%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). The whole scene is the main subject and all the figures are very small in the picture. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. In the picture there are only: the woolly mammoth (exactly as in the attached MAMMOTH character sheet) at the far side, enraged with its trunk raised; a line of the four Pavlov hunters (exactly as in the attached HUNTERS character sheets) spread out facing it, each holding a spear and a spear-thrower; and HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, holding a spear and a spear-thrower, standing in the line among them. The hunters' and HERO's faces and hands are pure paper white. Everyone is tiny in the frame.",
+   "untested": ["EWS＋aerial 同時用於多角色大場面", "aerial 原只在單人 EWS 驗證過"],
+   "remedy": "aerial △：若只有輕微俯角，剪輯維持大遠景即可，人物很小屬預期效果。"
+  },
+  {
+   "id": "EP3-14-02",
+   "variant_of": "N/A",
+   "t": 1,
+   "narration": ["一邊，是一頭一噸到六噸重、氣到發狂的動物。"],
+   "subject": "暴怒的猛獁象",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "猛獁象佔滿畫面中央，仰視；鼻子高舉捲起、長牙朝前、小眼睛睜大，龐大的身軀壓下來",
+   "screen_direction": "toward",
+   "action": "猛獁象暴怒嘶吼的一瞬間，呈現牠的巨大與狂怒",
+   "camera": {"cell": "G8", "height_m": 0.5, "look_at": "MAMMOTH (G5)", "distance_m": 16},
+   "cast": [
+    {"who": "MAMMOTH", "visible": "膝上，頭、長牙、鼻子、前腿", "frame_height": "約 95%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Long Shot (MLS). The woolly mammoth is framed from the knees up; the bottom edge of the picture is near its knees. Camera direction: front view. The camera is on the open grassy floor ahead of the mammoth, facing it. Extreme low-angle shot, ground-level camera perspective, looking up at the woolly mammoth (exactly as in the attached MAMMOTH character sheet), a huge enraged bull with its trunk raised and curled, tusks forward, small eyes wide and furious, mouth open trumpeting. Only the mammoth is in the picture.",
+   "untested": ["Extreme low-angle 用於四足大動物（原只驗證單人站立）", "MLS 以 knees 取景用於四足動物"],
+   "remedy": "low 對大動物可能較難；若畫成全身，剪輯推近保留壓迫感。"
+  },
+  {
+   "id": "EP3-14-03",
+   "variant_of": "N/A",
+   "t": 1,
+   "narration": ["另一邊，是一群拿著棍子的人。"],
+   "subject": "一排拿著矛的獵人，HERO 夾在其中",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "四個獵人在畫面橫向排開、正面對鏡頭，各握矛和投矛器；HERO 夾在中間偏右，比獵人矮、顯得格格不入",
+   "screen_direction": "toward",
+   "action": "一群人嚴陣以待、舉矛戒備的群像",
+   "camera": {"cell": "G7", "height_m": 1.6, "look_at": "HUNTERS (row 9)", "distance_m": 11},
+   "cast": [
+    {"who": "HUNTERS", "visible": "腰上，臉、上身、矛", "frame_height": "各約 92%"},
+    {"who": "HERO", "visible": "腰上，臉、上身、矛", "frame_height": "約 82%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Shot (MS). The hunters are framed from the waist up; the bottom edge of the picture is at their waists. Camera direction: front view. The camera is on the open grassy floor ahead of the hunters, facing them. Camera angle: Eye-level: the camera is at the hunters' eye height, looking straight ahead. In the picture there are only: the four Pavlov hunters (exactly as in the attached HUNTERS character sheets) standing spread in a line, each gripping a spear and a spear-thrower, tense and grim-faced, and HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, holding a spear and a spear-thrower, standing among them looking nervous and out of place. The hunters' and HERO's faces and hands are pure paper white.",
+   "untested": ["MS 用於多角色群像", "front view 用於一排多角色"],
+   "remedy": "MS △常畫成膝上；可接受，剪輯裁到腰上。"
+  },
+  {
+   "id": "EP3-14-04",
+   "variant_of": "N/A",
+   "t": 2,
+   "narration": ["從骨頭上燧石刺進去的角度，Wojtal 認為，", "獵人們是正面對著猛獁象，一支接一支，很快地把矛射出去。"],
+   "subject": "正面投矛的獵人（背影）與前方的猛獁象",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "前景是兩個獵人的背影，正把矛往前甩出；畫面較遠處是正面迎向他們、頭壓低的猛獁象，數支矛飛向牠（HERO 不入鏡）",
+   "screen_direction": "away",
+   "action": "獵人一支接一支把矛射向猛獁象的動態瞬間",
+   "camera": {"cell": "G11", "height_m": 1.6, "look_at": "MAMMOTH (G6)", "distance_m": 25},
+   "cast": [
+    {"who": "HUNTERS", "visible": "兩人背影，投矛姿勢", "frame_height": "各約 60%"},
+    {"who": "MAMMOTH", "visible": "部分，頭與上身", "frame_height": "約 55%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). The hunters and the mammoth are clearly visible, with a lot of the surroundings around them. Camera direction: back view. The camera is behind the hunters, looking the way they face. Camera angle: Eye-level: the camera is at the hunters' eye height, looking straight ahead. In the picture there are only: two of the Pavlov hunters (exactly as in the attached HUNTERS character sheets) seen from behind in the foreground, each in mid-throw hurling a spear forward, and the woolly mammoth (exactly as in the attached MAMMOTH character sheet) farther ahead, only partly in frame, head lowered and enraged with its mouth open trumpeting, with spears flying toward it. The hunters' hands are pure paper white. No HERO in the picture.",
+   "untested": ["WS back view 用於多角色＋大動物", "空中飛行的矛"],
+   "remedy": "WS △常畫成 FS；若畫得太近，剪輯拉遠或接受。"
+  },
+  {
+   "id": "EP3-14-05",
+   "variant_of": "N/A",
+   "t": 2,
+   "narration": ["千萬不要從後面偷襲。", "猛獁象的屁股，跟大象一樣，幾乎刺不進去。", "你要面對牠，靠得夠近，矛才有力。", "前面可以，後面，不行。"],
+   "subject": "手繪說明插圖：猛獁象側面，前面的矛刺入、後面的矛彈開",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "猛獁象完整側面佔畫面中央；一支矛深深刺進牠胸前，另一支矛射向牠屁股、被厚毛厚皮彈開。畫面上沒有字、沒有箭頭、沒有符號",
+   "screen_direction": "left",
+   "action": "說明插圖：對比前面刺得進、後面彈開",
+   "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "illustrated mammoth side profile", "distance_m": 3},
+   "cast": [
+    {"who": "MAMMOTH", "visible": "完整側面", "frame_height": "約 70%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn explanatory side-profile illustration: a single woolly mammoth (in the style of the attached MAMMOTH character sheet) seen exactly from the side, standing with a calm neutral expression. One spear is stuck deep into the front of its chest; a second spear thrown at its rear bounces off the thick fur and hide of its rump. Only the mammoth and the two spears are in the picture. No arrows, no marks, no symbols.",
+   "untested": ["手繪說明插圖", "側面剖解式構圖"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-14-06",
+   "variant_of": "N/A",
+   "t": 2,
+   "narration": ["你射出了第一支矛。"],
+   "subject": "HERO 射出第一支矛（背側），前方是猛獁象",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "前景是 HERO 的背側 3/4，手臂往前甩出、用投矛器射矛；畫面較遠處是只露一部分、頭壓低的猛獁象",
+   "screen_direction": "away",
+   "action": "HERO 投矛器甩出第一支矛的瞬間",
+   "camera": {"cell": "J11", "height_m": 1.6, "look_at": "HERO (I9)", "distance_m": 11},
+   "cast": [
+    {"who": "HERO", "visible": "全身背側，投矛姿勢", "frame_height": "約 82%"},
+    {"who": "MAMMOTH", "visible": "部分，頭與上身", "frame_height": "約 40%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side; HERO is nearer the camera and the woolly mammoth stands farther ahead, both seen from behind and one side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. In the picture there are only: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, seen from behind and one side, his arm snapping forward as he hurls his first spear with the spear-thrower; and farther ahead the woolly mammoth (exactly as in the attached MAMMOTH character sheet), only partly in frame, head lowered and enraged. HERO's hands are pure paper white.",
+   "untested": ["back34 改寫（HERO 投矛＋前方猛獁象）"],
+   "remedy": "N/A（FS ✓）"
+  },
+  {
+   "id": "EP3-14-06W",
+   "variant_of": "EP3-14-06",
+   "t": 2,
+   "narration": ["你射出了第一支矛。"],
+   "subject": "HERO 射出第一支矛（背側），前方是猛獁象（遠一級）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "同 S06，但拉遠：HERO 背側在前景較小，猛獁象在前方露出更完整的身體，四周環境更多",
+   "screen_direction": "away",
+   "action": "HERO 投矛器甩出第一支矛的瞬間（遠景）",
+   "camera": {"cell": "J11", "height_m": 1.6, "look_at": "HERO (I9)", "distance_m": 16},
+   "cast": [
+    {"who": "HERO", "visible": "全身背側，投矛姿勢", "frame_height": "約 50%"},
+    {"who": "MAMMOTH", "visible": "大半身", "frame_height": "約 65%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side; HERO is nearer the camera and the woolly mammoth stands farther ahead, both seen from behind and one side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. In the picture there are only: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, seen from behind and one side, his arm snapping forward as he hurls his first spear with the spear-thrower; and farther ahead the woolly mammoth (exactly as in the attached MAMMOTH character sheet), more of its body visible, head lowered and enraged. HERO's hands are pure paper white.",
+   "untested": ["back34 改寫（HERO 投矛＋前方猛獁象）", "WS 常畫成 FS"],
+   "remedy": "WS △常畫成 FS；剪輯時與 S06 二選一。"
+  },
+  {
+   "id": "EP3-14-07",
+   "variant_of": "N/A",
+   "t": 3,
+   "narration": ["猛獁象轉過頭來。（停）牠衝過來了。", "一頭六噸重的猛獁象，可以用每小時三十二公里的速度衝向你。"],
+   "subject": "轉頭並朝鏡頭衝過來的猛獁象（HERO 視角）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "low",
+   "composition": "猛獁象佔畫面大半，前側 3/4、仰視；鼻子高舉、長牙朝前、小眼睛睜大，正朝鏡頭壓過來（HERO 是鏡頭，不入鏡）",
+   "screen_direction": "toward",
+   "action": "猛獁象轉頭鎖定 HERO、開始衝鋒的一刻",
+   "camera": {"cell": "H8", "height_m": 0.5, "look_at": "MAMMOTH (G6)", "distance_m": 12},
+   "cast": [
+    {"who": "MAMMOTH", "visible": "膝上，頭、長牙、鼻子、前腿", "frame_height": "約 95%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Long Shot (MLS). The woolly mammoth is framed from the knees up; the bottom edge of the picture is near its knees. Camera direction: front three-quarter view. The camera is ahead of the mammoth and off to one side, so we see its face and one side of its body. Extreme low-angle shot, ground-level camera perspective, looking up at the woolly mammoth (exactly as in the attached MAMMOTH character sheet), charging straight toward the camera, trunk raised, tusks forward, small eyes wide and enraged, mouth open in a furious trumpet. Only the mammoth is in the picture.",
+   "untested": ["Extreme low-angle＋front34 用於衝鋒的大動物"],
+   "remedy": "low 對大動物可能只輕微仰角；剪輯推近強化衝鋒的壓迫感。"
+  },
+  {
+   "id": "EP3-14-08",
+   "variant_of": "N/A",
+   "t": 4,
+   "narration": ["你跑不過牠，牠幾秒鐘，就會追上你。", "所以，不要跑直線。"],
+   "subject": "朝鏡頭逃跑的 HERO，身後逼近的猛獁象",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央朝鏡頭狂奔、回頭看；他身後只露一部分的猛獁象壓過來，距離正在縮短",
+   "screen_direction": "toward",
+   "action": "HERO 拚命逃、猛獁象緊追在後的瞬間",
+   "camera": {"cell": "H11", "height_m": 1.6, "look_at": "HERO (H9)", "distance_m": 12},
+   "cast": [
+    {"who": "HERO", "visible": "全身，奔跑、回頭", "frame_height": "約 58%"},
+    {"who": "MAMMOTH", "visible": "部分，頭與上身", "frame_height": "約 60%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). HERO and the mammoth are clearly visible, with a lot of the surroundings around them. Camera direction: front view. The camera is on the open grassy floor ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. In the picture there are only: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, still clutching his spear-thrower, sprinting toward the camera and looking back over his shoulder, wide-eyed and terrified with his mouth open in a scream; and behind him the woolly mammoth (exactly as in the attached MAMMOTH character sheet), only partly in frame, head lowered and charging after him. HERO's face and hands are pure paper white.",
+   "untested": ["front view 用於 HERO 逃跑＋身後大動物"],
+   "remedy": "WS △常畫成 FS；可接受，剪輯二選一。"
+  },
+  {
+   "id": "EP3-14-08W",
+   "variant_of": "EP3-14-08",
+   "t": 4,
+   "narration": ["你跑不過牠，牠幾秒鐘，就會追上你。", "所以，不要跑直線。"],
+   "subject": "朝鏡頭逃跑的 HERO，身後逼近的猛獁象（遠一級）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "同 S08，但拉成極遠景：HERO 和身後完整的猛獁象都變小，看得出兩者的距離與大片空地",
+   "screen_direction": "toward",
+   "action": "HERO 拚命逃、猛獁象緊追在後（極遠景）",
+   "camera": {"cell": "H11", "height_m": 1.6, "look_at": "HERO (H9)", "distance_m": 20},
+   "cast": [
+    {"who": "HERO", "visible": "全身，奔跑、回頭", "frame_height": "約 28%"},
+    {"who": "MAMMOTH", "visible": "全身", "frame_height": "約 45%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). HERO and the mammoth are small in the picture; the open ground around them is a big part of the frame. Camera direction: front view. The camera is on the open grassy floor ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. In the picture there are only: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, still clutching his spear-thrower, sprinting toward the camera and looking back, terrified; and behind him the whole woolly mammoth (exactly as in the attached MAMMOTH character sheet) charging after him. HERO's face and hands are pure paper white.",
+   "untested": ["EWS 用於 HERO 逃跑＋身後大動物"],
+   "remedy": "N/A（EWS ✓）"
+  },
+  {
+   "id": "EP3-14-09",
+   "variant_of": "N/A",
+   "t": 5,
+   "narration": ["你要像上次躲暴龍那樣，左、右、左、右，跑之字形。", "猛獁象跟暴龍差不多大，可是比暴龍笨重得多，轉彎沒那麼快。", "不過，這只是拖時間，最好，還是躲到牠過不去的地方。"],
+   "subject": "之字形奔跑的 HERO 與追在後面笨重的猛獁象",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "high",
+   "composition": "俯視往下看，看清 HERO 急轉的之字形路線；HERO 偏畫面左側正往一邊急切，猛獁象只露一部分跟在後面、轉彎慢一拍",
+   "screen_direction": "left",
+   "action": "HERO 左右急轉跑之字、猛獁象笨重地跟不上轉彎",
+   "camera": {"cell": "H11", "height_m": 15, "look_at": "HERO (G8)", "distance_m": 18},
+   "cast": [
+    {"who": "HERO", "visible": "全身（俯視）", "frame_height": "約 45%"},
+    {"who": "MAMMOTH", "visible": "部分（俯視）", "frame_height": "約 60%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). HERO and the mammoth are clearly visible, with a lot of the surroundings around them. Camera angle: High angle: the camera is high above HERO, looking down at him. Camera direction: back view. The camera is behind HERO, looking the way he runs. In the picture there are only: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, running a sharp zigzag, mid cut to one side with his arms flung out for balance; and the woolly mammoth (exactly as in the attached MAMMOTH character sheet) close behind him, only partly in frame, lumbering and unable to turn as sharply. HERO's hands are pure paper white.",
+   "untested": ["high angle＋WS 用於多主體追逐"],
+   "remedy": "high △只有輕微往下看；若俯角不足，剪輯接受並靠走位讀出之字形。"
+  },
+  {
+   "id": "EP3-14-09W",
+   "variant_of": "EP3-14-09",
+   "t": 5,
+   "narration": ["你要像上次躲暴龍那樣，左、右、左、右，跑之字形。", "猛獁象跟暴龍差不多大，可是比暴龍笨重得多，轉彎沒那麼快。", "不過，這只是拖時間，最好，還是躲到牠過不去的地方。"],
+   "subject": "之字形奔跑的 HERO 與追在後面笨重的猛獁象（遠一級）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "high",
+   "composition": "同 S09，但拉成極遠景：從更高處俯瞰，之字形的來回轉折與整片空地都看得見，兩者都變小",
+   "screen_direction": "left",
+   "action": "HERO 左右急轉跑之字、猛獁象笨重地跟不上轉彎（極遠景）",
+   "camera": {"cell": "H11", "height_m": 22, "look_at": "HERO (G8)", "distance_m": 26},
+   "cast": [
+    {"who": "HERO", "visible": "全身（俯視）", "frame_height": "約 22%"},
+    {"who": "MAMMOTH", "visible": "全身（俯視）", "frame_height": "約 38%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). HERO and the mammoth are small in the picture; the open ground is a big part of the frame. Camera angle: High angle: the camera is high above HERO, looking down at him. Camera direction: back view. The camera is behind HERO, looking the way he runs. In the picture there are only: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, running a sharp zigzag with his arms flung out; and the whole woolly mammoth (exactly as in the attached MAMMOTH character sheet) close behind him, lumbering and unable to turn as sharply. HERO's hands are pure paper white.",
+   "untested": ["high angle＋EWS 用於多主體追逐"],
+   "remedy": "high △俯角可能不足；EWS 本身 ✓，剪輯時與 S09 二選一。"
+  },
+  {
+   "id": "EP3-14-10",
+   "variant_of": "N/A",
+   "t": 5,
+   "narration": ["牠可以輕輕鬆鬆推倒一棵樹，或是推開一顆像汽車那麼大的石頭。"],
+   "subject": "汽車那麼大的大石頭（HERO 稍後躲在它後面的掩體）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "一塊圓鼓鼓、汽車大小的大石頭佔畫面中央，四周是空地；畫面上沒有任何角色",
+   "screen_direction": "toward",
+   "action": "錨點空景：建立 HERO 之後要躲的那塊大石頭與它的位置",
+   "camera": {"cell": "J9", "height_m": 1.6, "look_at": "boulder (J6)", "distance_m": 15},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). A single boulder the size of a small car is the main subject, with open ground around it. Camera direction: front view. The camera is on the open grassy floor in front of the boulder, facing it. Camera angle: Eye-level: the camera is at a standing person's eye height, looking straight ahead. Only the big rounded boulder is in the picture. No characters, no animals.",
+   "untested": ["純場景物件（boulder）、無角色"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-14-11",
+   "variant_of": "N/A",
+   "t": 4,
+   "narration": ["要是被牠撞倒，牠不是用象牙刺你，就是一腳踩下去。"],
+   "subject": "猛獁象舉起的巨腳與壓低的長牙（威脅特寫）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "low",
+   "composition": "仰視；猛獁象一隻前腳高高抬起正要踩下、上方是壓低的長牙與高舉的鼻子，龐大身軀罩住鏡頭，呈現致命威脅",
+   "screen_direction": "toward",
+   "action": "猛獁象抬腳欲踩、長牙壓下的危險瞬間",
+   "camera": {"cell": "H10", "height_m": 0.4, "look_at": "MAMMOTH foot (H7)", "distance_m": 14},
+   "cast": [
+    {"who": "MAMMOTH", "visible": "膝上／前腳、長牙、鼻子、頭", "frame_height": "約 98%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Long Shot (MLS). The mammoth is framed from the knees up; the bottom edge of the picture is near its knees. Camera direction: front view. The camera is on the open grassy floor ahead of the mammoth, facing it. Extreme low-angle shot, ground-level camera perspective, looking up at the woolly mammoth (exactly as in the attached MAMMOTH character sheet): one huge forefoot is lifted high as if about to stomp down, its long tusks are lowered and the trunk raised above, head enraged with small eyes wide. Only the mammoth is in the picture.",
+   "untested": ["Extreme low-angle 用於大動物抬腳／長牙威脅鏡頭"],
+   "remedy": "low 對大動物可能較難；若畫成全身，剪輯推近強調腳與長牙。"
+  },
+  {
+   "id": "EP3-14-12",
+   "variant_of": "N/A",
+   "t": 5,
+   "narration": ["二十世紀初，有一位蘇格蘭的獵象人，叫做華特．貝爾。", "他十六歲，就開始替烏干達的鐵路，獵殺吃人的獅子。"],
+   "subject": "手繪插圖：二十世紀初的蘇格蘭獵象人（路人火柴人，不是 HERO）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一個瘦削的獵象人火柴人全身站立：寬邊探險帽、二十世紀初卡其獵裝，手持老式步槍，神情沉著。只有他一人",
+   "screen_direction": "toward",
+   "action": "介紹華特．貝爾：從容站立的人物定格",
+   "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "illustrated elephant hunter", "distance_m": 4},
+   "cast": [
+    {"who": "OTHER", "visible": "獵象人全身（非 HERO）", "frame_height": "約 88%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration of an early-1900s Scottish elephant hunter, drawn as a stickman figure in exactly the same style (thick black outlines, flat colors, white round head): a lean man in a wide-brimmed safari hat and period khaki clothes, holding an old bolt-action hunting rifle, standing calmly at ease, with a calm confident expression. This is NOT HERO. Shot size: Full Shot (FS): his whole body, from head to feet, just fits in the picture. Camera direction: front view, the camera facing him. Camera angle: Eye-level, looking straight ahead. His face and hands are pure paper white. Only this one hunter is in the picture.",
+   "untested": ["手繪人物插圖（路人獵象人）"],
+   "remedy": "N/A（FS ✓）"
+  },
+  {
+   "id": "EP3-14-13",
+   "variant_of": "N/A",
+   "t": 5,
+   "narration": ["他在回憶錄裡寫：大象衝過來的時候，是最嚇人的膽量考驗。", "他的建議是：不要慌，站穩，一直射，", "然後祈禱，牠只是嚇嚇你。"],
+   "subject": "手繪插圖：貝爾站穩開槍，前方一頭大象衝來",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側面；畫面一側是站定不動、舉槍射擊的獵象人，另一側是耳朵張開、鼻子高舉衝過來的非洲象，兩者側面相對",
+   "screen_direction": "left",
+   "action": "貝爾站穩、舉槍連射，大象衝鋒——膽量考驗的瞬間",
+   "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "illustrated hunter and charging elephant", "distance_m": 8},
+   "cast": [
+    {"who": "OTHER", "visible": "獵象人全身（非 HERO）", "frame_height": "約 55%"},
+    {"who": "OTHER", "visible": "大象全身（非洲象）", "frame_height": "約 80%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn illustration in the same stickman style: the same early-1900s Scottish elephant hunter (wide-brimmed hat, khaki clothes, white round head, holding an old bolt-action rifle, NOT HERO) standing his ground firm and steady, rifle raised to his shoulder and firing, while a large African elephant charges straight at him with ears spread and trunk raised. Shot size: Wide Shot (WS): both the hunter and the elephant are clearly visible. Camera direction: side view, seeing both of them from the side. Camera angle: Eye-level, looking straight ahead. The hunter's face and hands are pure paper white, jaw set and determined; the elephant's eyes are wide and furious. Only these two are in the picture.",
+   "untested": ["手繪插圖（獵象人＋非洲象）"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-14-14",
+   "variant_of": "N/A",
+   "t": 5,
+   "narration": ["可是貝爾有槍，你只有棍子和石頭。（停）你決定，還是跑吧。"],
+   "subject": "HERO 手握投矛器與石頭，嚇得決定開溜",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 佔畫面中央偏一側，前側 3/4；一手握投矛器、一手抓著一顆石頭，臉驚恐、張嘴，正要拔腿。只有 HERO",
+   "screen_direction": "off_left",
+   "action": "HERO 看看手上的破爛武器、下定決心逃跑的一刻",
+   "camera": {"cell": "G10", "height_m": 1.6, "look_at": "HERO (H8)", "distance_m": 11},
+   "cast": [
+    {"who": "HERO", "visible": "腰上，臉、上身、雙手（投矛器＋石頭）", "frame_height": "約 88%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. Only HERO (exactly as in the attached HERO character sheet) is in the picture, wearing the fur coat, shorts and flip-flops, no hat and no backpack, gripping his spear-thrower in one hand and a rock in the other, wide-eyed and terrified with his mouth open, about to bolt. HERO's face and hands are pure paper white.",
+   "untested": ["MS 常畫成膝上"],
+   "remedy": "MS △常畫成膝上；可接受，剪輯裁到腰上。"
+  },
+  {
+   "id": "EP3-14-15",
+   "variant_of": "N/A",
+   "t": 6,
+   "narration": ["你左轉、右轉、再左轉，鑽到一塊大石頭後面。"],
+   "subject": "HERO 鑽到大石頭後面躲藏，身後是逼近的猛獁象",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "前景是汽車大的石頭；HERO 背側 3/4 正往石頭後面一撲、蹲低躲藏；石頭另一側較遠處是只露一部分、衝得很近的猛獁象",
+   "screen_direction": "left",
+   "action": "HERO 急轉後鑽進大石頭後方躲起來的瞬間",
+   "camera": {"cell": "L8", "height_m": 1.6, "look_at": "HERO (K6)", "distance_m": 11},
+   "cast": [
+    {"who": "HERO", "visible": "全身背側，蹲伏躲藏", "frame_height": "約 45%"},
+    {"who": "MAMMOTH", "visible": "部分，頭與上身", "frame_height": "約 62%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). HERO, the boulder and the mammoth are clearly visible, with a lot of the surroundings around them. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side; we see him from behind and one side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. In the picture there are only: a boulder the size of a small car in the foreground; HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, diving and ducking down behind the boulder to hide; and the woolly mammoth (exactly as in the attached MAMMOTH character sheet) beyond it, only partly in frame, charging close. HERO's hands are pure paper white.",
+   "untested": ["back34＋WS 用於 HERO 躲掩體＋大動物"],
+   "remedy": "WS △常畫成 FS；可接受，剪輯二選一。"
+  },
+  {
+   "id": "EP3-14-15W",
+   "variant_of": "EP3-14-15",
+   "t": 6,
+   "narration": ["你左轉、右轉、再左轉，鑽到一塊大石頭後面。"],
+   "subject": "HERO 鑽到大石頭後面躲藏，身後是逼近的猛獁象（遠一級）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "同 S15，但拉成極遠景：大石頭、蹲下的 HERO、完整的猛獁象都變小，看得出三者的相對位置與空地",
+   "screen_direction": "left",
+   "action": "HERO 急轉後鑽進大石頭後方躲起來（極遠景）",
+   "camera": {"cell": "L8", "height_m": 1.6, "look_at": "HERO (K6)", "distance_m": 18},
+   "cast": [
+    {"who": "HERO", "visible": "全身背側，蹲伏躲藏", "frame_height": "約 22%"},
+    {"who": "MAMMOTH", "visible": "全身", "frame_height": "約 42%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). HERO, the boulder and the mammoth are small in the picture; the open ground is a big part of the frame. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side; we see him from behind and one side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. In the picture there are only: a boulder the size of a small car; HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, ducking down behind the boulder to hide; and the whole woolly mammoth (exactly as in the attached MAMMOTH character sheet) beyond it, charging close. HERO's hands are pure paper white.",
+   "untested": ["back34＋EWS 用於 HERO 躲掩體＋大動物"],
+   "remedy": "N/A（EWS ✓）"
+  },
+  {
+   "id": "EP3-14-16",
+   "variant_of": "N/A",
+   "t": 7,
+   "narration": ["這時候，那隻狗衝了出去，對著猛獁象狂叫，猛獁象轉過頭去。"],
+   "subject": "狗衝出去對猛獁象狂吠，猛獁象轉頭",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "low",
+   "composition": "前景偏下是小小的狗，仰視牠衝上去、齜牙狂吠；上方是只露一部分、被吸引而轉過頭來的猛獁象（HERO 不入鏡，仍躲在石頭後）",
+   "screen_direction": "toward",
+   "action": "狗衝出狂叫、猛獁象驚愕轉頭的一刻（引開危機）",
+   "camera": {"cell": "I9", "height_m": 0.4, "look_at": "MAMMOTH (H6)", "distance_m": 15},
+   "cast": [
+    {"who": "DOG", "visible": "全身，齜牙狂吠", "frame_height": "約 30%"},
+    {"who": "MAMMOTH", "visible": "部分，頭轉向、上身", "frame_height": "約 80%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). The dog and the mammoth are clearly visible, with the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of the mammoth and off to one side, so we see its face and one side of its body. Extreme low-angle shot, ground-level camera perspective, looking up. In the picture there are only: the dog (exactly as in the attached DOG character sheet), a wolf-like early dog with a pale patch above its left eye, in the foreground, small, charging in and barking fiercely up at the mammoth with its teeth bared; and the woolly mammoth (exactly as in the attached MAMMOTH character sheet), only partly in frame, swinging its head around toward the dog, startled and enraged. No HERO in the picture.",
+   "untested": ["Extreme low-angle＋front34 用於狗與大動物同框"],
+   "remedy": "low 對大動物可能只輕微仰角；可接受，狗在前景讀出尺寸差。"
+  },
+  {
+   "id": "EP3-14-17",
+   "variant_of": "N/A",
+   "t": 8,
+   "narration": ["獵人們從正面，一支接一支，把矛射了進去。"],
+   "subject": "正面連續投矛的獵人（背影）與被射中的猛獁象",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "前景是三個獵人的背影，一支接一支把矛往前甩出；較遠處是頭轉向一側、正面與肩膀中矛的猛獁象（HERO 躲著不入鏡）",
+   "screen_direction": "away",
+   "action": "獵人趁猛獁象被狗引開，從正面一支接一支把矛射進去",
+   "camera": {"cell": "H11", "height_m": 1.6, "look_at": "MAMMOTH (H6)", "distance_m": 25},
+   "cast": [
+    {"who": "HUNTERS", "visible": "三人背影，投矛姿勢", "frame_height": "各約 55%"},
+    {"who": "MAMMOTH", "visible": "部分，頭與上身", "frame_height": "約 58%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). The hunters and the mammoth are clearly visible, with a lot of the surroundings around them. Camera direction: back view. The camera is behind the hunters, looking the way they face. Camera angle: Eye-level: the camera is at the hunters' eye height, looking straight ahead. In the picture there are only: three of the Pavlov hunters (exactly as in the attached HUNTERS character sheets) seen from behind in the foreground, all hurling spears forward one after another, and the woolly mammoth (exactly as in the attached MAMMOTH character sheet) ahead, head turned to the side, taking spears in its chest and shoulder. The hunters' hands are pure paper white. No HERO in the picture.",
+   "untested": ["WS back view 用於多獵人＋大動物"],
+   "remedy": "WS △常畫成 FS；可接受，剪輯二選一。"
+  },
+  {
+   "id": "EP3-14-18",
+   "variant_of": "N/A",
+   "t": 9,
+   "narration": ["猛獁象，終於倒了下來。"],
+   "subject": "側倒下來的猛獁象",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "猛獁象完整側面佔畫面大半，前腿一軟、整個身子往一側倒下，鼻子垂落、眼睛半闔。只有猛獁象",
+   "screen_direction": "left",
+   "action": "猛獁象前腿崩塌、側倒在地、終於倒下的一刻",
+   "camera": {"cell": "B7", "height_m": 1.6, "look_at": "MAMMOTH (G6)", "distance_m": 25},
+   "cast": [
+    {"who": "MAMMOTH", "visible": "完整側面，倒下", "frame_height": "約 70%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). The whole mammoth is clearly visible, with the surroundings around it. Camera direction: side view. The camera is beside the mammoth and sees it exactly from the side. Camera angle: Eye-level: the camera is at the mammoth's eye height, looking straight ahead. Only the woolly mammoth (exactly as in the attached MAMMOTH character sheet) is in the picture, its front legs buckling as it collapses onto its side on the ground, trunk flopping down, eyes half-closed as it finally goes down. No other characters.",
+   "untested": ["side view 用於大動物倒下"],
+   "remedy": "WS △常畫成 FS；可接受，剪輯保留整隻倒地的動勢。"
+  },
+  {
+   "id": "EP3-14-19",
+   "variant_of": "N/A",
+   "t": 9,
+   "narration": ["至於帕夫洛夫的獵人，獵猛獁象的時候，多常送命？", "Wojtal 說，找到的骨骸太少了，沒有人說得準。"],
+   "subject": "終局俯瞰：倒下的猛獁象、圍過來的獵人、狗，與從石頭後站起的 HERO",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "空拍俯瞰整塊草地：中央偏上是側倒的猛獁象，四個獵人從南邊圍過來，狗在旁邊，右側大石頭後 HERO 剛站起來；三面圍住、南邊開口都看得見",
+   "screen_direction": "toward",
+   "action": "塵埃落定的終局定格，留白收束，接下一場營地",
+   "camera": {"cell": "H12", "height_m": 35, "look_at": "arena center (G8)", "distance_m": 50},
+   "cast": [
+    {"who": "MAMMOTH", "visible": "全身，側倒", "frame_height": "約 22%"},
+    {"who": "HUNTERS", "visible": "四人全身", "frame_height": "各約 9%"},
+    {"who": "DOG", "visible": "全身", "frame_height": "約 5%"},
+    {"who": "HERO", "visible": "全身，剛站起", "frame_height": "約 8%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). The whole scene is the main subject and the figures are small in the picture. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land. In the picture there are only: the woolly mammoth (exactly as in the attached MAMMOTH character sheet) fallen on its side on the ground; the four Pavlov hunters (exactly as in the attached HUNTERS character sheets) gathering around it; the dog (exactly as in the attached DOG character sheet) nearby; and HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack, standing up from behind a car-sized boulder. The hunters' and HERO's faces and hands are pure paper white. Everyone is small in the wide frame.",
+   "untested": ["EWS＋aerial 用於多角色終局大場面"],
+   "remedy": "aerial △：若只有輕微俯角，剪輯維持極遠景；EWS 本身 ✓。"
+  }
+ ]
+}

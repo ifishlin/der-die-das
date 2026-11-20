@@ -1,0 +1,20 @@
+我已逐字比對 p.44 的照片。先說明：這張照片**左頁（p.44）的上緣沒有完整入鏡**，第一行「semblance to modern militaries.」明顯是上一段的接續，上面還有被裁掉的文字；而清單這兩點的 hedge 本來就寫「待重拍確認」。以下只依照片能看到的部分判定。
+
+```json
+{"page": "p.44",
+ "checks": [
+  {"n": 42, "ok": false, "problem": "照片中 p.44 可見範圍內找不到 \"1.3 million subjects\" 這句，也沒有「130 萬」這個數字。此頁上緣被裁切未入鏡，該 quote 可能落在未拍到的段落，無法確認——詳見 unclear。可見文字只提到 \"His tens of thousands of government employees\" 和 \"Egypt's forty-two regions\"，沒有子民總數。", "quote": "", "claim_zh": ""},
+  {"n": 43, "ok": false, "problem": "可見文字中唯一的 \"tens of thousands\" 是指政府官員，不是農民：\"His tens of thousands of government employees of descending rank worked in four branches of government\"。書上沒有 \"tens of thousands of farmers every year\" 這句，也沒有「每年徵召數萬名農民」的年度人數。書對農民投入工程的說法是：蓋金字塔期間各地稅的一部分是提供「四個月的勞役」（\"the four months of backbreaking labor you're now providing\"），沒有給人數。原 quote 疑似把 \"government employees\" 誤讀成 \"farmers\" 並自行加上 \"every year\"。", "quote": "part of a region's tax included the four months of backbreaking labor you're now providing", "claim_zh": "蓋金字塔期間，各地把四個月的勞役當作稅的一部分，由農民出勞力；書未給每年徵召的人數。"}
+ ],
+ "missing": [
+  {"claim_zh": "古埃及劃分為 42 個行政區（稱為 \"nomes\"）。", "quote": "Egypt's forty-two regions (or \"nomes\")", "pages": ["p.44"], "type": "數字", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "法老的政府分成四個部門：王室、軍隊、神廟（church）、民政。", "quote": "worked in four branches of government: the royal court, the army, the church, and civil government", "pages": ["p.44"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "古埃及不用貨幣，而是靠成熟的以物易物制度，稅按各地物產繳納——尼羅河三角洲繳牛、南方繳穀物。", "quote": "Ancient Egypt relied on a system of sophisticated barter rather than money... The nomes of the Nile Delta, for example, paid in cattle, while in the south they paid in grain.", "pages": ["p.44"], "type": "事實", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "稅率約為 10%。", "quote": "Tax rates hovered around 10 percent", "pages": ["p.44"], "type": "數字", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "官方不直接丈量農民產量（怕農民藏收成），而是量尼羅河洪水的高度、再參考往年產量來推算該地的稅。", "quote": "measured the height of the Nile's flood using \"nilometers\" and, referencing past years' production as a guide, assigned each region a tax", "pages": ["p.44"], "type": "事實", "who": "作者", "hedge": "量測工具英文原字辨讀存疑（見 unclear）", "convert": ""}
+ ],
+ "unclear": [
+  {"where": "p.44 左頁上緣", "problem": "照片未拍到頁面最上方（第一可見行「semblance to modern militaries.」是上一段接續），n=42 的 \"1.3 million subjects\"／「130 萬名子民」若存在，應在這段未入鏡的文字裡，無法核對。建議重拍整頁上緣。"},
+  {"where": "量測工具的英文原字（約在「ured the height of the Nile's flood using \"◯◯◯meters\"」處）", "problem": "該字加了引號、依上下文應為 \"nilometers\"（尼羅河水位計），但照片裡看起來像 \"kilometers\"，字首 n/k 無法確定。重拍時請確認。"}
+ ]}
+```

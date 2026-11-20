@@ -1,0 +1,172 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch04_ancient_egypt/pages/p33.jpg（書的 p.33；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 1,
+  "claim_zh": "故事設定回到古埃及古王國時期、西元前 2550 年，去為法老胡夫（Khufu）蓋陵墓。",
+  "quote": "a summer job in the year 2550 BCE to work on the greatest community service project in human history: the tomb for the pharaoh Khufu",
+  "pages": [
+   "p.33"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "2550 BCE＝距今約 4,575 年"
+ },
+ {
+  "n": 2,
+  "claim_zh": "胡夫的這座陵墓就是吉薩大金字塔。",
+  "quote": "You probably know it as the Great Pyramid of Giza.",
+  "pages": [
+   "p.33"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 3,
+  "claim_zh": "古埃及人把它叫做「胡夫的地平線」。",
+  "quote": "The Ancient Egyptians called it the Horizon of Khufu.",
+  "pages": [
+   "p.33"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 4,
+  "claim_zh": "工人從天亮做到天黑，連做四個月。",
+  "quote": "You'll work dawn to dusk for four months",
+  "pages": [
+   "p.33"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 5,
+  "claim_zh": "拖運的石塊重量介於 1 到 80 噸之間。",
+  "quote": "dragging stones weighing between one and eighty tons",
+  "pages": [
+   "p.33"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "美制短噸：1 噸≈0.907 公噸、80 噸≈72.6 公噸"
+ },
+ {
+  "n": 6,
+  "claim_zh": "每三十天才有一天休假。",
+  "quote": "with only one day off every thirty",
+  "pages": [
+   "p.33"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 7,
+  "claim_zh": "工人睡在露天戶外。",
+  "quote": "You'll sleep in the open air",
+  "pages": [
+   "p.33"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 8,
+  "claim_zh": "數噸重的石塊是用棕櫚葉做的繩子固定住。",
+  "quote": "multiton stones held in place by palm leaf ropes",
+  "pages": [
+   "p.33"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 9,
+  "claim_zh": "在禁止攀爬之前，至少有 1,600 名爬金字塔的遊客摔死。",
+  "quote": "at least 1,600 pyramid-climbing tourists fell to their deaths before the practice was banned",
+  "pages": [
+   "p.33"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "at least（至少）",
+  "convert": ""
+ },
+ {
+  "n": 10,
+  "claim_zh": "一處金字塔工人的墓園顯示，多數工人有嚴重關節炎、有些人失去了肢體。",
+  "quote": "a graveyard of pyramid workers suggests most suffered extreme arthritis, some lost limbs",
+  "pages": [
+   "p.33"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "suggests（顯示／暗示）",
+  "convert": ""
+ },
+ {
+  "n": 11,
+  "claim_zh": "工人平均在三十五歲就死亡。",
+  "quote": "the average worker died at thirty-five years old",
+  "pages": [
+   "p.33"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "average（平均）",
+  "convert": ""
+ },
+ {
+  "n": 12,
+  "claim_zh": "工人是穿著露趾鞋工作的。",
+  "quote": "wearing open-toed shoes",
+  "pages": [
+   "p.33"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.33",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.33"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

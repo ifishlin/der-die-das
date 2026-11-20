@@ -1,0 +1,198 @@
+{
+ "scene_id": "EP3-17",
+ "notes": "實驗室對話戲，6 個鏡頭。相機一律放在角色南邊、往北拍，維持 180 度連戲（東＝畫面右、西＝畫面左），全程平視（對話戲，中性，沒有需要壓迫或脆弱感的地方）。S01 側拍 HERO 放下測量器和毛皮大衣，重新建立『回到實驗室』；S02 正面 MCU 博士看數字、面無表情，鋪梗；S03 側拍雙人中景，博士聳肩＋HERO 臉垮，一起落下『沒有錢』的笑點（雙人同框讓反應和笑點一起成立）；S04 前側 3/4 拍 HERO 伸手討前兩次欠的錢；S05 遠景背面拍博士轉身擦時光機、把 HERO 晾在畫面另一邊，用空間距離表達『被無視』；S06 正面全景收尾，HERO 穿著毛皮大衣在夏天滿頭大汗。測量器、毛皮大衣、博士擦的時光機都是角色碰到／用到的東西，寫進 prompt；電風扇、窗、黑板等背景由主對話配參考圖。場內沒有大動物，不需要加拍遠一級。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    { "t": "1", "cell": "T5", "facing": "E", "doing": "穿著自己的毛皮大衣，把測量器和一件折好的毛皮大衣放到工作桌上" },
+    { "t": "2", "cell": "T6", "facing": "W", "doing": "轉身面向博士，等博士看數字" },
+    { "t": "3", "cell": "T6", "facing": "W", "doing": "聽到『沒有錢』，臉垮下來、肩膀塌" },
+    { "t": "4", "cell": "T6", "facing": "W", "doing": "朝博士伸出一隻手討前兩次欠的錢" },
+    { "t": "5", "cell": "T6", "facing": "NW", "doing": "手還半舉著，看著博士走去擦時光機" },
+    { "t": "6", "cell": "P9", "facing": "S", "doing": "站在空地中間，穿著毛皮大衣滿頭大汗" }
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    { "t": "1", "cell": "T4", "facing": "S", "doing": "站在桌邊看 HERO 把東西放下" },
+    { "t": "2", "cell": "Q7", "facing": "S", "doing": "拿起測量器，低頭看上面的數字" },
+    { "t": "3", "cell": "Q7", "facing": "E", "doing": "面無表情地聳肩" },
+    { "t": "4", "cell": "Q7", "facing": "E", "doing": "面對伸手討錢的 HERO" },
+    { "t": "5", "cell": "M4", "facing": "N", "doing": "轉身背對 HERO，開始拿布擦時光機圓環" },
+    { "t": "6", "cell": "M4", "facing": "N", "doing": "繼續擦時光機，不理 HERO" }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-17-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "回到實驗室，你把測量器和毛皮大衣，都放在博士的桌上。"
+   ],
+   "subject": "HERO（次要：PROF）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "HERO 在畫面中偏右、側面對著右邊的工作桌放東西；工作桌和放下的測量器、毛皮大衣在畫面右側；博士站在桌後偏右、稍微靠後看著；左半是實驗室空地。",
+   "screen_direction": "right",
+   "action": "HERO 雙手把測量器和折好的毛皮大衣一起擱到桌上的那一刻，面露期待的淡淡微笑。",
+   "camera": { "cell": "S13", "height_m": "1.4", "look_at": "HERO（T5）", "distance_m": "4.0" },
+   "cast": [
+    { "who": "HERO", "visible": "全身，頭到腳", "frame_height": "約 68%" },
+    { "who": "PROF", "visible": "全身，頭到腳", "frame_height": "約 62%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO and PROF are in the picture. HERO (exactly as in the attached HERO character sheet), still bundled in his own thick shaggy fur coat, is setting a handheld measuring device and a thick folded fur coat down onto a desk right in front of him; he looks tired but hopeful, a small expectant smile on his face. HERO's face and hands are pure paper white. Behind the desk, PROF (exactly as in the attached PROF character sheet) stands watching with a flat, unimpressed expression. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside HERO and sees him exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "兩個角色同框（HERO 放東西＋PROF 在桌後旁觀）",
+    "把測量器和折好的毛皮大衣放到桌上的動作",
+    "角色穿著厚毛皮大衣"
+   ],
+   "remedy": "WS 實測常畫成接近 FS；可當建立鏡頭直接接受，或剪輯時微拉遠保留環境。"
+  },
+  {
+   "id": "EP3-17-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "博士看了看上面的數字，說：這些，課本上早就寫了。"
+   ],
+   "subject": "PROF",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "博士置中，雙手把測量器舉在胸前、低頭看；畫面只有他胸部以上。",
+   "screen_direction": "off_down",
+   "action": "博士低頭盯著測量器上的數字，面無表情、一副早就知道的樣子的那一刻。",
+   "camera": { "cell": "Q12", "height_m": "1.4", "look_at": "PROF（Q7）", "distance_m": "2.5" },
+   "cast": [
+    { "who": "PROF", "visible": "頭到胸，含握著裝置的雙手", "frame_height": "約 82%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only PROF is in the picture. PROF (exactly as in the attached PROF character sheet) holds the handheld measuring device up in both hands and looks down at the numbers on it, his face flat, deadpan and thoroughly unimpressed, as if he already knew all of it. Shot size: Medium Close-up (MCU). PROF is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in front of PROF, facing him. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [
+    "角色雙手拿著手持裝置低頭讀數"
+   ],
+   "remedy": "MCU 實測常畫到腰（偏 MS）；剪輯時推近到胸上取博士表情。"
+  },
+  {
+   "id": "EP3-17-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "不是什麼新發現，所以，",
+    "（停）沒有錢。"
+   ],
+   "subject": "PROF（次要：HERO）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "博士在畫面左、側面聳肩；HERO 在畫面右、側面臉垮下來；兩人面對面，中間是對話空檔。",
+   "screen_direction": "right",
+   "action": "博士攤手聳肩的那一刻、同時 HERO 臉垮肩塌，一起落下『沒有錢』的笑點。",
+   "camera": { "cell": "R12", "height_m": "1.4", "look_at": "HERO 和 PROF 之間（約 S7）", "distance_m": "2.5" },
+   "cast": [
+    { "who": "PROF", "visible": "頭到腰，含攤開的雙手", "frame_height": "約 72%" },
+    { "who": "HERO", "visible": "頭到腰", "frame_height": "約 72%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO and PROF are in the picture. On the left, PROF (exactly as in the attached PROF character sheet) shrugs with both palms turned up, deadpan and indifferent. On the right, HERO (exactly as in the attached HERO character sheet), still in his thick fur coat, lets his face fall in dismay, shoulders slumping. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). The two of them are framed from the waist up; the bottom edge of the picture is at their waists. Camera direction: side view. The camera is beside them and sees both PROF and HERO exactly from the side. Camera angle: Eye-level: the camera is at their eye height, looking straight ahead.",
+   "untested": [
+    "側面雙人中景",
+    "攤手聳肩的手勢",
+    "MS 句改寫成兩個人"
+   ],
+   "remedy": "MS 實測常畫成膝上；剪輯時微推近到腰上；雙人 MS 句為改寫版，若比例跑掉就改單拍博士聳肩。"
+  },
+  {
+   "id": "EP3-17-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "你問他：那前兩次欠的呢？"
+   ],
+   "subject": "HERO",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中偏右，身體前側對鏡頭，一隻手朝畫面左邊（博士的方向，畫外）伸出去討錢。",
+   "screen_direction": "left",
+   "action": "HERO 攤開一隻手向畫外的博士伸過去、眉毛高高揚起哀求的那一刻。",
+   "camera": { "cell": "R10", "height_m": "1.4", "look_at": "HERO（T6）", "distance_m": "2.2" },
+   "cast": [
+    { "who": "HERO", "visible": "頭到腰，含伸出去的手臂", "frame_height": "約 80%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO is in the picture. HERO (exactly as in the attached HERO character sheet), still in his thick fur coat, reaches one open hand out to the side as if begging, pleading and desperate, eyebrows raised high. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "朝一側伸出一隻攤開的手（討錢手勢）"
+   ],
+   "remedy": "MS 常成膝上、front34 只大致做到；剪輯時推近取 HERO 上半身和伸出的手。"
+  },
+  {
+   "id": "EP3-17-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "博士卻轉過身去，開始擦他的時光機。"
+   ],
+   "subject": "PROF（次要：HERO）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "博士在畫面中偏左、背對鏡頭，正在擦前方的時光機金屬圓環；HERO 在畫面右、手還半舉著看著博士；兩人之間留一大段空地，強調被晾在一邊。",
+   "screen_direction": "away",
+   "action": "博士轉身背對、拿布擦時光機圓環的那一刻，HERO 在另一邊僵著手無語。",
+   "camera": { "cell": "P12", "height_m": "1.4", "look_at": "PROF（M4）", "distance_m": "4.3" },
+   "cast": [
+    { "who": "PROF", "visible": "全身背影", "frame_height": "約 58%" },
+    { "who": "HERO", "visible": "全身，頭到腳", "frame_height": "約 65%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only PROF and HERO are in the picture. In the center-left, PROF (exactly as in the attached PROF character sheet) has turned his back to us and is wiping a big ring-shaped metal machine with a rag, calmly ignoring HERO. On the right, HERO (exactly as in the attached HERO character sheet), still in his thick fur coat, stands with one hand still half-raised, exasperated and deflated, staring at PROF. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). Both figures are clearly visible with a lot of the room around them. Camera direction: back view. The camera is behind PROF, looking the way he faces; PROF's back is nearer the camera and he does not hide HERO, who stands off to one side. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [
+    "雙人、背面句改寫到實驗室（圓環機器）",
+    "拿布擦時光機圓環",
+    "另一角色站在一旁看著"
+   ],
+   "remedy": "WS 可能偏 FS；可接受，或微拉遠強調兩人之間的距離。"
+  },
+  {
+   "id": "EP3-17-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "外面，還是熱得要命。",
+    "而你，還穿著一件猛獁草原的毛皮大衣。"
+   ],
+   "subject": "HERO",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 置中，正面對鏡頭，從頭到腳完整入鏡，穿著厚毛皮大衣站在空地中間。",
+   "screen_direction": "toward",
+   "action": "HERO 一身毛皮大衣、滿臉大汗、垂頭喪氣地站著，收尾的夏天熱到爆笑點。",
+   "camera": { "cell": "P14", "height_m": "1.4", "look_at": "HERO（P9）", "distance_m": "2.5" },
+   "cast": [
+    { "who": "HERO", "visible": "全身，頭到腳", "frame_height": "約 90%" }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO is in the picture. HERO (exactly as in the attached HERO character sheet), still bundled head-to-toe in his thick shaggy fur coat, stands there miserably with big beads of sweat pouring down his face, utterly overheated and defeated, mouth drooping. HERO's face and hands are pure paper white. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "汗珠從臉上滑落",
+    "角色裹著厚毛皮大衣"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

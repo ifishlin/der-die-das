@@ -1,0 +1,29 @@
+書的這一頁我逐字讀完了。這張照片同框拍到左頁 p.38 和右頁 p.39，但清單標的四點都掛在 p.38。重點發現：p.38 整頁在談「斜坡設計的取捨」（坡度、之字形 switchbacks、繩索長度），跟清單那四點（奴隸、172 工人、雕像拖運、拆斜坡）完全對不上。
+
+```json
+{"page": "p.38",
+ "checks": [
+  {"n": 27, "ok": false,
+   "problem": "p.38 沒有「no slaves」字樣，整頁在談斜坡設計取捨，完全沒提奴隸、機械、繩索滑橇蓋金字塔這組敘述。同框可見的 p.39 也沒有。此知識點不在 p.38（可能在未拍到的前頁）。",
+   "quote": "", "claim_zh": ""},
+  {"n": 28, "ok": false,
+   "problem": "p.38 沒有「172 workers」字樣，也沒出現 Djehutihotep、雕像、58 噸。p.39 同樣沒有。此知識點不在這張照片的兩頁。",
+   "quote": "", "claim_zh": ""},
+  {"n": 29, "ok": false,
+   "problem": "p.38 無「ramps, ropes, and water」連用，也沒有雕像被拖運數十英里的敘述。p.38 只談金字塔斜坡本身。此知識點不在 p.38。",
+   "quote": "", "claim_zh": ""},
+  {"n": 30, "ok": false,
+   "problem": "「斜坡在金字塔完工後被拆除」的意思出現在同框右頁 p.39，不在 p.38；頁碼標錯。且原文並非「disassembled after the pyramid's completion」。",
+   "quote": "Once the pyramid was complete, the builders [disassem]bled the ramp and dumped its rocks into the obvious place—the giant pit they had just dug",
+   "claim_zh": "金字塔完工後，工人把斜坡拆掉，碎石倒進他們先前挖出的大坑裡（這也解釋了採石場裡大量的碎石堆）。"}],
+ "missing": [
+  {"claim_zh": "埃及學家 Mark Lehner 稱金字塔斜坡是「所有金字塔建造中最棘手的問題之一」。",
+   "quote": "one of the thorniest problems in all of pyramid building",
+   "pages": ["p.38"], "type": "描述", "who": "Mark Lehner（作者引用）", "hedge": "", "convert": ""},
+  {"claim_zh": "一條長而平緩、直達塔頂的斜坡，所需材料會比整座金字塔本身還多。",
+   "quote": "a long, gentle ramp to the top would have required more material than the entire pyramid itself",
+   "pages": ["p.38"], "type": "描述", "who": "作者", "hedge": "", "convert": ""}],
+ "unclear": [
+  {"where": "n27、n28、n29 三點", "problem": "quote 在這張照片的 p.38、p.39 都找不到，推測原始出處在未拍到的前面頁（如 p.36–37）。需另拍該頁才能核對，無法在 p.38 確認。"},
+  {"where": "右頁 p.39 最上面一行", "problem": "頂端被裁到，「builders ___bled the ramp」的動詞只露出「bled」，應為 disassembled，但字首被遮住，無法百分百確認。（此為 p.39，非 p.38。）"}]}
+```

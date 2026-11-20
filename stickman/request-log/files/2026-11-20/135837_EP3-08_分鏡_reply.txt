@@ -1,0 +1,528 @@
+{
+ "scene_id": "EP3-08",
+ "notes": "這是一場畫不出實景的「博士上課」插圖課。開場兩張是插入鏡頭（HERO 手上的測量器亮起、螢幕上出現博士），其餘全部是生存指南內頁那種手繪插圖：粗黑線、平塗色、自然色、不能有任何字或數字，插圖裡的人畫成純白皮膚的火柴人路人、動物畫成卡通風。節奏上先用兩張插入把觀眾帶進「上課模式」，再依旁白一段一個概念圖往下走：棉被原理→多少的對比→三疊紀高 CO2 與 ppm 概念→北極蕨類海灘→成冰紀雪球地球→CO2 從哪來（火山）→三疊紀末超級大噴發與後果→CO2 怎麼離開（溶解、風化、石灰岩）→碳循環總結→地球自我清理。本場沒有大動物，不需要加拍遠一級。插圖鏡頭皆無地圖無走位：blocking 空、camera.cell 與 t 以 N/A／0 填。插圖的景別、方位、角度是對「畫面內容」的概念性框法，非 HERO 實測句，故多列入 untested；但這類直接描述畫面內容的插圖，Flow 一向畫得出來，remedy 皆 N/A。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP3-08-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "你手上的測量器，突然亮了起來。"
+   ],
+   "subject": "HERO 手上的測量器（插入鏡頭）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央是握在手裡的小測量器，HERO 的手掌與前臂從畫面下方／一側伸入，其餘空白；螢幕正對鏡頭。",
+   "screen_direction": "toward",
+   "action": "那一刻測量器的小螢幕突然亮起、發出光，像剛被喚醒。只見手和裝置。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "測量器",
+    "distance_m": "0.3"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只有一隻手掌與前臂",
+     "frame_height": "手與前臂約佔畫高 4 成（裝置佔中央）"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Close-up insert shot of a small handheld measuring device held in one hand of HERO (HERO exactly as in the attached HERO character sheet); only the hand and forearm enter the frame from one side, nothing else of HERO is shown. HERO's hands are pure paper white. The device's small screen has just lit up and is glowing brightly, as if waking up. Only the hand and the glowing device are in the picture.",
+   "untested": [
+    "物件插入鏡頭：直接描述近距離取景，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "螢幕上是博士，他要開始上課了。"
+   ],
+   "subject": "測量器螢幕上的博士（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "測量器螢幕（螢幕上是博士的頭和肩）",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面幾乎被測量器的方形螢幕填滿，螢幕裡是博士的頭和肩，正對鏡頭，像視訊畫面；螢幕邊框露一點在四周。",
+   "screen_direction": "toward",
+   "action": "博士出現在小螢幕上，張口、手勢上揚，一副要開始講課、神采奕奕的樣子。螢幕上不能有字。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "測量器螢幕",
+    "distance_m": "0.25"
+   },
+   "cast": [
+    {
+     "who": "PROF（螢幕）",
+     "visible": "螢幕中博士的頭和肩",
+     "frame_height": "博士頭肩約佔螢幕 6 成，螢幕佔全畫面 8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Extreme close-up insert shot of the small square screen of the handheld measuring device, the screen filling almost the whole frame with just a thin border showing around it. On the screen is PROF (exactly as in the attached PROF character sheet), shown head and shoulders facing forward like a video call. PROF is mid-explanation, mouth open and one hand raised, looking lively and eager to start a lecture. There is absolutely no text, no numbers and no symbols on the screen. Only the device screen and PROF on it are in the picture.",
+   "untested": [
+    "螢幕內放一個角色的插入鏡頭"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-03",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "地球為什麼會變得這麼冷？答案，在空氣裡。",
+    "空氣裡的二氧化碳，就像是地球的一條棉被。",
+    "它會把本來要跑到太空去的熱，留下來。"
+   ],
+   "subject": "手繪插圖：地球蓋著一條棉被（二氧化碳），把熱留住",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一顆卡通地球，像躺在床上一樣被一條厚棉被蓋住；棉被上方是黑色太空，棉被下方有幾枝小小的熱氣箭頭本來要往上跑，卻被棉被擋回、彈回地球。",
+   "screen_direction": "toward",
+   "action": "熱氣箭頭往上升到棉被底就被擋住、彈回地面的那一刻，清楚呈現「熱被留下來」。無臉。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: a cartoon planet Earth tucked under a thick quilted blanket as if lying in bed. Above the blanket is dark space. Below the blanket, several little heat arrows that were rising up to escape are bouncing back down off the underside of the blanket, kept in next to the Earth. Natural colors. Only the Earth, the blanket and the heat arrows are in the picture.",
+   "untested": [
+    "概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-04",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "二氧化碳多，地球就暖；二氧化碳少，地球就冷。"
+   ],
+   "subject": "手繪插圖：兩顆地球對比（厚棉被暖／薄棉被冷）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面左邊一顆地球蓋著厚厚的棉被、旁邊有暖陽、陸地翠綠、冒汗；畫面右邊一顆地球只蓋著破薄的棉被、整顆結白冰、在發抖。左暖右冷並列對比。",
+   "screen_direction": "toward",
+   "action": "左地球熱到冒汗、右地球冷到發抖的同一瞬間並排，形成「多就暖、少就冷」的對照。兩顆地球有表情。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：暖地球",
+     "visible": "整顆（左）",
+     "frame_height": "約佔畫高 6 成"
+    },
+    {
+     "who": "插圖：冷地球",
+     "visible": "整顆（右）",
+     "frame_height": "約佔畫高 6 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration showing two cartoon Earths side by side. The left Earth is under a thick fluffy quilt with a warm sun beside it and green land, its face sweating and hot, looking overheated. The right Earth is under a thin torn quilt, completely covered in white ice, its face shivering and miserable. Natural colors. Only the two Earths and their quilts are in the picture.",
+   "untested": [
+    "對比式概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-05",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "在恐龍剛出現的三疊紀，空氣裡的二氧化碳，大約有兩千 ppm。"
+   ],
+   "subject": "手繪插圖：三疊紀暖濕地景，少數早期小恐龍，空氣濃厚",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面是一片溫暖茂密的三疊紀原野，中景、遠景有幾隻小小的早期恐龍在走動；四周空氣畫成一層層朦朧、濃厚的霧氣，暗示空氣裡氣體很多。",
+   "screen_direction": "toward",
+   "action": "小恐龍在濃厚朦朧的暖空氣中漫步，營造「空氣裡二氧化碳很多」的濕熱感。恐龍遠小、臉部不細描。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：早期小恐龍",
+     "visible": "幾隻全身，遠景小",
+     "frame_height": "每隻約佔畫高 2 成，臉不細描"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration of a warm, lush Triassic landscape in natural earth-tone colors, with a few small early cartoon dinosaurs seen at a distance walking in the mid and far ground, their faces small and not detailed. The air around them is drawn as thick, hazy, swirling layers to suggest the atmosphere is full of gas. Only the landscape and the small dinosaurs are in the picture.",
+   "untested": [
+    "地景概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-06",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "ppm 的意思是，每一百萬個空氣分子裡，有幾個是二氧化碳。"
+   ],
+   "subject": "手繪插圖：一大群空氣分子裡只有極少數是二氧化碳",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面滿滿都是許許多多一樣的淡藍色小圓球（空氣分子），均勻鋪開；其中只有零星幾顆是深色、長得不一樣，散在人海裡很難找。",
+   "screen_direction": "toward",
+   "action": "在一整片相同的小圓球裡，少數幾顆深色分子特別突出，呈現「一百萬裡才幾個」的稀少感。無臉、無數字。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: the whole frame is packed with a huge crowd of many identical pale-blue round air molecules spread evenly. Among them, only a very few molecules are a different dark color, scattered and hard to spot, showing how rare they are. There are no numbers and no labels anywhere. Only the molecules are in the picture.",
+   "untested": [
+    "密集符號式概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-07",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那時候，連北極圈裡，都有長滿蕨類的海灘，你可以在那裡泡水。"
+   ],
+   "subject": "手繪插圖：北極圈裡長滿蕨類的溫暖海灘，一個路人在淺水泡水",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面是一片陽光普照的海灘，岸邊長著高高的綠色蕨類，前方是平靜的淺海；一個純白火柴人路人半泡在淺水裡，放鬆地享受。",
+   "screen_direction": "toward",
+   "action": "路人舒服地泡在溫暖淺水裡、面帶笑意的愜意一刻，與「北極圈」形成反差。路人臉入鏡要有表情。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：火柴人路人",
+     "visible": "上半身露出水面，純白皮膚",
+     "frame_height": "約佔畫高 3 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration of a sunny warm beach, with tall green ferns growing along the shore and a calm shallow sea in front. One stick-figure bystander drawn in the same stick-figure style as the character sheets, with pure paper-white skin, sits relaxing and soaking in the shallow water, content with a happy, blissful smile. Natural colors. Only this person, the ferns, the beach and the water are in the picture.",
+   "untested": [
+    "地景＋單人路人概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-08",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "可是在更早的成冰紀，二氧化碳少到不到四十 ppm。",
+    "整個地球都結了冰，冰一路蓋到了赤道。"
+   ],
+   "subject": "手繪插圖：成冰紀整顆地球結冰（雪球地球），冰蓋到赤道",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一整顆地球，完全被白色與淡藍色的冰雪包住，從兩極一路覆蓋到中間的赤道，像一顆掛在黑色太空裡的大雪球。",
+   "screen_direction": "toward",
+   "action": "整顆地球凍成一顆雪球、連赤道都封冰的狀態，呼應前一張暖海灘的強烈反差。無臉。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration of the whole planet Earth frozen completely solid, covered in white and pale-blue ice from both poles all the way down to the equator, like a giant snowball hanging in dark space. Natural colors. Only the frozen Earth is in the picture.",
+   "untested": [
+    "星球概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-09",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "那麼，二氧化碳到底是從哪裡來的？",
+    "在人類開工廠以前，主要是靠火山。"
+   ],
+   "subject": "手繪插圖：一座火山噴出氣體（二氧化碳的來源）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一座火山，正把一柱濃濃的灰色氣體與煙往天上推；火山佔畫面主體，天空讓氣柱往上延伸。",
+   "screen_direction": "toward",
+   "action": "火山口冒出厚重氣柱、往上竄升的那一刻，點出「CO2 主要來自火山」。無臉。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration of a single large volcano pushing a thick plume of grey gas and smoke up into the sky. Natural earth-tone colors. Only the volcano and its rising plume are in the picture.",
+   "untested": [
+    "物件概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-10",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "三疊紀快結束的時候，有一場火山噴發，持續了五百年。",
+    "噴出來的岩漿，有一百萬立方英里，大約是四百多萬立方公里。",
+    "它噴出的二氧化碳，跟整個二十一世紀人類排放的一樣多。"
+   ],
+   "subject": "手繪插圖：三疊紀末超級大噴發（遠比普通火山誇張）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面是一場毀天滅地的大噴發：大地到處是流動的橘紅岩漿河，天空被巨大的暗色氣柱整個填滿，規模遠比上一張單一火山誇張。",
+   "screen_direction": "toward",
+   "action": "岩漿漫過整片大地、暗色氣柱吞沒整片天空的壯烈一刻，強調規模之大。無臉。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration of an enormous, catastrophic volcanic eruption far bigger than a normal one: vast rivers of glowing orange lava flooding across the whole land, and a massive towering plume of dark gas filling the entire sky. Natural colors. Only the erupting land and sky are in the picture.",
+   "untested": [
+    "大場面概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-11",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "結果地球變熱了，全世界四分之三的生物，都滅絕了。"
+   ],
+   "subject": "手繪插圖：過熱的世界，大量動物倒地滅絕",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面是一片泛紅、過熱的乾裂大地，烈日高掛；地上躺著好幾隻卡通動物，已經倒下、不動；動物的臉朝下或背對鏡頭，不細畫。",
+   "screen_direction": "toward",
+   "action": "酷熱大地上動物成片倒下、死寂的一刻，呈現「四分之三生物滅絕」的沉重。動物臉背對／朝下，不入鏡故不寫表情。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：倒地的動物",
+     "visible": "數隻全身躺臥，臉朝下或背對",
+     "frame_height": "每隻約佔畫高 2 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration of a hot, reddened, overheated world under a harsh glaring sun, with several cartoon animals lying collapsed and lifeless on cracked dry ground, a bleak scene of mass death. The animals' faces are turned away or face down and not detailed. Natural colors. Only the dry land and the collapsed animals are in the picture.",
+   "untested": [
+    "情境概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-12",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "不過，二氧化碳也有離開空氣的辦法。",
+    "它會溶進雨水和海水，碰到剛被侵蝕出來的新岩石。"
+   ],
+   "subject": "手繪插圖：二氧化碳溶進雨水海水、碰到新岩石",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面上方一朵雲正下雨落進海裡；深色的碳小點隨著雨滴和海水往下溶、往下沉，落向岸邊剛裂開、露出新面的岩石。",
+   "screen_direction": "toward",
+   "action": "碳小點隨雨水海水往下走、朝新岩石移動的流動感，呈現「CO2 離開空氣」。無臉。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: a cloud at the top raining down into the sea, with little dark carbon specks dissolving down through the raindrops and the seawater, sinking toward fresh, freshly-broken rocks along the shore. Natural colors. Only the cloud, the rain, the sea and the rocks are in the picture.",
+   "untested": [
+    "流程概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-13",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "岩石裡的鈣和鎂，會把碳抓住，這叫做「風化」。"
+   ],
+   "subject": "手繪插圖：岩石裡的礦物把碳抓住（風化）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面近看一塊水邊裂開的岩石，岩石裡的礦物像小手一樣把一顆顆深色碳小點抓住、黏在石頭上，旁邊幾枝小箭頭指出碳被固定。",
+   "screen_direction": "toward",
+   "action": "碳小點被岩石礦物牢牢抓住、黏住不走的一刻，把抽象的「風化」畫成實物動作。無臉。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration: a close view of a cracked rock at the water's edge, the minerals inside the rock reaching out like little hands and grabbing hold of several dark carbon specks, sticking them to the stone, with small arrows showing the specks being locked in place. Natural colors. Only the rock, the water and the carbon specks are in the picture.",
+   "untested": [
+    "擬物化概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-14",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "最後，它們沉到海底，變成一層一層的石灰岩。"
+   ],
+   "subject": "手繪插圖：海底一層一層堆疊的石灰岩",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面是海底的剖面：一層層平整的淡色石灰岩，由下往上一層層疊起來；上方是平靜的海水。",
+   "screen_direction": "toward",
+   "action": "一層層石灰岩層層堆疊、愈積愈厚的剖面，呈現「碳最後沉積成石灰岩」。無臉。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide cross-section illustration of the sea floor built up of many flat horizontal layers of pale limestone stacked one on top of another, with calm water above. Natural colors. Only the layered sea floor and the water are in the picture.",
+   "untested": [
+    "剖面概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-15",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "所以碳會從岩石，到火山，到空氣，到海洋，最後又回到岩石。",
+    "其實，地球上絕大部分的碳，都鎖在石頭裡。"
+   ],
+   "subject": "手繪插圖：碳的循環（岩石→火山→空氣→海洋→回岩石）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面上四樣東西排成一圈、用手繪彎曲箭頭首尾相連：一塊大岩石、一座火山、一朵空氣的雲、一片海洋，循環方向是岩石→火山→空氣→海洋→再回岩石；其中岩石畫得最大，表示大部分的碳都鎖在石頭裡。",
+   "screen_direction": "toward",
+   "action": "四個實物沿著手繪圈圈循環、箭頭繞一圈回到最大的那塊岩石，總結整個碳循環。手繪風、不是乾淨資訊圖、無字。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration of four things arranged in a ring and joined head-to-tail by hand-drawn curved arrows: a big rock, a volcano, a cloud of air, and the ocean, so the loop goes rock to volcano to air to ocean and back to the rock. The rock is drawn the biggest to show most carbon is locked inside stone. Natural earth-tone colors, loose hand-drawn look, not a clean infographic, with no labels. Only these four elements and the connecting arrows are in the picture.",
+   "untested": [
+    "循環式概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-08-16",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "而且天氣越熱，風化就越快，抓走的碳就越多。",
+    "所以地球自己，最後會把多出來的二氧化碳清掉。",
+    "只不過，這要花上幾十萬年。"
+   ],
+   "subject": "手繪插圖：地球自己把多出來的二氧化碳清掉（天熱清得快，但很慢）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央一顆卡通地球拿著一把掃把，正把空氣裡多出來的深色碳小點掃進底下的岩石和海洋裡；上方一顆大太陽讓它掃得更賣力、更快。",
+   "screen_direction": "toward",
+   "action": "地球揮著掃把把多餘的碳掃進石頭裡、太陽愈大掃得愈急的一刻，點出「地球自我清理、但很慢」。地球有表情（認真、賣力）。",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "插圖",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "插圖：拿掃把的地球",
+     "visible": "整顆地球＋掃把",
+     "frame_height": "約佔畫高 6 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration of a cartoon Earth holding a broom, sweeping extra dark carbon specks out of the air down into the rocks and the ocean below it; a big hot sun above makes it work harder and faster. The Earth's face looks busy and determined. Natural colors. Only the Earth, the broom, the sun and the carbon specks are in the picture.",
+   "untested": [
+    "擬人化概念插圖，直接描述畫面，非 HERO 景別實測句"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

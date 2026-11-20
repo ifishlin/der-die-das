@@ -1,0 +1,192 @@
+{
+ "scene_id": "EP3-16",
+ "notes": "這一場 8 句旁白拆成 7 個鏡頭。前三句（按下→沒反應→再按一次）用「全景建立 → 中近景推近定格反應」製造喜感：第 1 格全景建立清晨營地裡 HERO 滿懷希望按鈕，第 2 格切近到中近景看死按鈕與 HERO 的傻眼反應（涵蓋第 2、3 句，含笑點停頓），第 3 格切 ECU 插入鏡頭揭露「按鈕結霜」這個資訊。第 5 句拉回火堆旁，用前側 3/4 中景拍 HERO 把按鈕湊向骨頭火堆烤；第 6 句同機位推近到中近景，看按鈕亮起、HERO 鬆一口氣（前後呼應第 3 格的凍住按鈕）。第 7 句是情感重點，用遠景把 HERO（畫左，拉著大衣想還）和女獵人＋小孩＋狗（畫右，揮手要他留著、道別）同框，營地與東邊河谷當背景。最後一句用全景白光爆閃收尾轉場到實驗室。全場 HERO 固定在火堆東側 H5，只改面向（南→西→東→南）；相機都放在營地可站/可放的格子。本場沒有真猛獁象同框，不需要加拍遠一級。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "H5", "facing": "S", "doing": "面朝鏡頭，舉起回家按鈕按下；沒反應，再按一次，越來越不耐"},
+    {"t": "2", "cell": "H5", "facing": "W", "doing": "轉向西側的骨頭火堆，把結霜的按鈕伸向火焰烤；過一會兒按鈕亮起"},
+    {"t": "3", "cell": "H5", "facing": "E", "doing": "轉向東側的女獵人，雙手拉著毛皮大衣像要還回去"},
+    {"t": "4", "cell": "H5", "facing": "S", "doing": "白光一閃，整個人被光包住，消失回到現代"}
+   ]
+  },
+  {
+   "who": "HUNTERS",
+   "path": [
+    {"t": "3", "cell": "J5", "facing": "W", "doing": "女獵人（給大衣那位）朝 HERO 微笑，攤開手揮手要他把大衣帶走"}
+   ]
+  },
+  {
+   "who": "CHILD",
+   "path": [
+    {"t": "3", "cell": "J6", "facing": "W", "doing": "站在女獵人旁，笑著揮手道別"}
+   ]
+  },
+  {
+   "who": "DOG",
+   "path": [
+    {"t": "3", "cell": "I6", "facing": "W", "doing": "站在旁邊，看著 HERO"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-16-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["該回家了，你按下回家按鈕。"],
+   "subject": "HERO",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 立於畫面中央偏左，全身入鏡，單手舉起小小的回家按鈕按下；背景是清晨的骨頭火堆營地。",
+   "screen_direction": "toward",
+   "action": "HERO 滿懷希望地按下按鈕的那一刻，表情期待。",
+   "camera": {"cell": "I8", "height_m": "1.5", "look_at": "HERO", "distance_m": "6.3"},
+   "cast": [
+    {"who": "HERO", "visible": "全身，臉與手", "frame_height": "全身約9成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack. HERO's face and hands are pure paper white. HERO stands and holds up a small home-return button device in one hand, pressing it with his thumb, looking hopeful and expectant. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-16-02",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["（停）沒有反應。", "你再按一次，還是沒有反應。"],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 臉與胸口佔滿畫面中央，雙手在胸前握著按鈕；背景模糊的營地。",
+   "screen_direction": "off_down",
+   "action": "HERO 低頭瞪著沒反應的按鈕又按了一下，一臉傻眼、無奈——笑點就在這個死掉的反應上。",
+   "camera": {"cell": "H6", "height_m": "1.5", "look_at": "HERO", "distance_m": "2.0"},
+   "cast": [
+    {"who": "HERO", "visible": "頭到胸、雙手、按鈕", "frame_height": "臉到胸約9成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack. HERO's face and hands are pure paper white. HERO holds the small home-return button device up near his chest and jabs it again with his thumb, staring down at it with a flat, deadpan, slightly annoyed and puzzled expression; the button stays dark. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 實測常畫成到腰（MS），剪輯時往上裁到胸口。"
+  },
+  {
+   "id": "EP3-16-03",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": ["原來，按鈕被凍住了。"],
+   "subject": "回家按鈕（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "結霜的回家按鈕與握著它的手指",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面被 HERO 手中的按鈕佔滿，白色手指握著它；按鈕表面結了一層霜，燈是暗的。插入鏡頭。",
+   "screen_direction": "toward",
+   "action": "按鈕朝鏡頭、整顆結滿白霜、燈完全不亮的那一刻，揭露它被凍住了。",
+   "camera": {"cell": "H6", "height_m": "1.2", "look_at": "回家按鈕", "distance_m": "0.5"},
+   "cast": [
+    {"who": "HERO", "visible": "只有手掌與手指、按鈕", "frame_height": "只有手入鏡（手約佔畫高5成）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Extreme close-up insert: a small home-return button device held in HERO's hand, with only the button and HERO's fingers in the picture. HERO's hands are pure paper white. The button is covered in a thin layer of white frost and ice crystals and its light is completely dark. Shot size: Extreme Close-up (ECU). Only the frost-covered button and the fingers holding it fill the picture. Camera direction: front view. The camera is directly in front of the button, facing it. Camera angle: Eye-level: the camera is at the button's height, looking straight at it.",
+   "untested": ["ECU 句改成拍物件（按鈕）而非眼睛，表上只驗證過眼睛"],
+   "remedy": "若按鈕 ECU 畫不出，改用 CU 拍手持按鈕的特寫、剪輯再推近。"
+  },
+  {
+   "id": "EP3-16-04",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["你把它湊到骨頭火堆的旁邊，烤了好一會兒。"],
+   "subject": "HERO",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏右、腰部以上入鏡，身體前傾、手臂往畫面左側的骨頭火堆伸出按鈕；火焰在畫面左緣。",
+   "screen_direction": "left",
+   "action": "HERO 專注地把結霜按鈕伸向火焰烤，耐心等它解凍的那一刻。",
+   "camera": {"cell": "G7", "height_m": "1.5", "look_at": "HERO", "distance_m": "4.5"},
+   "cast": [
+    {"who": "HERO", "visible": "頭到腰、手臂、手、按鈕", "frame_height": "臉到腰約9成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack. HERO's face and hands are pure paper white. HERO leans forward and holds the small frost-covered home-return button out at arm's length toward the flames of a bone fire to thaw it, watching it closely with a focused, patient expression. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上（MLS），剪輯時裁到腰。"
+  },
+  {
+   "id": "EP3-16-05",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": ["終於，它亮了。"],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 臉與胸口佔畫面中央，手捧亮起的按鈕在胸前發光；呼應第 3 格凍住的按鈕。",
+   "screen_direction": "off_down",
+   "action": "按鈕霜退、亮起的那一刻，HERO 低頭看著它，臉上綻放鬆一口氣的笑。",
+   "camera": {"cell": "G7", "height_m": "1.5", "look_at": "HERO", "distance_m": "4.0"},
+   "cast": [
+    {"who": "HERO", "visible": "頭到胸、手、發亮的按鈕", "frame_height": "臉到胸約9成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack. HERO's face and hands are pure paper white. HERO holds the small home-return button near his chest; the frost is gone and the button now glows with a bright light. HERO looks down at it, his face breaking into a relieved, delighted smile. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常畫成到腰，剪輯時裁到胸口。"
+  },
+  {
+   "id": "EP3-16-06",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": ["你想把毛皮大衣還給那位獵人，他卻揮揮手，要你帶走。"],
+   "subject": "HERO 與女獵人（含小孩、狗）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面左，雙手拉著毛皮大衣前襟像要還回去；畫面右是女獵人（攤手揮手要他留著）、小孩（揮手道別）、狗。眾人全身入鏡，背景是營地與東邊的河谷。",
+   "screen_direction": "right",
+   "action": "HERO 要脫下大衣歸還、女獵人卻笑著揮手要他帶走、小孩揮手道別的那一刻，溫暖的告別。",
+   "camera": {"cell": "I8", "height_m": "1.5", "look_at": "HERO", "distance_m": "6.3"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "全身約6成5"},
+    {"who": "HUNTERS", "visible": "女獵人全身", "frame_height": "全身約7成"},
+    {"who": "CHILD", "visible": "全身", "frame_height": "全身約5成"},
+    {"who": "DOG", "visible": "全身", "frame_height": "全身約3成5"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Four characters in the picture and no one else: HERO (exactly as in the attached HERO character sheet), a FEMALE HUNTER (exactly as in the attached hunters character sheet), a CHILD (exactly as in the attached child character sheet) and a DOG (exactly as in the attached dog character sheet). HERO wears the fur coat, shorts and flip-flops, no hat and no backpack. HERO's face and hands are pure paper white; the female hunter's face and hands are pure paper white; the child's face and hands are pure paper white. On the left, HERO holds the front edge of the fur coat with both hands as if offering to give it back, looking grateful and a little reluctant. On the right, the female hunter smiles warmly and waves her open hand to tell him to keep it; beside her the child smiles and waves goodbye; the dog stands next to them looking alert and friendly. Shot size: Wide Shot (WS). The whole bodies of all the characters are clearly visible, with a lot of the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of the characters and off to one side, so we see their faces and one side of their bodies. Camera angle: Eye-level: the camera is at eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常畫成偏近（接近 FS、主體偏大）；若最高的女獵人頭或腳超出畫框，剪輯略縮，或接受輕微局部。"
+  },
+  {
+   "id": "EP3-16-07",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": ["光一閃，你回到了現代。"],
+   "subject": "HERO",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 全身立於畫面中央，強烈的白光從全身四周炸開；背景被白光淹沒。",
+   "screen_direction": "toward",
+   "action": "時光機啟動、白光一閃爆開包住 HERO 的那一刻，HERO 瞪大眼、動作定格。",
+   "camera": {"cell": "H8", "height_m": "1.5", "look_at": "HERO", "distance_m": "6.0"},
+   "cast": [
+    {"who": "HERO", "visible": "全身，臉與手", "frame_height": "全身約9成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing the fur coat, shorts and flip-flops, no hat and no backpack. HERO's face and hands are pure paper white. A sudden, brilliant white flash of light bursts out all around HERO's whole body as the time machine activates; HERO is wide-eyed and startled, caught mid-motion. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front view. The camera is ahead of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  }
+ ]
+}

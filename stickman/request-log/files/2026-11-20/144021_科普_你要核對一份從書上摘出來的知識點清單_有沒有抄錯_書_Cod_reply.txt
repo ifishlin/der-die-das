@@ -1,0 +1,21 @@
+核對完成。p.35（ANCIENT EGYPT 頁）全文已逐字讀清楚。主要發現：n15 引文介系詞錯（`from`→書上是 `in`/`fell in`）、n16 漏抄 `tools`、n17 加了書上沒有的「約」、而 n18/19/20 三句**整段不在這一頁**（本頁結束於 "the massive work camp you'll see beneath it."，講營區發現經過的內容在下一頁 p.36）。
+
+```json
+{"page": "p.35",
+ "checks": [
+  {"n": 14, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 15, "ok": false, "problem": "引文介系詞抄錯：書上是 'the monsoonal rains that fell in the Ethiopian highlands'，用的是 in（雨落在高地），不是 'from'。claim_zh 的因果意思忠實（氾濫水源自衣索比亞高地的季風雨），只需修正引文。hedge『片段辨讀，待重拍確認』可解除，本頁已讀清楚。", "quote": "the monsoonal rains that fell in the Ethiopian highlands", "claim_zh": "尼羅河氾濫的水源自衣索比亞高地。"},
+  {"n": 16, "ok": false, "problem": "引文漏抄第一個項目：書上是 'the tools, stones, food, materials, and workers'，清單少了 tools（工具）。claim_zh 也漏掉『工具』。另：書上是 'thousands of ships'（成千上萬艘船）正確。hedge『片段辨讀，待重拍確認』可解除。", "quote": "the tools, stones, food, materials, and workers", "claim_zh": "氾濫使河水上漲後，成千上萬艘船把工具、石頭、食物、材料和工人直接運到吉薩的工程。"},
+  {"n": 17, "ok": false, "problem": "引文 'rising 200 feet' 書上逐字相符、數字正確（200 feet），hedge『數字待重拍確認』可解除。但 claim_zh 加了書上沒有的『約』──書上寫法是確定的 'rising 200 feet above the plateau'（露出高原之上 200 英尺），不該添加約略語氣。", "quote": "rising 200 feet", "claim_zh": "抵達時會看到半完工的吉薩金字塔露出高原之上約 61 公尺（200 英尺）高。"},
+  {"n": 18, "ok": false, "problem": "這句不在 p.35。本頁（ANCIENT EGYPT 頁）結束於 'the massive work camp you'll see beneath it.'，完全沒有出現 Egyptologists 假設工人是奴隸的內容。應在下一頁（p.36），需重新查證並更正頁碼；無法從本頁提供更正引文。", "quote": "", "claim_zh": ""},
+  {"n": 19, "ok": false, "problem": "這句不在 p.35。本頁沒有『1990 年才發現營區』的字句（應在 p.36）。無法從本頁提供更正引文。", "quote": "", "claim_zh": ""},
+  {"n": 20, "ok": false, "problem": "這句不在 p.35。本頁沒有『遊客被石牆絆倒』的字句（應在 p.36）。無法從本頁提供更正引文。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "尼羅河每年的氾濫把淤泥和水帶到乾旱國度，使河岸變成世界上最肥沃的農業區之一。", "quote": "The Nile's annual flood brought life to this otherwise desert country. Its sediment and water transformed the banks of this parched land into one of the most productive agricultural areas in the world.", "pages": ["p.35"], "type": "因果", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "氾濫使古埃及農民無法耕作，必須等水退才能回到田裡（因此氾濫季的農民成為工程勞力來源）。", "quote": "the flood also idled the Ancient Egyptian farmers, who had to wait until the waters receded before they could return to their fields", "pages": ["p.35"], "type": "因果", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "在吉薩高原開鑿了一座港口，讓上千艘船能把物資直接運到工程所在。", "quote": "sail into a harbor dug into the Giza Plateau to allow the thousands of ships delivering", "pages": ["p.35"], "type": "描述", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "半完工的吉薩金字塔外側覆有閃亮的白色石灰岩外殼。", "quote": "with its sides glistening in its white limestone cladding", "pages": ["p.35"], "type": "描述", "who": "作者", "hedge": "", "convert": ""}
+ ],
+ "unclear": []}
+```

@@ -1,0 +1,15 @@
+```json
+{"page": "p.37",
+ "checks": [
+  {"n": 24, "ok": false, "problem": "quote 是書上真句子的片段（原文「with a belly full of beer, bread, and cow's feet」），但 claim_zh 漏掉了早餐還有「牛腳（cow's feet）」這一項，只講麵包配啤酒。", "quote": "a belly full of beer, bread, and cow's feet", "claim_zh": "工人早餐吃得飽飽的，有啤酒、麵包和牛腳。"},
+  {"n": 25, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 26, "ok": false, "problem": "這一頁（p.37，ANCIENT EGYPT）全頁逐字看過，沒有「The King's men」這個句子。這一頁對工人隊的稱呼是「twenty-man work team」「seasonal worker」「conscripted crew」。此 quote 在本頁查無，無法支持 claim_zh。", "quote": "（本頁查無，無法提供改正）", "claim_zh": "（本頁查無此說法，無法確認）"}
+ ],
+ "missing": [
+  {"claim_zh": "採石組的工人會領到一支銅鑿子；銅很軟、不是鑿石的好材料，但比當時其他可用的材料好。", "quote": "you'll receive a copper chisel. Copper is soft, and thus a poor metal for chiseling rock, but it's better than the era's alternatives.", "pages": ["p.37"], "type": "描述", "who": "作者", "hedge": "片段辨讀，待重拍確認", "convert": ""},
+  {"claim_zh": "銅從紅海對岸的小型銅礦採得，因此很貴。", "quote": "it was sourced from small copper mines across the Red Sea, it's expensive.", "pages": ["p.37"], "type": "描述", "who": "作者", "hedge": "片段辨讀，待重拍確認", "convert": ""},
+  {"claim_zh": "埃及當局為防銅被遺失或偷走，甚至會秤量每名工人帶進工地的銅量。", "quote": "weigh the amount of copper each worker took into the field.", "pages": ["p.37"], "type": "描述", "who": "作者", "hedge": "片段辨讀，待重拍確認", "convert": ""},
+  {"claim_zh": "採石工（quarriers）是全年工作、事先備好大量石灰岩塊；季節性工人則是負責搬運石頭。", "quote": "Quarriers worked year-round preparing huge numbers of limestone blocks that would then be lifted into place when the swell of summer labor arrived. You are that labor.", "pages": ["p.37"], "type": "描述", "who": "作者", "hedge": "片段辨讀，待重拍確認", "convert": ""}
+ ],
+ "unclear": []}
+```

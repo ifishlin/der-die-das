@@ -1,0 +1,76 @@
+{
+ "scene_id": "EP3-06",
+ "notes": "這一場是畫不出實景的講解，做成兩張生存指南內頁風格的手繪插圖（粗黑線、平塗色，跟角色設定圖同一種畫風；不是平面圖表、不是寫實照片），畫面上完全沒有字，數字全由旁白講。沒有實景、沒有地圖、沒有走位：blocking 空、camera.cell 填 N/A、t 填 0。分兩張是為了節奏和敘事分工：第一張是一張風景插圖，用北邊的大冰層＋露出來的大片陸地＋被拉低的海面，搭一個背對鏡頭的小火柴人路人當比例尺，配旁白 1、2（最冰的年代、海面低約一百二十公尺）；第二張換成鳥瞰的手繪地圖插圖，把今天的海岸線（虛線）和冰河時期的海岸線（實線）疊在一起，兩線之間多出來的陸地上色，讓『今天是海、那時候是陸地』一眼看懂，配旁白 3。沒有 HERO、沒有真猛獁象同框，所以不用加拍遠一級。",
+ "blocking": [],
+ "shots": [
+  {
+   "id": "EP3-06-01",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "而這時候，也是冰最多的年代。",
+    "那麼多的水都凍成了冰，海面比今天低了大約一百二十公尺。"
+   ],
+   "subject": "冰河時期世界的風景插圖（北邊大冰層＋露出的陸地＋降低的海面），前景放一個小火柴人路人當比例",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面上方（北邊）是一整片白色大冰層，像一道高牆橫過上緣；中段到下緣是露出來的棕綠色陸地，很大一片；右下角一小塊被拉低的藍色海面，比陸地低；一個背對鏡頭的小火柴人路人站在陸地偏左下方，望向遠處的冰層當比例尺",
+   "screen_direction": "away",
+   "action": "小火柴人路人站著、背對我們，仰望遠方那片巨大的白色冰層；整張圖強調冰之多、陸地之大、海面之低",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [
+    {
+     "who": "STICKMAN（插圖路人，非 HERO）",
+     "visible": "全身背影",
+     "frame_height": "約 1 成或更小"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration, like a page from an illustrated guidebook, not a flat diagram and not a photo. A wide landscape of an Ice Age world: a huge white ice sheet like a tall wall across the whole top (the far north), a very wide stretch of exposed flat brown-green land filling the middle and foreground, and only a small patch of flat blue sea sitting low at the lower right, clearly lower than the land. The land looks much bigger than the sea. One single tiny stickman passerby, drawn in exactly the same stickman style as the character sheets with pure paper white skin, stands small in the lower-left on the exposed land with his back fully to us, looking toward the distant ice wall; his face is not visible. Only this one tiny stickman figure appears, no other people and no animals.",
+   "untested": [
+    "整張為手繪生存指南風景插圖（hand-drawn survival-guide illustration），非【七】實測的 HERO 相機句",
+    "huge white ice sheet like a tall wall across the top",
+    "exposed brown-green land much bigger than a low blue sea"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-06-02",
+   "variant_of": "N/A",
+   "t": 0,
+   "narration": [
+    "很多今天是海的地方，那時候都還是陸地。"
+   ],
+   "subject": "今天海岸線與冰河時期海岸線疊在一起的鳥瞰手繪地圖插圖",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "aerial",
+   "composition": "鳥瞰整片海陸：藍色海在外側（下／右），陸地在內側（上／左）；一條虛線＝今天的海岸線靠內，一條實線＝冰河時期的海岸線在外側更遠；兩條線之間多出來的一大圈陸地上了棕綠色，標示出『今天是海、那時候是陸地』；畫面上方（北邊）壓著一塊白色大冰層的邊緣",
+   "screen_direction": "N/A",
+   "action": "靜態講解地圖：冰河時期的實線海岸線明顯比今天的虛線海岸線往外推很多，中間多出一大片上色的陸地，讓觀眾一眼看出陸地變大、海變小",
+   "camera": {
+    "cell": "N/A",
+    "height_m": "N/A",
+    "look_at": "N/A",
+    "distance_m": "N/A"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A hand-drawn survival-guide illustration seen from a bird's-eye view, like a rough illustrated map on a guidebook page, not a flat technical diagram and not a photo. It shows a coastline twice, overlaid: a dashed black line marks today's coastline closer in, and a solid black line marks the Ice Age coastline much farther out toward the sea. The flat blue sea sits on the outer side; the brown-green land fills the inner side. The wide band of land between the dashed line and the solid line is shaded brown-green to show that this area is sea today but was dry land back then, so the Ice Age land looks much larger. A thick white ice sheet presses in along the top edge (the north). No people and no animals; only the hand-drawn map.",
+   "untested": [
+    "鳥瞰手繪地圖插圖（bird's-eye hand-drawn survival-guide map），非【七】實測的 HERO 相機句",
+    "dashed line = today's coastline, solid line = Ice Age coastline, overlaid",
+    "shaded band of land between the two coastlines"
+   ],
+   "remedy": "N/A"
+  }
+ ]
+}

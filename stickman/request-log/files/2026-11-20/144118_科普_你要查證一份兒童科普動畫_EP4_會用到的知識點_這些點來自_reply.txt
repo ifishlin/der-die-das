@@ -1,0 +1,30 @@
+所有四點的證據都已從可開啟的來源確認。以下為結果：
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 122,
+  "verdict": "正確",
+  "sci": "吉薩金字塔工人墓園（Zahi Hawass 等人發掘）的骨骸顯示大量癒合完好的骨折，多數斷骨用木夾板固定後接合良好，甚至有 12 具骨骸手上留有夾板；兩例（左腿、右臂）為成功的截肢，斷端已癒合，其中一名截肢者術後又活了約 14 年。工人有正式墓葬與陪葬品。這些都說明受傷工人得到醫療照顧，不是用完就丟的奴隸。同行審查的個案報告也證實古埃及截肢者能存活並長出癒合骨痂。",
+  "src": [["Buccellato et al. 2023, International Journal of Paleopathology（PMC9809921）— 古埃及截肢後存活、骨痂癒合的個案報告", "https://pmc.ncbi.nlm.nih.gov/articles/PMC9809921/"], ["Zahi Hawass, The Discovery of the Tombs of the Pyramid Builders at Giza（工人墓園骨折夾板、截肢後存活 14 年）", "https://www.guardians.net/hawass/buildtomb.htm"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 123,
+  "verdict": "正確",
+  "sci": "2014 年荷蘭阿姆斯特丹大學（UvA）與 FOM 的物理學家（Daniel Bonn 團隊）實驗證實：在滑橇前方的沙子灑上適量的水，水把沙粒藉毛細作用黏在一起、讓沙變硬約兩倍，沙就不會在橇前堆積，拉動所需的力氣大約減半。研究 2014 年 4 月 29 日發表於《Physical Review Letters》。",
+  "src": [["University of Amsterdam / FOM 2014, Physical Review Letters — Ancient Egyptians transported pyramid stones over wet sand（\"the correct amount of dampness in the sand halves the pulling force required\"）", "https://iop.uva.nl/content/news/2014/00/prl-egyptian-pyramids.html"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 124,
+  "verdict": "正確",
+  "sci": "Djehutihotep（第十二王朝，約公元前 1900 年，位於 Deir el-Bersha）墓中的「拉巨像」壁畫，描繪 172 人用大木橇拖運一尊巨大雕像；雕像前方的滑橇上站著一個人，正把罐裡的水往橇前的沙地上倒（從罐型判斷倒的是水而非油）。這幅畫正是上面灑水減摩擦實驗的歷史依據。",
+  "src": [["Sci-News 2014 — Ancient Egyptians Transported Large Objects over Wet Sand（\"a person standing on the front of the pulled sledge and pouring water over the sand just in front of it\"）", "https://www.sci.news/physics/science-ancient-egyptians-wet-sand-01894.html"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 131,
+  "verdict": "正確",
+  "sci": "目前唯一大致完整留存的胡夫（Khufu）立體雕像，是一尊高約 7.5 公分的象牙小坐像，1903 年由 Flinders Petrie 在阿拜多斯（Abydos）的 Khentyamentiu 神廟發掘出土，現藏開羅埃及博物館；其餘只有零星的雕像殘片。蓋了最大金字塔的國王，確實只留下這尊最小的雕像。",
+  "src": [["Khufu Statuette — Wikipedia（\"the only known three-dimensional depiction of Khufu which survives largely intact\"，高 7.5 cm）", "https://en.wikipedia.org/wiki/Khufu_Statuette"], ["Egypt Museum — Statuette of King Khufu（象牙、7.5 公分、Abydos 出土、現藏開羅埃及博物館）", "https://egypt-museum.com/statuette-of-king-khufu/"]],
+  "fix": "",
+  "confidence": "高"}
+]}
+```

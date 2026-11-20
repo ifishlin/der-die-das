@@ -1,0 +1,112 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch04_ancient_egypt/pages/p35.jpg（書的 p.35；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 14,
+  "claim_zh": "以被徵召的農民身分，七月中沿尼羅河順流而下前往工地。",
+  "quote": "sail down the Nile in mid-July",
+  "pages": [
+   "p.35"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 15,
+  "claim_zh": "尼羅河氾濫的水源自衣索比亞高地。",
+  "quote": "from the Ethiopian highlands",
+  "pages": [
+   "p.35"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": ""
+ },
+ {
+  "n": 16,
+  "claim_zh": "氾濫水位上升後，成千上萬艘船把石頭、食物、材料和工人直接運到吉薩的工程。",
+  "quote": "stones, food, materials, and workers",
+  "pages": [
+   "p.35"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": ""
+ },
+ {
+  "n": 17,
+  "claim_zh": "抵達時會看到半完工的吉薩金字塔高約 200 英尺。",
+  "quote": "rising 200 feet",
+  "pages": [
+   "p.35"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "數字待重拍確認",
+  "convert": "200 英尺≈61 公尺"
+ },
+ {
+  "n": 18,
+  "claim_zh": "埃及學家長久以來假設蓋金字塔的工人一定是奴隸。",
+  "quote": "Egyptologists had long assumed the pyramid workers must have been slaves",
+  "pages": [
+   "p.35"
+  ],
+  "type": "專家說法",
+  "who": "埃及學家（Egyptologists，書上未指名）",
+  "hedge": "assumed（假設）",
+  "convert": ""
+ },
+ {
+  "n": 19,
+  "claim_zh": "工人的營區直到 1990 年才被發現。",
+  "quote": "didn't discover the work camp until 1990",
+  "pages": [
+   "p.35"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 20,
+  "claim_zh": "營區是一名遊客被露出沙面的石牆絆倒後才被發現，揭露出一座城。",
+  "quote": "tripped over a stone wall",
+  "pages": [
+   "p.35"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "片段辨讀，待重拍確認",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.35",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.35"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

@@ -1,0 +1,173 @@
+{
+ "scene_id": "EP3-02",
+ "notes": "這一場是全片開場的「交代處境」戲，只有 HERO 一人在他的延畢小套房書桌前，沒有大動物，所以不需要加拍遠一級。四個鏡頭走「環境→物件→物件→反應」的節奏，對應四句旁白：①遠景背影先把人放進這個寒酸的小房間，建立孤單感（旁白1「為什麼會在這裡」）；②正上方俯拍插入鏡頭拍書桌上的《地心冒險》和找回來的學生證，這是上一集的『獎勵』（旁白2）；③特寫 HERO 的手舉起一張蓋滿紅色逾期章的帳單，從『獎勵』切到『現實』，形成對比（旁白3「書又不能吃，帳單一張一張寄來」）；④中近景切到 HERO 的臉，疲憊無奈地比出兩根手指頭算帳，當作鋪往下一場『來討錢』的笑點前情緒（旁白4）。HERO 全程坐在書桌椅上面朝 N（朝書桌與窗），相機從南邊（背面）起、繞到桌上（正面）收，走位連得起來。背景（牆、窗、地板、檯燈光）一律不寫進 prompt，交給主對話看地圖補。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {
+     "t": "1",
+     "cell": "F4",
+     "facing": "N",
+     "doing": "坐在書桌椅上，肩膀垮下、低頭看著桌上那疊帳單"
+    },
+    {
+     "t": "2",
+     "cell": "F4",
+     "facing": "N",
+     "doing": "同一姿勢坐著（這格是桌面物件插入鏡頭，HERO 不入鏡）"
+    },
+    {
+     "t": "3",
+     "cell": "F4",
+     "facing": "N",
+     "doing": "伸出右手，從帳單堆裡拿起一張蓋著紅色逾期章的帳單舉到面前"
+    },
+    {
+     "t": "4",
+     "cell": "F4",
+     "facing": "N",
+     "doing": "從帳單抬起頭看向前方，疲憊無奈地比出兩根手指頭，像在算博士欠幾趟工錢"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-02-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "先說說，你今天為什麼會在這裡。"
+   ],
+   "subject": "HERO",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "HERO 坐在畫面中央偏下的書桌椅上，背對鏡頭、略偏向他的右側，低頭面向畫面上方的書桌；前景是空木地板，背景是窗下長書桌。",
+   "screen_direction": "away",
+   "action": "開場定場：HERO 肩膀垮著、低頭盯著桌上的帳單，一個人坐在寒酸的小房間裡，交代他的處境。",
+   "camera": {
+    "cell": "G9",
+    "height_m": "1.3",
+    "look_at": "HERO",
+    "distance_m": "2.5"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "坐姿全身背影（後腦、背、手臂、腿）",
+     "frame_height": "坐姿全身，約佔畫高 6 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing summer clothes: short-sleeve shirt, shorts and flip-flops, no cap and no backpack. HERO is sitting in a desk chair, seen from behind, his shoulders slumped and his head lowered as he looks down at a stack of bills in front of him. HERO's hands are pure paper white. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: rear three-quarter view. The camera is behind HERO and off to one side, so we see his back and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "back34 句簡化成單一主體（拿掉 TEEN／trail，改成 behind HERO and off to one side）",
+    "對坐姿人物使用 WS"
+   ],
+   "remedy": "WS 實測常被畫成 FS（人偏大、環境偏少）；若人物太滿可於剪輯稍微拉遠，或接受 FS 當定場。背影不入鏡臉，不寫表情。"
+  },
+  {
+   "id": "EP3-02-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "上一次，你拿回了學生證，博士還送了你一本《地心冒險》。"
+   ],
+   "subject": "書《地心冒險》與學生證（桌面物件）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "top",
+   "composition": "正上方俯拍：畫面中央是一本精裝書平放在一疊帳單上，書的右邊躺著一張學生證卡片；四周是書桌桌面，無角色。",
+   "screen_direction": "N/A",
+   "action": "資訊插入鏡頭：俯視桌面，書的封面只有圖沒有字，壓在帳單堆上，旁邊是找回來的學生證，點出上一集得到的兩樣『獎勵』。",
+   "camera": {
+    "cell": "E2",
+    "height_m": "1.3",
+    "look_at": "書與學生證",
+    "distance_m": "0.6"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Seen from directly above, a hardcover book lies flat on top of a thick stack of papers, and a plastic student ID card lies on the surface next to the book. The book cover has only a drawn picture on it and no text or title. The papers and the card have no text, letters or readable writing of any kind. There are no characters and no hands in the picture. Shot size: a close-up of the objects, the book, papers and card fill most of the picture. Camera angle: Top-down shot (overhead), the camera is directly above the desk surface, looking straight down.",
+   "untested": [
+    "純物件插入鏡頭（無角色），用自寫的 close-up 物件描述而非 HERO 專用景別句",
+    "物件平放俯拍用 top-down（實測表上的 top ✗ 是針對人物會變小，對平放物件可行）"
+   ],
+   "remedy": "若 top-down 被畫成高角度斜看，物件仍清楚可用；可於剪輯裁切成正俯視感。"
+  },
+  {
+   "id": "EP3-02-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "可是書又不能吃，你的帳單，還是一張一張地寄來。"
+   ],
+   "subject": "HERO 的手與一張帳單",
+   "shot_size": "ECU",
+   "ecu_part": "手指與帳單",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面中央是 HERO 純白的右手，捏著一張蓋了紅色逾期大章的帳單舉在面前；帳單幾乎佔滿畫面，背景只是模糊的桌面。",
+   "screen_direction": "toward",
+   "action": "從『獎勵』切到『現實』的插入鏡頭：HERO 的手拿起其中一張帳單，紅色逾期章特別醒目，呼應『一張一張地寄來』。",
+   "camera": {
+    "cell": "F6",
+    "height_m": "1.1",
+    "look_at": "HERO 的手與帳單",
+    "distance_m": "0.9"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "只露右手（手掌與手指）",
+     "frame_height": "手約佔畫高 4 成，帳單佔滿其餘畫面"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The picture shows only HERO's hand (HERO exactly as in the attached HERO character sheet) holding up a single sheet of paper stamped with a large red overdue mark. HERO's hand is pure paper white. The paper has no text, letters or numbers on it, only the red stamp. No face, no other body parts and no other characters are visible. Shot size: an extreme close-up, the hand and the stamped paper fill the whole picture. Camera direction: front view. The camera is in front of the paper, facing it. Camera angle: Eye-level: the camera is at the paper's height, looking straight ahead.",
+   "untested": [
+    "ECU 用於『手＋帳單』的插入鏡頭，用自寫描述而非 HERO 眼睛專用的 ECU 句"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-02-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "算一算，博士欠你的工錢，已經兩趟了。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央，胸部以上，正對鏡頭坐在書桌椅上；一隻純白的手舉在胸前比出兩根手指頭。",
+   "screen_direction": "toward",
+   "action": "反應鏡頭：HERO 從帳單抬起頭，疲憊無奈地比出兩根手指頭，像在默默算博士欠他兩趟工錢，鋪往下一場『來討錢』。",
+   "camera": {
+    "cell": "F2",
+    "height_m": "1.1",
+    "look_at": "HERO 的臉",
+    "distance_m": "1.0"
+   },
+   "cast": [
+    {
+     "who": "HERO",
+     "visible": "頭到胸，含舉在胸前比二的右手",
+     "frame_height": "頭到胸約佔畫高 8 成"
+    }
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character in the picture is HERO (exactly as in the attached HERO character sheet), wearing summer clothes: short-sleeve shirt, no cap and no backpack. HERO is sitting at his desk, facing the camera, holding up two fingers in front of his chest as if counting. His expression is flat, tired and resigned, eyebrows pulled up in weary annoyance, mouth a thin flat line. HERO's face and hands are pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [
+    "front 句改寫成單人坐姿（on the trail ahead of HERO 改成 in front of HERO）"
+   ],
+   "remedy": "MCU 實測常被畫成到腰的 MS；若太寬可於剪輯推近到胸口的 MCU。"
+  }
+ ]
+}

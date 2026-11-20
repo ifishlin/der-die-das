@@ -1,0 +1,18 @@
+```json
+{"page": "p.45",
+ "checks": [
+   {"n": 44, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+   {"n": 45, "ok": false, "problem": "p.45 這一頁完全沒有出現 Mick Cooper、English Tug of War Association、也沒有「五十年經驗」。這一頁只在拔河脈絡提到匿名的研究：「Studies of tug-of-war competitors suggest the average athlete can pull with 1.5 times their body weight.」沒有任何具名的拔河協會祕書。此條若存在應在下一頁（p.46），本頁無法佐證。", "quote": "", "claim_zh": ""},
+   {"n": 46, "ok": false, "problem": "p.45 這一頁沒有出現 \"keep your arms straight, lean back, and pull with your legs\" 這句或任何手臂打直／身體後傾／用腿施力的拉繩建議。本頁拔河段落只到「...the average athlete can pull with 1.5 times their body weight. So while the weight is certainly possible if you're a healthy...」就接到下一頁。此句應在 p.46，本頁無法佐證。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+   {"claim_zh": "Colleen Darnell 表示古埃及智慧文獻顯示當時的行為規範很清楚：不要偷竊、不要在工作時喝醉，愛抱怨的人會被人看不起。", "quote": "Ancient Egyptian wisdom literature suggests the culture had clear mores: \u201cDon\u2019t steal. Don\u2019t get drunk on the job. And people who complained were frowned upon,\u201d she says.", "pages": ["p.45"], "type": "專家說法", "who": "Colleen Darnell（埃及學家）", "hedge": "", "convert": ""},
+   {"claim_zh": "依據 Djehutihotep 的象形壁畫判斷，古埃及人把拉動隊伍編組成每名拉繩者約出 150 磅的力（大約等於在平路上拉動一輛大車所需的力）。", "quote": "Judging by the Djehutihotep hieroglyph, Ancient Egyptians organized their pulling teams so that each puller pulled with approximately 150 pounds of force (roughly the same force required to pull a large car on a flat road).", "pages": ["p.45"], "type": "數據", "who": "", "hedge": "原文為 approximately（約）、roughly（大致）", "convert": "150 磅 ≈ 68 公斤力；在地圖／旁白換算時標明為約略值"},
+   {"claim_zh": "拔河選手的研究指出，一般運動員可以拉出自身體重 1.5 倍的力。", "quote": "Studies of tug-of-war competitors suggest the average athlete can pull with 1.5 times their body weight.", "pages": ["p.45"], "type": "數據", "who": "", "hedge": "原文為 suggest（指出／顯示）、average（平均）", "convert": ""},
+   {"claim_zh": "要搬運的是一塊八十噸重的黑色花崗岩石板。", "quote": "the eighty-ton black granite slab", "pages": ["p.45"], "type": "數據", "who": "", "hedge": "", "convert": "80 噸 ≈ 72,600 公斤"}
+ ],
+ "unclear": [
+   {"where": "n45、n46", "problem": "這兩條標在 p.45，但內容（Mick Cooper / English Tug of War Association / 五十年經驗 / 手臂打直後傾用腿拉）都不在這一頁；本頁拔河段落在「1.5 times their body weight. So while the weight is certainly possible if you're a healthy...」處斷頁。需看 p.46 才能確認，本頁無法核對。"},
+   {"where": "右頁最末行", "problem": "最後一行被下緣裁切，只讀到「So while the weight is certainly possible if you're a healthy ... recom-」，句子未完，無法取得完整內容。"}
+ ]}
+```

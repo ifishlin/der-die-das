@@ -1,0 +1,42 @@
+六點全部查到可靠出處並逐項確認。以下為結果。
+
+```json
+{"ep": "EP4", "results": [
+ {"n": 101,
+  "verdict": "正確",
+  "sci": "大金字塔完工時高約 146.5 公尺，底邊每邊約 230.3 公尺。它保持世界最高建築的紀錄約 3800 年，直到 19 世紀才被超越。今天因外殼脫落，高度降為約 138.5 公尺。",
+  "src": [["埃及觀光與文物部（Ministry of Tourism and Antiquities）, The Great Pyramid", "https://egymonuments.gov.eg/en/monuments/the-great-pyramid/"], ["World History Encyclopedia, Great Pyramid of Giza（底邊 230.33 m）", "https://www.worldhistory.org/Great_Pyramid_of_Giza/"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 102,
+  "verdict": "正確",
+  "sci": "大金字塔外層原本包著一層磨得很平滑的優質白色石灰岩外殼，在陽光下會發亮。後來外殼大多被拆走（14 世紀地震震鬆後被拿去蓋開羅的清真寺與城堡），今天看到的是裡面比較粗糙、略呈階梯狀的核心石塊。",
+  "src": [["埃及觀光與文物部, The Great Pyramid（外殼為優質石灰岩、由圖拉以船運來）", "https://egymonuments.gov.eg/en/monuments/the-great-pyramid/"], ["National Museums Scotland, Casing stone from the Great Pyramid of Giza", "https://www.nms.ac.uk/discover-catalogue/casing-stone-from-the-great-pyramid-of-giza"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 103,
+  "verdict": "正確",
+  "sci": "金字塔絕大多數石塊是吉薩本地採的石灰岩，埃及學界計算時慣用平均每塊約 2.5 噸。最重的是國王墓室上方的花崗岩橫梁，每根約 25～80 噸，來自南邊約 800 公里外的亞斯文。",
+  "src": [["埃及觀光與文物部, The Great Pyramid", "https://egymonuments.gov.eg/en/monuments/the-great-pyramid/"], ["Moussa et al. 2020, Heritage Science 8:article 32（Sustainability problems of the Giza pyramids：平均 2.5 噸、花崗岩自亞斯文逾 800 km）", "https://www.nature.com/articles/s40494-020-0356-9"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 104,
+  "verdict": "正確",
+  "sci": "白色外殼石灰岩採自尼羅河東岸（吉薩對岸）的圖拉採石場，以船運到工地。2013 年法國團隊（Pierre Tallet 主持）在紅海岸的瓦地賈夫（Wadi al-Jarf）發現「梅勒日記」莎草紙，年代為胡夫在位第 26 年，詳細記錄了一支船隊把圖拉石頭運到吉薩的工作，是目前最直接的文字紀錄。",
+  "src": [["Wikipedia（引 Tallet & Marouard）, Diary of Merer — 用以追溯原始出處", "https://en.wikipedia.org/wiki/Diary_of_Merer"], ["National Geographic, This ancient diary reveals how Egyptians built the Great Pyramid", "https://www.nationalgeographic.com/premium/article/red-sea-scrolls-pyramids-egypt"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 111,
+  "verdict": "正確",
+  "sci": "吉薩三座金字塔依序由胡夫、其子卡夫拉、其孫孟卡拉興建；人面獅身像一般認為是卡夫拉時期所建。因此胡夫蓋金字塔時，另外兩座金字塔和人面獅身像都還不存在。",
+  "src": [["Metropolitan Museum of Art, The Giza Pyramids（建造順序：Khufu→Khafre→Menkaure）", "https://www.metmuseum.org/toah/hd/gizapyr/hd_gizapyr.htm"], ["Wikipedia, Giza pyramid complex — 用以追溯原始出處（Sphinx 屬卡夫拉時期）", "https://en.wikipedia.org/wiki/Giza_pyramid_complex"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 121,
+  "verdict": "正確",
+  "sci": "考古學家（AERA、Mark Lehner 主持，自 1988 年）在吉薩金字塔南邊挖出一座工人城鎮「失落之城（Heit el-Ghurab）」，有麵包坊、釀啤酒處、工坊與宿舍。動物骨頭分析（Richard Redding）清出 17 萬多件牛、羊、山羊骨，數量足以讓數千人天天吃肉，證明工人吃得到肉，伙食比一般平民還好。",
+  "src": [["Ancient Egypt Research Associates（AERA）, Lost City of the Pyramids", "https://aeraweb.org/projects/lost-city/"], ["Harvard Magazine 2003, Who Built the Pyramids?（Redding：牛羊骨足以天天供數千人吃肉）", "https://www.harvardmagazine.com/2003/07/who-built-the-pyramids-html"]],
+  "fix": "",
+  "confidence": "高"}
+]}
+```

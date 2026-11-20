@@ -1,0 +1,310 @@
+{
+ "scene_id": "EP3-12",
+ "notes": "全場 10 個鏡頭。前段（做矛、投矛器）集中在西邊 D6/E6 工作區，鏡頭在平視高度切換側面與前側 3/4，並穿插兩個插入鏡頭（矛尖、投矛器）交代構造資訊；S04 用 HERO 想用手丟、獵人伸手制止當笑點。後段（第二步、出發）角色由工作區往東移到營地邊緣 J5/J6：S09 側面行走群像帶出『考古學沒有用狗證據，但像狼的狗還是自己跟來』的笑點（狗明顯跟在隊伍後），S10 用背影群像俯看河谷、帶頭獵人指向下方象群，作為轉入第 13 場 Spadzista 插圖的錨點。此場只有獵人、小孩、狗（都接近人身高、沒有真猛獁象同框），故不需加拍遠一級。背景（骨頭火堆、骨堆、毛皮、河谷、遠方冰牆）由主對話依地圖決定，prompt 不描述。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "G6", "facing": "W", "doing": "剛加入，站在獵人旁邊看示範，手上拿一支木矛"},
+    {"t": "2", "cell": "E6", "facing": "W", "doing": "在工作區跟著獵人綁燧石尖做矛"},
+    {"t": "3", "cell": "F6", "facing": "E", "doing": "舉起矛，想直接用手往河谷方向丟"},
+    {"t": "4", "cell": "F7", "facing": "NW", "doing": "看帶頭獵人示範投矛器"},
+    {"t": "5", "cell": "C7", "facing": "E", "doing": "在旁看獵人用投矛器甩矛（本鏡未入鏡）"},
+    {"t": "6", "cell": "F6", "facing": "SE", "doing": "低頭端詳手上的矛和投矛器"},
+    {"t": "7", "cell": "H6", "facing": "E", "doing": "拿著矛跟獵人往營地東邊走"},
+    {"t": "8", "cell": "I6", "facing": "E", "doing": "站在營地邊緣往下看河谷"}
+   ]
+  },
+  {
+   "who": "HUNTERS",
+   "path": [
+    {"t": "1", "cell": "D6", "facing": "E", "doing": "四個獵人聚在工作區，帶頭的男獵人舉矛示範（女、年輕、老獵人在旁）"},
+    {"t": "2", "cell": "D6", "facing": "E", "doing": "帶頭獵人示範把燧石尖綁上矛桿"},
+    {"t": "3", "cell": "E6", "facing": "E", "doing": "帶頭獵人伸手阻止 HERO 用手丟"},
+    {"t": "4", "cell": "E6", "facing": "SE", "doing": "帶頭獵人舉起投矛器給 HERO 看"},
+    {"t": "5", "cell": "E6", "facing": "E", "doing": "帶頭獵人用投矛器蓄力甩矛"},
+    {"t": "6", "cell": "D6", "facing": "E", "doing": "獵人們收拾矛具準備出發（背景）"},
+    {"t": "7", "cell": "G6", "facing": "E", "doing": "獵人們拿矛往營地東邊走"},
+    {"t": "8", "cell": "J5", "facing": "E", "doing": "站在營地邊緣，帶頭獵人指著河谷下的象群"}
+   ]
+  },
+  {
+   "who": "CHILD",
+   "path": [
+    {"t": "1", "cell": "F8", "facing": "NW", "doing": "在南側看獵人做矛"},
+    {"t": "2", "cell": "F8", "facing": "NW", "doing": "繼續看"},
+    {"t": "3", "cell": "F8", "facing": "N", "doing": "看 HERO 鬧笑話"},
+    {"t": "4", "cell": "F8", "facing": "NW", "doing": "看投矛器"},
+    {"t": "7", "cell": "E8", "facing": "E", "doing": "留在營地看大家出發"}
+   ]
+  },
+  {
+   "who": "DOG",
+   "path": [
+    {"t": "1", "cell": "C8", "facing": "E", "doing": "趴在獵人旁邊休息"},
+    {"t": "4", "cell": "C7", "facing": "E", "doing": "在旁休息"},
+    {"t": "7", "cell": "E7", "facing": "E", "doing": "跟在隊伍後面"},
+    {"t": "8", "cell": "H6", "facing": "E", "doing": "跟著獵人走到營地邊緣"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-12-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "獵猛獁象，一個人是辦不到的。",
+    "所以，你加入了他們。"
+   ],
+   "subject": "HERO（背影）與四個帕夫洛夫獵人",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背影在畫面左前景（較大）；四個獵人在中景正面對著我們，分散在工作區；小孩在右側看；狗趴在獵人左邊；骨頭火堆在中景。",
+   "screen_direction": "away",
+   "action": "HERO 剛加入這群人，背對鏡頭拿著矛，望著一字排開的獵人——建立『你加入了他們』。",
+   "camera": {"cell": "H7", "height_m": "1.6", "look_at": "D6（獵人群）", "distance_m": "8.2"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影", "frame_height": "約六成五"},
+    {"who": "HUNTERS", "visible": "四人全身", "frame_height": "約六成"},
+    {"who": "CHILD", "visible": "全身", "frame_height": "約四成"},
+    {"who": "DOG", "visible": "全身", "frame_height": "約兩成五"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: HERO (exactly as in the attached HERO character sheet) in the foreground seen from behind, four Pavlovian hunters (two as in the HUNTERS-A sheet and two as in the HUNTERS-B sheet) standing together a few steps ahead and facing us, a child (exactly as in the attached CHILD character sheet) watching from the side, and a wolf-like dog (exactly as in the attached DOG character sheet) resting on the ground near the hunters. HERO stands with his back to us, holding a plain wooden spear at his side, watching the hunters. HERO's hands are pure paper white. The hunters' faces and hands are pure white, their expressions calm and purposeful; the child's face and hands are pure white, wide-eyed and curious; the dog lies calmly with its ears up. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is behind HERO, looking the way he faces; HERO's back is nearer the camera and the hunters stand farther ahead, off to one side so HERO does not hide them. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["back view 原句是追逐場景，這裡改成靜態群像：HERO 背影前景＋獵人群在後"],
+   "remedy": "WS 常被畫成 FS（主體偏大、環境變少）；可接受，必要時剪輯略拉遠。"
+  },
+  {
+   "id": "EP3-12-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "第一步，做一把矛。"
+   ],
+   "subject": "HERO 與帶頭的獵人（做矛）",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側面雙人：帶頭獵人在畫面左、HERO 在右，並排站在工作區；獵人舉起一支做好的矛給 HERO 看，HERO 拿著自己的矛桿模仿。",
+   "screen_direction": "off_left",
+   "action": "帶頭獵人把做好的矛舉到與視線齊高展示，HERO 側身看著學——開啟『第一步，做矛』。",
+   "camera": {"cell": "E9", "height_m": "1.5", "look_at": "E6（HERO 與獵人）", "distance_m": "6"},
+   "cast": [
+    {"who": "HERO", "visible": "膝以上", "frame_height": "約七成"},
+    {"who": "HUNTERS", "visible": "帶頭獵人膝以上", "frame_height": "約七成五"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these two characters are in the picture: HERO (exactly as in the attached HERO character sheet) and the lead Pavlovian hunter (the man as in the HUNTERS-A sheet), standing side by side making spears. The hunter holds up a finished wooden spear to show HERO; HERO holds his own spear shaft and copies him. HERO's face and hands are pure paper white, his expression focused and trying hard. The hunter's face and hands are pure white, calm and instructive. Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: side view. The camera is beside HERO and the hunter and sees them exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["side view 原句是追逐，這裡用在兩人並排做矛的靜態側面"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-12-03",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "木頭或骨頭做的桿子，前面綁上一塊削尖的燧石。"
+   ],
+   "subject": "HERO 手上的矛與燧石尖（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "雙手與燧石矛尖",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "畫面滿是 HERO 的雙手，正把一塊削尖的燧石用繩子綁在木矛桿前端；矛桿往畫面斜出。",
+   "screen_direction": "toward",
+   "action": "手指把燧石尖固定、繞繩打結的一刻——交代矛的構造。",
+   "camera": {"cell": "E7", "height_m": "0.9", "look_at": "E6（矛尖）", "distance_m": "1.2"},
+   "cast": [
+    {"who": "HERO", "visible": "只有雙手", "frame_height": "手部約佔六成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Extreme close-up of only HERO's two hands (exactly as in the attached HERO character sheet) binding a sharpened flint point onto the front end of a wooden spear shaft with cord. HERO's hands are pure paper white. No face is shown. Shot size: Extreme Close-up (ECU). Only HERO's hands and the flint spear-point fill the picture. Camera direction: front view. The camera is in front of the hands, facing them. Camera angle: Eye-level: the camera is at the height of the hands, looking straight ahead.",
+   "untested": ["ECU 用在雙手與矛尖（表上只驗證過眼睛）"],
+   "remedy": "ECU 寫手部有風險；若畫得太遠，剪輯時推近。"
+  },
+  {
+   "id": "EP3-12-04",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "可是，千萬不要用手直接丟。",
+    "猛獁象的皮，有一英寸厚，大約兩公分半。",
+    "你用手丟過去，只會讓牠更生氣。"
+   ],
+   "subject": "HERO（舉矛想用手丟）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中偏右，高舉木矛作勢往右（河谷方向）丟；帶頭獵人的手臂從 HERO 左後方伸進畫面攔阻。",
+   "screen_direction": "right",
+   "action": "HERO 天真地想直接用手把矛擲出，獵人一把攔住——笑點：用手丟只會惹惱猛獁象。",
+   "camera": {"cell": "G8", "height_m": "1.5", "look_at": "F6（HERO）", "distance_m": "4.5"},
+   "cast": [
+    {"who": "HERO", "visible": "腰以上", "frame_height": "約七成五"},
+    {"who": "HUNTERS", "visible": "帶頭獵人的手與上半身", "frame_height": "約五成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these two characters are in the picture: HERO (exactly as in the attached HERO character sheet) raising a wooden spear overhead as if about to hurl it by hand, and the lead Pavlovian hunter (the man as in the HUNTERS-A sheet) just behind HERO reaching out a hand to stop him. HERO's face and hands are pure paper white, his expression eager and naive, mouth open. The hunter's face and hand are pure white, his expression alarmed and warning. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["front34 原句是追逐，這裡用在單人舉矛的靜態動作"],
+   "remedy": "MS 常被畫成膝上；剪輯時可裁到腰。"
+  },
+  {
+   "id": "EP3-12-05",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "所以你要做一個「投矛器」。"
+   ],
+   "subject": "帶頭的獵人（展示投矛器）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "帶頭獵人在畫面中央，正面對鏡頭舉起一根短扁的投矛器；HERO 背側在畫面右前景看著。",
+   "screen_direction": "toward",
+   "action": "獵人把投矛器舉到胸前朝向鏡頭／HERO，像在說『看這個』——引出投矛器。",
+   "camera": {"cell": "G8", "height_m": "1.5", "look_at": "E6（獵人）", "distance_m": "5.7"},
+   "cast": [
+    {"who": "HUNTERS", "visible": "帶頭獵人腰以上", "frame_height": "約七成"},
+    {"who": "HERO", "visible": "上半身背側", "frame_height": "約五成五"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these two characters are in the picture: the lead Pavlovian hunter (the man as in the HUNTERS-A sheet) holding up a short flat spear-thrower (atlatl) to show it, and HERO (exactly as in the attached HERO character sheet) seen from behind watching him. The hunter's face and hands are pure white, his expression patient and instructive. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). The hunter is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is in front of the hunter, facing him. Camera angle: Eye-level: the camera is at the hunter's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常被畫成膝上；剪輯時可裁到腰。"
+  },
+  {
+   "id": "EP3-12-06",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "它是一根短短扁扁的棍子，一頭有鉤子勾住矛，另一頭是握把。"
+   ],
+   "subject": "投矛器（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "整支投矛器（鉤子端與握把端）",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "畫面滿是一支短扁的投矛器，橫躺著；左端是勾矛的小鉤，右端是削出的握把。",
+   "screen_direction": "left",
+   "action": "靜物插入，清楚呈現投矛器兩端（鉤子、握把）的構造。",
+   "camera": {"cell": "F7", "height_m": "0.4", "look_at": "E6（投矛器）", "distance_m": "1.5"},
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Extreme close-up of only a single object: a spear-thrower (atlatl), a short flat wooden stick with a small hook carved at one end and a shaped handle at the other end, lying by itself. No characters and no hands are shown. Shot size: Extreme Close-up (ECU). Only the spear-thrower, with its hook end and its handle end, fills the picture. Camera direction: side view. The camera is beside the spear-thrower and sees it exactly from the side. Camera angle: Eye-level: the camera is at the height of the object, looking straight ahead.",
+   "untested": ["ECU 用在物件（投矛器）；object 的 side view 非表列寫法"],
+   "remedy": "ECU 用在物件有風險；若畫得太遠，剪輯時推近。"
+  },
+  {
+   "id": "EP3-12-07",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "它就像讓你的手臂多了一截，甩得更用力。",
+    "用得好的人，射出去的矛飛快，比用手丟快得多。"
+   ],
+   "subject": "帶頭的獵人（用投矛器甩矛）",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "獵人全身側面在畫面中央，手臂往後拉到最開，投矛器搭著矛延長了手臂，蓄勢往右（河谷方向）擲出。",
+   "screen_direction": "right",
+   "action": "甩矛的爆發瞬間——投矛器把手臂『加長一截』，呈現速度與力量。",
+   "camera": {"cell": "E9", "height_m": "1.5", "look_at": "E6（獵人）", "distance_m": "6"},
+   "cast": [
+    {"who": "HUNTERS", "visible": "帶頭獵人全身", "frame_height": "約七成五"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: the lead Pavlovian hunter (the man as in the HUNTERS-A sheet), caught mid-throw, his arm swung back and the spear-thrower (atlatl) extending his arm with a spear loaded on it, about to hurl the spear hard. His face and hands are pure white, his expression fierce with effort. Shot size: Full Shot (FS). The hunter's whole body, from head to feet, just fits in the picture. Camera direction: side view. The camera is beside the hunter and sees him exactly from the side. Camera angle: Eye-level: the camera is at the hunter's eye height, looking straight ahead.",
+   "untested": ["side view 用在甩矛的動態動作"],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP3-12-08",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "不過，歐洲找到最早的投矛器，比帕夫洛夫人晚了好幾千年。",
+    "帕夫洛夫人到底有沒有用投矛器，是科學家從矛頭和傷口推測的。"
+   ],
+   "subject": "HERO（端詳矛與投矛器）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 在畫面中央偏左，一手拿矛、一手拿投矛器，低頭看著手上兩樣東西。",
+   "screen_direction": "off_down",
+   "action": "一個安靜的沉思節拍：HERO 端詳手上的武器，襯這段『其實是科學家推測的』旁白。",
+   "camera": {"cell": "G7", "height_m": "1.5", "look_at": "F6（HERO）", "distance_m": "2.8"},
+   "cast": [
+    {"who": "HERO", "visible": "胸以上", "frame_height": "約八成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet), holding a spear in one hand and a spear-thrower (atlatl) in the other, looking down at the two tools in his hands. HERO's face and hands are pure paper white, his expression thoughtful and curious. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 常被畫成到腰；剪輯時可推近到胸。"
+  },
+  {
+   "id": "EP3-12-09",
+   "variant_of": "N/A",
+   "t": "7",
+   "narration": [
+    "第二步，找地形。",
+    "獵人們沒有用繩子，也沒有挖陷阱坑。",
+    "考古學家也沒有找到他們用狗打獵的證據。",
+    "不過，那隻像狼的狗，還是自己跟來了。"
+   ],
+   "subject": "獵人們與 HERO（出發往東走），狗跟在後",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "側面行進：四個獵人與 HERO 一字往畫面右邊（東）走，各自拿著矛；像狼的狗在隊伍後面一點，獨自小跑跟著（畫面左後）。",
+   "screen_direction": "right",
+   "action": "眾人動身出發的側面全身；狗沒人叫牠卻自己跟來——落在『沒有用狗的證據，但狗還是來了』的笑點。",
+   "camera": {"cell": "G9", "height_m": "1.5", "look_at": "G6（隊伍）", "distance_m": "6.3"},
+   "cast": [
+    {"who": "HERO", "visible": "全身", "frame_height": "約五成五"},
+    {"who": "HUNTERS", "visible": "四人全身", "frame_height": "約六成"},
+    {"who": "DOG", "visible": "全身", "frame_height": "約兩成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: four Pavlovian hunters (two as in the HUNTERS-A sheet and two as in the HUNTERS-B sheet) and HERO (exactly as in the attached HERO character sheet) walking off together toward the right, each carrying a spear, and a wolf-like dog (exactly as in the attached DOG character sheet) trotting along a little behind them. HERO's face and hands are pure paper white, his expression determined. The hunters' faces and hands are pure white, set and ready; the dog looks up alertly, following on its own. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: side view. The camera is beside the group and sees them from the side as they walk. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["side view 用在行走群像"],
+   "remedy": "WS 常被畫成 FS；可接受，必要時剪輯略拉遠以容下整列人與狗。"
+  },
+  {
+   "id": "EP3-12-10",
+   "variant_of": "N/A",
+   "t": "8",
+   "narration": [
+    "他們要做的，是從象群裡，挑出一頭看起來比較弱、或是受了傷的。",
+    "然後，把牠趕進一條死路。"
+   ],
+   "subject": "獵人們與 HERO（在營地邊緣俯看河谷）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "四個獵人與 HERO 全是背影，一字排在營地東緣，往前往下望河谷；帶頭獵人抬手指向前下方；像狼的狗也背對鏡頭站在人群間。背景是下方的河谷與遠處象群（由主對話處理）。",
+   "screen_direction": "away",
+   "action": "眾人背對鏡頭俯看河谷、帶頭獵人指向下方象群，鎖定目標、準備把象趕進死路——作為轉入第 13 場 Spadzista 的錨點鏡頭。",
+   "camera": {"cell": "G6", "height_m": "1.6", "look_at": "J5（營地邊緣的人群）", "distance_m": "6.3"},
+   "cast": [
+    {"who": "HERO", "visible": "全身背影", "frame_height": "約五成"},
+    {"who": "HUNTERS", "visible": "四人全身背影", "frame_height": "約五成五"},
+    {"who": "DOG", "visible": "全身背影", "frame_height": "約兩成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only these characters are in the picture: four Pavlovian hunters (two as in the HUNTERS-A sheet and two as in the HUNTERS-B sheet) and HERO (exactly as in the attached HERO character sheet), all seen from behind, standing in a row at the edge and looking out and down; the lead hunter raises an arm to point ahead, and a wolf-like dog (exactly as in the attached DOG character sheet) stands among them, also seen from behind. HERO holds a spear and his hands are pure paper white; the hunters each hold spears. No faces are shown. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: back view. The camera is behind the group, looking the way they face; the hunters' and HERO's backs are nearer the camera as they look out over what lies ahead of them. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": ["back view 用在靜態群像背影（俯看）"],
+   "remedy": "WS 常被畫成 FS；可接受，必要時剪輯略拉遠以容下整列人與下方河谷。"
+  }
+ ]
+}

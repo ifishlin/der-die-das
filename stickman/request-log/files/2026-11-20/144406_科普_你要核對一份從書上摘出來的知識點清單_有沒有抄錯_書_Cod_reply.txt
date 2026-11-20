@@ -1,0 +1,16 @@
+Read 完畢。這張照片是跨頁，右頁抬頭「ANCIENT EGYPT」就是 p.47，四個知識點都出自右頁。我逐字比對了右頁文字。
+
+```json
+{"page": "p.47",
+ "checks": [
+  {"n": 59, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 60, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 61, "ok": false, "problem": "quote 把書上的字序前後對調了，不是逐字連續的原句。書上的順序是先「Hemiunu orders you and 343 others to take your places along the ropes」，再接「directs you to haul the eighty-ton stone block onto a sledge」；清單卻把「eighty-ton stone block onto a sledge」提到「when Hemiunu...」前面，兩段順序顛倒。claim_zh 的意思正確、不用改。", "quote": "when Hemiunu orders you and 343 others to take your places along the ropes, and directs you to haul the eighty-ton stone block onto a sledge", "claim_zh": "Hemiunu 下令你和另外 343 人就拉繩位置，並指揮你們把八十噸石塊拉上滑橇。"},
+  {"n": 62, "ok": true, "problem": "", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [],
+ "unclear": [
+  {"where": "n=61 修正後 quote 的中段連接詞", "problem": "照片字小，「and directs you to haul the」是我最接近的讀法，確切用字（例如是不是 the、是不是 haul）無法百分百確定；但『Hemiunu 下令在前、eighty-ton 石塊在後』這個字序問題是確定的。"},
+  {"where": "n=61 右頁的 stone block vs granite block", "problem": "左頁（p.46）明寫 eighty-ton granite block，右頁 p.47 我讀成 stone block，與清單一致，但右頁該字稍糊，無法完全排除也是 granite。"}
+ ]}
+```

@@ -1,0 +1,20 @@
+核對完成。以下為結果。
+
+```json
+{"page": "p.40",
+ "checks": [
+  {"n": 32, "ok": false, "problem": "書上寫 70% 發生在上工「第一週」（during the first week），不是「前兩週」。quote 本身逐字正確。", "quote": "almost half of heat-related deaths occur on a worker's first day", "claim_zh": "據 OSHA，近一半與高溫有關的死亡發生在工人上工第一天，超過 70% 發生在上工第一週。"},
+  {"n": 33, "ok": false, "problem": "書上症狀惡化順序是 vomiting, faint pulse, or confusion，claim_zh 漏掉「脈搏微弱（faint pulse）」。quote 逐字正確。", "quote": "dizziness, headaches, muscle cramps, or nausea", "claim_zh": "中暑的症狀包括頭暈、頭痛、肌肉抽筋或噁心，嚴重會進展到嘔吐、脈搏微弱、神智混亂。"},
+  {"n": 34, "ok": false, "problem": "本頁只見「Rock quarry」箭頭與「Temporary ramps / allowed workers to haul blocks into place」兩個標註，未見圖的標題「THE GREAT PYRAMID — LIKELY CONSTRUCTION METHOD」（標題可能在上一頁或被裁切）。斜坡功能敘述正確。", "quote": "圖：標註 Rock quarry、Temporary ramps allowed workers to haul blocks into place", "claim_zh": "圖：標出採石場（Rock quarry）與臨時斜坡（Temporary ramps），斜坡讓工人把石塊拉上定位。（本頁未見圖標題「THE GREAT PYRAMID — LIKELY CONSTRUCTION METHOD」）"}
+ ],
+ "missing": [
+  {"claim_zh": "尼羅河裡充滿血吸蟲（schistosomes），一種扁蟲，會鑽過皮膚、經靜脈系統進到肝臟，在那裡成熟並產卵。", "quote": "The river teems with the blood parasite schistosomes, a flatworm that burrows through the skin, travels through the venous system to the liver, matures, and lays eggs", "pages": ["p.40"], "type": "描述", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "古埃及醫生相當擅長處理外傷性骨折，會用夾板固定（許多骨折因此癒合），有些病人甚至熬過截肢；一份描述治療鼻骨骨折的莎草紙，做法跟今天差不多。", "quote": "doctors immobilized them in splints. Some even seem to have survived amputations. ... Ancient Egyptian doctors were fairly proficient at caring for traumatic bone injuries. A papyrus describing treatment for a broken nose doesn't differ much from what you would receive today.", "pages": ["p.40"], "type": "描述", "who": "作者", "hedge": "fairly proficient（相當擅長）；seem to have（似乎）；待重拍確認部分字句", "convert": ""},
+  {"claim_zh": "但古埃及針對內科或間接病因（如關節炎、疾病、寄生蟲）的藥方效果差很多；醫療莎草紙裡有許多噁心的藥方，包括動物糞便做的藥膏、死蒼蠅和煮熟老鼠熬的湯。", "quote": "medications for internal or indirect causes of suffering, such as arthritis, disease, or parasites were not nearly as effective. Medical papyri ... with revolting prescriptions for diseases, including ointments of animal dung, and broths of dead flies and cooked mice.", "pages": ["p.40"], "type": "描述", "who": "作者", "hedge": "片段辨讀（「Medical papyri ... legion with」一句影像略模糊），待重拍確認", "convert": ""}
+ ],
+ "unclear": [
+  {"where": "頁頂插圖標題", "problem": "本頁只拍到 Rock quarry 與 Temporary ramps 兩個標註，看不到圖的主標題，無法確認是否為「THE GREAT PYRAMID — LIKELY CONSTRUCTION METHOD」。"},
+  {"where": "右欄中段「Medical papyri ... legion with revolting prescriptions」", "problem": "該句連接處影像略糊，疑為「Medical papyri are legion」（醫療莎草紙為數眾多）之誤讀，確切字句待重拍確認。"}
+ ]
+}
+```

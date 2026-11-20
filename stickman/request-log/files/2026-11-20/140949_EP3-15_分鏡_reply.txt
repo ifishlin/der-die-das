@@ -1,0 +1,239 @@
+{
+ "scene_id": "EP3-15",
+ "notes": "安靜、沉思的夜戲，全程平視、慢節奏。六顆鏡頭：①WS 建立夜營地與吃猛獁象肉的全員（敘事：定環境、定人物關係）②MS HERO 捧測量器、螢幕亮起（從群體切到主角）③ECU 插入測量器螢幕上的博士（資訊＝兩個數字講在旁白、畫面不出現數字）④MCU HERO 抬頭沉思（情緒：為什麼冰還在）⑤插圖插入：拔插頭的冰箱＋一包冷凍豌豆（比喻）⑥EWS 背影：HERO 走到營地北緣，很小地面對月光下的冰牆（收束：這些冰沒有那麼理所當然）。數字 278／417 只在旁白說出，畫面全程無字無數字。全部大動物都是「肉」和「骨頭」不是活猛獁象，故不需加拍遠一級。HERO 坐在火堆北側面向南邊（鏡頭），②④用同一個東南向機位做推近連戲；結尾機位在南、朝北看，火堆在前景、冰牆在遠方，和①的『圍火』形成冷暖對照。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "G4", "facing": "S", "doing": "坐在火堆北側，面向南邊的眾人與鏡頭，手拿一塊猛獁象肉在吃"},
+    {"t": "2", "cell": "G4", "facing": "S", "doing": "測量器亮起，雙手捧起、低頭看發光的螢幕"},
+    {"t": "3", "cell": "G4", "facing": "S", "doing": "把測量器舉在胸前，看著螢幕上的博士"},
+    {"t": "4", "cell": "G4", "facing": "S", "doing": "放下測量器到胸口，微微抬頭望向遠方，若有所思"},
+    {"t": "5", "cell": "G4", "facing": "S", "doing": "仍坐著，聽博士講冰箱的比喻"},
+    {"t": "6", "cell": "G2", "facing": "N", "doing": "起身繞過火堆走到營地北緣（G4→G3→G2），背對鏡頭，看著北方遠處月光下的冰牆"}
+   ]
+  },
+  {
+   "who": "HUNTERS",
+   "path": [
+    {"t": "1", "cell": "F4,F5,I4,G6", "facing": "SE/E/W/N", "doing": "四名獵人圍火而坐、吃猛獁象肉：帶頭男獵人 F4 朝 SE、女獵人 F5 朝 E、兜帽年輕獵人 I4 朝 W、灰鬍老獵人 G6 朝 N（前景背對鏡頭）；全場不移動"}
+   ]
+  },
+  {
+   "who": "CHILD",
+   "path": [
+    {"t": "1", "cell": "H6", "facing": "NW", "doing": "坐在火堆東南側嚼著一塊肉；全場不移動"}
+   ]
+  },
+  {
+   "who": "DOG",
+   "path": [
+    {"t": "1", "cell": "H7", "facing": "W", "doing": "趴在地上啃一根骨頭；全場不移動"}
+   ]
+  },
+  {
+   "who": "PROF（螢幕）",
+   "path": [
+    {"t": "3", "cell": "G4", "facing": "S", "doing": "出現在 HERO 手上測量器的小螢幕裡，半身講解、比手勢"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP3-15-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "晚上，大家圍著骨頭燒的火，吃著猛獁象的肉。"
+   ],
+   "subject": "圍火吃肉的全員（以 HERO 為景別基準）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "全景夜營地。中央偏後 HERO 坐著面向鏡頭，火堆在他前方中央當中景；前景正中灰鬍老獵人背對鏡頭；畫面左側兩名獵人（帶頭男、女獵人）；畫面右側兜帽年輕獵人、小孩，右下角狗臥著啃骨頭。",
+   "screen_direction": "toward",
+   "action": "眾人鬆弛地圍火吃肉的一刻；HERO 咬著一塊肉、神情放鬆，剛被接納進這個營地。",
+   "camera": {
+    "cell": "G9",
+    "height_m": "2.2",
+    "look_at": "火堆 G5 與坐在其後的 HERO",
+    "distance_m": "8"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "坐姿全身（火堆後，軀幹以上較清楚）", "frame_height": "約 35%"},
+    {"who": "HUNTERS（帶頭男獵人）", "visible": "坐姿全身，畫左", "frame_height": "約 38%"},
+    {"who": "HUNTERS（女獵人）", "visible": "坐姿全身，畫左", "frame_height": "約 38%"},
+    {"who": "HUNTERS（兜帽年輕獵人）", "visible": "坐姿全身，畫右", "frame_height": "約 36%"},
+    {"who": "HUNTERS（灰鬍老獵人・前景）", "visible": "坐姿全身，前景背對鏡頭", "frame_height": "約 46%"},
+    {"who": "CHILD", "visible": "坐姿全身，畫右", "frame_height": "約 28%"},
+    {"who": "DOG", "visible": "臥姿全身，右下角", "frame_height": "約 16%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. Only these characters are in the picture: HERO, four hunters, one child and one dog, sitting in a loose circle eating. HERO (exactly as in the attached HERO character sheet) sits facing the camera, holding a chunk of mammoth meat and eating it, relaxed and content with a small smile. HERO's face and hands are pure paper white. On the left, the lead male hunter and the female hunter (each exactly as in the attached hunter character sheets) sit eating chunks of meat, calm and friendly; their faces and hands are pure paper white. On the right, the hooded young hunter and the grey-bearded old hunter (each exactly as in the attached hunter character sheets) sit eating, at ease; their faces and hands are pure paper white. A child (exactly as in the attached child character sheet) sits on the right chewing a piece of meat, cheerful; the child's face and hands are pure paper white. A dog (exactly as in the attached dog character sheet) lies on the lower right gnawing a bone, calm and absorbed.",
+   "untested": [
+    "front／WS 的實測句原是單人站立，這裡套用在一圈坐著的群像",
+    "多角色同框（4 獵人＋HERO＋小孩＋狗）的相對大小控制"
+   ],
+   "remedy": "WS 常畫成 FS（人物偏大、環境偏少）；若環境太少，剪輯時當全景用即可，或改用 EWS 句重畫一張更遠的建立鏡頭。"
+  },
+  {
+   "id": "EP3-15-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "你手上的測量器，又亮了，博士要你看一個數字。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 單人置中偏左，雙手捧著發光的測量器，低頭看螢幕；畫面下緣在腰。",
+   "screen_direction": "off_down",
+   "action": "測量器突然亮起的一刻，HERO 低頭、挑眉，從吃肉的放鬆切成被叫住的注意。",
+   "camera": {
+    "cell": "H5",
+    "height_m": "1.5",
+    "look_at": "HERO G4",
+    "distance_m": "2.8"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "腰以上，含雙手與測量器", "frame_height": "約 85%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. Only HERO is in the picture. HERO (exactly as in the attached HERO character sheet) holds a small measuring device in both hands and looks down at its glowing screen, eyebrows raised, surprised and curious. HERO's face and hands are pure paper white.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上，可接受；若偏遠，剪輯時推近到腰上。"
+  },
+  {
+   "id": "EP3-15-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "這裡空氣裡的二氧化碳，很低，很低。",
+    "博士說，在工業革命以前，空氣裡的二氧化碳，是 278 ppm。",
+    "而現在呢，已經升到了 417 ppm。"
+   ],
+   "subject": "測量器螢幕（上面是博士）",
+   "shot_size": "ECU",
+   "ecu_part": "測量器螢幕（螢幕上是博士半身）",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "插入鏡頭：測量器佔滿畫面，HERO 雙手在左右下緣捧著，螢幕上是博士半身講解。",
+   "screen_direction": "toward",
+   "action": "博士在小螢幕上認真講解的一刻；三句旁白說出 278、417，但畫面不出現任何數字。剪輯可在這張靜圖上慢慢推近。",
+   "camera": {
+    "cell": "H4",
+    "height_m": "1.2",
+    "look_at": "HERO 手上的測量器（G4）",
+    "distance_m": "0.5"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "只有捧裝置的雙手（下緣）", "frame_height": "約 25%"},
+    {"who": "PROF（螢幕）", "visible": "螢幕上胸以上半身", "frame_height": "約 60%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Insert shot, extreme close-up: a small handheld measuring device fills the picture, held by two hands, seen straight on at eye level. On the device's screen is PROF (exactly as in the attached PROF character sheet), shown from the chest up, talking and gesturing mid-explanation, earnest and lively. Only HERO's two hands and PROF on the screen are in the picture. HERO's hands are pure paper white. PROF's face and hands are pure paper white. The screen shows only PROF, with no text and no numbers.",
+   "untested": [
+    "ECU 實測句原是『HERO 的眼睛與眼鏡』，這裡改成物件（測量器）",
+    "front 實測句原是小路上對著 HERO，這裡改成正對螢幕的物件插入",
+    "螢幕內再畫一個角色（博士）的套圖合成"
+   ],
+   "remedy": "ECU 物件版若畫不出，退用 CU（手持裝置置中）再於剪輯推近；務必確認螢幕上只有博士、完全無字無數字。"
+  },
+  {
+   "id": "EP3-15-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "在地球的歷史上，二氧化碳這麼多的時候，北方都沒有長年不化的冰。",
+    "那為什麼，今天的冰還在？",
+    "因為二氧化碳升得太快了，地球的溫度，還在後面追。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "HERO 單人置中，胸以上，放下測量器、微抬頭望向畫面外上方遠處。",
+   "screen_direction": "off_up",
+   "action": "HERO 抿著嘴、略帶不安地沉思『為什麼冰還在』的一刻；與 02 同一機位做推近，情緒從驚奇轉為思索。",
+   "camera": {
+    "cell": "H5",
+    "height_m": "1.5",
+    "look_at": "HERO G4",
+    "distance_m": "2.8"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "胸以上", "frame_height": "約 90%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. Only HERO is in the picture. HERO (exactly as in the attached HERO character sheet) lowers the small measuring device to his chest and lifts his gaze into the distance, lips pressed together, thoughtful and faintly uneasy. HERO's face and hands are pure paper white.",
+   "untested": [],
+   "remedy": "MCU 常畫成到腰，剪輯時推近到胸上。"
+  },
+  {
+   "id": "EP3-15-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "就像冰箱的插頭被拔掉，裡面那包冷凍豌豆，不會馬上就軟掉，",
+    "可是，它遲早會軟掉。"
+   ],
+   "subject": "插圖：拔掉插頭的冰箱與一包冷凍豌豆",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "插圖插入鏡頭：一台冰箱置中佔大部分畫面，門開著、電源插頭被拔出垂在旁邊，層架上一包冷凍豌豆；畫面無人。",
+   "screen_direction": "toward",
+   "action": "手繪比喻插圖的定格：插頭已拔、豌豆還沒軟。畫面不出現任何字或數字。",
+   "camera": {
+    "cell": "G4",
+    "height_m": "1.2",
+    "look_at": "比喻插圖（非場景實物，概念性插入）",
+    "distance_m": "0.6"
+   },
+   "cast": [],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. A simple hand-drawn illustration cut-away, no people: one old refrigerator standing with its door open, its power plug pulled out and dangling loose beside it, and inside on a shelf a single soft bag of frozen peas. The fridge fills most of the picture, seen from the front at eye level. No text and no numbers anywhere.",
+   "untested": [
+    "非場景的手繪比喻插圖（不對應地圖機位）"
+   ],
+   "remedy": "N/A（插圖，直接畫；只要確認無字、無數字）"
+  },
+  {
+   "id": "EP3-15-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "你看著遠方那面冰牆。",
+    "你第一次覺得，這些冰，好像也沒有那麼理所當然。"
+   ],
+   "subject": "HERO（背影）",
+   "shot_size": "EWS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "HERO 背影很小、置中偏下；前景中景是營火的微光，遠方北邊地平線是月光下的冰牆。HERO 與巨大冰牆對比，顯出渺小。",
+   "screen_direction": "away",
+   "action": "HERO 離開火堆、獨自站在營地北緣，靜靜面對遠方冰牆的一刻；背影不露臉，情緒靠姿態與空間傳達。",
+   "camera": {
+    "cell": "G8",
+    "height_m": "1.6",
+    "look_at": "HERO G2（再往北是冰牆）",
+    "distance_m": "12"
+   },
+   "cast": [
+    {"who": "HERO", "visible": "背影全身", "frame_height": "約 18%"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera direction: back view. The camera is behind HERO, looking the way he faces; we see his back and he does not hide anything. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead. Only HERO is in the picture. HERO (exactly as in the attached HERO character sheet) stands alone with his back to the camera, very small, still, arms at his sides, gazing out at the far horizon. HERO's face and hands are pure paper white.",
+   "untested": [
+    "back 實測句原是小路上兩人奔跑的背影，這裡改成單人站立背影"
+   ],
+   "remedy": "N/A（EWS＋背影為實測有效組合）"
+  }
+ ]
+}

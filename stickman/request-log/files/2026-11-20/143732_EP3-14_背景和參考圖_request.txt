@@ -1,0 +1,66 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+
+【這場】第 14 場　死路（三面過不去的陷阱地形）・隔天下午
+
+【四、地圖】死路（三面過不去的陷阱地形）・下午
+河谷往南分出的一條小支谷盡頭，一塊平坦的草地。北邊是一道陡的岩壁，東邊是很深的峽谷，西邊是陡的窪地，三面都過不去，只有南邊開口（獵人從南邊把猛獁象趕進來）。草地中間偏東有一塊汽車那麼大的石頭，HERO 最後躲在它後面。獵人在南半邊排開、正面對著猛獁象投矛。
+★ 三面過不去：北邊岩壁、東邊峽谷、西邊窪地
+★ 只有南邊開口
+★ 大石頭在中間偏東
+大小 14 欄（A–N）× 12 列（1–12），一格 5 公尺。北在上。時間：下午，太陽在西（下午）方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N
+  1  K K K K K K K K K K K K K K
+  2  K K K K K K K K K K K K K K
+  3  h h h o o o o o o o o Y Y Y
+  4  h h h o o o o o o o o Y Y Y
+  5  h h h o o o 2 2 o o o Y Y Y
+  6  h h h o o o 2 2 o 1 o o Y Y
+  7  h h o o o o o o o o o Y Y Y
+  8  h h o o o o o o o o o o Y Y
+  9  h h o o 3 3 3 3 3 3 o o Y Y
+ 10  h o o o o o o o o o o o o o
+ 11  o o o o o o o o o o o o o o
+ 12  o o o o o o 4 4 4 4 o o o o
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 汽車大小的大石頭（HERO 躲在後面）（a boulder the size of a car）｜角色：不可站｜相機：不可放
+  2 = 被趕進來的猛獁象（一開始）（the woolly mammoth driven into the dead end）｜角色：不可站｜相機：不可放（會移動）
+  3 = 獵人排開的地方（where the hunters spread out, facing the mammoth）｜角色：可站｜相機：可放
+  4 = 南邊開口（趕進來的路）（the open south end, the only way in）｜角色：可站｜相機：可放
+  K = 岩壁（站不上去）（a steep rocky cliff）｜角色：不可站｜相機：不可放
+  Y = 峽谷（很深，過不去）（a deep, steep-sided ravine）｜角色：不可站｜相機：不可放
+  h = 窪地（陡、過不去）（a steep-sided hollow too deep to climb out of）｜角色：不可站｜相機：可放
+  o = 死路底（平坦的草地）（a flat grassy floor closed in by cliffs and hollows）｜角色：可站｜相機：可放
+北邊岩壁、東邊峽谷、西邊窪地，只有南邊開口；大石頭在 J6；獵人排開在第 9 列。中段講華特．貝爾的四句（二十世紀初的蘇格蘭獵象人）可以畫成插圖（路人火柴人獵象人，不是 HERO）。
+地圖外面：北邊 岩壁上面是乾草原；東邊 峽谷對面是乾山坡；西邊 窪地對面是乾山坡；南邊 支谷往南開口，通回河谷。
+
+【參考圖】
+- PAIR2_MAMMOTH：猛獁象和 HERO 的比例圖（公象肩高 3.0 m、人 1.72 m）（EP3）
+- REF_DOG：像狼的早期的狗（左眼上方淺色斑）（EP3）
+- REF_HERO_FUR：HERO 披毛皮大衣（EP3）
+- REF_HUNTERS_A：帕夫洛夫獵人 A：帶頭的男獵人、女獵人（給大衣的那位）（EP3）
+- REF_HUNTERS_B：帕夫洛夫獵人 B：戴帽兜的年輕獵人、灰鬍子老獵人（EP3）
+- REF_MAMMOTH：真猛獁象（公象）（EP3）
+- REF_PROPS3：EP3 道具：矛、投矛器、燧石矛尖、測量器、結霜的回家按鈕、黏土小人像、骨頭火（EP3）
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP3-14-01", "variant_of": "N/A", "shot_size": "EWS", "angle": "aerial", "camera": {"cell": "H12", "height_m": 30, "look_at": "arena center (G7)", "distance_m": 45}, "in_frame": ["MAMMOTH", "HUNTERS", "HERO"]}, {"id": "EP3-14-02", "variant_of": "N/A", "shot_size": "MLS", "angle": "low", "camera": {"cell": "G8", "height_m": 0.5, "look_at": "MAMMOTH (G5)", "distance_m": 16}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-14-03", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "G7", "height_m": 1.6, "look_at": "HUNTERS (row 9)", "distance_m": 11}, "in_frame": ["HUNTERS", "HERO"]}, {"id": "EP3-14-04", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "G11", "height_m": 1.6, "look_at": "MAMMOTH (G6)", "distance_m": 25}, "in_frame": ["HUNTERS", "MAMMOTH"]}, {"id": "EP3-14-05", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "illustrated mammoth side profile", "distance_m": 3}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-14-06", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "J11", "height_m": 1.6, "look_at": "HERO (I9)", "distance_m": 11}, "in_frame": ["HERO", "MAMMOTH"]}, {"id": "EP3-14-06W", "variant_of": "EP3-14-06", "shot_size": "WS", "angle": "eye", "camera": {"cell": "J11", "height_m": 1.6, "look_at": "HERO (I9)", "distance_m": 16}, "in_frame": ["HERO", "MAMMOTH"]}, {"id": "EP3-14-07", "variant_of": "N/A", "shot_size": "MLS", "angle": "low", "camera": {"cell": "H8", "height_m": 0.5, "look_at": "MAMMOTH (G6)", "distance_m": 12}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-14-08", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "H11", "height_m": 1.6, "look_at": "HERO (H9)", "distance_m": 12}, "in_frame": ["HERO", "MAMMOTH"]}, {"id": "EP3-14-08W", "variant_of": "EP3-14-08", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "H11", "height_m": 1.6, "look_at": "HERO (H9)", "distance_m": 20}, "in_frame": ["HERO", "MAMMOTH"]}, {"id": "EP3-14-09", "variant_of": "N/A", "shot_size": "WS", "angle": "high", "camera": {"cell": "H11", "height_m": 15, "look_at": "HERO (G8)", "distance_m": 18}, "in_frame": ["HERO", "MAMMOTH"]}, {"id": "EP3-14-09W", "variant_of": "EP3-14-09", "shot_size": "EWS", "angle": "high", "camera": {"cell": "H11", "height_m": 22, "look_at": "HERO (G8)", "distance_m": 26}, "in_frame": ["HERO", "MAMMOTH"]}, {"id": "EP3-14-10", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "J9", "height_m": 1.6, "look_at": "boulder (J6)", "distance_m": 15}, "in_frame": []}, {"id": "EP3-14-11", "variant_of": "N/A", "shot_size": "MLS", "angle": "low", "camera": {"cell": "H10", "height_m": 0.4, "look_at": "MAMMOTH foot (H7)", "distance_m": 14}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-14-12", "variant_of": "N/A", "shot_size": "FS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "illustrated elephant hunter", "distance_m": 4}, "in_frame": ["OTHER"]}, {"id": "EP3-14-13", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "illustrated hunter and charging elephant", "distance_m": 8}, "in_frame": ["OTHER", "OTHER"]}, {"id": "EP3-14-14", "variant_of": "N/A", "shot_size": "MS", "angle": "eye", "camera": {"cell": "G10", "height_m": 1.6, "look_at": "HERO (H8)", "distance_m": 11}, "in_frame": ["HERO"]}, {"id": "EP3-14-15", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "L8", "height_m": 1.6, "look_at": "HERO (K6)", "distance_m": 11}, "in_frame": ["HERO", "MAMMOTH"]}, {"id": "EP3-14-15W", "variant_of": "EP3-14-15", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "L8", "height_m": 1.6, "look_at": "HERO (K6)", "distance_m": 18}, "in_frame": ["HERO", "MAMMOTH"]}, {"id": "EP3-14-16", "variant_of": "N/A", "shot_size": "WS", "angle": "low", "camera": {"cell": "I9", "height_m": 0.4, "look_at": "MAMMOTH (H6)", "distance_m": 15}, "in_frame": ["DOG", "MAMMOTH"]}, {"id": "EP3-14-17", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "H11", "height_m": 1.6, "look_at": "MAMMOTH (H6)", "distance_m": 25}, "in_frame": ["HUNTERS", "MAMMOTH"]}, {"id": "EP3-14-18", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "B7", "height_m": 1.6, "look_at": "MAMMOTH (G6)", "distance_m": 25}, "in_frame": ["MAMMOTH"]}, {"id": "EP3-14-19", "variant_of": "N/A", "shot_size": "EWS", "angle": "aerial", "camera": {"cell": "H12", "height_m": 35, "look_at": "arena center (G8)", "distance_m": 50}, "in_frame": ["MAMMOTH", "HUNTERS", "DOG", "HERO"]}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}
