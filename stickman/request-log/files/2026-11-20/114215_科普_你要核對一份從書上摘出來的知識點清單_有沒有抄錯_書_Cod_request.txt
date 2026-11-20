@@ -1,0 +1,136 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch03_ice_age/pages/p23.jpg（書的 p.23；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 1,
+  "claim_zh": "比摩天大樓還高的冰河覆蓋了加拿大、斯堪地那維亞和北歐。",
+  "quote": "glaciers taller than skyscrapers covered Canada, Scandinavia, and northern Europe",
+  "pages": [
+   "p.23"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 2,
+  "claim_zh": "那個時代可以和人類、鬣狗、熊、狼、馴鹿、披毛犀、猛獁象和獅子生活在一起。",
+  "quote": "live side by side with humans, hyenas, bears, wolves, reindeer, woolly rhinoceroses, mammoths, and lions",
+  "pages": [
+   "p.23"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 3,
+  "claim_zh": "那是地球上最冷的地方之一，也是人類歷史上最冷的時期之一。",
+  "quote": "one of the coldest places on earth during one of the coldest periods in human history",
+  "pages": [
+   "p.23"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 4,
+  "claim_zh": "那個場景是 25,000 年前。",
+  "quote": "you travel back 25,000 years",
+  "pages": [
+   "p.23"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 5,
+  "claim_zh": "廣大、酷寒的猛獁草原位於現今的東歐。",
+  "quote": "the vast, frigid mammoth steppe of what is now eastern Europe",
+  "pages": [
+   "p.23"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 6,
+  "claim_zh": "冰牆有一英里高。",
+  "quote": "the mile-high walls of ice",
+  "pages": [
+   "p.23"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "mile-high ≈ 1.6 公里高"
+ },
+ {
+  "n": 7,
+  "claim_zh": "當地有出沒的豹和潛行的獵豹。",
+  "quote": "the prowling leopards and stalking cheetahs",
+  "pages": [
+   "p.23"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 8,
+  "claim_zh": "在某個人類營地的垃圾堆裡，猛獁象骨頭佔所有骨頭的 98%。",
+  "quote": "In the refuse pile of one human camp, mammoths comprise 98 percent of all bones found",
+  "pages": [
+   "p.23"
+  ],
+  "type": "數字",
+  "who": "作者（引考古證據）",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 9,
+  "claim_zh": "披毛猛獁象是人類獵過最危險的獵物。",
+  "quote": "the most dangerous prey humans have ever hunted: the great woolly mammoth",
+  "pages": [
+   "p.23"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.23",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.23"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

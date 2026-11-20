@@ -1,0 +1,198 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch03_ice_age/pages/p29.jpg（書的 p.29；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 51,
+  "claim_zh": "Pavlovian 人長得特別高，而且不只是以他們那個時代來說。",
+  "quote": "They're also remarkably tall. And not just for their era",
+  "pages": [
+   "p.28",
+   "p.29"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 52,
+  "claim_zh": "男性平均身高略超過六英尺，等於今天全世界最高國家的平均身高。",
+  "quote": "The men average just over six feet in height—equal to the average height in the tallest country in the world today",
+  "pages": [
+   "p.29"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "six feet ≈ 183 公分"
+ },
+ {
+  "n": 53,
+  "claim_zh": "他們有棕色眼睛和深色皮膚。",
+  "quote": "They have brown eyes and dark skin",
+  "pages": [
+   "p.29"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 54,
+  "claim_zh": "當地冬季平均氣溫為華氏零下 4 度。",
+  "quote": "the average winter temperatures of negative 4 degrees Fahrenheit",
+  "pages": [
+   "p.29"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "負 4°F ≈ 負 20°C"
+ },
+ {
+  "n": 55,
+  "claim_zh": "他們用網子和陷阱捕捉當地的北極狐、狼和狼獾，做成類似大衣的精緻皮毛衣物禦寒。",
+  "quote": "parka-like clothing composed of furs from local arctic foxes, wolves, and wolverines, which they catch using their nets and traps",
+  "pages": [
+   "p.29"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 56,
+  "claim_zh": "因為這裡幾乎沒有樹木或任何木材，他們燒骨頭來生火。",
+  "quote": "Because there are few trees or wood here of any kind, they burn bones for their fires",
+  "pages": [
+   "p.29"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 57,
+  "claim_zh": "要在這種寒冷、高耗能的生活中存活，需要高蛋白高脂肪的食物，在這裡就是猛獁象。",
+  "quote": "If you want to survive this cold and metabolically expensive lifestyle, then you, like them, need a meal high in protein and fats. Where you are, that means mammoths",
+  "pages": [
+   "p.29"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 58,
+  "claim_zh": "獵猛獁象要先做一把矛：木或骨製的矛桿加上削尖的燧石矛頭。",
+  "quote": "you need to first craft a spear with a shaft made of wood or bone and a spearhead of chipped flint",
+  "pages": [
+   "p.29"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 59,
+  "claim_zh": "不要直接丟矛，因為獵物是六噸重、有一英寸厚皮的動物，矛只會激怒牠。",
+  "quote": "Your target is a six-ton animal with an inch-thick hide. The spear will merely anger it, and you will die",
+  "pages": [
+   "p.29"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": "six-ton ≈ 5.4 公噸；inch-thick ≈ 2.5 公分"
+ },
+ {
+  "n": 60,
+  "claim_zh": "要做一支投矛器（atlatl）：一根短而扁的棒子，一端有勾住矛的鉤、另一端是握把；它多加了一道槓桿到投擲動作上。",
+  "quote": "The spear-thrower—also called an atlatl—is a short, flat stick with a spear-holding hook on one end and a handle on the other … by adding another lever to your throwing motion",
+  "pages": [
+   "p.29"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 61,
+  "claim_zh": "熟練的投擲者用投矛器能把矛以超過每小時 100 英里的速度射出。",
+  "quote": "An experienced thrower can use an atlatl to launch a spear at over 100 miles per hour",
+  "pages": [
+   "p.29"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "100 mph ≈ 161 公里/小時"
+ },
+ {
+  "n": 62,
+  "claim_zh": "Wojtal 在猛獁象肋骨裡找到的那支投矛器射出的燧石矛頭，穿透了動物四英寸厚的皮和脂肪，再深入骨頭。",
+  "quote": "The atlatl-launched flint spearhead Wojtal found in the mammoth rib traveled through four inches of the animal's skin and fat and then penetrated deep into its bone",
+  "pages": [
+   "p.29"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": "four inches ≈ 10 公分"
+ },
+ {
+  "n": 63,
+  "claim_zh": "紮營要選在河谷上方的山坡、能觀察靠近的猛獁象群，而且理想上這條河谷要通往天然的死路（cul-de-sac）。",
+  "quote": "A hillside above a river valley where you can observe approaching mammoth herds is a necessity, but ideally this river valley should also lead into a natural cul-de-sac",
+  "pages": [
+   "p.29"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "ideally",
+  "convert": ""
+ },
+ {
+  "n": 64,
+  "claim_zh": "Wojtal 發現那支嵌在猛獁象肋骨裡燧石矛的 Pavlovian 遺址，位在波蘭南部。",
+  "quote": "The Pavlovian site in southern Poland where Wojtal discovered the flint spear buried in the mammoth rib",
+  "pages": [
+   "p.29",
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.29",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.29"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

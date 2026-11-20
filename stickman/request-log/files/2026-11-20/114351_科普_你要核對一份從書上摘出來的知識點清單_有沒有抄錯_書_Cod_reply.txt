@@ -1,0 +1,23 @@
+```json
+{"page": "p.29",
+ "checks": [
+  {"n": 51, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 52, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 53, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 54, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 55, "ok": false, "problem": "書上是 fiber nets（纖維網），不是 their nets；清單抄錯成「their nets」，claim_zh 也漏掉「纖維」。", "quote": "parka-like clothing composed of furs from local arctic foxes, wolves, and wolverines, which they catch using fiber nets and traps", "claim_zh": "他們用纖維網和陷阱捕捉當地的北極狐、狼和狼獾，做成類似大衣的精緻皮毛衣物禦寒。"},
+  {"n": 56, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 57, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 58, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 59, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 60, "ok": false, "problem": "書上首字是「A spear-thrower」不是「The spear-thrower」；其餘（含省略後的 by adding another lever…）相符。", "quote": "A spear-thrower—also called an atlatl—is a short, flat stick with a spear-holding hook on one end and a handle on the other … by adding another lever to your throwing motion", "claim_zh": "要做一支投矛器（atlatl）：一根短而扁的棒子，一端有勾住矛的鉤、另一端是握把；它多加了一道槓桿到投擲動作上。"},
+  {"n": 61, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 62, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 63, "ok": false, "problem": "書上是「natural trap」（天然陷阱），不是「natural cul-de-sac」；quote 與 claim_zh 都抄錯。", "quote": "A hillside above a river valley where you can observe approaching mammoth herds is a necessity, but ideally this river valley should also lead into a natural trap", "claim_zh": "紮營要選在河谷上方的山坡、能觀察靠近的猛獁象群，而且理想上這條河谷要通往天然的陷阱（natural trap）。"},
+  {"n": 64, "ok": true, "problem": "", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [],
+ "unclear": [
+  {"where": "n=51 的 quote 前半「They're also remarkably tall. And not just for their era」", "problem": "這句主體在 p.28，p.29 只看到接續的「any era.」，無法在本頁逐字核對 p.28 那段。"}
+ ]}
+```

@@ -1,0 +1,172 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch03_ice_age/pages/p25.jpg（書的 p.25；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 19,
+  "claim_zh": "三疊紀時大氣二氧化碳濃度曾飆到 2,000 ppm。",
+  "quote": "the Triassic, when its atmospheric concentration soared to 2,000 parts per million",
+  "pages": [
+   "p.25"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 20,
+  "claim_zh": "二氧化碳高的三疊紀時，可以在北極圈以北、長滿蕨類的海灘上泡澡。",
+  "quote": "you could have bathed above the Arctic Circle on a fern-forested beach",
+  "pages": [
+   "p.25"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 21,
+  "claim_zh": "成冰紀時二氧化碳曾跌破 40 ppm，冰覆蓋到赤道。",
+  "quote": "the Cryogenian, when it plunged below 40 parts per million—ice has encrusted the equator",
+  "pages": [
+   "p.25"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 22,
+  "claim_zh": "工業革命之前，只有火山活動會把大量使地球升溫的二氧化碳釋入大氣。",
+  "quote": "prior to the industrial revolution only volcanism opened … significant planet-warming amounts of carbon dioxide into the atmosphere",
+  "pages": [
+   "p.25"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（本句字略模糊，見 reshoot 02）"
+ },
+ {
+  "n": 23,
+  "claim_zh": "三疊紀末一次持續 500 年的噴發釋出了一百萬立方英里的熔岩，排放的二氧化碳相當於二十一世紀全部人類活動的量。",
+  "quote": "a 500-year eruption released a million cubic miles of lava and vented so much carbon dioxide into the atmosphere so all human activity in the twenty-first century",
+  "pages": [
+   "p.25"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "a million cubic miles ≈ 417 萬立方公里（本句字略模糊，見 reshoot 02）"
+ },
+ {
+  "n": 24,
+  "claim_zh": "（那次噴發後）地球升溫了 5 度，全世界四分之三的物種滅絕。",
+  "quote": "The planet warmed by 5 degrees, and three quarters of the world's species died",
+  "pages": [
+   "p.25"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "書上未標 F/C；若華氏 5 度≈攝氏 2.8 度，若攝氏則 5°C"
+ },
+ {
+  "n": 25,
+  "claim_zh": "二氧化碳溶入水、遇到新侵蝕出的鎂鐵質岩中的鈣和鎂，礦物與碳發生反應（稱為「風化」），沉積在海底形成石灰岩層。",
+  "quote": "When carbon dioxide dissolves into water and encounters calcium and magnesium from freshly eroded mafic rock, the minerals and carbon react (in a process called \"weathering\") and settle on the ocean floor as vast beds of limestone",
+  "pages": [
+   "p.25"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 26,
+  "claim_zh": "碳的循環大致是：岩石→火山→空氣→海洋→岩石。",
+  "quote": "the life cycle of carbon looks something like this: Rocks— VOLCANO—air—ocean—rocks",
+  "pages": [
+   "p.25"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 27,
+  "claim_zh": "工業革命前大氣含二氧化碳 278 ppm。",
+  "quote": "Prior to the industrial revolution, the … contained 278 parts per million of carbon dioxide",
+  "pages": [
+   "p.25"
+  ],
+  "type": "數字",
+  "who": "作者（註腳）",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 28,
+  "claim_zh": "如今二氧化碳已升到 417 ppm。",
+  "quote": "Today, it is up to 417 parts per million",
+  "pages": [
+   "p.25"
+  ],
+  "type": "數字",
+  "who": "作者（註腳）",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 29,
+  "claim_zh": "417 ppm 這個濃度在歷史上一直對應著北方沒有永久冰層的狀態。",
+  "quote": "a level that throughout history has corresponded with no permanent northern ice sheets",
+  "pages": [
+   "p.25"
+  ],
+  "type": "因果",
+  "who": "作者（註腳）",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 30,
+  "claim_zh": "現在還有冰層，只是因為碳濃度升得太快、溫度還在追趕。",
+  "quote": "That there still are ice sheets is simply because carbon levels have risen incredibly quickly and the temperature is still catching up",
+  "pages": [
+   "p.25"
+  ],
+  "type": "因果",
+  "who": "作者（註腳）",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.25",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.25"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

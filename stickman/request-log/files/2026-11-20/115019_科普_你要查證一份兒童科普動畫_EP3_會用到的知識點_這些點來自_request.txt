@@ -1,0 +1,134 @@
+
+你要查證一份兒童科普動畫（EP3）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 17,
+  "claim_zh": "這個冰河期始於將近 300 萬年前，當時大氣中的二氧化碳濃度開始驟降。",
+  "quote": "It began almost 3 million years ago when carbon dioxide levels in the atmosphere first began to plummet",
+  "pages": [
+   "p.24"
+  ],
+  "type": "數字",
+  "who": "作者（引 Swanson-Hysell）",
+  "hedge": "almost",
+  "convert": ""
+ },
+ {
+  "n": 18,
+  "claim_zh": "大氣中的二氧化碳是地球的保溫層，會留住原本要散入太空的熱，所以它的量決定地球溫度。",
+  "quote": "Carbon dioxide in the atmosphere serves as our planet's insulation. It traps heat otherwise headed for deep space, so its quantity dictates the earth's temperature",
+  "pages": [
+   "p.24"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 19,
+  "claim_zh": "三疊紀時大氣二氧化碳濃度曾飆到 2,000 ppm。",
+  "quote": "the Triassic, when its atmospheric concentration soared to 2,000 parts per million",
+  "pages": [
+   "p.25"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 20,
+  "claim_zh": "二氧化碳高的三疊紀時，可以在北極圈以北、長滿蕨類的海灘上泡澡。",
+  "quote": "you could have bathed above the Arctic Circle on a fern-forested beach",
+  "pages": [
+   "p.25"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 21,
+  "claim_zh": "成冰紀時二氧化碳曾跌破 40 ppm，冰覆蓋到赤道。",
+  "quote": "the Cryogenian, when it plunged below 40 parts per million—ice has encrusted the equator",
+  "pages": [
+   "p.25"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 22,
+  "claim_zh": "工業革命之前，只有火山活動會把大量使地球升溫的二氧化碳釋入大氣。",
+  "quote": "prior to the industrial revolution only volcanism spewed the significant planet-warming amounts of carbon dioxide into the atmosphere",
+  "pages": [
+   "p.25"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "（本句字略模糊，見 reshoot 02）",
+  "verify_note": "quote 用字錯：書上是「spewed the significant planet-warming amounts」，不是「opened … significant」。claim_zh 意思正確。"
+ },
+ {
+  "n": 23,
+  "claim_zh": "三疊紀末一次持續 500 年的噴發釋出了一百萬立方英里的熔岩，排放的二氧化碳相當於二十一世紀全部人類活動的量。",
+  "quote": "At the end of the Triassic, for example, a 500-year eruption released a million cubic miles of lava and vented as much carbon dioxide into the atmosphere as all human activity in the twenty-first century",
+  "pages": [
+   "p.25"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "a million cubic miles ≈ 417 萬立方公里（本句字略模糊，見 reshoot 02）",
+  "verify_note": "quote 用字錯：書上是「vented as much carbon dioxide … as all human activity」，不是「so much … so all human activity」。claim_zh 意思正確。"
+ },
+ {
+  "n": 24,
+  "claim_zh": "（那次噴發後）地球升溫了 5 度，全世界四分之三的物種滅絕。",
+  "quote": "The planet warmed by 5 degrees, and three quarters of the world's species died",
+  "pages": [
+   "p.25"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": "書上未標 F/C；若華氏 5 度≈攝氏 2.8 度，若攝氏則 5°C"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

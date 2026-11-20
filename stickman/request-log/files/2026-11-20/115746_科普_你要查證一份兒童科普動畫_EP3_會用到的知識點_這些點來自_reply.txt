@@ -1,0 +1,61 @@
+I have enough to finalize. Here are the results.
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 81,
+  "verdict": "正確",
+  "sci": "Walter D. M.「Karamojo」Bell（1880–1954）確實在 1896 年、16 歲時替東非的烏干達鐵路（Uganda Railway）獵獅，用的是 .303 口徑單發步槍。當時鐵路工地常遭獅子攻擊，這些獅子被稱為食人獅，所以「獵食人獅」的說法大致吻合史實。",
+  "src": [["Wikipedia「W. D. M. Bell」（引原始傳記資料：1896 年 16 歲為 Uganda Railway 獵獅）", "https://en.wikipedia.org/wiki/W._D._M._Bell"], ["African Hunting Gazette, \"Karamojo Bell and his Small Bores\"", "https://africanhuntinggazette.com/karamojo-bell-and-his-small-bores-stubborn-resolve-or-logical-choice/"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 82,
+  "verdict": "正確",
+  "sci": "這確實是 Bell 本人的話。他在 1923 年的回憶錄《The Wanderings of an Elephant Hunter》裡描述大象從悄悄潛行突然轉成高抬頭、象牙閃光、象鼻甩動正面衝來，寫道那是「a nerve test of the highest order（最高等級的膽量考驗）」。書上的引用是忠於原意的轉述。",
+  "src": [["W. D. M. Bell, 1923, *The Wanderings of an Elephant Hunter*（全文：\"...is a nerve test of the highest order\"）", "https://archive.org/stream/wanderingsofelep1923bell/wanderingsofelep1923bell_djvu.txt"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 83,
+  "verdict": "正確",
+  "sci": "這條建議和真實的獵象／野外經驗一致。大象（及猛獁象）常先來「假衝鋒（mock/false charge）」：耳朵張開、鼻子亂甩、衝一半就停下來試探你。野外守則普遍是站穩別跑，因為轉身逃跑反而會引發真正的追擊；獵人則是站定持續射擊。所以「站穩、持續射擊、祈禱是假衝鋒」是有根據的說法。",
+  "src": [["News24, \"Surviving a charging elephant\"（辨別假衝鋒／站穩別跑）", "https://www.news24.com/travel/guides/bush/surviving-a-charging-elephant-20140113"], ["Elephant Guide, \"Why Do Elephants Charge? Mock vs Real Charges Explained\"", "https://elephantguide.com/why-do-elephants-charge/"]],
+  "fix": "",
+  "confidence": "中"},
+
+ {"n": 84,
+  "verdict": "大致正確",
+  "sci": "方向對，但「幾秒內追上」稍微誇張。2025 年《Scientific Reports》一項以現生大象為基準重新推算的研究認為，猛獁象極速大概只有時速 20 公里上下，約等於人全力衝刺的速度，而不是輕鬆輾壓。真正關鍵不是瞬間速度，而是牠體型大、耐力好，你很難持續甩開。",
+  "src": [["Scientific Reports, 2025（經 Noticias Ambientales 報導：猛獁象極速僅略過 20 km/h）", "https://noticiasambientales.com/science/prehistoric-giants-were-slower-than-previously-thought-a-study-redefines-the-speed-of-dinosaurs-and-mammoths/"]],
+  "fix": "別以為猛獁象笨重就跑得慢，牠衝起來跟你拚命衝刺差不多快，而且體力比你好得多——硬比腳程，你甩不掉牠。",
+  "confidence": "中"},
+
+ {"n": 85,
+  "verdict": "有爭議",
+  "sci": "「之字形逃跑」是流傳很廣的求生說法，但沒有扎實的實驗證據支持對大象或猛獁象真的有效。背後的道理（龐大的動物轉彎、變向比你笨）是合理的，可是面對決心攻擊的大象，專家的主流建議其實是站穩、製造聲響，或躲到牠過不去的地形，而不是靠跑步取勝。",
+  "src": [["Elephants Now, \"Avoiding an Elephant Attack\"（跑或爬樹都沒用，重點在地形與行為）", "https://www.elephantsnow.org/avoiding-an-elephant-attack"], ["News24, \"Surviving a charging elephant\"", "https://www.news24.com/travel/guides/bush/surviving-a-charging-elephant-20140113"]],
+  "fix": "牠這麼大一隻，轉彎一定比你笨，所以真要跑就邊跑邊左右變方向，讓牠來不及跟著拐——但這只是拖時間，最好還是鑽進牠過不去的地方。",
+  "confidence": "中"},
+
+ {"n": 86,
+  "verdict": "大致正確",
+  "sci": "體型同一個等級，但嚴格說猛獁象比暴龍略小一點。真猛獁象肩高約 2.7–3.4 公尺、體重約 6 噸（大的近 8 噸）；暴龍體長可達 12 公尺、體重約 8–9 噸，身體更長更重。至於「遠不如暴龍靈活」，方向是對的——猛獁象笨重、轉向慢，暴龍是用兩腿行走、相對靈巧。",
+  "src": [["Britannica, \"How Big Was the Woolly Mammoth?\"", "https://www.britannica.com/science/How-Big-Was-the-Woolly-Mammoth"]],
+  "fix": "猛獁象跟暴龍差不多是同一個量級的巨獸，不過其實比暴龍稍微小一點、也笨重得多，不像暴龍那樣能靈巧地轉身變向。",
+  "confidence": "中"},
+
+ {"n": 87,
+  "verdict": "大致正確",
+  "sci": "推倒樹木是真的——大象（尤其公象）會直接把樹推倒或折斷來吃，猛獁象更大更壯，推樹不成問題。但「搬動汽車大小的巨石」是誇張；大象用鼻子只能舉起約 300 公斤，推擠時能撼動更重的東西，可是一塊跟汽車一樣大的岩石動輒好幾噸，連最強壯的象也搬不動。",
+  "src": [["Tsavo Trust, \"How strong is an elephant?\"（能推倒樹木、舉起數百公斤）", "https://tsavotrust.org/how-strong-is-an-elephant/"]],
+  "fix": "猛獁象力氣大到能把整棵樹推倒；不過「搬動像汽車那麼大的巨石」就太誇張了，再壯的象也推不動好幾噸重的大石頭。",
+  "confidence": "中"},
+
+ {"n": 88,
+  "verdict": "正確",
+  "sci": "這和現生大象攻擊人的紀錄一致。醫學案例報告指出，大象造成的傷害主要來自象牙穿刺（goring）、用鼻子甩摔、以及踩踏／踐踏致死；牠常會把人撞倒後持續踩踏直到對方死亡。書上「先用象牙刺，刺不到就踩死」的描述符合實際行為。",
+  "src": [["Injuries in survivors of elephant attack: Report of three cases, Chinese Journal of Traumatology, 2021 (PMC8606594)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8606594/"]],
+  "fix": "",
+  "confidence": "高"}
+]}
+```

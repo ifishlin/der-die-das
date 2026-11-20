@@ -1,0 +1,173 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch03_ice_age/pages/p30.jpg（書的 p.30；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 64,
+  "claim_zh": "Wojtal 發現那支嵌在猛獁象肋骨裡燧石矛的 Pavlovian 遺址，位在波蘭南部。",
+  "quote": "The Pavlovian site in southern Poland where Wojtal discovered the flint spear buried in the mammoth rib",
+  "pages": [
+   "p.29",
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 65,
+  "claim_zh": "Wojtal 形容那遺址是個完美的陷阱：三面受阻，北面是岩崖，東西兩面是深河與峽谷。",
+  "quote": "a perfect kind of trap … isolated from three sides … north by a rocky cliff, and from the east and west by deep rivers and gorges",
+  "pages": [
+   "p.30"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": "（引號內字略模糊，見 reshoot 05）"
+ },
+ {
+  "n": 66,
+  "claim_zh": "骨骸顯示，連專門獵猛獁象的人也很少攻擊老公象，即使老公象通常獨自行動。",
+  "quote": "Skeletal remains suggest even mammoth-hunting specialists rarely attacked old bulls, even though these bulls likely traveled alone",
+  "pages": [
+   "p.30"
+  ],
+  "type": "專家說法",
+  "who": "作者（引骨骸證據）",
+  "hedge": "suggest / likely",
+  "convert": ""
+ },
+ {
+  "n": 67,
+  "claim_zh": "老公象體型大、極具攻擊性，尤其在發情期（rut）。",
+  "quote": "Old males are large and highly aggressive, particularly if they're in rut",
+  "pages": [
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 68,
+  "claim_zh": "發情期是公象攻擊性升高的時期，連鳥、長頸鹿甚至樹木都會去攻擊；發情的公象可能不被趕進陷阱，而是直接衝撞。",
+  "quote": "a period of heightened aggression in bull elephants when they're liable to attack everything from birds and giraffes to even trees. Rather than being shooed into a trap, a bull in rut may simply charge",
+  "pages": [
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "may",
+  "convert": ""
+ },
+ {
+  "n": 69,
+  "claim_zh": "Wojtal 研究過克拉科夫 Spadzista（Kraków Spadzista）遺址。",
+  "quote": "the people in the Kraków Spadzista site he studied",
+  "pages": [
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 70,
+  "claim_zh": "Wojtal 建議的獵法：從象群中孤立出一頭（最好是看起來虛弱或受傷的）猛獁象，把牠趕進死路。",
+  "quote": "isolate a mammoth from a group—perhaps one that seems weak or wounded—and herd it into the cul-de-sac",
+  "pages": [
+   "p.30"
+  ],
+  "type": "求生建議",
+  "who": "古考古學家 Wojtal",
+  "hedge": "perhaps",
+  "convert": ""
+ },
+ {
+  "n": 71,
+  "claim_zh": "Wojtal 說：「那是大屠殺。」",
+  "quote": "\"It was mass slaughter,\" says Wojtal",
+  "pages": [
+   "p.30"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 72,
+  "claim_zh": "沒有證據顯示他們用繩索、地下陷阱坑或狗（來狩獵）。",
+  "quote": "used ropes or underground pits or dogs—in fact, there's a great deal of evidence they did not",
+  "pages": [
+   "p.30"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": "（本句字略模糊，見 reshoot 05）"
+ },
+ {
+  "n": 73,
+  "claim_zh": "那場戰鬥的一方是體重一到六噸的狂怒動物，另一方是拿著棍子的獵人。",
+  "quote": "A furious animal with weight from one to six tons on one side, and a hunter with a stick on the opposite",
+  "pages": [
+   "p.30"
+  ],
+  "type": "數字",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": "one to six tons ≈ 0.9–5.4 公噸"
+ },
+ {
+  "n": 74,
+  "claim_zh": "從他找到的猛獁象骨骼上致命傷的角度，Wojtal 相信獵人是正面面對猛獁象、連續快速投矛。",
+  "quote": "From the angle of this mortal wound … Wojtal believes hunters faced the mammoth head-on and launched their spears in quick succession",
+  "pages": [
+   "p.30"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Wojtal",
+  "hedge": "believes",
+  "convert": ""
+ },
+ {
+  "n": 75,
+  "claim_zh": "猛獁象的後半身（像大象一樣）幾乎無法被刺穿。",
+  "quote": "Mammoth rears—like elephants—were virtually impenetrable",
+  "pages": [
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "virtually",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.30",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.30"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

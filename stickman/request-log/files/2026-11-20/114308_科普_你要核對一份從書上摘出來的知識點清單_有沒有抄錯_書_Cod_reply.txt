@@ -1,0 +1,15 @@
+```json
+{"page": "p.26",
+ "checks": [
+  {"n": 31, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 32, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 33, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 34, "ok": false, "problem": "quote 非逐字：書上原文是「These wobbles occur on 40,000-year cycles」，清單寫成「These wobbles (on 40,000-year cycles」，把「occur on」改成括號、且中間跳過了「Like a spinning top, the planet wobbles ever so slightly as it spins」卻沒標省略。數字 40,000 正確。另 claim_zh 的「約」是書上沒有的、自己加上的語氣（書用肯定句 on 40,000-year cycles）。", "quote": "the earth warms and cools as a result of cyclical changes in its orbit... These wobbles occur on 40,000-year cycles", "claim_zh": "即使在冰河期內，地球也會因軌道的週期性變化而忽冷忽熱；這些擺動的週期為 40,000 年。"},
+  {"n": 35, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 36, "ok": true, "problem": "「levels」一字在 p.27、其餘在 p.26；pages 已含 p.27，數字 25,000 年前與 65% 皆正確。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "地質學家 Swanson-Hysell 告訴作者：岩石風化封存碳的化學過程在高溫下效率更高，所以行星越暖、移除的碳越多（反之亦然）；因此地球最終會移除人類排放到大氣的多餘碳，但這個過程要花數十萬年。", "quote": "the chemical weathering process that sequesters carbon in rocks happens more efficiently in heat. So the warmer the planet becomes, the more carbon is removed—and vice versa. For this reason, Swanson-Hysell told me, the earth will eventually remove the excess carbon we're emitting into the atmosphere. The bad news is that this process takes a few hundred thousand years", "pages": ["p.26"], "type": "因果", "who": "Swanson-Hysell", "hedge": "", "convert": ""}
+ ],
+ "unclear": []}
+```

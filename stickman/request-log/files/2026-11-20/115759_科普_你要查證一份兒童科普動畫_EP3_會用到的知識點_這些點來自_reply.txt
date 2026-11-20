@@ -1,0 +1,61 @@
+I have enough to assess all nine points. Here are the results.
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 73,
+  "verdict": "大致正確",
+  "sci": "成年真猛獁象（Mammuthus primigenius）公的肩高約 2.7–3.5 公尺、體重約 3.9–8.2 公噸（平均 4.5–6 公噸），母的約 2.8–4 公噸。所以『六噸』正好是大型成年個體的上限；但『一噸』其實只有幼年個體的程度，成年猛獁象很少低於約 3 公噸。用『一到六噸』描述獵人會碰上的各種大小（含幼獸到大公象）大方向沒錯，只是下限偏低。",
+  "src": [["Woolly mammoth（體型數據，引用 Lister & Bahn, Mammoths 等文獻）", "https://en.wikipedia.org/wiki/Woolly_mammoth"]],
+  "fix": "可以說「對手是一隻三到六噸重、暴怒的巨獸」，比「一到六噸」更貼近成年猛獁象的實際體重；若要強調幼獸也危險，再補一句即可。",
+  "confidence": "高"},
+
+ {"n": 74,
+  "verdict": "大致正確",
+  "sci": "2019 年波蘭 Kraków Spadzista 遺址在一根 2.5 萬年前的猛獁象肋骨裡找到卡住的燧石矛尖，是歐洲人類獵猛獁象的首個直接證據。研究者 Piotr Wojtal 說，矛是『從一段距離用力投擲』，才能穿透約 2 公分厚的皮和 8 公分脂肪刺進骨頭；單一傷口並不致命，是多名獵人協同攻擊、由另一擊刺進內臟才放倒牠。『正面面對、連續快速投矛』是作者引述 Wojtal 的判讀，和『協同投矛攻擊』方向一致，但公開報導沒有逐字確認『正面』與『連發』這兩個細節。",
+  "src": [["Science in Poland, \"Kraków/ The first evidence in Europe that man was hunting mammoths discovered\"（引述 Wojtal）", "https://scienceinpoland.pl/en/news/news,32358,krakow-first-evidence-europe-man-was-hunting-mammoths-discovered.html"], ["Archaeology Magazine, \"Flint Fragment Found in Mammoth Bone in Poland\" (2019)", "https://archaeology.org/news/2019/01/07/190107-poland-mammoth-hunting/"]],
+  "fix": "建議說成：「考古學家在波蘭挖到一根卡著燧石矛尖的猛獁象肋骨，推測獵人是從前方用力投矛，而且得好幾個人一起圍攻才放得倒牠。」別說成一矛致命——證據顯示單一傷口不致死。",
+  "confidence": "中"},
+
+ {"n": 75,
+  "verdict": "大致正確",
+  "sci": "說法本身是作者的生動比喻而非量化研究。合理之處在於：猛獁象／大象的後半身皮厚、底下是大量脂肪與肌肉，從後方很難刺到心肺等要害，所以獵人會攻正面與側面（Spadzista 的致命傷也是刺進體腔軟組織）。『幾乎刺不穿（virtually impenetrable）』帶著誇張語氣，不是字面的物理事實，當求生式比喻可以接受。",
+  "src": [["Science in Poland（致命傷刺進軟組織／內臟，而非後半身）", "https://scienceinpoland.pl/en/news/news,32358,krakow-first-evidence-europe-man-was-hunting-mammoths-discovered.html"]],
+  "fix": "可以說「從屁股後面戳幾乎沒用——那裡又厚又多肉，傷不到要害」，保留趣味又不把『刺不穿』講成絕對事實。",
+  "confidence": "中"},
+
+ {"n": 76,
+  "verdict": "大致正確",
+  "sci": "建議的道理站得住腳：要害只在正面／側面能刺到，而投擲出去的矛會隨距離減速，離得近一點、命中時速度（衝擊力）才夠。唯一要注意的是——實際證據顯示獵人是『從一段距離投矛』並協同多人攻擊，不是貼身猛刺，所以『夠近』是相對的，不等於零距離肉搏。",
+  "src": [["Science in Poland（矛從一段距離用力投出、需穿透厚皮與脂肪）", "https://scienceinpoland.pl/en/news/news,32358,krakow-first-evidence-europe-man-was-hunting-mammoths-discovered.html"]],
+  "fix": "建議說成：「別從背後偷襲，要正面對著牠；而且別站太遠，投出去的矛近一點命中才有足夠力道——不過也別近到被一腳踩扁。」",
+  "confidence": "中"},
+
+ {"n": 77,
+  "verdict": "正確",
+  "sci": "這是專家對『資料不足』的保守說法，本身就安全：Pavlovian（格拉維特文化）時期的人類骨骸本來就非常稀少，樣本不足以推算獵人獵猛獁象時的死亡率，因此『不清楚死多少人』是如實陳述，而非下了某個結論。",
+  "src": [["Science in Poland（Spadzista 遺址 110+ 頭猛獁象，報導聚焦狩獵證據，未提供獵人死亡統計）", "https://scienceinpoland.pl/en/news/news,32358,krakow-first-evidence-europe-man-was-hunting-mammoths-discovered.html"]],
+  "fix": "",
+  "confidence": "中"},
+
+ {"n": 78,
+  "verdict": "大致正確",
+  "sci": "實際量測的大象最高速約為每小時 24 公里（約 15 英里），非洲象的衝鋒常被估到約每小時 40 公里（25 英里）。猛獁象體型、腿部結構與大象相近，所以『可能以時速 20 英里（約 32 公里）衝過來』落在合理範圍內，又有『可能（may）』這個保留語，說法沒問題；只是這偏向推估而非對猛獁象的直接測量。",
+  "src": [["Animal Fact File, \"How fast can an elephant run at top speed?\"（約 15 mph / 24 km/h）", "https://animalfactfile.com/how-fast-can-an-elephant-run-at-top-speed/"], ["The Environmental Literacy Council, \"How fast can an elephant charge?\"（非洲象衝鋒可達約 25 mph）", "https://enviroliteracy.org/how-fast-can-an-elephant-charge/"]],
+  "fix": "建議說成：「牠發火時可能像大象一樣，用差不多時速二、三十公里朝你衝過來——比你跑得快多了。」用『差不多／像大象一樣』帶過，比釘死 20 英里更穩。",
+  "confidence": "中"},
+
+ {"n": 79,
+  "verdict": "大致正確",
+  "sci": "Walter D. M. Bell（綽號 Karamojo Bell）確實是蘇格蘭人，1880 年生於愛丁堡附近，是知名的大型獵物／大象獵人，回憶錄《The Wanderings of an Elephant Hunter》確於 1923 年出版。但他的狩獵生涯主要在 1902 年到 1920 年代，屬於『二十世紀初』而非『十九世紀』——書上『十九世紀』的說法偏早，宜更正。",
+  "src": [["Wikipedia, \"W. D. M. Bell\"（1880 年生、1902 起當職業獵象人、回憶錄 1923）", "https://en.wikipedia.org/wiki/W._D._M._Bell"], ["Project Gutenberg, The Wanderings of an Elephant Hunter (W. D. M. Bell, 1923)", "https://www.gutenberg.org/cache/epub/68044/pg68044-images.html"]],
+  "fix": "建議說成：「二十世紀初的蘇格蘭獵象人華特‧貝爾，在 1923 年的回憶錄《一個獵象人的漫遊》裡寫過……」把『十九世紀』改成『二十世紀初』。",
+  "confidence": "高"},
+
+ {"n": 80,
+  "verdict": "正確",
+  "sci": "這是對書中插圖本身的描述，不是可對外查證的科學主張；但圖上傳達的內容與考古一致：Spadzista 的獵猛獁象證據約 2.5 萬年前（圖標『25,000 YEARS AGO』相符）；『正面可刺（Yes!）、後方不行（No!）』呼應前面幾點的攻擊角度；人形標『6 feet（約 183 公分）』是一般成人身高參照，合理。",
+  "src": [["Science in Poland（Spadzista 燧石矛尖年代約 2.5 萬年前，與圖中年代一致）", "https://scienceinpoland.pl/en/news/news,32358,krakow-first-evidence-europe-man-was-hunting-mammoths-discovered.html"]],
+  "fix": "",
+  "confidence": "中"}
+]}
+```

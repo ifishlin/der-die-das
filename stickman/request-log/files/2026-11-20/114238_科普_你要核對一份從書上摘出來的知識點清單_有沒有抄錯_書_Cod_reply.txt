@@ -1,0 +1,21 @@
+```json
+{"page": "p.25",
+ "checks": [
+  {"n": 19, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 20, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 21, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 22, "ok": false, "problem": "quote 用字錯：書上是「spewed the significant planet-warming amounts」，不是「opened … significant」。claim_zh 意思正確。", "quote": "prior to the industrial revolution only volcanism spewed the significant planet-warming amounts of carbon dioxide into the atmosphere", "claim_zh": "工業革命之前，只有火山活動會把大量使地球升溫的二氧化碳釋入大氣。"},
+  {"n": 23, "ok": false, "problem": "quote 用字錯：書上是「vented as much carbon dioxide … as all human activity」，不是「so much … so all human activity」。claim_zh 意思正確。", "quote": "At the end of the Triassic, for example, a 500-year eruption released a million cubic miles of lava and vented as much carbon dioxide into the atmosphere as all human activity in the twenty-first century", "claim_zh": "三疊紀末一次持續 500 年的噴發釋出了一百萬立方英里的熔岩，排放的二氧化碳相當於二十一世紀全部人類活動的量。"},
+  {"n": 24, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 25, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 26, "ok": false, "problem": "書上 VOLCANO 後面有驚嘆號，且用破折號連接：「Rocks——VOLCANO!——air——ocean——rocks」，quote 漏了驚嘆號。claim_zh 意思正確。", "quote": "the life cycle of carbon looks something like this: Rocks——VOLCANO!——air——ocean——rocks", "claim_zh": "碳的循環大致是：岩石→火山→空氣→海洋→岩石。"},
+  {"n": 27, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 28, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 29, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 30, "ok": true, "problem": "", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "岩石裡含有地球絕大部分（vast, vast majority）的碳。", "quote": "Because rocks contain the vast, vast majority of the earth's carbon", "pages": ["p.25"], "type": "描述", "who": "作者", "hedge": "", "convert": ""}
+ ],
+ "unclear": []}
+```

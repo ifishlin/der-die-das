@@ -1,0 +1,126 @@
+
+你要查證一份兒童科普動畫（EP3）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 89,
+  "claim_zh": "（建議）成群攻擊、避開大型象群和單獨的攻擊性公象、面對猛獁象連續快速投矛。",
+  "quote": "Just attack in a group. Avoid large mammoth herds and single aggressive males. Launch your spears in quick succession while facing the mammoth",
+  "pages": [
+   "p.32"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "claim_zh": "岩石裡含有地球絕大部分（vast, vast majority）的碳。",
+  "quote": "Because rocks contain the vast, vast majority of the earth's carbon",
+  "pages": [
+   "p.25"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 90,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "地質學家 Swanson-Hysell 告訴作者：岩石風化封存碳的化學過程在高溫下效率更高，所以行星越暖、移除的碳越多（反之亦然）；因此地球最終會移除人類排放到大氣的多餘碳，但這個過程要花數十萬年。",
+  "quote": "the chemical weathering process that sequesters carbon in rocks happens more efficiently in heat. So the warmer the planet becomes, the more carbon is removed—and vice versa. For this reason, Swanson-Hysell told me, the earth will eventually remove the excess carbon we're emitting into the atmosphere. The bad news is that this process takes a few hundred thousand years",
+  "pages": [
+   "p.26"
+  ],
+  "type": "因果",
+  "who": "Swanson-Hysell",
+  "hedge": "",
+  "convert": "",
+  "n": 91,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "這是個寒冷、乾旱的環境，充滿晴天，幾乎沒有雲或雨。",
+  "quote": "You're in a cold, arid environment filled with sunny days and very little clouds or rain",
+  "pages": [
+   "p.27"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 92,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "猛獁草原中，較高的高原與山地台地像極地荒漠，但河谷有水的土壤生產力極高。",
+  "quote": "The elevated plateaus and mountain terraces resemble polar deserts, while the watered soil of the river valleys explode in productivity",
+  "pages": [
+   "p.28"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 93,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "在流行文化裡，Pavlovian 人常被描繪成拿著大棍棒、披著虎皮、一副粗魯愚笨的樣子。",
+  "quote": "In popular culture the Pavlovians are often depicted with large clubs, tiger skins, and a general oafishness",
+  "pages": [
+   "p.28"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "n": 94,
+  "verify_note": "逐頁核對補列"
+ },
+ {
+  "claim_zh": "成年猛獁象重達六噸。",
+  "quote": "a full-grown six-ton mammoth",
+  "pages": [
+   "p.31"
+  ],
+  "type": "數字",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": "six-ton ≈ 6 公噸（約 5.4 公噸，視噸制而定）",
+  "n": 95,
+  "verify_note": "逐頁核對補列"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

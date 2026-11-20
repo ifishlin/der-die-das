@@ -1,0 +1,22 @@
+照片我逐字讀過了，以下是核對結果。
+
+```json
+{"page": "p.28",
+ "checks": [
+  {"n": 43, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 44, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 45, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 46, "ok": false, "problem": "quote 兩處抄錯：書上是 located ABOVE river valleys（河谷『上方／高處』），不是 along（旁）；且是 observe THE mammoth herds，漏了 the。claim_zh 把『河谷上方』誤成『河谷旁』，意思不同，要改。", "quote": "You'll find their camps located above river valleys where people can look out over vast grasslands, observe the mammoth herds that graze on them, and plan their hunts", "claim_zh": "他們的營地位在河谷上方（高處），可以眺望草原、觀察吃草的猛獁象群並規劃狩獵。"},
+  {"n": 47, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 48, "ok": false, "problem": "quote 把 figures / figurines 兩個字對調了：書上是 voluptuous female FIGURES—known as Venus FIGURINES，不是 female figurines—known as Venus figures；且 … 省略的是 intricate ivory bone carvings of（精緻象牙骨雕）。claim_zh 漏了『象牙骨雕』這個材質與形式，補上較忠實。", "quote": "among archaeologists they're renowned for their sophisticated clothing, artwork, and intricate ivory bone carvings of voluptuous female figures—known as Venus figurines", "claim_zh": "考古學家推崇 Pavlovian 人精緻的衣著、藝術品，以及刻畫豐腴女性、被稱為維納斯小雕像（Venus figurines）的精緻象牙骨雕。"},
+  {"n": 49, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 50, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 51, "ok": true, "problem": "", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "猛獁草原中，較高的高原與山地台地像極地荒漠，但河谷有水的土壤生產力極高。", "quote": "The elevated plateaus and mountain terraces resemble polar deserts, while the watered soil of the river valleys explode in productivity", "pages": ["p.28"], "type": "描述", "who": "作者", "hedge": "", "convert": ""},
+  {"claim_zh": "在流行文化裡，Pavlovian 人常被描繪成拿著大棍棒、披著虎皮、一副粗魯愚笨的樣子。", "quote": "In popular culture the Pavlovians are often depicted with large clubs, tiger skins, and a general oafishness", "pages": ["p.28"], "type": "描述", "who": "作者", "hedge": "", "convert": ""}
+ ],
+ "unclear": []
+}
+```

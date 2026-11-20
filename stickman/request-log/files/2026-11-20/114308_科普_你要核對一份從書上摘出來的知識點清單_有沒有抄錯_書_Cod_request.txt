@@ -1,0 +1,101 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch03_ice_age/pages/p26.jpg（書的 p.26；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 31,
+  "claim_zh": "冰河期一定有一個引爆事件，而且永遠是同一個：熱帶的板塊碰撞。",
+  "quote": "ice ages have an inciting incident—and it is always the same: a tectonic collision in the tropics",
+  "pages": [
+   "p.26"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 32,
+  "claim_zh": "三百萬年前，印尼群島撞上澳洲北部。",
+  "quote": "Three million years ago, the Indonesian archipelago slammed into northern Australia",
+  "pages": [
+   "p.26"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 33,
+  "claim_zh": "數百萬噸新鮮鎂鐵質岩被抬升，鈣和鎂隨暖雨流入海洋、把數十億噸碳鎖進石灰岩層，地球溫度因此驟降。",
+  "quote": "Millions of tons of fresh mafic rock uplifted into torrents of warm rain, calcium and magnesium flowed into the ocean, locked away gigatons of carbon into beds of limestone, and the earth's temperature plunged",
+  "pages": [
+   "p.26"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 34,
+  "claim_zh": "即使在冰河期內，地球也會因軌道週期性擺動而忽冷忽熱，週期約 40,000 年。",
+  "quote": "the earth warms and cools as a result of cyclical changes in its orbit. These wobbles (on 40,000-year cycles",
+  "pages": [
+   "p.26"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 35,
+  "claim_zh": "當地球傾角加大，兩半球收到的冬季陽光變少，改變洋流，使海洋封存更多碳。",
+  "quote": "as Earth increases its tilt its hemispheres receive less winter sun, altering the ocean's currents in ways that cause the sea to sequester more carbon",
+  "pages": [
+   "p.26"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 36,
+  "claim_zh": "北半球在 25,000 年前達到擺動的最低點，使大氣二氧化碳驟降到工業化前水準的 65%。",
+  "quote": "The Northern Hemisphere reached the nadir of its wobble 25,000 years ago, causing atmospheric carbon dioxide to plummet to 65 percent of preindustrial levels",
+  "pages": [
+   "p.26",
+   "p.27"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.26",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.26"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

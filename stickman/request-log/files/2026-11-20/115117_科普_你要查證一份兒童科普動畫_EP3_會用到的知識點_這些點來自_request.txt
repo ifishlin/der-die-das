@@ -1,0 +1,135 @@
+
+你要查證一份兒童科普動畫（EP3）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 9,
+  "claim_zh": "披毛猛獁象是人類獵過最危險的獵物。",
+  "quote": "the most dangerous prey humans have ever hunted: the great woolly mammoth",
+  "pages": [
+   "p.23"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 10,
+  "claim_zh": "許多學者曾懷疑石器時代獵人是撿食營地裡的猛獁象，而非獵殺牠們。",
+  "quote": "Many scholars suspected that Stone Age hunters scavenged the mammoths found in their camps, rather than hunted them",
+  "pages": [
+   "p.24"
+  ],
+  "type": "專家說法",
+  "who": "書上泛指的 scholars（學者）",
+  "hedge": "suspected",
+  "convert": ""
+ },
+ {
+  "n": 11,
+  "claim_zh": "猛獁象死亡時的年齡顯示是被（獵人）選擇性獵殺，而非自然死亡。",
+  "quote": "the mammoths' ages at the times of their deaths suggest hunting selection rather than natural demise",
+  "pages": [
+   "p.24"
+  ],
+  "type": "因果",
+  "who": "作者（引證據）",
+  "hedge": "suggests",
+  "convert": "",
+  "verify_note": "quote 的動詞抄錯：書上主詞是 ages（複數），動詞用 suggest，清單寫成 suggests。claim_zh 意思無誤。"
+ },
+ {
+  "n": 12,
+  "claim_zh": "古考古學家 Piotr Wojtal 找到一支 24,000 年前的燧石箭頭，仍深嵌在一根猛獁象肋骨裡。",
+  "quote": "a 24,000-year-old flint arrowhead still lodged deep in a mammoth's rib",
+  "pages": [
+   "p.24"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Piotr Wojtal",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "人名抄錯：書上是 Piotr Wojtal，清單寫成 Pare Wojtal。quote 本身無誤。who 欄也要一併改成 Piotr Wojtal。另書上原文是 paleoarchaeologist（古考古學家），拼寫為 Piotr。"
+ },
+ {
+  "n": 13,
+  "claim_zh": "石器時代草原文化不只獵猛獁象，而且幾乎到了排他的程度（near exclusion，近乎只獵牠們、排除其他獵物）。",
+  "quote": "Stone Age steppe cultures not only hunted mammoths, they did so to near exclusion",
+  "pages": [
+   "p.24"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "quote 與原文差兩處：書上是 they did so to near exclusion（不是 near extinction，且漏了 to）。claim_zh 把 exclusion 誤譯成『滅絕（extinction）』，意思整個跑掉——原文是指幾乎只獵猛獁象（排除其他獵物），不是把牠們獵到滅絕。"
+ },
+ {
+  "n": 14,
+  "claim_zh": "現代與猛獁象親緣相近、體型相似的六噸重非洲象，偶爾會殺死持槍的盜獵者。",
+  "quote": "the six-ton African elephant, occasionally kills poachers armed with guns",
+  "pages": [
+   "p.24"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "occasionally",
+  "convert": "six-ton ≈ 5.4 公噸"
+ },
+ {
+  "n": 15,
+  "claim_zh": "猛獁象體型像一輛小巴士，配有一對八英尺長的象牙。",
+  "quote": "a minibus-sized animal armed with twin eight-foot-long ivory spears",
+  "pages": [
+   "p.24"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": "eight-foot ≈ 2.4 公尺"
+ },
+ {
+  "n": 16,
+  "claim_zh": "口語上這時代叫「冰河期（Ice Age）」是個令人困惑的誤稱，因為我們至今仍處在同一個冰河期。",
+  "quote": "the Ice Age, but that's a confusing misnomer, says Nicholas Swanson-Hysell … because we are still living through the very same \"ice age.\"",
+  "pages": [
+   "p.24"
+  ],
+  "type": "專家說法",
+  "who": "Nicholas Swanson-Hysell，UC Berkeley 地球與行星科學教授",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

@@ -1,0 +1,21 @@
+Read 完畢，逐字對照如下：
+
+```json
+{"page": "p.27",
+ "checks": [
+  {"n": 36, "ok": true, "problem": "此 quote 主體（25,000 年、65% 二氧化碳）在 p.26；p.27 只看到接續的開頭字 \"levels\"，與 quote 結尾一致，無矛盾。完整查證見 unclear。", "quote": "", "claim_zh": ""},
+  {"n": 37, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 38, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 39, "ok": false, "problem": "抄錯動物。書上寫 \"A rhino may graze next to a wolverine\"（犀牛和「狼獾」並排），清單的 quote 和 claim_zh 都誤寫成 reindeer／馴鹿。", "quote": "You'll observe arctic fox, bison, and reindeer—and all will seem normal. But then you'll watch a cheetah chase them. A rhino may graze next to a wolverine. A wolf may sit beside a lion", "claim_zh": "這裡會看到本以為只住在非洲莽原的動物，和北極動物並肩吃草；北極狐、野牛、馴鹿看似正常，卻會看到獵豹追牠們、犀牛和狼獾並排、狼和獅子共處。"},
+  {"n": 40, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 41, "ok": true, "problem": "書上句首有 \"Yet\"（\"Yet these same glaciers...\"），清單省略，不影響意思。", "quote": "", "claim_zh": ""},
+  {"n": 42, "ok": true, "problem": "書上為 \"The result is an incredible faunal dichotomy... in the\"（句子延續到下一頁），quote 擷取片段正確。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "這是個寒冷、乾旱的環境，充滿晴天，幾乎沒有雲或雨。", "quote": "You're in a cold, arid environment filled with sunny days and very little clouds or rain", "pages": ["p.27"], "type": "描述", "who": "作者", "hedge": "", "convert": ""}
+ ],
+ "unclear": [
+  {"where": "第 36 點", "problem": "完整句子（25,000 年前擺動最低點、二氧化碳降到工業化前 65%）主要落在 p.26，不在這張照片上；p.27 頂端只接到結尾的 \"levels\" 一字，無法在本頁逐字查證其餘部分。"},
+  {"where": "照片左緣", "problem": "書的裝訂邊（左側）有一欄文字被截掉、看不清（如 \"RVIVE\" 標頭下方的片段字），但那是左頁的內容，與本頁正文無關。"}
+ ]}
+```

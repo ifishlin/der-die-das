@@ -1,0 +1,42 @@
+全部查證完成。以下是結果 JSON：
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 101,
+  "verdict": "大致正確",
+  "sci": "真猛獁象（Mammuthus primigenius）雌雄差異明顯。依 Larramendi（2017）對長鼻類肩高體重的系統研究，成年公象肩高約 2.67～3.49 公尺（平均約 2.8～3.15 公尺），母象較矮，約 2.3～2.6 公尺。公象說法大致符合，但母象上限被高估：母象多半不到 3 公尺，約 2.5 公尺左右。",
+  "src": [["Larramendi 2017, Shoulder height, body mass, and shape of proboscideans, Acta Palaeontologica Polonica 62(3)", "https://www.app.pan.pl/article/item/app003062015.html"], ["Prehistoric Wildlife, Mammuthus primigenius (Woolly mammoth)", "https://www.prehistoric-wildlife.com/species/mammuthus-primigenius-woolly-mammoth/"]],
+  "fix": "成年的公猛獁象肩膀離地大約 3 公尺高，最大的可以到 3.5 公尺；母象矮一點，大概 2 公尺半。",
+  "confidence": "高"},
+ {"n": 102,
+  "verdict": "正確",
+  "sci": "真猛獁象全身覆蓋厚毛，外層是粗糙的長護毛（側腹可達 90 公分長），內層是保暖細絨毛。相較現代大象，牠的耳朵小很多（約 30～38 公分）、尾巴也短，都是為了減少凍傷和散熱。肩膀處有一個高高的脂肪／肌肉隆起、背部向後下斜，頭頂是高而圓的拱形（domed head），這些特徵在西伯利亞冰封遺體和史前洞穴壁畫中都有佐證。",
+  "src": [["Lister & Bahn, Mammoths: Giants of the Ice Age (2007)（經 Natural History Museum / 維基百科索引之原始出處）", "https://en.wikipedia.org/wiki/Woolly_mammoth"], ["Active Wild, Woolly Mammoth Facts", "https://www.activewild.com/woolly-mammoth-facts/"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 103,
+  "verdict": "大致正確",
+  "sci": "分子遺傳證據（Römpler et al. 2006, Science，分析 MC1R 基因）顯示猛獁象族群同時有深色和淺色兩種毛色變異，整體以深色為主，少數個體偏淺（金／薑黃色）。古生物學界普遍認為冰凍標本常見的橘紅／紅褐色是毛髮埋藏數萬年後色素降解褪色的結果，不代表生前顏色，原色推測較接近深巧克力褐。知識點把「紅褐」與「深褐」並列為原本主色略不精確，較穩的說法是「以深色為主、另有淺色變異，紅褐多為褪色造成」。",
+  "src": [["Science News（引用 Römpler et al. 2006, Science 311:62）, Mammoths: Blondes and brunettes?", "https://www.sciencenews.org/article/mammoths-blondes-and-brunettes"], ["Workman et al. 2011, Population-level genotyping of coat colour polymorphism in woolly mammoth, Quaternary Science Reviews", "https://pgl.soe.ucsc.edu/workman11.pdf"]],
+  "fix": "猛獁象的毛原本大多是深褐色，有些個體比較淺，像淺薑黃色。我們常看到冰凍猛獁象身上那種橘紅色的毛，其實是埋在地底幾萬年褪色變成的，不是牠活著時候的顏色。",
+  "confidence": "中"},
+ {"n": 104,
+  "verdict": "正確",
+  "sci": "真猛獁象的象牙比現代象更強烈彎曲、呈螺旋狀：先向外、再向上、末端往內捲。成年公象常見大型象牙沿弧線約 2.4 到 3.5 公尺，最大型標本可達約 3.8 到 4.5 公尺（世界紀錄約 4.3 公尺）。所以「公象象牙可長到約 4 公尺」成立，指的是最大型個體；書上的約 2.4 公尺則是較典型的尺寸。",
+  "src": [["Yukon Beringia Interpretive Centre, Woolly Mammoth", "https://www.beringia.com/exhibit/ice-age-animals/woolly-mammoth"], ["Bavarian State Collection for Palaeontology and Geology (SNSB-BSPG), Woolly Mammoth Tusk", "https://bspg.snsb.de/wollhaarmammut/?lang=en"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 111,
+  "verdict": "正確",
+  "sci": "末次冰盛期（LGM）大約在 26,000 到 19,000～20,000 年前，是最近一次冰河期最冷、冰層最大的階段。Clark et al. 2009（Science）把冰層達到最大範圍的時間定在約 26,500 年前，各大冰層維持到約 19,000～20,000 年前才開始退縮。當時大量海水被鎖在陸地冰層裡，全球海平面比今天低約 120～130 公尺（文獻常見 120～134 公尺），120 公尺是常被引用的下限值。",
+  "src": [["Clark et al. 2009, The Last Glacial Maximum, Science 325(5941):710-714", "https://stuff.mit.edu/~heimbach/papers_paleo/science_clark_etal_2009_lgm.pdf"], ["AntarcticGlaciers.org（引用 Clark et al. 2009）, Laurentide Ice Sheet at the Last Glacial Maximum", "https://www.antarcticglaciers.org/glacial-geology/laurentide-ice-sheet/laurentide-ice-sheet-at-the-last-glacial-maximum/"]],
+  "fix": "",
+  "confidence": "高"},
+ {"n": 112,
+  "verdict": "大致正確",
+  "sci": "Pavlovian 文化是上舊石器時代 Gravettian 文化在摩拉維亞（今捷克南部）的區域變體，核心年代約在未校正的 29,000～25,000 BP（整個時期可上溯 30,000 BP 以上）。主要遺址確實是摩拉維亞的 Dolní Věstonice、Pavlov（還有 Předmostí、Milovice）。注意這些是未校正放射性碳年代，換成校正年代（cal BP）會更老，約 34,000～29,000 cal BP，所以「31,000～25,000 年前」是以未校正年代計的常見粗略說法，上限 31,000 略寬，但方向正確。",
+  "src": [["Archeopark Pavlov（官方考古公園博物館）, Story of the site", "https://www.archeoparkpavlov.cz/en/story-of-the-site/t1220"], ["Wikipedia, Pavlovian culture（引用 Balák 2013、Filip 1969 等原始出處）", "https://en.wikipedia.org/wiki/Pavlovian_culture"]],
+  "fix": "大約三萬到兩萬五千年前，在今天捷克南部的摩拉維亞，住著一群叫『帕夫洛夫文化』的獵人，他們最有名的遺址就在 Dolní Věstonice 和 Pavlov 這兩個地方。",
+  "confidence": "中"}
+]}
+```

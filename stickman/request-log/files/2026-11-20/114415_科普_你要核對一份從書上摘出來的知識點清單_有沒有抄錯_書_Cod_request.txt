@@ -1,0 +1,136 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch03_ice_age/pages/p32.jpg（書的 p.32；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 81,
+  "claim_zh": "Bell 十六歲時開始替烏干達鐵路獵殺食人獅。",
+  "quote": "Bell, who began his career at age sixteen hunting man-eating lions for the Ugandan railway",
+  "pages": [
+   "p.32"
+  ],
+  "type": "描述",
+  "who": "Walter Bell",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 82,
+  "claim_zh": "Bell 寫道，大象的衝鋒是最高等級的膽量考驗。",
+  "quote": "\"An elephant's charge is a nerve test of the highest order,\" he writes",
+  "pages": [
+   "p.32"
+  ],
+  "type": "專家說法",
+  "who": "Walter Bell",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 83,
+  "claim_zh": "Bell 建議：若大型猛獁象衝來時你不驚慌，就站穩、持續射擊，並希望那是一次假衝鋒。",
+  "quote": "he suggests you stand your ground, continue to fire, and hope the charge is a false one",
+  "pages": [
+   "p.32"
+  ],
+  "type": "求生建議",
+  "who": "Walter Bell",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 84,
+  "claim_zh": "猛獁象跑得比你快，幾秒內就會追上你。",
+  "quote": "The mammoth is faster than you and thus will catch you in seconds",
+  "pages": [
+   "p.32"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 85,
+  "claim_zh": "（建議）不要直線逃跑，要用之字形（和躲暴龍時相同的方式）奔跑。",
+  "quote": "don't run in a straight line … run below your top speed in the same zigzag pattern that saved you from the Tyrannosaurus rex",
+  "pages": [
+   "p.32"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 86,
+  "claim_zh": "猛獁象大約和暴龍一樣大，但遠不如暴龍靈活。",
+  "quote": "The mammoth is about as large as a tyrannosaurus, but not nearly as mobile",
+  "pages": [
+   "p.32"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "about",
+  "convert": ""
+ },
+ {
+  "n": 87,
+  "claim_zh": "猛獁象能輕易推倒樹木或移動汽車大小的巨石。",
+  "quote": "the mammoth can easily topple trees or move car-sized boulders",
+  "pages": [
+   "p.32"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 88,
+  "claim_zh": "若猛獁象把你撞倒，牠大概會用象牙刺你，否則會用踩踏結束你。",
+  "quote": "it will probably attempt to gore you with its tusks. Failing that, it will finish the job by stomping you",
+  "pages": [
+   "p.32"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "probably",
+  "convert": ""
+ },
+ {
+  "n": 89,
+  "claim_zh": "（建議）成群攻擊、避開大型象群和單獨的攻擊性公象、面對猛獁象連續快速投矛。",
+  "quote": "Just attack in a group. Avoid large mammoth herds and single aggressive males. Launch your spears in quick succession while facing the mammoth",
+  "pages": [
+   "p.32"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.32",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.32"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

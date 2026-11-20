@@ -1,0 +1,135 @@
+
+你要查證一份兒童科普動畫（EP3）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 57,
+  "claim_zh": "要在這種寒冷、高耗能的生活中存活，需要高蛋白高脂肪的食物，在這裡就是猛獁象。",
+  "quote": "If you want to survive this cold and metabolically expensive lifestyle, then you, like them, need a meal high in protein and fats. Where you are, that means mammoths",
+  "pages": [
+   "p.29"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 58,
+  "claim_zh": "獵猛獁象要先做一把矛：木或骨製的矛桿加上削尖的燧石矛頭。",
+  "quote": "you need to first craft a spear with a shaft made of wood or bone and a spearhead of chipped flint",
+  "pages": [
+   "p.29"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 59,
+  "claim_zh": "不要直接丟矛，因為獵物是六噸重、有一英寸厚皮的動物，矛只會激怒牠。",
+  "quote": "Your target is a six-ton animal with an inch-thick hide. The spear will merely anger it, and you will die",
+  "pages": [
+   "p.29"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": "six-ton ≈ 5.4 公噸；inch-thick ≈ 2.5 公分"
+ },
+ {
+  "n": 60,
+  "claim_zh": "要做一支投矛器（atlatl）：一根短而扁的棒子，一端有勾住矛的鉤、另一端是握把；它多加了一道槓桿到投擲動作上。",
+  "quote": "A spear-thrower—also called an atlatl—is a short, flat stick with a spear-holding hook on one end and a handle on the other … by adding another lever to your throwing motion",
+  "pages": [
+   "p.29"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "書上首字是「A spear-thrower」不是「The spear-thrower」；其餘（含省略後的 by adding another lever…）相符。"
+ },
+ {
+  "n": 61,
+  "claim_zh": "熟練的投擲者用投矛器能把矛以超過每小時 100 英里的速度射出。",
+  "quote": "An experienced thrower can use an atlatl to launch a spear at over 100 miles per hour",
+  "pages": [
+   "p.29"
+  ],
+  "type": "數字",
+  "who": "作者",
+  "hedge": "",
+  "convert": "100 mph ≈ 161 公里/小時"
+ },
+ {
+  "n": 62,
+  "claim_zh": "Wojtal 在猛獁象肋骨裡找到的那支投矛器射出的燧石矛頭，穿透了動物四英寸厚的皮和脂肪，再深入骨頭。",
+  "quote": "The atlatl-launched flint spearhead Wojtal found in the mammoth rib traveled through four inches of the animal's skin and fat and then penetrated deep into its bone",
+  "pages": [
+   "p.29"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": "four inches ≈ 10 公分"
+ },
+ {
+  "n": 63,
+  "claim_zh": "紮營要選在河谷上方的山坡、能觀察靠近的猛獁象群，而且理想上這條河谷要通往天然的陷阱（natural trap）。",
+  "quote": "A hillside above a river valley where you can observe approaching mammoth herds is a necessity, but ideally this river valley should also lead into a natural trap",
+  "pages": [
+   "p.29"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "ideally",
+  "convert": "",
+  "verify_note": "書上是「natural trap」（天然陷阱），不是「natural cul-de-sac」；quote 與 claim_zh 都抄錯。"
+ },
+ {
+  "n": 64,
+  "claim_zh": "Wojtal 發現那支嵌在猛獁象肋骨裡燧石矛的 Pavlovian 遺址，位在波蘭南部。",
+  "quote": "The Pavlovian site in southern Poland where Wojtal discovered the flint spear buried in the mammoth rib",
+  "pages": [
+   "p.29",
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

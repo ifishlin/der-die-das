@@ -1,0 +1,21 @@
+書的照片我一個字一個字看過了，對完如下（只回傳 JSON）：
+
+```json
+{"page": "p.30",
+ "checks": [
+  {"n": 64, "ok": true, "problem": "此句不在 p.30（屬 p.29），本頁只見站點描述的延續「promontory overlooking a natural cul-de-sac」，無法在這一頁逐字核對該 quote；需看 p.29。", "quote": "", "claim_zh": ""},
+  {"n": 65, "ok": false, "problem": "兩處抄錯：(1) 書上是「a kind of trap」，沒有「perfect／完美」；(2) 書上是「depressions」（窪地），不是「deep rivers／深河」。此外書上用 depressions 不是 rivers。", "quote": "\"The area was a kind of trap,\" he explains, \"isolated from three sides. From the north by a rocky cliff, and from the east and west by depressions and gorges.\"", "claim_zh": "Wojtal 形容那區域是一種陷阱：三面受阻，北面是岩崖，東西兩面是窪地（depressions）與峽谷。"},
+  {"n": 66, "ok": true, "problem": "大致正確；書上是「even the mammoth-hunting specialists」（有 the），quote 漏了 the，屬微小差異，語氣 likely 也有保留。", "quote": "", "claim_zh": ""},
+  {"n": 67, "ok": false, "problem": "書上用的詞是「musth」（象的狂暴期），不是「rut」。quote 與 claim_zh 都要改成 musth。", "quote": "Old males are large and highly aggressive, particularly if they're in musth", "claim_zh": "老公象體型大、極具攻擊性，尤其在狂暴期（musth）。"},
+  {"n": 68, "ok": false, "problem": "同上，書上是「a bull in musth may simply charge」，不是「in rut」。整段描述的也是 musth 不是 rut。", "quote": "a period of heightened aggression in bull elephants when they're liable to attack everything from birds and giraffes to even trees. Rather than being shooed into a trap, a bull in musth may simply charge", "claim_zh": "狂暴期（musth）是公象攻擊性升高的時期，連鳥、長頸鹿甚至樹木都會去攻擊；處於狂暴期的公象可能不被趕進陷阱，而是直接衝撞。"},
+  {"n": 69, "ok": true, "problem": "地名正確（Kraków Spadzista）；書上原文是「the approach of the people at the Kraków Spadzista site he studied」，quote 的「people in the」是微小用字差異，不影響意思。", "quote": "", "claim_zh": ""},
+  {"n": 70, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 71, "ok": false, "problem": "整句抄錯：書上 Wojtal 說的是「It was man against mammoth」，不是「It was mass slaughter／那是大屠殺」。", "quote": "\"It was man against mammoth,\" says Wojtal", "claim_zh": "Wojtal 說：「那是人與猛獁象之爭。」"},
+  {"n": 72, "ok": true, "problem": "本句在照片上清楚可讀，無糊；書上還多提了「ran mammoths over cliffs（把猛獁象趕下懸崖）」，但 claim 聚焦繩索／陷阱坑／狗，屬正確摘錄。", "quote": "", "claim_zh": ""},
+  {"n": 73, "ok": true, "problem": "數字正確（one to six tons）。", "quote": "", "claim_zh": ""},
+  {"n": 74, "ok": false, "problem": "quote 的「this mortal wound」與書不符，書上是「the flint entry wound on the mammoth skeleton he found（燧石入口傷）」。claim_zh 的「致命傷」也應改為「燧石入口傷」。", "quote": "From the angle of the flint entry wound on the mammoth skeleton he found, Wojtal believes hunters faced the mammoth head-on and launched their spears in quick succession", "claim_zh": "從他找到的猛獁象骨骼上燧石入口傷（flint entry wound）的角度，Wojtal 相信獵人是正面面對猛獁象、連續快速投矛。"},
+  {"n": 75, "ok": true, "problem": "書上是所有格「elephants'」（有撇號），quote 漏撇號，屬微小差異，意思不變。", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [],
+ "unclear": []}
+```

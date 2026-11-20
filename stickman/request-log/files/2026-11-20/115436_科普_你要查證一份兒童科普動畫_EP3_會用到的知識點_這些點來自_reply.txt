@@ -1,0 +1,61 @@
+I have solid confirmation across all points. Compiling the results.
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 65,
+  "verdict": "正確",
+  "sci": "克拉科夫 Spadzista（南波蘭）的確被解讀為利用天然地形圍困猛獁象的地點：研究指出古人類利用坡頂的天然地勢把猛獁象逼到走投無路。Wojtal 把這片區域形容成「一種陷阱、三面受阻」與這個天然地形捕獵的解釋一致。引號內的具體地貌（北面岩崖、東西窪地與峽谷）是他本人的描述，網路公開文獻無法逐字核對，但方向吻合。",
+  "src": [["Wojtal P. & Wilczyński J., Hunters of the giants: Woolly mammoth hunting during the Gravettian in Central Europe, Quaternary International 2015", "https://www.sciencedirect.com/science/article/abs/pii/S1040618215005339"], ["Wilczyński et al., Spatial organization of the Gravettian mammoth hunter's site at Kraków Spadzista", "https://www.researchgate.net/publication/270960689_Spatial_organization_of_the_Gravettian_mammoth_hunter's_site_at_Krakow_Spadzista_southern_Poland"]],
+  "fix": "",
+  "confidence": "中"},
+
+ {"n": 66,
+  "verdict": "正確",
+  "sci": "在 Spadzista 等多個 Gravettian 獵象遺址，骨骸的年齡與性別分布顯示獵人偏向捕殺幼象與母象，而非年老的公象；老公象（如同現代象）多半單獨行動、體型大又兇猛，被鎖定的比例明顯偏低。這支持「連專門獵猛獁象的人也很少攻擊老公象」的說法。",
+  "src": [["Wojtal et al., The Meaning of the Mammoth Age Profile at Kraków Spadzista Trench B+B1", "https://www.academia.edu/23528675/The_Meaning_of_the_Mammoth_Age_Profile_at_Krak%C3%B3w_Spadzista_Trench_B_B1"], ["研究報導：史前人類主要獵殺母猛獁象（跨 11 處遺址的基因證據）", "https://www.yahoo.com/news/science/articles/study-shows-prehistoric-people-targeted-090151528.html"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 67,
+  "verdict": "正確",
+  "sci": "公象體型大、攻擊性強，尤其在「狂暴期」（musth）時最明顯。狂暴期間睪固酮可飆升到平時的數十倍（文獻記錄約 60 倍以上），情緒變得極不穩定、好鬥。書上用的詞是 musth 而非 rut，判定以 musth 為準。",
+  "src": [["Poole J.H., Announcing intent: the aggressive state of musth in African elephants, Animal Behaviour 37:140-152 (1989)", "https://www.sciencedirect.com/science/article/abs/pii/0003347289900146"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 68,
+  "verdict": "正確",
+  "sci": "狂暴期（musth）是公象攻擊性飆高的階段，牠們會對眼前幾乎任何東西發動攻擊，包括樹木、車輛、水塔等無生命物體，也會攻擊其他動物。文獻明確記載牠們會連根拔樹、折斷大樹來發洩。處於狂暴期的公象不容易被人趕動，直接衝撞是合理的描述。「連鳥、長頸鹿都攻擊」是形容其攻擊範圍之廣的誇飾，方向正確。",
+  "src": [["Poole J.H., Announcing intent: the aggressive state of musth in African elephants, Animal Behaviour 37 (1989)", "https://www.sciencedirect.com/science/article/abs/pii/0003347289900146"], ["Musth 綜述（含攻擊無生命物體行為）", "https://en.wikipedia.org/wiki/Musth"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 69,
+  "verdict": "正確",
+  "sci": "Piotr Wojtal 是研究克拉科夫 Spadzista 猛獁象遺址的主要學者，長期發表該址的動物考古與埋藏學（taphonomy）研究，這點完全屬實。",
+  "src": [["Wojtal P., Man and woolly mammoth at the Kraków Spadzista Street (B) – taphonomy of the site", "https://www.researchgate.net/publication/222143385_Man_and_woolly_mammoth_at_the_Krakow_Spadzista_Street_B_-_Taphonomy_of_the_site"], ["Wojtal et al., The earliest direct evidence of mammoth hunting in Central Europe, Quaternary Science Reviews 2019", "https://www.sciencedirect.com/science/article/abs/pii/S0277379118308588"]],
+  "fix": "",
+  "confidence": "高"},
+
+ {"n": 70,
+  "verdict": "正確",
+  "sci": "考古證據支持這種獵法有根據：Spadzista 等遺址顯示獵人偏向鎖定群中最脆弱的個體（幼象、母象、體弱者），並善用天然坡地地形把獵物逼進死路。先孤立一頭、再趕入絕境，與遺址呈現的捕獵模式一致，可視為對這套策略的合理還原。",
+  "src": [["Wojtal & Wilczyński, Hunters of the giants: Woolly mammoth hunting during the Gravettian, Quaternary International 2015", "https://www.sciencedirect.com/science/article/abs/pii/S1040618215005339"], ["Wilczyński et al., Spatial organization of the Gravettian mammoth hunter's site at Kraków Spadzista", "https://www.researchgate.net/publication/270960689_Spatial_organization_of_the_Gravettian_mammoth_hunter's_site_at_Krakow_Spadzista_southern_Poland"]],
+  "fix": "",
+  "confidence": "中"},
+
+ {"n": 71,
+  "verdict": "正確",
+  "sci": "「那是人與猛獁象之爭」是 Wojtal 對這種近身獵象的形容，本身是個人引述，無法逐字外部核對；但其背後的科學圖像站得住腳：遺址出土的猛獁象肋骨上嵌有燧石矛尖碎片，是人類以石尖矛正面近距離獵殺猛獁象的直接證據。",
+  "src": [["Wojtal et al., The earliest direct evidence of mammoth hunting in Central Europe (肋骨嵌入燧石尖), Quaternary Science Reviews 2019", "https://www.sciencedirect.com/science/article/abs/pii/S0277379118308588"]],
+  "fix": "",
+  "confidence": "中"},
+
+ {"n": 72,
+  "verdict": "大致正確",
+  "sci": "Spadzista 的直接證據指向用燧石尖矛獵殺，並利用天然地形圍困，沒有繩索或人工陷阱坑的證據，這部分可靠。但「用狗」這點較複雜：有學者主張 Gravettian（如捷克 Předmostí）已出現早期馴化犬，學界仍有爭議，因此不宜說得太絕對。整體方向正確，只是「狗」的部分要留餘地。",
+  "src": [["Wojtal et al., The earliest direct evidence of mammoth hunting in Central Europe, Quaternary Science Reviews 2019", "https://www.sciencedirect.com/science/article/abs/pii/S0277379118308588"], ["Taphonomy of the Kraków Spadzista mammoth killing and butchering site", "https://www.sciencedirect.com/science/article/abs/pii/S2352409X25003530"]],
+  "fix": "他們沒有用繩子，也沒有挖陷阱坑，而是拿石尖的長矛、靠地形把猛獁象逼到死路獵殺的。（至於有沒有用狗，目前還沒定論，旁白最好別把話說死。）",
+  "confidence": "中"}
+]}
+```

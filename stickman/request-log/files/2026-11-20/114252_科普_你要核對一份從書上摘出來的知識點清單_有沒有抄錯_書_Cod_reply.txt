@@ -1,0 +1,18 @@
+照片我逐字看完了，回傳核對結果：
+
+```json
+{"page": "p.24",
+ "checks": [
+  {"n": 10, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 11, "ok": false, "problem": "quote 的動詞抄錯：書上主詞是 ages（複數），動詞用 suggest，清單寫成 suggests。claim_zh 意思無誤。", "quote": "the mammoths' ages at the times of their deaths suggest hunting selection rather than natural demise", "claim_zh": "猛獁象死亡時的年齡顯示是被（獵人）選擇性獵殺，而非自然死亡。"},
+  {"n": 12, "ok": false, "problem": "人名抄錯：書上是 Piotr Wojtal，清單寫成 Pare Wojtal。quote 本身無誤。who 欄也要一併改成 Piotr Wojtal。另書上原文是 paleoarchaeologist（古考古學家），拼寫為 Piotr。", "quote": "a 24,000-year-old flint arrowhead still lodged deep in a mammoth's rib", "claim_zh": "古考古學家 Piotr Wojtal 找到一支 24,000 年前的燧石箭頭，仍深嵌在一根猛獁象肋骨裡。"},
+  {"n": 13, "ok": false, "problem": "quote 與原文差兩處：書上是 they did so to near exclusion（不是 near extinction，且漏了 to）。claim_zh 把 exclusion 誤譯成『滅絕（extinction）』，意思整個跑掉——原文是指幾乎只獵猛獁象（排除其他獵物），不是把牠們獵到滅絕。", "quote": "Stone Age steppe cultures not only hunted mammoths, they did so to near exclusion", "claim_zh": "石器時代草原文化不只獵猛獁象，而且幾乎到了排他的程度（near exclusion，近乎只獵牠們、排除其他獵物）。"},
+  {"n": 14, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 15, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 16, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 17, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 18, "ok": true, "problem": "", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [],
+ "unclear": []}
+```

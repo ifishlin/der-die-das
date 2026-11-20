@@ -1,0 +1,14 @@
+```json
+{"page": "p.31",
+ "checks": [
+  {"n": 76, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 77, "ok": false, "problem": "quote 用字錯：書上是 archaeologists haven't FOUND nearly enough，清單寫成「haven't turned … enough」，動詞抄錯（found→turned）。claim_zh 意思正確。", "quote": "it's unknown how frequently the Pavlovian hunters died hunting mammoths—archaeologists haven't found nearly enough Pavlovian skeletons to draw any general conclusions", "claim_zh": "Wojtal 說，並不清楚 Pavlovian 獵人獵猛獁象時死亡的頻率，因為找到的 Pavlovian 骨骸不足以得出一般性結論。"},
+  {"n": 78, "ok": false, "problem": "quote 抄錯：書上是「a full-grown six-ton mammoth may charge YOU AT 20 miles per hour」，清單寫成「charge in as 20 miles per hour」（charge you at→charge in as，且漏掉 full-grown six-ton 主詞）。數字 20 mph、may、lethal intent 都正確；claim_zh 語氣與數字無誤。", "quote": "a full-grown six-ton mammoth may charge you at 20 miles per hour with lethal intent", "claim_zh": "猛獁象可能以每小時 20 英里的速度、帶著致命意圖衝撞。"},
+  {"n": 79, "ok": true, "problem": "", "quote": "", "claim_zh": ""},
+  {"n": 80, "ok": true, "problem": "", "quote": "", "claim_zh": ""}
+ ],
+ "missing": [
+  {"claim_zh": "成年猛獁象重達六噸。", "quote": "a full-grown six-ton mammoth", "pages": ["p.31"], "type": "數字", "who": "古考古學家 Wojtal", "hedge": "", "convert": "six-ton ≈ 6 公噸（約 5.4 公噸，視噸制而定）"}
+ ],
+ "unclear": []}
+```

@@ -1,0 +1,136 @@
+
+你要查證一份兒童科普動畫（EP3）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 65,
+  "claim_zh": "Wojtal 形容那區域是一種陷阱：三面受阻，北面是岩崖，東西兩面是窪地（depressions）與峽谷。",
+  "quote": "\"The area was a kind of trap,\" he explains, \"isolated from three sides. From the north by a rocky cliff, and from the east and west by depressions and gorges.\"",
+  "pages": [
+   "p.30"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": "（引號內字略模糊，見 reshoot 05）",
+  "verify_note": "兩處抄錯：(1) 書上是「a kind of trap」，沒有「perfect／完美」；(2) 書上是「depressions」（窪地），不是「deep rivers／深河」。此外書上用 depressions 不是 rivers。"
+ },
+ {
+  "n": 66,
+  "claim_zh": "骨骸顯示，連專門獵猛獁象的人也很少攻擊老公象，即使老公象通常獨自行動。",
+  "quote": "Skeletal remains suggest even mammoth-hunting specialists rarely attacked old bulls, even though these bulls likely traveled alone",
+  "pages": [
+   "p.30"
+  ],
+  "type": "專家說法",
+  "who": "作者（引骨骸證據）",
+  "hedge": "suggest / likely",
+  "convert": ""
+ },
+ {
+  "n": 67,
+  "claim_zh": "老公象體型大、極具攻擊性，尤其在狂暴期（musth）。",
+  "quote": "Old males are large and highly aggressive, particularly if they're in musth",
+  "pages": [
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "書上用的詞是「musth」（象的狂暴期），不是「rut」。quote 與 claim_zh 都要改成 musth。"
+ },
+ {
+  "n": 68,
+  "claim_zh": "狂暴期（musth）是公象攻擊性升高的時期，連鳥、長頸鹿甚至樹木都會去攻擊；處於狂暴期的公象可能不被趕進陷阱，而是直接衝撞。",
+  "quote": "a period of heightened aggression in bull elephants when they're liable to attack everything from birds and giraffes to even trees. Rather than being shooed into a trap, a bull in musth may simply charge",
+  "pages": [
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "may",
+  "convert": "",
+  "verify_note": "同上，書上是「a bull in musth may simply charge」，不是「in rut」。整段描述的也是 musth 不是 rut。"
+ },
+ {
+  "n": 69,
+  "claim_zh": "Wojtal 研究過克拉科夫 Spadzista（Kraków Spadzista）遺址。",
+  "quote": "the people in the Kraków Spadzista site he studied",
+  "pages": [
+   "p.30"
+  ],
+  "type": "描述",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 70,
+  "claim_zh": "Wojtal 建議的獵法：從象群中孤立出一頭（最好是看起來虛弱或受傷的）猛獁象，把牠趕進死路。",
+  "quote": "isolate a mammoth from a group—perhaps one that seems weak or wounded—and herd it into the cul-de-sac",
+  "pages": [
+   "p.30"
+  ],
+  "type": "求生建議",
+  "who": "古考古學家 Wojtal",
+  "hedge": "perhaps",
+  "convert": ""
+ },
+ {
+  "n": 71,
+  "claim_zh": "Wojtal 說：「那是人與猛獁象之爭。」",
+  "quote": "\"It was man against mammoth,\" says Wojtal",
+  "pages": [
+   "p.30"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "整句抄錯：書上 Wojtal 說的是「It was man against mammoth」，不是「It was mass slaughter／那是大屠殺」。"
+ },
+ {
+  "n": 72,
+  "claim_zh": "沒有證據顯示他們用繩索、地下陷阱坑或狗（來狩獵）。",
+  "quote": "used ropes or underground pits or dogs—in fact, there's a great deal of evidence they did not",
+  "pages": [
+   "p.30"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Wojtal",
+  "hedge": "",
+  "convert": "（本句字略模糊，見 reshoot 05）"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

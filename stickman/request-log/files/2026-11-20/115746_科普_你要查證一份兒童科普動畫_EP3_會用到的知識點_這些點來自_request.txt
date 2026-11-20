@@ -1,0 +1,132 @@
+
+你要查證一份兒童科普動畫（EP3）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 81,
+  "claim_zh": "Bell 十六歲時開始替烏干達鐵路獵殺食人獅。",
+  "quote": "Bell, who began his career at age sixteen hunting man-eating lions for the Ugandan railway",
+  "pages": [
+   "p.32"
+  ],
+  "type": "描述",
+  "who": "Walter Bell",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 82,
+  "claim_zh": "Bell 寫道，大象的衝鋒是最高等級的膽量考驗。",
+  "quote": "\"An elephant's charge is a nerve test of the highest order,\" he writes",
+  "pages": [
+   "p.32"
+  ],
+  "type": "專家說法",
+  "who": "Walter Bell",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 83,
+  "claim_zh": "Bell 建議：若大型猛獁象衝來時你不驚慌，就站穩、持續射擊，並希望那是一次假衝鋒。",
+  "quote": "he suggests you stand your ground, continue to fire, and hope the charge is a false one",
+  "pages": [
+   "p.32"
+  ],
+  "type": "求生建議",
+  "who": "Walter Bell",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 84,
+  "claim_zh": "猛獁象跑得比你快，幾秒內就會追上你。",
+  "quote": "The mammoth is faster than you and thus will catch you in seconds",
+  "pages": [
+   "p.32"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 85,
+  "claim_zh": "（建議）不要直線逃跑，要用之字形（和躲暴龍時相同的方式）奔跑。",
+  "quote": "don't run in a straight line … run below your top speed in the same zigzag pattern that saved you from the Tyrannosaurus rex",
+  "pages": [
+   "p.32"
+  ],
+  "type": "求生建議",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 86,
+  "claim_zh": "猛獁象大約和暴龍一樣大，但遠不如暴龍靈活。",
+  "quote": "The mammoth is about as large as a tyrannosaurus, but not nearly as mobile",
+  "pages": [
+   "p.32"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "about",
+  "convert": ""
+ },
+ {
+  "n": 87,
+  "claim_zh": "猛獁象能輕易推倒樹木或移動汽車大小的巨石。",
+  "quote": "the mammoth can easily topple trees or move car-sized boulders",
+  "pages": [
+   "p.32"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 88,
+  "claim_zh": "若猛獁象把你撞倒，牠大概會用象牙刺你，否則會用踩踏結束你。",
+  "quote": "it will probably attempt to gore you with its tusks. Failing that, it will finish the job by stomping you",
+  "pages": [
+   "p.32"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "probably",
+  "convert": ""
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。

@@ -1,0 +1,136 @@
+
+你要核對一份從書上摘出來的知識點清單，有沒有抄錯。書：Cody Cassidy《How to Survive History》。
+
+這一頁的照片：source/how_to_survive_history/ch03_ice_age/pages/p24.jpg（書的 p.24；用 Read 打開，**一個字一個字對**）
+只讀這張照片。不要上網、不要用你自己的知識判斷內容對不對——這一步只核對「清單跟書上寫的一不一樣」。
+
+## 清單上標在這一頁的知識點
+
+[
+ {
+  "n": 10,
+  "claim_zh": "許多學者曾懷疑石器時代獵人是撿食營地裡的猛獁象，而非獵殺牠們。",
+  "quote": "Many scholars suspected that Stone Age hunters scavenged the mammoths found in their camps, rather than hunted them",
+  "pages": [
+   "p.24"
+  ],
+  "type": "專家說法",
+  "who": "書上泛指的 scholars（學者）",
+  "hedge": "suspected",
+  "convert": ""
+ },
+ {
+  "n": 11,
+  "claim_zh": "猛獁象死亡時的年齡顯示是被（獵人）選擇性獵殺，而非自然死亡。",
+  "quote": "the mammoths' ages at the times of their deaths suggests hunting selection rather than natural demise",
+  "pages": [
+   "p.24"
+  ],
+  "type": "因果",
+  "who": "作者（引證據）",
+  "hedge": "suggests",
+  "convert": ""
+ },
+ {
+  "n": 12,
+  "claim_zh": "古考古學家 Pare Wojtal 找到一支 24,000 年前的燧石箭頭，仍深嵌在一根猛獁象肋骨裡。",
+  "quote": "a 24,000-year-old flint arrowhead still lodged deep in a mammoth's rib",
+  "pages": [
+   "p.24"
+  ],
+  "type": "專家說法",
+  "who": "古考古學家 Pare Wojtal",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 13,
+  "claim_zh": "石器時代草原文化不只獵猛獁象，而且獵到近乎讓牠們滅絕。",
+  "quote": "Stone Age steppe cultures not only hunted mammoths, they did so near extinction",
+  "pages": [
+   "p.24"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 14,
+  "claim_zh": "現代與猛獁象親緣相近、體型相似的六噸重非洲象，偶爾會殺死持槍的盜獵者。",
+  "quote": "the six-ton African elephant, occasionally kills poachers armed with guns",
+  "pages": [
+   "p.24"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "occasionally",
+  "convert": "six-ton ≈ 5.4 公噸"
+ },
+ {
+  "n": 15,
+  "claim_zh": "猛獁象體型像一輛小巴士，配有一對八英尺長的象牙。",
+  "quote": "a minibus-sized animal armed with twin eight-foot-long ivory spears",
+  "pages": [
+   "p.24"
+  ],
+  "type": "比較",
+  "who": "作者",
+  "hedge": "",
+  "convert": "eight-foot ≈ 2.4 公尺"
+ },
+ {
+  "n": 16,
+  "claim_zh": "口語上這時代叫「冰河期（Ice Age）」是個令人困惑的誤稱，因為我們至今仍處在同一個冰河期。",
+  "quote": "the Ice Age, but that's a confusing misnomer, says Nicholas Swanson-Hysell … because we are still living through the very same \"ice age.\"",
+  "pages": [
+   "p.24"
+  ],
+  "type": "專家說法",
+  "who": "Nicholas Swanson-Hysell，UC Berkeley 地球與行星科學教授",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 17,
+  "claim_zh": "這個冰河期始於將近 300 萬年前，當時大氣中的二氧化碳濃度開始驟降。",
+  "quote": "It began almost 3 million years ago when carbon dioxide levels in the atmosphere first began to plummet",
+  "pages": [
+   "p.24"
+  ],
+  "type": "數字",
+  "who": "作者（引 Swanson-Hysell）",
+  "hedge": "almost",
+  "convert": ""
+ },
+ {
+  "n": 18,
+  "claim_zh": "大氣中的二氧化碳是地球的保溫層，會留住原本要散入太空的熱，所以它的量決定地球溫度。",
+  "quote": "Carbon dioxide in the atmosphere serves as our planet's insulation. It traps heat otherwise headed for deep space, so its quantity dictates the earth's temperature",
+  "pages": [
+   "p.24"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ }
+]
+
+## 要做的事
+
+1. 每一點：
+   - quote 是不是書上真的有的句子？逐字比對，特別注意**數字（位數、小數點）、單位（per second / per hour）、人名、地名、年份**。
+   - claim_zh 有沒有忠實反映書上的意思？有沒有加料、漏掉「可能」「大約」這類語氣、把不確定講成確定？
+   - 有錯就給改正後的 quote 和 claim_zh。
+2. 這一頁還有沒有**漏列**的知識點（可以查證、講真實世界的事實；玩笑、比喻、純劇情假設不算）？有的話照原本的欄位格式列出來。
+3. 照片真的看不清楚、沒辦法確認的，寫在 unclear，不要猜。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"page": "p.24",
+ "checks": [{"n": 1, "ok": true, "problem": "", "quote": "（ok 為 false 才填改正後的）", "claim_zh": "（同上）"}],
+ "missing": [{"claim_zh": "", "quote": "", "pages": ["p.24"], "type": "", "who": "", "hedge": "", "convert": ""}],
+ "unclear": [{"where": "", "problem": ""}]}
+```

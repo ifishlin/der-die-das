@@ -1,0 +1,134 @@
+
+你要查證一份兒童科普動畫（EP3）會用到的知識點。這些點來自 Cody Cassidy《How to Survive History》或製作團隊補充。動畫的旁白會拿查證結果來改寫，所以要的是：**對不對、根據是什麼、要怎麼說才不會錯**。
+
+## 這一批的知識點
+
+[
+ {
+  "n": 41,
+  "claim_zh": "這些冰河卻靠不斷補充的冰河沉積物，製造出肥力驚人的土壤。",
+  "quote": "these same glaciers produce soil with fantastically productive potential thanks to constant replenishing from glacial deposits",
+  "pages": [
+   "p.27"
+  ],
+  "type": "因果",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 42,
+  "claim_zh": "結果是有水的河谷和乾旱的高地之間形成強烈的動物相對比。",
+  "quote": "an incredible faunal dichotomy between the watered river valleys and the desert-dry highlands",
+  "pages": [
+   "p.27"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 43,
+  "claim_zh": "猛獁草原富含養分的氾濫平原，為野牛、馬、披毛猛獁象等大型草食動物提供理想的放牧環境。",
+  "quote": "The floodplains of the mammoth steppe's rich soils create an ideal grazing environment for the large … herd animals such as bison, horses, woolly mammoths",
+  "pages": [
+   "p.28"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 44,
+  "claim_zh": "能獵殺這些大型草食動物的大型掠食者包括狼、獅子、獵豹，以及人類。",
+  "quote": "the big-game hunters capable of bringing them down. These include wolves, lions, cheetahs—and, of course, humans",
+  "pages": [
+   "p.28"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 45,
+  "claim_zh": "這裡的人屬於考古學家所稱的 Pavlovian（帕夫洛夫）文化。",
+  "quote": "members of what archaeologists now call the Pavlovian culture",
+  "pages": [
+   "p.28"
+  ],
+  "type": "描述",
+  "who": "作者（引考古學家）",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 46,
+  "claim_zh": "他們的營地位在河谷上方（高處），可以眺望草原、觀察吃草的猛獁象群並規劃狩獵。",
+  "quote": "You'll find their camps located above river valleys where people can look out over vast grasslands, observe the mammoth herds that graze on them, and plan their hunts",
+  "pages": [
+   "p.28"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "quote 兩處抄錯：書上是 located ABOVE river valleys（河谷『上方／高處』），不是 along（旁）；且是 observe THE mammoth herds，漏了 the。claim_zh 把『河谷上方』誤成『河谷旁』，意思不同，要改。"
+ },
+ {
+  "n": 47,
+  "claim_zh": "獵猛獁象不是單人能做的事。",
+  "quote": "Mammoth hunting is not a solo pursuit",
+  "pages": [
+   "p.28"
+  ],
+  "type": "描述",
+  "who": "作者",
+  "hedge": "",
+  "convert": ""
+ },
+ {
+  "n": 48,
+  "claim_zh": "考古學家推崇 Pavlovian 人精緻的衣著、藝術品，以及刻畫豐腴女性、被稱為維納斯小雕像（Venus figurines）的精緻象牙骨雕。",
+  "quote": "among archaeologists they're renowned for their sophisticated clothing, artwork, and intricate ivory bone carvings of voluptuous female figures—known as Venus figurines",
+  "pages": [
+   "p.28"
+  ],
+  "type": "專家說法",
+  "who": "作者（引考古學家）",
+  "hedge": "",
+  "convert": "",
+  "verify_note": "quote 把 figures / figurines 兩個字對調了：書上是 voluptuous female FIGURES—known as Venus FIGURINES，不是 female figurines—known as Venus figures；且 … 省略的是 intricate ivory bone carvings of（精緻象牙骨雕）。claim_zh 漏了『象牙骨雕』這個材質與形式，補上較忠實。"
+ }
+]
+
+## 每一點要做的事
+
+1. 用 WebSearch／WebFetch 找出處，**打開網頁確認裡面真的有寫**，不要只憑搜尋結果的摘要或你自己的記憶。
+2. 判定，四級擇一：
+   - **正確**：跟出處一致，照書上說法講沒問題。
+   - **大致正確**：方向對，但數字、範圍、用詞要小修（例如書上說 44 公里，主流數字是 40～43）。
+   - **有爭議**：學界沒有共識，或只有單一研究、預印本支持。
+   - **有誤**：跟目前主流證據不符。
+3. 出處優先順序：同行審查的論文 → 博物館、大學、政府研究機構 → 可信的科普媒體（Smithsonian、Nature News、Scientific American、National Geographic 之類）。**維基百科不能當唯一出處**，但可以用它找原始出處。每點至少 1 個出處，附網址；論文附 DOI 或期刊頁。
+4. 每點以 2～3 次搜尋為限；查不到可靠出處就判「找不到出處」，不硬湊、不編造。**寧可說找不到，也不要給打不開或沒寫這件事的網址。**
+5. 不是「正確」的點，寫一句**適合旁白的建議說法**：中文、口語、給小學生到大人都聽得懂、不講太多數字；只修正需要修的地方，保留書上的趣味。
+6. 求生建議類：查的是「這樣做有沒有根據」。
+7. 原文有「可能」「大約」這類語氣的，判定時要考慮進去（書上說「可能」，學界也只說可能，就是正確）。
+
+## 回傳格式（只回傳 JSON，不要加別的話）
+
+```json
+{"ep": "EP3", "results": [
+ {"n": 1,
+  "verdict": "正確 | 大致正確 | 有爭議 | 有誤 | 找不到出處",
+  "sci": "目前的科學說法，2～4 句中文，具體到數字和研究",
+  "src": [["作者 年份, 期刊 卷:頁（或機構／媒體名稱與標題）", "網址"]],
+  "fix": "建議的旁白說法；正確的就空字串",
+  "confidence": "高 | 中 | 低（你對這個判定有多確定）"}
+]}
+```
+
+n 跟上面知識點的 n 一樣，每一點都要有結果，不能漏。
