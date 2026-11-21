@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover"><meta name="robots" content="noindex"><title>剪接台 第 1 場</title><style>
+:root{--bg:#f3f1ec;--panel:#fffdf9;--fg:#22201b;--mut:#6c665b;--line:#e0dace;--acc:#1f6b52;--trk:#ebe7df;--nar:#8d8676;--head:#d8352a;--must-bg:#fde3cf;--must-b:#c8571f;--opt-bg:#f1efea}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#181816;--panel:#22211e;--fg:#ebe7de;--mut:#a29b8e;--line:#3a3730;--acc:#6cc7a3;--trk:#2b2a26;--nar:#8a8475;--head:#ff5a4a;--must-bg:#4a2c19;--must-b:#e8834d;--opt-bg:#262521;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#181816;--panel:#22211e;--fg:#ebe7de;--mut:#a29b8e;--line:#3a3730;--acc:#6cc7a3;--trk:#2b2a26;--nar:#8a8475;--head:#ff5a4a;--must-bg:#4a2c19;--must-b:#e8834d;--opt-bg:#262521;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:1180px;margin:0 auto;padding-block:16px 60px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+a{color:var(--acc)}h1{font-size:22px;margin:0}.mut{color:var(--mut)}.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;min-width:0}
+video{width:100%;max-width:820px;display:block;margin:0 auto;border-radius:8px;background:#000}
+.ctl{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px;font-variant-numeric:tabular-nums}
+button{font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:6px;padding:3px 12px;cursor:pointer}
+.ed{display:grid;grid-template-columns:64px minmax(0,1fr);gap:0}.lbl{font-size:13px;color:var(--mut);display:flex;align-items:center;border-bottom:1px solid var(--line)}
+.scroll{overflow-x:auto;position:relative}.lane{position:relative;border-bottom:1px solid var(--line);background:var(--trk)}
+.ruler{height:22px;background:transparent}.tick{position:absolute;top:0;height:100%;border-left:1px solid var(--line);font-size:11px;color:var(--mut);padding-left:3px}
+.l-shot{height:64px}.l-narr{height:46px}.l-sfx{height:var(--sfxh,52px)}
+.blk{position:absolute;top:4px;bottom:4px;border-radius:4px;overflow:hidden;font-size:12px;line-height:1.3;padding:2px 4px;box-sizing:border-box;cursor:pointer}
+.shot{background:#000 center/cover no-repeat;color:#fff;text-shadow:0 0 3px #000;border:1px solid var(--line)}
+.nar{background:var(--nar);color:#fff;white-space:nowrap;text-overflow:ellipsis}
+.cue{color:#fff;height:22px;bottom:auto;white-space:nowrap}.cue.optional{opacity:.45}.cue.must{outline:2px solid var(--fg);outline-offset:-2px}
+.ambience{background:#4f86bd}.event{background:#c7752c}.reaction{background:#b04786}.transition{background:#3c8f68}
+.head{position:absolute;top:0;bottom:0;width:2px;background:var(--head);pointer-events:none;z-index:5}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);white-space:nowrap}
+tr.must td{background:var(--must-bg)}tr.must td:first-child{border-left:4px solid var(--must-b)}tr.optional td{background:var(--opt-bg);color:var(--mut)}tr{cursor:pointer}
+.legend{font-size:13px;color:var(--mut)}
+</style></head><body><main>
+<div style="font-size:14px"><a href="../">← F 音效表</a></div>
+<header><h1>剪接台：第 1 場　白堊紀森林・爛泥巴小路（冷開場追逐）（黃昏）</h1>
+<p class=mut>放的是音效清單裡的 must cue，秒數和音量照模型寫的；素材是我從舊 EP1 音效庫挑的；旁白不自動壓低。點軌道或下面表格的任一列，影片跳到那個時間。</p></header>
+<section class=card><video id=v src="sfx_s01_must.mp4" controls preload=auto playsinline></video>
+<div class=ctl><button id=pp>▶ 播放</button><span id=tc>0.00 / 22.48 秒</span><span id=now class=mut></span></div></section>
+<section class=card><div class=ed><div>
+<div class="lbl ruler"></div><div class="lbl l-shot">畫面</div><div class="lbl l-narr">旁白</div><div class="lbl l-sfx" id=sfxlbl>音效</div></div>
+<div class=scroll id=sc><div id=tl style="position:relative">
+<div class="lane ruler" id=ru></div><div class="lane l-shot" id=ls></div><div class="lane l-narr" id=ln></div><div class="lane l-sfx" id=lf></div><div class=head id=hd></div></div></div></div>
+<p class=legend><span class="dot ambience"></span>環境　<span class="dot event"></span>事件　<span class="dot reaction"></span>反應　<span class="dot transition"></span>轉場　粗框＝must、淡色＝optional　灰色＝旁白講話</p></section>
+<section class=card><h2 style="font-size:17px;margin:0 0 6px">這場放的音效</h2><div class=tw><table><tr><th>開始</th><th>結束</th><th>聲音</th><th>一次性／持續性</th><th>層</th><th>音量</th><th>優先</th><th>模型寫的理由</th></tr><tr class="must" data-a="10.62"><td>01-03・第 2.54 秒</td><td>播完為止</td><td><span class="dot event"></span>恐龍低吼（揭露）</td><td>一次性</td><td>事件</td><td>中</td><td>must</td><td>TEEN 第一次被揭露在 HERO 身後，是冷開場的關鍵轉折；低吼卡在旁白講完的空檔（2.54 秒後）點出怪物現身，少了它揭露會很平。</td></tr><tr class="must" data-a="13.66"><td>01-04・第 2.74 秒</td><td>01-05・第 1.0 秒</td><td><span class="dot event"></span>恐龍怒吼（撲咬高潮）</td><td>一次性</td><td>事件</td><td>大</td><td>must</td><td>血盆大口撲向鏡頭是這場的高潮；旁白『比你整個人還大』一講完（2.74 秒）立刻爆出最大聲的怒吼，延續到下一格，製造壓迫與嚇人效果。</td></tr><tr class="must" data-a="16.06"><td>01-05・第 2.1 秒</td><td>01-06・第 0.8 秒</td><td><span class="dot transition"></span>時間凍結定格轉場音</td><td>一次性</td><td>轉場</td><td>中</td><td>must</td><td>第六格 HERO 躍到最高點、TEEN 撲到身後、時間凍結，是全場的錨點定格；轉場音從第五格旁白講完的空檔起音，落在凍結瞬間，少了它定格會沒有『停住』的衝擊。</td></tr></table></div></section>
+</main><script>
+const D={"total": 22.48, "shots": [{"id": "01-01", "a": 0.0, "b": 5.2, "img": "../../storyboard-ep1-new/img/EP1N-01-01_1.jpg"}, {"id": "01-02", "a": 5.2, "b": 8.08, "img": "../../storyboard-ep1-new/img/EP1N-01-02_1.jpg"}, {"id": "01-03", "a": 8.08, "b": 10.92, "img": "../../storyboard-ep1-new/img/EP1N-01-03_1.jpg"}, {"id": "01-04", "a": 10.92, "b": 13.96, "img": "../../storyboard-ep1-new/img/EP1N-01-04_1.jpg"}, {"id": "01-05", "a": 13.96, "b": 16.36, "img": "../../storyboard-ep1-new/img/EP1N-01-05_1.jpg"}, {"id": "01-06", "a": 16.36, "b": 22.48, "img": "../../storyboard-ep1-new/img/EP1N-01-06_1.jpg"}], "narr": [{"a": 0.0, "b": 4.9, "t": "你正在跑，腳下全是爛泥巴。而兩旁的樹，比大樓還要高。", "shot": "01-01"}, {"a": 5.2, "b": 7.78, "t": "而你這輩子，從來沒跑得這麼快過。", "shot": "01-02"}, {"a": 8.08, "b": 10.620000000000001, "t": "可是後面那個東西，跑得比你還快。", "shot": "01-03"}, {"a": 10.92, "b": 13.66, "t": "牠光是一張嘴，就比你整個人還大。", "shot": "01-04"}, {"a": 13.96, "b": 16.060000000000002, "t": "而且啊，牠還越追越近。", "shot": "01-05"}, {"a": 16.36, "b": 22.18, "t": "這時候你一定很想問：我到底是怎麼跑到這裡來的？別急，這件事要從今天早上說起。", "shot": "01-06"}], "cues": [{"a": 10.62, "b": 14.027, "zh": "恐龍低吼（揭露）", "layer": "event", "layer_zh": "事件", "kind": "一次性", "vol": "中", "pri": "must", "at": "01-03・第 2.54 秒", "end": "播完為止", "why": "TEEN 第一次被揭露在 HERO 身後，是冷開場的關鍵轉折；低吼卡在旁白講完的空檔（2.54 秒後）點出怪物現身，少了它揭露會很平。", "file": "fs_727775.wav"}, {"a": 13.66, "b": 14.96, "zh": "恐龍怒吼（撲咬高潮）", "layer": "event", "layer_zh": "事件", "kind": "一次性", "vol": "大", "pri": "must", "at": "01-04・第 2.74 秒", "end": "01-05・第 1.0 秒", "why": "血盆大口撲向鏡頭是這場的高潮；旁白『比你整個人還大』一講完（2.74 秒）立刻爆出最大聲的怒吼，延續到下一格，製造壓迫與嚇人效果。", "file": "fs_320345.wav"}, {"a": 16.06, "b": 17.16, "zh": "時間凍結定格轉場音", "layer": "transition", "layer_zh": "轉場", "kind": "一次性", "vol": "中", "pri": "must", "at": "01-05・第 2.1 秒", "end": "01-06・第 0.8 秒", "why": "第六格 HERO 躍到最高點、TEEN 撲到身後、時間凍結，是全場的錨點定格；轉場音從第五格旁白講完的空檔起音，落在凍結瞬間，少了它定格會沒有『停住』的衝擊。", "file": "fs_434873.wav"}]};
+const PX=90, W=Math.ceil(D.total*PX), v=document.getElementById('v'), tl=document.getElementById('tl'), sc=document.getElementById('sc'), hd=document.getElementById('hd');
+tl.style.width=W+'px';
+const ru=document.getElementById('ru');for(let s=0;s<=D.total;s++){const t=document.createElement('div');t.className='tick';t.style.left=s*PX+'px';t.textContent=s%1===0?s+'s':'';ru.appendChild(t);}
+function blk(lane,a,b,cls,html,title){const e=document.createElement('div');e.className='blk '+cls;e.style.left=a*PX+'px';e.style.width=Math.max((b-a)*PX-2,4)+'px';e.innerHTML=html;e.title=title||'';e.onclick=ev=>{ev.stopPropagation();seek(a);};document.getElementById(lane).appendChild(e);return e;}
+D.shots.forEach(s=>{const e=blk('ls',s.a,s.b,'shot',s.id);e.style.backgroundImage='url('+s.img+')';});
+D.narr.forEach(n=>blk('ln',n.a,n.b,'nar',n.t,n.t));
+const rowEnd=[];D.cues.forEach(c=>{let r=rowEnd.findIndex(x=>x<=c.a);if(r<0){r=rowEnd.length;rowEnd.push(0);}rowEnd[r]=c.b;
+ const e=blk('lf',c.a,c.b,'cue '+c.layer+' '+c.pri,c.zh+'（'+c.vol+'）',c.zh+'｜'+c.kind+'｜'+c.vol+'｜'+c.at+' → '+c.end+'｜'+c.file);e.style.top=(4+r*26)+'px';});
+document.documentElement.style.setProperty('--sfxh',(8+Math.max(rowEnd.length,1)*26)+'px');
+function seek(t){v.currentTime=Math.max(0,Math.min(t,D.total));}
+tl.addEventListener('click',ev=>{const r=tl.getBoundingClientRect();seek((ev.clientX-r.left)/PX);});
+document.querySelectorAll('tr[data-a]').forEach(tr=>tr.onclick=()=>{seek(+tr.dataset.a);v.play();});
+const pp=document.getElementById('pp');pp.onclick=()=>v.paused?v.play():v.pause();
+v.onplay=()=>pp.textContent='⏸ 暫停';v.onpause=()=>pp.textContent='▶ 播放';
+function tick(){const t=v.currentTime;hd.style.left=t*PX+'px';document.getElementById('tc').textContent=t.toFixed(2)+' / '+D.total.toFixed(2)+' 秒';
+ const sh=D.shots.find(s=>t>=s.a&&t<s.b),on=D.cues.filter(c=>t>=c.a&&t<c.b).map(c=>c.zh);
+ document.getElementById('now').textContent=(sh?sh.id:'')+(on.length?'　正在響：'+on.join('、'):'');
+ const x=t*PX;if(!v.paused&&(x<sc.scrollLeft||x>sc.scrollLeft+sc.clientWidth-60))sc.scrollLeft=x-60;requestAnimationFrame(tick);}
+requestAnimationFrame(tick);
+</script></body></html>
