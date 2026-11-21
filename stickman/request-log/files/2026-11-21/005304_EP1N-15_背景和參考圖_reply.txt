@@ -1,0 +1,109 @@
+produced the backgrounds。先講一個重點：這份 request 的 `docs/requests/EP1N_bg_hand.json` 裡**已經有一版第 15 場的答案，但那版違反了兩條新規定**，我照規定重做時修掉了：
+
+1. **15-01 / 01W / 12 / 12W 把太陽畫進畫面**（舊版寫「太陽低低掛在左邊／the sun hangs low on the left」）。但這幾個鏡頭 `sun` 是「相機左後方」，不在左前／正前／右前，依原則八**畫面裡不能出現太陽**，只能寫光從左後方來、影子往右前倒。
+2. **舊版寫了「左邊樹林間有一道很暗的縫隙」**，但這幾格 `view.not_in_view` 正是「樹間的黑影」，依原則八**不准寫**。
+3. 舊版所有非插圖鏡頭**都漏附環境圖 `ENV_CLEARING_EVE`**，我補上了。
+
+以下是重做後、通過逐句檢查的 JSON：
+
+```json
+{"shots": {
+  "EP1N-15-01": {
+    "zh": "對著森林裡的空地望出去。空地地面鋪著落葉和矮植物，一根矮倒木從畫面左邊延伸到中間，一根斜架起來、底下留著空隙的大倒木樹幹在畫面中間到右邊。空地四周到遠處都是茂密的白堊紀森林（蘇鐵、銀杏、針葉樹）。傍晚，光從鏡頭左後方斜照進來，影子往右前方拉長。",
+    "en": "Background: looking out across an open patch in the forest. The clearing floor is covered with leaf litter and low plants; a low fallen log runs from the left of the frame toward the middle, and a huge fallen tree trunk propped up with a gap underneath lies from the middle toward the right. Dense Cretaceous forest of cycads, ginkgos and conifers rings the clearing and runs off into the distance. It is dusk; light slants in from behind the camera on the left, stretching the shadows toward the front-right.",
+    "refs": ["ENV_CLEARING_EVE", "PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-01W": {
+    "zh": "對著森林裡的空地望出去，看到的範圍更大。空地地面鋪著落葉和矮植物，一根矮倒木從畫面左邊延伸到中間，一根斜架起來、底下留著空隙的大倒木樹幹在畫面中間到右邊。空地四周整圈到遠處都是茂密的白堊紀森林（蘇鐵、銀杏、針葉樹）。傍晚，光從鏡頭左後方斜照進來，影子往右前方拉長。",
+    "en": "Background: looking out across an open patch in the forest, taking in a wider view. The clearing floor is covered with leaf litter and low plants; a low fallen log runs from the left of the frame toward the middle, and a huge fallen tree trunk propped up with a gap underneath lies from the middle toward the right. Dense Cretaceous forest of cycads, ginkgos and conifers surrounds the whole clearing and runs off into the distance. It is dusk; light slants in from behind the camera on the left, stretching the shadows toward the front-right.",
+    "refs": ["ENV_CLEARING_EVE", "PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-02": {
+    "zh": "俯視博士實驗室裡的桌面，畫面裡幾乎都是桌板的表面。",
+    "en": "Background: looking straight down at the desk in the Professor's lab; the frame is almost entirely the surface of the desktop.",
+    "refs": ["REF_LAB", "REF_PROPS"]
+  },
+  "EP1N-15-03": {
+    "zh": "對著空地望過去，HERO 後面是空地鋪著落葉的地面，近處有一根矮倒木，再過去是茂密的白堊紀森林（蘇鐵、銀杏、針葉樹）。傍晚，光從畫面左前方斜照進來。",
+    "en": "Background: looking across the clearing; behind HERO is the leaf-littered clearing floor, with a low fallen log close by and beyond it the dense Cretaceous forest of cycads, ginkgos and conifers. It is dusk, with light slanting in from the front-left of the frame.",
+    "refs": ["ENV_CLEARING_EVE", "REF_HERO"]
+  },
+  "EP1N-15-04": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": []
+  },
+  "EP1N-15-05": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": []
+  },
+  "EP1N-15-06": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": []
+  },
+  "EP1N-15-07": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": ["PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-07W": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": ["PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-08": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": ["PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-08W": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": ["PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-09": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": ["PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-09W": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": ["PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-10": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": []
+  },
+  "EP1N-15-11": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": ["PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-11W": {
+    "zh": "手繪插圖：淡黃色的紙張背景。粗黑線、平塗色。畫面上沒有任何字或數字。",
+    "en": "Background: hand-drawn illustration on a pale yellow paper background. Bold black outlines, flat colors. No text or numbers anywhere in the frame.",
+    "refs": ["PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-12": {
+    "zh": "對著森林裡的空地望出去。空地地面鋪著落葉和矮植物，一根矮倒木從畫面左邊延伸到中間，一根斜架起來、底下留著空隙的大倒木樹幹在畫面中間到右邊。空地四周到遠處都是茂密的白堊紀森林（蘇鐵、銀杏、針葉樹）。傍晚，光從鏡頭左後方斜照進來，影子往右前方拉長。",
+    "en": "Background: looking out across an open patch in the forest. The clearing floor is covered with leaf litter and low plants; a low fallen log runs from the left of the frame toward the middle, and a huge fallen tree trunk propped up with a gap underneath lies from the middle toward the right. Dense Cretaceous forest of cycads, ginkgos and conifers rings the clearing and runs off into the distance. It is dusk; light slants in from behind the camera on the left, stretching the shadows toward the front-right.",
+    "refs": ["ENV_CLEARING_EVE", "PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  },
+  "EP1N-15-12W": {
+    "zh": "對著森林裡的空地望出去，看到的範圍更大。空地地面鋪著落葉和矮植物，一根矮倒木從畫面左邊延伸到中間，一根斜架起來、底下留著空隙的大倒木樹幹在畫面中間到右邊。空地四周整圈到遠處都是茂密的白堊紀森林（蘇鐵、銀杏、針葉樹）。傍晚，光從鏡頭左後方斜照進來，影子往右前方拉長。",
+    "en": "Background: looking out across an open patch in the forest, taking in a wider view. The clearing floor is covered with leaf litter and low plants; a low fallen log runs from the left of the frame toward the middle, and a huge fallen tree trunk propped up with a gap underneath lies from the middle toward the right. Dense Cretaceous forest of cycads, ginkgos and conifers surrounds the whole clearing and runs off into the distance. It is dusk; light slants in from behind the camera on the left, stretching the shadows toward the front-right.",
+    "refs": ["ENV_CLEARING_EVE", "PAIR2_TEEN", "REF_HERO", "REF_TEEN"]
+  }
+}, "redo": []}
+```
+
+補充幾個我依規定做的判斷：
+
+- **帽子**：這份 request 整場沒寫 HERO 的帽子被叼走或沒戴，依原則十二預設「有戴帽」→ 一律用 `REF_HERO`（不是 `REF_HERO_NOHAT`）。
+- **15-02（實驗室插入鏡頭）**：`camera.cell` 標「N/A（實驗室）」但它是真實地點不是手繪插圖，所以用 `REF_LAB`＋`REF_PROPS`、**不附森林環境圖 `ENV_CLEARING_EVE`**（森林環境套不到室內桌面）。這跟檔案舊版一致。
+- **15-04～11（含 W）**：`camera.cell` 是 N/A 的手繪插圖，這場沒另外指定插圖畫法，用預設模板；只有 HERO＋TEEN 同框的那幾格附角色設定圖和比例圖，純現代動物（獵豹、黑斑羚等）沒有對應參考圖 → `refs` 空。
+- **redo**：沒有救不回來的鏡頭，填 `[]`。

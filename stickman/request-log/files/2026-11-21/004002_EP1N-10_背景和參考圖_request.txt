@@ -1,0 +1,86 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；看得到的地點、牆面、道具附對應的圖（實驗室：正對牆附 _F，斜拍牆角附 _L 或 _R，鏡頭背後的牆不附）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+9. 光線方向（2026-11-21 原則八）：鏡頭的 sun 是程式照地圖算好的「太陽在相機的哪一邊」。光線照這個方向寫（光從哪邊來、影子往哪邊倒），方向不能改；太陽不在相機前方（左前、正前、右前以外）時，畫面裡不能出現太陽。sun 是 null 的鏡頭照地圖自己判斷。
+10. 畫面裡有什麼（2026-11-21 原則八）：鏡頭的 view 是程式照地圖算好的「畫面左側／中間／右側各看得到什麼」（大致由近到遠；樹林、建築會擋住後面）。背景只能寫 view 裡有的東西，左右位置照 view；not_in_view 裡的東西一律不准寫。景別越近看到越少：特寫、近景只寫最靠近角色後面的一兩樣。view 是 null 的鏡頭照地圖自己判斷。
+11. 環境圖：這場有 ENV_ 開頭的環境圖時，每個不是插圖的鏡頭都要附它（說明句組檔時會自動加，背景裡不用提）；背景寫天空和地面時用跟環境圖一致的說法，不要另外指定別的顏色。
+12. HERO 的帽子：HERO 這個鏡頭沒戴帽子（這場的狀態寫被叼走之後、或整場沒戴）就附 REF_HERO_NOHAT，不附 REF_HERO；有戴帽子附 REF_HERO。
+
+【這場】第 10 場　暫停講解：暴龍的眼睛和鼻子・上午（定格）
+
+【四、地圖】暫停講解：暴龍的眼睛和鼻子（河岸蕨類叢）
+寬闊的泥濘河岸。北邊是河，河對岸有一群鴨嘴龍；南邊是森林，暴龍從東南邊的大樹後面出來。河岸上有一個巨大的三趾腳印、一叢蕨類、一棵細樹。
+
+大小 24 欄（A–X）× 28 列（1–28），一格 2 公尺。北在上。時間：上午，太陽在東南方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T U V W X
+  1  D D D D D D D D D D D D D D D D D D D D D D D D
+  2  D D D D D D D D D D D D D D D D D D D D D D D D
+  3  s s s s s s s s s s s s s s s s s s s s s s s s
+  4  s s s s s s s s s s s s s s s s s s s s s s s s
+  5  R R R R R R R R R R R R R R R R R R R R R R R R
+  6  R R R R R R R R R R R R R R R R R R R R R R R R
+  7  R R R R R R R R R R R R R R R R R R R R R R R R
+  8  R R R R R R R R R R R R R R R R R R R R R R R R
+  9  R R R R R R R R R R R R R R R R R R R R R R R R
+ 10  R R R R R R R R R R R R R R R R R R R R R R R R
+ 11  R R R R R R R R R R R R R R R R R R R R R R R R
+ 12  R R R R R R R R R R R R R R R R R R R R R R R R
+ 13  R R R R R R R R R R R R R R R R R R R R R R R R
+ 14  R R R R R R R R R R R R R R R R R R R R R R R R
+ 15  b b b b b b b b b b b b b b b b b b b b b b b b
+ 16  b b b b b b b b b b b b b b b b b b b b b b b b
+ 17  b b b b b b b b b b b b b b b b b b b b b b b b
+ 18  b b b b b b b b b b b b b b b b b b b b b b b b
+ 19  b b b b b b b b 3 2 b 1 b b b b b b b b b b b b
+ 20  b b b b b b b b 2 2 b b b b b b b b b b b b b b
+ 21  b b b b b b b b b b b b b b b b b b b b b b b b
+ 22  F F F F F F F F F F F F F F F F F F F F F F F F
+ 23  F F F F F F F F F F F F F F F F F 4 F F F F F F
+ 24  F F F F F F F F F F F F F F F F F F F F F F F F
+ 25  F F F F F F F F F F F F F F F F F F F F F F F F
+ 26  F F F F F F F F F F F F F F F F F F F F F F F F
+ 27  F F F F F F F F F F F F F F F F F F F F F F F F
+ 28  F F F F F F F F F F F F F F F F F F F F F F F F
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 暴龍腳印（a three-toed T. rex footprint pressed into the mud, exactly the size of the adult T. rex's own foot, with only a little rainwater inside the footprint）｜角色：可站｜相機：可放（腳印裡積水，可以站在旁邊或踩進去）
+  2 = 蕨類叢（a clump of ferns）｜角色：可站｜相機：可放
+  3 = 細樹（a thin young tree）｜角色：不可站｜相機：不可放（會被壓彎的樹）
+  4 = 大樹（a huge tree at the forest edge）｜角色：不可站｜相機：不可放
+  D = 對岸的森林（開闊、朦朧）（a distant, open, hazy forest on the far bank, soft and pale, with gaps between the trees）｜角色：不可站｜相機：不可放（對岸，太遠）
+  F = 森林（蘇鐵、銀杏、針葉樹）（a dense Cretaceous forest of cycads, ginkgos and conifers）｜角色：不可站｜相機：可放（相機可以放在森林邊緣往外拍，前景會有枝葉）
+  R = 河（a wide slow river）｜角色：不可站｜相機：可放（相機可以在水面上方往岸上拍）
+  b = 泥地（河岸）（a wide flat stretch of bare mud）｜角色：可站｜相機：可放
+  s = 對岸河邊地（a strip of flat muddy riverside ground on the far bank）｜角色：可站｜相機：不可放（對岸：鴨嘴龍群站在這裡喝水（HERO 過不去，但恐龍可以站））
+蕨類叢和暴龍的位置照第 9 場。
+地圖外面：北邊 對岸開闊、朦朧的森林往遠方延伸；東邊 寬闊的河和兩岸的森林往遠方延伸；西邊 寬闊的河和兩岸的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
+
+【參考圖】
+- ENV_RIVER_AM：環境圖：上午・河岸（天色、泥地、河水）
+- PAIR2_TREX：HERO 和成年暴龍的身高比例圖
+- REF_HERO：HERO 角色設定圖（戴帽子、背背包）
+- REF_HERO_NOHAT：HERO 角色設定圖（沒戴帽子、有背背包）
+- REF_PROPS：道具：手機、相機、電擊槍、回家按鈕、生存指南、帳單
+- REF_TREX：成年暴龍設定圖
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP1N-10-01", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "G20", "height_m": "2.5", "look_at": "HERO 的屁股與暴龍鼻尖之間", "distance_m": "6"}, "in_frame": ["HERO", "TREX"], "action": "一切靜止的定格瞬間：HERO 僵直、屁股露在蕨類外，暴龍鼻子正要碰到他", "sun": "太陽在相機的右前方（相機朝東拍）", "view": {"畫面左側": ["泥地（河岸）", "蕨類叢", "細樹", "暴龍腳印", "河", "地圖外（東）：寬闊的河和兩岸的森林往遠方延伸"], "畫面中間": ["泥地（河岸）", "蕨類叢", "暴龍腳印", "森林（蘇鐵、銀杏、針葉樹）", "地圖外（東）：寬闊的河和兩岸的森林往遠方延伸"], "畫面右側": ["泥地（河岸）", "蕨類叢", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": []}}, {"id": "EP1N-10-01W", "variant_of": "EP1N-10-01", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "C20", "height_m": "3", "look_at": "HERO 的屁股與暴龍鼻尖之間", "distance_m": "14"}, "in_frame": ["HERO", "TREX"], "action": "同 01 的定格瞬間，只是拉遠到幾乎看得到整隻暴龍", "sun": "太陽在相機的右前方（相機朝東拍）", "view": {"畫面左側": ["泥地（河岸）", "蕨類叢", "細樹", "河", "地圖外（東）：寬闊的河和兩岸的森林往遠方延伸"], "畫面中間": ["泥地（河岸）", "蕨類叢", "細樹", "森林（蘇鐵、銀杏、針葉樹）", "暴龍腳印", "地圖外（東）：寬闊的河和兩岸的森林往遠方延伸"], "畫面右側": ["泥地（河岸）", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": []}}, {"id": "EP1N-10-02", "variant_of": "N/A", "shot_size": "FS", "angle": "high", "camera": {"cell": "L20", "height_m": "3.5", "look_at": "HERO（蕨類叢）", "distance_m": "5"}, "in_frame": ["HERO"], "action": "暴龍低頭俯視的瞬間，HERO 的藏身完全藏不住、被盡收眼底", "sun": "太陽在相機的左後方（相機朝西拍）", "view": {"畫面左側": ["泥地（河岸）", "蕨類叢", "森林（蘇鐵、銀杏、針葉樹）"], "畫面中間": ["泥地（河岸）", "蕨類叢", "細樹", "森林（蘇鐵、銀杏、針葉樹）", "地圖外（西）：寬闊的河和兩岸的森林往遠方延伸"], "畫面右側": ["泥地（河岸）", "蕨類叢", "細樹", "河", "地圖外（西）：寬闊的河和兩岸的森林往遠方延伸"], "not_in_view": ["暴龍腳印", "大樹"]}}, {"id": "EP1N-10-03", "variant_of": "N/A", "shot_size": "MCU", "angle": "eye", "camera": {"cell": "H21", "height_m": "1.3", "look_at": "暴龍吻部與鼻孔", "distance_m": "3.5"}, "in_frame": ["TREX"], "action": "鼻孔張大、用力嗅聞蕨類的那一刻，神情專注", "sun": null, "view": null}, {"id": "EP1N-10-04", "variant_of": "N/A", "shot_size": "CU", "angle": "eye", "camera": {"cell": "N/A", "height_m": "N/A", "look_at": "N/A", "distance_m": "N/A"}, "in_frame": [], "action": "插圖：頭骨剖面與發光腦區（講解插圖，無走位）", "sun": null, "view": null}, {"id": "EP1N-10-05", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "G20", "height_m": "2.5", "look_at": "HERO 的屁股與暴龍鼻尖之間", "distance_m": "6"}, "in_frame": ["HERO", "TREX"], "action": "從講解回到劇情，與 01 同一瞬間、同一構圖（彩色），暴龍鼻子正要碰到 HERO", "sun": "太陽在相機的右前方（相機朝東拍）", "view": {"畫面左側": ["泥地（河岸）", "蕨類叢", "細樹", "暴龍腳印", "河", "地圖外（東）：寬闊的河和兩岸的森林往遠方延伸"], "畫面中間": ["泥地（河岸）", "蕨類叢", "暴龍腳印", "森林（蘇鐵、銀杏、針葉樹）", "地圖外（東）：寬闊的河和兩岸的森林往遠方延伸"], "畫面右側": ["泥地（河岸）", "蕨類叢", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": []}}, {"id": "EP1N-10-05W", "variant_of": "EP1N-10-05", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "C20", "height_m": "3", "look_at": "HERO 的屁股與暴龍鼻尖之間", "distance_m": "14"}, "in_frame": ["HERO", "TREX"], "action": "同 05 的瞬間，只是拉遠到幾乎看得到整隻暴龍", "sun": "太陽在相機的右前方（相機朝東拍）", "view": {"畫面左側": ["泥地（河岸）", "蕨類叢", "細樹", "河", "地圖外（東）：寬闊的河和兩岸的森林往遠方延伸"], "畫面中間": ["泥地（河岸）", "蕨類叢", "細樹", "森林（蘇鐵、銀杏、針葉樹）", "暴龍腳印", "地圖外（東）：寬闊的河和兩岸的森林往遠方延伸"], "畫面右側": ["泥地（河岸）", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": []}}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- refs：不是插圖的鏡頭，refs 一定要有這場的環境圖（【參考圖】裡 ENV_ 開頭的那張）；HERO 沒戴帽子的鏡頭用 REF_HERO_NOHAT、不用 REF_HERO。
+- 資料沒給的細節（例如腳印裡的積水、天上的雲、鳥）不要寫。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}
