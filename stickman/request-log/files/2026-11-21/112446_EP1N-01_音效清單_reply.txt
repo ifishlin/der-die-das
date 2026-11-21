@@ -1,0 +1,176 @@
+{
+ "scene_id": "EP1N-01",
+ "notes": "冷開場追逐，三個重要位置：TEEN 首次現身的沉重踏步（反派揭露）、血盆大口撲鏡的吼叫高潮、結尾定格的轉場音。旁白幾乎鋪滿每一格，所有大聲的音效都塞在各格旁白結束後的空檔，墊底的腳步、喘氣、環境音全程保持小聲。",
+ "sounds": [
+  {
+   "key": "forest_dusk_ambience",
+   "layer": "ambience",
+   "zh": "黃昏森林環境音",
+   "search_en": ["forest ambience evening", "jungle atmosphere birds", "forest wind trees"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_run_mud",
+   "layer": "event",
+   "zh": "泥地奔跑腳步聲（HERO）",
+   "search_en": ["running footsteps mud", "run mud squelch", "jogging footsteps wet dirt"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "dino_stomp",
+   "layer": "event",
+   "zh": "大型恐龍奔跑踏步聲（TEEN）",
+   "search_en": ["heavy creature footsteps thud", "large animal running stomp", "elephant running footsteps"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": "a large two-legged predatory dinosaur running, heavy muscular footfalls thudding on wet mud, carrying body weight, rhythmic"
+  },
+  {
+   "key": "dino_roar",
+   "layer": "event",
+   "zh": "恐龍吼叫／咆哮（TEEN）",
+   "search_en": ["dinosaur roar", "monster roar snarl", "large creature growl roar"],
+   "duration_sec": [1, 6],
+   "loop": false,
+   "generate_en": "a large predatory dinosaur roaring with open jaws, deep guttural and threatening, lunging close to camera"
+  },
+  {
+   "key": "dino_snap",
+   "layer": "event",
+   "zh": "恐龍咬合／合嘴聲",
+   "search_en": ["jaw snap bite", "animal mouth snap teeth", "crocodile bite snap"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": "large dinosaur jaws snapping shut, a wet heavy clap of big teeth"
+  },
+  {
+   "key": "hero_panting",
+   "layer": "reaction",
+   "zh": "HERO 拚命喘氣（無台詞）",
+   "search_en": ["man panting running", "exhausted breathing run", "heavy breathing male"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_scream",
+   "layer": "reaction",
+   "zh": "HERO 驚恐短叫（無台詞）",
+   "search_en": ["man scared yelp", "male panic shout", "terrified gasp male"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_stinger",
+   "layer": "transition",
+   "zh": "定格凍結轉場音",
+   "search_en": ["freeze frame whoosh", "time stop sound", "cinematic stinger impact"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": "a time-freeze transition, swelling whoosh that snaps into sudden reverberant silence, cinematic"
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-01-01",
+   "start": 0.0,
+   "end_shot": "EP1N-01-06",
+   "end": 6.12,
+   "sound": "forest_dusk_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 1.0,
+   "why": "整場都在白堊紀森林小路，墊一段黃昏森林底噪建立地點氣氛；追逐場景的環境氛圍值得墊，但音量極小不搶旁白。"
+  },
+  {
+   "shot": "EP1N-01-01",
+   "start": 0.0,
+   "end_shot": "EP1N-01-06",
+   "end": 0.2,
+   "sound": "hero_run_mud",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.2,
+   "why": "HERO 從第一格衝進畫面到定格前全程在泥地狂奔，持續腳步墊住奔跑動感；旁白鋪滿各格故保持 low，到第 06 格定格瞬間切斷。"
+  },
+  {
+   "shot": "EP1N-01-01",
+   "start": 0.0,
+   "end_shot": "EP1N-01-06",
+   "end": 0.2,
+   "sound": "hero_panting",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.2,
+   "why": "HERO 拚命衝刺，喘氣聲墊底增加臨場感；為不蓋旁白只給 bg，定格時收掉。"
+  },
+  {
+   "shot": "EP1N-01-03",
+   "start": 0.0,
+   "end_shot": "EP1N-01-05",
+   "end": 2.4,
+   "sound": "dino_stomp",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.3,
+   "why": "第 03 格 TEEN 第一次被揭露在 HERO 身後，沉重的奔跑踏步宣告反派登場與龐大體型，是全場第一個重要位置；旁白期間壓到 low，並延續到第 05 格的逼近感。少了它怪物出場的重量就不成立。"
+  },
+  {
+   "shot": "EP1N-01-04",
+   "start": 2.74,
+   "end_shot": "EP1N-01-05",
+   "end": 1.2,
+   "sound": "dino_roar",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.1,
+   "fade_out": 0.6,
+   "why": "第 04 格血盆大口全開撲向鏡頭是本場高潮；放在該格旁白（0～2.74）結束後的空檔起音，才能開到 high 不蓋旁白，吼聲延進第 05 格強化逼近。這是全場最關鍵的一聲。"
+  },
+  {
+   "shot": "EP1N-01-05",
+   "start": 2.1,
+   "end_shot": "EP1N-01-05",
+   "end": null,
+   "sound": "hero_scream",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "第 05 格 TEEN 逼到身後間距驟縮，HERO 的驚恐短叫強化危機；放在旁白（0～2.10）結束後的空檔，是無台詞的反應音。"
+  },
+  {
+   "shot": "EP1N-01-06",
+   "start": 0.0,
+   "end_shot": "EP1N-01-06",
+   "end": null,
+   "sound": "freeze_stinger",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 1.0,
+   "why": "第 06 格時間在此凍結、是第 16 場要重現的錨點並轉入早上的閃回；追逐聲在此全部切斷，配一記轉場音標記定格，是必要的轉場位置。音量取 mid 避免蓋住同格開頭的旁白。"
+  },
+  {
+   "shot": "EP1N-01-06",
+   "start": 0.0,
+   "end_shot": "EP1N-01-06",
+   "end": null,
+   "sound": "dino_snap",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "定格瞬間 TEEN 大口就在 HERO 身後，一記合嘴聲替凍結畫面收尾、呼應前面的吼叫；為不蓋旁白開頭只給 low，可加可不加。"
+  }
+ ]
+}

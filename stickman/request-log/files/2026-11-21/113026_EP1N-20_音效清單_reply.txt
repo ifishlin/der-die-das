@@ -1,0 +1,104 @@
+{
+ "scene_id": "EP1N-20",
+ "notes": "下一集預告的空景插圖，沒有角色所以沒有反應音；重點是讓遠方小行星的威脅從「幾乎聽不到」一路長大，最後在火球壓向鏡頭的定格瞬間用一記火焰轟鳴收尾當懸念。旁白幾乎鋪滿兩格，大聲的火焰轟鳴只放在第二格旁白講完後的空檔。",
+ "sounds": [
+  {
+   "key": "night_ambience",
+   "layer": "ambience",
+   "zh": "白堊紀夜空環境底噪（低風聲／夜蟲）",
+   "search_en": ["night ambience crickets wind", "quiet night wind atmosphere", "calm night background"],
+   "duration_sec": [15, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "asteroid_whoosh",
+   "layer": "event",
+   "zh": "小行星逼近的低頻呼嘯／悶雷轟隆",
+   "search_en": ["meteor whoosh deep rumble", "approaching rumble low drone", "fireball whoosh space"],
+   "duration_sec": [4, 12],
+   "loop": true,
+   "generate_en": "a distant asteroid slowly approaching, a low airy whoosh mixed with a deep growing rumble, building threat, no impact"
+  },
+  {
+   "key": "fire_roar",
+   "layer": "event",
+   "zh": "大火球燃燒轟鳴",
+   "search_en": ["fire whoosh roar", "fireball flame burst", "large fire roar burning"],
+   "duration_sec": [2, 6],
+   "loop": false,
+   "generate_en": "a giant burning fireball roaring and crackling as it bears down on camera, intense flame roar swelling to a held climax"
+  },
+  {
+   "key": "teaser_riser",
+   "layer": "transition",
+   "zh": "「下一集」預告轉場上揚聲",
+   "search_en": ["cinematic riser whoosh", "trailer riser transition", "teaser swell riser"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-20-01",
+   "start": 0.0,
+   "end_shot": "EP1N-20-02",
+   "end": 4.56,
+   "sound": "night_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.6,
+   "why": "整段預告墊一層安靜的夜空底噪，讓遼闊夜空有氣氛；安靜空景可有可無，歸 optional"
+  },
+  {
+   "shot": "EP1N-20-01",
+   "start": 0.0,
+   "end_shot": "EP1N-20-01",
+   "end": 1.2,
+   "sound": "teaser_riser",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.4,
+   "why": "旁白一開口就是「下一集」，用一記小聲上揚聲點出這是預告轉場；音量壓低不蓋旁白，不放也行"
+  },
+  {
+   "shot": "EP1N-20-01",
+   "start": 1.0,
+   "end_shot": "EP1N-20-01",
+   "end": 5.20,
+   "sound": "asteroid_whoosh",
+   "priority": "must",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 0.0,
+   "why": "小行星第一次出現在夜空深處，用幾乎聽不到的低頻呼嘯讓那個小亮點「有東西在來」的威脅感成立；旁白進行中所以壓到 bg"
+  },
+  {
+   "shot": "EP1N-20-02",
+   "start": 0.0,
+   "end_shot": "EP1N-20-02",
+   "end": 4.26,
+   "sound": "asteroid_whoosh",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "why": "同一顆已經逼近變大，呼嘯轟隆接著長大、音量升到 low，撐住「越來越近」的壓迫；仍在旁白時間內所以不超過 low，結束在旁白講完的 4.26 秒讓位給火焰轟鳴"
+  },
+  {
+   "shot": "EP1N-20-02",
+   "start": 4.26,
+   "end_shot": "EP1N-20-02",
+   "end": null,
+   "sound": "fire_roar",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.1,
+   "fade_out": 1.2,
+   "why": "整集的懸念高潮：火球壓向鏡頭的定格瞬間用一記大聲火焰轟鳴收尾；刻意放在旁白（0~4.26）講完後的空檔，不蓋旁白，讓觀眾帶著威脅感結束這一集"
+  }
+ ]
+}

@@ -1,0 +1,254 @@
+{
+ "scene_id": "EP1N-09",
+ "notes": "全場墊河岸環境音；聲音主軸是『暴龍一步步逼近』——第一次探頭用鼻息（首次揭露）、彎樹是笑點、咬空的牙齒相撞是高潮。所有大聲的吼叫、尖叫、咬合都卡在旁白講完後的空檔，旁白時間內只墊小聲的鼻息與環境音。",
+ "sounds": [
+  {
+   "key": "river_ambience",
+   "layer": "ambience",
+   "zh": "河岸環境音（流水＋遠處水鳥）",
+   "search_en": ["river stream ambience", "riverbank nature background", "forest river ambience"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_sniff",
+   "layer": "event",
+   "zh": "暴龍鼻孔用力嗅聞聲",
+   "search_en": ["large animal sniffing", "big beast snort sniff", "elephant nostril breath"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "deep heavy wet nostril sniffing of a huge predatory dinosaur, slow inhale, close up, menacing"
+  },
+  {
+   "key": "trex_breath_rumble",
+   "layer": "event",
+   "zh": "暴龍低沉胸腔呼吸、悶吼",
+   "search_en": ["large predator breathing low", "deep animal breathing growl", "monster low breathing"],
+   "duration_sec": [3, 15],
+   "loop": true,
+   "generate_en": "slow deep rumbling breathing of a giant tyrannosaur, low chest growl between breaths, heavy and calm"
+  },
+  {
+   "key": "trex_roar_growl",
+   "layer": "event",
+   "zh": "暴龍張口威嚇低吼",
+   "search_en": ["dinosaur roar", "large beast roar growl", "monster roar"],
+   "duration_sec": [2, 6],
+   "loop": false,
+   "generate_en": "menacing low roar-growl of a giant tyrannosaurus rex opening its jaws, threatening, huge and resonant"
+  },
+  {
+   "key": "teeth_snap",
+   "layer": "event",
+   "zh": "巨顎咬合、牙齒相撞（咬空）",
+   "search_en": ["jaw snap bite", "teeth clack snap", "alligator jaw snap"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": "huge dinosaur jaws snapping shut on empty air, one loud bony teeth clack, powerful whoosh then clack"
+  },
+  {
+   "key": "tree_creak_bend",
+   "layer": "event",
+   "zh": "細樹被壓彎的吱嘎聲",
+   "search_en": ["tree creak bend", "thin wood bending groan", "branch creak"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_scream",
+   "layer": "reaction",
+   "zh": "HERO 驚恐短尖叫（無台詞）",
+   "search_en": ["man scream short", "male yelp fright", "guy screaming scared"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_gasp",
+   "layer": "reaction",
+   "zh": "HERO 倒吸一口氣（無台詞）",
+   "search_en": ["man gasp inhale", "male scared gasp", "sharp breath fright"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "run_footsteps",
+   "layer": "event",
+   "zh": "HERO 拔腿奔跑腳步",
+   "search_en": ["running footsteps dirt", "man running fast", "footsteps running mud"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "herd_alert",
+   "layer": "reaction",
+   "zh": "對岸鴨嘴龍群警覺的集體叫聲",
+   "search_en": ["geese honk alarm", "bird flock alert call", "animal herd call"],
+   "duration_sec": [1, 5],
+   "loop": false,
+   "generate_en": "a herd of duck-billed dinosaurs suddenly lifting their heads, soft low alert honking calls across a wide river"
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-09-01",
+   "start": 0.0,
+   "end_shot": "EP1N-09-17",
+   "end": 2.6,
+   "sound": "river_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 0.5,
+   "why": "整場都在河岸蕨類叢，用流水＋水鳥墊出戶外河邊的空間感，全程極小聲不壓旁白"
+  },
+  {
+   "shot": "EP1N-09-04",
+   "start": 0.8,
+   "end_shot": "EP1N-09-04",
+   "end": null,
+   "sound": "herd_alert",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.5,
+   "why": "對岸鴨嘴龍群同時抬頭停止喝水、全望向 HERO 背後——這是危機逼近的第一個暗示，一聲集體警覺叫聲強化『牠們發現了什麼』，小聲墊在旁白下不搶詞"
+  },
+  {
+   "shot": "EP1N-09-05",
+   "start": 3.1,
+   "end_shot": "EP1N-09-05",
+   "end": null,
+   "sound": "hero_gasp",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "旁白 3.36 秒講完後的空檔，HERO 不情願回頭時倒吸一口氣，接住『還是回頭了』的恐懼，不與旁白重疊"
+  },
+  {
+   "shot": "EP1N-09-06",
+   "start": 1.2,
+   "end_shot": "EP1N-09-06",
+   "end": 4.32,
+   "sound": "trex_sniff",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.3,
+   "why": "暴龍第一次露面（頭從樹後探出）＋旁白明說『牠沒有吼叫，牠在聞』——鼻息是這一格的核心，少了它揭露就沒重量；壓低音量讓旁白聽得清楚"
+  },
+  {
+   "shot": "EP1N-09-06",
+   "start": 1.2,
+   "end_shot": "EP1N-09-07",
+   "end": 9.56,
+   "sound": "trex_breath_rumble",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.5,
+   "fade_out": 1.0,
+   "why": "從探頭到身高對比這兩格，用低沉呼吸悶吼墊出暴龍就在眼前的龐大壓迫感，持續但很小聲不壓旁白"
+  },
+  {
+   "shot": "EP1N-09-07",
+   "start": 0.0,
+   "end_shot": "EP1N-09-07",
+   "end": null,
+   "sound": "hero_gasp",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "揭露身高落差的錨點鏡頭，HERO 仰頭看到只到膝蓋時倒吸一口氣，強化渺小與驚嚇"
+  },
+  {
+   "shot": "EP1N-09-13",
+   "start": 1.4,
+   "end_shot": "EP1N-09-13",
+   "end": 2.76,
+   "sound": "tree_creak_bend",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "笑點鏡頭『這棵樹比你想的還要軟』的視覺落差要靠吱嘎彎折聲才成立，少了這聲笑點會變弱；在旁白 2.46 秒講完前後讓樹聲帶到最彎"
+  },
+  {
+   "shot": "EP1N-09-13",
+   "start": 2.4,
+   "end_shot": "EP1N-09-13",
+   "end": null,
+   "sound": "hero_scream",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "樹彎下去把 HERO 甩出去，他睜大眼張口尖叫；放在旁白講完後的空檔，不蓋旁白"
+  },
+  {
+   "shot": "EP1N-09-15",
+   "start": 3.6,
+   "end_shot": "EP1N-09-15",
+   "end": 4.16,
+   "sound": "trex_roar_growl",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.1,
+   "fade_out": 0.1,
+   "why": "暴龍張到最大口逼近，旁白 3.86 秒講完後補一聲威嚇低吼，替下一格的咬合蓄勢，卡在旁白之後"
+  },
+  {
+   "shot": "EP1N-09-16",
+   "start": 7.94,
+   "end_shot": "EP1N-09-16",
+   "end": null,
+   "sound": "teeth_snap",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "全場高潮『咬了個空』——牙齒喀地相撞是這一刻的關鍵，必須最大聲；精準卡在旁白 7.94 秒結束後的空檔爆出，不壓旁白"
+  },
+  {
+   "shot": "EP1N-09-16",
+   "start": 7.94,
+   "end_shot": "EP1N-09-16",
+   "end": null,
+   "sound": "hero_scream",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "咬合同時 HERO 從嘴下墜落尖叫，與牙齒相撞疊在一起強化驚險，同樣放在旁白之後"
+  },
+  {
+   "shot": "EP1N-09-17",
+   "start": 1.4,
+   "end_shot": "EP1N-09-17",
+   "end": 2.6,
+   "sound": "run_footsteps",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.1,
+   "fade_out": 0.0,
+   "why": "旁白『拔腿就跑』講完後，HERO 落地狂奔的腳步帶出下一場追逐的動勢"
+  },
+  {
+   "shot": "EP1N-09-17",
+   "start": 1.4,
+   "end_shot": "EP1N-09-17",
+   "end": null,
+   "sound": "hero_scream",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "HERO 爬起狂奔時張口尖叫，接住逃命的情緒，放在旁白講完後"
+  }
+ ]
+}

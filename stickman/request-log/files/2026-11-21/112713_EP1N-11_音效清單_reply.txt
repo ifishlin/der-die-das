@@ -1,0 +1,191 @@
+{
+ "scene_id": "EP1N-11",
+ "notes": "追逐的收尾場：靠暴龍的沉重踏步和吃力喘氣鋪出「牠跑不動了」的轉折，相機快門是任務完成的關鍵點，結尾用定格音接下一場的對峙。旁白幾乎鋪滿每格，吼叫類不放，重音（快門、定格）都塞在旁白講完後的空檔。",
+ "sounds": [
+  {
+   "key": "forest_amb",
+   "layer": "ambience",
+   "zh": "林間小路環境音（鳥鳴、風吹樹葉）",
+   "search_en": ["forest ambience birds", "woodland wind leaves"],
+   "duration_sec": [20, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_stomp",
+   "layer": "event",
+   "zh": "巨型暴龍沉重踏步、地面震動",
+   "search_en": ["heavy footstep thud", "monster stomp ground shake", "deep impact boom"],
+   "duration_sec": [1, 8],
+   "loop": true,
+   "generate_en": "a massive seven-ton dinosaur's heavy footsteps, each stomp a deep ground-shaking thud with a low rumble"
+  },
+  {
+   "key": "trex_pant",
+   "layer": "event",
+   "zh": "巨型暴龍吃力的大口喘氣",
+   "search_en": ["large animal heavy breathing", "monster panting breath", "big creature exhausted breath"],
+   "duration_sec": [3, 15],
+   "loop": true,
+   "generate_en": "a huge exhausted dinosaur breathing heavily, deep labored open-mouth panting with a faint low growl on each exhale"
+  },
+  {
+   "key": "hero_pant",
+   "layer": "reaction",
+   "zh": "HERO 奔跑中急促喘氣（無台詞）",
+   "search_en": ["man panting running", "person out of breath gasp"],
+   "duration_sec": [2, 10],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_shutter",
+   "layer": "event",
+   "zh": "小相機快門喀嚓聲",
+   "search_en": ["camera shutter click", "dslr single shot click"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_taunt",
+   "layer": "reaction",
+   "zh": "HERO 得意的短促哼笑（無台詞）",
+   "search_en": ["man triumphant huff", "playful cocky grunt"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_hit",
+   "layer": "transition",
+   "zh": "定格瞬間的頓音（短促撞擊＋凝結感）",
+   "search_en": ["freeze frame hit", "cinematic impact stab", "braam short hit"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "a short punchy freeze-frame impact, a tight thud that suddenly stops and holds"
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-11-01",
+   "start": 0.0,
+   "end_shot": "EP1N-11-06",
+   "end": 5.16,
+   "sound": "forest_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.5,
+   "why": "整場都在林間小路，墊一層森林底噪讓追逐有地點感；全程小聲不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-11-01",
+   "start": 0.0,
+   "end_shot": "EP1N-11-01",
+   "end": 3.9,
+   "sound": "trex_stomp",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "旁白正說「地面每震動一下」，必須聽到暴龍一步步沉重的踏步聲才成立；壓在 low 不蓋旁白，節奏式鋪在 0～3.9 秒。"
+  },
+  {
+   "shot": "EP1N-11-01",
+   "start": 0.0,
+   "end_shot": "EP1N-11-01",
+   "end": 3.9,
+   "sound": "hero_pant",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.2,
+   "fade_out": 0.3,
+   "why": "HERO 張口喘氣拚命衝，墊一層急促呼吸加緊張感；bg 不干擾旁白。"
+  },
+  {
+   "shot": "EP1N-11-02",
+   "start": 0.0,
+   "end_shot": "EP1N-11-02",
+   "end": 12.54,
+   "sound": "trex_pant",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.8,
+   "why": "本格是全片轉折——暴龍跑不動了。旁白講「速度慢下來、骨頭撐不住」時，必須聽到牠吃力的大口喘氣才有說服力；low 墊在旁白底下。"
+  },
+  {
+   "shot": "EP1N-11-02",
+   "start": 0.0,
+   "end_shot": "EP1N-11-02",
+   "end": 7.5,
+   "sound": "trex_stomp",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 1.0,
+   "why": "從奔跑降成吃力半走，踏步由急轉緩、逐漸拖沓，強化「慢下來」；加了更好，不加也行。"
+  },
+  {
+   "shot": "EP1N-11-03",
+   "start": 0.0,
+   "end_shot": "EP1N-11-03",
+   "end": 4.9,
+   "sound": "hero_pant",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.2,
+   "fade_out": 0.3,
+   "why": "HERO 還在邊跑邊回頭、手發抖，墊一層喘氣維持動作的緊繃；bg 不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-11-03",
+   "start": 4.98,
+   "end_shot": "EP1N-11-03",
+   "end": null,
+   "sound": "camera_shutter",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "任務的關鍵動作「按下了快門」，一聲清脆快門是這場的重點 beat；放在旁白講完（4.98 秒）後的空檔，不被人聲蓋掉。"
+  },
+  {
+   "shot": "EP1N-11-05",
+   "start": 3.26,
+   "end_shot": "EP1N-11-05",
+   "end": null,
+   "sound": "hero_taunt",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "HERO 站上倒木得意揮手道別，一聲短促的哼笑是這裡的笑點；放在旁白講完（3.26 秒）後的空檔，不加也可以。"
+  },
+  {
+   "shot": "EP1N-11-06",
+   "start": 0.0,
+   "end_shot": "EP1N-11-06",
+   "end": 4.86,
+   "sound": "trex_pant",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.5,
+   "fade_out": 0.5,
+   "why": "特寫暴龍喘著氣、眼神受傷的情感收尾；旁白說「喘著氣看你」時必須聽到胸口起伏的沉重呼吸，少了這聲這一刻會變平；low 墊底不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-11-06",
+   "start": 4.86,
+   "end_shot": "EP1N-11-06",
+   "end": null,
+   "sound": "freeze_hit",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "本場結尾要接下一場「倒木上的對峙定格」，用一記頓音把畫面凝住、順勢轉場；放在旁白講完（4.86 秒）後，避開人聲。"
+  }
+ ]
+}

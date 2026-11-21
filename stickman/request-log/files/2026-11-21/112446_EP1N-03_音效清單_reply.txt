@@ -1,0 +1,115 @@
+```json
+{
+ "scene_id": "EP1N-03",
+ "notes": "安靜的校園早晨，整場靠環境音墊底、拖沓腳步鋪走路；重點只在兩個角色反應——開場的疲憊嘆氣（點出認命去上班的笑點）和結尾伸手碰門把前的緊張吞口水（警告標誌的猶豫高潮），都放在旁白講完的空檔，避免蓋到旁白。",
+ "sounds": [
+  {
+   "key": "campus_morning_amb",
+   "layer": "ambience",
+   "zh": "校園早晨環境音（鳥鳴、微風、遠處人聲）",
+   "search_en": ["campus morning ambience", "park birds light wind", "quiet morning outdoor ambience"],
+   "duration_sec": [20, 90],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "footsteps_walk",
+   "layer": "event",
+   "zh": "步道上緩慢拖沓的腳步聲",
+   "search_en": ["slow footsteps pavement", "tired walking footsteps", "footsteps concrete path"],
+   "duration_sec": [3, 20],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "tired_sigh",
+   "layer": "reaction",
+   "zh": "疲憊的嘆氣（男性，無台詞）",
+   "search_en": ["male tired sigh", "weary exhale", "reluctant sigh"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "nervous_gulp",
+   "layer": "reaction",
+   "zh": "緊張的吞口水／屏息（男性，無台詞）",
+   "search_en": ["nervous gulp swallow", "hesitant breath hold", "anxious inhale male"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "door_handle",
+   "layer": "event",
+   "zh": "手碰到老舊金屬門把的輕響",
+   "search_en": ["old metal door handle touch", "door knob creak light", "hand on door handle"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-03-01",
+   "start": 0.0,
+   "end_shot": "EP1N-03-03",
+   "end": 3.76,
+   "sound": "campus_morning_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.8,
+   "why": "整場都在戶外校園，墊一層很小聲的早晨環境音讓地點成立；音量 bg 不蓋旁白"
+  },
+  {
+   "shot": "EP1N-03-01",
+   "start": 0.0,
+   "end_shot": "EP1N-03-02",
+   "end": 3.76,
+   "sound": "footsteps_walk",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.4,
+   "why": "01、02 格 HERO 持續在走（拖沓→走向小屋），腳步聲貼著走路；03 格他站定故不延伸"
+  },
+  {
+   "shot": "EP1N-03-01",
+   "start": 2.3,
+   "end_shot": "EP1N-03-01",
+   "end": null,
+   "sound": "tired_sigh",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "這一格的重點是肩膀微垮、腳步拖沓的認命感，一聲疲憊嘆氣點出角色不想上班的笑點；放在旁白 2.26 講完後的空檔，不蓋旁白"
+  },
+  {
+   "shot": "EP1N-03-03",
+   "start": 3.5,
+   "end_shot": "EP1N-03-03",
+   "end": null,
+   "sound": "nervous_gulp",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "全場的情緒高潮：面對貼滿警告標誌的門、猶豫要不要開，一聲緊張吞口水把猶豫演出來；放在旁白 3.46 講完後的空檔"
+  },
+  {
+   "shot": "EP1N-03-03",
+   "start": 3.6,
+   "end_shot": "EP1N-03-03",
+   "end": null,
+   "sound": "door_handle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "HERO 伸手想去碰門把，輕輕一聲金屬門把聲收尾並銜接下一場（開門後 PROF 興奮宣布）；不加也行故列 optional"
+  }
+ ]
+}
+```

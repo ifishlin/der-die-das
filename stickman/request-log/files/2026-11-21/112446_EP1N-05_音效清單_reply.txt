@@ -1,0 +1,62 @@
+{
+ "scene_id": "EP1N-05",
+ "notes": "俯瞰古地圖的科普插圖，旁白幾乎鋪滿整場，整體非常安靜；唯一的聲音重點是結尾森林裡的藍光閃現——它是切進第 6 場墜地點的轉場錨點，一定要有。其餘只墊一層幾乎聽不到的高空空氣聲當氣氛。",
+ "sounds": [
+  {
+   "key": "map_air_ambience",
+   "layer": "ambience",
+   "zh": "高空／空曠大地的微弱空氣聲",
+   "search_en": ["high altitude wind ambience", "soft airy drone ambience", "wide open space wind faint"],
+   "duration_sec": [20, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "blue_light",
+   "layer": "transition",
+   "zh": "森林裡的藍光閃現（時空降落）",
+   "search_en": ["magic shimmer sparkle", "sci-fi portal whoosh", "time warp whoosh"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "a soft ethereal sci-fi blue light shimmer with a short rising time-warp whoosh, magical, airy, lands with a gentle sparkle"
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-05-01",
+   "start": 0.0,
+   "end_shot": "EP1N-05-02",
+   "end": 2.68,
+   "sound": "map_air_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 0.5,
+   "why": "整段是俯瞰大陸的靜止插圖，墊一層幾乎聽不到的高空空氣聲避免畫面死寂，音量壓到最低不蓋旁白；可有可無，故 optional"
+  },
+  {
+   "shot": "EP1N-05-01",
+   "start": 6.5,
+   "end_shot": "EP1N-05-01",
+   "end": null,
+   "sound": "blue_light",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.4,
+   "why": "旁白講到「就掉在西邊這一半」（約 6s 起）正指向西部森林那個發光亮點，給一聲極輕的藍光微光呼應亮點；在旁白內只能小聲，加了更清楚、不加也行"
+  },
+  {
+   "shot": "EP1N-05-02",
+   "start": 2.3,
+   "end_shot": "EP1N-06-01",
+   "end": 0.5,
+   "sound": "blue_light",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.1,
+   "fade_out": 0.4,
+   "why": "林冠間閃過的藍光是切進第 6 場 HERO 墜地的轉場錨點，少了它這個切換會很突兀；特意放在旁白講完（2.38s）之後才放大聲，並讓尾音跨進下一格墜地那一瞬間，把兩場接起來"
+  }
+ ]
+}

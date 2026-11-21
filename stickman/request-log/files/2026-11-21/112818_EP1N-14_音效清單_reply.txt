@@ -1,0 +1,272 @@
+{
+ "scene_id": "EP1N-14",
+ "notes": "黃昏森林先鋪蟲鳴鳥叫的環境底，到 14-15「蟲不叫了鳥也不叫了」硬切成靜默，是察覺大魔王的關鍵反轉；全場兩個實體重音為 14-10 腫頭龍撞樹的高潮撞擊、14-16 青少年暴龍登場的低頻喉音，其餘恐龍動作與角色反應都放小聲、讓旁白清楚。",
+ "sounds": [
+  {
+   "key": "forest_dusk_bugs",
+   "layer": "ambience",
+   "zh": "黃昏森林蟲鳴鳥叫環境音",
+   "search_en": ["forest evening ambience insects", "dusk forest birds crickets", "woodland ambience bugs"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "raptor_vocal",
+   "layer": "event",
+   "zh": "盜龍羽毛炸開與低嘶吼",
+   "search_en": ["raptor screech dinosaur", "bird of prey screech", "aggressive reptile hiss"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "A feathered raptor dinosaur flaring its feathers with a low aggressive hiss and screech, bird-reptile vocalization"
+  },
+  {
+   "key": "stun_click_dead",
+   "layer": "event",
+   "zh": "電擊槍沒電的空按聲",
+   "search_en": ["switch click dead", "taser trigger click", "plastic button click"],
+   "duration_sec": [0.3, 1],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "throw_thunk",
+   "layer": "event",
+   "zh": "電擊槍打中頭的悶響",
+   "search_en": ["object hit head thud", "light hollow bonk", "small impact thunk"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "pachy_charge_steps",
+   "layer": "event",
+   "zh": "腫頭龍低頭衝刺的沉重腳步",
+   "search_en": ["heavy footsteps charge", "large animal running thuds", "big creature gallop"],
+   "duration_sec": [2, 8],
+   "loop": true,
+   "generate_en": "Heavy two-legged dinosaur galloping charge, thudding weighty footfalls building up"
+  },
+  {
+   "key": "wood_crash",
+   "layer": "event",
+   "zh": "撞上大樹幹的撞擊與木頭裂響",
+   "search_en": ["heavy body slam wood", "tree trunk hit crack", "wood crash impact"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "struthio_snatch",
+   "layer": "event",
+   "zh": "似鴕龍一口叼走帽子",
+   "search_en": ["bird beak snap", "quick snatch whoosh", "fabric grab peck"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": "A large ostrich-like dinosaur quickly snatching a cloth hat with its beak, fast grab"
+  },
+  {
+   "key": "dino_scatter_run",
+   "layer": "event",
+   "zh": "三隻恐龍同時爆衝四散的腳步",
+   "search_en": ["animals running away", "stampede footsteps flee", "multiple heavy footfalls"],
+   "duration_sec": [2, 6],
+   "loop": false,
+   "generate_en": "Several large two-legged dinosaurs bursting away in different directions at once, rapid scattering thuds"
+  },
+  {
+   "key": "teen_trex_growl",
+   "layer": "event",
+   "zh": "青少年暴龍低頻喉音與沉重呼吸",
+   "search_en": ["dinosaur low growl rumble", "predator deep breathing", "big cat low growl"],
+   "duration_sec": [3, 20],
+   "loop": true,
+   "generate_en": "A young T-rex low menacing growl and deep heavy breathing lurking in shadow, large predator rumble"
+  },
+  {
+   "key": "hero_gasp",
+   "layer": "reaction",
+   "zh": "HERO 驚恐倒抽一口氣（無台詞）",
+   "search_en": ["man gasp startle", "male scared inhale", "person frightened gasp"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_whiff",
+   "layer": "reaction",
+   "zh": "HERO 雙手撲空的懊惱悶哼（無台詞）",
+   "search_en": ["man short grunt", "male frustrated grunt", "disappointed huff"],
+   "duration_sec": [0.5, 1.5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_run_pant",
+   "layer": "reaction",
+   "zh": "HERO 起跑的喘息（無台詞）",
+   "search_en": ["man running panting", "male breathing run", "person panting fast"],
+   "duration_sec": [2, 8],
+   "loop": true,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-14-01",
+   "start": 0.0,
+   "end_shot": "EP1N-14-15",
+   "end": 0.0,
+   "sound": "forest_dusk_bugs",
+   "priority": "must",
+   "volume": "bg",
+   "fade_in": 1.5,
+   "fade_out": 0.0,
+   "why": "整段墊底的黃昏森林蟲鳴鳥叫；在 14-15 旁白「蟲不叫了，鳥也不叫了」的瞬間硬切成無聲，這個突如其來的靜默就是主角察覺危險逼近的反轉——沒有先鋪這層底，就沒有東西可以『停下來』。"
+  },
+  {
+   "shot": "EP1N-14-01",
+   "start": 3.5,
+   "end_shot": "EP1N-14-01",
+   "end": null,
+   "sound": "raptor_vocal",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "第一隻恐龍登場：對到旁白「全身都是羽毛」時盜龍羽毛炸開、發出低嘶，點出牠的威嚇；因為整格有旁白，壓低音量不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-14-03",
+   "start": 0.3,
+   "end_shot": "EP1N-14-03",
+   "end": null,
+   "sound": "stun_click_dead",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "why": "笑點：按下開關卻只有一聲空按、沒有電流聲，對上旁白「……喀。電量，零」，用『該有電卻沒有』的反差加強笑果。"
+  },
+  {
+   "shot": "EP1N-14-05",
+   "start": 4.4,
+   "end_shot": "EP1N-14-05",
+   "end": null,
+   "sound": "throw_thunk",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "電擊槍丟出去正好打中盜龍額頭的悶響，放在旁白「打中牠的頭」講完後的空檔落下，剛好銜接下一格盜龍面無表情的『就這樣喔？』。"
+  },
+  {
+   "shot": "EP1N-14-09",
+   "start": 1.0,
+   "end_shot": "EP1N-14-10",
+   "end": 2.86,
+   "sound": "pachy_charge_steps",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.0,
+   "why": "腫頭龍低頭直衝的沉重腳步，帶出衝刺速度與重量，一路跨到 14-10 撞樹前戛然而止；旁白期間壓低避免搶話。"
+  },
+  {
+   "shot": "EP1N-14-10",
+   "start": 2.86,
+   "end_shot": "EP1N-14-11",
+   "end": 0.6,
+   "sound": "wood_crash",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.6,
+   "why": "全場高潮與最大物理笑點：腫頭龍整顆骨頂撞進大樹幹。放在旁白說完『……大樹幹』的瞬間落下當重音，少了這一撞笑點就垮了；餘響拖進下一格再淡出。"
+  },
+  {
+   "shot": "EP1N-14-12",
+   "start": 2.0,
+   "end_shot": "EP1N-14-12",
+   "end": null,
+   "sound": "struthio_snatch",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "帽子被一口叼走的瞬間——這之後主角整場（及後續）都是光頭，聲音點出這個造型轉變；在旁白下壓低為短促一下。"
+  },
+  {
+   "shot": "EP1N-14-12",
+   "start": 2.3,
+   "end_shot": "EP1N-14-12",
+   "end": null,
+   "sound": "hero_whiff",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "緊接叼帽、HERO 雙手撲空的懊惱悶哼（無台詞），強化撲空的喜感。"
+  },
+  {
+   "shot": "EP1N-14-13",
+   "start": 0.5,
+   "end_shot": "EP1N-14-13",
+   "end": null,
+   "sound": "hero_gasp",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "被三隻恐龍團團圍住、蹲低抱頭的驚恐倒抽氣（無台詞），帶出被包圍的壓迫；旁白期間壓低。"
+  },
+  {
+   "shot": "EP1N-14-14",
+   "start": 0.5,
+   "end_shot": "EP1N-14-14",
+   "end": 3.2,
+   "sound": "dino_scatter_run",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.6,
+   "why": "三隻恐龍同時往三個方向爆衝離開的腳步，之後立刻接 14-15 的全面靜默，用『一陣亂跑→突然安靜』做出反差。"
+  },
+  {
+   "shot": "EP1N-14-16",
+   "start": 0.0,
+   "end_shot": "EP1N-14-16",
+   "end": 15.34,
+   "sound": "teen_trex_growl",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 2.0,
+   "fade_out": 0.0,
+   "why": "大魔王登場：黑影裡青少年暴龍的低頻喉音與沉重呼吸墊在整段旁白底下，營造壓迫與危險。低頻不蓋旁白，但少了牠就沒有逼近感。"
+  },
+  {
+   "shot": "EP1N-14-16",
+   "start": 15.04,
+   "end_shot": "EP1N-14-17",
+   "end": 0.6,
+   "sound": "teen_trex_growl",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "旁白講完、切到四目相對前補一記略大的低吼，把壓迫感頂上去，順勢推進 14-17 的對視。"
+  },
+  {
+   "shot": "EP1N-14-17",
+   "start": 3.0,
+   "end_shot": "EP1N-14-17",
+   "end": 4.64,
+   "sound": "hero_run_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.0,
+   "why": "對上眼後『直接拔腿就跑』：起跑的喘息（無台詞），銜接下一場 EP1N-15 的逃命追逐，不做剪輯轉場音、用角色動作自然過場。"
+  }
+ ]
+}

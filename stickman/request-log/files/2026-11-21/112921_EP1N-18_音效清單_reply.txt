@@ -1,0 +1,167 @@
+{
+ "scene_id": "EP1N-18",
+ "notes": "安靜的夜晚實驗室收尾場，以機器嗡嗡聲墊底。角色不說話，靠 PROF 的大笑和 HERO 結尾的無奈嘆氣撐戲；相機摔裂的揭露是笑點，給一下裂屏雜音。旁白幾乎鋪滿每格，吵的聲音都塞進句尾空檔。",
+ "sounds": [
+  {
+   "key": "lab_hum",
+   "layer": "ambience",
+   "zh": "實驗室時光機低鳴嗡嗡聲",
+   "search_en": ["machine hum loop", "sci-fi device idle hum", "electrical room hum"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "prof_laugh",
+   "layer": "reaction",
+   "zh": "博士開心的大笑（無台詞）",
+   "search_en": ["happy man laugh", "delighted chuckle male", "cheerful laughter"],
+   "duration_sec": [1, 5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_broken",
+   "layer": "event",
+   "zh": "摔裂相機的碎屏雜音與零件鬆動聲",
+   "search_en": ["cracked screen glitch", "broken electronics rattle", "glass crackle debris"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "paper_handle",
+   "layer": "event",
+   "zh": "抽紙鈔／收據／任務單的紙張摩擦聲",
+   "search_en": ["paper rustle handling", "pull money envelope", "paper slip out"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "items_clink",
+   "layer": "event",
+   "zh": "牙齒與相機交到手上的碰觸聲",
+   "search_en": ["small objects handover", "bone and plastic clink", "hand off items thud"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_sigh",
+   "layer": "reaction",
+   "zh": "HERO 無奈翻白眼的嘆氣（無台詞）",
+   "search_en": ["exasperated sigh male", "annoyed exhale", "tired groan sigh"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "time_whoosh",
+   "layer": "transition",
+   "zh": "跳到下一場的轉場聲（紙張翻過／時間流逝）",
+   "search_en": ["page turn whoosh", "transition swoosh soft", "time passing whoosh"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-18-01",
+   "start": 0.0,
+   "end_shot": "EP1N-18-10",
+   "end": 5.02,
+   "sound": "lab_hum",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.5,
+   "why": "整場都在實驗室，時光機圓環在背景，墊一層極小的機器嗡嗡聲定住地點，不搶旁白。"
+  },
+  {
+   "shot": "EP1N-18-01",
+   "start": 3.4,
+   "end_shot": "EP1N-18-02",
+   "end": 2.2,
+   "sound": "prof_laugh",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.4,
+   "why": "PROF 俯身大笑是他第一次露出開心反應，角色沒有台詞，笑聲是他唯一的情緒表達；旁白『開心得不得了』正好配上，壓低音量從句尾空檔接進去。"
+  },
+  {
+   "shot": "EP1N-18-02",
+   "start": 3.3,
+   "end_shot": "EP1N-18-02",
+   "end": null,
+   "sound": "items_clink",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "牙齒和相機交到 PROF 手上的瞬間給一下碰觸聲，放在旁白講完後的句尾空檔，點出『交付』動作。"
+  },
+  {
+   "shot": "EP1N-18-04",
+   "start": 4.72,
+   "end_shot": "EP1N-18-04",
+   "end": null,
+   "sound": "camera_broken",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "相機摔裂是這場的笑點揭露，旁白『已經不太算是相機了』講完後補一下裂屏雜音與零件鬆動聲，坐實『壞掉』的揭露，放在句尾空檔不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-18-05",
+   "start": 0.8,
+   "end_shot": "EP1N-18-05",
+   "end": 2.2,
+   "sound": "paper_handle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "鈔票被抽出、收據塞進信封的偷換動作，小聲的紙張摩擦聲墊在旁白底下強化『抽走換成收據』的手感。"
+  },
+  {
+   "shot": "EP1N-18-08",
+   "start": 0.6,
+   "end_shot": "EP1N-18-08",
+   "end": 2.0,
+   "sound": "paper_handle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "PROF 從外套掏出下一張任務單，紙張聲配合『又拿出下一張任務單』的動作，提示新任務登場。"
+  },
+  {
+   "shot": "EP1N-18-10",
+   "start": 4.58,
+   "end_shot": "EP1N-18-10",
+   "end": null,
+   "sound": "hero_sigh",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "收尾 HERO 仰頭翻白眼、對空頭支票一臉無奈，角色沒台詞，一聲嘆氣是他唯一能收這個笑點的反應，放在旁白講完後的空檔。"
+  },
+  {
+   "shot": "EP1N-18-10",
+   "start": 4.9,
+   "end_shot": "EP1N-19-01",
+   "end": 0.6,
+   "sound": "time_whoosh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "本場結束要跳到下一場的逾期帳單，給一個輕轉場聲帶過時間流逝，銜接『又欠一筆』的後續。"
+  }
+ ]
+}

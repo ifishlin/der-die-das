@@ -61,7 +61,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <tr><td>17</td><td>D</td><td><a href="#s17">挑圖、下載、配音、壓粗剪</a> <span class=chg>改</span></td><td class=pp>每個鏡頭挑一條、下載 2K、配音，壓成粗剪給你看。</td><td class=pp>停：D 分鏡表最上面的粗剪；選用條、配音長度<br><a href="../storyboard-ep1-new/">D 分鏡表</a></td><td class=pp><span class=mut>不送 request：Claude 挑圖；程式下載、配音、組片</span></td><td>✅</td><td>我做；做完停下來給你看粗剪</td><td><code>make_final_*.py、download_scene.py、voice_tools、assemble.py</code></td></tr>
 <tr><td>18</td><td>E</td><td><a href="#s18">改版</a> <span class=chg>改</span></td><td class=pp>照你看粗剪的意見，走四條線之一回頭改，再壓粗剪；循環到你同意定版。</td><td class=pp>停：D 分鏡表的意見欄，寫完複製貼回<br><a href="../storyboard-ep1-new/">D 分鏡表</a></td><td class=pp><span class=mut>不送 request：你寫意見，回到對應的步驟</span></td><td>✅</td><td>你寫意見，我照意見回頭改；循環</td><td><code>—</code></td></tr>
 <tr><td>19</td><td>F</td><td><a href="#s19">動畫</a> <span class=chg>改</span></td><td class=pp>暫不做。</td><td class=pp>暫不做</td><td class=pp><span class=mut>不送 request：暫不做</span></td><td>⏸</td><td>暫不做</td><td><code>—</code></td></tr>
-<tr><td>20</td><td>F</td><td><a href="#s20">音效</a> <span class=chg>改</span></td><td class=pp>定版後配環境音和事件音效。</td><td class=pp>不停</td><td class=pp><span class=mut>不送 request：程式（音效模型）</span></td><td>🧪</td><td>我做；不停</td><td><code>MMAudio、TangoFlux</code></td></tr>
+<tr><td>20</td><td>F</td><td><a href="#s20">音效</a> <span class=chg>改</span></td><td class=pp>模型寫音效清單（request），找素材或生成；定版後放上時間軸。</td><td class=pp>不停</td><td class=pp><b>R20</b> 音效清單（一場一份）<br><a href="../request-log/files/2026-11-21/113422_EP1N-19_音效清單_request.txt" target="_blank">最近一次送出的全文</a><span class=mut>（11-21 11:34・EP1N-19 音效清單）</span></td><td>🧪</td><td>我做；不停</td><td><code>R20 音效清單、Freesound、TangoFlux</code></td></tr>
 <tr><td>21</td><td>F</td><td><a href="#s21">配樂</a> <span class=chg>改</span></td><td class=pp>暫不做。</td><td class=pp>暫不做</td><td class=pp><span class=mut>不送 request：暫不做</span></td><td>⏸</td><td>暫不做</td><td><code>—</code></td></tr>
 <tr><td>22</td><td>F</td><td><a href="#s22">運鏡＋組片</a> <span class=chg>改</span></td><td class=pp>加上鏡頭移動、音效，從定版粗剪組成成片。</td><td class=pp>不停</td><td class=pp><span class=mut>不送 request：程式</span></td><td>🧪</td><td>我做；不停</td><td><code>assemble.py</code></td></tr>
 <tr><td>23</td><td>F</td><td><a href="#s23">看成片</a> <span class=chg>改</span></td><td class=pp>你看完整集；不滿意就回到 19～22 改。</td><td class=pp>停：成片 mp4；問題在對話裡講</td><td class=pp><span class=mut>不送 request：你</span></td><td>✅</td><td>你看；循環</td><td><code>—</code></td></tr>
@@ -238,12 +238,14 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>誰：</b>暫不做。</p>
 <p><b>說明：</b>Flow 動畫要扣點；2026-11-19 使用者定先跳過。</p>
 <h2 id="s20">20. 音效 🧪 <span class="seg">F 成片</span></h2>
-<p class=pp><b>這步在幹嘛：</b>定版後配環境音和事件音效。</p>
+<p class=pp><b>這步在幹嘛：</b>模型寫音效清單（request），找素材或生成；定版後放上時間軸。</p>
 <p class=pp><b>檢查頁：</b>不停</p>
-<p class=pp><b>request：</b><span class=mut>不送 request：程式（音效模型）</span></p>
-<p class="chgline"><span class="chg">改</span> 2026-11-19：定版後才做</p>
-<p><b>誰：</b>我做；不停。<b>　我用：</b><code>MMAudio、TangoFlux</code></p>
-<p><b>怎麼做：</b>環境音每個地點一段（MMAudio 看畫面生）；事件音效對準時間點。不放進粗剪（音效很難做，改版時秒數一變就要重對）。</p>
+<p class=pp><b>request：</b><b>R20</b> 音效清單（一場一份）<br><a href="../request-log/files/2026-11-21/113422_EP1N-19_音效清單_request.txt" target="_blank">最近一次送出的全文</a><span class=mut>（11-21 11:34・EP1N-19 音效清單）</span></p>
+<p class="chgline"><span class="chg">改</span> 2026-11-19：定版後才做；2026-11-21：清單和素材跟秒數無關，可以先做；改寫成實際做法（request 寫清單，不是 MMAudio 看畫面）</p>
+<p><b>誰：</b>我做；不停。<b>　我用：</b><code>R20 音效清單、Freesound、TangoFlux</code></p>
+<p><b>① 音效清單（request）：</b></p><ul><li>一場一份 request 問模型（scripts/make_sfx_request_v2.py）：只看文字不看圖，附每格旁白和講話的秒數、分鏡的動作和構圖。</li><li>模型決定哪裡放聲音：四層（環境、事件、角色反應、轉場），只放重要位置；每個 cue 標 must／optional、音量四級、寫為什麼。</li><li>程式檢查：格號、秒數不超出那格、欄位；大聲音效落在旁白講話中只提醒。轉場可以延續到下一場第一格。</li></ul>
+<p><b>② 素材：</b>照清單關鍵字搜 Freesound CC0，我挑；找不到的（恐龍、時空門）送 Studio TangoFlux 生成。舊 EP1 下載過的音效可以重用。</p>
+<p><b>③ 放上時間軸：</b>定版後才做：每格各自混音，旁白講話時音效自動壓低。不放進粗剪（改版時秒數一變就要重對）。</p>
 <h2 id="s21">21. 配樂 ⏸ <span class="seg">F 成片</span></h2>
 <p class=pp><b>這步在幹嘛：</b>暫不做。</p>
 <p class=pp><b>檢查頁：</b>暫不做</p>

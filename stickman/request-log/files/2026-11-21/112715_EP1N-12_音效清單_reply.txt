@@ -1,0 +1,137 @@
+{
+ "scene_id": "EP1N-12",
+ "notes": "這是一段定格講解（暫停全片插入物理解說），絕大多數格是白底手繪插圖、旁白密集，不放音效；聲音只集中在頭尾兩個劇情定格（12-01 進入定格、12-18 解除定格恢復動態），以及把全集笑點premise立起來的『喘到不行的暴龍』喘氣聲。中間唯一給一記的是九噸暴龍砸進礦井的搞笑撞擊（12-06），其餘插圖小哏（骨頭裂、油罐噴火、灰塵雲）刻意留白給配樂，避免跟密集旁白打架。",
+ "sounds": [
+  {
+   "key": "freeze_in",
+   "layer": "transition",
+   "zh": "劇情定格轉場音（唱片急停／時間凍結）",
+   "search_en": ["record scratch stop", "freeze frame whoosh", "time stop sound effect"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "resume_whoosh",
+   "layer": "transition",
+   "zh": "解除定格、時間恢復流動的轉場音",
+   "search_en": ["time resume whoosh", "reverse whoosh transition", "unfreeze swoosh"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_pant",
+   "layer": "reaction",
+   "zh": "暴龍喘到不行的沉重喘氣聲",
+   "search_en": ["large animal heavy breathing", "exhausted creature panting", "monster breathing low growl"],
+   "duration_sec": [3, 15],
+   "loop": true,
+   "generate_en": "Exhausted giant predatory dinosaur panting heavily after a chase, deep raspy out-of-breath breaths with a low throat rumble, tired and defeated."
+  },
+  {
+   "key": "trex_fall_slam",
+   "layer": "event",
+   "zh": "巨大暴龍像石頭直墜、重重砸進礦井底的撞擊",
+   "search_en": ["heavy body impact thud", "large impact boom debris", "heavy cartoon slam dust"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "A nine-ton creature slamming straight down hard into the bottom of a deep narrow pit, huge dull cartoonish boom with a puff of debris and dust."
+  },
+  {
+   "key": "forest_amb",
+   "layer": "ambience",
+   "zh": "森林環境音（鳥叫、枝葉）",
+   "search_en": ["forest ambience birds", "woodland ambience leaves", "quiet forest background"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": null,
+   "sound": "freeze_in",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "這一格是全片暫停、切入物理講解的定格瞬間；一記唱片急停／凍結音才能讓觀眾知道『畫面停住、現在開始解說』，少了它這個轉場說不通。放在 0.0 的剪點上、音量 mid 很短，隨即讓位給旁白。"
+  },
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.3,
+   "end_shot": "EP1N-12-01",
+   "end": 7.66,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "整集核心笑點就是『這隻暴龍喘到追不動』，定格裡牠側腹喘氣；墊一層小聲喘氣把『牠已經累垮』立起來。壓在旁白底下用 low，不蓋掉台詞。"
+  },
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": 7.66,
+   "sound": "forest_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.5,
+   "why": "定格前後都在森林小路，墊一層幾乎聽不到的森林底音讓這一刻還連著劇情現場；中段白底插圖不鋪。"
+  },
+  {
+   "shot": "EP1N-12-06",
+   "start": 8.6,
+   "end_shot": "EP1N-12-06",
+   "end": null,
+   "sound": "trex_fall_slam",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "這格是整段講解最有重量的搞笑物理哏——九噸暴龍像石頭直直砸進井底；一記沉重撞擊讓『越大越停不住』有實感。壓在旁白『重重砸在井底』收尾處（約 8.6 秒），只剩很短尾巴、mid 音量，note 有提到會輕微壓到旁白尾音。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.0,
+   "end_shot": "EP1N-12-18",
+   "end": null,
+   "sound": "resume_whoosh",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "講解結束、畫面恢復動態回到劇情（與開頭同構圖）；一記時間恢復的轉場音對應開頭的凍結音，告訴觀眾『解說收工、故事繼續』，是這場收束的關鍵轉場。放在 0.0 剪點、很短。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.3,
+   "end_shot": "EP1N-12-18",
+   "end": 4.04,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.4,
+   "why": "恢復動態後暴龍還在喘，收在旁白『不是不想追，是追不動』上，喘氣聲替這句笑點收尾。low 音量不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.0,
+   "end_shot": "EP1N-12-18",
+   "end": 4.04,
+   "sound": "forest_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.4,
+   "fade_out": 0.4,
+   "why": "回到森林小路現場，重新墊回開頭那層森林底音，和下一場（EP1N-13）的實景銜接。"
+  }
+ ]
+}

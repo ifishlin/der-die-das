@@ -1,0 +1,92 @@
+{
+ "scene_id": "EP1N-19",
+ "notes": "深夜安靜室內，兩張定格靜物。聲音極簡：用蓋章聲敲出「又一張帳單」的諷刺重擊，手機充飽的小提示音接反差，其餘靠低到幾乎聽不見的夜間室內底噪墊氣氛。旁白幾乎鋪滿兩格，重音都放在旁白講完的空檔。",
+ "sounds": [
+  {
+   "key": "room_night_tone",
+   "layer": "ambience",
+   "zh": "深夜安靜房間底噪",
+   "search_en": ["quiet room tone night", "night room ambience hum", "crickets outside window"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "stamp_thump",
+   "layer": "event",
+   "zh": "橡皮章蓋紙重擊聲",
+   "search_en": ["rubber stamp thump", "office stamp paper", "stamp document desk"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "phone_full_chime",
+   "layer": "event",
+   "zh": "手機充飽電提示音",
+   "search_en": ["phone charging chime", "battery full notification", "phone notification ding"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "scene_transition",
+   "layer": "transition",
+   "zh": "場景轉場輕掃音",
+   "search_en": ["scene transition whoosh", "shimmer transition sweep", "time transition swish"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-19-01",
+   "start": 0.0,
+   "end_shot": "EP1N-19-02",
+   "end": 5.36,
+   "sound": "room_night_tone",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.5,
+   "why": "深夜獨自一人的房間，墊一層幾乎聽不見的底噪撐住孤單、沒錢的氣氛；室內戲不強求，故列 optional"
+  },
+  {
+   "shot": "EP1N-19-01",
+   "start": 2.42,
+   "end_shot": "EP1N-19-01",
+   "end": null,
+   "sound": "stamp_thump",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "這格的戲眼就是「又多了一張帳單、像又被判了一次刑」。等旁白 2.42 講完立刻一記蓋章重擊，把紅色逾期章敲實，少了它這個諷刺轉折就不成立；放在旁白後的空檔不蓋到旁白"
+  },
+  {
+   "shot": "EP1N-19-02",
+   "start": 2.34,
+   "end_shot": "EP1N-19-02",
+   "end": null,
+   "sound": "phone_full_chime",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "旁白 2.34 說完「手機的電是充飽的」，接一聲充飽提示音點題——全家當裡唯一是滿的；是強化笑點的加分音，不放也行，故 optional，放在旁白後的空檔"
+  },
+  {
+   "shot": "EP1N-19-02",
+   "start": 2.34,
+   "end_shot": "EP1N-20-01",
+   "end": 0.3,
+   "sound": "scene_transition",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "本場是賴帳的生活低點，下一場跳到白堊紀夜空的小行星，一記輕掃轉場音銜接時空跳轉；非必要，故 optional，接在旁白講完之後跨到下一場開頭"
+  }
+ ]
+}

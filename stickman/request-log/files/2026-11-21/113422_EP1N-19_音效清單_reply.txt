@@ -1,0 +1,71 @@
+{
+ "scene_id": "EP1N-19",
+ "notes": "安靜的夜晚房間，兩張定格。只在兩個情緒重點放短音效：帳單上「剛蓋上的逾期章」像判刑的落章聲，以及滿格電手機的充電提示聲（反差笑點）；底下可墊極小聲的夜間房間環境音避免死寂。",
+ "sounds": [
+  {
+   "key": "room_tone_night",
+   "layer": "ambience",
+   "zh": "夜晚安靜房間環境音（含檯燈微弱電流嗡聲）",
+   "search_en": ["quiet room tone night", "indoor ambience silence", "desk lamp hum low"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "overdue_stamp",
+   "layer": "event",
+   "zh": "橡皮逾期章蓋在紙上的落章聲",
+   "search_en": ["rubber stamp thud", "ink stamp paper", "office stamp slam"],
+   "duration_sec": [0.3, 1.0],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "phone_full_chime",
+   "layer": "event",
+   "zh": "手機充電／滿電提示聲",
+   "search_en": ["phone charging chime", "battery full notification", "smartphone short beep"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-19-01",
+   "start": 0.0,
+   "end_shot": "EP1N-19-02",
+   "end": 2.64,
+   "sound": "room_tone_night",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.5,
+   "why": "整場是夜晚的房間，墊一層極小聲的房間底噪＋檯燈嗡聲讓畫面不至於死寂；旁白期間保持 bg 不搶旁白。"
+  },
+  {
+   "shot": "EP1N-19-01",
+   "start": 2.42,
+   "end_shot": "EP1N-19-01",
+   "end": null,
+   "sound": "overdue_stamp",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "這格的戲眼是「剛蓋上的紅色逾期章，像又被判了一次刑」。一聲乾脆的落章聲正好落在旁白『又多了一張帳單』講完的空檔（2.42～2.72），替這個判刑式的隱喻收尾，少了它這張定格就只是張靜圖。"
+  },
+  {
+   "shot": "EP1N-19-02",
+   "start": 2.34,
+   "end_shot": "EP1N-19-02",
+   "end": null,
+   "sound": "phone_full_chime",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "全家當裡唯一滿的就是手機電量，是跟前一張帳單的反差笑點。旁白『手機的電是充飽的』講完後（2.34～2.64）補一聲充電滿格提示，點一下這個反差；不放也能看懂，所以歸 optional。"
+  }
+ ]
+}

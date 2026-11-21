@@ -1,0 +1,125 @@
+{
+ "scene_id": "EP1N-15",
+ "notes": "這是『定格講解』場：時間凍結＋抽象示意圖＋幾乎連續的旁白，所以不鋪環境音（時間停住鋪環境音反而怪）。真正重要的只有頭尾兩個定格轉場（凍結 15-01、恢復 15-12），恢復時帶一聲 TEEN 吼把觀眾拉回追逐；中段『急轉彎』是本場核心概念，在示意圖與 HERO 實作各墊一聲打滑，全部壓在旁白空檔或很小聲，確保旁白清楚。",
+ "sounds": [
+  {
+   "key": "freeze_in",
+   "layer": "transition",
+   "zh": "定格凍結音（急停＋高頻凝住）",
+   "search_en": ["freeze frame sound effect", "time stop impact", "record scratch stop"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": "sudden time-freeze stinger: a sharp whoosh slamming into a sustained frozen high tone, everything stops"
+  },
+  {
+   "key": "freeze_out",
+   "layer": "transition",
+   "zh": "解除定格音（時間回流 whoosh）",
+   "search_en": ["whoosh transition", "time resume swoosh", "reverse whoosh"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": "time un-freeze whoosh, sound and motion rushing back in, releasing the frozen moment into action"
+  },
+  {
+   "key": "teen_snarl",
+   "layer": "event",
+   "zh": "TEEN（掠食恐龍）短促撲擊吼叫",
+   "search_en": ["dinosaur snarl growl", "trex roar short", "deep monster growl"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "short aggressive theropod dinosaur snarl, deep and heavy with weight, lunging attack"
+  },
+  {
+   "key": "hero_gasp",
+   "layer": "reaction",
+   "zh": "HERO 驚恐倒吸一口氣",
+   "search_en": ["male gasp fear", "scared sharp breath in", "person gasp short"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "skid_turn",
+   "layer": "event",
+   "zh": "急煞轉彎打滑揚塵",
+   "search_en": ["foot skid dirt", "slide stop gravel", "skid dust ground"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-15-01",
+   "start": 0.0,
+   "end_shot": "EP1N-15-01",
+   "end": null,
+   "sound": "freeze_in",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "本場開頭把追逐一瞬間凍結成對峙，是最關鍵的轉場；少了這一聲觀眾不知道畫面停住、也接不上旁白『定格。』。擺在 0.0 與定格瞬間同步，壓到 mid 讓 0.9 秒的旁白仍聽得清。"
+  },
+  {
+   "shot": "EP1N-15-03",
+   "start": 0.0,
+   "end_shot": "EP1N-15-03",
+   "end": null,
+   "sound": "hero_gasp",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "定格停在 HERO 驚恐張口喘氣的臉，墊一聲倒吸氣強化恐懼與『只好我們自己來』的轉折；壓到 bg 不蓋旁白，可有可無故列 optional。"
+  },
+  {
+   "shot": "EP1N-15-06",
+   "start": 2.0,
+   "end_shot": "EP1N-15-06",
+   "end": null,
+   "sound": "skid_turn",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "本格是整場核心概念『最後一刻猛地急轉彎』的首次圖示（黑斑羚急轉揚塵），墊一聲打滑讓『轉彎甩開』更具體；低音量壓在旁白下方故 optional。"
+  },
+  {
+   "shot": "EP1N-15-09",
+   "start": 1.5,
+   "end_shot": "EP1N-15-09",
+   "end": null,
+   "sound": "skid_turn",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "第二招 HERO 急煞猛切、TEEN 衝過頭，是急轉概念套回主角身上的實作示範；重複同一聲打滑呼應前面，低音量不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-15-12",
+   "start": 0.9,
+   "end_shot": "EP1N-16-01",
+   "end": 0.5,
+   "sound": "freeze_out",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "解除定格、動作恢復是本場收尾的關鍵轉場，whoosh 把凍結的畫面重新推進、銜接下一場追逐；擺在旁白（0–0.9）講完之後的空檔，可放到最大聲。"
+  },
+  {
+   "shot": "EP1N-15-12",
+   "start": 0.95,
+   "end_shot": "EP1N-16-01",
+   "end": 0.8,
+   "sound": "teen_snarl",
+   "priority": "optional",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "恢復動作同一瞬間 TEEN 再度撲出，補一聲吼重建威脅、把觀眾從講解拉回生死追逐；排在旁白之後、與 whoosh 疊在一起帶進下一場，不擋旁白故列 optional。"
+  }
+ ]
+}

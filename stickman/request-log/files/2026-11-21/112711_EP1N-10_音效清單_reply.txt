@@ -1,0 +1,73 @@
+```json
+{
+  "scene_id": "EP1N-10",
+  "notes": "這是定格講解場，刻意拿掉環境音來凸顯「時間暫停」的感覺；開頭用一個定格音切進講解，結尾用暴龍逼近的低吐息把觀眾拉回危機並接到下一場追逐。中間的嗅聞是選擇性鋪陳。旁白幾乎鋪滿整場，大聲的音效只放在旁白講完後的空檔。",
+  "sounds": [
+    {
+      "key": "freeze_pause",
+      "layer": "transition",
+      "zh": "定格暫停音（唱片急停／定格）",
+      "search_en": ["record scratch stop", "freeze frame sound", "tape stop"],
+      "duration_sec": [0.3, 2],
+      "loop": false,
+      "generate_en": ""
+    },
+    {
+      "key": "trex_sniff",
+      "layer": "event",
+      "zh": "暴龍用力嗅聞（大鼻孔吸氣）",
+      "search_en": ["large animal snort sniff", "big animal nose breathing", "horse snort"],
+      "duration_sec": [1, 4],
+      "loop": false,
+      "generate_en": "Huge dinosaur nostril sniff, heavy wet inhale through enormous nostrils, low and resonant, close up"
+    },
+    {
+      "key": "trex_breath",
+      "layer": "event",
+      "zh": "暴龍逼近的低沉吐息／悶吼",
+      "search_en": ["lion low growl breath", "big cat deep growl", "large animal deep exhale"],
+      "duration_sec": [1, 5],
+      "loop": false,
+      "generate_en": "Massive T-rex low menacing exhale and guttural growl, deep chest resonance, heavy and close to the listener"
+    }
+  ],
+  "cues": [
+    {
+      "shot": "EP1N-10-01",
+      "start": 0.0,
+      "end_shot": "EP1N-10-01",
+      "end": null,
+      "sound": "freeze_pause",
+      "priority": "must",
+      "volume": "mid",
+      "fade_in": 0.0,
+      "fade_out": 0.3,
+      "why": "旁白一開口就是「等一下，先暫停」，畫面同時定格；這個定格音是告訴觀眾劇情被按下暫停、進入講解模式的關鍵轉場，少了它看不出是定格。放在 0.0 和「暫停」同步落點，短促、播完即止，不會壓到後面旁白。"
+    },
+    {
+      "shot": "EP1N-10-03",
+      "start": 0.5,
+      "end_shot": "EP1N-10-03",
+      "end": null,
+      "sound": "trex_sniff",
+      "priority": "optional",
+      "volume": "low",
+      "fade_in": 0.1,
+      "fade_out": 0.4,
+      "why": "這一格主體是暴龍張大鼻孔用力嗅聞蕨類，正在講解牠的鼻子多靈；一聲嗅聞能把「聞味道」具象化。旁白全程在講話，所以只放小聲的 low 墊在底下，不搶旁白。"
+    },
+    {
+      "shot": "EP1N-10-05",
+      "start": 5.2,
+      "end_shot": "EP1N-11-01",
+      "end": 1.5,
+      "sound": "trex_breath",
+      "priority": "must",
+      "volume": "mid",
+      "fade_in": 0.1,
+      "fade_out": 0.6,
+      "why": "講解結束、回到彩色劇情，旁白收在「牠看得一清二楚，也聞得一清二楚」的揭曉句上（5.20 結束）。在旁白講完後的空檔放暴龍逼到屁股邊的低沉吐息，把觀眾從靜止的講解拉回「危機就在眼前」，並一路延伸進下一場追逐（EP1N-11-01）當作橋接；少了它，從定格講解突然跳到追逐會很突兀。"
+    }
+  ]
+}
+```

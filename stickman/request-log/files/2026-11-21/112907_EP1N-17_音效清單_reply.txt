@@ -1,0 +1,344 @@
+{
+ "scene_id": "EP1N-17",
+ "notes": "這場是追逐的收尾與全集笑點，聲音重點在三個撞擊／揭露（暴龍撞石、石頭甦醒、尾錘打飛）和結尾時光隧道的開與關；旁白很滿，所有大聲的撞擊一律排在每格旁白講完後的空檔，腳步、喘氣、咀嚼、按鈕等全壓到很小墊著，不蓋旁白。",
+ "sounds": [
+  {
+   "key": "forest_dusk",
+   "layer": "ambience",
+   "zh": "黃昏森林空地環境音",
+   "search_en": ["forest evening ambience", "dusk woodland crickets birds"],
+   "duration_sec": [30, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_pant",
+   "layer": "reaction",
+   "zh": "HERO 筋疲力竭的喘氣聲",
+   "search_en": ["exhausted heavy breathing", "out of breath panting male"],
+   "duration_sec": [2, 15],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "dino_smash",
+   "layer": "event",
+   "zh": "暴龍全速撞上石頭的重擊",
+   "search_en": ["heavy body slam impact", "large crash thud"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "anky_grumble",
+   "layer": "event",
+   "zh": "甲龍被吵醒的低沉不悅悶吼",
+   "search_en": ["large animal low growl", "monster grumble deep"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "A deep, slow, annoyed low-frequency grumble of a large reptilian dinosaur waking up, heavy and rumbling"
+  },
+  {
+   "key": "tail_whoosh",
+   "layer": "event",
+   "zh": "尾錘揮出的破風聲",
+   "search_en": ["heavy whoosh swing", "large object swing air"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "tail_club_hit",
+   "layer": "event",
+   "zh": "尾錘正中暴龍的重擊",
+   "search_en": ["heavy whack impact", "big blunt hit thump"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "teen_screech",
+   "layer": "event",
+   "zh": "青少年暴龍被打飛的慘叫",
+   "search_en": ["monster screech", "animal roar yelp"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "A sharp pained screech of a mid-sized dinosaur being knocked away, doppler trailing off as it flies"
+  },
+  {
+   "key": "tooth_thud",
+   "layer": "event",
+   "zh": "巨牙彈落到泥地的悶響",
+   "search_en": ["object drop mud thud", "bone drop ground"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_mud_plop",
+   "layer": "event",
+   "zh": "相機掉進泥巴的噗聲",
+   "search_en": ["object splat mud", "plop into mud"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_laugh",
+   "layer": "reaction",
+   "zh": "HERO 得意的無字笑聲",
+   "search_en": ["man happy chuckle", "triumphant laugh no words"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "chip_bag",
+   "layer": "event",
+   "zh": "洋芋片袋子窸窣聲",
+   "search_en": ["potato chip bag rustle", "snack bag crinkle"],
+   "duration_sec": [1, 5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "chip_crunch",
+   "layer": "event",
+   "zh": "慢慢嚼洋芋片的咀嚼聲",
+   "search_en": ["eating chips crunch", "chewing crunchy snack"],
+   "duration_sec": [2, 10],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "button_click",
+   "layer": "event",
+   "zh": "按按鈕的喀噠聲",
+   "search_en": ["plastic button click", "device push button"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "tape_slap",
+   "layer": "event",
+   "zh": "用力拍打按鈕的一掌",
+   "search_en": ["hand slap smack", "slap flat impact"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "portal_open",
+   "layer": "event",
+   "zh": "時光隧道打開的嗡鳴",
+   "search_en": ["magic portal whoosh", "sci-fi teleport hum open"],
+   "duration_sec": [2, 8],
+   "loop": false,
+   "generate_en": "A glowing blue time-portal opening: rising magical whoosh building into a steady electric hum"
+  },
+  {
+   "key": "portal_close",
+   "layer": "transition",
+   "zh": "時光隧道收合消失的收束聲",
+   "search_en": ["portal close whoosh", "teleport power down collapse"],
+   "duration_sec": [1, 5],
+   "loop": false,
+   "generate_en": "A blue time-portal collapsing inward to a single point and vanishing: whoosh winding down into silence"
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-17-01",
+   "start": 0.0,
+   "end_shot": "EP1N-17-15",
+   "end": 4.52,
+   "sound": "forest_dusk",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 2.0,
+   "why": "整場都在黃昏森林空地，墊一層氣氛音，追逐收尾的場景感；音量幾乎聽不到，不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-17-01",
+   "start": 0.3,
+   "end_shot": "EP1N-17-02",
+   "end": 5.0,
+   "sound": "hero_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.8,
+   "why": "HERO 筋疲力竭衝進空地、又縮到石頭後偷看追兵，喘氣強化『沒力了』的狀態；小聲墊在旁白下。"
+  },
+  {
+   "shot": "EP1N-17-03",
+   "start": 3.1,
+   "end_shot": "EP1N-17-04",
+   "end": 0.6,
+   "sound": "dino_smash",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "青少年暴龍煞不住一頭撞上石頭，是這段追逐的撞擊高潮，少了會很空；排在旁白（0～3.10）講完後的空檔。"
+  },
+  {
+   "shot": "EP1N-17-04",
+   "start": 3.54,
+   "end_shot": "EP1N-17-05",
+   "end": 0.5,
+   "sound": "anky_grumble",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "『石頭眨眼』是全場最大的反轉笑點，一聲低沉不悅的大型動物悶吼坐實『石頭是活的』；放旁白（0～3.54）後，不先爆雷。"
+  },
+  {
+   "shot": "EP1N-17-05",
+   "start": 3.0,
+   "end_shot": "EP1N-17-05",
+   "end": 3.5,
+   "sound": "tail_whoosh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "why": "尾錘揮出的破風聲，替緊接的重擊鋪陳；旁白將結束前小聲帶過。"
+  },
+  {
+   "shot": "EP1N-17-05",
+   "start": 3.54,
+   "end_shot": "EP1N-17-06",
+   "end": 0.8,
+   "sound": "tail_club_hit",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.5,
+   "why": "尾錘正中暴龍把牠整隻掃飛，是全場動作高潮；放旁白（0～3.54）後讓撞擊夠響。"
+  },
+  {
+   "shot": "EP1N-17-05",
+   "start": 3.6,
+   "end_shot": "EP1N-17-06",
+   "end": 1.0,
+   "sound": "teen_screech",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.6,
+   "why": "暴龍被打飛時的慘叫，加強被掃飛上天的衝擊與去向；疊在尾錘重擊後。"
+  },
+  {
+   "shot": "EP1N-17-07",
+   "start": 1.5,
+   "end_shot": "EP1N-17-07",
+   "end": null,
+   "sound": "tooth_thud",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "why": "巨牙彈到腳邊落在泥地的悶響，對上旁白『彈到你的腳邊』；小聲不搶旁白。"
+  },
+  {
+   "shot": "EP1N-17-08",
+   "start": 2.0,
+   "end_shot": "EP1N-17-08",
+   "end": 4.5,
+   "sound": "hero_laugh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.4,
+   "why": "HERO 舉牙得意，用無字笑聲表現『一開心』；小聲墊著當作下一拍相機掉落的對比。"
+  },
+  {
+   "shot": "EP1N-17-08",
+   "start": 6.14,
+   "end_shot": "EP1N-17-08",
+   "end": null,
+   "sound": "camera_mud_plop",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "why": "相機從胸前滑落掉進泥巴的噗聲，是他沒發現的笑點伏筆；放旁白（0～6.14）講完後。"
+  },
+  {
+   "shot": "EP1N-17-09",
+   "start": 2.0,
+   "end_shot": "EP1N-17-09",
+   "end": 3.5,
+   "sound": "chip_bag",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "HERO 從背包掏出一路捨不得吃的洋芋片，袋子窸窣聲帶出『遞洋芋片』的動作；小聲。"
+  },
+  {
+   "shot": "EP1N-17-10",
+   "start": 2.0,
+   "end_shot": "EP1N-17-10",
+   "end": 6.3,
+   "sound": "chip_crunch",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.3,
+   "why": "甲龍面無表情慢慢嚼洋芋片是收尾笑點，咀嚼聲坐實『真的在吃』；壓低墊在旁白下。"
+  },
+  {
+   "shot": "EP1N-17-11",
+   "start": 3.0,
+   "end_shot": "EP1N-17-11",
+   "end": 7.0,
+   "sound": "button_click",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "why": "按按鈕的喀噠聲（按兩次都沒反應），強化『怎麼沒反應』的無奈；對上旁白的兩次按壓，小聲。"
+  },
+  {
+   "shot": "EP1N-17-12",
+   "start": 4.62,
+   "end_shot": "EP1N-17-12",
+   "end": null,
+   "sound": "tape_slap",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "HERO 想起博士的招數用力拍一掌，callback『博士做的東西都要拍一下』；放旁白（0～4.62）後、接下一格隧道亮起。"
+  },
+  {
+   "shot": "EP1N-17-13",
+   "start": 0.8,
+   "end_shot": "EP1N-17-13",
+   "end": 5.48,
+   "sound": "portal_open",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "按鈕亮起、藍色時光隧道打開是回家的關鍵劇情，必須聽得到；旁白正講到此處，用低音嗡鳴墊著不蓋旁白，到他跳進去時收尾。"
+  },
+  {
+   "shot": "EP1N-17-14",
+   "start": 2.58,
+   "end_shot": "EP1N-17-15",
+   "end": 1.0,
+   "sound": "portal_close",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.8,
+   "why": "藍色隧道往內收合縮成一點消失，是離開當下世界、轉回家（下一場 HERO 癱在地上）的轉場音；放旁白（0～2.58）後，收束進留白的停頓。"
+  }
+ ]
+}

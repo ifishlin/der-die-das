@@ -1,0 +1,134 @@
+{
+ "scene_id": "EP1N-13",
+ "notes": "輕鬆散步段落以河床環境音和腳步、口哨墊出放鬆感，和結尾的恐怖轉折形成對比；關鍵是最後蕨類擺動的沙沙聲（唯一揭示音）。環境音刻意『不放風聲』，因為旁白點破『今天根本沒有風』，蕨類會動才嚇人，環境若有風會毀掉這個哏。",
+ "sounds": [
+  {
+   "key": "riverbed_ambience",
+   "layer": "ambience",
+   "zh": "午後乾河床環境音（遠處流水、蟲鳴鳥叫，無風）",
+   "search_en": ["river distant ambience calm", "forest birds insects afternoon", "small creek nature background"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "walk_gravel",
+   "layer": "event",
+   "zh": "乾河床走路腳步聲（碎石乾沙）",
+   "search_en": ["footsteps gravel walking", "walking dry sand footsteps", "footsteps dirt riverbed"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "whistle",
+   "layer": "reaction",
+   "zh": "HERO 悠哉吹口哨",
+   "search_en": ["casual whistling tune", "person whistling happy", "whistle walking carefree"],
+   "duration_sec": [2, 10],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_shutter",
+   "layer": "event",
+   "zh": "手機自拍快門聲",
+   "search_en": ["phone camera shutter click", "smartphone photo snap"],
+   "duration_sec": [0.2, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "breath_catch",
+   "layer": "reaction",
+   "zh": "HERO 受驚倒抽一口氣（笑容僵住）",
+   "search_en": ["sharp gasp inhale", "scared breath catch", "startled gasp male"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "fern_rustle",
+   "layer": "event",
+   "zh": "身後蕨類被撥動的沙沙聲",
+   "search_en": ["bush leaves rustle movement", "foliage rustle single", "plant leaves rustle close"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-13-01",
+   "start": 0.0,
+   "end_shot": "EP1N-13-06",
+   "end": 6.18,
+   "sound": "riverbed_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.5,
+   "why": "整場都在開闊乾河床，大量環境入鏡建立場景，墊一層極小聲的遠處流水蟲鳴讓空間不空；刻意不含風聲，保留結尾『沒有風蕨類卻動』的哏"
+  },
+  {
+   "shot": "EP1N-13-01",
+   "start": 0.0,
+   "end_shot": "EP1N-13-02",
+   "end": 7.9,
+   "sound": "walk_gravel",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.6,
+   "why": "01、02 格 HERO 一直在河床上走（先背對走遠、再走向鏡頭），腳步聲加真實感；旁白在講話，壓到 low"
+  },
+  {
+   "shot": "EP1N-13-01",
+   "start": 0.0,
+   "end_shot": "EP1N-13-01",
+   "end": 8.9,
+   "sound": "whistle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "旁白明寫『還吹起了口哨』，動作也是吹口哨，口哨點出此刻的放鬆得意，和結尾恐怖反差；與旁白同時故壓 low"
+  },
+  {
+   "shot": "EP1N-13-03",
+   "start": 2.6,
+   "end_shot": "EP1N-13-03",
+   "end": null,
+   "sound": "camera_shutter",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "整集任務就是『拍到照片』，自拍快門是這個任務達成的聽覺確認，也是下一格看照片的前因；放在旁白講完（2.54 秒）後的空檔，不蓋旁白"
+  },
+  {
+   "shot": "EP1N-13-05",
+   "start": 0.1,
+   "end_shot": "EP1N-13-05",
+   "end": null,
+   "sound": "breath_catch",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "『笑容僵住了』的瞬間，一聲倒抽氣讓恐懼爬上臉更有感；角色無台詞只能用氣音，壓 low 不蓋旁白"
+  },
+  {
+   "shot": "EP1N-13-06",
+   "start": 3.4,
+   "end_shot": "EP1N-13-06",
+   "end": null,
+   "sound": "fern_rustle",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "全場唯一的關鍵揭示：旁白『背後的蕨類，動了一下』唸到『動了一下』時（約 3.4 秒）同步一聲沙沙，少了它這個轉折就不成立；緊接『今天根本沒有風』點破異常，也預告下一格盜龍登場，沙沙聲屬低頻小聲可與旁白重疊"
+  }
+ ]
+}

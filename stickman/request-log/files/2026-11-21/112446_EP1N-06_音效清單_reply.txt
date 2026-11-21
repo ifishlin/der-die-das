@@ -1,0 +1,284 @@
+{
+ "scene_id": "EP1N-06",
+ "notes": "森林空地的悶熱氣氛墊底；全場靠四個關鍵聲把戲撐起來——報幕的蚊子、石頭眨眼、甲龍的沉睡呼吸、以及收尾的水聲。甲龍只想睡，所以揭露爆點不用大音量，眨眼和鼾聲都壓低，反而更好笑。旁白很滿，大聲的音效幾乎無處安放，因此全場以 bg／low 為主。",
+ "sounds": [
+  {
+   "key": "forest_ambience",
+   "layer": "ambience",
+   "zh": "悶熱森林環境音（鳥、蟲、濕氣）",
+   "search_en": ["jungle ambience birds insects", "tropical forest ambience humid", "rainforest background loop"],
+   "duration_sec": [30, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "body_mud_splat",
+   "layer": "event",
+   "zh": "身體臉朝下摔進泥地的悶響",
+   "search_en": ["body fall mud splat", "face plant mud squelch", "heavy thud wet ground"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "portal_close",
+   "layer": "transition",
+   "zh": "時光隧道藍光收合、關閉的聲音",
+   "search_en": ["sci-fi portal close whoosh", "energy power down hum", "teleport close reverse whoosh"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "A shimmering blue time-portal collapsing and sealing shut, an electric hum sucking inward then powering down"
+  },
+  {
+   "key": "mosquito_buzz",
+   "layer": "event",
+   "zh": "蚊子在耳邊臉前嗡嗡飛",
+   "search_en": ["mosquito buzzing close ear", "single mosquito whine", "insect buzz annoying"],
+   "duration_sec": [3, 15],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "phone_tap",
+   "layer": "event",
+   "zh": "手機送出搜尋的輕點／UI 音",
+   "search_en": ["phone screen tap ui", "smartphone button tap", "ui touch beep soft"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "fern_rustle",
+   "layer": "event",
+   "zh": "撥開及腰蕨葉的沙沙聲",
+   "search_en": ["leaves rustle push through", "foliage bush rustle", "plants brush movement"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "anky_snore",
+   "layer": "event",
+   "zh": "大型動物沉睡的緩慢呼吸／低鼾（甲龍）",
+   "search_en": ["large animal sleeping breathing deep", "big animal snore low rumble", "slow heavy breathing snore"],
+   "duration_sec": [4, 20],
+   "loop": true,
+   "generate_en": "A huge reptilian dinosaur fast asleep, slow deep rumbling breaths and a low gravelly snore, heavy and massive"
+  },
+  {
+   "key": "anky_eye_blink",
+   "layer": "event",
+   "zh": "爬蟲類眼睛睜開眨動的濕潤聲",
+   "search_en": ["wet eye blink squish", "slimy small squish", "eyelid open moist"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": "A large reptile eyelid peeling open, a soft wet leathery blink, quiet and organic"
+  },
+  {
+   "key": "hero_gasp",
+   "layer": "reaction",
+   "zh": "HERO 嚇到倒抽一口氣",
+   "search_en": ["male sharp gasp inhale", "surprised gasp breath", "scared quick inhale"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "tiptoe_sneak",
+   "layer": "event",
+   "zh": "踮腳尖偷溜的輕腳步",
+   "search_en": ["tiptoe sneaking footsteps", "sneaky soft footsteps", "careful quiet steps"],
+   "duration_sec": [2, 6],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "backpack_open",
+   "layer": "event",
+   "zh": "打開背包／拉鍊翻找的聲音",
+   "search_en": ["backpack zipper open", "bag rummage fabric", "unzip bag rustle"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "water_stream",
+   "layer": "event",
+   "zh": "遠處傳來的流水／溪聲",
+   "search_en": ["distant river stream flowing", "water flowing creek far", "stream water ambience"],
+   "duration_sec": [5, 30],
+   "loop": true,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-06-01",
+   "start": 0.0,
+   "end_shot": "EP1N-06-11",
+   "end": 7.42,
+   "sound": "forest_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.5,
+   "why": "整場都在悶熱潮濕的森林空地，墊一層低到幾乎聽不見的叢林環境音讓地點成立；不蓋旁白所以全程 bg。"
+  },
+  {
+   "shot": "EP1N-06-01",
+   "start": 0.0,
+   "end_shot": "EP1N-06-01",
+   "end": null,
+   "sound": "body_mud_splat",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "鏡頭一開就是臉朝下摔在泥裡的狼狽瞬間，開場第一秒給一記悶悶的泥巴聲呼應旁白『你是臉先著地的』；壓低避免蓋住同時開始的旁白。"
+  },
+  {
+   "shot": "EP1N-06-01",
+   "start": 2.6,
+   "end_shot": "EP1N-06-01",
+   "end": null,
+   "sound": "portal_close",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.6,
+   "why": "旁白講到『身後的隧道也跟著關了起來』、畫面上方藍光正在收合，配一記收合的轉場音點出隧道關閉；放在句尾、音量壓低不搶旁白。"
+  },
+  {
+   "shot": "EP1N-06-02",
+   "start": 5.5,
+   "end_shot": "EP1N-06-02",
+   "end": 13.02,
+   "sound": "mosquito_buzz",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.4,
+   "fade_out": 0.5,
+   "why": "旁白點名『第一個跑來歡迎你的，是蚊子』、畫面蚊子在臉前嗡嗡飛，這是全場第一個笑點；蚊子聲細且不吵，低音量疊在旁白下不影響聽清。沒有它這個喜劇點會落空，列 must。"
+  },
+  {
+   "shot": "EP1N-06-03",
+   "start": 0.4,
+   "end_shot": "EP1N-06-03",
+   "end": null,
+   "sound": "phone_tap",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "插入鏡頭剛送出搜尋、畫面轉成載入圈圈，一記輕點提示『搜尋已送出』，再進入乾等的沉默更有喜感；可有可無。"
+  },
+  {
+   "shot": "EP1N-06-05",
+   "start": 1.5,
+   "end_shot": "EP1N-06-05",
+   "end": null,
+   "sound": "fern_rustle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "HERO 一手撥開及腰蕨葉轉頭張望，配一下葉子沙沙聲增加身在蕨叢的實感；非關鍵，列 optional。"
+  },
+  {
+   "shot": "EP1N-06-06",
+   "start": 2.0,
+   "end_shot": "EP1N-06-06",
+   "end": 8.0,
+   "sound": "anky_snore",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.8,
+   "fade_out": 0.5,
+   "why": "HERO 坐上『石頭』休息，其實是睡著的甲龍；這裡偷偷墊一層幾乎聽不見的沉睡呼吸作伏筆，讓觀眾隱約覺得不對勁，為下一鏡的揭露鋪梗。"
+  },
+  {
+   "shot": "EP1N-06-07",
+   "start": 2.2,
+   "end_shot": "EP1N-06-07",
+   "end": null,
+   "sound": "anky_eye_blink",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "旁白『那顆石頭，眨了一下眼睛』的同步揭露爆點，一聲濕潤的眨眼把『石頭是活的』敲定；對準句尾、音量低才有偷偷一眨的詭異感。少了它揭露就沒有聲音落點，列 must。"
+  },
+  {
+   "shot": "EP1N-06-08",
+   "start": 0.0,
+   "end_shot": "EP1N-06-08",
+   "end": 9.28,
+   "sound": "anky_snore",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.6,
+   "why": "甲龍全貌揭露、睡眼惺忪又要睡回去，一整段低沉緩慢的大型動物鼾息給牠體量與重量，也印證旁白『牠只想繼續睡覺』；低音量貼在旁白下。這是全場主角怪獸的聲音身分，列 must。"
+  },
+  {
+   "shot": "EP1N-06-08",
+   "start": 0.2,
+   "end_shot": "EP1N-06-08",
+   "end": null,
+   "sound": "hero_gasp",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "HERO 嚇到定格、張嘴倒抽一口氣，接住上一鏡眨眼的驚嚇；角色無台詞，只用一聲吸氣表達。可有可無，列 optional。"
+  },
+  {
+   "shot": "EP1N-06-09",
+   "start": 0.0,
+   "end_shot": "EP1N-06-09",
+   "end": 2.68,
+   "sound": "anky_snore",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.3,
+   "fade_out": 0.4,
+   "why": "HERO 踮腳偷溜時，背景甲龍仍在睡，續一層極小的鼾聲維持『別吵醒牠』的緊張，也讓偷溜有對照。"
+  },
+  {
+   "shot": "EP1N-06-09",
+   "start": 0.2,
+   "end_shot": "EP1N-06-09",
+   "end": 2.68,
+   "sound": "tiptoe_sneak",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "誇張踮腳溜走的動作配輕手輕腳的腳步，強化偷偷摸摸的喜感；非關鍵，列 optional。"
+  },
+  {
+   "shot": "EP1N-06-10",
+   "start": 1.5,
+   "end_shot": "EP1N-06-10",
+   "end": null,
+   "sound": "backpack_open",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "HERO 把背包拿下打開往裡看，一記拉鍊翻找聲帶出『發現水壺不在』的失落動作；可有可無。"
+  },
+  {
+   "shot": "EP1N-06-11",
+   "start": 1.0,
+   "end_shot": "EP1N-06-11",
+   "end": 7.42,
+   "sound": "water_stream",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.5,
+   "fade_out": 0.0,
+   "why": "旁白『你聽到了水聲』是今天第一個好消息、也是把觀眾帶往下一場河流的鉤子；從畫外傳來的低聲流水必須出現觀眾才聽得到他聽到的東西。不淡出，直接橋接下一場的鴨嘴龍喝水河邊。列 must。"
+  }
+ ]
+}

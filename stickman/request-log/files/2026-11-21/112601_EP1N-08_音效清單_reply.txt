@@ -1,0 +1,155 @@
+{
+ "scene_id": "EP1N-08",
+ "notes": "這是一場定格暫停講解，HERO 從頭到尾不動、沒有反應音；聲音主要靠轉場（定格、鏡頭拉高、穿越到今天）來標示段落，環境音用來墊史前河岸和今天荒地的對比，旁白幾乎全程連續所以大音量只放在格與格之間的空檔。",
+ "sounds": [
+  {
+   "key": "freeze_hit",
+   "layer": "transition",
+   "zh": "定格急停音（唱盤急停／突然靜止）",
+   "search_en": ["record scratch stop", "freeze frame hit", "cartoon sudden stop"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "ascend_whoosh",
+   "layer": "transition",
+   "zh": "鏡頭向上拉高的呼嘯聲",
+   "search_en": ["whoosh ascend", "camera rise whoosh", "swoosh up air"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "time_jump",
+   "layer": "transition",
+   "zh": "時間跳轉／穿越轉場（史前跳到今天）",
+   "search_en": ["time warp transition", "time travel whoosh", "time jump sweep"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "a sweeping time-travel transition whoosh signalling a jump of 66 million years from a lush prehistoric floodplain to a dry present-day badland"
+  },
+  {
+   "key": "descend_whoosh",
+   "layer": "transition",
+   "zh": "鏡頭從太空降回地面的呼嘯聲",
+   "search_en": ["whoosh descend", "swoosh down air", "camera drop whoosh"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "river_ambience",
+   "layer": "ambience",
+   "zh": "河岸環境音（流水、微風）",
+   "search_en": ["river bank ambience", "gentle river flowing", "riverside nature ambience"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "badlands_wind",
+   "layer": "ambience",
+   "zh": "乾燥荒地的風聲",
+   "search_en": ["desert wind ambience", "dry wind barren land", "wind badlands"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "fossil_brush",
+   "layer": "event",
+   "zh": "刷子刷掉化石上泥土的聲音",
+   "search_en": ["brushing dirt soft", "brush sweeping dust", "excavation brush"],
+   "duration_sec": [2, 10],
+   "loop": true,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.0,
+   "end_shot": "EP1N-08-01",
+   "end": null,
+   "sound": "freeze_hit",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "這一整場「暫停講解」就是從 HERO 放下相機、半轉身定格那一刻開始；配合旁白「先停一下」給一個短促急停音，觀眾才知道時間停住、進入旁白講解模式，少了它這個轉折不成立。放在 0.0 且很短，只壓到第一個字，不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.0,
+   "end_shot": "EP1N-08-03",
+   "end": 3.0,
+   "sound": "river_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 2.5,
+   "why": "開頭兩格要建立「你現在在這裡（河岸）」的空間感，墊一層極小聲的河岸環境音；等 08-03 鏡頭開始拉高離開地面就慢慢淡出。"
+  },
+  {
+   "shot": "EP1N-08-03",
+   "start": 0.0,
+   "end_shot": "EP1N-08-03",
+   "end": 3.5,
+   "sound": "ascend_whoosh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 1.0,
+   "why": "旁白說「來，我們把鏡頭拉高一點」正是鏡頭急速上升的起點，一聲向上的呼嘯能強化「拉高」這個動作；因為旁白連續，壓低到 low 墊在底下。"
+  },
+  {
+   "shot": "EP1N-08-07",
+   "start": 11.58,
+   "end_shot": "EP1N-08-08",
+   "end": 0.8,
+   "sound": "time_jump",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.1,
+   "fade_out": 0.6,
+   "why": "這是全場最大的轉折：從史前河岸「穿越到今天的荒地」。大音量的時間跳轉音放在 08-07 旁白講完後的空檔（11.58 秒起）衝起來，尾巴接進 08-08 的切換點，既不蓋旁白又把今昔對比的衝擊做出來。"
+  },
+  {
+   "shot": "EP1N-08-08",
+   "start": 0.0,
+   "end_shot": "EP1N-08-10",
+   "end": 4.3,
+   "sound": "badlands_wind",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.8,
+   "fade_out": 1.5,
+   "why": "08-08～08-10 都是「今天」乾裂空曠的荒地（含 1902 年化石獵人那格），墊一層乾風聲做出跟史前潮濕森林的氣氛對比，空曠感更強。"
+  },
+  {
+   "shot": "EP1N-08-10",
+   "start": 0.0,
+   "end_shot": "EP1N-08-10",
+   "end": 4.0,
+   "sound": "fossil_brush",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "畫面是化石獵人低頭專注刷掉巨大骨頭上的泥土，一點輕柔刷土聲能讓這個「人類第一具暴龍骨頭出土」的插圖活起來；旁白講話所以保持小聲。"
+  },
+  {
+   "shot": "EP1N-08-11",
+   "start": 0.0,
+   "end_shot": "EP1N-08-11",
+   "end": 3.5,
+   "sound": "descend_whoosh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 1.0,
+   "why": "鏡頭從太空一路降回 HERO 身邊、收束這段暫停並接回劇情，用一聲下降呼嘯跟 08-03 的拉高呼嘯前後呼應；旁白連續所以壓低到 low。"
+  }
+ ]
+}

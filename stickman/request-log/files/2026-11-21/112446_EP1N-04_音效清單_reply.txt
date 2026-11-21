@@ -1,0 +1,218 @@
+{
+ "scene_id": "EP1N-04",
+ "notes": "室內講課為主，整體安靜，靠角色反應音和道具事件音點出笑點與轉折；三個 must 都在戲的關鍵：PROF 閃到腰的悶哼（動作笑點高潮）、拉桿的金屬聲（提前啟動的轉折）、拍機器的一下（收尾接時空跳躍）。旁白密集，其餘都壓很小或放在旁白講完的空檔。",
+ "sounds": [
+  {
+   "key": "lab_hum",
+   "layer": "ambience",
+   "zh": "實驗室／時光機低頻嗡嗡聲",
+   "search_en": ["machine hum loop", "electrical equipment hum", "sci-fi machine hum"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": "a low steady electronic hum of a strange home-made time machine standing in a small cabin lab, faint and continuous"
+  },
+  {
+   "key": "phone_swipe",
+   "layer": "event",
+   "zh": "手機滑動／點按聲",
+   "search_en": ["smartphone screen tap", "phone swipe ui", "touchscreen tap"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "chalk_write",
+   "layer": "event",
+   "zh": "粉筆在黑板上畫線聲",
+   "search_en": ["chalk writing blackboard", "chalk drawing board", "chalk squeak"],
+   "duration_sec": [3, 15],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "yawn",
+   "layer": "reaction",
+   "zh": "HERO 誇張打哈欠（無台詞）",
+   "search_en": ["male yawn tired", "man yawn", "big yawn"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "turn_whoosh",
+   "layer": "event",
+   "zh": "急轉身的風聲",
+   "search_en": ["whoosh movement", "fast body turn whoosh", "swoosh short"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "back_grunt",
+   "layer": "reaction",
+   "zh": "PROF 閃到腰的悶哼（無台詞）",
+   "search_en": ["man grunt pain", "male groan hurt", "back pain groan"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "cart_roll",
+   "layer": "event",
+   "zh": "小推車滾動聲",
+   "search_en": ["cart rolling wheels", "trolley roll floor", "squeaky cart wheels"],
+   "duration_sec": [2, 8],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "chip_bag",
+   "layer": "event",
+   "zh": "洋芋片袋被抓起的沙沙聲",
+   "search_en": ["chip bag rustle", "crisp packet crinkle", "snack bag grab"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "lever_pull",
+   "layer": "event",
+   "zh": "金屬拉桿被用力拉下的喀聲",
+   "search_en": ["metal lever pull", "big switch lever clunk", "machine lever pull"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "machine_slap",
+   "layer": "event",
+   "zh": "拳頭／手掌用力拍打金屬機器",
+   "search_en": ["hand slap metal", "bang metal panel", "hit metal machine"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-04-01",
+   "start": 0.0,
+   "end_shot": "EP1N-04-20",
+   "end": 3.96,
+   "sound": "lab_hum",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.5,
+   "fade_out": 1.5,
+   "why": "北牆時光機圓環一直在場，整場墊一層很小的機器嗡嗡聲建立『實驗小屋』空間感；安靜講課為主，所以只給 bg、optional。"
+  },
+  {
+   "shot": "EP1N-04-02",
+   "start": 0.8,
+   "end_shot": "EP1N-04-02",
+   "end": null,
+   "sound": "phone_swipe",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "這格是建立 HERO 無動於衷基調的定格（拇指滑動），一兩下輕微滑手機聲點出他只顧滑手機；聲音小、壓在旁白下不搶話。"
+  },
+  {
+   "shot": "EP1N-04-04",
+   "start": 0.5,
+   "end_shot": "EP1N-04-04",
+   "end": 15.5,
+   "sound": "chalk_write",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.4,
+   "why": "PROF 背對鏡頭在黑板上畫整條時間線，粉筆聲讓這個資訊鏡頭有實感；旁白整格在講，所以壓低做底不搶旁白。"
+  },
+  {
+   "shot": "EP1N-04-08",
+   "start": 0.8,
+   "end_shot": "EP1N-04-08",
+   "end": null,
+   "sound": "yawn",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "HERO 誇張哈欠是對比笑點，哈欠聲和畫面同步能加強『無聊到爆』；旁白只有 2.3 秒又在描述哈欠，故壓低與動作同時出不蓋過旁白。"
+  },
+  {
+   "shot": "EP1N-04-11",
+   "start": 7.0,
+   "end_shot": "EP1N-04-11",
+   "end": null,
+   "sound": "turn_whoosh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "旁白 6.82 秒起講『博士示範急轉彎』，配一下輕的轉身風聲帶出急轉動作；此時旁白還在，故 low。"
+  },
+  {
+   "shot": "EP1N-04-11",
+   "start": 10.04,
+   "end_shot": "EP1N-04-11",
+   "end": null,
+   "sound": "back_grunt",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "第三課的動作笑點高潮＝PROF 閃到腰，悶哼是這個笑點的關鍵，少了它笑點不成立；放在旁白 10.04 秒講完後的空檔才能放大聲。"
+  },
+  {
+   "shot": "EP1N-04-13",
+   "start": 0.5,
+   "end_shot": "EP1N-04-13",
+   "end": 7.0,
+   "sound": "cart_roll",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.4,
+   "why": "PROF 推著載有三樣道具的小推車朝鏡頭推來，推車滾動聲讓『推過來』這個動作有聲音；旁白在講，故 low 墊底。"
+  },
+  {
+   "shot": "EP1N-04-17",
+   "start": 3.8,
+   "end_shot": "EP1N-04-17",
+   "end": null,
+   "sound": "chip_bag",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "『最後你選了洋芋片』的取捨笑點，手抓到洋芋片的沙沙聲替笑點收尾；放在旁白尾聲（約 3.8 秒）手伸向洋芋片那一刻。"
+  },
+  {
+   "shot": "EP1N-04-19",
+   "start": 5.52,
+   "end_shot": "EP1N-04-20",
+   "end": 0.3,
+   "sound": "lever_pull",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "『結果他直接就拉了』是轉折，拉桿的金屬喀聲讓『提前拉下』這個惡作劇有具體聲音；放在旁白 5.52 秒講完後，聲音可微微帶進下一格。"
+  },
+  {
+   "shot": "EP1N-04-20",
+   "start": 3.66,
+   "end_shot": "EP1N-04-20",
+   "end": null,
+   "sound": "machine_slap",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "全場收尾＝PROF 用力拍機器，這一拍是接下一場時空跳躍的引子，少了它收尾沒力；放在旁白 3.66 秒講完『用力拍了一下』之後，可放最大聲。"
+  }
+ ]
+}

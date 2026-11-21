@@ -1,0 +1,125 @@
+{
+ "scene_id": "EP1N-02",
+ "notes": "安靜的早晨室內戲，大部分靠旁白，聲音極簡；只在手機亮起（劇情轉折）和開門出發（轉場）兩個關鍵點放 must，其餘用小聲的反應音和室內墊底豐富角色與氣氛。",
+ "sounds": [
+  {
+   "key": "room_tone",
+   "layer": "ambience",
+   "zh": "清晨小套房室內墊底音",
+   "search_en": ["quiet room tone morning", "bedroom ambience", "room tone indoor"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "phone_notify",
+   "layer": "event",
+   "zh": "手機訊息提示音／震動",
+   "search_en": ["phone notification ding", "text message alert", "phone vibrate buzz"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "door_open",
+   "layer": "event",
+   "zh": "開門聲（轉門把、門打開）",
+   "search_en": ["door handle turn open", "interior door open creak", "open door"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "grunt_skeptic",
+   "layer": "reaction",
+   "zh": "半信半疑的鼻音（哼）",
+   "search_en": ["male unimpressed hmph", "annoyed grunt male", "skeptical grunt"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "sigh_tired",
+   "layer": "reaction",
+   "zh": "疲憊／喪氣的嘆氣",
+   "search_en": ["male tired sigh", "exhausted sigh breath", "man sigh defeated"],
+   "duration_sec": [0.5, 2.5],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-02-01",
+   "start": 0.0,
+   "end_shot": "EP1N-02-09",
+   "end": 1.72,
+   "sound": "room_tone",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.0,
+   "why": "整場都在清晨的小套房裡，墊一層很小的室內靜音建立地點和早晨的安靜感；音量極小不干擾旁白。"
+  },
+  {
+   "shot": "EP1N-02-01",
+   "start": 2.86,
+   "end_shot": "EP1N-02-01",
+   "end": null,
+   "sound": "sigh_tired",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "開場 HERO 無精打采癱在椅上，旁白講完（2.86）後的空檔補一個疲憊嘆氣，一秒帶出這個累垮窮學生的狀態。"
+  },
+  {
+   "shot": "EP1N-02-06",
+   "start": 0.0,
+   "end_shot": "EP1N-02-06",
+   "end": null,
+   "sound": "phone_notify",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "本場劇情轉折：手機突然亮起、博士傳來新工作訊息。提示音就是「就在這時候」的觸發點，少了它畫面的螢幕亮起沒有依據；音量壓低讓同時開始的旁白聽得清楚。"
+  },
+  {
+   "shot": "EP1N-02-07",
+   "start": 5.62,
+   "end_shot": "EP1N-02-07",
+   "end": null,
+   "sound": "grunt_skeptic",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.05,
+   "fade_out": 0.2,
+   "why": "旁白講完「上一次他也說會付錢」後，HERO 死魚臉的半信半疑用一個鼻音「哼」收尾，放在旁白結束（5.62）後的空檔，強化笑點與無奈。"
+  },
+  {
+   "shot": "EP1N-02-08",
+   "start": 2.02,
+   "end_shot": "EP1N-02-08",
+   "end": null,
+   "sound": "sigh_tired",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "HERO 看向那疊帳單、肩膀塌下，旁白講完（2.02）後補一個喪氣嘆氣表現現實的重量；與下一格旁白講出的「唉」是兩個不同節拍，不衝突。"
+  },
+  {
+   "shot": "EP1N-02-09",
+   "start": 1.42,
+   "end_shot": "EP1N-02-09",
+   "end": null,
+   "sound": "door_open",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "HERO 認命走到門口伸手開門，是離開房間、接到第 3 場（校園外）的轉場。開門聲放在旁白「還是去吧」講完（1.42）之後，當作本場收尾兼進下一場的橋樑；可自然延續到 EP1N-03-01。"
+  }
+ ]
+}

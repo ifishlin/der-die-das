@@ -1,0 +1,92 @@
+{
+ "scene_id": "EP1N-07",
+ "notes": "整場墊一層幾乎聽不到的流水聲建立河岸地點；真正的重點只有相機快門（這格的動作核心，也是「拍了照卻不是暴龍」笑點的支點）。鴨嘴龍群遠處一聲溫和低鳴點出牠們首次登場與體型，全程壓到很小不蓋旁白；HERO 的無奈嘆氣是收尾的選擇性笑點。",
+ "sounds": [
+  {
+   "key": "river_ambience",
+   "layer": "ambience",
+   "zh": "寬闊河流緩緩流動的環境音",
+   "search_en": ["river flowing ambience", "wide stream water flow", "riverbank ambience calm"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hadrosaur_herd",
+   "layer": "event",
+   "zh": "對岸鴨嘴龍群溫和的遠處低鳴",
+   "search_en": ["large animal grunt distant", "cattle low moo distant", "elephant rumble distant"],
+   "duration_sec": [1, 5],
+   "loop": false,
+   "generate_en": "a small herd of large gentle duck-billed dinosaurs making soft low honking rumbles while drinking at a river, heard from across the water, calm and distant"
+  },
+  {
+   "key": "camera_shutter",
+   "layer": "event",
+   "zh": "相機快門喀嚓聲",
+   "search_en": ["camera shutter click", "dslr shutter single", "camera photo click"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_sigh",
+   "layer": "reaction",
+   "zh": "HERO 無奈的嘆氣",
+   "search_en": ["man sigh disappointed", "male exhale sigh", "resigned breath out"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-07-01",
+   "start": 0.0,
+   "end_shot": "EP1N-07-02",
+   "end": 4.46,
+   "sound": "river_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.2,
+   "why": "整場都在寬闊河岸，墊一層極小聲的流水聲建立地點氣氛，跨兩格到場景結束；音量壓到 bg 不干擾旁白。"
+  },
+  {
+   "shot": "EP1N-07-01",
+   "start": 1.0,
+   "end_shot": "EP1N-07-01",
+   "end": null,
+   "sound": "hadrosaur_herd",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.6,
+   "why": "鴨嘴龍群首次登場，一聲遠處溫和低鳴點出牠們的存在與「跟大象差不多大、脾氣很好」的感覺；因在旁白時段內，壓到 low 當遠景底噪。"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 1.5,
+   "end_shot": "EP1N-07-02",
+   "end": null,
+   "sound": "camera_shutter",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "快門聲是這格的動作核心（按下快門那一刻），也是「拍了照卻不是暴龍、不算數」笑點的支點；放在「你拍了一張照片」之後、第二句之前的停頓（……）裡，不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 4.16,
+   "end_shot": "EP1N-07-02",
+   "end": null,
+   "sound": "hero_sigh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "旁白講完「不算數」後，HERO 的死魚臉／無奈表情配一聲短嘆氣收尾，強化笑點；放在旁白結束後、避免搶旁白，因這格最後、不能跨到下一場，所以用簡短的呼氣。"
+  }
+ ]
+}
