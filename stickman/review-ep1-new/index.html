@@ -60,10 +60,7 @@ document.querySelectorAll("textarea[data-s]").forEach(t=>{t.value=st[t.dataset.s
   t.oninput=()=>{st[t.dataset.s]=t.value;t.classList.toggle("has",!!t.value);save()}});
 document.getElementById("copy").onclick=()=>{
   const L=[...document.querySelectorAll("textarea[data-s]")].filter(t=>t.value.trim()).map(t=>t.dataset.s+"（"+t.dataset.t+"）："+t.value.trim());
-  const txt=VER+"
-意見人："+(who.value.trim()||"（沒寫名字）")+"
-"+(L.join("
-")||"（沒有意見）");
+  const txt=VER+"\n意見人："+(who.value.trim()||"（沒寫名字）")+"\n"+(L.join("\n")||"（沒有意見）");
   const o=document.getElementById("out");o.value=txt;o.hidden=false;o.select();
   navigator.clipboard&&navigator.clipboard.writeText(txt).catch(()=>{})};
 document.getElementById("openall").onclick=()=>document.querySelectorAll(".sc:not(.hide)").forEach(d=>d.open=true);
