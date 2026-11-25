@@ -1,0 +1,110 @@
+{
+ "scene_id": "EP1N-08",
+ "notes": "這是一場定格暫停＋鏡頭從河岸一路拉到太空、再穿越到今天荒地的講解場，聲音幾乎全是轉場性質：用定格音標記暫停、拉高用 whoosh、穿越到今天用時間跳轉音；旁白幾乎鋪滿每一格，所有聲音都壓在小音量或極短的瞬間，不蓋旁白；太空和插圖段落刻意保持安靜。",
+ "sounds": [
+  {
+   "key": "freeze_hit",
+   "layer": "transition",
+   "zh": "定格停格音",
+   "search_en": ["freeze frame sound effect", "camera freeze stinger", "record scratch stop"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "whoosh_up",
+   "layer": "transition",
+   "zh": "鏡頭拉高的快速呼嘯",
+   "search_en": ["camera whoosh transition", "fast swoosh", "rising whoosh"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "time_jump",
+   "layer": "transition",
+   "zh": "時間跳轉／穿越音",
+   "search_en": ["time warp whoosh", "time jump transition", "sci-fi time travel whoosh"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "a stylized time-travel whoosh that compresses sixty-six million years into one second, airy wind rushing forward then settling, no music"
+  },
+  {
+   "key": "river_wind",
+   "layer": "ambience",
+   "zh": "河岸微風與遠處水聲",
+   "search_en": ["gentle river ambience", "calm wind field ambience", "riverbank wind"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.0,
+   "end_shot": "EP1N-08-01",
+   "end": null,
+   "sound": "freeze_hit",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "這場第一次用『定格暫停』這個手法，旁白第一句就是『先停一下』，HERO 剛放下相機半轉身定住；一個極短的停格音標記畫面被凍結，少了它觀眾不會意識到畫面停住、暫停講解開始。做得很短、快速淡出，不蓋住『先停一下』。"
+  },
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.0,
+   "end_shot": "EP1N-08-02",
+   "end": 8.04,
+   "sound": "river_wind",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0, "fade_out": 1.5,
+   "why": "定格那一刻 HERO 還站在河邊泥地上，墊一層很小聲的河岸風聲建立『你在這裡』的地點感；鏡頭一離地（08-03 拉高）就淡出，太空段落保持安靜。"
+  },
+  {
+   "shot": "EP1N-08-03",
+   "start": 0.9,
+   "end_shot": "EP1N-08-03",
+   "end": 2.4,
+   "sound": "whoosh_up",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1, "fade_out": 0.4,
+   "why": "旁白『來，我們把鏡頭拉高一點』後鏡頭急速往上拉，whoosh 跟上這個上升動作讓拉高有速度感；壓在旁白下小聲，不需要就拿掉。"
+  },
+  {
+   "shot": "EP1N-08-05",
+   "start": 0.0,
+   "end_shot": "EP1N-08-05",
+   "end": 1.8,
+   "sound": "whoosh_up",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1, "fade_out": 0.5,
+   "why": "鏡頭拉到最高、整片北美從太空攤開，進這一格時再給一記 whoosh 標記到達最高點；在旁白『那天氣呢？』之前的瞬間帶過，小聲。"
+  },
+  {
+   "shot": "EP1N-08-08",
+   "start": 0.0,
+   "end_shot": "EP1N-08-08",
+   "end": 2.0,
+   "sound": "time_jump",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.6,
+   "why": "整場的關鍵轉折：從六千六百萬年前一口氣穿越到今天的荒地，同一個地方的史前／現代對照。時間跳轉音標記這個切換，少了它觀眾不會意識到時空跳了;對著旁白『再過六千六百萬年』開頭帶出，收在句子裡保持旁白清楚。"
+  },
+  {
+   "shot": "EP1N-08-11",
+   "start": 0.0,
+   "end_shot": "EP1N-08-11",
+   "end": 1.6,
+   "sound": "whoosh_up",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1, "fade_out": 0.5,
+   "why": "鏡頭從太空一路降回 HERO 身邊、收束這段暫停接回劇情，用一記反向的 whoosh 呼應開頭的拉高、暗示鏡頭回到地面；小聲壓在旁白『所以啊，你現在站的這個地方』下。"
+  }
+ ]
+}

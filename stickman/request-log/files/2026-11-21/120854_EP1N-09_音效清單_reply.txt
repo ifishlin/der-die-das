@@ -1,0 +1,320 @@
+{
+ "scene_id": "EP1N-09",
+ "notes": "河岸追逐＋連環笑點的一場，旁白幾乎鋪滿每格，所以吼叫／尖叫／咬合全放在旁白結束後的空檔，墊底聲一律壓低。只設三個 must：暴龍第一次露面的嗅聞（06）、細樹彎折的笑點（13）、咬空高潮的牙齒相擊（16）；腳步、呼吸、環境音都設 optional 讓使用者決定。第 14 格切到實驗室桌面（場外冷笑點）不放事件音，河岸環境音可短暫淡出；鴨嘴龍叫聲、暴龍聲現實無對應，先給近似搜尋詞再附 generate_en。",
+ "sounds": [
+  {
+   "key": "riverbank_ambience",
+   "layer": "ambience",
+   "zh": "河岸清晨環境音（流水、遠處鴨嘴龍、蟲鳴）",
+   "search_en": ["river bank ambience birds", "gentle river water ambience", "wetland morning ambience"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_sniff",
+   "layer": "event",
+   "zh": "大型掠食恐龍嗅聞聲（鼻孔用力吸氣）",
+   "search_en": ["large animal sniffing", "big animal snort breathing", "dog sniffing close"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "A huge predatory dinosaur sniffing hard through large nostrils, deep wet inhales, slow and menacing, very close to the microphone"
+  },
+  {
+   "key": "trex_breath_rumble",
+   "layer": "event",
+   "zh": "成年暴龍低頻呼吸／低吼",
+   "search_en": ["large animal low growl breathing", "deep guttural rumble", "big predator breathing low"],
+   "duration_sec": [3, 12],
+   "loop": true,
+   "generate_en": "Slow heavy breathing and low chest rumble of an 8-ton predator, deep subsonic, calm but threatening, no roar"
+  },
+  {
+   "key": "teeth_clash",
+   "layer": "event",
+   "zh": "巨顎咬合、牙齒相擊（咬空）",
+   "search_en": ["jaw snap bite", "teeth clack snap", "bone crunch snap"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "A giant dinosaur jaw snapping shut on empty air, massive teeth clacking together with a heavy wet clap, powerful hard miss"
+  },
+  {
+   "key": "hero_gasp",
+   "layer": "reaction",
+   "zh": "HERO 倒吸一口氣（無台詞）",
+   "search_en": ["male gasp sharp", "person sharp inhale fear", "scared gasp"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_scream",
+   "layer": "reaction",
+   "zh": "HERO 驚恐尖叫（無台詞）",
+   "search_en": ["man scream fear", "male yell scared", "cartoon scream"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "fern_rustle",
+   "layer": "event",
+   "zh": "鑽進／撥動蕨類叢的沙沙聲",
+   "search_en": ["bush rustle movement", "leaves foliage rustle", "diving into bushes"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "tree_creak_bend",
+   "layer": "event",
+   "zh": "細樹被壓彎的嘎吱與彈動聲",
+   "search_en": ["tree branch bending creak", "wood creak bend", "sapling springy bend"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "run_footsteps",
+   "layer": "event",
+   "zh": "HERO 在泥地狂奔腳步",
+   "search_en": ["running footsteps dirt", "run footsteps mud", "person running ground"],
+   "duration_sec": [2, 10],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hadrosaur_alert",
+   "layer": "event",
+   "zh": "對岸鴨嘴龍群警覺抬頭的低鳴與水聲",
+   "search_en": ["herd animals alert snort", "geese flock honk distant", "cattle lowing herd"],
+   "duration_sec": [2, 6],
+   "loop": false,
+   "generate_en": "A herd of duck-billed dinosaurs across a river suddenly lifting heads out of the water in unison, low nervous honks and dripping water, collective alert"
+  },
+  {
+   "key": "water_seep",
+   "layer": "event",
+   "zh": "泥水緩緩滲出的細微水聲",
+   "search_en": ["mud squelch wet", "water seep drip slow", "wet mud ooze"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_stab",
+   "layer": "transition",
+   "zh": "定格頓音（轉場）",
+   "search_en": ["freeze frame impact", "cinematic stab hit", "impact whoosh freeze"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-09-01",
+   "start": 0.0,
+   "end_shot": "EP1N-09-17",
+   "end": 2.60,
+   "sound": "riverbank_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.5,
+   "fade_out": 1.0,
+   "why": "整場河岸追逐的墊底環境音，建立地點與潛在危險的緊張感；第 14 格切到實驗室時可壓更低或短暫淡出。"
+  },
+  {
+   "shot": "EP1N-09-02",
+   "start": 0.3,
+   "end_shot": "EP1N-09-02",
+   "end": 2.6,
+   "sound": "water_seep",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.4,
+   "why": "特寫腳印邊緣泥水正慢慢滲出，細微水聲強調『剛剛才踩下、很新鮮』＝暴龍就在附近，是這格的張力來源。"
+  },
+  {
+   "shot": "EP1N-09-04",
+   "start": 0.2,
+   "end_shot": "EP1N-09-04",
+   "end": 3.0,
+   "sound": "hadrosaur_alert",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "對岸鴨嘴龍群同一瞬間全部抬頭、停止喝水，低鳴與抬頭的水聲標記『全體警覺、望向 HERO 背後』這個轉折；壓在旁白下用 low。"
+  },
+  {
+   "shot": "EP1N-09-05",
+   "start": 3.2,
+   "end_shot": "EP1N-09-05",
+   "end": null,
+   "sound": "hero_gasp",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "HERO 不情願回頭、倒吸一口氣的瞬間，放在旁白『但你還是回頭了』講完的空檔，點出恐懼。"
+  },
+  {
+   "shot": "EP1N-09-06",
+   "start": 1.5,
+   "end_shot": "EP1N-09-06",
+   "end": null,
+   "sound": "trex_sniff",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.4,
+   "why": "暴龍第一次露面、刻意不吼叫而是在聞——嗅聞聲就是這格的核心，少了它『牠在聞』失去畫面以外的支撐；壓在旁白下用 low 保持旁白清楚。"
+  },
+  {
+   "shot": "EP1N-09-07",
+   "start": 0.0,
+   "end_shot": "EP1N-09-07",
+   "end": 9.56,
+   "sound": "trex_breath_rumble",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.6,
+   "fade_out": 0.8,
+   "why": "揭露八公噸身高落差的錨點鏡頭，持續的低頻呼吸／低吼給暴龍重量感，讓巨大更有壓迫。"
+  },
+  {
+   "shot": "EP1N-09-09",
+   "start": 0.3,
+   "end_shot": "EP1N-09-09",
+   "end": 2.2,
+   "sound": "fern_rustle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "HERO 頭先鑽進蕨類的沙沙聲，支撐『躲起來卻露屁股』的笑點。"
+  },
+  {
+   "shot": "EP1N-09-10",
+   "start": 1.0,
+   "end_shot": "EP1N-09-10",
+   "end": 5.0,
+   "sound": "trex_sniff",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.4,
+   "why": "暴龍低頭把鼻子湊到蕨類用力嗅，是『擋得住眼睛擋不住鼻子』笑點的機制。"
+  },
+  {
+   "shot": "EP1N-09-10",
+   "start": 1.0,
+   "end_shot": "EP1N-09-10",
+   "end": 3.0,
+   "sound": "fern_rustle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "暴龍鼻子撥動蕨類的沙沙聲，配合嗅聞，暗示 HERO 的屁股就翹在鼻尖下。"
+  },
+  {
+   "shot": "EP1N-09-11",
+   "start": 0.0,
+   "end_shot": "EP1N-09-11",
+   "end": 9.9,
+   "sound": "trex_breath_rumble",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.6,
+   "fade_out": 0.8,
+   "why": "暴龍眼睛特寫，近距離的低頻呼吸讓觀眾感覺牠就在咫尺、正盯著 HERO。"
+  },
+  {
+   "shot": "EP1N-09-13",
+   "start": 2.3,
+   "end_shot": "EP1N-09-13",
+   "end": 2.76,
+   "sound": "tree_creak_bend",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "細樹不堪重量往右彎成弓形的嘎吱彈動聲，是這個笑點的關鍵，正好同步在旁白『比你想的還要軟』講完的瞬間彎下。"
+  },
+  {
+   "shot": "EP1N-09-13",
+   "start": 2.4,
+   "end_shot": "EP1N-09-13",
+   "end": null,
+   "sound": "hero_scream",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.05,
+   "fade_out": 0.2,
+   "why": "被軟樹甩盪時的尖叫，放在旁白後的空檔，強化彎折笑點。"
+  },
+  {
+   "shot": "EP1N-09-15",
+   "start": 0.0,
+   "end_shot": "EP1N-09-15",
+   "end": 4.16,
+   "sound": "trex_breath_rumble",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.4,
+   "why": "暴龍把巨嘴張到最大、凶狠逼近，低吼呼吸墊底醞釀高潮。"
+  },
+  {
+   "shot": "EP1N-09-16",
+   "start": 7.94,
+   "end_shot": "EP1N-09-17",
+   "end": 0.2,
+   "sound": "teeth_clash",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "全場高潮：暴龍用力咬合卻咬空、牙齒相擊的『喀』，放在旁白『咬了個空』結束後的空檔用最大聲，餘音帶一點到下一格。"
+  },
+  {
+   "shot": "EP1N-09-16",
+   "start": 8.0,
+   "end_shot": "EP1N-09-17",
+   "end": 0.1,
+   "sound": "hero_scream",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.05,
+   "fade_out": 0.2,
+   "why": "HERO 從合攏的嘴下方往下墜的尖叫，接在咬空之後；在第 17 格旁白開始前收掉，不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-09-17",
+   "start": 0.3,
+   "end_shot": "EP1N-09-17",
+   "end": 2.60,
+   "sound": "run_footsteps",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.3,
+   "why": "HERO 落地拔腿往鏡頭狂奔的腳步，壓在旁白下用 low，帶出接下來的追逐。"
+  },
+  {
+   "shot": "EP1N-09-17",
+   "start": 2.4,
+   "end_shot": "EP1N-10-01",
+   "end": 0.8,
+   "sound": "freeze_stab",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "下一場第一格是『定格錨點』，在這格結尾接一個定格頓音做轉場；若第 10 場是反覆出現的定格母題，建議升成 must。"
+  }
+ ]
+}

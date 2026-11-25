@@ -1,0 +1,113 @@
+{
+ "scene_id": "EP1N-10",
+ "notes": "這是一場「定格講解」：靠 01 的定格音和 05 的解除定格把觀眾拉出／拉回劇情是整場的靈魂。定格期間（01～04）刻意不墊環境音，營造「世界停住、只剩旁白」的效果；森林環境音到 05 回到劇情才恢復。暴龍的嗅聞與逼近的鼻息放小聲墊在旁白下，不搶旁白；結尾用暴龍鼻息銜接下一場的追逐。",
+ "sounds": [
+  {
+   "key": "freeze_hit",
+   "layer": "transition",
+   "zh": "定格／暫停音（黑膠刮盤）",
+   "search_en": ["record scratch stop", "vinyl scratch freeze frame", "tape stop"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "unfreeze_resume",
+   "layer": "transition",
+   "zh": "解除定格、回到劇情的 whoosh",
+   "search_en": ["whoosh transition", "resume time whoosh", "reverse whoosh"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_sniff",
+   "layer": "event",
+   "zh": "暴龍用力嗅聞的鼻息",
+   "search_en": ["large animal sniffing", "big dog sniff snort", "bear snort nose"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "A huge predator inhaling deeply through large nostrils, wet heavy nasal sniffing with low chesty resonance, close up"
+  },
+  {
+   "key": "trex_breath_snort",
+   "layer": "event",
+   "zh": "暴龍逼近的低沉鼻息／噴氣",
+   "search_en": ["large predator breathing low", "monster heavy breath snort", "big creature nostril exhale"],
+   "duration_sec": [1, 5],
+   "loop": false,
+   "generate_en": "Low heavy breathing and a wet snort from a giant reptilian predator right behind someone, deep and threatening, warm air blast"
+  },
+  {
+   "key": "forest_ambience",
+   "layer": "ambience",
+   "zh": "白堊紀森林環境底噪（蕨叢、遠處蟲鳴）",
+   "search_en": ["forest ambience insects", "jungle undergrowth ambience", "prehistoric forest background"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-10-01",
+   "start": 0.0,
+   "end_shot": "EP1N-10-01",
+   "end": null,
+   "sound": "freeze_hit",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "整場的招牌轉折：旁白喊「等一下，先暫停」，畫面從劇情瞬間凍結成定格。這個刮盤音就是「暫停」這個動作本身，少了它定格的笑點和節奏都不成立。短促收掉，落在開頭那一拍，不蓋住「暫停」兩字。"
+  },
+  {
+   "shot": "EP1N-10-03",
+   "start": 0.0,
+   "end_shot": "EP1N-10-03",
+   "end": 2.4,
+   "sound": "trex_sniff",
+   "volume": "low",
+   "priority": "optional",
+   "fade_in": 0.2,
+   "fade_out": 0.6,
+   "why": "這一格的主體是暴龍鼻孔張大用力嗅聞蕨類，正好對上旁白在講「鼻子最靈」。墊一聲嗅聞能把「嗅覺」這個重點實物化。但整格幾乎都被旁白蓋滿，所以放 low、只在鼻孔張開那一刻點一下，列為 optional。"
+  },
+  {
+   "shot": "EP1N-10-05",
+   "start": 0.0,
+   "end_shot": "EP1N-10-05",
+   "end": null,
+   "sound": "unfreeze_resume",
+   "volume": "low",
+   "priority": "optional",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "與 01 的定格音對稱：畫面從黑白講解切回彩色劇情、時間重新開始。一個短 whoosh 標記「解除定格」，讓觀眾知道回到現場了。narration 緊接著進來，所以放小聲、很快收掉，加了更順、不加也能靠畫面變彩色看懂，列 optional。"
+  },
+  {
+   "shot": "EP1N-10-05",
+   "start": 0.0,
+   "end_shot": "EP1N-10-05",
+   "end": 5.5,
+   "sound": "forest_ambience",
+   "volume": "bg",
+   "priority": "optional",
+   "fade_in": 0.5,
+   "fade_out": 0.4,
+   "why": "定格期間（01～04）刻意沒有環境音，營造世界停住的感覺；到 05 回到劇情，森林底噪淡入，強化「時間恢復流動」。全程墊底、幾乎聽不到，不影響旁白，列 optional。"
+  },
+  {
+   "shot": "EP1N-10-05",
+   "start": 5.2,
+   "end_shot": "EP1N-11-01",
+   "end": 0.8,
+   "sound": "trex_breath_snort",
+   "volume": "mid",
+   "priority": "must",
+   "fade_in": 0.1,
+   "fade_out": 0.5,
+   "why": "旁白講完「牠看得一清二楚，也聞得一清二楚」之後（5.20 之後的空檔）才放，避開旁白。暴龍逼到背後的鼻息把剛才搞笑的定格瞬間拉回真實威脅，是「藏身失敗」的重擊，並直接把戲銜接到下一場 HERO 開始逃跑，所以延續到 EP1N-11-01。這個威脅感少了就接不上追逐，列 must。"
+  }
+ ]
+}

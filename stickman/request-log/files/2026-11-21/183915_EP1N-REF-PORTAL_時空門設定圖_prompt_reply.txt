@@ -1,0 +1,17 @@
+Create a landscape 16:9 prop reference sheet showing ONE consistent time tunnel (a glowing blue time-travel portal) for a 2D stickman animation about time travel. The attached prop sheet is from the same series; use it ONLY to match the drawing style.
+
+VISUAL STYLE:
+Flat 2D cartoon illustration exactly matching the attached sheet. Warm off-white background #F6F1E7. Crisp thick black outlines #202020 on the outer rim only. Simple shapes, flat colors only. No scenery, no ground, no characters, no realistic glow effects, no 3D rendering.
+
+FIXED DESIGN — TIME TUNNEL:
+A perfectly round, flat disc that stands upright and floats in the air, with nothing holding it up. Inside the disc, three bands of blue spiral inward clockwise toward a small bright white-blue center: outer band deep blue #1F5FBF, middle band bright blue #3C9BE8, inner band pale cyan #A8E6FF, center #F2FBFF. A thin even ring of light cyan #7FD8FF runs around the outer rim. A few small four-point sparkles #FFFFFF float just outside the rim. Shape, spiral direction, band colors and sparkles are immutable; only its size changes.
+
+SCALE CLARIFICATION:
+When fully open it is a little taller than an adult human, big enough for a person to jump through. Do NOT draw any human on this sheet; show scale only through the description.
+
+REFERENCE SHEET LAYOUT:
+Top row: two large clearly separated views of the fully open tunnel: 1. Front view (a perfect circle). 2. Three-quarter view (an upright oval, showing it is a thin flat disc with no back or frame).
+Bottom row: four small views from left to right showing it closing, all in front view, same center height: 1. Half size. 2. Quarter size. 3. A small bright dot with a few sparkles. 4. Just closed: only a faint pale-cyan shimmer and two or three tiny sparkles left in the air where it was.
+
+CONSISTENCY RULES:
+Every panel depicts the same tunnel. No frames or borders around panels, no merged panels, no generated lettering, captions, numbers, arrows, logos, or watermarks.

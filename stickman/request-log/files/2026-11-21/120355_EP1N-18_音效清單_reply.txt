@@ -1,0 +1,167 @@
+{
+ "scene_id": "EP1N-18",
+ "notes": "安靜室內的收尾喜劇場：全程讓旁白清楚，只靠低鳴環境音墊底。重點是兩個 must——第 04 格揭露相機其實摔壞（笑點）、第 10 格結尾硬切下一場的蓋章轉場；其餘 PROF 偷笑、HERO 悶哼、伏筆星光都小聲做選配。",
+ "sounds": [
+  {
+   "key": "lab_hum",
+   "layer": "ambience",
+   "zh": "實驗室時光機低鳴",
+   "search_en": ["machine room hum loop", "electrical hum ambience", "server room drone"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_groan",
+   "layer": "reaction",
+   "zh": "HERO 虛弱悶哼／認命嘆氣（無台詞）",
+   "search_en": ["man exhausted groan", "tired male grunt", "weak sigh male"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "prof_chuckle",
+   "layer": "reaction",
+   "zh": "PROF 得意偷笑（無台詞）",
+   "search_en": ["man gleeful chuckle", "happy short laugh", "sneaky chuckle"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_glitch",
+   "layer": "event",
+   "zh": "摔壞相機的電子爆裂雜訊",
+   "search_en": ["broken screen electronic glitch", "electric crackle static short", "malfunction buzz"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "money_rustle",
+   "layer": "event",
+   "zh": "抽鈔票、塞紙張的摩擦聲",
+   "search_en": ["banknote rustle handling", "counting cash paper", "pull paper from envelope"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "star_shimmer",
+   "layer": "event",
+   "zh": "亮星閃爍聲（伏筆標記）",
+   "search_en": ["magic shimmer twinkle", "sparkle chime short", "bright twinkle"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": "A soft, bright, whimsical twinkle/shimmer marking a glowing shooting star — short, light, slightly magical, no music."
+  },
+  {
+   "key": "stamp_thunk",
+   "layer": "transition",
+   "zh": "逾期章蓋章聲（轉場 punchline）",
+   "search_en": ["rubber stamp thump paper", "office stamp impact", "stamp paper thud"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-18-01",
+   "start": 0.0,
+   "end_shot": "EP1N-18-10",
+   "end": 5.02,
+   "sound": "lab_hum",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.5,
+   "why": "背景是北牆時光機圓環，一段幾乎聽不到的低鳴墊整場，建立實驗室地點；安靜收尾場不需要更滿的環境音，故列 optional。"
+  },
+  {
+   "shot": "EP1N-18-01",
+   "start": 0.3,
+   "end_shot": "EP1N-18-01",
+   "end": null,
+   "sound": "hero_groan",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "開場 HERO 全身是泥癱在地上、虛弱舉著牙和相機，一聲無力悶哼確立他的狼狽狀態；小聲墊在旁白下不搶話。"
+  },
+  {
+   "shot": "EP1N-18-04",
+   "start": 1.9,
+   "end_shot": "EP1N-18-04",
+   "end": null,
+   "sound": "camera_glitch",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "本場核心揭露：插入鏡頭帶到裂屏相機，一段電子爆裂雜訊坐實「已經不太算是相機了」的笑點；放在旁白「照片還在，……」後的停頓，不蓋話也不會太大聲。"
+  },
+  {
+   "shot": "EP1N-18-05",
+   "start": 0.8,
+   "end_shot": "EP1N-18-05",
+   "end": null,
+   "sound": "money_rustle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "博士把鈔票抽出信封、塞進收據的掉包動作，紙鈔摩擦聲點出「被坑」的轉折；小聲墊在旁白下。"
+  },
+  {
+   "shot": "EP1N-18-05",
+   "start": 3.95,
+   "end_shot": "EP1N-18-05",
+   "end": null,
+   "sound": "prof_chuckle",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "掉包得逞，PROF 偷笑帶出他佔便宜的角色（林克式無台詞）；放在旁白講完（3.94）後的空檔。"
+  },
+  {
+   "shot": "EP1N-18-09",
+   "start": 2.9,
+   "end_shot": "EP1N-18-09",
+   "end": null,
+   "sound": "star_shimmer",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "任務單上拖著長尾巴的亮星是下一集小行星的伏筆，一聲輕微閃爍標記這個預告；放在旁白講完（2.90）後，讓觀眾注意到那顆星。"
+  },
+  {
+   "shot": "EP1N-18-10",
+   "start": 4.73,
+   "end_shot": "EP1N-18-10",
+   "end": null,
+   "sound": "hero_groan",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "HERO 仰頭翻白眼、聽到「下次一定付錢」的無奈，一聲認命嘆氣收這個空頭支票的笑點；放在旁白講完後。"
+  },
+  {
+   "shot": "EP1N-18-10",
+   "start": 4.9,
+   "end_shot": "EP1N-19-01",
+   "end": 0.8,
+   "sound": "stamp_thunk",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "本場尾巴硬切到下一場書桌上剛蓋紅色逾期章的帳單，蓋章「咚」聲當轉場 punchline，把『倒欠錢』的梗推到下一場；從第 10 格尾延續進 EP1N-19-01 的畫面上。"
+  }
+ ]
+}

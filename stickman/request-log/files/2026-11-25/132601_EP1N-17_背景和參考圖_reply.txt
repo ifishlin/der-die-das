@@ -1,0 +1,1 @@
+{"shots": {"EP1N-17-04": {"zh": "畫面被甲龍那身覆滿青苔、帶著甲片的厚皮填滿，眼睛就嵌在這片苔綠色的硬皮裡；暖黃的夕陽光從畫面右邊斜照過來，皮面上的凸起在左邊拉出陰影。", "en": "Background: The frame is filled by the ankylosaur's thick, armored, moss-covered hide, with the eye set into this mossy-green plating; warm dusk light rakes in from the right, casting shadows to the left of the raised scutes.", "refs": ["REF_ANKY"]}}, "redo": []}

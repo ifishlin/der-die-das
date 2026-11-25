@@ -1,0 +1,108 @@
+{
+ "scene_id": "EP1N-10",
+ "notes": "這是定格講解場：重點在『定格進／定格出』兩個轉場音，中間講解段保持乾淨讓旁白清楚；定格期間環境音幾乎抽掉，回到劇情（05）時才讓森林氣氛和 HERO 的反應回來，接下一場逃跑。",
+ "sounds": [
+  {
+   "key": "forest_amb",
+   "layer": "ambience",
+   "zh": "白天森林環境音（蟲鳴、微風）",
+   "search_en": ["forest daytime ambience", "woodland birds insects", "quiet forest background"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_stop",
+   "layer": "transition",
+   "zh": "定格停格音（唱盤刮停／急煞）",
+   "search_en": ["record scratch stop", "freeze frame stinger", "vinyl brake stop"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_sniff",
+   "layer": "event",
+   "zh": "暴龍用力嗅聞的大吸氣",
+   "search_en": ["large animal sniff", "deep heavy sniff", "big beast nose inhale"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "A huge T-Rex sniffing hard through large nostrils, deep heavy wet inhale with weight and reverberation, close to the ground"
+  },
+  {
+   "key": "unfreeze_whoosh",
+   "layer": "transition",
+   "zh": "解除定格、回到劇情的短促 whoosh",
+   "search_en": ["transition whoosh short", "time resume whoosh", "quick swoosh transition"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_gulp",
+   "layer": "reaction",
+   "zh": "HERO 緊張吞口水／悶哼（無台詞）",
+   "search_en": ["nervous gulp swallow", "scared whimper male", "tense breath hold"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-10-01",
+   "start": 0.0,
+   "end_shot": "EP1N-10-01",
+   "end": null,
+   "sound": "freeze_stop",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "旁白一開口就說「等一下，先暫停」，畫面在此定格；這個停格音是這種定格講解場的招牌，少了觀眾不會意識到時間被按停。短音放在最前緣，不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-10-01",
+   "start": 0.3,
+   "end_shot": "EP1N-10-04",
+   "end": null,
+   "sound": "forest_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5, "fade_out": 0.5,
+   "why": "墊底的森林氣氛，音量極小不干擾講解；定格段可視需要壓更低甚至抽掉以強化『時間停住』的感覺，故列 optional。"
+  },
+  {
+   "shot": "EP1N-10-03",
+   "start": 6.9,
+   "end_shot": "EP1N-10-03",
+   "end": null,
+   "sound": "trex_sniff",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "這一格講暴龍鼻子最靈、畫面是鼻孔張大用力嗅聞的瞬間，一記沉重吸氣讓『嗅覺』這個重點有聲音支撐；放在 0～7.22 句結束後的句間空檔，音量壓低避免壓到下一句旁白。"
+  },
+  {
+   "shot": "EP1N-10-05",
+   "start": 0.0,
+   "end_shot": "EP1N-10-05",
+   "end": null,
+   "sound": "unfreeze_whoosh",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "從講解切回彩色劇情（同 01 構圖），需要一個解除定格的轉場音讓觀眾知道時間恢復流動；少了它會分不清還在講解還是回到故事。短音放最前緣不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-10-05",
+   "start": 5.2,
+   "end_shot": "EP1N-11-01",
+   "end": 0.3,
+   "sound": "hero_gulp",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "旁白在 5.20 收尾「牠看得一清二楚，也聞得一清二楚」，鼻子正要碰到 HERO；收尾後補一記吞口水／悶哼，點出 HERO 意識到完蛋，自然接到下一場往東逃跑。放在旁白講完之後，可延到下一場第一格。"
+  }
+ ]
+}

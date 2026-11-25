@@ -1,0 +1,239 @@
+{
+ "scene_id": "EP1N-09",
+ "notes": "這一場靠「聞→咬空」兩個關鍵聲賣恐懼：暴龍第一次露面用嗅聞聲揭露、高潮用咬空的牙齒相擊加 HERO 尖叫。旁白密集且長，大聲的只放在句子講完之後的空檔，其餘用小聲的環境與呼吸墊底。",
+ "sounds": [
+  {
+   "key": "river_ambience",
+   "layer": "ambience",
+   "zh": "河岸蕨類叢的流水與蟲鳥環境音",
+   "search_en": ["river stream ambience", "forest river birds morning"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "mud_drip",
+   "layer": "event",
+   "zh": "泥水緩緩滲出的濕潤聲",
+   "search_en": ["mud water drip", "wet squelch drip"],
+   "duration_sec": [1, 5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "herd_alert",
+   "layer": "event",
+   "zh": "對岸鴨嘴龍群同時抬頭停飲的群體騷動聲",
+   "search_en": ["animal herd alert", "flock sudden movement water"],
+   "duration_sec": [2, 8],
+   "loop": false,
+   "generate_en": "A herd of large duck-billed dinosaurs suddenly stop drinking and lift their heads, soft collective alert honks and shifting water movement, uneasy"
+  },
+  {
+   "key": "hero_gasp",
+   "layer": "reaction",
+   "zh": "HERO 倒吸一口氣（無台詞）",
+   "search_en": ["male gasp fear", "sharp inhale gasp"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "rex_sniff",
+   "layer": "event",
+   "zh": "暴龍張鼻用力嗅聞的濕重鼻息",
+   "search_en": ["large animal sniffing", "big nostril sniff breath"],
+   "duration_sec": [2, 8],
+   "loop": false,
+   "generate_en": "A huge predatory dinosaur slowly sniffing with wide nostrils, wet heavy nasal breathing, close, calm and menacing"
+  },
+  {
+   "key": "rex_rumble",
+   "layer": "event",
+   "zh": "暴龍低頻胸腔呼吸與沉悶咕噥（重量感）",
+   "search_en": ["large animal low growl breath", "deep monster rumble breath"],
+   "duration_sec": [3, 12],
+   "loop": true,
+   "generate_en": "Massive dinosaur low chest rumble and heavy slow breathing, weighty towering predator presence, deep low frequency"
+  },
+  {
+   "key": "tree_creak_bend",
+   "layer": "event",
+   "zh": "細樹被壓彎的吱呀與盪動聲",
+   "search_en": ["tree bending creak", "wood bend strain whip"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "rex_bite_snap",
+   "layer": "event",
+   "zh": "暴龍大嘴咬空、牙齒喀地相擊",
+   "search_en": ["large jaw snap bite", "big teeth clack chomp"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "Enormous dinosaur jaws snapping shut on empty air, heavy teeth clashing together, powerful whoosh and sharp clack"
+  },
+  {
+   "key": "hero_scream",
+   "layer": "reaction",
+   "zh": "HERO 放聲尖叫（無台詞）",
+   "search_en": ["man scream short", "male panic yell"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "run_footsteps",
+   "layer": "event",
+   "zh": "HERO 落地拔腿狂奔的腳步",
+   "search_en": ["running footsteps dirt", "fast run footsteps ground"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_hit",
+   "layer": "transition",
+   "zh": "定格轉場撞擊音",
+   "search_en": ["freeze stinger hit", "impact freeze whoosh"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-09-01",
+   "start": 0.0,
+   "end_shot": "EP1N-09-17",
+   "end": 2.6,
+   "sound": "river_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.5,
+   "why": "整場都在河岸蕨類叢，用流水蟲鳥聲墊底建立地點，音量極小不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-09-02",
+   "start": 0.5,
+   "end_shot": "EP1N-09-02",
+   "end": null,
+   "sound": "mud_drip",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.4,
+   "why": "特寫泥水慢慢滲出，一點濕潤滴水聲強化『腳印剛踩下、很新鮮』的緊張暗示。"
+  },
+  {
+   "shot": "EP1N-09-04",
+   "start": 0.5,
+   "end_shot": "EP1N-09-04",
+   "end": null,
+   "sound": "herd_alert",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.5,
+   "why": "對岸鴨嘴龍群同時抬頭停飲、全望向 HERO 背後，群體騷動聲把『危險在你後面』的轉折點出；小聲壓在旁白下。"
+  },
+  {
+   "shot": "EP1N-09-05",
+   "start": 3.36,
+   "end_shot": "EP1N-09-05",
+   "end": null,
+   "sound": "hero_gasp",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "HERO 不情願回頭、倒吸一口氣，賣出恐懼轉折；放在旁白講完（3.36 秒）之後的空檔。"
+  },
+  {
+   "shot": "EP1N-09-06",
+   "start": 0.8,
+   "end_shot": "EP1N-09-06",
+   "end": null,
+   "sound": "rex_sniff",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.6,
+   "why": "暴龍第一次露面、不吼叫只在聞——用濕重的嗅聞聲揭露怪物存在，對應旁白『牠在聞』；鼻息本就小聲，壓在旁白下不搶話。"
+  },
+  {
+   "shot": "EP1N-09-07",
+   "start": 0.0,
+   "end_shot": "EP1N-09-07",
+   "end": null,
+   "sound": "rex_rumble",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 1.0,
+   "why": "身高對比的錨點鏡頭，墊一層低頻胸腔呼吸讓這頭八公噸巨獸有重量感與壓迫感。"
+  },
+  {
+   "shot": "EP1N-09-13",
+   "start": 0.8,
+   "end_shot": "EP1N-09-13",
+   "end": null,
+   "sound": "tree_creak_bend",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "笑點鏡頭：細樹承受不住軟軟彎成弓形，吱呀盪動聲賣出『這棵樹比你想的還軟』的意外，少了它笑點會弱；聲音不大可壓在旁白下。"
+  },
+  {
+   "shot": "EP1N-09-16",
+   "start": 7.95,
+   "end_shot": "EP1N-09-16",
+   "end": null,
+   "sound": "rex_bite_snap",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "全場高潮：暴龍一口咬空、牙齒喀地相擊。放在旁白講完『咬了個空』（7.94 秒）之後才爆出大聲，不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-09-16",
+   "start": 8.0,
+   "end_shot": "EP1N-09-17",
+   "end": 0.8,
+   "sound": "hero_scream",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "咬空同一瞬間 HERO 從嘴下墜落放聲尖叫，接住咬合的高潮情緒並延續到下一格落地；放在旁白結束後，不壓台詞。"
+  },
+  {
+   "shot": "EP1N-09-17",
+   "start": 1.2,
+   "end_shot": "EP1N-09-17",
+   "end": 2.6,
+   "sound": "run_footsteps",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "HERO 落地拔腿狂奔，腳步聲收尾並帶出逃跑；旁白到 2.30 秒，先用小聲腳步鋪著不搶旁白。"
+  },
+  {
+   "shot": "EP1N-09-17",
+   "start": 2.4,
+   "end_shot": "EP1N-10-01",
+   "end": 0.6,
+   "sound": "freeze_hit",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "下一場 EP1N-10-01 是定格錨點，用一記轉場撞擊音把奔跑硬切進定格、強化時間凍結感。notes：此剪接點是否定格由使用者決定，故設 optional。"
+  }
+ ]
+}

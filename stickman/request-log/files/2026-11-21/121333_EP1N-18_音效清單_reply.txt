@@ -1,0 +1,179 @@
+{
+ "scene_id": "EP1N-18",
+ "notes": "安靜的室內收尾戲，笑點全靠旁白和畫面，音效只點在幾個笑點與轉折：相機摔裂、鈔票換收據、以及預告小行星的亮星。死魚臉那格刻意留白讓沉默變笑點。結尾用蓋章聲接到下一場的逾期帳單。實驗室有時光機圓環，墊一層很小的電流嗡嗡當夜間氣氛（選擇）。",
+ "sounds": [
+  {
+   "key": "lab_hum",
+   "layer": "ambience",
+   "zh": "實驗室／時光機低頻電流嗡嗡聲",
+   "search_en": ["electrical hum room tone", "sci-fi machine drone low", "lab equipment hum"],
+   "duration_sec": [10, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_groan",
+   "layer": "reaction",
+   "zh": "HERO 虛弱無力的悶哼／嘆氣（無台詞）",
+   "search_en": ["exhausted male groan", "tired sigh man", "weak moan breath"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "prof_snicker",
+   "layer": "reaction",
+   "zh": "PROF 開心偷笑／竊笑（無台詞）",
+   "search_en": ["man chuckle snicker", "happy giggle male", "mischievous laugh short"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_crack",
+   "layer": "event",
+   "zh": "摔裂相機的玻璃／塑膠碎裂安定聲",
+   "search_en": ["cracked glass settle", "broken plastic crackle", "screen crack small"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "paper_handle",
+   "layer": "event",
+   "zh": "抽紙鈔／紙張翻動窸窣聲",
+   "search_en": ["paper rustle handling", "pull bill paper", "paper sheet flip"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "star_shimmer",
+   "layer": "event",
+   "zh": "亮星閃爍的卡通叮亮聲（預告小行星）",
+   "search_en": ["magic sparkle twinkle", "shimmer chime reveal", "star glitter sound"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": "a short soft cartoon twinkling shimmer, like a bright star glinting, light and magical, one gentle rising sparkle"
+  },
+  {
+   "key": "stamp_thud",
+   "layer": "transition",
+   "zh": "橡皮圖章用力蓋下的聲音（接逾期章）",
+   "search_en": ["rubber stamp thud", "paper stamp hit", "ink stamp slam"],
+   "duration_sec": [0.3, 1],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-18-01",
+   "start": 0.0,
+   "end_shot": "EP1N-18-10",
+   "end": 5.02,
+   "sound": "lab_hum",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.5,
+   "why": "整場都在博士的實驗室、北牆有時光機圓環，墊一層很小的電流嗡嗡聲建立夜間室內氣氛；量很小不會蓋到旁白。"
+  },
+  {
+   "shot": "EP1N-18-01",
+   "start": 0.2,
+   "end_shot": "EP1N-18-01",
+   "end": null,
+   "sound": "hero_groan",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.4,
+   "why": "開場 HERO 全身是泥癱在地上、虛弱舉著牙和相機，一聲無力悶哼先立起他的狼狽；壓低到 low 讓「你終於回來了」聽得清楚。"
+  },
+  {
+   "shot": "EP1N-18-02",
+   "start": 3.5,
+   "end_shot": "EP1N-18-03",
+   "end": null,
+   "sound": "prof_snicker",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.05,
+   "fade_out": 0.3,
+   "why": "博士拿到牙齒和照片「開心得不得了」，一聲偷笑帶出他的角色反應；放在旁白 3.54 秒講完後的空檔，不搶旁白。"
+  },
+  {
+   "shot": "EP1N-18-04",
+   "start": 2.4,
+   "end_shot": "EP1N-18-04",
+   "end": null,
+   "sound": "camera_crack",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "插入鏡頭揭露相機已經摔碎，一聲細碎的裂響幫這句「已經不太算是相機了」收笑點；放在旁白「照片還在，……」的停頓裡，保持 low。"
+  },
+  {
+   "shot": "EP1N-18-05",
+   "start": 0.3,
+   "end_shot": "EP1N-18-05",
+   "end": null,
+   "sound": "paper_handle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "博士把鈔票從信封抽走、塞進收據，一段紙張窸窣聲對上這個偷換動作；低音量墊在旁白下。"
+  },
+  {
+   "shot": "EP1N-18-08",
+   "start": 0.3,
+   "end_shot": "EP1N-18-08",
+   "end": null,
+   "sound": "paper_handle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "博士從外套掏出下一張任務單舉起，用同一個抽紙聲對上動作，提示又有新任務。"
+  },
+  {
+   "shot": "EP1N-18-09",
+   "start": 2.9,
+   "end_shot": "EP1N-18-09",
+   "end": null,
+   "sound": "star_shimmer",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "任務單上拖著長尾巴的亮星是下一集小行星的預告，一聲叮亮的閃爍把觀眾的注意力釘在這個勾子上、暗示「下次冒險」；放在旁白 2.90 秒講完後的空檔讓它聽得清楚，少了它這個預告會變弱。"
+  },
+  {
+   "shot": "EP1N-18-10",
+   "start": 4.75,
+   "end_shot": "EP1N-18-10",
+   "end": null,
+   "sound": "hero_groan",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.4,
+   "why": "博士打空頭支票、HERO 仰頭翻白眼，一聲無奈的嘆氣收這個「又被賴帳」的笑點；放在旁白講完後的空檔。"
+  },
+  {
+   "shot": "EP1N-18-10",
+   "start": 4.9,
+   "end_shot": "EP1N-19-01",
+   "end": 0.6,
+   "sound": "stamp_thud",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "本場以「倒欠博士錢」收，下一場第一格就是帳單剛蓋上紅色逾期章；用一聲圖章落下作轉場音，跨到下一格對上蓋章動作、完成時間跳轉並延續欠債主題，少了它切場會太突兀。"
+  }
+ ]
+}

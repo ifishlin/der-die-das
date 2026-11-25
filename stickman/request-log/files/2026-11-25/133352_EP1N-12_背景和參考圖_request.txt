@@ -1,0 +1,75 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；HERO 跟博士 PROF 同框附 PAIR2_PROF（2026-11-25）；看得到的地點、牆面、道具附對應的圖（實驗室牆面照第 15 條、空景圖照第 14 條）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+9. 光線方向（2026-11-21 原則八）：鏡頭的 sun 是程式照地圖算好的「太陽在相機的哪一邊」。光線照這個方向寫（光從哪邊來、影子往哪邊倒），方向不能改；太陽不在相機前方（左前、正前、右前以外）時，畫面裡不能出現太陽。sun 是 null 的鏡頭照地圖自己判斷。
+10. 畫面裡有什麼（2026-11-21 原則八）：鏡頭的 view 是程式照地圖算好的「畫面左側／中間／右側各看得到什麼」（大致由近到遠；樹林、建築會擋住後面）。背景只能寫 view 裡有的東西，左右位置照 view；not_in_view 裡的東西一律不准寫。景別越近看到越少：特寫、近景只寫最靠近角色後面的一兩樣。view 是 null 的鏡頭照地圖自己判斷。
+11. 天空、地面、道路、河流（2026-11-25 原則十）：refs 不准有 ENV 開頭的圖。天空、地面、道路、河流長什麼樣子（顏色、質感、上面有什麼）都不用寫——組檔時程式會照地圖補上同一段描述；你寫了反而會跟它打架。背景只寫看得到哪些東西、在畫面哪裡、彼此的關係、光從哪邊來；可以提到地形的名字和位置（例：河在 HERO 背後、小路往畫面右邊延伸），但不要描述它的顏色和樣子。
+12. HERO 的帽子：HERO 這個鏡頭沒戴帽子（這場的狀態寫被叼走之後、或整場沒戴）就附 REF_HERO_NOHAT，不附 REF_HERO；有戴帽子附 REF_HERO。
+13. 道具：鏡頭的 prompt 或動作裡有手機，一定要附 REF_PROPS（2026-11-24 使用者：玩手機的格子之前都漏附）；相機、電擊槍、回家按鈕、生存指南、帳單在這個鏡頭被拿在手上或正在用時也附 REF_PROPS。
+14. 空景圖（【參考圖】裡有 PLATE_ 開頭的圖時；2026-11-24 改版：同一個地點每次出現都要一樣）：
+   - 看得到場地的鏡頭，附一張空景圖，方向照鏡頭的 plate_dir（程式照地圖算的相機朝向：N／W／S／E／AIR）。plate_dir 是 E 或 null、或只拍到眼睛或物件的大特寫，不附空景圖。
+   - 甲龍在這個鏡頭還睡著、看起來像石頭（包括入鏡的）→ 附 _ROCK；甲龍醒了、在動（睜眼抬頭、甩尾、吃東西、站起來）→ 附 _EMPTY，再附 REF_ANKY（HERO 同框也附 PAIR2_ANKY）。
+   - 附了空景圖就不附環境圖（ENV_），背景英文寫成 "Background: The place is exactly as in the attached background image <空景圖檔名>." 再接劇情需要、空景圖上沒有的東西（時光隧道、HERO 身體底下那一小塊泥巴、留在地上的背包）；不要再描述樹林、天空、地面、光線。
+15. 實驗室牆面圖（2026-11-24 改版：實驗室畫出左右兩面側牆、牆上東西一直變）：參考圖裡出現的牆，生圖模型就會畫出來。只附鏡頭看得到的牆：正對那面牆附它的 _F；畫面帶到左側牆，再加同一面牆的 _L（左半含左轉角）；帶到右側牆，加同一面牆的 _R（右半含右轉角）；_L 和 _R 不能同時附；時光機牆要帶到左側牆時，正面改附 LAB_MACHINE_F2。鏡頭背後的牆不附。
+   背景英文寫成 "Background: The lab's <牆名> wall (and its left/right side wall), exactly as in the attached wall images <檔名>." 再接光線；牆上有什麼看牆面圖，不要再逐項描述。
+
+【這場】第 12 場　暫停講解：為什麼大恐龍跑不快・上午（定格）
+
+【這場的角色和狀態】（只用來決定附哪張設定圖，例如 HERO 有沒有戴帽子；背景不寫角色）
+- HERO：火柴人，身高 1.72 m。參考圖：REF_HERO（設定圖上戴著帽子）、REF_PROPS（道具）。這場的狀態：戴帽子、身上有泥巴、胸前斜背一台小相機、背著背包；開頭和最後都是站在倒木上揮手。
+- TREX（成年暴龍）：站立頭頂高 5.06 m，HERO 只到牠的膝蓋。參考圖：REF_TREX、PAIR2_TREX（HERO 和暴龍的身高比例圖）。開頭和最後在倒木西邊喘著氣看 HERO。
+- 定格：這段是劇情暫停講解。定格的畫面照常畫彩色圖，剪輯時才變灰；最後回到劇情的那個鏡頭，跟定格那一刻同一個構圖、同一個瞬間。
+- 講解插圖：講解段落裡 HERO 不在場的畫面，畫成生存指南內頁那種手繪插圖：粗黑線、平塗色、簡單形狀，跟角色設定圖同一種畫風；不是平面圖表、不是寫實照片；畫面上不能有任何字或數字。插圖裡的人（科學家、化石獵人）畫成跟 HERO 同一種火柴人畫風的路人，純白皮膚，不要畫成 HERO 本人；插圖裡的動物畫成同一種卡通畫風，顏色自然。插圖鏡頭沒有地圖、沒有走位：camera.cell 填 N/A，t 填 0。
+- 講解畫面用實物和會動的手繪：深礦井和掉下去的動物（大老鼠、人、馬掉下去只畫成落地時的一團灰塵雲，不畫血、不畫受傷）、放大兩倍的方塊、會裂開的骨頭、同一條跑道上不同大小的動物賽跑、科學家的電腦模擬。搞笑、不血腥。
+- 講解裡如果用 HERO 當例子，照 REF_HERO 畫，狀態同上。
+
+【四、地圖】暫停講解：為什麼大恐龍跑不快（倒木）
+一條東西向的森林小路，兩邊都是森林。HERO 往東逃，暴龍在後面。東邊路上橫著一根倒木。
+
+大小 20 欄（A–T）× 8 列（1–8），一格 3 公尺。北在上。時間：中午，太陽在南方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T
+  1  F F F F F F F F F F F F F F F F F F F F
+  2  F F F F F F F F F F F F F F F F F F F F
+  3  F F F F F F F F F F F F F F F F F F F F
+  4  p p p p p p p p p p p p p p p p p p p p
+  5  p p p p p p p p p p p p p p p p 1 p p p
+  6  F F F F F F F F F F F F F F F F F F F F
+  7  F F F F F F F F F F F F F F F F F F F F
+  8  F F F F F F F F F F F F F F F F F F F F
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 倒木（a fallen log lying across the trail）｜角色：可站｜相機：不可放（可以站上去）
+  F = 森林（蘇鐵、銀杏、針葉樹）（a dense Cretaceous forest of cycads, ginkgos and conifers）｜角色：不可站｜相機：可放（相機可以放在森林邊緣往外拍，前景會有枝葉）
+  p = 森林小路（a narrow trodden forest trail）｜角色：可站｜相機：可放
+倒木在小路東邊（照第 11 場）。
+地圖外面：北邊 茂密的森林往遠方延伸；東邊 茂密的森林往遠方延伸；西邊 茂密的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
+
+【參考圖】
+- PAIR2_TREX：HERO 和成年暴龍的身高比例圖
+- REF_HERO：HERO 角色設定圖（戴帽子、背背包）
+- REF_HERO_NOHAT：HERO 角色設定圖（沒戴帽子、有背背包）
+- REF_PROPS：道具：手機、相機、電擊槍、回家按鈕、生存指南、帳單
+- REF_TREX：成年暴龍設定圖
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP1N-12-01", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "O8", "height_m": "2.2", "look_at": "HERO 與 TREX 之間（倒木西側）", "distance_m": "10"}, "in_frame": ["HERO", "TREX"], "action": "劇情定格的一刻：HERO 在倒木上得意地向喘到不行的暴龍揮手，旁白拋出全集核心問題。", "sun": "太陽在相機的右後方（相機朝東北拍）", "view": {"畫面左側": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路"], "畫面中間": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路", "倒木"], "畫面右側": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路", "地圖外（東）：茂密的森林往遠方延伸"], "not_in_view": []}, "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX, the adult T. rex (exactly as in the attached TREX sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack; he stands on top of a fallen log, turned to his left, waving one hand toward the T. rex with a cocky little grin. HERO's face and hands are pure paper white. TREX stands a short distance away facing HERO, sides heaving, panting and worn-out, mouth slightly open, looking exhausted and a little sulky. Shot size: Wide Shot (WS). TREX's whole body is clearly visible, with a lot of the surroundings around him; HERO is much smaller, standing on the log. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead."}, {"id": "EP1N-12-01W", "variant_of": "EP1N-12-01", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "O8", "height_m": "3", "look_at": "HERO 與 TREX 之間（倒木西側）", "distance_m": "14"}, "in_frame": ["HERO", "TREX"], "action": "同 01 的定格瞬間，遠一級版本，突顯森林空間與兩者的距離。", "sun": "太陽在相機的右後方（相機朝東北拍）", "view": {"畫面左側": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路"], "畫面中間": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路", "倒木"], "畫面右側": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路", "地圖外（東）：茂密的森林往遠方延伸"], "not_in_view": []}, "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX, the adult T. rex (exactly as in the attached TREX sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack; he stands on top of a fallen log, turned to his left, waving one hand toward the T. rex with a cocky little grin. HERO's face and hands are pure paper white. TREX stands a short distance away facing HERO, sides heaving, panting and worn-out, mouth slightly open, looking exhausted and a little sulky. Shot size: Extreme Wide Shot (EWS). HERO and TREX are very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead."}, {"id": "EP1N-12-18", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "O8", "height_m": "2.2", "look_at": "HERO 與 TREX 之間（倒木西側）", "distance_m": "10"}, "in_frame": ["HERO", "TREX"], "action": "講解結束、畫面恢復動態：仍是定格那一刻的構圖，旁白收束『不是不想追，是追不動』。", "sun": "太陽在相機的右後方（相機朝東北拍）", "view": {"畫面左側": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路"], "畫面中間": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路", "倒木"], "畫面右側": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路", "地圖外（東）：茂密的森林往遠方延伸"], "not_in_view": []}, "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX, the adult T. rex (exactly as in the attached TREX sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack; he stands on top of a fallen log, turned to his left, waving one hand toward the T. rex with a cocky little grin. HERO's face and hands are pure paper white. TREX stands a short distance away facing HERO, sides heaving, panting and worn-out, mouth slightly open, looking exhausted and a little sulky. Shot size: Wide Shot (WS). TREX's whole body is clearly visible, with a lot of the surroundings around him; HERO is much smaller, standing on the log. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead."}, {"id": "EP1N-12-18W", "variant_of": "EP1N-12-18", "shot_size": "EWS", "angle": "eye", "camera": {"cell": "O8", "height_m": "3", "look_at": "HERO 與 TREX 之間（倒木西側）", "distance_m": "14"}, "in_frame": ["HERO", "TREX"], "action": "同 18 的瞬間，遠一級版本，收束整段講解。", "sun": "太陽在相機的右後方（相機朝東北拍）", "view": {"畫面左側": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路"], "畫面中間": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路", "倒木"], "畫面右側": ["森林（蘇鐵、銀杏、針葉樹）", "森林小路", "地圖外（東）：茂密的森林往遠方延伸"], "not_in_view": []}, "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and TREX, the adult T. rex (exactly as in the attached TREX sheet). HERO is wearing his cap, is covered in mud, has a small camera on a strap across his chest and a backpack; he stands on top of a fallen log, turned to his left, waving one hand toward the T. rex with a cocky little grin. HERO's face and hands are pure paper white. TREX stands a short distance away facing HERO, sides heaving, panting and worn-out, mouth slightly open, looking exhausted and a little sulky. Shot size: Extreme Wide Shot (EWS). HERO and TREX are very small in the picture; the environment is the main subject. Camera direction: side view. The camera is beside the trail and sees HERO and TREX exactly from the side. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead."}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- refs：不准有 ENV 開頭的圖（原則十）；附了空景圖就不附環境圖；HERO 沒戴帽子的鏡頭用 REF_HERO_NOHAT、不用 REF_HERO；有手機等道具附 REF_PROPS；空景圖最多一張；實驗室 _L、_R 不能同時附。
+- 資料沒給的細節（例如腳印裡的積水、天上的雲、鳥）不要寫。
+- 天空、地面、道路、河流的顏色和樣子（第 11 條，組檔時照地圖補）→ 刪掉，只留它們的位置和關係。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

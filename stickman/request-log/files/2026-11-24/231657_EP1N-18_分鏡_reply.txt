@@ -1,0 +1,260 @@
+{
+ "scene_id": "EP1N-18",
+ "notes": "全場 HERO 癱在時光機圓環前的地上不動（M6，頭朝南、仰躺），博士在他身邊處理牙齒、摔裂相機、信封和任務單。所有鏡頭都對著北面時光機牆（LAB_MACHINE），不帶左右側牆。節奏：開場一張 WS 高角度建立『滿身泥躺地上交東西、博士狂喜』（narration 1+2 同一張，剪輯從建立推到交接）；中段 PROF 中景＋三個插入鏡頭（摔裂相機、信封抽鈔票換收據、收據兩個圖示）連打笑點；用 HERO 俯視反應鏡頭接『倒欠錢』；再 PROF 中景拿下一張任務單＋插入彗星圖案；最後 WS 兩人定格收在『下次一定付錢』的 punchline。沒有大恐龍同框（暴龍只出現在相機照片和任務單塗鴉），不需加拍遠一級。插入鏡頭的物件特寫（相機／收據／任務單）用的 CU 句子是物件版、表上沒測過，列在 untested。",
+ "blocking": [
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "M6", "facing": "S", "doing": "滿身泥、沒帽子、沒背包，仰躺在圓環前地上，雙手舉起暴龍牙和摔裂相機交出去"},
+    {"t": "2", "cell": "M6", "facing": "S", "doing": "仰躺，交完東西癱著（博士檢查相機，HERO 多半不入鏡）"},
+    {"t": "3", "cell": "M6", "facing": "S", "doing": "仰躺，癱著（插入鏡頭處理信封與收據）"},
+    {"t": "4", "cell": "M6", "facing": "S", "doing": "仰躺抬頭，聽到倒欠錢，瞪大眼又垮下來、一臉無語"},
+    {"t": "5", "cell": "M6", "facing": "S", "doing": "仰躺，癱著（博士拿出任務單）"},
+    {"t": "6", "cell": "M6", "facing": "S", "doing": "仰躺抬頭，死心的定格 punchline"}
+   ]
+  },
+  {
+   "who": "PROF",
+   "path": [
+    {"t": "1", "cell": "P6", "facing": "W", "doing": "站在 HERO 東側彎腰，伸雙手要接過牙齒和相機，笑得合不攏嘴"},
+    {"t": "2", "cell": "N8", "facing": "S", "doing": "站直，把摔裂的相機翻過來端詳"},
+    {"t": "3", "cell": "N8", "facing": "S", "doing": "低頭，從信封抽走鈔票、塞進一張收據"},
+    {"t": "4", "cell": "N8", "facing": "S", "doing": "拿著收據（HERO 反應鏡頭，PROF 不入鏡）"},
+    {"t": "5", "cell": "N8", "facing": "S", "doing": "興奮地抽出下一張任務單舉起來"},
+    {"t": "6", "cell": "N8", "facing": "S", "doing": "舉著任務單笑著保證『下次一定付錢』"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-18-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "你終於回來了，全身是泥巴，躺在實驗室的地上。",
+    "你把牙齒跟照片交給博士，博士開心得不得了。"
+   ],
+   "subject": "HERO（癱在地上交出牙齒和相機）＋ PROF（彎腰狂喜接過）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "鏡頭對著北面時光機牆，不帶側牆。HERO 滿身泥仰躺在畫面中央偏左的地上（頭朝下方／南），雙手舉起牙齒和摔裂相機；PROF 站在畫面右邊（東側）彎腰、伸手要接、笑開；背景是時光機金屬圓環和拖在地上的粗電纜。",
+   "screen_direction": "off_up",
+   "action": "HERO 仰躺舉起暴龍牙和摔裂相機交出去，PROF 彎腰雙手要接、笑得合不攏嘴的那一刻。",
+   "camera": {"cell": "M13", "height_m": "1.9", "look_at": "HERO 與 PROF（M6–P6）", "distance_m": "3.5"},
+   "cast": [
+    {"who": "HERO", "visible": "全身，仰躺在地", "frame_height": "約 3 成（仰躺橫向展開，縱向矮）"},
+    {"who": "PROF", "visible": "彎腰的全身，膝上到頭", "frame_height": "約 6–7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO and PROF. HERO (exactly as in the attached HERO character sheet), with no hat, covered head to toe in mud, no backpack, lies sprawled on his back on the floor, both arms raised to hand over a large T-rex tooth and a smashed camera. PROF (exactly as in the attached PROF character sheet) leans over him from one side, reaching out with both hands to take them. HERO's face and hands are pure paper white. Expressions: HERO exhausted and drained; PROF overjoyed with a huge delighted grin. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is on the floor ahead of HERO, facing him. Camera angle: High angle: the camera is high above HERO, looking down at him.",
+   "untested": [],
+   "remedy": "WS 可能畫成 FS、high 只輕微俯視；以此張為準，剪輯不另補。"
+  },
+  {
+   "id": "EP1N-18-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "接著，博士把相機翻過來看。"
+   ],
+   "subject": "PROF（雙手把摔裂相機翻過來看）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "鏡頭對北面時光機牆，不帶側牆。PROF 在畫面中央，雙手捧著摔裂的相機翻過來端詳；背景是時光機圓環與控制台方向。",
+   "screen_direction": "off_down",
+   "action": "PROF 把摔裂的相機翻過來，好奇低頭端詳的那一刻。",
+   "camera": {"cell": "O11", "height_m": "1.5", "look_at": "PROF（N8）", "distance_m": "1.8"},
+   "cast": [
+    {"who": "PROF", "visible": "腰部以上到頭與雙手", "frame_height": "約 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF. PROF (exactly as in the attached PROF character sheet) holds a smashed, cracked camera in both hands and turns it over to examine it. Expression: curious and intrigued, peering down at it. No other characters. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上，可接受；剪輯需要時裁到腰。"
+  },
+  {
+   "id": "EP1N-18-03",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "照片還在，（停）不過相機嘛，已經不太算是相機了。"
+   ],
+   "subject": "摔裂的相機（在 PROF 雙手裡）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "插入鏡頭，畫面被 PROF 雙手捧著的相機佔滿：相機背面螢幕亮著清楚的暴龍照片，正面鏡頭玻璃整個碎裂、機身凹陷。",
+   "screen_direction": "toward",
+   "action": "相機螢幕還亮著清楚的暴龍照片，但鏡頭那面玻璃全裂、機身凹陷的對比瞬間（笑點）。",
+   "camera": {"cell": "O10", "height_m": "1.2", "look_at": "相機（PROF 雙手，N8）", "distance_m": "0.6"},
+   "cast": [
+    {"who": "PROF", "visible": "只露捧著相機的雙手", "frame_height": "雙手約 4 成，相機約 6 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Insert shot: only PROF's hands, no faces. PROF's hands (exactly as in the attached PROF character sheet) hold a camera: the back screen is glowing with a clear, sharp photo of a T-rex, but the front lens glass is completely shattered and the body is dented and broken. No other characters. Shot size: Close-up (CU). The smashed camera fills most of the picture.",
+   "untested": [
+    "Shot size: Close-up (CU). The smashed camera fills most of the picture.（物件版 CU 句、插入相機）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-18-04",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "然後，他從信封裡把鈔票抽走，換成一張收據。"
+   ],
+   "subject": "PROF 的雙手、信封、鈔票、收據",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "插入鏡頭，畫面被 PROF 雙手與信封佔滿：一手把一疊鈔票從信封抽出來，另一手把一張小收據塞進信封。",
+   "screen_direction": "off_down",
+   "action": "一手抽走鈔票、一手把收據塞進信封的那一刻。",
+   "camera": {"cell": "O10", "height_m": "1.6", "look_at": "PROF 的雙手（N8）", "distance_m": "0.6"},
+   "cast": [
+    {"who": "PROF", "visible": "只露處理信封的雙手", "frame_height": "雙手約 4 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Insert shot: only PROF's hands, no faces. PROF's hands (as in the attached PROF character sheet) pull a thick stack of banknotes out of a paper envelope with one hand, while slipping a small paper receipt into the envelope with the other. No other characters. Shot size: Close-up (CU). The hands and the envelope fill most of the picture. Camera angle: High angle: the camera is high above the hands, looking down at them.",
+   "untested": [
+    "Shot size: Close-up (CU). The hands and the envelope fill most of the picture.（物件版 CU 句、插入雙手）",
+    "Camera angle: High angle: the camera is high above the hands, looking down at them.（對雙手俯視）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-18-05",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "收據上畫著：一台壞掉的相機，還有一把電擊槍。（停）"
+   ],
+   "subject": "收據（在 PROF 手裡）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "插入鏡頭，畫面被 PROF 手上舉著的收據佔滿：上面只有兩個手繪小圖示——一台壞掉的相機和一把電擊槍，完全沒有文字。",
+   "screen_direction": "toward",
+   "action": "鏡頭看清楚收據上壞相機＋電擊槍兩個圖示的那一刻（笑點）。",
+   "camera": {"cell": "O10", "height_m": "1.2", "look_at": "收據（PROF 手，N8）", "distance_m": "0.5"},
+   "cast": [
+    {"who": "PROF", "visible": "只露舉著收據的一隻手", "frame_height": "手約 3 成，收據約 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Insert shot: only PROF's hand, no faces. PROF's hand (as in the attached PROF character sheet) holds up a small paper receipt that shows exactly two simple hand-drawn doodle icons: a broken camera and a taser (stun gun). There are no words, letters or numbers anywhere. No other characters. Shot size: Close-up (CU). The receipt fills most of the picture.",
+   "untested": [
+    "Shot size: Close-up (CU). The receipt fills most of the picture.（物件版 CU 句、插入收據）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-18-06",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "這樣算下來，你反而還倒欠博士錢。"
+   ],
+   "subject": "HERO（地上抬頭的無語反應）",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "鏡頭從上方俯看地上的 HERO，畫面中央是他滿身泥的臉和上半身，仰躺抬頭；背景是木地板。",
+   "screen_direction": "off_up",
+   "action": "HERO 聽到自己倒欠錢，眼睛先瞪大、再垮成一臉死心無語的那一刻。",
+   "camera": {"cell": "M9", "height_m": "1.5", "look_at": "HERO 的臉（M7）", "distance_m": "1.2"},
+   "cast": [
+    {"who": "HERO", "visible": "胸部以上到頭", "frame_height": "約 8–9 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO. HERO (exactly as in the attached HERO character sheet), with no hat and covered in mud, lies on his back on the floor and looks up. HERO's face and hands are pure paper white. Expression: eyes going wide and then sinking into a flat, resigned, speechless deadpan. No other characters. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is above and in front of HERO, facing him. Camera angle: High angle: the camera is high above HERO, looking down at him.",
+   "untested": [],
+   "remedy": "MCU 常畫成到腰、high 俯角偏淺；剪輯推近到胸口特寫。"
+  },
+  {
+   "id": "EP1N-18-07",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "接著，他又拿出下一張任務單。"
+   ],
+   "subject": "PROF（抽出下一張任務單）",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "鏡頭對北面時光機牆，不帶側牆。PROF 在畫面中央，興奮地從口袋／夾子抽出一張新任務單舉起來；背景是時光機圓環。",
+   "screen_direction": "toward",
+   "action": "PROF 一臉興奮，又抽出一張任務單遞出來的那一刻。",
+   "camera": {"cell": "O11", "height_m": "1.5", "look_at": "PROF（N8）", "distance_m": "1.8"},
+   "cast": [
+    {"who": "PROF", "visible": "腰部以上到頭與手上的任務單", "frame_height": "約 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF. PROF (exactly as in the attached PROF character sheet) eagerly pulls out and holds up a new sheet of paper (a mission sheet). Expression: excited, bright eager grin. No other characters. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 常畫成膝上，可接受；剪輯需要時裁到腰。"
+  },
+  {
+   "id": "EP1N-18-08",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "上面畫著一顆拖著長尾巴的亮星星。"
+   ],
+   "subject": "任務單（在 PROF 手裡）",
+   "shot_size": "CU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "插入鏡頭，畫面被 PROF 手上的任務單佔滿：上面畫著一顆拖著長尾巴的亮星星（像彗星），沒有文字。",
+   "screen_direction": "toward",
+   "action": "鏡頭看清楚任務單上那顆明亮、拖著長尾巴的星的那一刻（埋小行星的伏筆）。",
+   "camera": {"cell": "O10", "height_m": "1.2", "look_at": "任務單（PROF 手，N8）", "distance_m": "0.5"},
+   "cast": [
+    {"who": "PROF", "visible": "只露舉著任務單的一隻手", "frame_height": "手約 3 成，任務單約 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Insert shot: only PROF's hand, no faces. PROF's hand (as in the attached PROF character sheet) holds a sheet of paper showing a single hand-drawn doodle: a bright star trailing a long glowing tail, like a comet. There are no words, letters or numbers anywhere. No other characters. Shot size: Close-up (CU). The sheet of paper fills most of the picture.",
+   "untested": [
+    "Shot size: Close-up (CU). The sheet of paper fills most of the picture.（物件版 CU 句、插入任務單）"
+   ],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-18-09",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "博士說，下次一定會付錢。（停）他上次，也是這麼說的。"
+   ],
+   "subject": "PROF（舉任務單笑著保證）＋ HERO（地上死心）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "鏡頭對北面時光機牆，不帶側牆。PROF 站在畫面右邊舉著任務單笑著說話，HERO 滿身泥癱在畫面左邊地上抬頭、一臉死心；背景是時光機圓環和垂地電纜。",
+   "screen_direction": "off_up",
+   "action": "PROF 舉著任務單笑著保證『下次一定付錢』，HERO 在地上翻白眼死心的定格 punchline。",
+   "camera": {"cell": "N13", "height_m": "1.9", "look_at": "PROF 與 HERO（N8、M6）", "distance_m": "3.0"},
+   "cast": [
+    {"who": "PROF", "visible": "全身，站立舉任務單", "frame_height": "約 6 成"},
+    {"who": "HERO", "visible": "全身，仰躺在地", "frame_height": "約 3 成（仰躺橫向展開）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: PROF and HERO. PROF (exactly as in the attached PROF character sheet) stands holding up the mission sheet (with its bright long-tailed star doodle), mid-speech with a cheerful, confident grin. HERO (exactly as in the attached HERO character sheet), with no hat and covered in mud, lies on his back on the floor, looking up with a flat, utterly done, deadpan expression. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). Both characters are clearly visible, with a lot of the surroundings around them. Camera direction: front three-quarter view. The camera is ahead of the pair and off to one side. Camera angle: High angle: the camera is high above them, looking down.",
+   "untested": [
+    "Camera direction: front three-quarter view.（兩人版，原句為單人 HERO）"
+   ],
+   "remedy": "WS、high、front34 皆 △；以此張為準，剪輯不另補。"
+  }
+ ]
+}

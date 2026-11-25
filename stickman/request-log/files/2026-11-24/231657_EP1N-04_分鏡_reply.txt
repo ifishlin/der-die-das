@@ -1,0 +1,530 @@
+{
+ "scene_id": "EP1N-04",
+ "notes": "全場在實驗室內，靠剪接建立「博士超熱血上課 vs HERO 全程滑手機」的對比節奏。拍法上把博士的課（黑板時間線、三堂課、急轉彎示範）和 HERO 的擺爛反應（低頭、哈欠、慢慢走、瞄一眼）交替切，形成一來一回的喜感。博士的鏡頭多用正面平視的 MS／MCU，保持熱血講課的能量；HERO 的反應用 MCU 單人乾淨呈現表情當笑點。幾個資訊點（回家按鈕、碼表測試、急轉彎）用景別變化強調：按鈕用 ECU 插入鏡頭，碼表測試用 WS 遠景強調他走超慢、博士碼表沒按。沒有大恐龍同框（只有桌上模型），所以不需要加拍遠一級。鏡頭遵守一鏡一面牆規則：博士講課段多對北牆或西牆（黑板），HERO 反應鏡頭從北往南拍、背景是南牆大門。結尾博士拉桿、拍機器都在北牆時光機前，收在故障的機器上，接下一場穿越。所有牆面、道具陳設的背景與參考圖由主對話依地圖決定，prompt 只寫角色、動作、表情和他們碰到的東西。",
+ "blocking": [
+  {
+   "who": "PROF",
+   "path": [
+    {"t": "1", "cell": "M6", "facing": "S", "doing": "站在時光機前，雙手舉高，超興奮宣布要去白堊紀"},
+    {"t": "3", "cell": "G8", "facing": "S", "doing": "往 HERO 這邊跨一步，皺眉舉指糾正「侏羅紀沒有暴龍」"},
+    {"t": "4", "cell": "C10", "facing": "E", "doing": "站在黑板前，一手拿粉筆、一手指著剛畫好的時間線，轉向鏡頭講解"},
+    {"t": "5", "cell": "E9", "facing": "S", "doing": "兩手各拿一隻大小恐龍模型，舉起來比大小（第一課）"},
+    {"t": "7", "cell": "F9", "facing": "S", "doing": "攤手比劃重量，講第二課九十公斤最快"},
+    {"t": "9", "cell": "E8", "facing": "E", "doing": "舉起碼表、另一手指向 HERO 的跑道，要他跑一趟"},
+    {"t": "10", "cell": "E8", "facing": "E", "doing": "舉著碼表看 HERO，發現他慢慢走，碼表懶得按，一臉無言"},
+    {"t": "11", "cell": "F9", "facing": "S", "doing": "身體前傾揮手做追逐動作，講第三課獵豹追羚羊"},
+    {"t": "12", "cell": "G10", "facing": "S", "doing": "親自示範急轉彎，身體猛一扭、一手壓住腰，痛得皺臉"},
+    {"t": "14", "cell": "K8", "facing": "S", "doing": "推一台小推車過來，上面排著相機、樣本袋、膠帶纏的按鈕"},
+    {"t": "15", "cell": "K8", "facing": "S", "doing": "指著 HERO 問電擊槍有沒有帶"},
+    {"t": "17", "cell": "K8", "facing": "S", "doing": "雙手遞出又厚又重的生存指南，交代沒拍到暴龍不付錢"},
+    {"t": "19", "cell": "P4", "facing": "N", "doing": "走到紅色拉桿前，雙手用力往下拉"},
+    {"t": "20", "cell": "M4", "facing": "N", "doing": "機器沒反應，抬手往金屬圓環用力拍一下"}
+   ]
+  },
+  {
+   "who": "HERO",
+   "path": [
+    {"t": "1", "cell": "K10", "facing": "N", "doing": "站在前景，低頭雙手滑手機，無視博士"},
+    {"t": "2", "cell": "K10", "facing": "N", "doing": "低頭滑手機，連頭都沒抬"},
+    {"t": "6", "cell": "K10", "facing": "N", "doing": "繼續低頭滑手機"},
+    {"t": "8", "cell": "K10", "facing": "N", "doing": "仰頭打一個大哈欠"},
+    {"t": "9", "cell": "H13", "facing": "N", "doing": "被叫去跑步，站到跑道起點（還在滑手機）"},
+    {"t": "10", "cell": "H10", "facing": "N", "doing": "一邊滑手機一邊慢慢往北走，龜速"},
+    {"t": "13", "cell": "J11", "facing": "N", "doing": "抬頭瞄博士一眼，馬上又低頭"},
+    {"t": "15", "cell": "K11", "facing": "N", "doing": "面對博士，拍拍口袋表示電擊槍有帶"},
+    {"t": "16", "cell": "K11", "facing": "N", "doing": "手上拿著膠帶纏的回家按鈕，拇指按在紅鈕上"},
+    {"t": "18", "cell": "J11", "facing": "N", "doing": "低頭把洋芋片和按鈕塞進背包，把生存指南丟一邊"}
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1N-04-01",
+   "variant_of": "N/A",
+   "t": "1",
+   "narration": [
+    "博士說，這一次要去白堊紀，六千六百五十萬年前的北美洲喔。他講得超級興奮。"
+   ],
+   "subject": "PROF（興奮宣布），HERO 前景滑手機當對比",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆（時光機金屬圓環、牆上時鐘）。PROF 在畫面中央、全身，雙手舉高；HERO 在左前景、靠鏡頭、半背對、低頭滑手機。只帶北牆一面牆。",
+   "screen_direction": "toward",
+   "action": "博士攤開雙手、滿臉興奮宣布目的地的那一刻；HERO 前景動都不動只盯手機",
+   "camera": {"cell": "M12", "height_m": "1.6", "look_at": "PROF", "distance_m": "3.0"},
+   "cast": [
+    {"who": "PROF", "visible": "全身", "frame_height": "全身約佔畫高 6 成"},
+    {"who": "HERO", "visible": "頭到腰（前景半身）", "frame_height": "約佔畫高 4.5 成（靠鏡頭較大但只露半身）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: PROF (exactly as in the attached PROF character sheet) and HERO (exactly as in the attached HERO character sheet). In the middle stands PROF, both arms flung up in excitement, mouth open in a big thrilled grin as he announces something. In the foreground on the left, closer to the camera, HERO stands half-turned away, head bowed, both hands holding up a phone and staring down at it, looking bored and absorbed; HERO is wearing his cap. HERO's face and hands are pure paper white. Shot size: Wide Shot (WS). PROF's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front view. The camera is in front of PROF, facing him. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 實測常偏 FS；構圖已靠左前景 HERO 與地面留白撐出環境感，若偏緊可接受，剪輯不另調。"
+  },
+  {
+   "id": "EP1N-04-02",
+   "variant_of": "N/A",
+   "t": "2",
+   "narration": [
+    "可是你一直低頭滑手機，連頭都沒抬一下。",
+    "你只問了他一個問題：為什麼不去侏羅紀呢？畢竟那部電影，你都看了五遍耶。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著南牆（大門方向）、從北往南拍。HERO 置中、胸以上，低頭看手機。背景只帶南牆一面牆。",
+   "screen_direction": "off_down",
+   "action": "HERO 低頭盯著手機、一臉平板毫無興趣，頭完全沒抬",
+   "camera": {"cell": "K6", "height_m": "1.55", "look_at": "HERO", "distance_m": "2.0"},
+   "cast": [
+    {"who": "HERO", "visible": "胸以上", "frame_height": "胸以上約佔畫高 9 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing his cap. He is framed from the chest up, head tilted down, both hands holding a phone up in front of him and staring at the screen, not looking up at all, his face flat, bored and absorbed. HERO's face and hands are pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 實測常畫成到腰；prompt 用 MCU 句，剪輯時再推近到胸。"
+  },
+  {
+   "id": "EP1N-04-03",
+   "variant_of": "N/A",
+   "t": "3",
+   "narration": [
+    "這下博士可不高興了，他說：侏羅紀根本就沒有暴龍啦。你最愛的那部恐龍電影，光是片名就在騙你。"
+   ],
+   "subject": "PROF",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆、從南往北拍。PROF 置中、腰以上，前傾舉指糾正。背景只帶北牆一面牆。",
+   "screen_direction": "toward",
+   "action": "博士皺眉、豎起一根手指，一臉不高興地糾正的那一刻",
+   "camera": {"cell": "G13", "height_m": "1.5", "look_at": "PROF", "distance_m": "2.5"},
+   "cast": [
+    {"who": "PROF", "visible": "腰以上", "frame_height": "腰以上約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He is framed from the waist up, leaning forward with one finger raised, brow furrowed, mouth open in an annoyed, lecturing expression as he corrects something. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is in front of PROF, facing him. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 實測常偏膝上；可接受，剪輯不另調。"
+  },
+  {
+   "id": "EP1N-04-04",
+   "variant_of": "N/A",
+   "t": "4",
+   "narration": [
+    "於是博士在黑板上，畫了一條長長的時間線。侏羅紀是從兩億年前，到一億四千五百萬年前，劍龍就住在這一段。再來才是白堊紀，一直到六千六百萬年前，而暴龍，排在最後面。"
+   ],
+   "subject": "PROF（主體），黑板時間線（資訊）",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "鏡頭對著西牆（綠色黑板）、從東往西拍。PROF 在畫面偏右、全身，指著左側一條長長的時間線。背景只帶西牆一面牆。",
+   "screen_direction": "off_left",
+   "action": "博士一手拿粉筆、一手比向黑板上那條長時間線，得意地講解的那一刻",
+   "camera": {"cell": "K10", "height_m": "1.5", "look_at": "PROF 與黑板", "distance_m": "4.0"},
+   "cast": [
+    {"who": "PROF", "visible": "全身", "frame_height": "全身約佔畫高 5.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He stands in front of a big green chalkboard, turned toward the camera, one hand holding a piece of chalk and the other gesturing to a long horizontal timeline he has drawn on the board — a long chalk line with a few tick marks and tiny simple dinosaur doodles along it, no letters and no numbers. He has a proud, enthusiastic expression, mouth open mid-explanation. Shot size: Wide Shot (WS). PROF's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常偏 FS、front34 大致可做到；時間線一定要畫成「線＋刻度＋小恐龍塗鴉、無任何文字」避免出字。若 WS 偏緊可接受。"
+  },
+  {
+   "id": "EP1N-04-05",
+   "variant_of": "N/A",
+   "t": "5",
+   "narration": [
+    "接著，博士開始上課。第一課：越大隻的，跑得越慢。他一手拿著大恐龍，一手拿著小恐龍，大的這隻，身高是小的兩倍。可是牠的腿能撐住的力氣只多四倍，體重卻足足重了八倍。腿撐不住，當然就跑不快啦。"
+   ],
+   "subject": "PROF（主體），大小兩隻恐龍模型",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆、從南往北拍。PROF 置中、腰以上，兩手各舉一隻恐龍模型並排比大小（我們左邊是大的、右邊是小的）。背景只帶北牆一面牆。",
+   "screen_direction": "toward",
+   "action": "博士把大、小恐龍模型並排舉在胸前比大小、熱切講解的那一刻",
+   "camera": {"cell": "E13", "height_m": "1.5", "look_at": "PROF", "distance_m": "2.0"},
+   "cast": [
+    {"who": "PROF", "visible": "腰以上", "frame_height": "腰以上約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He is framed from the waist up, facing the camera, holding up a toy dinosaur model in each hand: a big model in his right hand (our left) and a small model in his left hand (our right), presenting them side by side to compare their size. He has an eager, explaining expression, mouth open mid-sentence. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is in front of PROF, facing him. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 實測常偏膝上；可接受，剪輯不另調。"
+  },
+  {
+   "id": "EP1N-04-06",
+   "variant_of": "N/A",
+   "t": "6",
+   "narration": [
+    "（停）而你，在滑手機。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著南牆（大門方向）、從北往南拍。HERO 置中、腰以上，低頭滑手機。背景只帶南牆一面牆。",
+   "screen_direction": "off_down",
+   "action": "笑點切鏡：博士講得認真，一切到 HERO，他還是低頭滑手機、面無表情",
+   "camera": {"cell": "K6", "height_m": "1.55", "look_at": "HERO", "distance_m": "2.0"},
+   "cast": [
+    {"who": "HERO", "visible": "腰以上", "frame_height": "腰以上約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing his cap. He is framed from the waist up, standing still, head bowed over a phone held in both hands, thumbs tapping, his face flat and uninterested, completely absorbed. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 實測常偏膝上；可接受，剪輯不另調。"
+  },
+  {
+   "id": "EP1N-04-07",
+   "variant_of": "N/A",
+   "t": "7",
+   "narration": [
+    "第二課：跑最快的，不是最大隻，也不是最小隻。而是不大不小、剛剛好的，大概九十公斤。只要超過兩千七百公斤，就會被自己的體重拖慢。"
+   ],
+   "subject": "PROF",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆、從南往北拍。PROF 置中、胸以上，一手張開像在比劃一個剛好的量。背景只帶北牆一面牆。",
+   "screen_direction": "toward",
+   "action": "博士張開手掌比出「剛剛好」、眼神發亮講第二課的那一刻",
+   "camera": {"cell": "F13", "height_m": "1.55", "look_at": "PROF", "distance_m": "2.0"},
+   "cast": [
+    {"who": "PROF", "visible": "胸以上", "frame_height": "胸以上約佔畫高 9 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He is framed from the chest up, one hand held up with fingers spread as if weighing just the right amount, eyes bright, mouth open in an animated, teaching expression. Shot size: Medium Close-up (MCU). PROF is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in front of PROF, facing him. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 實測常畫成到腰；prompt 用 MCU 句，剪輯時再推近到胸。"
+  },
+  {
+   "id": "EP1N-04-08",
+   "variant_of": "N/A",
+   "t": "8",
+   "narration": [
+    "（停）你打了一個大哈欠。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著南牆（大門方向）、從北往南拍。HERO 置中、胸以上，仰頭打大哈欠。背景只帶南牆一面牆。",
+   "screen_direction": "off_up",
+   "action": "HERO 仰頭張大嘴打一個超大哈欠、眼睛瞇成一條線的那一刻",
+   "camera": {"cell": "K6", "height_m": "1.55", "look_at": "HERO", "distance_m": "2.0"},
+   "cast": [
+    {"who": "HERO", "visible": "胸以上", "frame_height": "胸以上約佔畫高 9 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing his cap. He is framed from the chest up, head tipped back in a huge yawn, mouth stretched wide open, eyes squeezed shut, one hand still loosely holding the phone down at his side. HERO's face and hands are pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 實測常畫成到腰；prompt 用 MCU 句，剪輯時再推近到胸。"
+  },
+  {
+   "id": "EP1N-04-09",
+   "variant_of": "N/A",
+   "t": "9",
+   "narration": [
+    "博士拿出碼表，叫你跑一趟給他看。一般人跑步時速大概二十四公里，奧運選手可以到四十四公里。（停）"
+   ],
+   "subject": "PROF",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著西牆（黑板方向）、從東往西拍。PROF 置中偏左、腰以上，舉著碼表、另一手指向畫面右邊（HERO 的跑道）。背景只帶西牆一面牆。",
+   "screen_direction": "off_right",
+   "action": "博士高舉碼表、伸手指向畫外右邊催 HERO 去跑的那一刻",
+   "camera": {"cell": "J8", "height_m": "1.5", "look_at": "PROF", "distance_m": "2.5"},
+   "cast": [
+    {"who": "PROF", "visible": "腰以上", "frame_height": "腰以上約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He is framed from the waist up, holding up a stopwatch in one hand and pointing off to the right with the other, mouth open as he eagerly urges someone to run, an expectant expression. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is in front of PROF, facing him. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 實測常偏膝上；可接受，剪輯不另調。"
+  },
+  {
+   "id": "EP1N-04-10",
+   "variant_of": "N/A",
+   "t": "10",
+   "narration": [
+    "結果你一邊滑手機，一邊慢慢走完，博士的碼表根本沒按下去。"
+   ],
+   "subject": "HERO（主體），PROF 次要",
+   "shot_size": "WS",
+   "ecu_part": "N/A",
+   "azimuth": "back",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆、從南往北拍。HERO 背對鏡頭、在畫面中央龜速往前（北）走；PROF 站在畫面左邊、全身，碼表垂在手邊沒按。大量地板留白強調他走超慢。背景只帶北牆一面牆。",
+   "screen_direction": "away",
+   "action": "HERO 低頭滑手機、慢吞吞往前挪；博士在一旁舉著碼表卻懶得按、一臉無言的對比瞬間",
+   "camera": {"cell": "K14", "height_m": "1.6", "look_at": "HERO", "distance_m": "2.5"},
+   "cast": [
+    {"who": "HERO", "visible": "全身（背面）", "frame_height": "全身約佔畫高 5 成"},
+    {"who": "PROF", "visible": "全身", "frame_height": "全身約佔畫高 4.2 成（較遠、在左側）"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: HERO (exactly as in the attached HERO character sheet) and PROF (exactly as in the attached PROF character sheet). In the center, HERO is seen from behind, walking very slowly away from the camera, head bowed over a phone in both hands, shuffling, in no hurry at all; HERO is wearing his cap and his face is not visible. On the left stands PROF, full body, holding a stopwatch down at his side without pressing it, looking deflated and unimpressed. HERO's hands are pure paper white. Shot size: Wide Shot (WS). The characters' whole bodies are clearly visible, with a lot of the surroundings around them. Camera direction: back view. The camera is behind HERO, looking the way he walks; HERO's back is to the camera. Camera angle: Eye-level: the camera is at eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "WS 常偏 FS；靠大面積地板留白撐出「走很慢」的空間感，若偏緊可接受。"
+  },
+  {
+   "id": "EP1N-04-11",
+   "variant_of": "N/A",
+   "t": "11",
+   "narration": [
+    "第三課：跑得越快，就越難轉彎。你看獵豹追羚羊，三次裡面，羚羊能逃掉兩次呢。"
+   ],
+   "subject": "PROF",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆、從南往北拍。PROF 置中、膝以上，前傾揮臂做追逐動作。背景只帶北牆一面牆。",
+   "screen_direction": "toward",
+   "action": "博士身體前傾、一手橫掃做出獵豹追逐的動作、眼睛睜大講第三課的那一刻",
+   "camera": {"cell": "F13", "height_m": "1.5", "look_at": "PROF", "distance_m": "2.0"},
+   "cast": [
+    {"who": "PROF", "visible": "膝以上", "frame_height": "膝以上約佔畫高 8.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He is framed from the knees up, leaning forward and sweeping one arm in a fast chasing motion, eyes wide and excited, mouth open mid-explanation. Shot size: Medium Long Shot (MLS). PROF is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front view. The camera is in front of PROF, facing him. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "N/A"
+  },
+  {
+   "id": "EP1N-04-12",
+   "variant_of": "N/A",
+   "t": "12",
+   "narration": [
+    "博士自己示範急轉彎，結果差點閃到腰。"
+   ],
+   "subject": "PROF",
+   "shot_size": "FS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆、從南往北拍。PROF 置中、全身，身體猛然扭轉、一手壓腰。背景只帶北牆一面牆。",
+   "screen_direction": "left",
+   "action": "博士急轉身示範、瞬間定格在扭到的一刻：一手壓住下背、臉皺成一團喊痛",
+   "camera": {"cell": "G14", "height_m": "1.4", "look_at": "PROF", "distance_m": "2.0"},
+   "cast": [
+    {"who": "PROF", "visible": "全身", "frame_height": "全身約佔畫高 9 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). His whole body twists sharply as he pivots in a sudden sharp turn, frozen mid-turn with one hand clapped to his lower back, his face scrunched up in a pained wince, mouth open in an 'ow'. Shot size: Full Shot (FS). PROF's whole body, from head to feet, just fits in the picture. Camera direction: front three-quarter view. The camera is ahead of PROF and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "front34 大致可做到；若轉成偏正面也可接受。"
+  },
+  {
+   "id": "EP1N-04-13",
+   "variant_of": "N/A",
+   "t": "13",
+   "narration": [
+    "你抬起頭看了一眼，然後又低頭繼續滑。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MCU",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著南牆（大門方向）、從北往南拍。HERO 置中、胸以上，剛抬頭瞄一眼。背景只帶南牆一面牆。",
+   "screen_direction": "toward",
+   "action": "HERO 難得抬起頭、面無表情瞄博士一眼的那一刻（手機還握在胸前）",
+   "camera": {"cell": "J7", "height_m": "1.6", "look_at": "HERO", "distance_m": "2.0"},
+   "cast": [
+    {"who": "HERO", "visible": "胸以上", "frame_height": "胸以上約佔畫高 9 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing his cap. He is framed from the chest up, head just lifted to glance up with a flat, unimpressed, deadpan expression, the phone still held in one hand at chest level. HERO's face and hands are pure paper white. Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest. Camera direction: front view. The camera is in front of HERO, facing him. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MCU 實測常畫成到腰；prompt 用 MCU 句，剪輯時再推近到胸。"
+  },
+  {
+   "id": "EP1N-04-14",
+   "variant_of": "N/A",
+   "t": "14",
+   "narration": [
+    "出發前，博士推過來三樣東西：一台相機、一個樣本袋，還有一個用膠帶纏得亂七八糟的按鈕。"
+   ],
+   "subject": "PROF（主體），推車上三樣道具",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "鏡頭對著北牆、從南往北、略帶俯角拍。PROF 置中、膝以上，推著小推車朝鏡頭過來；車上並排相機、樣本袋、膠帶纏的灰盒按鈕，三樣在前景看得清楚。背景只帶北牆一面牆。",
+   "screen_direction": "toward",
+   "action": "博士推著推車走向鏡頭、一件件介紹車上三樣東西的那一刻",
+   "camera": {"cell": "K12", "height_m": "1.9", "look_at": "PROF 與推車", "distance_m": "2.0"},
+   "cast": [
+    {"who": "PROF", "visible": "膝以上", "frame_height": "膝以上約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He is framed from the knees up, pushing a small wheeled cart toward the camera; on the cart, laid out in a row, are three things: a chunky camera, a cloth sample bag, and a small hand-sized grey box with one big red button on top, wrapped messily in tape. PROF has a brisk, businesslike expression, mouth open as he lists them off. Shot size: Medium Long Shot (MLS). PROF is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: front view. The camera is in front of PROF, facing him. Camera angle: High angle: the camera is above PROF, looking down at him and the cart.",
+   "untested": [],
+   "remedy": "high 實測只有輕微俯視；可接受，剪輯不另調。"
+  },
+  {
+   "id": "EP1N-04-15",
+   "variant_of": "N/A",
+   "t": "15",
+   "narration": [
+    "他問你：電擊槍有帶嗎？你拍拍口袋：有啦。"
+   ],
+   "subject": "HERO（拍口袋），PROF（發問）雙人",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "side",
+   "angle": "eye",
+   "composition": "鏡頭對著西牆（黑板方向）、從東往西拍，兩人側身面對面、腰以上。畫面右邊是 PROF 指著對方發問，左邊是 HERO 拍自己口袋。背景只帶西牆一面牆。",
+   "screen_direction": "right",
+   "action": "博士指著 HERO 問、HERO 拍拍褲子口袋隨便點個頭「有啦」的一來一往",
+   "camera": {"cell": "O10", "height_m": "1.55", "look_at": "兩人之間", "distance_m": "2.5"},
+   "cast": [
+    {"who": "HERO", "visible": "腰以上（側面）", "frame_height": "腰以上約佔畫高 7.5 成"},
+    {"who": "PROF", "visible": "腰以上（側面）", "frame_height": "腰以上約佔畫高 7.5 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only two characters in the picture: PROF (exactly as in the attached PROF character sheet) on the right and HERO (exactly as in the attached HERO character sheet) on the left, both seen from the side, facing each other and framed from the waist up. PROF, on the right, points at HERO with a questioning look, mouth open asking something. HERO, on the left, wearing his cap, pats the side of his pants pocket with one hand and gives a small careless nod, a phone in his other hand, with a flat, offhand reassuring expression. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). Both are framed from the waist up. Camera direction: side view. The camera is beside them and sees both exactly from the side. Camera angle: Eye-level: the camera is at eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 實測常偏膝上；可接受，剪輯不另調。"
+  },
+  {
+   "id": "EP1N-04-16",
+   "variant_of": "N/A",
+   "t": "16",
+   "narration": [
+    "這東西上面只有一顆按鈕，按下去，就能回家。"
+   ],
+   "subject": "回家按鈕（膠帶纏的灰盒）＋HERO 的手（插入鏡頭）",
+   "shot_size": "ECU",
+   "ecu_part": "膠帶纏的灰盒回家按鈕（上面的大紅鈕）",
+   "azimuth": "front",
+   "angle": "high",
+   "composition": "插入鏡頭，略俯角。畫面中央是握在 HERO 手中的膠帶灰盒，拇指壓在紅鈕上，只露一隻手、不帶臉。不帶任何牆面。",
+   "screen_direction": "toward",
+   "action": "鏡頭貼近那顆大紅按鈕、拇指正要按下去的瞬間，強調「按一下就能回家」",
+   "camera": {"cell": "K11", "height_m": "1.0", "look_at": "按鈕灰盒", "distance_m": "0.4"},
+   "cast": [
+    {"who": "HERO", "visible": "只露一隻手", "frame_height": "手約佔畫高 4 成，灰盒按鈕佔畫面主體約 7 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Extreme close-up of a single object held in HERO's hand: a small hand-sized grey box wrapped messily in tape, with one big red button on top. HERO's thumb rests on the red button, about to press it. Only HERO's hand is in the picture, no face. HERO's hand is pure paper white. Shot size: Extreme Close-up (ECU). Only the small taped grey box and its red button fill the picture. Camera direction: front view. The camera is directly in front of the device, facing it. Camera angle: High angle: the camera looks down at the device in the hand.",
+   "untested": [
+    "ECU 用在物件（灰盒按鈕）而非眼睛；實測 ECU 眼睛 ✓，物件局部尚未單獨驗證。"
+   ],
+   "remedy": "若物件沒放到夠大，剪輯時再推近；構圖已把手和灰盒填滿畫面。"
+  },
+  {
+   "id": "EP1N-04-17",
+   "variant_of": "N/A",
+   "t": "17",
+   "narration": [
+    "博士還說：沒拍到暴龍、沒帶回牙齒，就不付錢喔。",
+    "博士還給了你一本生存指南，又厚又重。"
+   ],
+   "subject": "PROF（主體），厚重生存指南",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆、從南往北拍。PROF 置中、腰以上，雙手遞出一本又厚又重的生存指南。背景只帶北牆一面牆。",
+   "screen_direction": "toward",
+   "action": "博士雙手捧出沉甸甸的生存指南、豎眉交代條件（沒拍到暴龍不付錢）的那一刻",
+   "camera": {"cell": "K12", "height_m": "1.5", "look_at": "PROF", "distance_m": "2.0"},
+   "cast": [
+    {"who": "PROF", "visible": "腰以上", "frame_height": "腰以上約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He is framed from the waist up, holding out a very thick, heavy book with both hands as if it is a burden, one eyebrow raised, a stern, instructive expression, mouth open stating a condition. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front view. The camera is in front of PROF, facing him. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "MS 實測常偏膝上；可接受，剪輯不另調。"
+  },
+  {
+   "id": "EP1N-04-18",
+   "variant_of": "N/A",
+   "t": "18",
+   "narration": [
+    "你看看指南，再看看旁邊那包洋芋片，最後你選了洋芋片。",
+    "然後把它跟按鈕一起，塞進背包裡。"
+   ],
+   "subject": "HERO",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "front34",
+   "angle": "high",
+   "composition": "鏡頭對著南牆（大門方向）、從北往南、略俯角拍。HERO 置中、腰以上，低頭把洋芋片和灰盒按鈕塞進胸前背包，厚指南被丟到一旁。背景只帶南牆一面牆。",
+   "screen_direction": "off_down",
+   "action": "HERO 果斷選洋芋片、把洋芋片和回家按鈕塞進背包、把厚重指南撇到一邊、一臉得意的那一刻",
+   "camera": {"cell": "J7", "height_m": "1.9", "look_at": "HERO", "distance_m": "2.0"},
+   "cast": [
+    {"who": "HERO", "visible": "腰以上", "frame_height": "腰以上約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: HERO (exactly as in the attached HERO character sheet), wearing his cap and a backpack on his front. He is framed from the waist up, looking down as he stuffs a bag of potato chips and a small taped grey box with a red button into the open backpack; the thick, heavy book is shoved carelessly aside in his other hand, ignored. He has a pleased, slightly smug expression. HERO's face and hands are pure paper white. Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: High angle: the camera is above HERO, looking down at his hands and the backpack.",
+   "untested": [],
+   "remedy": "MS 常偏膝上、front34 大致可做、high 只輕微俯；皆可接受，剪輯不另調。"
+  },
+  {
+   "id": "EP1N-04-19",
+   "variant_of": "N/A",
+   "t": "19",
+   "narration": [
+    "博士說，等你準備好，他再拉下拉桿。（停）結果他直接就拉了。"
+   ],
+   "subject": "PROF（主體），紅色拉桿",
+   "shot_size": "MS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆、從南往北拍，看 PROF 的後側 3/4。PROF 置中偏右、腰以上，雙手抓住牆邊的紅色拉桿往下用力拉。背景只帶北牆一面牆。",
+   "screen_direction": "away",
+   "action": "博士不等 HERO 準備、直接雙手往下猛拉紅色拉桿的那一刻（背側）",
+   "camera": {"cell": "O7", "height_m": "1.5", "look_at": "PROF 與拉桿", "distance_m": "1.6"},
+   "cast": [
+    {"who": "PROF", "visible": "腰以上（後側）", "frame_height": "腰以上約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He is framed from the waist up, seen from behind and one side, reaching up and yanking a big red lever mounted on a wooden box down hard with both hands, his whole body pulling on it. Shot size: Medium Shot (MS). PROF is framed from the waist up; the bottom edge of the picture is at his waist. Camera direction: rear three-quarter view. The camera is behind PROF and off to one side, so we see his back and one side. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "back34 偶爾會多畫一個前景角色；此鏡只有 PROF 一人，若出現多餘人物就重畫。"
+  },
+  {
+   "id": "EP1N-04-20",
+   "variant_of": "N/A",
+   "t": "20",
+   "narration": [
+    "機器卻沒反應，博士就往機器上用力拍了一下。"
+   ],
+   "subject": "PROF（主體），故障的時光機圓環",
+   "shot_size": "MLS",
+   "ecu_part": "N/A",
+   "azimuth": "back34",
+   "angle": "eye",
+   "composition": "鏡頭對著北牆、從南往北拍，看 PROF 的後側 3/4。PROF 置中、膝以上，面對沒反應的金屬圓環，抬手往機器上用力拍下去。背景只帶北牆一面牆（時光機圓環）。",
+   "screen_direction": "away",
+   "action": "機器毫無反應，博士氣得抬手往金屬圓環啪地拍一下的收尾瞬間",
+   "camera": {"cell": "M9", "height_m": "1.6", "look_at": "PROF 與機器", "distance_m": "2.5"},
+   "cast": [
+    {"who": "PROF", "visible": "膝以上（後側）", "frame_height": "膝以上約佔畫高 8 成"}
+   ],
+   "refs": [],
+   "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character in the picture: PROF (exactly as in the attached PROF character sheet). He is framed from the knees up, seen from behind and one side, one arm raised and swinging down to smack a big metal ring-shaped machine in front of him with the flat of his hand, his whole posture tense and frustrated. Shot size: Medium Long Shot (MLS). PROF is framed from the knees up; the bottom edge of the picture is at his knees. Camera direction: rear three-quarter view. The camera is behind PROF and off to one side, so we see his back and one side. Camera angle: Eye-level: the camera is at PROF's eye height, looking straight ahead.",
+   "untested": [],
+   "remedy": "back34 偶爾會多畫一個前景角色；此鏡只有 PROF 一人，若出現多餘人物就重畫。"
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；HERO 跟博士 PROF 同框附 PAIR2_PROF（2026-11-25）；看得到的地點、牆面、道具附對應的圖（實驗室牆面照第 15 條、空景圖照第 14 條）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+9. 光線方向（2026-11-21 原則八）：鏡頭的 sun 是程式照地圖算好的「太陽在相機的哪一邊」。光線照這個方向寫（光從哪邊來、影子往哪邊倒），方向不能改；太陽不在相機前方（左前、正前、右前以外）時，畫面裡不能出現太陽。sun 是 null 的鏡頭照地圖自己判斷。
+10. 畫面裡有什麼（2026-11-21 原則八）：鏡頭的 view 是程式照地圖算好的「畫面左側／中間／右側各看得到什麼」（大致由近到遠；樹林、建築會擋住後面）。背景只能寫 view 裡有的東西，左右位置照 view；not_in_view 裡的東西一律不准寫。景別越近看到越少：特寫、近景只寫最靠近角色後面的一兩樣。view 是 null 的鏡頭照地圖自己判斷。
+11. 天空、地面、水面（2026-11-25 原則十：環境參考圖會被照抄，不附）：refs 不准有 ENV 開頭的圖。【這場的天空、地面、水面】是這場原本那張環境圖的文字描述（docs/content/env_text.json）。背景寫天空、地面、水面時照這份描述寫，只寫這個鏡頭看得到的部分（照第 10 條的 view），不要另外指定別的顏色或東西。標了「純色塊」的那一格只有顏色：地面上有什麼（落葉、矮植物、草、泥濘……）照地圖的描述（地形名稱和地圖說明）寫，顏色照這份描述。
+12. HERO 的帽子：HERO 這個鏡頭沒戴帽子（這場的狀態寫被叼走之後、或整場沒戴）就附 REF_HERO_NOHAT，不附 REF_HERO；有戴帽子附 REF_HERO。
+13. 道具：鏡頭的 prompt 或動作裡有手機，一定要附 REF_PROPS（2026-11-24 使用者：玩手機的格子之前都漏附）；相機、電擊槍、回家按鈕、生存指南、帳單在這個鏡頭被拿在手上或正在用時也附 REF_PROPS。
+14. 空景圖（【參考圖】裡有 PLATE_ 開頭的圖時；2026-11-24 改版：同一個地點每次出現都要一樣）：
+   - 看得到場地的鏡頭，附一張空景圖，方向照鏡頭的 plate_dir（程式照地圖算的相機朝向：N／W／S／E／AIR）。plate_dir 是 E 或 null、或只拍到眼睛或物件的大特寫，不附空景圖。
+   - 甲龍在這個鏡頭還睡著、看起來像石頭（包括入鏡的）→ 附 _ROCK；甲龍醒了、在動（睜眼抬頭、甩尾、吃東西、站起來）→ 附 _EMPTY，再附 REF_ANKY（HERO 同框也附 PAIR2_ANKY）。
+   - 附了空景圖就不附環境圖（ENV_），背景英文寫成 "Background: The place is exactly as in the attached background image <空景圖檔名>." 再接劇情需要、空景圖上沒有的東西（時光隧道、HERO 身體底下那一小塊泥巴、留在地上的背包）；不要再描述樹林、天空、地面、光線。
+15. 實驗室牆面圖（2026-11-24 改版：實驗室畫出左右兩面側牆、牆上東西一直變）：參考圖裡出現的牆，生圖模型就會畫出來。只附鏡頭看得到的牆：正對那面牆附它的 _F；畫面帶到左側牆，再加同一面牆的 _L（左半含左轉角）；帶到右側牆，加同一面牆的 _R（右半含右轉角）；_L 和 _R 不能同時附；時光機牆要帶到左側牆時，正面改附 LAB_MACHINE_F2。鏡頭背後的牆不附。
+   背景英文寫成 "Background: The lab's <牆名> wall (and its left/right side wall), exactly as in the attached wall images <檔名>." 再接光線；牆上有什麼看牆面圖，不要再逐項描述。
+
+【這場】第 8 場　暫停講解：地獄溪（從河岸拉高到整片北美洲，再看今天的荒地）・上午（定格）
+插圖畫法：空拍：從 HERO 頭上往上拉高，看到真實的平原、山、海和整片大陸（照 REF_NA66）；今天的地獄溪是寫實風的乾燥荒地。動植物講解才用淡黃紙張手繪插圖。
+
+【這場的天空、地面、水面】（第 11 條；文字描述，不附圖）
+天空：天空顏色：由上到下：上緣中等天藍 #6aabdd → 天藍 #86bce6 → 淡藍 #b7d6ef → 底邊很淡、接近白的藍 #dbe8f5。；漸層：上下平滑過渡，左右均勻，沒有色帶。；太陽：沒有；雲：沒有，無雲晴天。；感覺：早上的晴天，跟降落點早上的天空幾乎一樣。
+地面一：濕泥巴：顏色：深咖啡色 #5b4736。；地面狀況：濕泥地，大片一團一團隆起、旋轉的泥堆，用黑線勾邊；泥堆頂端有淺褐色反光，還有幾個小圓泥團。；乾涸／龜裂：沒有；泥濘：有，整塊都是濕泥。；水窪：沒有；葉子：沒有；草：沒有；蕨類／小植物：沒有；樹枝：沒有；石頭：沒有；腳印：沒有
+地面二：河水：河水顏色：石板灰藍 #5f798c，帶灰、低彩度。；水面紋路：橫向波浪線，淡藍色亮邊，起伏小。；透明度／倒影：看不到水底，沒有倒影。；其他：沒有浪花。
+
+【這場的角色和狀態】（只用來決定附哪張設定圖，例如 HERO 有沒有戴帽子；背景不寫角色）
+- HERO：火柴人，身高 1.72 m。參考圖：REF_HERO（設定圖上戴著帽子）、REF_PROPS（道具）。這場的狀態：戴帽子、身上有泥巴、胸前斜背一台小相機、背著背包；定在河岸不動。
+- 定格：這段是劇情暫停講解。定格的畫面照常畫彩色圖，剪輯時才變灰；最後回到劇情的那個鏡頭，跟定格那一刻同一個構圖、同一個瞬間。
+- 講解插圖：講解段落裡 HERO 不在場的畫面，畫成生存指南內頁那種手繪插圖：粗黑線、平塗色、簡單形狀，跟角色設定圖同一種畫風；不是平面圖表、不是寫實照片；畫面上不能有任何字或數字。插圖裡的人（科學家、化石獵人）畫成跟 HERO 同一種火柴人畫風的路人，純白皮膚，不要畫成 HERO 本人；插圖裡的動物畫成同一種卡通畫風，顏色自然。插圖鏡頭沒有地圖、沒有走位：camera.cell 填 N/A，t 填 0。
+- 空拍：鏡頭從 HERO 頭上一路往上拉高：先是河邊的平原（HERO 是河邊的一個小點，還在這張地圖裡），再拉到地圖外面（看得到西邊的山、東邊遠方的海），最後看到整片北美洲（照 REF_NA66 畫成從太空往下看的真實大陸，HERO 的位置用一個小亮點，不寫字）；地圖外的空拍 camera.cell 填 N/A。
+- 今天的地獄溪：乾燥的荒地，條紋狀的光禿土坡，幾乎沒有樹，沒有人和人造的東西。
+- 講到植物、動物時可以用插圖；講完鏡頭降回 HERO 身邊。
+
+【四、地圖】暫停講解：地獄溪（從河岸拉高到整片北美洲，再看今天的荒地）
+寬闊的泥濘河岸。北邊是河，河對岸有一群鴨嘴龍；南邊是森林，暴龍從東南邊的大樹後面出來。河岸上有一個巨大的三趾腳印、一叢蕨類、一棵細樹。
+
+大小 24 欄（A–X）× 28 列（1–28），一格 2 公尺。北在上。時間：上午，太陽在東南方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T U V W X
+  1  D D D D D D D D D D D D D D D D D D D D D D D D
+  2  D D D D D D D D D D D D D D D D D D D D D D D D
+  3  s s s s s s s s s s s s s s s s s s s s s s s s
+  4  s s s s s s s s s s s s s s s s s s s s s s s s
+  5  R R R R R R R R R R R R R R R R R R R R R R R R
+  6  R R R R R R R R R R R R R R R R R R R R R R R R
+  7  R R R R R R R R R R R R R R R R R R R R R R R R
+  8  R R R R R R R R R R R R R R R R R R R R R R R R
+  9  R R R R R R R R R R R R R R R R R R R R R R R R
+ 10  R R R R R R R R R R R R R R R R R R R R R R R R
+ 11  R R R R R R R R R R R R R R R R R R R R R R R R
+ 12  R R R R R R R R R R R R R R R R R R R R R R R R
+ 13  R R R R R R R R R R R R R R R R R R R R R R R R
+ 14  R R R R R R R R R R R R R R R R R R R R R R R R
+ 15  b b b b b b b b b b b b b b b b b b b b b b b b
+ 16  b b b b b b b b b b b b b b b b b b b b b b b b
+ 17  b b b b b b b b b b b b b b b b b b b b b b b b
+ 18  b b b b b b b b b b b b b b b b b b b b b b b b
+ 19  b b b b b b b b 3 2 b 1 b b b b b b b b b b b b
+ 20  b b b b b b b b 2 2 b b b b b b b b b b b b b b
+ 21  b b b b b b b b b b b b b b b b b b b b b b b b
+ 22  F F F F F F F F F F F F F F F F F F F F F F F F
+ 23  F F F F F F F F F F F F F F F F F 4 F F F F F F
+ 24  F F F F F F F F F F F F F F F F F F F F F F F F
+ 25  F F F F F F F F F F F F F F F F F F F F F F F F
+ 26  F F F F F F F F F F F F F F F F F F F F F F F F
+ 27  F F F F F F F F F F F F F F F F F F F F F F F F
+ 28  F F F F F F F F F F F F F F F F F F F F F F F F
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 暴龍腳印（a three-toed T. rex footprint pressed into the mud, exactly the size of the adult T. rex's own foot, with only a little rainwater inside the footprint）｜角色：可站｜相機：可放（腳印裡積水，可以站在旁邊或踩進去）
+  2 = 蕨類叢（a clump of ferns）｜角色：可站｜相機：可放
+  3 = 細樹（a thin young tree）｜角色：不可站｜相機：不可放（會被壓彎的樹）
+  4 = 大樹（a huge tree at the forest edge）｜角色：不可站｜相機：不可放
+  D = 對岸的森林（開闊、朦朧）（a distant, open, hazy forest on the far bank, soft and pale, with gaps between the trees）｜角色：不可站｜相機：不可放（對岸，太遠）
+  F = 森林（蘇鐵、銀杏、針葉樹）（a dense Cretaceous forest of cycads, ginkgos and conifers）｜角色：不可站｜相機：可放（相機可以放在森林邊緣往外拍，前景會有枝葉）
+  R = 河（a wide slow river）｜角色：不可站｜相機：可放（相機可以在水面上方往岸上拍）
+  b = 泥地（河岸）（a wide flat stretch of bare mud）｜角色：可站｜相機：可放
+  s = 對岸河邊地（a strip of flat muddy riverside ground on the far bank）｜角色：可站｜相機：不可放（對岸：鴨嘴龍群站在這裡喝水（HERO 過不去，但恐龍可以站））
+HERO 站在河岸（跟第 7 場同一個地方），下一場接他低頭看到腳印。
+地圖外面：北邊 對岸開闊、朦朧的森林往遠方延伸；東邊 寬闊的河和兩岸的森林往遠方延伸；西邊 寬闊的河和兩岸的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
+
+【參考圖】
+- REF_HERO：HERO 角色設定圖（戴帽子、背背包）
+- REF_HERO_NOHAT：HERO 角色設定圖（沒戴帽子、有背背包）
+- REF_NA66：6600 萬年前的北美洲古地圖
+- REF_PROPS：道具：手機、相機、電擊槍、回家按鈕、生存指南、帳單
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP1N-08-01", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "L15", "height_m": 1.6, "look_at": "HERO", "distance_m": 8}, "in_frame": ["HERO"], "action": "剛把小相機從眼前放下，身體半轉、定格那一刻，臉上帶著一點拍到了的滿足與專注，完全靜止。", "sun": "太陽在相機的左前方（相機朝南拍）", "view": {"畫面左側": ["泥地（河岸）", "暴龍腳印", "森林（蘇鐵、銀杏、針葉樹）"], "畫面中間": ["泥地（河岸）", "暴龍腳印", "蕨類叢", "森林（蘇鐵、銀杏、針葉樹）"], "畫面右側": ["泥地（河岸）", "蕨類叢", "細樹", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": ["大樹"]}, "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet), wearing his cap, his body and clothes smeared with mud, a small camera on a strap across his chest, a backpack on his back. HERO's face and hands are pure paper white. He stands completely still, frozen mid-motion, having just lowered a small camera from his eye, with a focused, quietly pleased look on his face. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead."}, {"id": "EP1N-08-02", "variant_of": "N/A", "shot_size": "FS", "angle": "high", "camera": {"cell": "K15", "height_m": 5, "look_at": "HERO", "distance_m": 9}, "in_frame": ["HERO"], "action": "維持定格，頭微微朝下、神情平靜，靜止不動，被架高的鏡頭往下看。", "sun": "太陽在相機的左前方（相機朝南拍）", "view": {"畫面左側": ["泥地（河岸）", "暴龍腳印", "森林（蘇鐵、銀杏、針葉樹）"], "畫面中間": ["泥地（河岸）", "蕨類叢", "暴龍腳印", "森林（蘇鐵、銀杏、針葉樹）"], "畫面右側": ["泥地（河岸）", "蕨類叢", "細樹", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": ["大樹"]}, "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet), wearing his cap, his body and clothes smeared with mud, a small camera on a strap across his chest, a backpack on his back. HERO's face and hands are pure paper white. He stands perfectly still, frozen, head tipped slightly down, a calm quiet expression. Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: High angle: the camera is high above HERO, looking down at him."}, {"id": "EP1N-08-03", "variant_of": "N/A", "shot_size": "EWS", "angle": "aerial", "camera": {"cell": "K14", "height_m": 120, "look_at": "HERO 與河邊平原", "distance_m": 120}, "in_frame": ["HERO"], "action": "鏡頭從 HERO 頭上急速拉高的終點：整片平原攤開，HERO 縮成一個小點，仍靜止。", "sun": "太陽在相機的左前方（相機朝南拍）", "view": {"畫面左側": ["河", "泥地（河岸）", "暴龍腳印", "森林（蘇鐵、銀杏、針葉樹）"], "畫面中間": ["河", "泥地（河岸）", "蕨類叢", "暴龍腳印", "森林（蘇鐵、銀杏、針葉樹）"], "畫面右側": ["河", "泥地（河岸）", "蕨類叢", "細樹", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": ["大樹"]}, "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. The only character is HERO (exactly as in the attached HERO character sheet), shown as a single tiny distant figure standing still far below. HERO's figure is pure paper white. Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject. Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land."}, {"id": "EP1N-08-11", "variant_of": "N/A", "shot_size": "WS", "angle": "eye", "camera": {"cell": "L15", "height_m": 1.6, "look_at": "HERO", "distance_m": 8}, "in_frame": ["HERO"], "action": "跟 01 同一個瞬間、同一個姿勢：剛放下相機、半轉身、定格不動，臉上同樣的專注滿足，準備接下一場低頭看腳印。", "sun": "太陽在相機的左前方（相機朝南拍）", "view": {"畫面左側": ["泥地（河岸）", "暴龍腳印", "森林（蘇鐵、銀杏、針葉樹）"], "畫面中間": ["泥地（河岸）", "暴龍腳印", "蕨類叢", "森林（蘇鐵、銀杏、針葉樹）"], "畫面右側": ["泥地（河岸）", "蕨類叢", "細樹", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": ["大樹"]}, "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only one character is in the picture: HERO (exactly as in the attached HERO character sheet), wearing his cap, his body and clothes smeared with mud, a small camera on a strap across his chest, a backpack on his back. HERO's face and hands are pure paper white. He stands completely still, frozen mid-motion, having just lowered a small camera from his eye, with a focused, quietly pleased look on his face. Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him. Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side, so we see his face and one side of his body. Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead."}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- refs：不准有 ENV 開頭的圖（原則十）；附了空景圖就不附環境圖；HERO 沒戴帽子的鏡頭用 REF_HERO_NOHAT、不用 REF_HERO；有手機等道具附 REF_PROPS；空景圖最多一張；實驗室 _L、_R 不能同時附。
+- 資料沒給的細節（例如腳印裡的積水、天上的雲、鳥）不要寫。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

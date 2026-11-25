@@ -1,0 +1,134 @@
+{
+ "scene_id": "EP1N-10",
+ "notes": "這是一段定格講解，靠「停格—解說—解凍回到劇情」的轉場音撐起結構；聲音極簡，重點只有開頭定格、結尾解凍回到暴龍、以及回劇情瞬間的暴龍低吼帶出下一場追逐。中間講解段幾乎留給旁白。",
+ "sounds": [
+  {
+   "key": "forest_ambience",
+   "layer": "ambience",
+   "zh": "白天森林／蕨叢環境底噪",
+   "search_en": ["forest ambience day", "woodland birds insects", "jungle ambience quiet"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_stinger",
+   "layer": "transition",
+   "zh": "定格停格音（畫面瞬間凍住）",
+   "search_en": ["freeze stinger", "record scratch stop", "time stop whoosh"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "unfreeze_whoosh",
+   "layer": "transition",
+   "zh": "解凍回到劇情的 whoosh（時間重新流動）",
+   "search_en": ["whoosh transition", "time resume whoosh", "swell whoosh"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_sniff",
+   "layer": "event",
+   "zh": "暴龍用力嗅聞（巨大鼻孔吸氣）",
+   "search_en": ["large animal snort sniff", "horse nostril snort", "big creature sniff inhale"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "A huge predatory dinosaur sniffing hard, deep wet nostril inhale with heavy breathy snort, massive and close"
+  },
+  {
+   "key": "trex_growl",
+   "layer": "event",
+   "zh": "暴龍低沉吼聲／喉頭隆隆（湊近時）",
+   "search_en": ["deep animal growl rumble", "monster low growl", "predator guttural snarl"],
+   "duration_sec": [1, 5],
+   "loop": false,
+   "generate_en": "A deep guttural dinosaur growl and chest rumble from a very large predator leaning in close, heavy and threatening"
+  },
+  {
+   "key": "hero_breath",
+   "layer": "reaction",
+   "zh": "HERO 屏住呼吸的悶哼／倒抽一口氣（無台詞）",
+   "search_en": ["scared held breath gasp", "nervous whimper male", "frightened gulp breath"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-10-01",
+   "start": 0.0,
+   "end_shot": "EP1N-10-05",
+   "end": 5.5,
+   "sound": "forest_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.8,
+   "why": "整場發生在蕨叢森林，墊一層很小的環境音讓定格畫面不會死寂；但講解為主，所以只到 bg。"
+  },
+  {
+   "shot": "EP1N-10-01",
+   "start": 0.0,
+   "end_shot": "EP1N-10-01",
+   "end": null,
+   "sound": "freeze_stinger",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "這一格是「等一下，先暫停」的定格瞬間，一個短促的停格音是暫停講解的招牌，少了它觀眾不知道畫面凍住了；放在 0.0 且很短，不會蓋掉旁白。"
+  },
+  {
+   "shot": "EP1N-10-03",
+   "start": 0.2,
+   "end_shot": "EP1N-10-03",
+   "end": null,
+   "sound": "trex_sniff",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "這一格講暴龍鼻子最靈、鼻孔張大用力嗅聞，一聲嗅聞能把「聞」這件事具象化；因為整格都壓著旁白，只放小聲 low。"
+  },
+  {
+   "shot": "EP1N-10-05",
+   "start": 5.2,
+   "end_shot": "EP1N-10-05",
+   "end": null,
+   "sound": "unfreeze_whoosh",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "旁白 5.20 講完「看得一清二楚、聞得一清二楚」後，時間重新流動、從講解回到劇情，需要一個解凍 whoosh 對應開頭的定格音，結構才閉合。"
+  },
+  {
+   "shot": "EP1N-10-05",
+   "start": 5.3,
+   "end_shot": "EP1N-11-01",
+   "end": 1.2,
+   "sound": "trex_growl",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.05,
+   "fade_out": 0.4,
+   "why": "解凍後暴龍鼻尖就貼到 HERO，這聲低吼是整場的危機揭曉與高潮，直接把戲推進下一場的逃跑；放在旁白講完之後，所以可以用 high，並延續到 EP1N-11-01 當追逐的起點。"
+  },
+  {
+   "shot": "EP1N-10-05",
+   "start": 5.0,
+   "end_shot": "EP1N-10-05",
+   "end": null,
+   "sound": "hero_breath",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "回到劇情、HERO 意識到自己被看光聞光的那一刻，一聲屏息悶哼能加強「完蛋了」的反應；不加也成立，故列 optional、low。"
+  }
+ ]
+}

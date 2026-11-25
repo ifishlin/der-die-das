@@ -1,0 +1,125 @@
+{
+ "scene_id": "EP1N-12",
+ "notes": "這是一場「定格暫停講解」：頭尾（01、18）是劇情定格／恢復，中間全是白底手繪插圖配旁白。整場旁白幾乎塞滿每一格，所以重點只放在兩個訊號音——定格與解凍（must），其餘只在插圖的爆點（暴龍砸井底、骨頭裂）用小聲短音點綴。中段插圖是抽象講解空間、不墊環境音；頭尾的氣氛靠喘不過氣的暴龍喘氣聲帶出，故不另設 ambience。",
+ "sounds": [
+  {
+   "key": "freeze_stop",
+   "layer": "transition",
+   "zh": "定格急停音（黑膠刮停）",
+   "search_en": ["record scratch stop", "vinyl needle scratch", "freeze frame stop"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "unfreeze_resume",
+   "layer": "transition",
+   "zh": "解凍恢復動態音（倒刮／時間重啟）",
+   "search_en": ["record scratch reverse", "time resume whoosh", "tape resume start"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": "Cartoon time-unfreeze whoosh, reverse record scratch, scene snapping back into motion."
+  },
+  {
+   "key": "trex_pant",
+   "layer": "reaction",
+   "zh": "暴龍喘到不行的喘氣聲",
+   "search_en": ["large animal panting breath", "heavy creature panting", "monster tired breathing"],
+   "duration_sec": [2, 10],
+   "loop": true,
+   "generate_en": "Exhausted giant T-rex panting heavily, deep raspy worn-out breaths after a long chase."
+  },
+  {
+   "key": "trex_crash",
+   "layer": "event",
+   "zh": "暴龍像石頭砸到井底的沉重撞擊",
+   "search_en": ["heavy body thud impact", "large impact boom dust", "heavy drop thud"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "bone_crack",
+   "layer": "event",
+   "zh": "粗骨頭裂開碎裂聲",
+   "search_en": ["bone crack snap", "wood crack snap break", "cartoon crack break"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": null,
+   "sound": "freeze_stop",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "整場的招牌：畫面在此定格，刮停音告訴觀眾「時間停住、進入講解」。少了它看不出是定格暫停。極短，雖與旁白『好』同起，刮停音是慣用轉場、瞬間即收不蓋後句。"
+  },
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.6,
+   "end_shot": "EP1N-12-01",
+   "end": 7.66,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "定格裡暴龍喘到不行，低聲喘氣墊在旁白底下，帶出『牠追到沒力』的笑點前情境；小聲不搶旁白。"
+  },
+  {
+   "shot": "EP1N-12-06",
+   "start": 9.3,
+   "end_shot": "EP1N-12-06",
+   "end": null,
+   "sound": "trex_crash",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "九噸暴龍像石頭砸進井底是這段講解的視覺爆點；撞擊聲落在旁白『砸在井底』講完（9.34）之後，剛好替那句收尾、不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-12-07",
+   "start": 8.9,
+   "end_shot": "EP1N-12-07",
+   "end": null,
+   "sound": "bone_crack",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "粗骨頭中段裂開、碎片迸飛是『越重越撐不住』的關鍵畫面；裂聲落在旁白『變成八倍』講完（8.88）之後，替論點敲下句點。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.0,
+   "end_shot": "EP1N-12-18",
+   "end": null,
+   "sound": "unfreeze_resume",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "與開頭定格呼應的收尾：畫面恢復動態、解除定格，解凍音讓觀眾知道回到劇情。少了它觀眾不知講解結束、動態已恢復。短促、不蓋緊接的旁白。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.4,
+   "end_shot": "EP1N-12-18",
+   "end": 4.04,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "回到同一構圖，暴龍仍喘氣，呼應『不是不想追、是追不動』的收尾笑點；小聲墊底不搶旁白。"
+  }
+ ]
+}

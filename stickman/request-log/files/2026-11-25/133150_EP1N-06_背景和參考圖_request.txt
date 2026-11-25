@@ -1,0 +1,112 @@
+替一部動畫的每個鏡頭寫「背景描述」（角色後面看得到的環境，中文＋英文），並決定要附哪些參考圖給生圖模型。鏡頭已經設計好，不要改。
+
+【規定】
+1. 依據只有這份 request：地圖、參考圖說明、每個鏡頭的相機。不要參考其他檔案或其他集。衝突時：參考圖 ＞ 地圖 ＞ 鏡頭資料。
+2. 資料沒寫到的細節不寫，不要自己發明。不准提問。鏡頭資料本身跟地圖或參考圖衝突、背景救不回來的，列進 redo，寫一句原因。
+3. 背景：從相機格子朝 look_at 看出去，畫面裡看得到什麼才寫；景別越遠看得越多。先講對著哪一片景或哪面牆，再講那邊有什麼，東西用彼此的關係定位，最後講光線（照地圖的時間和太陽）。
+4. 不寫東南西北、不寫幾公尺、不用「前景／中景／背景」這類分層詞；不寫角色的長相、動作、狀態。地圖上的方位（北在上、太陽在東南）只給你判斷畫面裡看得到什麼；寫出來時一律換成畫面上的左右、前後、上下，或東西彼此的關係（例：河在 HERO 背後、森林在畫面左邊、陽光從右上方照下來）。只有插圖鏡頭講真實地理（例如北美洲的西半部）時可以用方位。
+5. 插圖鏡頭（camera.cell 是 N/A）：照【這場】寫的插圖畫法；沒寫的寫成「手繪插圖：淡黃色的紙張背景；……。粗黑線、平塗色。畫面上沒有任何字或數字。」
+6. 遠景備份（W）和它的主鏡頭看得到的東西一致，只差範圍大小。
+7. 參考圖：入鏡角色的設定圖；HERO 跟大動物（恐龍、猛獁象）同框附那隻的比例圖 PAIR2_<名字>；HERO 跟博士 PROF 同框附 PAIR2_PROF（2026-11-25）；看得到的地點、牆面、道具附對應的圖（實驗室牆面照第 15 條、空景圖照第 14 條）。只能用【參考圖】裡的。
+8. 中文、英文意思一樣；英文以 "Background: " 開頭，直白的句子。
+9. 光線方向（2026-11-21 原則八）：鏡頭的 sun 是程式照地圖算好的「太陽在相機的哪一邊」。光線照這個方向寫（光從哪邊來、影子往哪邊倒），方向不能改；太陽不在相機前方（左前、正前、右前以外）時，畫面裡不能出現太陽。sun 是 null 的鏡頭照地圖自己判斷。
+10. 畫面裡有什麼（2026-11-21 原則八）：鏡頭的 view 是程式照地圖算好的「畫面左側／中間／右側各看得到什麼」（大致由近到遠；樹林、建築會擋住後面）。背景只能寫 view 裡有的東西，左右位置照 view；not_in_view 裡的東西一律不准寫。景別越近看到越少：特寫、近景只寫最靠近角色後面的一兩樣。view 是 null 的鏡頭照地圖自己判斷。
+11. 天空、地面、道路、河流（2026-11-25 原則十）：refs 不准有 ENV 開頭的圖。天空、地面、道路、河流長什麼樣子（顏色、質感、上面有什麼）都不用寫——組檔時程式會照地圖補上同一段描述；你寫了反而會跟它打架。背景只寫看得到哪些東西、在畫面哪裡、彼此的關係、光從哪邊來；可以提到地形的名字和位置（例：河在 HERO 背後、小路往畫面右邊延伸），但不要描述它的顏色和樣子。
+12. HERO 的帽子：HERO 這個鏡頭沒戴帽子（這場的狀態寫被叼走之後、或整場沒戴）就附 REF_HERO_NOHAT，不附 REF_HERO；有戴帽子附 REF_HERO。
+13. 道具：鏡頭的 prompt 或動作裡有手機，一定要附 REF_PROPS（2026-11-24 使用者：玩手機的格子之前都漏附）；相機、電擊槍、回家按鈕、生存指南、帳單在這個鏡頭被拿在手上或正在用時也附 REF_PROPS。
+14. 空景圖（【參考圖】裡有 PLATE_ 開頭的圖時；2026-11-24 改版：同一個地點每次出現都要一樣）：
+   - 看得到場地的鏡頭，附一張空景圖，方向照鏡頭的 plate_dir（程式照地圖算的相機朝向：N／W／S／E／AIR）。plate_dir 是 E 或 null、或只拍到眼睛或物件的大特寫，不附空景圖。
+   - 甲龍在這個鏡頭還睡著、看起來像石頭（包括入鏡的）→ 附 _ROCK；甲龍醒了、在動（睜眼抬頭、甩尾、吃東西、站起來）→ 附 _EMPTY，再附 REF_ANKY（HERO 同框也附 PAIR2_ANKY）。
+   - 附了空景圖就不附環境圖（ENV_），背景英文寫成 "Background: The place is exactly as in the attached background image <空景圖檔名>." 再接劇情需要、空景圖上沒有的東西（時光隧道、HERO 身體底下那一小塊泥巴、留在地上的背包）；不要再描述樹林、天空、地面、光線。
+15. 實驗室牆面圖（2026-11-24 改版：實驗室畫出左右兩面側牆、牆上東西一直變）：參考圖裡出現的牆，生圖模型就會畫出來。只附鏡頭看得到的牆：正對那面牆附它的 _F；畫面帶到左側牆，再加同一面牆的 _L（左半含左轉角）；帶到右側牆，加同一面牆的 _R（右半含右轉角）；_L 和 _R 不能同時附；時光機牆要帶到左側牆時，正面改附 LAB_MACHINE_F2。鏡頭背後的牆不附。
+   背景英文寫成 "Background: The lab's <牆名> wall (and its left/right side wall), exactly as in the attached wall images <檔名>." 再接光線；牆上有什麼看牆面圖，不要再逐項描述。
+
+【這場】第 6 場　降落點森林・上午
+
+【這場的角色和狀態】（只用來決定附哪張設定圖，例如 HERO 有沒有戴帽子；背景不寫角色）
+- HERO：火柴人，身高 1.72 m。參考圖：REF_HERO（設定圖上戴著帽子）、REF_PROPS（道具）。這場的狀態：戴帽子、胸前斜背一台小相機、背著背包（放水壺的袋子是空的）；剛摔進泥地，身上沾了泥巴、滿頭汗。
+- ANKY（甲龍，旁白叫牠「石頭」）：身高 2.23 m、身長約 6 m。參考圖：REF_ANKY、PAIR2_ANKY、KNEEL_ANKY。這場一直趴著睡覺，背上長滿青苔，看起來像一顆大石頭；只有眨眼。
+- 蚊子：沒有參考圖。
+
+【四、地圖】降落點空地・上午
+HERO 掉下來的森林空地。時光隧道出口在南邊 G29 正上方；甲龍趴在 D27–F28，像一顆長青苔的大石頭；空地北邊有一道樹林（D15–J16）把河擋住，只有最東邊 K15–K16 留一格缺口，從那裡穿過去才看得到河；河對岸有鴨嘴龍。東西兩側是森林。
+
+大小 14 欄（A–N）× 34 列（1–34），一格 2 公尺。北在上。時間：上午，太陽在東南方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N
+  1  D D D D D D D D D D D D D D
+  2  D D D D D D D D D D D D D D
+  3  s s s s s s s s s s s s s s
+  4  s s s s s s s s s s s s s s
+  5  R R R R R R R R R R R R R R
+  6  R R R R R R R R R R R R R R
+  7  R R R R R R R R R R R R R R
+  8  R R R R R R R R R R R R R R
+  9  R R R R R R R R R R R R R R
+ 10  R R R R R R R R R R R R R R
+ 11  R R R R R R R R R R R R R R
+ 12  R R R R R R R R R R R R R R
+ 13  R R R R R R R R R R R R R R
+ 14  R R R R R R R R R R R R R R
+ 15  F F F F F F F F F F g F F F
+ 16  F F F F F F F F F F g F F F
+ 17  F F F g g g g g g g g F F F
+ 18  F F F g g g g g g g g F F F
+ 19  F F F g g g g g g g g F F F
+ 20  F F F g g g g g g g g F F F
+ 21  F F F g g g g g g g g F F F
+ 22  F F F g g g g g g g g F F F
+ 23  F F F g g g g g g g g F F F
+ 24  F F F g g g g g g g g F F F
+ 25  F F F g g g g g g g g F F F
+ 26  F F F g g g g g g g g F F F
+ 27  F F F A A A g g g g g F F F
+ 28  F F F A A A g g g g g F F F
+ 29  F F F g g g g g g g g F F F
+ 30  F F F g g g g g g g g F F F
+ 31  F F F g g g g g g g g F F F
+ 32  F F F g g g g g g g g F F F
+ 33  F F F F F F F F F r r F F F
+ 34  F F F F F F F F F r r F F F
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  A = 甲龍「石頭」（ANKY）睡著，像一顆長滿青苔的大石頭（ANKY the ankylosaur asleep, looking like a big moss-covered boulder）｜角色：不可站｜相機：不可放（不能穿過；劇情需要時 HERO 可以坐在牠背上）
+  D = 對岸的森林（開闊、朦朧）（a distant, open, hazy forest on the far bank, soft and pale, with gaps between the trees）｜角色：不可站｜相機：不可放（對岸，太遠）
+  F = 森林（蘇鐵、銀杏、針葉樹）（a dense Cretaceous forest of cycads, ginkgos and conifers）｜角色：不可站｜相機：可放（相機可以放在森林邊緣往外拍，前景會有枝葉）
+  R = 河（a wide slow river）｜角色：不可站｜相機：可放（相機可以在水面上方往岸上拍）
+  g = 森林裡的空地（an open patch of forest floor with leaf litter and low plants）｜角色：可站｜相機：可放
+  r = 森林小路（往南穿出森林；暴龍和 HERO 從這裡衝進空地）（a narrow dirt trail leading south out of the clearing through the forest）｜角色：可站｜相機：可放
+  s = 對岸河邊地（a strip of flat muddy riverside ground on the far bank）｜角色：可站｜相機：不可放（對岸：鴨嘴龍群站在這裡喝水（HERO 過不去，但恐龍可以站））
+  T = 時光隧道出口（HERO 掉下來的地方，掉下來後關閉）（the spot in the air where the blue time tunnel opens），位置：G29 正上方的空中
+甲龍頭朝東、尾錘朝西；甲龍在 D27–F28、時光隧道出口在 G29 上方，位置是固定的（第 17 場會回到同一個地方），不能移動。空地是平的光禿泥土地加落葉，沒有泥坑、沒有蕨類叢；HERO 摔下來的地方只有他身體底下一小塊泥巴（地圖上不畫，用到的鏡頭在 prompt 寫）。空地四周是密林；北邊那排樹只在東端有缺口通到河；南端靠東有一條森林小路（J33–K34）往南穿出森林。空景圖（照地圖畫好的場地，沒有人；_ROCK＝甲龍睡成石頭、_EMPTY＝甲龍不在）：PLATE_ARRIVE_V2_N_ROCK、PLATE_ARRIVE_V2_N_EMPTY、PLATE_ARRIVE_V2_W_ROCK、PLATE_ARRIVE_V2_W_EMPTY、PLATE_ARRIVE_V2_S_ROCK、PLATE_ARRIVE_V2_S_EMPTY、PLATE_ARRIVE_V2_AIR_ROCK、PLATE_ARRIVE_V2_AIR_EMPTY。
+地圖外面：北邊 對岸開闊、朦朧的森林往遠方延伸；東邊 寬闊的河和兩岸的森林往遠方延伸；西邊 寬闊的河和兩岸的森林往遠方延伸；南邊 茂密的森林往遠方延伸。
+
+【參考圖】
+- KNEEL_ANKY：HERO 跪在甲龍旁邊的比例圖
+- PAIR2_ANKY：HERO 和甲龍的身高比例圖
+- PLATE_ARRIVE_V2_AIR_EMPTY：降落點空地空景圖（上午，沒有人、沒有甲龍）：從空地南邊的高空往前往下斜看：窄長的空地四周是森林，空地遠端那排樹的右端有缺口通到河，近端右角有森林小路往下穿出森林；甲龍不在（從 AIR_ROCK 那張抹掉，其他一模一樣）。（2026-11-24）
+- PLATE_ARRIVE_V2_AIR_ROCK：降落點空地空景圖（上午，沒有人）：從空地南邊的高空往前往下斜看：窄長的空地四周是森林，空地遠端那排樹的右端有缺口通到河，近端右角有森林小路往下穿出森林；甲龍睡成長青苔的大石頭，在空地左側。（2026-11-24 照地圖 arrive 畫）
+- PLATE_ARRIVE_V2_N_EMPTY：降落點空地空景圖（上午，沒有人、沒有甲龍）：相機在空地南端、平視往前看：空地往前延伸，盡頭一整排樹封住，只在中間偏右有一個窄缺口，從缺口看得到河和對岸；甲龍不在（從 N_ROCK 那張抹掉，其他一模一樣）。（2026-11-24）
+- PLATE_ARRIVE_V2_N_ROCK：降落點空地空景圖（上午，沒有人）：相機在空地南端、平視往前看：空地往前延伸，盡頭一整排樹封住，只在中間偏右有一個窄缺口，從缺口看得到河和對岸；甲龍睡成長青苔的大石頭，在畫面左下角。（2026-11-24 照地圖 arrive 畫）
+- PLATE_ARRIVE_V2_S_EMPTY：降落點空地空景圖（上午，沒有人、沒有甲龍）：相機在空地北段、平視往前看：空地往前延伸，盡頭一整排森林，中間偏左有一條森林小路通進樹林；甲龍不在（從 S_ROCK 那張抹掉，其他一模一樣）。（2026-11-24）
+- PLATE_ARRIVE_V2_S_ROCK：降落點空地空景圖（上午，沒有人）：相機在空地北段、平視往前看：空地往前延伸，盡頭一整排森林，中間偏左有一條森林小路通進樹林；甲龍睡成長青苔的大石頭，在畫面右邊。（2026-11-24 照地圖 arrive 畫）
+- PLATE_ARRIVE_V2_W_EMPTY：降落點空地空景圖（上午，沒有人、沒有甲龍）：相機在空地右側（東邊）、平視橫看過空地：空地後面是一整面森林，沒有缺口也沒有路；甲龍不在（從 W_ROCK 那張抹掉，其他一模一樣）。（2026-11-24）
+- PLATE_ARRIVE_V2_W_ROCK：降落點空地空景圖（上午，沒有人）：相機在空地右側（東邊）、平視橫看過空地：空地後面是一整面森林，沒有缺口也沒有路；甲龍睡成長青苔的大石頭，在畫面正中間。（2026-11-24 照地圖 arrive 畫）
+- REF_ANKY：甲龍設定圖
+- REF_HERO：HERO 角色設定圖（戴帽子、背背包）
+- REF_HERO_NOHAT：HERO 角色設定圖（沒戴帽子、有背背包）
+- REF_PROPS：道具：手機、相機、電擊槍、回家按鈕、生存指南、帳單
+
+【鏡頭】（in_frame＝入鏡角色）
+[{"id": "EP1N-06-03", "variant_of": "N/A", "shot_size": "ECU", "angle": "high", "camera": {"cell": "G27", "height_m": "1.5", "look_at": "HERO 的手機", "distance_m": "1.5"}, "in_frame": ["HERO"], "action": "雙手捧著手機，螢幕上的 loading 一直轉圈，查不到東西", "sun": "太陽在相機的左前方（相機朝南拍）", "view": {"畫面左側": ["森林裡的空地", "時光隧道出口（HERO 掉下來的地方，掉下來後關閉）（空中）", "森林（蘇鐵、銀杏、針葉樹）", "森林小路（往南穿出森林；暴龍和 HERO 從這裡衝進空地）", "地圖外（南）：茂密的森林往遠方延伸"], "畫面中間": ["森林裡的空地", "時光隧道出口（HERO 掉下來的地方，掉下來後關閉）（空中）", "森林（蘇鐵、銀杏、針葉樹）"], "畫面右側": ["森林裡的空地", "甲龍「石頭」（ANKY）睡著，像一顆長滿青苔的大石頭", "時光隧道出口（HERO 掉下來的地方，掉下來後關閉）（空中）", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": []}, "plate_dir": "S", "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. Only HERO's two hands in the picture, holding up a smartphone, seen from directly above looking down at the screen. On the screen there is only a grey spinning loading circle (a loading spinner) and nothing else — absolutely no text, no words, no letters, no numbers anywhere. HERO's hands are pure paper white. Shot size: Extreme Close-up (ECU). Only the smartphone screen and HERO's hands holding it fill the picture. Camera angle: High angle: the camera is high above the hands, looking straight down at the phone."}, {"id": "EP1N-06-07", "variant_of": "N/A", "shot_size": "ECU", "angle": "eye", "camera": {"cell": "G28", "height_m": "1.4", "look_at": "ANKY 的眼睛", "distance_m": "1.5"}, "in_frame": ["ANKY"], "action": "一隻昏昏欲睡的爬蟲眼睛正緩緩睜開、眨了一下，重眼皮、半夢半醒", "sun": "太陽在相機的左後方（相機朝西拍）", "view": {"畫面左側": ["森林裡的空地", "甲龍「石頭」（ANKY）睡著，像一顆長滿青苔的大石頭", "森林（蘇鐵、銀杏、針葉樹）"], "畫面中間": ["森林裡的空地", "甲龍「石頭」（ANKY）睡著，像一顆長滿青苔的大石頭", "森林（蘇鐵、銀杏、針葉樹）"], "畫面右側": ["森林裡的空地", "甲龍「石頭」（ANKY）睡著，像一顆長滿青苔的大石頭", "森林（蘇鐵、銀杏、針葉樹）"], "not_in_view": ["時光隧道出口（HERO 掉下來的地方，掉下來後關閉）"]}, "plate_dir": "W", "prompt": "16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture. An extreme close-up of ANKY the ankylosaur's single eye (exactly as in the attached ANKY character sheet), surrounded by its mossy, bumpy armored hide. The one sleepy reptilian eye is slowly blinking open — heavy-lidded, drowsy and only half-awake. Thick green moss and bony armor plates fill the rest of the frame. No other characters, no person in the picture. Shot size: Extreme Close-up (ECU). Only ANKY's eye and the moss and armor around it fill the picture. Camera direction: side view. The camera is beside ANKY's head and sees the eye from the side. Camera angle: Eye-level: the camera is level with the eye, looking straight at it."}]
+
+【回傳前逐句檢查】每一個鏡頭的中文和英文，逐句看一遍，出現下面任何一個就改寫：
+- 東、西、南、北、north、east、south、west（包括「北牆」「東邊的森林」「從西邊照過來」）→ 換成畫面上的左右前後或東西彼此的關係（例：「時光機那面牆」「HERO 背後的森林」「陽光從鏡頭後方照過來」）。只有插圖講真實地理可以保留。
+- 公尺、meter。
+- refs：不准有 ENV 開頭的圖（原則十）；附了空景圖就不附環境圖；HERO 沒戴帽子的鏡頭用 REF_HERO_NOHAT、不用 REF_HERO；有手機等道具附 REF_PROPS；空景圖最多一張；實驗室 _L、_R 不能同時附。
+- 資料沒給的細節（例如腳印裡的積水、天上的雲、鳥）不要寫。
+- 天空、地面、道路、河流的顏色和樣子（第 11 條，組檔時照地圖補）→ 刪掉，只留它們的位置和關係。
+- 「背景」「前景」「中景」、background（英文開頭的 "Background: " 除外）、foreground、midground（插圖規定的「淡黃色的紙張背景」除外）。
+
+【回傳格式】只回一個 JSON，不要其他文字。shots 要有上面每一個鏡頭號，不能多也不能少；沒有要重送的 redo 填 []。不要加其他欄位。
+{"shots": {"<鏡頭號>": {"zh": "<背景中文>", "en": "Background: <背景英文>", "refs": ["<參考圖檔名>"]}}, "redo": [{"id": "<鏡頭號>", "why": "<一句原因>"}]}

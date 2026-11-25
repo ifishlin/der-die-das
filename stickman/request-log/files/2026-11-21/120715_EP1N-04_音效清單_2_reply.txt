@@ -1,0 +1,176 @@
+{
+ "scene_id": "EP1N-04",
+ "notes": "室內講課為主、旁白密、以對白感的喜劇節奏為核心，所以大部分格不放音效；只在三個笑點／轉折（HERO 打哈欠、PROF 閃到腰、最後拍機器接時空跳躍）放 must，其餘腳步書寫等皆 optional 墊氣氛。所有事件音都避開旁白、擺在句子講完的空檔。",
+ "sounds": [
+  {
+   "key": "lab_hum",
+   "layer": "ambience",
+   "zh": "實驗室機器低鳴（時光機圓環）",
+   "search_en": ["laboratory machine hum", "electrical equipment hum loop", "sci-fi machine idle hum"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "chalk_write",
+   "layer": "event",
+   "zh": "粉筆在黑板上畫線寫字",
+   "search_en": ["chalk writing blackboard", "chalkboard drawing line"],
+   "duration_sec": [3, 15],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "cart_roll",
+   "layer": "event",
+   "zh": "小推車滾向鏡頭",
+   "search_en": ["cart rolling wheels", "trolley wheels floor", "metal cart rolling indoor"],
+   "duration_sec": [2, 8],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "yawn",
+   "layer": "reaction",
+   "zh": "HERO 誇張打哈欠（無語意）",
+   "search_en": ["male yawn", "big tired yawn", "person yawning"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "back_pain_grunt",
+   "layer": "reaction",
+   "zh": "PROF 閃到腰的痛苦悶哼（無語意）",
+   "search_en": ["man grunt pain", "ouch back pain groan", "male hurt grunt"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "lever_pull",
+   "layer": "event",
+   "zh": "金屬紅色拉桿往下拉（機械喀噠）",
+   "search_en": ["metal lever pull clunk", "big switch lever pull", "machine lever clank"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "machine_bang",
+   "layer": "event",
+   "zh": "拳頭用力拍金屬機器",
+   "search_en": ["hit metal machine fist", "bang metal panel", "punch metal thud"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "time_warp",
+   "layer": "transition",
+   "zh": "時空跳躍啟動（能量充能後猛然抽離）",
+   "search_en": ["sci-fi time warp whoosh", "teleport energy charge up", "portal activate swoosh"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "A low electrical hum rapidly charging up into a bright crackling energy surge, then a sudden deep whoosh as a time portal snaps open and pulls everything away, cartoon sci-fi time travel"
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-04-01",
+   "start": 0.0,
+   "end_shot": "EP1N-04-20",
+   "end": null,
+   "sound": "lab_hum",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.0,
+   "why": "整場都在博士的研究小屋一樓、北牆有時光機圓環，墊一層很小的機器低鳴建立地點感；音量 bg 不蓋旁白，整場一段跨到最後一格"
+  },
+  {
+   "shot": "EP1N-04-04",
+   "start": 1.0,
+   "end_shot": "EP1N-04-04",
+   "end": 13.0,
+   "sound": "chalk_write",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.5,
+   "why": "這格 PROF 背對鏡頭在黑板上畫整條時間線，粉筆聲能讓資訊鏡頭有實感；壓在 low 墊在旁白底下不搶話"
+  },
+  {
+   "shot": "EP1N-04-08",
+   "start": 2.3,
+   "end_shot": "EP1N-04-08",
+   "end": null,
+   "sound": "yawn",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "這格是笑點（博士熱血上課、HERO 卻打大哈欠）；哈欠聲是這個對比笑點的落點，少了就沒戲。擺在旁白 2.3 秒講完『你打了一個大哈欠』之後，不蓋旁白"
+  },
+  {
+   "shot": "EP1N-04-11",
+   "start": 10.04,
+   "end_shot": "EP1N-04-11",
+   "end": null,
+   "sound": "back_pain_grunt",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "第三課的動作笑點高潮：博士示範急轉彎閃到腰。痛呼是這個高潮的爆點，必須有。擺在旁白 10.04 秒講完之後的空檔，可以放大聲"
+  },
+  {
+   "shot": "EP1N-04-13",
+   "start": 0.5,
+   "end_shot": "EP1N-04-13",
+   "end": 5.0,
+   "sound": "cart_roll",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "PROF 推著載三樣道具的小推車朝鏡頭推來，推車滾動聲增加動作實感；low 墊在旁白底下"
+  },
+  {
+   "shot": "EP1N-04-19",
+   "start": 5.3,
+   "end_shot": "EP1N-04-19",
+   "end": null,
+   "sound": "lever_pull",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "『結果他直接就拉了』的轉折：拉桿喀噠聲點出博士提前動手。擺在旁白 5.52 前的收尾空檔（約 5.3 秒），強化偷拉的動作；歸 optional 因為旁白已交代清楚"
+  },
+  {
+   "shot": "EP1N-04-20",
+   "start": 3.66,
+   "end_shot": "EP1N-04-20",
+   "end": null,
+   "sound": "machine_bang",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "機器沒反應、博士用力拍機器，是本場收尾的關鍵動作，也是觸發下一場時空跳躍的因；重拍聲必須有。擺在旁白 3.66 秒講完之後"
+  },
+  {
+   "shot": "EP1N-04-20",
+   "start": 3.9,
+   "end_shot": "EP1N-05-01",
+   "end": 1.2,
+   "sound": "time_warp",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.1,
+   "fade_out": 0.6,
+   "why": "拍下機器後緊接時空跳躍到白堊紀北美，轉場音把本場的挫敗定格和下一場銜接起來；延續到下一場第一格前 1.2 秒，是必要的剪輯手法音"
+  }
+ ]
+}

@@ -1,0 +1,310 @@
+{
+ "scene_id": "EP1N-16",
+ "notes": "白堊紀森林追逐場：用森林環境音＋泥地腳步＋暴龍沉重踏步墊出整段壓迫感，三個 must 分別放在暴龍首次露面(踏步)、急轉甩開牠衝過頭(笑點轉折)、摔一大跤(喜劇高潮)。旁白幾乎鋪滿每格，吼叫/摔跤等大聲音效都塞在句子講完的空檔，墊底的腳步與喘氣全壓在 bg/low。",
+ "sounds": [
+  {
+   "key": "forest_ambience",
+   "layer": "ambience",
+   "zh": "白堊紀森林環境音",
+   "search_en": ["forest ambience birds", "jungle forest background", "dense woods atmosphere"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_run_mud",
+   "layer": "event",
+   "zh": "泥地奔跑腳步聲（HERO）",
+   "search_en": ["running footsteps mud", "muddy footsteps run", "squelch run dirt"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_pant",
+   "layer": "reaction",
+   "zh": "HERO 急促喘氣",
+   "search_en": ["man panting breath", "exhausted breathing male", "out of breath running"],
+   "duration_sec": [2, 15],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "dino_steps",
+   "layer": "event",
+   "zh": "暴龍沉重踏步",
+   "search_en": ["heavy monster footsteps", "large creature stomp", "elephant footstep thump"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": "Heavy two-legged dinosaur running footsteps, each step a deep ground-shaking thud with low rumble, large and fast"
+  },
+  {
+   "key": "dino_breath",
+   "layer": "event",
+   "zh": "暴龍粗重喘息",
+   "search_en": ["large animal breathing", "big creature breath growl", "beast heavy breathing"],
+   "duration_sec": [2, 10],
+   "loop": true,
+   "generate_en": "Large predatory dinosaur panting close behind, wet raspy heavy breaths with a low throat growl"
+  },
+  {
+   "key": "dino_snap",
+   "layer": "event",
+   "zh": "暴龍咬合（咬空）",
+   "search_en": ["big jaw snap bite", "alligator bite snap", "monster chomp"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": "Huge dinosaur jaws snapping shut on empty air, sharp wet clap of giant teeth"
+  },
+  {
+   "key": "dino_roar",
+   "layer": "event",
+   "zh": "暴龍低沉吼叫",
+   "search_en": ["dinosaur roar", "monster roar deep", "beast growl roar"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "Deep aggressive dinosaur roar, large predator, bassy and threatening"
+  },
+  {
+   "key": "dino_fall",
+   "layer": "event",
+   "zh": "暴龍重摔滑地",
+   "search_en": ["heavy body fall thud", "large creature crash ground", "big impact dirt slide"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "Massive dinosaur tripping and crashing face-first into mud, heavy body thud followed by a long sliding scrape through dirt"
+  },
+  {
+   "key": "hero_skid",
+   "layer": "event",
+   "zh": "HERO 急轉打滑",
+   "search_en": ["footstep skid dirt", "shoe slide mud", "quick turn skid ground"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "dino_skid",
+   "layer": "event",
+   "zh": "暴龍煞不住衝過頭滑行",
+   "search_en": ["large slide dirt skid", "heavy body sliding ground", "big creature skid dirt"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": "Large heavy dinosaur overshooting a turn, claws skidding and plowing through mud as it fails to brake"
+  },
+  {
+   "key": "hero_grunt",
+   "layer": "reaction",
+   "zh": "HERO 落地使勁悶哼",
+   "search_en": ["man landing grunt", "male effort grunt", "jump land grunt"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_disgust",
+   "layer": "reaction",
+   "zh": "HERO 被臭味熏到的嫌惡聲",
+   "search_en": ["man disgusted ugh", "yuck reaction male", "disgust groan"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "dino_snort",
+   "layer": "event",
+   "zh": "暴龍不爽鼻息",
+   "search_en": ["large animal snort", "angry beast snort", "big creature huff"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": "Large dinosaur shaking its head and snorting with irritation, wet nasal huff"
+  },
+  {
+   "key": "transition_whoosh",
+   "layer": "transition",
+   "zh": "柔和轉場呼聲",
+   "search_en": ["soft whoosh transition", "cinematic swoosh", "gentle whoosh pass by"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-16-01",
+   "start": 0.0,
+   "end_shot": "EP1N-16-10",
+   "end": 7.46,
+   "sound": "forest_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0, "fade_out": 2.0,
+   "why": "追逐發生在高大森林裡，整段墊一層森林氣氛，最後一格 HERO 跑進森林深處時一起淡出收場。"
+  },
+  {
+   "shot": "EP1N-16-01",
+   "start": 0.0,
+   "end_shot": "EP1N-16-10",
+   "end": 7.0,
+   "sound": "hero_run_mud",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2, "fade_out": 1.5,
+   "why": "HERO 全程在爛泥巴路上狂奔，持續腳步墊底；壓在 low 不蓋旁白，急轉與摔跤時仍可延續。"
+  },
+  {
+   "shot": "EP1N-16-01",
+   "start": 0.0,
+   "end_shot": "EP1N-16-10",
+   "end": 7.0,
+   "sound": "hero_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.5, "fade_out": 1.5,
+   "why": "分鏡寫 HERO 上氣不接下氣，持續喘息強化力竭感；角色不說話，只用喘氣。"
+  },
+  {
+   "shot": "EP1N-16-01",
+   "start": 4.54,
+   "end_shot": "EP1N-16-01",
+   "end": null,
+   "sound": "dino_roar",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "本格旁白 4.54 講完後的空檔先讓觀眾聽見怪物吼聲，為下一格暴龍張口露面鋪陳；放在空檔才敢用 mid。"
+  },
+  {
+   "shot": "EP1N-16-02",
+   "start": 0.0,
+   "end_shot": "EP1N-16-07",
+   "end": 5.0,
+   "sound": "dino_steps",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.3, "fade_out": 0.5,
+   "why": "暴龍在這格第一次露面，沉重快速的踏步建立牠的體重與步步逼近的威脅，少了它追逐的壓迫感就不成立；旁白幾乎鋪滿，壓在 low 墊底，一路延續到牠摔倒前。"
+  },
+  {
+   "shot": "EP1N-16-02",
+   "start": 12.44,
+   "end_shot": "EP1N-16-02",
+   "end": null,
+   "sound": "dino_snap",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "旁白 12.44 講完後的空檔補一記咬合聲，呼應大嘴逼近咬向 HERO 又咬空，接下一格『你一落地』。"
+  },
+  {
+   "shot": "EP1N-16-03",
+   "start": 0.2,
+   "end_shot": "EP1N-16-03",
+   "end": null,
+   "sound": "hero_grunt",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.1,
+   "why": "HERO 剛落地重心壓低、用力蹬地重新起跑，一聲使勁悶哼；壓低音量不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-16-04",
+   "start": 0.0,
+   "end_shot": "EP1N-16-04",
+   "end": 5.0,
+   "sound": "dino_breath",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3, "fade_out": 0.4,
+   "why": "旁白直接說『你聽得到牠在後面喘氣』，墊一層大型動物粗重喘息直接呼應台詞內容。"
+  },
+  {
+   "shot": "EP1N-16-04",
+   "start": 5.36,
+   "end_shot": "EP1N-16-04",
+   "end": null,
+   "sound": "hero_disgust",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "旁白 5.36 講完口臭的梗後，HERO 皺鼻摀鼻的嫌惡聲是這格笑點的收尾；放在旁白後的空檔才用 mid。"
+  },
+  {
+   "shot": "EP1N-16-06",
+   "start": 0.2,
+   "end_shot": "EP1N-16-06",
+   "end": null,
+   "sound": "hero_skid",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "HERO 猛然急轉、泥地打滑的一聲，鋪陳接下來暴龍衝過頭。"
+  },
+  {
+   "shot": "EP1N-16-06",
+   "start": 2.70,
+   "end_shot": "EP1N-16-06",
+   "end": null,
+   "sound": "dino_skid",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "暴龍煞不住衝過頭，是整場『跑越快越難轉彎』這個道理第一次奏效的轉折兼笑點，少了這聲笑點就垮；放在旁白 2.70 講完的空檔，用全場唯一的 high 做爆點。"
+  },
+  {
+   "shot": "EP1N-16-07",
+   "start": 0.2,
+   "end_shot": "EP1N-16-07",
+   "end": null,
+   "sound": "hero_skid",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "HERO 第二次急轉打滑，延續前一格的招式。"
+  },
+  {
+   "shot": "EP1N-16-07",
+   "start": 5.06,
+   "end_shot": "EP1N-16-07",
+   "end": null,
+   "sound": "dino_skid",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "暴龍第二次又衝過頭，重複笑點但稍微收弱（mid），避免跟第一次搶戲；放在旁白 5.06 後的空檔。"
+  },
+  {
+   "shot": "EP1N-16-08",
+   "start": 0.3,
+   "end_shot": "EP1N-16-08",
+   "end": 2.6,
+   "sound": "dino_fall",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.4,
+   "why": "暴龍重重摔一大跤、臉朝地滑出去，是追逐喜劇的高潮與喘息點，少了這聲『摔』的重量戲就空了；旁白同步描述此動作，音量壓在 mid 保旁白聽得清楚。"
+  },
+  {
+   "shot": "EP1N-16-09",
+   "start": 0.2,
+   "end_shot": "EP1N-16-09",
+   "end": null,
+   "sound": "dino_snort",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "暴龍甩甩頭、撐地爬起、一臉不爽的鼻息，呼應『可是牠又爬了起來』。"
+  },
+  {
+   "shot": "EP1N-16-10",
+   "start": 6.8,
+   "end_shot": "EP1N-17-01",
+   "end": 0.8,
+   "sound": "transition_whoosh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2, "fade_out": 0.5,
+   "why": "追逐在最後一格漸遠收束，轉到下一場平靜的黃昏空地，用一記柔和 whoosh 柔化從激烈追逐到安靜場景的切換。"
+  }
+ ]
+}

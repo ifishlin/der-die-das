@@ -1,0 +1,1 @@
+EP1N-02-07、EP1N-13-05 的 refs 加 REF_PROPS（prompt 有手機）

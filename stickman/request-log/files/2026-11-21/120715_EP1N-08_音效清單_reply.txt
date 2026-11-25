@@ -1,0 +1,139 @@
+{
+ "scene_id": "EP1N-08",
+ "notes": "這是一場講解式的暫停，旁白幾乎鋪滿每一格，所以事件音極少、以轉場和環境音為主。核心是三個剪輯節點（開頭定格、史前跳到今天、從太空降回），加上兩段對照的環境底（河岸 vs 今天荒地乾風）。旁白期間只墊 bg/low，轉場停格因為是瞬間訊號且馬上收掉，給 mid。",
+ "sounds": [
+  {
+   "key": "riverbank_amb",
+   "layer": "ambience",
+   "zh": "河岸環境音（水流、鳥、微風）",
+   "search_en": ["river ambience birds", "riverbank nature ambience", "gentle stream breeze"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_hit",
+   "layer": "transition",
+   "zh": "定格停格音",
+   "search_en": ["freeze frame sound effect", "record scratch stop", "time freeze stinger"],
+   "duration_sec": [0.4, 2],
+   "loop": false,
+   "generate_en": "a short abrupt freeze-frame stinger, like time suddenly stopping, a soft reverse-reverb hit then silence"
+  },
+  {
+   "key": "camera_rise",
+   "layer": "transition",
+   "zh": "鏡頭拉高的上升 whoosh",
+   "search_en": ["whoosh rising", "camera swoosh up", "ascending whoosh"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "time_warp",
+   "layer": "transition",
+   "zh": "時間跳轉音（六千六百萬年）",
+   "search_en": ["time warp whoosh", "time travel transition", "deep rising riser"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "a deep time-travel whoosh suggesting millions of years passing, a long rising riser into a soft muffled impact"
+  },
+  {
+   "key": "wind_badlands",
+   "layer": "ambience",
+   "zh": "乾荒地的乾風",
+   "search_en": ["desert wind ambience", "dry barren wind", "wasteland wind howl"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "return_descend",
+   "layer": "transition",
+   "zh": "從太空降回河岸的下降 whoosh",
+   "search_en": ["whoosh descending", "swoosh down", "falling whoosh"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.0,
+   "end_shot": "EP1N-08-01",
+   "end": null,
+   "sound": "freeze_hit",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "整段暫停講解由這個定格開始，剛放下相機半轉身定住的那一刻；少了這個停格音，觀眾不知道畫面是刻意凍結、不是單純靜止。瞬間訊號馬上收掉，不壓到『先停一下』。"
+  },
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.3,
+   "end_shot": "EP1N-08-03",
+   "end": 5.0,
+   "sound": "riverbank_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0, "fade_out": 2.5,
+   "why": "01、02 建立『你在這裡』的河岸，墊一層很小的水流鳥聲讓定格的畫面有在地感；鏡頭開始拉高（03）後慢慢淡出，象徵離開地面。"
+  },
+  {
+   "shot": "EP1N-08-03",
+   "start": 1.94,
+   "end_shot": "EP1N-08-03",
+   "end": null,
+   "sound": "camera_rise",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1, "fade_out": 0.6,
+   "why": "『我們把鏡頭拉高一點』講完後鏡頭急速拉高，一個上升 whoosh 對上這個動作，讓拉高有速度感；壓在旁白句子之後、音量放低不蓋後半句。"
+  },
+  {
+   "shot": "EP1N-08-05",
+   "start": 0.0,
+   "end_shot": "EP1N-08-05",
+   "end": null,
+   "sound": "camera_rise",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1, "fade_out": 1.0,
+   "why": "拉到最高、進入太空的那一下，再接一個上升 whoosh 收尾這段上升動作；之後進太空就安靜，讓『從太空看北美』的畫面沉下來。"
+  },
+  {
+   "shot": "EP1N-08-08",
+   "start": 0.0,
+   "end_shot": "EP1N-08-08",
+   "end": 1.2,
+   "sound": "time_warp",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.5,
+   "why": "『再過六千六百萬年』瞬間從史前跳到今天的荒地，這是全場最大的時間轉折；少了時間跳轉音，觀眾不會意識到畫面已經穿越到現代。旁白同時進來所以壓低。"
+  },
+  {
+   "shot": "EP1N-08-08",
+   "start": 0.8,
+   "end_shot": "EP1N-08-10",
+   "end": null,
+   "sound": "wind_badlands",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 1.5, "fade_out": 1.5,
+   "why": "今天的地獄溪是一片乾裂空曠的荒地（08～10），墊一層乾風強化『乾巴巴、空曠乾旱』的對照氣氛，和前面河岸的濕潤環境形成反差。"
+  },
+  {
+   "shot": "EP1N-08-11",
+   "start": 0.0,
+   "end_shot": "EP1N-08-11",
+   "end": null,
+   "sound": "return_descend",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.8,
+   "why": "鏡頭從太空一路降回 HERO 身邊、收束這段暫停，一個下降 whoosh 對上這個回落動作；壓低不蓋『就是暴龍的老家』這句收尾。"
+  }
+ ]
+}

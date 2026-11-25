@@ -1,0 +1,92 @@
+{
+ "scene_id": "EP1N-07",
+ "notes": "安靜的河岸早晨，用緩和的河水聲墊底營造開闊感；全場只有一個關鍵事件音——拍照快門，它同時是動作點也是笑點，必放。",
+ "sounds": [
+  {
+   "key": "river_calm",
+   "layer": "ambience",
+   "zh": "寬闊河流的緩和流水聲",
+   "search_en": ["calm river ambience", "wide river water flow", "gentle stream background"],
+   "duration_sec": [20, 90],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_shutter",
+   "layer": "event",
+   "zh": "相機快門聲（卡嚓）",
+   "search_en": ["camera shutter click", "dslr shutter snap", "photo click"],
+   "duration_sec": [0.2, 1],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_sigh",
+   "layer": "reaction",
+   "zh": "HERO 無奈的嘆氣（無台詞）",
+   "search_en": ["male sigh disappointed", "resigned exhale", "annoyed sigh"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "edmonto_call",
+   "layer": "event",
+   "zh": "遠處大型草食恐龍溫和的低鳴",
+   "search_en": ["large herbivore low call distant", "deep gentle animal groan", "elephant distant rumble"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "a distant, soft, low-pitched gentle call from a large elephant-sized duckbill dinosaur drinking by a river, calm and good-natured, far away across water"
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-07-01",
+   "start": 0.0,
+   "end_shot": "EP1N-07-02",
+   "end": 4.46,
+   "sound": "river_calm",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.6,
+   "why": "整場都在河岸，河水聲墊底營造寬闊安靜的早晨氣氛，跨兩格到結束；音量極小不蓋旁白"
+  },
+  {
+   "shot": "EP1N-07-01",
+   "start": 3.0,
+   "end_shot": "EP1N-07-01",
+   "end": null,
+   "sound": "edmonto_call",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "對岸一群鴨嘴龍在喝水，一聲遠處溫和低鳴讓牠們「活起來」並點出體型大又脾氣好；放很小聲、在旁白中段，不干擾旁白"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 1.0,
+   "end_shot": "EP1N-07-02",
+   "end": null,
+   "sound": "camera_shutter",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "旁白「你拍了一張照片」同時按下快門，這聲卡嚓是全場唯一的動作點也是笑點的起手，少了它拍照這件事不成立；聲音短促、音量壓低以保旁白清楚"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 2.2,
+   "end_shot": "EP1N-07-02",
+   "end": null,
+   "sound": "hero_sigh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "放在旁白「……」的停頓裡，配合死魚臉無奈表情，強化「又不是暴龍」的失落笑點；放在句子空檔不壓旁白"
+  }
+ ]
+}

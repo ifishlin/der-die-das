@@ -1,0 +1,161 @@
+{
+ "scene_id": "EP1N-08",
+ "notes": "這是一場定格暫停講解，旁白幾乎不間斷、鏡頭從河岸一路拉到太空再降回來，所以重點是用轉場音標出『定格開始』『史前→今天的時空跳轉』『回到定格』三個節點，環境音和鏡頭拉高只做小聲鋪底；大聲的轉場都塞在旁白句尾的空檔。",
+ "sounds": [
+  {
+   "key": "freeze_stop",
+   "layer": "transition",
+   "zh": "定格停格音（像唱片急停）",
+   "search_en": ["record scratch stop", "freeze frame sound", "tape stop"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "river_ambience",
+   "layer": "ambience",
+   "zh": "河岸環境音（流水、微風、鳥）",
+   "search_en": ["river ambience calm", "riverbank water birds", "gentle stream ambience"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_rise",
+   "layer": "transition",
+   "zh": "鏡頭快速拉高的上升呼嘯",
+   "search_en": ["whoosh up rising", "camera zoom whoosh", "ascending swoosh"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "time_jump",
+   "layer": "transition",
+   "zh": "時空跳轉（六千六百萬年快轉到今天）",
+   "search_en": ["time warp whoosh", "time travel transition", "sci-fi time jump"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "a deep rising whoosh that accelerates into a bright shimmering swell suggesting millions of years rushing past, resolving into a dry windy settle"
+  },
+  {
+   "key": "page_flip",
+   "layer": "event",
+   "zh": "翻書頁（生存指南插圖）",
+   "search_en": ["page turn book", "paper flip page", "notebook page turn"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.0,
+   "end_shot": "EP1N-08-01",
+   "end": null,
+   "sound": "freeze_stop",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "整場的招牌：旁白說「先停一下」的瞬間畫面定格，用一個急停音把『暫停講解』立起來；因為和旁白同時開始，壓到 low 不蓋話。"
+  },
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.0,
+   "end_shot": "EP1N-08-02",
+   "end": 8.04,
+   "sound": "river_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 1.0,
+   "why": "01、02 還在河岸、鏡頭還沒拉高，墊一層很小的河邊環境音建立『你在這裡』；拉高到平原後淡出。"
+  },
+  {
+   "shot": "EP1N-08-03",
+   "start": 1.7,
+   "end_shot": "EP1N-08-03",
+   "end": null,
+   "sound": "camera_rise",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.4,
+   "why": "旁白剛說完「把鏡頭拉高一點」，配一個小聲上升呼嘯呼應第一次往上拉，讓『拉高』有實感。"
+  },
+  {
+   "shot": "EP1N-08-04",
+   "start": 14.6,
+   "end_shot": "EP1N-08-05",
+   "end": 1.0,
+   "sound": "camera_rise",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.1,
+   "fade_out": 0.6,
+   "why": "04 句尾的空檔接到 05『拉到太空』，是這段爬升的最高點，用一個比較明顯的上升音把鏡頭送出大氣層；峰值落在旁白開口前的空檔。"
+  },
+  {
+   "shot": "EP1N-08-06",
+   "start": 0.0,
+   "end_shot": "EP1N-08-06",
+   "end": null,
+   "sound": "page_flip",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "畫面切成生存指南內頁插圖（白堊紀植物），用翻書頁音標示從實景切到手繪插圖的風格轉換。"
+  },
+  {
+   "shot": "EP1N-08-07",
+   "start": 0.0,
+   "end_shot": "EP1N-08-07",
+   "end": null,
+   "sound": "page_flip",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "承 06 的第二張生存指南插圖（白堊紀小動物），再翻一頁延續內頁的節奏。"
+  },
+  {
+   "shot": "EP1N-08-07",
+   "start": 11.3,
+   "end_shot": "EP1N-08-08",
+   "end": 0.8,
+   "sound": "time_jump",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.1,
+   "fade_out": 0.5,
+   "why": "全場最大的揭露：從史前一下跳到「六千六百萬年後的乾荒地」。放在 07 句尾空檔、08 旁白開口前，可以放大聲，標出時空跳轉的衝擊。"
+  },
+  {
+   "shot": "EP1N-08-10",
+   "start": 0.0,
+   "end_shot": "EP1N-08-10",
+   "end": null,
+   "sound": "page_flip",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "化石獵人同樣是生存指南風格的插圖路人，翻頁音延續內頁插圖的視覺母題。"
+  },
+  {
+   "shot": "EP1N-08-10",
+   "start": 4.0,
+   "end_shot": "EP1N-08-11",
+   "end": 0.9,
+   "sound": "camera_rise",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.6,
+   "why": "11 鏡頭從太空一路降回 HERO 身邊、收束這段暫停，用一個反向（下降感）的呼嘯把觀眾帶回定格那一刻；尾巴壓低不蓋 11 的旁白。"
+  }
+ ]
+}

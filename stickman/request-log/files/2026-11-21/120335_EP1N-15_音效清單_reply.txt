@@ -1,0 +1,88 @@
+{
+ "scene_id": "EP1N-15",
+ "notes": "這是一場定格講解，聲音極簡：靠「定格／解除定格」兩個轉場音框住整段教學，中間的草原追逐都是示意插畫，只在急轉彎這個全場核心概念上點一下，旁白從頭蓋到尾所以其餘都留白。",
+ "sounds": [
+  {
+   "key": "freeze_hit",
+   "layer": "transition",
+   "zh": "定格急停音（唱盤刮停）",
+   "search_en": ["record scratch stop", "freeze frame sound", "tape stop"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "time_resume",
+   "layer": "transition",
+   "zh": "解除定格、時間恢復的回帶呼嘯",
+   "search_en": ["reverse whoosh resume", "tape start whoosh", "time resume swoosh"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "dusk_forest",
+   "layer": "ambience",
+   "zh": "傍晚森林環境底音",
+   "search_en": ["dusk forest ambience", "evening woodland crickets", "forest atmosphere quiet"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "animal_skid_dust",
+   "layer": "event",
+   "zh": "動物急轉揚塵／煞車刨地聲",
+   "search_en": ["gravel skid slide", "dirt scrape foot slide", "running animal skid dust"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-15-01",
+   "start": 0.0,
+   "end_shot": "EP1N-15-01",
+   "end": null,
+   "sound": "freeze_hit",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "全場的招牌手法就是在對峙瞬間凍結，少了這個急停音觀眾不會意識到畫面定住了；剛好對上旁白『定格。』，音量壓在 mid 不蓋掉那一個字"
+  },
+  {
+   "shot": "EP1N-15-01",
+   "start": 0.0,
+   "end_shot": "EP1N-15-12",
+   "end": 0.9,
+   "sound": "dusk_forest",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5, "fade_out": 0.4,
+   "why": "這段其實是追逐被按下暫停的傍晚森林，墊一層極小環境音避免近百秒講解完全死寂；但定格慣例常把現場音切掉，所以歸 optional 讓使用者決定，解除定格前收掉"
+  },
+  {
+   "shot": "EP1N-15-06",
+   "start": 2.5,
+   "end_shot": "EP1N-15-06",
+   "end": null,
+   "sound": "animal_skid_dust",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "『急轉彎』是整場（也是場名）的核心概念，黑斑羚猛地一轉揚塵、獵豹煞不住，點一下刨地揚塵讓這個轉折有實感；壓在 low 墊在旁白底下不搶話"
+  },
+  {
+   "shot": "EP1N-15-12",
+   "start": 0.9,
+   "end_shot": "EP1N-16-01",
+   "end": 1.0,
+   "sound": "time_resume",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.4,
+   "why": "解除定格、時間重新開跑的瞬間，要一個回帶呼嘯把觀眾從講解拉回追逐並順勢帶進下一場 HERO 開跑；放在旁白『定格。』講完（0.9 秒後）才下、延續到 16-01，避免蓋旁白"
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"shots": {"EP1N-17-04": {"zh": "整個畫面被甲龍的眼睛和牠眼睛周圍布滿青苔的裝甲外皮填滿，看不到周圍的環境。光線從畫面右邊照過來，陰影落在左邊。", "en": "Background: The whole picture is filled by the ankylosaur's eye and the armored, moss-covered hide right around it; none of the surroundings are visible. The light comes from the right, with shadows falling toward the left.", "refs": ["REF_ANKY"]}}, "redo": []}

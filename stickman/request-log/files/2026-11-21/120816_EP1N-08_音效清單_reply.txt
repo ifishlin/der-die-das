@@ -1,0 +1,125 @@
+{
+ "scene_id": "EP1N-08",
+ "notes": "這是一場定格暫停講解，旁白幾乎全程不斷，重點只有兩個 must：開頭標記暫停的定格音、08-08 穿越到今天的時間跳轉；河岸環境音、荒地乾風、鏡頭拉高/降回的 whoosh 都是選配，而且全程壓小讓旁白清楚。",
+ "sounds": [
+  {
+   "key": "freeze_stinger",
+   "layer": "transition",
+   "zh": "定格停格音（唱盤急停）",
+   "search_en": ["record scratch stop", "freeze frame stinger", "tape stop"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "river_plain_amb",
+   "layer": "ambience",
+   "zh": "河岸平原環境音（流水、蟲鳥）",
+   "search_en": ["river bank ambience", "calm stream nature ambience", "open plain birds insects"],
+   "duration_sec": [20, 90],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_whoosh",
+   "layer": "transition",
+   "zh": "鏡頭拉升／降下的 whoosh",
+   "search_en": ["whoosh transition", "camera rise swoosh", "fast whoosh"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "time_warp",
+   "layer": "transition",
+   "zh": "時間跳轉音（穿越到今天）",
+   "search_en": ["time warp whoosh", "time jump transition", "descending warp whoosh"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "a sweeping time-travel whoosh that rushes forward through millions of years, airy and accelerating, ending with a dry settle"
+  },
+  {
+   "key": "badland_wind",
+   "layer": "ambience",
+   "zh": "荒地乾風",
+   "search_en": ["desert wind ambience", "dry barren wind", "badlands wind howl"],
+   "duration_sec": [20, 90],
+   "loop": true,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.0,
+   "end_shot": "EP1N-08-01",
+   "end": null,
+   "sound": "freeze_stinger",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "整場從 HERO 定格那一刻切入，配旁白「先停一下」，一個急停音標記「暫停、我來講解」的開始；沒有它觀眾不會意識到時間停住了，戲就立不起來。音量 mid、極短，不蓋住開頭旁白。"
+  },
+  {
+   "shot": "EP1N-08-01",
+   "start": 0.0,
+   "end_shot": "EP1N-08-03",
+   "end": 8.68,
+   "sound": "river_plain_amb",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.6,
+   "fade_out": 2.5,
+   "why": "開頭 01、02 站在河邊泥地，用流水蟲鳥的底墊建立「你現在在這裡」的河岸氣氛；到 03 鏡頭拉高離開地面後慢慢淡出。純環境、墊底，歸選配。"
+  },
+  {
+   "shot": "EP1N-08-03",
+   "start": 0.0,
+   "end_shot": "EP1N-08-03",
+   "end": 1.9,
+   "sound": "camera_whoosh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "旁白「來，我們把鏡頭拉高一點」正好是鏡頭急速拉升的動作，一個輕 whoosh 強化往上衝的運鏡；低音量壓在旁白下方。加了更有動感，不加也能看懂，故選配。"
+  },
+  {
+   "shot": "EP1N-08-07",
+   "start": 11.3,
+   "end_shot": "EP1N-08-08",
+   "end": 0.9,
+   "sound": "time_warp",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.2,
+   "fade_out": 0.6,
+   "why": "從史前的生物介紹切到「再過六千六百萬年，這裡會變成荒地」，是本場最大的時間跳轉與揭露；音效橋接 07 結尾的空檔與 08 的剪接點，少了它這個六千六百萬年的跳躍會很突兀。放在 07 尾端旁白講完的空檔延進 08，避開旁白起句。"
+  },
+  {
+   "shot": "EP1N-08-08",
+   "start": 0.6,
+   "end_shot": "EP1N-08-10",
+   "end": 4.3,
+   "sound": "badland_wind",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 1.0,
+   "fade_out": 0.6,
+   "why": "08～10 是「今天」的乾裂荒地，乾風的底墊跟前面潮濕河岸形成強烈對比，凸顯時空已換；到 11 回到史前定格前收掉。墊底環境，選配。"
+  },
+  {
+   "shot": "EP1N-08-11",
+   "start": 0.0,
+   "end_shot": "EP1N-08-11",
+   "end": 1.6,
+   "sound": "camera_whoosh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.5,
+   "why": "鏡頭從太空一路降回 HERO 身邊、收束這段暫停，用一個下降 whoosh 呼應開頭的拉升、把視角帶回劇情；低音量不蓋旁白「你現在站的這個地方」。錦上添花，選配。"
+  }
+ ]
+}

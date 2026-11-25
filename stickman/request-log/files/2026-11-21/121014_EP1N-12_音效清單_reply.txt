@@ -1,0 +1,200 @@
+{
+ "scene_id": "EP1N-12",
+ "notes": "這是一場「暫停講解」的定格講解場，絕大多數是手繪插圖＋旁白，不需要音效；重點只在頭尾的定格／解凍轉場，以及礦井橋段裡暴龍砸底這個搞笑高潮。插圖的掉落、裂骨、噴火都當選擇性的喜劇點綴，音量壓在旁白之下。",
+ "sounds": [
+  {
+   "key": "freeze_snap",
+   "layer": "transition",
+   "zh": "定格急停聲（唱針刮／停格音效）",
+   "search_en": ["record scratch stop", "freeze frame stinger", "tape stop effect"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "unfreeze_whoosh",
+   "layer": "transition",
+   "zh": "解凍恢復動態的過場咻聲",
+   "search_en": ["whoosh transition", "time resume whoosh", "reverse whoosh swell"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_pant",
+   "layer": "reaction",
+   "zh": "暴龍喘到不行的沉重喘氣",
+   "search_en": ["large animal panting", "monster heavy breathing", "big creature exhausted breath"],
+   "duration_sec": [2, 10],
+   "loop": true,
+   "generate_en": "heavy exhausted panting and wheezing of a huge reptilian dinosaur that just finished running, deep and weighty"
+  },
+  {
+   "key": "dino_crash",
+   "layer": "event",
+   "zh": "巨大暴龍像石頭砸到井底的重擊聲",
+   "search_en": ["heavy body impact thud", "large crash impact ground", "boulder slam crash"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "forest_amb",
+   "layer": "ambience",
+   "zh": "森林環境音（鳥叫、枝葉）",
+   "search_en": ["forest ambience birds", "woodland ambience leaves", "forest background daytime"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "dust_poof",
+   "layer": "event",
+   "zh": "落地化成漫畫灰塵雲的噗一聲",
+   "search_en": ["cartoon dust poof", "comic dust puff impact", "dust cloud poof"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "bone_crack",
+   "layer": "event",
+   "zh": "粗骨頭中段裂開的脆裂聲",
+   "search_en": ["bone crack snap", "wood crack break", "crunch snap"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "oil_flame",
+   "layer": "event",
+   "zh": "油罐口噴出一下火焰的爆燃咻聲",
+   "search_en": ["fire burst whoosh", "flame ignite whoosh", "torch flame burst"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": null,
+   "sound": "freeze_snap",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "整場是「暫停講解」的定格橋段，開頭這一聲急停是進入定格的格式訊號，少了它觀眾不知道畫面凍住了；放在第 0 秒配合畫面定在 HERO 揮手那一刻。"
+  },
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": 7.66,
+   "sound": "forest_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "定格這一刻仍是追逐的森林現場，墊一層很小的森林環境音把觀眾留在劇情地點，之後插圖段落就不鋪了。"
+  },
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.6,
+   "end_shot": "EP1N-12-01",
+   "end": 7.66,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.4,
+   "why": "暴龍喘到不行、側腹喘氣是這格的角色狀態，低聲喘氣強化牠追不動的狼狽；壓在 low 不蓋旁白，急停聲後 0.6 秒才進。"
+  },
+  {
+   "shot": "EP1N-12-04",
+   "start": 5.6,
+   "end_shot": "EP1N-12-04",
+   "end": null,
+   "sound": "dust_poof",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "三隻越摔越慘化成越來越大團灰塵雲，是這格的搞笑點；在旁白講完「會整隻濺開」（5.74 秒）前後補一聲最大團灰塵雲的噗聲，把笑點收住。"
+  },
+  {
+   "shot": "EP1N-12-06",
+   "start": 9.35,
+   "end_shot": "EP1N-12-06",
+   "end": null,
+   "sound": "dino_crash",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "九噸暴龍像石頭直直墜落、重重砸井底，是整個礦井橋段的喜劇高潮，這一下重擊是戲的落點；排在旁白講完（9.34 秒）後才下，用 high 讓砸底有重量，不壓到旁白。"
+  },
+  {
+   "shot": "EP1N-12-07",
+   "start": 8.9,
+   "end_shot": "EP1N-12-07",
+   "end": null,
+   "sound": "bone_crack",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "粗骨頭中段裂開碎片迸飛是「越重越撐不住」的視覺重點，脆裂聲幫忙點題；放在旁白講完（8.88 秒）後的空檔。"
+  },
+  {
+   "shot": "EP1N-12-09",
+   "start": 6.2,
+   "end_shot": "EP1N-12-09",
+   "end": null,
+   "sound": "oil_flame",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "油罐口噴出猛烈火焰比喻 ATP「很有力、一下就燒完」，一聲爆燃咻聲強化爆發感；在講到汽油罐那句（5.82 秒起）後進、壓低音量不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.0,
+   "end_shot": "EP1N-13-01",
+   "end": 0.8,
+   "sound": "unfreeze_whoosh",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "講解結束、畫面恢復動態，這聲解凍咻聲是定格格式的另一端書擋，告訴觀眾回到劇情，並順勢把過場帶進下一場 EP1N-13-01。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.3,
+   "end_shot": "EP1N-12-18",
+   "end": 4.04,
+   "sound": "forest_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "回到與開頭同一構圖的森林現場，重新墊回環境音讓場景接得上，呼應 01 的定格。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.4,
+   "end_shot": "EP1N-12-18",
+   "end": 4.04,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.4,
+   "why": "收尾「不是不想追你，是追不動」時，暴龍還在喘氣，低聲喘息幫旁白的笑點加碼，呼應開頭的喘。"
+  }
+ ]
+}

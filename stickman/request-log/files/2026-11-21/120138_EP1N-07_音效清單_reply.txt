@@ -1,0 +1,113 @@
+{
+ "scene_id": "EP1N-07",
+ "notes": "河岸上午的靜態時刻，靠潺潺流水墊出開闊安靜的氣氛；全場重點音是 07-02 按快門的『喀嚓』──那是笑點（拍到的不是暴龍）的關鍵。鴨嘴龍在寬河對岸很遠，只用很小的低鳴點綴。",
+ "sounds": [
+  {
+   "key": "river_ambience",
+   "layer": "ambience",
+   "zh": "寬闊河流的流水環境音",
+   "search_en": ["river flowing ambience", "wide river water stream", "calm river background"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "camera_shutter",
+   "layer": "event",
+   "zh": "小相機按下快門的喀嚓聲",
+   "search_en": ["camera shutter click", "photo shutter snap", "digital camera click"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "edmonto_rumble",
+   "layer": "event",
+   "zh": "對岸鴨嘴龍群低沉溫和的鳴聲",
+   "search_en": ["low animal rumble distant", "cow herd low moo distant", "large herbivore grunt"],
+   "duration_sec": [2, 8],
+   "loop": false,
+   "generate_en": "a distant, gentle, deep low rumble from a herd of large elephant-sized plant-eating dinosaurs drinking by a river, soft and calm, heard from far across water"
+  },
+  {
+   "key": "hero_sigh",
+   "layer": "reaction",
+   "zh": "HERO 無奈的嘆氣（無台詞）",
+   "search_en": ["man resigned sigh", "disappointed exhale male", "annoyed sigh short"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_stop",
+   "layer": "transition",
+   "zh": "畫面定格的轉場停頓音",
+   "search_en": ["freeze frame sound", "record scratch stop", "sudden stop whoosh"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-07-01",
+   "start": 0.0,
+   "end_shot": "EP1N-07-02",
+   "end": 10.5,
+   "sound": "river_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 0.8,
+   "why": "整場都在寬闊河邊，潺潺流水墊底能立刻建立地點與開闊安靜的氣氛；音量很小不壓旁白。"
+  },
+  {
+   "shot": "EP1N-07-01",
+   "start": 2.0,
+   "end_shot": "EP1N-07-01",
+   "end": null,
+   "sound": "edmonto_rumble",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.8,
+   "why": "旁白介紹對岸鴨嘴龍群『脾氣很好』，一聲很遠很小的溫和低鳴能讓這群龍活起來；因在寬河對岸且壓在旁白下，只用 bg。"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 0.4,
+   "end_shot": "EP1N-07-02",
+   "end": null,
+   "sound": "camera_shutter",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.0,
+   "why": "旁白『你拍了一張照片』的那一刻就是笑點的動作點，一聲喀嚓確立『真的按下快門』，少了它笑點（拍到的不是暴龍）接不起來；短促清脆，low 也聽得到且不壓旁白。"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 4.16,
+   "end_shot": "EP1N-07-02",
+   "end": null,
+   "sound": "hero_sigh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "旁白講完（4.16 秒）『可惜不是暴龍，不算數』後的空檔，補一聲無奈嘆氣呼應死魚臉表情，強化『又白拍了』的無奈笑點；放旁白之後避免蓋台詞。"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 4.4,
+   "end_shot": "EP1N-08-01",
+   "end": 0.8,
+   "sound": "freeze_stop",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "下一場第一格是 HERO 定格，收尾接一記定格停頓音做轉場；延續到 08-01 開頭對上畫面凍結的瞬間。因定格本體在下一場，歸 optional 由使用者決定。"
+  }
+ ]
+}

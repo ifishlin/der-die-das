@@ -1,0 +1,20 @@
+Create a landscape 16:9 prop reference sheet showing ONE consistent time tunnel for a 2D stickman animation about time travel. One attached image is a scene from the same series with the time tunnel behind a boy: copy that time tunnel's look exactly, and ignore the boy, the forest and everything else in that scene. The other attached image is a prop sheet from the same series; use it ONLY to match the drawing style.
+
+VISUAL STYLE:
+Flat 2D cartoon illustration exactly matching the attached images. Warm off-white background #F6F1E7. No scenery, no ground, no characters.
+
+FIXED DESIGN — TIME TUNNEL (exactly as in the attached scene):
+Many glowing blue and cyan streaks of light swirl around in rings, getting brighter toward the center; the middle is see-through, not a solid disc. Small white sparkles, tiny glowing dots and a few thin lightning-like streaks float inside and around it. It has no frame or machine around it, and it floats upright in the air with nothing holding it up. Its look is immutable; only its size and viewing angle change.
+
+THICKNESS:
+The tunnel is not flat. Seen from the side it is a thick ring of swirling light, as deep as about one third of its height, like a short glowing tube, with the swirling streaks visible along its depth.
+
+SCALE CLARIFICATION:
+When fully open it is a little taller than an adult human, big enough for a person to jump through. Do NOT draw any human on this sheet; show scale only through the description.
+
+REFERENCE SHEET LAYOUT:
+Top row: three large clearly separated views of the fully open tunnel, same size: 1. Front view. 2. Three-quarter view, showing its depth. 3. True side view, showing its full thickness.
+Bottom row: four small front views from left to right showing it closing, same center height: 1. Half size. 2. Quarter size. 3. A small bright dot with a few sparkles. 4. Just closed: only a faint pale-cyan shimmer and two or three tiny sparkles left in the air where it was.
+
+CONSISTENCY RULES:
+Every view depicts the same tunnel. No frames or borders around views, no merged views, no generated lettering, captions, numbers, arrows, logos, or watermarks.

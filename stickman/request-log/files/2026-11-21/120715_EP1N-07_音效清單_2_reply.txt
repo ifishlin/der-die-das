@@ -1,0 +1,113 @@
+{
+ "scene_id": "EP1N-07",
+ "notes": "安靜的河岸觀察場，重點是把快門聲放準（這場的笑點靠它＋死魚臉成立），其餘只用小聲河水和遠處鴨嘴龍群墊氣氛。",
+ "sounds": [
+  {
+   "key": "river_ambience",
+   "layer": "ambience",
+   "zh": "寬闊河面流水聲（上午）",
+   "search_en": ["wide river flowing ambience", "calm river water loop", "riverbank morning ambience"],
+   "duration_sec": [20, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "herd_drinking_distant",
+   "layer": "ambience",
+   "zh": "對岸大型草食恐龍群低頭喝水的遠景聲（低沉水聲＋偶爾溫和的低鳴）",
+   "search_en": ["large animals drinking water distant", "herd low rumble ambience", "elephants water hole calm"],
+   "duration_sec": [10, 40],
+   "loop": true,
+   "generate_en": "A distant herd of large gentle hadrosaurs drinking at a far riverbank: soft lapping water, occasional low calm rumbling calls, heavy but peaceful, far away across a wide river."
+  },
+  {
+   "key": "camera_shutter",
+   "layer": "event",
+   "zh": "小相機按下快門聲",
+   "search_en": ["camera shutter click", "photo snapshot click", "compact camera shutter"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "deadpan_sigh",
+   "layer": "reaction",
+   "zh": "HERO 無奈的嘆氣／悶哼（無台詞）",
+   "search_en": ["male disappointed sigh", "deadpan sigh exhale", "resigned grunt male"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_stinger",
+   "layer": "transition",
+   "zh": "定格轉場音（頓住／急停）",
+   "search_en": ["freeze frame stinger", "sudden stop whoosh", "record scratch stop"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-07-01",
+   "start": 0.0,
+   "end_shot": "EP1N-07-02",
+   "end": 4.46,
+   "sound": "river_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.6,
+   "why": "整場都在寬闊河邊，墊一層小聲流水聲建立地點氣氛，跨兩格到結束"
+  },
+  {
+   "shot": "EP1N-07-01",
+   "start": 0.5,
+   "end_shot": "EP1N-07-01",
+   "end": 6.04,
+   "sound": "herd_drinking_distant",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.8,
+   "fade_out": 0.8,
+   "why": "07-01 主體是對岸整群鴨嘴龍低頭喝水，遠處溫和的水聲與低鳴呼應旁白『脾氣很好』，音量極小不壓旁白"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 1.0,
+   "end_shot": "EP1N-07-02",
+   "end": null,
+   "sound": "camera_shutter",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.1,
+   "why": "旁白『你拍了一張照片』當下按快門，快門聲是這場的關鍵事件、也是笑點的觸發點，少了就沒有『拍照』這個動作；聲音短可放在旁白中間用 low"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 2.2,
+   "end_shot": "EP1N-07-02",
+   "end": null,
+   "sound": "deadpan_sigh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.2,
+   "why": "放在旁白『你拍了一張照片。』和『可惜不是暴龍』之間的停頓裡，一聲無奈嘆氣配死魚臉，強化『又不是暴龍』的冷笑點"
+  },
+  {
+   "shot": "EP1N-07-02",
+   "start": 4.3,
+   "end_shot": "EP1N-08-01",
+   "end": 1.0,
+   "sound": "freeze_stinger",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "下一場 EP1N-08-01 是 HERO 定格，於旁白講完後接一個頓住音帶入定格，轉場更俐落；可延續到下一場第一格"
+  }
+ ]
+}

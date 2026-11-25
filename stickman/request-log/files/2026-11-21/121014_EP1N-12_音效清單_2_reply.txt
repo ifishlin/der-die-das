@@ -1,0 +1,201 @@
+{
+ "scene_id": "EP1N-12",
+ "notes": "這一場是『定格講解』：開頭和結尾是劇情定格（森林裡 HERO 向喘翻的暴龍揮手），中段 12-02～12-17 全是手繪插圖配旁白，基本安靜。音效重點只在三處——開頭定格、結尾解除定格兩個轉場，以及暴龍像石頭砸進礦井的笑點；喘氣、森林環境、落地灰塵、骨裂、火焰都歸 optional，讓使用者決定。旁白幾乎鋪滿每一格，所有持續音只用 bg／low，大聲的撞擊放在旁白講完的空檔。",
+ "sounds": [
+  {
+   "key": "freeze_stop",
+   "layer": "transition",
+   "zh": "定格／時間凍結音",
+   "search_en": ["record scratch stop", "time freeze whoosh", "freeze frame sound"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": "sudden cartoon time-freeze, a record-scratch-like hard stop with a short icy shimmer tail"
+  },
+  {
+   "key": "time_resume",
+   "layer": "transition",
+   "zh": "解除定格／時間恢復音",
+   "search_en": ["reverse whoosh swell", "time resume whoosh", "unfreeze swoosh"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": "soft rising whoosh as frozen time un-freezes and motion resumes"
+  },
+  {
+   "key": "trex_pant",
+   "layer": "reaction",
+   "zh": "暴龍粗重喘氣",
+   "search_en": ["large animal heavy breathing", "monster panting breath", "heavy creature breathing"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": "a huge exhausted T-rex panting heavily, deep raspy weighty breaths, completely out of breath"
+  },
+  {
+   "key": "forest_amb",
+   "layer": "ambience",
+   "zh": "森林白天環境音",
+   "search_en": ["forest ambience birds", "woodland background day", "jungle ambience"],
+   "duration_sec": [20, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "mine_slam",
+   "layer": "event",
+   "zh": "重物直墜砸底撞擊（含灰塵）",
+   "search_en": ["heavy impact boom dust", "body slam thud", "heavy whump impact"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "dust_poof",
+   "layer": "event",
+   "zh": "卡通落地灰塵噗",
+   "search_en": ["cartoon poof dust", "dust puff impact", "comic poof"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "bone_crack",
+   "layer": "event",
+   "zh": "骨頭裂開碎裂",
+   "search_en": ["bone crack break", "wood crack snap", "sharp crack snap"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "flame_burst",
+   "layer": "event",
+   "zh": "火焰噴發點燃",
+   "search_en": ["flame whoosh burst", "gas ignite fwoosh", "fire burst whoosh"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": null,
+   "sound": "freeze_stop",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "整場『暫停講解』的立足點就是動作被定格。這個定格音落在上一場切進來的瞬間、旁白第一個字『好』之前，少了它觀眾不會知道畫面被凍住、不懂為什麼突然開始講解。"
+  },
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": 7.66,
+   "sound": "forest_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5, "fade_out": 0.5,
+   "why": "定格這一格是在森林小路，墊一層很小聲的森林環境音可把劇情場景和中段白底插圖區隔開；只在 01 出現。"
+  },
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": 7.66,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.3, "fade_out": 0.3,
+   "why": "笑點是 HERO 得意揮手、暴龍喘到不行。極小聲的喘氣墊在旁白底下，強化『牠追到虛脫』的對比；聲音小不會蓋旁白。"
+  },
+  {
+   "shot": "EP1N-12-04",
+   "start": 1.5,
+   "end_shot": "EP1N-12-04",
+   "end": null,
+   "sound": "dust_poof",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "旁白講到『大一點的老鼠會摔死』時，第一團灰塵雲落地，小聲的卡通噗聲對上畫面，搞笑不血腥。"
+  },
+  {
+   "shot": "EP1N-12-04",
+   "start": 3.2,
+   "end_shot": "EP1N-12-04",
+   "end": null,
+   "sound": "dust_poof",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "對上旁白『換成人，會摔碎』的第二團更大的灰塵雲，一團比一團大的節奏靠聲音帶出來。"
+  },
+  {
+   "shot": "EP1N-12-04",
+   "start": 4.8,
+   "end_shot": "EP1N-12-04",
+   "end": null,
+   "sound": "dust_poof",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "對上『換成馬，會整隻濺開』的最大一團灰塵雲，收尾最大聲的一噗，完成三連的誇張梗。"
+  },
+  {
+   "shot": "EP1N-12-06",
+   "start": 9.34,
+   "end_shot": "EP1N-12-07",
+   "end": 0.8,
+   "sound": "mine_slam",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0, "fade_out": 0.6,
+   "why": "這是整場的笑點高潮：九噸暴龍像石頭直墜砸井底。放在旁白講完（9.34）之後的空檔，用全場唯一的 high 撞擊，餘響淡出到下一格；少了這聲，墜落的重量和笑點都垮掉。"
+  },
+  {
+   "shot": "EP1N-12-07",
+   "start": 8.9,
+   "end_shot": "EP1N-12-07",
+   "end": null,
+   "sound": "bone_crack",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0, "fade_out": 0.2,
+   "why": "插圖是粗骨頭中段裂開、碎片迸飛。一記清脆的裂聲放在旁白講完（8.88）後的空檔，點出『越重越撐不住』的畫面。"
+  },
+  {
+   "shot": "EP1N-12-09",
+   "start": 6.5,
+   "end_shot": "EP1N-12-09",
+   "end": null,
+   "sound": "flame_burst",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "旁白把 ATP 比喻成『一小罐汽油，很有力一下燒完』，此時油罐口竄火。小聲的火焰噴發對上畫面，呼應『爆發力強』；音量壓低不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.0,
+   "end_shot": "EP1N-12-18",
+   "end": null,
+   "sound": "time_resume",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.0, "fade_out": 0.3,
+   "why": "與 01 的定格對稱：這一格『畫面恢復動態』。一聲輕的時間恢復聲把觀眾從講解拉回劇情，少了它觀眾不會意識到定格解除、故事繼續；因與旁白重疊故壓到 low。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.0,
+   "end_shot": "EP1N-12-18",
+   "end": 4.04,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.3, "fade_out": 0.5,
+   "why": "回到劇情定格同一構圖，恢復動態後暴龍仍在喘。小聲喘氣收束『不是不想追，是追不動』的笑點。"
+  }
+ ]
+}

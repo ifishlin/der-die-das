@@ -1,0 +1,251 @@
+{
+ "scene_id": "EP1N-16",
+ "notes": "白堊紀森林追逐戲：用森林環境音＋HERO 泥地腳步＋暴龍沉重踏步鋪滿追逐的緊張感（全墊在旁白底下、小聲），把真正大聲的點留給四個戲眼——暴龍首次張口逼近、兩次急轉衝過頭、以及重摔落地。旁白幾乎整格講滿，響的音效一律塞在句子空檔或句尾 0.3 秒的縫隙，不蓋旁白。",
+ "sounds": [
+  {
+   "key": "forest_ambience",
+   "layer": "ambience",
+   "zh": "白堊紀森林環境音（蟲鳴、枝葉）",
+   "search_en": ["forest ambience birds", "jungle ambience insects", "woodland background loop"],
+   "duration_sec": [30, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_run_mud",
+   "layer": "event",
+   "zh": "HERO 泥地奔跑腳步（帶泥濺聲）",
+   "search_en": ["running footsteps mud", "feet squelch mud run", "muddy footsteps jog"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_stomp",
+   "layer": "event",
+   "zh": "暴龍沉重奔跑踏步（地面震動）",
+   "search_en": ["heavy monster footsteps", "large dinosaur footsteps thump", "giant creature stomp"],
+   "duration_sec": [2, 15],
+   "loop": true,
+   "generate_en": "huge two-legged dinosaur running, heavy ground-shaking thudding footsteps, deep low-frequency impacts"
+  },
+  {
+   "key": "trex_roar_bite",
+   "layer": "event",
+   "zh": "暴龍張口咬合＋低吼（威脅）",
+   "search_en": ["monster roar growl", "large animal snarl bite", "creature jaw snap"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "tyrannosaur snarling lunge with a wet snapping bite and deep guttural roar"
+  },
+  {
+   "key": "trex_skid",
+   "layer": "event",
+   "zh": "暴龍泥地煞不住打滑衝過頭",
+   "search_en": ["body slide dirt", "skid slide gravel", "large thing sliding ground"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "massive creature skidding and sliding through mud, unable to brake, momentum overshoot"
+  },
+  {
+   "key": "trex_crash",
+   "layer": "event",
+   "zh": "暴龍重重摔倒、臉朝地滑出",
+   "search_en": ["heavy body fall thud", "large crash impact dirt", "big body slam ground"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": "enormous dinosaur tripping and crashing face-first into mud, heavy body impact and long slide"
+  },
+  {
+   "key": "hero_pant",
+   "layer": "reaction",
+   "zh": "HERO 上氣不接下氣的喘氣",
+   "search_en": ["man panting exhausted", "heavy breathing running", "out of breath male"],
+   "duration_sec": [2, 20],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_grunt",
+   "layer": "reaction",
+   "zh": "HERO 落地蹬地的使勁悶哼",
+   "search_en": ["male effort grunt", "exertion grunt short", "man grunt land"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_pant",
+   "layer": "reaction",
+   "zh": "暴龍粗重喘氣（就在身後）",
+   "search_en": ["large animal breathing", "deep guttural breathing", "monster panting growl"],
+   "duration_sec": [1, 6],
+   "loop": true,
+   "generate_en": "huge predator panting heavily, deep wet rhythmic breathing right behind the listener"
+  },
+  {
+   "key": "trex_growl_up",
+   "layer": "reaction",
+   "zh": "暴龍爬起時的不爽低吼",
+   "search_en": ["low angry growl", "animal annoyed snarl", "deep grumble growl"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "irritated tyrannosaur low grumbling growl as it shakes its head and rises"
+  },
+  {
+   "key": "transition_whoosh",
+   "layer": "transition",
+   "zh": "追逐轉場到空地的柔和 whoosh",
+   "search_en": ["whoosh transition", "soft swell whoosh", "cinematic whoosh pass"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-16-01",
+   "start": 0.0,
+   "end_shot": "EP1N-16-10",
+   "end": 7.46,
+   "sound": "forest_ambience",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.5,
+   "why": "整場都在高大森林裡追逐，環境是分鏡強調的重點，墊一段森林底音讓追逐有空間感；全程極小聲不蓋旁白。"
+  },
+  {
+   "shot": "EP1N-16-01",
+   "start": 0.0,
+   "end_shot": "EP1N-16-10",
+   "end": 7.46,
+   "sound": "hero_run_mud",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 1.0,
+   "why": "HERO 從頭到尾在爛泥巴路上狂奔，腳步＋泥濺是這場的持續動作，鋪底帶出奔跑節奏；小聲墊在旁白下。"
+  },
+  {
+   "shot": "EP1N-16-01",
+   "start": 0.0,
+   "end_shot": "EP1N-16-10",
+   "end": 7.46,
+   "sound": "hero_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 1.0,
+   "why": "旁白是 HERO 視角、他不說話只發聲，全程喘氣強化『跑到快不行』；低音量不干擾旁白。"
+  },
+  {
+   "shot": "EP1N-16-02",
+   "start": 0.0,
+   "end_shot": "EP1N-16-07",
+   "end": 5.36,
+   "sound": "trex_stomp",
+   "priority": "must",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.6,
+   "why": "暴龍在這格第一次露面並開始追，沉重踏步是怪物現身的必要音；從 16-02 一路墊到 16-07 追逐段，有重量才可信。墊在旁白下走 low。"
+  },
+  {
+   "shot": "EP1N-16-02",
+   "start": 4.86,
+   "end_shot": "EP1N-16-02",
+   "end": null,
+   "sound": "trex_roar_bite",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "首次揭露『嘴比整個人還大、張口逼近』的高張力瞬間，趁兩句旁白中間的空檔（4.86 秒）放一記咬合低吼，讓觀眾真切感到危險逼近。"
+  },
+  {
+   "shot": "EP1N-16-03",
+   "start": 1.9,
+   "end_shot": "EP1N-16-03",
+   "end": null,
+   "sound": "hero_grunt",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "HERO 落地重新蹬地使勁，旁白講完（1.90 秒）後補一記悶哼，點出『咬牙硬撐』的力氣感。"
+  },
+  {
+   "shot": "EP1N-16-04",
+   "start": 0.0,
+   "end_shot": "EP1N-16-04",
+   "end": 5.36,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.4,
+   "why": "旁白明講『你聽得到牠在後面喘氣』，直接放暴龍粗重喘息呼應這句、鋪『臭嘴』笑點；低音量墊在旁白下。"
+  },
+  {
+   "shot": "EP1N-16-06",
+   "start": 2.7,
+   "end_shot": "EP1N-16-06",
+   "end": null,
+   "sound": "trex_skid",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "『急轉彎、牠就衝過頭』是全場的解法與轉折，HERO 領悟博士的話後第一次甩開暴龍；旁白講完（2.70 秒）放打滑衝過頭聲把笑點與轉折做實。"
+  },
+  {
+   "shot": "EP1N-16-07",
+   "start": 5.06,
+   "end_shot": "EP1N-16-07",
+   "end": null,
+   "sound": "trex_skid",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "第二次急轉、暴龍又衝過頭，是重複橋段，放一次較小聲的打滑收尾即可（旁白 5.06 秒後的空檔），不必和第一次一樣搶。"
+  },
+  {
+   "shot": "EP1N-16-08",
+   "start": 3.02,
+   "end_shot": "EP1N-16-09",
+   "end": 0.9,
+   "sound": "trex_crash",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.6,
+   "why": "暴龍『狠狠摔一大跤』是這場追逐的高潮與最大笑點，需要一記最重的撞擊；尖銳撞擊點落在旁白講完（3.02 秒）的縫隙，餘韻滑行聲拖進 16-09 開頭並快速淡出，不蓋下一句旁白。"
+  },
+  {
+   "shot": "EP1N-16-09",
+   "start": 1.58,
+   "end_shot": "EP1N-16-09",
+   "end": null,
+   "sound": "trex_growl_up",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "『可是牠又爬了起來』旁白講完（1.58 秒）補一記不爽低吼，點明威脅沒解除、追逐還沒結束，承接下一格 HERO 繼續逃。"
+  },
+  {
+   "shot": "EP1N-16-10",
+   "start": 6.9,
+   "end_shot": "EP1N-17-01",
+   "end": 0.8,
+   "sound": "transition_whoosh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.5,
+   "why": "HERO 越跑越小、追逐段收尾，下一場切到安靜的黃昏空地與『石頭』，情緒落差大；尾端放一記柔和 whoosh 幫忙過渡到下一場。notes：下一場氣氛轉靜，轉場只用小聲、不搶戲。"
+  }
+ ]
+}

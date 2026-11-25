@@ -1,0 +1,167 @@
+{
+ "scene_id": "EP1N-15",
+ "notes": "這是一場「定格講解」，時間凍結、中間穿插實驗室插入鏡頭和草原動物示意圖，所以最重要的聲音是頭尾兩個轉場（定格／解除定格），其餘只在核心概念（急轉彎）和笑點（似鴕龍卡洞）點綴；定格期間刻意趨近安靜以突顯旁白，環境音只墊極小的傍晚森林當黏合，全部壓在 bg／low 以免蓋掉大段旁白。",
+ "sounds": [
+  {
+   "key": "dusk_forest",
+   "layer": "ambience",
+   "zh": "傍晚森林環境音",
+   "search_en": ["forest dusk ambience", "evening forest crickets wind", "woodland dusk ambience"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "freeze_hit",
+   "layer": "transition",
+   "zh": "定格瞬間停格聲",
+   "search_en": ["record scratch", "freeze frame stop", "cartoon stop sting"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "unfreeze_whoosh",
+   "layer": "transition",
+   "zh": "解除定格恢復動作聲",
+   "search_en": ["whoosh transition", "cartoon rewind whoosh", "time resume swoosh"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_gasp",
+   "layer": "reaction",
+   "zh": "HERO 驚恐倒抽氣",
+   "search_en": ["man gasp fear", "scared gasp breath", "sharp inhale gasp"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "skid_dirt",
+   "layer": "event",
+   "zh": "急煞轉彎甩土聲",
+   "search_en": ["foot skid dirt", "gravel slide skid", "dust skid stop"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "snout_thud",
+   "layer": "event",
+   "zh": "口鼻撞洞口悶響",
+   "search_en": ["body thud dirt", "heavy bonk impact", "muffled thud"],
+   "duration_sec": [0.3, 1.5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "teen_snort",
+   "layer": "event",
+   "zh": "似鴕龍懊惱噴氣",
+   "search_en": ["boar snort grunt", "large animal snort", "angry pig snort"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": "frustrated large dinosaur snort, deep nasal grunt, heavy breath blown out through nostrils, medium-sized animal"
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-15-01",
+   "start": 0.0,
+   "end_shot": "EP1N-15-12",
+   "end": 1.2,
+   "sound": "dusk_forest",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 1.5,
+   "why": "整場凍結在傍晚森林空地，墊一層幾乎聽不到的森林氣氛當黏合；中段為實驗室插入與草原示意圖，故壓到 bg 不搶戲，定格的安靜感仍在。"
+  },
+  {
+   "shot": "EP1N-15-01",
+   "start": 0.0,
+   "end_shot": "EP1N-15-01",
+   "end": null,
+   "sound": "freeze_hit",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "全場開場的定格瞬間，是這場的定義性轉場聲，必須和畫面凍結同步（0.0 秒）；刻意與旁白「定格」疊在一起強化，聲音短、快淡出，不影響後面句子。"
+  },
+  {
+   "shot": "EP1N-15-03",
+   "start": 0.3,
+   "end_shot": "EP1N-15-03",
+   "end": null,
+   "sound": "hero_gasp",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "定格的 HERO 張口驚恐喘氣特寫，一聲倒抽氣能把恐懼感帶出來；壓在 low、墊在旁白底下不蓋話。"
+  },
+  {
+   "shot": "EP1N-15-06",
+   "start": 3.5,
+   "end_shot": "EP1N-15-06",
+   "end": null,
+   "sound": "skid_dirt",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "這格是全場講解的核心——獵物「最後一刻猛地急轉彎」，一記甩土煞車聲點出重點；旁白正在說明故壓 low。"
+  },
+  {
+   "shot": "EP1N-15-09",
+   "start": 2.5,
+   "end_shot": "EP1N-15-09",
+   "end": null,
+   "sound": "skid_dirt",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "HERO 把前面學到的急煞猛切用出來，是技巧示範的落點，沿用同一甩土聲呼應 15-06；旁白進行中壓 low。"
+  },
+  {
+   "shot": "EP1N-15-11",
+   "start": 9.5,
+   "end_shot": "EP1N-15-11",
+   "end": null,
+   "sound": "teen_snort",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "似鴕龍口鼻卡在洞口擠不進、懊惱的笑點，一聲噴氣先鋪情緒；放在旁白主要說明之後、低音量。"
+  },
+  {
+   "shot": "EP1N-15-11",
+   "start": 10.1,
+   "end_shot": "EP1N-15-11",
+   "end": null,
+   "sound": "snout_thud",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "口鼻撞洞口的悶響是這格的笑點收尾，放在旁白講完（10.04 秒）後的空檔，音量可到 mid 讓笑點落地。"
+  },
+  {
+   "shot": "EP1N-15-12",
+   "start": 0.9,
+   "end_shot": "EP1N-16-01",
+   "end": 1.0,
+   "sound": "unfreeze_whoosh",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "解除定格、恢復動作的轉場，必須有聲音推動從講解回到追逐；放在旁白「定格」講完（0.9 秒）後，延續到下一場 15-16-01 開頭把動作帶起來。"
+  }
+ ]
+}

@@ -1,0 +1,236 @@
+{
+ "scene_id": "EP1N-12",
+ "notes": "這是一場很長的「暫停講解」：中間十幾格都是白底手繪插圖，大多不放音效；聲音集中在頭尾的定格／解凍轉場，以及幾個靠聲音才成立的視覺笑點（老鼠落井、三團越來越大的灰塵、暴龍像石頭砸井底、粗骨頭裂開）。旁白幾乎鋪滿每一格，所有壓在旁白裡的聲音都壓到 low／bg，只有暴龍砸井底的重擊放在旁白講完後用 high。",
+ "sounds": [
+  {
+   "key": "freeze_hit",
+   "layer": "transition",
+   "zh": "定格急煞音（唱片急停）",
+   "search_en": ["record scratch", "freeze frame stinger", "cartoon stop sound"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "unfreeze_resume",
+   "layer": "transition",
+   "zh": "解凍／時間重啟音",
+   "search_en": ["time resume whoosh", "reverse record scratch", "whoosh transition"],
+   "duration_sec": [0.3, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "trex_pant",
+   "layer": "reaction",
+   "zh": "暴龍累癱喘氣",
+   "search_en": ["large animal breathing heavy", "creature panting", "monster heavy breath"],
+   "duration_sec": [2, 15],
+   "loop": true,
+   "generate_en": "a huge exhausted dinosaur panting, deep raspy labored breaths, heavy and tired"
+  },
+  {
+   "key": "forest_amb",
+   "layer": "ambience",
+   "zh": "森林小路環境音",
+   "search_en": ["forest ambience birds", "woodland background", "jungle ambience"],
+   "duration_sec": [10, 120],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "falling_whistle",
+   "layer": "event",
+   "zh": "下墜滑稽滑音",
+   "search_en": ["slide whistle descending", "cartoon falling whistle", "falling whistle down"],
+   "duration_sec": [1, 5],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "dust_poof",
+   "layer": "event",
+   "zh": "漫畫落地灰塵噗",
+   "search_en": ["cartoon poof", "dust puff impact", "comic puff"],
+   "duration_sec": [0.5, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "heavy_fall_slam",
+   "layer": "event",
+   "zh": "重物砸地巨響",
+   "search_en": ["heavy body impact thud", "large impact slam", "heavy thud dust"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "bone_crack",
+   "layer": "event",
+   "zh": "骨頭裂開脆響",
+   "search_en": ["bone crack snap", "wood crack splinter", "bone break"],
+   "duration_sec": [0.5, 3],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": null,
+   "sound": "freeze_hit",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "整場的核心概念就是「暫停講解」，一聲急煞／定格音標示畫面在這一刻凍結、跳出劇情開始解說；少了它觀眾不知道為什麼突然變插圖。放在 0.0 的切入點、用 mid 不蓋掉旁白第一句。"
+  },
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.3,
+   "end_shot": "EP1N-12-01",
+   "end": 7.66,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "定格裡暴龍喘到不行、HERO 得意揮手，低聲喘氣墊在旁白下，強化「牠累癱了」的對比；壓在旁白內故用 low。"
+  },
+  {
+   "shot": "EP1N-12-01",
+   "start": 0.0,
+   "end_shot": "EP1N-12-01",
+   "end": 7.66,
+   "sound": "forest_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.5,
+   "fade_out": 0.5,
+   "why": "這是回到森林小路的實景定格，墊一層很小聲的森林環境音讓畫面不死寂；中間的白底插圖不需要環境音。"
+  },
+  {
+   "shot": "EP1N-12-03",
+   "start": 0.3,
+   "end_shot": "EP1N-12-03",
+   "end": null,
+   "sound": "falling_whistle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "老鼠掉進深礦井的下墜，一聲滑稽下滑音建立「落井卻沒事」的喜感，也為下一格三種動物的笑點鋪梗；在旁白內故小聲。"
+  },
+  {
+   "shot": "EP1N-12-04",
+   "start": 1.4,
+   "end_shot": "EP1N-12-04",
+   "end": null,
+   "sound": "dust_poof",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "大老鼠落地化成灰塵雲，是三連擊笑點的第一下；對到旁白「大一點的老鼠會摔死」。"
+  },
+  {
+   "shot": "EP1N-12-04",
+   "start": 3.0,
+   "end_shot": "EP1N-12-04",
+   "end": null,
+   "sound": "dust_poof",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "第二團（人）落地，對到「換成人會摔碎」；三連噗越來越大是這一格的喜感核心。"
+  },
+  {
+   "shot": "EP1N-12-04",
+   "start": 4.5,
+   "end_shot": "EP1N-12-04",
+   "end": null,
+   "sound": "dust_poof",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.3,
+   "why": "第三團（馬）最大一團，對到「換成馬會整隻濺開」；用 mid 收尾讓逐漸放大的灰塵雲在聽覺上也升級。"
+  },
+  {
+   "shot": "EP1N-12-06",
+   "start": 0.6,
+   "end_shot": "EP1N-12-06",
+   "end": 9.0,
+   "sound": "falling_whistle",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.2,
+   "fade_out": 0.1,
+   "why": "暴龍像石頭一樣筆直墜落，一路下滑音鋪陳即將到來的重擊；壓在旁白下故 low。"
+  },
+  {
+   "shot": "EP1N-12-06",
+   "start": 9.35,
+   "end_shot": "EP1N-12-07",
+   "end": 0.9,
+   "sound": "heavy_fall_slam",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.6,
+   "why": "九噸暴龍重重砸井底是整段講解的視覺高潮笑點，少了這一聲重擊畫面會很洩氣；放在旁白講完「砸在井底」之後（9.35 秒）的瞬間用 high，餘響延到下一格。"
+  },
+  {
+   "shot": "EP1N-12-07",
+   "start": 8.9,
+   "end_shot": "EP1N-12-07",
+   "end": null,
+   "sound": "bone_crack",
+   "priority": "optional",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "粗骨頭中段裂開、碎片飛出，一聲脆裂點出「越重越撐不住」；放在旁白講完後的空檔，不跟人聲打架。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.0,
+   "end_shot": "EP1N-12-18",
+   "end": null,
+   "sound": "unfreeze_resume",
+   "priority": "must",
+   "volume": "mid",
+   "fade_in": 0.0,
+   "fade_out": 0.4,
+   "why": "畫面從定格恢復動態、收束暫停講解，一聲時間重啟音對應開頭的定格音，讓首尾呼應、觀眾知道回到劇情；放在切回的 0.0。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.3,
+   "end_shot": "EP1N-12-18",
+   "end": 4.04,
+   "sound": "trex_pant",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.3,
+   "fade_out": 0.4,
+   "why": "回到與開頭完全相同的構圖，暴龍仍在喘氣，低聲墊底延續「牠追不動」的收尾。"
+  },
+  {
+   "shot": "EP1N-12-18",
+   "start": 0.0,
+   "end_shot": "EP1N-12-18",
+   "end": 4.04,
+   "sound": "forest_amb",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 0.3,
+   "fade_out": 0.5,
+   "why": "回到森林實景，墊回很小聲的森林環境音與開頭一致。"
+  }
+ ]
+}

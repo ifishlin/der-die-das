@@ -1,0 +1,155 @@
+{
+ "scene_id": "EP1N-18",
+ "notes": "安靜的夜間室內喜劇收尾場，以旁白為主、幾乎不墊音；只在博士大笑、坑錢交換、彗星預告、結尾蓋章這幾個笑點與轉折點綴，結尾蓋章是唯一 must，同時當作接下一場的轉場標點。",
+ "sounds": [
+  {
+   "key": "lab_hum",
+   "layer": "ambience",
+   "zh": "實驗室時光機低頻嗡嗡聲",
+   "search_en": ["machine hum low drone", "sci-fi machine idle hum", "electrical room hum"],
+   "duration_sec": [10, 60],
+   "loop": true,
+   "generate_en": ""
+  },
+  {
+   "key": "hero_groan",
+   "layer": "reaction",
+   "zh": "HERO 虛弱悶哼（癱在地上）",
+   "search_en": ["man exhausted groan", "tired male groan", "weak collapse grunt"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "prof_laugh",
+   "layer": "reaction",
+   "zh": "PROF 開心大笑",
+   "search_en": ["man happy laugh", "cheerful male laugh", "delighted laugh"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "paper_money",
+   "layer": "event",
+   "zh": "鈔票抽出信封、收據塞入的紙張摩擦聲",
+   "search_en": ["paper money rustle", "cash envelope handling", "paper slip rustle"],
+   "duration_sec": [1, 4],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "prof_snicker",
+   "layer": "reaction",
+   "zh": "PROF 偷笑（得逞）",
+   "search_en": ["man sneaky snicker", "quiet mischievous chuckle", "sly laugh"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  },
+  {
+   "key": "comet_shimmer",
+   "layer": "event",
+   "zh": "彗星亮星閃爍預告音（手繪圖上的亮星）",
+   "search_en": ["sparkle shimmer twinkle", "magic star shimmer", "soft chime shine"],
+   "duration_sec": [1, 3],
+   "loop": false,
+   "generate_en": "a soft, slightly ominous magical shimmer with a faint high chime, like a bright star glinting, short and subtle, foreshadowing"
+  },
+  {
+   "key": "stamp_thunk",
+   "layer": "transition",
+   "zh": "紅色逾期章重重蓋下",
+   "search_en": ["rubber stamp thump", "ink stamp slam paper", "office stamp hit"],
+   "duration_sec": [1, 2],
+   "loop": false,
+   "generate_en": ""
+  }
+ ],
+ "cues": [
+  {
+   "shot": "EP1N-18-01",
+   "start": 0.4,
+   "end_shot": "EP1N-18-01",
+   "end": null,
+   "sound": "lab_hum",
+   "priority": "optional",
+   "volume": "bg",
+   "fade_in": 1.0,
+   "fade_out": 0.0,
+   "why": "整場墊實驗室的機器氛圍，提示這是時光機實驗室的夜晚；跨到全場，音量極小不蓋旁白"
+  },
+  {
+   "shot": "EP1N-18-01",
+   "start": 0.4,
+   "end_shot": "EP1N-18-01",
+   "end": null,
+   "sound": "hero_groan",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "開場 HERO 全身泥巴癱在地上，一聲虛弱悶哼點出他的狼狽，和博士的開心形成對比；壓低音量墊在旁白下"
+  },
+  {
+   "shot": "EP1N-18-02",
+   "start": 2.9,
+   "end_shot": "EP1N-18-02",
+   "end": null,
+   "sound": "prof_laugh",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.4,
+   "why": "「博士開心得不得了」這句後段博士笑開，是整場喜劇動力（博士爽／HERO 慘）的第一次確立；放在旁白尾端的空檔，低音量"
+  },
+  {
+   "shot": "EP1N-18-05",
+   "start": 1.2,
+   "end_shot": "EP1N-18-05",
+   "end": null,
+   "sound": "paper_money",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "鈔票被抽走、換成收據的動作，紙張聲讓「坑錢」這個轉折有實感；是安靜小動作，低音量墊在旁白下"
+  },
+  {
+   "shot": "EP1N-18-05",
+   "start": 3.9,
+   "end_shot": "EP1N-18-05",
+   "end": null,
+   "sound": "prof_snicker",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.3,
+   "why": "博士抽鈔票時偷笑，坐實他是故意坑錢的笑點；放在旁白講完後的空檔"
+  },
+  {
+   "shot": "EP1N-18-09",
+   "start": 2.6,
+   "end_shot": "EP1N-18-09",
+   "end": null,
+   "sound": "comet_shimmer",
+   "priority": "optional",
+   "volume": "low",
+   "fade_in": 0.1,
+   "fade_out": 0.4,
+   "why": "任務單上拖尾巴的亮星是下一集小行星的預告，一個輕微閃爍音強化「不妙的預兆」；放旁白講完後的空檔，低音量"
+  },
+  {
+   "shot": "EP1N-18-10",
+   "start": 4.85,
+   "end_shot": "EP1N-19-01",
+   "end": 0.6,
+   "sound": "stamp_thunk",
+   "priority": "must",
+   "volume": "high",
+   "fade_in": 0.0,
+   "fade_out": 0.2,
+   "why": "空頭支票收尾後，一記重重的紅色逾期章當作轉場標點，直接把戲推進到下一場桌上剛蓋章的逾期帳單；是全場最強的喜劇句點，放在旁白講完後、延續到下一場第一格"
+  }
+ ]
+}
