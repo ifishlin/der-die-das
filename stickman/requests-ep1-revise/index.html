@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><title>EP1-revise 你跑得贏暴龍嗎？ request 紀錄</title><style>
+:root{--bg:#f3f1ec;--panel:#fffdf9;--fg:#22201b;--mut:#6c665b;--line:#e0dace;--acc:#1f6b52;--sci:#e3f2e6;--sci-b:#3d8a55;--todo:#f6efe0;--chg:#fff1c9;--warn:#a0442c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#181816;--panel:#22211e;--fg:#ebe7de;--mut:#a29b8e;--line:#3a3730;--acc:#6cc7a3;--sci:#1f3326;--sci-b:#6cc78a;--todo:#2e2a20;--chg:#3d3418;--warn:#e08a70;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#181816;--panel:#22211e;--fg:#ebe7de;--mut:#a29b8e;--line:#3a3730;--acc:#6cc7a3;--sci:#1f3326;--sci-b:#6cc78a;--todo:#2e2a20;--chg:#3d3418;--warn:#e08a70;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 -apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+main{max-width:1180px;margin:0 auto;padding-block:16px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:14px}
+a{color:var(--acc)}h1{font-size:25px;margin:0;text-wrap:balance}h2{font-size:18px;margin:0 0 8px}h3{font-size:16px;margin:0 0 6px}
+.sub,.mut{color:var(--mut)}.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 16px;min-width:0}
+.step{font-size:12px;font-weight:600;color:var(--mut);border:1px solid var(--line);border-radius:5px;padding:0 6px;margin-left:6px;vertical-align:middle}
+.todo{background:var(--todo);border:1px dashed var(--line);border-radius:8px;padding:10px 14px;color:var(--mut);margin:0}
+.segnav{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;font-size:14px}.sgs{display:flex;gap:6px;flex-wrap:wrap}
+.sg{border:1px solid var(--line);border-radius:6px;padding:2px 10px;text-decoration:none;background:var(--panel)}.sg.on{background:var(--acc);color:var(--panel);border-color:var(--acc)}.sg.off{color:var(--mut);opacity:.55}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600;white-space:nowrap}
+.nums{display:flex;flex-wrap:wrap;gap:10px}.num{background:var(--bg);border-radius:8px;padding:6px 14px}.num b{font-size:20px;display:block}
+.sci{background:var(--sci);border-left:3px solid var(--sci-b);padding-left:6px}.fx{font-size:12px;color:var(--sci-b);font-weight:700;margin-left:4px}
+details summary{cursor:pointer;color:var(--mut);font-size:13.5px}
+.ctl{position:sticky;top:0;background:var(--bg);padding:8px 0;z-index:2}.ctl input{width:100%;font-size:16px;padding:8px;border:1px solid var(--line);border-radius:6px;box-sizing:border-box}
+.rec{border:1px solid var(--line);border-radius:8px;padding:10px;margin:10px 0;background:var(--card,transparent)}.rec h3{margin:0 0 4px;font-size:16px}.mut{color:var(--mut);font-size:13px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12.5px;max-height:70vh;overflow:auto;border:1px solid var(--line);border-radius:6px;padding:8px}
+.part{margin:6px 0}.ok{color:#2e7d32}.bad{color:#c62828}details{margin:4px 0}</style></head><body><main><p><a href="../story/ep1-revise/">← EP1-revise 你跑得贏暴龍嗎？ 集頁</a></p><header><h1>EP1-revise 你跑得贏暴龍嗎？：request 和回覆的完整紀錄</h1><p class=sub>送給模型的每一次 request、模型的回覆、檢查結果，照時間排。輸入格號（例如 01-03）只列有提到那一格的紀錄，依時間標第幾次，並把那一格的段落單獨拉出來。</p><p class=sub>產生日期：2026-11-25 23:49</p><p><b>共 0 次送出、0 次檢查</b></p></header><div class=ctl><input id=q type=search placeholder="輸入格號，例如 01-03 或 EP1R-01-03；留空看全部" autocomplete=off></div><div id=list></div><script type="application/json" id=d>{"rows": [], "req": "EP1R", "T": {"_doc": "每集 request 紀錄頁（2026-11-25 使用者：EP1-revise 要一頁看所有 request 和回覆的完整紀錄，能查哪一格、哪一次的詢問回答）。make_reqlog_ep_page.py 只搬運 docs/requests/log/log.jsonl 裡這一集的紀錄和全文。", "title": "{ep} request 紀錄", "h1": "{ep}：request 和回覆的完整紀錄", "sub": "送給模型的每一次 request、模型的回覆、檢查結果，照時間排。輸入格號（例如 01-03）只列有提到那一格的紀錄，依時間標第幾次，並把那一格的段落單獨拉出來。", "date": "產生日期：{date}", "back": "← {ep} 集頁", "stats": "共 {n} 次送出、{c} 次檢查", "search_ph": "輸入格號，例如 01-03 或 EP1R-01-03；留空看全部", "none": "還沒有任何紀錄。", "nomatch": "沒有提到這一格的紀錄。", "nth": "第 {k} 次", "step": "第 {s} 步", "kind_send": "送出", "kind_check": "檢查", "kind_manual": "手動", "ok": "通過", "bad": "不過", "req_part": "request 裡這一格的段落", "rep_part": "回覆裡這一格", "full_req": "request 全文（{n} 字）", "full_rep": "回覆全文（{n} 字）", "not_found": "（沒有找到這一格）", "note": "備註：", "who": "誰回：", "gap": "　"}}</script><script>
+const D=JSON.parse(document.getElementById('d').textContent),T=D.T,box=document.getElementById('list'),q=document.getElementById('q');
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const f=(s,o)=>s.replace(/\{(\w+)\}/g,(m,k)=>o[k]??m);
+function norm(v){v=v.trim().toUpperCase();if(!v)return '';if(/^\d{1,2}-\d{1,2}W?$/.test(v)){const[a,b]=v.split('-');v=D.req+'-'+a.padStart(2,'0')+'-'+b.padStart(2,'0');}return v;}
+function findObj(o,id,out){if(Array.isArray(o)){o.forEach(x=>findObj(x,id,out));}else if(o&&typeof o==='object'){if(o.id===id)out.push(o);else{for(const k in o){if(k===id)out.push({[k]:o[k]});else findObj(o[k],id,out);}}}return out;}
+function parse(t){try{return JSON.parse(t.slice(t.indexOf('{'),t.lastIndexOf('}')+1));}catch(e){return null;}}
+function reqPart(t,id){const out=[];t.split('\n').forEach(l=>{if(!l.includes(id))return;let j=null;try{j=JSON.parse(l);}catch(e){}const hit=j?findObj(j,id,[]):[];out.push(hit.length?hit.map(x=>JSON.stringify(x,null,1)).join('\n'):l);});return out.join('\n\n');}
+function render(){const id=norm(q.value);let rows=D.rows;if(id)rows=rows.filter(r=>(r.request_text||'').includes(id)||(r.reply_text||'').includes(id)||(r.name||'').toUpperCase().includes(id)||(r.note||'').includes(id));
+if(!D.rows.length){box.innerHTML='<p>'+esc(T.none)+'</p>';return;}if(!rows.length){box.innerHTML='<p>'+esc(T.nomatch)+'</p>';return;}
+box.innerHTML=rows.map((r,i)=>{const kind=r.kind==='check'?T.kind_check:(r.kind==='manual'?T.kind_manual:T.kind_send);
+let h='<div class=rec><h3>'+(id?esc(f(T.nth,{k:i+1}))+T.gap:'')+esc(r.time)+T.gap+esc(kind)+T.gap+esc(r.name)+'</h3><p class=mut>'+(r.step!==''&&r.step!==undefined?esc(f(T.step,{s:r.step}))+T.gap:'')+(r.who?esc(T.who)+esc(r.who)+T.gap:'')+(r.kind==='check'?'<b class='+(r.ok?'ok':'bad')+'>'+esc(r.ok?T.ok:T.bad)+'</b>':'')+'</p>';
+if(r.note)h+='<p>'+esc(T.note)+esc(r.note)+'</p>';
+if(id&&r.kind!=='check'){const rp=reqPart(r.request_text||'',id);const rj=parse(r.reply_text||'');const hit=rj?findObj(rj,id,[]):[];
+h+='<div class=part><b>'+esc(T.req_part)+'</b><pre>'+esc(rp||T.not_found)+'</pre></div><div class=part><b>'+esc(T.rep_part)+'</b><pre>'+esc(hit.length?hit.map(x=>JSON.stringify(x,null,1)).join('\n\n'):T.not_found)+'</pre></div>';}
+if(r.kind!=='check'){h+='<details><summary>'+esc(f(T.full_req,{n:(r.request_text||'').length}))+'</summary><pre>'+esc(r.request_text)+'</pre></details><details><summary>'+esc(f(T.full_rep,{n:(r.reply_text||'').length}))+'</summary><pre>'+esc(r.reply_text)+'</pre></details>';}
+return h+'</div>';}).join('');}
+q.addEventListener('input',render);const h=decodeURIComponent(location.hash.slice(1));if(h)q.value=h;render();
+</script></main></body></html>
