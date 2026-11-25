@@ -172,7 +172,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p class=pp><b>request：</b><span class=mut>不送 request：Claude 寫 prompt、Flow 畫</span></p>
 <p class="chgline"><span class="chg">改</span> 2026-11-19：改成我畫、我挑，不停</p>
 <p><b>誰：</b>我寫 prompt、我在 Flow 畫、我挑；不停。<b>　我用：</b><code>build_scale_pairs.py、flowbot</code></p>
-<p><b>要做的：</b></p><ul><li>這集新出現的角色、恐龍、道具、地點。</li><li>1 對 1 比例圖 PAIR2：HERO 和每一隻恐龍，由程式從設定圖拼；數字只有一份 heights.json。</li><li>環境圖（2026-11-20）：每個戶外「地點＋時段」一張（不是每場一張；同地點同時段的幾場共用）。上半部只有天色漸層、下半部只有地面；地點有河、湖、海時，下半部再多一塊水面（只有水的顏色和質感，不畫岸、倒影、漂浮物）；不畫太陽、腳印、水窪、石頭、葉子等細節。室內（有牆面圖）和插圖場不用。第 15 步附上並加一句說明：只照它的顏色和質感，不照它的排列。</li></ul>
+<p><b>要做的：</b></p><ul><li>這集新出現的角色、恐龍、道具、地點。</li><li>1 對 1 比例圖 PAIR2：HERO 和每一隻恐龍，由程式從設定圖拼；數字只有一份 heights.json。</li><li>環境圖（2026-11-20）：每個戶外「地點＋時段」一張（不是每場一張；同地點同時段的幾場共用）。上半部只有天色漸層、下半部只有地面；地點有河、湖、海時，下半部再多一塊水面（只有水的顏色和質感，不畫岸、倒影、漂浮物）；不畫太陽、腳印、水窪、石頭、葉子等細節。室內（有牆面圖）和插圖場不用。第 15 步附上並加一句說明：只照它的顏色和質感，不照它的排列。2026-11-25 起（原則十）：環境圖會被照抄，第 15 步不再附，改用它的文字描述（docs/content/env_text.json、stickman/env-text/）。</li></ul>
 <p><b>規則：</b></p><ul><li>地圖和設定圖要一致；不一致時以設定圖為準改地圖。</li><li>設定圖上不要畫會變的東西。</li><li>畫好放 refs_v7/（上傳用 refs_v7/upload/），舊版移到 refs_v7/old/。</li></ul>
 <p><b>產出：分場表：</b>場、每場的地圖、設定圖放同一頁。可以不看，流程不停。</p>
 <h2 id="s13">13. 分鏡設計（拆鏡頭） ✅ <span class="seg">D 分鏡</span></h2>
@@ -202,7 +202,7 @@ ul{padding-left:1.3em;margin:2px 0 8px}li{margin:2px 0}
 <p><b>誰：</b>LLM 逐鏡頭手寫；不停。<b>　我用：</b><code>背景：docs/requests/EPn-NN_bg_hand.json；組合：assemble_*.py</code></p>
 <p><b>規定：</b></p><ul><li>任何跟 prompt 有關的都不可以用程式：背景描述、每個鏡頭附哪些參考圖、prompt 文字，都由 LLM 逐鏡頭看地圖決定；程式只搬運。</li><li>寫法：先講鏡頭對著哪面牆或哪個方向，再講那邊有什麼；東西用彼此的關係定位；不寫東南西北、不寫幾公尺、不用前景／中景／背景分層詞。</li></ul>
 <p><b>參考圖：</b>入鏡角色的設定圖、HERO 和恐龍同框時的比例圖 PAIR2（加 C 版說明句）、畫面裡看得到的牆面圖、有道具就附 REF_PROPS。只附 Flow 專案裡有的。</p>
-<p><b>程式先算好的資料（2026-11-21，原則八）：</b></p><ul><li>每個鏡頭附 sun（太陽在相機哪一邊，sun_side.py）和 view（畫面左／中／右看得到什麼、哪些不在畫面裡，view_side.py）；模型照這個寫，方向不能改，鏡頭外的地標不准寫。</li><li>戶外鏡頭一律附這張地圖的環境圖 ENV_*（docs/env_refs.json），組檔時加說明句。</li><li>request 附這場的角色狀態；整場沒戴帽子附 REF_HERO_NOHAT。檢查不過的場整場重送。</li></ul>
+<p><b>程式先算好的資料（2026-11-21，原則八）：</b></p><ul><li>每個鏡頭附 sun（太陽在相機哪一邊，sun_side.py）和 view（畫面左／中／右看得到什麼、哪些不在畫面裡，view_side.py）；模型照這個寫，方向不能改，鏡頭外的地標不准寫。</li><li>天空、地面、水面（2026-11-25 原則十）：不附環境圖 ENV_*，request 給這張地圖那張環境圖的文字描述（docs/env_refs.json 對到 docs/content/env_text.json），背景照描述寫；refs 有 ENV 就退回，組檔時也擋。</li><li>request 附這場的角色狀態；整場沒戴帽子附 REF_HERO_NOHAT。檢查不過的場整場重送。</li></ul>
 <h2 id="s16">16. Flow 畫圖 ✅ <span class="seg">D 分鏡</span></h2>
 <p class=pp><b>這步在幹嘛：</b>把 prompt 和參考圖送進 Flow，每個鏡頭畫 4 條。</p>
 <p class=pp><b>檢查頁：</b>D 分鏡表：每個鏡頭的 4 條<br><a href="../storyboard-ep1-new/">D 分鏡表</a></p>
