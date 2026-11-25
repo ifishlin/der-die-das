@@ -1,0 +1,53 @@
+{
+ "_doc": "EP1-revise 第 1 場每格背景描述和參考圖，Claude 照舊 EP1 做法看地圖手寫（2026-11-25）。地圖 episodes/001_trex_run_revise/maps/dusk.json（舊 EP1 版）；看得到什麼照 view_side 算的視野、太陽方向照 sun_side。參考圖照第 12 步第 1 場的清單（REF_HERO_NOHAT、REF_TEEN、PAIR2_TEEN、REF_PROPS、ENV_DUSK）逐格挑。",
+ "EP1R-01-01": {
+  "zh": "鏡頭從小路旁的森林裡往外看，對著小路另一邊的森林。畫面下緣有幾片近處的枝葉。一條爛泥巴小路從畫面左邊橫到右邊。小路另一邊是一整片又高又密的森林，有蘇鐵、銀杏和針葉樹，樹幹很粗，樹頂高到超出畫面上緣。黃昏的夕陽從畫面左邊斜斜照過來，在泥巴路上拉出一條條長長的樹影。",
+  "en": "Background: The camera looks out from the trees beside a trail, facing the forest on the other side of the trail. A few nearby leaves and branches show along the bottom edge of the picture. A muddy forest trail runs across the picture from left to right. On the other side of the trail is a dense, towering forest of cycads, ginkgos and conifers, with thick trunks and treetops that rise past the top edge of the picture. Low orange sunset light comes in at a slant from the left side of the picture, casting long tree shadows across the mud.",
+  "refs": ["REF_HERO_NOHAT", "REF_PROPS", "ENV_DUSK"]
+ },
+ "EP1R-01-02": {
+  "zh": "鏡頭站在泥巴小路上，斜斜對著 HERO 跑來的方向。HERO 身後，泥巴小路往畫面左邊的遠處延伸，小路兩邊都是又高又密的森林，有蘇鐵、銀杏和針葉樹。黃昏的夕陽低低地在畫面左前方的樹縫間，逆光照過來，HERO 的輪廓邊緣被照成橘色，影子往鏡頭這邊倒。",
+  "en": "Background: The camera stands on the muddy trail, angled toward where HERO is running from. Behind HERO, the muddy trail stretches away into the distance toward the left of the picture, with tall, dense forest of cycads, ginkgos and conifers on both sides of it. The low sunset sun sits among the trees at the front left of the picture and shines toward the camera, lighting the edges of HERO's outline orange, and his shadow falls toward the camera.",
+  "refs": ["REF_HERO_NOHAT", "REF_PROPS", "ENV_DUSK"]
+ },
+ "EP1R-01-03": {
+  "zh": "鏡頭在小路旁的森林邊上，斜斜看向小路和路的另一邊。畫面下緣有幾片枝葉。泥巴小路從畫面左邊橫到右邊，往右前方延伸。小路另一邊，畫面左半是又高又密的森林，有蘇鐵、銀杏和針葉樹；畫面右半森林讓開，露出一片開闊的空地，空地另一頭又是森林。畫面右邊遠一點的小路上，有一條拱出地面的大樹根。黃昏的夕陽在鏡頭左後方，低低的橘光照在小路、空地和樹頂上，影子往右前方拉長。",
+  "en": "Background: The camera is at the edge of the forest beside the trail, looking at an angle across the trail. A few leaves and branches show along the bottom edge of the picture. The muddy trail runs across the picture from left to right, stretching ahead to the right. On the other side of the trail, the left half of the picture is tall, dense forest of cycads, ginkgos and conifers; in the right half the forest opens into a wide clearing, with forest again at its far side. Farther along the trail on the right side of the picture, a big tree root arches up out of the ground. The low sunset sun is behind the camera on the left; orange light falls on the trail, the clearing and the treetops, and shadows stretch ahead to the right.",
+  "refs": ["REF_HERO_NOHAT", "REF_TEEN", "PAIR2_TEEN", "REF_PROPS", "ENV_DUSK"]
+ },
+ "EP1R-01-03W": {
+  "zh": "鏡頭在小路旁的森林邊上，斜斜看向小路和路的另一邊，看得比較遠。畫面下緣有幾片枝葉。泥巴小路從畫面左邊橫到右邊，往右前方延伸。小路另一邊，畫面左半是又高又密的森林，有蘇鐵、銀杏和針葉樹，樹頂超出畫面上緣；畫面右半森林讓開，露出一片開闊的空地，空地另一頭又是森林。畫面右邊遠一點的小路上，有一條拱出地面的大樹根。黃昏的夕陽在鏡頭左後方，低低的橘光照在小路、空地和樹頂上，影子往右前方拉長。",
+  "en": "Background: The camera is at the edge of the forest beside the trail, looking at an angle across the trail and seeing a long way. A few leaves and branches show along the bottom edge of the picture. The muddy trail runs across the picture from left to right, stretching ahead to the right. On the other side of the trail, the left half of the picture is tall, dense forest of cycads, ginkgos and conifers, the treetops rising past the top edge of the picture; in the right half the forest opens into a wide clearing, with forest again at its far side. Farther along the trail on the right side of the picture, a big tree root arches up out of the ground. The low sunset sun is behind the camera on the left; orange light falls on the trail, the clearing and the treetops, and shadows stretch ahead to the right.",
+  "refs": ["REF_HERO_NOHAT", "REF_TEEN", "PAIR2_TEEN", "REF_PROPS", "ENV_DUSK"]
+ },
+ "EP1R-01-04": {
+  "zh": "鏡頭在小路旁的森林邊上，斜斜看向小路。泥巴小路從畫面左邊橫到右邊。小路另一邊，畫面左邊是又高又密的森林，有蘇鐵、銀杏和針葉樹；畫面中間到右邊是一片開闊的空地，空地另一頭又是森林。畫面右邊的小路上，有一條拱出地面的大樹根。黃昏的夕陽在鏡頭左後方，低低的橘光照在空地和樹頂上，影子往右前方拉長。",
+  "en": "Background: The camera is at the edge of the forest beside the trail, looking at an angle across the trail. The muddy trail runs across the picture from left to right. On the other side of the trail, the left of the picture is tall, dense forest of cycads, ginkgos and conifers; from the middle to the right of the picture there is a wide open clearing, with forest again at its far side. On the trail at the right of the picture, a big tree root arches up out of the ground. The low sunset sun is behind the camera on the left; orange light falls on the clearing and the treetops, and shadows stretch ahead to the right.",
+  "refs": ["REF_HERO_NOHAT", "REF_TEEN", "PAIR2_TEEN", "REF_PROPS", "ENV_DUSK"]
+ },
+ "EP1R-01-04W": {
+  "zh": "鏡頭在小路旁的森林邊上，斜斜看向小路，看得比較遠。泥巴小路從畫面左邊橫到右邊。小路另一邊，畫面左邊是又高又密的森林，有蘇鐵、銀杏和針葉樹；畫面中間到右邊是一片開闊的空地，空地另一頭又是森林，樹頂超出畫面上緣。畫面右邊的小路上，有一條拱出地面的大樹根。黃昏的夕陽在鏡頭左後方，低低的橘光照在空地和樹頂上，影子往右前方拉長。",
+  "en": "Background: The camera is at the edge of the forest beside the trail, looking at an angle across the trail and seeing a little farther. The muddy trail runs across the picture from left to right. On the other side of the trail, the left of the picture is tall, dense forest of cycads, ginkgos and conifers; from the middle to the right of the picture there is a wide open clearing, with forest again at its far side, the treetops rising past the top edge of the picture. On the trail at the right of the picture, a big tree root arches up out of the ground. The low sunset sun is behind the camera on the left; orange light falls on the clearing and the treetops, and shadows stretch ahead to the right.",
+  "refs": ["REF_HERO_NOHAT", "REF_TEEN", "PAIR2_TEEN", "REF_PROPS", "ENV_DUSK"]
+ },
+ "EP1R-01-05": {
+  "zh": "鏡頭站在泥巴小路上，順著小路往前看。泥巴小路往前延伸到遠處；前方小路上有一條拱出地面的大樹根。小路左邊，先是一小段森林，再過去森林讓開，露出一片開闊的空地，空地另一頭又是森林；小路右邊緊貼著又高又密的森林；樹有蘇鐵、銀杏和針葉樹。小路盡頭是往遠方延伸的森林。夕陽在鏡頭正後方，所以畫面裡看不到太陽，前方遠處的天空比較暗、沒有亮光；HERO 和 TEEN 的背面被夕陽照成橘色，影子往前倒，朝小路遠處拉長。",
+  "en": "Background: The camera stands on the muddy trail, looking straight down the trail ahead. The muddy trail stretches ahead into the distance; ahead on the trail, a big tree root arches up out of the ground. On the left side of the trail there is first a short stretch of forest, then the forest opens into a wide clearing with forest again at its far side; on the right side of the trail, tall dense forest stands right against it; the trees are cycads, ginkgos and conifers. At the far end of the trail the forest continues into the distance. The setting sun is directly behind the camera, so no sun appears in the picture, and the sky far ahead is darker with no bright glow; the setting sun lights HERO's and TEEN's backs orange, and their shadows fall forward, stretching away from the camera down the trail.",
+  "refs": ["REF_HERO_NOHAT", "REF_TEEN", "PAIR2_TEEN", "ENV_DUSK"]
+ },
+ "EP1R-01-05W": {
+  "zh": "鏡頭站在泥巴小路上，順著小路往前看，看得比較遠。很長一段泥巴小路往前延伸到遠處；前方小路上有一條拱出地面的大樹根。小路左邊，先是一小段森林，再過去森林讓開，露出一片開闊的空地，空地另一頭又是森林；小路右邊緊貼著又高又密的森林；樹有蘇鐵、銀杏和針葉樹，樹頂超出畫面上緣。小路盡頭是往遠方延伸的森林。夕陽在鏡頭正後方，所以畫面裡看不到太陽，前方遠處的天空比較暗、沒有亮光；HERO 和 TEEN 的背面和樹頂被夕陽照成橘色，影子往前倒，朝小路遠處拉長。",
+  "en": "Background: The camera stands on the muddy trail, looking straight down the trail ahead and seeing a long way. A long stretch of the muddy trail runs ahead into the distance; ahead on the trail, a big tree root arches up out of the ground. On the left side of the trail there is first a short stretch of forest, then the forest opens into a wide clearing with forest again at its far side; on the right side of the trail, tall dense forest stands right against it; the trees are cycads, ginkgos and conifers, the treetops rising past the top edge of the picture. At the far end of the trail the forest continues into the distance. The setting sun is directly behind the camera, so no sun appears in the picture, and the sky far ahead is darker with no bright glow; the setting sun lights HERO's and TEEN's backs and the treetops orange, and their shadows fall forward, stretching away from the camera down the trail.",
+  "refs": ["REF_HERO_NOHAT", "REF_TEEN", "PAIR2_TEEN", "ENV_DUSK"]
+ },
+ "EP1R-01-06": {
+  "zh": "鏡頭從小路旁的森林邊往外看，正對著小路和路對面的空地。畫面下緣有幾片枝葉。泥巴小路從畫面左邊橫到右邊。畫面中間的小路上，有一條粗粗的大樹根拱出地面。小路另一邊是一片開闊的空地，空地左右兩邊和另一頭都是又高又密的森林，有蘇鐵、銀杏和針葉樹。黃昏的夕陽從畫面左邊低低地照過來，整片空地和樹頂都是橘色。",
+  "en": "Background: The camera looks out from the edge of the forest beside the trail, facing straight across the trail toward a clearing. A few leaves and branches show along the bottom edge of the picture. A muddy forest trail runs across the picture from left to right. In the middle of the picture, on the trail, a thick tree root arches up out of the ground. On the other side of the trail is a wide open clearing, with tall, dense forest of cycads, ginkgos and conifers on its left, on its right and at its far side. Low sunset light comes from the left side of the picture, and the whole clearing and the treetops glow orange.",
+  "refs": ["REF_HERO_NOHAT", "REF_TEEN", "PAIR2_TEEN", "REF_PROPS", "ENV_DUSK"]
+ },
+ "EP1R-01-06W": {
+  "zh": "鏡頭從小路旁的森林裡往外看，正對著小路和路對面的空地，看得比較遠。畫面下緣有幾片枝葉。泥巴小路從畫面左邊橫到右邊。畫面中間的小路上，有一條粗粗的大樹根拱出地面。小路另一邊是一片開闊的空地，空地左右兩邊和另一頭都是又高又密的森林，有蘇鐵、銀杏和針葉樹，樹頂超出畫面上緣。黃昏的夕陽從畫面左邊低低地照過來，整片空地和樹頂都是橘色。",
+  "en": "Background: The camera looks out from inside the forest beside the trail, facing straight across the trail toward a clearing and seeing a long way. A few leaves and branches show along the bottom edge of the picture. A muddy forest trail runs across the picture from left to right. In the middle of the picture, on the trail, a thick tree root arches up out of the ground. On the other side of the trail is a wide open clearing, with tall, dense forest of cycads, ginkgos and conifers on its left, on its right and at its far side, the treetops rising past the top edge of the picture. Low sunset light comes from the left side of the picture, and the whole clearing and the treetops glow orange.",
+  "refs": ["REF_HERO_NOHAT", "REF_TEEN", "PAIR2_TEEN", "REF_PROPS", "ENV_DUSK"]
+ }
+}

@@ -1,0 +1,241 @@
+你是一位動畫分鏡導演。下面給你一幕戲和這個場景的地圖，請你決定：
+- 這一幕要拍幾張圖；
+- 角色在地圖上站在哪裡、怎麼移動（走位）；
+- 每張圖的相機放在地圖哪裡；
+- 每張圖的 7 項拍攝資訊（一定要填）；
+- 每張圖送進 Google Flow（Nano Banana 2.1 生圖模型）的英文 prompt。
+
+━━━━━━━━━━━━━━━━━━━━
+【零、分鏡原則】（優先遵守）
+1. 你首先是動畫分鏡導演，其次才是生圖 prompt 工程師。目標是有電影感、敘事清楚、節奏有效的鏡頭，不只是把每張圖畫對。
+2. 優先順序：（1）電影效果與敘事功能（2）角色與空間連戲（3）Google Flow 的可生成性。但前提是比例和空間成立：比例不成立的構圖不算好構圖。
+3. 每張圖都要有明確的敘事功能，例如建立環境、呈現速度、強調危險、揭露資訊、製造笑點、形成懸念、定格或轉場錨點。不必另外輸出成欄位，但要反映在 notes、composition、action、旁白分配和鏡頭安排裡。
+4. 依戲劇需要選景別和角度：仰視（壓迫感、巨大感）、俯視（脆弱感、空間關係）、遠景（建立環境）、特寫／近景（情緒、細節、威脅）、插入鏡頭（資訊、物件、局部）。鏡頭變化一定要有理由，不是為了變化而變化。
+5. 先分析再選景別：這張有哪些角色和東西、各自實際多大（身高見【三】和比例圖）、誰在前誰在後、哪些一定要整個入鏡、哪些可以被畫面裁掉、這張的敘事重點是什麼。想清楚之後，才決定景別、相機位置、角度和構圖。
+6. 尺寸差很大、又都要整個入鏡時，景別要選遠一點，以最大的角色放得下為準。例：TEEN 是 HERO 的 1.68 倍高，兩個都要從頭到腳入鏡時，HERO 最多只能佔畫高大約 55%；FS（HERO 頭到腳塞滿畫面）放不下，至少要 WS。不需要整個入鏡時，可以選近一點的景別，讓大的角色自然超出畫面（局部鏡頭）。
+7. 構圖不成立時，要重新設計鏡頭（換景別、相機位置、角度、站位或入鏡範圍），不能留給生圖或之後縮放來補救。
+8. 先設計最佳分鏡，再處理模型限制。戲劇上值得用的景別或角度，就算實測是 △ 或 ✗ 也可以選：這時 7 項資訊照你想要的填，但 prompt 要寫成畫得出來的補救版本，remedy 寫怎麼補（例：想要 CU → shot_size 填 CU，prompt 用 MCU 的句子，remedy 寫「prompt 用 MCU，剪輯時推近到 CU」）。prompt 不可以直接用 ✗ 的寫法。
+9. 剪接：每次切鏡都要有目的，例如從環境切到角色、從 HERO 切到威脅、從動態切到定格、切插入鏡頭強調資訊。避免連續兩張功能重複、構圖相近、景別和視角沒有意義的變化；功能重複的就合併成一張。
+10. 會在別幕重現的瞬間是「關鍵錨點鏡頭」：角色位置和姿勢、相機位置、物件位置、背景構圖、光線方向、角色之間的遮擋關係都要特別清楚、穩定，方便之後重現。
+11. 角色的實際身高和畫面裡看起來多大是兩件事：身高固定不變，畫面裡佔幾成由前後位置、透視、景別和角度決定。cast 裡每個角色的佔畫高要跟比例圖和前後位置對得起來：站在後面的可以小一點，但不能小到違反比例（例：TEEN 只在 HERO 身後幾步，卻填得比 HERO 還小，就是錯的）。
+
+━━━━━━━━━━━━━━━━━━━━
+【一、作品】
+科普短片系列，改編 Cody Cassidy《How to Survive History》。主角 HERO 是一個很窮、延畢兩年的大學生，幫博士打工，坐時光機回到過去出任務。HERO 沒有台詞，只有喘氣、驚叫這類聲音；故事全靠第二人稱旁白（「你」）。畫風：手腳粗粗的火柴人，白色圓頭；恐龍是卡通風，但大小照真實比例。
+每張圖是一張 16:9 靜態圖；剪輯時可以對它推近、拉遠、移框、停留，所以一張圖可以配好幾句旁白。
+可以用插入鏡頭（只拍東西或手，例如手機螢幕），插入鏡頭也要填 7 項資訊。
+
+━━━━━━━━━━━━━━━━━━━━
+【二、這一幕】EP1R 幕 1　森林泥巴小路・黃昏
+在演什麼：
+冷開場。HERO 滿身泥巴在森林小路上狂奔，青少年暴龍在後面越追越近，嘴巴比他整個人還大。HERO 跳起來的那一瞬間畫面定格，旁白問「我到底是怎麼跑到這裡來的」，倒回今天早上。這一刻在幕 16 會再出現一次。
+
+旁白逐字（照順序；全部要分配到圖上，一句都不能漏、不能改字；「（停）」是笑點前約 0.8 秒的停頓）：
+  1. 你正在跑，腳下全是爛泥巴。而兩旁的樹，比大樓還要高。
+  2. 而你這輩子，從來沒跑得這麼快過。
+  3. 可是後面那個東西，跑得比你還快。
+  4. 牠光是一張嘴，就比你整個人還大。
+  5. 而且啊，牠還越追越近。
+  6. 這時候你一定很想問：我到底是怎麼跑到這裡來的？別急，這件事要從今天早上說起。
+
+前一幕：沒有，這是整集的第一個畫面（冷開場）。
+後一幕（幕 2）：倒回今天早上，HERO 的房間，書桌上的帳單和學分不足通知。
+
+━━━━━━━━━━━━━━━━━━━━
+【三、角色】（身高是站立時頭頂的高度）
+- HERO：火柴人，身高 1.72 m。這時候沒戴帽子（帽子在前面被搶走了）、滿身泥巴、胸前斜背一台小相機、背著背包。參考圖：REF_HERO_NOHAT（角色設定圖，沒戴帽子）、REF_PROPS（道具圖，有相機）。
+- TEEN（青少年暴龍）：14 歲、還沒長胖，跑得很快；站立時頭頂高 2.89 m。參考圖：REF_TEEN（設定圖）、PAIR2_TEEN（HERO 和 TEEN 的身高比例圖）。
+  嘴巴「比 HERO 整個人還大」是視覺誇張，不用照幾何尺寸算；重點是讓觀眾一眼覺得這張嘴非常大、HERO 可能被一口吞下，威脅感明確又帶點誇張的喜感。
+
+━━━━━━━━━━━━━━━━━━━━
+【四、地圖】森林泥巴小路・黃昏
+夕陽下的森林。中間一條東西向的小路（追逐路線，HERO 往東跑）；路的東北邊是一片空地，甲龍趴在空地裡像一顆長青苔的大石頭。四周是森林。
+
+大小 20 欄（A–T）× 10 列（1–10），一格 3 公尺。北在上。時間：黃昏，太陽在西方。
+格子用「欄字母＋列數字」表示。
+     A B C D E F G H I J K L M N O P Q R S T
+  1  F F F F F F F F F F F F F F F F F F F F
+  2  F F F F F F F F F F F F F F F F F F F F
+  3  F F F F F F F F F F F F g g g g g g g F
+  4  F F F F F F F F F F F F g g g g g g g F
+  5  F F F F F F F F F F F F g g g g g g g F
+  6  p p p p p p p p p p p p p p p p 1 p p p
+  7  p p p p p p p p p p p p p p p p p p p p
+  8  F F F F F F F F F F F F F F F F F F F F
+  9  F F F F F F F F F F F F F F F F F F F F
+ 10  F F F F F F F F F F F F F F F F F F F F
+
+字母（「角色」是角色能不能站在、走進那一格；「相機」是相機能不能放在那一格）：
+  1 = 樹根（a big tree root sticking out of the ground）｜角色：不可站｜相機：不可放（不能站上去，可以跳過）
+  F = 森林（蘇鐵、銀杏、針葉樹）（a dense Cretaceous forest of cycads, ginkgos and conifers）｜角色：不可站｜相機：可放（相機可以放在森林邊緣往外拍，前景會有枝葉）
+  g = 空地（夕陽）（a forest clearing in orange sunset light）｜角色：可站｜相機：可放
+  p = 森林小路（夕陽）（a forest trail in orange sunset light）｜角色：可站｜相機：可放
+小路是東西向的追逐路線；這一幕 HERO 沿小路往東跑，TEEN 在後面追。
+這一刻在後面的幕 16 會再出現一次（同一張地圖、同一個瞬間）。
+地圖外面：北邊 夕陽下的森林往遠方延伸；東邊 夕陽下的森林往遠方延伸；西邊 夕陽下的森林往遠方延伸；南邊 夕陽下的森林往遠方延伸。
+
+━━━━━━━━━━━━━━━━━━━━
+【五、每張圖必填的 7 項拍攝資訊】一定要填，不能空；不適用填 N/A。左右一律是觀眾看到的畫面左右。
+  1. 主體（subject）：景別和構圖以誰為準；次要主體可列。 自由寫。
+  2. 景別（shot_size）：8 級擇一，以主體為準。 只能填下面其中一個：
+     - EWS：極遠景。主體很小，環境是重點
+     - WS：遠景。主體全身清楚，周圍環境也大量入鏡
+     - FS：全景。主體頭到腳剛好完整入鏡
+     - MLS：膝上景。畫面下緣在膝蓋附近
+     - MS：中景。畫面下緣在腰附近
+     - MCU：中近景。畫面下緣在胸附近
+     - CU：特寫。臉（或物件的重點部分）
+     - ECU：極特寫。比特寫更小的局部：眼睛、嘴、手指
+  3. 水平方位（azimuth）：相機在主體哪一邊。 只能填下面其中一個：
+     - front：正面。相機在主體正前方
+     - front34：前側 3/4。相機在主體前方偏一側，看得到臉和一側身體
+     - side：側面。相機在主體正側面
+     - back34：後側 3/4。相機在主體後方偏一側
+     - back：背面。相機在主體正後方
+  4. 角度（angle）：5 種擇一。 只能填下面其中一個：
+     - eye：平視。相機跟主體眼睛差不多高，平著看
+     - low：仰視。相機貼地往上看，主體顯得高大
+     - high：俯視。相機在附近高處往下看
+     - top：正上方俯拍。相機在主體正上方，垂直往下看
+     - aerial：空拍。相機在高空，往下看一大片地形，主體很小
+  5. 構圖位置（composition）：誰在畫面左／中／右；前景、背景有什麼。 自由寫。
+  6. 畫面方向（screen_direction）：主體往哪邊跑或看（觀眾的左右）。 只能填下面其中一個：
+     - left：往左。主體往畫面左邊移動
+     - right：往右。主體往畫面右邊移動
+     - toward：朝鏡頭。主體朝鏡頭來
+     - away：遠離鏡頭。主體離開鏡頭
+     - off_left：看畫外左。主體看向畫面外左邊
+     - off_right：看畫外右。看向畫面外右邊
+     - off_up：看畫外上。看向畫面外上方
+     - off_down：看畫外下。看向畫面外下方
+  7. 動作與關鍵瞬間（action）：哪一刻、什麼姿勢、表情。 自由寫。
+  景別填 ECU 時，另外在 ecu_part 寫是哪個局部（眼睛、嘴、手指…）；不是 ECU 填 N/A。
+
+每張圖另外要給：
+  - 配哪幾句旁白（照抄上面的句子）；
+  - 每個入鏡角色：哪些部位入鏡、約佔畫高幾成（每個角色都要寫，只寫倍數的話模型會把每個角色畫成一樣大）；
+  - 要附哪幾張參考圖。
+
+━━━━━━━━━━━━━━━━━━━━
+【六、地圖和 7 項資訊要對得上】回傳前請自己檢查：
+  - 水平方位：由相機的格子相對於主體的格子、和主體面朝的方向算出來。
+  - 景別：要跟相機到主體的距離合理，距離寫在 camera.distance_m。
+  - 尺寸：要整個入鏡的角色都放得下（以最大的角色為準）；cast 的佔畫高跟比例圖和前後位置對得上。
+  - 畫面方向：主體面朝或移動的方向，換算成從相機看過去的左右。
+  - 構圖位置：誰在畫面左、誰在畫面右，要跟從相機看過去的地圖左右一致。
+  - 走位：前後圖的角色位置要連得起來。角色只能站在、走過字母說明標「角色：可站」的格子；相機只能放在標「相機：可放」的格子，不能放在地圖外（高度不限）。
+
+━━━━━━━━━━━━━━━━━━━━
+【七、寫 prompt 的規則】
+- 景別、水平方位、角度三項，直接用下面實測過的英文句子（HERO 換成這張的主體；水平方位句子裡的 trail、TEEN 換成這一幕的東西），不要自己改寫。✓ 有效、△ 部分有效、✗ 無效。
+- 用了表上沒有的寫法，列在 untested。
+- 7 項資訊填你想要的效果。想要的效果是 △ 或 ✗ 時，prompt 寫成畫得出來的補救版本，remedy 寫怎麼補（例：想要 CU → shot_size 填 CU，prompt 用 MCU 的句子，remedy 寫「prompt 用 MCU，剪輯時推近到 CU」）。prompt 不可以直接用 ✗ 的寫法。
+- 畫風那句固定寫：16:9, generate 1 image. Flat 2D cartoon in exactly the style of the attached character sheets: thick black outlines, flat colors. No text anywhere in the picture.
+- 每個入鏡角色只能出現一次；寫明畫面裡只有哪些角色。
+- prompt 不要描述背景：不寫牆、地板、天花板、遠景、地形、天空、光線和時間（例如不要寫 "Concrete basement lab."、"forest behind"、"morning light"）。只寫角色、動作、表情，以及角色碰到或用到的東西（例如他坐的椅子、按的拉桿、指著的黑板、埋頭進去的蕨類）。背景會由程式依地圖和你給的相機位置、對準的目標自動算出來，接在 prompt 後面，所以 camera.cell 和 camera.look_at 一定要填對。
+- prompt 裡不要寫角色佔畫面高度幾成或幾 percent（實測 Flow 不會照做）；大小靠景別、相機位置和局部入鏡決定。cast 的佔畫高照樣要填（給分鏡設計用），只是不要寫進 prompt。
+- refs 一律填空陣列 []：要附哪些參考圖由程式依入鏡角色、地點和道具決定（2026-11-12 起），你不用選。
+  [景別]
+   EWS ✓：Shot size: Extreme Wide Shot (EWS). HERO is very small in the picture; the environment is the main subject.
+   WS △：Shot size: Wide Shot (WS). HERO's whole body is clearly visible, with a lot of the surroundings around him.　（常畫成跟 FS 一樣大）
+   FS ✓：Shot size: Full Shot (FS). HERO's whole body, from head to feet, just fits in the picture.
+   MLS ✓：Shot size: Medium Long Shot (MLS). HERO is framed from the knees up; the bottom edge of the picture is at his knees.
+   MS △：Shot size: Medium Shot (MS). HERO is framed from the waist up; the bottom edge of the picture is at his waist.　（常畫成膝上）
+   MCU △：Shot size: Medium Close-up (MCU). HERO is framed from the chest up; the bottom edge of the picture is at his chest.　（常畫成到腰）
+   CU ✗：Shot size: Close-up (CU). HERO's face fills most of the picture.　（只到胸口）
+   ECU ✓：Shot size: Extreme Close-up (ECU). Only HERO's eyes and the glasses around them fill the picture.　（眼睛 ✓；寫「嘴」只有 1/4 成功）
+  [水平方位]
+   front ✓：Camera direction: front view. The camera is on the trail ahead of HERO, facing him.　（原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+   front34 △：Camera direction: front three-quarter view. The camera is ahead of HERO and off to one side of the trail, so we see his face and one side of his body.　（大致做到；原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+   side ✓：Camera direction: side view. The camera is beside the trail and sees HERO and TEEN exactly from the side.　（原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+   back34 △：Camera direction: rear three-quarter view. The camera is behind TEEN and off to one side of the trail; TEEN is nearer the camera and HERO runs ahead of him, both seen from behind and one side.　（大致做到；偶爾多畫一個 HERO 當前景；原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+   back ✓：Camera direction: back view. The camera is on the trail behind TEEN, looking the way they run; TEEN's back is nearer the camera and HERO's back is farther ahead. TEEN runs on one side of the trail, so he does not hide HERO.　（偶爾多畫一個 HERO 當前景；原文是 S00-3 追逐那一幕寫的（小路、TEEN），換場景時只換這些名詞）
+  [角度]
+   eye ✓：Camera angle: Eye-level: the camera is at HERO's eye height, looking straight ahead.
+   low ✓：Extreme low-angle shot, ground-level camera perspective, looking up at HERO's full body.　（一定要有 Extreme low-angle shot；只寫 Low Angle 40 格全失敗。目前只在單人站立畫面驗證）
+   high △：Camera angle: High angle: the camera is high above HERO, looking down at him.　（只有輕微往下看）
+   top ✗：Camera angle: Top-down shot (also called overhead shot): the camera is directly above HERO, looking straight down.　（最多高處斜看）
+   aerial △：Camera angle: Aerial shot: the camera is high in the sky, looking down at a wide stretch of the land.　（只有配 EWS 成功）
+  注意：寫了俯視、正上方、空拍，人物常會變小，景別被往遠拉一級。
+
+━━━━━━━━━━━━━━━━━━━━
+【七之二、加拍遠一級】
+只要畫面裡同時有 HERO 和大恐龍（TREX 成年暴龍、TEEN 青少年暴龍、ANKY 甲龍），除了你選的景別，還要另外多給一張「遠一級」的版本，剪輯時再挑：
+  ECU→CU、CU→MCU、MCU→MS、MS→MLS、MLS→FS、FS→WS、WS→EWS；原本就是 EWS 的不用加。
+- 原本那張：恐龍不用全身入鏡（可以只露一部分）。
+- 加拍的那張緊接在原本那張後面；id 是原本的 id 後面加 W（例：EP1R-07-05W），variant_of 填原本的 id。沒有加拍的 shot，variant_of 填 N/A。
+- 旁白、t、走位、角度、水平方位都跟原本那張一樣；narration 照抄原本那張的句子（加拍的不算重複分配旁白）。
+- 只改：shot_size、camera（距離拉遠）、composition、cast 的佔畫高、prompt、untested、remedy。景別句一樣用【七】的實測句子。
+- shot_count 只算原本的張數，不算加拍的。
+
+━━━━━━━━━━━━━━━━━━━━
+【八、工作順序】（照做，但不要輸出這段）
+1. 先讀完整段旁白，想清楚這一幕要完成的戲劇任務。
+2. 這一幕拍 6 張圖（加拍遠一級的不算在內）。
+3. 先想每張圖的敘事功能和剪接順序，再決定走位和相機位置。
+4. 分鏡想完，才把每張圖翻成送進 Google Flow 的英文 prompt。
+5. 回傳前檢查：旁白一句不漏、不改字；張數合理；走位連得起來；相機和 7 項資訊對得上地圖；每個角色的佔畫高跟比例圖和前後位置對得上，要整個入鏡的角色都放得下；每個不是平視的鏡頭都說得出理由。
+
+━━━━━━━━━━━━━━━━━━━━
+【九、回傳格式】
+只回一個 JSON 物件，不要其他文字，不要 markdown 程式碼框。欄位名稱和可選值照下面，一字不改：
+{
+ "scene_id": "EP1R-01",
+ "shot_count": "<整數>",
+ "notes": "<整體拍法說明，繁體中文>",
+ "blocking": [
+  {
+   "who": "<HERO／TEEN>",
+   "path": [
+    {
+     "t": "<整數>",
+     "cell": "<格子>",
+     "facing": "<N／NE／E／SE／S／SW／W／NW>",
+     "doing": "<在做什麼>"
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "id": "EP1R-01-<兩位數>（加拍遠一級的再加 W）",
+   "variant_of": "<加拍的填原本的 id；其他填 N/A>",
+   "t": "<對應 blocking 的 t>",
+   "narration": [
+    "<旁白原句>"
+   ],
+   "subject": "<主體>",
+   "shot_size": "<EWS…ECU>",
+   "ecu_part": "<局部或 N/A>",
+   "azimuth": "<front…back>",
+   "angle": "<eye／low／high／top／aerial>",
+   "composition": "<構圖位置>",
+   "screen_direction": "<left…off_down>",
+   "action": "<動作與關鍵瞬間>",
+   "camera": {
+    "cell": "<格子>",
+    "height_m": "<數字>",
+    "look_at": "<對準誰>",
+    "distance_m": "<數字>"
+   },
+   "cast": [
+    {
+     "who": "<角色>",
+     "visible": "<哪些部位入鏡>",
+     "frame_height": "<約佔畫高幾成>"
+    }
+   ],
+   "refs": [],
+   "prompt": "<英文 prompt 全文>",
+   "untested": [
+    "<表上沒有的寫法>"
+   ],
+   "remedy": "<補救方式或 N/A>"
+  }
+ ]
+}
+說明：
+- blocking：這一幕的走位。每個角色一串位置；t 是時間順序（1、2、3…），facing 用 8 方位 N／NE／E／SE／S／SW／W／NW。
+- shots[].t：這張圖取走位裡的哪一個時間點；那個時間點每個角色的位置就是這張圖的站位。
+- shots[].camera：相機所在的格子、離地高度（公尺）、對準誰、到主體的距離（公尺）。插入鏡頭也要填。
+- shot_count 要等於 shots 的張數。
